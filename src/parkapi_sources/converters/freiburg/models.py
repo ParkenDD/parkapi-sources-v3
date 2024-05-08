@@ -22,7 +22,7 @@ class FreiburgPropertiesInput:
     obs_max: int = IntegerValidator(allow_strings=True)
     obs_free: int = IntegerValidator(allow_strings=True)
     obs_ts: datetime = SpacedDateTimeValidator(
-        local_timezone=ZoneInfo('America/Los_Angeles'),
+        local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
     park_name: str = StringValidator()
