@@ -38,7 +38,7 @@ dependencies = [
     "pyproj~=3.6.1",
     "lxml~=5.2.1",
     "openpyxl~=3.1.2",
-    "requests~=2.31.0",
+    "requests>=2.31,<2.33",
     "beautifulsoup4~=4.12.3",
 ]
 
