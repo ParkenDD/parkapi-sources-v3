@@ -7,7 +7,7 @@ from decimal import Decimal
 from enum import Enum
 from typing import Optional
 
-from validataclass.dataclasses import Default, validataclass
+from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
 from validataclass.validators import (
     DataclassValidator,
@@ -23,7 +23,7 @@ from validataclass.validators import (
 from parkapi_sources.models.enums import ParkingSiteType
 
 
-class ApcoaParkingSpaceType(Enum):
+class ApcoaParkingSpaceType:
     WOMEN_SPACES = 'Women Spaces'
     FAMILY_SPACES = 'Family Spaces'
     CARSHARING_SPACES = 'Carsharing Spaces'
@@ -38,7 +38,7 @@ class ApcoaParkingSpaceType(Enum):
     PICKUP_AND_DROPOFF = 'PickUp&DropOff (weekdays from 8pm to 8am)'
 
 
-class ApcoaParkingSiteType(Enum):
+class ApcoaCarparkType(Enum):
     MLCP = 'MLCP'
     OFF_STREET_OPEN = 'Off-street open'
     OFF_STREET_UNDERGROUND = 'Off-street underground'
@@ -56,41 +56,19 @@ class ApcoaParkingSiteType(Enum):
         }.get(self, ParkingSiteType.OTHER)
 
 
-class ApcoaParkingPurpose:
-    CAR = 'CAR'
-    BIKE = 'BIKE'
-    ITEM = 'ITEM'
-
-
-class NavigationLocationType:
+class ApcoaNavigationLocationType:
     DEFAULT = 'default'
     CAR_ENTRY = 'CarEntry'
 
 
-class OpeningHoursWeekdays:
+class ApcoaOpeningHoursWeekdays:
     Weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     OpeningTime = '00:00 - 00:00'
 
 
 @validataclass
-class ApcoaIdInput:
-    CarParkId: int = IntegerValidator(allow_strings=True)
-
-
-@validataclass
-class ApcoaNameInput:
-    CarparkLongName: str = StringValidator()
-    CarparkShortName: str = StringValidator()
-
-
-@validataclass
-class ApcoaTypeNameInput:
-    Name: ApcoaParkingSiteType = EnumValidator(ApcoaParkingSiteType)
-
-
-@validataclass
-class ApcoaTypeInput:
-    CarparkType: ApcoaTypeNameInput = DataclassValidator(ApcoaTypeNameInput)
+class ApcoaCarparkTypeNameInput:
+    Name: ApcoaCarparkType = EnumValidator(ApcoaCarparkType)
 
 
 @validataclass
@@ -101,28 +79,22 @@ class ApcoaLocationGeocoordinatesInput:
 
 @validataclass
 class ApcoaNavigationLocationsInput:
-    Geocoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(ApcoaLocationGeocoordinatesInput)
-    LocationType: NavigationLocationType = EnumValidator(NavigationLocationType)
+    GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(ApcoaLocationGeocoordinatesInput)
+    LocationType: str = StringValidator()
 
 
 @validataclass
 class ApcoaAdressInput:
-    Street: str = StringValidator()
-    Zip: str = StringValidator()
-    City: str = StringValidator()
+    Street: Optional[str] = Noneable(StringValidator())
+    Zip: Optional[str] = Noneable(StringValidator())
+    City: Optional[str] = Noneable(StringValidator())
     Region: Optional[str] = Noneable(StringValidator())
-    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
 
 
 @validataclass
 class ApcoaParkingSpaceInput:
-    Type: ApcoaParkingSpaceType = EnumValidator(ApcoaParkingSpaceType)
+    Type: str = StringValidator()
     Count: int = IntegerValidator(allow_strings=True, min_value=0)
-
-
-@validataclass
-class ApcoaSpacesInput:
-    Spaces: list[ApcoaParkingSpaceInput] = ListValidator(ApcoaParkingSpaceInput)
 
 
 @validataclass
@@ -132,24 +104,21 @@ class ApcoaOpeningHoursWeekdayInput:
 
 
 @validataclass
-class ApcoaOpeningHoursInput:
-    OpeningHours: list[ApcoaOpeningHoursWeekdayInput] = ListValidator(ApcoaOpeningHoursWeekdayInput)
-
-
-@validataclass
 class ApcoaParkingSiteInput:
-    id: ApcoaIdInput = DataclassValidator(ApcoaIdInput)
-    name: ApcoaNameInput = DataclassValidator(ApcoaNameInput)
-    url: Optional[str] = UrlValidator(), Default(None)
-    type: ApcoaTypeInput = DataclassValidator(ApcoaTypeInput)
-    purpose: ApcoaParkingPurpose = EnumValidator(ApcoaParkingPurpose)
-    address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
-    capacity: ApcoaSpacesInput = DataclassValidator(ApcoaSpacesInput)
-    opening_hours: ApcoaOpeningHoursInput = DataclassValidator(ApcoaOpeningHoursInput)
+    CarParkId: int = IntegerValidator(allow_strings=True)
+    CarparkLongName: Optional[str] = Noneable(StringValidator())
+    CarparkShortName: Optional[str] = Noneable(StringValidator())
+    CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
+    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
+    Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
+    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
+    Spaces: list[ApcoaParkingSpaceInput] = ListValidator(DataclassValidator(ApcoaParkingSpaceInput))
+    OpeningHours: list[ApcoaOpeningHoursWeekdayInput] = ListValidator(DataclassValidator(ApcoaOpeningHoursWeekdayInput))
+
     # TODO: ignored multiple attributes which do not matter so far
 
     def __post_init__(self):
-        for capacity in self.capacity:
+        for capacity in self.Spaces:
             if capacity.Type == ApcoaParkingSpaceType.TOTAL_SPACES:
                 return
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
