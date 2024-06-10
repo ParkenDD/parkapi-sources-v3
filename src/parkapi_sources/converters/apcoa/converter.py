@@ -5,7 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 import requests
 from validataclass.exceptions import ValidationError
-from validataclass.validators import DataclassValidator
+from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
 from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
@@ -16,26 +16,27 @@ from .validators import ApcoaParkingSiteInput
 
 
 class ApcoaPullConverter(PullConverter):
-    _base_url = 'https://api.apcoa-services.com/carpark-dev/v4'
     required_config_keys = ['PARK_API_APCOA_API_SUBSCRIPTION_KEY']
 
     mapper = ApcoaMapper()
+    list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     apcoa_parking_site_validator = DataclassValidator(ApcoaParkingSiteInput)
 
     source_info = SourceInfo(
         uid='apcoa',
         name='APCOA-SERVICES API',
         public_url='https://devzone.apcoa-services.com/',
+        source_url='https://api.apcoa-services.com/carpark-dev/v4',
         has_realtime_data=False,  # ATM only static data can be called from the API
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs: list = []
+        static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
         parking_site_dicts = self.get_data()
 
-        for parking_site_dict in parking_site_dicts.get('Results', []):
+        for parking_site_dict in self.list_validator.validate(parking_site_dicts['Results']):
             try:
                 parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(parking_site_dict)
             except ValidationError as e:
@@ -63,7 +64,7 @@ class ApcoaPullConverter(PullConverter):
         }
 
         response = requests.get(
-            f'{self.config_helper.get("PARK_API_APCOA_URL", self._base_url)}/Carparks',
+            f'{self.source_info.source_url}/Carparks',
             headers=headers,
             timeout=60,
         )

@@ -3,9 +3,11 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from datetime import datetime, timezone
 from decimal import Decimal
 from enum import Enum
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
@@ -21,6 +23,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.validators import SpacedDateTimeValidator
 
 
 class ApcoaParkingSpaceType:
@@ -61,9 +64,30 @@ class ApcoaNavigationLocationType:
     CAR_ENTRY = 'CarEntry'
 
 
-class ApcoaOpeningHoursWeekdays:
-    Weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    OpeningTime = '00:00 - 00:00'
+class ApcoaOpeningHoursWeekdays(Enum):
+    MONDAY = 'Monday'
+    TUESDAY = 'Tuesday'
+    WEDNESDAY = 'Wednesday'
+    THURSDAY = 'Thursday'
+    FRIDAY = 'Friday'
+    SATURDAY = 'Saturday'
+    SUNDAY = 'Sunday'
+
+    def to_osm_opening_day_format(self) -> Enum:
+        return {
+            self.MONDAY: 'Mo',
+            self.TUESDAY: 'Tu',
+            self.WEDNESDAY: 'We',
+            self.THURSDAY: 'Th',
+            self.FRIDAY: 'Fr',
+            self.SATURDAY: 'Sa',
+            self.SUNDAY: 'Su',
+        }.get(self, None)
+
+
+class ApcoaOpeningHoursTime(Enum):
+    OPEN_24H = '00:00 - 00:00'
+    CLOSED = 'closed'
 
 
 @validataclass
@@ -98,9 +122,17 @@ class ApcoaParkingSpaceInput:
 
 
 @validataclass
-class ApcoaOpeningHoursWeekdayInput:
-    Weekday: str = StringValidator()
+class ApcoaOpeningHoursInput:
+    Weekday: ApcoaOpeningHoursWeekdays = EnumValidator(ApcoaOpeningHoursWeekdays)
     OpeningTimes: str = StringValidator()
+
+
+@validataclass
+class ApcoaCarparkPhotoURLInput:
+    CarparkPhotoURL1: Optional[str] = Noneable(UrlValidator())
+    CarparkPhotoURL2: Optional[str] = Noneable(UrlValidator())
+    CarparkPhotoURL3: Optional[str] = Noneable(UrlValidator())
+    CarparkPhotoURL4: Optional[str] = Noneable(UrlValidator())
 
 
 @validataclass
@@ -109,11 +141,16 @@ class ApcoaParkingSiteInput:
     CarparkLongName: Optional[str] = Noneable(StringValidator())
     CarparkShortName: Optional[str] = Noneable(StringValidator())
     CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
+    CarParkPhotoURLs: ApcoaCarparkPhotoURLInput = DataclassValidator(ApcoaCarparkPhotoURLInput)
     CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
     NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
     Spaces: list[ApcoaParkingSpaceInput] = ListValidator(DataclassValidator(ApcoaParkingSpaceInput))
-    OpeningHours: list[ApcoaOpeningHoursWeekdayInput] = ListValidator(DataclassValidator(ApcoaOpeningHoursWeekdayInput))
+    OpeningHours: list[ApcoaOpeningHoursInput] = ListValidator(DataclassValidator(ApcoaOpeningHoursInput))
+    LastModifiedDateTime: datetime = SpacedDateTimeValidator(
+        local_timezone=ZoneInfo('Europe/Berlin'),
+        target_timezone=timezone.utc,
+    )
 
     # TODO: ignored multiple attributes which do not matter so far
 
