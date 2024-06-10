@@ -20,7 +20,7 @@ def ulm_pull_converter(mocked_static_geojson_config_helper: Mock) -> UlmPullConv
 
 class UlmPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(ulm_pull_converter: UlmPullConverter, static_geojson_requests_mock: Mocker):
+    def test_get_static_parking_sites(ulm_pull_converter: UlmPullConverter):
         static_parking_site_inputs, import_parking_site_exceptions = ulm_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) > len(

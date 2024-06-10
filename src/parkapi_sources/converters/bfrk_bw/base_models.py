@@ -20,8 +20,9 @@ from parkapi_sources.validators import ExcelNoneable, GermanDecimalValidator
 class BfrkBaseRowInput:
     uid: str = StringValidator()
     name: str = StringValidator()
-    lat: Decimal = GermanDecimalValidator()
-    lon: Decimal = GermanDecimalValidator()
+    # min / max are bounding box of Baden-Württemberg
+    lat: Decimal = GermanDecimalValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
+    lon: Decimal = GermanDecimalValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
     capacity: int = IntegerValidator(allow_strings=True)
     identifier_dhid: str = StringValidator()
     identifier_osm: str = StringValidator()

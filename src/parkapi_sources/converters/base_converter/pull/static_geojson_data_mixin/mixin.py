@@ -22,7 +22,7 @@ class StaticGeojsonDataMixin:
     source_info: SourceInfo
     geojson_validator = DataclassValidator(GeojsonInput)
     geojson_feature_validator = DataclassValidator(GeojsonFeatureInput)
-    _base_url = 'https://raw.githubusercontent.com/ParkenDD/parkapi-sources-v3/main/data'
+    _base_url = 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources'
 
     def _get_static_geojson(self, source_uid: str) -> GeojsonInput:
         if self.config_helper.get('STATIC_GEOJSON_BASE_PATH'):

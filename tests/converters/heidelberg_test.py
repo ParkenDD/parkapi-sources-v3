@@ -16,7 +16,7 @@ from tests.converters.helper import validate_realtime_parking_site_inputs, valid
 @pytest.fixture
 def heidelberg_config_helper(mocked_config_helper: Mock):
     config = {
-        'STATIC_GEOJSON_BASE_URL': 'mock://static-geojson',
+        'STATIC_GEOJSON_BASE_URL': 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources',
         'PARK_API_HEIDELBERG_API_KEY': '2fced81b-ec5e-43f9-aa9c-0d12731a7813',
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
@@ -30,7 +30,7 @@ def heidelberg_pull_converter(heidelberg_config_helper: Mock) -> HeidelbergPullC
 
 class HeidelbergPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(heidelberg_pull_converter: HeidelbergPullConverter, static_geojson_requests_mock: Mocker):
+    def test_get_static_parking_sites(heidelberg_pull_converter: HeidelbergPullConverter):
         static_parking_site_inputs, import_parking_site_exceptions = heidelberg_pull_converter.get_static_parking_sites()
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions

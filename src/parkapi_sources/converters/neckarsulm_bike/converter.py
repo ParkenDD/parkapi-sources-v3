@@ -31,8 +31,8 @@ class NeckarsulmBikePushConverter(CsvConverter):
         'anzahl': 'capacity',
         'lage': 'additional_name',
         'eigentuemer': 'operator_name',
-        'X': 'lat',
-        'y': 'lon',
+        'X': 'lon',
+        'y': 'lat',
     }
 
     def handle_csv_string(

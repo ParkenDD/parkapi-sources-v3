@@ -11,9 +11,9 @@ from typing import Optional
 class SourceInfo:
     uid: str
     name: str
-    public_url: str
     has_realtime_data: Optional[bool]
     timezone: str = 'Europe/Berlin'
+    public_url: Optional[str] = None
     source_url: Optional[str] = None
     attribution_license: Optional[str] = None
     attribution_url: Optional[str] = None

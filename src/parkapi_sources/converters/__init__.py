@@ -4,6 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from .apcoa import ApcoaPullConverter
+from .a81_p_m import A81PMPullConverter
 from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
 from .bfrk_bw import BfrkBwOepnvBikePushConverter, BfrkBwOepnvCarPushConverter, BfrkBwSpnvBikePushConverter, BfrkBwSpnvCarPushConverter

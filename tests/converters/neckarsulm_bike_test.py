@@ -25,8 +25,7 @@ class NeckarsulmPushConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = neckarsulm_bike_push_converter.handle_csv_string(neckarsulm_data)
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 235
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

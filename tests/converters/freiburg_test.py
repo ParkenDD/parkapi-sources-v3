@@ -20,7 +20,7 @@ def freiburg_pull_converter(mocked_static_geojson_config_helper: Mock) -> Freibu
 
 class FreiburgPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(freiburg_pull_converter: FreiburgPullConverter, static_geojson_requests_mock: Mocker):
+    def test_get_static_parking_sites(freiburg_pull_converter: FreiburgPullConverter):
         static_parking_site_inputs, import_parking_site_exceptions = freiburg_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) > len(

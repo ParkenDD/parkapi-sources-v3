@@ -78,6 +78,7 @@ class KarlsruheFeatureInput:
             name=self.properties.ph_name,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
+            capacity=self.properties.gesamte_parkplaetze,
             address=f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}',
             max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
             public_url=self.properties.parkhaus_internet,

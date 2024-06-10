@@ -25,9 +25,8 @@ class BfrkCarPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = bfrk_car_push_converter.handle_csv_string(bfrk_car_data)
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 1555
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -45,8 +44,7 @@ class BfrkBikePullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = bfrk_bike_push_converter.handle_csv_string(bfrk_bike_data)
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 2000
+        assert len(import_parking_site_exceptions) == 1  # One failure due invalid coordinate
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
