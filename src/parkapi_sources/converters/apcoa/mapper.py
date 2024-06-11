@@ -4,7 +4,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from collections import defaultdict
-from datetime import datetime, timezone
 
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import PurposeType
@@ -24,10 +23,9 @@ class ApcoaMapper:
         latitude, longitude = next(
             iter(
                 (navigation_locations_input.GeoCoordinates.Latitude, navigation_locations_input.GeoCoordinates.Longitude)
+                for navigation_locations_input in apcoa_input.NavigationLocations
                 if navigation_locations_input.LocationType == ApcoaNavigationLocationType.DEFAULT
-                else (None, None)
             )
-            for navigation_locations_input in apcoa_input.NavigationLocations
         )
 
         static_parking_site_input = StaticParkingSiteInput(
@@ -39,12 +37,14 @@ class ApcoaMapper:
             type=apcoa_input.CarparkType.Name.to_parking_site_type_input(),
             has_realtime_data=False,  # TODO: change this as soon as Apcoa API offers realtime data
             public_url=apcoa_input.CarParkWebsiteURL,
-            photo_url=apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1,
-            static_data_updated_at=apcoa_input.LastModifiedDateTime if apcoa_input.LastModifiedDateTime else datetime.now(tz=timezone.utc),
+            static_data_updated_at=apcoa_input.LastModifiedDateTime,
         )
 
         if apcoa_input.Address.Street and apcoa_input.Address.Zip and apcoa_input.Address.City:
             static_parking_site_input.address = f'{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}'
+
+        if apcoa_input.CarParkPhotoURLs:
+            static_parking_site_input.photo_url = apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1
 
         apcoa_weekdays = [
             ApcoaOpeningHoursWeekdays.MONDAY,

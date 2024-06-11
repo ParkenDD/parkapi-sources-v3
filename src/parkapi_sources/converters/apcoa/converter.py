@@ -26,7 +26,7 @@ class ApcoaPullConverter(PullConverter):
         uid='apcoa',
         name='APCOA-SERVICES API',
         public_url='https://devzone.apcoa-services.com/',
-        source_url='https://api.apcoa-services.com/carpark-dev/v4',
+        source_url='https://api.apcoa-services.com/carpark-dev/v4/Carparks',
         has_realtime_data=False,  # ATM only static data can be called from the API
     )
 
@@ -64,7 +64,7 @@ class ApcoaPullConverter(PullConverter):
         }
 
         response = requests.get(
-            f'{self.source_info.source_url}/Carparks',
+            self.source_info.source_url,
             headers=headers,
             timeout=60,
         )

@@ -6,6 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from typing import Optional, Type
 
 from .converters import (
+    ApcoaPullConverter,
     BahnV2PullConverter,
     BaseConverter,
     BfrkBwOepnvBikePushConverter,
@@ -44,6 +45,7 @@ from .util import ConfigHelper
 
 class ParkAPISources:
     converter_classes: list[Type[BaseConverter]] = [
+        ApcoaPullConverter,
         BahnV2PullConverter,
         BfrkBwOepnvBikePushConverter,
         BfrkBwOepnvCarPushConverter,

@@ -19,7 +19,6 @@ from validataclass.validators import (
     Noneable,
     NumericValidator,
     StringValidator,
-    UrlValidator,
 )
 
 from parkapi_sources.models.enums import ParkingSiteType
@@ -73,7 +72,7 @@ class ApcoaOpeningHoursWeekdays(Enum):
     SATURDAY = 'Saturday'
     SUNDAY = 'Sunday'
 
-    def to_osm_opening_day_format(self) -> Enum:
+    def to_osm_opening_day_format(self) -> str:
         return {
             self.MONDAY: 'Mo',
             self.TUESDAY: 'Tu',
@@ -85,7 +84,7 @@ class ApcoaOpeningHoursWeekdays(Enum):
         }.get(self, None)
 
 
-class ApcoaOpeningHoursTime(Enum):
+class ApcoaOpeningHoursTime:
     OPEN_24H = '00:00 - 00:00'
     CLOSED = 'closed'
 
@@ -104,7 +103,7 @@ class ApcoaLocationGeocoordinatesInput:
 @validataclass
 class ApcoaNavigationLocationsInput:
     GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(ApcoaLocationGeocoordinatesInput)
-    LocationType: str = StringValidator()
+    LocationType: Optional[str] = Noneable(StringValidator())
 
 
 @validataclass
@@ -129,10 +128,10 @@ class ApcoaOpeningHoursInput:
 
 @validataclass
 class ApcoaCarparkPhotoURLInput:
-    CarparkPhotoURL1: Optional[str] = Noneable(UrlValidator())
-    CarparkPhotoURL2: Optional[str] = Noneable(UrlValidator())
-    CarparkPhotoURL3: Optional[str] = Noneable(UrlValidator())
-    CarparkPhotoURL4: Optional[str] = Noneable(UrlValidator())
+    CarparkPhotoURL1: Optional[str] = Noneable(StringValidator())
+    CarparkPhotoURL2: Optional[str] = Noneable(StringValidator())
+    CarparkPhotoURL3: Optional[str] = Noneable(StringValidator())
+    CarparkPhotoURL4: Optional[str] = Noneable(StringValidator())
 
 
 @validataclass
@@ -140,8 +139,8 @@ class ApcoaParkingSiteInput:
     CarParkId: int = IntegerValidator(allow_strings=True)
     CarparkLongName: Optional[str] = Noneable(StringValidator())
     CarparkShortName: Optional[str] = Noneable(StringValidator())
-    CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
-    CarParkPhotoURLs: ApcoaCarparkPhotoURLInput = DataclassValidator(ApcoaCarparkPhotoURLInput)
+    CarParkWebsiteURL: Optional[str] = Noneable(StringValidator())
+    CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
     CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
     NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
