@@ -9,6 +9,7 @@ We support following data sources:
 | name                                                                              | purpose | type        | uid                  | realtime |
 |-----------------------------------------------------------------------------------|---------|-------------|----------------------|----------|
 | A81: P&M                                                                          | car     | pull        | `a81_p_m`            | yes      |
+| APCOA-Services                                                                    | car     | pull        | `apcoa`              | no      |
 | Deutsche Bahn                                                                     | car     | pull        | `bahn_v2`            | no       |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bahnhöfen           | car     | push (csv)  | `bfrk_bw_oepnv_car`  | no       |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bushaltestellen     | car     | push (csv)  | `bfrk_bw_spnv_car`   | no       |

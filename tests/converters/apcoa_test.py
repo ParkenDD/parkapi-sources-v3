@@ -41,7 +41,7 @@ class ApcoaPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = apcoa_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 124
-        assert len(import_parking_site_exceptions) == 445
+        assert len(static_parking_site_inputs) == 305
+        assert len(import_parking_site_exceptions) == 264
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
