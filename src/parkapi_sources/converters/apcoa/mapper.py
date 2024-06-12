@@ -3,15 +3,11 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from collections import defaultdict
-
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import PurposeType
 
 from .validators import (
     ApcoaNavigationLocationType,
-    ApcoaOpeningHoursTime,
-    ApcoaOpeningHoursWeekdays,
     ApcoaParkingSiteInput,
     ApcoaParkingSpaceType,
 )
@@ -46,31 +42,10 @@ class ApcoaMapper:
         if apcoa_input.CarParkPhotoURLs:
             static_parking_site_input.photo_url = apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1
 
-        apcoa_weekdays = [
-            ApcoaOpeningHoursWeekdays.MONDAY,
-            ApcoaOpeningHoursWeekdays.TUESDAY,
-            ApcoaOpeningHoursWeekdays.WEDNESDAY,
-            ApcoaOpeningHoursWeekdays.THURSDAY,
-            ApcoaOpeningHoursWeekdays.FRIDAY,
-            ApcoaOpeningHoursWeekdays.SATURDAY,
-            ApcoaOpeningHoursWeekdays.SUNDAY,
-        ]
-        apcoa_opening_times = defaultdict(list)
-        for opening_hours_input in apcoa_input.OpeningHours:
-            opening_time = opening_hours_input.OpeningTimes if opening_hours_input.OpeningTimes != ApcoaOpeningHoursTime.CLOSED else 'off'
-            if opening_hours_input.Weekday in apcoa_weekdays[:-2]:
-                apcoa_opening_times[opening_time].append(opening_hours_input.Weekday.to_osm_opening_day_format())
-        for opening_time, weekdays in apcoa_opening_times.items():
-            if len(weekdays) == 7 and opening_time == apcoa_opening_times[ApcoaOpeningHoursTime.OPEN_24H]:
-                static_parking_site_input.opening_hours = '24/7'
-            elif (
-                len(weekdays) == 5
-                and ApcoaOpeningHoursWeekdays.SATURDAY not in weekdays
-                and ApcoaOpeningHoursWeekdays.SUNDAY not in weekdays
-            ):
-                static_parking_site_input.opening_hours = f'Mo-Fr {opening_time}'
-            else:
-                static_parking_site_input.opening_hours = ';'.join([f'{weekday} {opening_time}' for weekday in weekdays])
+        if apcoa_input.IndicativeTariff.MinValue or apcoa_input.IndicativeTariff.MaxValue:
+            static_parking_site_input.has_fee = True
+
+        static_parking_site_input.opening_hours = apcoa_input.get_osm_opening_hours()
 
         for capacity_data in apcoa_input.Spaces:
             # Because it was checked in validation, we can be sure that capacity will be set
