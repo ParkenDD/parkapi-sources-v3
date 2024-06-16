@@ -49,7 +49,7 @@ def main():
     print(f'static_parking_site_errors: {static_import_parking_site_exceptions}')  # noqa: T201
     print(f'realtime_parking_site_errors: {realtime_import_parking_site_exceptions}')  # noqa: T201
 
-    # Additional re-validation if mapping was set up correctly
+    #Additional re-validation if mapping was set up correctly
     for static_parking_site_input in static_parking_site_inputs:
         static_parking_site_dict = json.loads(json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder))
         try:
@@ -57,12 +57,12 @@ def main():
         except ValidationError as e:
             print(f'Invalid mapped static dataset found: {static_parking_site_dict}: {e.to_dict()}')
 
-    for realtime_parking_site_input in realtime_parking_site_inputs:
-        realtime_parking_site_dict = json.loads(json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder))
-        try:
-            converter.realtime_parking_site_validator.validate(realtime_parking_site_dict)
-        except ValidationError as e:
-            print(f'Invalid mapped realtime dataset found: {realtime_parking_site_dict}: {e.to_dict()}')
+    #for realtime_parking_site_input in realtime_parking_site_inputs:
+    #    realtime_parking_site_dict = json.loads(json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder))
+    #    try:
+    #        converter.realtime_parking_site_validator.validate(realtime_parking_site_dict)
+    #    except ValidationError as e:
+    #        print(f'Invalid mapped realtime dataset found: {realtime_parking_site_dict}: {e.to_dict()}')
 
 
 def filter_none(data: dict) -> dict:

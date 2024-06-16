@@ -1,0 +1,24 @@
+{
+  "data_source": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze",
+  "last_downloaded": "2024-06-07T11:34:01.650112",
+  "last_updated": "2024-06-07T11:34:01.650112",
+  "lots": [
+    {
+      "id": "ac230e00-2cea-11eb-93e4-7f8bf428cc7a",
+      "lot_type": "Parkhaus",
+      "address": "71083 Herrenberg",
+      "name": "Altstadtgarage",
+      "forecast": false,
+      "state": "many",
+      "coords": {
+        "lat": 48.593768,
+        "lng": 8.872705
+      },
+      "total": 97,
+      "url": "https://stadtwerke.herrenberg.de/oepnv-parken/parken/sicher-und-zentral-parken/parkhaeuser-und-parkgebuehren/altstadtgarage/",
+      "fee_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00; PH off",
+      "notes": {},
+      "free": 69
+    }
+  ]
+}
