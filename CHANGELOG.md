@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.1
+
+Released 2024-06-18
+
+### Fixes
+
+* [Renames and extends P+M BW Converter with static data](https://github.com/ParkenDD/parkapi-sources-v3/pull/63)
+
+
 ## 0.5.0
 
 Release 2024-06-14

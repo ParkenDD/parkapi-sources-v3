@@ -32,6 +32,7 @@ class GeojsonFeaturePropertiesInput(ValidataclassMixin):
     type: Optional[ParkingSiteType] = EnumValidator(ParkingSiteType), Default(None)
     public_url: Optional[str] = UrlValidator(max_length=4096), Default(None)
     address: str = StringValidator(max_length=512)
+    description: Optional[str] = StringValidator(max_length=512), Default(None)
     capacity: int = IntegerValidator()
     has_realtime_data: bool = BooleanValidator()
 

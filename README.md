@@ -8,7 +8,6 @@ We support following data sources:
 
 | name                                                                              | purpose | type        | uid                    | realtime |
 |-----------------------------------------------------------------------------------|---------|-------------|------------------------|----------|
-| A81: P&M                                                                          | car     | pull        | `a81_p_m`              | yes      |
 | Deutsche Bahn                                                                     | car     | pull        | `bahn_v2`              | no       |
 | Stadt Bietigheim-Bissingen                                                        | car     | pull        | `bietigheim_bissingen` | yes      |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bahnhöfen           | car     | push (csv)  | `bfrk_bw_oepnv_car`    | no       |
@@ -26,6 +25,7 @@ We support following data sources:
 | Stadt Mannheim                                                                    | car     | push (json) | `mannheim`             | yes      |
 | Stadt Neckarsulm: PKW-Parkplätze                                                  | car     | pull        | `neckarsulm`           | no       |
 | Stadt Neckarsulm: Fahrrad-Abstellanlagen                                          | bike    | pull        | `neckarsulm_bike`      | no       |
+| P + M Baden-Württemberg                                                           | car     | pull        | `p_m_bw`               | yes      |
 | Baden-Württemberg: Parken und Mitfahren                                           | car     | push (xlsx) | `pum_bw`               | no       |
 | RadVIS Baden-Württemberg (experimental)                                           | bike    | pull        | `radvis_bw`            | no       |
 | Parkraumgesellschaft Baden-Württemberg                                            | car     | pull        | `pbw`                  | yes      |
