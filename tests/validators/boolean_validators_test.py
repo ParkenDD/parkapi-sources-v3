@@ -11,13 +11,13 @@ from validataclass.exceptions import ValidationError
 
 
 @pytest.mark.parametrize(
-    'mapping,input_data,output_data',
+    "mapping,input_data,output_data",
     [
         ({}, False, False),
         ({}, True, True),
-        ({'true': True, 'false': False}, 'true', True),
-        ({'true': True, 'false': False}, 'false', False),
-        ({'true': True, 'false': False}, 'TRUE', True),
+        ({"true": True, "false": False}, "true", True),
+        ({"true": True, "false": False}, "false", False),
+        ({"true": True, "false": False}, "TRUE", True),
         ({1: True, 0: False}, 1, True),
     ],
 )
@@ -30,11 +30,11 @@ def test_mapped_boolean_validator_success(
 
 
 @pytest.mark.parametrize(
-    'mapping,input_data',
+    "mapping,input_data",
     [
-        ({}, 'something'),
-        ({'true': True, 'false': False}, 'something'),
-        ({'true': True, 'false': False}, 1),
+        ({}, "something"),
+        ({"true": True, "false": False}, "something"),
+        ({"true": True, "false": False}, 1),
     ],
 )
 def test_mapped_boolean_validator_fail(mapping: dict, input_data: Any):

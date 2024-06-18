@@ -17,33 +17,33 @@ class BfrkBwCarPushConverter(BfrkBasePushConverter, ABC):
     bfrk_row_validator = DataclassValidator(BfrkCarRowInput)
 
     header_mapping: dict[str, str] = {
-        'ID': 'uid',
-        'HST_Name': 'name',
-        'Art': 'type',
-        'Latitude': 'lat',
-        'Longitude': 'lon',
-        'Stellplatzanzahl_insgesamt': 'capacity',
-        'Stellplatzanzahl_Behinderte': 'capacity_disabled',
-        'Nutzungsbedingungen': 'description',
-        'HST_DHID': 'identifier_dhid',
-        'OSM_ID': 'identifier_osm',
-        'Parkplatz_Foto': 'photo_url',
+        "ID": "uid",
+        "HST_Name": "name",
+        "Art": "type",
+        "Latitude": "lat",
+        "Longitude": "lon",
+        "Stellplatzanzahl_insgesamt": "capacity",
+        "Stellplatzanzahl_Behinderte": "capacity_disabled",
+        "Nutzungsbedingungen": "description",
+        "HST_DHID": "identifier_dhid",
+        "OSM_ID": "identifier_osm",
+        "Parkplatz_Foto": "photo_url",
     }
 
 
 class BfrkBwOepnvCarPushConverter(BfrkBwCarPushConverter):
     source_info = SourceInfo(
-        uid='bfrk_bw_oepnv_car',
-        name='Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bushaltestellen',
-        public_url='https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-haltestellen',
+        uid="bfrk_bw_oepnv_car",
+        name="Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bushaltestellen",
+        public_url="https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-haltestellen",
         has_realtime_data=False,
     )
 
 
 class BfrkBwSpnvCarPushConverter(BfrkBwCarPushConverter):
     source_info = SourceInfo(
-        uid='bfrk_bw_spnv_car',
-        name='Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bahnhöfen',
-        public_url='https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-bahnhoefen',
+        uid="bfrk_bw_spnv_car",
+        name="Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bahnhöfen",
+        public_url="https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-bahnhoefen",
         has_realtime_data=False,
     )

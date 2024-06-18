@@ -18,11 +18,11 @@ from tests.converters.helper import (
 
 @pytest.fixture
 def requests_mock_kienzler(requests_mock: Mocker) -> Mocker:
-    json_path = Path(Path(__file__).parent, 'data', 'kienzler.json')
+    json_path = Path(Path(__file__).parent, "data", "kienzler.json")
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.post('https://www.bikeandridebox.de/index.php', text=json_data)
+    requests_mock.post("https://www.bikeandridebox.de/index.php", text=json_data)
 
     return requests_mock
 
@@ -30,9 +30,9 @@ def requests_mock_kienzler(requests_mock: Mocker) -> Mocker:
 @pytest.fixture
 def kienzler_config_helper(mocked_config_helper: Mock):
     config = {
-        'PARK_API_KIENZLER_USER': '01275925-742c-460b-8778-eca90eb114bc',
-        'PARK_API_KIENZLER_PASSWORD': '626027f2-66e9-40bd-8ff2-4c010f5eca05',
-        'PARK_API_KIENZLER_IDS': 'id1,id2,id3',
+        "PARK_API_KIENZLER_USER": "01275925-742c-460b-8778-eca90eb114bc",
+        "PARK_API_KIENZLER_PASSWORD": "626027f2-66e9-40bd-8ff2-4c010f5eca05",
+        "PARK_API_KIENZLER_IDS": "id1,id2,id3",
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
         key, default

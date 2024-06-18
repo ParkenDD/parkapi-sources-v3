@@ -51,7 +51,7 @@ class ApcoaMapper:
             and apcoa_input.Address.Zip
             and apcoa_input.Address.City
         ):
-            static_parking_site_input.address = f'{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}'
+            static_parking_site_input.address = f"{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}"
 
         if apcoa_input.CarParkPhotoURLs:
             static_parking_site_input.photo_url = (

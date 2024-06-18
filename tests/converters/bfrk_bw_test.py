@@ -25,7 +25,7 @@ class BfrkCarPullConverterTest:
     def test_get_static_parking_sites(
         bfrk_car_push_converter: BfrkBwSpnvCarPushConverter,
     ):
-        with get_data_path('bfrk_bw_car.csv').open() as bfrk_car_file:
+        with get_data_path("bfrk_bw_car.csv").open() as bfrk_car_file:
             bfrk_car_data = StringIO(bfrk_car_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = (
@@ -48,7 +48,7 @@ class BfrkBikePullConverterTest:
     def test_get_static_parking_sites(
         bfrk_bike_push_converter: BfrkBwSpnvBikePushConverter,
     ):
-        with get_data_path('bfrk_bw_bike.csv').open() as bfrk_bike_file:
+        with get_data_path("bfrk_bw_bike.csv").open() as bfrk_bike_file:
             bfrk_bike_data = StringIO(bfrk_bike_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = (

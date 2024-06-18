@@ -22,10 +22,10 @@ class BfrkBaseRowInput:
     name: str = StringValidator()
     # min / max are bounding box of Baden-Württemberg
     lat: Decimal = GermanDecimalValidator(
-        min_value=Decimal('47.5'), max_value=Decimal('49.8')
+        min_value=Decimal("47.5"), max_value=Decimal("49.8")
     )
     lon: Decimal = GermanDecimalValidator(
-        min_value=Decimal('7.5'), max_value=Decimal('10.5')
+        min_value=Decimal("7.5"), max_value=Decimal("10.5")
     )
     capacity: int = IntegerValidator(allow_strings=True)
     identifier_dhid: str = StringValidator()
@@ -54,7 +54,7 @@ class BfrkBaseRowInput:
             name=self.name,
             lat=self.lat,
             lon=self.lon,
-            address='',
+            address="",
             capacity=self.capacity,
             photo_url=self.photo_url,
             static_data_updated_at=datetime.now(tz=timezone.utc),

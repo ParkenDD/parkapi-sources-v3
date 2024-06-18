@@ -13,6 +13,6 @@ class GermanDecimalValidator(DecimalValidator):
     def validate(self, input_data: Any, **kwargs) -> Decimal:
         self._ensure_type(input_data, str)
 
-        input_data = input_data.replace(',', '.')
+        input_data = input_data.replace(",", ".")
 
         return super().validate(input_data, **kwargs)

@@ -34,7 +34,7 @@ class PullScraperMixin(ABC):
 
         response = requests.get(url, timeout=30)
 
-        return BeautifulSoup(response.text, features='html.parser')
+        return BeautifulSoup(response.text, features="html.parser")
 
     def _get_scraped_realtime_parking_site_inputs_and_exceptions(
         self,
@@ -50,7 +50,7 @@ class PullScraperMixin(ABC):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        message=f'Invalid data: {e}',
+                        message=f"Invalid data: {e}",
                     ),
                 )
                 continue
@@ -69,9 +69,9 @@ class PullScraperMixin(ABC):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=realtime_parking_site_dict.get('uid'),
+                        parking_site_uid=realtime_parking_site_dict.get("uid"),
                         message=f'Invallid data at uid {realtime_parking_site_dict.get("uid")}: {e.to_dict()}, '
-                        f'data: {realtime_parking_site_dict}',
+                        f"data: {realtime_parking_site_dict}",
                     ),
                 )
 

@@ -16,8 +16,8 @@ from parkapi_sources.validators import TimestampDateTimeValidator
 
 
 class BietigheimBissingenOpeningStatus(Enum):
-    OPEN = 'Geöffnet'
-    CLOSED = 'Geschlossen'
+    OPEN = "Geöffnet"
+    CLOSED = "Geschlossen"
 
     def to_realtime_opening_status(self) -> OpeningStatus:
         return {
@@ -38,7 +38,7 @@ class BietigheimBissingenInput:
 
     def __post_init__(self):
         if self.Capacity < self.OccupiedSites:
-            raise ValidationError(reason='More occupied sites than capacity')
+            raise ValidationError(reason="More occupied sites than capacity")
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(

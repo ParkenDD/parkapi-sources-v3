@@ -18,11 +18,11 @@ from tests.converters.helper import (
 
 @pytest.fixture
 def requests_mock_karlsruhe(requests_mock: Mocker) -> Mocker:
-    json_path = Path(Path(__file__).parent, 'data', 'karlsruhe.json')
+    json_path = Path(Path(__file__).parent, "data", "karlsruhe.json")
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get('https://mobil.trk.de:8443/geoserver/TBA/ows', text=json_data)
+    requests_mock.get("https://mobil.trk.de:8443/geoserver/TBA/ows", text=json_data)
 
     return requests_mock
 
@@ -44,7 +44,7 @@ class KarlsruhePullConverterTest:
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        ), "There should be more valid then invalid parking sites"
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

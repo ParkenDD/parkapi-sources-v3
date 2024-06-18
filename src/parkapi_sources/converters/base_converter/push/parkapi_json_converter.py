@@ -44,7 +44,7 @@ class ParkApiConverter(JsonConverter, ABC):
             parking_site_item_inputs = self.parking_site_items_validator.validate(data)
         except ValidationError as e:
             raise ImportSourceException(
-                source_uid=self.source_info.uid, message=f'Invalid data {e.to_dict()}'
+                source_uid=self.source_info.uid, message=f"Invalid data {e.to_dict()}"
             ) from e
 
         for parking_site_dict in parking_site_item_inputs.items:
@@ -57,8 +57,8 @@ class ParkApiConverter(JsonConverter, ABC):
                 parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('uid'),
-                        message=f'validation error for {parking_site_dict}: {e.to_dict()}',
+                        parking_site_uid=parking_site_dict.get("uid"),
+                        message=f"validation error for {parking_site_dict}: {e.to_dict()}",
                     ),
                 )
                 # If there was an error, we don't proceed with realtime data
@@ -76,8 +76,8 @@ class ParkApiConverter(JsonConverter, ABC):
                 parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('uid'),
-                        message=f'validation error for {parking_site_dict}: {e.to_dict()}',
+                        parking_site_uid=parking_site_dict.get("uid"),
+                        message=f"validation error for {parking_site_dict}: {e.to_dict()}",
                     ),
                 )
 

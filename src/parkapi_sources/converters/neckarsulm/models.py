@@ -21,15 +21,15 @@ from parkapi_sources.validators.boolean_validators import MappedBooleanValidator
 
 
 class NeckarsulmParkingSiteType(Enum):
-    OFF_STREET_PARKING_GROUND = 'Parkplatz'
-    HIKING_OFF_STREET_PARKING_GROUND = 'Wanderparkplatz'
-    CAR_PARK = 'Parkhaus'
-    UNDERGROUND = 'Tiefgarage'
+    OFF_STREET_PARKING_GROUND = "Parkplatz"
+    HIKING_OFF_STREET_PARKING_GROUND = "Wanderparkplatz"
+    CAR_PARK = "Parkhaus"
+    UNDERGROUND = "Tiefgarage"
     # there is the value 'p+r', but as this is not a parking type, but an usecase, we just map this to off street parking ground
-    PARK_AND_RIDE_OFF_STREET_PARKING_GROUND = 'p+r'
+    PARK_AND_RIDE_OFF_STREET_PARKING_GROUND = "p+r"
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
-        if self.name.endswith('OFF_STREET_PARKING_GROUND'):
+        if self.name.endswith("OFF_STREET_PARKING_GROUND"):
             return ParkingSiteType.OFF_STREET_PARKING_GROUND
 
         return ParkingSiteType[self.name]
@@ -51,7 +51,7 @@ class NeckarsulmRowInput:
     capacity_charging: int = IntegerValidator(allow_strings=True)
     capacity_woman: int = IntegerValidator(allow_strings=True)
     capacity_disabled: int = IntegerValidator(allow_strings=True)
-    has_fee: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
+    has_fee: bool = MappedBooleanValidator(mapping={"ja": True, "nein": False})
     opening_hours: str = StringValidator(max_length=255)
     max_height: Decimal = DecimalValidator()
 
@@ -62,14 +62,14 @@ class NeckarsulmRowInput:
             type=self.type.to_parking_site_type_input(),
             lat=self.lat,
             lon=self.lon,
-            address=f'{self.street}, {self.postcode} {self.city}',
+            address=f"{self.street}, {self.postcode} {self.city}",
             capacity=self.capacity,
             capacity_carsharing=self.capacity_carsharing,
             capacity_charging=self.capacity_charging,
             capacity_woman=self.capacity_woman,
             capacity_disabled=self.capacity_disabled,
             has_fee=self.has_fee,
-            opening_hours='24/7' if self.opening_hours == '00:00-24:00' else None,
+            opening_hours="24/7" if self.opening_hours == "00:00-24:00" else None,
             static_data_updated_at=datetime.now(tz=timezone.utc),
             max_height=int(self.max_height * 100) if self.max_height else None,
             # TODO: we could use the P+R type as park_and_ride_type, but for now p+r in data source is rather broken

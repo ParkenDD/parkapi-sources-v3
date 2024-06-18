@@ -109,7 +109,7 @@ class ParkAPISources:
 
             if converter_uid not in converter_classes_by_uid.keys():
                 raise MissingConverterException(
-                    f'Converter {converter_uid} does not exist.'
+                    f"Converter {converter_uid} does not exist."
                 )
 
             self.converter_by_uid[converter_uid] = converter_classes_by_uid[
@@ -120,4 +120,4 @@ class ParkAPISources:
         for converter in self.converter_by_uid.values():
             for config_key in converter.required_config_keys:
                 if self.config_helper.get(config_key) is None:
-                    raise MissingConfigException(f'Config key {config_key} is missing.')
+                    raise MissingConfigException(f"Config key {config_key} is missing.")

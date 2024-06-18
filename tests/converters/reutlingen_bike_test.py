@@ -24,7 +24,7 @@ class ReutlingenPushConverterTest:
     def test_get_static_parking_sites(
         reutlingen_bike_push_converter: ReutlingenBikePushConverter,
     ):
-        with get_data_path('reutlingen_bike.csv').open() as reutlingen_bike_file:
+        with get_data_path("reutlingen_bike.csv").open() as reutlingen_bike_file:
             reutlingen_bike_data = StringIO(reutlingen_bike_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = (
@@ -33,6 +33,6 @@ class ReutlingenPushConverterTest:
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        ), "There should be more valid then invalid parking sites"
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

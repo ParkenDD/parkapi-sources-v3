@@ -24,18 +24,18 @@ class ReutlingenPushConverter(CsvConverter):
     reutlingen_row_validator = DataclassValidator(ReutlingenRowInput)
 
     source_info = SourceInfo(
-        uid='reutlingen',
-        name='Stadt Reutlingen: PKW-Parkplätze',
-        public_url='https://www.reutlingen.de',
+        uid="reutlingen",
+        name="Stadt Reutlingen: PKW-Parkplätze",
+        public_url="https://www.reutlingen.de",
         has_realtime_data=False,
     )
 
     header_mapping: dict[str, str] = {
-        'id': 'uid',
-        'ort': 'name',
-        'Kapazität': 'capacity',
-        'GEOM': 'coordinates',
-        'type': 'type',
+        "id": "uid",
+        "ort": "name",
+        "Kapazität": "capacity",
+        "GEOM": "coordinates",
+        "type": "type",
     }
 
     def handle_csv_string(
@@ -45,7 +45,7 @@ class ReutlingenPushConverter(CsvConverter):
         list[StaticParkingSiteInput | RealtimeParkingSiteInput],
         list[ImportParkingSiteException],
     ]:
-        return self.handle_csv(list(csv.reader(data, dialect='unix', delimiter=',')))
+        return self.handle_csv(list(csv.reader(data, dialect="unix", delimiter=",")))
 
     def handle_csv(
         self, data: list[list]
@@ -71,8 +71,8 @@ class ReutlingenPushConverter(CsvConverter):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get('uid'),
-                        message=f'validation error for {input_dict}: {e.to_dict()}',
+                        parking_site_uid=input_dict.get("uid"),
+                        message=f"validation error for {input_dict}: {e.to_dict()}",
                     ),
                 )
                 continue

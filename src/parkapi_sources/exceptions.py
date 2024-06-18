@@ -23,10 +23,10 @@ class ImportException(Exception):
         self.message = message
 
     def __repr__(self) -> str:
-        return f'{self.__class__.__name__} {self.source_uid}: {self.message}'
+        return f"{self.__class__.__name__} {self.source_uid}: {self.message}"
 
     def __str__(self) -> str:
-        return f'{self.__class__.__name__} {self.source_uid}: {self.message}'
+        return f"{self.__class__.__name__} {self.source_uid}: {self.message}"
 
 
 class ImportSourceException(ImportException):
@@ -41,7 +41,7 @@ class ImportParkingSiteException(ImportException):
         self.parking_site_uid = parking_site_uid
 
     def __repr__(self) -> str:
-        return f'{self.__class__.__name__} {self.source_uid} {self.parking_site_uid}: {self.message}'
+        return f"{self.__class__.__name__} {self.source_uid} {self.parking_site_uid}: {self.message}"
 
     def __str__(self) -> str:
-        return f'{self.__class__.__name__} {self.source_uid} {self.parking_site_uid}: {self.message}'
+        return f"{self.__class__.__name__} {self.source_uid} {self.parking_site_uid}: {self.message}"

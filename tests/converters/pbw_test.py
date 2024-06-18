@@ -25,7 +25,7 @@ if TYPE_CHECKING:
 @pytest.fixture
 def pbw_config_helper(mocked_config_helper: Mock):
     config = {
-        'PARK_API_PBW_API_KEY': 'ffe455aa-7ca9-4281-b5c4-0c7561f9b514',
+        "PARK_API_PBW_API_KEY": "ffe455aa-7ca9-4281-b5c4-0c7561f9b514",
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
         key, default
@@ -43,22 +43,22 @@ class PbwPullConverterTest:
     def test_get_static_parking_sites(
         pbw_pull_converter: PbwPullConverter, requests_mock: Mocker
     ):
-        def generate_response(request: 'Request', context: 'Context'):
-            request_type = request.qs['type'][0]
-            if request_type == 'catalog-city':
-                filename = 'catalog-city.json'
-            elif request_type == 'object-by-city':
+        def generate_response(request: "Request", context: "Context"):
+            request_type = request.qs["type"][0]
+            if request_type == "catalog-city":
+                filename = "catalog-city.json"
+            elif request_type == "object-by-city":
                 filename = f'object-by-city-{request.qs["id"][0]}.json'
             else:
                 return {}
-            json_path = Path(Path(__file__).parent, 'data', 'pbw', filename)
+            json_path = Path(Path(__file__).parent, "data", "pbw", filename)
             with json_path.open() as json_file:
                 json_data = json_file.read()
 
             return json.loads(json_data)
 
         requests_mock.get(
-            'https://www.mypbw.de/api/',
+            "https://www.mypbw.de/api/",
             json=generate_response,
         )
 
@@ -76,13 +76,13 @@ class PbwPullConverterTest:
         pbw_pull_converter: PbwPullConverter, requests_mock: Mocker
     ):
         json_path = Path(
-            Path(__file__).parent, 'data', 'pbw', 'object-dynamic-all.json'
+            Path(__file__).parent, "data", "pbw", "object-dynamic-all.json"
         )
         with json_path.open() as json_file:
             json_data = json_file.read()
 
         requests_mock.get(
-            'https://www.mypbw.de/api/',
+            "https://www.mypbw.de/api/",
             text=json_data,
         )
 

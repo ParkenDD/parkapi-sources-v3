@@ -37,7 +37,7 @@ from tests.util.data_xml_helper import (
 
 
 @pytest.mark.parametrize(
-    'input_tag, expected_output, ensure_array_keys, remote_type_tags, conditional_remote_type_tags, ignore_attributes',
+    "input_tag, expected_output, ensure_array_keys, remote_type_tags, conditional_remote_type_tags, ignore_attributes",
     [
         (
             # simple case

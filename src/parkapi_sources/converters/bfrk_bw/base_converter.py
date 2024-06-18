@@ -50,8 +50,8 @@ class BfrkBasePushConverter(CsvConverter, ABC):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get('ID'),
-                        message=f'validation error for {input_dict}: {e.to_dict()}',
+                        parking_site_uid=input_dict.get("ID"),
+                        message=f"validation error for {input_dict}: {e.to_dict()}",
                     ),
                 )
                 continue

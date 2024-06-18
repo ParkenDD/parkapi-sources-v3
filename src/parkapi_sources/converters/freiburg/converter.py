@@ -25,14 +25,14 @@ from .models import FreiburgFeatureInput
 class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
     freiburg_realtime_feature_validator = DataclassValidator(FreiburgFeatureInput)
     source_info = SourceInfo(
-        uid='freiburg',
-        name='Stadt Freiburg',
-        public_url='https://www.freiburg.de/pb/,Lde/231355.html',
-        source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive?request=getfeature&service=wfs&version=1.1.0&typename=pls'
-        '&outputformat=geojson&srsname=epsg:4326',
-        timezone='Europe/Berlin',
-        attribution_contributor='Stadt Freiburg',
-        attribution_license='dl-de/by-2-0',
+        uid="freiburg",
+        name="Stadt Freiburg",
+        public_url="https://www.freiburg.de/pb/,Lde/231355.html",
+        source_url="https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive?request=getfeature&service=wfs&version=1.1.0&typename=pls"
+        "&outputformat=geojson&srsname=epsg:4326",
+        timezone="Europe/Berlin",
+        attribution_contributor="Stadt Freiburg",
+        attribution_license="dl-de/by-2-0",
         has_realtime_data=True,
     )
 
@@ -101,7 +101,7 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
         except ValidationError as e:
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
-                message=f'Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}',
+                message=f"Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}",
             ) from e
 
         for update_dict in realtime_input.features:
@@ -113,11 +113,11 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=update_dict.get('properties').get(
-                            'obs_parkid'
+                        parking_site_uid=update_dict.get("properties").get(
+                            "obs_parkid"
                         ),
                         message=f'Invalid data at uid {update_dict.get("properties").get("obs_parkid")}: '
-                        f'{e.to_dict()}, data: {update_dict}',
+                        f"{e.to_dict()}, data: {update_dict}",
                     ),
                 )
                 continue

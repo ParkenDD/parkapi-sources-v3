@@ -13,7 +13,7 @@ from validataclass.validators import ListValidator
 
 
 class PointCoordinateTupleValidator(ListValidator):
-    PATTERN = re.compile(r'POINT \(([-+]?\d+\.\d+) ([-+]?\d+\.\d+)\)')
+    PATTERN = re.compile(r"POINT \(([-+]?\d+\.\d+) ([-+]?\d+\.\d+)\)")
 
     def validate(self, input_data: Any, **kwargs) -> list:
         self._ensure_type(input_data, str)
@@ -21,8 +21,8 @@ class PointCoordinateTupleValidator(ListValidator):
 
         if input_match is None:
             raise ValidationError(
-                code='invalid_tuple_input',
-                reason='invalid point coordinate tuple input',
+                code="invalid_tuple_input",
+                reason="invalid point coordinate tuple input",
             )
 
         input_data = [input_match.group(1), input_match.group(2)]
@@ -37,7 +37,7 @@ class DumpedListValidator(ListValidator):
             input_data = json.loads(input_data)
         except JSONDecodeError as e:
             raise ValidationError(
-                code='invalid_json_input', reason=f'invalid JSON input: {e}'
+                code="invalid_json_input", reason=f"invalid JSON input: {e}"
             ) from e
 
         return super().validate(input_data, **kwargs)

@@ -30,8 +30,8 @@ from parkapi_sources.validators import ParsedDateValidator
 
 
 class KarlsruheOpeningStatus(Enum):
-    OPEN = 'Geöffnet'
-    CLOSED = 'Geschlossen'
+    OPEN = "Geöffnet"
+    CLOSED = "Geschlossen"
 
     def to_opening_status(self) -> OpeningStatus:
         return {
@@ -61,7 +61,7 @@ class KarlsruhePropertiesInput:
     betreiber_internet: Optional[str] = Noneable(UrlValidator())
     betreiber_email: Optional[str] = Noneable(EmailValidator())
     betreiber_telefon: Optional[str] = Noneable(StringValidator())
-    stand_parkhausdaten: date = ParsedDateValidator(date_format='%Y-%m-%dZ')
+    stand_parkhausdaten: date = ParsedDateValidator(date_format="%Y-%m-%dZ")
 
     def __post_init__(self):
         if self.max_durchfahrtshoehe == 0:  # 0 is used as None
@@ -83,7 +83,7 @@ class KarlsruheFeatureInput:
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
             capacity=self.properties.gesamte_parkplaetze,
-            address=f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}',
+            address=f"{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}",
             max_height=(
                 None
                 if self.properties.max_durchfahrtshoehe is None
@@ -113,10 +113,10 @@ class KarlsruheFeatureInput:
 
 
 class KarlsruheBikeType(Enum):
-    BIKE_BOX = 'Fahrradbox'
-    STANDS_WITH_ROOF = 'Fahrradabstellanlage überdacht'
-    STANDS = 'Fahrradabstellanlage'
-    STATION = 'Fahrradstation'
+    BIKE_BOX = "Fahrradbox"
+    STANDS_WITH_ROOF = "Fahrradabstellanlage überdacht"
+    STANDS = "Fahrradabstellanlage"
+    STATION = "Fahrradstation"
 
     def to_parking_site_type(self) -> ParkingSiteType:
         return {
@@ -154,7 +154,7 @@ class KarlsruheBikeFeatureInput:
             self.properties.stadtteil,
             self.properties.gemeinde,
         ]
-        address = ', '.join(
+        address = ", ".join(
             [fragment for fragment in address_fragments if fragment is not UnsetValue]
         )
         return StaticParkingSiteInput(
