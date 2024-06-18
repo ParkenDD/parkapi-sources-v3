@@ -21,7 +21,9 @@ from validataclass.exceptions import ValidationError
         ({1: True, 0: False}, 1, True),
     ],
 )
-def test_mapped_boolean_validator_success(mapping: dict, input_data: Any, output_data: bool):
+def test_mapped_boolean_validator_success(
+    mapping: dict, input_data: Any, output_data: bool
+):
     validator = MappedBooleanValidator(mapping=mapping)
 
     assert validator.validate(input_data) is output_data

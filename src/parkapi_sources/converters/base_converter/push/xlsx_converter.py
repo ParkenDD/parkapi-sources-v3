@@ -31,7 +31,10 @@ class XlsxConverter(PushConverter, ABC):
     def handle_xlsx(
         self,
         workbook: Workbook,
-    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    ) -> tuple[
+        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
+        list[ImportParkingSiteException],
+    ]:
         pass
 
     def get_mapping_by_header(self, row: tuple[Cell]) -> dict[str, int]:

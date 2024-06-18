@@ -5,11 +5,19 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 import requests
 from validataclass.exceptions import ValidationError
-from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
+from validataclass.validators import (
+    AnythingValidator,
+    DataclassValidator,
+    ListValidator,
+)
 
 from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .mapper import ApcoaMapper
 from .validators import ApcoaParkingSiteInput
@@ -30,15 +38,21 @@ class ApcoaPullConverter(PullConverter):
         has_realtime_data=False,  # ATM only static data can be called from the API
     )
 
-    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
         parking_site_dicts = self.get_data()
 
-        for parking_site_dict in self.list_validator.validate(parking_site_dicts['Results']):
+        for parking_site_dict in self.list_validator.validate(
+            parking_site_dicts['Results']
+        ):
             try:
-                parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(parking_site_dict)
+                parking_site_input: ApcoaParkingSiteInput = (
+                    self.apcoa_parking_site_validator.validate(parking_site_dict)
+                )
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
@@ -54,13 +68,17 @@ class ApcoaPullConverter(PullConverter):
             )
         return static_parking_site_inputs, static_parking_site_errors
 
-    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(
+        self,
+    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []  # ATM only static data can be called from the API
 
     def get_data(self) -> dict:
         headers: dict[str, str] = {
             'Cache-Control': 'no-cache',
-            'Ocp-Apim-Subscription-Key': self.config_helper.get('PARK_API_APCOA_API_SUBSCRIPTION_KEY'),
+            'Ocp-Apim-Subscription-Key': self.config_helper.get(
+                'PARK_API_APCOA_API_SUBSCRIPTION_KEY'
+            ),
         }
 
         response = requests.get(

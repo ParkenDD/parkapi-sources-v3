@@ -18,7 +18,9 @@ from validataclass.exceptions import ValidationError
         ('%m/%d/%Y', '02/01/2024', date(2024, 2, 1)),
     ],
 )
-def test_parsed_date_validator_success(date_format: str, input_data: Any, output_data: date):
+def test_parsed_date_validator_success(
+    date_format: str, input_data: Any, output_data: date
+):
     validator = ParsedDateValidator(date_format=date_format)
 
     assert validator.validate(input_data) == output_data

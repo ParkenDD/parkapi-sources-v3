@@ -12,10 +12,18 @@ from .validators import BahnParkingSiteCapacityType, BahnParkingSiteInput, NameC
 
 class BahnMapper:
     @staticmethod
-    def map_static_parking_site(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+    def map_static_parking_site(
+        bahn_input: BahnParkingSiteInput,
+    ) -> StaticParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(bahn_input.id),
-            name=next(iter(name_input.name for name_input in bahn_input.name if name_input.context == NameContext.NAME)),
+            name=next(
+                iter(
+                    name_input.name
+                    for name_input in bahn_input.name
+                    if name_input.context == NameContext.NAME
+                )
+            ),
             lat=bahn_input.address.location.latitude,
             lon=bahn_input.address.location.longitude,
             operator_name=bahn_input.operator.name,
@@ -33,6 +41,8 @@ class BahnMapper:
             if capacity_data.type == BahnParkingSiteCapacityType.PARKING:
                 static_parking_site_input.capacity = int(round(capacity_data.total))
             elif capacity_data.type == BahnParkingSiteCapacityType.HANDICAPPED_PARKING:
-                static_parking_site_input.capacity_disabled = int(round(capacity_data.total))
+                static_parking_site_input.capacity_disabled = int(
+                    round(capacity_data.total)
+                )
 
         return static_parking_site_input

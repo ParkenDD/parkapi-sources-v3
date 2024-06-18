@@ -5,11 +5,22 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 import requests
 from validataclass.exceptions import ValidationError
-from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
+from validataclass.validators import (
+    AnythingValidator,
+    DataclassValidator,
+    ListValidator,
+)
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    PullConverter,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .models import PMBWInput
 
@@ -27,11 +38,15 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         p_m_bw_parking_site_inputs, static_parking_site_errors = self._get_data()
 
-        geojson_parking_site_inputs, geojson_parking_site_errors = self._get_static_parking_site_inputs_and_exceptions(
-            source_uid=self.source_info.uid,
+        geojson_parking_site_inputs, geojson_parking_site_errors = (
+            self._get_static_parking_site_inputs_and_exceptions(
+                source_uid=self.source_info.uid,
+            )
         )
 
         static_parking_site_errors += geojson_parking_site_errors
@@ -39,9 +54,13 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_inputs_by_uid: dict[str, StaticParkingSiteInput] = {}
         for p_m_bw_parking_site_input in p_m_bw_parking_site_inputs:
-            static_parking_site_input = p_m_bw_parking_site_input.to_static_parking_site()
+            static_parking_site_input = (
+                p_m_bw_parking_site_input.to_static_parking_site()
+            )
             static_parking_site_inputs.append(static_parking_site_input)
-            static_parking_site_inputs_by_uid[p_m_bw_parking_site_input.id] = static_parking_site_input
+            static_parking_site_inputs_by_uid[p_m_bw_parking_site_input.id] = (
+                static_parking_site_input
+            )
 
         for geojson_parking_site_input in geojson_parking_site_inputs:
             # If the uid is not known in our static data: ignore the realtime data
@@ -49,15 +68,21 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
                 continue
 
             # Extend API data with static GeoJSON data
-            static_parking_site_input = static_parking_site_inputs_by_uid[geojson_parking_site_input.uid]
+            static_parking_site_input = static_parking_site_inputs_by_uid[
+                geojson_parking_site_input.uid
+            ]
             static_parking_site_input.name = geojson_parking_site_input.name
             static_parking_site_input.address = geojson_parking_site_input.address
-            static_parking_site_input.description = geojson_parking_site_input.description
+            static_parking_site_input.description = (
+                geojson_parking_site_input.description
+            )
             static_parking_site_input.type = geojson_parking_site_input.type
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(
+        self,
+    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
         p_m_bw_inputs, realtime_parking_site_errors = self._get_data()
@@ -73,7 +98,9 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         response = requests.get(
             self.source_info.source_url,
-            headers={'Authorization': f'Bearer {self.config_helper.get("PARK_API_P_M_BW_TOKEN")}'},
+            headers={
+                'Authorization': f'Bearer {self.config_helper.get("PARK_API_P_M_BW_TOKEN")}'
+            },
             timeout=60,
         )
 

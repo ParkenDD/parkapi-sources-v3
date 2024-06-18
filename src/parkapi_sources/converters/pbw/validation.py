@@ -73,7 +73,9 @@ class PbwParkingSiteObjectInput:
     land: str = StringValidator()
     strasse: str = StringValidator()
     art_lang: PbwParkingSiteType = EnumValidator(PbwParkingSiteType)
-    art_kurz: PbwParkingSiteShortType = EnumValidator(PbwParkingSiteShortType)  # TODO: Meaning?
+    art_kurz: PbwParkingSiteShortType = EnumValidator(
+        PbwParkingSiteShortType
+    )  # TODO: Meaning?
     # id_extern  # TODO: ugly typing: bool and str
 
 
@@ -214,7 +216,9 @@ class PbwParkingSitePaymentPlaceInput:
 @validataclass
 class PbwParkingSiteTariffInput:
     beschreibung: str = StringValidator()
-    taktung: str = StringValidator()  # TODO: any way of make a nice output out of that?!
+    taktung: str = (
+        StringValidator()
+    )  # TODO: any way of make a nice output out of that?!
     gueltig_von: time = TimeValidator()
     gueltig_bis: time = TimeValidator()
     gueltig_montag: bool = BooleanValidator()
@@ -257,8 +261,12 @@ class PbwParkingSiteDetailInput:
     id: int = IntegerValidator(allow_strings=True)
     objekt: PbwParkingSiteObjectInput = DataclassValidator(PbwParkingSiteObjectInput)
     # dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(PbwRealtimeParkingSiteInput)
-    position: PbwParkingSitePositionInput = DataclassValidator(PbwParkingSitePositionInput)
-    stellplaetze: PbwParkingSitePlacesInput = DataclassValidator(PbwParkingSitePlacesInput)
+    position: PbwParkingSitePositionInput = DataclassValidator(
+        PbwParkingSitePositionInput
+    )
+    stellplaetze: PbwParkingSitePlacesInput = DataclassValidator(
+        PbwParkingSitePlacesInput
+    )
     typ: PbwParkingSiteType = DataclassValidator(PbwParkingSiteType)
     ausstattung: PbwParkingSiteSetupInput = DataclassValidator(PbwParkingSiteSetupInput)
     # elektroladestation: PbwParkingSiteChargeStationParameterInput = DataclassValidator(PbwParkingSiteChargeStationParameterInput)
@@ -276,4 +284,6 @@ class PbwParkingSiteDetailInput:
 @validataclass
 class PbwRealtimeInput:
     id: int = IntegerValidator(allow_strings=True)
-    dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(PbwRealtimeParkingSiteInput)
+    dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(
+        PbwRealtimeParkingSiteInput
+    )

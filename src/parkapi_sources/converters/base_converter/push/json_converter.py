@@ -15,5 +15,8 @@ class JsonConverter(PushConverter, ABC):
     def handle_json(
         self,
         data: dict | list,
-    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    ) -> tuple[
+        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
+        list[ImportParkingSiteException],
+    ]:
         pass

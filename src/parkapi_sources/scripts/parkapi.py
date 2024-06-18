@@ -11,7 +11,11 @@ from typing import Optional
 
 from parkapi_sources import ParkAPISources
 from parkapi_sources.converters.base_converter.pull import PullConverter
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 from parkapi_sources.util import DefaultJSONEncoder
 
 
@@ -21,10 +25,29 @@ def main():
         description='This library helps to get static and realtime parking site data. Outputs all sources to stdout per default. Uses '
         'env vars for config.',
     )
-    parser.add_argument('-s', '--source', dest='sources', nargs='+', help='Limit to specific sources.')
-    parser.add_argument('-t', '--type', dest='output_type', choices=['json', 'geojson'], default='json', help='Output format.')
-    parser.add_argument('-d', '--directory', dest='output_directory', help='Directory where data should be saved in one file per source.')
-    parser.add_argument('-f', '--file', dest='output_file', help='Single File where all data should be saved in one file.')
+    parser.add_argument(
+        '-s', '--source', dest='sources', nargs='+', help='Limit to specific sources.'
+    )
+    parser.add_argument(
+        '-t',
+        '--type',
+        dest='output_type',
+        choices=['json', 'geojson'],
+        default='json',
+        help='Output format.',
+    )
+    parser.add_argument(
+        '-d',
+        '--directory',
+        dest='output_directory',
+        help='Directory where data should be saved in one file per source.',
+    )
+    parser.add_argument(
+        '-f',
+        '--file',
+        dest='output_file',
+        help='Single File where all data should be saved in one file.',
+    )
     parser.add_argument(
         '-gtd',
         '--geojson-template-directory',
@@ -53,21 +76,33 @@ def main():
             raise ValueError('GeoJSON template directory has be an directory.')
 
     if output_file_path is not None and output_directory is not None:
-        raise ValueError('output directory and output file cannot be set at the same time.')
+        raise ValueError(
+            'output directory and output file cannot be set at the same time.'
+        )
 
     # Load config variables from environment
     config = dict(os.environ)
     if geojson_template_directory is not None:
         config['STATIC_GEOJSON_BASE_PATH'] = geojson_template_directory
 
-    parkapi_sources = ParkAPISources(config=config, converter_uids=args.sources, no_push_converter=True)
+    parkapi_sources = ParkAPISources(
+        config=config, converter_uids=args.sources, no_push_converter=True
+    )
 
     # Check if all credentials are given by env vars.
     parkapi_sources.check_credentials()
 
     # Initiate result dict. We collect all info in one dict because we decide later if we output it to stdout, to a single file or to
     # multiple files. The list has always two entries, one first is a StaticParkingSiteInput, second an Optional[RealtimeParkingSiteInput].
-    result: dict[str, tuple[SourceInfo, dict[str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]]]] = {}
+    result: dict[
+        str,
+        tuple[
+            SourceInfo,
+            dict[
+                str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]
+            ],
+        ],
+    ] = {}
     for source_uid, converter in parkapi_sources.converter_by_uid.items():
         result[source_uid] = (converter.source_info, {})
 
@@ -75,23 +110,34 @@ def main():
     for source_uid, (_, source_results) in result.items():
         converter: PullConverter = parkapi_sources.converter_by_uid[source_uid]  # type: ignore
 
-        static_parking_site_inputs, static_parking_site_errors = converter.get_static_parking_sites()
+        static_parking_site_inputs, static_parking_site_errors = (
+            converter.get_static_parking_sites()
+        )
         for static_parking_site_input in static_parking_site_inputs:
-            source_results[static_parking_site_input.uid] = [static_parking_site_input, None]
+            source_results[static_parking_site_input.uid] = [
+                static_parking_site_input,
+                None,
+            ]
 
-        realtime_parking_site_inputs, realtime_parking_site_errors = converter.get_realtime_parking_sites()
+        realtime_parking_site_inputs, realtime_parking_site_errors = (
+            converter.get_realtime_parking_sites()
+        )
         for realtime_parking_site_input in realtime_parking_site_inputs:
             # If the realtime uid does not have a corresponding static dataset: ignore the realtime dataset
             if realtime_parking_site_input.uid not in result[source_uid][1]:
                 continue
-            source_results[realtime_parking_site_input.uid][1] = realtime_parking_site_input
+            source_results[realtime_parking_site_input.uid][
+                1
+            ] = realtime_parking_site_input
 
     if args.output_type == 'geojson':
         if output_directory is None:
             # If we don't have an output directory, we have to create a single GeoJSON file with all features
             output_geojson_features: list[dict] = []
             for source_info, source_results in result.values():
-                output_geojson_features += source_results_to_geojson_feature(source_info, source_results)
+                output_geojson_features += source_results_to_geojson_feature(
+                    source_info, source_results
+                )
 
             output_geojson = json_dump(geojson_collection(output_geojson_features))
             if output_file_path is None:
@@ -104,7 +150,9 @@ def main():
         # If we have an output directory, we have to split the GeoJSON data up in separate files
         for source_info, source_results in result.values():
             geojson_file_path = Path(output_directory, f'{source_info.uid}.geojson')
-            output_geojson_features = source_results_to_geojson_feature(source_info, source_results)
+            output_geojson_features = source_results_to_geojson_feature(
+                source_info, source_results
+            )
             output_geojson = json_dump(geojson_collection(output_geojson_features))
             with geojson_file_path.open('w') as geojson_file:
                 geojson_file.write(output_geojson)
@@ -142,11 +190,18 @@ def parking_site_inputs_to_geojson_feature(
     return {
         'geometry': {
             'type': 'Point',
-            'coordinates': [float(static_parking_site_input.lon), float(static_parking_site_input.lat)],
+            'coordinates': [
+                float(static_parking_site_input.lon),
+                float(static_parking_site_input.lat),
+            ],
         },
         'properties': {
             **static_parking_site_input.to_dict(),
-            **({} if realtime_parking_site_input is None else realtime_parking_site_input.to_dict()),
+            **(
+                {}
+                if realtime_parking_site_input is None
+                else realtime_parking_site_input.to_dict()
+            ),
             'source': source_info.to_dict(),
         },
         'type': 'Feature',
@@ -166,10 +221,15 @@ def geojson_collection(features: list[dict]) -> dict:
 
 def source_results_to_geojson_feature(
     source_info: SourceInfo,
-    source_results: dict[str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]],
+    source_results: dict[
+        str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]
+    ],
 ) -> list[dict]:
     output_geojson_features: list[dict] = []
-    for static_parking_site_input, realtime_parking_site_input in source_results.values():
+    for (
+        static_parking_site_input,
+        realtime_parking_site_input,
+    ) in source_results.values():
         output_geojson_features.append(
             parking_site_inputs_to_geojson_feature(
                 source_info=source_info,
@@ -183,7 +243,9 @@ def source_results_to_geojson_feature(
 
 def source_results_to_dict(
     source_info: SourceInfo,
-    source_results: dict[str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]],
+    source_results: dict[
+        str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]
+    ],
 ) -> dict[str, dict]:
     return {
         'source': source_info.to_dict(),
@@ -192,10 +254,15 @@ def source_results_to_dict(
 
 
 def source_results_to_parking_site_dicts(
-    source_results: dict[str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]],
+    source_results: dict[
+        str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]
+    ],
 ) -> list[dict]:
     output_json_items: list[dict] = []
-    for static_parking_site_input, realtime_parking_site_input in source_results.values():
+    for (
+        static_parking_site_input,
+        realtime_parking_site_input,
+    ) in source_results.values():
         output_json_item = static_parking_site_input.to_dict()
 
         if realtime_parking_site_input is not None:

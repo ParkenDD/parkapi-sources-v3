@@ -127,7 +127,9 @@ class BahnParkingSiteInput:
     type: BahnTypeInput = DataclassValidator(BahnTypeInput)
     operator: BahnOperatorInput = DataclassValidator(BahnOperatorInput)
     address: BahnAdressInput = DataclassValidator(BahnAdressInput)
-    capacity: list[BahnCapacityInput] = ListValidator(DataclassValidator(BahnCapacityInput))
+    capacity: list[BahnCapacityInput] = ListValidator(
+        DataclassValidator(BahnCapacityInput)
+    )
     access: BahnAccessInput = DataclassValidator(BahnAccessInput)
     # TODO: ignored multible attributes which do not matter so far
 

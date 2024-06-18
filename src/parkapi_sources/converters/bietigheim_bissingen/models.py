@@ -29,7 +29,9 @@ class BietigheimBissingenOpeningStatus(Enum):
 @validataclass
 class BietigheimBissingenInput:
     Name: str = StringValidator()
-    OpeningState: BietigheimBissingenOpeningStatus = EnumValidator(BietigheimBissingenOpeningStatus)
+    OpeningState: BietigheimBissingenOpeningStatus = EnumValidator(
+        BietigheimBissingenOpeningStatus
+    )
     Capacity: int = IntegerValidator(allow_strings=True)
     OccupiedSites: int = IntegerValidator(allow_strings=True)
     Timestamp: datetime = TimestampDateTimeValidator(allow_strings=True, divisor=1000)

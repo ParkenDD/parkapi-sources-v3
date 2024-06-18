@@ -20,7 +20,10 @@ class PointCoordinateTupleValidator(ListValidator):
         input_match = re.match(self.PATTERN, input_data)
 
         if input_match is None:
-            raise ValidationError(code='invalid_tuple_input', reason='invalid point coordinate tuple input')
+            raise ValidationError(
+                code='invalid_tuple_input',
+                reason='invalid point coordinate tuple input',
+            )
 
         input_data = [input_match.group(1), input_match.group(2)]
 
@@ -33,6 +36,8 @@ class DumpedListValidator(ListValidator):
         try:
             input_data = json.loads(input_data)
         except JSONDecodeError as e:
-            raise ValidationError(code='invalid_json_input', reason=f'invalid JSON input: {e}') from e
+            raise ValidationError(
+                code='invalid_json_input', reason=f'invalid JSON input: {e}'
+            ) from e
 
         return super().validate(input_data, **kwargs)

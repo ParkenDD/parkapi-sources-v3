@@ -10,9 +10,18 @@ from typing import Optional
 
 import pyproj
 from validataclass.dataclasses import Default, validataclass
-from validataclass.validators import BooleanValidator, DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
+from validataclass.validators import (
+    BooleanValidator,
+    DataclassValidator,
+    EnumValidator,
+    IntegerValidator,
+    Noneable,
+    StringValidator,
+)
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
+from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import (
+    GeojsonFeatureInput,
+)
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, SupervisionType
 from parkapi_sources.validators import ExcelNoneable
@@ -84,7 +93,9 @@ class RadvisFeaturePropertiesInput:
     externe_id: Optional[str] = Noneable(StringValidator())
     zustaendig: Optional[str] = Noneable(StringValidator())
     # Use ExcelNoneable because zustaendig_orga_typ can be emptystring
-    zustaendig_orga_typ: Optional[OrganizationType] = ExcelNoneable(EnumValidator(OrganizationType))
+    zustaendig_orga_typ: Optional[OrganizationType] = ExcelNoneable(
+        EnumValidator(OrganizationType)
+    )
     anzahl_stellplaetze: int = IntegerValidator()
     anzahl_schliessfaecher: Optional[int] = Noneable(IntegerValidator())
     anzahl_lademoeglichkeiten: Optional[int] = Noneable(IntegerValidator())
@@ -96,8 +107,12 @@ class RadvisFeaturePropertiesInput:
     gebuehren_pro_tag: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_monat: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_jahr: Optional[int] = Noneable(IntegerValidator())
-    beschreibung: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
-    weitere_information: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
+    beschreibung: Optional[str] = Noneable(StringValidator(multiline=True)), Default(
+        None
+    )
+    weitere_information: Optional[str] = Noneable(
+        StringValidator(multiline=True)
+    ), Default(None)
     status: StatusType = EnumValidator(StatusType)
 
     def to_dict(self) -> dict:
@@ -129,9 +144,13 @@ class RadvisFeaturePropertiesInput:
 
 @validataclass
 class RadvisFeatureInput(GeojsonFeatureInput):
-    properties: RadvisFeaturePropertiesInput = DataclassValidator(RadvisFeaturePropertiesInput)
+    properties: RadvisFeaturePropertiesInput = DataclassValidator(
+        RadvisFeaturePropertiesInput
+    )
 
-    def to_static_parking_site_input_with_proj(self, static_data_updated_at: datetime, proj: pyproj.Proj) -> StaticParkingSiteInput:
+    def to_static_parking_site_input_with_proj(
+        self, static_data_updated_at: datetime, proj: pyproj.Proj
+    ) -> StaticParkingSiteInput:
         result = self.to_static_parking_site_input(static_data_updated_at)
 
         coordinates = proj(float(result.lon), float(result.lat), inverse=True)

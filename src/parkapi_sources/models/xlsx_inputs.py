@@ -30,8 +30,12 @@ class ExcelStaticParkingSiteInput(StaticParkingSiteInput):
     uid: str = NumberCastingStringValidator(min_length=1, max_length=256)
     has_lighting: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator())
     has_fee: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator())
-    has_realtime_data: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator(), default=False)
-    max_stay: Optional[int] = ExcelNoneable(GermanDurationIntegerValidator()), Default(None)
+    has_realtime_data: Optional[bool] = ExcelNoneable(
+        ExcelMappedBooleanValidator(), default=False
+    )
+    max_stay: Optional[int] = ExcelNoneable(GermanDurationIntegerValidator()), Default(
+        None
+    )
 
     capacity: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
     capacity_disabled: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
@@ -45,15 +49,33 @@ class ExcelStaticParkingSiteInput(StaticParkingSiteInput):
 
 @validataclass
 class ExcelOpeningTimeInput(ValidataclassMixin):
-    opening_hours_is_24_7: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator()), Default(None)
-    opening_hours_weekday_begin: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_weekday_end: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_saturday_begin: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_saturday_end: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_sunday_begin: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_sunday_end: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_public_holiday_begin: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
-    opening_hours_public_holiday_end: Optional[time] = ExcelNoneable(ExcelTimeValidator()), Default(None)
+    opening_hours_is_24_7: Optional[bool] = ExcelNoneable(
+        ExcelMappedBooleanValidator()
+    ), Default(None)
+    opening_hours_weekday_begin: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_weekday_end: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_saturday_begin: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_saturday_end: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_sunday_begin: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_sunday_end: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_public_holiday_begin: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
+    opening_hours_public_holiday_end: Optional[time] = ExcelNoneable(
+        ExcelTimeValidator()
+    ), Default(None)
 
     def get_osm_opening_hours(self) -> str:
         if self.opening_hours_is_24_7 is True:
@@ -72,7 +94,10 @@ class ExcelOpeningTimeInput(ValidataclassMixin):
             opening_hours_fragments.append(
                 f'Su {self.opening_hours_sunday_begin.strftime("%H:%M")}-{self.opening_hours_sunday_end.strftime("%H:%M")}',
             )
-        if self.opening_hours_public_holiday_begin and self.opening_hours_public_holiday_end:
+        if (
+            self.opening_hours_public_holiday_begin
+            and self.opening_hours_public_holiday_end
+        ):
             opening_hours_fragments.append(
                 f'PH {self.opening_hours_public_holiday_begin.strftime("%H:%M")}-{self.opening_hours_public_holiday_end.strftime("%H:%M")}',
             )

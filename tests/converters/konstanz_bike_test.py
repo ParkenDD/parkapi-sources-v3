@@ -13,17 +13,23 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 
 @pytest.fixture
-def konstanz_bike_push_converter(mocked_config_helper: Mock) -> KonstanzBikePushConverter:
+def konstanz_bike_push_converter(
+    mocked_config_helper: Mock,
+) -> KonstanzBikePushConverter:
     return KonstanzBikePushConverter(config_helper=mocked_config_helper)
 
 
 class KonstanzBikePushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(konstanz_bike_push_converter: KonstanzBikePushConverter):
+    def test_get_static_parking_sites(
+        konstanz_bike_push_converter: KonstanzBikePushConverter,
+    ):
         with get_data_path('konstanz_bike.csv').open() as konstanz_bike_file:
             konstanz_bike_data = StringIO(konstanz_bike_file.read())
 
-        static_parking_site_inputs, import_parking_site_exceptions = konstanz_bike_push_converter.handle_csv_string(konstanz_bike_data)
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            konstanz_bike_push_converter.handle_csv_string(konstanz_bike_data)
+        )
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions

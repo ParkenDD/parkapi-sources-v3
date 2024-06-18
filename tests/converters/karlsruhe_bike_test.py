@@ -10,7 +10,10 @@ import pytest
 from parkapi_sources.converters import KarlsruheBikePullConverter
 from requests_mock import Mocker
 
-from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
+from tests.converters.helper import (
+    validate_realtime_parking_site_inputs,
+    validate_static_parking_site_inputs,
+)
 
 
 @pytest.fixture
@@ -25,14 +28,21 @@ def requests_mock_karlsruhe_bike(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def karlsruhe_bike_pull_converter(mocked_config_helper: Mock) -> KarlsruheBikePullConverter:
+def karlsruhe_bike_pull_converter(
+    mocked_config_helper: Mock,
+) -> KarlsruheBikePullConverter:
     return KarlsruheBikePullConverter(config_helper=mocked_config_helper)
 
 
 class KarlsruheBikePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(karlsruhe_bike_pull_converter: KarlsruheBikePullConverter, requests_mock_karlsruhe_bike: Mocker):
-        static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_static_parking_sites()
+    def test_get_static_parking_sites(
+        karlsruhe_bike_pull_converter: KarlsruheBikePullConverter,
+        requests_mock_karlsruhe_bike: Mocker,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_bike_pull_converter.get_static_parking_sites()
+        )
 
         assert len(static_parking_site_inputs) == 154
         # Lots of missing capacities
@@ -41,8 +51,13 @@ class KarlsruheBikePullConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(karlsruhe_bike_pull_converter: KarlsruheBikePullConverter, requests_mock_karlsruhe_bike: Mocker):
-        realtime_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_realtime_parking_sites()
+    def test_get_realtime_parking_sites(
+        karlsruhe_bike_pull_converter: KarlsruheBikePullConverter,
+        requests_mock_karlsruhe_bike: Mocker,
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_bike_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 0
         assert len(import_parking_site_exceptions) == 0

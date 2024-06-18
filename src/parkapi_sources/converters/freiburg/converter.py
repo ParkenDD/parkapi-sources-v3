@@ -7,9 +7,17 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    GeojsonInput,
+    PullConverter,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .models import FreiburgFeatureInput
 
@@ -28,17 +36,25 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs, import_parking_site_exceptions = self._get_static_parking_site_inputs_and_exceptions(
-            source_uid=self.source_info.uid,
+    def get_static_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            self._get_static_parking_site_inputs_and_exceptions(
+                source_uid=self.source_info.uid,
+            )
         )
 
-        realtime_freiburg_inputs, import_realtime_parking_site_exceptions = self._get_raw_realtime_parking_sites()
+        realtime_freiburg_inputs, import_realtime_parking_site_exceptions = (
+            self._get_raw_realtime_parking_sites()
+        )
         import_parking_site_exceptions += import_realtime_parking_site_exceptions
 
         static_parking_site_inputs_by_uid: dict[str, StaticParkingSiteInput] = {}
         for static_parking_site_input in static_parking_site_inputs:
-            static_parking_site_inputs_by_uid[static_parking_site_input.uid] = static_parking_site_input
+            static_parking_site_inputs_by_uid[static_parking_site_input.uid] = (
+                static_parking_site_input
+            )
 
         for realtime_freiburg_input in realtime_freiburg_inputs:
             # If the uid is not known in our static data: ignore the realtime data
@@ -53,17 +69,25 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
-    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(
+        self,
+    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
-        realtime_freiburg_inputs, import_parking_site_exceptions = self._get_raw_realtime_parking_sites()
+        realtime_freiburg_inputs, import_parking_site_exceptions = (
+            self._get_raw_realtime_parking_sites()
+        )
 
         for realtime_freiburg_input in realtime_freiburg_inputs:
-            realtime_parking_site_inputs.append(realtime_freiburg_input.to_realtime_parking_site_input())
+            realtime_parking_site_inputs.append(
+                realtime_freiburg_input.to_realtime_parking_site_input()
+            )
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
 
-    def _get_raw_realtime_parking_sites(self) -> tuple[list[FreiburgFeatureInput], list[ImportParkingSiteException]]:
+    def _get_raw_realtime_parking_sites(
+        self,
+    ) -> tuple[list[FreiburgFeatureInput], list[ImportParkingSiteException]]:
         realtime_freiburg_inputs: list[FreiburgFeatureInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
@@ -71,7 +95,9 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
         response_data = response.json()
 
         try:
-            realtime_input: GeojsonInput = self.geojson_validator.validate(response_data)
+            realtime_input: GeojsonInput = self.geojson_validator.validate(
+                response_data
+            )
         except ValidationError as e:
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
@@ -80,12 +106,16 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         for update_dict in realtime_input.features:
             try:
-                realtime_freiburg_inputs.append(self.freiburg_realtime_feature_validator.validate(update_dict))
+                realtime_freiburg_inputs.append(
+                    self.freiburg_realtime_feature_validator.validate(update_dict)
+                )
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=update_dict.get('properties').get('obs_parkid'),
+                        parking_site_uid=update_dict.get('properties').get(
+                            'obs_parkid'
+                        ),
                         message=f'Invalid data at uid {update_dict.get("properties").get("obs_parkid")}: '
                         f'{e.to_dict()}, data: {update_dict}',
                     ),

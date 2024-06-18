@@ -51,7 +51,9 @@ class KarlsruhePropertiesInput:
     parkhaus_strasse: str = StringValidator()
     parkhaus_plz: str = StringValidator()
     parkhaus_gemeinde: str = StringValidator()
-    oeffnungsstatus: Optional[KarlsruheOpeningStatus] = Noneable(EnumValidator(KarlsruheOpeningStatus))
+    oeffnungsstatus: Optional[KarlsruheOpeningStatus] = Noneable(
+        EnumValidator(KarlsruheOpeningStatus)
+    )
     bemerkung: Optional[str] = Noneable(StringValidator())
     parkhaus_internet: Optional[str] = Noneable(UrlValidator())
     parkhaus_telefon: Optional[str] = Noneable(StringValidator())
@@ -69,7 +71,9 @@ class KarlsruhePropertiesInput:
 @validataclass
 class KarlsruheFeatureInput:
     id: str = StringValidator()
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    geometry: GeojsonFeatureGeometryInput = DataclassValidator(
+        GeojsonFeatureGeometryInput
+    )
     properties: KarlsruhePropertiesInput = DataclassValidator(KarlsruhePropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
@@ -80,7 +84,11 @@ class KarlsruheFeatureInput:
             lon=self.geometry.coordinates[0],
             capacity=self.properties.gesamte_parkplaetze,
             address=f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}',
-            max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
+            max_height=(
+                None
+                if self.properties.max_durchfahrtshoehe is None
+                else int(self.properties.max_durchfahrtshoehe * 100)
+            ),
             public_url=self.properties.parkhaus_internet,
             static_data_updated_at=datetime.combine(self.properties.stand_parkhausdaten, time(), tzinfo=timezone.utc),
             has_realtime_data=True,
@@ -133,12 +141,22 @@ class KarlsruheBikePropertiesInput:
 @validataclass
 class KarlsruheBikeFeatureInput:
     id: str = StringValidator()
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
-    properties: KarlsruheBikePropertiesInput = DataclassValidator(KarlsruheBikePropertiesInput)
+    geometry: GeojsonFeatureGeometryInput = DataclassValidator(
+        GeojsonFeatureGeometryInput
+    )
+    properties: KarlsruheBikePropertiesInput = DataclassValidator(
+        KarlsruheBikePropertiesInput
+    )
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        address_fragments = [self.properties.standort, self.properties.stadtteil, self.properties.gemeinde]
-        address = ', '.join([fragment for fragment in address_fragments if fragment is not UnsetValue])
+        address_fragments = [
+            self.properties.standort,
+            self.properties.stadtteil,
+            self.properties.gemeinde,
+        ]
+        address = ', '.join(
+            [fragment for fragment in address_fragments if fragment is not UnsetValue]
+        )
         return StaticParkingSiteInput(
             uid=str(self.id),
             name=self.properties.standort,
@@ -147,7 +165,8 @@ class KarlsruheBikeFeatureInput:
             capacity=self.properties.stellplaetze,
             address=address,
             public_url=self.properties.link,
-            is_covered=self.properties.art == KarlsruheBikeType.STANDS_WITH_ROOF or UnsetValue,
+            is_covered=self.properties.art == KarlsruheBikeType.STANDS_WITH_ROOF
+            or UnsetValue,
             description=self.properties.bemerkung,
             static_data_updated_at=datetime.now(timezone.utc),
             type=self.properties.art.to_parking_site_type(),

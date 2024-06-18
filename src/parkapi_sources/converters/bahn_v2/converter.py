@@ -9,7 +9,11 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .mapper import BahnMapper
 from .validators import BahnParkingSiteInput
@@ -17,7 +21,10 @@ from .validators import BahnParkingSiteInput
 
 class BahnV2PullConverter(PullConverter):
     _base_url = 'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2'
-    required_config_keys = ['PARK_API_BAHN_API_CLIENT_ID', 'PARK_API_BAHN_API_CLIENT_SECRET']
+    required_config_keys = [
+        'PARK_API_BAHN_API_CLIENT_ID',
+        'PARK_API_BAHN_API_CLIENT_SECRET',
+    ]
 
     mapper = BahnMapper()
     bahn_parking_site_validator = DataclassValidator(BahnParkingSiteInput)
@@ -29,7 +36,9 @@ class BahnV2PullConverter(PullConverter):
         has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
     )
 
-    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
@@ -37,7 +46,9 @@ class BahnV2PullConverter(PullConverter):
 
         for parking_site_dict in parking_site_dicts.get('_embedded', []):
             try:
-                parking_site_input: BahnParkingSiteInput = self.bahn_parking_site_validator.validate(parking_site_dict)
+                parking_site_input: BahnParkingSiteInput = (
+                    self.bahn_parking_site_validator.validate(parking_site_dict)
+                )
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
@@ -53,8 +64,13 @@ class BahnV2PullConverter(PullConverter):
             )
         return static_parking_site_inputs, static_parking_site_errors
 
-    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
-        return [], []  # ATM it's impossible to get realtime data due rate limit restrictions
+    def get_realtime_parking_sites(
+        self,
+    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+        return (
+            [],
+            [],
+        )  # ATM it's impossible to get realtime data due rate limit restrictions
 
     def get_data(self) -> dict:
         headers: dict[str, str] = {

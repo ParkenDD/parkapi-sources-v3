@@ -8,7 +8,12 @@ from enum import Enum
 from typing import Optional
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import EnumValidator, IntegerValidator, NumericValidator, StringValidator
+from validataclass.validators import (
+    EnumValidator,
+    IntegerValidator,
+    NumericValidator,
+    StringValidator,
+)
 
 from parkapi_sources.models.enums import ParkingSiteType
 from parkapi_sources.validators import ExcelNoneable, MappedBooleanValidator
@@ -37,7 +42,11 @@ class PforzheimInput:
     lon: Decimal = NumericValidator(min_value=7, max_value=10)
     capacity: int = IntegerValidator()
     quantitySpacesReservedForWomen: Optional[int] = ExcelNoneable(IntegerValidator())
-    quantitySpacesReservedForMobilityImpededPerson: Optional[int] = ExcelNoneable(IntegerValidator())
+    quantitySpacesReservedForMobilityImpededPerson: Optional[int] = ExcelNoneable(
+        IntegerValidator()
+    )
     securityInformation: str = StringValidator(multiline=True)
     feeInformation: str = StringValidator(multiline=True)
-    hasOpeningHours24h: bool = MappedBooleanValidator(mapping={'wahr': True, 'falsch': False})
+    hasOpeningHours24h: bool = MappedBooleanValidator(
+        mapping={'wahr': True, 'falsch': False}
+    )

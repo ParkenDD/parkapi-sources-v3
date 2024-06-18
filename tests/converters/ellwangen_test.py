@@ -20,9 +20,13 @@ def ellwangen_push_converter(mocked_config_helper: Mock) -> EllwangenPushConvert
 class EllwangenPushConverterTest:
     @staticmethod
     def test_get_static_parking_sites(ellwangen_push_converter: EllwangenPushConverter):
-        workbook = load_workbook(filename=str(get_data_path('ellwangen.xlsx').absolute()))
+        workbook = load_workbook(
+            filename=str(get_data_path('ellwangen.xlsx').absolute())
+        )
 
-        static_parking_site_inputs, import_parking_site_exceptions = ellwangen_push_converter.handle_xlsx(workbook)
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            ellwangen_push_converter.handle_xlsx(workbook)
+        )
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions

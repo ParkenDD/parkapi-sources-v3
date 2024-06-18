@@ -26,13 +26,17 @@ class PforzheimPushConverter(JsonConverter):
         has_realtime_data=False,
     )
 
-    def handle_json(self, data: dict | list) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def handle_json(
+        self, data: dict | list
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
         for input_dict in data:
             try:
-                input_data: PforzheimInput = self.pforzheim_validator.validate(input_dict)
+                input_data: PforzheimInput = self.pforzheim_validator.validate(
+                    input_dict
+                )
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
@@ -54,7 +58,11 @@ class PforzheimPushConverter(JsonConverter):
                 capacity_woman=input_data.quantitySpacesReservedForWomen,
                 capacity_disabled=input_data.quantitySpacesReservedForMobilityImpededPerson,
                 fee_description=input_data.feeInformation.replace('\n', ', '),
-                supervision_type=SupervisionType.YES if 'ja' in input_data.securityInformation.lower() else False,
+                supervision_type=(
+                    SupervisionType.YES
+                    if 'ja' in input_data.securityInformation.lower()
+                    else False
+                ),
                 opening_hours='24/7' if input_data.hasOpeningHours24h else None,
                 static_data_updated_at=datetime.now(tz=timezone.utc),
             )

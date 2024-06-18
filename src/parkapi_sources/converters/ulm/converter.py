@@ -8,9 +8,17 @@ from typing import Optional
 
 from bs4.element import Tag
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, PullScraperMixin, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    PullConverter,
+    PullScraperMixin,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 
 class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
@@ -24,10 +32,16 @@ class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        return self._get_static_parking_site_inputs_and_exceptions(source_uid=self.source_info.uid)
+    def get_static_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        return self._get_static_parking_site_inputs_and_exceptions(
+            source_uid=self.source_info.uid
+        )
 
-    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(
+        self,
+    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return self._get_scraped_realtime_parking_site_inputs_and_exceptions()
 
     def get_realtime_tags_and_params(self) -> tuple[list[Tag], dict]:
@@ -39,10 +53,14 @@ class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
     def realtime_tag_to_dict(self, tag: Tag, **kwargs) -> Optional[dict]:
         realtime_parking_site_dict = {
             'realtime_data_updated_at': datetime.now(tz=timezone.utc).isoformat(),
-            'uid': tag.find('a', class_='stretched-link').attrs.get('href').split('/')[-1],
+            'uid': tag.find('a', class_='stretched-link')
+            .attrs.get('href')
+            .split('/')[-1],
         }
 
-        parking_data = tag.find('div', class_='counter-text').get_text().strip().split(' / ')
+        parking_data = (
+            tag.find('div', class_='counter-text').get_text().strip().split(' / ')
+        )
         realtime_parking_site_dict['realtime_capacity'] = int(parking_data[1])
         if parking_data[0].strip() == '?':
             realtime_parking_site_dict['realtime_free_capacity'] = None

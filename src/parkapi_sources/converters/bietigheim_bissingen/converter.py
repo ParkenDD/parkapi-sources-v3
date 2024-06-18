@@ -13,17 +13,29 @@ from io import StringIO
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    PullConverter,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .models import BietigheimBissingenInput
 
 
 class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
     _imap_host: str = 'imap.strato.de'
-    required_config_keys = ['PARK_API_BIETIGHEIM_BISSINGEN_USER', 'PARK_API_BIETIGHEIM_BISSINGEN_PASSWORD']
-    bietigheim_bissingen_realtime_update_validator = DataclassValidator(BietigheimBissingenInput)
+    required_config_keys = [
+        'PARK_API_BIETIGHEIM_BISSINGEN_USER',
+        'PARK_API_BIETIGHEIM_BISSINGEN_PASSWORD',
+    ]
+    bietigheim_bissingen_realtime_update_validator = DataclassValidator(
+        BietigheimBissingenInput
+    )
     source_info = SourceInfo(
         uid='bietigheim_bissingen',
         name='Stadt Bietigheim-Bissingen',
@@ -32,27 +44,40 @@ class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        return self._get_static_parking_site_inputs_and_exceptions(source_uid=self.source_info.uid)
+    def get_static_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        return self._get_static_parking_site_inputs_and_exceptions(
+            source_uid=self.source_info.uid
+        )
 
-    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(
+        self,
+    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         for row_dict in self._parse_csv(self._get_data()):
             try:
-                realtime_input = self.bietigheim_bissingen_realtime_update_validator.validate(row_dict)
+                realtime_input = (
+                    self.bietigheim_bissingen_realtime_update_validator.validate(
+                        row_dict
+                    )
+                )
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=row_dict.get('Name'),
-                        message=f'Invalid data at uid {row_dict.get("Name")}: {e.to_dict()}, ' f'data: {row_dict}',
+                        message=f'Invalid data at uid {row_dict.get("Name")}: {e.to_dict()}, '
+                        f'data: {row_dict}',
                     ),
                 )
                 continue
 
-            realtime_parking_site_inputs.append(realtime_input.to_realtime_parking_site_input())
+            realtime_parking_site_inputs.append(
+                realtime_input.to_realtime_parking_site_input()
+            )
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
 
@@ -72,7 +97,9 @@ class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
 
             # Fetch the last mail
             message_uid = message_uid_list[0]
-            imap_response: type[str, list] = imap_connection.fetch(message_uid, '(RFC822)')
+            imap_response: type[str, list] = imap_connection.fetch(
+                message_uid, '(RFC822)'
+            )
 
         # Get raw_messages and check if there is one
         status, raw_messages = imap_response
@@ -92,7 +119,9 @@ class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         # The raw message has an envelope and a body, we just need the body
         _mail_envelope, mail_body = raw_message
-        message: Message = email.message_from_bytes(mail_body, policy=policy.default.clone(linesep='\r\n'))
+        message: Message = email.message_from_bytes(
+            mail_body, policy=policy.default.clone(linesep='\r\n')
+        )
 
         return self._get_csv_bytes_from_message(message)
 

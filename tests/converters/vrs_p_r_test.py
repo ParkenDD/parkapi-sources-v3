@@ -19,10 +19,14 @@ def vrs_p_r_push_converter(mocked_config_helper: Mock) -> VrsParkAndRidePushConv
 
 class NeckarsulmPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(vrs_p_r_push_converter: VrsParkAndRidePushConverter):
+    def test_get_static_parking_sites(
+        vrs_p_r_push_converter: VrsParkAndRidePushConverter,
+    ):
         workbook = load_workbook(filename=str(get_data_path('vrs_p_r.xlsx').absolute()))
 
-        static_parking_site_inputs, import_parking_site_exceptions = vrs_p_r_push_converter.handle_xlsx(workbook)
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            vrs_p_r_push_converter.handle_xlsx(workbook)
+        )
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions

@@ -11,14 +11,18 @@ from .validation import PbwParkingSiteDetailInput, PbwRealtimeInput
 
 
 class PbwMapper:
-    def map_static_parking_site(self, parking_site_detail_input: PbwParkingSiteDetailInput) -> StaticParkingSiteInput:
+    def map_static_parking_site(
+        self, parking_site_detail_input: PbwParkingSiteDetailInput
+    ) -> StaticParkingSiteInput:
         max_height = None
         if parking_site_detail_input.ausstattung.einfahrtshoehe:
             max_height = int(parking_site_detail_input.ausstattung.einfahrtshoehe * 100)
 
         parking_site_type = None
         if parking_site_detail_input.objekt.art_lang:
-            parking_site_type = parking_site_detail_input.objekt.art_lang.to_parking_site_type_input()
+            parking_site_type = (
+                parking_site_detail_input.objekt.art_lang.to_parking_site_type_input()
+            )
 
         # We use StaticParkingSiteInput without validation because we validated the data before
         return StaticParkingSiteInput(
@@ -45,7 +49,9 @@ class PbwMapper:
             # TODO: opening_hours
         )
 
-    def map_realtime_parking_site(self, realtime_input: PbwRealtimeInput) -> RealtimeParkingSiteInput:
+    def map_realtime_parking_site(
+        self, realtime_input: PbwRealtimeInput
+    ) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
             uid=str(realtime_input.id),
             realtime_data_updated_at=datetime.now(tz=timezone.utc),

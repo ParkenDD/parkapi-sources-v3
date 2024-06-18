@@ -22,7 +22,9 @@ class ReutlingenBikeRowInput:
     additional_name: str = StringValidator(max_length=255)
 
     def to_parking_site_input(self, proj: pyproj.Proj) -> StaticParkingSiteInput:
-        coordinates = proj(float(self.coordinates[0]), float(self.coordinates[1]), inverse=True)
+        coordinates = proj(
+            float(self.coordinates[0]), float(self.coordinates[1]), inverse=True
+        )
         lat = coordinates[1]
         lon = coordinates[0]
 
