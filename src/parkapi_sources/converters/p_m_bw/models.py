@@ -16,17 +16,17 @@ from parkapi_sources.models.enums import ParkAndRideType
 from parkapi_sources.validators import SpacedDateTimeValidator
 
 
-class A81PMConnectionStatus(Enum):
+class PMBWConnectionStatus(Enum):
     OFFLINE = 'OFFLINE'
     ONLINE = 'ONLINE'
 
 
-class A81PMCategory(Enum):
+class PMBWCategory(Enum):
     P_M = 'P&M'
 
 
 @validataclass
-class A81PMCapacityInput:
+class PMBWCapacityInput:
     bus: int = IntegerValidator()
     car: int = IntegerValidator()
     car_charging: int = IntegerValidator()
@@ -36,25 +36,25 @@ class A81PMCapacityInput:
 
 
 @validataclass
-class A81PMLocationInput:
+class PMBWLocationInput:
     lat: Decimal = NumericValidator()
     lng: Decimal = NumericValidator()
 
 
 @validataclass
-class A81PMInput:
+class PMBWInput:
     id: str = StringValidator()
     long_name: str = StringValidator()
     name: str = StringValidator()
-    status: A81PMConnectionStatus = EnumValidator(A81PMConnectionStatus)  # TODO: what's that?
+    status: PMBWConnectionStatus = EnumValidator(PMBWConnectionStatus)
     time: datetime = SpacedDateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
-    location: A81PMLocationInput = DataclassValidator(A81PMLocationInput)
-    capacity: A81PMCapacityInput = DataclassValidator(A81PMCapacityInput)
-    category: A81PMCategory = EnumValidator(A81PMCategory)
-    free_capacity: A81PMCapacityInput = DataclassValidator(A81PMCapacityInput)
+    location: PMBWLocationInput = DataclassValidator(PMBWLocationInput)
+    capacity: PMBWCapacityInput = DataclassValidator(PMBWCapacityInput)
+    category: PMBWCategory = EnumValidator(PMBWCategory)
+    free_capacity: PMBWCapacityInput = DataclassValidator(PMBWCapacityInput)
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
@@ -65,9 +65,10 @@ class A81PMInput:
             capacity_charging=self.capacity.car_charging,
             capacity_disabled=self.capacity.car_handicap,
             capacity_woman=self.capacity.car_women,
+            has_realtime_data=True,
             lat=self.location.lat,
             lon=self.location.lng,
-            park_and_ride_type=[ParkAndRideType.YES] if self.category == A81PMCategory.P_M else None,
+            park_and_ride_type=[ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None,
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:
