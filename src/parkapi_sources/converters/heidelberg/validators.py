@@ -14,14 +14,14 @@ class RemoveValueDict(Validator):
     def __init__(self, validator: Validator):
         # Check parameter validity
         if not isinstance(validator, Validator):
-            raise TypeError("RemoveValueDict requires a Validator instance.")
+            raise TypeError('RemoveValueDict requires a Validator instance.')
 
         self.wrapped_validator = validator
 
     def validate(self, input_data: Any, **kwargs: Any) -> Any:
         self._ensure_type(input_data, dict)
 
-        return self.wrapped_validator.validate(input_data.get("value"), **kwargs)
+        return self.wrapped_validator.validate(input_data.get('value'), **kwargs)
 
 
 class NoneableRemoveValueDict(RemoveValueDict):

@@ -18,11 +18,11 @@ from tests.converters.helper import (
 
 @pytest.fixture
 def requests_mock_karlsruhe_bike(requests_mock: Mocker) -> Mocker:
-    json_path = Path(Path(__file__).parent, "data", "karlsruhe_bike.json")
+    json_path = Path(Path(__file__).parent, 'data', 'karlsruhe_bike.json')
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get("https://mobil.trk.de:8443/geoserver/TBA/ows", text=json_data)
+    requests_mock.get('https://mobil.trk.de:8443/geoserver/TBA/ows', text=json_data)
 
     return requests_mock
 
@@ -40,9 +40,7 @@ class KarlsruheBikePullConverterTest:
         karlsruhe_bike_pull_converter: KarlsruheBikePullConverter,
         requests_mock_karlsruhe_bike: Mocker,
     ):
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            karlsruhe_bike_pull_converter.get_static_parking_sites()
-        )
+        static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 154
         # Lots of missing capacities
@@ -55,9 +53,7 @@ class KarlsruheBikePullConverterTest:
         karlsruhe_bike_pull_converter: KarlsruheBikePullConverter,
         requests_mock_karlsruhe_bike: Mocker,
     ):
-        realtime_parking_site_inputs, import_parking_site_exceptions = (
-            karlsruhe_bike_pull_converter.get_realtime_parking_sites()
-        )
+        realtime_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_realtime_parking_sites()
 
         assert len(realtime_parking_site_inputs) == 0
         assert len(import_parking_site_exceptions) == 0

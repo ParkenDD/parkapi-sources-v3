@@ -24,12 +24,10 @@ class NeckarsulmPushConverterTest:
     def test_get_static_parking_sites(
         neckarsulm_bike_push_converter: NeckarsulmBikePushConverter,
     ):
-        with get_data_path("neckarsulm_bike.csv").open() as neckarsulm_bike_file:
+        with get_data_path('neckarsulm_bike.csv').open() as neckarsulm_bike_file:
             neckarsulm_data = StringIO(neckarsulm_bike_file.read())
 
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            neckarsulm_bike_push_converter.handle_csv_string(neckarsulm_data)
-        )
+        static_parking_site_inputs, import_parking_site_exceptions = neckarsulm_bike_push_converter.handle_csv_string(neckarsulm_data)
 
         assert len(static_parking_site_inputs) == 235
         assert len(import_parking_site_exceptions) == 1

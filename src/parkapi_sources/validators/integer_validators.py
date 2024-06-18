@@ -11,22 +11,20 @@ from validataclass.validators import IntegerValidator
 
 
 class GermanDurationIntegerValidator(IntegerValidator):
-    pattern = re.compile(
-        r"^([0-9]*) (Minute|Minuten|Stunde|Stunden|Tag|Tage|Woche|Wochen|Monat|Monate|Quartal|Quartale)$"
-    )
+    pattern = re.compile(r'^([0-9]*) (Minute|Minuten|Stunde|Stunden|Tag|Tage|Woche|Wochen|Monat|Monate|Quartal|Quartale)$')
     unit_factors: dict[str, int] = {
-        "Minute": 60,
-        "Minuten": 60,
-        "Stunde": 60 * 60,
-        "Stunden": 60 * 60,
-        "Tag": 60 * 60 * 24,
-        "Tage": 60 * 60 * 24,
-        "Woche": 60 * 60 * 24 * 7,
-        "Wochen": 60 * 60 * 24 * 7,
-        "Monat": 60 * 60 * 24 * 30,
-        "Monate": 60 * 60 * 24 * 30,
-        "Quartal": 60 * 60 * 24 * 30 * 3,
-        "Quartale": 60 * 60 * 24 * 30 * 3,
+        'Minute': 60,
+        'Minuten': 60,
+        'Stunde': 60 * 60,
+        'Stunden': 60 * 60,
+        'Tag': 60 * 60 * 24,
+        'Tage': 60 * 60 * 24,
+        'Woche': 60 * 60 * 24 * 7,
+        'Wochen': 60 * 60 * 24 * 7,
+        'Monat': 60 * 60 * 24 * 30,
+        'Monate': 60 * 60 * 24 * 30,
+        'Quartal': 60 * 60 * 24 * 30 * 3,
+        'Quartale': 60 * 60 * 24 * 30 * 3,
     }
 
     def validate(self, input_data: Any, **kwargs) -> int:
@@ -36,9 +34,7 @@ class GermanDurationIntegerValidator(IntegerValidator):
         input_match = re.match(self.pattern, input_data)
 
         if input_match is None:
-            raise ValidationError(
-                code="invalid_string_input", reason="invalid string input"
-            )
+            raise ValidationError(code='invalid_string_input', reason='invalid string input')
 
         value = int(input_match.group(1))
         unit = input_match.group(2)

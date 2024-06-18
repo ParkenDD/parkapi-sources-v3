@@ -20,10 +20,10 @@ from parkapi_sources.validators import PointCoordinateTupleValidator
 
 
 class ReutlingenParkingSiteType(Enum):
-    PARKHAUS = "parkhaus"
-    TIEFGARAGE = "tiefgarage"
-    PARKFLAECHE = "parkfläche"
-    P_R = "p+r"
+    PARKHAUS = 'parkhaus'
+    TIEFGARAGE = 'tiefgarage'
+    PARKFLAECHE = 'parkfläche'
+    P_R = 'p+r'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         return {
@@ -45,7 +45,7 @@ class ReutlingenRowInput:
         return StaticParkingSiteInput(
             uid=str(self.uid),
             name=self.name,
-            address=f"{self.name}, Reutlingen",
+            address=f'{self.name}, Reutlingen',
             lat=self.coordinates[1],
             lon=self.coordinates[0],
             type=self.type.to_parking_site_type_input(),

@@ -24,29 +24,23 @@ def ulm_pull_converter(mocked_static_geojson_config_helper: Mock) -> UlmPullConv
 class UlmPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(ulm_pull_converter: UlmPullConverter):
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            ulm_pull_converter.get_static_parking_sites()
-        )
+        static_parking_site_inputs, import_parking_site_exceptions = ulm_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), "There should be more valid then invalid parking sites"
+        ), 'There should be more valid then invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(
-        ulm_pull_converter: UlmPullConverter, requests_mock: Mocker
-    ):
-        html_path = Path(Path(__file__).parent, "data", "ulm.html")
+    def test_get_realtime_parking_sites(ulm_pull_converter: UlmPullConverter, requests_mock: Mocker):
+        html_path = Path(Path(__file__).parent, 'data', 'ulm.html')
         with html_path.open() as html_file:
             html_data = html_file.read()
 
-        requests_mock.get("https://www.parken-in-ulm.de", text=html_data)
+        requests_mock.get('https://www.parken-in-ulm.de', text=html_data)
 
-        realtime_parking_site_inputs, import_parking_site_exceptions = (
-            ulm_pull_converter.get_realtime_parking_sites()
-        )
+        realtime_parking_site_inputs, import_parking_site_exceptions = ulm_pull_converter.get_realtime_parking_sites()
         assert len(realtime_parking_site_inputs) == 10
         assert len(import_parking_site_exceptions) == 0
 

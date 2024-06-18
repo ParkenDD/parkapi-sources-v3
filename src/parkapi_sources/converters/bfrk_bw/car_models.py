@@ -16,10 +16,10 @@ from .base_models import BfrkBaseRowInput
 
 
 class BfrkCarType(Enum):
-    PARK_AND_RIDE_PARKING_SITE = "Park-and-Ride Parkplatz"
-    SHORT_TERM_PARKING_SITE = "Kurzzeitparkplätze"
-    CAR_PARK = "Parkhaus"
-    DISABLED_PARKING_SPACE = "Behindertenparkplatz"
+    PARK_AND_RIDE_PARKING_SITE = 'Park-and-Ride Parkplatz'
+    SHORT_TERM_PARKING_SITE = 'Kurzzeitparkplätze'
+    CAR_PARK = 'Parkhaus'
+    DISABLED_PARKING_SPACE = 'Behindertenparkplatz'
 
     def to_parking_site_type(self) -> ParkingSiteType:
         return {
@@ -34,7 +34,7 @@ class BfrkCarType(Enum):
 class BfrkCarRowInput(BfrkBaseRowInput):
     type: BfrkCarType = EnumValidator(BfrkCarType)
     capacity_disabled: int = IntegerValidator(allow_strings=True)
-    description: str = ReplacingStringValidator(mapping={"\x80": "€"})
+    description: str = ReplacingStringValidator(mapping={'\x80': '€'})
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         static_parking_site_input = super().to_static_parking_site_input()

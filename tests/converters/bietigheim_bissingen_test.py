@@ -18,13 +18,11 @@ from tests.converters.helper import (
 @pytest.fixture
 def bietigheim_bissingen_config_helper(mocked_config_helper: Mock):
     config = {
-        "STATIC_GEOJSON_BASE_URL": "https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources",
-        "PARK_API_BIETIGHEIM_BISSINGEN_USER": "0152d634-9e16-46c0-bfef-20c0b623eaa3",
-        "PARK_API_BIETIGHEIM_BISSINGEN_PASSWORD": "eaf7a00c-d0e1-4464-a9dc-f8ef4d01f2cc",
+        'STATIC_GEOJSON_BASE_URL': 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources',
+        'PARK_API_BIETIGHEIM_BISSINGEN_USER': '0152d634-9e16-46c0-bfef-20c0b623eaa3',
+        'PARK_API_BIETIGHEIM_BISSINGEN_PASSWORD': 'eaf7a00c-d0e1-4464-a9dc-f8ef4d01f2cc',
     }
-    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
-        key, default
-    )
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
 
 
@@ -32,9 +30,7 @@ def bietigheim_bissingen_config_helper(mocked_config_helper: Mock):
 def bietigheim_bissingen_pull_converter(
     bietigheim_bissingen_config_helper: Mock,
 ) -> BietigheimBissingenPullConverter:
-    return BietigheimBissingenPullConverter(
-        config_helper=bietigheim_bissingen_config_helper
-    )
+    return BietigheimBissingenPullConverter(config_helper=bietigheim_bissingen_config_helper)
 
 
 class BietigheimBissingenPullConverterTest:
@@ -42,13 +38,11 @@ class BietigheimBissingenPullConverterTest:
     def test_get_static_parking_sites(
         bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter,
     ):
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            bietigheim_bissingen_pull_converter.get_static_parking_sites()
-        )
+        static_parking_site_inputs, import_parking_site_exceptions = bietigheim_bissingen_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), "There should be more valid then invalid parking sites"
+        ), 'There should be more valid then invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -57,16 +51,12 @@ class BietigheimBissingenPullConverterTest:
         bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter,
     ):
         # we need to patch _get_data as there is no realistic way to mock the whole IMAP process
-        csv_path = Path(Path(__file__).parent, "data", "bietigheim-bissingen.csv")
-        with csv_path.open("rb") as csv_file:
+        csv_path = Path(Path(__file__).parent, 'data', 'bietigheim-bissingen.csv')
+        with csv_path.open('rb') as csv_file:
             csv_data = csv_file.read()
 
-        with patch.object(
-            BietigheimBissingenPullConverter, "_get_data", return_value=csv_data
-        ) as mock_method:
-            realtime_parking_site_inputs, import_parking_site_exceptions = (
-                bietigheim_bissingen_pull_converter.get_realtime_parking_sites()
-            )
+        with patch.object(BietigheimBissingenPullConverter, '_get_data', return_value=csv_data) as mock_method:
+            realtime_parking_site_inputs, import_parking_site_exceptions = bietigheim_bissingen_pull_converter.get_realtime_parking_sites()
 
         mock_method.assert_called()
 

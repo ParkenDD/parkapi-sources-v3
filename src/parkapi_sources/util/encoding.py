@@ -12,7 +12,7 @@ from typing import Any
 
 def convert_to_serializable_value(obj: Any) -> Any:
     if isinstance(obj, datetime):
-        return obj.strftime("%Y-%m-%dT%H:%M:%SZ")
+        return obj.strftime('%Y-%m-%dT%H:%M:%SZ')
     if isinstance(obj, date):
         return obj.isoformat()
     if isinstance(obj, Decimal):
@@ -23,11 +23,11 @@ def convert_to_serializable_value(obj: Any) -> Any:
         return obj.decode()
 
     # Serialize data models (not only, but mostly ORM) using to_dict.
-    if hasattr(obj, "to_dict"):
+    if hasattr(obj, 'to_dict'):
         return obj.to_dict()
 
     # Fallback to either the object's attribute dictionary or cast it to a string
-    if hasattr(obj, "__dict__"):
+    if hasattr(obj, '__dict__'):
         return obj.__dict__
     return str(obj)
 

@@ -25,12 +25,12 @@ from parkapi_sources.models.enums import ParkingSiteType
 
 
 class PbwParkingSiteType(Enum):
-    PARKPLATZ = "Parkplatz"
-    PARKBEREICH = "Parkbereich"
-    PARKHAUS = "Parkhaus"
-    PARKGARAGE = "Parkgarage"
-    PARKIERUNGSAREAL = "Parkierungsareal"
-    GESAMTAREAL = "Gesamtareal"
+    PARKPLATZ = 'Parkplatz'
+    PARKBEREICH = 'Parkbereich'
+    PARKHAUS = 'Parkhaus'
+    PARKGARAGE = 'Parkgarage'
+    PARKIERUNGSAREAL = 'Parkierungsareal'
+    GESAMTAREAL = 'Gesamtareal'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         # TODO: find out more details about this enumeration for a proper mapping
@@ -45,10 +45,10 @@ class PbwParkingSiteType(Enum):
 
 
 class PbwParkingSiteShortType(Enum):
-    PP = "PP"
-    PG = "PG"
-    PH = "PH"
-    PA = "PA"
+    PP = 'PP'
+    PG = 'PG'
+    PH = 'PH'
+    PA = 'PA'
 
 
 @validataclass
@@ -73,9 +73,7 @@ class PbwParkingSiteObjectInput:
     land: str = StringValidator()
     strasse: str = StringValidator()
     art_lang: PbwParkingSiteType = EnumValidator(PbwParkingSiteType)
-    art_kurz: PbwParkingSiteShortType = EnumValidator(
-        PbwParkingSiteShortType
-    )  # TODO: Meaning?
+    art_kurz: PbwParkingSiteShortType = EnumValidator(PbwParkingSiteShortType)  # TODO: Meaning?
     # id_extern  # TODO: ugly typing: bool and str
 
 
@@ -216,9 +214,7 @@ class PbwParkingSitePaymentPlaceInput:
 @validataclass
 class PbwParkingSiteTariffInput:
     beschreibung: str = StringValidator()
-    taktung: str = (
-        StringValidator()
-    )  # TODO: any way of make a nice output out of that?!
+    taktung: str = StringValidator()  # TODO: any way of make a nice output out of that?!
     gueltig_von: time = TimeValidator()
     gueltig_bis: time = TimeValidator()
     gueltig_montag: bool = BooleanValidator()
@@ -261,12 +257,8 @@ class PbwParkingSiteDetailInput:
     id: int = IntegerValidator(allow_strings=True)
     objekt: PbwParkingSiteObjectInput = DataclassValidator(PbwParkingSiteObjectInput)
     # dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(PbwRealtimeParkingSiteInput)
-    position: PbwParkingSitePositionInput = DataclassValidator(
-        PbwParkingSitePositionInput
-    )
-    stellplaetze: PbwParkingSitePlacesInput = DataclassValidator(
-        PbwParkingSitePlacesInput
-    )
+    position: PbwParkingSitePositionInput = DataclassValidator(PbwParkingSitePositionInput)
+    stellplaetze: PbwParkingSitePlacesInput = DataclassValidator(PbwParkingSitePlacesInput)
     typ: PbwParkingSiteType = DataclassValidator(PbwParkingSiteType)
     ausstattung: PbwParkingSiteSetupInput = DataclassValidator(PbwParkingSiteSetupInput)
     # elektroladestation: PbwParkingSiteChargeStationParameterInput = DataclassValidator(PbwParkingSiteChargeStationParameterInput)
@@ -284,6 +276,4 @@ class PbwParkingSiteDetailInput:
 @validataclass
 class PbwRealtimeInput:
     id: int = IntegerValidator(allow_strings=True)
-    dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(
-        PbwRealtimeParkingSiteInput
-    )
+    dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(PbwRealtimeParkingSiteInput)

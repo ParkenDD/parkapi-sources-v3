@@ -17,25 +17,23 @@ from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 
 class PumBwPushConverter(XlsxConverter):
     source_info = SourceInfo(
-        uid="pum_bw",
-        name="Baden-Württemberg: Parken und Mitfahren",
-        public_url="https://mobidata-bw.de/dataset/p-m-parkplatze-baden-wurttemberg",
+        uid='pum_bw',
+        name='Baden-Württemberg: Parken und Mitfahren',
+        public_url='https://mobidata-bw.de/dataset/p-m-parkplatze-baden-wurttemberg',
         has_realtime_data=False,
     )
 
     header_row: dict[str, str] = {
-        "AS-Nummer": "uid",
-        "Bezeichnung Parkplatz": "name",
-        "Straße": "street",
-        "Längengrad": "lat",
-        "Breitengrad": "lon",
-        "Zufahrt": "description",
-        "Anzahl Plätze": "capacity",
+        'AS-Nummer': 'uid',
+        'Bezeichnung Parkplatz': 'name',
+        'Straße': 'street',
+        'Längengrad': 'lat',
+        'Breitengrad': 'lon',
+        'Zufahrt': 'description',
+        'Anzahl Plätze': 'capacity',
     }
 
-    def handle_xlsx(
-        self, workbook: Workbook
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def handle_xlsx(self, workbook: Workbook) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
@@ -50,14 +48,12 @@ class PumBwPushConverter(XlsxConverter):
             parking_site_dict = self.map_row_to_parking_site_dict(mapping, row)
 
             try:
-                static_parking_site_inputs.append(
-                    self.static_parking_site_validator.validate(parking_site_dict)
-                )
+                static_parking_site_inputs.append(self.static_parking_site_validator.validate(parking_site_dict))
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
-                        uid=parking_site_dict.get("uid"),
-                        message=f"invalid static parking site data: {e.to_dict()}",
+                        uid=parking_site_dict.get('uid'),
+                        message=f'invalid static parking site data: {e.to_dict()}',
                     )
                 )
                 continue
@@ -65,23 +61,15 @@ class PumBwPushConverter(XlsxConverter):
         return static_parking_site_inputs, static_parking_site_errors
 
     @staticmethod
-    def map_row_to_parking_site_dict(
-        mapping: dict[str, int], row: list[Cell]
-    ) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
         parking_site_dict: dict[str, Any] = {}
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        parking_site_dict["uid"] = (
-            f"{parking_site_dict['uid']}-{parking_site_dict['name']}"
-        )
-        parking_site_dict["name"] = (
-            f"{parking_site_dict['street']} {parking_site_dict['name']}"
-        )
-        parking_site_dict["type"] = "OFF_STREET_PARKING_GROUND"
-        parking_site_dict["park_and_ride_type"] = ["CARPOOL"]
-        parking_site_dict["static_data_updated_at"] = datetime.now(
-            tz=timezone.utc
-        ).isoformat()
+        parking_site_dict['uid'] = f"{parking_site_dict['uid']}-{parking_site_dict['name']}"
+        parking_site_dict['name'] = f"{parking_site_dict['street']} {parking_site_dict['name']}"
+        parking_site_dict['type'] = 'OFF_STREET_PARKING_GROUND'
+        parking_site_dict['park_and_ride_type'] = ['CARPOOL']
+        parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 
         return parking_site_dict

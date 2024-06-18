@@ -11,12 +11,12 @@ from validataclass.exceptions import ValidationError
 
 
 @pytest.mark.parametrize(
-    "input_data,output_data",
+    'input_data,output_data',
     [
-        ("1 Stunde", 60 * 60),
-        ("1 Stunden", 60 * 60),
-        ("30 Stunden", 60 * 60 * 30),
-        ("2 Quartale", 60 * 60 * 24 * 30 * 3 * 2),
+        ('1 Stunde', 60 * 60),
+        ('1 Stunden', 60 * 60),
+        ('30 Stunden', 60 * 60 * 30),
+        ('2 Quartale', 60 * 60 * 24 * 30 * 3 * 2),
     ],
 )
 def test_parsed_date_validator_success(input_data: Any, output_data: int):
@@ -26,12 +26,12 @@ def test_parsed_date_validator_success(input_data: Any, output_data: int):
 
 
 @pytest.mark.parametrize(
-    "input_data",
+    'input_data',
     [
-        "1 Cookie",
-        "1 Stunden, 30 Minuten",
-        ("30  Stunden", 60 * 60 * 30),
-        "30_Stunden",
+        '1 Cookie',
+        '1 Stunden, 30 Minuten',
+        ('30  Stunden', 60 * 60 * 30),
+        '30_Stunden',
     ],
 )
 def test_parsed_date_validator_fail(input_data: Any):

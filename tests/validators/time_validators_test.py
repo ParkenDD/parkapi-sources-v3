@@ -10,9 +10,9 @@ from parkapi_sources.validators import ExcelTimeValidator
 
 
 @pytest.mark.parametrize(
-    "input_data,output_data",
+    'input_data,output_data',
     [
-        ("12:30:00", time(12, 30)),
+        ('12:30:00', time(12, 30)),
         (time(12, 30), time(12, 30)),
     ],
 )

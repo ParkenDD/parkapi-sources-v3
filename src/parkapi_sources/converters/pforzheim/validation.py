@@ -20,8 +20,8 @@ from parkapi_sources.validators import ExcelNoneable, MappedBooleanValidator
 
 
 class PforzheimParkingSiteType(Enum):
-    CARPARK = "carPark"
-    UNDERGROUNDCARPARK = "undergroundCarPark"
+    CARPARK = 'carPark'
+    UNDERGROUNDCARPARK = 'undergroundCarPark'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         return {
@@ -42,11 +42,7 @@ class PforzheimInput:
     lon: Decimal = NumericValidator(min_value=7, max_value=10)
     capacity: int = IntegerValidator()
     quantitySpacesReservedForWomen: Optional[int] = ExcelNoneable(IntegerValidator())
-    quantitySpacesReservedForMobilityImpededPerson: Optional[int] = ExcelNoneable(
-        IntegerValidator()
-    )
+    quantitySpacesReservedForMobilityImpededPerson: Optional[int] = ExcelNoneable(IntegerValidator())
     securityInformation: str = StringValidator(multiline=True)
     feeInformation: str = StringValidator(multiline=True)
-    hasOpeningHours24h: bool = MappedBooleanValidator(
-        mapping={"wahr": True, "falsch": False}
-    )
+    hasOpeningHours24h: bool = MappedBooleanValidator(mapping={'wahr': True, 'falsch': False})

@@ -26,11 +26,9 @@ from tests.converters.helper import validate_static_parking_site_inputs
 @pytest.fixture
 def apcoa_config_helper(mocked_config_helper: Mock):
     config = {
-        "PARK_API_APCOA_API_SUBSCRIPTION_KEY": "9be98961de004749aac8a1d8160e9eba",
+        'PARK_API_APCOA_API_SUBSCRIPTION_KEY': '9be98961de004749aac8a1d8160e9eba',
     }
-    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
-        key, default
-    )
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
 
 
@@ -41,21 +39,17 @@ def apcoa_pull_converter(apcoa_config_helper: Mock) -> ApcoaPullConverter:
 
 class ApcoaPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        apcoa_pull_converter: ApcoaPullConverter, requests_mock: Mocker
-    ):
-        json_path = Path(Path(__file__).parent, "data", "apcoa.json")
+    def test_get_static_parking_sites(apcoa_pull_converter: ApcoaPullConverter, requests_mock: Mocker):
+        json_path = Path(Path(__file__).parent, 'data', 'apcoa.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
 
         requests_mock.get(
-            "https://api.apcoa-services.com/carpark-dev/v4/Carparks",
+            'https://api.apcoa-services.com/carpark-dev/v4/Carparks',
             text=json_data,
         )
 
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            apcoa_pull_converter.get_static_parking_sites()
-        )
+        static_parking_site_inputs, import_parking_site_exceptions = apcoa_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 305
         assert len(import_parking_site_exceptions) == 264
@@ -66,75 +60,75 @@ class ApcoaPullConverterTest:
 class ApcoaParkingSiteInputTest:
     @staticmethod
     @pytest.mark.parametrize(
-        "opening_times, osm_opening_hours",
+        'opening_times, osm_opening_hours',
         [
             # Test for 24/7
             (
                 [
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.MONDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SUNDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                 ],
-                "24/7",
+                '24/7',
             ),
             # Test for weekday all the same and separate times at saturday and sunday
             (
                 [
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.MONDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SUNDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                 ],
-                "Mo-Fr 10:00-20:00; Sa 10:00-16:00; Su 10:00-16:00",
+                'Mo-Fr 10:00-20:00; Sa 10:00-16:00; Su 10:00-16:00',
                 # Even better, but more complicated: 'Mo-Fr 10:00-20:00; Sa-So 10:00-16:00'
             ),
             # Test for different times at Friday
@@ -142,34 +136,34 @@ class ApcoaParkingSiteInputTest:
                 [
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.MONDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SUNDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                 ],
-                "Mo 10:00-20:00; Tu 10:00-20:00; We 10:00-20:00; Th 10:00-20:00; Fr 10:00-16:00; Sa 10:00-16:00; Su 10:00-16:00",
+                'Mo 10:00-20:00; Tu 10:00-20:00; We 10:00-20:00; Th 10:00-20:00; Fr 10:00-16:00; Sa 10:00-16:00; Su 10:00-16:00',
                 # Even better, but more complicated: 'Mo-Th 10:00-20:00; Fr-So 10:00-16:00'
             ),
             # Test for Sunday missing
@@ -177,60 +171,60 @@ class ApcoaParkingSiteInputTest:
                 [
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.MONDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                 ],
-                "Mo-Fr 10:00-20:00; Sa 10:00-16:00",
+                'Mo-Fr 10:00-20:00; Sa 10:00-16:00',
             ),
             # Test for Wednesday missing
             (
                 [
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.MONDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
-                        OpeningTimes="10:00 - 20:00",
+                        OpeningTimes='10:00 - 20:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.SUNDAY,
-                        OpeningTimes="10:00 - 16:00",
+                        OpeningTimes='10:00 - 16:00',
                     ),
                 ],
-                "Mo 10:00-20:00; Tu 10:00-20:00; Th 10:00-20:00; Fr 10:00-20:00; Sa 10:00-16:00; Su 10:00-16:00",
+                'Mo 10:00-20:00; Tu 10:00-20:00; Th 10:00-20:00; Fr 10:00-20:00; Sa 10:00-16:00; Su 10:00-16:00',
                 # Even better, but more complicated: 'Mo-Tu 10:00-20:00; Th-Fr 10:00-20:00; Sa-So 10:00-16:00'
             ),
             # Test for all day open at weekday, but not open at weekend
@@ -238,32 +232,30 @@ class ApcoaParkingSiteInputTest:
                 [
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.MONDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                     ApcoaOpeningHoursInput(
                         Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
-                        OpeningTimes="00:00 - 00:00",
+                        OpeningTimes='00:00 - 00:00',
                     ),
                 ],
-                "Mo-Fr 00:00-24:00",
+                'Mo-Fr 00:00-24:00',
             ),
         ],
     )
-    def test_get_osm_opening_hours(
-        opening_times: list[ApcoaOpeningHoursInput], osm_opening_hours: str
-    ):
+    def test_get_osm_opening_hours(opening_times: list[ApcoaOpeningHoursInput], osm_opening_hours: str):
         apcoa_parking_site_input = ApcoaParkingSiteInput(
             CarParkId=1,
             CarparkLongName=None,
@@ -271,7 +263,7 @@ class ApcoaParkingSiteInputTest:
             CarParkWebsiteURL=None,
             CarParkPhotoURLs=None,
             CarparkType=ApcoaCarparkTypeNameInput(
-                Name="example name",
+                Name='example name',
             ),
             Address=ApcoaAdressInput(
                 Street=None,

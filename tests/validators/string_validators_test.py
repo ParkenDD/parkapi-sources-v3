@@ -10,11 +10,11 @@ from parkapi_sources.validators import NumberCastingStringValidator
 
 
 @pytest.mark.parametrize(
-    "input_data,output_data",
+    'input_data,output_data',
     [
-        (1, "1"),
-        (1.2, "1.2"),
-        ("cookies", "cookies"),
+        (1, '1'),
+        (1.2, '1.2'),
+        ('cookies', 'cookies'),
     ],
 )
 def test_number_casting_string_validator_success(input_data: Any, output_data: str):

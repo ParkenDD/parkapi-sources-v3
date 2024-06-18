@@ -22,26 +22,21 @@ from parkapi_sources.validators.boolean_validators import MappedBooleanValidator
 class PolygonListValidator(StringValidator):
     def validate(self, input_data: Any, **kwargs) -> list[tuple[Decimal, Decimal]]:
         input_data = super().validate(input_data, **kwargs)
-        items = input_data.split(",")
+        items = input_data.split(',')
         try:
-            return [
-                (Decimal(items[i]), Decimal(items[i + 1]))
-                for i in range(0, len(items), 2)
-            ]
+            return [(Decimal(items[i]), Decimal(items[i + 1])) for i in range(0, len(items), 2)]
         except ValueError as e:
-            raise ValidationError(
-                code="invalid_polygon", reason="Invalid polygon data"
-            ) from e
+            raise ValidationError(code='invalid_polygon', reason='Invalid polygon data') from e
 
 
 class KonstanzBikeParkingSiteType(Enum):
-    STANDS_BOTH_SIDE = "Anlehnbügel beidseitig"
-    STANDS_SINGLE_SIDE = "Anlehnbügel einseitig"
-    EXTENDED_STANDS = "Anlehnbügel mit Rahmenhalter"
-    WALL_LOOPS = "Vorderradhalter"
-    SAFE_WALL_LOOPS = "Vorderrad-Rahmenhalter"
-    FLOOR = "Markierte Fläche"
-    LOCKERS = "Fahrradbox"
+    STANDS_BOTH_SIDE = 'Anlehnbügel beidseitig'
+    STANDS_SINGLE_SIDE = 'Anlehnbügel einseitig'
+    EXTENDED_STANDS = 'Anlehnbügel mit Rahmenhalter'
+    WALL_LOOPS = 'Vorderradhalter'
+    SAFE_WALL_LOOPS = 'Vorderrad-Rahmenhalter'
+    FLOOR = 'Markierte Fläche'
+    LOCKERS = 'Fahrradbox'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         return {
@@ -56,8 +51,8 @@ class KonstanzBikeParkingSiteType(Enum):
 
 
 class KonstanzBikeGeometry(Enum):
-    POLYGON = "Polygon"
-    MULTI_POLYGON = "MultiPolygon"
+    POLYGON = 'Polygon'
+    MULTI_POLYGON = 'MultiPolygon'
 
 
 @validataclass
@@ -68,12 +63,8 @@ class KonstanzRowInput:
     capacity: int = IntegerValidator(min_value=1, allow_strings=True)
     address: str = StringValidator(min_length=1)
     type: KonstanzBikeParkingSiteType = EnumValidator(KonstanzBikeParkingSiteType)
-    has_lighting: Optional[bool] = ExcelNoneable(
-        MappedBooleanValidator(mapping={"1": True, "0": False})
-    )
-    is_covered: Optional[bool] = ExcelNoneable(
-        MappedBooleanValidator(mapping={"1": True, "0": False})
-    )
+    has_lighting: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'1': True, '0': False}))
+    is_covered: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'1': True, '0': False}))
     coordinates: list[tuple[Decimal, Decimal]] = PolygonListValidator()
     geometry: KonstanzBikeGeometry = EnumValidator(KonstanzBikeGeometry)
 
@@ -81,12 +72,10 @@ class KonstanzRowInput:
         return StaticParkingSiteInput(
             uid=str(self.uid),
             name=self.address,
-            lat=sum([coordinate[1] for coordinate in self.coordinates])
-            / len(self.coordinates),
-            lon=sum([coordinate[0] for coordinate in self.coordinates])
-            / len(self.coordinates),
+            lat=sum([coordinate[1] for coordinate in self.coordinates]) / len(self.coordinates),
+            lon=sum([coordinate[0] for coordinate in self.coordinates]) / len(self.coordinates),
             type=self.type.to_parking_site_type_input(),
-            address=f"{self.address}, Konstanz",
+            address=f'{self.address}, Konstanz',
             capacity=self.capacity,
             has_lighting=self.has_lighting,
             is_covered=self.is_covered,

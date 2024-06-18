@@ -9,19 +9,19 @@ from parkapi_sources.models import SourceInfo
 
 class MannheimPushConverter(ParkApiConverter):
     source_info = SourceInfo(
-        uid="mannheim",
-        name="Stadt Mannheim",
-        public_url="https://www.parken-mannheim.de",
-        timezone="Europe/Berlin",
+        uid='mannheim',
+        name='Stadt Mannheim',
+        public_url='https://www.parken-mannheim.de',
+        timezone='Europe/Berlin',
         has_realtime_data=True,
     )
 
 
 class BuchenPushConverter(ParkApiConverter):
     source_info = SourceInfo(
-        uid="buchen",
-        name="Stadt Buchen",
-        public_url="https://www.buchen.de/ueber-buchen/kostenlos-parken.html",
-        timezone="Europe/Berlin",
+        uid='buchen',
+        name='Stadt Buchen',
+        public_url='https://www.buchen.de/ueber-buchen/kostenlos-parken.html',
+        timezone='Europe/Berlin',
         has_realtime_data=True,
     )

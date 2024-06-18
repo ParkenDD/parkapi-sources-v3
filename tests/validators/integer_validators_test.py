@@ -12,25 +12,23 @@ from validataclass.exceptions import ValidationError
 
 
 @pytest.mark.parametrize(
-    "date_format,input_data,output_data",
+    'date_format,input_data,output_data',
     [
-        ("%d.%m.%Y", "01.02.2024", date(2024, 2, 1)),
-        ("%m/%d/%Y", "02/01/2024", date(2024, 2, 1)),
+        ('%d.%m.%Y', '01.02.2024', date(2024, 2, 1)),
+        ('%m/%d/%Y', '02/01/2024', date(2024, 2, 1)),
     ],
 )
-def test_parsed_date_validator_success(
-    date_format: str, input_data: Any, output_data: date
-):
+def test_parsed_date_validator_success(date_format: str, input_data: Any, output_data: date):
     validator = ParsedDateValidator(date_format=date_format)
 
     assert validator.validate(input_data) == output_data
 
 
 @pytest.mark.parametrize(
-    "date_format,input_data",
+    'date_format,input_data',
     [
-        ("%d.%m.%Y", "01/02/2024"),
-        ("%d.%m.%Y", 20240201),
+        ('%d.%m.%Y', '01/02/2024'),
+        ('%d.%m.%Y', 20240201),
     ],
 )
 def test_parsed_date_validator_fail(date_format: str, input_data: Any):

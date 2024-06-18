@@ -185,21 +185,16 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
 
     def __post_init__(self):
         if self.lat == 0 and self.lon == 0:
-            raise DataclassPostValidationError(
-                error=ValidationError(
-                    code="lat_lon_zero", reason="Latitude and longitude are both zero."
-                )
-            )
+            raise DataclassPostValidationError(error=ValidationError(code='lat_lon_zero', reason='Latitude and longitude are both zero.'))
 
         if self.park_and_ride_type:
-            if (
-                ParkAndRideType.NO in self.park_and_ride_type
-                or ParkAndRideType.YES in self.park_and_ride_type
-            ) and len(self.park_and_ride_type) > 1:
+            if (ParkAndRideType.NO in self.park_and_ride_type or ParkAndRideType.YES in self.park_and_ride_type) and len(
+                self.park_and_ride_type
+            ) > 1:
                 raise DataclassPostValidationError(
                     error=ValidationError(
-                        code="invalid_park_ride_combination",
-                        reason="YES and NO cannot be used with specific ParkAndRideTypes",
+                        code='invalid_park_ride_combination',
+                        reason='YES and NO cannot be used with specific ParkAndRideTypes',
                     ),
                 )
 

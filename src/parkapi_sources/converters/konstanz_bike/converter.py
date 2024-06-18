@@ -15,37 +15,33 @@ from .models import KonstanzRowInput
 
 class KonstanzBikePushConverter(CsvConverter):
     konstanz_bike_row_validator = DataclassValidator(KonstanzRowInput)
-    csv_delimiter = ","
+    csv_delimiter = ','
 
     source_info = SourceInfo(
-        uid="konstanz_bike",
-        name="Stadt Konstanz: Fahrrad-Abstellanlagen",
-        public_url="https://www.konstanz.de/",
+        uid='konstanz_bike',
+        name='Stadt Konstanz: Fahrrad-Abstellanlagen',
+        public_url='https://www.konstanz.de/',
         has_realtime_data=False,
     )
 
     header_mapping: dict[str, str] = {
-        "ABSTELL_NR": "uid",
-        "Lagebezeichnung": "address",
-        "Art": "type",
-        "Ueberdachung": "is_covered",
-        "Beleuchtung": "has_lighting",
-        "Eigentuemer_Baulasttraeger": "operator_name",
-        "Stadtteil": "district",
-        "Kapazitaet": "capacity",
-        "coordinates": "coordinates",
-        "geometry": "geometry",
+        'ABSTELL_NR': 'uid',
+        'Lagebezeichnung': 'address',
+        'Art': 'type',
+        'Ueberdachung': 'is_covered',
+        'Beleuchtung': 'has_lighting',
+        'Eigentuemer_Baulasttraeger': 'operator_name',
+        'Stadtteil': 'district',
+        'Kapazitaet': 'capacity',
+        'coordinates': 'coordinates',
+        'geometry': 'geometry',
     }
 
-    def handle_csv(
-        self, data: list[list]
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def handle_csv(self, data: list[list]) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
-        mapping: dict[str, int] = self.get_mapping_by_header(
-            self.header_mapping, data[0]
-        )
+        mapping: dict[str, int] = self.get_mapping_by_header(self.header_mapping, data[0])
 
         # We start at row 2, as the first one is our header
         for row in data[1:]:
@@ -54,15 +50,13 @@ class KonstanzBikePushConverter(CsvConverter):
                 input_dict[field] = row[mapping[field]]
 
             try:
-                input_data: KonstanzRowInput = (
-                    self.konstanz_bike_row_validator.validate(input_dict)
-                )
+                input_data: KonstanzRowInput = self.konstanz_bike_row_validator.validate(input_dict)
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get("id"),
-                        message=f"validation error for {input_dict}: {e.to_dict()}",
+                        parking_site_uid=input_dict.get('id'),
+                        message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
                 continue
