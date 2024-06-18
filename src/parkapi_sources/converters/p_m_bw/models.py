@@ -9,13 +9,7 @@ from enum import Enum
 from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import (
-    DataclassValidator,
-    EnumValidator,
-    IntegerValidator,
-    NumericValidator,
-    StringValidator,
-)
+from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, NumericValidator, StringValidator
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType
@@ -23,12 +17,12 @@ from parkapi_sources.validators import SpacedDateTimeValidator
 
 
 class PMBWConnectionStatus(Enum):
-    OFFLINE = "OFFLINE"
-    ONLINE = "ONLINE"
+    OFFLINE = 'OFFLINE'
+    ONLINE = 'ONLINE'
 
 
 class PMBWCategory(Enum):
-    P_M = "P&M"
+    P_M = 'P&M'
 
 
 @validataclass
@@ -54,7 +48,7 @@ class PMBWInput:
     name: str = StringValidator()
     status: PMBWConnectionStatus = EnumValidator(PMBWConnectionStatus)
     time: datetime = SpacedDateTimeValidator(
-        local_timezone=ZoneInfo("Europe/Berlin"),
+        local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
     location: PMBWLocationInput = DataclassValidator(PMBWLocationInput)
@@ -74,9 +68,7 @@ class PMBWInput:
             has_realtime_data=True,
             lat=self.location.lat,
             lon=self.location.lng,
-            park_and_ride_type=(
-                [ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None
-            ),
+            park_and_ride_type=[ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None,
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:
