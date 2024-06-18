@@ -28,26 +28,26 @@ from parkapi_sources.validators import SpacedDateTimeValidator
 
 
 class ApcoaParkingSpaceType:
-    WOMEN_SPACES = "Women Spaces"
-    FAMILY_SPACES = "Family Spaces"
-    CARSHARING_SPACES = "Carsharing Spaces"
-    DISABLED_SPACES = "Disabled Spaces"
-    EV_CHARGING_BAYS = "EV Charging Bays"
-    EV_CHARGING = "EV Charging"
-    TOTAL_SPACES = "Total Spaces"
-    ELECTRIC_CAR_CHARGING_SPACES = "Electric Car Charging Spaces"
-    ELECTRIC_CAR_FAST_CHARGING_SPACES = "Electric Car Fast Charging Spaces"
-    BUS_OR_COACHES_SPACES = "Bus/Coaches Spaces"
-    CAR_RENTAL_AND_SHARING = "Car rental & sharing (weekdays from 8am to 8pm)"
-    PICKUP_AND_DROPOFF = "PickUp&DropOff (weekdays from 8pm to 8am)"
+    WOMEN_SPACES = 'Women Spaces'
+    FAMILY_SPACES = 'Family Spaces'
+    CARSHARING_SPACES = 'Carsharing Spaces'
+    DISABLED_SPACES = 'Disabled Spaces'
+    EV_CHARGING_BAYS = 'EV Charging Bays'
+    EV_CHARGING = 'EV Charging'
+    TOTAL_SPACES = 'Total Spaces'
+    ELECTRIC_CAR_CHARGING_SPACES = 'Electric Car Charging Spaces'
+    ELECTRIC_CAR_FAST_CHARGING_SPACES = 'Electric Car Fast Charging Spaces'
+    BUS_OR_COACHES_SPACES = 'Bus/Coaches Spaces'
+    CAR_RENTAL_AND_SHARING = 'Car rental & sharing (weekdays from 8am to 8pm)'
+    PICKUP_AND_DROPOFF = 'PickUp&DropOff (weekdays from 8pm to 8am)'
 
 
 class ApcoaCarparkType(Enum):
-    MLCP = "MLCP"
-    OFF_STREET_OPEN = "Off-street open"
-    OFF_STREET_UNDERGROUND = "Off-street underground"
-    ON_STREET = "On-street"
-    OPEN_SURFACE = "Open Surface"
+    MLCP = 'MLCP'
+    OFF_STREET_OPEN = 'Off-street open'
+    OFF_STREET_UNDERGROUND = 'Off-street underground'
+    ON_STREET = 'On-street'
+    OPEN_SURFACE = 'Open Surface'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         # TODO: find out more details about this enumeration for a proper mapping
@@ -61,28 +61,28 @@ class ApcoaCarparkType(Enum):
 
 
 class ApcoaNavigationLocationType:
-    DEFAULT = "default"
-    CAR_ENTRY = "CarEntry"
+    DEFAULT = 'default'
+    CAR_ENTRY = 'CarEntry'
 
 
 class ApcoaOpeningHoursWeekday(Enum):
-    MONDAY = "Monday"
-    TUESDAY = "Tuesday"
-    WEDNESDAY = "Wednesday"
-    THURSDAY = "Thursday"
-    FRIDAY = "Friday"
-    SATURDAY = "Saturday"
-    SUNDAY = "Sunday"
+    MONDAY = 'Monday'
+    TUESDAY = 'Tuesday'
+    WEDNESDAY = 'Wednesday'
+    THURSDAY = 'Thursday'
+    FRIDAY = 'Friday'
+    SATURDAY = 'Saturday'
+    SUNDAY = 'Sunday'
 
     def to_osm_opening_day_format(self) -> str:
         return {
-            self.MONDAY: "Mo",
-            self.TUESDAY: "Tu",
-            self.WEDNESDAY: "We",
-            self.THURSDAY: "Th",
-            self.FRIDAY: "Fr",
-            self.SATURDAY: "Sa",
-            self.SUNDAY: "Su",
+            self.MONDAY: 'Mo',
+            self.TUESDAY: 'Tu',
+            self.WEDNESDAY: 'We',
+            self.THURSDAY: 'Th',
+            self.FRIDAY: 'Fr',
+            self.SATURDAY: 'Sa',
+            self.SUNDAY: 'Su',
         }.get(self, None)
 
 
@@ -99,9 +99,7 @@ class ApcoaLocationGeocoordinatesInput:
 
 @validataclass
 class ApcoaNavigationLocationsInput:
-    GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(
-        ApcoaLocationGeocoordinatesInput
-    )
+    GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(ApcoaLocationGeocoordinatesInput)
     LocationType: Optional[str] = Noneable(StringValidator())
 
 
@@ -152,29 +150,17 @@ class ApcoaParkingSiteInput:
     CarparkLongName: Optional[str] = Noneable(StringValidator())
     CarparkShortName: Optional[str] = Noneable(StringValidator())
     CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
-    CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(
-        DataclassValidator(ApcoaCarparkPhotoURLInput)
-    )
-    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(
-        ApcoaCarparkTypeNameInput
-    )
+    CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
+    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
-    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(
-        DataclassValidator(ApcoaNavigationLocationsInput)
-    )
-    Spaces: list[ApcoaParkingSpaceInput] = ListValidator(
-        DataclassValidator(ApcoaParkingSpaceInput)
-    )
-    OpeningHours: list[ApcoaOpeningHoursInput] = ListValidator(
-        DataclassValidator(ApcoaOpeningHoursInput)
-    )
+    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
+    Spaces: list[ApcoaParkingSpaceInput] = ListValidator(DataclassValidator(ApcoaParkingSpaceInput))
+    OpeningHours: list[ApcoaOpeningHoursInput] = ListValidator(DataclassValidator(ApcoaOpeningHoursInput))
     LastModifiedDateTime: datetime = SpacedDateTimeValidator(
-        local_timezone=ZoneInfo("Europe/Berlin"),
+        local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
-    IndicativeTariff: Optional[ApcoaIndicativeTariffInput] = Noneable(
-        DataclassValidator(ApcoaIndicativeTariffInput)
-    )
+    IndicativeTariff: Optional[ApcoaIndicativeTariffInput] = Noneable(DataclassValidator(ApcoaIndicativeTariffInput))
 
     # TODO: ignored multiple attributes which do not matter so far
 
@@ -183,69 +169,56 @@ class ApcoaParkingSiteInput:
             if capacity.Type == ApcoaParkingSpaceType.TOTAL_SPACES:
                 return
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
-        raise ValidationError(reason="Missing parking spaces capacity")
+        raise ValidationError(reason='Missing parking spaces capacity')
 
     def get_osm_opening_hours(self) -> str:
         apcoa_opening_times: dict[str, list[str]] = defaultdict(list)
         for opening_hours_input in self.OpeningHours:
-            opening_time = opening_hours_input.OpeningTimes.replace(" ", "")
-            if opening_hours_input.OpeningTimes == "00:00 - 00:00":
-                opening_time = "00:00-24:00"
-                apcoa_opening_times["24/7"].append(opening_time)
-            if (
-                opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)[:5]
-                and opening_time != "closed"
-            ):
-                apcoa_opening_times["Mo-Fr"].append(opening_time)
-            if (
-                opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)
-                and opening_time != "closed"
-            ):
-                apcoa_opening_times[opening_hours_input.Weekday.value].append(
-                    opening_time
-                )
+            opening_time = opening_hours_input.OpeningTimes.replace(' ', '')
+            if opening_hours_input.OpeningTimes == '00:00 - 00:00':
+                opening_time = '00:00-24:00'
+                apcoa_opening_times['24/7'].append(opening_time)
+            if opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)[:5] and opening_time != 'closed':
+                apcoa_opening_times['Mo-Fr'].append(opening_time)
+            if opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday) and opening_time != 'closed':
+                apcoa_opening_times[opening_hours_input.Weekday.value].append(opening_time)
 
         osm_opening_hour: list = []
-        if (
-            len(apcoa_opening_times["Mo-Fr"]) == 5
-            and len(set(apcoa_opening_times["Mo-Fr"])) == 1
-        ):
-            osm_opening_hour.append(
-                f'Mo-Fr {next(iter(set(apcoa_opening_times["Mo-Fr"])))}'
-            )
+        if len(apcoa_opening_times['Mo-Fr']) == 5 and len(set(apcoa_opening_times['Mo-Fr'])) == 1:
+            osm_opening_hour.append(f'Mo-Fr {next(iter(set(apcoa_opening_times["Mo-Fr"])))}')
         else:
-            if "Monday" in list(apcoa_opening_times.keys()):
+            if 'Monday' in list(apcoa_opening_times.keys()):
                 osm_opening_hour.append(
                     f'{ApcoaOpeningHoursWeekday.MONDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Monday"]))}'
                 )
-            if "Tuesday" in list(apcoa_opening_times.keys()):
+            if 'Tuesday' in list(apcoa_opening_times.keys()):
                 osm_opening_hour.append(
                     f'{ApcoaOpeningHoursWeekday.TUESDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Tuesday"]))}'
                 )
-            if "Wednesday" in list(apcoa_opening_times.keys()):
+            if 'Wednesday' in list(apcoa_opening_times.keys()):
                 osm_opening_hour.append(
                     f'{ApcoaOpeningHoursWeekday.WEDNESDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Wednesday"]))}'
                 )
-            if "Thursday" in list(apcoa_opening_times.keys()):
+            if 'Thursday' in list(apcoa_opening_times.keys()):
                 osm_opening_hour.append(
                     f'{ApcoaOpeningHoursWeekday.THURSDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Thursday"]))}'
                 )
-            if "Friday" in list(apcoa_opening_times.keys()):
+            if 'Friday' in list(apcoa_opening_times.keys()):
                 osm_opening_hour.append(
                     f'{ApcoaOpeningHoursWeekday.FRIDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Friday"]))}'
                 )
 
-        if "Saturday" in list(apcoa_opening_times.keys()):
+        if 'Saturday' in list(apcoa_opening_times.keys()):
             osm_opening_hour.append(
                 f'{ApcoaOpeningHoursWeekday.SATURDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Saturday"]))}'
             )
-        if "Sunday" in list(apcoa_opening_times.keys()):
+        if 'Sunday' in list(apcoa_opening_times.keys()):
             osm_opening_hour.append(
                 f'{ApcoaOpeningHoursWeekday.SUNDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Sunday"]))}'
             )
-        osm_opening_hours = "; ".join(osm_opening_hour)
+        osm_opening_hours = '; '.join(osm_opening_hour)
 
-        if len(apcoa_opening_times["24/7"]) == 7:
-            osm_opening_hours = "24/7"
+        if len(apcoa_opening_times['24/7']) == 7:
+            osm_opening_hours = '24/7'
 
         return osm_opening_hours

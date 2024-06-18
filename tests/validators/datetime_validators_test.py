@@ -16,26 +16,26 @@ from validataclass.exceptions import ValidationError
 
 
 @pytest.mark.parametrize(
-    "input_data,output_data",
+    'input_data,output_data',
     [
         (
-            "Sun Nov  6 08:49:37 2024",
+            'Sun Nov  6 08:49:37 2024',
             datetime(2024, 11, 6, 7, 49, 37, tzinfo=timezone.utc),
         ),
         (
-            "Sun, 06 Nov 2024 08:49:37 GMT",
+            'Sun, 06 Nov 2024 08:49:37 GMT',
             datetime(2024, 11, 6, 8, 49, 37, tzinfo=timezone.utc),
         ),
         (
-            "Sunday, 06-Nov-24 08:49:37 GMT",
+            'Sunday, 06-Nov-24 08:49:37 GMT',
             datetime(2024, 11, 6, 8, 49, 37, tzinfo=timezone.utc),
         ),
         (
-            "Sunday, 06-Nov-98 08:49:37 GMT",
+            'Sunday, 06-Nov-98 08:49:37 GMT',
             datetime(1998, 11, 6, 8, 49, 37, tzinfo=timezone.utc),
         ),
         (
-            "Sun Nov  6 08:49:37 2024",
+            'Sun Nov  6 08:49:37 2024',
             datetime(2024, 11, 6, 7, 49, 37, tzinfo=timezone.utc),
         ),
     ],
@@ -47,11 +47,11 @@ def test_rfc1123_datetime_validator_success(input_data: str, output_data: dateti
 
 
 @pytest.mark.parametrize(
-    "input_data",
+    'input_data',
     [
         1234567890,
-        "",
-        "2024-01-01T12:00:00",
+        '',
+        '2024-01-01T12:00:00',
     ],
 )
 def test_rfc1123_datetime_validator_fail(input_data: Any):
@@ -62,10 +62,10 @@ def test_rfc1123_datetime_validator_fail(input_data: Any):
 
 
 @pytest.mark.parametrize(
-    "input_data,output_data",
+    'input_data,output_data',
     [
-        ("2024-04-01 12:13:14", datetime(2024, 4, 1, 12, 13, 14)),
-        ("2024-04-01T12:13:14", datetime(2024, 4, 1, 12, 13, 14)),
+        ('2024-04-01 12:13:14', datetime(2024, 4, 1, 12, 13, 14)),
+        ('2024-04-01T12:13:14', datetime(2024, 4, 1, 12, 13, 14)),
     ],
 )
 def test_spaced_datetime_validator_success(input_data: str, output_data: datetime):
@@ -75,11 +75,11 @@ def test_spaced_datetime_validator_success(input_data: str, output_data: datetim
 
 
 @pytest.mark.parametrize(
-    "input_data",
+    'input_data',
     [
         1234567890,
-        "",
-        "2024-01-01_12:00:00",
+        '',
+        '2024-01-01_12:00:00',
     ],
 )
 def test_spaced_datetime_validator_fail(input_data: Any):
@@ -90,25 +90,23 @@ def test_spaced_datetime_validator_fail(input_data: Any):
 
 
 @pytest.mark.parametrize(
-    "input_data,divisor,output_data",
+    'input_data,divisor,output_data',
     [
         (1717922614, 1, datetime(2024, 6, 9, 8, 43, 34, tzinfo=timezone.utc)),
         (1717922614000, 1000, datetime(2024, 6, 9, 8, 43, 34, tzinfo=timezone.utc)),
     ],
 )
-def test_timestamp_datetime_validator_success(
-    input_data: Any, divisor: int, output_data: datetime
-):
+def test_timestamp_datetime_validator_success(input_data: Any, divisor: int, output_data: datetime):
     validator = TimestampDateTimeValidator(divisor=divisor)
 
     assert validator.validate(input_data) == output_data
 
 
 @pytest.mark.parametrize(
-    "input_data",
+    'input_data',
     [
-        "",
-        "2024-01-01_12:00:00",
+        '',
+        '2024-01-01_12:00:00',
     ],
 )
 def test_timestamp_datetime_validator_fail(input_data: Any):

@@ -17,7 +17,7 @@ class ExcelNoneable(Noneable):
         If the input is None, return None (or the value specified in the `default` parameter). Otherwise, pass the input
         to the wrapped validator and return its result.
         """
-        if input_data is None or input_data in ["", "-"]:
+        if input_data is None or input_data in ['', '-']:
             return deepcopy(self.default_value)
 
         return super().validate(input_data, **kwargs)

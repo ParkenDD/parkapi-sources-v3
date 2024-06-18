@@ -24,18 +24,14 @@ def stuttgart_push_converter(mocked_config_helper: Mock) -> StuttgartPushConvert
 class StuttgartPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(stuttgart_push_converter: StuttgartPushConverter):
-        with get_data_path("stuttgart-static.xml").open("br") as xml_file:
-            root_element = etree.fromstring(
-                xml_file.read(), parser=etree.XMLParser(resolve_entities=False)
-            )  # noqa: S320
+        with get_data_path('stuttgart-static.xml').open('br') as xml_file:
+            root_element = etree.fromstring(xml_file.read(), parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            stuttgart_push_converter.handle_xml(root_element)
-        )
+        static_parking_site_inputs, import_parking_site_exceptions = stuttgart_push_converter.handle_xml(root_element)
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), "There should be more valid then invalid parking sites"
+        ), 'There should be more valid then invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -43,17 +39,13 @@ class StuttgartPullConverterTest:
     def test_get_realtime_parking_sites(
         stuttgart_push_converter: StuttgartPushConverter,
     ):
-        with get_data_path("stuttgart-realtime.xml").open("br") as xml_file:
-            root_element = etree.fromstring(
-                xml_file.read(), parser=etree.XMLParser(resolve_entities=False)
-            )  # noqa: S320
+        with get_data_path('stuttgart-realtime.xml').open('br') as xml_file:
+            root_element = etree.fromstring(xml_file.read(), parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 
-        realtime_parking_site_inputs, import_parking_site_exceptions = (
-            stuttgart_push_converter.handle_xml(root_element)
-        )
+        realtime_parking_site_inputs, import_parking_site_exceptions = stuttgart_push_converter.handle_xml(root_element)
 
         assert len(realtime_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), "There should be more valid then invalid parking sites"
+        ), 'There should be more valid then invalid parking sites'
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

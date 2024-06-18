@@ -21,23 +21,21 @@ from parkapi_sources.models import (
 
 
 class ReutlingenBikePushConverter(CsvConverter):
-    proj: pyproj.Proj = pyproj.Proj(
-        proj="utm", zone=32, ellps="WGS84", preserve_units=True
-    )
+    proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
     reutlingen_bike_row_validator = DataclassValidator(ReutlingenBikeRowInput)
 
     source_info = SourceInfo(
-        uid="reutlingen_bike",
-        name="Stadt Reutlingen: Fahrrad-Abstellanlagen",
-        public_url="https://www.reutlingen.de",
+        uid='reutlingen_bike',
+        name='Stadt Reutlingen: Fahrrad-Abstellanlagen',
+        public_url='https://www.reutlingen.de',
         has_realtime_data=False,
     )
 
     header_mapping: dict[str, str] = {
-        "\ufeffSTANDORT": "name",
-        "ANZAHL": "capacity",
-        "ANLAGE": "additional_name",
-        "GEOM": "coordinates",
+        '\ufeffSTANDORT': 'name',
+        'ANZAHL': 'capacity',
+        'ANLAGE': 'additional_name',
+        'GEOM': 'coordinates',
     }
 
     def handle_csv_string(
@@ -47,17 +45,13 @@ class ReutlingenBikePushConverter(CsvConverter):
         list[StaticParkingSiteInput | RealtimeParkingSiteInput],
         list[ImportParkingSiteException],
     ]:
-        return self.handle_csv(list(csv.reader(data, dialect="unix", delimiter=",")))
+        return self.handle_csv(list(csv.reader(data, dialect='unix', delimiter=',')))
 
-    def handle_csv(
-        self, data: list[list]
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def handle_csv(self, data: list[list]) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
-        mapping: dict[str, int] = self.get_mapping_by_header(
-            self.header_mapping, data[0]
-        )
+        mapping: dict[str, int] = self.get_mapping_by_header(self.header_mapping, data[0])
 
         # We start at row 2, as the first one is our header
         for row in data[1:]:
@@ -66,21 +60,17 @@ class ReutlingenBikePushConverter(CsvConverter):
                 input_dict[field] = row[mapping[field]]
 
             try:
-                reutlingen_bike_row_input: ReutlingenBikeRowInput = (
-                    self.reutlingen_bike_row_validator.validate(input_dict)
-                )
+                reutlingen_bike_row_input: ReutlingenBikeRowInput = self.reutlingen_bike_row_validator.validate(input_dict)
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get("name"),
-                        message=f"validation error for {input_dict}: {e.to_dict()}",
+                        parking_site_uid=input_dict.get('name'),
+                        message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
                 continue
 
-            static_parking_site_inputs.append(
-                reutlingen_bike_row_input.to_parking_site_input(self.proj)
-            )
+            static_parking_site_inputs.append(reutlingen_bike_row_input.to_parking_site_input(self.proj))
 
         return static_parking_site_inputs, static_parking_site_errors

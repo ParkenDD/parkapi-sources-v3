@@ -17,7 +17,9 @@ class XmlConverter(PushConverter, ABC):
     xml_helper = XMLHelper()
 
     @abstractmethod
-    def handle_xml(self, root: Element) -> tuple[
+    def handle_xml(
+        self, root: Element
+    ) -> tuple[
         list[StaticParkingSiteInput | RealtimeParkingSiteInput],
         list[ImportParkingSiteException],
     ]:

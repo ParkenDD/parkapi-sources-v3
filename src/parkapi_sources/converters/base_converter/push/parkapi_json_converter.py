@@ -35,30 +35,24 @@ class ParkApiConverter(JsonConverter, ABC):
         list[StaticParkingSiteInput | RealtimeParkingSiteInput],
         list[ImportParkingSiteException],
     ]:
-        parking_site_inputs: list[StaticParkingSiteInput | RealtimeParkingSiteInput] = (
-            []
-        )
+        parking_site_inputs: list[StaticParkingSiteInput | RealtimeParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 
         try:
             parking_site_item_inputs = self.parking_site_items_validator.validate(data)
         except ValidationError as e:
-            raise ImportSourceException(
-                source_uid=self.source_info.uid, message=f"Invalid data {e.to_dict()}"
-            ) from e
+            raise ImportSourceException(source_uid=self.source_info.uid, message=f'Invalid data {e.to_dict()}') from e
 
         for parking_site_dict in parking_site_item_inputs.items:
             try:
-                static_parking_site_input = self.static_parking_site_validator.validate(
-                    parking_site_dict
-                )
+                static_parking_site_input = self.static_parking_site_validator.validate(parking_site_dict)
                 parking_site_inputs.append(static_parking_site_input)
             except ValidationError as e:
                 parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get("uid"),
-                        message=f"validation error for {parking_site_dict}: {e.to_dict()}",
+                        parking_site_uid=parking_site_dict.get('uid'),
+                        message=f'validation error for {parking_site_dict}: {e.to_dict()}',
                     ),
                 )
                 # If there was an error, we don't proceed with realtime data
@@ -69,15 +63,13 @@ class ParkApiConverter(JsonConverter, ABC):
                 continue
 
             try:
-                parking_site_inputs.append(
-                    self.realtime_parking_site_validator.validate(parking_site_dict)
-                )
+                parking_site_inputs.append(self.realtime_parking_site_validator.validate(parking_site_dict))
             except ValidationError as e:
                 parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get("uid"),
-                        message=f"validation error for {parking_site_dict}: {e.to_dict()}",
+                        parking_site_uid=parking_site_dict.get('uid'),
+                        message=f'validation error for {parking_site_dict}: {e.to_dict()}',
                     ),
                 )
 

@@ -14,12 +14,12 @@ from validataclass.validators import StringValidator
 
 
 @pytest.mark.parametrize(
-    "input_data,output_data",
+    'input_data,output_data',
     [
-        ("", None),
-        ("-", None),
+        ('', None),
+        ('-', None),
         (None, None),
-        ("cookies", "cookies"),
+        ('cookies', 'cookies'),
     ],
 )
 def test_excel_noneable_success(input_data: Any, output_data: Optional[str]):
@@ -34,10 +34,10 @@ def test_excel_noneable_success(input_data: Any, output_data: Optional[str]):
 
 
 @pytest.mark.parametrize(
-    "input_data",
+    'input_data',
     [
         1,
-        Decimal("3"),
+        Decimal('3'),
         UnsetValue,
     ],
 )
