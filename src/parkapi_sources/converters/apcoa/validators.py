@@ -52,7 +52,7 @@ class ApcoaCarparkType(Enum):
     def to_parking_site_type_input(self) -> ParkingSiteType:
         # TODO: find out more details about this enumeration for a proper mapping
         return {
-            self.MLCP: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.MLCP: ParkingSiteType.CAR_PARK,
             self.OFF_STREET_OPEN: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.OFF_STREET_UNDERGROUND: ParkingSiteType.UNDERGROUND,
             self.ON_STREET: ParkingSiteType.ON_STREET,
@@ -172,7 +172,7 @@ class ApcoaParkingSiteInput:
         raise ValidationError(reason='Missing parking spaces capacity')
 
     def get_osm_opening_hours(self) -> str:
-        apcoa_opening_times: dict = defaultdict(list)
+        apcoa_opening_times: dict[str, list[str]] = defaultdict(list)
         for opening_hours_input in self.OpeningHours:
             opening_time = opening_hours_input.OpeningTimes.replace(' ', '')
             if opening_hours_input.OpeningTimes == '00:00 - 00:00':
