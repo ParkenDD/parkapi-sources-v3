@@ -14,7 +14,7 @@ from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteIn
 
 
 class CsvConverter(PushConverter, ABC):
-    csv_delimiter = ';'
+    csv_delimiter = ";"
 
     def handle_csv_string(
         self,
@@ -33,7 +33,7 @@ class CsvConverter(PushConverter, ABC):
             if header_field not in row:
                 raise ImportSourceException(
                     source_uid=self.source_info.uid,
-                    message=f'cannot find header key {header_field}',
+                    message=f"cannot find header key {header_field}",
                 )
             mapping[target_field] = row.index(header_field)
         return mapping

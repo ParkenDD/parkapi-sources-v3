@@ -7,62 +7,62 @@ from enum import Enum
 
 
 class PurposeType(Enum):
-    CAR = 'CAR'
-    BIKE = 'BIKE'
-    ITEM = 'ITEM'
+    CAR = "CAR"
+    BIKE = "BIKE"
+    ITEM = "ITEM"
 
 
 class SourceStatus(Enum):
-    DISABLED = 'DISABLED'
-    ACTIVE = 'ACTIVE'
-    FAILED = 'FAILED'
-    PROVISIONED = 'PROVISIONED'
+    DISABLED = "DISABLED"
+    ACTIVE = "ACTIVE"
+    FAILED = "FAILED"
+    PROVISIONED = "PROVISIONED"
 
 
 class ParkingSiteType(Enum):
     # For cars
-    ON_STREET = 'ON_STREET'
-    OFF_STREET_PARKING_GROUND = 'OFF_STREET_PARKING_GROUND'
-    UNDERGROUND = 'UNDERGROUND'
-    CAR_PARK = 'CAR_PARK'
+    ON_STREET = "ON_STREET"
+    OFF_STREET_PARKING_GROUND = "OFF_STREET_PARKING_GROUND"
+    UNDERGROUND = "UNDERGROUND"
+    CAR_PARK = "CAR_PARK"
 
     # For bikes. See https://wiki.openstreetmap.org/wiki/Key:bicycle_parking for explanations.
-    GENERIC_BIKE = 'GENERIC_BIKE'
-    WALL_LOOPS = 'WALL_LOOPS'
-    SAFE_WALL_LOOPS = 'SAFE_WALL_LOOPS'
-    STANDS = 'STANDS'
-    LOCKERS = 'LOCKERS'
-    SHED = 'SHED'
-    TWO_TIER = 'TWO_TIER'
-    BUILDING = 'BUILDING'
-    FLOOR = 'FLOOR'
+    GENERIC_BIKE = "GENERIC_BIKE"
+    WALL_LOOPS = "WALL_LOOPS"
+    SAFE_WALL_LOOPS = "SAFE_WALL_LOOPS"
+    STANDS = "STANDS"
+    LOCKERS = "LOCKERS"
+    SHED = "SHED"
+    TWO_TIER = "TWO_TIER"
+    BUILDING = "BUILDING"
+    FLOOR = "FLOOR"
 
     # For all
-    OTHER = 'OTHER'
+    OTHER = "OTHER"
 
 
 class ParkAndRideType(Enum):
-    CARPOOL = 'CARPOOL'
-    TRAIN = 'TRAIN'
-    BUS = 'BUS'
-    TRAM = 'TRAM'
-    YES = 'YES'
-    NO = 'NO'
+    CARPOOL = "CARPOOL"
+    TRAIN = "TRAIN"
+    BUS = "BUS"
+    TRAM = "TRAM"
+    YES = "YES"
+    NO = "NO"
 
 
 class OpeningStatus(Enum):
-    OPEN = 'OPEN'
-    CLOSED = 'CLOSED'
-    UNKNOWN = 'UNKNOWN'
+    OPEN = "OPEN"
+    CLOSED = "CLOSED"
+    UNKNOWN = "UNKNOWN"
 
 
 class ExternalIdentifierType(Enum):
-    OSM = 'OSM'
-    DHID = 'DHID'
+    OSM = "OSM"
+    DHID = "DHID"
 
 
 class SupervisionType(Enum):
-    YES = 'YES'
-    NO = 'NO'
-    VIDEO = 'VIDEO'
-    ATTENDED = 'ATTENDED'
+    YES = "YES"
+    NO = "NO"
+    VIDEO = "VIDEO"
+    ATTENDED = "ATTENDED"

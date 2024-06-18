@@ -27,7 +27,7 @@ class KienzlerInput:
             uid=self.id,
             name=self.name,
             purpose=(
-                PurposeType.ITEM if 'Schließfächer' in self.name else PurposeType.BIKE
+                PurposeType.ITEM if "Schließfächer" in self.name else PurposeType.BIKE
             ),
             lat=self.lat,
             lon=self.long,

@@ -22,7 +22,7 @@ class NeckarsulmPushConverterTest:
     def test_get_static_parking_sites(
         neckarsulm_push_converter: NeckarsulmPushConverter,
     ):
-        with get_data_path('neckarsulm.csv').open() as neckarsulm_file:
+        with get_data_path("neckarsulm.csv").open() as neckarsulm_file:
             neckarsulm_data = StringIO(neckarsulm_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = (
@@ -31,6 +31,6 @@ class NeckarsulmPushConverterTest:
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        ), "There should be more valid then invalid parking sites"
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

@@ -19,8 +19,8 @@ from tests.converters.helper import (
 @pytest.fixture
 def heidelberg_config_helper(mocked_config_helper: Mock):
     config = {
-        'STATIC_GEOJSON_BASE_URL': 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources',
-        'PARK_API_HEIDELBERG_API_KEY': '2fced81b-ec5e-43f9-aa9c-0d12731a7813',
+        "STATIC_GEOJSON_BASE_URL": "https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources",
+        "PARK_API_HEIDELBERG_API_KEY": "2fced81b-ec5e-43f9-aa9c-0d12731a7813",
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
         key, default
@@ -37,12 +37,12 @@ def heidelberg_pull_converter(
 
 @pytest.fixture
 def heidelberg_request_mock(requests_mock: Mock):
-    json_path = Path(Path(__file__).parent, 'data', 'heidelberg.json')
+    json_path = Path(Path(__file__).parent, "data", "heidelberg.json")
     with json_path.open() as json_file:
         json_data = json_file.read()
 
     requests_mock.get(
-        'https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities',
+        "https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities",
         text=json_data,
     )
 

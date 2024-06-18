@@ -27,8 +27,8 @@ from .validation import (
 
 
 class PbwPullConverter(PullConverter):
-    _base_url = 'https://www.mypbw.de/api/'
-    required_config_keys = ['PARK_API_PBW_API_KEY']
+    _base_url = "https://www.mypbw.de/api/"
+    required_config_keys = ["PARK_API_PBW_API_KEY"]
 
     mapper = PbwMapper()
 
@@ -38,16 +38,16 @@ class PbwPullConverter(PullConverter):
     realtime_validator = DataclassValidator(PbwRealtimeInput)
 
     source_info = SourceInfo(
-        uid='pbw',
-        name='Parkraumgesellschaft Baden-Württemberg',
-        public_url='https://www.pbw.de',
+        uid="pbw",
+        name="Parkraumgesellschaft Baden-Württemberg",
+        public_url="https://www.pbw.de",
         has_realtime_data=True,
     )
 
     def get_static_parking_sites(
         self,
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        city_dicts = self._get_remote_data('catalog-city')
+        city_dicts = self._get_remote_data("catalog-city")
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
@@ -58,14 +58,14 @@ class PbwPullConverter(PullConverter):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=city_dict.get('id'),
-                        message=f'validation error: {e.to_dict()}',
+                        parking_site_uid=city_dict.get("id"),
+                        message=f"validation error: {e.to_dict()}",
                     ),
                 )
                 continue
 
             parking_site_detail_dicts = self._get_remote_data(
-                'object-by-city', city_input.id
+                "object-by-city", city_input.id
             )
 
             for parking_site_detail_dict in parking_site_detail_dicts:
@@ -80,7 +80,7 @@ class PbwPullConverter(PullConverter):
                         ImportParkingSiteException(
                             source_uid=self.source_info.uid,
                             parking_site_uid=str(city_input.id),
-                            message=f'validation error at data {parking_site_detail_dict}: {e.to_dict()}',
+                            message=f"validation error at data {parking_site_detail_dict}: {e.to_dict()}",
                         ),
                     )
                     continue
@@ -97,7 +97,7 @@ class PbwPullConverter(PullConverter):
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
         realtime_parking_site_errors: list[ImportParkingSiteException] = []
 
-        realtime_dicts = self._get_remote_data('object-dynamic-all')
+        realtime_dicts = self._get_remote_data("object-dynamic-all")
 
         for realtime_dict in realtime_dicts:
             try:
@@ -111,8 +111,8 @@ class PbwPullConverter(PullConverter):
                 realtime_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=realtime_dict.get('id'),
-                        message=f'validation error at data {realtime_dict}: {e.to_dict()}',
+                        parking_site_uid=realtime_dict.get("id"),
+                        message=f"validation error at data {realtime_dict}: {e.to_dict()}",
                     )
                 )
 
@@ -122,19 +122,19 @@ class PbwPullConverter(PullConverter):
         self, data_type: str, data_id: Optional[int] = None
     ) -> list[dict]:
         parameters = {
-            'format': 'json',
-            'key': self.config_helper.get('PARK_API_PBW_API_KEY'),
-            'type': data_type,
+            "format": "json",
+            "key": self.config_helper.get("PARK_API_PBW_API_KEY"),
+            "type": data_type,
         }
         if data_id is not None:
-            parameters['id'] = data_id
+            parameters["id"] = data_id
 
         response = requests.get(self._base_url, params=parameters, timeout=60)
         result_dict: dict = response.json()
 
         items: list[dict] = []
         for key, item in result_dict.items():
-            item['id'] = key
+            item["id"] = key
             items.append(item)
 
         return items

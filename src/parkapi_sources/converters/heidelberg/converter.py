@@ -23,17 +23,17 @@ from .models import HeidelbergInput
 
 
 class HeidelbergPullConverter(PullConverter):
-    required_config_keys = ['PARK_API_HEIDELBERG_API_KEY']
+    required_config_keys = ["PARK_API_HEIDELBERG_API_KEY"]
     list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     heidelberg_validator = DataclassValidator(HeidelbergInput)
 
     source_info = SourceInfo(
-        uid='heidelberg',
-        name='Stadt Heidelberg',
-        public_url='https://parken.heidelberg.de',
-        source_url='https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities',
-        timezone='Europe/Berlin',
-        attribution_contributor='Stadt Heidelberg',
+        uid="heidelberg",
+        name="Stadt Heidelberg",
+        public_url="https://parken.heidelberg.de",
+        source_url="https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities",
+        timezone="Europe/Berlin",
+        attribution_contributor="Stadt Heidelberg",
         has_realtime_data=True,
     )
 
@@ -74,12 +74,12 @@ class HeidelbergPullConverter(PullConverter):
         response = requests.get(
             self.source_info.source_url,
             params={
-                'api-key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY'),
-                'limit': 50,
+                "api-key": self.config_helper.get("PARK_API_HEIDELBERG_API_KEY"),
+                "limit": 50,
             },
             headers={
-                'X-Gravitee-Api-Key': self.config_helper.get(
-                    'PARK_API_HEIDELBERG_API_KEY'
+                "X-Gravitee-Api-Key": self.config_helper.get(
+                    "PARK_API_HEIDELBERG_API_KEY"
                 )
             },
             timeout=30,
@@ -90,7 +90,7 @@ class HeidelbergPullConverter(PullConverter):
         except ValidationError as e:
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
-                message=f'Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}',
+                message=f"Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}",
             ) from e
 
         for input_dict in input_dicts:
@@ -100,9 +100,9 @@ class HeidelbergPullConverter(PullConverter):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get('staticParkingSiteId'),
+                        parking_site_uid=input_dict.get("staticParkingSiteId"),
                         message=f'Invalid data at uid {input_dict.get("staticParkingSiteId")}: {e.to_dict()}, '
-                        f'data: {input_dict}',
+                        f"data: {input_dict}",
                     ),
                 )
                 continue

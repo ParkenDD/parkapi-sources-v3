@@ -22,22 +22,22 @@ from parkapi_sources.models import (
 
 class ReutlingenBikePushConverter(CsvConverter):
     proj: pyproj.Proj = pyproj.Proj(
-        proj='utm', zone=32, ellps='WGS84', preserve_units=True
+        proj="utm", zone=32, ellps="WGS84", preserve_units=True
     )
     reutlingen_bike_row_validator = DataclassValidator(ReutlingenBikeRowInput)
 
     source_info = SourceInfo(
-        uid='reutlingen_bike',
-        name='Stadt Reutlingen: Fahrrad-Abstellanlagen',
-        public_url='https://www.reutlingen.de',
+        uid="reutlingen_bike",
+        name="Stadt Reutlingen: Fahrrad-Abstellanlagen",
+        public_url="https://www.reutlingen.de",
         has_realtime_data=False,
     )
 
     header_mapping: dict[str, str] = {
-        '\ufeffSTANDORT': 'name',
-        'ANZAHL': 'capacity',
-        'ANLAGE': 'additional_name',
-        'GEOM': 'coordinates',
+        "\ufeffSTANDORT": "name",
+        "ANZAHL": "capacity",
+        "ANLAGE": "additional_name",
+        "GEOM": "coordinates",
     }
 
     def handle_csv_string(
@@ -47,7 +47,7 @@ class ReutlingenBikePushConverter(CsvConverter):
         list[StaticParkingSiteInput | RealtimeParkingSiteInput],
         list[ImportParkingSiteException],
     ]:
-        return self.handle_csv(list(csv.reader(data, dialect='unix', delimiter=',')))
+        return self.handle_csv(list(csv.reader(data, dialect="unix", delimiter=",")))
 
     def handle_csv(
         self, data: list[list]
@@ -73,8 +73,8 @@ class ReutlingenBikePushConverter(CsvConverter):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get('name'),
-                        message=f'validation error for {input_dict}: {e.to_dict()}',
+                        parking_site_uid=input_dict.get("name"),
+                        message=f"validation error for {input_dict}: {e.to_dict()}",
                     ),
                 )
                 continue

@@ -28,14 +28,14 @@ class StaticGeojsonDataMixin:
     geojson_validator = DataclassValidator(GeojsonInput)
     geojson_feature_validator = DataclassValidator(GeojsonFeatureInput)
     _base_url = (
-        'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources'
+        "https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources"
     )
 
     def _get_static_geojson(self, source_uid: str) -> GeojsonInput:
-        if self.config_helper.get('STATIC_GEOJSON_BASE_PATH'):
+        if self.config_helper.get("STATIC_GEOJSON_BASE_PATH"):
             with Path(
-                self.config_helper.get('STATIC_GEOJSON_BASE_PATH'),
-                f'{source_uid}.geojson',
+                self.config_helper.get("STATIC_GEOJSON_BASE_PATH"),
+                f"{source_uid}.geojson",
             ).open() as geojson_file:
                 return json.loads(geojson_file.read())
         else:
@@ -47,14 +47,14 @@ class StaticGeojsonDataMixin:
             except (ConnectionError, NewConnectionError) as e:
                 raise ImportParkingSiteException(
                     source_uid=self.source_info.uid,
-                    message='Connection issue for GeoJSON data',
+                    message="Connection issue for GeoJSON data",
                 ) from e
             try:
                 return response.json()
             except JSONDecodeError as e:
                 raise ImportParkingSiteException(
                     source_uid=self.source_info.uid,
-                    message='Invalid JSON response for GeoJSON data',
+                    message="Invalid JSON response for GeoJSON data",
                 ) from e
 
     def _get_static_parking_site_inputs_and_exceptions(
@@ -67,7 +67,7 @@ class StaticGeojsonDataMixin:
         except ValidationError as e:
             raise ImportSourceException(
                 source_uid=source_uid,
-                message=f'Invalid GeoJSON for source {source_uid}: {e.to_dict()}. Data: {geojson_dict}',
+                message=f"Invalid GeoJSON for source {source_uid}: {e.to_dict()}. Data: {geojson_dict}",
             ) from e
 
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
@@ -89,8 +89,8 @@ class StaticGeojsonDataMixin:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=feature_dict.get('properties', {}).get('uid'),
-                        message=f'Invalid GeoJSON feature for source {source_uid}: {e.to_dict()}',
+                        parking_site_uid=feature_dict.get("properties", {}).get("uid"),
+                        message=f"Invalid GeoJSON feature for source {source_uid}: {e.to_dict()}",
                     ),
                 )
         return static_parking_site_inputs, import_parking_site_exceptions

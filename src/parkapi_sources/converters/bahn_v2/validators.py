@@ -26,23 +26,23 @@ from parkapi_sources.models.enums import ParkingSiteType
 
 
 class NameContext(Enum):
-    NAME = 'NAME'
-    DISPLAY = 'DISPLAY'
-    LABEL = 'LABEL'
-    SLOGAN = 'SLOGAN'
+    NAME = "NAME"
+    DISPLAY = "DISPLAY"
+    LABEL = "LABEL"
+    SLOGAN = "SLOGAN"
 
 
 class BahnParkingSiteCapacityType(Enum):
-    PARKING = 'PARKING'
-    HANDICAPPED_PARKING = 'HANDICAPPED_PARKING'
+    PARKING = "PARKING"
+    HANDICAPPED_PARKING = "HANDICAPPED_PARKING"
 
 
 class BahnParkingSiteType(Enum):
-    PARKPLATZ = 'Parkplatz'
-    TIEFGARAGE = 'Tiefgarage'
-    PARKHAUS = 'Parkhaus'
-    STRASSE = 'Straße'
-    PARKDECK = 'Parkdeck'
+    PARKPLATZ = "Parkplatz"
+    TIEFGARAGE = "Tiefgarage"
+    PARKHAUS = "Parkhaus"
+    STRASSE = "Straße"
+    PARKDECK = "Parkdeck"
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         # TODO: find out more details about this enumeration for a proper mapping
@@ -138,4 +138,4 @@ class BahnParkingSiteInput:
             if capacity.type == BahnParkingSiteCapacityType.PARKING:
                 return
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
-        raise ValidationError(reason='Missing parking capacity')
+        raise ValidationError(reason="Missing parking capacity")

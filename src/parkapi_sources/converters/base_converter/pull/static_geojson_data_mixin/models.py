@@ -39,7 +39,7 @@ class GeojsonFeaturePropertiesInput(ValidataclassMixin):
 
 @validataclass
 class GeojsonFeatureGeometryInput:
-    type: str = AnyOfValidator(allowed_values=['Point'])
+    type: str = AnyOfValidator(allowed_values=["Point"])
     coordinates: list[Decimal] = ListValidator(
         NumericValidator(), min_length=2, max_length=2
     )
@@ -47,7 +47,7 @@ class GeojsonFeatureGeometryInput:
 
 @validataclass
 class GeojsonFeatureInput:
-    type: str = AnyOfValidator(allowed_values=['Feature'])
+    type: str = AnyOfValidator(allowed_values=["Feature"])
     properties: GeojsonFeaturePropertiesInput = DataclassValidator(
         GeojsonFeaturePropertiesInput
     )
@@ -68,5 +68,5 @@ class GeojsonFeatureInput:
 
 @validataclass
 class GeojsonInput:
-    type: str = AnyOfValidator(allowed_values=['FeatureCollection'])
+    type: str = AnyOfValidator(allowed_values=["FeatureCollection"])
     features: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict]))

@@ -12,7 +12,7 @@ class SourceInfo:
     uid: str
     name: str
     has_realtime_data: Optional[bool]
-    timezone: str = 'Europe/Berlin'
+    timezone: str = "Europe/Berlin"
     public_url: Optional[str] = None
     source_url: Optional[str] = None
     attribution_license: Optional[str] = None

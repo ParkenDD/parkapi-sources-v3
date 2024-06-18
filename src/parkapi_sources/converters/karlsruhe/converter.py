@@ -32,7 +32,7 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
-        ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
+        ca_path = Path(Path(__file__).parent, "files", "ca.crt.pem")
         response = requests.get(
             self.source_info.source_url, verify=str(ca_path), timeout=30
         )
@@ -43,7 +43,7 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
         except ValidationError as e:
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
-                message=f'Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}',
+                message=f"Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}",
             ) from e
 
         for feature_dict in geojson_input.features:
@@ -53,9 +53,9 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=feature_dict.get('properties').get('id'),
+                        parking_site_uid=feature_dict.get("properties").get("id"),
                         message=f'Invalid data at uid {feature_dict.get("properties").get("id")}: '
-                        f'{e.to_dict()}, data: {feature_dict}',
+                        f"{e.to_dict()}, data: {feature_dict}",
                     ),
                 )
                 continue
@@ -82,15 +82,15 @@ class KarlsruhePullConverter(KarlsruheBasePullConverter):
     karlsruhe_feature_validator = DataclassValidator(KarlsruheFeatureInput)
 
     source_info = SourceInfo(
-        uid='karlsruhe',
-        name='Stadt Karlsruhe: PKW-Parkplätze',
-        public_url='https://web1.karlsruhe.de/service/Parken/',
-        source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=TBA%3Aparkhaeuser'
-        '&outputFormat=application%2Fjson&srsName=EPSG:4326',
-        timezone='Europe/Berlin',
-        attribution_contributor='Stadt Karlsruhe',
-        attribution_license='Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)',
-        attribution_url='http://creativecommons.org/licenses/by/4.0/',
+        uid="karlsruhe",
+        name="Stadt Karlsruhe: PKW-Parkplätze",
+        public_url="https://web1.karlsruhe.de/service/Parken/",
+        source_url="https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=TBA%3Aparkhaeuser"
+        "&outputFormat=application%2Fjson&srsName=EPSG:4326",
+        timezone="Europe/Berlin",
+        attribution_contributor="Stadt Karlsruhe",
+        attribution_license="Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)",
+        attribution_url="http://creativecommons.org/licenses/by/4.0/",
         has_realtime_data=True,
     )
 
@@ -112,15 +112,15 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
     karlsruhe_feature_validator = DataclassValidator(KarlsruheBikeFeatureInput)
 
     source_info = SourceInfo(
-        uid='karlsruhe_bike',
-        name='Stadt Karlsruhe: Fahrrad-Abstellanlagen',
-        public_url='https://web1.karlsruhe.de/service/Parken/',
-        source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
-        '&typeName=TBA%3Aka_fahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326',
-        timezone='Europe/Berlin',
-        attribution_contributor='Stadt Karlsruhe',
-        attribution_license='Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)',
-        attribution_url='http://creativecommons.org/licenses/by/4.0/',
+        uid="karlsruhe_bike",
+        name="Stadt Karlsruhe: Fahrrad-Abstellanlagen",
+        public_url="https://web1.karlsruhe.de/service/Parken/",
+        source_url="https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature"
+        "&typeName=TBA%3Aka_fahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326",
+        timezone="Europe/Berlin",
+        attribution_contributor="Stadt Karlsruhe",
+        attribution_license="Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)",
+        attribution_url="http://creativecommons.org/licenses/by/4.0/",
         has_realtime_data=False,
     )
 

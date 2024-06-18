@@ -16,8 +16,8 @@ from tests.converters.helper import validate_static_parking_site_inputs
 @pytest.fixture
 def bahn_v2_config_helper(mocked_config_helper: Mock):
     config = {
-        'PARK_API_BAHN_API_CLIENT_ID': 'de14131a-c542-445a-999b-88393df54903',
-        'PARK_API_BAHN_API_CLIENT_SECRET': '20832cbc-377d-41e4-aee8-7bc1a87dfe90',
+        "PARK_API_BAHN_API_CLIENT_ID": "de14131a-c542-445a-999b-88393df54903",
+        "PARK_API_BAHN_API_CLIENT_SECRET": "20832cbc-377d-41e4-aee8-7bc1a87dfe90",
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
         key, default
@@ -35,12 +35,12 @@ class BahnV2PullConverterTest:
     def test_get_static_parking_sites(
         bahn_v2_pull_converter: BahnV2PullConverter, requests_mock: Mocker
     ):
-        json_path = Path(Path(__file__).parent, 'data', 'bahn_v2.json')
+        json_path = Path(Path(__file__).parent, "data", "bahn_v2.json")
         with json_path.open() as json_file:
             json_data = json_file.read()
 
         requests_mock.get(
-            'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2/parking-facilities',
+            "https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2/parking-facilities",
             text=json_data,
         )
 

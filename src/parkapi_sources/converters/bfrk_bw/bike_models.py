@@ -18,18 +18,18 @@ from .base_models import BfrkBaseRowInput
 
 class GermanMappedBooleanValidator(MappedBooleanValidator):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, mapping={'ja': True, 'nein': False}, **kwargs)
+        super().__init__(*args, mapping={"ja": True, "nein": False}, **kwargs)
 
 
 class BfrkBikeType(Enum):
-    WALL_LOOPS = 'Vorderradhalter'
-    STANDS = 'Anlehnbuegel'
-    LOCKERS = 'Fahrradboxen'
-    TWO_TIER = 'doppelstoeckig'
-    SHED = 'Fahrradsammelanlage'
-    BUILDING = 'Fahrradparkhaus'
-    AUTOMATIC_BUILDING = 'automatischesParksystem'
-    OTHER = 'Sonstiges'
+    WALL_LOOPS = "Vorderradhalter"
+    STANDS = "Anlehnbuegel"
+    LOCKERS = "Fahrradboxen"
+    TWO_TIER = "doppelstoeckig"
+    SHED = "Fahrradsammelanlage"
+    BUILDING = "Fahrradparkhaus"
+    AUTOMATIC_BUILDING = "automatischesParksystem"
+    OTHER = "Sonstiges"
 
     def to_parking_site_type(self) -> ParkingSiteType:
         if self == BfrkBikeType.AUTOMATIC_BUILDING:

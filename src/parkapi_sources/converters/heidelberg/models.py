@@ -39,39 +39,39 @@ from .validators import NoneableRemoveValueDict, RemoveValueDict
 
 
 class HeidelbergFacilityType(Enum):
-    HANDICAPPED_ACCESSIBLE_PAYING_MASCHINE = 'handicapped accessible paying machine'
-    INTERCOM_AT_EXIT = 'Intercom at Exit'
-    SECURITY_CAMERA = 'Security Camera'
-    ACCESSABLE = 'Accessable'
-    HANDICAPPED_BATHROOM = 'Handicapped Bathroom'
-    BATHROOM = 'Bathroom'
-    STAFF = 'Staff'
-    CHANGING_TABLE = 'Changing Table'
-    BIKE_PARKING = 'BikeParking'
-    ELEVATOR = 'Elevator'
-    DEFIBRILLATOR = 'Defibirlator'
-    COPY_MASCHINE_OR_SERVICE = 'CopyMachineOrService'
+    HANDICAPPED_ACCESSIBLE_PAYING_MASCHINE = "handicapped accessible paying machine"
+    INTERCOM_AT_EXIT = "Intercom at Exit"
+    SECURITY_CAMERA = "Security Camera"
+    ACCESSABLE = "Accessable"
+    HANDICAPPED_BATHROOM = "Handicapped Bathroom"
+    BATHROOM = "Bathroom"
+    STAFF = "Staff"
+    CHANGING_TABLE = "Changing Table"
+    BIKE_PARKING = "BikeParking"
+    ELEVATOR = "Elevator"
+    DEFIBRILLATOR = "Defibirlator"
+    COPY_MASCHINE_OR_SERVICE = "CopyMachineOrService"
 
 
 class HeidelbergPaymentMethodType(Enum):
-    CASH = 'Cash'
-    MONEY_CARD = 'MoneyCard'
-    DEBIT_CART = 'DebitCard'
-    GOOGLE = 'Google'
-    PAY_PAL = 'PayPal'
-    LICENCE_PLATE = 'Licence Plate'
-    CREDIT_CARD = 'CreditCard'
-    INVOICE = 'Invoice'
-    COD = 'COD'
+    CASH = "Cash"
+    MONEY_CARD = "MoneyCard"
+    DEBIT_CART = "DebitCard"
+    GOOGLE = "Google"
+    PAY_PAL = "PayPal"
+    LICENCE_PLATE = "Licence Plate"
+    CREDIT_CARD = "CreditCard"
+    INVOICE = "Invoice"
+    COD = "COD"
 
 
 class HeidelbergParkingSiteStatus(Enum):
-    OPEN = 'Open'
-    CLOSED = 'Closed'
-    OPEN_DE = 'Offen'
-    CLOSED_DE = 'Geschlossen'
-    BROKEN = 'Stoerung'
-    UNKNOWN = '0'
+    OPEN = "Open"
+    CLOSED = "Closed"
+    OPEN_DE = "Offen"
+    CLOSED_DE = "Geschlossen"
+    BROKEN = "Stoerung"
+    UNKNOWN = "0"
 
     def to_opening_status(self) -> OpeningStatus:
         return {
@@ -85,12 +85,12 @@ class HeidelbergParkingSiteStatus(Enum):
 
 
 class HeidelbergParkingType(Enum):
-    OFFSTREET_PARKING = 'OffStreetParking'
+    OFFSTREET_PARKING = "OffStreetParking"
 
 
 class HeidelbergParkingSubType(Enum):
-    GARAGE = 'Parking Garage'
-    PARK_AND_RIDE = 'Park and Ride Car Park'
+    GARAGE = "Parking Garage"
+    PARK_AND_RIDE = "Park and Ride Car Park"
 
 
 @validataclass
@@ -106,7 +106,7 @@ class HeidelbergInput:
         TimeValidator(time_format=TimeFormat.NO_SECONDS)
     )
     description: str = RemoveValueDict(
-        ReplacingStringValidator(mapping={'\r': '', '\n': ' ', '\xa0': ' '})
+        ReplacingStringValidator(mapping={"\r": "", "\n": " ", "\xa0": " "})
     )
     facilities: list[str] = RemoveValueDict(
         ListValidator(EnumValidator(HeidelbergFacilityType))
@@ -158,9 +158,9 @@ class HeidelbergInput:
             parking_site_type = None
 
         if self.openingHours == self.closingHours:
-            opening_hours = '24/7'
+            opening_hours = "24/7"
         else:
-            opening_hours = f'{self.openingHours.isoformat()[:5]}-{self.closingHours.isoformat()[:5]}'
+            opening_hours = f"{self.openingHours.isoformat()[:5]}-{self.closingHours.isoformat()[:5]}"
 
         supervision_type: Optional[SupervisionType] = None
         if HeidelbergFacilityType.STAFF in self.facilities:
@@ -171,10 +171,10 @@ class HeidelbergInput:
         return StaticParkingSiteInput(
             uid=self.staticParkingSiteId,
             name=self.staticName,
-            description=self.description.replace('\r\n', ' '),
+            description=self.description.replace("\r\n", " "),
             lat=self.lat,
             lon=self.lon,
-            address=f'{self.streetAddress}, {self.postalCode} {self.addressLocality}',
+            address=f"{self.streetAddress}, {self.postalCode} {self.addressLocality}",
             operator_name=self.provider,
             max_height=(
                 None

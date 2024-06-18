@@ -24,17 +24,17 @@ from .validators import ApcoaParkingSiteInput
 
 
 class ApcoaPullConverter(PullConverter):
-    required_config_keys = ['PARK_API_APCOA_API_SUBSCRIPTION_KEY']
+    required_config_keys = ["PARK_API_APCOA_API_SUBSCRIPTION_KEY"]
 
     mapper = ApcoaMapper()
     list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     apcoa_parking_site_validator = DataclassValidator(ApcoaParkingSiteInput)
 
     source_info = SourceInfo(
-        uid='apcoa',
-        name='APCOA-SERVICES API',
-        public_url='https://devzone.apcoa-services.com/',
-        source_url='https://api.apcoa-services.com/carpark-dev/v4/Carparks',
+        uid="apcoa",
+        name="APCOA-SERVICES API",
+        public_url="https://devzone.apcoa-services.com/",
+        source_url="https://api.apcoa-services.com/carpark-dev/v4/Carparks",
         has_realtime_data=False,  # ATM only static data can be called from the API
     )
 
@@ -47,7 +47,7 @@ class ApcoaPullConverter(PullConverter):
         parking_site_dicts = self.get_data()
 
         for parking_site_dict in self.list_validator.validate(
-            parking_site_dicts['Results']
+            parking_site_dicts["Results"]
         ):
             try:
                 parking_site_input: ApcoaParkingSiteInput = (
@@ -57,8 +57,8 @@ class ApcoaPullConverter(PullConverter):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('CarParkId'),
-                        message=f'validation error for data {parking_site_dict}: {e.to_dict()}',
+                        parking_site_uid=parking_site_dict.get("CarParkId"),
+                        message=f"validation error for data {parking_site_dict}: {e.to_dict()}",
                     ),
                 )
                 continue
@@ -75,9 +75,9 @@ class ApcoaPullConverter(PullConverter):
 
     def get_data(self) -> dict:
         headers: dict[str, str] = {
-            'Cache-Control': 'no-cache',
-            'Ocp-Apim-Subscription-Key': self.config_helper.get(
-                'PARK_API_APCOA_API_SUBSCRIPTION_KEY'
+            "Cache-Control": "no-cache",
+            "Ocp-Apim-Subscription-Key": self.config_helper.get(
+                "PARK_API_APCOA_API_SUBSCRIPTION_KEY"
             ),
         }
 

@@ -44,7 +44,7 @@ class XlsxConverter(PushConverter, ABC):
             if header_col not in row_values:
                 raise ImportSourceException(
                     source_uid=self.source_info.uid,
-                    message=f'cannot find header key {header_col}',
+                    message=f"cannot find header key {header_col}",
                 )
             mapping[target_field] = row_values.index(header_col)
         return mapping

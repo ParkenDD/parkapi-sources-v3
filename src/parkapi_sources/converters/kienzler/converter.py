@@ -27,15 +27,15 @@ class KienzlerPullConverter(PullConverter):
     kienzler_item_validator = DataclassValidator(KienzlerInput)
 
     required_config_keys = [
-        'PARK_API_KIENZLER_USER',
-        'PARK_API_KIENZLER_PASSWORD',
-        'PARK_API_KIENZLER_IDS',
+        "PARK_API_KIENZLER_USER",
+        "PARK_API_KIENZLER_PASSWORD",
+        "PARK_API_KIENZLER_IDS",
     ]
     source_info = SourceInfo(
-        uid='kienzler',
-        name='Kienzler',
+        uid="kienzler",
+        name="Kienzler",
         has_realtime_data=True,
-        public_url='https://www.bikeandridebox.de',
+        public_url="https://www.bikeandridebox.de",
     )
 
     def get_static_parking_sites(
@@ -84,21 +84,21 @@ class KienzlerPullConverter(PullConverter):
                 errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('uid'),
-                        message=f'validation error for {parking_site_dict}: {e.to_dict()}',
+                        parking_site_uid=parking_site_dict.get("uid"),
+                        message=f"validation error for {parking_site_dict}: {e.to_dict()}",
                     ),
                 )
         return kienzler_item_inputs, errors
 
     def _request(self) -> list[dict]:
         response = requests.post(
-            url='https://www.bikeandridebox.de/index.php?eID=JSONAPI',
+            url="https://www.bikeandridebox.de/index.php?eID=JSONAPI",
             json={
-                'user': self.config_helper.get('PARK_API_KIENZLER_USER'),
-                'password': self.config_helper.get('PARK_API_KIENZLER_PASSWORD'),
-                'action': 'capacity',
-                'context': 'unit',
-                'ids': self.config_helper.get('PARK_API_KIENZLER_IDS').split(','),
+                "user": self.config_helper.get("PARK_API_KIENZLER_USER"),
+                "password": self.config_helper.get("PARK_API_KIENZLER_PASSWORD"),
+                "action": "capacity",
+                "context": "unit",
+                "ids": self.config_helper.get("PARK_API_KIENZLER_IDS").split(","),
             },
             timeout=30,
         )

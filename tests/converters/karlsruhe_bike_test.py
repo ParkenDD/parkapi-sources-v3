@@ -18,11 +18,11 @@ from tests.converters.helper import (
 
 @pytest.fixture
 def requests_mock_karlsruhe_bike(requests_mock: Mocker) -> Mocker:
-    json_path = Path(Path(__file__).parent, 'data', 'karlsruhe_bike.json')
+    json_path = Path(Path(__file__).parent, "data", "karlsruhe_bike.json")
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get('https://mobil.trk.de:8443/geoserver/TBA/ows', text=json_data)
+    requests_mock.get("https://mobil.trk.de:8443/geoserver/TBA/ows", text=json_data)
 
     return requests_mock
 

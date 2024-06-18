@@ -23,15 +23,15 @@ class Rfc1123DateTimeValidator(StringValidator):
             input_data = parsedate_to_datetime(input_data)
             return input_data.astimezone(tz=timezone.utc)
         except ValueError as e:
-            raise ValidationError(reason='Invalid RFD 1123 datetime') from e
+            raise ValidationError(reason="Invalid RFD 1123 datetime") from e
 
 
 class SpacedDateTimeValidator(DateTimeValidator):
     def validate(self, input_data: Any, **kwargs) -> datetime:
         self._ensure_type(input_data, str)
 
-        if len(input_data) > 10 and input_data[10] == ' ':
-            input_data = f'{input_data[:10]}T{input_data[11:]}'
+        if len(input_data) > 10 and input_data[10] == " ":
+            input_data = f"{input_data[:10]}T{input_data[11:]}"
 
         return super().validate(input_data, **kwargs)
 
@@ -54,4 +54,4 @@ class TimestampDateTimeValidator(IntegerValidator):
         try:
             return datetime.fromtimestamp(input_data, tz=timezone.utc)
         except ValueError as e:
-            raise ValidationError(reason='Invalid timestamp') from e
+            raise ValidationError(reason="Invalid timestamp") from e

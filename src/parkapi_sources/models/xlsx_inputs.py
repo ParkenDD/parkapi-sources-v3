@@ -21,7 +21,7 @@ from parkapi_sources.validators import (
 
 class ExcelMappedBooleanValidator(MappedBooleanValidator):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, mapping={'ja': True, 'nein': False}, **kwargs)
+        super().__init__(*args, mapping={"ja": True, "nein": False}, **kwargs)
 
 
 @validataclass
@@ -79,7 +79,7 @@ class ExcelOpeningTimeInput(ValidataclassMixin):
 
     def get_osm_opening_hours(self) -> str:
         if self.opening_hours_is_24_7 is True:
-            return '24/7'
+            return "24/7"
         # TODO: opening hours over midnight
         opening_hours_fragments = []
         if self.opening_hours_weekday_begin and self.opening_hours_weekday_end:
@@ -101,4 +101,4 @@ class ExcelOpeningTimeInput(ValidataclassMixin):
             opening_hours_fragments.append(
                 f'PH {self.opening_hours_public_holiday_begin.strftime("%H:%M")}-{self.opening_hours_public_holiday_end.strftime("%H:%M")}',
             )
-        return '; '.join(opening_hours_fragments)
+        return "; ".join(opening_hours_fragments)

@@ -20,9 +20,9 @@ class PforzheimPushConverter(JsonConverter):
     pforzheim_validator = DataclassValidator(PforzheimInput)
 
     source_info = SourceInfo(
-        uid='pforzheim',
-        name='Stadt Pforzheim',
-        public_url='https://www.pforzheim.de',
+        uid="pforzheim",
+        name="Stadt Pforzheim",
+        public_url="https://www.pforzheim.de",
         has_realtime_data=False,
     )
 
@@ -40,8 +40,8 @@ class PforzheimPushConverter(JsonConverter):
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
-                        uid=input_dict.get('Id'),
-                        message=f'validation error for {input_dict}: {e.to_dict()}',
+                        uid=input_dict.get("Id"),
+                        message=f"validation error for {input_dict}: {e.to_dict()}",
                     ),
                 )
                 continue
@@ -52,18 +52,18 @@ class PforzheimPushConverter(JsonConverter):
                 type=input_data.type.to_parking_site_type_input(),
                 lat=input_data.lat,
                 lon=input_data.lon,
-                address=input_data.address.replace('\n', ', '),
-                description=input_data.description.replace('\n', ', '),
+                address=input_data.address.replace("\n", ", "),
+                description=input_data.description.replace("\n", ", "),
                 capacity=input_data.capacity,
                 capacity_woman=input_data.quantitySpacesReservedForWomen,
                 capacity_disabled=input_data.quantitySpacesReservedForMobilityImpededPerson,
-                fee_description=input_data.feeInformation.replace('\n', ', '),
+                fee_description=input_data.feeInformation.replace("\n", ", "),
                 supervision_type=(
                     SupervisionType.YES
-                    if 'ja' in input_data.securityInformation.lower()
+                    if "ja" in input_data.securityInformation.lower()
                     else False
                 ),
-                opening_hours='24/7' if input_data.hasOpeningHours24h else None,
+                opening_hours="24/7" if input_data.hasOpeningHours24h else None,
                 static_data_updated_at=datetime.now(tz=timezone.utc),
             )
             static_parking_site_inputs.append(parking_site_input)

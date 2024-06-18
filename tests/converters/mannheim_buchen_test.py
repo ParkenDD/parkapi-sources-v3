@@ -26,7 +26,7 @@ class MannheimPullConverterTest:
     @staticmethod
     def test_get_parking_sites(mannheim_push_converter: MannheimPushConverter):
         # TODO: set proper test files as soon as we get them
-        with get_data_path('mannheim.json').open('br') as json_file:
+        with get_data_path("mannheim.json").open("br") as json_file:
             json_data = json.load(json_file)
 
         parking_site_inputs, import_parking_site_exceptions = (
@@ -35,8 +35,8 @@ class MannheimPullConverterTest:
 
         assert (
             len(parking_site_inputs) == len(json_data) * 2
-        ), 'There should be two parking sites per input dataset.'
-        assert len(import_parking_site_exceptions) == 0, 'There should be no exceptions'
+        ), "There should be two parking sites per input dataset."
+        assert len(import_parking_site_exceptions) == 0, "There should be no exceptions"
 
         validate_static_parking_site_inputs(
             [

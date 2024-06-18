@@ -24,7 +24,7 @@ class KonstanzBikePushConverterTest:
     def test_get_static_parking_sites(
         konstanz_bike_push_converter: KonstanzBikePushConverter,
     ):
-        with get_data_path('konstanz_bike.csv').open() as konstanz_bike_file:
+        with get_data_path("konstanz_bike.csv").open() as konstanz_bike_file:
             konstanz_bike_data = StringIO(konstanz_bike_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = (
@@ -33,6 +33,6 @@ class KonstanzBikePushConverterTest:
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        ), "There should be more valid then invalid parking sites"
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

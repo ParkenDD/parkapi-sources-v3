@@ -20,19 +20,19 @@ from .validators import BahnParkingSiteInput
 
 
 class BahnV2PullConverter(PullConverter):
-    _base_url = 'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2'
+    _base_url = "https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2"
     required_config_keys = [
-        'PARK_API_BAHN_API_CLIENT_ID',
-        'PARK_API_BAHN_API_CLIENT_SECRET',
+        "PARK_API_BAHN_API_CLIENT_ID",
+        "PARK_API_BAHN_API_CLIENT_SECRET",
     ]
 
     mapper = BahnMapper()
     bahn_parking_site_validator = DataclassValidator(BahnParkingSiteInput)
 
     source_info = SourceInfo(
-        uid='bahn_v2',
-        name='Deutsche Bahn Parkplätze',
-        public_url='https://www.dbbahnpark.de',
+        uid="bahn_v2",
+        name="Deutsche Bahn Parkplätze",
+        public_url="https://www.dbbahnpark.de",
         has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
     )
 
@@ -44,7 +44,7 @@ class BahnV2PullConverter(PullConverter):
 
         parking_site_dicts = self.get_data()
 
-        for parking_site_dict in parking_site_dicts.get('_embedded', []):
+        for parking_site_dict in parking_site_dicts.get("_embedded", []):
             try:
                 parking_site_input: BahnParkingSiteInput = (
                     self.bahn_parking_site_validator.validate(parking_site_dict)
@@ -53,8 +53,8 @@ class BahnV2PullConverter(PullConverter):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('id'),
-                        message=f'validation error for data {parking_site_dict}: {e.to_dict()}',
+                        parking_site_uid=parking_site_dict.get("id"),
+                        message=f"validation error for data {parking_site_dict}: {e.to_dict()}",
                     ),
                 )
                 continue
@@ -74,10 +74,10 @@ class BahnV2PullConverter(PullConverter):
 
     def get_data(self) -> dict:
         headers: dict[str, str] = {
-            'DB-Client-Id': self.config_helper.get('PARK_API_BAHN_API_CLIENT_ID'),
-            'DB-Api-Key': self.config_helper.get('PARK_API_BAHN_API_CLIENT_SECRET'),
-            'Accept': 'application/vnd.parkinginformation.db-bahnpark.v1+json',
-            'accept': 'application/json',
+            "DB-Client-Id": self.config_helper.get("PARK_API_BAHN_API_CLIENT_ID"),
+            "DB-Api-Key": self.config_helper.get("PARK_API_BAHN_API_CLIENT_SECRET"),
+            "Accept": "application/vnd.parkinginformation.db-bahnpark.v1+json",
+            "accept": "application/json",
         }
 
         response = requests.get(

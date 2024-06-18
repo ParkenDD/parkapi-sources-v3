@@ -26,15 +26,15 @@ from .models import PMBWInput
 
 
 class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
-    required_config_keys = ['PARK_API_P_M_BW_TOKEN']
+    required_config_keys = ["PARK_API_P_M_BW_TOKEN"]
 
     list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     p_m_bw_site_validator = DataclassValidator(PMBWInput)
 
     source_info = SourceInfo(
-        uid='p_m_bw',
-        name='Parken und Mitfahren Baden-Württemberg',
-        source_url='https://api.cloud-telartec.de/v1/parkings',
+        uid="p_m_bw",
+        name="Parken und Mitfahren Baden-Württemberg",
+        source_url="https://api.cloud-telartec.de/v1/parkings",
         has_realtime_data=True,
     )
 
@@ -99,7 +99,7 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
         response = requests.get(
             self.source_info.source_url,
             headers={
-                'Authorization': f'Bearer {self.config_helper.get("PARK_API_P_M_BW_TOKEN")}'
+                "Authorization": f'Bearer {self.config_helper.get("PARK_API_P_M_BW_TOKEN")}'
             },
             timeout=60,
         )
@@ -111,8 +111,8 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
                 parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get('id'),
-                        message=f'validation error for static data {input_dict}: {e.to_dict()}',
+                        parking_site_uid=input_dict.get("id"),
+                        message=f"validation error for static data {input_dict}: {e.to_dict()}",
                     ),
                 )
 

@@ -25,12 +25,12 @@ from parkapi_sources.models.enums import ParkingSiteType
 
 
 class PbwParkingSiteType(Enum):
-    PARKPLATZ = 'Parkplatz'
-    PARKBEREICH = 'Parkbereich'
-    PARKHAUS = 'Parkhaus'
-    PARKGARAGE = 'Parkgarage'
-    PARKIERUNGSAREAL = 'Parkierungsareal'
-    GESAMTAREAL = 'Gesamtareal'
+    PARKPLATZ = "Parkplatz"
+    PARKBEREICH = "Parkbereich"
+    PARKHAUS = "Parkhaus"
+    PARKGARAGE = "Parkgarage"
+    PARKIERUNGSAREAL = "Parkierungsareal"
+    GESAMTAREAL = "Gesamtareal"
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         # TODO: find out more details about this enumeration for a proper mapping
@@ -45,10 +45,10 @@ class PbwParkingSiteType(Enum):
 
 
 class PbwParkingSiteShortType(Enum):
-    PP = 'PP'
-    PG = 'PG'
-    PH = 'PH'
-    PA = 'PA'
+    PP = "PP"
+    PG = "PG"
+    PH = "PH"
+    PA = "PA"
 
 
 @validataclass

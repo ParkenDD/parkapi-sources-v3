@@ -15,26 +15,26 @@ from .models import KonstanzRowInput
 
 class KonstanzBikePushConverter(CsvConverter):
     konstanz_bike_row_validator = DataclassValidator(KonstanzRowInput)
-    csv_delimiter = ','
+    csv_delimiter = ","
 
     source_info = SourceInfo(
-        uid='konstanz_bike',
-        name='Stadt Konstanz: Fahrrad-Abstellanlagen',
-        public_url='https://www.konstanz.de/',
+        uid="konstanz_bike",
+        name="Stadt Konstanz: Fahrrad-Abstellanlagen",
+        public_url="https://www.konstanz.de/",
         has_realtime_data=False,
     )
 
     header_mapping: dict[str, str] = {
-        'ABSTELL_NR': 'uid',
-        'Lagebezeichnung': 'address',
-        'Art': 'type',
-        'Ueberdachung': 'is_covered',
-        'Beleuchtung': 'has_lighting',
-        'Eigentuemer_Baulasttraeger': 'operator_name',
-        'Stadtteil': 'district',
-        'Kapazitaet': 'capacity',
-        'coordinates': 'coordinates',
-        'geometry': 'geometry',
+        "ABSTELL_NR": "uid",
+        "Lagebezeichnung": "address",
+        "Art": "type",
+        "Ueberdachung": "is_covered",
+        "Beleuchtung": "has_lighting",
+        "Eigentuemer_Baulasttraeger": "operator_name",
+        "Stadtteil": "district",
+        "Kapazitaet": "capacity",
+        "coordinates": "coordinates",
+        "geometry": "geometry",
     }
 
     def handle_csv(
@@ -61,8 +61,8 @@ class KonstanzBikePushConverter(CsvConverter):
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=input_dict.get('id'),
-                        message=f'validation error for {input_dict}: {e.to_dict()}',
+                        parking_site_uid=input_dict.get("id"),
+                        message=f"validation error for {input_dict}: {e.to_dict()}",
                     ),
                 )
                 continue
