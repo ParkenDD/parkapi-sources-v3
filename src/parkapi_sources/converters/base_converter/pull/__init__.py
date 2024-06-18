@@ -5,4 +5,8 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from .pull_converter import PullConverter
 from .pull_scraper_mixin import PullScraperMixin
-from .static_geojson_data_mixin import GeojsonFeatureGeometryInput, GeojsonInput, StaticGeojsonDataMixin
+from .static_geojson_data_mixin import (
+    GeojsonFeatureGeometryInput,
+    GeojsonInput,
+    StaticGeojsonDataMixin,
+)

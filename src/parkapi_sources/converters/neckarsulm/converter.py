@@ -41,11 +41,15 @@ class NeckarsulmPushConverter(CsvConverter):
         'maxhoehe': 'max_height',
     }
 
-    def handle_csv(self, data: list[list]) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def handle_csv(
+        self, data: list[list]
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
-        mapping: dict[str, int] = self.get_mapping_by_header(self.header_mapping, data[0])
+        mapping: dict[str, int] = self.get_mapping_by_header(
+            self.header_mapping, data[0]
+        )
 
         # We start at row 2, as the first one is our header
         for row in data[1:]:
@@ -54,7 +58,9 @@ class NeckarsulmPushConverter(CsvConverter):
                 input_dict[field] = row[mapping[field]]
 
             try:
-                input_data: NeckarsulmRowInput = self.neckarsulm_row_validator.validate(input_dict)
+                input_data: NeckarsulmRowInput = self.neckarsulm_row_validator.validate(
+                    input_dict
+                )
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(

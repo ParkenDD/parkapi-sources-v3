@@ -19,7 +19,9 @@ class XMLHelper:
         """
         Take a string object and (try to) convert it to an XML etree Element
         """
-        content_tag: etree.Element = etree.fromstring(content_string, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
+        content_tag: etree.Element = etree.fromstring(
+            content_string, parser=etree.XMLParser(resolve_entities=False)
+        )  # noqa: S320
 
         return content_tag
 
@@ -229,7 +231,9 @@ class XMLHelper:
         if tag.attrib and not ignore_all_attribs:
             for key, value in tag.attrib.items():
                 if key not in ignore_attributes:
-                    tag_dict[tag_name][key.replace('{http://www.w3.org/2001/XMLSchema-instance}', '')] = value
+                    tag_dict[tag_name][
+                        key.replace('{http://www.w3.org/2001/XMLSchema-instance}', '')
+                    ] = value
 
         if tag.text:
             text = tag.text.strip()
@@ -241,13 +245,16 @@ class XMLHelper:
 
         # filter out remote type tags at the child level:
         if isinstance(tag_dict[tag_name], dict):
-            tag_items: list[tuple[str, str]] = [(key, value) for key, value in tag_dict[tag_name].items()]  # noqa: C416
+            tag_items: list[tuple[str, str]] = list(tag_dict[tag_name].items())  # noqa: C416
             # it only works if there is exactly one key-value-pair at the child level!
             if len(tag_items) == 1:
                 child_key = tag_items[0][0]
                 child_value = tag_items[0][1]
                 # filter second level:
-                if child_key in remote_type_tags or (tag_name, child_key) in conditional_remote_type_tags:
+                if (
+                    child_key in remote_type_tags
+                    or (tag_name, child_key) in conditional_remote_type_tags
+                ):
                     tag_dict[tag_name] = child_value
 
         # finally, filter out remote type tags at the top level:

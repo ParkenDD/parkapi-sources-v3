@@ -15,18 +15,28 @@ from .validators import (
 
 class ApcoaMapper:
     @staticmethod
-    def map_static_parking_site(apcoa_input: ApcoaParkingSiteInput) -> StaticParkingSiteInput:
+    def map_static_parking_site(
+        apcoa_input: ApcoaParkingSiteInput,
+    ) -> StaticParkingSiteInput:
         latitude, longitude = next(
             iter(
-                (navigation_locations_input.GeoCoordinates.Latitude, navigation_locations_input.GeoCoordinates.Longitude)
+                (
+                    navigation_locations_input.GeoCoordinates.Latitude,
+                    navigation_locations_input.GeoCoordinates.Longitude,
+                )
                 for navigation_locations_input in apcoa_input.NavigationLocations
-                if navigation_locations_input.LocationType == ApcoaNavigationLocationType.DEFAULT
+                if navigation_locations_input.LocationType
+                == ApcoaNavigationLocationType.DEFAULT
             )
         )
 
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(apcoa_input.CarParkId),
-            name=apcoa_input.CarparkLongName if apcoa_input.CarparkLongName else apcoa_input.CarparkShortName,
+            name=(
+                apcoa_input.CarparkLongName
+                if apcoa_input.CarparkLongName
+                else apcoa_input.CarparkShortName
+            ),
             lat=latitude,
             lon=longitude,
             purpose=PurposeType.CAR,
@@ -36,13 +46,22 @@ class ApcoaMapper:
             static_data_updated_at=apcoa_input.LastModifiedDateTime,
         )
 
-        if apcoa_input.Address.Street and apcoa_input.Address.Zip and apcoa_input.Address.City:
+        if (
+            apcoa_input.Address.Street
+            and apcoa_input.Address.Zip
+            and apcoa_input.Address.City
+        ):
             static_parking_site_input.address = f'{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}'
 
         if apcoa_input.CarParkPhotoURLs:
-            static_parking_site_input.photo_url = apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1
+            static_parking_site_input.photo_url = (
+                apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1
+            )
 
-        if apcoa_input.IndicativeTariff.MinValue or apcoa_input.IndicativeTariff.MaxValue:
+        if (
+            apcoa_input.IndicativeTariff.MinValue
+            or apcoa_input.IndicativeTariff.MaxValue
+        ):
             static_parking_site_input.has_fee = True
 
         static_parking_site_input.opening_hours = apcoa_input.get_osm_opening_hours()

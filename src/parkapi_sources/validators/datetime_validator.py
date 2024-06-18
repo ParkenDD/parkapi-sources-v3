@@ -8,7 +8,11 @@ from email.utils import parsedate_to_datetime
 from typing import Any
 
 from validataclass.exceptions import ValidationError
-from validataclass.validators import DateTimeValidator, IntegerValidator, StringValidator
+from validataclass.validators import (
+    DateTimeValidator,
+    IntegerValidator,
+    StringValidator,
+)
 
 
 class Rfc1123DateTimeValidator(StringValidator):

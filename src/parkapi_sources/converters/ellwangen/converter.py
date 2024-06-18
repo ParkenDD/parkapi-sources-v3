@@ -35,18 +35,30 @@ class EllwangenPushConverter(NormalizedXlsxConverter):
             '24/7 geöffnet': 'opening_hours_is_24_7',
         }
         self.header_row = {
-            **{key: value for key, value in super().header_row.items() if value not in ellwangen_header_rows.values()},
+            **{
+                key: value
+                for key, value in super().header_row.items()
+                if value not in ellwangen_header_rows.values()
+            },
             **ellwangen_header_rows,
         }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(
+        self, mapping: dict[str, int], row: list[Cell]
+    ) -> dict[str, Any]:
         parking_site_dict: dict[str, str] = {}
 
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        parking_site_dict['max_stay'] = parking_site_dict['max_stay'] * 60 if parking_site_dict['max_stay'] else None
+        parking_site_dict['max_stay'] = (
+            parking_site_dict['max_stay'] * 60
+            if parking_site_dict['max_stay']
+            else None
+        )
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
-        parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
+        parking_site_dict['static_data_updated_at'] = datetime.now(
+            tz=timezone.utc
+        ).isoformat()
 
         return parking_site_dict

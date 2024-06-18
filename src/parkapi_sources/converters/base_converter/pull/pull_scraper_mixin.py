@@ -60,7 +60,11 @@ class PullScraperMixin(ABC):
                 continue
 
             try:
-                realtime_parking_site_inputs.append(self.realtime_parking_site_validator.validate(realtime_parking_site_dict))
+                realtime_parking_site_inputs.append(
+                    self.realtime_parking_site_validator.validate(
+                        realtime_parking_site_dict
+                    )
+                )
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(

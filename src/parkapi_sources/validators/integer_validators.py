@@ -11,7 +11,9 @@ from validataclass.validators import IntegerValidator
 
 
 class GermanDurationIntegerValidator(IntegerValidator):
-    pattern = re.compile(r'^([0-9]*) (Minute|Minuten|Stunde|Stunden|Tag|Tage|Woche|Wochen|Monat|Monate|Quartal|Quartale)$')
+    pattern = re.compile(
+        r'^([0-9]*) (Minute|Minuten|Stunde|Stunden|Tag|Tage|Woche|Wochen|Monat|Monate|Quartal|Quartale)$'
+    )
     unit_factors: dict[str, int] = {
         'Minute': 60,
         'Minuten': 60,
@@ -34,7 +36,9 @@ class GermanDurationIntegerValidator(IntegerValidator):
         input_match = re.match(self.pattern, input_data)
 
         if input_match is None:
-            raise ValidationError(code='invalid_string_input', reason='invalid string input')
+            raise ValidationError(
+                code='invalid_string_input', reason='invalid string input'
+            )
 
         value = int(input_match.group(1))
         unit = input_match.group(2)

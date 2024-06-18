@@ -23,8 +23,17 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, SupervisionType
-from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator, Rfc1123DateTimeValidator
+from parkapi_sources.models.enums import (
+    OpeningStatus,
+    ParkAndRideType,
+    ParkingSiteType,
+    SupervisionType,
+)
+from parkapi_sources.validators import (
+    ExcelNoneable,
+    ReplacingStringValidator,
+    Rfc1123DateTimeValidator,
+)
 
 from .validators import NoneableRemoveValueDict, RemoveValueDict
 
@@ -86,31 +95,53 @@ class HeidelbergParkingSubType(Enum):
 
 @validataclass
 class HeidelbergInput:
-    acceptedPaymentMethod: HeidelbergPaymentMethodType = RemoveValueDict(ListValidator(EnumValidator(HeidelbergPaymentMethodType)))
+    acceptedPaymentMethod: HeidelbergPaymentMethodType = RemoveValueDict(
+        ListValidator(EnumValidator(HeidelbergPaymentMethodType))
+    )
     addressLocality: str = RemoveValueDict(StringValidator())
-    availableSpotNumber: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)
-    closingHours: time = RemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS))
-    description: str = RemoveValueDict(ReplacingStringValidator(mapping={'\r': '', '\n': ' ', '\xa0': ' '}))
-    facilities: list[str] = RemoveValueDict(ListValidator(EnumValidator(HeidelbergFacilityType)))
+    availableSpotNumber: Optional[int] = NoneableRemoveValueDict(
+        IntegerValidator()
+    ), Default(None)
+    closingHours: time = RemoveValueDict(
+        TimeValidator(time_format=TimeFormat.NO_SECONDS)
+    )
+    description: str = RemoveValueDict(
+        ReplacingStringValidator(mapping={'\r': '', '\n': ' ', '\xa0': ' '})
+    )
+    facilities: list[str] = RemoveValueDict(
+        ListValidator(EnumValidator(HeidelbergFacilityType))
+    )
     familyParkingSpots: int = RemoveValueDict(IntegerValidator())
     googlePlaceId: str = RemoveValueDict(StringValidator())
     handicappedParkingSpots: int = RemoveValueDict(IntegerValidator())
     images: list[str] = RemoveValueDict(ListValidator(UrlValidator()))
     lat: Decimal = RemoveValueDict(NumericValidator())
     lon: Decimal = RemoveValueDict(NumericValidator())
-    maximumAllowedHeight: Optional[Decimal] = RemoveValueDict(ExcelNoneable(NumericValidator()))
-    maximumAllowedWidth: Optional[Decimal] = RemoveValueDict(ExcelNoneable((NumericValidator())))
+    maximumAllowedHeight: Optional[Decimal] = RemoveValueDict(
+        ExcelNoneable(NumericValidator())
+    )
+    maximumAllowedWidth: Optional[Decimal] = RemoveValueDict(
+        ExcelNoneable((NumericValidator()))
+    )
     observationDateTime: datetime = RemoveValueDict(DateTimeValidator())
-    openingHours: time = RemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS))
+    openingHours: time = RemoveValueDict(
+        TimeValidator(time_format=TimeFormat.NO_SECONDS)
+    )
     type: HeidelbergParkingType = EnumValidator(HeidelbergParkingType)
-    parking_type: HeidelbergParkingSubType = RemoveValueDict(EnumValidator(HeidelbergParkingSubType))
+    parking_type: HeidelbergParkingSubType = RemoveValueDict(
+        EnumValidator(HeidelbergParkingSubType)
+    )
     postalCode: int = RemoveValueDict(IntegerValidator())  # outsch
     provider: str = RemoveValueDict(StringValidator())
     staticName: str = RemoveValueDict(StringValidator())
     staticParkingSiteId: str = RemoveValueDict(StringValidator())
-    staticStatus: HeidelbergParkingSiteStatus = RemoveValueDict(EnumValidator(HeidelbergParkingSiteStatus))
+    staticStatus: HeidelbergParkingSiteStatus = RemoveValueDict(
+        EnumValidator(HeidelbergParkingSiteStatus)
+    )
     staticTotalSpotNumber: int = RemoveValueDict(IntegerValidator())
-    status: HeidelbergParkingSiteStatus = RemoveValueDict(EnumValidator(HeidelbergParkingSiteStatus))
+    status: HeidelbergParkingSiteStatus = RemoveValueDict(
+        EnumValidator(HeidelbergParkingSiteStatus)
+    )
     streetAddress: str = RemoveValueDict(StringValidator())
     streetAddressDriveway: str = RemoveValueDict(StringValidator())
     streetAddressExit: str = RemoveValueDict(StringValidator())
@@ -145,8 +176,16 @@ class HeidelbergInput:
             lon=self.lon,
             address=f'{self.streetAddress}, {self.postalCode} {self.addressLocality}',
             operator_name=self.provider,
-            max_height=None if self.maximumAllowedHeight is None else int(self.maximumAllowedHeight * 100),
-            max_width=None if self.maximumAllowedWidth is None else int(self.maximumAllowedWidth * 100),
+            max_height=(
+                None
+                if self.maximumAllowedHeight is None
+                else int(self.maximumAllowedHeight * 100)
+            ),
+            max_width=(
+                None
+                if self.maximumAllowedWidth is None
+                else int(self.maximumAllowedWidth * 100)
+            ),
             photo_url=self.images[0] if len(self.images) else None,
             capacity=self.totalSpotNumber,
             capacity_disabled=self.handicappedParkingSpots,
@@ -155,7 +194,11 @@ class HeidelbergInput:
             opening_hours=opening_hours,
             static_data_updated_at=self.observationDateTime,
             type=parking_site_type,
-            park_and_ride_type=[ParkAndRideType.YES] if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE else None,
+            park_and_ride_type=(
+                [ParkAndRideType.YES]
+                if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE
+                else None
+            ),
             supervision_type=supervision_type,
             has_realtime_data=self.availableSpotNumber is not None,
         )

@@ -9,7 +9,13 @@ from enum import Enum
 from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, NumericValidator, StringValidator
+from validataclass.validators import (
+    DataclassValidator,
+    EnumValidator,
+    IntegerValidator,
+    NumericValidator,
+    StringValidator,
+)
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType
@@ -68,7 +74,9 @@ class PMBWInput:
             has_realtime_data=True,
             lat=self.location.lat,
             lon=self.location.lng,
-            park_and_ride_type=[ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None,
+            park_and_ride_type=(
+                [ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None
+            ),
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:

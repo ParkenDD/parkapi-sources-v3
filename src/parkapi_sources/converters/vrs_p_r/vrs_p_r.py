@@ -14,7 +14,9 @@ from parkapi_sources.models import SourceInfo
 
 
 class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
-    proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
+    proj: pyproj.Proj = pyproj.Proj(
+        proj='utm', zone=32, ellps='WGS84', preserve_units=True
+    )
 
     source_info = SourceInfo(
         uid='vrs-p-r',
@@ -41,16 +43,24 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
         # Other opening times are there, but not parsable
     }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(
+        self, mapping: dict[str, int], row: list[Cell]
+    ) -> dict[str, Any]:
         parking_site_dict: dict[str, str] = {}
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        coordinates = self.proj(float(parking_site_dict.get('lon_utm')), float(parking_site_dict.get('lat_utm')), inverse=True)
+        coordinates = self.proj(
+            float(parking_site_dict.get('lon_utm')),
+            float(parking_site_dict.get('lat_utm')),
+            inverse=True,
+        )
         parking_site_dict['lat'] = coordinates[1]
         parking_site_dict['lon'] = coordinates[0]
 
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
-        parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
+        parking_site_dict['static_data_updated_at'] = datetime.now(
+            tz=timezone.utc
+        ).isoformat()
 
         return parking_site_dict

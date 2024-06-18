@@ -40,16 +40,24 @@ class GeojsonFeaturePropertiesInput(ValidataclassMixin):
 @validataclass
 class GeojsonFeatureGeometryInput:
     type: str = AnyOfValidator(allowed_values=['Point'])
-    coordinates: list[Decimal] = ListValidator(NumericValidator(), min_length=2, max_length=2)
+    coordinates: list[Decimal] = ListValidator(
+        NumericValidator(), min_length=2, max_length=2
+    )
 
 
 @validataclass
 class GeojsonFeatureInput:
     type: str = AnyOfValidator(allowed_values=['Feature'])
-    properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    properties: GeojsonFeaturePropertiesInput = DataclassValidator(
+        GeojsonFeaturePropertiesInput
+    )
+    geometry: GeojsonFeatureGeometryInput = DataclassValidator(
+        GeojsonFeatureGeometryInput
+    )
 
-    def to_static_parking_site_input(self, static_data_updated_at: datetime) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(
+        self, static_data_updated_at: datetime
+    ) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],

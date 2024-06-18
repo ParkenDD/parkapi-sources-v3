@@ -99,7 +99,9 @@ class ApcoaLocationGeocoordinatesInput:
 
 @validataclass
 class ApcoaNavigationLocationsInput:
-    GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(ApcoaLocationGeocoordinatesInput)
+    GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(
+        ApcoaLocationGeocoordinatesInput
+    )
     LocationType: Optional[str] = Noneable(StringValidator())
 
 
@@ -150,17 +152,29 @@ class ApcoaParkingSiteInput:
     CarparkLongName: Optional[str] = Noneable(StringValidator())
     CarparkShortName: Optional[str] = Noneable(StringValidator())
     CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
-    CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
-    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
+    CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(
+        DataclassValidator(ApcoaCarparkPhotoURLInput)
+    )
+    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(
+        ApcoaCarparkTypeNameInput
+    )
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
-    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
-    Spaces: list[ApcoaParkingSpaceInput] = ListValidator(DataclassValidator(ApcoaParkingSpaceInput))
-    OpeningHours: list[ApcoaOpeningHoursInput] = ListValidator(DataclassValidator(ApcoaOpeningHoursInput))
+    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(
+        DataclassValidator(ApcoaNavigationLocationsInput)
+    )
+    Spaces: list[ApcoaParkingSpaceInput] = ListValidator(
+        DataclassValidator(ApcoaParkingSpaceInput)
+    )
+    OpeningHours: list[ApcoaOpeningHoursInput] = ListValidator(
+        DataclassValidator(ApcoaOpeningHoursInput)
+    )
     LastModifiedDateTime: datetime = SpacedDateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
-    IndicativeTariff: Optional[ApcoaIndicativeTariffInput] = Noneable(DataclassValidator(ApcoaIndicativeTariffInput))
+    IndicativeTariff: Optional[ApcoaIndicativeTariffInput] = Noneable(
+        DataclassValidator(ApcoaIndicativeTariffInput)
+    )
 
     # TODO: ignored multiple attributes which do not matter so far
 
@@ -176,19 +190,62 @@ class ApcoaParkingSiteInput:
         for opening_hours_input in self.OpeningHours:
             opening_time = opening_hours_input.OpeningTimes.replace(' ', '')
             if opening_hours_input.OpeningTimes == '00:00 - 00:00':
+                opening_time = '00:00-24:00'
                 apcoa_opening_times['24/7'].append(opening_time)
-            if opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)[:5]:
+            if (
+                opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)[:5]
+                and opening_time != 'closed'
+            ):
                 apcoa_opening_times['Mo-Fr'].append(opening_time)
-            elif opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday):
-                apcoa_opening_times[opening_hours_input.Weekday.to_osm_opening_day_format()].append(opening_time)
+            if (
+                opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)
+                and opening_time != 'closed'
+            ):
+                apcoa_opening_times[opening_hours_input.Weekday.value].append(
+                    opening_time
+                )
 
-        osm_opening_hours = '; '.join(
-            [
-                f'{osm_opening_day} {",".join(set(opening_hours))}'
-                for osm_opening_day, opening_hours in apcoa_opening_times.items()
-                if osm_opening_day != '24/7' and 'closed' not in opening_hours
-            ]
-        )
+        osm_opening_hour: list = []
+        if (
+            len(apcoa_opening_times['Mo-Fr']) == 5
+            and len(set(apcoa_opening_times['Mo-Fr'])) == 1
+        ):
+            osm_opening_hour.append(
+                f'Mo-Fr {next(iter(set(apcoa_opening_times["Mo-Fr"])))}'
+            )
+        else:
+            if 'Monday' in list(apcoa_opening_times.keys()):
+                osm_opening_hour.append(
+                    f'{ApcoaOpeningHoursWeekday.MONDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Monday"]))}'
+                )
+            if 'Tuesday' in list(apcoa_opening_times.keys()):
+                osm_opening_hour.append(
+                    f'{ApcoaOpeningHoursWeekday.TUESDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Tuesday"]))}'
+                )
+            if 'Wednesday' in list(apcoa_opening_times.keys()):
+                osm_opening_hour.append(
+                    f'{ApcoaOpeningHoursWeekday.WEDNESDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Wednesday"]))}'
+                )
+            if 'Thursday' in list(apcoa_opening_times.keys()):
+                osm_opening_hour.append(
+                    f'{ApcoaOpeningHoursWeekday.THURSDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Thursday"]))}'
+                )
+            if 'Friday' in list(apcoa_opening_times.keys()):
+                osm_opening_hour.append(
+                    f'{ApcoaOpeningHoursWeekday.FRIDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Friday"]))}'
+                )
+
+        if 'Saturday' in list(apcoa_opening_times.keys()):
+            osm_opening_hour.append(
+                f'{ApcoaOpeningHoursWeekday.SATURDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Saturday"]))}'
+            )
+        if 'Sunday' in list(apcoa_opening_times.keys()):
+            osm_opening_hour.append(
+                f'{ApcoaOpeningHoursWeekday.SUNDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Sunday"]))}'
+            )
+        osm_opening_hours = '; '.join(osm_opening_hour)
+
         if len(apcoa_opening_times['24/7']) == 7:
             osm_opening_hours = '24/7'
+
         return osm_opening_hours

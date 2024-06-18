@@ -23,7 +23,9 @@ class ReutlingenPushConverterTest:
         with get_data_path('pforzheim.json').open() as reutlingen_file:
             pforzheim_data = json.loads(reutlingen_file.read())
 
-        static_parking_site_inputs, import_parking_site_exceptions = pforzheim_push_converter.handle_json(pforzheim_data)
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            pforzheim_push_converter.handle_json(pforzheim_data)
+        )
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions

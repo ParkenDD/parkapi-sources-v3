@@ -10,6 +10,10 @@ import pytest
 
 @pytest.fixture
 def mocked_static_geojson_config_helper(mocked_config_helper: Mock) -> Mock:
-    config = {'STATIC_GEOJSON_BASE_URL': 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources'}
-    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    config = {
+        'STATIC_GEOJSON_BASE_URL': 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources'
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(
+        key, default
+    )
     return mocked_config_helper

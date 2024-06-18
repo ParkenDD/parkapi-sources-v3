@@ -8,7 +8,12 @@ from decimal import Decimal
 from enum import Enum
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DecimalValidator, EnumValidator, IntegerValidator, StringValidator
+from validataclass.validators import (
+    DecimalValidator,
+    EnumValidator,
+    IntegerValidator,
+    StringValidator,
+)
 
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType

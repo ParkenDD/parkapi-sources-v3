@@ -1,4 +1,3 @@
-
 """
 Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
@@ -88,23 +87,32 @@ class ParkAPISources:
         self.converter_by_uid = {}
 
         converter_classes_by_uid: dict[str, Type[BaseConverter]] = {
-            converter_class.source_info.uid: converter_class for converter_class in self.converter_classes
+            converter_class.source_info.uid: converter_class
+            for converter_class in self.converter_classes
         }
 
         if converter_uids is None:
             converter_uids = list(converter_classes_by_uid.keys())
 
         for converter_uid in converter_uids:
-            if no_push_converter and issubclass(converter_classes_by_uid[converter_uid], PushConverter):
+            if no_push_converter and issubclass(
+                converter_classes_by_uid[converter_uid], PushConverter
+            ):
                 continue
 
-            if no_pull_converter and issubclass(converter_classes_by_uid[converter_uid], PullConverter):
+            if no_pull_converter and issubclass(
+                converter_classes_by_uid[converter_uid], PullConverter
+            ):
                 continue
 
             if converter_uid not in converter_classes_by_uid.keys():
-                raise MissingConverterException(f'Converter {converter_uid} does not exist.')
+                raise MissingConverterException(
+                    f'Converter {converter_uid} does not exist.'
+                )
 
-            self.converter_by_uid[converter_uid] = converter_classes_by_uid[converter_uid](config_helper=self.config_helper)
+            self.converter_by_uid[converter_uid] = converter_classes_by_uid[
+                converter_uid
+            ](config_helper=self.config_helper)
 
     def check_credentials(self):
         for converter in self.converter_by_uid.values():
