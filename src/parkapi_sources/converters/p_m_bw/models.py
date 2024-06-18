@@ -19,6 +19,7 @@ from parkapi_sources.validators import SpacedDateTimeValidator
 class PMBWConnectionStatus(Enum):
     OFFLINE = 'OFFLINE'
     ONLINE = 'ONLINE'
+    ACTIVE = 'ACTIVE'
 
 
 class PMBWCategory(Enum):
