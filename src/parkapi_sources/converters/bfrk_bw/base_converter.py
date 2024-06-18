@@ -16,7 +16,6 @@ from .base_models import BfrkBaseRowInput
 
 
 class BfrkBasePushConverter(CsvConverter, ABC):
-
     @property
     @abstractmethod
     def header_mapping(self) -> dict[str, str]:

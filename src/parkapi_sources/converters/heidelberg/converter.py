@@ -5,71 +5,84 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 import requests
 from validataclass.exceptions import ValidationError
-from validataclass.validators import DataclassValidator
+from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
-from .validators import HeidelbergRealtimeInput, HeidelbergRealtimeUpdateInput
+from .models import HeidelbergInput
 
 
-class HeidelbergPullConverter(PullConverter, StaticGeojsonDataMixin):
+class HeidelbergPullConverter(PullConverter):
     required_config_keys = ['PARK_API_HEIDELBERG_API_KEY']
-    heidelberg_realtime_validator = DataclassValidator(HeidelbergRealtimeInput)
-    heidelberg_realtime_update_validator = DataclassValidator(HeidelbergRealtimeUpdateInput)
+    list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
+    heidelberg_validator = DataclassValidator(HeidelbergInput)
+
     source_info = SourceInfo(
         uid='heidelberg',
         name='Stadt Heidelberg',
         public_url='https://parken.heidelberg.de',
-        source_url='https://parken.heidelberg.de/v1',
+        source_url='https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Heidelberg',
         has_realtime_data=True,
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        return self._get_static_parking_site_inputs_and_exceptions(source_uid=self.source_info.uid)
+        static_parking_site_inputs: list[StaticParkingSiteInput] = []
+
+        heidelberg_inputs, import_parking_site_exceptions = self._get_data()
+
+        for heidelberg_input in heidelberg_inputs:
+            static_parking_site_inputs.append(heidelberg_input.to_static_parking_site())
+
+        return static_parking_site_inputs, import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
+
+        heidelberg_inputs, import_parking_site_exceptions = self._get_data()
+
+        for heidelberg_input in heidelberg_inputs:
+            if heidelberg_input.availableSpotNumber is None:
+                continue
+            realtime_parking_site_inputs.append(heidelberg_input.to_realtime_parking_site_input())
+
+        return realtime_parking_site_inputs, import_parking_site_exceptions
+
+    def _get_data(self) -> tuple[list[HeidelbergInput], list[ImportParkingSiteException]]:
+        heidelberg_inputs: list[HeidelbergInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         response = requests.get(
-            f'{self.source_info.source_url}/parking-update',
-            params={'key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY')},
-            headers={
-                'Accept': 'application/json; charset=utf-8',
-                'Referer': 'https://parken.heidelberg.de',
-            },
+            self.source_info.source_url,
+            params={'api-key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY'), 'limit': 50},
+            headers={'X-Gravitee-Api-Key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY')},
             timeout=30,
         )
         response_data = response.json()
         try:
-            realtime_input = self.heidelberg_realtime_validator.validate(response_data)
+            input_dicts = self.list_validator.validate(response_data)
         except ValidationError as e:
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
                 message=f'Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}',
             ) from e
 
-        for update_dict in realtime_input.data.parkingupdates:
+        for input_dict in input_dicts:
             try:
-                update_input = self.heidelberg_realtime_update_validator.validate(update_dict)
+                heidelberg_input = self.heidelberg_validator.validate(input_dict)
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=update_dict.get('parkinglocation'),
-                        message=f'Invallid data at uid {update_dict.get("parkinglocation")}: {e.to_dict()}, ' f'data: {update_dict}',
+                        parking_site_uid=input_dict.get('staticParkingSiteId'),
+                        message=f'Invalid data at uid {input_dict.get("staticParkingSiteId")}: {e.to_dict()}, ' f'data: {input_dict}',
                     ),
                 )
                 continue
 
-            realtime_parking_site_inputs.append(
-                update_input.to_realtime_parking_site_input(
-                    realtime_data_updated_at=realtime_input.data.updated,
-                ),
-            )
+            heidelberg_inputs.append(heidelberg_input)
 
-        return realtime_parking_site_inputs, import_parking_site_exceptions
+        return heidelberg_inputs, import_parking_site_exceptions

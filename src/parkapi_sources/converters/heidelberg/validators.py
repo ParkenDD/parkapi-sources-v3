@@ -3,54 +3,30 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime
-from enum import Enum
+from typing import Any, Optional
 
-from validataclass.dataclasses import validataclass
-from validataclass.validators import AnythingValidator, DataclassValidator, EnumValidator, IntegerValidator, ListValidator
-
-from parkapi_sources.models import RealtimeParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus
-from parkapi_sources.validators import Rfc1123DateTimeValidator
+from validataclass.validators import Validator
 
 
-class HeidelbergParkingSiteStatus(Enum):
-    available = 'available'
-    occupied = 'occupied'
-    none = 'none'
+class RemoveValueDict(Validator):
+    wrapped_validator: Validator
 
-    def to_opening_status(self) -> OpeningStatus:
-        return {
-            self.available: OpeningStatus.OPEN,
-            # For some reason, occupied in API means closed
-            self.occupied: OpeningStatus.CLOSED,
-            self.none: OpeningStatus.UNKNOWN,
-        }.get(self)
+    def __init__(self, validator: Validator):
+        # Check parameter validity
+        if not isinstance(validator, Validator):
+            raise TypeError('RemoveValueDict requires a Validator instance.')
 
+        self.wrapped_validator = validator
 
-@validataclass
-class HeidelbergRealtimeUpdateInput:
-    parkinglocation: int = IntegerValidator()
-    total: int = IntegerValidator()
-    current: int = IntegerValidator()
-    status: HeidelbergParkingSiteStatus = EnumValidator(HeidelbergParkingSiteStatus)
+    def validate(self, input_data: Any, **kwargs: Any) -> Any:
+        self._ensure_type(input_data, dict)
 
-    def to_realtime_parking_site_input(self, realtime_data_updated_at: datetime) -> RealtimeParkingSiteInput:
-        return RealtimeParkingSiteInput(
-            uid=str(self.parkinglocation),
-            realtime_capacity=self.total,
-            realtime_free_capacity=self.current,
-            realtime_opening_status=self.status.to_opening_status(),
-            realtime_data_updated_at=realtime_data_updated_at,
-        )
+        return self.wrapped_validator.validate(input_data.get('value'), **kwargs)
 
 
-@validataclass
-class HeidelbergRealtimeDataInput:
-    parkingupdates: list[dict] = ListValidator(AnythingValidator(allowed_types=dict))
-    updated: datetime = Rfc1123DateTimeValidator()
+class NoneableRemoveValueDict(RemoveValueDict):
+    def validate(self, input_data: Any, **kwargs: Any) -> Optional[Any]:
+        if input_data is None:
+            return None
 
-
-@validataclass
-class HeidelbergRealtimeInput:
-    data: HeidelbergRealtimeDataInput = DataclassValidator(HeidelbergRealtimeDataInput)
+        return super().validate(input_data, **kwargs)

@@ -8,7 +8,7 @@ from typing import List, Tuple
 
 from lxml import etree
 
-xml_string_example_1: str = '''
+xml_string_example_1: str = """
             <Envelope>
                 <Header>
                     <Security>
@@ -26,7 +26,7 @@ xml_string_example_1: str = '''
                     </Content>
                 </Body>
             </Envelope>
-'''
+"""
 
 xml_etree_example_1: etree.Element = etree.fromstring(xml_string_example_1)  # noqa: S320
 
@@ -90,11 +90,11 @@ xml_dict_example_1c: dict = {
 }
 
 
-xml_string_example_2: str = '''
+xml_string_example_2: str = """
             <status>
                 <ChargePointStatusType>Operative</ChargePointStatusType>
             </status>
-'''
+"""
 
 xml_etree_example_2: etree.Element = etree.fromstring(xml_string_example_2)  # noqa: S320
 
@@ -112,11 +112,11 @@ xml_dict_example_2a: dict = {
     'status': 'Operative',
 }
 
-xml_string_example_3: str = '''
+xml_string_example_3: str = """
         <resultCode>
             <resultCode>ok</resultCode>
         </resultCode>
-'''
+"""
 
 xml_etree_example_3: etree.Element = etree.fromstring(xml_string_example_3)  # noqa: S320
 
@@ -132,9 +132,9 @@ xml_dict_example_3a: dict = {
     'resultCode': 'ok',
 }
 
-xml_string_example_4: str = '''
+xml_string_example_4: str = """
     <resultDescription xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-'''
+"""
 
 xml_etree_example_4: etree.Element = etree.fromstring(xml_string_example_4)  # noqa: S320
 
@@ -144,13 +144,13 @@ xml_dict_example_4: dict = {
     'resultDescription': None,
 }
 
-xml_string_example_5: str = '''
+xml_string_example_5: str = """
         <topLevelTag class="testClass">
             testText
             <secondLevelTag>ok</secondLevelTag>
             <class>anotherTestClass</class>
         </topLevelTag>
-'''
+"""
 
 xml_etree_example_5: etree.Element = etree.fromstring(xml_string_example_5)  # noqa: S320
 

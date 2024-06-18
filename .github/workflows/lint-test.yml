@@ -30,12 +30,12 @@ jobs:
       # uses: chartboost/ruff-action@v1
       run: ruff check --output-format github ./src ./tests
 
-    - name: format using black
+    - name: format check using ruff
       # We could also use the official GitHub Actions integration.
-      # https://black.readthedocs.io/en/stable/integrations/github_actions.html
-      # uses: uses: psf/black@stable
+      # https://beta.ruff.rs/docs/usage/#github-action
+      # uses: chartboost/ruff-action@v1
       run: |
-        black -S --check --diff ./src ./tests
+        ruff format --check ./src ./tests
 
   test:
     runs-on: ubuntu-latest

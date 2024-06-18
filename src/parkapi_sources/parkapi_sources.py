@@ -1,3 +1,4 @@
+
 """
 Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
@@ -6,7 +7,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 from typing import Optional, Type
 
 from .converters import (
-    A81PMPullConverter,
     ApcoaPullConverter,
     BahnV2PullConverter,
     BaseConverter,
@@ -14,6 +14,7 @@ from .converters import (
     BfrkBwOepnvCarPushConverter,
     BfrkBwSpnvBikePushConverter,
     BfrkBwSpnvCarPushConverter,
+    BietigheimBissingenPullConverter,
     BuchenPushConverter,
     EllwangenPushConverter,
     FreiburgPullConverter,
@@ -27,6 +28,7 @@ from .converters import (
     NeckarsulmPushConverter,
     PbwPullConverter,
     PforzheimPushConverter,
+    PMBWPullConverter,
     PumBwPushConverter,
     RadvisBwPullConverter,
     ReutlingenBikePushConverter,
@@ -43,13 +45,13 @@ from .util import ConfigHelper
 
 class ParkAPISources:
     converter_classes: list[Type[BaseConverter]] = [
-        A81PMPullConverter,
         ApcoaPullConverter,
         BahnV2PullConverter,
         BfrkBwOepnvBikePushConverter,
         BfrkBwOepnvCarPushConverter,
         BfrkBwSpnvBikePushConverter,
         BfrkBwSpnvCarPushConverter,
+        BietigheimBissingenPullConverter,
         EllwangenPushConverter,
         BuchenPushConverter,
         FreiburgPullConverter,
@@ -63,6 +65,7 @@ class ParkAPISources:
         NeckarsulmPushConverter,
         PbwPullConverter,
         PforzheimPushConverter,
+        PMBWPullConverter,
         PumBwPushConverter,
         RadvisBwPullConverter,
         ReutlingenPushConverter,

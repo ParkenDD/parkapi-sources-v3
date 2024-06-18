@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
+from requests import ConnectionError, JSONDecodeError
+from urllib3.exceptions import NewConnectionError
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -29,8 +31,20 @@ class StaticGeojsonDataMixin:
             with Path(self.config_helper.get('STATIC_GEOJSON_BASE_PATH'), f'{source_uid}.geojson').open() as geojson_file:
                 return json.loads(geojson_file.read())
         else:
-            response = requests.get(f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson', timeout=30)
-            return response.json()
+            try:
+                response = requests.get(f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson', timeout=30)
+            except (ConnectionError, NewConnectionError) as e:
+                raise ImportParkingSiteException(
+                    source_uid=self.source_info.uid,
+                    message='Connection issue for GeoJSON data',
+                ) from e
+            try:
+                return response.json()
+            except JSONDecodeError as e:
+                raise ImportParkingSiteException(
+                    source_uid=self.source_info.uid,
+                    message='Invalid JSON response for GeoJSON data',
+                ) from e
 
     def _get_static_parking_site_inputs_and_exceptions(
         self,

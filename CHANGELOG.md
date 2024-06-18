@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.5.1
+
+Released 2024-06-18
+
+### Fixes
+
+* [Renames and extends P+M BW Converter with static data](https://github.com/ParkenDD/parkapi-sources-v3/pull/63)
+
+
+## 0.5.0
+
+Release 2024-06-14
+
+### Features
+
+* [Own repository for static data](https://github.com/ParkenDD/parkapi-sources-v3/pull/53)
+* [A81 P&M Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/55)
+* [Bietigheim-Bissingen Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/57)
+* [Heidelberg Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/58)
+
+
+### Fixes
+
+* [Fix Freiburg timezone](https://github.com/ParkenDD/parkapi-sources-v3/pull/54)
+* [https://github.com/ParkenDD/parkapi-sources-v3/pull/56](https://github.com/ParkenDD/parkapi-sources-v3/pull/56)
+* [Better Freiburg Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/59)
+
+
+### Maintenance
+
+* Replace black by ruff formatter
+* Dependency updates
+
+
 ## 0.4.4
 
 Released 2024-06-04
@@ -61,8 +95,10 @@ Released 2024-05-16
 
 Released 2024-05-03
 
-Fixes:
+### Fixes:
+
 * Register neckarsulm_bike and reutlingen_bike properly
+
 
 ## 0.3.0
 

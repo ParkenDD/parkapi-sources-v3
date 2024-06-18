@@ -13,7 +13,6 @@ from parkapi_sources.models import SourceInfo
 
 
 class EllwangenPushConverter(NormalizedXlsxConverter):
-
     source_info = SourceInfo(
         uid='ellwangen',
         name='Ellwangen Parkdaten',

@@ -4,14 +4,15 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
+from typing import Optional
 from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DataclassValidator, IntegerValidator, StringValidator
+from validataclass.validators import DataclassValidator, IntegerValidator, StringValidator, UrlValidator
 
-from parkapi_sources.models import RealtimeParkingSiteInput
+from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus
-from parkapi_sources.validators import SpacedDateTimeValidator
+from parkapi_sources.validators import ExcelNoneable, SpacedDateTimeValidator
 
 
 @validataclass
@@ -27,11 +28,16 @@ class FreiburgPropertiesInput:
     )
     park_name: str = StringValidator()
     park_id: str = StringValidator()
+    park_url: Optional[str] = ExcelNoneable(UrlValidator())
 
 
 @validataclass
 class FreiburgFeatureInput:
     properties: FreiburgPropertiesInput = DataclassValidator(FreiburgPropertiesInput)
+
+    def extend_static_parking_site_input(self, static_parking_site_input: StaticParkingSiteInput):
+        static_parking_site_input.capacity = self.properties.obs_max
+        static_parking_site_input.public_url = self.properties.park_url
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(

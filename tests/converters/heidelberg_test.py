@@ -28,27 +28,32 @@ def heidelberg_pull_converter(heidelberg_config_helper: Mock) -> HeidelbergPullC
     return HeidelbergPullConverter(config_helper=heidelberg_config_helper)
 
 
+@pytest.fixture
+def heidelberg_request_mock(requests_mock: Mock):
+    json_path = Path(Path(__file__).parent, 'data', 'heidelberg.json')
+    with json_path.open() as json_file:
+        json_data = json_file.read()
+
+    requests_mock.get('https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities', text=json_data)
+
+    return requests_mock
+
+
 class HeidelbergPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(heidelberg_pull_converter: HeidelbergPullConverter):
+    def test_get_static_parking_sites(heidelberg_pull_converter: HeidelbergPullConverter, heidelberg_request_mock: Mocker):
         static_parking_site_inputs, import_parking_site_exceptions = heidelberg_pull_converter.get_static_parking_sites()
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+
+        assert len(static_parking_site_inputs) == 22
+        assert len(import_parking_site_exceptions) == 3
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(heidelberg_pull_converter: HeidelbergPullConverter, requests_mock: Mocker):
-        json_path = Path(Path(__file__).parent, 'data', 'heidelberg.json')
-        with json_path.open() as json_file:
-            json_data = json_file.read()
-
-        requests_mock.get('https://parken.heidelberg.de/v1/parking-update', text=json_data)
-
+    def test_get_realtime_parking_sites(heidelberg_pull_converter: HeidelbergPullConverter, heidelberg_request_mock: Mocker):
         realtime_parking_site_inputs, import_parking_site_exceptions = heidelberg_pull_converter.get_realtime_parking_sites()
 
-        assert len(realtime_parking_site_inputs) == 21
-        assert len(import_parking_site_exceptions) == 0
+        assert len(realtime_parking_site_inputs) == 20  # Two parking sites don't have a realtime status
+        assert len(import_parking_site_exceptions) == 3
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

@@ -10,12 +10,12 @@ open-coverage:
 
 
 .PHONY: lint
-lint: black ruff
+lint: ruff-format ruff
 
 
-.PHONY: black
-black:
-	black ./src ./tests
+.PHONY: ruff-format
+ruff-format:
+	ruff format ./src ./tests
 
 
 .PHONY: ruff

@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from typing import Any
 
 import pytest
-from parkapi_sources.validators import Rfc1123DateTimeValidator, SpacedDateTimeValidator
+from parkapi_sources.validators import Rfc1123DateTimeValidator, SpacedDateTimeValidator, TimestampDateTimeValidator
 from validataclass.exceptions import ValidationError
 
 
@@ -65,6 +65,33 @@ def test_spaced_datetime_validator_success(input_data: str, output_data: datetim
 )
 def test_spaced_datetime_validator_fail(input_data: Any):
     validator = SpacedDateTimeValidator()
+
+    with pytest.raises(ValidationError):
+        validator.validate(input_data)
+
+
+@pytest.mark.parametrize(
+    'input_data,divisor,output_data',
+    [
+        (1717922614, 1, datetime(2024, 6, 9, 8, 43, 34, tzinfo=timezone.utc)),
+        (1717922614000, 1000, datetime(2024, 6, 9, 8, 43, 34, tzinfo=timezone.utc)),
+    ],
+)
+def test_timestamp_datetime_validator_success(input_data: Any, divisor: int, output_data: datetime):
+    validator = TimestampDateTimeValidator(divisor=divisor)
+
+    assert validator.validate(input_data) == output_data
+
+
+@pytest.mark.parametrize(
+    'input_data',
+    [
+        '',
+        '2024-01-01_12:00:00',
+    ],
+)
+def test_timestamp_datetime_validator_fail(input_data: Any):
+    validator = TimestampDateTimeValidator()
 
     with pytest.raises(ValidationError):
         validator.validate(input_data)
