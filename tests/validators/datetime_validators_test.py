@@ -7,37 +7,18 @@ from datetime import datetime, timezone
 from typing import Any
 
 import pytest
-from parkapi_sources.validators import (
-    Rfc1123DateTimeValidator,
-    SpacedDateTimeValidator,
-    TimestampDateTimeValidator,
-)
+from parkapi_sources.validators import Rfc1123DateTimeValidator, SpacedDateTimeValidator, TimestampDateTimeValidator
 from validataclass.exceptions import ValidationError
 
 
 @pytest.mark.parametrize(
     'input_data,output_data',
     [
-        (
-            'Sun Nov  6 08:49:37 2024',
-            datetime(2024, 11, 6, 7, 49, 37, tzinfo=timezone.utc),
-        ),
-        (
-            'Sun, 06 Nov 2024 08:49:37 GMT',
-            datetime(2024, 11, 6, 8, 49, 37, tzinfo=timezone.utc),
-        ),
-        (
-            'Sunday, 06-Nov-24 08:49:37 GMT',
-            datetime(2024, 11, 6, 8, 49, 37, tzinfo=timezone.utc),
-        ),
-        (
-            'Sunday, 06-Nov-98 08:49:37 GMT',
-            datetime(1998, 11, 6, 8, 49, 37, tzinfo=timezone.utc),
-        ),
-        (
-            'Sun Nov  6 08:49:37 2024',
-            datetime(2024, 11, 6, 7, 49, 37, tzinfo=timezone.utc),
-        ),
+        ('Sun Nov  6 08:49:37 2024', datetime(2024, 11, 6, 7, 49, 37, tzinfo=timezone.utc)),
+        ('Sun, 06 Nov 2024 08:49:37 GMT', datetime(2024, 11, 6, 8, 49, 37, tzinfo=timezone.utc)),
+        ('Sunday, 06-Nov-24 08:49:37 GMT', datetime(2024, 11, 6, 8, 49, 37, tzinfo=timezone.utc)),
+        ('Sunday, 06-Nov-98 08:49:37 GMT', datetime(1998, 11, 6, 8, 49, 37, tzinfo=timezone.utc)),
+        ('Sun Nov  6 08:49:37 2024', datetime(2024, 11, 6, 7, 49, 37, tzinfo=timezone.utc)),
     ],
 )
 def test_rfc1123_datetime_validator_success(input_data: str, output_data: datetime):

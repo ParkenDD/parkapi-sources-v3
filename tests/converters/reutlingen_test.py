@@ -19,9 +19,7 @@ def reutlingen_push_converter(mocked_config_helper: Mock) -> ReutlingenPushConve
 
 class ReutlingenPushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        reutlingen_push_converter: ReutlingenPushConverter,
-    ):
+    def test_get_static_parking_sites(reutlingen_push_converter: ReutlingenPushConverter):
         with get_data_path('reutlingen.csv').open() as reutlingen_file:
             reutlingen_data = StringIO(reutlingen_file.read())
 

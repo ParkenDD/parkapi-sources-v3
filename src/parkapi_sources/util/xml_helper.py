@@ -241,7 +241,7 @@ class XMLHelper:
 
         # filter out remote type tags at the child level:
         if isinstance(tag_dict[tag_name], dict):
-            tag_items: list[tuple[str, str]] = list(tag_dict[tag_name].items())  # noqa: C416
+            tag_items: list[tuple[str, str]] = [(key, value) for key, value in tag_dict[tag_name].items()]  # noqa: C416
             # it only works if there is exactly one key-value-pair at the child level!
             if len(tag_items) == 1:
                 child_key = tag_items[0][0]

@@ -11,19 +11,10 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .mapper import PbwMapper
-from .validation import (
-    PbwCityInput,
-    PbwParkingSiteDetailInput,
-    PbwParkingSiteInput,
-    PbwRealtimeInput,
-)
+from .validation import PbwCityInput, PbwParkingSiteDetailInput, PbwParkingSiteInput, PbwRealtimeInput
 
 
 class PbwPullConverter(PullConverter):
@@ -44,9 +35,7 @@ class PbwPullConverter(PullConverter):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         city_dicts = self._get_remote_data('catalog-city')
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
@@ -87,9 +76,7 @@ class PbwPullConverter(PullConverter):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
         realtime_parking_site_errors: list[ImportParkingSiteException] = []
 

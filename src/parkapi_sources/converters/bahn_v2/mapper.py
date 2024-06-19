@@ -12,9 +12,7 @@ from .validators import BahnParkingSiteCapacityType, BahnParkingSiteInput, NameC
 
 class BahnMapper:
     @staticmethod
-    def map_static_parking_site(
-        bahn_input: BahnParkingSiteInput,
-    ) -> StaticParkingSiteInput:
+    def map_static_parking_site(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(bahn_input.id),
             name=next(iter(name_input.name for name_input in bahn_input.name if name_input.context == NameContext.NAME)),

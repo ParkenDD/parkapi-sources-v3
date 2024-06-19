@@ -6,12 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from .apcoa import ApcoaPullConverter
 from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
-from .bfrk_bw import (
-    BfrkBwOepnvBikePushConverter,
-    BfrkBwOepnvCarPushConverter,
-    BfrkBwSpnvBikePushConverter,
-    BfrkBwSpnvCarPushConverter,
-)
+from .bfrk_bw import BfrkBwOepnvBikePushConverter, BfrkBwOepnvCarPushConverter, BfrkBwSpnvBikePushConverter, BfrkBwSpnvCarPushConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
 from .freiburg import FreiburgPullConverter

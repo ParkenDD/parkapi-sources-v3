@@ -46,11 +46,7 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        coordinates = self.proj(
-            float(parking_site_dict.get('lon_utm')),
-            float(parking_site_dict.get('lat_utm')),
-            inverse=True,
-        )
+        coordinates = self.proj(float(parking_site_dict.get('lon_utm')), float(parking_site_dict.get('lat_utm')), inverse=True)
         parking_site_dict['lat'] = coordinates[1]
         parking_site_dict['lon'] = coordinates[0]
 

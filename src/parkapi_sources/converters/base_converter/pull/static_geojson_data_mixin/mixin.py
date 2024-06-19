@@ -13,10 +13,7 @@ from urllib3.exceptions import NewConnectionError
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import (
-    GeojsonFeatureInput,
-    GeojsonInput,
-)
+from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput, GeojsonInput
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 from parkapi_sources.util import ConfigHelper
@@ -31,17 +28,11 @@ class StaticGeojsonDataMixin:
 
     def _get_static_geojson(self, source_uid: str) -> GeojsonInput:
         if self.config_helper.get('STATIC_GEOJSON_BASE_PATH'):
-            with Path(
-                self.config_helper.get('STATIC_GEOJSON_BASE_PATH'),
-                f'{source_uid}.geojson',
-            ).open() as geojson_file:
+            with Path(self.config_helper.get('STATIC_GEOJSON_BASE_PATH'), f'{source_uid}.geojson').open() as geojson_file:
                 return json.loads(geojson_file.read())
         else:
             try:
-                response = requests.get(
-                    f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson',
-                    timeout=30,
-                )
+                response = requests.get(f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson', timeout=30)
             except (ConnectionError, NewConnectionError) as e:
                 raise ImportParkingSiteException(
                     source_uid=self.source_info.uid,

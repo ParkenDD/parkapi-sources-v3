@@ -13,26 +13,16 @@ from io import StringIO
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import (
-    PullConverter,
-    StaticGeojsonDataMixin,
-)
+from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import BietigheimBissingenInput
 
 
 class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
     _imap_host: str = 'imap.strato.de'
-    required_config_keys = [
-        'PARK_API_BIETIGHEIM_BISSINGEN_USER',
-        'PARK_API_BIETIGHEIM_BISSINGEN_PASSWORD',
-    ]
+    required_config_keys = ['PARK_API_BIETIGHEIM_BISSINGEN_USER', 'PARK_API_BIETIGHEIM_BISSINGEN_PASSWORD']
     bietigheim_bissingen_realtime_update_validator = DataclassValidator(BietigheimBissingenInput)
     source_info = SourceInfo(
         uid='bietigheim_bissingen',
@@ -42,14 +32,10 @@ class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         return self._get_static_parking_site_inputs_and_exceptions(source_uid=self.source_info.uid)
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 

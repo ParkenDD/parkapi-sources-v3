@@ -9,11 +9,7 @@ from validataclass.exceptions import ValidationError
 
 from parkapi_sources.converters.base_converter.push import XmlConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
 class StuttgartPushConverter(XmlConverter):
@@ -28,12 +24,7 @@ class StuttgartPushConverter(XmlConverter):
         has_realtime_data=True,
     )
 
-    def handle_xml(
-        self, root: Element
-    ) -> tuple[
-        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
-        list[ImportParkingSiteException],
-    ]:
+    def handle_xml(self, root: Element) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         data = self.xml_helper.xml_to_dict(
             root,
             conditional_remote_type_tags=[
@@ -97,11 +88,7 @@ class StuttgartPushConverter(XmlConverter):
 
         # Coordinates
         coordinates_base = item.get('facilityLocation', {}).get('locationForDisplay', {})
-        coordinates = self.proj(
-            float(coordinates_base.get('longitude')),
-            float(coordinates_base.get('latitude')),
-            inverse=True,
-        )
+        coordinates = self.proj(float(coordinates_base.get('longitude')), float(coordinates_base.get('latitude')), inverse=True)
         input_data['lat'] = coordinates[1]
         input_data['lon'] = coordinates[0]
 
@@ -115,13 +102,7 @@ class StuttgartPushConverter(XmlConverter):
             (('personTypeForWhichSpacesAssigned', 'disabled'), 'capacity_disabled'),
             (('personTypeForWhichSpacesAssigned', 'families'), 'capacity_family'),
             (('personTypeForWhichSpacesAssigned', 'women'), 'capacity_woman'),
-            (
-                (
-                    'characteristicsOfVehiclesForWhichSpacesAssigned',
-                    {'fuelType': 'battery'},
-                ),
-                'capacity_charging',
-            ),
+            (('characteristicsOfVehiclesForWhichSpacesAssigned', {'fuelType': 'battery'}), 'capacity_charging'),
         ]
 
         for sub_capacity in item.get('assignedParkingSpaces', []):

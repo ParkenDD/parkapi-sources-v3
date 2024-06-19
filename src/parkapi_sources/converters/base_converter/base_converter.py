@@ -7,11 +7,7 @@ from abc import ABC, abstractmethod
 
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 from parkapi_sources.util import ConfigHelper
 
 

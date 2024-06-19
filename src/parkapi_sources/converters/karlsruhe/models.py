@@ -80,7 +80,7 @@ class KarlsruheFeatureInput:
             lon=self.geometry.coordinates[0],
             capacity=self.properties.gesamte_parkplaetze,
             address=f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}',
-            max_height=(None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100)),
+            max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
             public_url=self.properties.parkhaus_internet,
             static_data_updated_at=datetime.combine(self.properties.stand_parkhausdaten, time(), tzinfo=timezone.utc),
         )
@@ -136,11 +136,7 @@ class KarlsruheBikeFeatureInput:
     properties: KarlsruheBikePropertiesInput = DataclassValidator(KarlsruheBikePropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        address_fragments = [
-            self.properties.standort,
-            self.properties.stadtteil,
-            self.properties.gemeinde,
-        ]
+        address_fragments = [self.properties.standort, self.properties.stadtteil, self.properties.gemeinde]
         address = ', '.join([fragment for fragment in address_fragments if fragment is not UnsetValue])
         return StaticParkingSiteInput(
             uid=str(self.id),

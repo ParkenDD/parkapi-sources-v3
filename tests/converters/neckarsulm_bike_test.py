@@ -13,17 +13,13 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 
 @pytest.fixture
-def neckarsulm_bike_push_converter(
-    mocked_config_helper: Mock,
-) -> NeckarsulmBikePushConverter:
+def neckarsulm_bike_push_converter(mocked_config_helper: Mock) -> NeckarsulmBikePushConverter:
     return NeckarsulmBikePushConverter(config_helper=mocked_config_helper)
 
 
 class NeckarsulmPushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        neckarsulm_bike_push_converter: NeckarsulmBikePushConverter,
-    ):
+    def test_get_static_parking_sites(neckarsulm_bike_push_converter: NeckarsulmBikePushConverter):
         with get_data_path('neckarsulm_bike.csv').open() as neckarsulm_bike_file:
             neckarsulm_data = StringIO(neckarsulm_bike_file.read())
 

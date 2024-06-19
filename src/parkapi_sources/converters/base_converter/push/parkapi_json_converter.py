@@ -7,11 +7,7 @@ from abc import ABC
 
 from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
-from validataclass.validators import (
-    AnythingValidator,
-    DataclassValidator,
-    ListValidator,
-)
+from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
 from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
@@ -31,10 +27,7 @@ class ParkApiConverter(JsonConverter, ABC):
     def handle_json(
         self,
         data: dict | list,
-    ) -> tuple[
-        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
-        list[ImportParkingSiteException],
-    ]:
+    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         parking_site_inputs: list[StaticParkingSiteInput | RealtimeParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 

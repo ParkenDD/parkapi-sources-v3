@@ -31,7 +31,7 @@ class ApcoaMapper:
 
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(apcoa_input.CarParkId),
-            name=(apcoa_input.CarparkLongName if apcoa_input.CarparkLongName else apcoa_input.CarparkShortName),
+            name=apcoa_input.CarparkLongName if apcoa_input.CarparkLongName else apcoa_input.CarparkShortName,
             lat=latitude,
             lon=longitude,
             purpose=PurposeType.CAR,
