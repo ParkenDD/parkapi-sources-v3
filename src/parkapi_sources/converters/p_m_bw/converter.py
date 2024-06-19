@@ -5,22 +5,11 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 import requests
 from validataclass.exceptions import ValidationError
-from validataclass.validators import (
-    AnythingValidator,
-    DataclassValidator,
-    ListValidator,
-)
+from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import (
-    PullConverter,
-    StaticGeojsonDataMixin,
-)
+from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import PMBWInput
 
@@ -38,9 +27,7 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         p_m_bw_parking_site_inputs, static_parking_site_errors = self._get_data()
 
         geojson_parking_site_inputs, geojson_parking_site_errors = self._get_static_parking_site_inputs_and_exceptions(
@@ -70,9 +57,7 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
         p_m_bw_inputs, realtime_parking_site_errors = self._get_data()

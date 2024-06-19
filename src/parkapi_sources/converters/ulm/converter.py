@@ -8,17 +8,9 @@ from typing import Optional
 
 from bs4.element import Tag
 
-from parkapi_sources.converters.base_converter.pull import (
-    PullConverter,
-    PullScraperMixin,
-    StaticGeojsonDataMixin,
-)
+from parkapi_sources.converters.base_converter.pull import PullConverter, PullScraperMixin, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
 class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
@@ -32,14 +24,10 @@ class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         return self._get_static_parking_site_inputs_and_exceptions(source_uid=self.source_info.uid)
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return self._get_scraped_realtime_parking_site_inputs_and_exceptions()
 
     def get_realtime_tags_and_params(self) -> tuple[list[Tag], dict]:

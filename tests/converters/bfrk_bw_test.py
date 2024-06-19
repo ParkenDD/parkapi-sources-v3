@@ -7,10 +7,7 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters.bfrk_bw import (
-    BfrkBwSpnvBikePushConverter,
-    BfrkBwSpnvCarPushConverter,
-)
+from parkapi_sources.converters.bfrk_bw import BfrkBwSpnvBikePushConverter, BfrkBwSpnvCarPushConverter
 
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
@@ -22,9 +19,7 @@ def bfrk_car_push_converter(mocked_config_helper: Mock) -> BfrkBwSpnvCarPushConv
 
 class BfrkCarPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        bfrk_car_push_converter: BfrkBwSpnvCarPushConverter,
-    ):
+    def test_get_static_parking_sites(bfrk_car_push_converter: BfrkBwSpnvCarPushConverter):
         with get_data_path('bfrk_bw_car.csv').open() as bfrk_car_file:
             bfrk_car_data = StringIO(bfrk_car_file.read())
 
@@ -43,9 +38,7 @@ def bfrk_bike_push_converter(mocked_config_helper: Mock) -> BfrkBwSpnvBikePushCo
 
 class BfrkBikePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        bfrk_bike_push_converter: BfrkBwSpnvBikePushConverter,
-    ):
+    def test_get_static_parking_sites(bfrk_bike_push_converter: BfrkBwSpnvBikePushConverter):
         with get_data_path('bfrk_bw_bike.csv').open() as bfrk_bike_file:
             bfrk_bike_data = StringIO(bfrk_bike_file.read())
 

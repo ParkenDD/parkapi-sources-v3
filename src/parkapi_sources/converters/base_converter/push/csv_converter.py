@@ -19,10 +19,7 @@ class CsvConverter(PushConverter, ABC):
     def handle_csv_string(
         self,
         data: StringIO,
-    ) -> tuple[
-        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
-        list[ImportParkingSiteException],
-    ]:
+    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return self.handle_csv(list(csv.reader(data, delimiter=self.csv_delimiter)))
 
     def get_mapping_by_header(self, header_row: dict[str, str], row: list[Any]) -> dict[str, int]:
@@ -40,8 +37,5 @@ class CsvConverter(PushConverter, ABC):
     def handle_csv(
         self,
         data: list[list],
-    ) -> tuple[
-        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
-        list[ImportParkingSiteException],
-    ]:
+    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         pass

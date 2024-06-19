@@ -10,18 +10,9 @@ from typing import Optional
 
 import pyproj
 from validataclass.dataclasses import Default, validataclass
-from validataclass.validators import (
-    BooleanValidator,
-    DataclassValidator,
-    EnumValidator,
-    IntegerValidator,
-    Noneable,
-    StringValidator,
-)
+from validataclass.validators import BooleanValidator, DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import (
-    GeojsonFeatureInput,
-)
+from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, SupervisionType
 from parkapi_sources.validators import ExcelNoneable

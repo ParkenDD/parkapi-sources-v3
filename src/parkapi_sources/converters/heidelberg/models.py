@@ -23,17 +23,8 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import (
-    OpeningStatus,
-    ParkAndRideType,
-    ParkingSiteType,
-    SupervisionType,
-)
-from parkapi_sources.validators import (
-    ExcelNoneable,
-    ReplacingStringValidator,
-    Rfc1123DateTimeValidator,
-)
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, SupervisionType
+from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator, Rfc1123DateTimeValidator
 
 from .validators import NoneableRemoveValueDict, RemoveValueDict
 
@@ -154,8 +145,8 @@ class HeidelbergInput:
             lon=self.lon,
             address=f'{self.streetAddress}, {self.postalCode} {self.addressLocality}',
             operator_name=self.provider,
-            max_height=(None if self.maximumAllowedHeight is None else int(self.maximumAllowedHeight * 100)),
-            max_width=(None if self.maximumAllowedWidth is None else int(self.maximumAllowedWidth * 100)),
+            max_height=None if self.maximumAllowedHeight is None else int(self.maximumAllowedHeight * 100),
+            max_width=None if self.maximumAllowedWidth is None else int(self.maximumAllowedWidth * 100),
             photo_url=self.images[0] if len(self.images) else None,
             capacity=self.totalSpotNumber,
             capacity_disabled=self.handicappedParkingSpots,
@@ -164,7 +155,7 @@ class HeidelbergInput:
             opening_hours=opening_hours,
             static_data_updated_at=self.observationDateTime,
             type=parking_site_type,
-            park_and_ride_type=([ParkAndRideType.YES] if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE else None),
+            park_and_ride_type=[ParkAndRideType.YES] if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE else None,
             supervision_type=supervision_type,
             has_realtime_data=self.availableSpotNumber is not None,
         )

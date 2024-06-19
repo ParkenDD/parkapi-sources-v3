@@ -26,7 +26,7 @@ class KienzlerInput:
         return StaticParkingSiteInput(
             uid=self.id,
             name=self.name,
-            purpose=(PurposeType.ITEM if 'Schließfächer' in self.name else PurposeType.BIKE),
+            purpose=PurposeType.ITEM if 'Schließfächer' in self.name else PurposeType.BIKE,
             lat=self.lat,
             lon=self.long,
             has_realtime_data=True,

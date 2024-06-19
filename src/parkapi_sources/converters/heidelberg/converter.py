@@ -5,19 +5,11 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 import requests
 from validataclass.exceptions import ValidationError
-from validataclass.validators import (
-    AnythingValidator,
-    DataclassValidator,
-    ListValidator,
-)
+from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
 from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import HeidelbergInput
 
@@ -37,9 +29,7 @@ class HeidelbergPullConverter(PullConverter):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
         heidelberg_inputs, import_parking_site_exceptions = self._get_data()
@@ -49,9 +39,7 @@ class HeidelbergPullConverter(PullConverter):
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
         heidelberg_inputs, import_parking_site_exceptions = self._get_data()
@@ -63,18 +51,13 @@ class HeidelbergPullConverter(PullConverter):
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
 
-    def _get_data(
-        self,
-    ) -> tuple[list[HeidelbergInput], list[ImportParkingSiteException]]:
+    def _get_data(self) -> tuple[list[HeidelbergInput], list[ImportParkingSiteException]]:
         heidelberg_inputs: list[HeidelbergInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         response = requests.get(
             self.source_info.source_url,
-            params={
-                'api-key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY'),
-                'limit': 50,
-            },
+            params={'api-key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY'), 'limit': 50},
             headers={'X-Gravitee-Api-Key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY')},
             timeout=30,
         )

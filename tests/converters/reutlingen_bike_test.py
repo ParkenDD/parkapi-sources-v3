@@ -13,17 +13,13 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 
 @pytest.fixture
-def reutlingen_bike_push_converter(
-    mocked_config_helper: Mock,
-) -> ReutlingenBikePushConverter:
+def reutlingen_bike_push_converter(mocked_config_helper: Mock) -> ReutlingenBikePushConverter:
     return ReutlingenBikePushConverter(config_helper=mocked_config_helper)
 
 
 class ReutlingenPushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        reutlingen_bike_push_converter: ReutlingenBikePushConverter,
-    ):
+    def test_get_static_parking_sites(reutlingen_bike_push_converter: ReutlingenBikePushConverter):
         with get_data_path('reutlingen_bike.csv').open() as reutlingen_bike_file:
             reutlingen_bike_data = StringIO(reutlingen_bike_file.read())
 

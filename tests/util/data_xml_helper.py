@@ -50,13 +50,7 @@ xml_dict_example_1: dict = {
     }
 }
 
-remote_type_tags_1a: List[str] = [
-    'Content',
-    'ContentText',
-    'Text',
-    'Security',
-    'UsernameToken',
-]
+remote_type_tags_1a: List[str] = ['Content', 'ContentText', 'Text', 'Security', 'UsernameToken']
 
 xml_dict_example_1a: dict = {
     'Envelope': {
@@ -68,14 +62,7 @@ xml_dict_example_1a: dict = {
     }
 }
 
-remote_type_tags_1b: List[str] = [
-    'Envelope',
-    'Content',
-    'ContentText',
-    'Text',
-    'Security',
-    'UsernameToken',
-]
+remote_type_tags_1b: List[str] = ['Envelope', 'Content', 'ContentText', 'Text', 'Security', 'UsernameToken']
 
 xml_dict_example_1b: dict = {
     'Body': 'some text',
@@ -85,10 +72,7 @@ xml_dict_example_1b: dict = {
     },
 }
 
-ensure_array_keys_1c: List[Tuple[str, str]] = [
-    ('Envelope', 'Header'),
-    ('Content', 'ContentText'),
-]
+ensure_array_keys_1c: List[Tuple[str, str]] = [('Envelope', 'Header'), ('Content', 'ContentText')]
 
 xml_dict_example_1c: dict = {
     'Envelope': {

@@ -54,7 +54,7 @@ class PforzheimPushConverter(JsonConverter):
                 capacity_woman=input_data.quantitySpacesReservedForWomen,
                 capacity_disabled=input_data.quantitySpacesReservedForMobilityImpededPerson,
                 fee_description=input_data.feeInformation.replace('\n', ', '),
-                supervision_type=(SupervisionType.YES if 'ja' in input_data.securityInformation.lower() else False),
+                supervision_type=SupervisionType.YES if 'ja' in input_data.securityInformation.lower() else False,
                 opening_hours='24/7' if input_data.hasOpeningHours24h else None,
                 static_data_updated_at=datetime.now(tz=timezone.utc),
             )

@@ -8,12 +8,7 @@ from enum import Enum
 from typing import Optional
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import (
-    EnumValidator,
-    IntegerValidator,
-    NumericValidator,
-    StringValidator,
-)
+from validataclass.validators import EnumValidator, IntegerValidator, NumericValidator, StringValidator
 
 from parkapi_sources.models.enums import ParkingSiteType
 from parkapi_sources.validators import ExcelNoneable, MappedBooleanValidator

@@ -20,10 +20,7 @@ class PointCoordinateTupleValidator(ListValidator):
         input_match = re.match(self.PATTERN, input_data)
 
         if input_match is None:
-            raise ValidationError(
-                code='invalid_tuple_input',
-                reason='invalid point coordinate tuple input',
-            )
+            raise ValidationError(code='invalid_tuple_input', reason='invalid point coordinate tuple input')
 
         input_data = [input_match.group(1), input_match.group(2)]
 

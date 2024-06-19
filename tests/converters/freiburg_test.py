@@ -10,16 +10,11 @@ import pytest
 from parkapi_sources.converters import FreiburgPullConverter
 from requests_mock import Mocker
 
-from tests.converters.helper import (
-    validate_realtime_parking_site_inputs,
-    validate_static_parking_site_inputs,
-)
+from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def freiburg_pull_converter(
-    mocked_static_geojson_config_helper: Mock,
-) -> FreiburgPullConverter:
+def freiburg_pull_converter(mocked_static_geojson_config_helper: Mock) -> FreiburgPullConverter:
     return FreiburgPullConverter(config_helper=mocked_static_geojson_config_helper)
 
 

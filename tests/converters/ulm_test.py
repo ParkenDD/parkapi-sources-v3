@@ -10,10 +10,7 @@ import pytest
 from parkapi_sources.converters.ulm import UlmPullConverter
 from requests_mock import Mocker
 
-from tests.converters.helper import (
-    validate_realtime_parking_site_inputs,
-    validate_static_parking_site_inputs,
-)
+from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
 @pytest.fixture

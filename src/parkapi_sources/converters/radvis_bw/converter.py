@@ -12,11 +12,7 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 from parkapi_sources.models.enums import PurposeType
 
 from .models import RadvisFeatureInput
@@ -40,9 +36,7 @@ class RadvisBwPullConverter(PullConverter):
         has_realtime_data=False,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
@@ -78,18 +72,13 @@ class RadvisBwPullConverter(PullConverter):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []
 
     def get_data(self) -> dict:
         response = requests.get(
             self._base_url,
-            auth=(
-                self.config_helper.get('PARK_API_RADVIS_USER'),
-                self.config_helper.get('PARK_API_RADVIS_PASSWORD'),
-            ),
+            auth=(self.config_helper.get('PARK_API_RADVIS_USER'), self.config_helper.get('PARK_API_RADVIS_PASSWORD')),
             timeout=30,
         )
 

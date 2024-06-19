@@ -11,11 +11,7 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.push import CsvConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .validation import ReutlingenRowInput
 
@@ -30,21 +26,12 @@ class ReutlingenPushConverter(CsvConverter):
         has_realtime_data=False,
     )
 
-    header_mapping: dict[str, str] = {
-        'id': 'uid',
-        'ort': 'name',
-        'Kapazität': 'capacity',
-        'GEOM': 'coordinates',
-        'type': 'type',
-    }
+    header_mapping: dict[str, str] = {'id': 'uid', 'ort': 'name', 'Kapazität': 'capacity', 'GEOM': 'coordinates', 'type': 'type'}
 
     def handle_csv_string(
         self,
         data: StringIO,
-    ) -> tuple[
-        list[StaticParkingSiteInput | RealtimeParkingSiteInput],
-        list[ImportParkingSiteException],
-    ]:
+    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return self.handle_csv(list(csv.reader(data, dialect='unix', delimiter=',')))
 
     def handle_csv(self, data: list[list]) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

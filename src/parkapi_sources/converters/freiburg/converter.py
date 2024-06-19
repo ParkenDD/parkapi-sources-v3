@@ -7,17 +7,9 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import (
-    GeojsonInput,
-    PullConverter,
-    StaticGeojsonDataMixin,
-)
+from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import (
-    RealtimeParkingSiteInput,
-    SourceInfo,
-    StaticParkingSiteInput,
-)
+from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import FreiburgFeatureInput
 
@@ -36,9 +28,7 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
         has_realtime_data=True,
     )
 
-    def get_static_parking_sites(
-        self,
-    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs, import_parking_site_exceptions = self._get_static_parking_site_inputs_and_exceptions(
             source_uid=self.source_info.uid,
         )
@@ -63,9 +53,7 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
-    def get_realtime_parking_sites(
-        self,
-    ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
         realtime_freiburg_inputs, import_parking_site_exceptions = self._get_raw_realtime_parking_sites()
@@ -75,9 +63,7 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
 
-    def _get_raw_realtime_parking_sites(
-        self,
-    ) -> tuple[list[FreiburgFeatureInput], list[ImportParkingSiteException]]:
+    def _get_raw_realtime_parking_sites(self) -> tuple[list[FreiburgFeatureInput], list[ImportParkingSiteException]]:
         realtime_freiburg_inputs: list[FreiburgFeatureInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
