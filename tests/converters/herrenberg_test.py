@@ -33,3 +33,7 @@ class HerrenbergPullConverterTest:
         ), 'There should be more valid then invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_realtime_parking_sites():
+        pass
