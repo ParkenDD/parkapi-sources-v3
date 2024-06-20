@@ -8,6 +8,7 @@ We support following data sources:
 
 | name                                                                              | purpose | type        | uid                    | realtime |
 |-----------------------------------------------------------------------------------|---------|-------------|------------------------|----------|
+| APCOA Services                                                                    | car     | pull        | `apcoa`                | no       |
 | Deutsche Bahn                                                                     | car     | pull        | `bahn_v2`              | no       |
 | Stadt Bietigheim-Bissingen                                                        | car     | pull        | `bietigheim_bissingen` | yes      |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bahnhöfen           | car     | push (csv)  | `bfrk_bw_oepnv_car`    | no       |
