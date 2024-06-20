@@ -187,27 +187,9 @@ class ApcoaParkingSiteInput:
         if len(apcoa_opening_times['Mo-Fr']) == 5 and len(set(apcoa_opening_times['Mo-Fr'])) == 1:
             osm_opening_hour.append(f'Mo-Fr {next(iter(set(apcoa_opening_times["Mo-Fr"])))}')
         else:
-            if 'Monday' in list(apcoa_opening_times.keys()):
-                osm_opening_hour.append(
-                    f'{ApcoaOpeningHoursWeekday.MONDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Monday"]))}'
-                )
-            if 'Tuesday' in list(apcoa_opening_times.keys()):
-                osm_opening_hour.append(
-                    f'{ApcoaOpeningHoursWeekday.TUESDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Tuesday"]))}'
-                )
-            if 'Wednesday' in list(apcoa_opening_times.keys()):
-                osm_opening_hour.append(
-                    f'{ApcoaOpeningHoursWeekday.WEDNESDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Wednesday"]))}'
-                )
-            if 'Thursday' in list(apcoa_opening_times.keys()):
-                osm_opening_hour.append(
-                    f'{ApcoaOpeningHoursWeekday.THURSDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Thursday"]))}'
-                )
-            if 'Friday' in list(apcoa_opening_times.keys()):
-                osm_opening_hour.append(
-                    f'{ApcoaOpeningHoursWeekday.FRIDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Friday"]))}'
-                )
-
+            for weekday in list(ApcoaOpeningHoursWeekday)[:5]:
+                if weekday.value in list(apcoa_opening_times.keys()):
+                    osm_opening_hour.append(f'{weekday.to_osm_opening_day_format()} {next(iter(apcoa_opening_times[weekday.value]))}')
         if 'Saturday' in list(apcoa_opening_times.keys()):
             osm_opening_hour.append(
                 f'{ApcoaOpeningHoursWeekday.SATURDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Saturday"]))}'
