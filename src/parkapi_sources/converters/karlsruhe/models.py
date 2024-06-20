@@ -83,6 +83,7 @@ class KarlsruheFeatureInput:
             max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
             public_url=self.properties.parkhaus_internet,
             static_data_updated_at=datetime.combine(self.properties.stand_parkhausdaten, time(), tzinfo=timezone.utc),
+            has_realtime_data=True,
         )
 
     def to_realtime_parking_site_input(self) -> Optional[RealtimeParkingSiteInput]:

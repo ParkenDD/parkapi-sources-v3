@@ -1,6 +1,15 @@
 # Changelog
 
 
+## 0.5.3
+
+Released 2024-06-19
+
+### Fixes
+
+* [set karlsruhe to realtime](https://github.com/ParkenDD/parkapi-sources-v3/pull/65)
+
+
 ## 0.5.2
 
 Released 2024-06-18
