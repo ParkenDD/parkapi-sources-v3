@@ -60,7 +60,7 @@ class HerrenbergPullConverter(BaseConverter):
         return static_parking_site_inputs, static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
-        pass
+        return [], []
         # since there is no realtimedata this is just skipped
 
     def _get_remote_data(self) -> list[dict]:
@@ -69,5 +69,7 @@ class HerrenbergPullConverter(BaseConverter):
 
         items: list[dict] = []
         for item in result_dict['lots']:
+            if item['lot_type'] == 'Barrierefreier-Parkplatz':
+                item['total'] = item.pop('total:disabled')
             items.append(item)
         return items

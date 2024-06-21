@@ -35,5 +35,6 @@ class HerrenbergPullConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites():
-        pass
+    def test_get_realtime_parking_sites(herrenberg_pull_converter: HerrenbergPullConverter):
+        herrenberg_pull_converter.get_realtime_parking_sites(herrenberg_pull_converter)
+

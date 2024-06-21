@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-
 from parkapi_sources.converters.herrenberg.validation import HerrenbergParkingSiteInput
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType
@@ -16,7 +15,10 @@ class Herrenbergmapper:
             fee = True
         herrenbergparkingsiteinput.ride = ParkAndRideType.NO
 
-
+        disabled = 0
+        if herrenbergparkingsiteinput.lot_type == 'Barrierefreier-Parkplatz':
+            disabled = herrenbergparkingsiteinput.total
+            herrenbergparkingsiteinput.total = 0
 
         return StaticParkingSiteInput(
             uid=herrenbergparkingsiteinput.id,
@@ -33,6 +35,6 @@ class Herrenbergmapper:
             fee_description=herrenbergparkingsiteinput.fee_hours,
             opening_hours=herrenbergparkingsiteinput.opening_hours,
             has_fee=fee,
-
+            capacity_disabled=disabled,
 
         )
