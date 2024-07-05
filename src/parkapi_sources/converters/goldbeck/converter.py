@@ -20,19 +20,24 @@ class GoldbeckPushConverter(NormalizedXlsxConverter):
         has_realtime_data=False,
     )
 
+    purpose_mapping: dict[str, str] = {
+        'Auto': 'CAR',
+        'Fahrrad': 'BIKE',
+    }
+
+    supervision_type_mapping: dict[str, str] = {
+        True: 'YES',
+        False: 'NO',
+    }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # For some reason, Goldbeck decided to change the titles
         goldbeck_header_rows: dict[str, str] = {
-            'Maximale Parkdauer / min': 'max_stay',
-            'Anzahl Frauen-parkplätze': 'capacity_woman',
-            'Anzahl Behinderten-parkplätze': 'capacity_disabled',
-            'Anlage beleuchtet': 'has_lighting',
-            'gebührenpflichtig': 'has_fee',
-            'Anzahl Stellplätze': 'capacity',
-            'Anzahl Carsharing-Parkplätze': 'capacity_carsharing',
-            'Existieren Live-Daten': 'has_realtime_data',
-            '24/7 geöffnet': 'opening_hours_is_24_7',
+            'Einfahrtshöhe (cm)': 'max_height',
+            'Zweck der Anlage': 'purpose',
+            'Überdachung': 'is_covered',
+            'Art der Überwachung': 'supervision_type',
         }
         self.header_row = {
             **{key: value for key, value in super().header_row.items() if value not in goldbeck_header_rows.values()},
@@ -45,8 +50,11 @@ class GoldbeckPushConverter(NormalizedXlsxConverter):
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        parking_site_dict['max_stay'] = parking_site_dict['max_stay'] * 60 if parking_site_dict['max_stay'] else None
-        parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
+        parking_site_dict['purpose'] = self.purpose_mapping.get(parking_site_dict.get('purpose'))
+        parking_site_dict['type'] = (
+            self.type_mapping.get(parking_site_dict.get('type')) if parking_site_dict.get('type') else 'OFF_STREET_PARKING_GROUND'
+        )
+        parking_site_dict['supervision_type'] = self.supervision_type_mapping.get(parking_site_dict.get('supervision_type'))
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 
         return parking_site_dict
