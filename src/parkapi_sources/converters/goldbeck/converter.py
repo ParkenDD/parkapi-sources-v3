@@ -15,7 +15,7 @@ from parkapi_sources.models import SourceInfo
 class GoldbeckPushConverter(NormalizedXlsxConverter):
     source_info = SourceInfo(
         uid='goldbeck',
-        name='Goldbeck Parking Services',
+        name='GOLDBECK Parking Services GmbH',
         public_url='https://www.goldbeck-parking.de',
         has_realtime_data=False,
     )
