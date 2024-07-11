@@ -35,6 +35,7 @@ We support following data sources:
 | Stadt Stuttgart                                                                   | car     | push (json) | `stuttgart`            | yes      |
 | Stadt Ulm                                                                         | car     | pull        | `ulm`                  | yes      |
 | Verband Region Stuttgart: Park and Ride                                           | car     | push (xlsx) | `vrs_p_r`              | no       |
+| Open-Data-Plattform öV Schweiz                                                    | car     | pull (json) | `opendata_swiss`       | no       |
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 

@@ -24,6 +24,7 @@ from .converters import (
     MannheimPushConverter,
     NeckarsulmBikePushConverter,
     NeckarsulmPushConverter,
+    OpenDataSwissPullConverter,
     PbwPullConverter,
     PforzheimPushConverter,
     PMBWPullConverter,
@@ -70,6 +71,7 @@ class ParkAPISources:
         StuttgartPushConverter,
         UlmPullConverter,
         VrsParkAndRidePushConverter,
+        OpenDataSwissPullConverter,
     ]
     config_helper: ConfigHelper
     converter_by_uid: dict[str, BaseConverter]

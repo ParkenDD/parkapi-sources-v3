@@ -16,6 +16,7 @@ from .konstanz_bike import KonstanzBikePushConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
 from .neckarsulm import NeckarsulmPushConverter
 from .neckarsulm_bike import NeckarsulmBikePushConverter
+from .opendata_swiss import OpenDataSwissPullConverter
 from .p_m_bw import PMBWPullConverter
 from .pbw import PbwPullConverter
 from .pforzheim import PforzheimPushConverter
