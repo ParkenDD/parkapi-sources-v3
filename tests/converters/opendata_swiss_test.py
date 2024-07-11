@@ -8,6 +8,15 @@ from unittest.mock import Mock
 
 import pytest
 from parkapi_sources.converters import OpenDataSwissPullConverter
+from parkapi_sources.converters.opendata_swiss.models import (
+    OpenDataSwissAdditionalInformationInput,
+    OpenDataSwissAddressInput,
+    OpenDataSwissCapacitiesInput,
+    OpenDataSwissCapacityCategoryTypeInput,
+    OpenDataSwissOperationTimeDaysOfWeek,
+    OpenDataSwissOperationTimeInput,
+    OpenDataSwissPropertiesInput,
+)
 from requests_mock import Mocker
 
 from tests.converters.helper import validate_static_parking_site_inputs
@@ -42,3 +51,117 @@ class OpenDataSwissPullConverterTest:
         ), 'There should be more valid then invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
+
+
+class OpenDataSwissParkingSiteInputTest:
+    @staticmethod
+    @pytest.mark.parametrize(
+        'opening_times, osm_opening_hours',
+        [
+            # Test for 24/7
+            (
+                OpenDataSwissOperationTimeInput(
+                    operatingFrom='00:00:00',
+                    operatingTo='00:00:00',
+                    daysOfWeek=[
+                        OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.WEDNESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.THURSDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.FRIDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.SATURDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.SUNDAY,
+                    ],
+                ),
+                '24/7',
+            ),
+            # Test for Sunday missing
+            (
+                OpenDataSwissOperationTimeInput(
+                    operatingFrom='00:00:00',
+                    operatingTo='00:00:00',
+                    daysOfWeek=[
+                        OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.WEDNESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.THURSDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.FRIDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.SATURDAY,
+                    ],
+                ),
+                'Mo-Fr 00:00-24:00; Sa 00:00-24:00',
+            ),
+            # Test for Wednesday missing
+            (
+                OpenDataSwissOperationTimeInput(
+                    operatingFrom='00:00:00',
+                    operatingTo='00:00:00',
+                    daysOfWeek=[
+                        OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.THURSDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.FRIDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.SATURDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.SUNDAY,
+                    ],
+                ),
+                'Mo 00:00-24:00; Tu 00:00-24:00; Th 00:00-24:00; Fr 00:00-24:00; Sa 00:00-24:00; Su 00:00-24:00',
+                # Even better, but more complicated: 'Mo-Tu 00:00-24:00; Th-Fr 00:00-24:00; Sa-So 00:00-24:00'
+            ),
+            # Test for all day open at weekday, but not open at weekend
+            (
+                OpenDataSwissOperationTimeInput(
+                    operatingFrom='00:00:00',
+                    operatingTo='00:00:00',
+                    daysOfWeek=[
+                        OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.WEDNESDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.THURSDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.FRIDAY,
+                    ],
+                ),
+                'Mo-Fr 00:00-24:00',
+            ),
+            # Test for all day open at weekend, but not open at weekday
+            (
+                OpenDataSwissOperationTimeInput(
+                    operatingFrom='00:00:00',
+                    operatingTo='00:00:00',
+                    daysOfWeek=[
+                        OpenDataSwissOperationTimeDaysOfWeek.SATURDAY,
+                        OpenDataSwissOperationTimeDaysOfWeek.SUNDAY,
+                    ],
+                ),
+                'Sa 00:00-24:00; Su 00:00-24:00',
+            ),
+        ],
+    )
+    def test_get_osm_opening_hours(opening_times: dict[OpenDataSwissOperationTimeInput], osm_opening_hours: str):
+        opendata_swiss_parking_site_input = OpenDataSwissPropertiesInput(
+            operator=None,
+            displayName=None,
+            address=OpenDataSwissAddressInput(
+                addressLine=None,
+                city=None,
+                postalCode=None,
+            ),
+            capacities=[
+                OpenDataSwissCapacitiesInput(
+                    categoryType=OpenDataSwissCapacityCategoryTypeInput.STANDARD,
+                    total=10,
+                )
+            ],
+            additionalInformationForCustomers=OpenDataSwissAdditionalInformationInput(
+                de=None,
+                en=None,
+                it=None,
+                fr=None,
+            ),
+            parkingFacilityCategory=None,
+            parkingFacilityType=None,
+            salesChannels=[],
+            operationTime=opening_times,
+        )
+
+        assert opendata_swiss_parking_site_input.get_osm_opening_hours() == osm_opening_hours

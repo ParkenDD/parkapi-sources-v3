@@ -82,10 +82,10 @@ class OpenDataSwissPropertiesInput:
     additionalInformationForCustomers: Optional[OpenDataSwissAdditionalInformationInput] = Noneable(
         DataclassValidator(OpenDataSwissAdditionalInformationInput)
     )
-    parkingFacilityCategory: Optional[str] = Noneable(StringValidator())
+    parkingFacilityCategory: str = StringValidator()
     parkingFacilityType: Optional[str] = Noneable(StringValidator())
-    salesChannels: list[str] = ListValidator(StringValidator())
-    operationTime: OpenDataSwissOperationTimeInput = DataclassValidator(OpenDataSwissOperationTimeInput)
+    salesChannels: Optional[list[str]] = Noneable(ListValidator(StringValidator()))
+    operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(DataclassValidator(OpenDataSwissOperationTimeInput))
 
     def __post_init__(self):
         for capacity in self.capacities:
@@ -97,12 +97,12 @@ class OpenDataSwissPropertiesInput:
     def get_osm_opening_hours(self) -> str:
         open_swiss_opening_times: dict[str, list[str]] = defaultdict(list)
         opening: list[str] = list(self.operationTime.operatingFrom.split(':'))
-        closing: list[str] = list(self.operationTime.operatingTo.split(':'))
+        closing: list[str] = list(self.operationTime.operatingTo.replace('00:00:00', '24:00:00').split(':'))
         opening_time: str = f'{opening[0]}:{opening[1]}-{closing[0]}:{closing[1]}'
 
         for day in self.operationTime.daysOfWeek:
-            if opening_time == '00:00-00:00' or opening_time == '00:00-24:00':
-                open_swiss_opening_times['24/7'].append('00:00-24:00')
+            if opening_time == '00:00-24:00':
+                open_swiss_opening_times['24/7'].append(opening_time)
             if day in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
                 open_swiss_opening_times['Mo-Fr'].append(opening_time)
             if day in list(OpenDataSwissOperationTimeDaysOfWeek):
