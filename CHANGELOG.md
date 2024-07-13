@@ -1,6 +1,15 @@
 # Changelog
 
 
+## 0.6.1
+
+Released 2024-07-13
+
+### Fixes
+
+* [Fix Herrenberg base class](https://github.com/ParkenDD/parkapi-sources-v3/pull/73)
+
+
 ## 0.6.0
 
 Released 2024-07-13

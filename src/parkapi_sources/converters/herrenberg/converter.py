@@ -9,13 +9,13 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter import BaseConverter
+from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.converters.herrenberg.models import HerrenbergParkingSiteInput, HerrenbergParkingSitesInput, HerrenbergState
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
-class HerrenbergPullConverter(BaseConverter):
+class HerrenbergPullConverter(PullConverter):
     parking_sites_input_validator = DataclassValidator(HerrenbergParkingSitesInput)
     parking_site_validator = DataclassValidator(HerrenbergParkingSiteInput)
 
