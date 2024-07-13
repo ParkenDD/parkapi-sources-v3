@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo
 from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
 from validataclass.validators import (
+    AnythingValidator,
     DataclassValidator,
     EnumValidator,
     IntegerValidator,
@@ -84,6 +85,11 @@ class ApcoaOpeningHoursWeekday(Enum):
             self.SATURDAY: 'Sa',
             self.SUNDAY: 'Su',
         }.get(self, None)
+
+
+@validataclass
+class ApcoaParkingSitesInput:
+    Results: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict]))
 
 
 @validataclass
@@ -172,35 +178,50 @@ class ApcoaParkingSiteInput:
         raise ValidationError(reason='Missing parking spaces capacity')
 
     def get_osm_opening_hours(self) -> str:
-        apcoa_opening_times: dict[str, list[str]] = defaultdict(list)
+        apcoa_opening_times_by_weekday: dict[ApcoaOpeningHoursWeekday, list[str]] = defaultdict(list)
+        check_counter_24_7: int = 0
+        check_list_weekday: list[str] = []
+
         for opening_hours_input in self.OpeningHours:
+            # TODO: this validator does no logic check if there are overlapping opening times
+
+            # We don't need closed dates for OSM opening times
+            if opening_hours_input.OpeningTimes == 'closed':
+                continue
+
+            # OSM has times without spaces, so we remove spaces
             opening_time = opening_hours_input.OpeningTimes.replace(' ', '')
+
+            # If it's open all day, add it to our 24/7 check counter, and we change opening_time to the OSM format
             if opening_hours_input.OpeningTimes == '00:00 - 00:00':
+                check_counter_24_7 += 1
                 opening_time = '00:00-24:00'
-                apcoa_opening_times['24/7'].append(opening_time)
+
+            # Add opening times to fallback dict
+            apcoa_opening_times_by_weekday[opening_hours_input.Weekday].append(opening_time)
+
+            # If we have a weekday, add it to weekday lust in order to check later if all weekdays have same data
             if opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday)[:5] and opening_time != 'closed':
-                apcoa_opening_times['Mo-Fr'].append(opening_time)
-            if opening_hours_input.Weekday in list(ApcoaOpeningHoursWeekday) and opening_time != 'closed':
-                apcoa_opening_times[opening_hours_input.Weekday.value].append(opening_time)
+                check_list_weekday.append(opening_time)
+
+        # If the check counter is 7, all weekdays are open at all time, which makes it 24/7. No further handling needed in this case.
+        if check_counter_24_7 == 7:
+            return '24/7'
 
         osm_opening_hour: list = []
-        if len(apcoa_opening_times['Mo-Fr']) == 5 and len(set(apcoa_opening_times['Mo-Fr'])) == 1:
-            osm_opening_hour.append(f'Mo-Fr {next(iter(set(apcoa_opening_times["Mo-Fr"])))}')
+        # If all Mo-Fr entries are the same, we can summarize it to the Mo-Fr entry, otherwise we have to set it separately
+        if len(check_list_weekday) == 5 and len(set(check_list_weekday)) == 1:
+            osm_opening_hour.append(f'Mo-Fr {check_list_weekday[0]}')
         else:
             for weekday in list(ApcoaOpeningHoursWeekday)[:5]:
-                if weekday.value in list(apcoa_opening_times.keys()):
-                    osm_opening_hour.append(f'{weekday.to_osm_opening_day_format()} {next(iter(apcoa_opening_times[weekday.value]))}')
-        if 'Saturday' in list(apcoa_opening_times.keys()):
-            osm_opening_hour.append(
-                f'{ApcoaOpeningHoursWeekday.SATURDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Saturday"]))}'
-            )
-        if 'Sunday' in list(apcoa_opening_times.keys()):
-            osm_opening_hour.append(
-                f'{ApcoaOpeningHoursWeekday.SUNDAY.to_osm_opening_day_format()} {next(iter(apcoa_opening_times["Sunday"]))}'
-            )
-        osm_opening_hours = '; '.join(osm_opening_hour)
+                if weekday in list(apcoa_opening_times_by_weekday):
+                    osm_opening_hour.append(f'{weekday.to_osm_opening_day_format()} {",".join(apcoa_opening_times_by_weekday[weekday])}')
 
-        if len(apcoa_opening_times['24/7']) == 7:
-            osm_opening_hours = '24/7'
+        # Weekends are handled separately anyway
+        for weekend_day in [ApcoaOpeningHoursWeekday.SATURDAY, ApcoaOpeningHoursWeekday.SUNDAY]:
+            if weekend_day in apcoa_opening_times_by_weekday:
+                osm_opening_hour.append(
+                    f'{weekend_day.to_osm_opening_day_format()} {",".join(apcoa_opening_times_by_weekday[weekend_day])}'
+                )
 
-        return osm_opening_hours
+        return '; '.join(osm_opening_hour)
