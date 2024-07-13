@@ -43,7 +43,7 @@ class HerrenbergPullConverter(BaseConverter):
         parking_site_inputs, parking_site_errors, last_updated = self._get_parking_site_inputs()
 
         for parking_site_input in parking_site_inputs:
-            if parking_site_input.state == HerrenbergState.nodata:
+            if parking_site_input.state == HerrenbergState.NODATA:
                 continue
             realtime_parking_site_inputs.append(parking_site_input.to_realtime_parking_site(last_updated))
 

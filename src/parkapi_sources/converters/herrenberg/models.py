@@ -58,14 +58,9 @@ class HerrenbergParkingSiteType(Enum):
         }.get(self)
 
 
-class HerrenbergParkingRideType(Enum):
-    Parkhaus = 'Parkhaus'
-    Park_Carpool = 'Park-Carpool'
-
-
 class HerrenbergState(Enum):
-    nodata = 'nodata'
-    many = 'many'
+    NODATA = 'nodata'
+    MANY = 'many'
 
 
 @validataclass
@@ -113,7 +108,7 @@ class HerrenbergParkingSiteInput:
             opening_hours=self.opening_hours,
             has_fee=self.fee_hours is not None,
             capacity_disabled=self.total_disabled,
-            has_realtime_data=self.state != HerrenbergState.nodata,
+            has_realtime_data=self.state != HerrenbergState.NODATA,
             static_data_updated_at=static_data_updated_at,
         )
 
