@@ -10,6 +10,7 @@ from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
 from .freiburg import FreiburgPullConverter
 from .heidelberg import HeidelbergPullConverter
+from .herrenberg import HerrenbergPullConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
 from .kienzler import KienzlerPullConverter
 from .konstanz_bike import KonstanzBikePushConverter
