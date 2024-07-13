@@ -23,7 +23,7 @@ class PMBWConnectionStatus(Enum):
 
 
 class PMBWCategory(Enum):
-    P_M = "P&M"
+    P_M = 'P&M'
 
 
 @validataclass
@@ -49,7 +49,7 @@ class PMBWInput:
     name: str = StringValidator()
     status: PMBWConnectionStatus = EnumValidator(PMBWConnectionStatus)
     time: datetime = SpacedDateTimeValidator(
-        local_timezone=ZoneInfo("Europe/Berlin"),
+        local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
     location: PMBWLocationInput = DataclassValidator(PMBWLocationInput)

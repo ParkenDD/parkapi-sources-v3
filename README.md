@@ -38,7 +38,6 @@ We support following data sources:
 | Verband Region Stuttgart: Park and Ride                                           | car     | push (xlsx) | `vrs_p_r`              | no       |
 | Stadt Herrenberg                                                                  | car     | pull        | `herrenberg`           | no       |
 
-
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 
 
