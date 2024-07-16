@@ -95,37 +95,50 @@ class OpenDataSwissPropertiesInput:
         raise ValidationError(reason='Missing parking spaces capacity')
 
     def get_osm_opening_hours(self) -> str:
-        open_swiss_opening_times: dict[str, list[str]] = defaultdict(list)
-        opening: list[str] = list(self.operationTime.operatingFrom.split(':'))
-        closing: list[str] = list(self.operationTime.operatingTo.replace('00:00:00', '24:00:00').split(':'))
-        opening_time: str = f'{opening[0]}:{opening[1]}-{closing[0]}:{closing[1]}'
+        open_swiss_opening_times_by_weekday: dict[OpenDataSwissOperationTimeDaysOfWeek, list[str]] = defaultdict(list)
+        check_counter_24_7: int = 0
+        check_list_weekday: list[str] = []
 
-        for day in self.operationTime.daysOfWeek:
+        # OSM 24/7 has no secs in its timeformat and no endtime 00:00, so we replace with 24:00 and remove the secs
+        closing_hh_mm_ss: list[str] = list(self.operationTime.operatingTo.replace('00:00:00', '24:00:00').split(':'))
+        opening_hh_mm_ss: list[str] = list(self.operationTime.operatingFrom.split(':'))
+        opening_time: str = f'{opening_hh_mm_ss[0]}:{opening_hh_mm_ss[1]}-{closing_hh_mm_ss[0]}:{closing_hh_mm_ss[1]}'
+
+        for days_of_week_input in self.operationTime.daysOfWeek:
+            # If it's open all day, add it to our 24/7 check counter, and we change opening_time to the OSM format
             if opening_time == '00:00-24:00':
-                open_swiss_opening_times['24/7'].append(opening_time)
-            if day in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
-                open_swiss_opening_times['Mo-Fr'].append(opening_time)
-            if day in list(OpenDataSwissOperationTimeDaysOfWeek):
-                open_swiss_opening_times[day.value].append(opening_time)
+                check_counter_24_7 += 1
+
+            # Add opening times to fallback dict
+            open_swiss_opening_times_by_weekday[days_of_week_input].append(opening_time)
+
+            # If we have a weekday, add it to weekday list in order to check later if all weekdays have same data
+            if days_of_week_input in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
+                check_list_weekday.append(opening_time)
+
+        # If the check counter is 7, all weekdays are open at all time, which makes it 24/7. No further handling needed in this case.
+        if check_counter_24_7 == 7:
+            return '24/7'
 
         osm_opening_hour: list = []
-        if len(open_swiss_opening_times['Mo-Fr']) == 5 and len(set(open_swiss_opening_times['Mo-Fr'])) == 1:
-            osm_opening_hour.append(f'Mo-Fr {next(iter(set(open_swiss_opening_times["Mo-Fr"])))}')
+        # If all Mo-Fr entries are the same, we can summarize it to the Mo-Fr entry, otherwise we have to set it separately
+        if len(check_list_weekday) == 5 and len(set(check_list_weekday)) == 1:
+            osm_opening_hour.append(f'Mo-Fr {check_list_weekday[0]}')
         else:
             for weekday in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
-                if weekday.value in list(open_swiss_opening_times.keys()):
-                    osm_opening_hour.append(f'{weekday.to_osm_opening_day_format()} {next(iter(open_swiss_opening_times[weekday.value]))}')
-        if 'SATURDAY' in list(open_swiss_opening_times.keys()):
-            days = OpenDataSwissOperationTimeDaysOfWeek.SATURDAY.to_osm_opening_day_format()
-            osm_opening_hour.append(f'{days} {next(iter(open_swiss_opening_times["SATURDAY"]))}')
-        if 'SUNDAY' in list(open_swiss_opening_times.keys()):
-            days = OpenDataSwissOperationTimeDaysOfWeek.SUNDAY.to_osm_opening_day_format()
-            osm_opening_hour.append(f'{days} {next(iter(open_swiss_opening_times["SUNDAY"]))}')
-        osm_opening_hours = '; '.join(osm_opening_hour)
-        if len(open_swiss_opening_times['24/7']) == 7:
-            osm_opening_hours = '24/7'
+                if weekday in list(open_swiss_opening_times_by_weekday):
+                    osm_opening_hour.append(
+                        f'{weekday.to_osm_opening_day_format()} {",".join(open_swiss_opening_times_by_weekday[weekday])}'
+                    )
 
-        return osm_opening_hours
+        # Weekends are handled separately
+        for weekend_day in [OpenDataSwissOperationTimeDaysOfWeek.SATURDAY, OpenDataSwissOperationTimeDaysOfWeek.SUNDAY]:
+            if weekend_day in list(open_swiss_opening_times_by_weekday):
+                osm_opening_hour.append(
+                    f'{weekend_day.to_osm_opening_day_format()} {",".join(open_swiss_opening_times_by_weekday[weekend_day])}'
+                )
+
+        return '; '.join(osm_opening_hour)
 
 
 @validataclass
