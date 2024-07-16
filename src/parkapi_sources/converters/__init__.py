@@ -3,6 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from .apcoa import ApcoaPullConverter
 from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
 from .bfrk_bw import BfrkBwOepnvBikePushConverter, BfrkBwOepnvCarPushConverter, BfrkBwSpnvBikePushConverter, BfrkBwSpnvCarPushConverter
@@ -11,6 +12,7 @@ from .ellwangen import EllwangenPushConverter
 from .freiburg import FreiburgPullConverter
 from .goldbeck import GoldbeckPushConverter
 from .heidelberg import HeidelbergPullConverter
+from .herrenberg import HerrenbergPullConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
 from .kienzler import KienzlerPullConverter
 from .konstanz_bike import KonstanzBikePushConverter

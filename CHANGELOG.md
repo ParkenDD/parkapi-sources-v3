@@ -1,6 +1,25 @@
 # Changelog
 
 
+## 0.6.1
+
+Released 2024-07-13
+
+### Fixes
+
+* [Fix Herrenberg base class](https://github.com/ParkenDD/parkapi-sources-v3/pull/73)
+
+
+## 0.6.0
+
+Released 2024-07-13
+
+### Features
+
+* [Add Herrenberg converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/71)
+* [Add APCOA converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/72)
+
+
 ## 0.5.3
 
 Released 2024-06-19
