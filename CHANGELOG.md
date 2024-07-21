@@ -1,6 +1,13 @@
 # Changelog
 
 
+## Unreleased
+
+### Fixes
+
+* [Fix Karlsruhe converter after Karlsruhe made changes](https://github.com/ParkenDD/parkapi-sources-v3/pull/74)
+
+
 ## 0.6.1
 
 Released 2024-07-13

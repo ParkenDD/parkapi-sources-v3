@@ -33,10 +33,8 @@ class KarlsruhePullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(karlsruhe_pull_converter: KarlsruhePullConverter, requests_mock_karlsruhe: Mocker):
         static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_pull_converter.get_static_parking_sites()
-
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 83
+        assert len(import_parking_site_exceptions) == 6
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -44,7 +42,7 @@ class KarlsruhePullConverterTest:
     def test_get_realtime_parking_sites(karlsruhe_pull_converter: KarlsruhePullConverter, requests_mock_karlsruhe: Mocker):
         realtime_parking_site_inputs, import_parking_site_exceptions = karlsruhe_pull_converter.get_realtime_parking_sites()
 
-        assert len(realtime_parking_site_inputs) == 20
-        assert len(import_parking_site_exceptions) == 4
+        assert len(realtime_parking_site_inputs) == 39
+        assert len(import_parking_site_exceptions) == 6
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
