@@ -3,8 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from abc import ABC
-
 import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
@@ -16,9 +14,19 @@ from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticP
 from .models import OpenDataSwissFeatureInput
 
 
-class OpenDataSwissBasePullConverter(PullConverter, ABC):
+class OpenDataSwissPullConverter(PullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
-    opendata_swiss_feature_validator: DataclassValidator
+    opendata_swiss_feature_validator = DataclassValidator(OpenDataSwissFeatureInput)
+
+    source_info = SourceInfo(
+        uid='opendata_swiss',
+        name='Open-Data-Plattform öV Schweiz (opentransport.swiss)',
+        public_url='https://opentransportdata.swiss/de/dataset/parking-facilities',
+        source_url='https://opentransportdata.swiss/de/dataset/parking-facilities/permalink',
+        timezone='Europe/Berlin',
+        attribution_contributor='Schweizerische Bundesbahnen (SBB) AG',
+        has_realtime_data=False,
+    )
 
     def _get_feature_inputs(self) -> tuple[list[OpenDataSwissFeatureInput], list[ImportParkingSiteException]]:
         feature_inputs: list[OpenDataSwissFeatureInput] = []
@@ -60,20 +68,6 @@ class OpenDataSwissBasePullConverter(PullConverter, ABC):
             static_parking_site_inputs.append(feature_input.to_static_parking_site_input())
 
         return static_parking_site_inputs, import_parking_site_exceptions
-
-
-class OpenDataSwissPullConverter(OpenDataSwissBasePullConverter):
-    opendata_swiss_feature_validator = DataclassValidator(OpenDataSwissFeatureInput)
-
-    source_info = SourceInfo(
-        uid='opendata_swiss',
-        name='Open-Data-Plattform öV Schweiz (opentransport.swiss)',
-        public_url='https://opentransportdata.swiss/de/dataset/parking-facilities',
-        source_url='https://opentransportdata.swiss/dataset/c1be030e-adad-41c6-8ee2-899e85f840f6/resource/5dab3aba-6b5a-42cb-bb73-103fb28c7e10/download/parking-facilities.json',
-        timezone='Europe/Berlin',
-        attribution_contributor='Schweizerische Bundesbahnen (SBB) AG',
-        has_realtime_data=False,
-    )
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []  # ATM only static data can be called from the Platform

@@ -47820,7 +47820,7 @@
           "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
         },
         "operationTime": {
-          "operatingFrom": "00:00:00",
+          "operatingFrom": null,
           "operatingTo": "00:00:00",
           "daysOfWeek": [
             "MONDAY",

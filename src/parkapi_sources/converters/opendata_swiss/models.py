@@ -3,14 +3,22 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, time, timezone
 from enum import Enum
 from typing import Optional
 
 from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
-from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, ListValidator, Noneable, StringValidator
+from validataclass.validators import (
+    DataclassValidator,
+    EnumValidator,
+    IntegerValidator,
+    ListValidator,
+    Noneable,
+    StringValidator,
+    TimeFormat,
+    TimeValidator,
+)
 
 from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
@@ -19,12 +27,12 @@ from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, Purpo
 
 @validataclass
 class OpenDataSwissAddressInput:
-    addressLine: Optional[str] = Noneable(StringValidator())
-    city: Optional[str] = Noneable(StringValidator())
-    postalCode: Optional[str] = Noneable(StringValidator())
+    addressLine: str = StringValidator()
+    city: str = StringValidator()
+    postalCode: str = StringValidator()
 
 
-class OpenDataSwissCapacityCategoryTypeInput(Enum):
+class OpenDataSwissCapacityCategoryType(Enum):
     STANDARD = 'STANDARD'
     DISABLED_PARKING_SPACE = 'DISABLED_PARKING_SPACE'
     RESERVABLE_PARKING_SPACE = 'RESERVABLE_PARKING_SPACE'
@@ -33,7 +41,7 @@ class OpenDataSwissCapacityCategoryTypeInput(Enum):
 
 @validataclass
 class OpenDataSwissCapacitiesInput:
-    categoryType: OpenDataSwissCapacityCategoryTypeInput = EnumValidator(OpenDataSwissCapacityCategoryTypeInput)
+    categoryType: OpenDataSwissCapacityCategoryType = EnumValidator(OpenDataSwissCapacityCategoryType)
     total: int = IntegerValidator()
 
 
@@ -68,8 +76,8 @@ class OpenDataSwissOperationTimeDaysOfWeek(Enum):
 
 @validataclass
 class OpenDataSwissOperationTimeInput:
-    operatingFrom: Optional[str] = Noneable(StringValidator())
-    operatingTo: Optional[str] = Noneable(StringValidator())
+    operatingFrom: Optional[time] = Noneable(TimeValidator(time_format=TimeFormat.WITH_SECONDS))
+    operatingTo: Optional[time] = Noneable(TimeValidator(time_format=TimeFormat.WITH_SECONDS))
     daysOfWeek: Optional[list[str]] = Noneable(ListValidator(EnumValidator(OpenDataSwissOperationTimeDaysOfWeek)))
 
 
@@ -89,54 +97,45 @@ class OpenDataSwissPropertiesInput:
 
     def __post_init__(self):
         for capacity in self.capacities:
-            if capacity.categoryType == OpenDataSwissCapacityCategoryTypeInput.STANDARD:
+            if capacity.categoryType == OpenDataSwissCapacityCategoryType.STANDARD:
                 return
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
         raise ValidationError(reason='Missing parking spaces capacity')
 
     def get_osm_opening_hours(self) -> str:
-        open_swiss_opening_times_by_weekday: dict[OpenDataSwissOperationTimeDaysOfWeek, list[str]] = defaultdict(list)
-        check_counter_24_7: int = 0
-        check_list_weekday: list[str] = []
+        check_counter_weekday: int = 0
+
+        # If any of opening_times From or To is null, conversion to OSM opening hours cannot be continued
+        if not self.operationTime.operatingFrom or not self.operationTime.operatingTo:
+            return None
 
         # OSM 24/7 has no secs in its timeformat and no endtime 00:00, so we replace with 24:00 and remove the secs
-        closing_hh_mm_ss: list[str] = list(self.operationTime.operatingTo.replace('00:00:00', '24:00:00').split(':'))
-        opening_hh_mm_ss: list[str] = list(self.operationTime.operatingFrom.split(':'))
-        opening_time: str = f'{opening_hh_mm_ss[0]}:{opening_hh_mm_ss[1]}-{closing_hh_mm_ss[0]}:{closing_hh_mm_ss[1]}'
+        opening_time: str = f'{self.operationTime.operatingFrom.strftime("%H:%M")}-{self.operationTime.operatingTo.strftime("%H:%M")}'
+        opening_time = '00:00-24:00' if opening_time == '00:00-00:00' else opening_time
 
         for days_of_week_input in self.operationTime.daysOfWeek:
-            # If it's open all day, add it to our 24/7 check counter, and we change opening_time to the OSM format
-            if opening_time == '00:00-24:00':
-                check_counter_24_7 += 1
-
-            # Add opening times to fallback dict
-            open_swiss_opening_times_by_weekday[days_of_week_input].append(opening_time)
-
-            # If we have a weekday, add it to weekday list in order to check later if all weekdays have same data
+            # If the weekday is within Monday to Friday, count to check later for OSM opening hours Mo-Fr
             if days_of_week_input in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
-                check_list_weekday.append(opening_time)
+                check_counter_weekday += 1
 
-        # If the check counter is 7, all weekdays are open at all time, which makes it 24/7. No further handling needed in this case.
-        if check_counter_24_7 == 7:
+        # If it's open all day and number of opening days is 7, then it is OSM - 24/7. No further handling needed in this case.
+        if opening_time == '00:00-24:00' and len(self.operationTime.daysOfWeek) == 7:
             return '24/7'
 
         osm_opening_hour: list = []
-        # If all Mo-Fr entries are the same, we can summarize it to the Mo-Fr entry, otherwise we have to set it separately
-        if len(check_list_weekday) == 5 and len(set(check_list_weekday)) == 1:
-            osm_opening_hour.append(f'Mo-Fr {check_list_weekday[0]}')
+        # If the days are Monday to Friday with same opening time, we can summarize it to the Mo-Fr entry,
+        # otherwise we have to set it separately
+        if check_counter_weekday == 5:
+            osm_opening_hour.append(f'Mo-Fr {opening_time}')
         else:
             for weekday in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
-                if weekday in list(open_swiss_opening_times_by_weekday):
-                    osm_opening_hour.append(
-                        f'{weekday.to_osm_opening_day_format()} {",".join(open_swiss_opening_times_by_weekday[weekday])}'
-                    )
+                if weekday in self.operationTime.daysOfWeek:
+                    osm_opening_hour.append(f'{weekday.to_osm_opening_day_format()} {opening_time}')
 
         # Weekends are handled separately
         for weekend_day in [OpenDataSwissOperationTimeDaysOfWeek.SATURDAY, OpenDataSwissOperationTimeDaysOfWeek.SUNDAY]:
-            if weekend_day in list(open_swiss_opening_times_by_weekday):
-                osm_opening_hour.append(
-                    f'{weekend_day.to_osm_opening_day_format()} {",".join(open_swiss_opening_times_by_weekday[weekend_day])}'
-                )
+            if weekend_day in self.operationTime.daysOfWeek:
+                osm_opening_hour.append(f'{weekend_day.to_osm_opening_day_format()} {opening_time}')
 
         return '; '.join(osm_opening_hour)
 
@@ -158,12 +157,12 @@ class OpenDataSwissFeatureInput:
             has_realtime_data=False,
         )
 
-        if self.properties.parkingFacilityCategory == PurposeType.CAR:
+        if self.properties.parkingFacilityCategory == PurposeType.CAR.value:
             static_parking_site_input.purpose = PurposeType.CAR
             static_parking_site_input.type = ParkingSiteType.CAR_PARK
-        elif self.properties.parkingFacilityCategory == PurposeType.BIKE:
+        elif self.properties.parkingFacilityCategory == PurposeType.BIKE.value:
             static_parking_site_input.purpose = PurposeType.BIKE
-            static_parking_site_input.type = ParkingSiteType.OFF_STREET_PARKING_GROUND
+            static_parking_site_input.type = ParkingSiteType.GENERIC_BIKE
         else:
             static_parking_site_input.purpose = PurposeType.CAR
             static_parking_site_input.type = ParkingSiteType.OTHER
@@ -171,7 +170,9 @@ class OpenDataSwissFeatureInput:
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
 
         if self.properties.additionalInformationForCustomers:
-            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de
+            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de.replace('\n', ' ').replace(
+                '\r', ' '
+            )
 
         if (
             self.properties.address
@@ -187,11 +188,11 @@ class OpenDataSwissFeatureInput:
             static_parking_site_input.park_and_ride_type = [ParkAndRideType.TRAIN]
 
         for capacities_input in self.properties.capacities:
-            if capacities_input.categoryType == OpenDataSwissCapacityCategoryTypeInput.STANDARD:
+            if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.STANDARD:
                 static_parking_site_input.capacity = capacities_input.total
-            elif capacities_input.categoryType == OpenDataSwissCapacityCategoryTypeInput.DISABLED_PARKING_SPACE:
+            elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.DISABLED_PARKING_SPACE:
                 static_parking_site_input.capacity_disabled = capacities_input.total
-            elif capacities_input.categoryType == OpenDataSwissCapacityCategoryTypeInput.WITH_CHARGING_STATION:
+            elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.WITH_CHARGING_STATION:
                 static_parking_site_input.capacity_charging = capacities_input.total
 
         return static_parking_site_input

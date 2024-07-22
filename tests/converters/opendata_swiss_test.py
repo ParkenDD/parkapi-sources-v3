@@ -3,6 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from datetime import datetime
 from pathlib import Path
 from unittest.mock import Mock
 
@@ -12,7 +13,7 @@ from parkapi_sources.converters.opendata_swiss.models import (
     OpenDataSwissAdditionalInformationInput,
     OpenDataSwissAddressInput,
     OpenDataSwissCapacitiesInput,
-    OpenDataSwissCapacityCategoryTypeInput,
+    OpenDataSwissCapacityCategoryType,
     OpenDataSwissOperationTimeDaysOfWeek,
     OpenDataSwissOperationTimeInput,
     OpenDataSwissPropertiesInput,
@@ -29,7 +30,7 @@ def requests_mock_opendata_swiss(requests_mock: Mocker) -> Mocker:
         json_data = json_file.read()
 
     requests_mock.get(
-        'https://opentransportdata.swiss/dataset/c1be030e-adad-41c6-8ee2-899e85f840f6/resource/5dab3aba-6b5a-42cb-bb73-103fb28c7e10/download/parking-facilities.json',
+        'https://opentransportdata.swiss/de/dataset/parking-facilities/permalink',
         text=json_data,
     )
 
@@ -48,7 +49,7 @@ class OpenDataSwissPullConverterTest:
 
         assert len(static_parking_site_inputs) > len(
             import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        ), 'There should be more valid than invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -61,8 +62,8 @@ class OpenDataSwissParkingSiteInputTest:
             # Test for 24/7
             (
                 OpenDataSwissOperationTimeInput(
-                    operatingFrom='00:00:00',
-                    operatingTo='00:00:00',
+                    operatingFrom=datetime.strptime('00:00:00', '%H:%M:%S'),
+                    operatingTo=datetime.strptime('00:00:00', '%H:%M:%S'),
                     daysOfWeek=[
                         OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
                         OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
@@ -78,8 +79,8 @@ class OpenDataSwissParkingSiteInputTest:
             # Test for Sunday missing
             (
                 OpenDataSwissOperationTimeInput(
-                    operatingFrom='00:00:00',
-                    operatingTo='00:00:00',
+                    operatingFrom=datetime.strptime('00:00:00', '%H:%M:%S'),
+                    operatingTo=datetime.strptime('00:00:00', '%H:%M:%S'),
                     daysOfWeek=[
                         OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
                         OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
@@ -94,8 +95,8 @@ class OpenDataSwissParkingSiteInputTest:
             # Test for Wednesday missing
             (
                 OpenDataSwissOperationTimeInput(
-                    operatingFrom='00:00:00',
-                    operatingTo='00:00:00',
+                    operatingFrom=datetime.strptime('00:00:00', '%H:%M:%S'),
+                    operatingTo=datetime.strptime('00:00:00', '%H:%M:%S'),
                     daysOfWeek=[
                         OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
                         OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
@@ -111,8 +112,8 @@ class OpenDataSwissParkingSiteInputTest:
             # Test for all day open at weekday, but not open at weekend
             (
                 OpenDataSwissOperationTimeInput(
-                    operatingFrom='00:00:00',
-                    operatingTo='00:00:00',
+                    operatingFrom=datetime.strptime('00:00:00', '%H:%M:%S'),
+                    operatingTo=datetime.strptime('00:00:00', '%H:%M:%S'),
                     daysOfWeek=[
                         OpenDataSwissOperationTimeDaysOfWeek.MONDAY,
                         OpenDataSwissOperationTimeDaysOfWeek.TUESDAY,
@@ -126,8 +127,8 @@ class OpenDataSwissParkingSiteInputTest:
             # Test for all day open at weekend, but not open at weekday
             (
                 OpenDataSwissOperationTimeInput(
-                    operatingFrom='00:00:00',
-                    operatingTo='00:00:00',
+                    operatingFrom=datetime.strptime('00:00:00', '%H:%M:%S'),
+                    operatingTo=datetime.strptime('00:00:00', '%H:%M:%S'),
                     daysOfWeek=[
                         OpenDataSwissOperationTimeDaysOfWeek.SATURDAY,
                         OpenDataSwissOperationTimeDaysOfWeek.SUNDAY,
@@ -148,7 +149,7 @@ class OpenDataSwissParkingSiteInputTest:
             ),
             capacities=[
                 OpenDataSwissCapacitiesInput(
-                    categoryType=OpenDataSwissCapacityCategoryTypeInput.STANDARD,
+                    categoryType=OpenDataSwissCapacityCategoryType.STANDARD,
                     total=10,
                 )
             ],
