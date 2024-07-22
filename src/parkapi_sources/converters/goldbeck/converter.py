@@ -51,9 +51,7 @@ class GoldbeckPushConverter(NormalizedXlsxConverter):
             parking_site_dict[field] = row[mapping[field]].value
 
         parking_site_dict['purpose'] = self.purpose_mapping.get(parking_site_dict.get('purpose'))
-        parking_site_dict['type'] = (
-            self.type_mapping.get(parking_site_dict.get('type')) if parking_site_dict.get('type') else 'OFF_STREET_PARKING_GROUND'
-        )
+        parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'), 'OFF_STREET_PARKING_GROUND')
         parking_site_dict['supervision_type'] = self.supervision_type_mapping.get(parking_site_dict.get('supervision_type'))
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 
