@@ -24,8 +24,7 @@ class GoldbeckPushConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = goldbeck_push_converter.handle_xlsx(workbook)
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 10
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

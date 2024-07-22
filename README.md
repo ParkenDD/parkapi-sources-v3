@@ -18,6 +18,7 @@ We support following data sources:
 | Stadt Ellwangen                                                                   | car     | push (xlsx) | `ellwangen`            | no       |
 | Stadt Buchen                                                                      | car     | push (json) | `buchen`               | yes      |
 | Stadt Freiburg                                                                    | car     | pull        | `freiburg`             | yes      |
+| GOLDBECK Parking Services                                                         | car     | push (xlsx) | `goldbeck`             | no       |
 | Stadt Heidelberg                                                                  | car     | pull        | `heidelberg`           | yes      |
 | Stadt Karlsruhe: PKW-Parkplätze                                                   | car     | pull        | `karlsruhe`            | yes      |
 | Stadt Karlsruhe: Fahhrrad-Abstellangen                                            | bike    | pull        | `karlsruhe_bike`       | no       |
@@ -37,7 +38,6 @@ We support following data sources:
 | Stadt Ulm                                                                         | car     | pull        | `ulm`                  | yes      |
 | Verband Region Stuttgart: Park and Ride                                           | car     | push (xlsx) | `vrs_p_r`              | no       |
 | Stadt Herrenberg                                                                  | car     | pull        | `herrenberg`           | no       |
-| GOLDBECK Parking Services                                                         | car     | push (xlsx) | `goldbeck`             | no       |
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 
