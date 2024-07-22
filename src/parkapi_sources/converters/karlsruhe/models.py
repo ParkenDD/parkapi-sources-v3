@@ -30,8 +30,8 @@ from parkapi_sources.validators import ParsedDateValidator
 
 
 class KarlsruheOpeningStatus(Enum):
-    OPEN = 'Geöffnet'
-    CLOSED = 'Geschlossen'
+    OPEN = 1
+    CLOSED = 0
 
     def to_opening_status(self) -> OpeningStatus:
         return {
@@ -44,14 +44,14 @@ class KarlsruheOpeningStatus(Enum):
 class KarlsruhePropertiesInput:
     id: int = IntegerValidator()
     ph_name: str = StringValidator()
-    gesamte_parkplaetze: int = IntegerValidator()
+    gesamte_parkplaetze: int = IntegerValidator(min_value=0)
     freie_parkplaetze: Optional[int] = Noneable(IntegerValidator())
     max_durchfahrtshoehe: Optional[Decimal] = Noneable(NumericValidator())
     stand_freieparkplaetze: Optional[datetime] = Noneable(DateTimeValidator())
     parkhaus_strasse: str = StringValidator()
     parkhaus_plz: str = StringValidator()
     parkhaus_gemeinde: str = StringValidator()
-    oeffnungsstatus: Optional[KarlsruheOpeningStatus] = Noneable(EnumValidator(KarlsruheOpeningStatus))
+    ph_status: Optional[KarlsruheOpeningStatus] = Noneable(EnumValidator(KarlsruheOpeningStatus))
     bemerkung: Optional[str] = Noneable(StringValidator())
     parkhaus_internet: Optional[str] = Noneable(UrlValidator())
     parkhaus_telefon: Optional[str] = Noneable(StringValidator())
@@ -59,7 +59,7 @@ class KarlsruhePropertiesInput:
     betreiber_internet: Optional[str] = Noneable(UrlValidator())
     betreiber_email: Optional[str] = Noneable(EmailValidator())
     betreiber_telefon: Optional[str] = Noneable(StringValidator())
-    stand_parkhausdaten: date = ParsedDateValidator(date_format='%Y-%m-%dZ')
+    stand_stammdaten: date = ParsedDateValidator(date_format='%d.%m.%Y')
 
     def __post_init__(self):
         if self.max_durchfahrtshoehe == 0:  # 0 is used as None
@@ -82,7 +82,7 @@ class KarlsruheFeatureInput:
             address=f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}',
             max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
             public_url=self.properties.parkhaus_internet,
-            static_data_updated_at=datetime.combine(self.properties.stand_parkhausdaten, time(), tzinfo=timezone.utc),
+            static_data_updated_at=datetime.combine(self.properties.stand_stammdaten, time(), tzinfo=timezone.utc),
             has_realtime_data=True,
         )
 
@@ -90,15 +90,15 @@ class KarlsruheFeatureInput:
         if self.properties.stand_freieparkplaetze is None:
             return None
 
-        if self.properties.oeffnungsstatus is None:
+        if self.properties.ph_status is None:
             opening_status = OpeningStatus.UNKNOWN
         else:
-            opening_status = self.properties.oeffnungsstatus.to_opening_status()
+            opening_status = self.properties.ph_status.to_opening_status()
 
         return RealtimeParkingSiteInput(
             uid=str(self.properties.id),
             realtime_capacity=self.properties.gesamte_parkplaetze,
-            realtime_free_capacity=self.properties.freie_parkplaetze,
+            realtime_free_capacity=None if self.properties.freie_parkplaetze == -1 else self.properties.freie_parkplaetze,
             realtime_opening_status=opening_status,
             realtime_data_updated_at=self.properties.stand_freieparkplaetze,
         )
@@ -121,7 +121,8 @@ class KarlsruheBikeType(Enum):
 
 @validataclass
 class KarlsruheBikePropertiesInput:
-    art: KarlsruheBikeType = EnumValidator(KarlsruheBikeType)
+    id: int = IntegerValidator()
+    art: OptionalUnset[KarlsruheBikeType] = NoneToUnsetValue(EnumValidator(KarlsruheBikeType)), DefaultUnset
     standort: str = StringValidator()
     gemeinde: str = StringValidator()
     stadtteil: OptionalUnset[str] = NoneToUnsetValue(StringValidator()), DefaultUnset
@@ -132,7 +133,6 @@ class KarlsruheBikePropertiesInput:
 
 @validataclass
 class KarlsruheBikeFeatureInput:
-    id: str = StringValidator()
     geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
     properties: KarlsruheBikePropertiesInput = DataclassValidator(KarlsruheBikePropertiesInput)
 
@@ -140,7 +140,7 @@ class KarlsruheBikeFeatureInput:
         address_fragments = [self.properties.standort, self.properties.stadtteil, self.properties.gemeinde]
         address = ', '.join([fragment for fragment in address_fragments if fragment is not UnsetValue])
         return StaticParkingSiteInput(
-            uid=str(self.id),
+            uid=str(self.properties.id),
             name=self.properties.standort,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
@@ -150,6 +150,6 @@ class KarlsruheBikeFeatureInput:
             is_covered=self.properties.art == KarlsruheBikeType.STANDS_WITH_ROOF or UnsetValue,
             description=self.properties.bemerkung,
             static_data_updated_at=datetime.now(timezone.utc),
-            type=self.properties.art.to_parking_site_type(),
+            type=ParkingSiteType.GENERIC_BIKE if self.properties.art is UnsetValue else self.properties.art.to_parking_site_type(),
             purpose=PurposeType.BIKE,
         )

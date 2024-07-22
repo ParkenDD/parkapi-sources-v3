@@ -34,9 +34,9 @@ class KarlsruheBikePullConverterTest:
     def test_get_static_parking_sites(karlsruhe_bike_pull_converter: KarlsruheBikePullConverter, requests_mock_karlsruhe_bike: Mocker):
         static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 154
+        assert len(static_parking_site_inputs) == 296
         # Lots of missing capacities
-        assert len(import_parking_site_exceptions) == 460
+        assert len(import_parking_site_exceptions) == 483
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
