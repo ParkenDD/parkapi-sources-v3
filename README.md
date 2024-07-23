@@ -18,6 +18,7 @@ We support following data sources:
 | Stadt Ellwangen                                                                   | car     | push (xlsx) | `ellwangen`            | no       |
 | Stadt Buchen                                                                      | car     | push (json) | `buchen`               | yes      |
 | Stadt Freiburg                                                                    | car     | pull        | `freiburg`             | yes      |
+| GOLDBECK Parking Services                                                         | car     | push (xlsx) | `goldbeck`             | no       |
 | Stadt Heidelberg                                                                  | car     | pull        | `heidelberg`           | yes      |
 | Stadt Karlsruhe: PKW-Parkplätze                                                   | car     | pull        | `karlsruhe`            | yes      |
 | Stadt Karlsruhe: Fahhrrad-Abstellangen                                            | bike    | pull        | `karlsruhe_bike`       | no       |

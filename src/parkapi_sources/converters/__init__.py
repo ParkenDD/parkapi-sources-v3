@@ -10,6 +10,7 @@ from .bfrk_bw import BfrkBwOepnvBikePushConverter, BfrkBwOepnvCarPushConverter, 
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
 from .freiburg import FreiburgPullConverter
+from .goldbeck import GoldbeckPushConverter
 from .heidelberg import HeidelbergPullConverter
 from .herrenberg import HerrenbergPullConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
