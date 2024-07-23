@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0
+
+Released 2024-07-23
+
+### Features
+
+* [Goldbeck support](https://github.com/ParkenDD/parkapi-sources-v3/pull/68)
+
 
 ## 0.6.2
 
