@@ -74,11 +74,37 @@ class OpenDataSwissOperationTimeDaysOfWeek(Enum):
         }.get(self, None)
 
 
+class OpenDataSwissParkingFacilityCategory(Enum):
+    CAR = 'CAR'
+    BIKE = 'BIKE'
+
+    def to_parking_site_type_input(self) -> ParkingSiteType:
+        # TODO: find out more details about this enumeration for a proper mapping
+        return {
+            self.CAR: ParkingSiteType.CAR_PARK,
+            self.BIKE: ParkingSiteType.GENERIC_BIKE,
+        }.get(self, ParkingSiteType.OTHER)
+
+    def to_purpose_type_input(self) -> ParkingSiteType:
+        # TODO: find out more details about this enumeration for a proper mapping
+        return {
+            self.CAR: PurposeType.CAR,
+            self.BIKE: PurposeType.BIKE,
+        }.get(self, ParkingSiteType.OTHER)
+
+
 @validataclass
 class OpenDataSwissOperationTimeInput:
     operatingFrom: Optional[time] = Noneable(TimeValidator(time_format=TimeFormat.WITH_SECONDS))
     operatingTo: Optional[time] = Noneable(TimeValidator(time_format=TimeFormat.WITH_SECONDS))
     daysOfWeek: Optional[list[str]] = Noneable(ListValidator(EnumValidator(OpenDataSwissOperationTimeDaysOfWeek)))
+
+    def __post_init__(self):
+        # If any of opening_times From or To is null, raise validation error
+        if self.operatingFrom and self.operatingTo:
+            return
+        # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
+        raise ValidationError(reason='Missing opening or closing times')
 
 
 @validataclass
@@ -90,7 +116,7 @@ class OpenDataSwissPropertiesInput:
     additionalInformationForCustomers: Optional[OpenDataSwissAdditionalInformationInput] = Noneable(
         DataclassValidator(OpenDataSwissAdditionalInformationInput)
     )
-    parkingFacilityCategory: str = StringValidator()
+    parkingFacilityCategory: OpenDataSwissParkingFacilityCategory = EnumValidator(OpenDataSwissParkingFacilityCategory)
     parkingFacilityType: Optional[str] = Noneable(StringValidator())
     salesChannels: Optional[list[str]] = Noneable(ListValidator(StringValidator()))
     operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(DataclassValidator(OpenDataSwissOperationTimeInput))
@@ -103,29 +129,18 @@ class OpenDataSwissPropertiesInput:
         raise ValidationError(reason='Missing parking spaces capacity')
 
     def get_osm_opening_hours(self) -> str:
-        check_counter_weekday: int = 0
-
-        # If any of opening_times From or To is null, conversion to OSM opening hours cannot be continued
-        if not self.operationTime.operatingFrom or not self.operationTime.operatingTo:
-            return None
+        # If it's open all day and number of opening days is 7, then it is OSM - 24/7. No further handling needed in this case.
+        if self.operationTime.operatingFrom == self.operationTime.operatingTo == time(0) and len(self.operationTime.daysOfWeek) == 7:
+            return '24/7'
 
         # OSM 24/7 has no secs in its timeformat and no endtime 00:00, so we replace with 24:00 and remove the secs
         opening_time: str = f'{self.operationTime.operatingFrom.strftime("%H:%M")}-{self.operationTime.operatingTo.strftime("%H:%M")}'
-        opening_time = '00:00-24:00' if opening_time == '00:00-00:00' else opening_time
-
-        for days_of_week_input in self.operationTime.daysOfWeek:
-            # If the weekday is within Monday to Friday, count to check later for OSM opening hours Mo-Fr
-            if days_of_week_input in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
-                check_counter_weekday += 1
-
-        # If it's open all day and number of opening days is 7, then it is OSM - 24/7. No further handling needed in this case.
-        if opening_time == '00:00-24:00' and len(self.operationTime.daysOfWeek) == 7:
-            return '24/7'
+        opening_time = opening_time.replace('-00:00', '-24:00')
 
         osm_opening_hour: list = []
         # If the days are Monday to Friday with same opening time, we can summarize it to the Mo-Fr entry,
         # otherwise we have to set it separately
-        if check_counter_weekday == 5:
+        if all(day in self.operationTime.daysOfWeek for day in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]):
             osm_opening_hour.append(f'Mo-Fr {opening_time}')
         else:
             for weekday in list(OpenDataSwissOperationTimeDaysOfWeek)[:5]:
@@ -153,19 +168,11 @@ class OpenDataSwissFeatureInput:
             operator_name=self.properties.operator,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
+            purpose=self.properties.parkingFacilityCategory.to_purpose_type_input(),
+            type=self.properties.parkingFacilityCategory.to_parking_site_type_input(),
             static_data_updated_at=datetime.now(tz=timezone.utc),
             has_realtime_data=False,
         )
-
-        if self.properties.parkingFacilityCategory == PurposeType.CAR.value:
-            static_parking_site_input.purpose = PurposeType.CAR
-            static_parking_site_input.type = ParkingSiteType.CAR_PARK
-        elif self.properties.parkingFacilityCategory == PurposeType.BIKE.value:
-            static_parking_site_input.purpose = PurposeType.BIKE
-            static_parking_site_input.type = ParkingSiteType.GENERIC_BIKE
-        else:
-            static_parking_site_input.purpose = PurposeType.CAR
-            static_parking_site_input.type = ParkingSiteType.OTHER
 
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
 
@@ -174,12 +181,7 @@ class OpenDataSwissFeatureInput:
                 '\r', ' '
             )
 
-        if (
-            self.properties.address
-            and self.properties.address.addressLine
-            and self.properties.address.postalCode
-            and self.properties.address.city
-        ):
+        if self.properties.address:
             static_parking_site_input.address = (
                 f'{self.properties.address.addressLine}, {self.properties.address.postalCode} {self.properties.address.city}'
             )
