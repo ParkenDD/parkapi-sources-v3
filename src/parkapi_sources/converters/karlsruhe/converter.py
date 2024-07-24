@@ -72,8 +72,8 @@ class KarlsruhePullConverter(KarlsruheBasePullConverter):
         uid='karlsruhe',
         name='Stadt Karlsruhe: PKW-Parkplätze',
         public_url='https://web1.karlsruhe.de/service/Parken/',
-        source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=TBA%3Aparkhaeuser'
-        '&outputFormat=application%2Fjson&srsName=EPSG:4326',
+        source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
+        '&typeName=TBA%3Aparkhaeuser&outputFormat=application%2Fjson&srsName=EPSG:4326',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Karlsruhe',
         attribution_license='Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)',
@@ -101,7 +101,7 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
         name='Stadt Karlsruhe: Fahrrad-Abstellanlagen',
         public_url='https://web1.karlsruhe.de/service/Parken/',
         source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
-        '&typeName=TBA%3Aka_fahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326',
+        '&typeName=TBA%3Afahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Karlsruhe',
         attribution_license='Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)',
