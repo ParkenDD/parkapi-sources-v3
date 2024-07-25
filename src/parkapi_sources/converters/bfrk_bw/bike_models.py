@@ -40,7 +40,7 @@ class BfrkBikeType(Enum):
 @validataclass
 class BfrkBikeRowInput(BfrkBaseRowInput):
     type: BfrkBikeType = EnumValidator(BfrkBikeType)
-    has_roof: Optional[bool] = ExcelNoneable(GermanMappedBooleanValidator())
+    is_covered: Optional[bool] = ExcelNoneable(GermanMappedBooleanValidator())
     has_fee: bool = GermanMappedBooleanValidator()
     has_lighting: bool = GermanMappedBooleanValidator()
 
@@ -48,7 +48,7 @@ class BfrkBikeRowInput(BfrkBaseRowInput):
         static_parking_site_input = super().to_static_parking_site_input()
 
         static_parking_site_input.type = self.type.to_parking_site_type()
-        static_parking_site_input.has_roof = self.has_roof
+        static_parking_site_input.is_covered = self.is_covered
         static_parking_site_input.has_fee = self.has_fee
         static_parking_site_input.has_lighting = self.has_lighting
         static_parking_site_input.purpose = PurposeType.BIKE

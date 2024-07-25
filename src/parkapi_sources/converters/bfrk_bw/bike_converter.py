@@ -25,7 +25,7 @@ class BfrkBwBikePushConverter(BfrkBasePushConverter, ABC):
         'Stellplatzanzahl': 'capacity',
         'beleuchtet': 'has_lighting',
         'kostenpflichtig': 'has_fee',
-        'ueberdacht': 'has_roof',
+        'ueberdacht': 'is_covered',
         'HST_DHID': 'identifier_dhid',
         'OSM_ID': 'identifier_osm',
         'Anlage_Foto': 'photo_url',
