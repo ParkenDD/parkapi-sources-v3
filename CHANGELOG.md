@@ -1,5 +1,12 @@
 # Changelog
 
+[Unreleased]
+
+### Fixes
+
+* [Fix Ulm scraper](https://github.com/ParkenDD/parkapi-sources-v3/pull/82)
+
+
 ## 0.7.0
 
 Released 2024-07-23
