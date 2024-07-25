@@ -98,7 +98,7 @@ class HerrenbergParkingSiteInput:
             lat=self.coords.lat,
             lon=self.coords.lng,
             operator_name='Stadt Herrenberg',
-            address=f'{self.address}, Herrenberg',
+            address=self.address,
             capacity=self.total,
             description=self.notes.de,
             type=self.lot_type.to_parking_site_type(),
