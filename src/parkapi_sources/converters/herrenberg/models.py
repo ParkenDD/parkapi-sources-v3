@@ -22,7 +22,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType
 
 
 @validataclass
@@ -61,6 +61,18 @@ class HerrenbergParkingSiteType(Enum):
 class HerrenbergState(Enum):
     NODATA = 'nodata'
     MANY = 'many'
+    FULL = 'full'
+    OPEN = 'open'
+    CLOSED = 'closed'
+    UNKNOWN = 'unknown'
+
+    def to_opening_status(self) -> OpeningStatus:
+        return {
+            self.OPEN: OpeningStatus.OPEN,
+            self.CLOSED: OpeningStatus.CLOSED,
+            self.MANY: OpeningStatus.OPEN,
+            self.FULL: OpeningStatus.OPEN,
+        }.get(self, OpeningStatus.UNKNOWN)
 
 
 @validataclass
@@ -116,5 +128,6 @@ class HerrenbergParkingSiteInput:
         return RealtimeParkingSiteInput(
             uid=self.id,
             realtime_free_capacity=self.free,
+            realtime_opening_status=self.state.to_opening_status(),
             realtime_data_updated_at=realtime_data_updated_at,
         )
