@@ -1,12 +1,15 @@
 # Changelog
 
-[Unreleased]
+## 0.7.1
+
+Released 2024-07-25
 
 ### Fixes
 
 * [Fix Ulm scraper](https://github.com/ParkenDD/parkapi-sources-v3/pull/82)
 * [Fix Herrenberg address](https://github.com/ParkenDD/parkapi-sources-v3/pull/83)
 * [Fix Herrenberg state mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/84)
+* [Fix BFRK is_covered naming](https://github.com/ParkenDD/parkapi-sources-v3/pull/85)
 
 
 ## 0.7.0
