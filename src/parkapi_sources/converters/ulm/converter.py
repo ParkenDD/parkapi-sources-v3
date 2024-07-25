@@ -4,9 +4,9 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
-from typing import Optional
+from typing import Any, Optional
 
-from bs4.element import Tag
+from bs4.element import PageElement, Tag
 
 from parkapi_sources.converters.base_converter.pull import PullConverter, PullScraperMixin, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException
@@ -37,12 +37,16 @@ class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
         return section.find_all('div', class_='card-container'), {}
 
     def realtime_tag_to_dict(self, tag: Tag, **kwargs) -> Optional[dict]:
-        realtime_parking_site_dict = {
+        realtime_parking_site_dict: dict[str, Any] = {
             'realtime_data_updated_at': datetime.now(tz=timezone.utc).isoformat(),
             'uid': tag.find('a', class_='stretched-link').attrs.get('href').split('/')[-1],
         }
 
-        parking_data = tag.find('div', class_='counter-text').get_text().strip().split(' / ')
+        parking_data_box: list[PageElement] = list(tag.find('div', class_='counter-text').find('p'))
+        if len(parking_data_box) == 0:
+            return None
+
+        parking_data: list[str] = parking_data_box[0].get_text().strip().split(' / ')
         realtime_parking_site_dict['realtime_capacity'] = int(parking_data[1])
         if parking_data[0].strip() == '?':
             realtime_parking_site_dict['realtime_free_capacity'] = None
