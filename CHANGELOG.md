@@ -4,8 +4,9 @@
 
 ### Fixes
 
-* [Fix Ulm scraper](https://github.com/ParkenDD/parkapi-sources-v3/pull/82
+* [Fix Ulm scraper](https://github.com/ParkenDD/parkapi-sources-v3/pull/82)
 * [Fix Herrenberg address](https://github.com/ParkenDD/parkapi-sources-v3/pull/83)
+* [Fix Herrenberg state mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/84)
 
 
 ## 0.7.0
