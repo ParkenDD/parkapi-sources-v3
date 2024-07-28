@@ -40,6 +40,7 @@ from .converters import (
 )
 from .converters.base_converter.pull import PullConverter
 from .converters.base_converter.push import PushConverter
+from .converters.basel import BaselPullConverter
 from .exceptions import MissingConfigException, MissingConverterException
 from .util import ConfigHelper
 
@@ -48,6 +49,7 @@ class ParkAPISources:
     converter_classes: list[Type[BaseConverter]] = [
         ApcoaPullConverter,
         BahnV2PullConverter,
+        BaselPullConverter,
         BfrkBwOepnvBikePushConverter,
         BfrkBwOepnvCarPushConverter,
         BfrkBwSpnvBikePushConverter,
