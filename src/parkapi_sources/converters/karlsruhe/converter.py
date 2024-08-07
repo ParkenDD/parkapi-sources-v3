@@ -72,7 +72,7 @@ class KarlsruhePullConverter(KarlsruheBasePullConverter):
         uid='karlsruhe',
         name='Stadt Karlsruhe: PKW-Parkplätze',
         public_url='https://web1.karlsruhe.de/service/Parken/',
-        source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
+        source_url='https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
         '&typeName=TBA%3Aparkhaeuser&outputFormat=application%2Fjson&srsName=EPSG:4326',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Karlsruhe',
@@ -100,7 +100,7 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
         uid='karlsruhe_bike',
         name='Stadt Karlsruhe: Fahrrad-Abstellanlagen',
         public_url='https://web1.karlsruhe.de/service/Parken/',
-        source_url='https://mobil.trk.de:8443/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
+        source_url='https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
         '&typeName=TBA%3Afahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Karlsruhe',

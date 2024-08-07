@@ -19,7 +19,7 @@ def requests_mock_karlsruhe_bike(requests_mock: Mocker) -> Mocker:
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get('https://mobil.trk.de:8443/geoserver/TBA/ows', text=json_data)
+    requests_mock.get('https://mobil.trk.de/geoserver/TBA/ows', text=json_data)
 
     return requests_mock
 
