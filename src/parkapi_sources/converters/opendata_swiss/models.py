@@ -32,6 +32,10 @@ class OpenDataSwissAddressInput:
     postalCode: str = StringValidator()
 
 
+class OpenDataSwissParkingFacilityType(Enum):
+    PARK_AND_RAIL = 'PARK_AND_RAIL'
+
+
 class OpenDataSwissCapacityCategoryType(Enum):
     STANDARD = 'STANDARD'
     DISABLED_PARKING_SPACE = 'DISABLED_PARKING_SPACE'
@@ -71,7 +75,7 @@ class OpenDataSwissOperationTimeDaysOfWeek(Enum):
             self.FRIDAY: 'Fr',
             self.SATURDAY: 'Sa',
             self.SUNDAY: 'Su',
-        }.get(self, None)
+        }.get(self)
 
 
 class OpenDataSwissParkingFacilityCategory(Enum):
@@ -79,14 +83,12 @@ class OpenDataSwissParkingFacilityCategory(Enum):
     BIKE = 'BIKE'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
-        # TODO: find out more details about this enumeration for a proper mapping
         return {
             self.CAR: ParkingSiteType.CAR_PARK,
             self.BIKE: ParkingSiteType.GENERIC_BIKE,
         }.get(self, ParkingSiteType.OTHER)
 
     def to_purpose_type_input(self) -> ParkingSiteType:
-        # TODO: find out more details about this enumeration for a proper mapping
         return {
             self.CAR: PurposeType.CAR,
             self.BIKE: PurposeType.BIKE,
@@ -117,7 +119,7 @@ class OpenDataSwissPropertiesInput:
         DataclassValidator(OpenDataSwissAdditionalInformationInput)
     )
     parkingFacilityCategory: OpenDataSwissParkingFacilityCategory = EnumValidator(OpenDataSwissParkingFacilityCategory)
-    parkingFacilityType: Optional[str] = Noneable(StringValidator())
+    parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = Noneable(EnumValidator(OpenDataSwissParkingFacilityType))
     salesChannels: Optional[list[str]] = Noneable(ListValidator(StringValidator()))
     operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(DataclassValidator(OpenDataSwissOperationTimeInput))
 
@@ -186,8 +188,13 @@ class OpenDataSwissFeatureInput:
                 f'{self.properties.address.addressLine}, {self.properties.address.postalCode} {self.properties.address.city}'
             )
 
-        if self.properties.parkingFacilityType == 'PARK_AND_RAIL':
+        if self.properties.parkingFacilityType == OpenDataSwissParkingFacilityType.PARK_AND_RAIL:
             static_parking_site_input.park_and_ride_type = [ParkAndRideType.TRAIN]
+
+        if self.properties.salesChannels:
+            static_parking_site_input.fee_description = ','.join(
+                [sales_channel.replace('_', ' ') for sales_channel in self.properties.salesChannels]
+            )
 
         for capacities_input in self.properties.capacities:
             if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.STANDARD:
