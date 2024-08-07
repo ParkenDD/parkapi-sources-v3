@@ -45,11 +45,12 @@ class GoldbeckPushConverter(NormalizedXlsxConverter):
         }
 
     def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
-        parking_site_dict: dict[str, str] = {}
+        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row)
 
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
+        parking_site_dict['opening_hours'] = parking_site_dict['opening_hours'].replace('00:00-00:00', '00:00-24:00')
         parking_site_dict['purpose'] = self.purpose_mapping.get(parking_site_dict.get('purpose'))
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'), 'OFF_STREET_PARKING_GROUND')
         parking_site_dict['supervision_type'] = self.supervision_type_mapping.get(parking_site_dict.get('supervision_type'))
