@@ -40,11 +40,12 @@ class EllwangenPushConverter(NormalizedXlsxConverter):
         }
 
     def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
-        parking_site_dict: dict[str, str] = {}
+        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row)
 
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
+        parking_site_dict['opening_hours'] = parking_site_dict['opening_hours'].replace('00:00-00:00', '00:00-24:00')
         parking_site_dict['max_stay'] = parking_site_dict['max_stay'] * 60 if parking_site_dict['max_stay'] else None
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
