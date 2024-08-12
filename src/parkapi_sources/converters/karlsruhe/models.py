@@ -30,8 +30,8 @@ from parkapi_sources.validators import ParsedDateValidator
 
 
 class KarlsruheOpeningStatus(Enum):
-    OPEN = 1
-    CLOSED = 0
+    OPEN = 'F'
+    CLOSED = 'T'
 
     def to_opening_status(self) -> OpeningStatus:
         return {
@@ -43,7 +43,7 @@ class KarlsruheOpeningStatus(Enum):
 @validataclass
 class KarlsruhePropertiesInput:
     id: int = IntegerValidator()
-    ph_name: str = StringValidator()
+    parkhaus_name: str = StringValidator()
     gesamte_parkplaetze: int = IntegerValidator(min_value=0)
     freie_parkplaetze: Optional[int] = Noneable(IntegerValidator())
     max_durchfahrtshoehe: Optional[Decimal] = Noneable(NumericValidator())
@@ -51,7 +51,7 @@ class KarlsruhePropertiesInput:
     parkhaus_strasse: str = StringValidator()
     parkhaus_plz: str = StringValidator()
     parkhaus_gemeinde: str = StringValidator()
-    ph_status: Optional[KarlsruheOpeningStatus] = Noneable(EnumValidator(KarlsruheOpeningStatus))
+    geschlossen: Optional[KarlsruheOpeningStatus] = Noneable(EnumValidator(KarlsruheOpeningStatus))
     bemerkung: Optional[str] = Noneable(StringValidator())
     parkhaus_internet: Optional[str] = Noneable(UrlValidator())
     parkhaus_telefon: Optional[str] = Noneable(StringValidator())
@@ -75,7 +75,7 @@ class KarlsruheFeatureInput:
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             uid=str(self.properties.id),
-            name=self.properties.ph_name,
+            name=self.properties.parkhaus_name,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
             capacity=self.properties.gesamte_parkplaetze,
@@ -90,10 +90,10 @@ class KarlsruheFeatureInput:
         if self.properties.stand_freieparkplaetze is None:
             return None
 
-        if self.properties.ph_status is None:
+        if self.properties.geschlossen is None:
             opening_status = OpeningStatus.UNKNOWN
         else:
-            opening_status = self.properties.ph_status.to_opening_status()
+            opening_status = self.properties.geschlossen.to_opening_status()
 
         return RealtimeParkingSiteInput(
             uid=str(self.properties.id),
