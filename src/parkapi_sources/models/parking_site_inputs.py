@@ -40,6 +40,7 @@ class ExternalIdentifierInput(ValidataclassMixin):
 @validataclass
 class StaticParkingSiteInput(BaseParkingSiteInput):
     name: str = StringValidator(min_length=1, max_length=256)
+    group_uid: OptionalUnsetNone[str] = Noneable(StringValidator(min_length=1, max_length=256)), DefaultUnset
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
     operator_name: OptionalUnsetNone[str] = StringValidator(max_length=256), DefaultUnset
     public_url: OptionalUnsetNone[str] = Noneable(UrlValidator(max_length=4096)), DefaultUnset

@@ -37,6 +37,9 @@ class ParkingSiteType(Enum):
     BUILDING = 'BUILDING'
     FLOOR = 'FLOOR'
 
+    # For separate lockers
+    LOCKBOX = 'LOCKBOX'
+
     # For all
     OTHER = 'OTHER'
 
