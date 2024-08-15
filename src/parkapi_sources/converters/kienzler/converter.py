@@ -14,17 +14,11 @@ from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticP
 from .models import KienzlerInput
 
 
-class KienzlerPullConverter(PullConverter):
+class KienzlerBasePullConverter(PullConverter):
     kienzler_list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     kienzler_item_validator = DataclassValidator(KienzlerInput)
 
     required_config_keys = ['PARK_API_KIENZLER_USER', 'PARK_API_KIENZLER_PASSWORD', 'PARK_API_KIENZLER_IDS']
-    source_info = SourceInfo(
-        uid='kienzler',
-        name='Kienzler',
-        has_realtime_data=True,
-        public_url='https://www.bikeandridebox.de',
-    )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
@@ -64,7 +58,7 @@ class KienzlerPullConverter(PullConverter):
 
     def _request(self) -> list[dict]:
         response = requests.post(
-            url='https://www.bikeandridebox.de/index.php?eID=JSONAPI',
+            url=f'{self.source_info.source_url}/index.php?eID=JSONAPI',
             json={
                 'user': self.config_helper.get('PARK_API_KIENZLER_USER'),
                 'password': self.config_helper.get('PARK_API_KIENZLER_PASSWORD'),
@@ -76,3 +70,73 @@ class KienzlerPullConverter(PullConverter):
         )
 
         return response.json()
+
+
+class KienzlerBikeAndRidePullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_bike_and_ride',
+        name='Kienzler: Bike and Ride',
+        has_realtime_data=True,
+        public_url='https://www.bikeandridebox.de',
+        source_url='https://www.bikeandridebox.de',
+    )
+
+
+class KienzlerKarlsruhePullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_karlruhe',
+        name='Kienzler: Karlsruhe',
+        has_realtime_data=True,
+        public_url='https://www.bikeandridebox.de',
+        source_url='https://www.bikeandridebox.de',
+    )
+
+
+class KienzlerNeckarsulmPullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_neckarsulm',
+        name='Kienzler: Neckarsulm',
+        has_realtime_data=True,
+        public_url='https://www.bikeandridebox.de',
+        source_url='https://www.bikeandridebox.de',
+    )
+
+
+class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_offenburg',
+        name='Kienzler: Offenburg',
+        has_realtime_data=True,
+        public_url='https://www.fahrradparken-in-offenburg.de',
+        source_url='https://www.fahrradparken-in-offenburg.de',
+    )
+
+
+class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_rad_safe',
+        name='Kienzler: RadSafe',
+        has_realtime_data=True,
+        public_url='https://www.rad-safe.de',
+        source_url='https://www.rad-safe.de',
+    )
+
+
+class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_stuttgart',
+        name='Kienzler: Stuttgart',
+        has_realtime_data=True,
+        public_url='https://stuttgart.bike-and-park.de',
+        source_url='https://stuttgart.bike-and-park.de',
+    )
+
+
+class KienzlerVrnPullConverter(KienzlerBasePullConverter):
+    source_info = SourceInfo(
+        uid='kienzler_vrn',
+        name='Kienzler: VRN',
+        has_realtime_data=True,
+        public_url='https://www.vrnradbox.de',
+        source_url='https://www.vrnradbox.de',
+    )
