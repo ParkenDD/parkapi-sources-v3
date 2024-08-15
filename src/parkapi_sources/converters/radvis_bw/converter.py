@@ -3,8 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime, timezone
-
 import pyproj
 import requests
 from validataclass.exceptions import ValidationError
@@ -13,7 +11,6 @@ from validataclass.validators import DataclassValidator
 from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
-from parkapi_sources.models.enums import PurposeType
 
 from .models import RadvisFeatureInput
 
@@ -53,13 +50,7 @@ class RadvisBwPullConverter(PullConverter):
                 if radvis_parking_site_input.properties.quell_system in sources_to_ignore:
                     continue
 
-                radvis_parking_site = radvis_parking_site_input.to_static_parking_site_input_with_proj(
-                    static_data_updated_at=datetime.now(tz=timezone.utc),
-                    proj=self.proj,
-                )
-
-                radvis_parking_site.purpose = PurposeType.BIKE
-                static_parking_site_inputs.append(radvis_parking_site)
+                static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(self.proj)
 
             except ValidationError as e:
                 static_parking_site_errors.append(

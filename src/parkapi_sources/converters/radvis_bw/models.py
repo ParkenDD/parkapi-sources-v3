@@ -3,7 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from decimal import Decimal
 from enum import Enum
 from typing import Optional
@@ -14,7 +14,7 @@ from validataclass.validators import BooleanValidator, DataclassValidator, EnumV
 
 from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, SupervisionType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
 from parkapi_sources.validators import ExcelNoneable
 
 
@@ -100,7 +100,7 @@ class RadvisFeaturePropertiesInput:
     weitere_information: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
     status: StatusType = EnumValidator(StatusType)
 
-    def to_dict(self) -> dict:
+    def to_dicts(self) -> list[dict]:
         description: Optional[str] = None
         if self.beschreibung and self.weitere_information:
             description = f'{self.beschreibung} {self.weitere_information}'
@@ -111,31 +111,63 @@ class RadvisFeaturePropertiesInput:
         if description is not None:
             description = description.replace('\r', '').replace('\n', ' ')
 
-        return {
-            'uid': str(self.id),
-            'name': 'Abstellanlage',
+        base_data = {
             'operator_name': self.betreiber,
-            'type': self.stellplatzart.to_parking_site_type(),
             'description': description,
             'has_realtime_data': False,
             'is_covered': self.ueberdacht,
-            'supervision_type': self.ueberwacht.to_supervision_type(),
-            'capacity': self.anzahl_stellplaetze,
-            'capacity_charging': self.anzahl_lademoeglichkeiten,
             'related_location': self.abstellanlagen_ort.to_related_location(),
+            'supervision_type': self.ueberwacht.to_supervision_type(),
             'tags': [f'BW_SIZE_{self.groessenklasse}'] if self.groessenklasse else [],
+            'static_data_updated_at': datetime.now(tz=timezone.utc),
         }
+
+        results: list[dict] = [
+            {
+                'uid': str(self.id),
+                'name': 'Abstellanlage',
+                'type': self.stellplatzart.to_parking_site_type(),
+                'capacity': self.anzahl_stellplaetze,
+                'capacity_charging': self.anzahl_lademoeglichkeiten,
+                'purpose': PurposeType.BIKE,
+                **base_data,
+            },
+        ]
+        if self.anzahl_schliessfaecher:
+            results[0]['group_uid'] = str(self.id)
+            results.append(
+                {
+                    'uid': f'{self.id}-lockbox',
+                    'group_uid': str(self.id),
+                    'name': 'Schliessfach',
+                    'type': ParkingSiteType.LOCKBOX,
+                    'capacity': self.anzahl_schliessfaecher,
+                    'purpose': PurposeType.ITEM,
+                    **base_data,
+                }
+            )
+        return results
 
 
 @validataclass
 class RadvisFeatureInput(GeojsonFeatureInput):
     properties: RadvisFeaturePropertiesInput = DataclassValidator(RadvisFeaturePropertiesInput)
 
-    def to_static_parking_site_input_with_proj(self, static_data_updated_at: datetime, proj: pyproj.Proj) -> StaticParkingSiteInput:
-        result = self.to_static_parking_site_input(static_data_updated_at)
+    def to_static_parking_site_inputs_with_proj(self, proj: pyproj.Proj) -> list[StaticParkingSiteInput]:
+        property_dicts: list[dict] = self.properties.to_dicts()
+        static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
-        coordinates = proj(float(result.lon), float(result.lat), inverse=True)
-        result.lon = Decimal(coordinates[0]).quantize(Decimal('1.0000000'))
-        result.lat = Decimal(coordinates[1]).quantize(Decimal('1.0000000'))
+        for property_dict in property_dicts:
+            static_parking_site_input = StaticParkingSiteInput(
+                lat=self.geometry.coordinates[1],
+                lon=self.geometry.coordinates[0],
+                **property_dict,
+            )
 
-        return result
+            coordinates = proj(float(static_parking_site_input.lon), float(static_parking_site_input.lat), inverse=True)
+            static_parking_site_input.lon = Decimal(coordinates[0]).quantize(Decimal('1.0000000'))
+            static_parking_site_input.lat = Decimal(coordinates[1]).quantize(Decimal('1.0000000'))
+
+            static_parking_site_inputs.append(static_parking_site_input)
+
+        return static_parking_site_inputs
