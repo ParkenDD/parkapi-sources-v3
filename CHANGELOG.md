@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.9.0
+
+Released 2024-08-15
+
+### Features
+
+* [parking site groups](https://github.com/ParkenDD/parkapi-sources-v3/pull/95)
+* [split up kienzler](https://github.com/ParkenDD/parkapi-sources-v3/pull/96)
+
+
+### Fixes
+
+* [Karlsruhe converter: Updated parking place name and opening_status attributes](https://github.com/ParkenDD/parkapi-sources-v3/pull/94)
+
+
 ## 0.8.0
 
 Released 2024-08-08
