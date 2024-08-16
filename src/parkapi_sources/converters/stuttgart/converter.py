@@ -7,12 +7,13 @@ import pyproj
 from lxml.etree import Element
 from validataclass.exceptions import ValidationError
 
+from parkapi_sources.converters.base_converter.pull import Datex2Mixin
 from parkapi_sources.converters.base_converter.push import XmlConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
-class StuttgartPushConverter(XmlConverter):
+class StuttgartPushConverter(XmlConverter, Datex2Mixin):
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
 
     source_info = SourceInfo(
@@ -33,31 +34,18 @@ class StuttgartPushConverter(XmlConverter):
                 ('parkingFacilityName', 'values'),
                 ('openingTimes', 'period'),
             ],
-            ensure_array_keys=['parkingFacility', 'parkingFacilityStatus'],
+            ensure_array_keys=[
+                ('parkingFacilityTable', 'parkingFacility'),
+                ('parkingFacility', 'assignedParkingSpaces'),
+                ('parkingFacilityTableStatusPublication', 'parkingFacilityStatus'),
+            ],
         )
         items_base = data.get('d2LogicalModel', {}).get('payloadPublication', {}).get('genericPublicationExtension', {})
         if items_base.get('parkingFacilityTablePublication'):
-            static_parking_site_inputs: list[StaticParkingSiteInput] = []
-            static_parking_site_errors: list[ImportParkingSiteException] = []
-
-            static_items = items_base.get('parkingFacilityTablePublication', {}).get('parkingFacilityTable', {}).get('parkingFacility', [])
-
-            for static_item in static_items:
-                try:
-                    static_parking_site_inputs.append(self._handle_static_item(static_item))
-                except ValidationError as e:
-                    static_parking_site_errors.append(
-                        ImportParkingSiteException(
-                            source_uid=self.source_info.uid,
-                            parking_site_uid=static_item.get('id'),
-                            message=str(e.to_dict()),
-                        )
-                    )
-
-            return static_parking_site_inputs, static_parking_site_errors
+            return self._handle_datex2_parking_facilities(items_base)
 
         if items_base.get('parkingFacilityTableStatusPublication'):
-            realtime_items = items_base.get('parkingFacilityTableStatusPublication', {}).get('parkingFacilityStatus', {})
+            realtime_items = items_base.get('parkingFacilityTableStatusPublication', {}).get('parkingFacilityStatus', [])
             realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
             realtime_parking_site_errors: list[ImportParkingSiteException] = []
 
@@ -68,7 +56,7 @@ class StuttgartPushConverter(XmlConverter):
                     realtime_parking_site_errors.append(
                         ImportParkingSiteException(
                             source_uid=self.source_info.uid,
-                            parking_site_uid=realtime_item.get('id'),
+                            parking_site_uid=realtime_item.get('parkingFacilityReference', {}).get('id'),
                             message=str(e.to_dict()),
                         ),
                     )
@@ -77,49 +65,10 @@ class StuttgartPushConverter(XmlConverter):
 
         return [], []
 
-    def _handle_static_item(self, item: dict) -> StaticParkingSiteInput:
-        input_data = {
-            'uid': item.get('id'),
-            'name': item.get('parkingFacilityName'),
-            'has_realtime_data': True,
-            'capacity': int(item.get('totalParkingCapacity')),
-            'static_data_updated_at': item.get('parkingFacilityRecordVersionTime'),
-        }
-
-        # Coordinates
-        coordinates_base = item.get('facilityLocation', {}).get('locationForDisplay', {})
-        coordinates = self.proj(float(coordinates_base.get('longitude')), float(coordinates_base.get('latitude')), inverse=True)
-        input_data['lat'] = coordinates[1]
-        input_data['lon'] = coordinates[0]
-
-        # max_height
-        height_base = item.get('characteristicsOfPermittedVehicles', {}).get('heightCharacteristic', {})
-        if height_base.get('comparisonOperator') == 'lessThan' and height_base.get('vehicleHeight'):
-            input_data['max_height'] = int(float(height_base.get('vehicleHeight')) * 1000)
-
-        # Sub-Capacities
-        mapping: list[tuple[tuple[str, str], str]] = [
-            (('personTypeForWhichSpacesAssigned', 'disabled'), 'capacity_disabled'),
-            (('personTypeForWhichSpacesAssigned', 'families'), 'capacity_family'),
-            (('personTypeForWhichSpacesAssigned', 'women'), 'capacity_woman'),
-            (('characteristicsOfVehiclesForWhichSpacesAssigned', {'fuelType': 'battery'}), 'capacity_charging'),
-        ]
-
-        for sub_capacity in item.get('assignedParkingSpaces', []):
-            for key, value in sub_capacity.get('assignedParkingSpaces', {}).get('descriptionOfAssignedParkingSpaces', {}).items():
-                for map_key_components, final_key in mapping:
-                    if map_key_components[0] == key and map_key_components[1] == value:
-                        input_data[final_key] = int(sub_capacity.get('assignedParkingSpaces')['numberOfAssignedParkingSpaces'])
-                        break
-
-        # TODO: parse opening times with more information, for now they are broken
-
-        return self.static_parking_site_validator.validate(input_data)
-
     def _handle_realtime_item(self, item: dict) -> RealtimeParkingSiteInput:
         input_data = {
             'uid': item.get('parkingFacilityReference', {}).get('id'),
-            'realtime_capacity': int(item.get('totalNumberOfVacantParkingSpaces', 0)),
+            'realtime_free_capacity': int(item.get('totalNumberOfVacantParkingSpaces', 0)),
             'realtime_data_updated_at': item.get('parkingFacilityStatusTime'),
         }
 
