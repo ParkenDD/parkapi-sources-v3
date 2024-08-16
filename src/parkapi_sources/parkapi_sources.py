@@ -43,7 +43,11 @@ from .converters import (
     ReutlingenPushConverter,
     StuttgartPushConverter,
     UlmPullConverter,
+    VrsBondorfPullConverter,
+    VrsKirchheimPullConverter,
+    VrsNeustadtPullConverter,
     VrsParkAndRidePushConverter,
+    VrsVaihingenPullConverter,
 )
 from .converters.base_converter.pull import PullConverter
 from .converters.base_converter.push import PushConverter
@@ -79,6 +83,7 @@ class ParkAPISources:
         MannheimPushConverter,
         NeckarsulmBikePushConverter,
         NeckarsulmPushConverter,
+        OpenDataSwissPullConverter,
         PbwPullConverter,
         PforzheimPushConverter,
         PMBWPullConverter,
@@ -88,8 +93,11 @@ class ParkAPISources:
         ReutlingenBikePushConverter,
         StuttgartPushConverter,
         UlmPullConverter,
+        VrsBondorfPullConverter,
+        VrsKirchheimPullConverter,
+        VrsNeustadtPullConverter,
         VrsParkAndRidePushConverter,
-        OpenDataSwissPullConverter,
+        VrsVaihingenPullConverter,
     ]
     config_helper: ConfigHelper
     converter_by_uid: dict[str, BaseConverter]

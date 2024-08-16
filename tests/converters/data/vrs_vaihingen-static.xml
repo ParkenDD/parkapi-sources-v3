@@ -1,0 +1,113 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/110000000003059002/MDM-Profile_ParkingFacilityTable.xsd">
+                        <exchange>
+                                <supplierIdentification>
+                                        <country>de</country>
+                                        <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                                </supplierIdentification>
+                        </exchange>
+
+                        <payloadPublication lang="de" xsi:type="GenericPublication">
+                                <publicationTime>2024-02-20T07:00:00.8822571+01:00</publicationTime>
+                                <publicationCreator>
+                                        <country>de</country>
+                                        <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                                </publicationCreator>
+                                <genericPublicationName>ParkingTableParkingRecordPublication</genericPublicationName>
+                                <genericPublicationExtension>
+
+
+
+
+                                        <parkingFacilityTablePublication>
+                                                <headerInformation>
+                                                        <confidentiality>noRestriction</confidentiality>
+                                                        <informationStatus>real</informationStatus>
+                                                </headerInformation>
+                                                <parkingFacilityTable>
+                                                        <parkingFacilityTableVersionTime>2024-02-20T07:00:00.8822571+01:00</parkingFacilityTableVersionTime>
+
+
+                            <parkingFacility id="1230" version="1.0">
+                                                                <parkingFacilityLayout>singleLevel</parkingFacilityLayout>
+                                                                <parkingFacilityName>
+                                                                        <values>
+                                                                                <value>P+R Vaihingen an der Enz</value>
+                                                                        </values>
+                                                                </parkingFacilityName>
+                                                                <parkingFacilityRecordVersionTime>2024-02-20T07:00:00.8822571+01:00</parkingFacilityRecordVersionTime>
+                                                                <totalParkingCapacityLongTerm>0</totalParkingCapacityLongTerm>
+                                                                <totalParkingCapacityShortTerm>454</totalParkingCapacityShortTerm>
+                                                                <totalParkingCapacity>454</totalParkingCapacity>
+                                                                <facilityLocation xsi:type="Area">
+                                                                        <locationForDisplay>
+                                                                                <latitude>48.94597135471903</latitude>
+                                                                                <longitude>8.959873193581712</longitude>
+                                                                        </locationForDisplay>
+                                                                </facilityLocation>
+                                                                <owner>
+                                                                        <contactName/>
+                                                                </owner>
+                                                                <assignedParkingSpaces index="8">
+                                                                        <assignedParkingSpaces>
+                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+                                                                                <descriptionOfAssignedParkingSpaces>
+                                                                                        <personTypeForWhichSpacesAssigned>women</personTypeForWhichSpacesAssigned>
+                                                                                </descriptionOfAssignedParkingSpaces>
+                                                                        </assignedParkingSpaces>
+                                                                </assignedParkingSpaces>
+                                                                <assignedParkingSpaces index="1">
+                                                                        <assignedParkingSpaces>
+                                                                                <numberOfAssignedParkingSpaces>454</numberOfAssignedParkingSpaces>
+                                                                                <descriptionOfAssignedParkingSpaces>
+                                                                                        <parkingDuration>shortTerm</parkingDuration>
+                                                                                </descriptionOfAssignedParkingSpaces>
+                                                                        </assignedParkingSpaces>
+                                                                </assignedParkingSpaces>
+                                                                <assignedParkingSpaces index="2">
+                                                                        <assignedParkingSpaces>
+                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+                                                                                <descriptionOfAssignedParkingSpaces>
+                                                                                        <parkingDuration>longTerm</parkingDuration>
+                                                                                </descriptionOfAssignedParkingSpaces>
+                                                                        </assignedParkingSpaces>
+                                                                </assignedParkingSpaces>
+                                                                <assignedParkingSpaces index="16">
+                                                                        <assignedParkingSpaces>
+                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+                                                                                <descriptionOfAssignedParkingSpaces>
+                                                                                        <personTypeForWhichSpacesAssigned>families</personTypeForWhichSpacesAssigned>
+                                                                                </descriptionOfAssignedParkingSpaces>
+                                                                        </assignedParkingSpaces>
+                                                                </assignedParkingSpaces>
+                                                                <assignedParkingSpaces index="4">
+                                                                        <assignedParkingSpaces>
+                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+                                                                                <descriptionOfAssignedParkingSpaces>
+                                                                                        <personTypeForWhichSpacesAssigned>disabled</personTypeForWhichSpacesAssigned>
+                                                                                </descriptionOfAssignedParkingSpaces>
+                                                                        </assignedParkingSpaces>
+                                                                </assignedParkingSpaces>
+                                                                <assignedParkingSpaces index="32">
+                                                                        <assignedParkingSpaces>
+                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+                                                                                <descriptionOfAssignedParkingSpaces>
+                                                                                        <characteristicsOfVehiclesForWhichSpacesAssigned>
+                                                                                                <fuelType>battery</fuelType>
+                                                                                        </characteristicsOfVehiclesForWhichSpacesAssigned>
+                                                                                </descriptionOfAssignedParkingSpaces>
+                                                                        </assignedParkingSpaces>
+                                                                </assignedParkingSpaces>
+                                                        </parkingFacility>
+
+
+                                                </parkingFacilityTable>
+                                        </parkingFacilityTablePublication>
+
+
+
+
+
+
+                                </genericPublicationExtension>
+                        </payloadPublication>
+                </d2LogicalModel>
