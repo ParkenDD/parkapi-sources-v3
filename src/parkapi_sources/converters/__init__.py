@@ -23,6 +23,7 @@ from .kienzler import (
     KienzlerStuttgartPullConverter,
     KienzlerVrnPullConverter,
 )
+from .konstanz import KonstanzPullConverter
 from .konstanz_bike import KonstanzBikePushConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
 from .neckarsulm import NeckarsulmPushConverter

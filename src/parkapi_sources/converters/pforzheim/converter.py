@@ -36,7 +36,8 @@ class PforzheimPushConverter(JsonConverter):
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(
-                        uid=input_dict.get('Id'),
+                        source_uid=self.source_info.uid,
+                        parking_site_uid=input_dict.get('Id'),
                         message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
