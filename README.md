@@ -30,6 +30,7 @@ We support following data sources:
 | Kienzler: RadSafe                                                                 | bike    | pull        | `kienzler_rad_safe`      | yes      |
 | Kienzler: Stuttgart                                                               | bike    | pull        | `kienzler_stuttgart`     | yes      |
 | Kienzler: VRN                                                                     | bike    | pull        | `kienzler_vrn`           | yes      |
+| Konstanz                                                                          | car     | pull        | `konstanz`               | yes      |
 | Stadt Konstanz: Fahrrad-Abstellanlagen                                            | bike    | push        | `konstanz_bike`          | no       |
 | Stadt Mannheim                                                                    | car     | push (json) | `mannheim`               | yes      |
 | Stadt Neckarsulm: PKW-Parkplätze                                                  | car     | pull        | `neckarsulm`             | no       |
@@ -51,15 +52,15 @@ New converters for new sources are always welcome, please have a look at "Contri
 
 ## Install
 
-ParkAPI Sources is a python module published at [PyPI](https://pypi.org/project/parkapi-sources/). Therefore, you can install it by 
+ParkAPI Sources is a python module published at [PyPI](https://pypi.org/project/parkapi-sources/). Therefore, you can install it by
 
 ```shell
 pip install parkapi-sources
 ```
 
 If you use parkapi-sources in a project, we recommend to fix the version. As long as parkapi-sources is beta, breaking changes might be
-introduced on minor version level (like: change from 0.1.1 to 0.2.0). As soon as 1.0 is released, we will follow 
-[Semantic Versioning](https://semver.org), which means that breaking changes will just appear on major version changes (like: change from 1.1.2 to 2.0.0). 
+introduced on minor version level (like: change from 0.1.1 to 0.2.0). As soon as 1.0 is released, we will follow
+[Semantic Versioning](https://semver.org), which means that breaking changes will just appear on major version changes (like: change from 1.1.2 to 2.0.0).
 You can expect a lot of changes in the minor version level, as any new converter is a new feature.
 
 
@@ -83,7 +84,7 @@ my_sources = ParkAPISources()
 
 ### Configuration
 
-Config values are mostly individual for specific converters: if there are required config values, they are defined at the converter 
+Config values are mostly individual for specific converters: if there are required config values, they are defined at the converter
 definition right at the top:
 
 ```
@@ -130,7 +131,7 @@ has two methods:
 Push converters are responsible to handle data which is pushed to the service using defined endpoints. Usually, these converters are used
 as a handler behind HTTP endpoints, but of course you can use them in other ways, too, for example command line scripts.
 
-Push converters always handle specific formats, therefore, there are multiple types of push converters. All push converters return a 
+Push converters always handle specific formats, therefore, there are multiple types of push converters. All push converters return a
 `tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]`, therefore they decided based on the
 given data if it's static or realtime data they got - or even both, then each dataset ends up in two entries in the first list.
 
@@ -148,7 +149,7 @@ At `webapp/models/parking_site_inputs.py`, you can find the definition of `Stati
 
 ## Contribute
 
-We are happy about any contributions. We do not expect that yoy can develop Python, but of course things might speed up if 
+We are happy about any contributions. We do not expect that yoy can develop Python, but of course things might speed up if
 
 
 ### Report bugs
@@ -194,7 +195,7 @@ invalid data. Additionally, if you have very specific new data types, you can wr
 ### Testing the converter
 
 In order to proof that the validator works, we need to test the basic functionality. In order to do this, we need a snapshot of the data
-which should be integrated. Common place for this data is `tests/converters/data/filename-starting-with-uid.ending`. This data should be 
+which should be integrated. Common place for this data is `tests/converters/data/filename-starting-with-uid.ending`. This data should be
 used in one or multiple tests (in several cases two tests, one for static, one for realtime data) stored at `tests/converters/uid_test.py`.
 
 If you test a `PullConverter`, you will need no mock requests. This can be done using the fantastic
@@ -205,11 +206,11 @@ If you created new validators, these should be tested with different inputs. Usu
 
 ### Migrate a converter
 
-If you want to migrate a v1 or v2 converter, you can re-use some of the code. There is a paradigm change, though: `parkapi-source-v3` 
+If you want to migrate a v1 or v2 converter, you can re-use some of the code. There is a paradigm change, though: `parkapi-source-v3`
 enforces a strict validation after transforming the data, while v1 and v2 converters don't. ParkAPI v1 / v2 converters are always pull
 converters, so the base class is always `PullConverter`.
 
-Instead of defining `POOL`, you will set `source_info` at the same place. Attributes are almost the same, except for `id` was renamed to 
+Instead of defining `POOL`, you will set `source_info` at the same place. Attributes are almost the same, except for `id` was renamed to
 `uid`, and there is the new attribute `has_realtime_data`, which has to be set.
 
 ParkAPI v1 and v2 used two methods for static and realtime data, just as `parkapi-sources-v3`:
@@ -217,7 +218,7 @@ ParkAPI v1 and v2 used two methods for static and realtime data, just as `parkap
 - the old static data handling `def get_lot_infos(self) -> List[LotInfo]:` is
   `get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:` in `parkapi-sources-v3`.
 - the old realtime data handling`def get_lot_data(self) -> List[LotData]:` is
-  `def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:` in 
+  `def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:` in
   `parkapi-sources-v3`.
 
 The result objects have quite the same idea, too:
@@ -226,7 +227,7 @@ The result objects have quite the same idea, too:
 - `LotData` gets `RealtimeParkingSiteInput`
 
 There's also a helper for scraped content: before, there was `self.request_soup(self.POOL.public_url)` in order to get a `BeautifulSoup`
-element. Now, there is a helper mixin called `PullScraperMixin`. You can use it this way: 
+element. Now, there is a helper mixin called `PullScraperMixin`. You can use it this way:
 
 ```
 class MyPullConverter(PullConverter, PullScraperMixin):
@@ -247,7 +248,7 @@ Please keep in mind that you will have to add tests for the migrated scraper.
 
 ### Linting
 
-As we try to keep a consistent code style, please lint your code before creating the merge request. We use `ruff` for linting and 
+As we try to keep a consistent code style, please lint your code before creating the merge request. We use `ruff` for linting and
 formatting. There is Makefile target to do both: `make lint`. It runs the following commands:
 
 ```bash
@@ -269,7 +270,7 @@ ruff check --fix ./src ./tests
 
 ### Make your new converter available
 
-All available converters should be registered at the `ParkAPISources` class in order to make them accessible for users of this library, so 
+All available converters should be registered at the `ParkAPISources` class in order to make them accessible for users of this library, so
 please register your converter there. The new converter should also be added to the table in this README.md file.
 
 
