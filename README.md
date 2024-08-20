@@ -45,7 +45,11 @@ We support following data sources:
 | Stadt Reutlingen: Fahrrad-Abstellanlagen                                          | bike    | push (csv)  | `reutlingen_bike`        | no       |
 | Stadt Stuttgart                                                                   | car     | push (json) | `stuttgart`              | yes      |
 | Stadt Ulm                                                                         | car     | pull        | `ulm`                    | yes      |
+| Verband Region Stuttgart: Bondorf                                                 | car     | pull        | `vrs_bondorf`            | yes      |
+| Verband Region Stuttgart: Kirchheim                                               | car     | pull        | `vrs_kirchheim`          | yes      |
+| Verband Region Stuttgart: Neustadt                                                | car     | pull        | `vrs_neustadt`           | yes      |
 | Verband Region Stuttgart: Park and Ride                                           | car     | push (xlsx) | `vrs_p_r`                | no       |
+| Verband Region Stuttgart: Vaihingen                                               | car     | pull        | `vrs_vaihingen`          | yes      |
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 
