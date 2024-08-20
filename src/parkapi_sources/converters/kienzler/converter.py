@@ -3,6 +3,8 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from abc import abstractmethod
+
 import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
@@ -18,7 +20,18 @@ class KienzlerBasePullConverter(PullConverter):
     kienzler_list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     kienzler_item_validator = DataclassValidator(KienzlerInput)
 
-    required_config_keys = ['PARK_API_KIENZLER_USER', 'PARK_API_KIENZLER_PASSWORD', 'PARK_API_KIENZLER_IDS']
+    @property
+    @abstractmethod
+    def config_prefix(self):
+        pass
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.required_config_keys = [
+            f'PARK_API_KIENZLER_{self.config_prefix}_USER',
+            f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD',
+            f'PARK_API_KIENZLER_{self.config_prefix}_IDS',
+        ]
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
@@ -60,11 +73,11 @@ class KienzlerBasePullConverter(PullConverter):
         response = requests.post(
             url=f'{self.source_info.source_url}/index.php?eID=JSONAPI',
             json={
-                'user': self.config_helper.get('PARK_API_KIENZLER_USER'),
-                'password': self.config_helper.get('PARK_API_KIENZLER_PASSWORD'),
+                'user': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
+                'password': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD'),
                 'action': 'capacity',
                 'context': 'unit',
-                'ids': self.config_helper.get('PARK_API_KIENZLER_IDS').split(','),
+                'ids': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_IDS').split(','),
             },
             timeout=30,
         )
@@ -73,6 +86,8 @@ class KienzlerBasePullConverter(PullConverter):
 
 
 class KienzlerBikeAndRidePullConverter(KienzlerBasePullConverter):
+    config_prefix = 'BIKE_AND_RIDE'
+
     source_info = SourceInfo(
         uid='kienzler_bike_and_ride',
         name='Kienzler: Bike and Ride',
@@ -83,6 +98,8 @@ class KienzlerBikeAndRidePullConverter(KienzlerBasePullConverter):
 
 
 class KienzlerKarlsruhePullConverter(KienzlerBasePullConverter):
+    config_prefix = 'KARLSRUHE'
+
     source_info = SourceInfo(
         uid='kienzler_karlruhe',
         name='Kienzler: Karlsruhe',
@@ -93,6 +110,8 @@ class KienzlerKarlsruhePullConverter(KienzlerBasePullConverter):
 
 
 class KienzlerNeckarsulmPullConverter(KienzlerBasePullConverter):
+    config_prefix = 'NECKARSULM'
+
     source_info = SourceInfo(
         uid='kienzler_neckarsulm',
         name='Kienzler: Neckarsulm',
@@ -103,6 +122,8 @@ class KienzlerNeckarsulmPullConverter(KienzlerBasePullConverter):
 
 
 class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
+    config_prefix = 'OFFENBURG'
+
     source_info = SourceInfo(
         uid='kienzler_offenburg',
         name='Kienzler: Offenburg',
@@ -113,6 +134,8 @@ class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
 
 
 class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
+    config_prefix = 'RADSAFE'
+
     source_info = SourceInfo(
         uid='kienzler_rad_safe',
         name='Kienzler: RadSafe',
@@ -123,6 +146,8 @@ class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
 
 
 class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
+    config_prefix = 'STUTTGART'
+
     source_info = SourceInfo(
         uid='kienzler_stuttgart',
         name='Kienzler: Stuttgart',
@@ -133,6 +158,8 @@ class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
 
 
 class KienzlerVrnPullConverter(KienzlerBasePullConverter):
+    config_prefix = 'VRN'
+
     source_info = SourceInfo(
         uid='kienzler_vrn',
         name='Kienzler: VRN',
