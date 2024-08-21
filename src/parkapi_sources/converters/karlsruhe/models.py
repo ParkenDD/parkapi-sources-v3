@@ -26,7 +26,7 @@ from validataclass.validators import (
 from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType, PurposeType
-from parkapi_sources.validators import ParsedDateValidator
+from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
 
 
 class KarlsruheOpeningStatus(Enum):
@@ -45,6 +45,7 @@ class KarlsruhePropertiesInput:
     id: int = IntegerValidator()
     parkhaus_name: str = StringValidator()
     gesamte_parkplaetze: int = IntegerValidator(min_value=0)
+    echtzeit_belegung: bool = MappedBooleanValidator(mapping={'t': True, 'f': False})
     freie_parkplaetze: Optional[int] = Noneable(IntegerValidator())
     max_durchfahrtshoehe: Optional[Decimal] = Noneable(NumericValidator())
     stand_freieparkplaetze: Optional[datetime] = Noneable(DateTimeValidator())
@@ -83,7 +84,7 @@ class KarlsruheFeatureInput:
             max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
             public_url=self.properties.parkhaus_internet,
             static_data_updated_at=datetime.combine(self.properties.stand_stammdaten, time(), tzinfo=timezone.utc),
-            has_realtime_data=True,
+            has_realtime_data=self.properties.echtzeit_belegung,
         )
 
     def to_realtime_parking_site_input(self) -> Optional[RealtimeParkingSiteInput]:
