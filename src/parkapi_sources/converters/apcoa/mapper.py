@@ -44,9 +44,6 @@ class ApcoaMapper:
         if apcoa_input.Address.Street and apcoa_input.Address.Zip and apcoa_input.Address.City:
             static_parking_site_input.address = f'{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}'
 
-        if apcoa_input.CarParkPhotoURLs:
-            static_parking_site_input.photo_url = apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1
-
         if apcoa_input.IndicativeTariff.MinValue or apcoa_input.IndicativeTariff.MaxValue:
             static_parking_site_input.has_fee = True
 
