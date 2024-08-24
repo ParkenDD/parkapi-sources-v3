@@ -93,11 +93,14 @@ class VrsBasePullConverter(PullConverter, Datex2Mixin, ABC):
     def _handle_parking_record_status(self, parking_record_status_data: dict) -> RealtimeParkingSiteInput:
         parking_occupancy_data = parking_record_status_data.get('parkingOccupancy')
         input_data = {
-            'uid': parking_record_status_data.get('parkingRecordReference', {}).get('id'),
+            'uid': parking_record_status_data.get('parkingRecordReference', {}).get('id', ''),
             'realtime_capacity': int(parking_occupancy_data.get('parkingNumberOfSpacesOverride', 0)),
             'realtime_free_capacity': int(parking_occupancy_data.get('parkingNumberOfVacantSpaces', 0)),
             'realtime_data_updated_at': parking_record_status_data.get('parkingStatusOriginTime'),
         }
+
+        # Some converters add the name after the uid (like: `12345[Name]`). Let's remove the name.
+        input_data['uid'] = input_data['uid'].split('[')[0]
 
         return self.realtime_parking_site_validator.validate(input_data)
 
