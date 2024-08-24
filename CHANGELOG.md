@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.11.0
+
+Release 2024-08-24
+
+### Features
+
+* [BFRK: Use API](https://github.com/ParkenDD/parkapi-sources-v3/pull/109)
+
+
 ## 0.10.1
 
 Release 2024-08-24
