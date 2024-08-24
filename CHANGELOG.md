@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.10.1
+
+Release 2024-08-24
+
+### Fixes
+
+* [Dynamic Realtime Setting at Karlsruhe](https://github.com/ParkenDD/parkapi-sources-v3/pull/105)
+* [Fixes VRS UID mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/108)
+
+
 ## 0.10.0
 
 Released 2024-08-20
