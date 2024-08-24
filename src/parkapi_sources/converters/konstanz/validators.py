@@ -4,26 +4,11 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import re
-from copy import deepcopy
 from decimal import Decimal
-from typing import Any, Optional
+from typing import Any
 
 from validataclass.exceptions import ValidationError
-from validataclass.validators import DecimalValidator, IntegerValidator, Noneable, StringValidator
-
-
-class EmptystringNoneable(Noneable):
-    def validate(self, input_data: Any, **kwargs) -> Optional[Any]:
-        """
-        Validate input data.
-
-        If the input is None, return None (or the value specified in the `default` parameter). Otherwise, pass the input
-        to the wrapped validator and return its result.
-        """
-        if input_data is None or input_data == ' ':
-            return deepcopy(self.default_value)
-
-        return super().validate(input_data, **kwargs)
+from validataclass.validators import DecimalValidator, IntegerValidator, StringValidator
 
 
 class InvalidHeightError(ValidationError):

@@ -20,14 +20,18 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.converters.konstanz.validators import (
-    EmptystringNoneable,
     KonstanzHeightValidator,
     KonstanzOpeningTimeValidator,
     NumericIntegerValidator,
 )
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType
-from parkapi_sources.validators import GermanDurationIntegerValidator, MappedBooleanValidator, TimestampDateTimeValidator
+from parkapi_sources.validators import (
+    EmptystringNoneable,
+    GermanDurationIntegerValidator,
+    MappedBooleanValidator,
+    TimestampDateTimeValidator,
+)
 
 
 class KonstanzOpeningStatus(Enum):

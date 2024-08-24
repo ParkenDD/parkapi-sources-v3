@@ -6,19 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from enum import Enum
 from typing import Optional
 
-from validataclass.dataclasses import validataclass
-from validataclass.validators import EnumValidator
+from validataclass.dataclasses import Default, validataclass
+from validataclass.validators import BooleanValidator, EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.models.parking_site_inputs import StaticParkingSiteInput
-from parkapi_sources.validators import ExcelNoneable, MappedBooleanValidator
+from parkapi_sources.validators import EmptystringNoneable, ReplacingStringValidator
 
-from .base_models import BfrkBaseRowInput
-
-
-class GermanMappedBooleanValidator(MappedBooleanValidator):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, mapping={'ja': True, 'nein': False}, **kwargs)
+from .base_models import BfrkBaseInput
 
 
 class BfrkBikeType(Enum):
@@ -38,19 +33,25 @@ class BfrkBikeType(Enum):
 
 
 @validataclass
-class BfrkBikeRowInput(BfrkBaseRowInput):
-    type: BfrkBikeType = EnumValidator(BfrkBikeType)
-    is_covered: Optional[bool] = ExcelNoneable(GermanMappedBooleanValidator())
-    has_fee: bool = GermanMappedBooleanValidator()
-    has_lighting: bool = GermanMappedBooleanValidator()
+class BfrkBikeInput(BfrkBaseInput):
+    anlagentyp: BfrkBikeType = EnumValidator(BfrkBikeType), Default(BfrkBikeType.OTHER)
+    stellplatzanzahl: int = IntegerValidator()
+    beleuchtet: Optional[bool] = BooleanValidator(), Default(None)
+    ueberdacht: Optional[bool] = BooleanValidator(), Default(None)
+    hinderniszufahrt: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
+    kostenpflichtig: Optional[bool] = BooleanValidator(), Default(None)
+    kostenpflichtignotiz: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
+    notiz: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         static_parking_site_input = super().to_static_parking_site_input()
 
-        static_parking_site_input.type = self.type.to_parking_site_type()
-        static_parking_site_input.is_covered = self.is_covered
-        static_parking_site_input.has_fee = self.has_fee
-        static_parking_site_input.has_lighting = self.has_lighting
+        static_parking_site_input.type = self.anlagentyp.to_parking_site_type()
+        static_parking_site_input.is_covered = self.ueberdacht
+        static_parking_site_input.has_fee = self.kostenpflichtig
+        static_parking_site_input.has_lighting = self.beleuchtet
         static_parking_site_input.purpose = PurposeType.BIKE
+        static_parking_site_input.description = self.notiz
+        static_parking_site_input.fee_description = self.kostenpflichtignotiz
 
         return static_parking_site_input
