@@ -21,3 +21,17 @@ class ExcelNoneable(Noneable):
             return deepcopy(self.default_value)
 
         return super().validate(input_data, **kwargs)
+
+
+class EmptystringNoneable(Noneable):
+    def validate(self, input_data: Any, **kwargs) -> Optional[Any]:
+        """
+        Validate input data.
+
+        If the input is None, '' or ' ', return None (or the value specified in the `default` parameter). Otherwise,
+        pass the input to the wrapped validator and return its result.
+        """
+        if input_data is None or input_data in ['', ' ']:
+            return deepcopy(self.default_value)
+
+        return super().validate(input_data, **kwargs)

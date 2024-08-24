@@ -11,10 +11,8 @@ We support following data sources:
 | APCOA Services                                                                    | car     | pull        | `apcoa`                  | no       |
 | Deutsche Bahn                                                                     | car     | pull        | `bahn_v2`                | no       |
 | Stadt Bietigheim-Bissingen                                                        | car     | pull        | `bietigheim_bissingen`   | yes      |
-| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bahnhöfen           | car     | push (csv)  | `bfrk_bw_oepnv_car`      | no       |
-| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze an Bushaltestellen     | car     | push (csv)  | `bfrk_bw_spnv_car`       | no       |
-| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze an Bahnhöfen       | bike    | push (csv)  | `bfrk_bw_oepnv_bike`     | no       |
-| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze an Bushaltestellen | bike    | push (csv)  | `bfrk_bw_spnv_bike`      | no       |
+| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze                        | car     | pull        | `bfrk_bw_car`            | no       |
+| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze                    | bike    | pull        | `bfrk_bw_bike`           | no       |
 | Stadt Ellwangen                                                                   | car     | push (xlsx) | `ellwangen`              | no       |
 | Stadt Buchen                                                                      | car     | push (json) | `buchen`                 | yes      |
 | Stadt Freiburg                                                                    | car     | pull        | `freiburg`               | yes      |
