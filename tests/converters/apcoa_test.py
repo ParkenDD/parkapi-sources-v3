@@ -295,6 +295,7 @@ class ApcoaParkingSiteInputTest:
             CarparkLongName=None,
             CarparkShortName=None,
             CarParkWebsiteURL=None,
+            CarParkPhotoURLs=None,
             CarparkType=ApcoaCarparkTypeNameInput(
                 Name='example name',
             ),
