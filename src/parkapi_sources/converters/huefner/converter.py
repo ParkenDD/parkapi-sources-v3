@@ -42,11 +42,9 @@ class HuefnerPushConverter(NormalizedXlsxConverter):
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        parking_site_dict['opening_hours'] = (
-            parking_site_dict['opening_hours'].replace('-00:00', '-24:00')
-            if '-00:00' in parking_site_dict['opening_hours']
-            else parking_site_dict['opening_hours']
-        )
+        if '-00:00' in parking_site_dict['opening_hours']:
+            parking_site_dict['opening_hours'] = parking_site_dict['opening_hours'].replace('-00:00', '-24:00')
+
         parking_site_dict['purpose'] = self.purpose_mapping.get(parking_site_dict.get('purpose'))
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'), 'OFF_STREET_PARKING_GROUND')
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
