@@ -1,0 +1,4393 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869593254819724,
+                    48.59271930265049
+                ]
+            },
+            "properties": {
+                "id": 741,
+                "location": "Kinderhaus Alzental",
+                "date_survey": "2023-12-03",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.855727910025463,
+                    48.59257727565221
+                ]
+            },
+            "properties": {
+                "id": 743,
+                "osm_id": 184185613,
+                "location": "Sporthalle Markweg/Mensa",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 108,
+                "count_covered": 108,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Schule"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868576599999997,
+                    48.59619329999999
+                ]
+            },
+            "properties": {
+                "id": 744,
+                "osm_id": 6595792648,
+                "location": "Bronntor",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 7,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871645000000001,
+                    48.5968821
+                ]
+            },
+            "properties": {
+                "id": 745,
+                "osm_id": 11307619782,
+                "location": "Stiftskirche auf dem steilen Berg seitlich",
+                "date_survey": "2023-10-08",
+                "type": "Bügel",
+                "count": 12,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871511999999994,
+                    48.601636999999975
+                ]
+            },
+            "properties": {
+                "id": 746,
+                "osm_id": 11171353064,
+                "location": "Affstätter Tal 37",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 1,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860329999999992,
+                    48.5945
+                ]
+            },
+            "properties": {
+                "id": 747,
+                "osm_id": 7726452137,
+                "location": "Aldi",
+                "date_survey": "2023-08-23",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 5,
+                "count_covered": 5,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Kunde"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875898700000006,
+                    48.5882287
+                ]
+            },
+            "properties": {
+                "id": 748,
+                "osm_id": 11307699591,
+                "location": "Sporthalle / Platz",
+                "date_survey": "2023-10-10",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 55,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871677999999996,
+                    48.600737999999986
+                ]
+            },
+            "properties": {
+                "id": 749,
+                "osm_id": 11171353058,
+                "location": "Affstätter Tal 15",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870462066474092,
+                    48.5964420916547
+                ]
+            },
+            "properties": {
+                "id": 750,
+                "osm_id": 11113693796,
+                "location": "Beim Oberamt",
+                "date_survey": "2023-08-09",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873554099999994,
+                    48.58946179999999
+                ]
+            },
+            "properties": {
+                "id": 751,
+                "osm_id": 11307699590,
+                "location": "Realschule",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859624999999994,
+                    48.59456999999999
+                ]
+            },
+            "properties": {
+                "id": 752,
+                "osm_id": 11140323985,
+                "location": "Schreinerei bayer",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Kunde"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869917000000003,
+                    48.60131999999997
+                ]
+            },
+            "properties": {
+                "id": 753,
+                "osm_id": 11171353052,
+                "location": "Türkisches Kulturzentrum",
+                "date_survey": "2023-08-23",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856182999999994,
+                    48.596507999999986
+                ]
+            },
+            "properties": {
+                "id": 754,
+                "osm_id": 11137716397,
+                "location": "Conny & Team Friseure",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871272000000003,
+                    48.59797
+                ]
+            },
+            "properties": {
+                "id": 755,
+                "osm_id": 11113693795,
+                "location": "Stuttgarter Straße",
+                "date_survey": "2023-08-09",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870453000000003,
+                    48.598658
+                ]
+            },
+            "properties": {
+                "id": 756,
+                "osm_id": 7793922195,
+                "location": "Seestraße 31",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 14,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870836700000005,
+                    48.59493140000001
+                ]
+            },
+            "properties": {
+                "id": 757,
+                "osm_id": 11307699587,
+                "location": "Seegers back Spezialit??ten",
+                "date_survey": "2023-10-10",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867168799999996,
+                    48.593083099999994
+                ]
+            },
+            "properties": {
+                "id": 758,
+                "osm_id": 11185503362,
+                "location": "Invita Betreutes Wohnen",
+                "date_survey": "2023-09-06",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Unklar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875633000000008,
+                    48.594426999999996
+                ]
+            },
+            "properties": {
+                "id": 759,
+                "osm_id": 11307619780,
+                "location": "Brahmstrasse 2",
+                "date_survey": "2023-10-01",
+                "type": "Reine Vorderradhalterung",
+                "count": 7,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.846411800000004,
+                    48.6097595
+                ]
+            },
+            "properties": {
+                "id": 760,
+                "location": "Bushaltestelle Jennerstra??e Fahrtrichtung Herrenberg",
+                "date_survey": "2023-09-18",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.878412000000003,
+                    48.575210999999996
+                ]
+            },
+            "properties": {
+                "id": 761,
+                "osm_id": 11307556495,
+                "location": "Platz bei der Kreissparkasse Gueltstein",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872196200000007,
+                    48.5964013
+                ]
+            },
+            "properties": {
+                "id": 762,
+                "osm_id": 11357713109,
+                "location": "Vor dem Dekanat",
+                "date_survey": "2023-11-15",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Unklar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.877497999999994,
+                    48.57517499999999
+                ]
+            },
+            "properties": {
+                "id": 763,
+                "osm_id": 8974144399,
+                "location": "Vor der Grundschule",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.857742100000003,
+                    48.58903489999998
+                ]
+            },
+            "properties": {
+                "id": 764,
+                "osm_id": 11254817169,
+                "location": "Habichtstraße",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.850090100000001,
+                    48.611785199999986
+                ]
+            },
+            "properties": {
+                "id": 765,
+                "osm_id": 11307030672,
+                "location": "Bolzplatz Kuppingen R??merstra??e",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 11,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858887000000001,
+                    48.600732999999984
+                ]
+            },
+            "properties": {
+                "id": 766,
+                "osm_id": 11137694809,
+                "location": "Johannes-Kepler-Stra??e",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.883052000000003,
+                    48.572414999999985
+                ]
+            },
+            "properties": {
+                "id": 767,
+                "osm_id": 8974144403,
+                "location": "Ammertalhalle",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 20,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868697299999997,
+                    48.59795969999999
+                ]
+            },
+            "properties": {
+                "id": 768,
+                "osm_id": 8071796325,
+                "location": "Gegenüber Denns bio",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 18,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865538000000006,
+                    48.596662
+                ]
+            },
+            "properties": {
+                "id": 769,
+                "osm_id": 11113693798,
+                "location": "Kita Aischbachstra??e",
+                "date_survey": "2023-08-13",
+                "type": "Bügel",
+                "count": 46,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.836337799999999,
+                    48.61310610000001
+                ]
+            },
+            "properties": {
+                "id": 770,
+                "osm_id": 11254881818,
+                "location": "Gemeindehalle Kuppingen",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858802999999998,
+                    48.60044499999999
+                ]
+            },
+            "properties": {
+                "id": 771,
+                "osm_id": 11137684052,
+                "location": "Johannes-Kepler-Stra??e (2)",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865805,
+                    48.59466699999999
+                ]
+            },
+            "properties": {
+                "id": 772,
+                "osm_id": 11140488154,
+                "location": "Binder Optik (2)",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 24,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871787000000001,
+                    48.60158700000001
+                ]
+            },
+            "properties": {
+                "id": 773,
+                "osm_id": 11171353063,
+                "location": "Affstätter Tal 35",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8346849,
+                    48.58429060000001
+                ]
+            },
+            "properties": {
+                "id": 774,
+                "osm_id": 11307500517,
+                "location": "Wohnhaus. Hohenzollernstra??e 83",
+                "date_survey": "2023-09-24",
+                "type": "Reine Vorderradhalterung",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Privathaus"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860784999999993,
+                    48.606641999999994
+                ]
+            },
+            "properties": {
+                "id": 775,
+                "osm_id": 11307120163,
+                "location": "Kindergarten Mittelfeldstra??e Affst??tt",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 5,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871979999999999,
+                    48.60098699999998
+                ]
+            },
+            "properties": {
+                "id": 776,
+                "osm_id": 11171353060,
+                "location": "Affstätter Tal 17",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859501000000007,
+                    48.604217
+                ]
+            },
+            "properties": {
+                "id": 777,
+                "osm_id": 11307120155,
+                "location": "Gemeindehalle Affst??tt",
+                "date_survey": "2023-09-19",
+                "type": "Bügel",
+                "count": 46,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.881871000000002,
+                    48.577341
+                ]
+            },
+            "properties": {
+                "id": 778,
+                "osm_id": 1523545080,
+                "location": "Bahnhof Gueltstein",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 24,
+                "count_covered": 24,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.864295000000002,
+                    48.597594999999984
+                ]
+            },
+            "properties": {
+                "id": 779,
+                "osm_id": 1044290591,
+                "location": "VfL Herrenberg",
+                "date_survey": "2023-08-13",
+                "type": "Bügel",
+                "count": 14,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.831857800000003,
+                    48.62338139999999
+                ]
+            },
+            "properties": {
+                "id": 780,
+                "osm_id": 11306929065,
+                "location": "Kindertageseinrichtung Mahdenstra??e",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.892781999999995,
+                    48.58239699999998
+                ]
+            },
+            "properties": {
+                "id": 781,
+                "osm_id": 11307556499,
+                "location": "Bäcker Baier Parkplatz",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 14,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859541999999998,
+                    48.598386999999995
+                ]
+            },
+            "properties": {
+                "id": 782,
+                "osm_id": 11138405691,
+                "location": "Christuskirche",
+                "date_survey": "2023-08-22",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863396999999996,
+                    48.59760500000001
+                ]
+            },
+            "properties": {
+                "id": 783,
+                "osm_id": 11113769605,
+                "location": "Schießmauer 1",
+                "date_survey": "2023-08-13",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.839115299999992,
+                    48.5814774
+                ]
+            },
+            "properties": {
+                "id": 784,
+                "osm_id": 931776782,
+                "location": "Grundschule Haslach",
+                "date_survey": "2023-09-24",
+                "type": "Bügel",
+                "count": 14,
+                "count_covered": 14,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8386619,
+                    48.623064
+                ]
+            },
+            "properties": {
+                "id": 785,
+                "osm_id": 11307619776,
+                "location": "Kindertageseinrichtung W??rmstra??e",
+                "date_survey": "2023-09-28",
+                "type": "Reine Vorderradhalterung",
+                "count": 9,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872409962508614,
+                    48.59522660354647
+                ]
+            },
+            "properties": {
+                "id": 786,
+                "osm_id": 11307699586,
+                "location": "Tübinger Straße / Stadt Grabe Staffel",
+                "date_survey": "2023-10-08",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869575700000002,
+                    48.5951201
+                ]
+            },
+            "properties": {
+                "id": 787,
+                "osm_id": 5322238594,
+                "location": "Graben",
+                "date_survey": "2023-09-06",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863457999999998,
+                    48.597588
+                ]
+            },
+            "properties": {
+                "id": 788,
+                "osm_id": 11113693804,
+                "location": "Schießmauer 1",
+                "date_survey": "2023-08-13",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 8,
+                "count_covered": 8,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872995443976,
+                    48.5943566115872
+                ]
+            },
+            "properties": {
+                "id": 789,
+                "location": "Stadtbibliothek",
+                "date_survey": "2023-12-03",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "öffenltich"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.909084000000002,
+                    48.579131999999994
+                ]
+            },
+            "properties": {
+                "id": 790,
+                "osm_id": 11307619774,
+                "location": "Haltestelle Abze",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.844162100000002,
+                    48.61149429999998
+                ]
+            },
+            "properties": {
+                "id": 791,
+                "osm_id": 11307619777,
+                "location": "Kindertageseinrichtung Br??hlweg",
+                "date_survey": "2023-09-28",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868198700000004,
+                    48.597568800000005
+                ]
+            },
+            "properties": {
+                "id": 792,
+                "osm_id": 11185503366,
+                "location": "Lidl",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 22,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.914488000000008,
+                    48.576791
+                ]
+            },
+            "properties": {
+                "id": 793,
+                "osm_id": 8043805372,
+                "location": "Vor der Sporthalle",
+                "date_survey": "2023-09-30",
+                "type": "Bügel",
+                "count": 14,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.840277699999993,
+                    48.58048599999998
+                ]
+            },
+            "properties": {
+                "id": 794,
+                "osm_id": 11307500521,
+                "location": "Ehem ev Gemeindehaus",
+                "date_survey": "2023-09-24",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867660300000004,
+                    48.597352399999984
+                ]
+            },
+            "properties": {
+                "id": 795,
+                "osm_id": 8875319143,
+                "location": "Seeländer platz",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 26,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875282100000002,
+                    48.590080099999994
+                ]
+            },
+            "properties": {
+                "id": 796,
+                "osm_id": 28298726,
+                "location": "Hallenbad Herrenberg",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 192,
+                "count_covered": 192,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862756000000005,
+                    48.60508299999999
+                ]
+            },
+            "properties": {
+                "id": 797,
+                "osm_id": 11307500514,
+                "location": "Spielplatz Kaffeeberg Affst??tt",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868974600000001,
+                    48.5979708
+                ]
+            },
+            "properties": {
+                "id": 798,
+                "osm_id": 11185503367,
+                "location": "Seelesplatz",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 3,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867225000000001,
+                    48.598658
+                ]
+            },
+            "properties": {
+                "id": 799,
+                "osm_id": 11138437839,
+                "location": "Tafellädle Deutsches Rotes Kreuz",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868643999999993,
+                    48.59800289999998
+                ]
+            },
+            "properties": {
+                "id": 800,
+                "osm_id": 8085654178,
+                "location": "Denns Bio",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 10,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862520500000002,
+                    48.59344739999999
+                ]
+            },
+            "properties": {
+                "id": 801,
+                "osm_id": 81512766,
+                "location": "Bahnhof Herrenberg ( B??cker / Post Seite )",
+                "date_survey": "2023-10-10",
+                "type": "Reine Vorderradhalterung",
+                "count": 160,
+                "count_covered": 160,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870462066474092,
+                    48.5964420916547
+                ]
+            },
+            "properties": {
+                "id": 802,
+                "osm_id": 6595890251,
+                "location": "Beim Rathaus",
+                "date_survey": "2023-08-09",
+                "type": "Bügel",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875813999999997,
+                    48.57519999999999
+                ]
+            },
+            "properties": {
+                "id": 803,
+                "osm_id": 11307556494,
+                "location": "Spielplatz Goldregen Stra??e Gueltstein",
+                "date_survey": "2023-09-28",
+                "type": "Reine Vorderradhalterung",
+                "count": 35,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868761999999995,
+                    48.59587199999999
+                ]
+            },
+            "properties": {
+                "id": 804,
+                "osm_id": 11140871398,
+                "location": "Bäcker Baier",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 11,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.877773200000002,
+                    48.587776999999996
+                ]
+            },
+            "properties": {
+                "id": 805,
+                "osm_id": 7920727074,
+                "location": "Calisthenics station",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.841191899999998,
+                    48.61560549999999
+                ]
+            },
+            "properties": {
+                "id": 806,
+                "osm_id": 11254881815,
+                "location": "Karl-Kühnle-Grundschule",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 144,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8595768,
+                    48.59056799999999
+                ]
+            },
+            "properties": {
+                "id": 807,
+                "osm_id": 11254817170,
+                "location": "Friedrich fröbel Schule",
+                "date_survey": "2023-09-18",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 20,
+                "count_covered": 20,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862400800000003,
+                    48.5942436
+                ]
+            },
+            "properties": {
+                "id": 808,
+                "osm_id": 10011272702,
+                "location": "Bahnhof Aldi seiten",
+                "date_survey": "2023-10-10",
+                "type": "Fahrradboxen",
+                "count": 57,
+                "count_covered": 57,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.855480000000005,
+                    48.59288299999999
+                ]
+            },
+            "properties": {
+                "id": 809,
+                "osm_id": 1080195117,
+                "location": "Jerg-Ratgeb-Schule 2",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 34,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Schule"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.920132000000008,
+                    48.577355000000004
+                ]
+            },
+            "properties": {
+                "id": 810,
+                "location": "Evangelisches gemeindehaus kayh",
+                "date_survey": "2023-09-30",
+                "type": "Bügel",
+                "count": 20,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8678879,
+                    48.59329340000001
+                ]
+            },
+            "properties": {
+                "id": 811,
+                "osm_id": 11185503361,
+                "location": "Bismarckstraße 12",
+                "date_survey": "2023-09-06",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Nein/Privat"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.857378999999995,
+                    48.607358999999995
+                ]
+            },
+            "properties": {
+                "id": 812,
+                "osm_id": 11307120159,
+                "location": "Evang Gemeindehaus",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 9,
+                "count_covered": 4,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.864392,
+                    48.596199999999996
+                ]
+            },
+            "properties": {
+                "id": 813,
+                "osm_id": 11113693797,
+                "location": "Kegelcenter Restaurant",
+                "date_survey": "2023-08-13",
+                "type": "Reine Vorderradhalterung",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873061999999994,
+                    48.594742
+                ]
+            },
+            "properties": {
+                "id": 814,
+                "osm_id": 11307619779,
+                "location": "Tübinger Str. Bioladen u. Blattwerk",
+                "date_survey": "2023-10-01",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863862000000005,
+                    48.597512
+                ]
+            },
+            "properties": {
+                "id": 815,
+                "osm_id": 95685677,
+                "location": "Volksbank Stadion",
+                "date_survey": "2023-08-13",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871278000000006,
+                    48.60166699999999
+                ]
+            },
+            "properties": {
+                "id": 816,
+                "osm_id": 11171353065,
+                "location": "Affstätter Tal 39",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862154999999994,
+                    48.594232999999996
+                ]
+            },
+            "properties": {
+                "id": 817,
+                "osm_id": 28353623,
+                "location": "Hauptbahnhof Herrenberg",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 96,
+                "count_covered": 96,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.846543199999996,
+                    48.6099049
+                ]
+            },
+            "properties": {
+                "id": 818,
+                "osm_id": 11307030675,
+                "location": "Bushaltestelle Jennerstra??e Fahrtrichtung Wildberg",
+                "date_survey": "2023-09-18",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.864019999999998,
+                    48.597163
+                ]
+            },
+            "properties": {
+                "id": 819,
+                "osm_id": 999690967,
+                "location": "VFL Gebäude 1",
+                "date_survey": "2023-08-13",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 10,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862400800000003,
+                    48.5942436
+                ]
+            },
+            "properties": {
+                "id": 820,
+                "osm_id": 702362944,
+                "location": "Bahnhof Kaufland Seite Unterführung",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 40,
+                "count_covered": 40,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869048790246147,
+                    48.5983077673113
+                ]
+            },
+            "properties": {
+                "id": 821,
+                "location": "Vor Parkhauseinfahrt Seeländer",
+                "date_survey": "2023-12-03",
+                "count": 28,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871204999999996,
+                    48.5950638
+                ]
+            },
+            "properties": {
+                "id": 822,
+                "osm_id": 6596031262,
+                "location": "Diakonieladen Herrenberg / auf dem Graben",
+                "date_survey": "2023-10-08",
+                "type": "lean_and_stick",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.904662100000005,
+                    48.602799299999994
+                ]
+            },
+            "properties": {
+                "id": 823,
+                "osm_id": 597429170,
+                "location": "Weg zum Schönbuchturm",
+                "date_survey": "2023-10-01",
+                "type": "Holzkonstruktion",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871579999999998,
+                    48.60208
+                ]
+            },
+            "properties": {
+                "id": 824,
+                "osm_id": 11171350998,
+                "location": "Affstätter Tal 33",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856667,
+                    48.59644999999999
+                ]
+            },
+            "properties": {
+                "id": 825,
+                "osm_id": 11137732875,
+                "location": "Württembergische weimann & bühl",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862400800000003,
+                    48.5942436
+                ]
+            },
+            "properties": {
+                "id": 826,
+                "osm_id": 28353623,
+                "location": "Bahnhof Herrenberg (Kaufland Seite direkt nach Unterführung )",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 132,
+                "count_covered": 132,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870359599999999,
+                    48.5979162
+                ]
+            },
+            "properties": {
+                "id": 827,
+                "osm_id": 11185503369,
+                "location": "Nufringer Tor unten 2",
+                "date_survey": "2023-09-11",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873186,
+                    48.59063359999999
+                ]
+            },
+            "properties": {
+                "id": 828,
+                "osm_id": 269604959,
+                "location": "Schickhardt gymnasium",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 78,
+                "count_covered": 78,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.843114399999996,
+                    48.61038749999999
+                ]
+            },
+            "properties": {
+                "id": 829,
+                "osm_id": 11254881819,
+                "location": "Stephanus-Stift",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860867,
+                    48.595678
+                ]
+            },
+            "properties": {
+                "id": 830,
+                "osm_id": 7726452136,
+                "location": "Kaufland",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 33,
+                "count_covered": 33,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Kunde"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.903299999999996,
+                    48.602741999999985
+                ]
+            },
+            "properties": {
+                "id": 831,
+                "osm_id": 11307619778,
+                "location": "Naturfreundehaus",
+                "date_survey": "2023-10-01",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Nur bei ??ffnungszeiten"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.882896,
+                    48.57193600000001
+                ]
+            },
+            "properties": {
+                "id": 832,
+                "osm_id": 11307556497,
+                "location": "Ammerstadion",
+                "date_survey": "2023-09-28",
+                "type": "Reine Vorderradhalterung",
+                "count": 11,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854495700000005,
+                    48.58842080000001
+                ]
+            },
+            "properties": {
+                "id": 833,
+                "osm_id": 11254817168,
+                "location": "Adlerstraße",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 40,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865320699999995,
+                    48.5887597
+                ]
+            },
+            "properties": {
+                "id": 834,
+                "osm_id": 11185503364,
+                "location": "Kern Kanzlei",
+                "date_survey": "2023-09-06",
+                "type": "Reine Vorderradhalterung",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Unklar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870662,
+                    48.598095000000015
+                ]
+            },
+            "properties": {
+                "id": 835,
+                "osm_id": 11140873575,
+                "location": "TAKKO Fashion",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 40,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868860200000007,
+                    48.59807389999999
+                ]
+            },
+            "properties": {
+                "id": 836,
+                "osm_id": 8071796321,
+                "location": "Rossmann",
+                "date_survey": "2023-09-11",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Kunden"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.855782999999995,
+                    48.594712
+                ]
+            },
+            "properties": {
+                "id": 837,
+                "osm_id": 11137789465,
+                "location": "Straßenverkehr Kfz Zulassungsstelle",
+                "date_survey": "2023-08-22",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 6,
+                "count_covered": 6,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859119300000003,
+                    48.607219900000004
+                ]
+            },
+            "properties": {
+                "id": 838,
+                "osm_id": 11307120158,
+                "location": "Rathaus Affstätt",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.881112999999997,
+                    48.571077
+                ]
+            },
+            "properties": {
+                "id": 839,
+                "osm_id": 11307556498,
+                "location": "Reithalle",
+                "date_survey": "2023-09-28",
+                "type": "Reine Vorderradhalterung",
+                "count": 50,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854762000000001,
+                    48.59373699999998
+                ]
+            },
+            "properties": {
+                "id": 840,
+                "osm_id": 11137799936,
+                "location": "Kirche St. Martin",
+                "date_survey": "2023-08-22",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871092656844208,
+                    48.597737909685975
+                ]
+            },
+            "properties": {
+                "id": 841,
+                "location": "Am joachimsberg",
+                "date_survey": "2023-10-08",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.857457999999998,
+                    48.606669999999994
+                ]
+            },
+            "properties": {
+                "id": 842,
+                "osm_id": 11307500515,
+                "location": "KiTa Gartenstra??e Affst??tt",
+                "date_survey": "2023-09-19",
+                "type": "Nische zum Abstellen",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": true,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.836333799999998,
+                    48.6250426
+                ]
+            },
+            "properties": {
+                "id": 843,
+                "osm_id": 11306929067,
+                "location": "Bezirksamt Oberjesingen",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862520500000002,
+                    48.59344739999999
+                ]
+            },
+            "properties": {
+                "id": 844,
+                "osm_id": 81512766,
+                "location": "Bahnhof Herrenberg (Post / Bäcker Seite )",
+                "date_survey": "2023-10-10",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 144,
+                "count_covered": 144,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8678668,
+                    48.5955871
+                ]
+            },
+            "properties": {
+                "id": 845,
+                "osm_id": 7920751015,
+                "location": "Bronntor",
+                "date_survey": "2023-10-08",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869142000000004,
+                    48.60085299999997
+                ]
+            },
+            "properties": {
+                "id": 846,
+                "osm_id": 11171353054,
+                "location": "Elektro Hämmerle",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.838094900000007,
+                    48.61475099999999
+                ]
+            },
+            "properties": {
+                "id": 847,
+                "osm_id": 11254881813,
+                "location": "Kinderhaus Keltenstra??e 11",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858018399999992,
+                    48.60724029999999
+                ]
+            },
+            "properties": {
+                "id": 848,
+                "osm_id": 11307120157,
+                "location": "Leinenbrunnen 1. Arztpraxis Dr N????le",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856162000000001,
+                    48.59475299999998
+                ]
+            },
+            "properties": {
+                "id": 849,
+                "osm_id": 9082074724,
+                "location": "FSL Herrenberg",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867916300000006,
+                    48.59737210000001
+                ]
+            },
+            "properties": {
+                "id": 850,
+                "osm_id": 8875319144,
+                "location": "Technisches Rathaus",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 14,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.839997300000004,
+                    48.61509639999999
+                ]
+            },
+            "properties": {
+                "id": 851,
+                "osm_id": 11254881814,
+                "location": "Kita Oberjesingerstra??e",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 21,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.828166100000002,
+                    48.622108799999985
+                ]
+            },
+            "properties": {
+                "id": 852,
+                "osm_id": 11307030669,
+                "location": "Evangelisches Gemeindehaus",
+                "date_survey": "2023-09-18",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 22,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.882316000000001,
+                    48.57227000000001
+                ]
+            },
+            "properties": {
+                "id": 853,
+                "osm_id": 8974144400,
+                "location": "Tv-Halle",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 20,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.835145500000007,
+                    48.62421199999999
+                ]
+            },
+            "properties": {
+                "id": 854,
+                "osm_id": 11306929066,
+                "location": "Dorfplatz Oberjesingen",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.827802699999994,
+                    48.622194599999986
+                ]
+            },
+            "properties": {
+                "id": 855,
+                "osm_id": 11307030671,
+                "location": "Wasenäckerhalle",
+                "date_survey": "2023-09-18",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 36,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856182517036778,
+                    48.59297644712634
+                ]
+            },
+            "properties": {
+                "id": 856,
+                "osm_id": 11140435438,
+                "location": "Jerg-Ratgeb-Schule (3)",
+                "date_survey": "2023-08-23",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 221,
+                "count_covered": 95,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Schule"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8573334,
+                    48.5889806
+                ]
+            },
+            "properties": {
+                "id": 857,
+                "osm_id": 11306929064,
+                "location": "Reiher weg Ecke zur habichtstra??e",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 12,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Vor einem Haus. k??nnte privat sein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863913000000005,
+                    48.598042
+                ]
+            },
+            "properties": {
+                "id": 858,
+                "osm_id": 1197958026,
+                "location": "Volksbank Stadion",
+                "date_survey": "2023-08-13",
+                "type": "Bügel",
+                "count": 56,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860344999999997,
+                    48.608371999999996
+                ]
+            },
+            "properties": {
+                "id": 859,
+                "osm_id": 11307120162,
+                "location": "KiTa an der Raingasse. Affst??tt",
+                "date_survey": "2023-09-19",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859300000000003,
+                    48.60751099999998
+                ]
+            },
+            "properties": {
+                "id": 860,
+                "osm_id": 11307120163,
+                "location": "Conrad-Weiser-Stra??e 1. saniertes altes Bauernhaus",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 16,
+                "count_covered": 16,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Privatgrundst??ck"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8395326,
+                    48.58144059999999
+                ]
+            },
+            "properties": {
+                "id": 861,
+                "osm_id": 11307500519,
+                "location": "Grundschule Haslach",
+                "date_survey": "2023-09-24",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859187200000004,
+                    48.604524199999986
+                ]
+            },
+            "properties": {
+                "id": 862,
+                "osm_id": 11307120156,
+                "location": "Wohnhaus Nelkenstra??e 6",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Unklar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867762999999997,
+                    48.59879999999999
+                ]
+            },
+            "properties": {
+                "id": 863,
+                "osm_id": 11140259176,
+                "location": "Feuerwehr",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870674999999997,
+                    48.597930000000005
+                ]
+            },
+            "properties": {
+                "id": 864,
+                "osm_id": 11140534023,
+                "location": "Mrs. Sporty",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 4,
+                "count_covered": 4,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8422745,
+                    48.61378679999999
+                ]
+            },
+            "properties": {
+                "id": 865,
+                "osm_id": 11254881816,
+                "location": "Elektrohaus Brenner. Raiffeisenstra??e 2",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854917000000002,
+                    48.593937000000004
+                ]
+            },
+            "properties": {
+                "id": 866,
+                "osm_id": 11137757702,
+                "location": "Jerg-Ratgeb-Schule",
+                "date_survey": "2023-08-22",
+                "type": "Bügel",
+                "count": 28,
+                "count_covered": 28,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Schule"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.851733700000002,
+                    48.61161619999999
+                ]
+            },
+            "properties": {
+                "id": 867,
+                "osm_id": 11307030674,
+                "location": "DM Kuppingen",
+                "date_survey": "2023-09-18",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 12,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.866115700000003,
+                    48.59358649999999
+                ]
+            },
+            "properties": {
+                "id": 868,
+                "osm_id": 11185503363,
+                "location": "Sabine Gall Fu??pflege",
+                "date_survey": "2023-09-06",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "Unklar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.841287500000004,
+                    48.61198310000001
+                ]
+            },
+            "properties": {
+                "id": 869,
+                "osm_id": 11307030670,
+                "location": "Ärztehaus Kuppingen",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873625140775758,
+                    48.594056720050816
+                ]
+            },
+            "properties": {
+                "id": 870,
+                "location": "VHS",
+                "date_survey": "2023-12-03",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869827999999998,
+                    48.602437
+                ]
+            },
+            "properties": {
+                "id": 871,
+                "osm_id": 11141108458,
+                "location": "Gym24",
+                "date_survey": "2023-08-23",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 12,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8765116,
+                    48.5899344
+                ]
+            },
+            "properties": {
+                "id": 872,
+                "osm_id": 3521364926,
+                "location": "Naturfreibad herrenberg",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 102,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872058000000003,
+                    48.601324999999974
+                ]
+            },
+            "properties": {
+                "id": 873,
+                "osm_id": 11171353062,
+                "location": "Affstätter Tal 23",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.840870399999998,
+                    48.61383309999999
+                ]
+            },
+            "properties": {
+                "id": 874,
+                "osm_id": 11254881817,
+                "location": "katholische Kirche St. Antonius Kuppingen",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868766400000002,
+                    48.5980071
+                ]
+            },
+            "properties": {
+                "id": 875,
+                "osm_id": 8071796322,
+                "location": "Gegenüber Rossmann",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 16,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870721999999994,
+                    48.600677999999995
+                ]
+            },
+            "properties": {
+                "id": 877,
+                "osm_id": 11171353056,
+                "location": "Affstätter Tal 57",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 3,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863854999999996,
+                    48.59739199999998
+                ]
+            },
+            "properties": {
+                "id": 878,
+                "osm_id": 11113769606,
+                "location": "VFL Gebäude 1",
+                "date_survey": "2023-08-13",
+                "type": "Bügel",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870716999999994,
+                    48.60256999999999
+                ]
+            },
+            "properties": {
+                "id": 879,
+                "osm_id": 11141100025,
+                "location": "Logopädie in Herrenberg",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872631799999999,
+                    48.5930222
+                ]
+            },
+            "properties": {
+                "id": 880,
+                "osm_id": 11307699588,
+                "location": "Marienstraße / Physiotherapie Sven Schöffel",
+                "date_survey": "2023-10-10",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.839929600000001,
+                    48.581493799999976
+                ]
+            },
+            "properties": {
+                "id": 881,
+                "osm_id": 11307500520,
+                "location": "KiTa Haslach",
+                "date_survey": "2023-09-24",
+                "type": "Stange",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": true,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863608000000003,
+                    48.59729499999999
+                ]
+            },
+            "properties": {
+                "id": 882,
+                "osm_id": 11113769607,
+                "location": "VFL Gebäude 1",
+                "date_survey": "2023-08-13",
+                "type": "Reine Vorderradhalterung",
+                "count": 4,
+                "count_covered": 4,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8396266,
+                    48.5831739
+                ]
+            },
+            "properties": {
+                "id": 883,
+                "osm_id": 8166630686,
+                "location": "Bezirksamt Haslach",
+                "date_survey": "2023-09-24",
+                "type": "Bügel",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8512297,
+                    48.611186399999994
+                ]
+            },
+            "properties": {
+                "id": 884,
+                "osm_id": 11307030673,
+                "location": "Netto Kuppingen",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 28,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868757999999994,
+                    48.601822
+                ]
+            },
+            "properties": {
+                "id": 885,
+                "osm_id": 11171353053,
+                "location": "H+Hotel",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8678668,
+                    48.5955871
+                ]
+            },
+            "properties": {
+                "id": 886,
+                "osm_id": 6595792653,
+                "location": "Bronntor",
+                "date_survey": "2023-10-08",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 6,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872011999999998,
+                    48.601953
+                ]
+            },
+            "properties": {
+                "id": 887,
+                "osm_id": 11171351000,
+                "location": "Affstätter Tal 29",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.807650000000004,
+                    48.60333099999999
+                ]
+            },
+            "properties": {
+                "id": 888,
+                "osm_id": 11254881812,
+                "location": "TSV Kuppingen. NEUFFER-Sportpark; Martinslehle 1. 71083 Herrenberg",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 11,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.834751600000008,
+                    48.62321919999999
+                ]
+            },
+            "properties": {
+                "id": 889,
+                "osm_id": 11306929068,
+                "location": "Volksbank und Kreissparkasse",
+                "date_survey": "2023-09-18",
+                "type": "Bügel",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.878188,
+                    48.575048999999986
+                ]
+            },
+            "properties": {
+                "id": 890,
+                "osm_id": 8974144401,
+                "location": "Altes Rathaus Gueltstein",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870533000000007,
+                    48.60393
+                ]
+            },
+            "properties": {
+                "id": 891,
+                "osm_id": 11171353051,
+                "location": "Toom",
+                "date_survey": "2023-08-23",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 12,
+                "count_covered": 6,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856933,
+                    48.60731899999999
+                ]
+            },
+            "properties": {
+                "id": 892,
+                "osm_id": 11307120161,
+                "location": "Freiwillige Feuerwehr Affst??tt",
+                "date_survey": "2023-09-19",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865783000000004,
+                    48.59453800000001
+                ]
+            },
+            "properties": {
+                "id": 893,
+                "osm_id": 9808497396,
+                "location": "Binder Optik",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 20,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.913812999999998,
+                    48.58318899999999
+                ]
+            },
+            "properties": {
+                "id": 894,
+                "osm_id": 11307619775,
+                "location": "Dorfplatz Brunnen M??nchberg",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.835361200000001,
+                    48.58419269999999
+                ]
+            },
+            "properties": {
+                "id": 895,
+                "osm_id": 11307500522,
+                "location": "Metzgerei Gräther",
+                "date_survey": "2023-09-24",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Einzelh??ndler"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8776787,
+                    48.5881274
+                ]
+            },
+            "properties": {
+                "id": 896,
+                "osm_id": 7920751014,
+                "location": "Calisthenics park / baseball field",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.877906000000003,
+                    48.575444000000005
+                ]
+            },
+            "properties": {
+                "id": 897,
+                "osm_id": 11307556496,
+                "location": "Karolinenstift",
+                "date_survey": "2023-09-28",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 8,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860663,
+                    48.59381299999999
+                ]
+            },
+            "properties": {
+                "id": 898,
+                "osm_id": 11140439331,
+                "location": "EN Storage",
+                "date_survey": "2023-08-23",
+                "type": "Bügel + Vorderradhalterung",
+                "count": 6,
+                "count_covered": 3,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.830476800000001,
+                    48.583944800000005
+                ]
+            },
+            "properties": {
+                "id": 899,
+                "osm_id": 11307500516,
+                "location": "Sporthalle Haslach",
+                "date_survey": "2023-09-24",
+                "type": "Reine Vorderradhalterung",
+                "count": 18,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854254999999995,
+                    48.59405
+                ]
+            },
+            "properties": {
+                "id": 900,
+                "osm_id": 11140362956,
+                "location": "Weinberg Bäckerei",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872735000000008,
+                    48.58921849999999
+                ]
+            },
+            "properties": {
+                "id": 901,
+                "osm_id": 182241738,
+                "location": "Realschule",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 96,
+                "count_covered": 96,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868416000000002,
+                    48.5977293
+                ]
+            },
+            "properties": {
+                "id": 902,
+                "osm_id": 11185503366,
+                "location": "Deichmann",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 8,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863396999999996,
+                    48.59760500000001
+                ]
+            },
+            "properties": {
+                "id": 903,
+                "osm_id": 11113769605,
+                "location": "Schießmauer 1",
+                "date_survey": "2023-08-13",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8387016,
+                    48.58313329999999
+                ]
+            },
+            "properties": {
+                "id": 904,
+                "osm_id": 11307500518,
+                "location": "Ehem Volksbank Haslach",
+                "date_survey": "2023-09-24",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872216999999992,
+                    48.60127799999999
+                ]
+            },
+            "properties": {
+                "id": 905,
+                "osm_id": 11171353061,
+                "location": "Affstätter Tal 21",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 1,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858963000000001,
+                    48.59633799999999
+                ]
+            },
+            "properties": {
+                "id": 906,
+                "osm_id": 11137728912,
+                "location": "Allfinanz Deutsche Verm??gensberatung",
+                "date_survey": "2023-08-22",
+                "type": "Reine Vorderradhalterung",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871782999999999,
+                    48.60204499999999
+                ]
+            },
+            "properties": {
+                "id": 908,
+                "osm_id": 11171350999,
+                "location": "Affstätter Tal 31",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8748741,
+                    48.5899033
+                ]
+            },
+            "properties": {
+                "id": 909,
+                "osm_id": 11307699589,
+                "location": "Hallenbad \\ Schule",
+                "date_survey": "2023-10-10",
+                "type": "Reine Vorderradhalterung",
+                "count": 80,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.86864,
+                    48.5910676
+                ]
+            },
+            "properties": {
+                "id": 910,
+                "osm_id": 11185503365,
+                "location": "Goethestraße 12",
+                "date_survey": "2023-09-06",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Unklar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8776934,
+                    48.587660799999995
+                ]
+            },
+            "properties": {
+                "id": 911,
+                "osm_id": 7920727079,
+                "location": "Calisthenics",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 8,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870570000000006,
+                    48.600697
+                ]
+            },
+            "properties": {
+                "id": 912,
+                "osm_id": 11171353055,
+                "location": "Affstätter Tal 59",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873839399999996,
+                    48.5915761
+                ]
+            },
+            "properties": {
+                "id": 913,
+                "osm_id": 8533065301,
+                "location": "Marienstraße Ecke kleiststraße",
+                "date_survey": "2023-10-10",
+                "type": "Reine Vorderradhalterung",
+                "count": 4,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869998800000003,
+                    48.595711499999986
+                ]
+            },
+            "properties": {
+                "id": 914,
+                "osm_id": 7863584959,
+                "location": "Spital Gasse",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "Nein"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870359599999999,
+                    48.5979162
+                ]
+            },
+            "properties": {
+                "id": 915,
+                "osm_id": 11185503368,
+                "location": "Nufringer Tor unten",
+                "date_survey": "2023-09-11",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871729999999994,
+                    48.601046999999994
+                ]
+            },
+            "properties": {
+                "id": 916,
+                "osm_id": 11171353059,
+                "location": "Affstätter Tal 19",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871827399999997,
+                    48.59830309999999
+                ]
+            },
+            "properties": {
+                "id": 917,
+                "osm_id": 11307619781,
+                "location": "Am Joachimsberg 10",
+                "date_survey": "2023-10-08",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 6,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "??Besucher am Joachimsberg ??"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854391999999999,
+                    48.593313
+                ]
+            },
+            "properties": {
+                "id": 918,
+                "osm_id": 11140917938,
+                "location": "Kirche St. Martin (hinten)",
+                "date_survey": "2023-08-23",
+                "type": "Bügel",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871272000000003,
+                    48.59797
+                ]
+            },
+            "properties": {
+                "id": 919,
+                "osm_id": 11113693795,
+                "location": "Stuttgarter Straße",
+                "date_survey": "2023-08-09",
+                "type": "Bügel",
+                "count": 5,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": "",
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8590568,
+                    48.59218769999999
+                ]
+            },
+            "properties": {
+                "id": 920,
+                "osm_id": 11254817171,
+                "location": "Bahnhofstraße",
+                "date_survey": "2023-09-18",
+                "type": "Reine Vorderradhalterung",
+                "count": 6,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873988,
+                    48.59743
+                ]
+            },
+            "properties": {
+                "id": 921,
+                "osm_id": 11307556493,
+                "location": "Schlosskeller",
+                "date_survey": "2023-09-25",
+                "type": "Bügel",
+                "count": 20,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": true,
+                "access_type": "Immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8699216,
+                    48.595416799999995
+                ]
+            },
+            "properties": {
+                "id": 923,
+                "osm_id": 659284923,
+                "location": "Spital Gasse 13",
+                "date_survey": "2023-10-10",
+                "type": "Bügel",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870043264568391,
+                    48.598384457795376
+                ]
+            },
+            "properties": {
+                "id": 924,
+                "location": "",
+                "date_survey": "2023-12-03",
+                "count": 30,
+                "count_covered": 0,
+                "has_service": false,
+                "count_chargers": 0,
+                "quality": "ok",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871855000000005,
+                    48.600675
+                ]
+            },
+            "properties": {
+                "id": 925,
+                "osm_id": 11171353057,
+                "location": "Affstätter Tal 13",
+                "date_survey": "2023-08-23",
+                "type": "Reine Vorderradhalterung",
+                "count": 2,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "bad",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.853751905038765,
+                    48.59288340708298
+                ]
+            },
+            "properties": {
+                "id": 926,
+                "location": "Görlitzer Straße",
+                "date_survey": "2024-01-22",
+                "type": "Anlehnbügel",
+                "count": 88,
+                "count_covered": 88,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "very_good",
+                "has_lighting": false,
+                "access_type": "nein - gesperrt, Baustelle AGH"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.86851240829726,
+                    48.59481322045072
+                ]
+            },
+            "properties": {
+                "id": 927,
+                "location": "Hindenburgstraße",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 10,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "very_good",
+                "has_lighting": true,
+                "access_type": "immer"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.903629319280821,
+                    48.601629553502
+                ]
+            },
+            "properties": {
+                "id": 928,
+                "location": "Waldfriedhof",
+                "type": "Bügel",
+                "count": 10,
+                "count_covered": 0,
+                "has_service": "",
+                "count_chargers": 0,
+                "quality": "good",
+                "has_lighting": false,
+                "access_type": "immer"
+            }
+        }
+    ]
+}
