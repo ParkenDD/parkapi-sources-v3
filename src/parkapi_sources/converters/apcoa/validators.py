@@ -28,7 +28,7 @@ from parkapi_sources.models.enums import ParkingSiteType
 from parkapi_sources.validators import SpacedDateTimeValidator
 
 
-class ApcoaParkingSpaceType:
+class ApcoaParkingSpaceType(Enum):
     WOMEN_SPACES = 'Women Spaces'
     FAMILY_SPACES = 'Family Spaces'
     CARSHARING_SPACES = 'Carsharing Spaces'
@@ -41,6 +41,7 @@ class ApcoaParkingSpaceType:
     BUS_OR_COACHES_SPACES = 'Bus/Coaches Spaces'
     CAR_RENTAL_AND_SHARING = 'Car rental & sharing (weekdays from 8am to 8pm)'
     PICKUP_AND_DROPOFF = 'PickUp&DropOff (weekdays from 8pm to 8am)'
+    URBAN_HUBS = 'Urban Hubs reserved'
 
 
 class ApcoaCarparkType(Enum):
@@ -119,8 +120,8 @@ class ApcoaAdressInput:
 
 @validataclass
 class ApcoaParkingSpaceInput:
-    Type: str = StringValidator()
-    Count: int = IntegerValidator(allow_strings=True, min_value=0)
+    Type: ApcoaParkingSpaceType = EnumValidator(ApcoaParkingSpaceType)
+    Count: int = IntegerValidator(allow_strings=True)
 
 
 @validataclass
@@ -157,7 +158,7 @@ class ApcoaParkingSiteInput:
     CarparkShortName: Optional[str] = Noneable(StringValidator())
     CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
     CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
-    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
+    CarparkType: Optional[ApcoaCarparkTypeNameInput] = Noneable(DataclassValidator(ApcoaCarparkTypeNameInput))
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
     NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
     Spaces: list[ApcoaParkingSpaceInput] = ListValidator(DataclassValidator(ApcoaParkingSpaceInput))
@@ -171,6 +172,11 @@ class ApcoaParkingSiteInput:
     # TODO: ignored multiple attributes which do not matter so far
 
     def __post_init__(self):
+        for capacity in self.Spaces:
+            # We check for Count < 0 here because we don't need urban hubs, and there's a lot of bad data in it
+            if capacity.Type != ApcoaParkingSpaceType.URBAN_HUBS and capacity.Count < 0:
+                raise ValidationError(reason=f'Invalid capacity {capacity.Count} at type {capacity.Type}')
+
         for capacity in self.Spaces:
             if capacity.Type == ApcoaParkingSpaceType.TOTAL_SPACES:
                 return
