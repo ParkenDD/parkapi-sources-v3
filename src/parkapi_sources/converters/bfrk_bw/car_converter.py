@@ -13,6 +13,7 @@ from .car_models import BfrkCarInput
 
 class BfrkBwCarPushConverter(BfrkBasePushConverter):
     bfrk_validator = DataclassValidator(BfrkCarInput)
+    source_url_config_key = 'PARK_API_BFRK_BW_CAR_OVERRIDE_SOURCE_URL'
 
     source_info = SourceInfo(
         uid='bfrk_bw_car',
