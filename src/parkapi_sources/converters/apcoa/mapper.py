@@ -28,6 +28,10 @@ class ApcoaMapper:
                 if navigation_locations_input.LocationType == ApcoaNavigationLocationType.DEFAULT
             )
         )
+        if apcoa_input.CarparkType is None:
+            parking_site_type = None
+        else:
+            parking_site_type = apcoa_input.CarparkType.Name.to_parking_site_type_input()
 
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(apcoa_input.CarParkId),
@@ -35,7 +39,7 @@ class ApcoaMapper:
             lat=latitude,
             lon=longitude,
             purpose=PurposeType.CAR,
-            type=apcoa_input.CarparkType.Name.to_parking_site_type_input(),
+            type=parking_site_type,
             has_realtime_data=False,  # TODO: change this as soon as Apcoa API offers realtime data
             public_url=apcoa_input.CarParkWebsiteURL,
             static_data_updated_at=apcoa_input.LastModifiedDateTime,
