@@ -196,7 +196,7 @@ class ApcoaParkingSiteInput:
                 continue
 
             # OSM has times without spaces, so we remove spaces
-            opening_time = opening_hours_input.OpeningTimes.replace(' ', '')
+            opening_time = opening_hours_input.OpeningTimes.replace(' ', '').replace('-00:00', '-24:00')
 
             # If it's open all day, add it to our 24/7 check counter, and we change opening_time to the OSM format
             if opening_hours_input.OpeningTimes == '00:00 - 00:00':

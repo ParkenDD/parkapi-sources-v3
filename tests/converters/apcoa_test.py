@@ -293,6 +293,40 @@ class ApcoaParkingSiteInputTest:
                 ],
                 'Mo-Fr 00:00-24:00',
             ),
+            # Test for different times ending with 00:00 instead of 24:00
+            (
+                [
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.MONDAY,
+                        OpeningTimes='05:00 - 00:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
+                        OpeningTimes='05:00 - 00:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
+                        OpeningTimes='05:00 - 00:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.SUNDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                ],
+                'Mo 05:00-24:00; Tu 05:00-24:00; We 05:00-24:00; Th 05:00-02:00; Fr 05:00-02:00; Sa 05:00-02:00; Su 05:00-02:00',
+            ),
         ],
     )
     def test_get_osm_opening_hours(opening_times: list[ApcoaOpeningHoursInput], osm_opening_hours: str):
