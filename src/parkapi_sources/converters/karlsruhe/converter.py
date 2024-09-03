@@ -3,7 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from abc import ABC
+from abc import ABC, abstractmethod
 from pathlib import Path
 
 import requests
@@ -39,6 +39,9 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
             ) from e
 
         for feature_dict in geojson_input.features:
+            if self._should_ignore_dataset(feature_dict):
+                continue
+
             try:
                 feature_input = self.karlsruhe_feature_validator.validate(feature_dict)
             except ValidationError as e:
@@ -54,6 +57,10 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
             feature_inputs.append(feature_input)
 
         return feature_inputs, import_parking_site_exceptions
+
+    @abstractmethod
+    def _should_ignore_dataset(self, feature_dict: dict) -> bool:
+        pass
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         feature_inputs, import_parking_site_exceptions = self._get_feature_inputs()
@@ -80,6 +87,9 @@ class KarlsruhePullConverter(KarlsruheBasePullConverter):
         attribution_url='http://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=True,
     )
+
+    def _should_ignore_dataset(self, feature_dict: dict) -> bool:
+        return False
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         feature_inputs, import_parking_site_exceptions = self._get_feature_inputs()
@@ -108,6 +118,12 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
         attribution_url='http://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=False,
     )
+
+    def _should_ignore_dataset(self, feature_dict: dict) -> bool:
+        if self.config_helper.get('PARK_API_KARLSRUHE_BIKE_IGNORE_MISSING_CAPACITIES'):
+            return feature_dict.get('properties', {}).get('stellplaetze') is None
+
+        return False
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []
