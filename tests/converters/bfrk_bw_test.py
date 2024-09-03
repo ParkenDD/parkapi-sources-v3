@@ -14,8 +14,15 @@ from tests.converters.helper import validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def bfrk_car_push_converter(mocked_config_helper: Mock) -> BfrkBwCarPushConverter:
-    return BfrkBwCarPushConverter(config_helper=mocked_config_helper)
+def mocked_bfrk_bw_config_helper(mocked_config_helper: Mock):
+    config = {}
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def bfrk_car_push_converter(mocked_bfrk_bw_config_helper: Mock) -> BfrkBwCarPushConverter:
+    return BfrkBwCarPushConverter(config_helper=mocked_bfrk_bw_config_helper)
 
 
 class BfrkCarPullConverterTest:
@@ -39,8 +46,8 @@ class BfrkCarPullConverterTest:
 
 
 @pytest.fixture
-def bfrk_bike_push_converter(mocked_config_helper: Mock) -> BfrkBwBikePushConverter:
-    return BfrkBwBikePushConverter(config_helper=mocked_config_helper)
+def bfrk_bike_push_converter(mocked_bfrk_bw_config_helper: Mock) -> BfrkBwBikePushConverter:
+    return BfrkBwBikePushConverter(config_helper=mocked_bfrk_bw_config_helper)
 
 
 class BfrkBikePullConverterTest:
