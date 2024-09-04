@@ -25,8 +25,31 @@ def requests_mock_karlsruhe_bike(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def karlsruhe_bike_pull_converter(mocked_config_helper: Mock) -> KarlsruheBikePullConverter:
-    return KarlsruheBikePullConverter(config_helper=mocked_config_helper)
+def karlsruhe_bike_config_helper(mocked_config_helper: Mock):
+    config = {}
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def karlsruhe_bike_pull_converter(karlsruhe_bike_config_helper: Mock) -> KarlsruheBikePullConverter:
+    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_config_helper)
+
+
+@pytest.fixture
+def karlsruhe_bike_ignore_missing_capacity_config_helper(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_KARLSRUHE_BIKE_IGNORE_MISSING_CAPACITIES': True,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def karlsruhe_bike_ignore_missing_capacity_pull_converter(
+    karlsruhe_bike_ignore_missing_capacity_config_helper: Mock,
+) -> KarlsruheBikePullConverter:
+    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_ignore_missing_capacity_config_helper)
 
 
 class KarlsruheBikePullConverterTest:
@@ -37,6 +60,20 @@ class KarlsruheBikePullConverterTest:
         assert len(static_parking_site_inputs) == 296
         # Lots of missing capacities
         assert len(import_parking_site_exceptions) == 483
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_sites_ignore_missing_capacities(
+        karlsruhe_bike_ignore_missing_capacity_pull_converter: KarlsruheBikePullConverter,
+        requests_mock_karlsruhe_bike: Mocker,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_bike_ignore_missing_capacity_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 296
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

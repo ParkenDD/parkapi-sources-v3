@@ -33,8 +33,25 @@ def apcoa_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
+def apcoa_ignore_missing_coordinates_config_helper(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_APCOA_API_SUBSCRIPTION_KEY': '9be98961de004749aac8a1d8160e9eba',
+        'PARK_API_APCOA_IGNORE_MISSING_COORDINATES': True,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
 def apcoa_pull_converter(apcoa_config_helper: Mock) -> ApcoaPullConverter:
     return ApcoaPullConverter(config_helper=apcoa_config_helper)
+
+
+@pytest.fixture
+def apcoa_ignore_missing_coordinates_pull_converter(
+    apcoa_ignore_missing_coordinates_config_helper: Mock,
+) -> ApcoaPullConverter:
+    return ApcoaPullConverter(config_helper=apcoa_ignore_missing_coordinates_config_helper)
 
 
 class ApcoaPullConverterTest:
@@ -51,8 +68,31 @@ class ApcoaPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = apcoa_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 305
-        assert len(import_parking_site_exceptions) == 264
+        assert len(static_parking_site_inputs) == 345
+        assert len(import_parking_site_exceptions) == 224
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_sites_ignore_missing_coordinates(
+        apcoa_ignore_missing_coordinates_pull_converter: ApcoaPullConverter,
+        requests_mock: Mocker,
+    ):
+        json_path = Path(Path(__file__).parent, 'data', 'apcoa.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://api.apcoa-services.com/carpark-dev/v4/Carparks',
+            text=json_data,
+        )
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            apcoa_ignore_missing_coordinates_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 345
+        assert len(import_parking_site_exceptions) == 18
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -252,6 +292,40 @@ class ApcoaParkingSiteInputTest:
                     ),
                 ],
                 'Mo-Fr 00:00-24:00',
+            ),
+            # Test for different times ending with 00:00 instead of 24:00
+            (
+                [
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.MONDAY,
+                        OpeningTimes='05:00 - 00:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.TUESDAY,
+                        OpeningTimes='05:00 - 00:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.WEDNESDAY,
+                        OpeningTimes='05:00 - 00:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.THURSDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.FRIDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.SATURDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                    ApcoaOpeningHoursInput(
+                        Weekday=ApcoaOpeningHoursWeekday.SUNDAY,
+                        OpeningTimes='05:00 - 02:00',
+                    ),
+                ],
+                'Mo 05:00-24:00; Tu 05:00-24:00; We 05:00-24:00; Th 05:00-02:00; Fr 05:00-02:00; Sa 05:00-02:00; Su 05:00-02:00',
             ),
         ],
     )

@@ -12,6 +12,9 @@ from .bike_models import BfrkBikeInput
 
 
 class BfrkBwBikePushConverter(BfrkBasePushConverter):
+    bfrk_validator = DataclassValidator(BfrkBikeInput)
+    source_url_config_key = 'PARK_API_BFRK_BW_BIKE_OVERRIDE_SOURCE_URL'
+
     source_info = SourceInfo(
         uid='bfrk_bw_bike',
         name='Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze',
@@ -19,4 +22,3 @@ class BfrkBwBikePushConverter(BfrkBasePushConverter):
         source_url='https://bfrk-kat-api.efa-bw.de/bfrk_api/fahrradanlagen',
         has_realtime_data=False,
     )
-    bfrk_validator = DataclassValidator(BfrkBikeInput)

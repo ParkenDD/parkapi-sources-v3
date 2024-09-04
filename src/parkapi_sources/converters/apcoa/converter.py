@@ -41,6 +41,11 @@ class ApcoaPullConverter(PullConverter):
         parking_sites_input = self.get_data()
 
         for parking_site_dict in parking_sites_input.Results:
+            # Ignore missing coordinates if requested
+            if self.config_helper.get('PARK_API_APCOA_IGNORE_MISSING_COORDINATES', False):
+                if not parking_site_dict.get('NavigationLocations'):
+                    continue
+
             try:
                 parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(parking_site_dict)
             except ValidationError as e:

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.12.0
+
+Released 2024-09-03
+
+### Features
+
+* [Hüfner Push Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/106)
+
+
+### Fixes
+
+* [BFRK: Make URL configurable](https://github.com/ParkenDD/parkapi-sources-v3/pull/114)
+* [Karlsruhe Bike: Ignore missing capacities](https://github.com/ParkenDD/parkapi-sources-v3/pull/113)
+* [APCOA: Ignore missing coordinates](https://github.com/ParkenDD/parkapi-sources-v3/pull/112)
+* [APCOA: Fox OSM Opening Times](https://github.com/ParkenDD/parkapi-sources-v3/pull/107)
+
+
 ## 0.11.0
 
 Release 2024-08-24
