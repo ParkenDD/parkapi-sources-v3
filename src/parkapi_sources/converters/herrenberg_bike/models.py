@@ -21,7 +21,7 @@ from validataclass.validators import (
 
 from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
 from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
 
 
@@ -61,12 +61,27 @@ class HerrenbergBikeType(Enum):
         }.get(self)
 
 
-@validataclass
 class HerrenbergBikeAccessType(Enum):
     YES = 'yes'
     PRIVATE = 'private'
     CUSTOMERS = 'customers'
     MEMBERS = 'members'
+
+
+class HerrenbergBikeSupervisionType(Enum):
+    YES = 'ja'
+    NO = 'nein'
+    VIDEO = 'video'
+    BEWACHT = 'bewacht'
+    UNKNOWN = 'unbekannt'
+
+    def to_supervision_type(self) -> SupervisionType:
+        return {
+            self.YES: SupervisionType.YES,
+            self.NO: SupervisionType.NO,
+            self.VIDEO: SupervisionType.VIDEO,
+            self.BEWACHT: SupervisionType.ATTENDED,
+        }.get(self)
 
 
 @validataclass
@@ -85,13 +100,26 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     public_url: OptionalUnset[str] = NoneToUnsetValue(UrlValidator(max_length=4096)), DefaultUnset
     address: OptionalUnset[HerrenbergBikeAddressInput] = NoneToUnsetValue(DataclassValidator(HerrenbergBikeAddressInput)), DefaultUnset
     description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
+    operator_name: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     capacity: int = IntegerValidator(min_value=0)
-    capacity_cargobike: int = IntegerValidator(min_value=0)
+    capacity_charging: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    capacity_cargobike: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    max_height: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    max_width: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    supervision_type: OptionalUnset[HerrenbergBikeSupervisionType] = (
+        NoneToUnsetValue(EnumValidator(HerrenbergBikeSupervisionType)),
+        DefaultUnset,
+    )
     has_realtime_data: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
     access: OptionalUnset[HerrenbergBikeAccessType] = NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)), DefaultUnset
     date_surveyed: OptionalUnset[date] = NoneToUnsetValue(ParsedDateValidator(date_format='%Y-%m-%d')), DefaultUnset
     has_lighting: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
+    has_fee: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
     is_covered: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
+    related_location: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
+    opening_hours: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
+    max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    fee_description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
 
 
 @validataclass
@@ -109,9 +137,20 @@ class HerrenbergBikeFeatureInput:
             has_realtime_data=self.properties.has_realtime_data,
             has_lighting=self.properties.has_lighting,
             is_covered=self.properties.is_covered,
+            related_location=self.properties.related_location,
+            operator_name=self.properties.operator_name,
+            max_height=self.properties.max_height,
+            max_width=self.properties.max_width,
+            has_fee=self.properties.has_fee,
+            supervision_type=self.properties.supervision_type.to_supervision_type()
+            if self.properties.supervision_type is not UnsetValue
+            else UnsetValue,
+            fee_description=self.properties.fee_description,
+            capacity_charging=self.properties.capacity_charging,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
             static_data_updated_at=datetime.now(timezone.utc)
             if self.properties.date_surveyed is UnsetValue
             else datetime.combine(self.properties.date_surveyed, time(), tzinfo=timezone.utc),
+            purpose=PurposeType.BIKE,
         )
