@@ -11,17 +11,14 @@
                 ]
             },
             "properties": {
-                "id": 741,
-                "location": "Kinderhaus Alzental",
-                "date_survey": "2023-12-03",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "741",
+                "name": "Kinderhaus Alzental",
+                "date_surveyed": "2023-12-04",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -34,18 +31,19 @@
                 ]
             },
             "properties": {
-                "id": 743,
-                "osm_id": 184185613,
-                "location": "Sporthalle Markweg/Mensa",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 108,
-                "count_covered": 108,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Schule"
+                "original_uid": "743",
+                "osm": {
+                    "id": 184185613,
+                    "type": "node"
+                },
+                "name": "Sporthalle Markweg/Mensa",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 108,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
             }
         },
         {
@@ -58,18 +56,18 @@
                 ]
             },
             "properties": {
-                "id": 744,
-                "osm_id": 6595792648,
-                "location": "Bronntor",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 7,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "744",
+                "osm": {
+                    "id": 6595792648,
+                    "type": "node"
+                },
+                "name": "Bronntor",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -82,18 +80,18 @@
                 ]
             },
             "properties": {
-                "id": 745,
-                "osm_id": 11307619782,
-                "location": "Stiftskirche auf dem steilen Berg seitlich",
-                "date_survey": "2023-10-08",
-                "type": "Bügel",
-                "count": 12,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "745",
+                "osm": {
+                    "id": 11307619782,
+                    "type": "node"
+                },
+                "name": "Stiftskirche auf dem steilen Berg seitlich",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -106,18 +104,18 @@
                 ]
             },
             "properties": {
-                "id": 746,
-                "osm_id": 11171353064,
-                "location": "Affstätter Tal 37",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 1,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "746",
+                "osm": {
+                    "id": 11171353064,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 37",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 1,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -130,18 +128,18 @@
                 ]
             },
             "properties": {
-                "id": 747,
-                "osm_id": 7726452137,
-                "location": "Aldi",
-                "date_survey": "2023-08-23",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 5,
-                "count_covered": 5,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Kunde"
+                "original_uid": "747",
+                "osm": {
+                    "id": 7726452137,
+                    "type": "node"
+                },
+                "name": "Aldi",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -154,18 +152,18 @@
                 ]
             },
             "properties": {
-                "id": 748,
-                "osm_id": 11307699591,
-                "location": "Sporthalle / Platz",
-                "date_survey": "2023-10-10",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 55,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "748",
+                "osm": {
+                    "id": 11307699591,
+                    "type": "node"
+                },
+                "name": "Sporthalle / Platz",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 55,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -178,18 +176,18 @@
                 ]
             },
             "properties": {
-                "id": 749,
-                "osm_id": 11171353058,
-                "location": "Affstätter Tal 15",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "749",
+                "osm": {
+                    "id": 11171353058,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 15",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -202,18 +200,18 @@
                 ]
             },
             "properties": {
-                "id": 750,
-                "osm_id": 11113693796,
-                "location": "Beim Oberamt",
-                "date_survey": "2023-08-09",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "750",
+                "osm": {
+                    "id": 11113693796,
+                    "type": "node"
+                },
+                "name": "Beim Oberamt",
+                "date_surveyed": "2023-08-10",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -226,18 +224,18 @@
                 ]
             },
             "properties": {
-                "id": 751,
-                "osm_id": 11307699590,
-                "location": "Realschule",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "751",
+                "osm": {
+                    "id": 11307699590,
+                    "type": "node"
+                },
+                "name": "Realschule",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -250,18 +248,18 @@
                 ]
             },
             "properties": {
-                "id": 752,
-                "osm_id": 11140323985,
-                "location": "Schreinerei bayer",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Kunde"
+                "original_uid": "752",
+                "osm": {
+                    "id": 11140323985,
+                    "type": "node"
+                },
+                "name": "Schreinerei bayer",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -274,18 +272,18 @@
                 ]
             },
             "properties": {
-                "id": 753,
-                "osm_id": 11171353052,
-                "location": "Türkisches Kulturzentrum",
-                "date_survey": "2023-08-23",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "753",
+                "osm": {
+                    "id": 11171353052,
+                    "type": "node"
+                },
+                "name": "Türkisches Kulturzentrum",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -298,18 +296,18 @@
                 ]
             },
             "properties": {
-                "id": 754,
-                "osm_id": 11137716397,
-                "location": "Conny & Team Friseure",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "754",
+                "osm": {
+                    "id": 11137716397,
+                    "type": "node"
+                },
+                "name": "Conny & Team Friseure",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -322,18 +320,18 @@
                 ]
             },
             "properties": {
-                "id": 755,
-                "osm_id": 11113693795,
-                "location": "Stuttgarter Straße",
-                "date_survey": "2023-08-09",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "755",
+                "osm": {
+                    "id": 11113693795,
+                    "type": "node"
+                },
+                "name": "Stuttgarter Straße",
+                "date_surveyed": "2023-08-10",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -346,18 +344,18 @@
                 ]
             },
             "properties": {
-                "id": 756,
-                "osm_id": 7793922195,
-                "location": "Seestraße 31",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 14,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "756",
+                "osm": {
+                    "id": 7793922195,
+                    "type": "node"
+                },
+                "name": "Seestraße 31",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -370,18 +368,18 @@
                 ]
             },
             "properties": {
-                "id": 757,
-                "osm_id": 11307699587,
-                "location": "Seegers back Spezialit??ten",
-                "date_survey": "2023-10-10",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "757",
+                "osm": {
+                    "id": 11307699587,
+                    "type": "node"
+                },
+                "name": "Seegers back Spezialit??ten",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -394,18 +392,18 @@
                 ]
             },
             "properties": {
-                "id": 758,
-                "osm_id": 11185503362,
-                "location": "Invita Betreutes Wohnen",
-                "date_survey": "2023-09-06",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Unklar"
+                "original_uid": "758",
+                "osm": {
+                    "id": 11185503362,
+                    "type": "node"
+                },
+                "name": "Invita Betreutes Wohnen",
+                "date_surveyed": "2023-09-07",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -418,18 +416,18 @@
                 ]
             },
             "properties": {
-                "id": 759,
-                "osm_id": 11307619780,
-                "location": "Brahmstrasse 2",
-                "date_survey": "2023-10-01",
-                "type": "Reine Vorderradhalterung",
-                "count": 7,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "759",
+                "osm": {
+                    "id": 11307619780,
+                    "type": "node"
+                },
+                "name": "Brahmstrasse 2",
+                "date_surveyed": "2023-10-02",
+                "type": "wall_loops",
+                "capacity": 7,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -442,16 +440,14 @@
                 ]
             },
             "properties": {
-                "id": 760,
-                "location": "Bushaltestelle Jennerstra??e Fahrtrichtung Herrenberg",
-                "date_survey": "2023-09-18",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "760",
+                "name": "Bushaltestelle Jennerstra??e Fahrtrichtung Herrenberg",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -464,18 +460,18 @@
                 ]
             },
             "properties": {
-                "id": 761,
-                "osm_id": 11307556495,
-                "location": "Platz bei der Kreissparkasse Gueltstein",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "761",
+                "osm": {
+                    "id": 11307556495,
+                    "type": "node"
+                },
+                "name": "Platz bei der Kreissparkasse Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -488,18 +484,18 @@
                 ]
             },
             "properties": {
-                "id": 762,
-                "osm_id": 11357713109,
-                "location": "Vor dem Dekanat",
-                "date_survey": "2023-11-15",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Unklar"
+                "original_uid": "762",
+                "osm": {
+                    "id": 11357713109,
+                    "type": "node"
+                },
+                "name": "Vor dem Dekanat",
+                "date_surveyed": "2023-11-16",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -512,18 +508,18 @@
                 ]
             },
             "properties": {
-                "id": 763,
-                "osm_id": 8974144399,
-                "location": "Vor der Grundschule",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "763",
+                "osm": {
+                    "id": 8974144399,
+                    "type": "node"
+                },
+                "name": "Vor der Grundschule",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -536,18 +532,18 @@
                 ]
             },
             "properties": {
-                "id": 764,
-                "osm_id": 11254817169,
-                "location": "Habichtstraße",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "764",
+                "osm": {
+                    "id": 11254817169,
+                    "type": "node"
+                },
+                "name": "Habichtstraße",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -560,17 +556,18 @@
                 ]
             },
             "properties": {
-                "id": 765,
-                "osm_id": 11307030672,
-                "location": "Bolzplatz Kuppingen R??merstra??e",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 11,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "765",
+                "osm": {
+                    "id": 11307030672,
+                    "type": "node"
+                },
+                "name": "Bolzplatz Kuppingen R??merstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -583,18 +580,18 @@
                 ]
             },
             "properties": {
-                "id": 766,
-                "osm_id": 11137694809,
-                "location": "Johannes-Kepler-Stra??e",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "766",
+                "osm": {
+                    "id": 11137694809,
+                    "type": "node"
+                },
+                "name": "Johannes-Kepler-Stra??e",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -607,18 +604,18 @@
                 ]
             },
             "properties": {
-                "id": 767,
-                "osm_id": 8974144403,
-                "location": "Ammertalhalle",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 20,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "767",
+                "osm": {
+                    "id": 8974144403,
+                    "type": "node"
+                },
+                "name": "Ammertalhalle",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -631,18 +628,18 @@
                 ]
             },
             "properties": {
-                "id": 768,
-                "osm_id": 8071796325,
-                "location": "Gegenüber Denns bio",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 18,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "768",
+                "osm": {
+                    "id": 8071796325,
+                    "type": "node"
+                },
+                "name": "Gegenüber Denns bio",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 18,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -655,18 +652,18 @@
                 ]
             },
             "properties": {
-                "id": 769,
-                "osm_id": 11113693798,
-                "location": "Kita Aischbachstra??e",
-                "date_survey": "2023-08-13",
-                "type": "Bügel",
-                "count": 46,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "769",
+                "osm": {
+                    "id": 11113693798,
+                    "type": "node"
+                },
+                "name": "Kita Aischbachstra??e",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 46,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -679,17 +676,18 @@
                 ]
             },
             "properties": {
-                "id": 770,
-                "osm_id": 11254881818,
-                "location": "Gemeindehalle Kuppingen",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "770",
+                "osm": {
+                    "id": 11254881818,
+                    "type": "node"
+                },
+                "name": "Gemeindehalle Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -702,18 +700,18 @@
                 ]
             },
             "properties": {
-                "id": 771,
-                "osm_id": 11137684052,
-                "location": "Johannes-Kepler-Stra??e (2)",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "771",
+                "osm": {
+                    "id": 11137684052,
+                    "type": "node"
+                },
+                "name": "Johannes-Kepler-Stra??e (2)",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -726,18 +724,18 @@
                 ]
             },
             "properties": {
-                "id": 772,
-                "osm_id": 11140488154,
-                "location": "Binder Optik (2)",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 24,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "772",
+                "osm": {
+                    "id": 11140488154,
+                    "type": "node"
+                },
+                "name": "Binder Optik (2)",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 24,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -750,18 +748,18 @@
                 ]
             },
             "properties": {
-                "id": 773,
-                "osm_id": 11171353063,
-                "location": "Affstätter Tal 35",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "773",
+                "osm": {
+                    "id": 11171353063,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 35",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -774,18 +772,18 @@
                 ]
             },
             "properties": {
-                "id": 774,
-                "osm_id": 11307500517,
-                "location": "Wohnhaus. Hohenzollernstra??e 83",
-                "date_survey": "2023-09-24",
-                "type": "Reine Vorderradhalterung",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Privathaus"
+                "original_uid": "774",
+                "osm": {
+                    "id": 11307500517,
+                    "type": "node"
+                },
+                "name": "Wohnhaus. Hohenzollernstra??e 83",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -798,18 +796,18 @@
                 ]
             },
             "properties": {
-                "id": 775,
-                "osm_id": 11307120163,
-                "location": "Kindergarten Mittelfeldstra??e Affst??tt",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 5,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "775",
+                "osm": {
+                    "id": 11307120163,
+                    "type": "node"
+                },
+                "name": "Kindergarten Mittelfeldstra??e Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -822,18 +820,18 @@
                 ]
             },
             "properties": {
-                "id": 776,
-                "osm_id": 11171353060,
-                "location": "Affstätter Tal 17",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "776",
+                "osm": {
+                    "id": 11171353060,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 17",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -846,18 +844,18 @@
                 ]
             },
             "properties": {
-                "id": 777,
-                "osm_id": 11307120155,
-                "location": "Gemeindehalle Affst??tt",
-                "date_survey": "2023-09-19",
-                "type": "Bügel",
-                "count": 46,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "777",
+                "osm": {
+                    "id": 11307120155,
+                    "type": "node"
+                },
+                "name": "Gemeindehalle Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "stands",
+                "capacity": 46,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -870,18 +868,18 @@
                 ]
             },
             "properties": {
-                "id": 778,
-                "osm_id": 1523545080,
-                "location": "Bahnhof Gueltstein",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 24,
-                "count_covered": 24,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "778",
+                "osm": {
+                    "id": 1523545080,
+                    "type": "node"
+                },
+                "name": "Bahnhof Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 24,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -894,18 +892,18 @@
                 ]
             },
             "properties": {
-                "id": 779,
-                "osm_id": 1044290591,
-                "location": "VfL Herrenberg",
-                "date_survey": "2023-08-13",
-                "type": "Bügel",
-                "count": 14,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "779",
+                "osm": {
+                    "id": 1044290591,
+                    "type": "node"
+                },
+                "name": "VfL Herrenberg",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -918,17 +916,18 @@
                 ]
             },
             "properties": {
-                "id": 780,
-                "osm_id": 11306929065,
-                "location": "Kindertageseinrichtung Mahdenstra??e",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "780",
+                "osm": {
+                    "id": 11306929065,
+                    "type": "node"
+                },
+                "name": "Kindertageseinrichtung Mahdenstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -941,18 +940,18 @@
                 ]
             },
             "properties": {
-                "id": 781,
-                "osm_id": 11307556499,
-                "location": "Bäcker Baier Parkplatz",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 14,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "781",
+                "osm": {
+                    "id": 11307556499,
+                    "type": "node"
+                },
+                "name": "Bäcker Baier Parkplatz",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -965,18 +964,18 @@
                 ]
             },
             "properties": {
-                "id": 782,
-                "osm_id": 11138405691,
-                "location": "Christuskirche",
-                "date_survey": "2023-08-22",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "782",
+                "osm": {
+                    "id": 11138405691,
+                    "type": "node"
+                },
+                "name": "Christuskirche",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -989,18 +988,18 @@
                 ]
             },
             "properties": {
-                "id": 783,
-                "osm_id": 11113769605,
-                "location": "Schießmauer 1",
-                "date_survey": "2023-08-13",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "783",
+                "osm": {
+                    "id": 11113769605,
+                    "type": "node"
+                },
+                "name": "Schießmauer 1",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1013,18 +1012,18 @@
                 ]
             },
             "properties": {
-                "id": 784,
-                "osm_id": 931776782,
-                "location": "Grundschule Haslach",
-                "date_survey": "2023-09-24",
-                "type": "Bügel",
-                "count": 14,
-                "count_covered": 14,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "784",
+                "osm": {
+                    "id": 931776782,
+                    "type": "node"
+                },
+                "name": "Grundschule Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1037,17 +1036,18 @@
                 ]
             },
             "properties": {
-                "id": 785,
-                "osm_id": 11307619776,
-                "location": "Kindertageseinrichtung W??rmstra??e",
-                "date_survey": "2023-09-28",
-                "type": "Reine Vorderradhalterung",
-                "count": 9,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "785",
+                "osm": {
+                    "id": 11307619776,
+                    "type": "node"
+                },
+                "name": "Kindertageseinrichtung W??rmstra??e",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 9,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1060,18 +1060,18 @@
                 ]
             },
             "properties": {
-                "id": 786,
-                "osm_id": 11307699586,
-                "location": "Tübinger Straße / Stadt Grabe Staffel",
-                "date_survey": "2023-10-08",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "786",
+                "osm": {
+                    "id": 11307699586,
+                    "type": "node"
+                },
+                "name": "Tübinger Straße / Stadt Grabe Staffel",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1084,18 +1084,18 @@
                 ]
             },
             "properties": {
-                "id": 787,
-                "osm_id": 5322238594,
-                "location": "Graben",
-                "date_survey": "2023-09-06",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "787",
+                "osm": {
+                    "id": 5322238594,
+                    "type": "node"
+                },
+                "name": "Graben",
+                "date_surveyed": "2023-09-07",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1108,18 +1108,18 @@
                 ]
             },
             "properties": {
-                "id": 788,
-                "osm_id": 11113693804,
-                "location": "Schießmauer 1",
-                "date_survey": "2023-08-13",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 8,
-                "count_covered": 8,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "788",
+                "osm": {
+                    "id": 11113693804,
+                    "type": "node"
+                },
+                "name": "Schießmauer 1",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1132,17 +1132,14 @@
                 ]
             },
             "properties": {
-                "id": 789,
-                "location": "Stadtbibliothek",
-                "date_survey": "2023-12-03",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "öffenltich"
+                "original_uid": "789",
+                "name": "Stadtbibliothek",
+                "date_surveyed": "2023-12-04",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1155,18 +1152,18 @@
                 ]
             },
             "properties": {
-                "id": 790,
-                "osm_id": 11307619774,
-                "location": "Haltestelle Abze",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "790",
+                "osm": {
+                    "id": 11307619774,
+                    "type": "node"
+                },
+                "name": "Haltestelle Abze",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1179,18 +1176,18 @@
                 ]
             },
             "properties": {
-                "id": 791,
-                "osm_id": 11307619777,
-                "location": "Kindertageseinrichtung Br??hlweg",
-                "date_survey": "2023-09-28",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "791",
+                "osm": {
+                    "id": 11307619777,
+                    "type": "node"
+                },
+                "name": "Kindertageseinrichtung Br??hlweg",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1203,18 +1200,18 @@
                 ]
             },
             "properties": {
-                "id": 792,
-                "osm_id": 11185503366,
-                "location": "Lidl",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 22,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "792",
+                "osm": {
+                    "id": 11185503366,
+                    "type": "node"
+                },
+                "name": "Lidl",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 22,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1227,18 +1224,18 @@
                 ]
             },
             "properties": {
-                "id": 793,
-                "osm_id": 8043805372,
-                "location": "Vor der Sporthalle",
-                "date_survey": "2023-09-30",
-                "type": "Bügel",
-                "count": 14,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "793",
+                "osm": {
+                    "id": 8043805372,
+                    "type": "node"
+                },
+                "name": "Vor der Sporthalle",
+                "date_surveyed": "2023-10-01",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1251,18 +1248,18 @@
                 ]
             },
             "properties": {
-                "id": 794,
-                "osm_id": 11307500521,
-                "location": "Ehem ev Gemeindehaus",
-                "date_survey": "2023-09-24",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "794",
+                "osm": {
+                    "id": 11307500521,
+                    "type": "node"
+                },
+                "name": "Ehem ev Gemeindehaus",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1275,18 +1272,18 @@
                 ]
             },
             "properties": {
-                "id": 795,
-                "osm_id": 8875319143,
-                "location": "Seeländer platz",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 26,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "795",
+                "osm": {
+                    "id": 8875319143,
+                    "type": "node"
+                },
+                "name": "Seeländer platz",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 26,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1299,18 +1296,18 @@
                 ]
             },
             "properties": {
-                "id": 796,
-                "osm_id": 28298726,
-                "location": "Hallenbad Herrenberg",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 192,
-                "count_covered": 192,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "796",
+                "osm": {
+                    "id": 28298726,
+                    "type": "node"
+                },
+                "name": "Hallenbad Herrenberg",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 192,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1323,18 +1320,18 @@
                 ]
             },
             "properties": {
-                "id": 797,
-                "osm_id": 11307500514,
-                "location": "Spielplatz Kaffeeberg Affst??tt",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "797",
+                "osm": {
+                    "id": 11307500514,
+                    "type": "node"
+                },
+                "name": "Spielplatz Kaffeeberg Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1347,18 +1344,18 @@
                 ]
             },
             "properties": {
-                "id": 798,
-                "osm_id": 11185503367,
-                "location": "Seelesplatz",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 3,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "798",
+                "osm": {
+                    "id": 11185503367,
+                    "type": "node"
+                },
+                "name": "Seelesplatz",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1371,18 +1368,18 @@
                 ]
             },
             "properties": {
-                "id": 799,
-                "osm_id": 11138437839,
-                "location": "Tafellädle Deutsches Rotes Kreuz",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "799",
+                "osm": {
+                    "id": 11138437839,
+                    "type": "node"
+                },
+                "name": "Tafellädle Deutsches Rotes Kreuz",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1395,18 +1392,18 @@
                 ]
             },
             "properties": {
-                "id": 800,
-                "osm_id": 8085654178,
-                "location": "Denns Bio",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 10,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "800",
+                "osm": {
+                    "id": 8085654178,
+                    "type": "node"
+                },
+                "name": "Denns Bio",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1419,18 +1416,18 @@
                 ]
             },
             "properties": {
-                "id": 801,
-                "osm_id": 81512766,
-                "location": "Bahnhof Herrenberg ( B??cker / Post Seite )",
-                "date_survey": "2023-10-10",
-                "type": "Reine Vorderradhalterung",
-                "count": 160,
-                "count_covered": 160,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "801",
+                "osm": {
+                    "id": 81512766,
+                    "type": "node"
+                },
+                "name": "Bahnhof Herrenberg ( B??cker / Post Seite )",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 160,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1443,18 +1440,18 @@
                 ]
             },
             "properties": {
-                "id": 802,
-                "osm_id": 6595890251,
-                "location": "Beim Rathaus",
-                "date_survey": "2023-08-09",
-                "type": "Bügel",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "802",
+                "osm": {
+                    "id": 6595890251,
+                    "type": "node"
+                },
+                "name": "Beim Rathaus",
+                "date_surveyed": "2023-08-10",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1467,18 +1464,18 @@
                 ]
             },
             "properties": {
-                "id": 803,
-                "osm_id": 11307556494,
-                "location": "Spielplatz Goldregen Stra??e Gueltstein",
-                "date_survey": "2023-09-28",
-                "type": "Reine Vorderradhalterung",
-                "count": 35,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "803",
+                "osm": {
+                    "id": 11307556494,
+                    "type": "node"
+                },
+                "name": "Spielplatz Goldregen Stra??e Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 35,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1491,18 +1488,18 @@
                 ]
             },
             "properties": {
-                "id": 804,
-                "osm_id": 11140871398,
-                "location": "Bäcker Baier",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 11,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "804",
+                "osm": {
+                    "id": 11140871398,
+                    "type": "node"
+                },
+                "name": "Bäcker Baier",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1515,18 +1512,18 @@
                 ]
             },
             "properties": {
-                "id": 805,
-                "osm_id": 7920727074,
-                "location": "Calisthenics station",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "805",
+                "osm": {
+                    "id": 7920727074,
+                    "type": "node"
+                },
+                "name": "Calisthenics station",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1539,18 +1536,18 @@
                 ]
             },
             "properties": {
-                "id": 806,
-                "osm_id": 11254881815,
-                "location": "Karl-Kühnle-Grundschule",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 144,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "806",
+                "osm": {
+                    "id": 11254881815,
+                    "type": "node"
+                },
+                "name": "Karl-Kühnle-Grundschule",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 144,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1563,18 +1560,18 @@
                 ]
             },
             "properties": {
-                "id": 807,
-                "osm_id": 11254817170,
-                "location": "Friedrich fröbel Schule",
-                "date_survey": "2023-09-18",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 20,
-                "count_covered": 20,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "807",
+                "osm": {
+                    "id": 11254817170,
+                    "type": "node"
+                },
+                "name": "Friedrich fröbel Schule",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1587,18 +1584,18 @@
                 ]
             },
             "properties": {
-                "id": 808,
-                "osm_id": 10011272702,
-                "location": "Bahnhof Aldi seiten",
-                "date_survey": "2023-10-10",
-                "type": "Fahrradboxen",
-                "count": 57,
-                "count_covered": 57,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "808",
+                "osm": {
+                    "id": 10011272702,
+                    "type": "node"
+                },
+                "name": "Bahnhof Aldi seiten",
+                "date_surveyed": "2023-10-11",
+                "type": "lockers",
+                "capacity": 57,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": true
             }
         },
         {
@@ -1611,18 +1608,19 @@
                 ]
             },
             "properties": {
-                "id": 809,
-                "osm_id": 1080195117,
-                "location": "Jerg-Ratgeb-Schule 2",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 34,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Schule"
+                "original_uid": "809",
+                "osm": {
+                    "id": 1080195117,
+                    "type": "node"
+                },
+                "name": "Jerg-Ratgeb-Schule 2",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 34,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
             }
         },
         {
@@ -1635,17 +1633,14 @@
                 ]
             },
             "properties": {
-                "id": 810,
-                "location": "Evangelisches gemeindehaus kayh",
-                "date_survey": "2023-09-30",
-                "type": "Bügel",
-                "count": 20,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "810",
+                "name": "Evangelisches gemeindehaus kayh",
+                "date_surveyed": "2023-10-01",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1658,18 +1653,18 @@
                 ]
             },
             "properties": {
-                "id": 811,
-                "osm_id": 11185503361,
-                "location": "Bismarckstraße 12",
-                "date_survey": "2023-09-06",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Nein/Privat"
+                "original_uid": "811",
+                "osm": {
+                    "id": 11185503361,
+                    "type": "node"
+                },
+                "name": "Bismarckstraße 12",
+                "date_surveyed": "2023-09-07",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1682,18 +1677,18 @@
                 ]
             },
             "properties": {
-                "id": 812,
-                "osm_id": 11307120159,
-                "location": "Evang Gemeindehaus",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 9,
-                "count_covered": 4,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "812",
+                "osm": {
+                    "id": 11307120159,
+                    "type": "node"
+                },
+                "name": "Evang Gemeindehaus",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 9,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1706,18 +1701,18 @@
                 ]
             },
             "properties": {
-                "id": 813,
-                "osm_id": 11113693797,
-                "location": "Kegelcenter Restaurant",
-                "date_survey": "2023-08-13",
-                "type": "Reine Vorderradhalterung",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "813",
+                "osm": {
+                    "id": 11113693797,
+                    "type": "node"
+                },
+                "name": "Kegelcenter Restaurant",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1730,18 +1725,18 @@
                 ]
             },
             "properties": {
-                "id": 814,
-                "osm_id": 11307619779,
-                "location": "Tübinger Str. Bioladen u. Blattwerk",
-                "date_survey": "2023-10-01",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "814",
+                "osm": {
+                    "id": 11307619779,
+                    "type": "node"
+                },
+                "name": "Tübinger Str. Bioladen u. Blattwerk",
+                "date_surveyed": "2023-10-02",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1754,18 +1749,18 @@
                 ]
             },
             "properties": {
-                "id": 815,
-                "osm_id": 95685677,
-                "location": "Volksbank Stadion",
-                "date_survey": "2023-08-13",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "815",
+                "osm": {
+                    "id": 95685677,
+                    "type": "node"
+                },
+                "name": "Volksbank Stadion",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1778,18 +1773,18 @@
                 ]
             },
             "properties": {
-                "id": 816,
-                "osm_id": 11171353065,
-                "location": "Affstätter Tal 39",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "816",
+                "osm": {
+                    "id": 11171353065,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 39",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1802,18 +1797,18 @@
                 ]
             },
             "properties": {
-                "id": 817,
-                "osm_id": 28353623,
-                "location": "Hauptbahnhof Herrenberg",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 96,
-                "count_covered": 96,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "817",
+                "osm": {
+                    "id": 28353623,
+                    "type": "node"
+                },
+                "name": "Hauptbahnhof Herrenberg",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 96,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1826,17 +1821,18 @@
                 ]
             },
             "properties": {
-                "id": 818,
-                "osm_id": 11307030675,
-                "location": "Bushaltestelle Jennerstra??e Fahrtrichtung Wildberg",
-                "date_survey": "2023-09-18",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "818",
+                "osm": {
+                    "id": 11307030675,
+                    "type": "node"
+                },
+                "name": "Bushaltestelle Jennerstra??e Fahrtrichtung Wildberg",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1849,18 +1845,18 @@
                 ]
             },
             "properties": {
-                "id": 819,
-                "osm_id": 999690967,
-                "location": "VFL Gebäude 1",
-                "date_survey": "2023-08-13",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 10,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "819",
+                "osm": {
+                    "id": 999690967,
+                    "type": "node"
+                },
+                "name": "VFL Gebäude 1",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1873,18 +1869,18 @@
                 ]
             },
             "properties": {
-                "id": 820,
-                "osm_id": 702362944,
-                "location": "Bahnhof Kaufland Seite Unterführung",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 40,
-                "count_covered": 40,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "820",
+                "osm": {
+                    "id": 702362944,
+                    "type": "node"
+                },
+                "name": "Bahnhof Kaufland Seite Unterführung",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 40,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1897,16 +1893,14 @@
                 ]
             },
             "properties": {
-                "id": 821,
-                "location": "Vor Parkhauseinfahrt Seeländer",
-                "date_survey": "2023-12-03",
-                "count": 28,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "821",
+                "name": "Vor Parkhauseinfahrt Seeländer",
+                "date_surveyed": "2023-12-04",
+                "type": "other",
+                "capacity": 28,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1919,18 +1913,18 @@
                 ]
             },
             "properties": {
-                "id": 822,
-                "osm_id": 6596031262,
-                "location": "Diakonieladen Herrenberg / auf dem Graben",
-                "date_survey": "2023-10-08",
+                "original_uid": "822",
+                "osm": {
+                    "id": 6596031262,
+                    "type": "node"
+                },
+                "name": "Diakonieladen Herrenberg / auf dem Graben",
+                "date_surveyed": "2023-10-09",
                 "type": "lean_and_stick",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1943,18 +1937,18 @@
                 ]
             },
             "properties": {
-                "id": 823,
-                "osm_id": 597429170,
-                "location": "Weg zum Schönbuchturm",
-                "date_survey": "2023-10-01",
-                "type": "Holzkonstruktion",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "823",
+                "osm": {
+                    "id": 597429170,
+                    "type": "node"
+                },
+                "name": "Weg zum Schönbuchturm",
+                "date_surveyed": "2023-10-02",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1967,18 +1961,18 @@
                 ]
             },
             "properties": {
-                "id": 824,
-                "osm_id": 11171350998,
-                "location": "Affstätter Tal 33",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "824",
+                "osm": {
+                    "id": 11171350998,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 33",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -1991,18 +1985,18 @@
                 ]
             },
             "properties": {
-                "id": 825,
-                "osm_id": 11137732875,
-                "location": "Württembergische weimann & bühl",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "825",
+                "osm": {
+                    "id": 11137732875,
+                    "type": "node"
+                },
+                "name": "Württembergische weimann & bühl",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2015,18 +2009,18 @@
                 ]
             },
             "properties": {
-                "id": 826,
-                "osm_id": 28353623,
-                "location": "Bahnhof Herrenberg (Kaufland Seite direkt nach Unterführung )",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 132,
-                "count_covered": 132,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "826",
+                "osm": {
+                    "id": 28353623,
+                    "type": "node"
+                },
+                "name": "Bahnhof Herrenberg (Kaufland Seite direkt nach Unterführung )",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 132,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2039,18 +2033,18 @@
                 ]
             },
             "properties": {
-                "id": 827,
-                "osm_id": 11185503369,
-                "location": "Nufringer Tor unten 2",
-                "date_survey": "2023-09-11",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "827",
+                "osm": {
+                    "id": 11185503369,
+                    "type": "node"
+                },
+                "name": "Nufringer Tor unten 2",
+                "date_surveyed": "2023-09-12",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2063,18 +2057,18 @@
                 ]
             },
             "properties": {
-                "id": 828,
-                "osm_id": 269604959,
-                "location": "Schickhardt gymnasium",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 78,
-                "count_covered": 78,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "828",
+                "osm": {
+                    "id": 269604959,
+                    "type": "node"
+                },
+                "name": "Schickhardt gymnasium",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 78,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2087,18 +2081,18 @@
                 ]
             },
             "properties": {
-                "id": 829,
-                "osm_id": 11254881819,
-                "location": "Stephanus-Stift",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "829",
+                "osm": {
+                    "id": 11254881819,
+                    "type": "node"
+                },
+                "name": "Stephanus-Stift",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2111,18 +2105,18 @@
                 ]
             },
             "properties": {
-                "id": 830,
-                "osm_id": 7726452136,
-                "location": "Kaufland",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 33,
-                "count_covered": 33,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Kunde"
+                "original_uid": "830",
+                "osm": {
+                    "id": 7726452136,
+                    "type": "node"
+                },
+                "name": "Kaufland",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 33,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2135,18 +2129,18 @@
                 ]
             },
             "properties": {
-                "id": 831,
-                "osm_id": 11307619778,
-                "location": "Naturfreundehaus",
-                "date_survey": "2023-10-01",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Nur bei ??ffnungszeiten"
+                "original_uid": "831",
+                "osm": {
+                    "id": 11307619778,
+                    "type": "node"
+                },
+                "name": "Naturfreundehaus",
+                "date_surveyed": "2023-10-02",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2159,18 +2153,18 @@
                 ]
             },
             "properties": {
-                "id": 832,
-                "osm_id": 11307556497,
-                "location": "Ammerstadion",
-                "date_survey": "2023-09-28",
-                "type": "Reine Vorderradhalterung",
-                "count": 11,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "832",
+                "osm": {
+                    "id": 11307556497,
+                    "type": "node"
+                },
+                "name": "Ammerstadion",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2183,18 +2177,18 @@
                 ]
             },
             "properties": {
-                "id": 833,
-                "osm_id": 11254817168,
-                "location": "Adlerstraße",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 40,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "833",
+                "osm": {
+                    "id": 11254817168,
+                    "type": "node"
+                },
+                "name": "Adlerstraße",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 40,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2207,18 +2201,18 @@
                 ]
             },
             "properties": {
-                "id": 834,
-                "osm_id": 11185503364,
-                "location": "Kern Kanzlei",
-                "date_survey": "2023-09-06",
-                "type": "Reine Vorderradhalterung",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Unklar"
+                "original_uid": "834",
+                "osm": {
+                    "id": 11185503364,
+                    "type": "node"
+                },
+                "name": "Kern Kanzlei",
+                "date_surveyed": "2023-09-07",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2231,18 +2225,18 @@
                 ]
             },
             "properties": {
-                "id": 835,
-                "osm_id": 11140873575,
-                "location": "TAKKO Fashion",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 40,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "835",
+                "osm": {
+                    "id": 11140873575,
+                    "type": "node"
+                },
+                "name": "TAKKO Fashion",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 40,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2255,18 +2249,18 @@
                 ]
             },
             "properties": {
-                "id": 836,
-                "osm_id": 8071796321,
-                "location": "Rossmann",
-                "date_survey": "2023-09-11",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Kunden"
+                "original_uid": "836",
+                "osm": {
+                    "id": 8071796321,
+                    "type": "node"
+                },
+                "name": "Rossmann",
+                "date_surveyed": "2023-09-12",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2279,18 +2273,18 @@
                 ]
             },
             "properties": {
-                "id": 837,
-                "osm_id": 11137789465,
-                "location": "Straßenverkehr Kfz Zulassungsstelle",
-                "date_survey": "2023-08-22",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 6,
-                "count_covered": 6,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "837",
+                "osm": {
+                    "id": 11137789465,
+                    "type": "node"
+                },
+                "name": "Straßenverkehr Kfz Zulassungsstelle",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2303,18 +2297,18 @@
                 ]
             },
             "properties": {
-                "id": 838,
-                "osm_id": 11307120158,
-                "location": "Rathaus Affstätt",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "838",
+                "osm": {
+                    "id": 11307120158,
+                    "type": "node"
+                },
+                "name": "Rathaus Affstätt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2327,18 +2321,18 @@
                 ]
             },
             "properties": {
-                "id": 839,
-                "osm_id": 11307556498,
-                "location": "Reithalle",
-                "date_survey": "2023-09-28",
-                "type": "Reine Vorderradhalterung",
-                "count": 50,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "839",
+                "osm": {
+                    "id": 11307556498,
+                    "type": "node"
+                },
+                "name": "Reithalle",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 50,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2351,18 +2345,18 @@
                 ]
             },
             "properties": {
-                "id": 840,
-                "osm_id": 11137799936,
-                "location": "Kirche St. Martin",
-                "date_survey": "2023-08-22",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "840",
+                "osm": {
+                    "id": 11137799936,
+                    "type": "node"
+                },
+                "name": "Kirche St. Martin",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2375,17 +2369,14 @@
                 ]
             },
             "properties": {
-                "id": 841,
-                "location": "Am joachimsberg",
-                "date_survey": "2023-10-08",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "841",
+                "name": "Am joachimsberg",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2398,18 +2389,18 @@
                 ]
             },
             "properties": {
-                "id": 842,
-                "osm_id": 11307500515,
-                "location": "KiTa Gartenstra??e Affst??tt",
-                "date_survey": "2023-09-19",
-                "type": "Nische zum Abstellen",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": true,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "842",
+                "osm": {
+                    "id": 11307500515,
+                    "type": "node"
+                },
+                "name": "KiTa Gartenstra??e Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "floor",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2422,18 +2413,18 @@
                 ]
             },
             "properties": {
-                "id": 843,
-                "osm_id": 11306929067,
-                "location": "Bezirksamt Oberjesingen",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "843",
+                "osm": {
+                    "id": 11306929067,
+                    "type": "node"
+                },
+                "name": "Bezirksamt Oberjesingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2446,18 +2437,18 @@
                 ]
             },
             "properties": {
-                "id": 844,
-                "osm_id": 81512766,
-                "location": "Bahnhof Herrenberg (Post / Bäcker Seite )",
-                "date_survey": "2023-10-10",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 144,
-                "count_covered": 144,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "844",
+                "osm": {
+                    "id": 81512766,
+                    "type": "node"
+                },
+                "name": "Bahnhof Herrenberg (Post / Bäcker Seite )",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 144,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2470,18 +2461,18 @@
                 ]
             },
             "properties": {
-                "id": 845,
-                "osm_id": 7920751015,
-                "location": "Bronntor",
-                "date_survey": "2023-10-08",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "845",
+                "osm": {
+                    "id": 7920751015,
+                    "type": "node"
+                },
+                "name": "Bronntor",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2494,18 +2485,18 @@
                 ]
             },
             "properties": {
-                "id": 846,
-                "osm_id": 11171353054,
-                "location": "Elektro Hämmerle",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "846",
+                "osm": {
+                    "id": 11171353054,
+                    "type": "node"
+                },
+                "name": "Elektro Hämmerle",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2518,17 +2509,18 @@
                 ]
             },
             "properties": {
-                "id": 847,
-                "osm_id": 11254881813,
-                "location": "Kinderhaus Keltenstra??e 11",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "847",
+                "osm": {
+                    "id": 11254881813,
+                    "type": "node"
+                },
+                "name": "Kinderhaus Keltenstra??e 11",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2541,18 +2533,18 @@
                 ]
             },
             "properties": {
-                "id": 848,
-                "osm_id": 11307120157,
-                "location": "Leinenbrunnen 1. Arztpraxis Dr N????le",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "848",
+                "osm": {
+                    "id": 11307120157,
+                    "type": "node"
+                },
+                "name": "Leinenbrunnen 1. Arztpraxis Dr N????le",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2565,18 +2557,18 @@
                 ]
             },
             "properties": {
-                "id": 849,
-                "osm_id": 9082074724,
-                "location": "FSL Herrenberg",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "849",
+                "osm": {
+                    "id": 9082074724,
+                    "type": "node"
+                },
+                "name": "FSL Herrenberg",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2589,18 +2581,18 @@
                 ]
             },
             "properties": {
-                "id": 850,
-                "osm_id": 8875319144,
-                "location": "Technisches Rathaus",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 14,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "850",
+                "osm": {
+                    "id": 8875319144,
+                    "type": "node"
+                },
+                "name": "Technisches Rathaus",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2613,18 +2605,18 @@
                 ]
             },
             "properties": {
-                "id": 851,
-                "osm_id": 11254881814,
-                "location": "Kita Oberjesingerstra??e",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 21,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "851",
+                "osm": {
+                    "id": 11254881814,
+                    "type": "node"
+                },
+                "name": "Kita Oberjesingerstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 21,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2637,18 +2629,18 @@
                 ]
             },
             "properties": {
-                "id": 852,
-                "osm_id": 11307030669,
-                "location": "Evangelisches Gemeindehaus",
-                "date_survey": "2023-09-18",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 22,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "852",
+                "osm": {
+                    "id": 11307030669,
+                    "type": "node"
+                },
+                "name": "Evangelisches Gemeindehaus",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 22,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2661,18 +2653,18 @@
                 ]
             },
             "properties": {
-                "id": 853,
-                "osm_id": 8974144400,
-                "location": "Tv-Halle",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 20,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "853",
+                "osm": {
+                    "id": 8974144400,
+                    "type": "node"
+                },
+                "name": "Tv-Halle",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2685,17 +2677,18 @@
                 ]
             },
             "properties": {
-                "id": 854,
-                "osm_id": 11306929066,
-                "location": "Dorfplatz Oberjesingen",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "854",
+                "osm": {
+                    "id": 11306929066,
+                    "type": "node"
+                },
+                "name": "Dorfplatz Oberjesingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2708,18 +2701,18 @@
                 ]
             },
             "properties": {
-                "id": 855,
-                "osm_id": 11307030671,
-                "location": "Wasenäckerhalle",
-                "date_survey": "2023-09-18",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 36,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "855",
+                "osm": {
+                    "id": 11307030671,
+                    "type": "node"
+                },
+                "name": "Wasenäckerhalle",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 36,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2732,18 +2725,19 @@
                 ]
             },
             "properties": {
-                "id": 856,
-                "osm_id": 11140435438,
-                "location": "Jerg-Ratgeb-Schule (3)",
-                "date_survey": "2023-08-23",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 221,
-                "count_covered": 95,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Schule"
+                "original_uid": "856",
+                "osm": {
+                    "id": 11140435438,
+                    "type": "node"
+                },
+                "name": "Jerg-Ratgeb-Schule (3)",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 221,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
             }
         },
         {
@@ -2756,18 +2750,18 @@
                 ]
             },
             "properties": {
-                "id": 857,
-                "osm_id": 11306929064,
-                "location": "Reiher weg Ecke zur habichtstra??e",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 12,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Vor einem Haus. k??nnte privat sein"
+                "original_uid": "857",
+                "osm": {
+                    "id": 11306929064,
+                    "type": "node"
+                },
+                "name": "Reiher weg Ecke zur habichtstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2780,18 +2774,18 @@
                 ]
             },
             "properties": {
-                "id": 858,
-                "osm_id": 1197958026,
-                "location": "Volksbank Stadion",
-                "date_survey": "2023-08-13",
-                "type": "Bügel",
-                "count": 56,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "858",
+                "osm": {
+                    "id": 1197958026,
+                    "type": "node"
+                },
+                "name": "Volksbank Stadion",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 56,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2804,18 +2798,18 @@
                 ]
             },
             "properties": {
-                "id": 859,
-                "osm_id": 11307120162,
-                "location": "KiTa an der Raingasse. Affst??tt",
-                "date_survey": "2023-09-19",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "859",
+                "osm": {
+                    "id": 11307120162,
+                    "type": "node"
+                },
+                "name": "KiTa an der Raingasse. Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2828,18 +2822,18 @@
                 ]
             },
             "properties": {
-                "id": 860,
-                "osm_id": 11307120163,
-                "location": "Conrad-Weiser-Stra??e 1. saniertes altes Bauernhaus",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 16,
-                "count_covered": 16,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Privatgrundst??ck"
+                "original_uid": "860",
+                "osm": {
+                    "id": 11307120163,
+                    "type": "node"
+                },
+                "name": "Conrad-Weiser-Stra??e 1. saniertes altes Bauernhaus",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 16,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2852,18 +2846,18 @@
                 ]
             },
             "properties": {
-                "id": 861,
-                "osm_id": 11307500519,
-                "location": "Grundschule Haslach",
-                "date_survey": "2023-09-24",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "861",
+                "osm": {
+                    "id": 11307500519,
+                    "type": "node"
+                },
+                "name": "Grundschule Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2876,18 +2870,18 @@
                 ]
             },
             "properties": {
-                "id": 862,
-                "osm_id": 11307120156,
-                "location": "Wohnhaus Nelkenstra??e 6",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Unklar"
+                "original_uid": "862",
+                "osm": {
+                    "id": 11307120156,
+                    "type": "node"
+                },
+                "name": "Wohnhaus Nelkenstra??e 6",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2900,18 +2894,18 @@
                 ]
             },
             "properties": {
-                "id": 863,
-                "osm_id": 11140259176,
-                "location": "Feuerwehr",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "863",
+                "osm": {
+                    "id": 11140259176,
+                    "type": "node"
+                },
+                "name": "Feuerwehr",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2924,18 +2918,18 @@
                 ]
             },
             "properties": {
-                "id": 864,
-                "osm_id": 11140534023,
-                "location": "Mrs. Sporty",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 4,
-                "count_covered": 4,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "864",
+                "osm": {
+                    "id": 11140534023,
+                    "type": "node"
+                },
+                "name": "Mrs. Sporty",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2948,17 +2942,18 @@
                 ]
             },
             "properties": {
-                "id": 865,
-                "osm_id": 11254881816,
-                "location": "Elektrohaus Brenner. Raiffeisenstra??e 2",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "865",
+                "osm": {
+                    "id": 11254881816,
+                    "type": "node"
+                },
+                "name": "Elektrohaus Brenner. Raiffeisenstra??e 2",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -2971,18 +2966,19 @@
                 ]
             },
             "properties": {
-                "id": 866,
-                "osm_id": 11137757702,
-                "location": "Jerg-Ratgeb-Schule",
-                "date_survey": "2023-08-22",
-                "type": "Bügel",
-                "count": 28,
-                "count_covered": 28,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Schule"
+                "original_uid": "866",
+                "osm": {
+                    "id": 11137757702,
+                    "type": "node"
+                },
+                "name": "Jerg-Ratgeb-Schule",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 28,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
             }
         },
         {
@@ -2995,17 +2991,18 @@
                 ]
             },
             "properties": {
-                "id": 867,
-                "osm_id": 11307030674,
-                "location": "DM Kuppingen",
-                "date_survey": "2023-09-18",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 12,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "867",
+                "osm": {
+                    "id": 11307030674,
+                    "type": "node"
+                },
+                "name": "DM Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3018,18 +3015,18 @@
                 ]
             },
             "properties": {
-                "id": 868,
-                "osm_id": 11185503363,
-                "location": "Sabine Gall Fu??pflege",
-                "date_survey": "2023-09-06",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "Unklar"
+                "original_uid": "868",
+                "osm": {
+                    "id": 11185503363,
+                    "type": "node"
+                },
+                "name": "Sabine Gall Fu??pflege",
+                "date_surveyed": "2023-09-07",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3042,18 +3039,18 @@
                 ]
             },
             "properties": {
-                "id": 869,
-                "osm_id": 11307030670,
-                "location": "Ärztehaus Kuppingen",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "869",
+                "osm": {
+                    "id": 11307030670,
+                    "type": "node"
+                },
+                "name": "Ärztehaus Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3066,17 +3063,14 @@
                 ]
             },
             "properties": {
-                "id": 870,
-                "location": "VHS",
-                "date_survey": "2023-12-03",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "870",
+                "name": "VHS",
+                "date_surveyed": "2023-12-04",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3089,18 +3083,18 @@
                 ]
             },
             "properties": {
-                "id": 871,
-                "osm_id": 11141108458,
-                "location": "Gym24",
-                "date_survey": "2023-08-23",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 12,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "871",
+                "osm": {
+                    "id": 11141108458,
+                    "type": "node"
+                },
+                "name": "Gym24",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3113,18 +3107,18 @@
                 ]
             },
             "properties": {
-                "id": 872,
-                "osm_id": 3521364926,
-                "location": "Naturfreibad herrenberg",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 102,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "872",
+                "osm": {
+                    "id": 3521364926,
+                    "type": "node"
+                },
+                "name": "Naturfreibad herrenberg",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 102,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3137,18 +3131,18 @@
                 ]
             },
             "properties": {
-                "id": 873,
-                "osm_id": 11171353062,
-                "location": "Affstätter Tal 23",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "873",
+                "osm": {
+                    "id": 11171353062,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 23",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3161,18 +3155,18 @@
                 ]
             },
             "properties": {
-                "id": 874,
-                "osm_id": 11254881817,
-                "location": "katholische Kirche St. Antonius Kuppingen",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "874",
+                "osm": {
+                    "id": 11254881817,
+                    "type": "node"
+                },
+                "name": "katholische Kirche St. Antonius Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3185,18 +3179,18 @@
                 ]
             },
             "properties": {
-                "id": 875,
-                "osm_id": 8071796322,
-                "location": "Gegenüber Rossmann",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 16,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "875",
+                "osm": {
+                    "id": 8071796322,
+                    "type": "node"
+                },
+                "name": "Gegenüber Rossmann",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 16,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3209,18 +3203,18 @@
                 ]
             },
             "properties": {
-                "id": 877,
-                "osm_id": 11171353056,
-                "location": "Affstätter Tal 57",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 3,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "877",
+                "osm": {
+                    "id": 11171353056,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 57",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3233,18 +3227,18 @@
                 ]
             },
             "properties": {
-                "id": 878,
-                "osm_id": 11113769606,
-                "location": "VFL Gebäude 1",
-                "date_survey": "2023-08-13",
-                "type": "Bügel",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "878",
+                "osm": {
+                    "id": 11113769606,
+                    "type": "node"
+                },
+                "name": "VFL Gebäude 1",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3257,18 +3251,18 @@
                 ]
             },
             "properties": {
-                "id": 879,
-                "osm_id": 11141100025,
-                "location": "Logopädie in Herrenberg",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "879",
+                "osm": {
+                    "id": 11141100025,
+                    "type": "node"
+                },
+                "name": "Logopädie in Herrenberg",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3281,18 +3275,18 @@
                 ]
             },
             "properties": {
-                "id": 880,
-                "osm_id": 11307699588,
-                "location": "Marienstraße / Physiotherapie Sven Schöffel",
-                "date_survey": "2023-10-10",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "880",
+                "osm": {
+                    "id": 11307699588,
+                    "type": "node"
+                },
+                "name": "Marienstraße / Physiotherapie Sven Schöffel",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3305,18 +3299,18 @@
                 ]
             },
             "properties": {
-                "id": 881,
-                "osm_id": 11307500520,
-                "location": "KiTa Haslach",
-                "date_survey": "2023-09-24",
-                "type": "Stange",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": true,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "881",
+                "osm": {
+                    "id": 11307500520,
+                    "type": "node"
+                },
+                "name": "KiTa Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "crossbar",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3329,18 +3323,18 @@
                 ]
             },
             "properties": {
-                "id": 882,
-                "osm_id": 11113769607,
-                "location": "VFL Gebäude 1",
-                "date_survey": "2023-08-13",
-                "type": "Reine Vorderradhalterung",
-                "count": 4,
-                "count_covered": 4,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "882",
+                "osm": {
+                    "id": 11113769607,
+                    "type": "node"
+                },
+                "name": "VFL Gebäude 1",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3353,18 +3347,18 @@
                 ]
             },
             "properties": {
-                "id": 883,
-                "osm_id": 8166630686,
-                "location": "Bezirksamt Haslach",
-                "date_survey": "2023-09-24",
-                "type": "Bügel",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "883",
+                "osm": {
+                    "id": 8166630686,
+                    "type": "node"
+                },
+                "name": "Bezirksamt Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3377,17 +3371,18 @@
                 ]
             },
             "properties": {
-                "id": 884,
-                "osm_id": 11307030673,
-                "location": "Netto Kuppingen",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 28,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "884",
+                "osm": {
+                    "id": 11307030673,
+                    "type": "node"
+                },
+                "name": "Netto Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 28,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3400,18 +3395,18 @@
                 ]
             },
             "properties": {
-                "id": 885,
-                "osm_id": 11171353053,
-                "location": "H+Hotel",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "885",
+                "osm": {
+                    "id": 11171353053,
+                    "type": "node"
+                },
+                "name": "H+Hotel",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3424,18 +3419,18 @@
                 ]
             },
             "properties": {
-                "id": 886,
-                "osm_id": 6595792653,
-                "location": "Bronntor",
-                "date_survey": "2023-10-08",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 6,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "886",
+                "osm": {
+                    "id": 6595792653,
+                    "type": "node"
+                },
+                "name": "Bronntor",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3448,18 +3443,18 @@
                 ]
             },
             "properties": {
-                "id": 887,
-                "osm_id": 11171351000,
-                "location": "Affstätter Tal 29",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "887",
+                "osm": {
+                    "id": 11171351000,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 29",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3472,17 +3467,18 @@
                 ]
             },
             "properties": {
-                "id": 888,
-                "osm_id": 11254881812,
-                "location": "TSV Kuppingen. NEUFFER-Sportpark; Martinslehle 1. 71083 Herrenberg",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 11,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "888",
+                "osm": {
+                    "id": 11254881812,
+                    "type": "node"
+                },
+                "name": "TSV Kuppingen. NEUFFER-Sportpark; Martinslehle 1. 71083 Herrenberg",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3495,17 +3491,18 @@
                 ]
             },
             "properties": {
-                "id": 889,
-                "osm_id": 11306929068,
-                "location": "Volksbank und Kreissparkasse",
-                "date_survey": "2023-09-18",
-                "type": "Bügel",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "889",
+                "osm": {
+                    "id": 11306929068,
+                    "type": "node"
+                },
+                "name": "Volksbank und Kreissparkasse",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3518,18 +3515,18 @@
                 ]
             },
             "properties": {
-                "id": 890,
-                "osm_id": 8974144401,
-                "location": "Altes Rathaus Gueltstein",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "890",
+                "osm": {
+                    "id": 8974144401,
+                    "type": "node"
+                },
+                "name": "Altes Rathaus Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3542,18 +3539,18 @@
                 ]
             },
             "properties": {
-                "id": 891,
-                "osm_id": 11171353051,
-                "location": "Toom",
-                "date_survey": "2023-08-23",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 12,
-                "count_covered": 6,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "891",
+                "osm": {
+                    "id": 11171353051,
+                    "type": "node"
+                },
+                "name": "Toom",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3566,18 +3563,18 @@
                 ]
             },
             "properties": {
-                "id": 892,
-                "osm_id": 11307120161,
-                "location": "Freiwillige Feuerwehr Affst??tt",
-                "date_survey": "2023-09-19",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "892",
+                "osm": {
+                    "id": 11307120161,
+                    "type": "node"
+                },
+                "name": "Freiwillige Feuerwehr Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3590,18 +3587,18 @@
                 ]
             },
             "properties": {
-                "id": 893,
-                "osm_id": 9808497396,
-                "location": "Binder Optik",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 20,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "893",
+                "osm": {
+                    "id": 9808497396,
+                    "type": "node"
+                },
+                "name": "Binder Optik",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3614,18 +3611,18 @@
                 ]
             },
             "properties": {
-                "id": 894,
-                "osm_id": 11307619775,
-                "location": "Dorfplatz Brunnen M??nchberg",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "894",
+                "osm": {
+                    "id": 11307619775,
+                    "type": "node"
+                },
+                "name": "Dorfplatz Brunnen M??nchberg",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3638,18 +3635,18 @@
                 ]
             },
             "properties": {
-                "id": 895,
-                "osm_id": 11307500522,
-                "location": "Metzgerei Gräther",
-                "date_survey": "2023-09-24",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Einzelh??ndler"
+                "original_uid": "895",
+                "osm": {
+                    "id": 11307500522,
+                    "type": "node"
+                },
+                "name": "Metzgerei Gräther",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3662,18 +3659,18 @@
                 ]
             },
             "properties": {
-                "id": 896,
-                "osm_id": 7920751014,
-                "location": "Calisthenics park / baseball field",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "896",
+                "osm": {
+                    "id": 7920751014,
+                    "type": "node"
+                },
+                "name": "Calisthenics park / baseball field",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3686,18 +3683,18 @@
                 ]
             },
             "properties": {
-                "id": 897,
-                "osm_id": 11307556496,
-                "location": "Karolinenstift",
-                "date_survey": "2023-09-28",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 8,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Eingeschr??nkt/Beschr??nkt (bspw.: Schule)"
+                "original_uid": "897",
+                "osm": {
+                    "id": 11307556496,
+                    "type": "node"
+                },
+                "name": "Karolinenstift",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3710,18 +3707,18 @@
                 ]
             },
             "properties": {
-                "id": 898,
-                "osm_id": 11140439331,
-                "location": "EN Storage",
-                "date_survey": "2023-08-23",
-                "type": "Bügel + Vorderradhalterung",
-                "count": 6,
-                "count_covered": 3,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "898",
+                "osm": {
+                    "id": 11140439331,
+                    "type": "node"
+                },
+                "name": "EN Storage",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3734,18 +3731,18 @@
                 ]
             },
             "properties": {
-                "id": 899,
-                "osm_id": 11307500516,
-                "location": "Sporthalle Haslach",
-                "date_survey": "2023-09-24",
-                "type": "Reine Vorderradhalterung",
-                "count": 18,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "899",
+                "osm": {
+                    "id": 11307500516,
+                    "type": "node"
+                },
+                "name": "Sporthalle Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 18,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3758,18 +3755,18 @@
                 ]
             },
             "properties": {
-                "id": 900,
-                "osm_id": 11140362956,
-                "location": "Weinberg Bäckerei",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "900",
+                "osm": {
+                    "id": 11140362956,
+                    "type": "node"
+                },
+                "name": "Weinberg Bäckerei",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3782,18 +3779,18 @@
                 ]
             },
             "properties": {
-                "id": 901,
-                "osm_id": 182241738,
-                "location": "Realschule",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 96,
-                "count_covered": 96,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "901",
+                "osm": {
+                    "id": 182241738,
+                    "type": "node"
+                },
+                "name": "Realschule",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 96,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3806,18 +3803,18 @@
                 ]
             },
             "properties": {
-                "id": 902,
-                "osm_id": 11185503366,
-                "location": "Deichmann",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 8,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "902",
+                "osm": {
+                    "id": 11185503366,
+                    "type": "node"
+                },
+                "name": "Deichmann",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3830,18 +3827,18 @@
                 ]
             },
             "properties": {
-                "id": 903,
-                "osm_id": 11113769605,
-                "location": "Schießmauer 1",
-                "date_survey": "2023-08-13",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "903",
+                "osm": {
+                    "id": 11113769605,
+                    "type": "node"
+                },
+                "name": "Schießmauer 1",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3854,18 +3851,18 @@
                 ]
             },
             "properties": {
-                "id": 904,
-                "osm_id": 11307500518,
-                "location": "Ehem Volksbank Haslach",
-                "date_survey": "2023-09-24",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "904",
+                "osm": {
+                    "id": 11307500518,
+                    "type": "node"
+                },
+                "name": "Ehem Volksbank Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3878,18 +3875,18 @@
                 ]
             },
             "properties": {
-                "id": 905,
-                "osm_id": 11171353061,
-                "location": "Affstätter Tal 21",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 1,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "905",
+                "osm": {
+                    "id": 11171353061,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 21",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 1,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3902,18 +3899,18 @@
                 ]
             },
             "properties": {
-                "id": 906,
-                "osm_id": 11137728912,
-                "location": "Allfinanz Deutsche Verm??gensberatung",
-                "date_survey": "2023-08-22",
-                "type": "Reine Vorderradhalterung",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "906",
+                "osm": {
+                    "id": 11137728912,
+                    "type": "node"
+                },
+                "name": "Allfinanz Deutsche Verm??gensberatung",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3926,18 +3923,18 @@
                 ]
             },
             "properties": {
-                "id": 908,
-                "osm_id": 11171350999,
-                "location": "Affstätter Tal 31",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "908",
+                "osm": {
+                    "id": 11171350999,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 31",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3950,18 +3947,18 @@
                 ]
             },
             "properties": {
-                "id": 909,
-                "osm_id": 11307699589,
-                "location": "Hallenbad \\ Schule",
-                "date_survey": "2023-10-10",
-                "type": "Reine Vorderradhalterung",
-                "count": 80,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "909",
+                "osm": {
+                    "id": 11307699589,
+                    "type": "node"
+                },
+                "name": "Hallenbad \\ Schule",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 80,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3974,18 +3971,18 @@
                 ]
             },
             "properties": {
-                "id": 910,
-                "osm_id": 11185503365,
-                "location": "Goethestraße 12",
-                "date_survey": "2023-09-06",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Unklar"
+                "original_uid": "910",
+                "osm": {
+                    "id": 11185503365,
+                    "type": "node"
+                },
+                "name": "Goethestraße 12",
+                "date_surveyed": "2023-09-07",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -3998,18 +3995,18 @@
                 ]
             },
             "properties": {
-                "id": 911,
-                "osm_id": 7920727079,
-                "location": "Calisthenics",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 8,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "911",
+                "osm": {
+                    "id": 7920727079,
+                    "type": "node"
+                },
+                "name": "Calisthenics",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4022,18 +4019,18 @@
                 ]
             },
             "properties": {
-                "id": 912,
-                "osm_id": 11171353055,
-                "location": "Affstätter Tal 59",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "912",
+                "osm": {
+                    "id": 11171353055,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 59",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4046,18 +4043,18 @@
                 ]
             },
             "properties": {
-                "id": 913,
-                "osm_id": 8533065301,
-                "location": "Marienstraße Ecke kleiststraße",
-                "date_survey": "2023-10-10",
-                "type": "Reine Vorderradhalterung",
-                "count": 4,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "913",
+                "osm": {
+                    "id": 8533065301,
+                    "type": "node"
+                },
+                "name": "Marienstraße Ecke kleiststraße",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4070,18 +4067,18 @@
                 ]
             },
             "properties": {
-                "id": 914,
-                "osm_id": 7863584959,
-                "location": "Spital Gasse",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "Nein"
+                "original_uid": "914",
+                "osm": {
+                    "id": 7863584959,
+                    "type": "node"
+                },
+                "name": "Spital Gasse",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4094,18 +4091,18 @@
                 ]
             },
             "properties": {
-                "id": 915,
-                "osm_id": 11185503368,
-                "location": "Nufringer Tor unten",
-                "date_survey": "2023-09-11",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "915",
+                "osm": {
+                    "id": 11185503368,
+                    "type": "node"
+                },
+                "name": "Nufringer Tor unten",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4118,18 +4115,18 @@
                 ]
             },
             "properties": {
-                "id": 916,
-                "osm_id": 11171353059,
-                "location": "Affstätter Tal 19",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "916",
+                "osm": {
+                    "id": 11171353059,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 19",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4142,18 +4139,18 @@
                 ]
             },
             "properties": {
-                "id": 917,
-                "osm_id": 11307619781,
-                "location": "Am Joachimsberg 10",
-                "date_survey": "2023-10-08",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 6,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "??Besucher am Joachimsberg ??"
+                "original_uid": "917",
+                "osm": {
+                    "id": 11307619781,
+                    "type": "node"
+                },
+                "name": "Am Joachimsberg 10",
+                "date_surveyed": "2023-10-09",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4166,18 +4163,18 @@
                 ]
             },
             "properties": {
-                "id": 918,
-                "osm_id": 11140917938,
-                "location": "Kirche St. Martin (hinten)",
-                "date_survey": "2023-08-23",
-                "type": "Bügel",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "918",
+                "osm": {
+                    "id": 11140917938,
+                    "type": "node"
+                },
+                "name": "Kirche St. Martin (hinten)",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4190,18 +4187,18 @@
                 ]
             },
             "properties": {
-                "id": 919,
-                "osm_id": 11113693795,
-                "location": "Stuttgarter Straße",
-                "date_survey": "2023-08-09",
-                "type": "Bügel",
-                "count": 5,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": "",
-                "access_type": "immer"
+                "original_uid": "919",
+                "osm": {
+                    "id": 11113693795,
+                    "type": "node"
+                },
+                "name": "Stuttgarter Straße",
+                "date_surveyed": "2023-08-10",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4214,18 +4211,18 @@
                 ]
             },
             "properties": {
-                "id": 920,
-                "osm_id": 11254817171,
-                "location": "Bahnhofstraße",
-                "date_survey": "2023-09-18",
-                "type": "Reine Vorderradhalterung",
-                "count": 6,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "Immer"
+                "original_uid": "920",
+                "osm": {
+                    "id": 11254817171,
+                    "type": "node"
+                },
+                "name": "Bahnhofstraße",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4238,18 +4235,18 @@
                 ]
             },
             "properties": {
-                "id": 921,
-                "osm_id": 11307556493,
-                "location": "Schlosskeller",
-                "date_survey": "2023-09-25",
-                "type": "Bügel",
-                "count": 20,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": true,
-                "access_type": "Immer"
+                "original_uid": "921",
+                "osm": {
+                    "id": 11307556493,
+                    "type": "node"
+                },
+                "name": "Schlosskeller",
+                "date_surveyed": "2023-09-26",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4262,18 +4259,18 @@
                 ]
             },
             "properties": {
-                "id": 923,
-                "osm_id": 659284923,
-                "location": "Spital Gasse 13",
-                "date_survey": "2023-10-10",
-                "type": "Bügel",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "923",
+                "osm": {
+                    "id": 659284923,
+                    "type": "node"
+                },
+                "name": "Spital Gasse 13",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4286,16 +4283,14 @@
                 ]
             },
             "properties": {
-                "id": 924,
-                "location": "",
-                "date_survey": "2023-12-03",
-                "count": 30,
-                "count_covered": 0,
-                "has_service": false,
-                "count_chargers": 0,
-                "quality": "ok",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "924",
+                "name": "",
+                "date_surveyed": "2023-12-04",
+                "type": "other",
+                "capacity": 30,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4308,18 +4303,18 @@
                 ]
             },
             "properties": {
-                "id": 925,
-                "osm_id": 11171353057,
-                "location": "Affstätter Tal 13",
-                "date_survey": "2023-08-23",
-                "type": "Reine Vorderradhalterung",
-                "count": 2,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "bad",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "925",
+                "osm": {
+                    "id": 11171353057,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 13",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4332,17 +4327,14 @@
                 ]
             },
             "properties": {
-                "id": 926,
-                "location": "Görlitzer Straße",
-                "date_survey": "2024-01-22",
-                "type": "Anlehnbügel",
-                "count": 88,
-                "count_covered": 88,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "very_good",
-                "has_lighting": false,
-                "access_type": "nein - gesperrt, Baustelle AGH"
+                "original_uid": "926",
+                "name": "Görlitzer Straße",
+                "date_surveyed": "2024-01-23",
+                "type": "stands",
+                "capacity": 88,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4355,16 +4347,13 @@
                 ]
             },
             "properties": {
-                "id": 927,
-                "location": "Hindenburgstraße",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 10,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "very_good",
-                "has_lighting": true,
-                "access_type": "immer"
+                "original_uid": "927",
+                "name": "Hindenburgstraße",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         },
         {
@@ -4377,16 +4366,13 @@
                 ]
             },
             "properties": {
-                "id": 928,
-                "location": "Waldfriedhof",
-                "type": "Bügel",
-                "count": 10,
-                "count_covered": 0,
-                "has_service": "",
-                "count_chargers": 0,
-                "quality": "good",
-                "has_lighting": false,
-                "access_type": "immer"
+                "original_uid": "928",
+                "name": "Waldfriedhof",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
             }
         }
     ]

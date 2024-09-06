@@ -19,7 +19,7 @@ def requests_mock_herrenberg_bike(requests_mock: Mocker) -> Mocker:
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get('https://r2.munigrid.de/11-d76db68da7d8354bb425c9eb90d6d78a.json', text=json_data)
+    requests_mock.get('https://www.munigrid.de/api/file/11/latest', text=json_data)
 
     return requests_mock
 
@@ -29,14 +29,23 @@ def herrenberg_bike_pull_converter(mocked_config_helper: Mock) -> HerrenbergBike
     return HerrenbergBikePullConverter(config_helper=mocked_config_helper)
 
 
+@pytest.fixture
+def herrenberg_bike_ignore_missing_capacity_config_helper(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES': True,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
 class HerrenbergBikePullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker):
         static_parking_site_inputs, import_parking_site_exceptions = herrenberg_bike_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 170
+        assert len(static_parking_site_inputs) == 184
         # For missing capacities
-        assert len(import_parking_site_exceptions) == 14
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

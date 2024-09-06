@@ -7,7 +7,7 @@ from datetime import date, datetime, time, timezone
 from enum import Enum
 from typing import Optional
 
-from validataclass.dataclasses import Default, DefaultUnset, validataclass
+from validataclass.dataclasses import DefaultUnset, ValidataclassMixin, validataclass
 from validataclass.helpers import OptionalUnset, UnsetValue
 from validataclass.validators import (
     DataclassValidator,
@@ -16,45 +16,82 @@ from validataclass.validators import (
     Noneable,
     NoneToUnsetValue,
     StringValidator,
+    UrlValidator,
 )
 
 from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkingSiteType
 from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
 
 
 class HerrenbergBikeType(Enum):
-    STANDS = 'Bügel'
-    LEANING_STANDS = 'Anlehnbügel'
-    WALL_LOOPS = 'Reine Vorderradhalterung'
-    STANGE = 'Stange'
-    STAND_AND_WALL_LOOPS = 'Bügel + Vorderradhalterung'
-    LOCKERS = 'Nische zum Abstellen'
-    WOOD_CONSTRUCTION = 'Holzkonstruktion'
+    STANDS = 'stands'
+    WALL_LOOPS = 'wall_loops'
+    RACK = 'rack'
+    SHED = 'shed'
+    BOLLARD = 'bollard'
+    WIDE_STANDS = 'wide_stands'
+    BUILDING = 'building'
+    LOCKERS = 'lockers'
+    WAVE = 'wave'
+    ANCHORS = 'anchors'
+    FLOOR = 'floor'
+    SAFE_LOOPS = 'safe_loops'
+    GROUND_SLOTS = 'ground_slots'
     LEAN_AND_STICK = 'lean_and_stick'
-    LOCKBOX = 'Fahrradboxen'
+    CROSSBAR = 'crossbar'
+    OTHER = 'other'
 
     def to_parking_site_type(self) -> ParkingSiteType:
-        if self in [HerrenbergBikeType.STANGE, HerrenbergBikeType.WOOD_CONSTRUCTION, HerrenbergBikeType.LEAN_AND_STICK]:
+        if self in [self.OTHER, self.BOLLARD, self.LEAN_AND_STICK, self.WAVE, self.ANCHORS, self.CROSSBAR, self.RACK, self.GROUND_SLOTS]:
             return ParkingSiteType.OTHER
-        if self == HerrenbergBikeType.STAND_AND_WALL_LOOPS:
-            return ParkingSiteType.WALL_LOOPS
-        if self == HerrenbergBikeType.LEANING_STANDS:
+        if self == self.SAFE_LOOPS:
+            return ParkingSiteType.SAFE_WALL_LOOPS
+        if self == self.WIDE_STANDS:
             return ParkingSiteType.STANDS
-        return ParkingSiteType[self.name]
+
+        return {
+            self.STANDS: ParkingSiteType.STANDS,
+            self.SHED: ParkingSiteType.SHED,
+            self.BUILDING: ParkingSiteType.BUILDING,
+            self.LOCKERS: ParkingSiteType.LOCKERS,
+            self.FLOOR: ParkingSiteType.FLOOR,
+            self.WALL_LOOPS: ParkingSiteType.WALL_LOOPS,
+        }.get(self)
 
 
 @validataclass
-class HerrenbergBikePropertiesInput:
-    id: int = IntegerValidator()
-    location: str = StringValidator(min_length=0)
-    count: int = IntegerValidator(min_value=0)
-    count_chargers: int = IntegerValidator(min_value=0)
-    has_lighting: Optional[bool] = Noneable(MappedBooleanValidator(mapping={'true': True, 'false': False})), Default(None)
+class HerrenbergBikeAccessType(Enum):
+    YES = 'yes'
+    PRIVATE = 'private'
+    CUSTOMERS = 'customers'
+    MEMBERS = 'members'
+
+
+@validataclass
+class HerrenbergBikeAddressInput:
+    street: Optional[str] = Noneable(StringValidator(max_length=512))
+    houseNo: Optional[str] = Noneable(StringValidator(max_length=512))
+    zipCode: Optional[str] = Noneable(StringValidator(max_length=512))
+    location: Optional[str] = Noneable(StringValidator(max_length=512))
+
+
+@validataclass
+class HerrenbergBikePropertiesInput(ValidataclassMixin):
+    original_uid: str = StringValidator(min_length=1, max_length=256)
+    name: str = StringValidator(min_length=0, max_length=256)
     type: OptionalUnset[HerrenbergBikeType] = NoneToUnsetValue(EnumValidator(HerrenbergBikeType)), DefaultUnset
-    access_type: Optional[str] = Noneable(StringValidator())
-    date_survey: OptionalUnset[date] = NoneToUnsetValue(ParsedDateValidator(date_format='%Y-%m-%d')), DefaultUnset
+    public_url: OptionalUnset[str] = NoneToUnsetValue(UrlValidator(max_length=4096)), DefaultUnset
+    address: OptionalUnset[HerrenbergBikeAddressInput] = NoneToUnsetValue(DataclassValidator(HerrenbergBikeAddressInput)), DefaultUnset
+    description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
+    capacity: int = IntegerValidator(min_value=0)
+    capacity_cargobike: int = IntegerValidator(min_value=0)
+    has_realtime_data: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
+    access: OptionalUnset[HerrenbergBikeAccessType] = NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)), DefaultUnset
+    date_surveyed: OptionalUnset[date] = NoneToUnsetValue(ParsedDateValidator(date_format='%Y-%m-%d')), DefaultUnset
+    has_lighting: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
+    is_covered: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
 
 
 @validataclass
@@ -64,16 +101,17 @@ class HerrenbergBikeFeatureInput:
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
-            uid=str(self.properties.id),
-            name=self.properties.location if self.properties.location != '' else 'Fahrrad-Abstellanlagen',
+            uid=str(self.properties.original_uid),
+            name=self.properties.name if self.properties.name != '' else 'Fahrrad-Abstellanlagen',
+            type=self.properties.type.to_parking_site_type(),
+            description=self.properties.description,
+            capacity=self.properties.capacity,
+            has_realtime_data=self.properties.has_realtime_data,
+            has_lighting=self.properties.has_lighting,
+            is_covered=self.properties.is_covered,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            capacity=self.properties.count,
-            capacity_charging=self.properties.count_chargers,
             static_data_updated_at=datetime.now(timezone.utc)
-            if self.properties.date_survey is UnsetValue
-            else datetime.combine(self.properties.date_survey, time(), tzinfo=timezone.utc),
-            type=ParkingSiteType.GENERIC_BIKE if self.properties.type is UnsetValue else self.properties.type.to_parking_site_type(),
-            purpose=PurposeType.BIKE,
-            has_lighting=self.properties.has_lighting,
+            if self.properties.date_surveyed is UnsetValue
+            else datetime.combine(self.properties.date_surveyed, time(), tzinfo=timezone.utc),
         )

@@ -24,11 +24,11 @@ class HerrenbergBikePullConverter(PullConverter, ABC):
         uid='herrenberg_bike',
         name='Stadt Herrenberg - Munigrid: Fahrrad-Abstellanlagen',
         public_url='https://www.munigrid.de/hbg/dataset/8',
-        source_url='https://r2.munigrid.de/11-d76db68da7d8354bb425c9eb90d6d78a.json',
+        source_url='https://www.munigrid.de/api/file/11/latest',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Herrenberg - Munigrid',
-        attribution_license='Datenlizenz Deutschland – Zero – Version 2.0 (DL-DE->Zero-2.0)',
-        attribution_url='https://www.govdata.de/dl-de/zero-2-0',
+        attribution_license='CC 0 1.0',
+        attribution_url='https://creativecommons.org/publicdomain/zero/1.0/',
         has_realtime_data=False,
     )
 
@@ -48,6 +48,9 @@ class HerrenbergBikePullConverter(PullConverter, ABC):
             ) from e
 
         for feature_dict in geojson_input.features:
+            if self._should_ignore_dataset(feature_dict):
+                continue
+
             try:
                 feature_input = self.herrenberg_feature_validator.validate(feature_dict)
             except ValidationError as e:
@@ -63,6 +66,12 @@ class HerrenbergBikePullConverter(PullConverter, ABC):
             feature_inputs.append(feature_input)
 
         return feature_inputs, import_parking_site_exceptions
+
+    def _should_ignore_dataset(self, feature_dict: dict) -> bool:
+        if self.config_helper.get('PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES'):
+            return feature_dict.get('properties', {}).get('capacity') is None
+
+        return False
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         feature_inputs, import_parking_site_exceptions = self._get_feature_inputs()
