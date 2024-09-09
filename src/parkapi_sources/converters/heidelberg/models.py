@@ -158,6 +158,7 @@ class HeidelbergInput:
             park_and_ride_type=[ParkAndRideType.YES] if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE else None,
             supervision_type=supervision_type,
             has_realtime_data=self.availableSpotNumber is not None,
+            has_fee=True,
         )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
