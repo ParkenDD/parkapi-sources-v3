@@ -25,8 +25,15 @@ def requests_mock_herrenberg_bike(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def herrenberg_bike_pull_converter(mocked_config_helper: Mock) -> HerrenbergBikePullConverter:
-    return HerrenbergBikePullConverter(config_helper=mocked_config_helper)
+def herrenberg_bike_config_helper(mocked_config_helper: Mock):
+    config = {}
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def herrenberg_bike_pull_converter(herrenberg_bike_config_helper: Mock) -> HerrenbergBikePullConverter:
+    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_config_helper)
 
 
 @pytest.fixture
@@ -38,13 +45,33 @@ def herrenberg_bike_ignore_missing_capacity_config_helper(mocked_config_helper: 
     return mocked_config_helper
 
 
+@pytest.fixture
+def herrenberg_bike_ignore_missing_capacity_pull_converter(
+    herrenberg_bike_ignore_missing_capacity_config_helper: Mock,
+) -> HerrenbergBikePullConverter:
+    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_ignore_missing_capacity_config_helper)
+
+
 class HerrenbergBikePullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker):
         static_parking_site_inputs, import_parking_site_exceptions = herrenberg_bike_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 184
-        # For missing capacities
+        assert len(import_parking_site_exceptions) == 0
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_sites_ignore_missing_capacities(
+        herrenberg_bike_ignore_missing_capacity_pull_converter: HerrenbergBikePullConverter,
+        requests_mock_herrenberg_bike: Mocker,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            herrenberg_bike_ignore_missing_capacity_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 184
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

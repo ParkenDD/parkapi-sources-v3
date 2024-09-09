@@ -3,8 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from abc import ABC
-
 import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
@@ -16,7 +14,7 @@ from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticP
 from .models import HerrenbergBikeFeatureInput
 
 
-class HerrenbergBikePullConverter(PullConverter, ABC):
+class HerrenbergBikePullConverter(PullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
     herrenberg_feature_validator = DataclassValidator(HerrenbergBikeFeatureInput)
 
@@ -57,8 +55,9 @@ class HerrenbergBikePullConverter(PullConverter, ABC):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=feature_dict.get('properties').get('id'),
-                        message=f'Invalid data at uid {feature_dict.get("properties").get("id")}: ' f'{e.to_dict()}, data: {feature_dict}',
+                        parking_site_uid=feature_dict.get('properties', {}).get('id'),
+                        message=f'Invalid data at uid {feature_dict.get("properties", {}).get("id")}: '
+                        f'{e.to_dict()}, data: {feature_dict}',
                     ),
                 )
                 continue
