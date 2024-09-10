@@ -57,7 +57,7 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
             # ignore empty lines as LibreOffice sometimes adds empty rows at the end of a file
             if row[0].value is None:
                 continue
-            
+
             parking_site_dict = self.map_row_to_parking_site_dict(mapping, row)
 
             if 'Zufahrt' in row_values:
