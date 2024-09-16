@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.13.0
+
+Released 2024-09-16
+
+### Features
+
+* [Herrenberg static bike pull converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/110)
+
+
+### Fixes
+
+* [Park and Ride at BFRK](https://github.com/ParkenDD/parkapi-sources-v3/pull/121)
+
+
 ## 0.12.1
 
 Released 2024-09-09
