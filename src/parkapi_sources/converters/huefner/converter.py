@@ -36,8 +36,8 @@ class HuefnerPushConverter(NormalizedXlsxConverter):
             **goldbeck_header_rows,
         }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
-        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row)
+    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell], **kwargs: Any) -> dict[str, Any]:
+        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row, **kwargs)
 
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
