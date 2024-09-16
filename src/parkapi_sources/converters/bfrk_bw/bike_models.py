@@ -9,7 +9,7 @@ from typing import Optional
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import BooleanValidator, EnumValidator, IntegerValidator, StringValidator
 
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
 from parkapi_sources.models.parking_site_inputs import StaticParkingSiteInput
 from parkapi_sources.validators import EmptystringNoneable, ReplacingStringValidator
 
@@ -53,5 +53,8 @@ class BfrkBikeInput(BfrkBaseInput):
         static_parking_site_input.purpose = PurposeType.BIKE
         static_parking_site_input.description = self.notiz
         static_parking_site_input.fee_description = self.kostenpflichtignotiz
+
+        if self.kostenpflichtignotiz and 'bikeandridebox' in self.kostenpflichtignotiz:
+            static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
 
         return static_parking_site_input

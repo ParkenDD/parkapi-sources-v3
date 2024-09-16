@@ -10,7 +10,7 @@ from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType
 from parkapi_sources.validators import EmptystringNoneable, ReplacingStringValidator
 
 from .base_models import BfrkBaseInput
@@ -51,5 +51,8 @@ class BfrkCarInput(BfrkBaseInput):
         static_parking_site_input.capacity_disabled = self.behindertenstellplaetze
         static_parking_site_input.description = self.bedingungen
         static_parking_site_input.operator_name = self.eigentuemer
+
+        if self.art == BfrkCarType.PARK_AND_RIDE_PARKING_SITE:
+            static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
 
         return static_parking_site_input
