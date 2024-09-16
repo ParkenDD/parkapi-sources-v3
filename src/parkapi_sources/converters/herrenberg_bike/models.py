@@ -46,12 +46,9 @@ class HerrenbergBikeType(Enum):
     def to_parking_site_type(self) -> ParkingSiteType:
         if self in [self.OTHER, self.BOLLARD, self.LEAN_AND_STICK, self.WAVE, self.ANCHORS, self.CROSSBAR, self.RACK, self.GROUND_SLOTS]:
             return ParkingSiteType.OTHER
-        if self == self.SAFE_LOOPS:
-            return ParkingSiteType.SAFE_WALL_LOOPS
-        if self == self.WIDE_STANDS:
-            return ParkingSiteType.STANDS
-
         return {
+            self.SAFE_LOOPS: ParkingSiteType.SAFE_WALL_LOOPS,
+            self.WIDE_STANDS: ParkingSiteType.STANDS,
             self.STANDS: ParkingSiteType.STANDS,
             self.SHED: ParkingSiteType.SHED,
             self.BUILDING: ParkingSiteType.BUILDING,
