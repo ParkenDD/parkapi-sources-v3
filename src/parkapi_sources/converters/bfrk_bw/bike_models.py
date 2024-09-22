@@ -53,8 +53,9 @@ class BfrkBikeInput(BfrkBaseInput):
         static_parking_site_input.purpose = PurposeType.BIKE
         static_parking_site_input.description = self.notiz
         static_parking_site_input.fee_description = self.kostenpflichtignotiz
+        static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
 
         if self.kostenpflichtignotiz and 'bikeandridebox' in self.kostenpflichtignotiz:
-            static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
+            static_parking_site_input.has_fee = True
 
         return static_parking_site_input
