@@ -12,6 +12,7 @@ from validataclass.exceptions import ValidationError
 from parkapi_sources.converters.base_converter.pull import Datex2Mixin, PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkAndRideType
 from parkapi_sources.util import XMLHelper
 
 
@@ -37,7 +38,14 @@ class VrsBasePullConverter(PullConverter, Datex2Mixin, ABC):
             subscription_id=self.config_helper.get(f'PARK_API_VRS_{self.config_key}_STATIC_SUBSCRIPTION_ID'),
         )
 
-        return self._handle_datex2_parking_facilities(datex2_parking_facilities)
+        static_parking_site_inputs, static_parking_site_errors = self._handle_datex2_parking_facilities(
+            datex2_parking_facilities,
+        )
+        for static_parking_site_input in static_parking_site_inputs:
+            static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
+            static_parking_site_input.opening_hours = '24/7'
+
+        return static_parking_site_inputs, static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[[list[RealtimeParkingSiteInput]], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
