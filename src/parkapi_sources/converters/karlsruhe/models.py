@@ -151,6 +151,6 @@ class KarlsruheBikeFeatureInput:
             is_covered=self.properties.art == KarlsruheBikeType.STANDS_WITH_ROOF or UnsetValue,
             description=self.properties.bemerkung,
             static_data_updated_at=datetime.now(timezone.utc),
-            type=ParkingSiteType.GENERIC_BIKE if self.properties.art is UnsetValue else self.properties.art.to_parking_site_type(),
+            type=ParkingSiteType.OTHER if self.properties.art is UnsetValue else self.properties.art.to_parking_site_type(),
             purpose=PurposeType.BIKE,
         )
