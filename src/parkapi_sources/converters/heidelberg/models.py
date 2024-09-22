@@ -117,6 +117,7 @@ class HeidelbergInput:
     totalSpotNumber: int = RemoveValueDict(IntegerValidator())
     website: Optional[str] = RemoveValueDict(ExcelNoneable(UrlValidator()))
     womenParkingSpots: int = RemoveValueDict(IntegerValidator())
+    prices: list[dict] = RemoveValueDict(ListValidator(AnythingValidator(allowed_types=[dict])))
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
         if self.parking_type == HeidelbergParkingSubType.GARAGE:
@@ -158,7 +159,7 @@ class HeidelbergInput:
             park_and_ride_type=[ParkAndRideType.YES] if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE else None,
             supervision_type=supervision_type,
             has_realtime_data=self.availableSpotNumber is not None,
-            has_fee=True,
+            has_fee=len(self.prices) > 0,
         )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
