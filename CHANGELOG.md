@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.13.1
+
+Release 2024-09-22
+
+### Fixes
+
+* [Add VRS data](https://github.com/ParkenDD/parkapi-sources-v3/pull/123)
+* [Fix bahn mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/124)
+* [Fix PBW Mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/125)
+* [Fix Heidelberg fee](https://github.com/ParkenDD/parkapi-sources-v3/pull/126)
+* [Split up kienzler requests](https://github.com/ParkenDD/parkapi-sources-v3/pull/128)
+* [Fix bfrk mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/129)
+
+
 ## 0.13.0
 
 Released 2024-09-16
