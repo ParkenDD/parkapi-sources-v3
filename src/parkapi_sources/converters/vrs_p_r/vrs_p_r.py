@@ -42,7 +42,7 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
         # Other opening times are there, but not parsable
     }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell], column_names: list[str]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...], column_names: list[str]) -> dict[str, Any]:
         parking_site_dict = super().map_row_to_parking_site_dict(mapping, row, column_names)
 
         if 'Zufahrt' in column_names:
