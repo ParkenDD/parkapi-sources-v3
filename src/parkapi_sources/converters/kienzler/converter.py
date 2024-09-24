@@ -38,7 +38,7 @@ class KienzlerBasePullConverter(PullConverter):
 
         kienzler_parking_sites, static_parking_site_errors = self._get_kienzler_parking_sites()
         for kienzler_parking_site in kienzler_parking_sites:
-            static_parking_site_inputs.append(kienzler_parking_site.to_static_parking_site())
+            static_parking_site_inputs.append(kienzler_parking_site.to_static_parking_site(self.source_info.public_url))
 
         return static_parking_site_inputs, static_parking_site_errors
 
@@ -70,19 +70,23 @@ class KienzlerBasePullConverter(PullConverter):
         return kienzler_item_inputs, errors
 
     def _request(self) -> list[dict]:
-        response = requests.post(
-            url=f'{self.source_info.source_url}/index.php?eID=JSONAPI',
-            json={
-                'user': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
-                'password': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD'),
-                'action': 'capacity',
-                'context': 'unit',
-                'ids': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_IDS').split(','),
-            },
-            timeout=30,
-        )
+        ids = self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_IDS').split(',')
+        result_dicts: list[dict] = []
+        for i in range(0, len(ids), 25):
+            response = requests.post(
+                url=f'{self.source_info.source_url}/index.php?eID=JSONAPI',
+                json={
+                    'user': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
+                    'password': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD'),
+                    'action': 'capacity',
+                    'context': 'unit',
+                    'ids': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_IDS').split(',')[i : i + 25],
+                },
+                timeout=30,
+            )
+            result_dicts += response.json()
 
-        return response.json()
+        return result_dicts
 
 
 class KienzlerBikeAndRidePullConverter(KienzlerBasePullConverter):

@@ -19,7 +19,8 @@ We support following data sources:
 | GOLDBECK Parking Services                                                         | car     | push (xlsx) | `goldbeck`               | no       |
 | Stadt Heidelberg                                                                  | car     | pull        | `heidelberg`             | yes      |
 | Stadt Herrenberg                                                                  | car     | pull        | `herrenberg`             | no       |
-| PARK SERVICE HÜFNER GmbH + Co. KG                                                 | car     | push (xlsx) | `huefner`                | no      |
+| Stadt Herrenberg - Munigrid                                                       | bike    | pull        | `herrenberg_bike`        | no       |
+| PARK SERVICE HÜFNER GmbH + Co. KG                                                 | car     | push (xlsx) | `huefner`                | no       |
 | Stadt Karlsruhe: PKW-Parkplätze                                                   | car     | pull        | `karlsruhe`              | yes      |
 | Stadt Karlsruhe: Fahhrrad-Abstellangen                                            | bike    | pull        | `karlsruhe_bike`         | no       |
 | Kienzler: Bike and Ride                                                           | bike    | pull        | `kienzler_bike_and_ride` | yes      |

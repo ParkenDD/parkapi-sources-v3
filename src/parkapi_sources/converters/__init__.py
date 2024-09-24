@@ -13,6 +13,7 @@ from .freiburg import FreiburgPullConverter
 from .goldbeck import GoldbeckPushConverter
 from .heidelberg import HeidelbergPullConverter
 from .herrenberg import HerrenbergPullConverter
+from .herrenberg_bike import HerrenbergBikePullConverter
 from .huefner import HuefnerPushConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
 from .kienzler import (

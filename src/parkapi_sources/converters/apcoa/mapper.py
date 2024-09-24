@@ -43,6 +43,8 @@ class ApcoaMapper:
             has_realtime_data=False,  # TODO: change this as soon as Apcoa API offers realtime data
             public_url=apcoa_input.CarParkWebsiteURL,
             static_data_updated_at=apcoa_input.LastModifiedDateTime,
+            # Because it was checked in validation, we can be sure that capacity will be set
+            capacity=next(iter(item.Count for item in apcoa_input.Spaces if item.Type == ApcoaParkingSpaceType.TOTAL_SPACES)),
         )
 
         if apcoa_input.Address.Street and apcoa_input.Address.Zip and apcoa_input.Address.City:
@@ -56,11 +58,9 @@ class ApcoaMapper:
 
         static_parking_site_input.opening_hours = apcoa_input.get_osm_opening_hours()
 
+        # Map all additional capacities
         for capacity_data in apcoa_input.Spaces:
-            # Because it was checked in validation, we can be sure that capacity will be set
-            if capacity_data.Type == ApcoaParkingSpaceType.TOTAL_SPACES:
-                static_parking_site_input.capacity = capacity_data.Count
-            elif capacity_data.Type == ApcoaParkingSpaceType.DISABLED_SPACES:
+            if capacity_data.Type == ApcoaParkingSpaceType.DISABLED_SPACES:
                 static_parking_site_input.capacity_disabled = capacity_data.Count
             elif capacity_data.Type == ApcoaParkingSpaceType.WOMEN_SPACES:
                 static_parking_site_input.capacity_woman = capacity_data.Count

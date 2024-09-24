@@ -9,7 +9,7 @@ from typing import Optional
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import BooleanValidator, EnumValidator, IntegerValidator, StringValidator
 
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
 from parkapi_sources.models.parking_site_inputs import StaticParkingSiteInput
 from parkapi_sources.validators import EmptystringNoneable, ReplacingStringValidator
 
@@ -44,14 +44,20 @@ class BfrkBikeInput(BfrkBaseInput):
     notiz: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        static_parking_site_input = super().to_static_parking_site_input()
+        static_parking_site_input = StaticParkingSiteInput(
+            type=self.anlagentyp.to_parking_site_type(),
+            is_covered=self.ueberdacht,
+            has_fee=self.kostenpflichtig,
+            has_lighting=self.beleuchtet,
+            purpose=PurposeType.BIKE,
+            description=self.notiz,
+            fee_description=self.kostenpflichtignotiz,
+            park_and_ride_type=[ParkAndRideType.YES],
+            capacity=self.stellplatzanzahl,
+            **self.get_static_parking_site_input_kwargs(),
+        )
 
-        static_parking_site_input.type = self.anlagentyp.to_parking_site_type()
-        static_parking_site_input.is_covered = self.ueberdacht
-        static_parking_site_input.has_fee = self.kostenpflichtig
-        static_parking_site_input.has_lighting = self.beleuchtet
-        static_parking_site_input.purpose = PurposeType.BIKE
-        static_parking_site_input.description = self.notiz
-        static_parking_site_input.fee_description = self.kostenpflichtignotiz
+        if self.kostenpflichtignotiz and 'bikeandridebox' in self.kostenpflichtignotiz:
+            static_parking_site_input.has_fee = True
 
         return static_parking_site_input

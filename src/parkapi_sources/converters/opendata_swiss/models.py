@@ -85,7 +85,6 @@ class OpenDataSwissParkingFacilityCategory(Enum):
     def to_parking_site_type_input(self) -> ParkingSiteType:
         return {
             self.CAR: ParkingSiteType.CAR_PARK,
-            self.BIKE: ParkingSiteType.GENERIC_BIKE,
         }.get(self, ParkingSiteType.OTHER)
 
     def to_purpose_type_input(self) -> ParkingSiteType:
@@ -174,6 +173,9 @@ class OpenDataSwissFeatureInput:
             type=self.properties.parkingFacilityCategory.to_parking_site_type_input(),
             static_data_updated_at=datetime.now(tz=timezone.utc),
             has_realtime_data=False,
+            capacity=next(
+                iter(item.total for item in self.properties.capacities if item.categoryType == OpenDataSwissCapacityCategoryType.STANDARD)
+            ),
         )
 
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
@@ -197,9 +199,7 @@ class OpenDataSwissFeatureInput:
             )
 
         for capacities_input in self.properties.capacities:
-            if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.STANDARD:
-                static_parking_site_input.capacity = capacities_input.total
-            elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.DISABLED_PARKING_SPACE:
+            if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.DISABLED_PARKING_SPACE:
                 static_parking_site_input.capacity_disabled = capacities_input.total
             elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.WITH_CHARGING_STATION:
                 static_parking_site_input.capacity_charging = capacities_input.total

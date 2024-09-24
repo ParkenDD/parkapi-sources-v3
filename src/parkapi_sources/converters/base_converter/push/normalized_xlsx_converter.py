@@ -74,7 +74,9 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
             if row[0].value is None:
                 continue
             parking_site_dict = self.map_row_to_parking_site_dict(
-                mapping, row, **{'column_names': [cell.value for cell in next(worksheet.rows)]}
+                mapping, row, **{
+                  'column_names': [cell.value for cell in next(worksheet.rows)]
+                }
             )
 
             try:
@@ -91,7 +93,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell], column_names: list[str]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...], column_names: list[str]) -> dict[str, Any]:
         parking_site_raw_dict: dict[str, str] = {}
         for field in mapping.keys():
             parking_site_raw_dict[field] = row[mapping[field]].value

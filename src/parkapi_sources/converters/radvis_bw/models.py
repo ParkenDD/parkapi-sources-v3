@@ -69,7 +69,7 @@ class RadvisParkingSiteType(Enum):
             self.DOPPELSTOECKIG: ParkingSiteType.TWO_TIER,
             self.FAHRRADPARKHAUS: ParkingSiteType.BUILDING,
             self.SAMMELANLAGE: ParkingSiteType.SHED,
-        }.get(self, ParkingSiteType.GENERIC_BIKE)
+        }.get(self, ParkingSiteType.OTHER)
 
 
 class StatusType(Enum):
