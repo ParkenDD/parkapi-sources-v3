@@ -38,7 +38,7 @@ class KienzlerBasePullConverter(PullConverter):
 
         kienzler_parking_sites, static_parking_site_errors = self._get_kienzler_parking_sites()
         for kienzler_parking_site in kienzler_parking_sites:
-            static_parking_site_inputs.append(kienzler_parking_site.to_static_parking_site())
+            static_parking_site_inputs.append(kienzler_parking_site.to_static_parking_site(self.source_info.public_url))
 
         return static_parking_site_inputs, static_parking_site_errors
 
