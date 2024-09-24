@@ -74,9 +74,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
             if row[0].value is None:
                 continue
             parking_site_dict = self.map_row_to_parking_site_dict(
-                mapping, row, **{
-                  'column_names': [cell.value for cell in next(worksheet.rows)]
-                }
+                mapping, row, **{'column_names': [cell.value for cell in next(worksheet.rows)]}
             )
 
             try:
