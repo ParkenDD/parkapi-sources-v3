@@ -45,8 +45,6 @@ We support following data sources:
 | Stadt Stuttgart                                                                   | car     | push (json) | `stuttgart`              | yes      |
 | Stadt Ulm                                                                         | car     | pull        | `ulm`                    | yes      |
 | Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze                                 | car     | pull        | `vrn_p_r`                | yes      |
-| Verkehrsverbund Rhein-Neckar GmbH: Multiguide API - P+R Parkplätze                | car     | pull        | `vrn_p_r_multiguide`     | yes      |
-| Verkehrsverbund Rhein-Neckar GmbH: Sonah API - P+R Parkplätze                     | car     | pull        | `vrn_p_r_sonah`          | yes      |
 | Verband Region Stuttgart: Bondorf                                                 | car     | pull        | `vrs_bondorf`            | yes      |
 | Verband Region Stuttgart: Kirchheim                                               | car     | pull        | `vrs_kirchheim`          | yes      |
 | Verband Region Stuttgart: Neustadt                                                | car     | pull        | `vrs_neustadt`           | yes      |

@@ -39,6 +39,6 @@ from .reutlingen import ReutlingenPushConverter
 from .reutlingen_bike import ReutlingenBikePushConverter
 from .stuttgart import StuttgartPushConverter
 from .ulm import UlmPullConverter
-from .vrn_p_r import VrnParkAndRideMultiguidePullConverter, VrnParkAndRidePullConverter, VrnParkAndRideSonahPullConverter
+from .vrn_p_r import VrnParkAndRidePullConverter
 from .vrs import VrsBondorfPullConverter, VrsKirchheimPullConverter, VrsNeustadtPullConverter, VrsVaihingenPullConverter
 from .vrs_p_r import VrsParkAndRidePushConverter
