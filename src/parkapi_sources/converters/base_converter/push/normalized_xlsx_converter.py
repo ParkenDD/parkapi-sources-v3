@@ -89,7 +89,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...]) -> dict[str, Any]:
         parking_site_raw_dict: dict[str, str] = {}
         for field in mapping.keys():
             parking_site_raw_dict[field] = row[mapping[field]].value

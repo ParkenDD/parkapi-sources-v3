@@ -44,16 +44,18 @@ class BfrkBikeInput(BfrkBaseInput):
     notiz: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        static_parking_site_input = super().to_static_parking_site_input()
-
-        static_parking_site_input.type = self.anlagentyp.to_parking_site_type()
-        static_parking_site_input.is_covered = self.ueberdacht
-        static_parking_site_input.has_fee = self.kostenpflichtig
-        static_parking_site_input.has_lighting = self.beleuchtet
-        static_parking_site_input.purpose = PurposeType.BIKE
-        static_parking_site_input.description = self.notiz
-        static_parking_site_input.fee_description = self.kostenpflichtignotiz
-        static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
+        static_parking_site_input = StaticParkingSiteInput(
+            type=self.anlagentyp.to_parking_site_type(),
+            is_covered=self.ueberdacht,
+            has_fee=self.kostenpflichtig,
+            has_lighting=self.beleuchtet,
+            purpose=PurposeType.BIKE,
+            description=self.notiz,
+            fee_description=self.kostenpflichtignotiz,
+            park_and_ride_type=[ParkAndRideType.YES],
+            capacity=self.stellplatzanzahl,
+            **self.get_static_parking_site_input_kwargs(),
+        )
 
         if self.kostenpflichtignotiz and 'bikeandridebox' in self.kostenpflichtignotiz:
             static_parking_site_input.has_fee = True

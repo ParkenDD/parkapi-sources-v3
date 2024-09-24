@@ -44,13 +44,14 @@ class BfrkCarInput(BfrkBaseInput):
     eigentuemer: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        static_parking_site_input = super().to_static_parking_site_input()
-
-        static_parking_site_input.type = self.art.to_parking_site_type()
-        static_parking_site_input.capacity = self.stellplaetzgesamt
-        static_parking_site_input.capacity_disabled = self.behindertenstellplaetze
-        static_parking_site_input.description = self.bedingungen
-        static_parking_site_input.operator_name = self.eigentuemer
+        static_parking_site_input = StaticParkingSiteInput(
+            type=self.art.to_parking_site_type(),
+            capacity=self.stellplaetzgesamt,
+            capacity_disabled=self.behindertenstellplaetze,
+            description=self.bedingungen,
+            operator_name=self.eigentuemer,
+            **self.get_static_parking_site_input_kwargs(),
+        )
 
         if self.art == BfrkCarType.PARK_AND_RIDE_PARKING_SITE:
             static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
