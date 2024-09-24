@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.13.2
+
+Released 2024-09-24
+
+### Fixes
+
+* [enforce capacity](https://github.com/ParkenDD/parkapi-sources-v3/pull/133)
+* [remove confusing herrenberg field](https://github.com/ParkenDD/parkapi-sources-v3/pull/134)
+* [set kienzler public url](https://github.com/ParkenDD/parkapi-sources-v3/pull/135)
+* [fix Herrenberg parking type mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/136)
+
+
 ## 0.13.1
 
 Release 2024-09-22
