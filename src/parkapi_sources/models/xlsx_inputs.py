@@ -33,7 +33,7 @@ class ExcelStaticParkingSiteInput(StaticParkingSiteInput):
     has_realtime_data: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator(), default=False)
     max_stay: Optional[int] = ExcelNoneable(GermanDurationIntegerValidator()), Default(None)
 
-    capacity: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
+    capacity: int = IntegerValidator(min_value=0)
     capacity_disabled: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
     capacity_woman: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
     capacity_family: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))

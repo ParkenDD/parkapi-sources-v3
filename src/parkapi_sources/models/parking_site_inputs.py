@@ -79,7 +79,7 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
     lat: Decimal = NumericValidator(min_value=34, max_value=72)
     lon: Decimal = NumericValidator(min_value=-27, max_value=43)
 
-    capacity: int = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
+    capacity: int = IntegerValidator(min_value=0, allow_strings=True)
     capacity_disabled: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
     capacity_woman: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
     capacity_family: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
