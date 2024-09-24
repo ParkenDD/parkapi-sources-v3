@@ -32,7 +32,7 @@ class HerrenbergParkingSitesInput:
 
 
 class HerrenbergParkingSiteType(Enum):
-    ON_STREET = 'Parkplatz'
+    OFF_STREET_PARKING_GROUND = 'Parkplatz'
     CAR_PARK = 'Parkhaus'
     CARAVAN_PARKING = 'Wohnmobilparkplatz'
     CARPOOL = 'Park-Carpool'
@@ -42,7 +42,7 @@ class HerrenbergParkingSiteType(Enum):
 
     def to_parking_site_type(self) -> ParkingSiteType:
         return {
-            self.ON_STREET: ParkingSiteType.ON_STREET,
+            self.OFF_STREET_PARKING_GROUND: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.CAR_PARK: ParkingSiteType.CAR_PARK,
             self.CARAVAN_PARKING: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.CARPOOL: ParkingSiteType.OFF_STREET_PARKING_GROUND,
