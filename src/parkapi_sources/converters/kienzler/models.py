@@ -22,7 +22,7 @@ class KienzlerInput:
     bookable: int = IntegerValidator(min_value=0)
     sum_boxes: int = IntegerValidator(min_value=0)
 
-    def to_static_parking_site(self) -> StaticParkingSiteInput:
+    def to_static_parking_site(self, base_url: str) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             uid=self.id,
             name=self.name,
@@ -33,6 +33,7 @@ class KienzlerInput:
             capacity=self.sum_boxes,
             type=ParkingSiteType.LOCKERS,
             static_data_updated_at=datetime.now(tz=timezone.utc),
+            public_url=f'{base_url}/order/booking/?preselect_unit_uid={self.id[4:]}',
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:
