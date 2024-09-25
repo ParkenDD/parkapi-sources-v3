@@ -3,8 +3,8 @@
         "LocationID": 664,
         "Name": "Am Güterbahnhof",
         "Type": "STATIC",
-        "FreeParking": 40.0,
-        "OccupiedParking": 0.0,
+        "FreeParking": 39.0,
+        "OccupiedParking": 1.0,
         "TotalParking": 40.0,
         "ParentLocations": [
             "api/v3/rest/json/locations?filter=677&exclude=SubLocations&select=[0]"
@@ -80,8 +80,8 @@
         "LocationID": 676,
         "Name": "Neckargemünd",
         "Type": "STATIC",
-        "FreeParking": 17.0,
-        "OccupiedParking": 26.0,
+        "FreeParking": 15.0,
+        "OccupiedParking": 28.0,
         "TotalParking": 43.0,
         "ParentLocations": [],
         "Areas": [
@@ -148,8 +148,8 @@
         "LocationID": 677,
         "Name": "St. Ilgen - Sandhausen",
         "Type": "GROUP",
-        "FreeParking": 101.0,
-        "OccupiedParking": 21.0,
+        "FreeParking": 108.0,
+        "OccupiedParking": 14.0,
         "TotalParking": 122.0,
         "ParentLocations": [],
         "Areas": [],
@@ -174,8 +174,8 @@
         "LocationID": 678,
         "Name": "Leimbachstraße",
         "Type": "STATIC",
-        "FreeParking": 12.0,
-        "OccupiedParking": 8.0,
+        "FreeParking": 13.0,
+        "OccupiedParking": 7.0,
         "TotalParking": 20.0,
         "ParentLocations": [
             "api/v3/rest/json/locations?filter=677&exclude=SubLocations&select=[0]"
@@ -219,8 +219,8 @@
         "LocationID": 679,
         "Name": "Bahnhofstraße",
         "Type": "STATIC",
-        "FreeParking": 49.0,
-        "OccupiedParking": 13.0,
+        "FreeParking": 56.0,
+        "OccupiedParking": 6.0,
         "TotalParking": 62.0,
         "ParentLocations": [
             "api/v3/rest/json/locations?filter=677&exclude=SubLocations&select=[0]"

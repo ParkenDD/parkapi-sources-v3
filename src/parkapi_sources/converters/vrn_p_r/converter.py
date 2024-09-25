@@ -186,7 +186,6 @@ class VrnParkAndRidePullConverter(PullConverter, ABC):
             'Accept': 'application/json',
             'Authorization': self.config_helper.get('PARK_API_VRN_P_R_SONAH_API_BEARER_TOKEN'),
         }
-
         response = requests.get(
             url='https://vrnm.dyndns.sonah.xyz/api/v3/rest/json/locations',
             headers=headers,
