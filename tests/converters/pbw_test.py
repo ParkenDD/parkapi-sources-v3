@@ -4,14 +4,16 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import json
+from decimal import Decimal
 from pathlib import Path
 from typing import TYPE_CHECKING
-from unittest.mock import Mock
+from unittest.mock import ANY, Mock
 
 import pytest
-from parkapi_sources.converters.pbw import PbwPullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters.pbw import PbwPullConverter
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 if TYPE_CHECKING:
@@ -61,6 +63,27 @@ class PbwPullConverterTest:
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
+
+        assert static_parking_site_inputs[0].to_dict() == {
+            'address': 'Flandernstraße 101 A, 73732 Esslingen',
+            'capacity': 459,
+            'capacity_charging': 0,
+            'capacity_disabled': 0,
+            'capacity_family': 0,
+            'capacity_woman': 0,
+            'has_realtime_data': True,
+            'lat': Decimal('48.74481873'),
+            'lon': Decimal('9.321229'),
+            'max_height': 185,
+            'name': 'Parkhaus Flandernstraße',
+            'operator_name': 'Parkraumgesellschaft Baden-Württemberg mbH',
+            'public_url': 'https://www.pbw.de/?menu=parkplatz-finder&search=8',
+            'purpose': PurposeType.CAR,
+            'static_data_updated_at': ANY,
+            'tags': [],
+            'type': ParkingSiteType.CAR_PARK,
+            'uid': '8',
+        }
 
     @staticmethod
     def test_get_realtime_parking_sites(pbw_pull_converter: PbwPullConverter, requests_mock: Mocker):
