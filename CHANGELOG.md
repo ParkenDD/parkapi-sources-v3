@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.13.3
+
+Released 2024-10-07
+
+### Fixes
+
+* [Fix BFRK infraid](https://github.com/ParkenDD/parkapi-sources-v3/pull/140)
+
+
 ## 0.13.2
 
 Released 2024-09-24
