@@ -26,7 +26,7 @@ class BfrkBaseInput(ABC):
     objekt_Foto: Optional[str] = EmptystringNoneable(UrlValidator()), Default(None)
     hst_dhid: Optional[str] = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
     objekt_dhid: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
-    infraid: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
+    infraid: str = StringValidator()
     osmlinks: Optional[str] = EmptystringNoneable(UrlValidator()), Default(None)
     gemeinde: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
     ortsteil: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
