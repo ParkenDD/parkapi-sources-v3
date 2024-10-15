@@ -36,7 +36,7 @@ class PbwParkingSiteType(Enum):
         # TODO: find out more details about this enumeration for a proper mapping
         return {
             self.PARKPLATZ: ParkingSiteType.OFF_STREET_PARKING_GROUND,
-            self.PARKBEREICH: ParkingSiteType.ON_STREET,
+            self.PARKBEREICH: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.PARKHAUS: ParkingSiteType.CAR_PARK,
             self.PARKGARAGE: ParkingSiteType.UNDERGROUND,
             self.PARKIERUNGSAREAL: ParkingSiteType.OFF_STREET_PARKING_GROUND,
