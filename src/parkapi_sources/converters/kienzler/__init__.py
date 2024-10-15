@@ -11,4 +11,5 @@ from .converter import (
     KienzlerRadSafePullConverter,
     KienzlerStuttgartPullConverter,
     KienzlerVrnPullConverter,
+    KienzlerVVSPullConverter,
 )

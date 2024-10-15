@@ -171,3 +171,15 @@ class KienzlerVrnPullConverter(KienzlerBasePullConverter):
         public_url='https://www.vrnradbox.de',
         source_url='https://www.vrnradbox.de',
     )
+
+
+class KienzlerVVSPullConverter(KienzlerBasePullConverter):
+    config_prefix = 'VVS'
+
+    source_info = SourceInfo(
+        uid='kienzler_vvs',
+        name='Kienzler: VVS',
+        has_realtime_data=True,
+        public_url='https://vvs.bike-and-park.de',
+        source_url='https://vvs.bike-and-park.de',
+    )
