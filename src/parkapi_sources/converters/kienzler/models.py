@@ -34,6 +34,8 @@ class KienzlerInput:
             type=ParkingSiteType.LOCKERS,
             static_data_updated_at=datetime.now(tz=timezone.utc),
             public_url=f'{base_url}/order/booking/?preselect_unit_uid={self.id[4:]}',
+            opening_hours='24/7',
+            has_fee=True,
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:
