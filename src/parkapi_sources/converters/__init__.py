@@ -24,6 +24,7 @@ from .kienzler import (
     KienzlerRadSafePullConverter,
     KienzlerStuttgartPullConverter,
     KienzlerVrnPullConverter,
+    KienzlerVVSPullConverter,
 )
 from .konstanz import KonstanzPullConverter
 from .konstanz_bike import KonstanzBikePushConverter
