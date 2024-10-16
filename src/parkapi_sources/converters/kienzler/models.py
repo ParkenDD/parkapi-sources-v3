@@ -7,7 +7,6 @@ from datetime import datetime, timezone
 from decimal import Decimal
 
 from validataclass.dataclasses import validataclass
-from validataclass.helpers import UnsetValue
 from validataclass.validators import IntegerValidator, NumericValidator, StringValidator
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
@@ -45,5 +44,4 @@ class KienzlerInput:
             realtime_data_updated_at=datetime.now(tz=timezone.utc),
             realtime_capacity=self.sum_boxes,
             realtime_free_capacity=self.bookable,
-            realtime_opening_status=UnsetValue,
         )
