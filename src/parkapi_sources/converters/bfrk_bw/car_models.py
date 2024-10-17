@@ -38,7 +38,7 @@ class BfrkCarType(Enum):
 @validataclass
 class BfrkCarInput(BfrkBaseInput):
     art: BfrkCarType = EnumValidator(BfrkCarType), Default(BfrkCarType.OFF_STREET_PARKING_GROUND)
-    stellplaetzgesamt: int = IntegerValidator()
+    stellplaetzegesamt: int = IntegerValidator()
     behindertenstellplaetze: Optional[int] = IntegerValidator(), Default(None)
     bedingungen: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
     eigentuemer: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
@@ -46,7 +46,7 @@ class BfrkCarInput(BfrkBaseInput):
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             type=self.art.to_parking_site_type(),
-            capacity=self.stellplaetzgesamt,
+            capacity=self.stellplaetzegesamt,
             capacity_disabled=self.behindertenstellplaetze,
             description=self.bedingungen,
             operator_name=self.eigentuemer,
