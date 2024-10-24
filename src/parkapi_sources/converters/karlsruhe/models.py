@@ -60,7 +60,7 @@ class KarlsruhePropertiesInput:
     betreiber_internet: Optional[str] = Noneable(UrlValidator())
     betreiber_email: Optional[str] = Noneable(EmailValidator())
     betreiber_telefon: Optional[str] = Noneable(StringValidator())
-    stand_stammdaten: date = ParsedDateValidator(date_format='%d.%m.%Y')
+    stand_stammdaten: date = ParsedDateValidator(date_format='%Y/%m/%d %H:%M:%S')
 
     def __post_init__(self):
         if self.max_durchfahrtshoehe == 0:  # 0 is used as None

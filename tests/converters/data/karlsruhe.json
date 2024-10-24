@@ -3,7 +3,7 @@
     "features": [
         {
             "type": "Feature",
-            "id": "parkhaeuser.254185",
+            "id": "parkhaeuser.1",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -13,12 +13,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254185,
+                "id": 1,
                 "gemeinde": "Rastatt",
                 "parkhaus_name": "Modepark Röther",
                 "infofeld": null,
                 "gesamte_parkplaetze": 59,
-                "freie_parkplaetze": 0,
+                "freie_parkplaetze": 24,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -49,13 +49,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://modepark.de/standorte/rastatt/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:49:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:34:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254186",
+            "id": "parkhaeuser.2",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -65,12 +65,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254186,
+                "id": 2,
                 "gemeinde": "Rastatt",
                 "parkhaus_name": "SchlossGalerie",
                 "infofeld": null,
                 "gesamte_parkplaetze": 320,
-                "freie_parkplaetze": 229,
+                "freie_parkplaetze": 256,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -101,13 +101,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.goldbeck-parking.de",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:49:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:34:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254187",
+            "id": "parkhaeuser.3",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -117,12 +117,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254187,
+                "id": 3,
                 "gemeinde": "Rastatt",
                 "parkhaus_name": "Badner Halle",
                 "infofeld": null,
                 "gesamte_parkplaetze": 250,
-                "freie_parkplaetze": 215,
+                "freie_parkplaetze": 205,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -153,13 +153,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.kulturundveranstaltungen.de/locations/badnerhalle/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:49:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:34:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254188",
+            "id": "parkhaeuser.4",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -169,7 +169,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254188,
+                "id": 4,
                 "gemeinde": "Rastatt",
                 "parkhaus_name": "Sparkassen-Tiefgarage",
                 "infofeld": null,
@@ -205,13 +205,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254189",
+            "id": "parkhaeuser.5",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -221,7 +221,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254189,
+                "id": 5,
                 "gemeinde": "Rastatt",
                 "parkhaus_name": "Hilberthof",
                 "infofeld": null,
@@ -257,13 +257,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254190",
+            "id": "parkhaeuser.6",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -273,7 +273,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254190,
+                "id": 6,
                 "gemeinde": "Wörth",
                 "parkhaus_name": "Tiefgarage Rathaus",
                 "infofeld": null,
@@ -309,13 +309,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254191",
+            "id": "parkhaeuser.7",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -325,7 +325,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254191,
+                "id": 7,
                 "gemeinde": "Wörth",
                 "parkhaus_name": "Parkhaus Bahnhof",
                 "infofeld": null,
@@ -361,13 +361,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254192",
+            "id": "parkhaeuser.8",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -377,7 +377,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254192,
+                "id": 8,
                 "gemeinde": "Saverne",
                 "parkhaus_name": "Parking Gare souterrain",
                 "infofeld": null,
@@ -413,13 +413,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254193",
+            "id": "parkhaeuser.9",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -429,7 +429,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254193,
+                "id": 9,
                 "gemeinde": "Haguenau",
                 "parkhaus_name": "Halle aux Houblons",
                 "infofeld": null,
@@ -465,13 +465,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-05-17T10:59:06Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254194",
+            "id": "parkhaeuser.10",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -481,7 +481,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254194,
+                "id": 10,
                 "gemeinde": "Haguenau",
                 "parkhaus_name": "Thurot",
                 "infofeld": "ouverture le 27 août 2018",
@@ -517,13 +517,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-05-17T10:59:06Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254195",
+            "id": "parkhaeuser.11",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -533,7 +533,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254195,
+                "id": 11,
                 "gemeinde": "Haguenau",
                 "parkhaus_name": "Vieille Ile",
                 "infofeld": "Parking à barrières",
@@ -569,13 +569,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-05-17T10:59:06Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254196",
+            "id": "parkhaeuser.12",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -585,7 +585,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254196,
+                "id": 12,
                 "gemeinde": "Haguenau",
                 "parkhaus_name": "IUT / Médiathèque",
                 "infofeld": "Parking à barrières",
@@ -621,13 +621,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-05-17T10:59:06Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254197",
+            "id": "parkhaeuser.13",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -637,7 +637,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254197,
+                "id": 13,
                 "gemeinde": "Haguenau",
                 "parkhaus_name": "Quai des Pêcheurs",
                 "infofeld": "Parking à barrières",
@@ -673,13 +673,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-05-17T10:59:06Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254198",
+            "id": "parkhaeuser.14",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -689,12 +689,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254198,
+                "id": 14,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Bädergarage",
                 "infofeld": null,
                 "gesamte_parkplaetze": 247,
-                "freie_parkplaetze": 124,
+                "freie_parkplaetze": 121,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -725,13 +725,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://carasana.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254199",
+            "id": "parkhaeuser.15",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -741,7 +741,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254199,
+                "id": 15,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Garage Falkenstraße",
                 "infofeld": "ausschließlich Dauerparker",
@@ -777,13 +777,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.stadtwerke-baden-baden.de/de/mobilitaet-freizeit/parken/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254200",
+            "id": "parkhaeuser.16",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -793,12 +793,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254200,
+                "id": 16,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Kongresshausgarage",
                 "infofeld": null,
-                "gesamte_parkplaetze": 250,
-                "freie_parkplaetze": 141,
+                "gesamte_parkplaetze": 270,
+                "freie_parkplaetze": 15,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -829,13 +829,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.stadtwerke-baden-baden.de/de/mobilitaet-freizeit/parken/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254201",
+            "id": "parkhaeuser.17",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -845,12 +845,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254201,
+                "id": 17,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Festspielhausgarage",
                 "infofeld": null,
                 "gesamte_parkplaetze": 180,
-                "freie_parkplaetze": 130,
+                "freie_parkplaetze": 127,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -881,13 +881,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.stadtwerke-baden-baden.de/de/mobilitaet-freizeit/parken/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254202",
+            "id": "parkhaeuser.18",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -897,12 +897,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254202,
+                "id": 18,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Kurhausgarage",
                 "infofeld": null,
-                "gesamte_parkplaetze": 480,
-                "freie_parkplaetze": 335,
+                "gesamte_parkplaetze": 481,
+                "freie_parkplaetze": 208,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -933,13 +933,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.pbw.de",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254203",
+            "id": "parkhaeuser.19",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -949,7 +949,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254203,
+                "id": 19,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Parkgarage Brenner's Park",
                 "infofeld": null,
@@ -985,13 +985,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254204",
+            "id": "parkhaeuser.20",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1001,12 +1001,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254204,
+                "id": 20,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Vincentigarage",
                 "infofeld": null,
-                "gesamte_parkplaetze": 256,
-                "freie_parkplaetze": 117,
+                "gesamte_parkplaetze": 230,
+                "freie_parkplaetze": 123,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -1037,13 +1037,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.stadtwerke-baden-baden.de/de/mobilitaet-freizeit/parken/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254205",
+            "id": "parkhaeuser.21",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1053,7 +1053,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254205,
+                "id": 21,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Behördenzentrum/Gutenbergstraße",
                 "infofeld": null,
@@ -1089,13 +1089,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254206",
+            "id": "parkhaeuser.22",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1105,12 +1105,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254206,
+                "id": 22,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Hochgarage Kaufhaus Wagener",
                 "infofeld": null,
                 "gesamte_parkplaetze": 412,
-                "freie_parkplaetze": 116,
+                "freie_parkplaetze": 64,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -1141,13 +1141,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.wagener.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254207",
+            "id": "parkhaeuser.23",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1157,12 +1157,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254207,
+                "id": 23,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "City-Garage",
                 "infofeld": null,
-                "gesamte_parkplaetze": 130,
-                "freie_parkplaetze": 58,
+                "gesamte_parkplaetze": 180,
+                "freie_parkplaetze": 92,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -1193,13 +1193,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.stadtwerke-baden-baden.de/de/mobilitaet-freizeit/parken/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254208",
+            "id": "parkhaeuser.24",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1209,12 +1209,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254208,
+                "id": 24,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Cineplex Parkhaus (P+R)",
                 "infofeld": null,
                 "gesamte_parkplaetze": 236,
-                "freie_parkplaetze": 199,
+                "freie_parkplaetze": 194,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -1245,13 +1245,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.stadtwerke-baden-baden.de/de/mobilitaet-freizeit/parken/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254209",
+            "id": "parkhaeuser.25",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1261,12 +1261,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254209,
+                "id": 25,
                 "gemeinde": "Baden-Baden",
                 "parkhaus_name": "Beethovenstraße",
                 "infofeld": null,
                 "gesamte_parkplaetze": 107,
-                "freie_parkplaetze": 46,
+                "freie_parkplaetze": 61,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -1297,13 +1297,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254210",
+            "id": "parkhaeuser.26",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1313,7 +1313,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254210,
+                "id": 26,
                 "gemeinde": "Bruchsal",
                 "parkhaus_name": "Tiefgarage Bürgerzentrum",
                 "infofeld": null,
@@ -1349,13 +1349,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254211",
+            "id": "parkhaeuser.27",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1365,7 +1365,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254211,
+                "id": 27,
                 "gemeinde": "Bruchsal",
                 "parkhaus_name": "Parkhaus Saalbachcenter",
                 "infofeld": null,
@@ -1401,13 +1401,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://saalbachcenter.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254212",
+            "id": "parkhaeuser.28",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1417,7 +1417,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254212,
+                "id": 28,
                 "gemeinde": "Bruchsal",
                 "parkhaus_name": "Parkhaus Bahnstadt",
                 "infofeld": null,
@@ -1453,13 +1453,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254213",
+            "id": "parkhaeuser.29",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1469,7 +1469,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254213,
+                "id": 29,
                 "gemeinde": "Bruchsal",
                 "parkhaus_name": "Parkhaus Rathausgalerie",
                 "infofeld": null,
@@ -1505,13 +1505,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254214",
+            "id": "parkhaeuser.30",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1521,7 +1521,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254214,
+                "id": 30,
                 "gemeinde": "Bruchsal",
                 "parkhaus_name": "Tiefgarage Kaiserstraße",
                 "infofeld": null,
@@ -1557,13 +1557,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254215",
+            "id": "parkhaeuser.31",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1573,7 +1573,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254215,
+                "id": 31,
                 "gemeinde": "Bruchsal",
                 "parkhaus_name": "Tiefgarage Sparkasse Kraichgau",
                 "infofeld": null,
@@ -1609,13 +1609,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254216",
+            "id": "parkhaeuser.32",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1625,7 +1625,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254216,
+                "id": 32,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "Neue Sporthalle",
                 "infofeld": null,
@@ -1661,13 +1661,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254217",
+            "id": "parkhaeuser.33",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1677,7 +1677,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254217,
+                "id": 33,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P1 Cityparkplatz",
                 "infofeld": null,
@@ -1713,13 +1713,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254218",
+            "id": "parkhaeuser.34",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1729,7 +1729,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254218,
+                "id": 34,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P2 Parkdeck Johannesplatz",
                 "infofeld": null,
@@ -1765,13 +1765,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254219",
+            "id": "parkhaeuser.35",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1781,7 +1781,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254219,
+                "id": 35,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P3 Tiefgarage Johannespassage",
                 "infofeld": null,
@@ -1817,13 +1817,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254220",
+            "id": "parkhaeuser.36",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1833,7 +1833,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254220,
+                "id": 36,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P4 Bühler Tor",
                 "infofeld": null,
@@ -1869,13 +1869,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254221",
+            "id": "parkhaeuser.37",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1885,7 +1885,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254221,
+                "id": 37,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P5 Franz-Conrad-Straße",
                 "infofeld": null,
@@ -1921,13 +1921,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254222",
+            "id": "parkhaeuser.38",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1937,7 +1937,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254222,
+                "id": 38,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P6 Tiefgarage Volksbank",
                 "infofeld": null,
@@ -1973,13 +1973,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254223",
+            "id": "parkhaeuser.39",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -1989,7 +1989,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254223,
+                "id": 39,
                 "gemeinde": "Bühl",
                 "parkhaus_name": "P7 Tiefgarage Sparkasse",
                 "infofeld": null,
@@ -2025,13 +2025,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://www.buehl.de/de/Stadt-Buerger/Umwelt-Mobilitaet/Mobilitaet/Auto/Parkplatz",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254224",
+            "id": "parkhaeuser.40",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2041,12 +2041,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254224,
+                "id": 40,
                 "gemeinde": "Ettlingen",
                 "parkhaus_name": "Zentrum / Schloss",
                 "infofeld": null,
                 "gesamte_parkplaetze": 190,
-                "freie_parkplaetze": 104,
+                "freie_parkplaetze": 97,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -2077,13 +2077,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254225",
+            "id": "parkhaeuser.41",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2093,12 +2093,12 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254225,
+                "id": 41,
                 "gemeinde": "Ettlingen",
                 "parkhaus_name": "Zentrum / Stadtbahnhof",
                 "infofeld": null,
                 "gesamte_parkplaetze": 326,
-                "freie_parkplaetze": 128,
+                "freie_parkplaetze": 111,
                 "echtzeit_status": "OK",
                 "echtzeit_belegung": "T",
                 "geschlossen": "F",
@@ -2129,13 +2129,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
-                "stand_freieparkplaetze": "2024-08-12T12:51:00Z"
+                "stand_stammdaten": "2024/01/01 00:00:00",
+                "stand_freieparkplaetze": "2024-10-21T11:36:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254226",
+            "id": "parkhaeuser.42",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2145,7 +2145,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254226,
+                "id": 42,
                 "gemeinde": "Gaggenau",
                 "parkhaus_name": "Hildastraße",
                 "infofeld": null,
@@ -2181,13 +2181,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254227",
+            "id": "parkhaeuser.43",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2197,7 +2197,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254227,
+                "id": 43,
                 "gemeinde": "Gaggenau",
                 "parkhaus_name": "Tiefgarage Murgufer",
                 "infofeld": null,
@@ -2233,13 +2233,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": "Stellplätze für Motorräder und Arztbesucher vorhanden; E-Tanken ist kostenlos",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254228",
+            "id": "parkhaeuser.44",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2249,7 +2249,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254228,
+                "id": 44,
                 "gemeinde": "Gaggenau",
                 "parkhaus_name": "Murgtal-Center",
                 "infofeld": null,
@@ -2285,13 +2285,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254229",
+            "id": "parkhaeuser.45",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2301,7 +2301,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254229,
+                "id": 45,
                 "gemeinde": "Gaggenau",
                 "parkhaus_name": "Parkhaus Sparkasse",
                 "infofeld": null,
@@ -2337,13 +2337,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254230",
+            "id": "parkhaeuser.46",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2353,7 +2353,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254230,
+                "id": 46,
                 "gemeinde": "Landau",
                 "parkhaus_name": "VR Bank Parkhaus Stadtmitte",
                 "infofeld": "Das Parkhaus ist aufgrund Sanierungsarbeiten bis voraussichtlich Herbst 2024 geschlossen",
@@ -2389,13 +2389,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254231",
+            "id": "parkhaeuser.47",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2405,7 +2405,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254231,
+                "id": 47,
                 "gemeinde": "Landau",
                 "parkhaus_name": "Parkhaus Zentrum",
                 "infofeld": null,
@@ -2441,13 +2441,13 @@
                 "betreiber_email": "info@md-unternehmensgruppe.de",
                 "betreiber_internet": null,
                 "bemerkung": "http://www.parkhaus-landau.de/",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254232",
+            "id": "parkhaeuser.48",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2457,7 +2457,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254232,
+                "id": 48,
                 "gemeinde": "Landau",
                 "parkhaus_name": "Tiefgarage Parkhotel",
                 "infofeld": null,
@@ -2493,13 +2493,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": "https://www.parkhotel-landau.de",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254233",
+            "id": "parkhaeuser.49",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2509,7 +2509,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254233,
+                "id": 49,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Filmpalast am ZKM",
                 "infofeld": null,
@@ -2545,13 +2545,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254234",
+            "id": "parkhaeuser.50",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2561,7 +2561,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254234,
+                "id": 50,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Am Entenfang",
                 "infofeld": null,
@@ -2597,13 +2597,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": "Ausfahrt in der Geibelstraße 40",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254235",
+            "id": "parkhaeuser.51",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2613,7 +2613,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254235,
+                "id": 51,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Tiefgarage Hauptbahnhof P1/2",
                 "infofeld": null,
@@ -2649,13 +2649,13 @@
                 "betreiber_email": "support@parken-in-karlsruhe.de",
                 "betreiber_internet": "https://parken-in-karlsruhe.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254236",
+            "id": "parkhaeuser.52",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2665,7 +2665,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254236,
+                "id": 52,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Europabad",
                 "infofeld": null,
@@ -2701,13 +2701,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254237",
+            "id": "parkhaeuser.53",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2717,7 +2717,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254237,
+                "id": 53,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Amalienbadgarage",
                 "infofeld": null,
@@ -2753,13 +2753,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254238",
+            "id": "parkhaeuser.54",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2769,7 +2769,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254238,
+                "id": 54,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Kongresszentrum PH1",
                 "infofeld": "Parkdeck A+B",
@@ -2805,13 +2805,13 @@
                 "betreiber_email": "parken@messe-karlsruhe.de",
                 "betreiber_internet": null,
                 "bemerkung": "Parkzentrale Kongresszentrum",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254239",
+            "id": "parkhaeuser.55",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2821,7 +2821,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254239,
+                "id": 55,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Kongresszentrum PH2",
                 "infofeld": "Parkdeck C+D",
@@ -2857,13 +2857,13 @@
                 "betreiber_email": "parken@messe-karlsruhe.de",
                 "betreiber_internet": null,
                 "bemerkung": "Parkzentrale Kongresszentrum",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254240",
+            "id": "parkhaeuser.56",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2873,7 +2873,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254240,
+                "id": 56,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Luisenstraße",
                 "infofeld": null,
@@ -2909,13 +2909,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254241",
+            "id": "parkhaeuser.57",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2925,7 +2925,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254241,
+                "id": 57,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Staatstheater",
                 "infofeld": null,
@@ -2961,13 +2961,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254242",
+            "id": "parkhaeuser.58",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -2977,7 +2977,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254242,
+                "id": 58,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Hotel Kübler",
                 "infofeld": null,
@@ -3013,13 +3013,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": "Der Parkautomat für Kurzparker befindet sich im Eingangsbereich des Badisch Brauhaus",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254243",
+            "id": "parkhaeuser.59",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3029,7 +3029,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254243,
+                "id": 59,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Passagehof",
                 "infofeld": null,
@@ -3065,13 +3065,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": "24h-Hotline und Überwachungskamera",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254244",
+            "id": "parkhaeuser.60",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3081,7 +3081,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254244,
+                "id": 60,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Herrenstraße / Zirkel",
                 "infofeld": null,
@@ -3117,13 +3117,13 @@
                 "betreiber_email": "tbkarlsruhe@savills.de",
                 "betreiber_internet": "https://www.parkhaus-karlsruhe.de/",
                 "bemerkung": "Kostenlose Fahrradstellplätze im EG",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254245",
+            "id": "parkhaeuser.61",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3133,7 +3133,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254245,
+                "id": 61,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Schlossplatz",
                 "infofeld": null,
@@ -3169,13 +3169,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": "Aufzug nur im 1.UG, nicht im 2.UG",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254246",
+            "id": "parkhaeuser.62",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3185,7 +3185,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254246,
+                "id": 62,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Kreuzstraße",
                 "infofeld": null,
@@ -3221,13 +3221,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254247",
+            "id": "parkhaeuser.63",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3237,7 +3237,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254247,
+                "id": 63,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Kronenplatz",
                 "infofeld": null,
@@ -3273,13 +3273,13 @@
                 "betreiber_email": "support@parken-in-karlsruhe.de",
                 "betreiber_internet": "https://parken-in-karlsruhe.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254248",
+            "id": "parkhaeuser.64",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3289,7 +3289,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254248,
+                "id": 64,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Landesbibliothek",
                 "infofeld": null,
@@ -3325,13 +3325,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": "Der Aufzug ist nur während der Öffnungszeiten der Bibliothek in Betrieb",
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254249",
+            "id": "parkhaeuser.65",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3341,7 +3341,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254249,
+                "id": 65,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Friedrichsplatz",
                 "infofeld": null,
@@ -3377,13 +3377,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254250",
+            "id": "parkhaeuser.66",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3393,7 +3393,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254250,
+                "id": 66,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Karstadt",
                 "infofeld": null,
@@ -3429,13 +3429,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": "https://galeria-parken.de",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254251",
+            "id": "parkhaeuser.67",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3445,7 +3445,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254251,
+                "id": 67,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "IHK",
                 "infofeld": null,
@@ -3481,13 +3481,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254252",
+            "id": "parkhaeuser.68",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3497,7 +3497,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254252,
+                "id": 68,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Marktplatz",
                 "infofeld": null,
@@ -3533,13 +3533,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254253",
+            "id": "parkhaeuser.69",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3549,7 +3549,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254253,
+                "id": 69,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Mendelssohnplatz",
                 "infofeld": null,
@@ -3585,13 +3585,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254254",
+            "id": "parkhaeuser.70",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3601,7 +3601,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254254,
+                "id": 70,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Ettlinger Tor",
                 "infofeld": null,
@@ -3637,13 +3637,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254255",
+            "id": "parkhaeuser.71",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3653,7 +3653,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254255,
+                "id": 71,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Stephanplatz",
                 "infofeld": null,
@@ -3689,13 +3689,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254256",
+            "id": "parkhaeuser.72",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3705,7 +3705,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254256,
+                "id": 72,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Akademiestraße",
                 "infofeld": "",
@@ -3741,13 +3741,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254257",
+            "id": "parkhaeuser.73",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3757,7 +3757,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254257,
+                "id": 73,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Postgalerie",
                 "infofeld": null,
@@ -3793,13 +3793,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254258",
+            "id": "parkhaeuser.74",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3809,7 +3809,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254258,
+                "id": 74,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Ludwigsplatz",
                 "infofeld": null,
@@ -3845,13 +3845,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": "2024-06-20T12:15:00Z"
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254259",
+            "id": "parkhaeuser.75",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3861,7 +3861,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254259,
+                "id": 75,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Magdeburger Haus",
                 "infofeld": null,
@@ -3897,13 +3897,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254260",
+            "id": "parkhaeuser.76",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3913,7 +3913,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254260,
+                "id": 76,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Parkarkaden 2",
                 "infofeld": null,
@@ -3949,13 +3949,13 @@
                 "betreiber_email": "info@hurrle-kg.de",
                 "betreiber_internet": "https://hurrle-immobilien.de/cms/index.php?idcatside=7",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254261",
+            "id": "parkhaeuser.77",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -3965,7 +3965,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254261,
+                "id": 77,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Tiefgarage \"Am ZKM\"",
                 "infofeld": null,
@@ -4001,13 +4001,13 @@
                 "betreiber_email": "support@parken-in-karlsruhe.de",
                 "betreiber_internet": "https://parken-in-karlsruhe.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254262",
+            "id": "parkhaeuser.78",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4017,7 +4017,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254262,
+                "id": 78,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Scheck-In-Center",
                 "infofeld": null,
@@ -4053,13 +4053,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254263",
+            "id": "parkhaeuser.79",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4069,7 +4069,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254263,
+                "id": 79,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Duale Hochschule BW Karlsruhe",
                 "infofeld": null,
@@ -4105,13 +4105,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254264",
+            "id": "parkhaeuser.80",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4121,7 +4121,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254264,
+                "id": 80,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Fasanengarten",
                 "infofeld": null,
@@ -4157,13 +4157,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254265",
+            "id": "parkhaeuser.81",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4173,7 +4173,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254265,
+                "id": 81,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Landesoberkasse Karlsruhe",
                 "infofeld": null,
@@ -4209,13 +4209,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254266",
+            "id": "parkhaeuser.82",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4225,7 +4225,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254266,
+                "id": 82,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Parkarkaden 1",
                 "infofeld": null,
@@ -4261,13 +4261,13 @@
                 "betreiber_email": null,
                 "betreiber_internet": null,
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254267",
+            "id": "parkhaeuser.83",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4277,7 +4277,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254267,
+                "id": 83,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Waldhornstraße",
                 "infofeld": "Das Parkhaus ist aufgrund Sanierungsarbeiten bis voraussichtlich Frühjahr 2025 geschlossen",
@@ -4313,13 +4313,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254268",
+            "id": "parkhaeuser.84",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4329,7 +4329,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254268,
+                "id": 84,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Parkplatz P6",
                 "infofeld": null,
@@ -4365,13 +4365,13 @@
                 "betreiber_email": "support@parken-in-karlsruhe.de",
                 "betreiber_internet": "https://parken-in-karlsruhe.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "01.01.2024",
+                "stand_stammdaten": "2024/01/01 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254269",
+            "id": "parkhaeuser.85",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4381,7 +4381,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254269,
+                "id": 85,
                 "gemeinde": "Karlsruhe",
                 "parkhaus_name": "Kaiserstraße (KIT)",
                 "infofeld": null,
@@ -4417,13 +4417,13 @@
                 "betreiber_email": "info@pbw.de",
                 "betreiber_internet": "https://www.pbw.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "11.01.2024",
+                "stand_stammdaten": "2024/01/11 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254270",
+            "id": "parkhaeuser.86",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4433,7 +4433,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254270,
+                "id": 86,
                 "gemeinde": "Bretten",
                 "parkhaus_name": "Löwenhof",
                 "infofeld": null,
@@ -4469,13 +4469,13 @@
                 "betreiber_email": "info@stadtwerke-bretten.de",
                 "betreiber_internet": "https://www.stadtwerke-bretten.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "19.01.2024",
+                "stand_stammdaten": "2024/01/19 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254271",
+            "id": "parkhaeuser.87",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4485,7 +4485,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254271,
+                "id": 87,
                 "gemeinde": "Bretten",
                 "parkhaus_name": "Tiefgarage Pfluggasse",
                 "infofeld": "Tiefgarage geht erst Ende Februar offiziell in Betrieb",
@@ -4521,13 +4521,13 @@
                 "betreiber_email": "info@stadtwerke-bretten.de",
                 "betreiber_internet": "https://www.stadtwerke-bretten.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "19.01.2024",
+                "stand_stammdaten": "2024/01/19 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254272",
+            "id": "parkhaeuser.88",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4537,7 +4537,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254272,
+                "id": 88,
                 "gemeinde": "Bretten",
                 "parkhaus_name": "Engelsberg",
                 "infofeld": null,
@@ -4573,13 +4573,13 @@
                 "betreiber_email": "info@stadtwerke-bretten.de",
                 "betreiber_internet": "https://www.stadtwerke-bretten.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "19.01.2024",
+                "stand_stammdaten": "2024/01/19 00:00:00",
                 "stand_freieparkplaetze": null
             }
         },
         {
             "type": "Feature",
-            "id": "parkhaeuser.254273",
+            "id": "parkhaeuser.89",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
@@ -4589,7 +4589,7 @@
             },
             "geometry_name": "geom",
             "properties": {
-                "id": 254273,
+                "id": 89,
                 "gemeinde": "Bretten",
                 "parkhaus_name": "Parkanlage Weißhofer Straße",
                 "infofeld": null,
@@ -4625,7 +4625,7 @@
                 "betreiber_email": "info@stadtwerke-bretten.de",
                 "betreiber_internet": "https://www.stadtwerke-bretten.de/",
                 "bemerkung": null,
-                "stand_stammdaten": "19.01.2024",
+                "stand_stammdaten": "2024/01/19 00:00:00",
                 "stand_freieparkplaetze": null
             }
         }
@@ -4633,7 +4633,7 @@
     "totalFeatures": 89,
     "numberMatched": 89,
     "numberReturned": 89,
-    "timeStamp": "2024-08-12T12:57:03.613Z",
+    "timeStamp": "2024-10-21T11:41:07.490Z",
     "crs": {
         "type": "name",
         "properties": {
