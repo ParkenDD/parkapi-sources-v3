@@ -15,7 +15,9 @@ class BahnMapper:
     def map_static_parking_site(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(bahn_input.id),
-            name=next(iter(name_input.name for name_input in bahn_input.name if name_input.context == NameContext.NAME)),
+            name=next(
+                iter(name_input.name for name_input in bahn_input.name if name_input.context == NameContext.NAME)
+            ),
             lat=bahn_input.address.location.latitude,
             lon=bahn_input.address.location.longitude,
             operator_name=bahn_input.operator.name,
@@ -25,7 +27,13 @@ class BahnMapper:
             static_data_updated_at=datetime.now(tz=timezone.utc),
             public_url=bahn_input.url,
             # Because it was checked in validation, we can be sure that capacity will be set
-            capacity=next(iter(int(round(item.total)) for item in bahn_input.capacity if item.type == BahnParkingSiteCapacityType.PARKING)),
+            capacity=next(
+                iter(
+                    int(round(item.total))
+                    for item in bahn_input.capacity
+                    if item.type == BahnParkingSiteCapacityType.PARKING
+                )
+            ),
         )
         if bahn_input.access.openingHours.is24h:
             static_parking_site_input.opening_hours = '24/7'

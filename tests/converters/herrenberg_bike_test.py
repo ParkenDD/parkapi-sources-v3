@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import HerrenbergBikePullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import HerrenbergBikePullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -54,8 +54,12 @@ def herrenberg_bike_ignore_missing_capacity_pull_converter(
 
 class HerrenbergBikePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker):
-        static_parking_site_inputs, import_parking_site_exceptions = herrenberg_bike_pull_converter.get_static_parking_sites()
+    def test_get_static_parking_sites(
+        herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            herrenberg_bike_pull_converter.get_static_parking_sites()
+        )
 
         assert len(static_parking_site_inputs) == 184
         assert len(import_parking_site_exceptions) == 0
@@ -77,8 +81,12 @@ class HerrenbergBikePullConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker):
-        realtime_parking_site_inputs, import_parking_site_exceptions = herrenberg_bike_pull_converter.get_realtime_parking_sites()
+    def test_get_realtime_parking_sites(
+        herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            herrenberg_bike_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 0
         assert len(import_parking_site_exceptions) == 0

@@ -10,7 +10,11 @@ from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import PullConverter
-from parkapi_sources.converters.herrenberg.models import HerrenbergParkingSiteInput, HerrenbergParkingSitesInput, HerrenbergState
+from parkapi_sources.converters.herrenberg.models import (
+    HerrenbergParkingSiteInput,
+    HerrenbergParkingSitesInput,
+    HerrenbergState,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
@@ -49,7 +53,9 @@ class HerrenbergPullConverter(PullConverter):
 
         return realtime_parking_site_inputs, parking_site_errors
 
-    def _get_parking_site_inputs(self) -> tuple[list[HerrenbergParkingSiteInput], list[ImportParkingSiteException], datetime]:
+    def _get_parking_site_inputs(
+        self,
+    ) -> tuple[list[HerrenbergParkingSiteInput], list[ImportParkingSiteException], datetime]:
         parking_site_inputs: list[HerrenbergParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 

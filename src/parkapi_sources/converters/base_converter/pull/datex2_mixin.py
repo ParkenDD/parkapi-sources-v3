@@ -28,7 +28,9 @@ class Datex2Mixin(ABC):
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
         static_items = (
-            datex2_parking_facilities.get('parkingFacilityTablePublication', {}).get('parkingFacilityTable', {}).get('parkingFacility', [])
+            datex2_parking_facilities.get('parkingFacilityTablePublication', {})
+            .get('parkingFacilityTable', {})
+            .get('parkingFacility', [])
         )
 
         for static_item in static_items:
@@ -60,12 +62,18 @@ class Datex2Mixin(ABC):
             input_data['lat'] = coordinates_base.get('latitude')
             input_data['lon'] = coordinates_base.get('longitude')
         else:
-            coordinates = self.proj(float(coordinates_base.get('longitude')), float(coordinates_base.get('latitude')), inverse=True)
+            coordinates = self.proj(
+                float(coordinates_base.get('longitude')),
+                float(coordinates_base.get('latitude')),
+                inverse=True,
+            )
             input_data['lat'] = coordinates[1]
             input_data['lon'] = coordinates[0]
 
         # max_height
-        height_base = datex2_parking_facility.get('characteristicsOfPermittedVehicles', {}).get('heightCharacteristic', {})
+        height_base = datex2_parking_facility.get('characteristicsOfPermittedVehicles', {}).get(
+            'heightCharacteristic', {}
+        )
         if height_base.get('comparisonOperator') == 'lessThan' and height_base.get('vehicleHeight'):
             input_data['max_height'] = int(float(height_base.get('vehicleHeight')) * 1000)
 
@@ -78,10 +86,15 @@ class Datex2Mixin(ABC):
         ]
 
         for sub_capacity in datex2_parking_facility.get('assignedParkingSpaces', []):
-            for key, value in sub_capacity.get('assignedParkingSpaces', {}).get('descriptionOfAssignedParkingSpaces', {}).items():
+            assigned_parking_spaces = sub_capacity.get('assignedParkingSpaces', {}).get(
+                'descriptionOfAssignedParkingSpaces', {}
+            )
+            for key, value in assigned_parking_spaces.items():
                 for map_key_components, final_key in mapping:
                     if map_key_components[0] == key and map_key_components[1] == value:
-                        input_data[final_key] = int(sub_capacity.get('assignedParkingSpaces')['numberOfAssignedParkingSpaces'])
+                        input_data[final_key] = int(
+                            sub_capacity.get('assignedParkingSpaces')['numberOfAssignedParkingSpaces'],
+                        )
                         break
 
         # TODO: parse opening times with more information, for now they are broken

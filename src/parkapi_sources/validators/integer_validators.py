@@ -11,7 +11,9 @@ from validataclass.validators import IntegerValidator
 
 
 class GermanDurationIntegerValidator(IntegerValidator):
-    pattern = re.compile(r'^([0-9]*) (Minute|Minuten|Stunde|Stunden|Tag|Tage|Woche|Wochen|Monat|Monate|Quartal|Quartale)$')
+    pattern = re.compile(
+        r'^([0-9]*) (Minute|Minuten|Stunde|Stunden|Tag|Tage|Woche|Wochen|Monat|Monate|Quartal|Quartale)$',
+    )
     unit_factors: dict[str, int] = {
         'Minute': 60,
         'Minuten': 60,

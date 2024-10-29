@@ -93,15 +93,22 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...], column_names: list[str]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(
+        self,
+        mapping: dict[str, int],
+        row: tuple[Cell, ...],
+        column_names: list[str],
+    ) -> dict[str, Any]:
         parking_site_raw_dict: dict[str, str] = {}
         for field in mapping.keys():
             parking_site_raw_dict[field] = row[mapping[field]].value
 
-        parking_site_dict = {key: value for key, value in parking_site_raw_dict.items() if not key.startswith('opening_hours_')}
-        opening_hours_input = self.excel_opening_time_validator.validate(
-            {key: value for key, value in parking_site_raw_dict.items() if key.startswith('opening_hours_')}
-        )
+        parking_site_dict = {
+            key: value for key, value in parking_site_raw_dict.items() if not key.startswith('opening_hours_')
+        }
+        opening_hours_input = self.excel_opening_time_validator.validate({
+            key: value for key, value in parking_site_raw_dict.items() if key.startswith('opening_hours_')
+        })
         parking_site_dict['opening_hours'] = opening_hours_input.get_osm_opening_hours()
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()

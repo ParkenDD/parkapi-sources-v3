@@ -133,7 +133,9 @@ class ParkAPISources:
             if converter_uid not in converter_classes_by_uid.keys():
                 raise MissingConverterException(f'Converter {converter_uid} does not exist.')
 
-            self.converter_by_uid[converter_uid] = converter_classes_by_uid[converter_uid](config_helper=self.config_helper)
+            self.converter_by_uid[converter_uid] = converter_classes_by_uid[converter_uid](
+                config_helper=self.config_helper,
+            )
 
     def check_credentials(self):
         for converter in self.converter_by_uid.values():

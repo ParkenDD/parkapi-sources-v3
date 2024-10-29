@@ -50,7 +50,9 @@ class RadvisBwPullConverter(PullConverter):
                 if radvis_parking_site_input.properties.quell_system in sources_to_ignore:
                     continue
 
-                static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(self.proj)
+                static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(
+                    self.proj,
+                )
 
             except ValidationError as e:
                 static_parking_site_errors.append(

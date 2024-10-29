@@ -7,9 +7,13 @@ from unittest.mock import Mock
 
 import pytest
 from lxml import etree
-from parkapi_sources.converters import StuttgartPushConverter
 
-from tests.converters.helper import get_data_path, validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
+from parkapi_sources.converters import StuttgartPushConverter
+from tests.converters.helper import (
+    get_data_path,
+    validate_realtime_parking_site_inputs,
+    validate_static_parking_site_inputs,
+)
 
 
 @pytest.fixture
@@ -25,9 +29,8 @@ class StuttgartPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = stuttgart_push_converter.handle_xml(root_element)
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 48
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -38,8 +41,7 @@ class StuttgartPullConverterTest:
 
         realtime_parking_site_inputs, import_parking_site_exceptions = stuttgart_push_converter.handle_xml(root_element)
 
-        assert len(realtime_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(realtime_parking_site_inputs) == 49
+        assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

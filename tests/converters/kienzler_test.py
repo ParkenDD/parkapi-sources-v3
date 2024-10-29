@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import KienzlerBikeAndRidePullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import KienzlerBikeAndRidePullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -42,7 +42,10 @@ def kienzler_pull_converter(kienzler_config_helper: Mock) -> KienzlerBikeAndRide
 
 class KienzlerPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(kienzler_pull_converter: KienzlerBikeAndRidePullConverter, requests_mock_kienzler: Mocker):
+    def test_get_static_parking_sites(
+        kienzler_pull_converter: KienzlerBikeAndRidePullConverter,
+        requests_mock_kienzler: Mocker,
+    ):
         static_parking_site_inputs, import_parking_site_exceptions = kienzler_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 5
@@ -51,8 +54,13 @@ class KienzlerPullConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(kienzler_pull_converter: KienzlerBikeAndRidePullConverter, requests_mock_kienzler: Mocker):
-        realtime_parking_site_inputs, import_parking_site_exceptions = kienzler_pull_converter.get_realtime_parking_sites()
+    def test_get_realtime_parking_sites(
+        kienzler_pull_converter: KienzlerBikeAndRidePullConverter,
+        requests_mock_kienzler: Mocker,
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            kienzler_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 5
         assert len(import_parking_site_exceptions) == 0
