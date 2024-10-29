@@ -7,8 +7,8 @@ from unittest.mock import Mock
 
 import pytest
 from openpyxl.reader.excel import load_workbook
-from parkapi_sources.converters import PumBwPushConverter
 
+from parkapi_sources.converters import PumBwPushConverter
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
@@ -24,8 +24,7 @@ class PamBwPushConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = pum_bw_push_converter.handle_xlsx(workbook)
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 113
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

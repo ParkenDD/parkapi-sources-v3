@@ -39,7 +39,12 @@ class EllwangenPushConverter(NormalizedXlsxConverter):
             **ellwangen_header_rows,
         }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...], **kwargs: Any) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(
+        self,
+        mapping: dict[str, int],
+        row: tuple[Cell, ...],
+        **kwargs: Any,
+    ) -> dict[str, Any]:
         parking_site_dict = super().map_row_to_parking_site_dict(mapping, row, **kwargs)
 
         for field in mapping.keys():

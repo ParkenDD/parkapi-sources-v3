@@ -29,8 +29,10 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs, import_parking_site_exceptions = self._get_static_parking_site_inputs_and_exceptions(
-            source_uid=self.source_info.uid,
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            self._get_static_parking_site_inputs_and_exceptions(
+                source_uid=self.source_info.uid,
+            )
         )
 
         realtime_freiburg_inputs, import_realtime_parking_site_exceptions = self._get_raw_realtime_parking_sites()

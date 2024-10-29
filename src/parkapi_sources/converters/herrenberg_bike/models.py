@@ -44,7 +44,16 @@ class HerrenbergBikeType(Enum):
     OTHER = 'other'
 
     def to_parking_site_type(self) -> ParkingSiteType:
-        if self in [self.OTHER, self.BOLLARD, self.LEAN_AND_STICK, self.WAVE, self.ANCHORS, self.CROSSBAR, self.RACK, self.GROUND_SLOTS]:
+        if self in [
+            self.OTHER,
+            self.BOLLARD,
+            self.LEAN_AND_STICK,
+            self.WAVE,
+            self.ANCHORS,
+            self.CROSSBAR,
+            self.RACK,
+            self.GROUND_SLOTS,
+        ]:
             return ParkingSiteType.OTHER
         return {
             self.SAFE_LOOPS: ParkingSiteType.SAFE_WALL_LOOPS,
@@ -95,7 +104,10 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     name: str = StringValidator(min_length=0, max_length=256)
     type: OptionalUnset[HerrenbergBikeType] = NoneToUnsetValue(EnumValidator(HerrenbergBikeType)), DefaultUnset
     public_url: OptionalUnset[str] = NoneToUnsetValue(UrlValidator(max_length=4096)), DefaultUnset
-    address: OptionalUnset[HerrenbergBikeAddressInput] = NoneToUnsetValue(DataclassValidator(HerrenbergBikeAddressInput)), DefaultUnset
+    address: OptionalUnset[HerrenbergBikeAddressInput] = (
+        NoneToUnsetValue(DataclassValidator(HerrenbergBikeAddressInput)),
+        DefaultUnset,
+    )
     description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
     operator_name: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     capacity: int = IntegerValidator(min_value=0)
@@ -107,12 +119,27 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
         NoneToUnsetValue(EnumValidator(HerrenbergBikeSupervisionType)),
         DefaultUnset,
     )
-    has_realtime_data: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
-    access: OptionalUnset[HerrenbergBikeAccessType] = NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)), DefaultUnset
+    has_realtime_data: OptionalUnset[bool] = (
+        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
+        DefaultUnset,
+    )
+    access: OptionalUnset[HerrenbergBikeAccessType] = (
+        NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)),
+        DefaultUnset,
+    )
     date_surveyed: OptionalUnset[date] = NoneToUnsetValue(ParsedDateValidator(date_format='%Y-%m-%d')), DefaultUnset
-    has_lighting: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
-    has_fee: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
-    is_covered: OptionalUnset[bool] = NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})), DefaultUnset
+    has_lighting: OptionalUnset[bool] = (
+        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
+        DefaultUnset,
+    )
+    has_fee: OptionalUnset[bool] = (
+        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
+        DefaultUnset,
+    )
+    is_covered: OptionalUnset[bool] = (
+        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
+        DefaultUnset,
+    )
     related_location: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     opening_hours: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset

@@ -81,7 +81,9 @@ class KarlsruheFeatureInput:
             lon=self.geometry.coordinates[0],
             capacity=self.properties.gesamte_parkplaetze,
             address=f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}',
-            max_height=None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100),
+            max_height=None
+            if self.properties.max_durchfahrtshoehe is None
+            else int(self.properties.max_durchfahrtshoehe * 100),
             public_url=self.properties.parkhaus_internet,
             static_data_updated_at=datetime.combine(self.properties.stand_stammdaten, time(), tzinfo=timezone.utc),
             has_realtime_data=self.properties.echtzeit_belegung,
@@ -99,7 +101,9 @@ class KarlsruheFeatureInput:
         return RealtimeParkingSiteInput(
             uid=str(self.properties.id),
             realtime_capacity=self.properties.gesamte_parkplaetze,
-            realtime_free_capacity=None if self.properties.freie_parkplaetze == -1 else self.properties.freie_parkplaetze,
+            realtime_free_capacity=None
+            if self.properties.freie_parkplaetze == -1
+            else self.properties.freie_parkplaetze,
             realtime_opening_status=opening_status,
             realtime_data_updated_at=self.properties.stand_freieparkplaetze,
         )
@@ -151,6 +155,8 @@ class KarlsruheBikeFeatureInput:
             is_covered=self.properties.art == KarlsruheBikeType.STANDS_WITH_ROOF or UnsetValue,
             description=self.properties.bemerkung,
             static_data_updated_at=datetime.now(timezone.utc),
-            type=ParkingSiteType.OTHER if self.properties.art is UnsetValue else self.properties.art.to_parking_site_type(),
+            type=ParkingSiteType.OTHER
+            if self.properties.art is UnsetValue
+            else self.properties.art.to_parking_site_type(),
             purpose=PurposeType.BIKE,
         )

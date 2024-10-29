@@ -47,7 +47,9 @@ class ApcoaPullConverter(PullConverter):
                     continue
 
             try:
-                parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(parking_site_dict)
+                parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(
+                    parking_site_dict,
+                )
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(

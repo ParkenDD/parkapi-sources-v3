@@ -40,7 +40,10 @@ class BfrkBikeInput(BfrkBaseInput):
     ueberdacht: Optional[bool] = BooleanValidator(), Default(None)
     hinderniszufahrt: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
     kostenpflichtig: Optional[bool] = BooleanValidator(), Default(None)
-    kostenpflichtignotiz: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
+    kostenpflichtignotiz: Optional[str] = (
+        EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})),
+        Default(None),
+    )
     notiz: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\x80': '€'})), Default(None)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:

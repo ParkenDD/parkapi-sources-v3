@@ -42,19 +42,29 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
         # Other opening times are there, but not parsable
     }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...], column_names: list[str]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(
+        self,
+        mapping: dict[str, int],
+        row: tuple[Cell, ...],
+        column_names: list[str],
+    ) -> dict[str, Any]:
         parking_site_dict = super().map_row_to_parking_site_dict(mapping, row, column_names)
 
         if 'Zufahrt' in column_names:
             if row[column_names.index('Zufahrt')].value == 'offen' or (
-                row[column_names.index('Zufahrt')].value == 'beschrankt' and row[column_names.index('Durchgehend_geöffnet')].value == 'ja'
+                row[column_names.index('Zufahrt')].value == 'beschrankt'
+                and row[column_names.index('Durchgehend_geöffnet')].value == 'ja'
             ):
                 parking_site_dict['opening_hours'] = '24/7'
 
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        coordinates = self.proj(float(parking_site_dict.get('lon_utm')), float(parking_site_dict.get('lat_utm')), inverse=True)
+        coordinates = self.proj(
+            float(parking_site_dict.get('lon_utm')),
+            float(parking_site_dict.get('lat_utm')),
+            inverse=True,
+        )
         parking_site_dict['lat'] = coordinates[1]
         parking_site_dict['lon'] = coordinates[0]
 

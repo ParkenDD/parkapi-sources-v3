@@ -26,7 +26,13 @@ class ReutlingenPushConverter(CsvConverter):
         has_realtime_data=False,
     )
 
-    header_mapping: dict[str, str] = {'id': 'uid', 'ort': 'name', 'Kapazität': 'capacity', 'GEOM': 'coordinates', 'type': 'type'}
+    header_mapping: dict[str, str] = {
+        'id': 'uid',
+        'ort': 'name',
+        'Kapazität': 'capacity',
+        'GEOM': 'coordinates',
+        'type': 'type',
+    }
 
     def handle_csv_string(
         self,

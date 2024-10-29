@@ -7,8 +7,8 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import NeckarsulmPushConverter
 
+from parkapi_sources.converters import NeckarsulmPushConverter
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
@@ -23,10 +23,11 @@ class NeckarsulmPushConverterTest:
         with get_data_path('neckarsulm.csv').open() as neckarsulm_file:
             neckarsulm_data = StringIO(neckarsulm_file.read())
 
-        static_parking_site_inputs, import_parking_site_exceptions = neckarsulm_push_converter.handle_csv_string(neckarsulm_data)
+        static_parking_site_inputs, import_parking_site_exceptions = neckarsulm_push_converter.handle_csv_string(
+            neckarsulm_data,
+        )
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 40
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

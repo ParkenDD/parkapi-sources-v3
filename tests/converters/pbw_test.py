@@ -10,10 +10,10 @@ from typing import TYPE_CHECKING
 from unittest.mock import ANY, Mock
 
 import pytest
-from parkapi_sources.converters.pbw import PbwPullConverter
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from requests_mock import Mocker
 
+from parkapi_sources.converters.pbw import PbwPullConverter
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 if TYPE_CHECKING:
