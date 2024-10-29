@@ -73,7 +73,11 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
             # ignore empty lines as LibreOffice sometimes adds empty rows at the end of a file
             if row[0].value is None:
                 continue
-            parking_site_dict = self.map_row_to_parking_site_dict(mapping, row)
+            parking_site_dict = self.map_row_to_parking_site_dict(
+                mapping=mapping,
+                row=row,
+                column_names=[cell.value for cell in next(worksheet.rows)],
+            )
 
             try:
                 static_parking_site_inputs.append(self.static_parking_site_validator.validate(parking_site_dict))
@@ -89,7 +93,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
 
         return static_parking_site_inputs, static_parking_site_errors
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...]) -> dict[str, Any]:
+    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...], column_names: list[str]) -> dict[str, Any]:
         parking_site_raw_dict: dict[str, str] = {}
         for field in mapping.keys():
             parking_site_raw_dict[field] = row[mapping[field]].value
