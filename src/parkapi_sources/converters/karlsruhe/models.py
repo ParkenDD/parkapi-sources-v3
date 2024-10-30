@@ -33,11 +33,11 @@ class KarlsruheOpeningStatus(Enum):
     OPEN = 'F'
     CLOSED = 'T'
 
-    def to_opening_status(self) -> OpeningStatus:
+    def to_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.CLOSED: OpeningStatus.CLOSED,
-        }.get(self, OpeningStatus.UNKNOWN)
+        }.get(self)
 
 
 @validataclass
@@ -94,7 +94,7 @@ class KarlsruheFeatureInput:
             return None
 
         if self.properties.geschlossen is None:
-            opening_status = OpeningStatus.UNKNOWN
+            opening_status = None
         else:
             opening_status = self.properties.geschlossen.to_opening_status()
 

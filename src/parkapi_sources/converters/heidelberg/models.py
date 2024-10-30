@@ -64,7 +64,7 @@ class HeidelbergParkingSiteStatus(Enum):
     BROKEN = 'Stoerung'
     UNKNOWN = '0'
 
-    def to_opening_status(self) -> OpeningStatus:
+    def to_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.OPEN_DE: OpeningStatus.OPEN,
@@ -72,7 +72,7 @@ class HeidelbergParkingSiteStatus(Enum):
             self.CLOSED_DE: OpeningStatus.CLOSED,
             self.UNKNOWN: OpeningStatus.UNKNOWN,
             self.BROKEN: OpeningStatus.CLOSED,
-        }.get(self, OpeningStatus.UNKNOWN)
+        }.get(self)
 
 
 class HeidelbergParkingType(Enum):

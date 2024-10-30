@@ -66,13 +66,13 @@ class HerrenbergState(Enum):
     CLOSED = 'closed'
     UNKNOWN = 'unknown'
 
-    def to_opening_status(self) -> OpeningStatus:
+    def to_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.CLOSED: OpeningStatus.CLOSED,
             self.MANY: OpeningStatus.OPEN,
             self.FULL: OpeningStatus.OPEN,
-        }.get(self, OpeningStatus.UNKNOWN)
+        }.get(self)
 
 
 @validataclass
