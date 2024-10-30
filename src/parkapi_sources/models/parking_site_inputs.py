@@ -137,10 +137,7 @@ class RealtimeParkingSiteInput(BaseParkingSiteInput):
         target_timezone=timezone.utc,
         discard_milliseconds=True,
     )
-    realtime_opening_status: OptionalUnsetNone[OpeningStatus] = (
-        Noneable(EnumValidator(OpeningStatus), default=OpeningStatus.UNKNOWN),
-        Default(OpeningStatus.UNKNOWN),
-    )
+    realtime_opening_status: OptionalUnsetNone[OpeningStatus] = Noneable(EnumValidator(OpeningStatus)), Default(None)
     realtime_capacity: OptionalUnsetNone[int] = (
         Noneable(IntegerValidator(min_value=0, allow_strings=True)),
         DefaultUnset,

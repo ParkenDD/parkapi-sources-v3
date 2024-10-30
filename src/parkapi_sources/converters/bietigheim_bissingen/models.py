@@ -23,7 +23,7 @@ class BietigheimBissingenOpeningStatus(Enum):
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.CLOSED: OpeningStatus.CLOSED,
-        }.get(self, OpeningStatus.UNKNOWN)
+        }.get(self)
 
 
 @validataclass
