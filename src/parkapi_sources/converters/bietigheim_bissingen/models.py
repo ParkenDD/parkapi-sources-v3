@@ -19,7 +19,7 @@ class BietigheimBissingenOpeningStatus(Enum):
     OPEN = 'Geöffnet'
     CLOSED = 'Geschlossen'
 
-    def to_realtime_opening_status(self) -> OpeningStatus:
+    def to_realtime_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.CLOSED: OpeningStatus.CLOSED,
