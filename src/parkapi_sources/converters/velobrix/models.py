@@ -51,12 +51,24 @@ class VelobrixInput:
     countLogicalBoxes: int = IntegerValidator()
     countFreeLogicalBoxes: int = IntegerValidator()
 
-    boxTypes: list = ListValidator(DataclassValidator(VelobrixBoxTypeInput))
+    boxTypes: list[VelobrixBoxTypeInput] = ListValidator(DataclassValidator(VelobrixBoxTypeInput))
 
-    priceModelDescription: str = DataclassValidator(VelobrixPriceModelDescriptionInput)
+    priceModelDescription: VelobrixPriceModelDescriptionInput = DataclassValidator(VelobrixPriceModelDescriptionInput)
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
-        return None
+        return StaticParkingSiteInput(
+            uid=self.logicalUnitId,
+            name=self.publicName,
+            description=' ; '.join([boxType.name for boxType in self.boxTypes]),
+            lat=self.locationLat,
+            lon=self.locationLon,
+            address=f'{self.locationName}, {self.street} {self.streetNumber}, {self.zipCode} {self.city}',
+            operator_name=self.tenantName,
+            capacity=self.countLogicalBoxes,
+            has_realtime_data=self.countFreeLogicalBoxes is not None,
+            has_fee=True,
+            fee_description=self.priceModelDescription.description,
+        )
 
 
 # @validataclass
