@@ -9,6 +9,7 @@ from typing import Optional
 
 from validataclass.dataclasses import validataclass
 from validataclass.validators import (
+    AnythingValidator,
     DataclassValidator,
     DateTimeValidator,
     IntegerValidator,
@@ -18,7 +19,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 
 
 @validataclass
@@ -57,7 +58,7 @@ class VelobrixInput:
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
-            uid=self.logicalUnitId,
+            uid=str(self.logicalUnitId),
             name=self.publicName,
             description=' ; '.join([boxType.name for boxType in self.boxTypes]),
             lat=self.locationLat,
@@ -68,10 +69,19 @@ class VelobrixInput:
             has_realtime_data=self.countFreeLogicalBoxes is not None,
             has_fee=True,
             fee_description=self.priceModelDescription.description,
+            static_data_updated_at=datetime.now(timezone.utc),
+        )
+
+    def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
+        return RealtimeParkingSiteInput(
+            uid=str(self.logicalUnitId),
+            realtime_capacity=self.countLogicalBoxes,
+            realtime_free_capacity=self.countFreeLogicalBoxes,
+            realtime_data_updated_at=datetime.now(timezone.utc),
         )
 
 
-# @validataclass
-# class VelobrixRealtimeDataInput:
-#     parkingupdates: list[dict] = ListValidator(AnythingValidator(allowed_types=dict))
-#     updated: datetime = Rfc1123DateTimeValidator()
+@validataclass
+class VelobrixRealtimeDataInput:
+    parkingupdates: list[dict] = ListValidator(AnythingValidator(allowed_types=dict))
+    updated: datetime = DateTimeValidator(local_timezone=timezone.utc, target_timezone=timezone.utc)

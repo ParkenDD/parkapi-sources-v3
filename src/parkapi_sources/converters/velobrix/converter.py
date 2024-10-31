@@ -21,11 +21,8 @@ class VelobrixPullConverter(PullConverter):
     source_info = SourceInfo(
         uid='velobrix',
         name='Velobrix',
-        # public_url='',
         source_url='https://admin.velobrix.de/tenantapi/api/v1/locations',
         timezone='Europe/Berlin',
-        # attribution_contributor='Ulmer Parkbetriebs-GmbH',
-        # attribution_url='https://www.parken-in-ulm.de/impressum.php',
         has_realtime_data=True,
     )
 
@@ -40,8 +37,16 @@ class VelobrixPullConverter(PullConverter):
         return static_parking_site_inputs, import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
-        return tuple([]), []
-        # return self._get_scraped_realtime_parking_site_inputs_and_exceptions()
+        realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
+
+        velobrix_inputs, import_parking_site_exceptions = self._get_data()
+
+        for velobrix_input in velobrix_inputs:
+            if velobrix_input.countFreeLogicalBoxes is None:
+                continue
+            realtime_parking_site_inputs.append(velobrix_input.to_realtime_parking_site_input())
+
+        return realtime_parking_site_inputs, import_parking_site_exceptions
 
     def _get_data(self) -> tuple[list[VelobrixInput], list[ImportParkingSiteException]]:
         velobrix_inputs: list[VelobrixInput] = []

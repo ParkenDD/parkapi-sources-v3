@@ -7,6 +7,7 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
+from converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 from requests_mock import Mocker
 
 from parkapi_sources.converters.velobrix import VelobrixPullConverter
@@ -48,3 +49,16 @@ class VelobrixPullConverterTest:
 
         assert len(static_parking_site_inputs) == 3
         assert len(import_parking_site_exceptions) == 0
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_realtime_parking_sites(velobrix_pull_converter: VelobrixPullConverter, velobrix_request_mock: Mocker):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            velobrix_pull_converter.get_realtime_parking_sites()
+        )
+
+        assert len(realtime_parking_site_inputs) == 3
+        assert len(import_parking_site_exceptions) == 0
+
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
