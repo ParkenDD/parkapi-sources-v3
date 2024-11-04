@@ -8,8 +8,8 @@ from typing import List, Optional, Tuple
 
 import pytest
 from lxml import etree
-
 from parkapi_sources.util import XMLHelper
+
 from tests.util.data_xml_helper import (
     conditional_remote_type_tags_2a,
     conditional_remote_type_tags_3a,

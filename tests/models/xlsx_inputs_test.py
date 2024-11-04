@@ -6,7 +6,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import time
 
 import pytest
-
 from parkapi_sources.models import ExcelOpeningTimeInput
 
 

@@ -7,9 +7,9 @@ import json
 from unittest.mock import Mock
 
 import pytest
-
 from parkapi_sources.converters.mannheim_buchen import MannheimPushConverter
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+
 from tests.converters.helper import (
     get_data_path,
     validate_realtime_parking_site_inputs,

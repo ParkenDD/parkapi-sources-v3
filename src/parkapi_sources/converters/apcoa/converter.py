@@ -47,7 +47,10 @@ class ApcoaPullConverter(PullConverter):
                     continue
 
             # Ignore Park & Control Objects/Entries - Not allowed to be published
-            if parking_site_dict.get('SiteIdLong').startswith('S1180_') and parking_site_dict.get('ShowAs') == 'SURVEILLANCE_OBJECT':
+            if (
+                parking_site_dict.get('SiteIdLong').startswith('S1180_')
+                and parking_site_dict.get('ShowAs') == 'SURVEILLANCE_OBJECT'
+            ):
                 continue
 
             try:

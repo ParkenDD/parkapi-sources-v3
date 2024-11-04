@@ -12,7 +12,6 @@ from enum import Enum
 from typing import Any
 
 import pytest
-
 from parkapi_sources.util.encoding import DefaultJSONEncoder, convert_to_serializable_value
 
 

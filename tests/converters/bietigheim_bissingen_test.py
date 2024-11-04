@@ -7,8 +7,8 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 
 import pytest
-
 from parkapi_sources.converters import BietigheimBissingenPullConverter
+
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -35,9 +35,9 @@ class BietigheimBissingenPullConverterTest:
             bietigheim_bissingen_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) > len(import_parking_site_exceptions), (
-            'There should be more valid then invalid parking sites'
-        )
+        assert len(static_parking_site_inputs) > len(
+            import_parking_site_exceptions
+        ), 'There should be more valid then invalid parking sites'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

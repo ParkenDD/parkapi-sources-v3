@@ -7,9 +7,8 @@ from datetime import datetime, timezone
 from typing import Any
 
 import pytest
-from validataclass.exceptions import ValidationError
-
 from parkapi_sources.validators import Rfc1123DateTimeValidator, SpacedDateTimeValidator, TimestampDateTimeValidator
+from validataclass.exceptions import ValidationError
 
 
 @pytest.mark.parametrize(

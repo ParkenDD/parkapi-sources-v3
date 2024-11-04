@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
+from parkapi_sources.converters.heidelberg import HeidelbergPullConverter
 from requests_mock import Mocker
 
-from parkapi_sources.converters.heidelberg import HeidelbergPullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 

@@ -8,8 +8,6 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from requests_mock import Mocker
-
 from parkapi_sources.converters.apcoa import ApcoaPullConverter
 from parkapi_sources.converters.apcoa.validators import (
     ApcoaAdressInput,
@@ -20,6 +18,8 @@ from parkapi_sources.converters.apcoa.validators import (
     ApcoaParkingSpaceInput,
     ApcoaParkingSpaceType,
 )
+from requests_mock import Mocker
+
 from tests.converters.helper import validate_static_parking_site_inputs
 
 

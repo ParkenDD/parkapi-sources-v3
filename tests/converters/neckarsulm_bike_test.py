@@ -7,8 +7,8 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
-
 from parkapi_sources.converters import NeckarsulmBikePushConverter
+
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 

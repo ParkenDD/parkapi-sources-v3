@@ -7,8 +7,8 @@ from unittest.mock import Mock
 
 import pytest
 from openpyxl.reader.excel import load_workbook
-
 from parkapi_sources.converters import EllwangenPushConverter
+
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
