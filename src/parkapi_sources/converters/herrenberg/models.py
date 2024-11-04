@@ -66,13 +66,13 @@ class HerrenbergState(Enum):
     CLOSED = 'closed'
     UNKNOWN = 'unknown'
 
-    def to_opening_status(self) -> OpeningStatus:
+    def to_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.CLOSED: OpeningStatus.CLOSED,
             self.MANY: OpeningStatus.OPEN,
             self.FULL: OpeningStatus.OPEN,
-        }.get(self, OpeningStatus.UNKNOWN)
+        }.get(self)
 
 
 @validataclass
@@ -114,7 +114,9 @@ class HerrenbergParkingSiteInput:
             capacity=self.total,
             description=self.notes.de,
             type=self.lot_type.to_parking_site_type(),
-            park_and_ride_type=[self.lot_type.to_park_and_ride_type()] if self.lot_type.to_park_and_ride_type() else None,
+            park_and_ride_type=[self.lot_type.to_park_and_ride_type()]
+            if self.lot_type.to_park_and_ride_type()
+            else None,
             public_url=self.url,
             opening_hours=self.opening_hours,
             has_fee=self.fee_hours is not None,

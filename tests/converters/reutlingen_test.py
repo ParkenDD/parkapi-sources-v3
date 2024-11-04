@@ -7,8 +7,8 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters.reutlingen import ReutlingenPushConverter
 
+from parkapi_sources.converters.reutlingen import ReutlingenPushConverter
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
@@ -23,7 +23,9 @@ class ReutlingenPushConverterTest:
         with get_data_path('reutlingen.csv').open() as reutlingen_file:
             reutlingen_data = StringIO(reutlingen_file.read())
 
-        static_parking_site_inputs, import_parking_site_exceptions = reutlingen_push_converter.handle_csv_string(reutlingen_data)
+        static_parking_site_inputs, import_parking_site_exceptions = reutlingen_push_converter.handle_csv_string(
+            reutlingen_data,
+        )
 
         assert len(static_parking_site_inputs) == 12, 'There should be 12 parking sites'
         assert len(import_parking_site_exceptions) == 102, 'There should be 102 exceptions'

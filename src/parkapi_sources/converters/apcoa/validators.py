@@ -160,7 +160,9 @@ class ApcoaParkingSiteInput:
     CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
     CarparkType: Optional[ApcoaCarparkTypeNameInput] = Noneable(DataclassValidator(ApcoaCarparkTypeNameInput))
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
-    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(DataclassValidator(ApcoaNavigationLocationsInput))
+    NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(
+        DataclassValidator(ApcoaNavigationLocationsInput),
+    )
     Spaces: list[ApcoaParkingSpaceInput] = ListValidator(DataclassValidator(ApcoaParkingSpaceInput))
     OpeningHours: list[ApcoaOpeningHoursInput] = ListValidator(DataclassValidator(ApcoaOpeningHoursInput))
     LastModifiedDateTime: datetime = SpacedDateTimeValidator(
@@ -221,7 +223,9 @@ class ApcoaParkingSiteInput:
         else:
             for weekday in list(ApcoaOpeningHoursWeekday)[:5]:
                 if weekday in list(apcoa_opening_times_by_weekday):
-                    osm_opening_hour.append(f'{weekday.to_osm_opening_day_format()} {",".join(apcoa_opening_times_by_weekday[weekday])}')
+                    osm_opening_hour.append(
+                        f'{weekday.to_osm_opening_day_format()} {",".join(apcoa_opening_times_by_weekday[weekday])}',
+                    )
 
         # Weekends are handled separately anyway
         for weekend_day in [ApcoaOpeningHoursWeekday.SATURDAY, ApcoaOpeningHoursWeekday.SUNDAY]:

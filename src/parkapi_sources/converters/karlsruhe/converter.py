@@ -49,7 +49,8 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=feature_dict.get('properties').get('id'),
-                        message=f'Invalid data at uid {feature_dict.get("properties").get("id")}: ' f'{e.to_dict()}, data: {feature_dict}',
+                        message=f'Invalid data at uid {feature_dict.get("properties").get("id")}: {e.to_dict()}, '
+                        f'data: {feature_dict}',
                     ),
                 )
                 continue

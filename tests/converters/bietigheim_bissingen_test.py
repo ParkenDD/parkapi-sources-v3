@@ -7,8 +7,8 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 
 import pytest
-from parkapi_sources.converters import BietigheimBissingenPullConverter
 
+from parkapi_sources.converters import BietigheimBissingenPullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -31,11 +31,13 @@ def bietigheim_bissingen_pull_converter(bietigheim_bissingen_config_helper: Mock
 class BietigheimBissingenPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter):
-        static_parking_site_inputs, import_parking_site_exceptions = bietigheim_bissingen_pull_converter.get_static_parking_sites()
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            bietigheim_bissingen_pull_converter.get_static_parking_sites()
+        )
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) > len(import_parking_site_exceptions), (
+            'There should be more valid then invalid parking sites'
+        )
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -47,7 +49,9 @@ class BietigheimBissingenPullConverterTest:
             csv_data = csv_file.read()
 
         with patch.object(BietigheimBissingenPullConverter, '_get_data', return_value=csv_data) as mock_method:
-            realtime_parking_site_inputs, import_parking_site_exceptions = bietigheim_bissingen_pull_converter.get_realtime_parking_sites()
+            realtime_parking_site_inputs, import_parking_site_exceptions = (
+                bietigheim_bissingen_pull_converter.get_realtime_parking_sites()
+            )
 
         mock_method.assert_called()
 

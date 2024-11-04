@@ -66,8 +66,8 @@ class PumBwPushConverter(XlsxConverter):
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        parking_site_dict['uid'] = f"{parking_site_dict['uid']}-{parking_site_dict['name']}"
-        parking_site_dict['name'] = f"{parking_site_dict['street']} {parking_site_dict['name']}"
+        parking_site_dict['uid'] = f'{parking_site_dict["uid"]}-{parking_site_dict["name"]}'
+        parking_site_dict['name'] = f'{parking_site_dict["street"]} {parking_site_dict["name"]}'
         parking_site_dict['type'] = 'OFF_STREET_PARKING_GROUND'
         parking_site_dict['park_and_ride_type'] = ['CARPOOL']
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()

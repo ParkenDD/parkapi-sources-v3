@@ -23,4 +23,6 @@ class ParsedDateValidator(StringValidator):
         try:
             return datetime.strptime(input_data, self.date_format).date()
         except ValueError as e:
-            raise ValidationError(code='invalid_date', reason=f'{input_data} does not have required date format {self.date_format}.') from e
+            raise ValidationError(
+                code='invalid_date', reason=f'{input_data} does not have required date format {self.date_format}.'
+            ) from e

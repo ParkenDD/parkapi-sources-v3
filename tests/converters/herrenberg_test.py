@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters.herrenberg import HerrenbergPullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters.herrenberg import HerrenbergPullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -27,7 +27,9 @@ def herrenberg_pull_converter(mocked_config_helper: Mock, requests_mock: Mocker)
 class HerrenbergPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(herrenberg_pull_converter: HerrenbergPullConverter):
-        static_parking_site_inputs, import_parking_site_exceptions = herrenberg_pull_converter.get_static_parking_sites()
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            herrenberg_pull_converter.get_static_parking_sites()
+        )
 
         assert len(static_parking_site_inputs) == 21
         assert len(import_parking_site_exceptions) == 5
@@ -36,7 +38,9 @@ class HerrenbergPullConverterTest:
 
     @staticmethod
     def test_get_realtime_parking_sites(herrenberg_pull_converter: HerrenbergPullConverter):
-        realtime_parking_site_inputs, import_parking_site_exceptions = herrenberg_pull_converter.get_realtime_parking_sites()
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            herrenberg_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 4
         assert len(import_parking_site_exceptions) == 5

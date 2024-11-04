@@ -47,7 +47,7 @@ class BietigheimBissingenPullConverter(PullConverter, StaticGeojsonDataMixin):
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=row_dict.get('Name'),
-                        message=f'Invalid data at uid {row_dict.get("Name")}: {e.to_dict()}, ' f'data: {row_dict}',
+                        message=f'Invalid data at uid {row_dict.get("Name")}: {e.to_dict()}, data: {row_dict}',
                     ),
                 )
                 continue

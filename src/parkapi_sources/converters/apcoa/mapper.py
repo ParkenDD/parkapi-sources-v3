@@ -44,11 +44,15 @@ class ApcoaMapper:
             public_url=apcoa_input.CarParkWebsiteURL,
             static_data_updated_at=apcoa_input.LastModifiedDateTime,
             # Because it was checked in validation, we can be sure that capacity will be set
-            capacity=next(iter(item.Count for item in apcoa_input.Spaces if item.Type == ApcoaParkingSpaceType.TOTAL_SPACES)),
+            capacity=next(
+                iter(item.Count for item in apcoa_input.Spaces if item.Type == ApcoaParkingSpaceType.TOTAL_SPACES),
+            ),
         )
 
         if apcoa_input.Address.Street and apcoa_input.Address.Zip and apcoa_input.Address.City:
-            static_parking_site_input.address = f'{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}'
+            static_parking_site_input.address = (
+                f'{apcoa_input.Address.Street}, {apcoa_input.Address.Zip} {apcoa_input.Address.City}'
+            )
 
         if apcoa_input.CarParkPhotoURLs:
             static_parking_site_input.photo_url = apcoa_input.CarParkPhotoURLs.CarparkPhotoURL1

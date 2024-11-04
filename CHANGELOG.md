@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.14.1
+
+Released 2024-10-29
+
+### Fixes
+
+* [Fixed Karlsruhe format for stand_stammdaten ](https://github.com/ParkenDD/parkapi-sources-v3/pull/152)
+* [ruff modernization](https://github.com/ParkenDD/parkapi-sources-v3/pull/155)
+
+
 ## 0.14.0
 
 Released 2024-10-17

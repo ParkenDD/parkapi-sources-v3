@@ -55,7 +55,9 @@ class VrsBasePullConverter(PullConverter, Datex2Mixin, ABC):
             subscription_id=self.config_helper.get(f'PARK_API_VRS_{self.config_key}_REALTIME_SUBSCRIPTION_ID'),
         )
 
-        parking_record_status_list = datex2_parking_facilities.get('parkingStatusPublication', {}).get('parkingRecordStatus', [])
+        parking_record_status_list = datex2_parking_facilities.get('parkingStatusPublication', {}).get(
+            'parkingRecordStatus', []
+        )
 
         for parking_record_status in parking_record_status_list:
             try:

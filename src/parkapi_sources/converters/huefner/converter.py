@@ -33,9 +33,13 @@ class HuefnerPushConverter(NormalizedXlsxConverter):
             'Zweck der Anlage': 'purpose',
         }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: tuple[Cell, ...]) -> dict[str, Any]:
-        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row)
-
+    def map_row_to_parking_site_dict(
+        self,
+        mapping: dict[str, int],
+        row: tuple[Cell, ...],
+        **kwargs: Any,
+    ) -> dict[str, Any]:
+        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row, **kwargs)
         if '-00:00' in parking_site_dict['opening_hours']:
             parking_site_dict['opening_hours'] = parking_site_dict['opening_hours'].replace('-00:00', '-24:00')
 

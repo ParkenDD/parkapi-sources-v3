@@ -7,9 +7,10 @@ import json
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+from validataclass.validators import DataclassValidator
+
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.util import DefaultJSONEncoder
-from validataclass.validators import DataclassValidator
 
 if TYPE_CHECKING:
     from requests_mock.request import Request
@@ -46,7 +47,9 @@ def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticP
     for static_parking_site_input in static_parking_site_inputs:
         assert static_parking_site_input.static_data_updated_at.tzinfo is not None
         assert isinstance(static_parking_site_input.uid, str)
-        parking_site_dict = json.loads(json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder))
+        parking_site_dict = json.loads(
+            json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder)
+        )
         validator.validate(parking_site_dict)
 
 
@@ -56,5 +59,7 @@ def validate_realtime_parking_site_inputs(realtime_parking_site_inputs: list[Rea
     for realtime_parking_site_input in realtime_parking_site_inputs:
         assert realtime_parking_site_input.realtime_data_updated_at.tzinfo is not None
         assert isinstance(realtime_parking_site_input.uid, str)
-        parking_site_dict = json.loads(json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder))
+        parking_site_dict = json.loads(
+            json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder)
+        )
         validator.validate(parking_site_dict)

@@ -7,8 +7,8 @@ import json
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import PforzheimPushConverter
 
+from parkapi_sources.converters import PforzheimPushConverter
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
@@ -17,16 +17,17 @@ def pforzheim_push_converter(mocked_config_helper: Mock) -> PforzheimPushConvert
     return PforzheimPushConverter(config_helper=mocked_config_helper)
 
 
-class ReutlingenPushConverterTest:
+class PforzheimPushConverterTest:
     @staticmethod
     def test_get_static_parking_sites(pforzheim_push_converter: PforzheimPushConverter):
         with get_data_path('pforzheim.json').open() as reutlingen_file:
             pforzheim_data = json.loads(reutlingen_file.read())
 
-        static_parking_site_inputs, import_parking_site_exceptions = pforzheim_push_converter.handle_json(pforzheim_data)
+        static_parking_site_inputs, import_parking_site_exceptions = pforzheim_push_converter.handle_json(
+            pforzheim_data,
+        )
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid then invalid parking sites'
+        assert len(static_parking_site_inputs) == 15
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

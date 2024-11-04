@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters.bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters.bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from tests.converters.helper import validate_static_parking_site_inputs
 
 

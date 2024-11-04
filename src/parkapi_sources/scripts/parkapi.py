@@ -22,9 +22,26 @@ def main():
         'env vars for config.',
     )
     parser.add_argument('-s', '--source', dest='sources', nargs='+', help='Limit to specific sources.')
-    parser.add_argument('-t', '--type', dest='output_type', choices=['json', 'geojson'], default='json', help='Output format.')
-    parser.add_argument('-d', '--directory', dest='output_directory', help='Directory where data should be saved in one file per source.')
-    parser.add_argument('-f', '--file', dest='output_file', help='Single File where all data should be saved in one file.')
+    parser.add_argument(
+        '-t',
+        '--type',
+        dest='output_type',
+        choices=['json', 'geojson'],
+        default='json',
+        help='Output format.',
+    )
+    parser.add_argument(
+        '-d',
+        '--directory',
+        dest='output_directory',
+        help='Directory where data should be saved in one file per source.',
+    )
+    parser.add_argument(
+        '-f',
+        '--file',
+        dest='output_file',
+        help='Single File where all data should be saved in one file.',
+    )
     parser.add_argument(
         '-gtd',
         '--geojson-template-directory',
@@ -67,7 +84,9 @@ def main():
 
     # Initiate result dict. We collect all info in one dict because we decide later if we output it to stdout, to a single file or to
     # multiple files. The list has always two entries, one first is a StaticParkingSiteInput, second an Optional[RealtimeParkingSiteInput].
-    result: dict[str, tuple[SourceInfo, dict[str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]]]] = {}
+    result: dict[
+        str, tuple[SourceInfo, dict[str, list[Optional[StaticParkingSiteInput | RealtimeParkingSiteInput]]]]
+    ] = {}
     for source_uid, converter in parkapi_sources.converter_by_uid.items():
         result[source_uid] = (converter.source_info, {})
 
@@ -75,11 +94,11 @@ def main():
     for source_uid, (_, source_results) in result.items():
         converter: PullConverter = parkapi_sources.converter_by_uid[source_uid]  # type: ignore
 
-        static_parking_site_inputs, static_parking_site_errors = converter.get_static_parking_sites()
+        static_parking_site_inputs, _ = converter.get_static_parking_sites()
         for static_parking_site_input in static_parking_site_inputs:
             source_results[static_parking_site_input.uid] = [static_parking_site_input, None]
 
-        realtime_parking_site_inputs, realtime_parking_site_errors = converter.get_realtime_parking_sites()
+        realtime_parking_site_inputs, _ = converter.get_realtime_parking_sites()
         for realtime_parking_site_input in realtime_parking_site_inputs:
             # If the realtime uid does not have a corresponding static dataset: ignore the realtime dataset
             if realtime_parking_site_input.uid not in result[source_uid][1]:
