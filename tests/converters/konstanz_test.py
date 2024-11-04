@@ -8,15 +8,15 @@ from typing import Any
 from unittest.mock import Mock
 
 import pytest
+from requests_mock import Mocker
+from validataclass.exceptions import ValidationError
+
 from parkapi_sources.converters import KonstanzPullConverter
 from parkapi_sources.converters.konstanz.validators import (
     InvalidOpeningTimesError,
     KonstanzHeightValidator,
     KonstanzOpeningTimeValidator,
 )
-from requests_mock import Mocker
-from validataclass.exceptions import ValidationError
-
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 

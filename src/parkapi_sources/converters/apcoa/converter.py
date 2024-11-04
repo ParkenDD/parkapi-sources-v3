@@ -41,17 +41,17 @@ class ApcoaPullConverter(PullConverter):
         parking_sites_input = self.get_data()
 
         for parking_site_dict in parking_sites_input.Results:
-            # Ignore missing coordinates if requested
-            if self.config_helper.get('PARK_API_APCOA_IGNORE_MISSING_COORDINATES', False):
-                if not parking_site_dict.get('NavigationLocations'):
-                    continue
-
             # Ignore Park & Control Objects/Entries - Not allowed to be published
             if (
                 parking_site_dict.get('SiteIdLong').startswith('S1180_')
                 and parking_site_dict.get('ShowAs') == 'SURVEILLANCE_OBJECT'
             ):
                 continue
+
+            # Ignore missing coordinates if requested
+            if self.config_helper.get('PARK_API_APCOA_IGNORE_MISSING_COORDINATES', False):
+                if not parking_site_dict.get('NavigationLocations'):
+                    continue
 
             try:
                 parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(

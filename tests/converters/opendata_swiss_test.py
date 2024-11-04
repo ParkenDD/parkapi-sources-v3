@@ -8,6 +8,8 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
+from requests_mock import Mocker
+
 from parkapi_sources.converters import OpenDataSwissPullConverter
 from parkapi_sources.converters.opendata_swiss.models import (
     OpenDataSwissAdditionalInformationInput,
@@ -19,8 +21,6 @@ from parkapi_sources.converters.opendata_swiss.models import (
     OpenDataSwissParkingFacilityCategory,
     OpenDataSwissPropertiesInput,
 )
-from requests_mock import Mocker
-
 from tests.converters.helper import validate_static_parking_site_inputs
 
 

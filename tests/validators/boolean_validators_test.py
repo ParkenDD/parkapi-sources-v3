@@ -6,8 +6,9 @@ Use of this source code is governed by an MIT-style license that can be found in
 from typing import Any
 
 import pytest
-from parkapi_sources.validators import MappedBooleanValidator
 from validataclass.exceptions import ValidationError
+
+from parkapi_sources.validators import MappedBooleanValidator
 
 
 @pytest.mark.parametrize(

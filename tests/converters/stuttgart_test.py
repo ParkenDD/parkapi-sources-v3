@@ -7,8 +7,8 @@ from unittest.mock import Mock
 
 import pytest
 from lxml import etree
-from parkapi_sources.converters import StuttgartPushConverter
 
+from parkapi_sources.converters import StuttgartPushConverter
 from tests.converters.helper import (
     get_data_path,
     validate_realtime_parking_site_inputs,

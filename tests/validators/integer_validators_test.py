@@ -7,8 +7,9 @@ from datetime import date
 from typing import Any
 
 import pytest
-from parkapi_sources.validators import ParsedDateValidator
 from validataclass.exceptions import ValidationError
+
+from parkapi_sources.validators import ParsedDateValidator
 
 
 @pytest.mark.parametrize(

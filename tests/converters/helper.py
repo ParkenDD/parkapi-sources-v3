@@ -7,9 +7,10 @@ import json
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+from validataclass.validators import DataclassValidator
+
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.util import DefaultJSONEncoder
-from validataclass.validators import DataclassValidator
 
 if TYPE_CHECKING:
     from requests_mock.request import Request
