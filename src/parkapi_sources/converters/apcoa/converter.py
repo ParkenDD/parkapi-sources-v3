@@ -30,7 +30,7 @@ class ApcoaPullConverter(PullConverter):
         uid='apcoa',
         name='APCOA-SERVICES API',
         public_url='https://devzone.apcoa-services.com/',
-        source_url='https://api.apcoa-services.com/carpark-dev/v4/Carparks',
+        source_url='https://api.apcoa-services.com/carpark/v4/Carparks',
         has_realtime_data=False,  # ATM only static data can be called from the API
     )
 
@@ -45,6 +45,10 @@ class ApcoaPullConverter(PullConverter):
             if self.config_helper.get('PARK_API_APCOA_IGNORE_MISSING_COORDINATES', False):
                 if not parking_site_dict.get('NavigationLocations'):
                     continue
+
+            # Ignore Park & Control Objects/Entries - Not allowed to be published
+            if parking_site_dict.get('SiteIdLong').startswith('S1180_') and parking_site_dict.get('ShowAs') == 'SURVEILLANCE_OBJECT':
+                continue
 
             try:
                 parking_site_input: ApcoaParkingSiteInput = self.apcoa_parking_site_validator.validate(parking_site_dict)
