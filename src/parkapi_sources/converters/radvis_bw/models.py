@@ -22,7 +22,7 @@ from validataclass.validators import (
 from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
-from parkapi_sources.validators import ExcelNoneable
+from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator
 
 
 class OrganizationType(Enum):
@@ -103,7 +103,10 @@ class RadvisFeaturePropertiesInput:
     gebuehren_pro_tag: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_monat: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_jahr: Optional[int] = Noneable(IntegerValidator())
-    beschreibung: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
+    beschreibung: Optional[str] = (
+        Noneable(ReplacingStringValidator(multiline=True, mapping={'\x80': ' '})),
+        Default(None),
+    )
     weitere_information: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
     status: StatusType = EnumValidator(StatusType)
 
