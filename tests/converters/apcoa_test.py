@@ -62,14 +62,14 @@ class ApcoaPullConverterTest:
             json_data = json_file.read()
 
         requests_mock.get(
-            'https://api.apcoa-services.com/carpark-dev/v4/Carparks',
+            'https://api.apcoa-services.com/carpark/v4/Carparks',
             text=json_data,
         )
 
         static_parking_site_inputs, import_parking_site_exceptions = apcoa_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 345
-        assert len(import_parking_site_exceptions) == 224
+        assert len(static_parking_site_inputs) == 330
+        assert len(import_parking_site_exceptions) == 23
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -83,7 +83,7 @@ class ApcoaPullConverterTest:
             json_data = json_file.read()
 
         requests_mock.get(
-            'https://api.apcoa-services.com/carpark-dev/v4/Carparks',
+            'https://api.apcoa-services.com/carpark/v4/Carparks',
             text=json_data,
         )
 
@@ -91,7 +91,7 @@ class ApcoaPullConverterTest:
             apcoa_ignore_missing_coordinates_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 345
+        assert len(static_parking_site_inputs) == 330
         assert len(import_parking_site_exceptions) == 18
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
