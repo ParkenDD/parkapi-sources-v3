@@ -45,3 +45,28 @@ class KienzlerInput:
             realtime_capacity=self.sum_boxes,
             realtime_free_capacity=self.bookable,
         )
+
+    def extend_static_parking_site_input(self, static_parking_site_input: StaticParkingSiteInput):
+        self.name = static_parking_site_input.name if static_parking_site_input.name else self.name
+        self.purpose = static_parking_site_input.purpose if static_parking_site_input.purpose else self.purpose
+        self.lat = static_parking_site_input.lat if static_parking_site_input.lat else self.lat
+        self.long = static_parking_site_input.lon if static_parking_site_input.lon else self.long
+        self.has_realtime_data = (
+            static_parking_site_input.has_realtime_data
+            if static_parking_site_input.has_realtime_data
+            else self.has_realtime_data
+        )
+        self.capacity = static_parking_site_input.capacity if static_parking_site_input.capacity else self.capacity
+        self.type = static_parking_site_input.type if static_parking_site_input.type else self.type
+        self.static_data_updated_at = (
+            static_parking_site_input.static_data_updated_at
+            if static_parking_site_input.static_data_updated_at
+            else self.static_data_updated_at
+        )
+        self.public_url = (
+            static_parking_site_input.public_url if static_parking_site_input.public_url else self.public_url
+        )
+        self.opening_hours = (
+            static_parking_site_input.opening_hours if static_parking_site_input.opening_hours else self.opening_hours
+        )
+        self.has_fee = static_parking_site_input.has_fee if static_parking_site_input.has_fee else self.has_fee

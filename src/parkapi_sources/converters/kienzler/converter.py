@@ -9,36 +9,60 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import KienzlerInput
 
 
-class KienzlerBasePullConverter(PullConverter):
+class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
     kienzler_list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     kienzler_item_validator = DataclassValidator(KienzlerInput)
+    kienzler_geojson_item_validator = DataclassValidator(KienzlerInput)
+    use_geojson = False
 
     @property
     @abstractmethod
     def config_prefix(self):
         pass
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, use_geojson=False, **kwargs):
         super().__init__(*args, **kwargs)
         self.required_config_keys = [
             f'PARK_API_KIENZLER_{self.config_prefix}_USER',
             f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD',
             f'PARK_API_KIENZLER_{self.config_prefix}_IDS',
         ]
+        self.use_geojson = use_geojson
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs: list[StaticParkingSiteInput] = []
-
         kienzler_parking_sites, static_parking_site_errors = self._get_kienzler_parking_sites()
-        for kienzler_parking_site in kienzler_parking_sites:
-            static_parking_site_inputs.append(kienzler_parking_site.to_static_parking_site(self.source_info.public_url))
+        static_parking_site_inputs = [
+            kienzler_parking_site.to_static_parking_site(self.source_info.public_url)
+            for kienzler_parking_site in kienzler_parking_sites
+        ]
+
+        if self.use_geojson:
+            geojson_parking_sites, geojson_parking_site_errors = self._get_static_geojson_parking_sites()
+
+            static_geojson_parking_site_inputs_by_uid: dict[str, StaticParkingSiteInput] = {}
+            for geojson_parking_site in geojson_parking_sites:
+                static_geojson_parking_site_inputs_by_uid[geojson_parking_site.uid] = geojson_parking_site
+
+            static_parking_site_errors += geojson_parking_site_errors
+
+            # For each GeoJSON entry, extend its correspondent static data
+            for kienzler_parking_site in kienzler_parking_sites:
+                # If the uid is not known in our static data: ignore the GeoJSON data
+                parking_site_uid = str(kienzler_parking_site.id)
+                if parking_site_uid not in static_geojson_parking_site_inputs_by_uid:
+                    continue
+
+                # Extend static data with GeoJSON data
+                kienzler_parking_site.extend_static_parking_site_input(
+                    static_geojson_parking_site_inputs_by_uid[parking_site_uid],
+                )
 
         return static_parking_site_inputs, static_parking_site_errors
 
@@ -87,6 +111,16 @@ class KienzlerBasePullConverter(PullConverter):
             result_dicts += response.json()
 
         return result_dicts
+
+    def _get_static_geojson_parking_sites(
+        self,
+    ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            self._get_static_parking_site_inputs_and_exceptions(
+                source_uid=self.source_info.uid,
+            )
+        )
+        return static_parking_site_inputs, import_parking_site_exceptions
 
 
 class KienzlerBikeAndRidePullConverter(KienzlerBasePullConverter):
