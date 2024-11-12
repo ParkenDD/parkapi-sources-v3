@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.14.2
+
+Released 2024-11-12
+
+### Fixes
+
+* [APCOA: Remove park control objects and added production endpoint](https://github.com/ParkenDD/parkapi-sources-v3/pull/162)
+* [radvis_bw: filter unprintable characters](https://github.com/ParkenDD/parkapi-sources-v3/pull/167)
+* [multiple converters: set opening status to none if unset](https://github.com/ParkenDD/parkapi-sources-v3/pull/160)
+
+
 ## 0.14.1
 
 Released 2024-10-29
