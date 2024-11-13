@@ -1,0 +1,100 @@
+[
+  {
+    "logicalUnitId": 23,
+    "publicName": "VELOBRIX - Hauptbahnhof/ZOB Ellwangen (Jagst)",
+    "locationLat": 48.964564,
+    "locationLon": 10.129923,
+    "locationName": "Hauptbahnhof/ZOB Ellwangen (Jagst)",
+    "street": "Bahnhofstraße",
+    "streetNumber": "1",
+    "city": "Ellwangen (Jagst)",
+    "country": "Deutschland",
+    "zipCode": "73479",
+    "tenantName": "014 - Landkreis Ostalbkreis",
+    "countLogicalBoxes": 16,
+    "countFreeLogicalBoxes": 16,
+    "boxTypes": [
+      {
+        "name": "Unten/mit Lademöglichkeit (Fahrradhöhe bis 1.20m)",
+        "countLogicalBoxes": 4,
+        "countFreeLogicalBoxes": 4
+      },
+      {
+        "name": "Oben (Fahrradhöhe bis 1.10m)",
+        "countLogicalBoxes": 8,
+        "countFreeLogicalBoxes": 8
+      },
+      {
+        "name": "Unten (Fahrradhöhe bis 1.20m)",
+        "countLogicalBoxes": 4,
+        "countFreeLogicalBoxes": 4
+      }
+    ],
+    "priceModelDescription": {
+      "description": "1 Tag: 1,00€, 7 Tage: 5,00€, 30 Tage: 10,00€, 365 Tage: 100,00€",
+      "validUntil": null
+    }
+  },
+  {
+    "logicalUnitId": 24,
+    "publicName": "VELOBRIX - Industriekunstpfad Waiblingen",
+    "locationLat": 48.825376,
+    "locationLon": 9.301201,
+    "locationName": "Industriekunstpfad Waiblingen",
+    "street": "Innerer Weidach",
+    "streetNumber": "11",
+    "city": "Waiblingen",
+    "country": "Waiblingen",
+    "zipCode": "71332",
+    "tenantName": "015 - Stadt Waiblingen ",
+    "countLogicalBoxes": 16,
+    "countFreeLogicalBoxes": 16,
+    "boxTypes": [
+      {
+        "name": "Unten/mit Lademöglichkeit (Fahrradhöhe bis 1.20m)",
+        "countLogicalBoxes": 8,
+        "countFreeLogicalBoxes": 8
+      },
+      {
+        "name": "Oben (Fahrradhöhe bis 1.10m)",
+        "countLogicalBoxes": 8,
+        "countFreeLogicalBoxes": 8
+      }
+    ],
+    "priceModelDescription": {
+      "description": "1 Stunde: 0,01€, 2 Stunden: 0,02€, 8 Stunden: 0,08€, 24 Stunden: 0,24€",
+      "validUntil": null
+    }
+  },
+  {
+    "logicalUnitId": 25,
+    "publicName": "VELOBRIX - Bahnhof Waiblingen",
+    "locationLat": 48.826646,
+    "locationLon": 9.301936,
+    "locationName": "Bahnhof Waiblingen",
+    "street": "Bahnhof ",
+    "streetNumber": "1",
+    "city": "Waiblingen",
+    "country": "Deutschland",
+    "zipCode": "71332",
+    "tenantName": "015 - Stadt Waiblingen ",
+    "countLogicalBoxes": 14,
+    "countFreeLogicalBoxes": 14,
+    "boxTypes": [
+      {
+        "name": "Unten/mit Lademöglichkeit (Fahrradhöhe bis 1.20m)",
+        "countLogicalBoxes": 7,
+        "countFreeLogicalBoxes": 7
+      },
+      {
+        "name": "Oben (Fahrradhöhe bis 1.10m)",
+        "countLogicalBoxes": 7,
+        "countFreeLogicalBoxes": 7
+      }
+    ],
+    "priceModelDescription": {
+      "description": "1 Stunde: 0,01€, 2 Stunden: 0,02€, 8 Stunden: 0,08€, 24 Stunden: 0,24€",
+      "validUntil": null
+    }
+  }
+]
