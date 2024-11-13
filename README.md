@@ -45,7 +45,7 @@ We support following data sources:
 | Stadt Reutlingen: Fahrrad-Abstellanlagen                       | bike    | push (csv)  | `reutlingen_bike`        | no       |
 | Stadt Stuttgart                                                | car     | push (json) | `stuttgart`              | yes      |
 | Stadt Ulm                                                      | car     | pull        | `ulm`                    | yes      |
-| Velobrix                                                       | bike    | pull (json) | `velobrix`               | yes      |
+| Velobrix                                                       | bike    | pull        | `velobrix`               | yes      |
 | Verband Region Stuttgart: Bondorf                              | car     | pull        | `vrs_bondorf`            | yes      |
 | Verband Region Stuttgart: Kirchheim                            | car     | pull        | `vrs_kirchheim`          | yes      |
 | Verband Region Stuttgart: Neustadt                             | car     | pull        | `vrs_neustadt`           | yes      |
