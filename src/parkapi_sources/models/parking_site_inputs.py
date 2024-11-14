@@ -5,7 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from decimal import Decimal
-from typing import Optional
+from typing import Optional, Self
 
 from validataclass.dataclasses import Default, DefaultUnset, ValidataclassMixin, validataclass
 from validataclass.exceptions import DataclassPostValidationError, ValidationError
@@ -127,6 +127,15 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
                         reason='YES and NO cannot be used with specific ParkAndRideTypes',
                     ),
                 )
+
+    def from_dict(self, data: dict, include_id: bool = False) -> Self:
+        for field in self.to_dict().keys():
+            if field == 'id' and not include_id:
+                continue
+            if field not in data:
+                continue
+            setattr(self, field, data[field])
+        return self
 
 
 @validataclass
