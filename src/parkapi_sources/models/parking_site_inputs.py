@@ -5,7 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from decimal import Decimal
-from typing import Optional, Self
+from typing import Optional
 
 from validataclass.dataclasses import Default, DefaultUnset, ValidataclassMixin, validataclass
 from validataclass.exceptions import DataclassPostValidationError, ValidationError
@@ -128,7 +128,7 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
                     ),
                 )
 
-    def from_dict(self, data: dict) -> Self:
+    def from_dict(self, data: dict):
         for field in data.keys():
             setattr(self, field, data[field])
         return self
