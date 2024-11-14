@@ -3,6 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from decimal import Decimal
 from pathlib import Path
 from unittest.mock import Mock
 
@@ -10,6 +11,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import KienzlerBikeAndRidePullConverter
+from parkapi_sources.models.enums import ParkAndRideType
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -85,6 +87,22 @@ class KienzlerPullConverterTest:
 
         assert len(static_parking_site_inputs) == 5
         assert len(import_parking_site_exceptions) == 0
+
+        # Check that the data has been updated
+        aux = [
+            realtime_parking_site_input
+            for realtime_parking_site_input in static_parking_site_inputs
+            if realtime_parking_site_input.uid == 'unit1676'
+        ][0]
+        assert aux.uid == 'unit1676'
+        assert aux.type.value == 'TWO_TIER'
+        assert aux.max_height == 1250
+        assert aux.max_width == 800
+        assert aux.park_and_ride_type == [ParkAndRideType.TRAIN]
+        assert aux.external_identifiers[0]['type'].value == 'DHID'
+        assert aux.external_identifiers[0]['value'] == 'de:08317:14500_Parent'
+        assert aux.lat == Decimal('48.475546')
+        assert aux.lon == Decimal('7.947474')
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

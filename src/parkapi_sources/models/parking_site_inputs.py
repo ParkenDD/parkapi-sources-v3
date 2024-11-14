@@ -128,12 +128,8 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
                     ),
                 )
 
-    def from_dict(self, data: dict, include_id: bool = False) -> Self:
-        for field in self.to_dict().keys():
-            if field == 'id' and not include_id:
-                continue
-            if field not in data:
-                continue
+    def from_dict(self, data: dict) -> Self:
+        for field in data.keys():
             setattr(self, field, data[field])
         return self
 
