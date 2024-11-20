@@ -38,7 +38,7 @@ class RadvisBwPullConverter(PullConverter):
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
         parking_site_features = self.geojson_validator.validate(self.get_data())
-        sources_to_ignore: list[str] = ['MOBIDATABW']
+        sources_to_ignore: list[str] = []
         if self.config_helper.get('PARK_API_RADVIS_IGNORE_SOURCES'):
             sources_to_ignore = self.config_helper.get('PARK_API_RADVIS_IGNORE_SOURCES')
 

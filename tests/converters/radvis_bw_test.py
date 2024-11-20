@@ -18,6 +18,7 @@ def radvis_bw_config_helper(mocked_config_helper: Mock):
     config = {
         'PARK_API_RADVIS_USER': 'de14131a-c542-445a-999b-88393df54903',
         'PARK_API_RADVIS_PASSWORD': '20832cbc-377d-41e4-aee8-7bc1a87dfe90',
+        'PARK_API_RADVIS_IGNORE_SOURCES': 'MOBIDATABW',
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
