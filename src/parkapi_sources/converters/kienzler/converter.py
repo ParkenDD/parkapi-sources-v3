@@ -20,21 +20,18 @@ class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
     kienzler_list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     kienzler_item_validator = DataclassValidator(KienzlerInput)
     use_geojson = False
+    geojson_feature_validator = DataclassValidator(KienzlerGeojsonFeatureInput)
 
     @property
     @abstractmethod
     def config_prefix(self):
         pass
 
-    def __init__(self, *args, use_geojson=False, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.required_config_keys = [
-            f'PARK_API_KIENZLER_{self.config_prefix}_USER',
-            f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD',
-            f'PARK_API_KIENZLER_{self.config_prefix}_IDS',
-        ]
-        self.use_geojson = use_geojson
-        self.geojson_feature_validator = DataclassValidator(KienzlerGeojsonFeatureInput)
+    required_config_keys = [
+        f'PARK_API_KIENZLER_{config_prefix}_USER',
+        f'PARK_API_KIENZLER_{config_prefix}_PASSWORD',
+        f'PARK_API_KIENZLER_{config_prefix}_IDS',
+    ]
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         kienzler_parking_sites, static_parking_site_errors = self._get_kienzler_parking_sites()
@@ -159,6 +156,7 @@ class KienzlerNeckarsulmPullConverter(KienzlerBasePullConverter):
 
 class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
     config_prefix = 'OFFENBURG'
+    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_offenburg',
@@ -171,6 +169,7 @@ class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
 
 class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
     config_prefix = 'RADSAFE'
+    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_rad_safe',
@@ -183,6 +182,7 @@ class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
 
 class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
     config_prefix = 'STUTTGART'
+    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_stuttgart',
@@ -195,6 +195,7 @@ class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
 
 class KienzlerVrnPullConverter(KienzlerBasePullConverter):
     config_prefix = 'VRN'
+    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_vrn',

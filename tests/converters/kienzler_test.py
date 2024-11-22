@@ -9,8 +9,10 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters import KienzlerBikeAndRidePullConverter
+from parkapi_sources.converters.kienzler.models import KienzlerGeojsonFeatureInput
 from parkapi_sources.models.enums import ParkAndRideType
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
@@ -59,7 +61,10 @@ def kienzler_pull_converter(kienzler_config_helper: Mock) -> KienzlerBikeAndRide
 
 @pytest.fixture
 def kienzler_pull_converter_with_geojson(kienzler_config_helper: Mock) -> KienzlerBikeAndRidePullConverter:
-    return KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, use_geojson=True)
+    converter = KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper)
+    converter.use_geojson = True
+    converter.geojson_feature_validator = DataclassValidator(KienzlerGeojsonFeatureInput)
+    return converter
 
 
 class KienzlerPullConverterTest:
@@ -89,20 +94,20 @@ class KienzlerPullConverterTest:
         assert len(import_parking_site_exceptions) == 0
 
         # Check that the data has been updated
-        aux = [
+        static_parking_site_input = [
             realtime_parking_site_input
             for realtime_parking_site_input in static_parking_site_inputs
             if realtime_parking_site_input.uid == 'unit1676'
         ][0]
-        assert aux.uid == 'unit1676'
-        assert aux.type.value == 'TWO_TIER'
-        assert aux.max_height == 1250
-        assert aux.max_width == 800
-        assert aux.park_and_ride_type == [ParkAndRideType.TRAIN]
-        assert aux.external_identifiers[0]['type'].value == 'DHID'
-        assert aux.external_identifiers[0]['value'] == 'de:08317:14500_Parent'
-        assert aux.lat == Decimal('48.475546')
-        assert aux.lon == Decimal('7.947474')
+        assert static_parking_site_input.uid == 'unit1676'
+        assert static_parking_site_input.type.value == 'TWO_TIER'
+        assert static_parking_site_input.max_height == 1250
+        assert static_parking_site_input.max_width == 800
+        assert static_parking_site_input.park_and_ride_type == [ParkAndRideType.TRAIN]
+        assert static_parking_site_input.external_identifiers[0]['type'].value == 'DHID'
+        assert static_parking_site_input.external_identifiers[0]['value'] == 'de:08317:14500_Parent'
+        assert static_parking_site_input.lat == Decimal('48.475546')
+        assert static_parking_site_input.lon == Decimal('7.947474')
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
