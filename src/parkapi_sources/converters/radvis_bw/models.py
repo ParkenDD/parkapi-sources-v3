@@ -49,6 +49,7 @@ class LocationType(Enum):
     SCHULE = 'SCHULE'
     STRASSENRAUM = 'STRASSENRAUM'
     SONSTIGES = 'SONSTIGES'
+    BILDUNGSEINRICHTUNG = 'BILDUNGSEINRICHTUNG'
 
     def to_related_location(self) -> Optional[str]:
         return {
@@ -56,6 +57,7 @@ class LocationType(Enum):
             self.BIKE_AND_RIDE: 'Bike and Ride',
             self.SCHULE: 'Schule',
             self.STRASSENRAUM: 'Straßenraum',
+            self.BILDUNGSEINRICHTUNG: 'Bildungseinrichtung',
         }.get(self)
 
 
