@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.15.0
+
+Released 2024-11-25
+
+## Features
+
+* [New Source: Velobrix](https://github.com/ParkenDD/parkapi-sources-v3/pull/165)
+* [Kienzler: use static data as additional data input](https://github.com/ParkenDD/parkapi-sources-v3/pull/168)
+
+
 ## 0.14.2
 
 Released 2024-11-12
