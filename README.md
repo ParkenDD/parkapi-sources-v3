@@ -10,6 +10,8 @@ We support following data sources:
 |----------------------------------------------------------------|---------|-------------|--------------------------|----------|
 | APCOA Services                                                 | car     | pull        | `apcoa`                  | no       |
 | Deutsche Bahn                                                  | car     | pull        | `bahn_v2`                | no       |
+| Deutsche Bahn (Bike Parking Locked)                            | bike    | pull        | `bahn_v2_bike_locked`    | no       |
+| Deutsche Bahn (Bike Parking Open)                              | bike    | pull        | `bahn_v2_bike_open`      | no       |
 | Stadt Bietigheim-Bissingen                                     | car     | pull        | `bietigheim_bissingen`   | yes      |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | car     | pull        | `bfrk_bw_car`            | no       |
 | Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | bike    | pull        | `bfrk_bw_bike`           | no       |
