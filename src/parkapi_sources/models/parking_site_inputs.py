@@ -128,6 +128,11 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
                     ),
                 )
 
+    def from_dict(self, data: dict):
+        for field in data.keys():
+            setattr(self, field, data[field])
+        return self
+
 
 @validataclass
 class RealtimeParkingSiteInput(BaseParkingSiteInput):
