@@ -7,8 +7,9 @@ from decimal import Decimal
 from enum import Enum
 from typing import Optional
 
-from validataclass.dataclasses import Default, validataclass
+from validataclass.dataclasses import Default, DefaultUnset, validataclass
 from validataclass.exceptions import ValidationError
+from validataclass.helpers import OptionalUnset
 from validataclass.validators import (
     BooleanValidator,
     DataclassValidator,
@@ -17,12 +18,14 @@ from validataclass.validators import (
     IntegerValidator,
     ListValidator,
     Noneable,
+    NoneToUnsetValue,
     NumericValidator,
     StringValidator,
     UrlValidator,
 )
 
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.validators import MappedBooleanValidator
 
 
 class NameContext(Enum):
@@ -35,6 +38,8 @@ class NameContext(Enum):
 class BahnParkingSiteCapacityType(Enum):
     PARKING = 'PARKING'
     HANDICAPPED_PARKING = 'HANDICAPPED_PARKING'
+    BIKE_PARKING_LOCKED = 'BIKE_PARKING_LOCKED'
+    BIKE_PARKING_OPEN = 'BIKE_PARKING_OPEN'
 
 
 class BahnParkingSiteType(Enum):
@@ -90,9 +95,39 @@ class BahnAdressInput:
 
 
 @validataclass
+class BahnStationIdInput:
+    identifier: str = StringValidator()
+
+
+@validataclass
+class BahnStationInput:
+    stationId: BahnStationIdInput = DataclassValidator(BahnStationIdInput)
+    name: str = StringValidator()
+    distance: str = StringValidator()
+
+
+@validataclass
 class BahnCapacityInput:
     type: BahnParkingSiteCapacityType = EnumValidator(BahnParkingSiteCapacityType)
+    available: OptionalUnset[bool] = (
+        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
+        DefaultUnset,
+    )
     total: int = IntegerValidator(allow_strings=True, min_value=0)
+
+    def to_bike_parking_site_type_input(self) -> ParkingSiteType:
+        # TODO: find out more details about this enumeration for a proper mapping
+        if self.available and self.type == BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED:
+            return ParkingSiteType.LOCKBOX
+        return ParkingSiteType.OTHER
+
+    def to_purpose_type_input(self) -> PurposeType:
+        if self.type in [
+            BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED,
+            BahnParkingSiteCapacityType.BIKE_PARKING_OPEN,
+        ]:
+            return PurposeType.BIKE
+        return PurposeType.CAR
 
 
 @validataclass
@@ -127,6 +162,7 @@ class BahnParkingSiteInput:
     type: BahnTypeInput = DataclassValidator(BahnTypeInput)
     operator: BahnOperatorInput = DataclassValidator(BahnOperatorInput)
     address: BahnAdressInput = DataclassValidator(BahnAdressInput)
+    station: BahnStationInput = DataclassValidator(BahnStationInput)
     capacity: list[BahnCapacityInput] = ListValidator(DataclassValidator(BahnCapacityInput))
     access: BahnAccessInput = DataclassValidator(BahnAccessInput)
     # TODO: ignored multible attributes which do not matter so far
@@ -134,6 +170,46 @@ class BahnParkingSiteInput:
     def __post_init__(self):
         for capacity in self.capacity:
             if capacity.type == BahnParkingSiteCapacityType.PARKING:
+                return
+        # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
+        raise ValidationError(reason='Missing parking capacity')
+
+
+@validataclass
+class BahnBikeLockedParkingSiteInput:
+    id: int = IntegerValidator(allow_strings=True)
+    name: list[BahnNameInput] = ListValidator(DataclassValidator(BahnNameInput))
+    url: Optional[str] = UrlValidator(), Default(None)
+    operator: BahnOperatorInput = DataclassValidator(BahnOperatorInput)
+    address: BahnAdressInput = DataclassValidator(BahnAdressInput)
+    station: BahnStationInput = DataclassValidator(BahnStationInput)
+    capacity: list[BahnCapacityInput] = ListValidator(DataclassValidator(BahnCapacityInput))
+    access: BahnAccessInput = DataclassValidator(BahnAccessInput)
+    # TODO: ignored multible attributes which do not matter so far
+
+    def __post_init__(self):
+        for capacity in self.capacity:
+            if capacity.type == BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED:
+                return
+        # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
+        raise ValidationError(reason='Missing parking capacity')
+
+
+@validataclass
+class BahnBikeOpenParkingSiteInput:
+    id: int = IntegerValidator(allow_strings=True)
+    name: list[BahnNameInput] = ListValidator(DataclassValidator(BahnNameInput))
+    url: Optional[str] = UrlValidator(), Default(None)
+    operator: BahnOperatorInput = DataclassValidator(BahnOperatorInput)
+    address: BahnAdressInput = DataclassValidator(BahnAdressInput)
+    station: BahnStationInput = DataclassValidator(BahnStationInput)
+    capacity: list[BahnCapacityInput] = ListValidator(DataclassValidator(BahnCapacityInput))
+    access: BahnAccessInput = DataclassValidator(BahnAccessInput)
+    # TODO: ignored multible attributes which do not matter so far
+
+    def __post_init__(self):
+        for capacity in self.capacity:
+            if capacity.type == BahnParkingSiteCapacityType.BIKE_PARKING_OPEN:
                 return
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
         raise ValidationError(reason='Missing parking capacity')

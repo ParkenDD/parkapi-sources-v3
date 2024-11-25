@@ -7,6 +7,8 @@ from typing import Optional, Type
 
 from .converters import (
     ApcoaPullConverter,
+    BahnV2BikeParkingLockedPullConverter,
+    BahnV2BikeParkingOpenPullConverter,
     BahnV2PullConverter,
     BaseConverter,
     BfrkBwBikePushConverter,
@@ -62,6 +64,8 @@ from .util import ConfigHelper
 class ParkAPISources:
     converter_classes: list[Type[BaseConverter]] = [
         ApcoaPullConverter,
+        BahnV2BikeParkingLockedPullConverter,
+        BahnV2BikeParkingOpenPullConverter,
         BahnV2PullConverter,
         BfrkBwBikePushConverter,
         BfrkBwCarPushConverter,

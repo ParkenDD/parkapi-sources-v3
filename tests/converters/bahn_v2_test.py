@@ -9,7 +9,11 @@ from unittest.mock import Mock
 import pytest
 from requests_mock import Mocker
 
-from parkapi_sources.converters.bahn_v2 import BahnV2PullConverter
+from parkapi_sources.converters.bahn_v2 import (
+    BahnV2BikeParkingLockedPullConverter,
+    BahnV2BikeParkingOpenPullConverter,
+    BahnV2PullConverter,
+)
 from tests.converters.helper import validate_static_parking_site_inputs
 
 
@@ -28,6 +32,16 @@ def bahn_v2_pull_converter(bahn_v2_config_helper: Mock) -> BahnV2PullConverter:
     return BahnV2PullConverter(config_helper=bahn_v2_config_helper)
 
 
+@pytest.fixture
+def bahn_v2_parking_locked_pull_converter(bahn_v2_config_helper: Mock) -> BahnV2BikeParkingLockedPullConverter:
+    return BahnV2BikeParkingLockedPullConverter(config_helper=bahn_v2_config_helper)
+
+
+@pytest.fixture
+def bahn_v2_parking_open_pull_converter(bahn_v2_config_helper: Mock) -> BahnV2BikeParkingOpenPullConverter:
+    return BahnV2BikeParkingOpenPullConverter(config_helper=bahn_v2_config_helper)
+
+
 class BahnV2PullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(bahn_v2_pull_converter: BahnV2PullConverter, requests_mock: Mocker):
@@ -42,7 +56,53 @@ class BahnV2PullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = bahn_v2_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 306
-        assert len(import_parking_site_exceptions) == 7
+        assert len(static_parking_site_inputs) == 309
+        assert len(import_parking_site_exceptions) == 1
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+
+class BahnV2BikeParkingLockedPullConverterTest:
+    @staticmethod
+    def test_get_static_parking_sites(
+        bahn_v2_parking_locked_pull_converter: BahnV2BikeParkingLockedPullConverter, requests_mock: Mocker
+    ):
+        json_path = Path(Path(__file__).parent, 'data', 'bahn_v2.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2/parking-facilities',
+            text=json_data,
+        )
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            bahn_v2_parking_locked_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 21
+        assert len(import_parking_site_exceptions) == 289
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+
+class BahnV2BikeParkingOpenPullConverterTest:
+    @staticmethod
+    def test_get_static_parking_sites(bahn_v2_parking_open_pull_converter: BahnV2PullConverter, requests_mock: Mocker):
+        json_path = Path(Path(__file__).parent, 'data', 'bahn_v2.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2/parking-facilities',
+            text=json_data,
+        )
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            bahn_v2_parking_open_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 12
+        assert len(import_parking_site_exceptions) == 298
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
