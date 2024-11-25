@@ -27,11 +27,13 @@ class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
     def config_prefix(self):
         pass
 
-    required_config_keys = [
-        f'PARK_API_KIENZLER_{config_prefix}_USER',
-        f'PARK_API_KIENZLER_{config_prefix}_PASSWORD',
-        f'PARK_API_KIENZLER_{config_prefix}_IDS',
-    ]
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.required_config_keys = [
+            f'PARK_API_KIENZLER_{self.config_prefix}_USER',
+            f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD',
+            f'PARK_API_KIENZLER_{self.config_prefix}_IDS',
+        ]
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         kienzler_parking_sites, static_parking_site_errors = self._get_kienzler_parking_sites()
