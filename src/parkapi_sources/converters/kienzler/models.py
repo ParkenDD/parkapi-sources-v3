@@ -5,7 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from decimal import Decimal
-from typing import Optional
+from typing import Any, Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
@@ -18,7 +18,8 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ExternalIdentifierType, ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models.parking_site_inputs import ExternalIdentifierInput
 
 
 @validataclass
@@ -56,12 +57,6 @@ class KienzlerInput:
 
 
 @validataclass
-class ExternalIdentifier(ValidataclassMixin):
-    type: ExternalIdentifierType = EnumValidator(ExternalIdentifierType)
-    value: str = StringValidator()
-
-
-@validataclass
 class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
     address: Optional[str] = StringValidator(max_length=512), Default(None)
@@ -70,7 +65,19 @@ class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
     max_width: int = IntegerValidator(min_value=0)
     max_depth: int = IntegerValidator(min_value=0)
     park_and_ride_type: list[ParkAndRideType] = ListValidator(EnumValidator(ParkAndRideType))
-    external_identifiers: Optional[list[ExternalIdentifier]] = ListValidator(DataclassValidator(ExternalIdentifier))
+    external_identifiers: Optional[list[ExternalIdentifierInput]] = ListValidator(
+        DataclassValidator(
+            ExternalIdentifierInput,
+        ),
+    )
+
+    def to_dict(self, **kwargs) -> dict[str, Any]:
+        result = super().to_dict(**kwargs)
+
+        # We want the original structure as we want to use it for updating StaticParkingSiteInputs
+        result['external_identifiers'] = self.external_identifiers
+
+        return result
 
 
 @validataclass

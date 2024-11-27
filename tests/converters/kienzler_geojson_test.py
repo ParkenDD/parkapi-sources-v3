@@ -13,7 +13,7 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters import KienzlerBikeAndRidePullConverter
 from parkapi_sources.converters.kienzler.models import KienzlerGeojsonFeatureInput
-from parkapi_sources.models.enums import ParkAndRideType
+from parkapi_sources.models.enums import ExternalIdentifierType, ParkAndRideType
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -101,8 +101,8 @@ class KienzlerPullConverterTest:
         assert static_parking_site_input.max_height == 1250
         assert static_parking_site_input.max_width == 800
         assert static_parking_site_input.park_and_ride_type == [ParkAndRideType.TRAIN]
-        assert static_parking_site_input.external_identifiers[0]['type'].value == 'DHID'
-        assert static_parking_site_input.external_identifiers[0]['value'] == 'de:08317:14500_Parent'
+        assert static_parking_site_input.external_identifiers[0].type == ExternalIdentifierType.DHID
+        assert static_parking_site_input.external_identifiers[0].value == 'de:08317:14500_Parent'
         assert static_parking_site_input.lat == Decimal('48.475546')
         assert static_parking_site_input.lon == Decimal('7.947474')
 
