@@ -22,6 +22,7 @@ from validataclass.validators import (
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.validators import ReplacingStringValidator
 
 
 @validataclass
@@ -48,12 +49,21 @@ class OpenDataSwissCapacitiesInput:
     total: int = IntegerValidator()
 
 
+class OpendataSwissReplacingStringValidator(ReplacingStringValidator):
+    def __init__(self, *args, **kwargs):
+        super().__init__(
+            *args,
+            mapping={'\n': ' ', '\r': '', '\xa0': ' ', '\x02': '', '\t': ' '},
+            **kwargs,
+        )
+
+
 @validataclass
 class OpenDataSwissAdditionalInformationInput:
-    de: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
-    en: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
-    it: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
-    fr: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
+    de: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    en: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    it: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    fr: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
 
 
 class OpenDataSwissOperationTimeDaysOfWeek(Enum):
@@ -120,7 +130,7 @@ class OpenDataSwissPropertiesInput:
     parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = Noneable(
         EnumValidator(OpenDataSwissParkingFacilityType),
     )
-    salesChannels: Optional[list[str]] = Noneable(ListValidator(StringValidator()))
+    salesChannels: Optional[list[str]] = Noneable(ListValidator(ReplacingStringValidator(mapping={'\n': ' '})))
     operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(
         DataclassValidator(OpenDataSwissOperationTimeInput),
     )
@@ -192,9 +202,9 @@ class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
 
         if self.properties.additionalInformationForCustomers:
-            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de.replace(
-                '\n', ' '
-            ).replace('\r', ' ')
+            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de
+        else:
+            static_parking_site_input.description = None
 
         if self.properties.address:
             static_parking_site_input.address = f'{self.properties.address.addressLine}, {self.properties.address.postalCode} {self.properties.address.city}'

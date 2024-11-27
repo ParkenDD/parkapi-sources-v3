@@ -3,7 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import date, datetime, time, timezone
+from datetime import datetime, time, timezone
 from decimal import Decimal
 from enum import Enum
 from typing import Optional
@@ -30,7 +30,7 @@ from parkapi_sources.models import (
     StaticParkingSiteInput,
 )
 from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType, PurposeType
-from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
+from parkapi_sources.validators import MappedBooleanValidator
 
 
 class KarlsruheOpeningStatus(Enum):
@@ -64,7 +64,7 @@ class KarlsruhePropertiesInput(GeojsonBaseFeaturePropertiesInput):
     betreiber_internet: Optional[str] = Noneable(UrlValidator())
     betreiber_email: Optional[str] = Noneable(EmailValidator())
     betreiber_telefon: Optional[str] = Noneable(StringValidator())
-    stand_stammdaten: date = ParsedDateValidator(date_format='%Y/%m/%d %H:%M:%S')
+    stand_stammdaten: datetime = DateTimeValidator()
 
     def __post_init__(self):
         if self.max_durchfahrtshoehe == 0:  # 0 is used as None

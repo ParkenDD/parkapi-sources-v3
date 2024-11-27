@@ -105,10 +105,13 @@ class RadvisFeaturePropertiesInput:
     gebuehren_pro_monat: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_jahr: Optional[int] = Noneable(IntegerValidator())
     beschreibung: Optional[str] = (
-        Noneable(ReplacingStringValidator(multiline=True, mapping={'\x80': ' '})),
+        Noneable(ReplacingStringValidator(mapping={'\x80': ' ', '\n': ' ', '\r': ''})),
         Default(None),
     )
-    weitere_information: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
+    weitere_information: Optional[str] = (
+        Noneable(ReplacingStringValidator(mapping={'\n': ' ', '\r': ''})),
+        Default(None),
+    )
     status: StatusType = EnumValidator(StatusType)
 
     def to_dicts(self) -> list[dict]:
@@ -119,8 +122,6 @@ class RadvisFeaturePropertiesInput:
             description = self.beschreibung
         elif self.weitere_information:
             description = self.weitere_information
-        if description is not None:
-            description = description.replace('\r', '').replace('\n', ' ')
 
         base_data = {
             'operator_name': self.betreiber,

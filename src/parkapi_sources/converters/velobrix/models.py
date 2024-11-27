@@ -7,7 +7,7 @@ import decimal
 from datetime import datetime, timezone
 from typing import Optional
 
-from validataclass.dataclasses import validataclass
+from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
     AnythingValidator,
     DataclassValidator,
@@ -20,6 +20,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import PurposeType
 
 
 @validataclass
@@ -54,12 +55,16 @@ class VelobrixInput:
 
     boxTypes: list[VelobrixBoxTypeInput] = ListValidator(DataclassValidator(VelobrixBoxTypeInput))
 
-    priceModelDescription: VelobrixPriceModelDescriptionInput = DataclassValidator(VelobrixPriceModelDescriptionInput)
+    priceModelDescription: VelobrixPriceModelDescriptionInput | None = (
+        Noneable(DataclassValidator(VelobrixPriceModelDescriptionInput)),
+        Default(None),
+    )
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             uid=str(self.logicalUnitId),
             name=self.publicName,
+            purpose=PurposeType.BIKE,
             description=' ; '.join([boxType.name for boxType in self.boxTypes]),
             lat=self.locationLat,
             lon=self.locationLon,
@@ -68,7 +73,7 @@ class VelobrixInput:
             capacity=self.countLogicalBoxes,
             has_realtime_data=self.countFreeLogicalBoxes is not None,
             has_fee=True,
-            fee_description=self.priceModelDescription.description,
+            fee_description=None if self.priceModelDescription is None else self.priceModelDescription.description,
             static_data_updated_at=datetime.now(timezone.utc),
         )
 

@@ -53,8 +53,8 @@ class OpenDataSwissPullConverterTest:
             opendata_swiss_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 503
-        assert len(import_parking_site_exceptions) == 60
+        assert len(static_parking_site_inputs) == 563
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

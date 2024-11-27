@@ -61,12 +61,15 @@ class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
     address: Optional[str] = StringValidator(max_length=512), Default(None)
     type: Optional[ParkingSiteType] = EnumValidator(ParkingSiteType), Default(None)
-    max_height: int = IntegerValidator(min_value=0)
-    max_width: int = IntegerValidator(min_value=0)
-    max_depth: int = IntegerValidator(min_value=0)
+    max_height: int | None = IntegerValidator(min_value=0), Default(None)
+    max_width: int | None = IntegerValidator(min_value=0), Default(None)
+    max_depth: int | None = IntegerValidator(min_value=0), Default(None)
     park_and_ride_type: list[ParkAndRideType] = ListValidator(EnumValidator(ParkAndRideType))
-    external_identifiers: Optional[list[ExternalIdentifierInput]] = ListValidator(
-        DataclassValidator(ExternalIdentifierInput),
+    external_identifiers: list[ExternalIdentifierInput] | None = (
+        ListValidator(
+            DataclassValidator(ExternalIdentifierInput),
+        ),
+        Default(None),
     )
 
     def to_dict(self, **kwargs) -> dict[str, Any]:

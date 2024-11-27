@@ -143,7 +143,7 @@ class HeidelbergInput:
         return StaticParkingSiteInput(
             uid=self.staticParkingSiteId,
             name=self.staticName,
-            description=self.description.replace('\r\n', ' '),
+            description=self.description,
             lat=self.lat,
             lon=self.lon,
             address=f'{self.streetAddress}, {self.postalCode} {self.addressLocality}',
