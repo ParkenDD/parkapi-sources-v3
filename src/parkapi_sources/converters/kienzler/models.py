@@ -17,8 +17,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ExternalIdentifierType, ParkAndRideType, ParkingSiteType, PurposeType
 
 
@@ -75,15 +74,5 @@ class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
 
 
 @validataclass
-class KienzlerGeojsonFeatureInput(GeojsonFeatureInput):
+class KienzlerGeojsonFeatureInput(GeojsonBaseFeatureInput):
     properties: KienzlerGeojsonFeaturePropertiesInput = DataclassValidator(KienzlerGeojsonFeaturePropertiesInput)
-
-    def to_static_parking_site_input(self, static_data_updated_at: datetime) -> dict:
-        properties_dict = self.properties.to_dict()
-        # TODO: this property should eventually be added to the StaticParkingSiteInput class.
-        properties_dict.pop('max_depth', None)
-        return dict(
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
-            **properties_dict,
-        )

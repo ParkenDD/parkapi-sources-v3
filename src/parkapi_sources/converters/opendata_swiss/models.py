@@ -20,8 +20,7 @@ from validataclass.validators import (
     TimeValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
 
 
@@ -166,9 +165,8 @@ class OpenDataSwissPropertiesInput:
 
 
 @validataclass
-class OpenDataSwissFeatureInput:
+class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
     id: str = StringValidator()
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
     properties: OpenDataSwissPropertiesInput = DataclassValidator(OpenDataSwissPropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:

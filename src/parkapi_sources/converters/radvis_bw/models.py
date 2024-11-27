@@ -19,8 +19,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
 from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator
 
@@ -160,7 +159,7 @@ class RadvisFeaturePropertiesInput:
 
 
 @validataclass
-class RadvisFeatureInput(GeojsonFeatureInput):
+class RadvisFeatureInput(GeojsonBaseFeatureInput):
     properties: RadvisFeaturePropertiesInput = DataclassValidator(RadvisFeaturePropertiesInput)
 
     def to_static_parking_site_inputs_with_proj(self, proj: pyproj.Proj) -> list[StaticParkingSiteInput]:
