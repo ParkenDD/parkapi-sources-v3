@@ -55,7 +55,7 @@ class StaticGeojsonDataMixin:
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
-        feature_inputs, import_parking_site_exceptions = self._get_features_and_exceptions(source_uid)
+        feature_inputs, import_parking_site_exceptions = self._get_geojson_features_and_exceptions(source_uid)
 
         for feature_input in feature_inputs:
             static_parking_site_inputs.append(
@@ -68,7 +68,7 @@ class StaticGeojsonDataMixin:
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
-    def _get_features_and_exceptions(
+    def _get_geojson_features_and_exceptions(
         self,
         source_uid: str,
     ) -> tuple[list[GeojsonFeatureInput], list[ImportParkingSiteException]]:

@@ -66,9 +66,7 @@ class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
     max_depth: int = IntegerValidator(min_value=0)
     park_and_ride_type: list[ParkAndRideType] = ListValidator(EnumValidator(ParkAndRideType))
     external_identifiers: Optional[list[ExternalIdentifierInput]] = ListValidator(
-        DataclassValidator(
-            ExternalIdentifierInput,
-        ),
+        DataclassValidator(ExternalIdentifierInput),
     )
 
     def to_dict(self, **kwargs) -> dict[str, Any]:

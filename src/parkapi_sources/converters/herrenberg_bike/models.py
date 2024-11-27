@@ -111,7 +111,7 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     operator_name: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     capacity: int = IntegerValidator(min_value=0)
     capacity_charging: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    # capacity_cargobike is unsupported yet
+    # capacity_cargobike is unsupported yet: https://github.com/ParkenDD/parkapi-sources-v3/issues/174
     # capacity_cargobike: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     max_height: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     max_width: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
@@ -146,9 +146,9 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     fee_description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
 
-    def to_dict(self, *args, **kwargs) -> dict:
+    def to_dict(self, **kwargs) -> dict:
         ignore_keys = ['type', 'original_uid', 'supervision_type', 'date_surveyed']
-        result = {key: value for key, value in super().to_dict(*args, **kwargs).items() if key not in ignore_keys}
+        result = {key: value for key, value in super().to_dict(**kwargs).items() if key not in ignore_keys}
 
         result['uid'] = self.original_uid
         result['purpose'] = PurposeType.BIKE
