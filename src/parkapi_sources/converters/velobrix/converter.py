@@ -29,7 +29,7 @@ class VelobrixPullConverter(PullConverter):
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
-        velobrix_inputs, import_parking_site_exceptions = self._get_data()
+        velobrix_inputs, import_parking_site_exceptions = self._get_data(include_pricing=True)
 
         for velobrix_input in velobrix_inputs:
             static_parking_site_inputs.append(velobrix_input.to_static_parking_site())
@@ -48,14 +48,17 @@ class VelobrixPullConverter(PullConverter):
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
 
-    def _get_data(self) -> tuple[list[VelobrixInput], list[ImportParkingSiteException]]:
+    def _get_data(self, include_pricing: bool = False) -> tuple[list[VelobrixInput], list[ImportParkingSiteException]]:
         velobrix_inputs: list[VelobrixInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
+        headers = {'Velobrix-ApiKey': self.config_helper.get('PARK_API_VELOBRIX_API_KEY')}
+        if include_pricing:
+            headers['IncludePriceModelDescription'] = 'true'
+
         response = requests.get(
             self.source_info.source_url,
-            params={'api-key': self.config_helper.get('PARK_API_VELOBRIX_API_KEY'), 'limit': 50},
-            headers={'Velobrix-ApiKey': self.config_helper.get('PARK_API_VELOBRIX_API_KEY')},
+            headers=headers,
             timeout=30,
         )
 

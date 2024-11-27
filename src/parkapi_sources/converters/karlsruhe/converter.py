@@ -10,9 +10,9 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter
+from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import KarlsruheBikeFeatureInput, KarlsruheFeatureInput
 
@@ -28,6 +28,7 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
         # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
         ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
         response = requests.get(self.source_info.source_url, verify=str(ca_path), timeout=30)
+
         response_data = response.json()
 
         try:

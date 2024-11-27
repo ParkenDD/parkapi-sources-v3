@@ -8,7 +8,7 @@ from enum import Enum
 from typing import Optional
 
 from validataclass.dataclasses import DefaultUnset, ValidataclassMixin, validataclass
-from validataclass.helpers import OptionalUnset, UnsetValue
+from validataclass.helpers import OptionalUnset
 from validataclass.validators import (
     DataclassValidator,
     EnumValidator,
@@ -19,8 +19,7 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
 from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
 
@@ -112,7 +111,8 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     operator_name: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     capacity: int = IntegerValidator(min_value=0)
     capacity_charging: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    capacity_cargobike: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    # capacity_cargobike is unsupported yet: https://github.com/ParkenDD/parkapi-sources-v3/issues/174
+    # capacity_cargobike: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     max_height: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     max_width: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     supervision_type: OptionalUnset[HerrenbergBikeSupervisionType] = (
@@ -123,10 +123,11 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
         NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
         DefaultUnset,
     )
-    access: OptionalUnset[HerrenbergBikeAccessType] = (
-        NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)),
-        DefaultUnset,
-    )
+    # access is unsupported yet
+    # access: OptionalUnset[HerrenbergBikeAccessType] = (
+    #    NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)),
+    #    DefaultUnset,
+    # )
     date_surveyed: OptionalUnset[date] = NoneToUnsetValue(ParsedDateValidator(date_format='%Y-%m-%d')), DefaultUnset
     has_lighting: OptionalUnset[bool] = (
         NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
@@ -145,36 +146,32 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     fee_description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
 
+    def to_dict(self, **kwargs) -> dict:
+        ignore_keys = ['type', 'original_uid', 'supervision_type', 'date_surveyed']
+        result = {key: value for key, value in super().to_dict(**kwargs).items() if key not in ignore_keys}
+
+        result['uid'] = self.original_uid
+        result['purpose'] = PurposeType.BIKE
+        result['type'] = self.type.to_parking_site_type()
+        if result['name'] == '':
+            result['name'] = 'Fahrrad-Abstellanlagen'
+        if self.date_surveyed:
+            result['static_data_updated_at'] = datetime.combine(self.date_surveyed, time(), tzinfo=timezone.utc)
+        else:
+            result['static_data_updated_at'] = datetime.now(timezone.utc)
+        if self.supervision_type:
+            result['supervision_type'] = self.supervision_type.to_supervision_type()
+
+        return result
+
 
 @validataclass
-class HerrenbergBikeFeatureInput:
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+class HerrenbergBikeFeatureInput(GeojsonBaseFeatureInput):
     properties: HerrenbergBikePropertiesInput = DataclassValidator(HerrenbergBikePropertiesInput)
 
-    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
-            uid=str(self.properties.original_uid),
-            name=self.properties.name if self.properties.name != '' else 'Fahrrad-Abstellanlagen',
-            type=self.properties.type.to_parking_site_type(),
-            description=self.properties.description,
-            capacity=self.properties.capacity,
-            has_realtime_data=self.properties.has_realtime_data,
-            has_lighting=self.properties.has_lighting,
-            is_covered=self.properties.is_covered,
-            related_location=self.properties.related_location,
-            operator_name=self.properties.operator_name,
-            max_height=self.properties.max_height,
-            max_width=self.properties.max_width,
-            has_fee=self.properties.has_fee,
-            supervision_type=self.properties.supervision_type.to_supervision_type()
-            if self.properties.supervision_type is not UnsetValue
-            else UnsetValue,
-            fee_description=self.properties.fee_description,
-            capacity_charging=self.properties.capacity_charging,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            static_data_updated_at=datetime.now(timezone.utc)
-            if self.properties.date_surveyed is UnsetValue
-            else datetime.combine(self.properties.date_surveyed, time(), tzinfo=timezone.utc),
-            purpose=PurposeType.BIKE,
+            **self.properties.to_dict(**kwargs),
         )

@@ -5,7 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from decimal import Decimal
-from typing import Optional
+from typing import Any, Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
@@ -17,9 +17,9 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ExternalIdentifierType, ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models.parking_site_inputs import ExternalIdentifierInput
 
 
 @validataclass
@@ -57,33 +57,30 @@ class KienzlerInput:
 
 
 @validataclass
-class ExternalIdentifier(ValidataclassMixin):
-    type: ExternalIdentifierType = EnumValidator(ExternalIdentifierType)
-    value: str = StringValidator()
-
-
-@validataclass
 class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
     address: Optional[str] = StringValidator(max_length=512), Default(None)
     type: Optional[ParkingSiteType] = EnumValidator(ParkingSiteType), Default(None)
-    max_height: int = IntegerValidator(min_value=0)
-    max_width: int = IntegerValidator(min_value=0)
-    max_depth: int = IntegerValidator(min_value=0)
+    max_height: int | None = IntegerValidator(min_value=0), Default(None)
+    max_width: int | None = IntegerValidator(min_value=0), Default(None)
+    max_depth: int | None = IntegerValidator(min_value=0), Default(None)
     park_and_ride_type: list[ParkAndRideType] = ListValidator(EnumValidator(ParkAndRideType))
-    external_identifiers: Optional[list[ExternalIdentifier]] = ListValidator(DataclassValidator(ExternalIdentifier))
+    external_identifiers: list[ExternalIdentifierInput] | None = (
+        ListValidator(
+            DataclassValidator(ExternalIdentifierInput),
+        ),
+        Default(None),
+    )
+
+    def to_dict(self, **kwargs) -> dict[str, Any]:
+        result = super().to_dict(**kwargs)
+
+        # We want the original structure as we want to use it for updating StaticParkingSiteInputs
+        result['external_identifiers'] = self.external_identifiers
+
+        return result
 
 
 @validataclass
-class KienzlerGeojsonFeatureInput(GeojsonFeatureInput):
+class KienzlerGeojsonFeatureInput(GeojsonBaseFeatureInput):
     properties: KienzlerGeojsonFeaturePropertiesInput = DataclassValidator(KienzlerGeojsonFeaturePropertiesInput)
-
-    def to_static_parking_site_input(self, static_data_updated_at: datetime) -> dict:
-        properties_dict = self.properties.to_dict()
-        # TODO: this property should eventually be added to the StaticParkingSiteInput class.
-        properties_dict.pop('max_depth', None)
-        return dict(
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
-            **properties_dict,
-        )

@@ -19,8 +19,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
 from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator
 
@@ -106,10 +105,13 @@ class RadvisFeaturePropertiesInput:
     gebuehren_pro_monat: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_jahr: Optional[int] = Noneable(IntegerValidator())
     beschreibung: Optional[str] = (
-        Noneable(ReplacingStringValidator(multiline=True, mapping={'\x80': ' '})),
+        Noneable(ReplacingStringValidator(mapping={'\x80': ' ', '\n': ' ', '\r': ''})),
         Default(None),
     )
-    weitere_information: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
+    weitere_information: Optional[str] = (
+        Noneable(ReplacingStringValidator(mapping={'\n': ' ', '\r': ''})),
+        Default(None),
+    )
     status: StatusType = EnumValidator(StatusType)
 
     def to_dicts(self) -> list[dict]:
@@ -120,8 +122,6 @@ class RadvisFeaturePropertiesInput:
             description = self.beschreibung
         elif self.weitere_information:
             description = self.weitere_information
-        if description is not None:
-            description = description.replace('\r', '').replace('\n', ' ')
 
         base_data = {
             'operator_name': self.betreiber,
@@ -160,7 +160,7 @@ class RadvisFeaturePropertiesInput:
 
 
 @validataclass
-class RadvisFeatureInput(GeojsonFeatureInput):
+class RadvisFeatureInput(GeojsonBaseFeatureInput):
     properties: RadvisFeaturePropertiesInput = DataclassValidator(RadvisFeaturePropertiesInput)
 
     def to_static_parking_site_inputs_with_proj(self, proj: pyproj.Proj) -> list[StaticParkingSiteInput]:
