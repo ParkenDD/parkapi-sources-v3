@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.15.1
+
+Released 2024-11-27
+
+### Fixes
+
+* [GeoJSON Approach cleanup](https://github.com/ParkenDD/parkapi-sources-v3/pull/173)
+* [Fix DateTime Format at Karlsruhe](https://github.com/ParkenDD/parkapi-sources-v3/pull/173)
+* [Fix optional attributes at Kienzler](https://github.com/ParkenDD/parkapi-sources-v3/pull/173)
+* Code cleanup
+
+
 ## 0.15.0
 
 Released 2024-11-25
