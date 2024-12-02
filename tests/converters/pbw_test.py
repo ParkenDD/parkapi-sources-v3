@@ -77,7 +77,7 @@ class PbwPullConverterTest:
             'max_height': 185,
             'name': 'Parkhaus Flandernstraße',
             'operator_name': 'Parkraumgesellschaft Baden-Württemberg mbH',
-            'public_url': 'https://www.pbw.de/?menu=parkplatz-finder&search=8',
+            'public_url': 'https://www.pbw.de/?menu=parkplatz-finder&search=*8',
             'purpose': PurposeType.CAR,
             'static_data_updated_at': ANY,
             'tags': [],
