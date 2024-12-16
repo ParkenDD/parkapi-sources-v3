@@ -12,7 +12,7 @@ from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .mapper import BahnMapper
-from .validators import BahnParkingSiteInput
+from .validators import BahnParkingSiteCapacityType, BahnParkingSiteInput
 
 
 class BahnV2PullConverter(PullConverter):
@@ -48,9 +48,19 @@ class BahnV2PullConverter(PullConverter):
                 )
                 continue
 
+            for item in parking_site_input.capacity:
+                if item.type == BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED:
+                    static_parking_site_inputs.append(
+                        self.mapper.map_static_parking_site_bike_locked(parking_site_input),
+                    )
+                elif item.type == BahnParkingSiteCapacityType.BIKE_PARKING_OPEN:
+                    static_parking_site_inputs.append(
+                        self.mapper.map_static_parking_site_bike_open(parking_site_input),
+                    )
             static_parking_site_inputs.append(
-                self.mapper.map_static_parking_site(parking_site_input),
+                self.mapper.map_static_parking_site_car(parking_site_input),
             )
+
         return static_parking_site_inputs, static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
