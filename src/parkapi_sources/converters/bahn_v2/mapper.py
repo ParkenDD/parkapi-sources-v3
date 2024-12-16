@@ -6,15 +6,41 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import datetime, timezone
 
 from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models.enums import PurposeType
 
-from .validators import BahnParkingSiteCapacityType, BahnParkingSiteInput, NameContext
+from .validators import (
+    BahnParkingSiteCapacityType,
+    BahnParkingSiteInput,
+    NameContext,
+)
 
 
 class BahnMapper:
     @staticmethod
-    def map_static_parking_site(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+    def map_static_parking_site_car(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+        return BahnMapper._map_static_parking_site(
+            bahn_input, '-parking', PurposeType.CAR, BahnParkingSiteCapacityType.PARKING
+        )
+
+    @staticmethod
+    def map_static_parking_site_bike_locked(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+        return BahnMapper._map_static_parking_site(
+            bahn_input, '-bike-locked', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED
+        )
+
+    @staticmethod
+    def map_static_parking_site_bike_open(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+        return BahnMapper._map_static_parking_site(
+            bahn_input, '-bike-open', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_OPEN
+        )
+
+    @staticmethod
+    def _map_static_parking_site(
+        bahn_input, uid_suffix: str, purpose: PurposeType, capacity_type: BahnParkingSiteCapacityType
+    ) -> StaticParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
-            uid=str(bahn_input.id),
+            uid=f'{bahn_input.id}{uid_suffix}',
+            group_uid=str(bahn_input.id),
             name=next(
                 iter(name_input.name for name_input in bahn_input.name if name_input.context == NameContext.NAME)
             ),
@@ -22,25 +48,27 @@ class BahnMapper:
             lon=bahn_input.address.location.longitude,
             operator_name=bahn_input.operator.name,
             address=f'{bahn_input.address.streetAndNumber}, {bahn_input.address.zip} {bahn_input.address.city}',
-            type=bahn_input.type.name.to_parking_site_type_input(),
+            type=next(
+                iter(
+                    item.to_bike_parking_site_type_input() for item in bahn_input.capacity if item.type == capacity_type
+                )
+            )
+            if capacity_type != BahnParkingSiteCapacityType.PARKING
+            else bahn_input.type.name.to_parking_site_type_input(),
             has_realtime_data=False,  # TODO: change this as soon as Bahn offers proper rate limits
             static_data_updated_at=datetime.now(tz=timezone.utc),
             public_url=bahn_input.url,
+            purpose=purpose,
             # Because it was checked in validation, we can be sure that capacity will be set
-            capacity=next(
-                iter(
-                    int(round(item.total))
-                    for item in bahn_input.capacity
-                    if item.type == BahnParkingSiteCapacityType.PARKING
-                )
-            ),
+            capacity=next(iter(int(round(item.total)) for item in bahn_input.capacity if item.type == capacity_type)),
         )
         if bahn_input.access.openingHours.is24h:
             static_parking_site_input.opening_hours = '24/7'
 
         # Map all additional capacities
-        for capacity_data in bahn_input.capacity:
-            if capacity_data.type == BahnParkingSiteCapacityType.HANDICAPPED_PARKING:
-                static_parking_site_input.capacity_disabled = int(round(capacity_data.total))
+        if capacity_type == BahnParkingSiteCapacityType.PARKING:
+            for capacity_data in bahn_input.capacity:
+                if capacity_data.type == BahnParkingSiteCapacityType.HANDICAPPED_PARKING:
+                    static_parking_site_input.capacity_disabled = int(round(capacity_data.total))
 
         return static_parking_site_input
