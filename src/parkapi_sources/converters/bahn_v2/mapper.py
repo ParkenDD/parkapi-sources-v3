@@ -17,21 +17,27 @@ from .validators import (
 
 class BahnMapper:
     @staticmethod
-    def map_static_parking_site(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
-        uid_suffix = '-parking'
-        capacity_type = BahnParkingSiteCapacityType.PARKING
-        purpose_type = PurposeType.CAR
+    def map_static_parking_site_car(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+        return BahnMapper._map_static_parking_site(
+            bahn_input, '-parking', PurposeType.CAR, BahnParkingSiteCapacityType.PARKING
+        )
 
-        for item in bahn_input.capacity:
-            if item.type == BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED:
-                uid_suffix = '-bike-locked'
-                capacity_type = item.type
-                purpose_type = item.to_purpose_type_input()
-            elif item.type == BahnParkingSiteCapacityType.BIKE_PARKING_OPEN:
-                uid_suffix = '-bike-open'
-                capacity_type = item.type
-                purpose_type = item.to_purpose_type_input()
+    @staticmethod
+    def map_static_parking_site_bike_locked(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+        return BahnMapper._map_static_parking_site(
+            bahn_input, '-bike-locked', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED
+        )
 
+    @staticmethod
+    def map_static_parking_site_bike_open(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
+        return BahnMapper._map_static_parking_site(
+            bahn_input, '-bike-open', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_OPEN
+        )
+
+    @staticmethod
+    def _map_static_parking_site(
+        bahn_input, uid_suffix: str, purpose: PurposeType, capacity_type: BahnParkingSiteCapacityType
+    ) -> StaticParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=f'{bahn_input.id}{uid_suffix}',
             group_uid=str(bahn_input.id),
@@ -52,7 +58,7 @@ class BahnMapper:
             has_realtime_data=False,  # TODO: change this as soon as Bahn offers proper rate limits
             static_data_updated_at=datetime.now(tz=timezone.utc),
             public_url=bahn_input.url,
-            purpose=purpose_type,
+            purpose=purpose,
             # Because it was checked in validation, we can be sure that capacity will be set
             capacity=next(iter(int(round(item.total)) for item in bahn_input.capacity if item.type == capacity_type)),
         )
