@@ -11,13 +11,23 @@ from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
-from .mapper import BahnBikeParkingLockedMapper, BahnBikeParkingOpenMapper, BahnMapper
-from .validators import BahnBikeLockedParkingSiteInput, BahnBikeOpenParkingSiteInput, BahnParkingSiteInput
+from .mapper import BahnMapper
+from .validators import BahnParkingSiteInput
 
 
-class BahnV2BasePullConverter(PullConverter):
+class BahnV2PullConverter(PullConverter):
     _base_url = 'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2'
     required_config_keys = ['PARK_API_BAHN_API_CLIENT_ID', 'PARK_API_BAHN_API_CLIENT_SECRET']
+
+    mapper = BahnMapper()
+    bahn_parking_site_validator = DataclassValidator(BahnParkingSiteInput)
+
+    source_info = SourceInfo(
+        uid='bahn_v2',
+        name='Deutsche Bahn Parkplätze',
+        public_url='https://www.dbbahnpark.de',
+        has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
+    )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list = []
@@ -60,39 +70,3 @@ class BahnV2BasePullConverter(PullConverter):
             timeout=60,
         )
         return response.json()
-
-
-class BahnV2PullConverter(BahnV2BasePullConverter):
-    mapper = BahnMapper()
-    bahn_parking_site_validator = DataclassValidator(BahnParkingSiteInput)
-
-    source_info = SourceInfo(
-        uid='bahn_v2',
-        name='Deutsche Bahn Parkplätze',
-        public_url='https://www.dbbahnpark.de',
-        has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
-    )
-
-
-class BahnV2BikeParkingLockedPullConverter(BahnV2BasePullConverter):
-    mapper = BahnBikeParkingLockedMapper()
-    bahn_parking_site_validator = DataclassValidator(BahnBikeLockedParkingSiteInput)
-
-    source_info = SourceInfo(
-        uid='bahn_v2_bike_locked',
-        name='Deutsche Bahn Parkplätze (Bike Parking Locked)',
-        public_url='https://www.dbbahnpark.de',
-        has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
-    )
-
-
-class BahnV2BikeParkingOpenPullConverter(BahnV2BasePullConverter):
-    mapper = BahnBikeParkingOpenMapper()
-    bahn_parking_site_validator = DataclassValidator(BahnBikeOpenParkingSiteInput)
-
-    source_info = SourceInfo(
-        uid='bahn_v2_bike_open',
-        name='Deutsche Bahn Parkplätze (Bike Parking Open)',
-        public_url='https://www.dbbahnpark.de',
-        has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
-    )

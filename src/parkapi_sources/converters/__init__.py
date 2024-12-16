@@ -4,7 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from .apcoa import ApcoaPullConverter
-from .bahn_v2 import BahnV2BikeParkingLockedPullConverter, BahnV2BikeParkingOpenPullConverter, BahnV2PullConverter
+from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
 from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
