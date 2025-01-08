@@ -19,24 +19,36 @@ class BahnMapper:
     @staticmethod
     def map_static_parking_site_car(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         return BahnMapper._map_static_parking_site(
-            bahn_input, '-parking', PurposeType.CAR, BahnParkingSiteCapacityType.PARKING,
+            bahn_input,
+            '-parking',
+            PurposeType.CAR,
+            BahnParkingSiteCapacityType.PARKING,
         )
 
     @staticmethod
     def map_static_parking_site_bike_locked(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         return BahnMapper._map_static_parking_site(
-            bahn_input, '-bike-locked', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED,
+            bahn_input,
+            '-bike-locked',
+            PurposeType.BIKE,
+            BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED,
         )
 
     @staticmethod
     def map_static_parking_site_bike_open(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         return BahnMapper._map_static_parking_site(
-            bahn_input, '-bike-open', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_OPEN,
+            bahn_input,
+            '-bike-open',
+            PurposeType.BIKE,
+            BahnParkingSiteCapacityType.BIKE_PARKING_OPEN,
         )
 
     @staticmethod
     def _map_static_parking_site(
-        bahn_input: BahnParkingSiteInput, uid_suffix: str, purpose: PurposeType, capacity_type: BahnParkingSiteCapacityType,
+        bahn_input: BahnParkingSiteInput,
+        uid_suffix: str,
+        purpose: PurposeType,
+        capacity_type: BahnParkingSiteCapacityType,
     ) -> StaticParkingSiteInput:
         capacity_input = bahn_input.get_capacity_by_type(capacity_type)
         static_parking_site_input = StaticParkingSiteInput(
