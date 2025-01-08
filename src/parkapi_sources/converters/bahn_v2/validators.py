@@ -162,13 +162,17 @@ class BahnParkingSiteInput:
     type: BahnTypeInput = DataclassValidator(BahnTypeInput)
     operator: BahnOperatorInput = DataclassValidator(BahnOperatorInput)
     address: BahnAdressInput = DataclassValidator(BahnAdressInput)
-    station: BahnStationInput = DataclassValidator(BahnStationInput)
     capacity: list[BahnCapacityInput] = ListValidator(DataclassValidator(BahnCapacityInput))
     access: BahnAccessInput = DataclassValidator(BahnAccessInput)
 
     def __post_init__(self):
         for capacity in self.capacity:
-            if capacity.type in list(BahnParkingSiteCapacityType):
+            if capacity.type == BahnParkingSiteCapacityType.PARKING:
                 return
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
         raise ValidationError(reason='Missing parking capacity')
+
+    def get_capacity_by_type(self, capacity_type: BahnParkingSiteCapacityType) -> BahnCapacityInput:
+        for capacity in self.capacity:
+            if capacity.type == capacity_type:
+                return capacity

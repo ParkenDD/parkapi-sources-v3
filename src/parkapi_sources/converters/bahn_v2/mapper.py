@@ -19,25 +19,26 @@ class BahnMapper:
     @staticmethod
     def map_static_parking_site_car(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         return BahnMapper._map_static_parking_site(
-            bahn_input, '-parking', PurposeType.CAR, BahnParkingSiteCapacityType.PARKING
+            bahn_input, '-parking', PurposeType.CAR, BahnParkingSiteCapacityType.PARKING,
         )
 
     @staticmethod
     def map_static_parking_site_bike_locked(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         return BahnMapper._map_static_parking_site(
-            bahn_input, '-bike-locked', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED
+            bahn_input, '-bike-locked', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED,
         )
 
     @staticmethod
     def map_static_parking_site_bike_open(bahn_input: BahnParkingSiteInput) -> StaticParkingSiteInput:
         return BahnMapper._map_static_parking_site(
-            bahn_input, '-bike-open', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_OPEN
+            bahn_input, '-bike-open', PurposeType.BIKE, BahnParkingSiteCapacityType.BIKE_PARKING_OPEN,
         )
 
     @staticmethod
     def _map_static_parking_site(
-        bahn_input, uid_suffix: str, purpose: PurposeType, capacity_type: BahnParkingSiteCapacityType
+        bahn_input: BahnParkingSiteInput, uid_suffix: str, purpose: PurposeType, capacity_type: BahnParkingSiteCapacityType,
     ) -> StaticParkingSiteInput:
+        capacity_input = bahn_input.get_capacity_by_type(capacity_type)
         static_parking_site_input = StaticParkingSiteInput(
             uid=f'{bahn_input.id}{uid_suffix}',
             group_uid=str(bahn_input.id),
@@ -48,11 +49,7 @@ class BahnMapper:
             lon=bahn_input.address.location.longitude,
             operator_name=bahn_input.operator.name,
             address=f'{bahn_input.address.streetAndNumber}, {bahn_input.address.zip} {bahn_input.address.city}',
-            type=next(
-                iter(
-                    item.to_bike_parking_site_type_input() for item in bahn_input.capacity if item.type == capacity_type
-                )
-            )
+            type=capacity_input.to_bike_parking_site_type_input()
             if capacity_type != BahnParkingSiteCapacityType.PARKING
             else bahn_input.type.name.to_parking_site_type_input(),
             has_realtime_data=False,  # TODO: change this as soon as Bahn offers proper rate limits
