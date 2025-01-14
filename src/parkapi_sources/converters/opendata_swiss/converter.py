@@ -21,8 +21,8 @@ class OpenDataSwissPullConverter(PullConverter):
     source_info = SourceInfo(
         uid='opendata_swiss',
         name='Open-Data-Plattform öV Schweiz (opentransport.swiss)',
-        public_url='https://opentransportdata.swiss/de/dataset/parking-facilities',
-        source_url='https://opentransportdata.swiss/de/dataset/parking-facilities/permalink',
+        public_url='https://data.opentransportdata.swiss/dataset/parking-facilities',
+        source_url='https://data.opentransportdata.swiss/dataset/parking-facilities/permalink',
         timezone='Europe/Berlin',
         attribution_contributor='Schweizerische Bundesbahnen (SBB) AG',
         has_realtime_data=False,
