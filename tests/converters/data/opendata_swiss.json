@@ -25,7 +25,7 @@
         "pricingModel": {
           "minimumDuration": 15,
           "maximumDuration": 1440,
-          "maximumDayPrice": null,
+          "maximumDayPrice": 500,
           "viableIncrement": 15,
           "priceSegments": [
             {
@@ -35,10 +35,6 @@
             {
               "startingFrom": 15,
               "price": 25
-            },
-            {
-              "startingFrom": 300,
-              "price": 0
             }
           ],
           "monthlyTicketPrice": 5000,
@@ -179,8 +175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.795317621390852,
-          47.445740227553564
+          8.79700215305567,
+          47.444799770043645
         ]
       },
       "properties": {
@@ -195,14 +191,18 @@
           "postalCode": "8486"
         },
         "pricingModel": {
-          "minimumDuration": 60,
+          "minimumDuration": 15,
           "maximumDuration": 10080,
           "maximumDayPrice": 400,
-          "viableIncrement": 60,
+          "viableIncrement": 15,
           "priceSegments": [
             {
               "startingFrom": 0,
-              "price": 100
+              "price": 0
+            },
+            {
+              "startingFrom": 15,
+              "price": 25
             }
           ],
           "monthlyTicketPrice": 4000,
@@ -230,7 +230,7 @@
         "capacities": [
           {
             "categoryType": "STANDARD",
-            "total": 11
+            "total": 15
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
@@ -523,6 +523,349 @@
     },
     {
       "type": "Feature",
+      "id": "64813559-897a-490f-8f4c-c18857f6bf05",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.551497764907664,
+          47.048320659113976
+        ]
+      },
+      "properties": {
+        "uic": 8505004,
+        "didokId": "05004",
+        "operator": "SBB",
+        "displayName": "Arth-Goldau",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Güterstrasse 6",
+          "city": "Arth-Goldau",
+          "postalCode": "6410"
+        },
+        "pricingModel": {
+          "minimumDuration": 240,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 800,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 6000,
+          "yearlyTicketPrice": 60000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "64"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 90
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 1
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die 90 Parkplätze befinden sich an der Güterstrasse (Adresse Navigationsgeräte: Güterstrasse 6, 6410 Goldau).\r\nDie Parkuhr geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
+          "en": "The 90 parking spaces are located on Güterstrasse (sat nav address: Güterstrasse 6, 6410 Goldau, Switzerland).\r\nThe parking meter is retired. But the P+Rail app can do much more.",
+          "it": "I 90 parcheggi si trovano in Güterstrasse (indirizzo per navigatore: Güterstrasse 6, 6410 Goldau).\r\nQuesto parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Les 90 places de stationnement se trouvent sur la Güterstrasse (adresse à indiquer dans les systèmes de navigation: Güterstrasse 6, 6410 Goldau).\r\nCette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "42ff768c-321a-40c0-8b9b-8ea04ee366d6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.047648173769746,
+          47.356029732345284
+        ]
+      },
+      "properties": {
+        "uic": 8502102,
+        "didokId": "02102",
+        "operator": "SBB",
+        "displayName": "Oberentfelden",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Güterstrasse 1",
+          "city": "Oberentfelden",
+          "postalCode": "5036"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "247"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 25
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "0b4b76e9-9d98-4cba-870e-483bf31b1ba7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.571312240854168,
+          47.32386165741721
+        ]
+      },
+      "properties": {
+        "uic": 8509400,
+        "didokId": "09400",
+        "operator": "SBB",
+        "displayName": "Oberriet",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 6",
+          "city": "Oberriet",
+          "postalCode": "9463"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "76"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 16
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 1
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ad150e60-5b40-4c29-bf31-cba4da4d1277",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.214208912851312,
+          47.40689821522341
+        ]
+      },
+      "properties": {
+        "uic": 8502105,
+        "didokId": "02105",
+        "operator": "SBB",
+        "displayName": "Othmarsingen",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 31",
+          "city": "Othmarsingen",
+          "postalCode": "5504"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 50
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "441"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 60
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "8838b5c9-1370-4627-9b7e-55fc072640f2",
       "geometry": {
         "type": "Point",
@@ -777,6 +1120,175 @@
     },
     {
       "type": "Feature",
+      "id": "d09293c1-5cdf-415a-9a5b-bdc72d6e06e1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.591587468333644,
+          47.465977520560884
+        ]
+      },
+      "properties": {
+        "uic": 8506313,
+        "didokId": "06313",
+        "operator": "SBB",
+        "displayName": "Rheineck",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 10",
+          "city": "Rheineck",
+          "postalCode": "9424"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "36"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 107
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 1
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "d159975c-c844-4c5d-9895-814dbc161cee",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.790642159795823,
+          47.550883183879186
+        ]
+      },
+      "properties": {
+        "uic": 8500301,
+        "didokId": "00301",
+        "operator": "SBB",
+        "displayName": "Rheinfelden",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Imbissstand Bahnhofareal 2",
+          "city": "Rheinfelden",
+          "postalCode": "4310"
+        },
+        "pricingModel": {
+          "minimumDuration": 240,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 700,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 7000,
+          "yearlyTicketPrice": 70000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "394"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 47
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 4
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.   ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more.   ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.   ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux.   "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "34a541b7-8137-422a-9853-f87832e18b69",
       "geometry": {
         "type": "Point",
@@ -935,6 +1447,180 @@
           }
         ],
         "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "810a1380-522e-48f5-a150-f9c2faa39f9b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.78964569361515,
+          47.53551146007607
+        ]
+      },
+      "properties": {
+        "uic": 8506018,
+        "didokId": "06018",
+        "operator": "SBB",
+        "displayName": "Rickenbach-Attikon",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Stationsstrasse 2",
+          "city": "Rickenbach-Attikon",
+          "postalCode": "8545"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "122"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 61
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "78475af2-efec-4cca-af30-c23082e74a7b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.379630214923104,
+          47.5670023260876
+        ]
+      },
+      "properties": {
+        "uic": 8506121,
+        "didokId": "06121",
+        "operator": "SBB",
+        "displayName": "Romanshorn",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bankstrasse 6",
+          "city": "Romanshorn",
+          "postalCode": "8590"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 800,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "2"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 99
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -1110,6 +1796,180 @@
     },
     {
       "type": "Feature",
+      "id": "21527d51-0b18-44c4-8ebf-54109ed2ab6c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.502453041982415,
+          47.477737682083976
+        ]
+      },
+      "properties": {
+        "uic": 8506311,
+        "didokId": "06311",
+        "operator": "SBB",
+        "displayName": "Rorschach",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Churerstrasse 23",
+          "city": "Rorschach",
+          "postalCode": "9400"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "35"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 55
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "b2df3aea-89b7-4c6d-964a-6324afc62b28",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.062773662104932,
+          46.78278664317938
+        ]
+      },
+      "properties": {
+        "uic": 8504028,
+        "didokId": "04028",
+        "operator": "SBB",
+        "displayName": "Rosé",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Route de Rosé 49",
+          "city": "Rosé (Avry)",
+          "postalCode": "1754"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 300,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 3000,
+          "yearlyTicketPrice": 30000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "268"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 16
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "4dc820be-05b6-4e57-af8b-bd419e66a10a",
       "geometry": {
         "type": "Point",
@@ -1181,6 +2041,861 @@
           }
         ],
         "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "60cab5e8-8e01-46d2-8822-15fbeb737d2a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.248016185925136,
+          47.08884837628276
+        ]
+      },
+      "properties": {
+        "uic": 8502020,
+        "didokId": "02020",
+        "operator": "SBB",
+        "displayName": "Rothenburg Station",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Hasenmoosstrasse 9",
+          "city": "Rothenburg (Station)",
+          "postalCode": "6023"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "210"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 17
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Aufgrund von Bauarbeiten entfallen diverse P+Rail-Parkplätze bis August 2025. Die Parkuhr ist in Pension. \nIhre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.\nDue to construction work, various P+Rail car parks will be closed until Ausgust 2025.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.\nA causa dei lavori di costruzione, diversi parcheggi P+Rail saranno chiusi fino ad agosto 2025.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux.\nEn raison de travaux, plusieurs parkings P+Rail seront supprimés jusqu'en août 2025."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "8d4c0d6e-e075-4e59-bbd9-3a0bf323fc8c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.532246779006671,
+          47.45413902106405
+        ]
+      },
+      "properties": {
+        "uic": 8503311,
+        "didokId": "03311",
+        "operator": "SBB",
+        "displayName": "Rümlang",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofplatz 10",
+          "city": "Rümlang",
+          "postalCode": "8153"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 600,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 6000,
+          "yearlyTicketPrice": 60000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "223"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 77
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ea4af3b4-0a44-40ae-bde7-33c95c042e32",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.984826476284248,
+          47.32171647922929
+        ]
+      },
+      "properties": {
+        "uic": 8502100,
+        "didokId": "02100",
+        "operator": "SBB",
+        "displayName": "Safenwil",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Güterstrasse 1",
+          "city": "Safenwil",
+          "postalCode": "5745"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 50
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "434"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 15
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "e0ee041d-bf36-429a-91c7-c686dbc6d6c6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.853791330831234,
+          47.395072351158404
+        ]
+      },
+      "properties": {
+        "uic": 8506009,
+        "didokId": "06009",
+        "operator": "SBB",
+        "displayName": "Saland",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Tösstalstrasse 133",
+          "city": "Saland (Bauma)",
+          "postalCode": "8493"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "379"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 8
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "c4774821-af44-47ce-a989-39ce3fed53fc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.806946162611519,
+          46.13511979178838
+        ]
+      },
+      "properties": {
+        "uic": 8505407,
+        "didokId": "05407",
+        "operator": "SBB",
+        "displayName": "San Nazzaro (Gambarogno)",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Via Cantonale 60",
+          "city": "San Nazzaro (Gambarogno)",
+          "postalCode": "6575"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "102"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 5
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "0bd599da-516e-4320-b0dc-8b65b015ee3e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.144023268543906,
+          47.03784821604149
+        ]
+      },
+      "properties": {
+        "uic": 8508217,
+        "didokId": "08217",
+        "operator": "SBB",
+        "displayName": "Schachen LU",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 7",
+          "city": "Schachen LU (Werthenstein)",
+          "postalCode": "6105"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "356"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 8
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ad68b13d-3969-45c4-94b2-ea32bd4e8885",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.167245213529462,
+          47.45150459453097
+        ]
+      },
+      "properties": {
+        "uic": 8502116,
+        "didokId": "02116",
+        "operator": "SBB",
+        "displayName": "Schinznach Bad",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 33",
+          "city": "Schinznach Bad",
+          "postalCode": "5116"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 50
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "445"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 6
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "576aeffa-b19e-4939-93d0-a7367e48a842",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.687154627644174,
+          47.67939584553593
+        ]
+      },
+      "properties": {
+        "uic": 8503427,
+        "didokId": "03427",
+        "operator": "SBB",
+        "displayName": "Schlatt",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Diessenhoferstrasse 1",
+          "city": "Schlatt",
+          "postalCode": "8252"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "412"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 8
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "e7525972-ca91-48ba-8b6c-2ebf1ecca848",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.77100620873358,
+          47.666321822100244
+        ]
+      },
+      "properties": {
+        "uic": 8503429,
+        "didokId": "03429",
+        "operator": "SBB",
+        "displayName": "Schlattingen",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 6",
+          "city": "Basadingen-Schlattingen",
+          "postalCode": "8255"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "414"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 5
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "e864361f-9082-47e2-b016-60402a11776f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.255304652467356,
+          46.86245519884059
+        ]
+      },
+      "properties": {
+        "uic": 8504102,
+        "didokId": "04102",
+        "operator": "SBB",
+        "displayName": "Schmitten",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Mülitalstrasse 3",
+          "city": "Schmitten",
+          "postalCode": "3185"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 600,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 6000,
+          "yearlyTicketPrice": 60000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "298"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 99
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -1267,6 +2982,175 @@
           "en": "From 13.03.2025 to 31.03.2025, the three car parks 34, 35 and 36 will not be available due to construction work.",
           "it": "Dal 13.03.2025 al 31.03.2025, i tre parcheggi 34, 35 e 36 non saranno disponibili a causa di lavori di costruzione.",
           "fr": "Du 13.03.2025 au 31.03.2025, les trois parkings 34, 35 et 36 ne seront pas disponibles en raison de travaux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "73c231d0-3865-4a80-b656-672e76dc57a3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.387038376356803,
+          47.0417500558629
+        ]
+      },
+      "properties": {
+        "uic": 8504412,
+        "didokId": "04412",
+        "operator": "SBB",
+        "displayName": "Schüpfen",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bernstrasse 16",
+          "city": "Schüpfen",
+          "postalCode": "3054"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 50
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "48"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 54
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "7b25f83d-33a2-49ad-b20b-445e2074f3fd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.197552785330762,
+          47.11598756796258
+        ]
+      },
+      "properties": {
+        "uic": 8502009,
+        "didokId": "02009",
+        "operator": "SBB",
+        "displayName": "Sempach-Neuenkirch",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 23",
+          "city": "Sempach-Neuenkirch",
+          "postalCode": "6203"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 600,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "207"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 49
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
         },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
@@ -1849,7 +3733,7 @@
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
+            "total": 2
           },
           {
             "categoryType": "RESERVABLE_PARKING_SPACE",
@@ -2470,6 +4354,93 @@
     },
     {
       "type": "Feature",
+      "id": "cfe65cc9-ef90-4f4a-a499-36dc714bbb65",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.49389754898408,
+          47.125001226299716
+        ]
+      },
+      "properties": {
+        "uic": 8509406,
+        "didokId": "09406",
+        "operator": "SBB",
+        "displayName": "Sevelen",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Nordstrasse",
+          "city": "Sevelen",
+          "postalCode": "9475"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "79"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 6
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "e13d2788-80fa-4b81-addc-9a8ff3202503",
       "geometry": {
         "type": "Point",
@@ -2529,7 +4500,7 @@
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 4
+            "total": 5
           },
           {
             "categoryType": "RESERVABLE_PARKING_SPACE",
@@ -3681,6 +5652,88 @@
     },
     {
       "type": "Feature",
+      "id": "1a354adc-047b-4e25-b3b5-5ae5f0f0d982",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.903226688910442,
+          47.18265940889545
+        ]
+      },
+      "properties": {
+        "uic": 8503221,
+        "didokId": "03221",
+        "operator": "SBB",
+        "displayName": "Siebnen-Wangen",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofplatz 3",
+          "city": "Siebnen-Wangen",
+          "postalCode": "8854"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "168"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 165
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 3
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "80b76b2c-d28a-4721-88e2-4b7cde553489",
       "geometry": {
         "type": "Point",
@@ -4095,6 +6148,175 @@
           "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
           "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
         },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "49b16773-ddf5-4a2d-a82a-93f20910af1e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.724986402973297,
+          46.91929030522081
+        ]
+      },
+      "properties": {
+        "uic": 8508205,
+        "didokId": "08205",
+        "operator": "SBB",
+        "displayName": "Signau",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 3",
+          "city": "Signau",
+          "postalCode": "3534"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "354"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 8
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "a3dd5a87-d88c-45f8-8017-ff42a5edbd9f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.397646976494833,
+          47.18781593539478
+        ]
+      },
+      "properties": {
+        "uic": 8502218,
+        "didokId": "02218",
+        "operator": "SBB",
+        "displayName": "Sins",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 30",
+          "city": "Sins",
+          "postalCode": "5643"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "450"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 22
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -4536,6 +6758,93 @@
     },
     {
       "type": "Feature",
+      "id": "b283db05-876b-463a-9261-f6a1ba8c5485",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.002042086880742,
+          47.462465394256846
+        ]
+      },
+      "properties": {
+        "uic": 8506010,
+        "didokId": "06010",
+        "operator": "SBB",
+        "displayName": "Sirnach",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Wilerstrasse 14",
+          "city": "Sirnach",
+          "postalCode": "8370"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "116"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 31
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "913b36a4-137d-40f5-b15d-d33d9e39c1f6",
       "geometry": {
         "type": "Point",
@@ -4874,6 +7183,93 @@
     },
     {
       "type": "Feature",
+      "id": "7e56dd5c-320b-4fa7-9a5d-efbc33c82bec",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.074281855768314,
+          47.18012405162308
+        ]
+      },
+      "properties": {
+        "uic": 8502010,
+        "didokId": "02010",
+        "operator": "SBB",
+        "displayName": "St. Erhard-Knutwil",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhöfli 5",
+          "city": "St. Erhard-Knutwil",
+          "postalCode": "6212"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "431"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 8
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "c8c7f6ca-150c-4f55-9f6c-8b77dd4504a8",
       "geometry": {
         "type": "Point",
@@ -5123,6 +7519,93 @@
           "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
           "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
           "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "357be87f-ed9b-4aa2-90fd-1854158172d6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.394243565708434,
+          47.43456462233892
+        ]
+      },
+      "properties": {
+        "uic": 8506303,
+        "didokId": "06303",
+        "operator": "SBB",
+        "displayName": "St. Gallen St. Fiden",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Untere Lindentalstrasse 6",
+          "city": "St. Fiden (St. Gallen)",
+          "postalCode": "9000 "
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 800,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "31"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 24
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.   Zusätzlich zu den 30 Parkplätzen am Bahnhof stehen auf der Lindentalstrasse 9 Plätze zur Verfügung, wo Fahrzeuge mit SBB Parkkarte abgestellt werden können.     Achtung: Während der Olma stehen diese 9 Plätze nicht zur Verfügung.",
+          "en": "The parking meter is retired. But the P+Rail app can do much more. In addition to the 30 parking spaces at the station, there are also 9 spaces on Lindentalstrasse where vehicles with SBB parking passes can be parked.     Please note: these 9 spaces will not be available during OLMA.",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.  Oltre ai 30 parcheggi in stazione, sono disponibili 9 parcheggi sulla Lindentalstrasse per veicoli con tessera di parcheggio FFS.     Attenzione: durante l'Olma questi 9 parcheggi non sono disponibili.",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux.  Outre les 30 places du parking de la gare, 9 autres places sont disponibles dans la Lindentalstrasse, où il est possible de se garer avec la carte de stationnement CFF.     Attention: Ces 9 places ne sont pas disponibles pendant l’Oma."
         },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
@@ -5385,6 +7868,88 @@
           "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
           "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
         },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "87d53212-6500-40d6-9b10-5f8f5c39dfab",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.854361185835996,
+          47.65656878182456
+        ]
+      },
+      "properties": {
+        "uic": 8506139,
+        "didokId": "06139",
+        "operator": "SBB",
+        "displayName": "Stein am Rhein",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 13",
+          "city": "Stein am Rhein",
+          "postalCode": "8260"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "8"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 53
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 3
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -5716,6 +8281,88 @@
           {
             "categoryType": "RESERVABLE_PARKING_SPACE",
             "total": 3
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "c4e06053-d433-4595-bec4-b9a449823588",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.446894992871414,
+          47.48982957313251
+        ]
+      },
+      "properties": {
+        "uic": 8503316,
+        "didokId": "03316",
+        "operator": "SBB",
+        "displayName": "Steinmaur",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnhofstrasse 1",
+          "city": "Steinmaur",
+          "postalCode": "8162"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 500,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 5000,
+          "yearlyTicketPrice": 50000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "227"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 39
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
           },
           {
             "categoryType": "WITH_CHARGING_STATION",
@@ -6071,6 +8718,93 @@
     },
     {
       "type": "Feature",
+      "id": "5d1fa595-78db-44f7-863a-0834a98c18a5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.33903945217074,
+          47.0580445203619
+        ]
+      },
+      "properties": {
+        "uic": 8504413,
+        "didokId": "04413",
+        "operator": "SBB",
+        "displayName": "Suberg-Grossaffoltern",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bernstrasse 67",
+          "city": "Suberg-Grossaffoltern",
+          "postalCode": "3262"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 50
+            }
+          ],
+          "monthlyTicketPrice": 4000,
+          "yearlyTicketPrice": 40000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "49"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 72
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 2
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "e511d897-336a-45a7-b32b-989934a51846",
       "geometry": {
         "type": "Point",
@@ -6309,6 +9043,93 @@
           }
         ],
         "additionalInformationForCustomers": null,
+        "parkingFacilityCategory": "CAR",
+        "parkingFacilityType": "PARK_AND_RAIL",
+        "salesChannels": [
+          "ONLINE_AND_AUTOMAT"
+        ],
+        "bikeFacilityTraits": [],
+        "eChargingStationOperator": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "6e3beb6b-cb02-4143-80cd-5b763fdbf383",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.130545294604948,
+          47.65986821825864
+        ]
+      },
+      "properties": {
+        "uic": 8506132,
+        "didokId": "06132",
+        "operator": "SBB",
+        "displayName": "Tägerwilen-Gottlieben",
+        "publicAccess": true,
+        "address": {
+          "addressLine": "Bahnstrasse 1",
+          "city": "Tägerwilen-Gottlieben",
+          "postalCode": "8274"
+        },
+        "pricingModel": {
+          "minimumDuration": 60,
+          "maximumDuration": 10080,
+          "maximumDayPrice": 400,
+          "viableIncrement": 60,
+          "priceSegments": [
+            {
+              "startingFrom": 0,
+              "price": 100
+            }
+          ],
+          "monthlyTicketPrice": 3000,
+          "yearlyTicketPrice": 30000,
+          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
+          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
+        },
+        "operationTime": {
+          "operatingFrom": "00:00:00",
+          "operatingTo": "00:00:00",
+          "daysOfWeek": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ]
+        },
+        "bookingSystem": {
+          "type": "NOVA",
+          "id": "349"
+        },
+        "capacities": [
+          {
+            "categoryType": "STANDARD",
+            "total": 4
+          },
+          {
+            "categoryType": "DISABLED_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "RESERVABLE_PARKING_SPACE",
+            "total": 0
+          },
+          {
+            "categoryType": "WITH_CHARGING_STATION",
+            "total": 0
+          }
+        ],
+        "additionalInformationForCustomers": {
+          "de": "Diese Parkkasse geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
+          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
+          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
+          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
+        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -6966,7 +9787,7 @@
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
+            "total": 0
           },
           {
             "categoryType": "RESERVABLE_PARKING_SPACE",
@@ -13236,93 +16057,6 @@
     },
     {
       "type": "Feature",
-      "id": "357be87f-ed9b-4aa2-90fd-1854158172d6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.394243565708434,
-          47.43456462233892
-        ]
-      },
-      "properties": {
-        "uic": 8506303,
-        "didokId": "06303",
-        "operator": "SBB",
-        "displayName": "St. Gallen St. Fiden",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Untere Lindentalstrasse 6",
-          "city": "St. Fiden (St. Gallen)",
-          "postalCode": "9000 "
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 800,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "31"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 24
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.   Zusätzlich zu den 30 Parkplätzen am Bahnhof stehen auf der Lindentalstrasse 9 Plätze zur Verfügung, wo Fahrzeuge mit SBB Parkkarte abgestellt werden können.     Achtung: Während der Olma stehen diese 9 Plätze nicht zur Verfügung.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more. In addition to the 30 parking spaces at the station, there are also 9 spaces on Lindentalstrasse where vehicles with SBB parking passes can be parked.     Please note: these 9 spaces will not be available during OLMA.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.  Oltre ai 30 parcheggi in stazione, sono disponibili 9 parcheggi sulla Lindentalstrasse per veicoli con tessera di parcheggio FFS.     Attenzione: durante l'Olma questi 9 parcheggi non sono disponibili.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux.  Outre les 30 places du parking de la gare, 9 autres places sont disponibles dans la Lindentalstrasse, où il est possible de se garer avec la carte de stationnement CFF.     Attention: Ces 9 places ne sont pas disponibles pendant l’Oma."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "6abb1792-a44a-4c0b-9ee0-0d8e9b5cb2f3",
       "geometry": {
         "type": "Point",
@@ -14004,88 +16738,6 @@
           "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
           "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
         },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ad150e60-5b40-4c29-bf31-cba4da4d1277",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.214208912851312,
-          47.40689821522341
-        ]
-      },
-      "properties": {
-        "uic": 8502105,
-        "didokId": "02105",
-        "operator": "SBB",
-        "displayName": "Othmarsingen",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 31",
-          "city": "Othmarsingen",
-          "postalCode": "5504"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 50
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "441"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 60
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 2
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -20415,93 +23067,6 @@
     },
     {
       "type": "Feature",
-      "id": "cfe65cc9-ef90-4f4a-a499-36dc714bbb65",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.49389754898408,
-          47.125001226299716
-        ]
-      },
-      "properties": {
-        "uic": 8509406,
-        "didokId": "09406",
-        "operator": "SBB",
-        "displayName": "Sevelen",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Nordstrasse",
-          "city": "Sevelen",
-          "postalCode": "9475"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "79"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 6
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "92ca4f7d-3083-4277-9efd-091117125c99",
       "geometry": {
         "type": "Point",
@@ -21438,93 +24003,6 @@
     },
     {
       "type": "Feature",
-      "id": "60cab5e8-8e01-46d2-8822-15fbeb737d2a",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.248016185925136,
-          47.08884837628276
-        ]
-      },
-      "properties": {
-        "uic": 8502020,
-        "didokId": "02020",
-        "operator": "SBB",
-        "displayName": "Rothenburg Station",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Hasenmoosstrasse 9",
-          "city": "Rothenburg (Station)",
-          "postalCode": "6023"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "210"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 17
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Aufgrund von Bauarbeiten entfallen diverse P+Rail-Parkplätze bis August 2025. Die Parkuhr ist in Pension. \nIhre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.\nDue to construction work, various P+Rail car parks will be closed until Ausgust 2025.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.\nA causa dei lavori di costruzione, diversi parcheggi P+Rail saranno chiusi fino ad agosto 2025.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux.\nEn raison de travaux, plusieurs parkings P+Rail seront supprimés jusqu'en août 2025."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "73121036-e7f8-4164-9471-20dedda271c3",
       "geometry": {
         "type": "Point",
@@ -21868,93 +24346,6 @@
     },
     {
       "type": "Feature",
-      "id": "e0ee041d-bf36-429a-91c7-c686dbc6d6c6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.853791330831234,
-          47.395072351158404
-        ]
-      },
-      "properties": {
-        "uic": 8506009,
-        "didokId": "06009",
-        "operator": "SBB",
-        "displayName": "Saland",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Tösstalstrasse 133",
-          "city": "Saland (Bauma)",
-          "postalCode": "8493"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "379"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 8
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "25a72d70-5051-49d6-8ccb-f14a1253ca38",
       "geometry": {
         "type": "Point",
@@ -22042,175 +24433,6 @@
     },
     {
       "type": "Feature",
-      "id": "ad68b13d-3969-45c4-94b2-ea32bd4e8885",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.167245213529462,
-          47.45150459453097
-        ]
-      },
-      "properties": {
-        "uic": 8502116,
-        "didokId": "02116",
-        "operator": "SBB",
-        "displayName": "Schinznach Bad",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 33",
-          "city": "Schinznach Bad",
-          "postalCode": "5116"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 50
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "445"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 6
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "1a354adc-047b-4e25-b3b5-5ae5f0f0d982",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.903226688910442,
-          47.18265940889545
-        ]
-      },
-      "properties": {
-        "uic": 8503221,
-        "didokId": "03221",
-        "operator": "SBB",
-        "displayName": "Siebnen-Wangen",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofplatz 3",
-          "city": "Siebnen-Wangen",
-          "postalCode": "8854"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "168"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 165
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 3
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 3
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "d76630e0-218c-40f1-9ac1-b1d0e7524a4b",
       "geometry": {
         "type": "Point",
@@ -22287,88 +24509,6 @@
           "it": "A causa di un cantiere, 3 parcheggi non saranno accessibili fino alla 30.09.2024.",
           "fr": "En raison d'un chantier, 3 places de parking sont inaccessibles jusqu'à 30.09.2024."
         },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "87d53212-6500-40d6-9b10-5f8f5c39dfab",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.854361185835996,
-          47.65656878182456
-        ]
-      },
-      "properties": {
-        "uic": 8506139,
-        "didokId": "06139",
-        "operator": "SBB",
-        "displayName": "Stein am Rhein",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 13",
-          "city": "Stein am Rhein",
-          "postalCode": "8260"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "8"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 53
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -23045,88 +25185,6 @@
           {
             "categoryType": "STANDARD",
             "total": 37
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "c4774821-af44-47ce-a989-39ce3fed53fc",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.806946162611519,
-          46.13511979178838
-        ]
-      },
-      "properties": {
-        "uic": 8505407,
-        "didokId": "05407",
-        "operator": "SBB",
-        "displayName": "San Nazzaro (Gambarogno)",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Via Cantonale 60",
-          "city": "San Nazzaro (Gambarogno)",
-          "postalCode": "6575"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "102"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 5
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
@@ -23981,88 +26039,6 @@
           {
             "categoryType": "STANDARD",
             "total": 88
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "73c231d0-3865-4a80-b656-672e76dc57a3",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.387038376356803,
-          47.0417500558629
-        ]
-      },
-      "properties": {
-        "uic": 8504412,
-        "didokId": "04412",
-        "operator": "SBB",
-        "displayName": "Schüpfen",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bernstrasse 16",
-          "city": "Schüpfen",
-          "postalCode": "3054"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 50
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "48"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 54
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
@@ -27033,93 +29009,6 @@
     },
     {
       "type": "Feature",
-      "id": "d159975c-c844-4c5d-9895-814dbc161cee",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.790642159795823,
-          47.550883183879186
-        ]
-      },
-      "properties": {
-        "uic": 8500301,
-        "didokId": "00301",
-        "operator": "SBB",
-        "displayName": "Rheinfelden",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Imbissstand Bahnhofareal 2",
-          "city": "Rheinfelden",
-          "postalCode": "4310"
-        },
-        "pricingModel": {
-          "minimumDuration": 240,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 700,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 7000,
-          "yearlyTicketPrice": 70000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "394"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 47
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 4
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.   ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more.   ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.   ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux.   "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "1549d0ba-a6e9-4371-8e36-ebde551c3fd5",
       "geometry": {
         "type": "Point",
@@ -27191,93 +29080,6 @@
           }
         ],
         "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "576aeffa-b19e-4939-93d0-a7367e48a842",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.687154627644174,
-          47.67939584553593
-        ]
-      },
-      "properties": {
-        "uic": 8503427,
-        "didokId": "03427",
-        "operator": "SBB",
-        "displayName": "Schlatt",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Diessenhoferstrasse 1",
-          "city": "Schlatt",
-          "postalCode": "8252"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "412"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 8
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -29335,93 +31137,6 @@
     },
     {
       "type": "Feature",
-      "id": "64813559-897a-490f-8f4c-c18857f6bf05",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.551497764907664,
-          47.048320659113976
-        ]
-      },
-      "properties": {
-        "uic": 8505004,
-        "didokId": "05004",
-        "operator": "SBB",
-        "displayName": "Arth-Goldau",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Güterstrasse 6",
-          "city": "Arth-Goldau",
-          "postalCode": "6410"
-        },
-        "pricingModel": {
-          "minimumDuration": 240,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 800,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 6000,
-          "yearlyTicketPrice": 60000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "64"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 90
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die 90 Parkplätze befinden sich an der Güterstrasse (Adresse Navigationsgeräte: Güterstrasse 6, 6410 Goldau).\r\nDie Parkuhr geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
-          "en": "The 90 parking spaces are located on Güterstrasse (sat nav address: Güterstrasse 6, 6410 Goldau, Switzerland).\r\nThe parking meter is retired. But the P+Rail app can do much more.",
-          "it": "I 90 parcheggi si trovano in Güterstrasse (indirizzo per navigatore: Güterstrasse 6, 6410 Goldau).\r\nQuesto parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Les 90 places de stationnement se trouvent sur la Güterstrasse (adresse à indiquer dans les systèmes de navigation: Güterstrasse 6, 6410 Goldau).\r\nCette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "f2ba567f-37ad-4fbf-90dd-eaf3bc30ddbd",
       "geometry": {
         "type": "Point",
@@ -30108,93 +31823,6 @@
     },
     {
       "type": "Feature",
-      "id": "e7525972-ca91-48ba-8b6c-2ebf1ecca848",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.77100620873358,
-          47.666321822100244
-        ]
-      },
-      "properties": {
-        "uic": 8503429,
-        "didokId": "03429",
-        "operator": "SBB",
-        "displayName": "Schlattingen",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 6",
-          "city": "Basadingen-Schlattingen",
-          "postalCode": "8255"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "414"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 5
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "ba3268fb-2ef4-4dd3-a2c0-cdf8254d4062",
       "geometry": {
         "type": "Point",
@@ -30855,88 +32483,6 @@
           {
             "categoryType": "STANDARD",
             "total": 21
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "c4e06053-d433-4595-bec4-b9a449823588",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.446894992871414,
-          47.48982957313251
-        ]
-      },
-      "properties": {
-        "uic": 8503316,
-        "didokId": "03316",
-        "operator": "SBB",
-        "displayName": "Steinmaur",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 1",
-          "city": "Steinmaur",
-          "postalCode": "8162"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "227"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 39
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
@@ -38482,93 +40028,6 @@
     },
     {
       "type": "Feature",
-      "id": "0b4b76e9-9d98-4cba-870e-483bf31b1ba7",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.571312240854168,
-          47.32386165741721
-        ]
-      },
-      "properties": {
-        "uic": 8509400,
-        "didokId": "09400",
-        "operator": "SBB",
-        "displayName": "Oberriet",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 6",
-          "city": "Oberriet",
-          "postalCode": "9463"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "76"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 6
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "e6691123-d701-4ba4-a970-a4de03f3be5b",
       "geometry": {
         "type": "Point",
@@ -39254,88 +40713,6 @@
     },
     {
       "type": "Feature",
-      "id": "8d4c0d6e-e075-4e59-bbd9-3a0bf323fc8c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.532246779006671,
-          47.45413902106405
-        ]
-      },
-      "properties": {
-        "uic": 8503311,
-        "didokId": "03311",
-        "operator": "SBB",
-        "displayName": "Rümlang",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofplatz 10",
-          "city": "Rümlang",
-          "postalCode": "8153"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 600,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 6000,
-          "yearlyTicketPrice": 60000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "223"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 77
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "a3e5318a-15de-45b0-b9a8-f6e7de9ea304",
       "geometry": {
         "type": "Point",
@@ -39412,175 +40789,6 @@
           "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
           "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
         },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "7b25f83d-33a2-49ad-b20b-445e2074f3fd",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.197552785330762,
-          47.11598756796258
-        ]
-      },
-      "properties": {
-        "uic": 8502009,
-        "didokId": "02009",
-        "operator": "SBB",
-        "displayName": "Sempach-Neuenkirch",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 23",
-          "city": "Sempach-Neuenkirch",
-          "postalCode": "6203"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 600,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "207"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 49
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "d09293c1-5cdf-415a-9a5b-bdc72d6e06e1",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.591587468333644,
-          47.465977520560884
-        ]
-      },
-      "properties": {
-        "uic": 8506313,
-        "didokId": "06313",
-        "operator": "SBB",
-        "displayName": "Rheineck",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 10",
-          "city": "Rheineck",
-          "postalCode": "9424"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "36"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 107
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 2
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -39918,180 +41126,6 @@
           }
         ],
         "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "0bd599da-516e-4320-b0dc-8b65b015ee3e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.144023268543906,
-          47.03784821604149
-        ]
-      },
-      "properties": {
-        "uic": 8508217,
-        "didokId": "08217",
-        "operator": "SBB",
-        "displayName": "Schachen LU",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 7",
-          "city": "Schachen LU (Werthenstein)",
-          "postalCode": "6105"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "356"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 8
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "810a1380-522e-48f5-a150-f9c2faa39f9b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.78964569361515,
-          47.53551146007607
-        ]
-      },
-      "properties": {
-        "uic": 8506018,
-        "didokId": "06018",
-        "operator": "SBB",
-        "displayName": "Rickenbach-Attikon",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Stationsstrasse 2",
-          "city": "Rickenbach-Attikon",
-          "postalCode": "8545"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "122"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 61
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -40702,93 +41736,6 @@
     },
     {
       "type": "Feature",
-      "id": "21527d51-0b18-44c4-8ebf-54109ed2ab6c",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.502453041982415,
-          47.477737682083976
-        ]
-      },
-      "properties": {
-        "uic": 8506311,
-        "didokId": "06311",
-        "operator": "SBB",
-        "displayName": "Rorschach",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Churerstrasse 23",
-          "city": "Rorschach",
-          "postalCode": "9400"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "35"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 55
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "1b5bd747-b55c-453a-9724-2e9a9e10579b",
       "geometry": {
         "type": "Point",
@@ -41296,180 +42243,6 @@
     },
     {
       "type": "Feature",
-      "id": "b283db05-876b-463a-9261-f6a1ba8c5485",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.002042086880742,
-          47.462465394256846
-        ]
-      },
-      "properties": {
-        "uic": 8506010,
-        "didokId": "06010",
-        "operator": "SBB",
-        "displayName": "Sirnach",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Wilerstrasse 14",
-          "city": "Sirnach",
-          "postalCode": "8370"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "116"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 31
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "6e3beb6b-cb02-4143-80cd-5b763fdbf383",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.130545294604948,
-          47.65986821825864
-        ]
-      },
-      "properties": {
-        "uic": 8506132,
-        "didokId": "06132",
-        "operator": "SBB",
-        "displayName": "Tägerwilen-Gottlieben",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnstrasse 1",
-          "city": "Tägerwilen-Gottlieben",
-          "postalCode": "8274"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 3000,
-          "yearlyTicketPrice": 30000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "349"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 4
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "3d76eedc-e1ca-4c99-a393-70456c0c2122",
       "geometry": {
         "type": "Point",
@@ -41613,88 +42386,6 @@
           {
             "categoryType": "STANDARD",
             "total": 27
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "ea4af3b4-0a44-40ae-bde7-33c95c042e32",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.984826476284248,
-          47.32171647922929
-        ]
-      },
-      "properties": {
-        "uic": 8502100,
-        "didokId": "02100",
-        "operator": "SBB",
-        "displayName": "Safenwil",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Güterstrasse 1",
-          "city": "Safenwil",
-          "postalCode": "5745"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 50
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "434"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 15
           },
           {
             "categoryType": "DISABLED_PARKING_SPACE",
@@ -42233,93 +42924,6 @@
     },
     {
       "type": "Feature",
-      "id": "5d1fa595-78db-44f7-863a-0834a98c18a5",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.33903945217074,
-          47.0580445203619
-        ]
-      },
-      "properties": {
-        "uic": 8504413,
-        "didokId": "04413",
-        "operator": "SBB",
-        "displayName": "Suberg-Grossaffoltern",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bernstrasse 67",
-          "city": "Suberg-Grossaffoltern",
-          "postalCode": "3262"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 50
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "49"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 72
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "e53829ee-8ae3-4518-b90b-959b36ac0863",
       "geometry": {
         "type": "Point",
@@ -42754,180 +43358,6 @@
     },
     {
       "type": "Feature",
-      "id": "b2df3aea-89b7-4c6d-964a-6324afc62b28",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.062773662104932,
-          46.78278664317938
-        ]
-      },
-      "properties": {
-        "uic": 8504028,
-        "didokId": "04028",
-        "operator": "SBB",
-        "displayName": "Rosé",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Route de Rosé 49",
-          "city": "Rosé (Avry)",
-          "postalCode": "1754"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 300,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 3000,
-          "yearlyTicketPrice": 30000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "268"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 15
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "78475af2-efec-4cca-af30-c23082e74a7b",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.379630214923104,
-          47.5670023260876
-        ]
-      },
-      "properties": {
-        "uic": 8506121,
-        "didokId": "06121",
-        "operator": "SBB",
-        "displayName": "Romanshorn",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bankstrasse 6",
-          "city": "Romanshorn",
-          "postalCode": "8590"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 800,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "2"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 99
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "7e8ff0ab-9a87-40bc-a6e7-e5080f08b218",
       "geometry": {
         "type": "Point",
@@ -43168,93 +43598,6 @@
           }
         ],
         "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "7e56dd5c-320b-4fa7-9a5d-efbc33c82bec",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.074281855768314,
-          47.18012405162308
-        ]
-      },
-      "properties": {
-        "uic": 8502010,
-        "didokId": "02010",
-        "operator": "SBB",
-        "displayName": "St. Erhard-Knutwil",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhöfli 5",
-          "city": "St. Erhard-Knutwil",
-          "postalCode": "6212"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "431"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 8
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore.",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
@@ -44463,88 +44806,6 @@
     },
     {
       "type": "Feature",
-      "id": "a3dd5a87-d88c-45f8-8017-ff42a5edbd9f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.397646976494833,
-          47.18781593539478
-        ]
-      },
-      "properties": {
-        "uic": 8502218,
-        "didokId": "02218",
-        "operator": "SBB",
-        "displayName": "Sins",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 30",
-          "city": "Sins",
-          "postalCode": "5643"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 500,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 5000,
-          "yearlyTicketPrice": 50000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "450"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 22
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "2de404cb-b82c-4a51-961a-e7b92681f1f1",
       "geometry": {
         "type": "Point",
@@ -45134,93 +45395,6 @@
     },
     {
       "type": "Feature",
-      "id": "42ff768c-321a-40c0-8b9b-8ea04ee366d6",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.047648173769746,
-          47.356029732345284
-        ]
-      },
-      "properties": {
-        "uic": 8502102,
-        "didokId": "02102",
-        "operator": "SBB",
-        "displayName": "Oberentfelden",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Güterstrasse 1",
-          "city": "Oberentfelden",
-          "postalCode": "5036"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "247"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 25
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Die Parkuhr geht in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. Tagesparkingtickets können auch am Billettautomaten gekauft werden.",
-          "en": "The parking meter is retired. But the P+Rail app can do much more.",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux."
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "a8db3cf0-2bf2-4c26-b014-c907d3de4afe",
       "geometry": {
         "type": "Point",
@@ -45554,93 +45728,6 @@
     },
     {
       "type": "Feature",
-      "id": "49b16773-ddf5-4a2d-a82a-93f20910af1e",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.724986402973297,
-          46.91929030522081
-        ]
-      },
-      "properties": {
-        "uic": 8508205,
-        "didokId": "08205",
-        "operator": "SBB",
-        "displayName": "Signau",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Bahnhofstrasse 3",
-          "city": "Signau",
-          "postalCode": "3534"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 400,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 4000,
-          "yearlyTicketPrice": 40000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "354"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 6
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "cd0b44a2-d2e4-4318-8ff1-eafb2fde15af",
       "geometry": {
         "type": "Point",
@@ -45799,93 +45886,6 @@
           }
         ],
         "additionalInformationForCustomers": null,
-        "parkingFacilityCategory": "CAR",
-        "parkingFacilityType": "PARK_AND_RAIL",
-        "salesChannels": [
-          "ONLINE_AND_AUTOMAT"
-        ],
-        "bikeFacilityTraits": [],
-        "eChargingStationOperator": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "e864361f-9082-47e2-b016-60402a11776f",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          7.255304652467356,
-          46.86245519884059
-        ]
-      },
-      "properties": {
-        "uic": 8504102,
-        "didokId": "04102",
-        "operator": "SBB",
-        "displayName": "Schmitten",
-        "publicAccess": true,
-        "address": {
-          "addressLine": "Mülitalstrasse 3",
-          "city": "Schmitten",
-          "postalCode": "3185"
-        },
-        "pricingModel": {
-          "minimumDuration": 60,
-          "maximumDuration": 10080,
-          "maximumDayPrice": 600,
-          "viableIncrement": 60,
-          "priceSegments": [
-            {
-              "startingFrom": 0,
-              "price": 100
-            }
-          ],
-          "monthlyTicketPrice": 6000,
-          "yearlyTicketPrice": 60000,
-          "monthlyTicketPriceWithPublicTransportSeasonTicketDiscount": null,
-          "yearlyTicketPriceWithPublicTransportSeasonTicketDiscount": null
-        },
-        "operationTime": {
-          "operatingFrom": "00:00:00",
-          "operatingTo": "00:00:00",
-          "daysOfWeek": [
-            "MONDAY",
-            "TUESDAY",
-            "WEDNESDAY",
-            "THURSDAY",
-            "FRIDAY",
-            "SATURDAY",
-            "SUNDAY"
-          ]
-        },
-        "bookingSystem": {
-          "type": "NOVA",
-          "id": "298"
-        },
-        "capacities": [
-          {
-            "categoryType": "STANDARD",
-            "total": 99
-          },
-          {
-            "categoryType": "DISABLED_PARKING_SPACE",
-            "total": 1
-          },
-          {
-            "categoryType": "RESERVABLE_PARKING_SPACE",
-            "total": 0
-          },
-          {
-            "categoryType": "WITH_CHARGING_STATION",
-            "total": 0
-          }
-        ],
-        "additionalInformationForCustomers": {
-          "de": "Diese Parkkasse ist in Pension. Ihre Nachfolgerin, die P+R App, kann aber noch viel mehr. ",
-          "en": "This parking cash register has retired. But its successor, the P+R App, can do much more. ",
-          "it": "Questo parchimetro va in pensione. Ma la sua sostituta, l’app P+R, è ancora migliore. ",
-          "fr": "Cette caisse prend sa retraite. Mais sa remplaçante, l’appli P+R, est encore mieux. "
-        },
         "parkingFacilityCategory": "CAR",
         "parkingFacilityType": "PARK_AND_RAIL",
         "salesChannels": [
