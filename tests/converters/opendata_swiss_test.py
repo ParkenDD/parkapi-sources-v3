@@ -31,7 +31,7 @@ def requests_mock_opendata_swiss(requests_mock: Mocker) -> Mocker:
         json_data = json_file.read()
 
     requests_mock.get(
-        'https://data.opentransportdata.swiss/dataset/parking-facilities/permalink',
+        'https://data.opentransportdata.swiss/de/dataset/parking-facilities/permalink',
         text=json_data,
     )
 
