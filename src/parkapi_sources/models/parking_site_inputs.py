@@ -79,12 +79,21 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
     lat: Decimal = NumericValidator(min_value=34, max_value=72)
     lon: Decimal = NumericValidator(min_value=-27, max_value=43)
 
-    capacity: int = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    capacity_disabled: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
+    capacity: int = IntegerValidator(min_value=0, allow_strings=True)
+    capacity_disabled: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
     capacity_woman: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
     capacity_family: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    capacity_charging: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    capacity_carsharing: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
+    capacity_charging: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    capacity_carsharing: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
     capacity_truck: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
     capacity_bus: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
 
@@ -104,12 +113,14 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
 
     def __post_init__(self):
         if self.lat == 0 and self.lon == 0:
-            raise DataclassPostValidationError(error=ValidationError(code='lat_lon_zero', reason='Latitude and longitude are both zero.'))
+            raise DataclassPostValidationError(
+                error=ValidationError(code='lat_lon_zero', reason='Latitude and longitude are both zero.'),
+            )
 
         if self.park_and_ride_type:
-            if (ParkAndRideType.NO in self.park_and_ride_type or ParkAndRideType.YES in self.park_and_ride_type) and len(
-                self.park_and_ride_type
-            ) > 1:
+            if (
+                ParkAndRideType.NO in self.park_and_ride_type or ParkAndRideType.YES in self.park_and_ride_type
+            ) and len(self.park_and_ride_type) > 1:
                 raise DataclassPostValidationError(
                     error=ValidationError(
                         code='invalid_park_ride_combination',
@@ -126,24 +137,69 @@ class RealtimeParkingSiteInput(BaseParkingSiteInput):
         target_timezone=timezone.utc,
         discard_milliseconds=True,
     )
-    realtime_opening_status: OptionalUnsetNone[OpeningStatus] = (
-        Noneable(EnumValidator(OpeningStatus), default=OpeningStatus.UNKNOWN),
-        Default(OpeningStatus.UNKNOWN),
+    realtime_opening_status: OptionalUnsetNone[OpeningStatus] = Noneable(EnumValidator(OpeningStatus)), Default(None)
+    realtime_capacity: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
     )
-    realtime_capacity: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_disabled: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_woman: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_family: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_charging: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_carsharing: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_truck: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_capacity_bus: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
+    realtime_capacity_disabled: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_capacity_woman: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_capacity_family: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_capacity_charging: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_capacity_carsharing: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_capacity_truck: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_capacity_bus: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
 
-    realtime_free_capacity: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_disabled: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_woman: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_family: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_charging: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_carsharing: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_truck: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
-    realtime_free_capacity_bus: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
+    realtime_free_capacity: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_disabled: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_woman: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_family: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_charging: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_carsharing: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_truck: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )
+    realtime_free_capacity_bus: OptionalUnsetNone[int] = (
+        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
+        DefaultUnset,
+    )

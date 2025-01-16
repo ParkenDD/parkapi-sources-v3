@@ -47,7 +47,7 @@ class BahnParkingSiteType(Enum):
     def to_parking_site_type_input(self) -> ParkingSiteType:
         # TODO: find out more details about this enumeration for a proper mapping
         return {
-            self.PARKPLATZ: ParkingSiteType.ON_STREET,
+            self.PARKPLATZ: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.PARKHAUS: ParkingSiteType.CAR_PARK,
             self.TIEFGARAGE: ParkingSiteType.UNDERGROUND,
             self.STRASSE: ParkingSiteType.ON_STREET,

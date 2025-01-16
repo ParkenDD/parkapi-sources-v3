@@ -25,6 +25,7 @@ class PbwMapper:
             uid=str(parking_site_detail_input.id),
             name=parking_site_detail_input.objekt.name,
             operator_name='Parkraumgesellschaft Baden-Württemberg mbH',
+            public_url=f'https://www.pbw.de/?menu=parkplatz-finder&search=*{str(parking_site_detail_input.id)}',
             static_data_updated_at=datetime.now(tz=timezone.utc),
             address=(
                 f'{parking_site_detail_input.objekt.strasse}, '

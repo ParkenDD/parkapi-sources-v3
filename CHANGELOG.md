@@ -1,5 +1,113 @@
 # Changelog
 
+## 0.15.1
+
+Released 2024-11-27
+
+### Fixes
+
+* [GeoJSON Approach cleanup](https://github.com/ParkenDD/parkapi-sources-v3/pull/173)
+* [Fix DateTime Format at Karlsruhe](https://github.com/ParkenDD/parkapi-sources-v3/pull/173)
+* [Fix optional attributes at Kienzler](https://github.com/ParkenDD/parkapi-sources-v3/pull/173)
+* Code cleanup
+
+
+## 0.15.0
+
+Released 2024-11-25
+
+## Features
+
+* [New Source: Velobrix](https://github.com/ParkenDD/parkapi-sources-v3/pull/165)
+* [Kienzler: use static data as additional data input](https://github.com/ParkenDD/parkapi-sources-v3/pull/168)
+
+
+## 0.14.2
+
+Released 2024-11-12
+
+### Fixes
+
+* [APCOA: Remove park control objects and added production endpoint](https://github.com/ParkenDD/parkapi-sources-v3/pull/162)
+* [radvis_bw: filter unprintable characters](https://github.com/ParkenDD/parkapi-sources-v3/pull/167)
+* [multiple converters: set opening status to none if unset](https://github.com/ParkenDD/parkapi-sources-v3/pull/160)
+
+
+## 0.14.1
+
+Released 2024-10-29
+
+### Fixes
+
+* [Fixed Karlsruhe format for stand_stammdaten ](https://github.com/ParkenDD/parkapi-sources-v3/pull/152)
+* [ruff modernization](https://github.com/ParkenDD/parkapi-sources-v3/pull/155)
+
+
+## 0.14.0
+
+Released 2024-10-17
+
+### Features
+
+* [Add Kienzler VVS Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/147)
+
+
+### Fixes
+
+* [Update pbw data for static parking sites](https://github.com/ParkenDD/parkapi-sources-v3/pull/144)
+* [Update kienzler data for static parking sites](https://github.com/ParkenDD/parkapi-sources-v3/pull/145)
+* [Fix bfrk_bw_car attribute after source change](https://github.com/ParkenDD/parkapi-sources-v3/pull/149)
+
+
+## 0.13.3
+
+Released 2024-10-07
+
+### Fixes
+
+* [Fix BFRK infraid](https://github.com/ParkenDD/parkapi-sources-v3/pull/140)
+
+
+## 0.13.2
+
+Released 2024-09-24
+
+### Fixes
+
+* [enforce capacity](https://github.com/ParkenDD/parkapi-sources-v3/pull/133)
+* [remove confusing herrenberg field](https://github.com/ParkenDD/parkapi-sources-v3/pull/134)
+* [set kienzler public url](https://github.com/ParkenDD/parkapi-sources-v3/pull/135)
+* [fix Herrenberg parking type mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/136)
+
+
+## 0.13.1
+
+Release 2024-09-22
+
+### Fixes
+
+* [Add VRS data](https://github.com/ParkenDD/parkapi-sources-v3/pull/123)
+* [Fix bahn mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/124)
+* [Fix PBW Mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/125)
+* [Fix Heidelberg fee](https://github.com/ParkenDD/parkapi-sources-v3/pull/126)
+* [Split up kienzler requests](https://github.com/ParkenDD/parkapi-sources-v3/pull/128)
+* [Fix bfrk mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/129)
+
+
+## 0.13.0
+
+Released 2024-09-16
+
+### Features
+
+* [Herrenberg static bike pull converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/110)
+
+
+### Fixes
+
+* [Park and Ride at BFRK](https://github.com/ParkenDD/parkapi-sources-v3/pull/121)
+
+
 ## 0.12.1
 
 Released 2024-09-09

@@ -8,6 +8,8 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
+from requests_mock import Mocker
+
 from parkapi_sources.converters import OpenDataSwissPullConverter
 from parkapi_sources.converters.opendata_swiss.models import (
     OpenDataSwissAdditionalInformationInput,
@@ -19,8 +21,6 @@ from parkapi_sources.converters.opendata_swiss.models import (
     OpenDataSwissParkingFacilityCategory,
     OpenDataSwissPropertiesInput,
 )
-from requests_mock import Mocker
-
 from tests.converters.helper import validate_static_parking_site_inputs
 
 
@@ -45,12 +45,16 @@ def opendata_swiss_pull_converter(mocked_config_helper: Mock) -> OpenDataSwissPu
 
 class OpenDataSwissPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(opendata_swiss_pull_converter: OpenDataSwissPullConverter, requests_mock_opendata_swiss: Mocker):
-        static_parking_site_inputs, import_parking_site_exceptions = opendata_swiss_pull_converter.get_static_parking_sites()
+    def test_get_static_parking_sites(
+        opendata_swiss_pull_converter: OpenDataSwissPullConverter,
+        requests_mock_opendata_swiss: Mocker,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            opendata_swiss_pull_converter.get_static_parking_sites()
+        )
 
-        assert len(static_parking_site_inputs) > len(
-            import_parking_site_exceptions
-        ), 'There should be more valid than invalid parking sites'
+        assert len(static_parking_site_inputs) == 563
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

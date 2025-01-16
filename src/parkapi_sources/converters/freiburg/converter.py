@@ -7,9 +7,9 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import FreiburgFeatureInput
 
@@ -29,8 +29,10 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs, import_parking_site_exceptions = self._get_static_parking_site_inputs_and_exceptions(
-            source_uid=self.source_info.uid,
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            self._get_static_parking_site_inputs_and_exceptions(
+                source_uid=self.source_info.uid,
+            )
         )
 
         realtime_freiburg_inputs, import_realtime_parking_site_exceptions = self._get_raw_realtime_parking_sites()

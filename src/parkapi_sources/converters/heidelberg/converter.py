@@ -78,7 +78,8 @@ class HeidelbergPullConverter(PullConverter):
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=input_dict.get('staticParkingSiteId'),
-                        message=f'Invalid data at uid {input_dict.get("staticParkingSiteId")}: {e.to_dict()}, ' f'data: {input_dict}',
+                        message=f'Invalid data at uid {input_dict.get("staticParkingSiteId")}: {e.to_dict()}, '
+                        f'data: {input_dict}',
                     ),
                 )
                 continue

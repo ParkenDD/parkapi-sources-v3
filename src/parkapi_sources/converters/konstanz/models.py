@@ -30,6 +30,7 @@ from parkapi_sources.validators import (
     EmptystringNoneable,
     GermanDurationIntegerValidator,
     MappedBooleanValidator,
+    ReplacingStringValidator,
     TimestampDateTimeValidator,
 )
 
@@ -85,7 +86,7 @@ class KonstanzParkingSiteDataInput:
     has_light: Optional[bool] = EmptystringNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False}))
     descript: Optional[str] = EmptystringNoneable(StringValidator())
     public_url: Optional[str] = EmptystringNoneable(UrlValidator())
-    fee_descr: Optional[str] = EmptystringNoneable(StringValidator(multiline=True))
+    fee_descr: Optional[str] = EmptystringNoneable(ReplacingStringValidator(mapping={'\n': ' ', '\r': ''}))
     park_ride: Optional[str] = EmptystringNoneable(StringValidator())
     has_live: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
     max_hei: int = EmptystringNoneable(KonstanzHeightValidator())
@@ -106,7 +107,7 @@ class KonstanzParkingSiteDataInput:
             max_stay=self.max_stay,
             max_height=self.max_hei,
             has_lighting=self.has_light,
-            fee_description=None if self.fee_descr is None else self.fee_descr.replace('\n', ' '),
+            fee_description=self.fee_descr,
             has_fee=self.has_fee,
             has_realtime_data=self.has_live,
             lat=self.lat,

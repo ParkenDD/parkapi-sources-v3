@@ -6,6 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from unittest.mock import Mock
 
 import pytest
+
 from parkapi_sources.util import ConfigHelper
 
 

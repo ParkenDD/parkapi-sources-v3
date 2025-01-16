@@ -11,6 +11,7 @@ from openpyxl.cell import Cell
 
 from parkapi_sources.converters.base_converter.push import NormalizedXlsxConverter
 from parkapi_sources.models import SourceInfo
+from parkapi_sources.models.enums import ParkAndRideType, PurposeType
 
 
 class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
@@ -41,15 +42,35 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
         # Other opening times are there, but not parsable
     }
 
-    def map_row_to_parking_site_dict(self, mapping: dict[str, int], row: list[Cell]) -> dict[str, Any]:
-        parking_site_dict: dict[str, str] = {}
+    def map_row_to_parking_site_dict(
+        self,
+        mapping: dict[str, int],
+        row: tuple[Cell, ...],
+        column_names: list[str],
+    ) -> dict[str, Any]:
+        parking_site_dict = super().map_row_to_parking_site_dict(mapping, row, column_names)
+
+        if 'Zufahrt' in column_names:
+            if row[column_names.index('Zufahrt')].value == 'offen' or (
+                row[column_names.index('Zufahrt')].value == 'beschrankt'
+                and row[column_names.index('Durchgehend_geöffnet')].value == 'ja'
+            ):
+                parking_site_dict['opening_hours'] = '24/7'
+
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        coordinates = self.proj(float(parking_site_dict.get('lon_utm')), float(parking_site_dict.get('lat_utm')), inverse=True)
+        coordinates = self.proj(
+            float(parking_site_dict.get('lon_utm')),
+            float(parking_site_dict.get('lat_utm')),
+            inverse=True,
+        )
         parking_site_dict['lat'] = coordinates[1]
         parking_site_dict['lon'] = coordinates[0]
 
+        parking_site_dict['opening_hours'] = parking_site_dict['opening_hours'].replace('-00:00', '-24:00')
+        parking_site_dict['purpose'] = PurposeType.CAR.name
+        parking_site_dict['park_and_ride_type'] = [ParkAndRideType.TRAIN.name]
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 

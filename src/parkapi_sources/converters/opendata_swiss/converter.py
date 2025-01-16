@@ -7,9 +7,9 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter
+from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import OpenDataSwissFeatureInput
 
@@ -51,7 +51,7 @@ class OpenDataSwissPullConverter(PullConverter):
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=feature_dict.get('id'),
-                        message=f'Invalid data at uid {feature_dict.get("id")}: ' f'{e.to_dict()}, data: {feature_dict}',
+                        message=f'Invalid data at uid {feature_dict.get("id")}: {e.to_dict()}, data: {feature_dict}',
                     ),
                 )
                 continue

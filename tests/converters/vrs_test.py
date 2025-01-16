@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import VrsVaihingenPullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import VrsVaihingenPullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -42,7 +42,9 @@ class RadvisBwConverterTest:
             text=xml_data,
         )
 
-        static_parking_site_inputs, import_parking_site_exceptions = vrs_vaihingen_pull_converter.get_static_parking_sites()
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            vrs_vaihingen_pull_converter.get_static_parking_sites()
+        )
 
         assert len(static_parking_site_inputs) == 1
         assert len(import_parking_site_exceptions) == 0
@@ -60,7 +62,9 @@ class RadvisBwConverterTest:
             text=xml_data,
         )
 
-        static_parking_site_inputs, import_parking_site_exceptions = vrs_vaihingen_pull_converter.get_realtime_parking_sites()
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            vrs_vaihingen_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(static_parking_site_inputs) == 1
         assert len(import_parking_site_exceptions) == 0

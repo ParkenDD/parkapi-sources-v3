@@ -64,7 +64,7 @@ class HeidelbergParkingSiteStatus(Enum):
     BROKEN = 'Stoerung'
     UNKNOWN = '0'
 
-    def to_opening_status(self) -> OpeningStatus:
+    def to_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
             self.OPEN_DE: OpeningStatus.OPEN,
@@ -72,7 +72,7 @@ class HeidelbergParkingSiteStatus(Enum):
             self.CLOSED_DE: OpeningStatus.CLOSED,
             self.UNKNOWN: OpeningStatus.UNKNOWN,
             self.BROKEN: OpeningStatus.CLOSED,
-        }.get(self, OpeningStatus.UNKNOWN)
+        }.get(self)
 
 
 class HeidelbergParkingType(Enum):
@@ -86,7 +86,9 @@ class HeidelbergParkingSubType(Enum):
 
 @validataclass
 class HeidelbergInput:
-    acceptedPaymentMethod: HeidelbergPaymentMethodType = RemoveValueDict(ListValidator(EnumValidator(HeidelbergPaymentMethodType)))
+    acceptedPaymentMethod: HeidelbergPaymentMethodType = RemoveValueDict(
+        ListValidator(EnumValidator(HeidelbergPaymentMethodType)),
+    )
     addressLocality: str = RemoveValueDict(StringValidator())
     availableSpotNumber: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)
     closingHours: time = RemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS))
@@ -117,6 +119,7 @@ class HeidelbergInput:
     totalSpotNumber: int = RemoveValueDict(IntegerValidator())
     website: Optional[str] = RemoveValueDict(ExcelNoneable(UrlValidator()))
     womenParkingSpots: int = RemoveValueDict(IntegerValidator())
+    prices: list[dict] = RemoveValueDict(ListValidator(AnythingValidator(allowed_types=[dict])))
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
         if self.parking_type == HeidelbergParkingSubType.GARAGE:
@@ -140,7 +143,7 @@ class HeidelbergInput:
         return StaticParkingSiteInput(
             uid=self.staticParkingSiteId,
             name=self.staticName,
-            description=self.description.replace('\r\n', ' '),
+            description=self.description,
             lat=self.lat,
             lon=self.lon,
             address=f'{self.streetAddress}, {self.postalCode} {self.addressLocality}',
@@ -155,10 +158,12 @@ class HeidelbergInput:
             opening_hours=opening_hours,
             static_data_updated_at=self.observationDateTime,
             type=parking_site_type,
-            park_and_ride_type=[ParkAndRideType.YES] if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE else None,
+            park_and_ride_type=[ParkAndRideType.YES]
+            if self.parking_type == HeidelbergParkingSubType.PARK_AND_RIDE
+            else None,
             supervision_type=supervision_type,
             has_realtime_data=self.availableSpotNumber is not None,
-            has_fee=True,
+            has_fee=len(self.prices) > 0,
         )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:

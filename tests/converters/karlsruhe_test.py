@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import KarlsruhePullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import KarlsruhePullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -31,19 +31,27 @@ def karlsruhe_pull_converter(mocked_config_helper: Mock) -> KarlsruhePullConvert
 
 class KarlsruhePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(karlsruhe_pull_converter: KarlsruhePullConverter, requests_mock_karlsruhe: Mocker):
+    def test_get_static_parking_sites(
+        karlsruhe_pull_converter: KarlsruhePullConverter,
+        requests_mock_karlsruhe: Mocker,
+    ):
         static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 83
-        assert len(import_parking_site_exceptions) == 6
+        assert len(static_parking_site_inputs) == 75
+        assert len(import_parking_site_exceptions) == 15
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(karlsruhe_pull_converter: KarlsruhePullConverter, requests_mock_karlsruhe: Mocker):
-        realtime_parking_site_inputs, import_parking_site_exceptions = karlsruhe_pull_converter.get_realtime_parking_sites()
+    def test_get_realtime_parking_sites(
+        karlsruhe_pull_converter: KarlsruhePullConverter,
+        requests_mock_karlsruhe: Mocker,
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 39
-        assert len(import_parking_site_exceptions) == 6
+        assert len(import_parking_site_exceptions) == 15
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

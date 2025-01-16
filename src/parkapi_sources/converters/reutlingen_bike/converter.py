@@ -53,7 +53,9 @@ class ReutlingenBikePushConverter(CsvConverter):
                 input_dict[field] = row[mapping[field]]
 
             try:
-                reutlingen_bike_row_input: ReutlingenBikeRowInput = self.reutlingen_bike_row_validator.validate(input_dict)
+                reutlingen_bike_row_input: ReutlingenBikeRowInput = self.reutlingen_bike_row_validator.validate(
+                    input_dict,
+                )
             except ValidationError as e:
                 static_parking_site_errors.append(
                     ImportParkingSiteException(

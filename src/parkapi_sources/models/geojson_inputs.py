@@ -21,12 +21,23 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from .enums import ParkingSiteType
+from .parking_site_inputs import StaticParkingSiteInput
 
 
 @validataclass
-class GeojsonFeaturePropertiesInput(ValidataclassMixin):
+class GeojsonBaseFeaturePropertiesInput(ValidataclassMixin):
+    def to_dict(self, *args, static_data_updated_at: datetime | None = None, **kwargs) -> dict:
+        result = super().to_dict()
+
+        if static_data_updated_at is not None:
+            result['static_data_updated_at'] = static_data_updated_at
+
+        return result
+
+
+@validataclass
+class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
     uid: str = StringValidator(min_length=1, max_length=256)
     name: str = StringValidator(min_length=1, max_length=256)
     type: Optional[ParkingSiteType] = EnumValidator(ParkingSiteType), Default(None)
@@ -44,18 +55,31 @@ class GeojsonFeatureGeometryInput:
 
 
 @validataclass
-class GeojsonFeatureInput:
+class GeojsonBaseFeatureInput:
     type: str = AnyOfValidator(allowed_values=['Feature'])
-    properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
+    properties: GeojsonBaseFeaturePropertiesInput = DataclassValidator(GeojsonBaseFeaturePropertiesInput)
     geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
 
-    def to_static_parking_site_input(self, static_data_updated_at: datetime) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            static_data_updated_at=static_data_updated_at,
-            **self.properties.to_dict(),
+            **self.properties.to_dict(**kwargs),
         )
+
+    def update_static_parking_site_input(self, static_parking_site: StaticParkingSiteInput) -> None:
+        static_parking_site.lat = self.geometry.coordinates[1]
+        static_parking_site.lon = self.geometry.coordinates[0]
+
+        for key, value in self.properties.to_dict().items():
+            setattr(static_parking_site, key, value)
+
+
+@validataclass
+class GeojsonFeatureInput(GeojsonBaseFeatureInput):
+    type: str = AnyOfValidator(allowed_values=['Feature'])
+    properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
+    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
 
 
 @validataclass

@@ -35,19 +35,19 @@ classifiers = [
 
 dependencies = [
     "validataclass~=0.11.0",
-    "pyproj~=3.6.1",
+    "pyproj~=3.7.0",
     "lxml~=5.3.0",
     "openpyxl~=3.1.5",
     "requests~=2.32.3",
     "beautifulsoup4~=4.12.3",
-    "urllib3~=2.2.2",
+    "urllib3~=2.2.3",
 ]
 
 [project.optional-dependencies]
 testing = [
-    "ruff~=0.5.7",
-    "pytest~=8.3.2",
-    "pytest-cov~=5.0.0",
+    "ruff~=0.7.1",
+    "pytest~=8.3.3",
+    "pytest-cov~=6.0.0",
     "requests-mock~=1.12.1",
 ]
 
@@ -78,21 +78,27 @@ filterwarnings = "error"
 
 [tool.ruff]
 lint.select = [
-    "E", # pycodestyle errors
-    "W", # pycodestyle warnings
     "F", # pyflakes
-    "Q", # pydocstyle
-    "T", # mypy
-    "R", # pylint
-    "S", # flake8
     "I", # isort
-    "C", # flake8-comprehensions
-    "B", # flake8-bugbear
+    "S", # flake8-bandit
+    "ASYNC", # flake8-async
+    "ISC", # flake8-implicit-str-concat
+    "LOG", # flake8-logging
+    "INP", # flake8-no-pep420 (missing __init__.py)
+    "PIE", # flake8-pie
+    "T20", # flake8-print
+    "Q", # flake8-quotes
+    "TID", # flake8-tidy-imports
+    "FLY", # flynt (use f-string instead of static join)
 ]
+
+# Enable preview rules since a lot of basic pycodestyle rules are in preview mode for some reason
+preview = true
 
 lint.ignore = [
     "B008", # do not perform function calls in argument defaults
     "C901", # too complex
+    "ISC001", # single-line-implicit-string-concatenation - conflicts with formatter
 ]
 
 exclude = [
@@ -119,11 +125,23 @@ exclude = [
     "temp",
 ]
 
-line-length = 140
+line-length = 120
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
-"tests/*" = ["S101", "S105", "S106"]
+"tests/*" = [
+    # Allow assert
+    "S101",
+    # Ignore unsafe practices like hardcoded passwords
+    "S101", "S105", "S106",
+    # Don't require __init__.py files
+    "INP",
+]
+
+"src/parkapi_sources/scripts/*" = [
+    # Don't require __init__.py files
+    "INP",
+]
 
 [tool.ruff.lint.flake8-quotes]
 inline-quotes = "single"

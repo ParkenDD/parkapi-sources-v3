@@ -1,0 +1,31 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "unit1676",
+                "type": "TWO_TIER",
+                "max_height": 1250,
+                "max_width": 800,
+                "max_depth": 1970,
+                "park_and_ride_type": [
+                    "TRAIN"
+                ],
+                "external_identifiers": [
+                    {
+                        "type": "DHID",
+                        "value": "de:08317:14500_Parent"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.947474,
+                    48.475546
+                ]
+            }
+        }
+    ]
+}

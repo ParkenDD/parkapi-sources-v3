@@ -8,9 +8,9 @@ import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import GeojsonInput, PullConverter
+from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import RadvisFeatureInput
 
@@ -50,7 +50,9 @@ class RadvisBwPullConverter(PullConverter):
                 if radvis_parking_site_input.properties.quell_system in sources_to_ignore:
                     continue
 
-                static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(self.proj)
+                static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(
+                    self.proj,
+                )
 
             except ValidationError as e:
                 static_parking_site_errors.append(

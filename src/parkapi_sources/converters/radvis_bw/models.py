@@ -10,12 +10,18 @@ from typing import Optional
 
 import pyproj
 from validataclass.dataclasses import Default, validataclass
-from validataclass.validators import BooleanValidator, DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
+from validataclass.validators import (
+    BooleanValidator,
+    DataclassValidator,
+    EnumValidator,
+    IntegerValidator,
+    Noneable,
+    StringValidator,
+)
 
-from parkapi_sources.converters.base_converter.pull.static_geojson_data_mixin.models import GeojsonFeatureInput
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
-from parkapi_sources.validators import ExcelNoneable
+from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator
 
 
 class OrganizationType(Enum):
@@ -42,6 +48,7 @@ class LocationType(Enum):
     SCHULE = 'SCHULE'
     STRASSENRAUM = 'STRASSENRAUM'
     SONSTIGES = 'SONSTIGES'
+    BILDUNGSEINRICHTUNG = 'BILDUNGSEINRICHTUNG'
 
     def to_related_location(self) -> Optional[str]:
         return {
@@ -49,6 +56,7 @@ class LocationType(Enum):
             self.BIKE_AND_RIDE: 'Bike and Ride',
             self.SCHULE: 'Schule',
             self.STRASSENRAUM: 'Straßenraum',
+            self.BILDUNGSEINRICHTUNG: 'Bildungseinrichtung',
         }.get(self)
 
 
@@ -69,7 +77,7 @@ class RadvisParkingSiteType(Enum):
             self.DOPPELSTOECKIG: ParkingSiteType.TWO_TIER,
             self.FAHRRADPARKHAUS: ParkingSiteType.BUILDING,
             self.SAMMELANLAGE: ParkingSiteType.SHED,
-        }.get(self, ParkingSiteType.GENERIC_BIKE)
+        }.get(self, ParkingSiteType.OTHER)
 
 
 class StatusType(Enum):
@@ -96,8 +104,14 @@ class RadvisFeaturePropertiesInput:
     gebuehren_pro_tag: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_monat: Optional[int] = Noneable(IntegerValidator())
     gebuehren_pro_jahr: Optional[int] = Noneable(IntegerValidator())
-    beschreibung: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
-    weitere_information: Optional[str] = Noneable(StringValidator(multiline=True)), Default(None)
+    beschreibung: Optional[str] = (
+        Noneable(ReplacingStringValidator(mapping={'\x80': ' ', '\n': ' ', '\r': ''})),
+        Default(None),
+    )
+    weitere_information: Optional[str] = (
+        Noneable(ReplacingStringValidator(mapping={'\n': ' ', '\r': ''})),
+        Default(None),
+    )
     status: StatusType = EnumValidator(StatusType)
 
     def to_dicts(self) -> list[dict]:
@@ -108,8 +122,6 @@ class RadvisFeaturePropertiesInput:
             description = self.beschreibung
         elif self.weitere_information:
             description = self.weitere_information
-        if description is not None:
-            description = description.replace('\r', '').replace('\n', ' ')
 
         base_data = {
             'operator_name': self.betreiber,
@@ -135,22 +147,20 @@ class RadvisFeaturePropertiesInput:
         ]
         if self.anzahl_schliessfaecher:
             results[0]['group_uid'] = str(self.id)
-            results.append(
-                {
-                    'uid': f'{self.id}-lockbox',
-                    'group_uid': str(self.id),
-                    'name': 'Schliessfach',
-                    'type': ParkingSiteType.LOCKBOX,
-                    'capacity': self.anzahl_schliessfaecher,
-                    'purpose': PurposeType.ITEM,
-                    **base_data,
-                }
-            )
+            results.append({
+                'uid': f'{self.id}-lockbox',
+                'group_uid': str(self.id),
+                'name': 'Schliessfach',
+                'type': ParkingSiteType.LOCKBOX,
+                'capacity': self.anzahl_schliessfaecher,
+                'purpose': PurposeType.ITEM,
+                **base_data,
+            })
         return results
 
 
 @validataclass
-class RadvisFeatureInput(GeojsonFeatureInput):
+class RadvisFeatureInput(GeojsonBaseFeatureInput):
     properties: RadvisFeaturePropertiesInput = DataclassValidator(RadvisFeaturePropertiesInput)
 
     def to_static_parking_site_inputs_with_proj(self, proj: pyproj.Proj) -> list[StaticParkingSiteInput]:

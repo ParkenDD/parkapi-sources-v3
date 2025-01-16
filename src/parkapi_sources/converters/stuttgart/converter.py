@@ -25,7 +25,10 @@ class StuttgartPushConverter(XmlConverter, Datex2Mixin):
         has_realtime_data=True,
     )
 
-    def handle_xml(self, root: Element) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    def handle_xml(
+        self,
+        root: Element,
+    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         data = self.xml_helper.xml_to_dict(
             root,
             conditional_remote_type_tags=[
@@ -45,7 +48,9 @@ class StuttgartPushConverter(XmlConverter, Datex2Mixin):
             return self._handle_datex2_parking_facilities(items_base)
 
         if items_base.get('parkingFacilityTableStatusPublication'):
-            realtime_items = items_base.get('parkingFacilityTableStatusPublication', {}).get('parkingFacilityStatus', [])
+            realtime_items = items_base.get('parkingFacilityTableStatusPublication', {}).get(
+                'parkingFacilityStatus', []
+            )
             realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
             realtime_parking_site_errors: list[ImportParkingSiteException] = []
 

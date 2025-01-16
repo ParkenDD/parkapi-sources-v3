@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import KarlsruheBikePullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import KarlsruheBikePullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -54,8 +54,12 @@ def karlsruhe_bike_ignore_missing_capacity_pull_converter(
 
 class KarlsruheBikePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(karlsruhe_bike_pull_converter: KarlsruheBikePullConverter, requests_mock_karlsruhe_bike: Mocker):
-        static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_static_parking_sites()
+    def test_get_static_parking_sites(
+        karlsruhe_bike_pull_converter: KarlsruheBikePullConverter, requests_mock_karlsruhe_bike: Mocker
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_bike_pull_converter.get_static_parking_sites()
+        )
 
         assert len(static_parking_site_inputs) == 296
         # Lots of missing capacities
@@ -78,8 +82,13 @@ class KarlsruheBikePullConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(karlsruhe_bike_pull_converter: KarlsruheBikePullConverter, requests_mock_karlsruhe_bike: Mocker):
-        realtime_parking_site_inputs, import_parking_site_exceptions = karlsruhe_bike_pull_converter.get_realtime_parking_sites()
+    def test_get_realtime_parking_sites(
+        karlsruhe_bike_pull_converter: KarlsruheBikePullConverter,
+        requests_mock_karlsruhe_bike: Mocker,
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_bike_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 0
         assert len(import_parking_site_exceptions) == 0

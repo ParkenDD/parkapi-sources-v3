@@ -20,9 +20,9 @@ from validataclass.validators import (
     TimeValidator,
 )
 
-from parkapi_sources.converters.base_converter.pull import GeojsonFeatureGeometryInput
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.validators import ReplacingStringValidator
 
 
 @validataclass
@@ -49,12 +49,21 @@ class OpenDataSwissCapacitiesInput:
     total: int = IntegerValidator()
 
 
+class OpendataSwissReplacingStringValidator(ReplacingStringValidator):
+    def __init__(self, *args, **kwargs):
+        super().__init__(
+            *args,
+            mapping={'\n': ' ', '\r': '', '\xa0': ' ', '\x02': '', '\t': ' '},
+            **kwargs,
+        )
+
+
 @validataclass
 class OpenDataSwissAdditionalInformationInput:
-    de: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
-    en: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
-    it: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
-    fr: Optional[str] = Noneable(StringValidator(multiline=False, unsafe=True))
+    de: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    en: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    it: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    fr: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
 
 
 class OpenDataSwissOperationTimeDaysOfWeek(Enum):
@@ -85,7 +94,6 @@ class OpenDataSwissParkingFacilityCategory(Enum):
     def to_parking_site_type_input(self) -> ParkingSiteType:
         return {
             self.CAR: ParkingSiteType.CAR_PARK,
-            self.BIKE: ParkingSiteType.GENERIC_BIKE,
         }.get(self, ParkingSiteType.OTHER)
 
     def to_purpose_type_input(self) -> ParkingSiteType:
@@ -119,9 +127,13 @@ class OpenDataSwissPropertiesInput:
         DataclassValidator(OpenDataSwissAdditionalInformationInput)
     )
     parkingFacilityCategory: OpenDataSwissParkingFacilityCategory = EnumValidator(OpenDataSwissParkingFacilityCategory)
-    parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = Noneable(EnumValidator(OpenDataSwissParkingFacilityType))
-    salesChannels: Optional[list[str]] = Noneable(ListValidator(StringValidator()))
-    operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(DataclassValidator(OpenDataSwissOperationTimeInput))
+    parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = Noneable(
+        EnumValidator(OpenDataSwissParkingFacilityType),
+    )
+    salesChannels: Optional[list[str]] = Noneable(ListValidator(ReplacingStringValidator(mapping={'\n': ' '})))
+    operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(
+        DataclassValidator(OpenDataSwissOperationTimeInput),
+    )
 
     def __post_init__(self):
         for capacity in self.capacities:
@@ -132,11 +144,16 @@ class OpenDataSwissPropertiesInput:
 
     def get_osm_opening_hours(self) -> str:
         # If it's open all day and number of opening days is 7, then it is OSM - 24/7. No further handling needed in this case.
-        if self.operationTime.operatingFrom == self.operationTime.operatingTo == time(0) and len(self.operationTime.daysOfWeek) == 7:
+        if (
+            self.operationTime.operatingFrom == self.operationTime.operatingTo == time(0)
+            and len(self.operationTime.daysOfWeek) == 7
+        ):
             return '24/7'
 
         # OSM 24/7 has no secs in its timeformat and no endtime 00:00, so we replace with 24:00 and remove the secs
-        opening_time: str = f'{self.operationTime.operatingFrom.strftime("%H:%M")}-{self.operationTime.operatingTo.strftime("%H:%M")}'
+        opening_time: str = (
+            f'{self.operationTime.operatingFrom.strftime("%H:%M")}-{self.operationTime.operatingTo.strftime("%H:%M")}'
+        )
         opening_time = opening_time.replace('-00:00', '-24:00')
 
         osm_opening_hour: list = []
@@ -158,9 +175,8 @@ class OpenDataSwissPropertiesInput:
 
 
 @validataclass
-class OpenDataSwissFeatureInput:
+class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
     id: str = StringValidator()
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
     properties: OpenDataSwissPropertiesInput = DataclassValidator(OpenDataSwissPropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
@@ -174,32 +190,35 @@ class OpenDataSwissFeatureInput:
             type=self.properties.parkingFacilityCategory.to_parking_site_type_input(),
             static_data_updated_at=datetime.now(tz=timezone.utc),
             has_realtime_data=False,
+            capacity=next(
+                iter(
+                    item.total
+                    for item in self.properties.capacities
+                    if item.categoryType == OpenDataSwissCapacityCategoryType.STANDARD
+                )
+            ),
         )
 
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
 
         if self.properties.additionalInformationForCustomers:
-            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de.replace('\n', ' ').replace(
-                '\r', ' '
-            )
+            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de
+        else:
+            static_parking_site_input.description = None
 
         if self.properties.address:
-            static_parking_site_input.address = (
-                f'{self.properties.address.addressLine}, {self.properties.address.postalCode} {self.properties.address.city}'
-            )
+            static_parking_site_input.address = f'{self.properties.address.addressLine}, {self.properties.address.postalCode} {self.properties.address.city}'
 
         if self.properties.parkingFacilityType == OpenDataSwissParkingFacilityType.PARK_AND_RAIL:
             static_parking_site_input.park_and_ride_type = [ParkAndRideType.TRAIN]
 
         if self.properties.salesChannels:
-            static_parking_site_input.fee_description = ','.join(
-                [sales_channel.replace('_', ' ') for sales_channel in self.properties.salesChannels]
-            )
+            static_parking_site_input.fee_description = ','.join([
+                sales_channel.replace('_', ' ') for sales_channel in self.properties.salesChannels
+            ])
 
         for capacities_input in self.properties.capacities:
-            if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.STANDARD:
-                static_parking_site_input.capacity = capacities_input.total
-            elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.DISABLED_PARKING_SPACE:
+            if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.DISABLED_PARKING_SPACE:
                 static_parking_site_input.capacity_disabled = capacities_input.total
             elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.WITH_CHARGING_STATION:
                 static_parking_site_input.capacity_charging = capacities_input.total

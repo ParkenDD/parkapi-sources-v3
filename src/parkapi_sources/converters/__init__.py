@@ -13,6 +13,7 @@ from .freiburg import FreiburgPullConverter
 from .goldbeck import GoldbeckPushConverter
 from .heidelberg import HeidelbergPullConverter
 from .herrenberg import HerrenbergPullConverter
+from .herrenberg_bike import HerrenbergBikePullConverter
 from .huefner import HuefnerPushConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
 from .kienzler import (
@@ -23,6 +24,7 @@ from .kienzler import (
     KienzlerRadSafePullConverter,
     KienzlerStuttgartPullConverter,
     KienzlerVrnPullConverter,
+    KienzlerVVSPullConverter,
 )
 from .konstanz import KonstanzPullConverter
 from .konstanz_bike import KonstanzBikePushConverter
@@ -40,5 +42,6 @@ from .reutlingen_bike import ReutlingenBikePushConverter
 from .stuttgart import StuttgartPushConverter
 from .ulm import UlmPullConverter
 from .vrn_p_r import VrnParkAndRidePullConverter
+from .velobrix import VelobrixPullConverter
 from .vrs import VrsBondorfPullConverter, VrsKirchheimPullConverter, VrsNeustadtPullConverter, VrsVaihingenPullConverter
 from .vrs_p_r import VrsParkAndRidePushConverter

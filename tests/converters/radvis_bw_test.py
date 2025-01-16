@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import RadvisBwPullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import RadvisBwPullConverter
 from tests.converters.helper import validate_static_parking_site_inputs
 
 
@@ -18,6 +18,7 @@ def radvis_bw_config_helper(mocked_config_helper: Mock):
     config = {
         'PARK_API_RADVIS_USER': 'de14131a-c542-445a-999b-88393df54903',
         'PARK_API_RADVIS_PASSWORD': '20832cbc-377d-41e4-aee8-7bc1a87dfe90',
+        'PARK_API_RADVIS_IGNORE_SOURCES': 'MOBIDATABW',
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
@@ -42,7 +43,7 @@ class RadvisBwConverterTest:
         )
         static_parking_site_inputs, import_parking_site_exceptions = radvis_bw_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 761
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_site_inputs) == 690
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

@@ -17,6 +17,7 @@ from .converters import (
     FreiburgPullConverter,
     GoldbeckPushConverter,
     HeidelbergPullConverter,
+    HerrenbergBikePullConverter,
     HerrenbergPullConverter,
     HuefnerPushConverter,
     KarlsruheBikePullConverter,
@@ -28,6 +29,7 @@ from .converters import (
     KienzlerRadSafePullConverter,
     KienzlerStuttgartPullConverter,
     KienzlerVrnPullConverter,
+    KienzlerVVSPullConverter,
     KonstanzBikePushConverter,
     KonstanzPullConverter,
     MannheimPushConverter,
@@ -44,6 +46,7 @@ from .converters import (
     StuttgartPushConverter,
     UlmPullConverter,
     VrnParkAndRidePullConverter,
+    VelobrixPullConverter,
     VrsBondorfPullConverter,
     VrsKirchheimPullConverter,
     VrsNeustadtPullConverter,
@@ -68,11 +71,13 @@ class ParkAPISources:
         BuchenPushConverter,
         FreiburgPullConverter,
         HeidelbergPullConverter,
+        HerrenbergBikePullConverter,
         HerrenbergPullConverter,
         HuefnerPushConverter,
         KarlsruheBikePullConverter,
         KarlsruhePullConverter,
         KienzlerBikeAndRidePullConverter,
+        KienzlerVVSPullConverter,
         KienzlerKarlsruhePullConverter,
         KienzlerNeckarsulmPullConverter,
         KienzlerOffenburgPullConverter,
@@ -95,6 +100,7 @@ class ParkAPISources:
         StuttgartPushConverter,
         UlmPullConverter,
         VrnParkAndRidePullConverter,
+        VelobrixPullConverter,
         VrsBondorfPullConverter,
         VrsKirchheimPullConverter,
         VrsNeustadtPullConverter,
@@ -131,7 +137,9 @@ class ParkAPISources:
             if converter_uid not in converter_classes_by_uid.keys():
                 raise MissingConverterException(f'Converter {converter_uid} does not exist.')
 
-            self.converter_by_uid[converter_uid] = converter_classes_by_uid[converter_uid](config_helper=self.config_helper)
+            self.converter_by_uid[converter_uid] = converter_classes_by_uid[converter_uid](
+                config_helper=self.config_helper,
+            )
 
     def check_credentials(self):
         for converter in self.converter_by_uid.values():

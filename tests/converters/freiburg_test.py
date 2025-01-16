@@ -7,9 +7,9 @@ from pathlib import Path
 from unittest.mock import Mock
 
 import pytest
-from parkapi_sources.converters import FreiburgPullConverter
 from requests_mock import Mocker
 
+from parkapi_sources.converters import FreiburgPullConverter
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -45,7 +45,9 @@ class FreiburgPullConverterTest:
 
         requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
 
-        realtime_parking_site_inputs, import_parking_site_exceptions = freiburg_pull_converter.get_realtime_parking_sites()
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            freiburg_pull_converter.get_realtime_parking_sites()
+        )
 
         assert len(realtime_parking_site_inputs) == 19
         assert len(import_parking_site_exceptions) == 0

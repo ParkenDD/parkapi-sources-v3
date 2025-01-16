@@ -7,8 +7,8 @@ from unittest.mock import Mock
 
 import pytest
 from openpyxl.reader.excel import load_workbook
-from parkapi_sources.converters import HuefnerPushConverter
 
+from parkapi_sources.converters import HuefnerPushConverter
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
@@ -24,7 +24,7 @@ class HuefnerPushConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = huefner_push_converter.handle_xlsx(workbook)
 
-        assert len(static_parking_site_inputs) == 39
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_site_inputs) == 38
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

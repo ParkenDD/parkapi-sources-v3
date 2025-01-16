@@ -1,0 +1,4379 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869593254819724,
+                    48.59271930265049
+                ]
+            },
+            "properties": {
+                "original_uid": "741",
+                "name": "Kinderhaus Alzental",
+                "date_surveyed": "2023-12-04",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.855727910025463,
+                    48.59257727565221
+                ]
+            },
+            "properties": {
+                "original_uid": "743",
+                "osm": {
+                    "id": 184185613,
+                    "type": "node"
+                },
+                "name": "Sporthalle Markweg/Mensa",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 108,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868576599999997,
+                    48.59619329999999
+                ]
+            },
+            "properties": {
+                "original_uid": "744",
+                "osm": {
+                    "id": 6595792648,
+                    "type": "node"
+                },
+                "name": "Bronntor",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871645000000001,
+                    48.5968821
+                ]
+            },
+            "properties": {
+                "original_uid": "745",
+                "osm": {
+                    "id": 11307619782,
+                    "type": "node"
+                },
+                "name": "Stiftskirche auf dem steilen Berg seitlich",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871511999999994,
+                    48.601636999999975
+                ]
+            },
+            "properties": {
+                "original_uid": "746",
+                "osm": {
+                    "id": 11171353064,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 37",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 1,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860329999999992,
+                    48.5945
+                ]
+            },
+            "properties": {
+                "original_uid": "747",
+                "osm": {
+                    "id": 7726452137,
+                    "type": "node"
+                },
+                "name": "Aldi",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875898700000006,
+                    48.5882287
+                ]
+            },
+            "properties": {
+                "original_uid": "748",
+                "osm": {
+                    "id": 11307699591,
+                    "type": "node"
+                },
+                "name": "Sporthalle / Platz",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 55,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871677999999996,
+                    48.600737999999986
+                ]
+            },
+            "properties": {
+                "original_uid": "749",
+                "osm": {
+                    "id": 11171353058,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 15",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870462066474092,
+                    48.5964420916547
+                ]
+            },
+            "properties": {
+                "original_uid": "750",
+                "osm": {
+                    "id": 11113693796,
+                    "type": "node"
+                },
+                "name": "Beim Oberamt",
+                "date_surveyed": "2023-08-10",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873554099999994,
+                    48.58946179999999
+                ]
+            },
+            "properties": {
+                "original_uid": "751",
+                "osm": {
+                    "id": 11307699590,
+                    "type": "node"
+                },
+                "name": "Realschule",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859624999999994,
+                    48.59456999999999
+                ]
+            },
+            "properties": {
+                "original_uid": "752",
+                "osm": {
+                    "id": 11140323985,
+                    "type": "node"
+                },
+                "name": "Schreinerei bayer",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869917000000003,
+                    48.60131999999997
+                ]
+            },
+            "properties": {
+                "original_uid": "753",
+                "osm": {
+                    "id": 11171353052,
+                    "type": "node"
+                },
+                "name": "Türkisches Kulturzentrum",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856182999999994,
+                    48.596507999999986
+                ]
+            },
+            "properties": {
+                "original_uid": "754",
+                "osm": {
+                    "id": 11137716397,
+                    "type": "node"
+                },
+                "name": "Conny & Team Friseure",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871272000000003,
+                    48.59797
+                ]
+            },
+            "properties": {
+                "original_uid": "755",
+                "osm": {
+                    "id": 11113693795,
+                    "type": "node"
+                },
+                "name": "Stuttgarter Straße",
+                "date_surveyed": "2023-08-10",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870453000000003,
+                    48.598658
+                ]
+            },
+            "properties": {
+                "original_uid": "756",
+                "osm": {
+                    "id": 7793922195,
+                    "type": "node"
+                },
+                "name": "Seestraße 31",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870836700000005,
+                    48.59493140000001
+                ]
+            },
+            "properties": {
+                "original_uid": "757",
+                "osm": {
+                    "id": 11307699587,
+                    "type": "node"
+                },
+                "name": "Seegers back Spezialit??ten",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867168799999996,
+                    48.593083099999994
+                ]
+            },
+            "properties": {
+                "original_uid": "758",
+                "osm": {
+                    "id": 11185503362,
+                    "type": "node"
+                },
+                "name": "Invita Betreutes Wohnen",
+                "date_surveyed": "2023-09-07",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875633000000008,
+                    48.594426999999996
+                ]
+            },
+            "properties": {
+                "original_uid": "759",
+                "osm": {
+                    "id": 11307619780,
+                    "type": "node"
+                },
+                "name": "Brahmstrasse 2",
+                "date_surveyed": "2023-10-02",
+                "type": "wall_loops",
+                "capacity": 7,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.846411800000004,
+                    48.6097595
+                ]
+            },
+            "properties": {
+                "original_uid": "760",
+                "name": "Bushaltestelle Jennerstra??e Fahrtrichtung Herrenberg",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.878412000000003,
+                    48.575210999999996
+                ]
+            },
+            "properties": {
+                "original_uid": "761",
+                "osm": {
+                    "id": 11307556495,
+                    "type": "node"
+                },
+                "name": "Platz bei der Kreissparkasse Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872196200000007,
+                    48.5964013
+                ]
+            },
+            "properties": {
+                "original_uid": "762",
+                "osm": {
+                    "id": 11357713109,
+                    "type": "node"
+                },
+                "name": "Vor dem Dekanat",
+                "date_surveyed": "2023-11-16",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.877497999999994,
+                    48.57517499999999
+                ]
+            },
+            "properties": {
+                "original_uid": "763",
+                "osm": {
+                    "id": 8974144399,
+                    "type": "node"
+                },
+                "name": "Vor der Grundschule",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.857742100000003,
+                    48.58903489999998
+                ]
+            },
+            "properties": {
+                "original_uid": "764",
+                "osm": {
+                    "id": 11254817169,
+                    "type": "node"
+                },
+                "name": "Habichtstraße",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.850090100000001,
+                    48.611785199999986
+                ]
+            },
+            "properties": {
+                "original_uid": "765",
+                "osm": {
+                    "id": 11307030672,
+                    "type": "node"
+                },
+                "name": "Bolzplatz Kuppingen R??merstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858887000000001,
+                    48.600732999999984
+                ]
+            },
+            "properties": {
+                "original_uid": "766",
+                "osm": {
+                    "id": 11137694809,
+                    "type": "node"
+                },
+                "name": "Johannes-Kepler-Stra??e",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.883052000000003,
+                    48.572414999999985
+                ]
+            },
+            "properties": {
+                "original_uid": "767",
+                "osm": {
+                    "id": 8974144403,
+                    "type": "node"
+                },
+                "name": "Ammertalhalle",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868697299999997,
+                    48.59795969999999
+                ]
+            },
+            "properties": {
+                "original_uid": "768",
+                "osm": {
+                    "id": 8071796325,
+                    "type": "node"
+                },
+                "name": "Gegenüber Denns bio",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 18,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865538000000006,
+                    48.596662
+                ]
+            },
+            "properties": {
+                "original_uid": "769",
+                "osm": {
+                    "id": 11113693798,
+                    "type": "node"
+                },
+                "name": "Kita Aischbachstra??e",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 46,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.836337799999999,
+                    48.61310610000001
+                ]
+            },
+            "properties": {
+                "original_uid": "770",
+                "osm": {
+                    "id": 11254881818,
+                    "type": "node"
+                },
+                "name": "Gemeindehalle Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858802999999998,
+                    48.60044499999999
+                ]
+            },
+            "properties": {
+                "original_uid": "771",
+                "osm": {
+                    "id": 11137684052,
+                    "type": "node"
+                },
+                "name": "Johannes-Kepler-Stra??e (2)",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865805,
+                    48.59466699999999
+                ]
+            },
+            "properties": {
+                "original_uid": "772",
+                "osm": {
+                    "id": 11140488154,
+                    "type": "node"
+                },
+                "name": "Binder Optik (2)",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 24,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871787000000001,
+                    48.60158700000001
+                ]
+            },
+            "properties": {
+                "original_uid": "773",
+                "osm": {
+                    "id": 11171353063,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 35",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8346849,
+                    48.58429060000001
+                ]
+            },
+            "properties": {
+                "original_uid": "774",
+                "osm": {
+                    "id": 11307500517,
+                    "type": "node"
+                },
+                "name": "Wohnhaus. Hohenzollernstra??e 83",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860784999999993,
+                    48.606641999999994
+                ]
+            },
+            "properties": {
+                "original_uid": "775",
+                "osm": {
+                    "id": 11307120163,
+                    "type": "node"
+                },
+                "name": "Kindergarten Mittelfeldstra??e Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871979999999999,
+                    48.60098699999998
+                ]
+            },
+            "properties": {
+                "original_uid": "776",
+                "osm": {
+                    "id": 11171353060,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 17",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859501000000007,
+                    48.604217
+                ]
+            },
+            "properties": {
+                "original_uid": "777",
+                "osm": {
+                    "id": 11307120155,
+                    "type": "node"
+                },
+                "name": "Gemeindehalle Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "stands",
+                "capacity": 46,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.881871000000002,
+                    48.577341
+                ]
+            },
+            "properties": {
+                "original_uid": "778",
+                "osm": {
+                    "id": 1523545080,
+                    "type": "node"
+                },
+                "name": "Bahnhof Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 24,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.864295000000002,
+                    48.597594999999984
+                ]
+            },
+            "properties": {
+                "original_uid": "779",
+                "osm": {
+                    "id": 1044290591,
+                    "type": "node"
+                },
+                "name": "VfL Herrenberg",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.831857800000003,
+                    48.62338139999999
+                ]
+            },
+            "properties": {
+                "original_uid": "780",
+                "osm": {
+                    "id": 11306929065,
+                    "type": "node"
+                },
+                "name": "Kindertageseinrichtung Mahdenstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.892781999999995,
+                    48.58239699999998
+                ]
+            },
+            "properties": {
+                "original_uid": "781",
+                "osm": {
+                    "id": 11307556499,
+                    "type": "node"
+                },
+                "name": "Bäcker Baier Parkplatz",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859541999999998,
+                    48.598386999999995
+                ]
+            },
+            "properties": {
+                "original_uid": "782",
+                "osm": {
+                    "id": 11138405691,
+                    "type": "node"
+                },
+                "name": "Christuskirche",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863396999999996,
+                    48.59760500000001
+                ]
+            },
+            "properties": {
+                "original_uid": "783",
+                "osm": {
+                    "id": 11113769605,
+                    "type": "node"
+                },
+                "name": "Schießmauer 1",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.839115299999992,
+                    48.5814774
+                ]
+            },
+            "properties": {
+                "original_uid": "784",
+                "osm": {
+                    "id": 931776782,
+                    "type": "node"
+                },
+                "name": "Grundschule Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8386619,
+                    48.623064
+                ]
+            },
+            "properties": {
+                "original_uid": "785",
+                "osm": {
+                    "id": 11307619776,
+                    "type": "node"
+                },
+                "name": "Kindertageseinrichtung W??rmstra??e",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 9,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872409962508614,
+                    48.59522660354647
+                ]
+            },
+            "properties": {
+                "original_uid": "786",
+                "osm": {
+                    "id": 11307699586,
+                    "type": "node"
+                },
+                "name": "Tübinger Straße / Stadt Grabe Staffel",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869575700000002,
+                    48.5951201
+                ]
+            },
+            "properties": {
+                "original_uid": "787",
+                "osm": {
+                    "id": 5322238594,
+                    "type": "node"
+                },
+                "name": "Graben",
+                "date_surveyed": "2023-09-07",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863457999999998,
+                    48.597588
+                ]
+            },
+            "properties": {
+                "original_uid": "788",
+                "osm": {
+                    "id": 11113693804,
+                    "type": "node"
+                },
+                "name": "Schießmauer 1",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872995443976,
+                    48.5943566115872
+                ]
+            },
+            "properties": {
+                "original_uid": "789",
+                "name": "Stadtbibliothek",
+                "date_surveyed": "2023-12-04",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.909084000000002,
+                    48.579131999999994
+                ]
+            },
+            "properties": {
+                "original_uid": "790",
+                "osm": {
+                    "id": 11307619774,
+                    "type": "node"
+                },
+                "name": "Haltestelle Abze",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.844162100000002,
+                    48.61149429999998
+                ]
+            },
+            "properties": {
+                "original_uid": "791",
+                "osm": {
+                    "id": 11307619777,
+                    "type": "node"
+                },
+                "name": "Kindertageseinrichtung Br??hlweg",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868198700000004,
+                    48.597568800000005
+                ]
+            },
+            "properties": {
+                "original_uid": "792",
+                "osm": {
+                    "id": 11185503366,
+                    "type": "node"
+                },
+                "name": "Lidl",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 22,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.914488000000008,
+                    48.576791
+                ]
+            },
+            "properties": {
+                "original_uid": "793",
+                "osm": {
+                    "id": 8043805372,
+                    "type": "node"
+                },
+                "name": "Vor der Sporthalle",
+                "date_surveyed": "2023-10-01",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.840277699999993,
+                    48.58048599999998
+                ]
+            },
+            "properties": {
+                "original_uid": "794",
+                "osm": {
+                    "id": 11307500521,
+                    "type": "node"
+                },
+                "name": "Ehem ev Gemeindehaus",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867660300000004,
+                    48.597352399999984
+                ]
+            },
+            "properties": {
+                "original_uid": "795",
+                "osm": {
+                    "id": 8875319143,
+                    "type": "node"
+                },
+                "name": "Seeländer platz",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 26,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875282100000002,
+                    48.590080099999994
+                ]
+            },
+            "properties": {
+                "original_uid": "796",
+                "osm": {
+                    "id": 28298726,
+                    "type": "node"
+                },
+                "name": "Hallenbad Herrenberg",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 192,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862756000000005,
+                    48.60508299999999
+                ]
+            },
+            "properties": {
+                "original_uid": "797",
+                "osm": {
+                    "id": 11307500514,
+                    "type": "node"
+                },
+                "name": "Spielplatz Kaffeeberg Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868974600000001,
+                    48.5979708
+                ]
+            },
+            "properties": {
+                "original_uid": "798",
+                "osm": {
+                    "id": 11185503367,
+                    "type": "node"
+                },
+                "name": "Seelesplatz",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867225000000001,
+                    48.598658
+                ]
+            },
+            "properties": {
+                "original_uid": "799",
+                "osm": {
+                    "id": 11138437839,
+                    "type": "node"
+                },
+                "name": "Tafellädle Deutsches Rotes Kreuz",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868643999999993,
+                    48.59800289999998
+                ]
+            },
+            "properties": {
+                "original_uid": "800",
+                "osm": {
+                    "id": 8085654178,
+                    "type": "node"
+                },
+                "name": "Denns Bio",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862520500000002,
+                    48.59344739999999
+                ]
+            },
+            "properties": {
+                "original_uid": "801",
+                "osm": {
+                    "id": 81512766,
+                    "type": "node"
+                },
+                "name": "Bahnhof Herrenberg ( B??cker / Post Seite )",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 160,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870462066474092,
+                    48.5964420916547
+                ]
+            },
+            "properties": {
+                "original_uid": "802",
+                "osm": {
+                    "id": 6595890251,
+                    "type": "node"
+                },
+                "name": "Beim Rathaus",
+                "date_surveyed": "2023-08-10",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.875813999999997,
+                    48.57519999999999
+                ]
+            },
+            "properties": {
+                "original_uid": "803",
+                "osm": {
+                    "id": 11307556494,
+                    "type": "node"
+                },
+                "name": "Spielplatz Goldregen Stra??e Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 35,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868761999999995,
+                    48.59587199999999
+                ]
+            },
+            "properties": {
+                "original_uid": "804",
+                "osm": {
+                    "id": 11140871398,
+                    "type": "node"
+                },
+                "name": "Bäcker Baier",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.877773200000002,
+                    48.587776999999996
+                ]
+            },
+            "properties": {
+                "original_uid": "805",
+                "osm": {
+                    "id": 7920727074,
+                    "type": "node"
+                },
+                "name": "Calisthenics station",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.841191899999998,
+                    48.61560549999999
+                ]
+            },
+            "properties": {
+                "original_uid": "806",
+                "osm": {
+                    "id": 11254881815,
+                    "type": "node"
+                },
+                "name": "Karl-Kühnle-Grundschule",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 144,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8595768,
+                    48.59056799999999
+                ]
+            },
+            "properties": {
+                "original_uid": "807",
+                "osm": {
+                    "id": 11254817170,
+                    "type": "node"
+                },
+                "name": "Friedrich fröbel Schule",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862400800000003,
+                    48.5942436
+                ]
+            },
+            "properties": {
+                "original_uid": "808",
+                "osm": {
+                    "id": 10011272702,
+                    "type": "node"
+                },
+                "name": "Bahnhof Aldi seiten",
+                "date_surveyed": "2023-10-11",
+                "type": "lockers",
+                "capacity": 57,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.855480000000005,
+                    48.59288299999999
+                ]
+            },
+            "properties": {
+                "original_uid": "809",
+                "osm": {
+                    "id": 1080195117,
+                    "type": "node"
+                },
+                "name": "Jerg-Ratgeb-Schule 2",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 34,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.920132000000008,
+                    48.577355000000004
+                ]
+            },
+            "properties": {
+                "original_uid": "810",
+                "name": "Evangelisches gemeindehaus kayh",
+                "date_surveyed": "2023-10-01",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8678879,
+                    48.59329340000001
+                ]
+            },
+            "properties": {
+                "original_uid": "811",
+                "osm": {
+                    "id": 11185503361,
+                    "type": "node"
+                },
+                "name": "Bismarckstraße 12",
+                "date_surveyed": "2023-09-07",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.857378999999995,
+                    48.607358999999995
+                ]
+            },
+            "properties": {
+                "original_uid": "812",
+                "osm": {
+                    "id": 11307120159,
+                    "type": "node"
+                },
+                "name": "Evang Gemeindehaus",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 9,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.864392,
+                    48.596199999999996
+                ]
+            },
+            "properties": {
+                "original_uid": "813",
+                "osm": {
+                    "id": 11113693797,
+                    "type": "node"
+                },
+                "name": "Kegelcenter Restaurant",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873061999999994,
+                    48.594742
+                ]
+            },
+            "properties": {
+                "original_uid": "814",
+                "osm": {
+                    "id": 11307619779,
+                    "type": "node"
+                },
+                "name": "Tübinger Str. Bioladen u. Blattwerk",
+                "date_surveyed": "2023-10-02",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863862000000005,
+                    48.597512
+                ]
+            },
+            "properties": {
+                "original_uid": "815",
+                "osm": {
+                    "id": 95685677,
+                    "type": "node"
+                },
+                "name": "Volksbank Stadion",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871278000000006,
+                    48.60166699999999
+                ]
+            },
+            "properties": {
+                "original_uid": "816",
+                "osm": {
+                    "id": 11171353065,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 39",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862154999999994,
+                    48.594232999999996
+                ]
+            },
+            "properties": {
+                "original_uid": "817",
+                "osm": {
+                    "id": 28353623,
+                    "type": "node"
+                },
+                "name": "Hauptbahnhof Herrenberg",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 96,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.846543199999996,
+                    48.6099049
+                ]
+            },
+            "properties": {
+                "original_uid": "818",
+                "osm": {
+                    "id": 11307030675,
+                    "type": "node"
+                },
+                "name": "Bushaltestelle Jennerstra??e Fahrtrichtung Wildberg",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.864019999999998,
+                    48.597163
+                ]
+            },
+            "properties": {
+                "original_uid": "819",
+                "osm": {
+                    "id": 999690967,
+                    "type": "node"
+                },
+                "name": "VFL Gebäude 1",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862400800000003,
+                    48.5942436
+                ]
+            },
+            "properties": {
+                "original_uid": "820",
+                "osm": {
+                    "id": 702362944,
+                    "type": "node"
+                },
+                "name": "Bahnhof Kaufland Seite Unterführung",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 40,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869048790246147,
+                    48.5983077673113
+                ]
+            },
+            "properties": {
+                "original_uid": "821",
+                "name": "Vor Parkhauseinfahrt Seeländer",
+                "date_surveyed": "2023-12-04",
+                "type": "other",
+                "capacity": 28,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871204999999996,
+                    48.5950638
+                ]
+            },
+            "properties": {
+                "original_uid": "822",
+                "osm": {
+                    "id": 6596031262,
+                    "type": "node"
+                },
+                "name": "Diakonieladen Herrenberg / auf dem Graben",
+                "date_surveyed": "2023-10-09",
+                "type": "lean_and_stick",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.904662100000005,
+                    48.602799299999994
+                ]
+            },
+            "properties": {
+                "original_uid": "823",
+                "osm": {
+                    "id": 597429170,
+                    "type": "node"
+                },
+                "name": "Weg zum Schönbuchturm",
+                "date_surveyed": "2023-10-02",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871579999999998,
+                    48.60208
+                ]
+            },
+            "properties": {
+                "original_uid": "824",
+                "osm": {
+                    "id": 11171350998,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 33",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856667,
+                    48.59644999999999
+                ]
+            },
+            "properties": {
+                "original_uid": "825",
+                "osm": {
+                    "id": 11137732875,
+                    "type": "node"
+                },
+                "name": "Württembergische weimann & bühl",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862400800000003,
+                    48.5942436
+                ]
+            },
+            "properties": {
+                "original_uid": "826",
+                "osm": {
+                    "id": 28353623,
+                    "type": "node"
+                },
+                "name": "Bahnhof Herrenberg (Kaufland Seite direkt nach Unterführung )",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 132,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870359599999999,
+                    48.5979162
+                ]
+            },
+            "properties": {
+                "original_uid": "827",
+                "osm": {
+                    "id": 11185503369,
+                    "type": "node"
+                },
+                "name": "Nufringer Tor unten 2",
+                "date_surveyed": "2023-09-12",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873186,
+                    48.59063359999999
+                ]
+            },
+            "properties": {
+                "original_uid": "828",
+                "osm": {
+                    "id": 269604959,
+                    "type": "node"
+                },
+                "name": "Schickhardt gymnasium",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 78,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.843114399999996,
+                    48.61038749999999
+                ]
+            },
+            "properties": {
+                "original_uid": "829",
+                "osm": {
+                    "id": 11254881819,
+                    "type": "node"
+                },
+                "name": "Stephanus-Stift",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860867,
+                    48.595678
+                ]
+            },
+            "properties": {
+                "original_uid": "830",
+                "osm": {
+                    "id": 7726452136,
+                    "type": "node"
+                },
+                "name": "Kaufland",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 33,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.903299999999996,
+                    48.602741999999985
+                ]
+            },
+            "properties": {
+                "original_uid": "831",
+                "osm": {
+                    "id": 11307619778,
+                    "type": "node"
+                },
+                "name": "Naturfreundehaus",
+                "date_surveyed": "2023-10-02",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.882896,
+                    48.57193600000001
+                ]
+            },
+            "properties": {
+                "original_uid": "832",
+                "osm": {
+                    "id": 11307556497,
+                    "type": "node"
+                },
+                "name": "Ammerstadion",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854495700000005,
+                    48.58842080000001
+                ]
+            },
+            "properties": {
+                "original_uid": "833",
+                "osm": {
+                    "id": 11254817168,
+                    "type": "node"
+                },
+                "name": "Adlerstraße",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 40,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865320699999995,
+                    48.5887597
+                ]
+            },
+            "properties": {
+                "original_uid": "834",
+                "osm": {
+                    "id": 11185503364,
+                    "type": "node"
+                },
+                "name": "Kern Kanzlei",
+                "date_surveyed": "2023-09-07",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870662,
+                    48.598095000000015
+                ]
+            },
+            "properties": {
+                "original_uid": "835",
+                "osm": {
+                    "id": 11140873575,
+                    "type": "node"
+                },
+                "name": "TAKKO Fashion",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 40,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868860200000007,
+                    48.59807389999999
+                ]
+            },
+            "properties": {
+                "original_uid": "836",
+                "osm": {
+                    "id": 8071796321,
+                    "type": "node"
+                },
+                "name": "Rossmann",
+                "date_surveyed": "2023-09-12",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.855782999999995,
+                    48.594712
+                ]
+            },
+            "properties": {
+                "original_uid": "837",
+                "osm": {
+                    "id": 11137789465,
+                    "type": "node"
+                },
+                "name": "Straßenverkehr Kfz Zulassungsstelle",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859119300000003,
+                    48.607219900000004
+                ]
+            },
+            "properties": {
+                "original_uid": "838",
+                "osm": {
+                    "id": 11307120158,
+                    "type": "node"
+                },
+                "name": "Rathaus Affstätt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.881112999999997,
+                    48.571077
+                ]
+            },
+            "properties": {
+                "original_uid": "839",
+                "osm": {
+                    "id": 11307556498,
+                    "type": "node"
+                },
+                "name": "Reithalle",
+                "date_surveyed": "2023-09-29",
+                "type": "wall_loops",
+                "capacity": 50,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854762000000001,
+                    48.59373699999998
+                ]
+            },
+            "properties": {
+                "original_uid": "840",
+                "osm": {
+                    "id": 11137799936,
+                    "type": "node"
+                },
+                "name": "Kirche St. Martin",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871092656844208,
+                    48.597737909685975
+                ]
+            },
+            "properties": {
+                "original_uid": "841",
+                "name": "Am joachimsberg",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.857457999999998,
+                    48.606669999999994
+                ]
+            },
+            "properties": {
+                "original_uid": "842",
+                "osm": {
+                    "id": 11307500515,
+                    "type": "node"
+                },
+                "name": "KiTa Gartenstra??e Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "floor",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.836333799999998,
+                    48.6250426
+                ]
+            },
+            "properties": {
+                "original_uid": "843",
+                "osm": {
+                    "id": 11306929067,
+                    "type": "node"
+                },
+                "name": "Bezirksamt Oberjesingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.862520500000002,
+                    48.59344739999999
+                ]
+            },
+            "properties": {
+                "original_uid": "844",
+                "osm": {
+                    "id": 81512766,
+                    "type": "node"
+                },
+                "name": "Bahnhof Herrenberg (Post / Bäcker Seite )",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 144,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8678668,
+                    48.5955871
+                ]
+            },
+            "properties": {
+                "original_uid": "845",
+                "osm": {
+                    "id": 7920751015,
+                    "type": "node"
+                },
+                "name": "Bronntor",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869142000000004,
+                    48.60085299999997
+                ]
+            },
+            "properties": {
+                "original_uid": "846",
+                "osm": {
+                    "id": 11171353054,
+                    "type": "node"
+                },
+                "name": "Elektro Hämmerle",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.838094900000007,
+                    48.61475099999999
+                ]
+            },
+            "properties": {
+                "original_uid": "847",
+                "osm": {
+                    "id": 11254881813,
+                    "type": "node"
+                },
+                "name": "Kinderhaus Keltenstra??e 11",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858018399999992,
+                    48.60724029999999
+                ]
+            },
+            "properties": {
+                "original_uid": "848",
+                "osm": {
+                    "id": 11307120157,
+                    "type": "node"
+                },
+                "name": "Leinenbrunnen 1. Arztpraxis Dr N????le",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856162000000001,
+                    48.59475299999998
+                ]
+            },
+            "properties": {
+                "original_uid": "849",
+                "osm": {
+                    "id": 9082074724,
+                    "type": "node"
+                },
+                "name": "FSL Herrenberg",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867916300000006,
+                    48.59737210000001
+                ]
+            },
+            "properties": {
+                "original_uid": "850",
+                "osm": {
+                    "id": 8875319144,
+                    "type": "node"
+                },
+                "name": "Technisches Rathaus",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 14,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.839997300000004,
+                    48.61509639999999
+                ]
+            },
+            "properties": {
+                "original_uid": "851",
+                "osm": {
+                    "id": 11254881814,
+                    "type": "node"
+                },
+                "name": "Kita Oberjesingerstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 21,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.828166100000002,
+                    48.622108799999985
+                ]
+            },
+            "properties": {
+                "original_uid": "852",
+                "osm": {
+                    "id": 11307030669,
+                    "type": "node"
+                },
+                "name": "Evangelisches Gemeindehaus",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 22,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.882316000000001,
+                    48.57227000000001
+                ]
+            },
+            "properties": {
+                "original_uid": "853",
+                "osm": {
+                    "id": 8974144400,
+                    "type": "node"
+                },
+                "name": "Tv-Halle",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.835145500000007,
+                    48.62421199999999
+                ]
+            },
+            "properties": {
+                "original_uid": "854",
+                "osm": {
+                    "id": 11306929066,
+                    "type": "node"
+                },
+                "name": "Dorfplatz Oberjesingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.827802699999994,
+                    48.622194599999986
+                ]
+            },
+            "properties": {
+                "original_uid": "855",
+                "osm": {
+                    "id": 11307030671,
+                    "type": "node"
+                },
+                "name": "Wasenäckerhalle",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 36,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856182517036778,
+                    48.59297644712634
+                ]
+            },
+            "properties": {
+                "original_uid": "856",
+                "osm": {
+                    "id": 11140435438,
+                    "type": "node"
+                },
+                "name": "Jerg-Ratgeb-Schule (3)",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 221,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8573334,
+                    48.5889806
+                ]
+            },
+            "properties": {
+                "original_uid": "857",
+                "osm": {
+                    "id": 11306929064,
+                    "type": "node"
+                },
+                "name": "Reiher weg Ecke zur habichtstra??e",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863913000000005,
+                    48.598042
+                ]
+            },
+            "properties": {
+                "original_uid": "858",
+                "osm": {
+                    "id": 1197958026,
+                    "type": "node"
+                },
+                "name": "Volksbank Stadion",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 56,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860344999999997,
+                    48.608371999999996
+                ]
+            },
+            "properties": {
+                "original_uid": "859",
+                "osm": {
+                    "id": 11307120162,
+                    "type": "node"
+                },
+                "name": "KiTa an der Raingasse. Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859300000000003,
+                    48.60751099999998
+                ]
+            },
+            "properties": {
+                "original_uid": "860",
+                "osm": {
+                    "id": 11307120163,
+                    "type": "node"
+                },
+                "name": "Conrad-Weiser-Stra??e 1. saniertes altes Bauernhaus",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 16,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8395326,
+                    48.58144059999999
+                ]
+            },
+            "properties": {
+                "original_uid": "861",
+                "osm": {
+                    "id": 11307500519,
+                    "type": "node"
+                },
+                "name": "Grundschule Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.859187200000004,
+                    48.604524199999986
+                ]
+            },
+            "properties": {
+                "original_uid": "862",
+                "osm": {
+                    "id": 11307120156,
+                    "type": "node"
+                },
+                "name": "Wohnhaus Nelkenstra??e 6",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.867762999999997,
+                    48.59879999999999
+                ]
+            },
+            "properties": {
+                "original_uid": "863",
+                "osm": {
+                    "id": 11140259176,
+                    "type": "node"
+                },
+                "name": "Feuerwehr",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870674999999997,
+                    48.597930000000005
+                ]
+            },
+            "properties": {
+                "original_uid": "864",
+                "osm": {
+                    "id": 11140534023,
+                    "type": "node"
+                },
+                "name": "Mrs. Sporty",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8422745,
+                    48.61378679999999
+                ]
+            },
+            "properties": {
+                "original_uid": "865",
+                "osm": {
+                    "id": 11254881816,
+                    "type": "node"
+                },
+                "name": "Elektrohaus Brenner. Raiffeisenstra??e 2",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854917000000002,
+                    48.593937000000004
+                ]
+            },
+            "properties": {
+                "original_uid": "866",
+                "osm": {
+                    "id": 11137757702,
+                    "type": "node"
+                },
+                "name": "Jerg-Ratgeb-Schule",
+                "date_surveyed": "2023-08-23",
+                "type": "stands",
+                "capacity": 28,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false,
+                "access": "yes"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.851733700000002,
+                    48.61161619999999
+                ]
+            },
+            "properties": {
+                "original_uid": "867",
+                "osm": {
+                    "id": 11307030674,
+                    "type": "node"
+                },
+                "name": "DM Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.866115700000003,
+                    48.59358649999999
+                ]
+            },
+            "properties": {
+                "original_uid": "868",
+                "osm": {
+                    "id": 11185503363,
+                    "type": "node"
+                },
+                "name": "Sabine Gall Fu??pflege",
+                "date_surveyed": "2023-09-07",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.841287500000004,
+                    48.61198310000001
+                ]
+            },
+            "properties": {
+                "original_uid": "869",
+                "osm": {
+                    "id": 11307030670,
+                    "type": "node"
+                },
+                "name": "Ärztehaus Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873625140775758,
+                    48.594056720050816
+                ]
+            },
+            "properties": {
+                "original_uid": "870",
+                "name": "VHS",
+                "date_surveyed": "2023-12-04",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869827999999998,
+                    48.602437
+                ]
+            },
+            "properties": {
+                "original_uid": "871",
+                "osm": {
+                    "id": 11141108458,
+                    "type": "node"
+                },
+                "name": "Gym24",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8765116,
+                    48.5899344
+                ]
+            },
+            "properties": {
+                "original_uid": "872",
+                "osm": {
+                    "id": 3521364926,
+                    "type": "node"
+                },
+                "name": "Naturfreibad herrenberg",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 102,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872058000000003,
+                    48.601324999999974
+                ]
+            },
+            "properties": {
+                "original_uid": "873",
+                "osm": {
+                    "id": 11171353062,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 23",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.840870399999998,
+                    48.61383309999999
+                ]
+            },
+            "properties": {
+                "original_uid": "874",
+                "osm": {
+                    "id": 11254881817,
+                    "type": "node"
+                },
+                "name": "katholische Kirche St. Antonius Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868766400000002,
+                    48.5980071
+                ]
+            },
+            "properties": {
+                "original_uid": "875",
+                "osm": {
+                    "id": 8071796322,
+                    "type": "node"
+                },
+                "name": "Gegenüber Rossmann",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 16,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870721999999994,
+                    48.600677999999995
+                ]
+            },
+            "properties": {
+                "original_uid": "877",
+                "osm": {
+                    "id": 11171353056,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 57",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 3,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863854999999996,
+                    48.59739199999998
+                ]
+            },
+            "properties": {
+                "original_uid": "878",
+                "osm": {
+                    "id": 11113769606,
+                    "type": "node"
+                },
+                "name": "VFL Gebäude 1",
+                "date_surveyed": "2023-08-14",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870716999999994,
+                    48.60256999999999
+                ]
+            },
+            "properties": {
+                "original_uid": "879",
+                "osm": {
+                    "id": 11141100025,
+                    "type": "node"
+                },
+                "name": "Logopädie in Herrenberg",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872631799999999,
+                    48.5930222
+                ]
+            },
+            "properties": {
+                "original_uid": "880",
+                "osm": {
+                    "id": 11307699588,
+                    "type": "node"
+                },
+                "name": "Marienstraße / Physiotherapie Sven Schöffel",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.839929600000001,
+                    48.581493799999976
+                ]
+            },
+            "properties": {
+                "original_uid": "881",
+                "osm": {
+                    "id": 11307500520,
+                    "type": "node"
+                },
+                "name": "KiTa Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "crossbar",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863608000000003,
+                    48.59729499999999
+                ]
+            },
+            "properties": {
+                "original_uid": "882",
+                "osm": {
+                    "id": 11113769607,
+                    "type": "node"
+                },
+                "name": "VFL Gebäude 1",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8396266,
+                    48.5831739
+                ]
+            },
+            "properties": {
+                "original_uid": "883",
+                "osm": {
+                    "id": 8166630686,
+                    "type": "node"
+                },
+                "name": "Bezirksamt Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8512297,
+                    48.611186399999994
+                ]
+            },
+            "properties": {
+                "original_uid": "884",
+                "osm": {
+                    "id": 11307030673,
+                    "type": "node"
+                },
+                "name": "Netto Kuppingen",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 28,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868757999999994,
+                    48.601822
+                ]
+            },
+            "properties": {
+                "original_uid": "885",
+                "osm": {
+                    "id": 11171353053,
+                    "type": "node"
+                },
+                "name": "H+Hotel",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8678668,
+                    48.5955871
+                ]
+            },
+            "properties": {
+                "original_uid": "886",
+                "osm": {
+                    "id": 6595792653,
+                    "type": "node"
+                },
+                "name": "Bronntor",
+                "date_surveyed": "2023-10-09",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872011999999998,
+                    48.601953
+                ]
+            },
+            "properties": {
+                "original_uid": "887",
+                "osm": {
+                    "id": 11171351000,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 29",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.807650000000004,
+                    48.60333099999999
+                ]
+            },
+            "properties": {
+                "original_uid": "888",
+                "osm": {
+                    "id": 11254881812,
+                    "type": "node"
+                },
+                "name": "TSV Kuppingen. NEUFFER-Sportpark; Martinslehle 1. 71083 Herrenberg",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 11,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.834751600000008,
+                    48.62321919999999
+                ]
+            },
+            "properties": {
+                "original_uid": "889",
+                "osm": {
+                    "id": 11306929068,
+                    "type": "node"
+                },
+                "name": "Volksbank und Kreissparkasse",
+                "date_surveyed": "2023-09-19",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.878188,
+                    48.575048999999986
+                ]
+            },
+            "properties": {
+                "original_uid": "890",
+                "osm": {
+                    "id": 8974144401,
+                    "type": "node"
+                },
+                "name": "Altes Rathaus Gueltstein",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870533000000007,
+                    48.60393
+                ]
+            },
+            "properties": {
+                "original_uid": "891",
+                "osm": {
+                    "id": 11171353051,
+                    "type": "node"
+                },
+                "name": "Toom",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 12,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.856933,
+                    48.60731899999999
+                ]
+            },
+            "properties": {
+                "original_uid": "892",
+                "osm": {
+                    "id": 11307120161,
+                    "type": "node"
+                },
+                "name": "Freiwillige Feuerwehr Affst??tt",
+                "date_surveyed": "2023-09-20",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.865783000000004,
+                    48.59453800000001
+                ]
+            },
+            "properties": {
+                "original_uid": "893",
+                "osm": {
+                    "id": 9808497396,
+                    "type": "node"
+                },
+                "name": "Binder Optik",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.913812999999998,
+                    48.58318899999999
+                ]
+            },
+            "properties": {
+                "original_uid": "894",
+                "osm": {
+                    "id": 11307619775,
+                    "type": "node"
+                },
+                "name": "Dorfplatz Brunnen M??nchberg",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.835361200000001,
+                    48.58419269999999
+                ]
+            },
+            "properties": {
+                "original_uid": "895",
+                "osm": {
+                    "id": 11307500522,
+                    "type": "node"
+                },
+                "name": "Metzgerei Gräther",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8776787,
+                    48.5881274
+                ]
+            },
+            "properties": {
+                "original_uid": "896",
+                "osm": {
+                    "id": 7920751014,
+                    "type": "node"
+                },
+                "name": "Calisthenics park / baseball field",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.877906000000003,
+                    48.575444000000005
+                ]
+            },
+            "properties": {
+                "original_uid": "897",
+                "osm": {
+                    "id": 11307556496,
+                    "type": "node"
+                },
+                "name": "Karolinenstift",
+                "date_surveyed": "2023-09-29",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.860663,
+                    48.59381299999999
+                ]
+            },
+            "properties": {
+                "original_uid": "898",
+                "osm": {
+                    "id": 11140439331,
+                    "type": "node"
+                },
+                "name": "EN Storage",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.830476800000001,
+                    48.583944800000005
+                ]
+            },
+            "properties": {
+                "original_uid": "899",
+                "osm": {
+                    "id": 11307500516,
+                    "type": "node"
+                },
+                "name": "Sporthalle Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 18,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854254999999995,
+                    48.59405
+                ]
+            },
+            "properties": {
+                "original_uid": "900",
+                "osm": {
+                    "id": 11140362956,
+                    "type": "node"
+                },
+                "name": "Weinberg Bäckerei",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872735000000008,
+                    48.58921849999999
+                ]
+            },
+            "properties": {
+                "original_uid": "901",
+                "osm": {
+                    "id": 182241738,
+                    "type": "node"
+                },
+                "name": "Realschule",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 96,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.868416000000002,
+                    48.5977293
+                ]
+            },
+            "properties": {
+                "original_uid": "902",
+                "osm": {
+                    "id": 11185503366,
+                    "type": "node"
+                },
+                "name": "Deichmann",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.863396999999996,
+                    48.59760500000001
+                ]
+            },
+            "properties": {
+                "original_uid": "903",
+                "osm": {
+                    "id": 11113769605,
+                    "type": "node"
+                },
+                "name": "Schießmauer 1",
+                "date_surveyed": "2023-08-14",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8387016,
+                    48.58313329999999
+                ]
+            },
+            "properties": {
+                "original_uid": "904",
+                "osm": {
+                    "id": 11307500518,
+                    "type": "node"
+                },
+                "name": "Ehem Volksbank Haslach",
+                "date_surveyed": "2023-09-25",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.872216999999992,
+                    48.60127799999999
+                ]
+            },
+            "properties": {
+                "original_uid": "905",
+                "osm": {
+                    "id": 11171353061,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 21",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 1,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.858963000000001,
+                    48.59633799999999
+                ]
+            },
+            "properties": {
+                "original_uid": "906",
+                "osm": {
+                    "id": 11137728912,
+                    "type": "node"
+                },
+                "name": "Allfinanz Deutsche Verm??gensberatung",
+                "date_surveyed": "2023-08-23",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871782999999999,
+                    48.60204499999999
+                ]
+            },
+            "properties": {
+                "original_uid": "908",
+                "osm": {
+                    "id": 11171350999,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 31",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8748741,
+                    48.5899033
+                ]
+            },
+            "properties": {
+                "original_uid": "909",
+                "osm": {
+                    "id": 11307699589,
+                    "type": "node"
+                },
+                "name": "Hallenbad \\ Schule",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 80,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.86864,
+                    48.5910676
+                ]
+            },
+            "properties": {
+                "original_uid": "910",
+                "osm": {
+                    "id": 11185503365,
+                    "type": "node"
+                },
+                "name": "Goethestraße 12",
+                "date_surveyed": "2023-09-07",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8776934,
+                    48.587660799999995
+                ]
+            },
+            "properties": {
+                "original_uid": "911",
+                "osm": {
+                    "id": 7920727079,
+                    "type": "node"
+                },
+                "name": "Calisthenics",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 8,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870570000000006,
+                    48.600697
+                ]
+            },
+            "properties": {
+                "original_uid": "912",
+                "osm": {
+                    "id": 11171353055,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 59",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873839399999996,
+                    48.5915761
+                ]
+            },
+            "properties": {
+                "original_uid": "913",
+                "osm": {
+                    "id": 8533065301,
+                    "type": "node"
+                },
+                "name": "Marienstraße Ecke kleiststraße",
+                "date_surveyed": "2023-10-11",
+                "type": "wall_loops",
+                "capacity": 4,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.869998800000003,
+                    48.595711499999986
+                ]
+            },
+            "properties": {
+                "original_uid": "914",
+                "osm": {
+                    "id": 7863584959,
+                    "type": "node"
+                },
+                "name": "Spital Gasse",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870359599999999,
+                    48.5979162
+                ]
+            },
+            "properties": {
+                "original_uid": "915",
+                "osm": {
+                    "id": 11185503368,
+                    "type": "node"
+                },
+                "name": "Nufringer Tor unten",
+                "date_surveyed": "2023-09-12",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871729999999994,
+                    48.601046999999994
+                ]
+            },
+            "properties": {
+                "original_uid": "916",
+                "osm": {
+                    "id": 11171353059,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 19",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871827399999997,
+                    48.59830309999999
+                ]
+            },
+            "properties": {
+                "original_uid": "917",
+                "osm": {
+                    "id": 11307619781,
+                    "type": "node"
+                },
+                "name": "Am Joachimsberg 10",
+                "date_surveyed": "2023-10-09",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.854391999999999,
+                    48.593313
+                ]
+            },
+            "properties": {
+                "original_uid": "918",
+                "osm": {
+                    "id": 11140917938,
+                    "type": "node"
+                },
+                "name": "Kirche St. Martin (hinten)",
+                "date_surveyed": "2023-08-24",
+                "type": "stands",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871272000000003,
+                    48.59797
+                ]
+            },
+            "properties": {
+                "original_uid": "919",
+                "osm": {
+                    "id": 11113693795,
+                    "type": "node"
+                },
+                "name": "Stuttgarter Straße",
+                "date_surveyed": "2023-08-10",
+                "type": "stands",
+                "capacity": 5,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8590568,
+                    48.59218769999999
+                ]
+            },
+            "properties": {
+                "original_uid": "920",
+                "osm": {
+                    "id": 11254817171,
+                    "type": "node"
+                },
+                "name": "Bahnhofstraße",
+                "date_surveyed": "2023-09-19",
+                "type": "wall_loops",
+                "capacity": 6,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.873988,
+                    48.59743
+                ]
+            },
+            "properties": {
+                "original_uid": "921",
+                "osm": {
+                    "id": 11307556493,
+                    "type": "node"
+                },
+                "name": "Schlosskeller",
+                "date_surveyed": "2023-09-26",
+                "type": "stands",
+                "capacity": 20,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.8699216,
+                    48.595416799999995
+                ]
+            },
+            "properties": {
+                "original_uid": "923",
+                "osm": {
+                    "id": 659284923,
+                    "type": "node"
+                },
+                "name": "Spital Gasse 13",
+                "date_surveyed": "2023-10-11",
+                "type": "stands",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.870043264568391,
+                    48.598384457795376
+                ]
+            },
+            "properties": {
+                "original_uid": "924",
+                "name": "",
+                "date_surveyed": "2023-12-04",
+                "type": "other",
+                "capacity": 30,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.871855000000005,
+                    48.600675
+                ]
+            },
+            "properties": {
+                "original_uid": "925",
+                "osm": {
+                    "id": 11171353057,
+                    "type": "node"
+                },
+                "name": "Affstätter Tal 13",
+                "date_surveyed": "2023-08-24",
+                "type": "wall_loops",
+                "capacity": 2,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.853751905038765,
+                    48.59288340708298
+                ]
+            },
+            "properties": {
+                "original_uid": "926",
+                "name": "Görlitzer Straße",
+                "date_surveyed": "2024-01-23",
+                "type": "stands",
+                "capacity": 88,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.86851240829726,
+                    48.59481322045072
+                ]
+            },
+            "properties": {
+                "original_uid": "927",
+                "name": "Hindenburgstraße",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.903629319280821,
+                    48.601629553502
+                ]
+            },
+            "properties": {
+                "original_uid": "928",
+                "name": "Waldfriedhof",
+                "type": "stands",
+                "capacity": 10,
+                "is_covered": true,
+                "capacity_cargobike": 0,
+                "has_fee": false
+            }
+        }
+    ]
+}
