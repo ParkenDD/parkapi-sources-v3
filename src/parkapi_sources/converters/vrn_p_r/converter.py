@@ -78,11 +78,7 @@ class VrnParkAndRidePullConverter(PullConverter, ABC):
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
         for feature_input in feature_inputs:
-            # Only 2 operators 'Sonah', 'Multiguide' can be integrated
-            if feature_input.properties.operator_name in self.config_helper.get(
-                'PARK_API_VRN_P_R_LIST_OF_OPERATORS', ['Sonah', 'Multiguide']
-            ):
-                static_parking_site_inputs.append(feature_input.to_static_parking_site_input())
+            static_parking_site_inputs.append(feature_input.to_static_parking_site_input())
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
@@ -91,9 +87,6 @@ class VrnParkAndRidePullConverter(PullConverter, ABC):
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
         for feature_input in feature_inputs:
-            if feature_input.properties.operator_name in self.config_helper.get(
-                'PARK_API_VRN_P_R_LIST_OF_OPERATORS', ['Sonah', 'Multiguide']
-            ):
-                realtime_parking_site_inputs.append(feature_input.to_realtime_parking_site_input())
+            realtime_parking_site_inputs.append(feature_input.to_realtime_parking_site_input())
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
