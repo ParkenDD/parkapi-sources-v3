@@ -47,7 +47,7 @@ class VrnParkAndRidePropertiesOpeningStatus(Enum):
 
     def to_realtime_opening_status(self) -> OpeningStatus | None:
         return {
-            self.UNKNOWN: OpeningStatus.OPEN,
+            self.UNKNOWN: OpeningStatus.UNKNOWN,
         }.get(self)
 
 
@@ -115,9 +115,9 @@ class VrnParkAndRideFeaturesInput:
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
-            uid=str(self.properties.original_uid),
-            group_uid=str(self.properties.vrn_sensor_id),
-            name=self.properties.name if self.properties.name != '' else 'Fahrrad-Abstellanlagen',
+            uid=str(self.properties.vrn_sensor_id),
+            group_uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
+            name=self.properties.name if self.properties.name != '' else 'P+R Parkplätze',
             type=self.properties.type.to_parking_site_type(),
             capacity=self.properties.capacity,
             has_realtime_data=self.properties.has_realtime_data,
@@ -149,7 +149,7 @@ class VrnParkAndRideFeaturesInput:
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
-            uid=str(self.properties.original_uid),
+            uid=str(self.properties.vrn_sensor_id),
             realtime_capacity=self.properties.realtime_free_capacity + self.properties.realtime_occupied,
             realtime_free_capacity=self.properties.realtime_free_capacity,
             realtime_opening_status=self.properties.realtime_opening_status.to_realtime_opening_status(),
