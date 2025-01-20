@@ -20,7 +20,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, PurposeType
 from parkapi_sources.models.geojson_inputs import GeojsonFeatureGeometryInput
 from parkapi_sources.validators import MappedBooleanValidator, TimestampDateTimeValidator
 
@@ -33,6 +33,17 @@ class VrnParkAndRideType(Enum):
         return {
             self.CAR_PARK: ParkingSiteType.CAR_PARK,
             self.OFF_STREET_PARKING_GROUND: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+        }.get(self)
+
+
+class VrnParkAndRidePRType(Enum):
+    JA = 'ja'
+    NEIN = 'nein'
+
+    def to_park_and_ride_type(self) -> ParkingSiteType:
+        return {
+            self.JA: ParkAndRideType.YES,
+            self.NEIN: ParkAndRideType.NO,
         }.get(self)
 
 
@@ -94,8 +105,8 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
     )
     related_location: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
     opening_hours: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
-    park_and_ride_type: OptionalUnset[str] = (
-        NoneToUnsetValue(StringValidator(min_length=0, max_length=256)),
+    park_and_ride_type: OptionalUnset[VrnParkAndRidePRType] = (
+        NoneToUnsetValue(EnumValidator(VrnParkAndRidePRType)),
         DefaultUnset,
     )
     max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
@@ -126,6 +137,7 @@ class VrnParkAndRideFeaturesInput:
             related_location=self.properties.related_location,
             operator_name=self.properties.operator_name,
             max_height=self.properties.max_height,
+            max_stay=self.properties.max_stay,
             has_fee=self.properties.has_fee,
             fee_description=self.properties.fee_description,
             capacity_charging=self.properties.capacity_charging,
@@ -145,6 +157,9 @@ class VrnParkAndRideFeaturesInput:
             if 'Mo-So: 24 Stunden' in self.properties.opening_hours
             or 'Mo-So: Kostenlos' in self.properties.opening_hours
             else UnsetValue,
+            photo_url=self.properties.photo_url,
+            public_url=self.properties.public_url,
+            park_and_ride_type=[self.properties.park_and_ride_type.to_park_and_ride_type()],
         )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
