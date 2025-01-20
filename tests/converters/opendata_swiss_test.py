@@ -31,7 +31,7 @@ def requests_mock_opendata_swiss(requests_mock: Mocker) -> Mocker:
         json_data = json_file.read()
 
     requests_mock.get(
-        'https://opentransportdata.swiss/de/dataset/parking-facilities/permalink',
+        'https://data.opentransportdata.swiss/de/dataset/parking-facilities/permalink',
         text=json_data,
     )
 
@@ -53,7 +53,7 @@ class OpenDataSwissPullConverterTest:
             opendata_swiss_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 563
+        assert len(static_parking_site_inputs) == 560
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
