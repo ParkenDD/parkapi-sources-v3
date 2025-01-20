@@ -126,8 +126,14 @@ class VrnParkAndRideFeaturesInput:
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
-            uid=str(self.properties.vrn_sensor_id),
-            group_uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
+            uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
+            static_data_updated_at=datetime.now(timezone.utc)
+            if self.properties.reatime_data_updated is UnsetValue
+            else self.properties.reatime_data_updated,
+            opening_hours='24/7'
+            if 'Mo-So: 24 Stunden' in self.properties.opening_hours
+            or 'Mo-So: Kostenlos' in self.properties.opening_hours
+            else UnsetValue,
             name=self.properties.name if self.properties.name != '' else 'P+R Parkplätze',
             type=self.properties.type.to_parking_site_type(),
             capacity=self.properties.capacity,
@@ -149,14 +155,7 @@ class VrnParkAndRideFeaturesInput:
             capacity_bus=self.properties.capacity_bus,
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            static_data_updated_at=datetime.now(timezone.utc)
-            if self.properties.reatime_data_updated is UnsetValue
-            else self.properties.reatime_data_updated,
             purpose=PurposeType.CAR,
-            opening_hours='24/7'
-            if 'Mo-So: 24 Stunden' in self.properties.opening_hours
-            or 'Mo-So: Kostenlos' in self.properties.opening_hours
-            else UnsetValue,
             photo_url=self.properties.photo_url,
             public_url=self.properties.public_url,
             park_and_ride_type=[self.properties.park_and_ride_type.to_park_and_ride_type()],
@@ -164,7 +163,7 @@ class VrnParkAndRideFeaturesInput:
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
-            uid=str(self.properties.vrn_sensor_id),
+            uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
             realtime_capacity=self.properties.realtime_free_capacity + self.properties.realtime_occupied,
             realtime_free_capacity=self.properties.realtime_free_capacity,
             realtime_opening_status=self.properties.realtime_opening_status.to_realtime_opening_status(),
