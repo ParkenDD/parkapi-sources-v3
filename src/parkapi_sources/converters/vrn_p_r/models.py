@@ -40,11 +40,11 @@ class VrnParkAndRidePRType(Enum):
     JA = 'ja'
     NEIN = 'nein'
 
-    def to_park_and_ride_type(self) -> ParkingSiteType:
+    def to_park_and_ride_type(self) -> ParkAndRideType:
         return {
             self.JA: ParkAndRideType.YES,
             self.NEIN: ParkAndRideType.NO,
-        }.get(self)
+        }.get(self, ParkAndRideType.NO)
 
 
 @validataclass
@@ -113,7 +113,7 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
     fee_description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
     realtime_free_capacity: int = IntegerValidator(min_value=0)
     realtime_occupied: int = IntegerValidator(min_value=0)
-    reatime_data_updated: OptionalUnset[datetime] = (
+    realtime_data_updated: OptionalUnset[datetime] = (
         NoneToUnsetValue(TimestampDateTimeValidator(allow_strings=True, divisor=1000)),
         DefaultUnset,
     )
@@ -125,15 +125,20 @@ class VrnParkAndRideFeaturesInput:
     properties: VrnParkAndRidePropertiesInput = DataclassValidator(VrnParkAndRidePropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        if 'Mo-So: 24 Stunden' in self.properties.opening_hours or 'Mo-So: Kostenlos' in self.properties.opening_hours:
+            opening_hours = '24/7'
+        else:
+            opening_hours = UnsetValue
+
+        if self.properties.realtime_data_updated is UnsetValue:
+            static_data_updated_at = datetime.now(timezone.utc)
+        else:
+            static_data_updated_at = self.properties.realtime_data_updated
+
         return StaticParkingSiteInput(
             uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
-            static_data_updated_at=datetime.now(timezone.utc)
-            if self.properties.reatime_data_updated is UnsetValue
-            else self.properties.reatime_data_updated,
-            opening_hours='24/7'
-            if 'Mo-So: 24 Stunden' in self.properties.opening_hours
-            or 'Mo-So: Kostenlos' in self.properties.opening_hours
-            else UnsetValue,
+            static_data_updated_at=static_data_updated_at,
+            opening_hours=opening_hours,
             name=self.properties.name if self.properties.name != '' else 'P+R Parkplätze',
             type=self.properties.type.to_parking_site_type(),
             capacity=self.properties.capacity,
@@ -162,12 +167,15 @@ class VrnParkAndRideFeaturesInput:
         )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
+        if self.properties.realtime_data_updated is UnsetValue:
+            realtime_data_updated_at = datetime.now(timezone.utc)
+        else:
+            realtime_data_updated_at = self.properties.realtime_data_updated
+
         return RealtimeParkingSiteInput(
             uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
             realtime_capacity=self.properties.realtime_free_capacity + self.properties.realtime_occupied,
             realtime_free_capacity=self.properties.realtime_free_capacity,
             realtime_opening_status=self.properties.realtime_opening_status.to_realtime_opening_status(),
-            realtime_data_updated_at=datetime.now(timezone.utc)
-            if self.properties.reatime_data_updated is UnsetValue
-            else self.properties.reatime_data_updated,
+            realtime_data_updated_at=realtime_data_updated_at,
         )
