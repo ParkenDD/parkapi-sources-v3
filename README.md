@@ -46,6 +46,7 @@ We support following data sources:
 | Stadt Stuttgart                                                | car        | push (json) | `stuttgart`              | yes      |
 | Stadt Ulm                                                      | car        | pull        | `ulm`                    | yes      |
 | Velobrix                                                       | bike       | pull        | `velobrix`               | yes      |
+| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | car        | pull        | `vrn_p_r`                | yes      |
 | Verband Region Stuttgart: Bondorf                              | car        | pull        | `vrs_bondorf`            | yes      |
 | Verband Region Stuttgart: Kirchheim                            | car        | pull        | `vrs_kirchheim`          | yes      |
 | Verband Region Stuttgart: Neustadt                             | car        | pull        | `vrs_neustadt`           | yes      |

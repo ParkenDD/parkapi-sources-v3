@@ -172,7 +172,13 @@ class BahnParkingSiteInput:
         # If no capacity with type PARKING was found, we miss the capacity and therefore throw a validation error
         raise ValidationError(reason='Missing parking capacity')
 
-    def get_capacity_by_type(self, capacity_type: BahnParkingSiteCapacityType) -> BahnCapacityInput:
+    def get_capacity_by_type(self, capacity_type: BahnParkingSiteCapacityType) -> BahnCapacityInput | None:
         for capacity in self.capacity:
             if capacity.type == capacity_type:
                 return capacity
+
+    def get_name(self) -> str:
+        for name_input in self.name:
+            if name_input.context == NameContext.NAME:
+                return name_input.name
+        return ''
