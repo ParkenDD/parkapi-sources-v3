@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.16.0
+
+Released 2025-01-21
+
+### Features
+
+* [Add VRN Park and Ride Realtime Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/180)
+* [Add bahnv2 bike parking locked and open](https://github.com/ParkenDD/parkapi-sources-v3/pull/172)
+
+### Fixes
+
+* [opendata_swiss: change to new source_url](https://github.com/ParkenDD/parkapi-sources-v3/pull/179)
+
+
 ## 0.15.1
 
 Released 2024-11-27
