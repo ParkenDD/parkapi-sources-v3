@@ -12,7 +12,7 @@ from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .mapper import BahnMapper
-from .validators import BahnParkingSiteInput
+from .validators import BahnParkingSiteCapacityType, BahnParkingSiteInput
 
 
 class BahnV2PullConverter(PullConverter):
@@ -48,9 +48,27 @@ class BahnV2PullConverter(PullConverter):
                 )
                 continue
 
-            static_parking_site_inputs.append(
-                self.mapper.map_static_parking_site(parking_site_input),
-            )
+            static_parking_site_car = self.mapper.map_static_parking_site_car(parking_site_input)
+            if static_parking_site_car is None:
+                continue
+
+            static_parking_site_inputs.append(static_parking_site_car)
+
+            for item in parking_site_input.capacity:
+                if item.type == BahnParkingSiteCapacityType.BIKE_PARKING_LOCKED:
+                    static_parking_site_bike_locked = self.mapper.map_static_parking_site_bike_locked(
+                        parking_site_input
+                    )
+                    if static_parking_site_bike_locked is None:
+                        continue
+                    static_parking_site_inputs.append(static_parking_site_bike_locked)
+
+                if item.type == BahnParkingSiteCapacityType.BIKE_PARKING_OPEN:
+                    static_parking_site_bike_open = self.mapper.map_static_parking_site_bike_open(parking_site_input)
+                    if static_parking_site_bike_open is None:
+                        continue
+                    static_parking_site_inputs.append(static_parking_site_bike_open)
+
         return static_parking_site_inputs, static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:

@@ -6,52 +6,52 @@ Publication Light at any extension of the model.
 
 We support following data sources:
 
-| name                                                           | purpose | type        | uid                      | realtime |
-|----------------------------------------------------------------|---------|-------------|--------------------------|----------|
-| APCOA Services                                                 | car     | pull        | `apcoa`                  | no       |
-| Deutsche Bahn                                                  | car     | pull        | `bahn_v2`                | no       |
-| Stadt Bietigheim-Bissingen                                     | car     | pull        | `bietigheim_bissingen`   | yes      |
-| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | car     | pull        | `bfrk_bw_car`            | no       |
-| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | bike    | pull        | `bfrk_bw_bike`           | no       |
-| Stadt Ellwangen                                                | car     | push (xlsx) | `ellwangen`              | no       |
-| Stadt Buchen                                                   | car     | push (json) | `buchen`                 | yes      |
-| Stadt Freiburg                                                 | car     | pull        | `freiburg`               | yes      |
-| GOLDBECK Parking Services                                      | car     | push (xlsx) | `goldbeck`               | no       |
-| Stadt Heidelberg                                               | car     | pull        | `heidelberg`             | yes      |
-| Stadt Herrenberg                                               | car     | pull        | `herrenberg`             | no       |
-| Stadt Herrenberg - Munigrid                                    | bike    | pull        | `herrenberg_bike`        | no       |
-| PARK SERVICE HÜFNER GmbH + Co. KG                              | car     | push (xlsx) | `huefner`                | no       |
-| Stadt Karlsruhe: PKW-Parkplätze                                | car     | pull        | `karlsruhe`              | yes      |
-| Stadt Karlsruhe: Fahhrrad-Abstellangen                         | bike    | pull        | `karlsruhe_bike`         | no       |
-| Kienzler: Bike and Ride                                        | bike    | pull        | `kienzler_bike_and_ride` | yes      |
-| Kienzler: Karlsruhe                                            | bike    | pull        | `kienzler_karlruhe`      | yes      |
-| Kienzler: Neckarsulm                                           | bike    | pull        | `kienzler_neckarsulm`    | yes      |
-| Kienzler: Offenburg                                            | bike    | pull        | `kienzler_offenburg`     | yes      |
-| Kienzler: RadSafe                                              | bike    | pull        | `kienzler_rad_safe`      | yes      |
-| Kienzler: Stuttgart                                            | bike    | pull        | `kienzler_stuttgart`     | yes      |
-| Kienzler: VRN                                                  | bike    | pull        | `kienzler_vrn`           | yes      |
-| Konstanz                                                       | car     | pull        | `konstanz`               | yes      |
-| Stadt Konstanz: Fahrrad-Abstellanlagen                         | bike    | push        | `konstanz_bike`          | no       |
-| Stadt Mannheim                                                 | car     | push (json) | `mannheim`               | yes      |
-| Stadt Neckarsulm: PKW-Parkplätze                               | car     | pull        | `neckarsulm`             | no       |
-| Stadt Neckarsulm: Fahrrad-Abstellanlagen                       | bike    | pull        | `neckarsulm_bike`        | no       |
-| Open-Data-Plattform öV Schweiz                                 | car     | pull (json) | `opendata_swiss`         | no       |
-| P + M Baden-Württemberg                                        | car     | pull        | `p_m_bw`                 | yes      |
-| Baden-Württemberg: Parken und Mitfahren                        | car     | push (xlsx) | `pum_bw`                 | no       |
-| RadVIS Baden-Württemberg (experimental)                        | bike    | pull        | `radvis_bw`              | no       |
-| Parkraumgesellschaft Baden-Württemberg                         | car     | pull        | `pbw`                    | yes      |
-| Stadt Pforzheim                                                | car     | push (csv)  | `pforzheim`              | no       |
-| Stadt Reutlingen: PKW-Parkplätze                               | car     | push (csv)  | `reutlingen`             | no       |
-| Stadt Reutlingen: Fahrrad-Abstellanlagen                       | bike    | push (csv)  | `reutlingen_bike`        | no       |
-| Stadt Stuttgart                                                | car     | push (json) | `stuttgart`              | yes      |
-| Stadt Ulm                                                      | car     | pull        | `ulm`                    | yes      |
-| Velobrix                                                       | bike    | pull        | `velobrix`               | yes      |
-| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | car     | pull        | `vrn_p_r`                | yes      |
-| Verband Region Stuttgart: Bondorf                              | car     | pull        | `vrs_bondorf`            | yes      |
-| Verband Region Stuttgart: Kirchheim                            | car     | pull        | `vrs_kirchheim`          | yes      |
-| Verband Region Stuttgart: Neustadt                             | car     | pull        | `vrs_neustadt`           | yes      |
-| Verband Region Stuttgart: Park and Ride                        | car     | push (xlsx) | `vrs_p_r`                | no       |
-| Verband Region Stuttgart: Vaihingen                            | car     | pull        | `vrs_vaihingen`          | yes      |
+| name                                                           | purpose    | type        | uid                      | realtime |
+|----------------------------------------------------------------|------------|-------------|--------------------------|----------|
+| APCOA Services                                                 | car        | pull        | `apcoa`                  | no       |
+| Deutsche Bahn                                                  | car & bike | pull        | `bahn_v2`                | no       |
+| Stadt Bietigheim-Bissingen                                     | car        | pull        | `bietigheim_bissingen`   | yes      |
+| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | car        | pull        | `bfrk_bw_car`            | no       |
+| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | bike       | pull        | `bfrk_bw_bike`           | no       |
+| Stadt Ellwangen                                                | car        | push (xlsx) | `ellwangen`              | no       |
+| Stadt Buchen                                                   | car        | push (json) | `buchen`                 | yes      |
+| Stadt Freiburg                                                 | car        | pull        | `freiburg`               | yes      |
+| GOLDBECK Parking Services                                      | car        | push (xlsx) | `goldbeck`               | no       |
+| Stadt Heidelberg                                               | car        | pull        | `heidelberg`             | yes      |
+| Stadt Herrenberg                                               | car        | pull        | `herrenberg`             | no       |
+| Stadt Herrenberg - Munigrid                                    | bike       | pull        | `herrenberg_bike`        | no       |
+| PARK SERVICE HÜFNER GmbH + Co. KG                              | car        | push (xlsx) | `huefner`                | no       |
+| Stadt Karlsruhe: PKW-Parkplätze                                | car        | pull        | `karlsruhe`              | yes      |
+| Stadt Karlsruhe: Fahhrrad-Abstellangen                         | bike       | pull        | `karlsruhe_bike`         | no       |
+| Kienzler: Bike and Ride                                        | bike       | pull        | `kienzler_bike_and_ride` | yes      |
+| Kienzler: Karlsruhe                                            | bike       | pull        | `kienzler_karlruhe`      | yes      |
+| Kienzler: Neckarsulm                                           | bike       | pull        | `kienzler_neckarsulm`    | yes      |
+| Kienzler: Offenburg                                            | bike       | pull        | `kienzler_offenburg`     | yes      |
+| Kienzler: RadSafe                                              | bike       | pull        | `kienzler_rad_safe`      | yes      |
+| Kienzler: Stuttgart                                            | bike       | pull        | `kienzler_stuttgart`     | yes      |
+| Kienzler: VRN                                                  | bike       | pull        | `kienzler_vrn`           | yes      |
+| Konstanz                                                       | car        | pull        | `konstanz`               | yes      |
+| Stadt Konstanz: Fahrrad-Abstellanlagen                         | bike       | push        | `konstanz_bike`          | no       |
+| Stadt Mannheim                                                 | car        | push (json) | `mannheim`               | yes      |
+| Stadt Neckarsulm: PKW-Parkplätze                               | car        | pull        | `neckarsulm`             | no       |
+| Stadt Neckarsulm: Fahrrad-Abstellanlagen                       | bike       | pull        | `neckarsulm_bike`        | no       |
+| Open-Data-Plattform öV Schweiz                                 | car        | pull (json) | `opendata_swiss`         | no       |
+| P + M Baden-Württemberg                                        | car        | pull        | `p_m_bw`                 | yes      |
+| Baden-Württemberg: Parken und Mitfahren                        | car        | push (xlsx) | `pum_bw`                 | no       |
+| RadVIS Baden-Württemberg (experimental)                        | bike       | pull        | `radvis_bw`              | no       |
+| Parkraumgesellschaft Baden-Württemberg                         | car        | pull        | `pbw`                    | yes      |
+| Stadt Pforzheim                                                | car        | push (csv)  | `pforzheim`              | no       |
+| Stadt Reutlingen: PKW-Parkplätze                               | car        | push (csv)  | `reutlingen`             | no       |
+| Stadt Reutlingen: Fahrrad-Abstellanlagen                       | bike       | push (csv)  | `reutlingen_bike`        | no       |
+| Stadt Stuttgart                                                | car        | push (json) | `stuttgart`              | yes      |
+| Stadt Ulm                                                      | car        | pull        | `ulm`                    | yes      |
+| Velobrix                                                       | bike       | pull        | `velobrix`               | yes      |
+| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | car        | pull        | `vrn_p_r`                | yes      |
+| Verband Region Stuttgart: Bondorf                              | car        | pull        | `vrs_bondorf`            | yes      |
+| Verband Region Stuttgart: Kirchheim                            | car        | pull        | `vrs_kirchheim`          | yes      |
+| Verband Region Stuttgart: Neustadt                             | car        | pull        | `vrs_neustadt`           | yes      |
+| Verband Region Stuttgart: Park and Ride                        | car        | push (xlsx) | `vrs_p_r`                | no       |
+| Verband Region Stuttgart: Vaihingen                            | car        | pull        | `vrs_vaihingen`          | yes      |
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 
