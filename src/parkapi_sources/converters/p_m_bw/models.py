@@ -18,7 +18,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkAndRideType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType
 from parkapi_sources.validators import SpacedDateTimeValidator
 
 
@@ -75,6 +75,7 @@ class PMBWInput:
             has_realtime_data=True,
             lat=self.location.lat,
             lon=self.location.lng,
+            type=ParkingSiteType.ON_STREET,
             park_and_ride_type=[ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None,
         )
 

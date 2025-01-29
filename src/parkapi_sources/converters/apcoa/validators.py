@@ -158,7 +158,7 @@ class ApcoaParkingSiteInput:
     CarparkShortName: Optional[str] = Noneable(StringValidator())
     CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
     CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
-    CarparkType: Optional[ApcoaCarparkTypeNameInput] = Noneable(DataclassValidator(ApcoaCarparkTypeNameInput))
+    CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
     NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(
         DataclassValidator(ApcoaNavigationLocationsInput),

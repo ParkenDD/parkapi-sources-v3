@@ -60,6 +60,8 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
         'Parkhaus': 'CAR_PARK',
         'Tiefgarage': 'UNDERGROUND',
         'Am Straßenrand': 'ON_STREET',
+        'Parkdeck': 'CAR_PARK',
+        'P+R-Parkplätze entlang der Straße': 'ON_STREET',
     }
 
     def handle_xlsx(self, workbook: Workbook) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
