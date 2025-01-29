@@ -46,7 +46,7 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
     public_url: OptionalUnsetNone[str] = Noneable(UrlValidator(max_length=4096)), DefaultUnset
     address: OptionalUnsetNone[str] = Noneable(StringValidator(max_length=512)), DefaultUnset
     description: OptionalUnsetNone[str] = Noneable(StringValidator(max_length=4096)), DefaultUnset
-    type: OptionalUnsetNone[ParkingSiteType] = Noneable(EnumValidator(ParkingSiteType)), DefaultUnset
+    type: ParkingSiteType = EnumValidator(ParkingSiteType)
 
     max_stay: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
     max_height: OptionalUnsetNone[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), DefaultUnset
