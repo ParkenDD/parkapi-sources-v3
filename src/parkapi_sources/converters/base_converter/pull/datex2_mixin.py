@@ -56,6 +56,11 @@ class Datex2Mixin(ABC):
             'static_data_updated_at': datex2_parking_facility.get('parkingFacilityRecordVersionTime'),
         }
 
+        # Parking Site Type
+        parking_facility_layout = datex2_parking_facility.get('parkingFacilityLayout')
+        if parking_facility_layout == 'singleLevel':
+            input_data['type'] = 'CAR_PARK'
+
         # Coordinates
         coordinates_base = datex2_parking_facility.get('facilityLocation', {}).get('locationForDisplay', {})
         if self.proj is None:

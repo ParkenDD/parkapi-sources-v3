@@ -51,6 +51,7 @@ class NeckarsulmBikePushConverter(CsvConverter):
         for row in data[1:]:
             input_dict: dict[str, str] = {
                 'purpose': 'BIKE',
+                'type': 'OTHER',
                 'has_realtime_data': False,
                 'static_data_updated_at': datetime.now(tz=timezone.utc).isoformat(),
             }
