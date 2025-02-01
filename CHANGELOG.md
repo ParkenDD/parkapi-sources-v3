@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.16.1
+
+Released 2025-02-01
+
+### Fixes
+
+* [Add required attributes at several converters](https://github.com/ParkenDD/parkapi-sources-v3/pull/183)
+
+
+### Maintenance
+
+* Dependency updates
+
+
 ## 0.16.0
 
 Released 2025-01-21
