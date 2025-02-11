@@ -60,6 +60,7 @@ class HerrenbergPullConverter(PullConverter):
         parking_site_errors: list[ImportParkingSiteException] = []
 
         response = requests.get(self.source_info.source_url, timeout=60)
+        self.handle_debug_request_response(response)
         parking_sites_input: HerrenbergParkingSitesInput = self.parking_sites_input_validator.validate(response.json())
 
         for parking_site_dict in parking_sites_input.lots:

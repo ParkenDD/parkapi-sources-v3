@@ -51,6 +51,7 @@ class KonstanzPullConverter(PullConverter):
             url=self.source_info.source_url,
             timeout=30,
         )
+        self.handle_debug_request_response(response)
 
         parking_sites_input: KonstanzParkingSitesInput = self.konstanz_parking_sites_validator.validate(response.json())
 

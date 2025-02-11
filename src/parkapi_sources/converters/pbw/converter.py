@@ -107,6 +107,7 @@ class PbwPullConverter(PullConverter):
             parameters['id'] = data_id
 
         response = requests.get(self._base_url, params=parameters, timeout=60)
+        self.handle_debug_request_response(response)
         result_dict: dict = response.json()
 
         items: list[dict] = []

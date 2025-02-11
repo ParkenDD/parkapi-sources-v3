@@ -37,6 +37,7 @@ class VrnParkAndRidePullConverter(PullConverter, ABC):
             url='https://spatial.vrn.de/data/rest/services/P_R_Sensorik__Realtime_/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson',
             timeout=30,
         )
+        self.handle_debug_request_response(response)
         response_data = response.json()
 
         try:

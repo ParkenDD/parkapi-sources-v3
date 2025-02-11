@@ -105,6 +105,7 @@ class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
                 },
                 timeout=30,
             )
+            self.handle_debug_request_response(response)
             result_dicts += response.json()
 
         return result_dicts

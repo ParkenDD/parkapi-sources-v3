@@ -74,5 +74,6 @@ class RadvisBwPullConverter(PullConverter):
             auth=(self.config_helper.get('PARK_API_RADVIS_USER'), self.config_helper.get('PARK_API_RADVIS_PASSWORD')),
             timeout=30,
         )
+        self.handle_debug_request_response(response)
 
         return response.json()

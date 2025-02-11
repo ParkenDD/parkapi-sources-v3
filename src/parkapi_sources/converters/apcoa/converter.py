@@ -84,4 +84,5 @@ class ApcoaPullConverter(PullConverter):
             headers=headers,
             timeout=60,
         )
+        self.handle_debug_request_response(response)
         return self.apcoa_parking_sites_validator.validate(response.json())

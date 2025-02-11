@@ -8,6 +8,7 @@ __pycache__/
 /dist
 /build
 /htmlcov
+/temp
 /reports
 /src/parkapi_sources.egg-info
 
@@ -15,5 +16,3 @@ __pycache__/
 .mypy_cache/
 .coverage
 .tox
-
-/temp

@@ -33,6 +33,7 @@ class OpenDataSwissPullConverter(PullConverter):
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         response = requests.get(self.source_info.source_url, timeout=30)
+        self.handle_debug_request_response(response)
         response_data = response.json()
 
         try:

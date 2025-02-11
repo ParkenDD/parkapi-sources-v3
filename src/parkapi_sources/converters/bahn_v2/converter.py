@@ -87,4 +87,5 @@ class BahnV2PullConverter(PullConverter):
             headers=headers,
             timeout=60,
         )
+        self.handle_debug_request_response(response)
         return response.json()

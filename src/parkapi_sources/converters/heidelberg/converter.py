@@ -61,6 +61,7 @@ class HeidelbergPullConverter(PullConverter):
             headers={'X-Gravitee-Api-Key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY')},
             timeout=30,
         )
+        self.handle_debug_request_response(response)
         response_data = response.json()
         try:
             input_dicts = self.list_validator.validate(response_data)
