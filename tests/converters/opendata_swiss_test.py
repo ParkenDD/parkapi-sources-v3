@@ -39,8 +39,8 @@ def requests_mock_opendata_swiss(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def opendata_swiss_pull_converter(mocked_config_helper: Mock) -> OpenDataSwissPullConverter:
-    return OpenDataSwissPullConverter(config_helper=mocked_config_helper)
+def opendata_swiss_pull_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> OpenDataSwissPullConverter:
+    return OpenDataSwissPullConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class OpenDataSwissPullConverterTest:

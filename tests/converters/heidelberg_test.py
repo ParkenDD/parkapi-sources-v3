@@ -24,8 +24,8 @@ def heidelberg_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def heidelberg_pull_converter(heidelberg_config_helper: Mock) -> HeidelbergPullConverter:
-    return HeidelbergPullConverter(config_helper=heidelberg_config_helper)
+def heidelberg_pull_converter(heidelberg_config_helper: Mock, mocked_debug_helper: Mock) -> HeidelbergPullConverter:
+    return HeidelbergPullConverter(config_helper=heidelberg_config_helper, debug_helper=mocked_debug_helper)
 
 
 @pytest.fixture

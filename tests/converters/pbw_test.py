@@ -31,8 +31,8 @@ def pbw_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def pbw_pull_converter(pbw_config_helper: Mock) -> PbwPullConverter:
-    return PbwPullConverter(config_helper=pbw_config_helper)
+def pbw_pull_converter(pbw_config_helper: Mock, mocked_debug_helper: Mock) -> PbwPullConverter:
+    return PbwPullConverter(config_helper=pbw_config_helper, debug_helper=mocked_debug_helper)
 
 
 class PbwPullConverterTest:

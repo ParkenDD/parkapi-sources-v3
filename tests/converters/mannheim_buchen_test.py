@@ -18,8 +18,8 @@ from tests.converters.helper import (
 
 
 @pytest.fixture
-def mannheim_push_converter(mocked_config_helper: Mock) -> MannheimPushConverter:
-    return MannheimPushConverter(config_helper=mocked_config_helper)
+def mannheim_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> MannheimPushConverter:
+    return MannheimPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class MannheimPullConverterTest:

@@ -13,8 +13,8 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 
 @pytest.fixture
-def neckarsulm_push_converter(mocked_config_helper: Mock) -> NeckarsulmPushConverter:
-    return NeckarsulmPushConverter(config_helper=mocked_config_helper)
+def neckarsulm_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> NeckarsulmPushConverter:
+    return NeckarsulmPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class NeckarsulmPushConverterTest:

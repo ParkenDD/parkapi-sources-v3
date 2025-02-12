@@ -14,8 +14,14 @@ from tests.converters.helper import validate_realtime_parking_site_inputs, valid
 
 
 @pytest.fixture
-def vrn_p_r_pull_converter(mocked_static_geojson_config_helper: Mock) -> VrnParkAndRidePullConverter:
-    return VrnParkAndRidePullConverter(config_helper=mocked_static_geojson_config_helper)
+def vrn_p_r_pull_converter(
+    mocked_static_geojson_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> VrnParkAndRidePullConverter:
+    return VrnParkAndRidePullConverter(
+        config_helper=mocked_static_geojson_config_helper,
+        debug_helper=mocked_debug_helper,
+    )
 
 
 class VrnParkAndRidePullConverterTest:

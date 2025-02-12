@@ -13,8 +13,8 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 
 @pytest.fixture
-def ellwangen_push_converter(mocked_config_helper: Mock) -> EllwangenPushConverter:
-    return EllwangenPushConverter(config_helper=mocked_config_helper)
+def ellwangen_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> EllwangenPushConverter:
+    return EllwangenPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class EllwangenPushConverterTest:

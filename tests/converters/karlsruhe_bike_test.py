@@ -32,8 +32,11 @@ def karlsruhe_bike_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def karlsruhe_bike_pull_converter(karlsruhe_bike_config_helper: Mock) -> KarlsruheBikePullConverter:
-    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_config_helper)
+def karlsruhe_bike_pull_converter(
+    karlsruhe_bike_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> KarlsruheBikePullConverter:
+    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_config_helper, debug_helper=mocked_debug_helper)
 
 
 @pytest.fixture
@@ -48,8 +51,12 @@ def karlsruhe_bike_ignore_missing_capacity_config_helper(mocked_config_helper: M
 @pytest.fixture
 def karlsruhe_bike_ignore_missing_capacity_pull_converter(
     karlsruhe_bike_ignore_missing_capacity_config_helper: Mock,
+    mocked_debug_helper: Mock,
 ) -> KarlsruheBikePullConverter:
-    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_ignore_missing_capacity_config_helper)
+    return KarlsruheBikePullConverter(
+        config_helper=karlsruhe_bike_ignore_missing_capacity_config_helper,
+        debug_helper=mocked_debug_helper,
+    )
 
 
 class KarlsruheBikePullConverterTest:

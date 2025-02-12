@@ -25,8 +25,8 @@ def requests_mock_karlsruhe(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def karlsruhe_pull_converter(mocked_config_helper: Mock) -> KarlsruhePullConverter:
-    return KarlsruhePullConverter(config_helper=mocked_config_helper)
+def karlsruhe_pull_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> KarlsruhePullConverter:
+    return KarlsruhePullConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class KarlsruhePullConverterTest:

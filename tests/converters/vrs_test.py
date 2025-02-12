@@ -26,8 +26,11 @@ def vrs_vaihingen_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def vrs_vaihingen_pull_converter(vrs_vaihingen_config_helper: Mock) -> VrsVaihingenPullConverter:
-    return VrsVaihingenPullConverter(config_helper=vrs_vaihingen_config_helper)
+def vrs_vaihingen_pull_converter(
+    vrs_vaihingen_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> VrsVaihingenPullConverter:
+    return VrsVaihingenPullConverter(config_helper=vrs_vaihingen_config_helper, debug_helper=mocked_debug_helper)
 
 
 class VrsVaihingenConverterTest:

@@ -26,8 +26,8 @@ def aachen_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def aachen_pull_converter(aachen_config_helper: Mock) -> AachenPullConverter:
-    return AachenPullConverter(config_helper=aachen_config_helper)
+def aachen_pull_converter(aachen_config_helper: Mock, mocked_debug_helper: Mock) -> AachenPullConverter:
+    return AachenPullConverter(config_helper=aachen_config_helper, debug_helper=mocked_debug_helper)
 
 
 class AachenConverterTest:
