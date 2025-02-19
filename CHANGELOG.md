@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.17.1
+
+Released 2025-02-19
+
+### Fixes
+
+* [Fix bahn converter by creating session for client cert requests](https://github.com/ParkenDD/parkapi-sources-v3/pull/189)
+
+
+
 ## 0.17.0
 
 Released 2025-02-19

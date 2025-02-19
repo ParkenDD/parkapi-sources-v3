@@ -8,7 +8,7 @@ We support following data sources:
 
 | name                                                           | purpose    | type        | uid                      | realtime |
 |----------------------------------------------------------------|------------|-------------|--------------------------|----------|
-| Aachen                                                         | car        | pull        | `aachen`                 | no       |
+| Aachen                                                         | car        | pull        | `aachen`                 | yes      |
 | APCOA Services                                                 | car        | pull        | `apcoa`                  | no       |
 | Deutsche Bahn                                                  | car & bike | pull        | `bahn_v2`                | no       |
 | Stadt Bietigheim-Bissingen                                     | car        | pull        | `bietigheim_bissingen`   | yes      |
