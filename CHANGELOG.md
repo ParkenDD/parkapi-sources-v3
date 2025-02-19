@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.17.0
+
+Released 2025-02-19
+
+## Features
+
+* [Add Aachen](https://github.com/ParkenDD/parkapi-sources-v3/pull/186)
+* [Debug Mode for dumping full communication per source](https://github.com/ParkenDD/parkapi-sources-v3/pull/187)
+
+
+## Maintenance
+
+* [Datex2 Refactoring for good parent classes for any Datex2 source](https://github.com/ParkenDD/parkapi-sources-v3/pull/186)
+
+
 ## 0.16.1
 
 Released 2025-02-01

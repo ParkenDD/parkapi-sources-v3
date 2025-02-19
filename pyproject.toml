@@ -35,17 +35,17 @@ classifiers = [
 
 dependencies = [
     "validataclass~=0.11.0",
-    "pyproj~=3.7.0",
-    "lxml~=5.3.0",
+    "pyproj~=3.7.1",
+    "lxml~=5.3.1",
     "openpyxl~=3.1.5",
     "requests~=2.32.3",
-    "beautifulsoup4~=4.12.3",
+    "beautifulsoup4~=4.13.3",
     "urllib3~=2.2.3",
 ]
 
 [project.optional-dependencies]
 testing = [
-    "ruff~=0.9.4",
+    "ruff~=0.9.6",
     "pytest~=8.3.4",
     "pytest-cov~=6.0.0",
     "requests-mock~=1.12.1",
