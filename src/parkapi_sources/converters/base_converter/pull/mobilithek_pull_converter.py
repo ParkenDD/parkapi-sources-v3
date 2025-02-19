@@ -65,14 +65,16 @@ class MobilithekPullConverter(PullConverter, ABC):
             f'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/{subscription_id}'
             f'/clientPullService?subscriptionID={subscription_id}'
         )
-        response = requests.get(
-            url,
-            timeout=30,
-            cert=(
-                self.config_helper.get('PARK_API_MOBILITHEK_CERT'),
-                self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
-            ),
-        )
+        # Create an isolated session, because cert is set globally otherwise
+        with requests.Session() as session:
+            response = session.get(
+                url,
+                timeout=30,
+                cert=(
+                    self.config_helper.get('PARK_API_MOBILITHEK_CERT'),
+                    self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
+                ),
+            )
         self.handle_debug_request_response(response)
 
         root = etree.fromstring(response.text, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
