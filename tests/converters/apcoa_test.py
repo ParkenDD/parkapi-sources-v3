@@ -43,15 +43,18 @@ def apcoa_ignore_missing_coordinates_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def apcoa_pull_converter(apcoa_config_helper: Mock) -> ApcoaPullConverter:
-    return ApcoaPullConverter(config_helper=apcoa_config_helper)
+def apcoa_pull_converter(apcoa_config_helper: Mock, mocked_debug_helper: Mock) -> ApcoaPullConverter:
+    return ApcoaPullConverter(config_helper=apcoa_config_helper, debug_helper=mocked_debug_helper)
 
 
 @pytest.fixture
 def apcoa_ignore_missing_coordinates_pull_converter(
-    apcoa_ignore_missing_coordinates_config_helper: Mock,
+    apcoa_ignore_missing_coordinates_config_helper: Mock, mocked_debug_helper: Mock
 ) -> ApcoaPullConverter:
-    return ApcoaPullConverter(config_helper=apcoa_ignore_missing_coordinates_config_helper)
+    return ApcoaPullConverter(
+        config_helper=apcoa_ignore_missing_coordinates_config_helper,
+        debug_helper=mocked_debug_helper,
+    )
 
 
 class ApcoaPullConverterTest:

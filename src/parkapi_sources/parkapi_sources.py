@@ -57,7 +57,7 @@ from .converters import (
 from .converters.base_converter.pull import PullConverter
 from .converters.base_converter.push import PushConverter
 from .exceptions import MissingConfigException, MissingConverterException
-from .util import ConfigHelper
+from .util import ConfigHelper, DebugHelper
 
 
 class ParkAPISources:
@@ -120,6 +120,7 @@ class ParkAPISources:
         no_push_converter: bool = False,
     ):
         self.config_helper = ConfigHelper(config=config)
+        self.debug_helper = DebugHelper(config_helper=self.config_helper)
         self.converter_by_uid = {}
 
         converter_classes_by_uid: dict[str, Type[BaseConverter]] = {
@@ -141,6 +142,7 @@ class ParkAPISources:
 
             self.converter_by_uid[converter_uid] = converter_classes_by_uid[converter_uid](
                 config_helper=self.config_helper,
+                debug_helper=self.debug_helper,
             )
 
     def check_credentials(self):

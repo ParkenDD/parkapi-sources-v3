@@ -55,13 +55,19 @@ def kienzler_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def kienzler_pull_converter(kienzler_config_helper: Mock) -> KienzlerBikeAndRidePullConverter:
-    return KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper)
+def kienzler_pull_converter(
+    kienzler_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> KienzlerBikeAndRidePullConverter:
+    return KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, debug_helper=mocked_debug_helper)
 
 
 @pytest.fixture
-def kienzler_pull_converter_with_geojson(kienzler_config_helper: Mock) -> KienzlerBikeAndRidePullConverter:
-    converter = KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper)
+def kienzler_pull_converter_with_geojson(
+    kienzler_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> KienzlerBikeAndRidePullConverter:
+    converter = KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, debug_helper=mocked_debug_helper)
     converter.use_geojson = True
     converter.geojson_feature_validator = DataclassValidator(KienzlerGeojsonFeatureInput)
     return converter

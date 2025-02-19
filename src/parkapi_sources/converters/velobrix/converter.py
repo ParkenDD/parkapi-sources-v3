@@ -61,6 +61,7 @@ class VelobrixPullConverter(PullConverter):
             headers=headers,
             timeout=30,
         )
+        self.handle_debug_request_response(response)
 
         response_data = response.json()
 

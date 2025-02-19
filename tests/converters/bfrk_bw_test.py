@@ -21,8 +21,8 @@ def mocked_bfrk_bw_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def bfrk_car_push_converter(mocked_bfrk_bw_config_helper: Mock) -> BfrkBwCarPushConverter:
-    return BfrkBwCarPushConverter(config_helper=mocked_bfrk_bw_config_helper)
+def bfrk_car_push_converter(mocked_bfrk_bw_config_helper: Mock, mocked_debug_helper: Mock) -> BfrkBwCarPushConverter:
+    return BfrkBwCarPushConverter(config_helper=mocked_bfrk_bw_config_helper, debug_helper=mocked_debug_helper)
 
 
 class BfrkCarPullConverterTest:
@@ -46,8 +46,8 @@ class BfrkCarPullConverterTest:
 
 
 @pytest.fixture
-def bfrk_bike_push_converter(mocked_bfrk_bw_config_helper: Mock) -> BfrkBwBikePushConverter:
-    return BfrkBwBikePushConverter(config_helper=mocked_bfrk_bw_config_helper)
+def bfrk_bike_push_converter(mocked_bfrk_bw_config_helper: Mock, mocked_debug_helper: Mock) -> BfrkBwBikePushConverter:
+    return BfrkBwBikePushConverter(config_helper=mocked_bfrk_bw_config_helper, debug_helper=mocked_debug_helper)
 
 
 class BfrkBikePullConverterTest:

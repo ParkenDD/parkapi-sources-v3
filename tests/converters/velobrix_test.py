@@ -24,8 +24,8 @@ def velobrix_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def velobrix_pull_converter(velobrix_config_helper: Mock) -> VelobrixPullConverter:
-    return VelobrixPullConverter(config_helper=velobrix_config_helper)
+def velobrix_pull_converter(velobrix_config_helper: Mock, mocked_debug_helper: Mock) -> VelobrixPullConverter:
+    return VelobrixPullConverter(config_helper=velobrix_config_helper, debug_helper=mocked_debug_helper)
 
 
 @pytest.fixture

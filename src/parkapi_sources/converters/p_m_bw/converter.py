@@ -76,6 +76,7 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
             headers={'Authorization': f'Bearer {self.config_helper.get("PARK_API_P_M_BW_TOKEN")}'},
             timeout=60,
         )
+        self.handle_debug_request_response(response)
 
         for input_dict in self.list_validator.validate(response.json()):
             try:

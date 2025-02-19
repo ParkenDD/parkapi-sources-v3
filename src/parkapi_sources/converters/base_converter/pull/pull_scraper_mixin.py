@@ -33,6 +33,7 @@ class PullScraperMixin(ABC):
             url = self.source_info.public_url
 
         response = requests.get(url, timeout=30)
+        self.handle_debug_request_response(response)
 
         return BeautifulSoup(response.text, features='html.parser')
 

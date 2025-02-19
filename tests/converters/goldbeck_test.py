@@ -13,8 +13,8 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 
 @pytest.fixture
-def goldbeck_push_converter(mocked_config_helper: Mock) -> GoldbeckPushConverter:
-    return GoldbeckPushConverter(config_helper=mocked_config_helper)
+def goldbeck_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> GoldbeckPushConverter:
+    return GoldbeckPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class GoldbeckPushConverterTest:

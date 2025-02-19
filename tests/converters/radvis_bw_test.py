@@ -25,8 +25,8 @@ def radvis_bw_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def radvis_bw_pull_converter(radvis_bw_config_helper: Mock) -> RadvisBwPullConverter:
-    return RadvisBwPullConverter(config_helper=radvis_bw_config_helper)
+def radvis_bw_pull_converter(radvis_bw_config_helper: Mock, mocked_debug_helper: Mock) -> RadvisBwPullConverter:
+    return RadvisBwPullConverter(config_helper=radvis_bw_config_helper, debug_helper=mocked_debug_helper)
 
 
 class RadvisBwConverterTest:

@@ -36,8 +36,8 @@ def kienzler_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def kienzler_vvs_pull_converter(kienzler_config_helper: Mock) -> KienzlerVVSPullConverter:
-    return KienzlerVVSPullConverter(config_helper=kienzler_config_helper)
+def kienzler_vvs_pull_converter(kienzler_config_helper: Mock, mocked_debug_helper: Mock) -> KienzlerVVSPullConverter:
+    return KienzlerVVSPullConverter(config_helper=kienzler_config_helper, debug_helper=mocked_debug_helper)
 
 
 class KienzlerVVSPullConverterTest:

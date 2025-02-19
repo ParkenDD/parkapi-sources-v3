@@ -32,8 +32,11 @@ def herrenberg_bike_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def herrenberg_bike_pull_converter(herrenberg_bike_config_helper: Mock) -> HerrenbergBikePullConverter:
-    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_config_helper)
+def herrenberg_bike_pull_converter(
+    herrenberg_bike_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> HerrenbergBikePullConverter:
+    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_config_helper, debug_helper=mocked_debug_helper)
 
 
 @pytest.fixture
@@ -48,8 +51,12 @@ def herrenberg_bike_ignore_missing_capacity_config_helper(mocked_config_helper: 
 @pytest.fixture
 def herrenberg_bike_ignore_missing_capacity_pull_converter(
     herrenberg_bike_ignore_missing_capacity_config_helper: Mock,
+    mocked_debug_helper: Mock,
 ) -> HerrenbergBikePullConverter:
-    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_ignore_missing_capacity_config_helper)
+    return HerrenbergBikePullConverter(
+        config_helper=herrenberg_bike_ignore_missing_capacity_config_helper,
+        debug_helper=mocked_debug_helper,
+    )
 
 
 class HerrenbergBikePullConverterTest:

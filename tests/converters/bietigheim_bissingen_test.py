@@ -24,8 +24,14 @@ def bietigheim_bissingen_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def bietigheim_bissingen_pull_converter(bietigheim_bissingen_config_helper: Mock) -> BietigheimBissingenPullConverter:
-    return BietigheimBissingenPullConverter(config_helper=bietigheim_bissingen_config_helper)
+def bietigheim_bissingen_pull_converter(
+    bietigheim_bissingen_config_helper: Mock,
+    mocked_debug_helper: Mock,
+) -> BietigheimBissingenPullConverter:
+    return BietigheimBissingenPullConverter(
+        config_helper=bietigheim_bissingen_config_helper,
+        debug_helper=mocked_debug_helper,
+    )
 
 
 class BietigheimBissingenPullConverterTest:

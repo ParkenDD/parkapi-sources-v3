@@ -154,6 +154,27 @@ At `webapp/models/parking_site_inputs.py`, you can find the definition of `Stati
 `dataclasses` are also [`validataclasses`](https://pypi.org/project/validataclass/), so you can be sure that the data you get is validated.
 
 
+### Debugging
+
+In order to debug ParkAPI Sources, there are two config values which can be used to dump all the requests. Before doing
+this, please keep in mind that this might end into a lot of data on your disk, especially in case of realtime enabled
+sources. Please also keep in mind that dumps will contain credentials in case of sources with credentials, so please
+handle this data the same way as you handle passwords.
+
+Two config values are required for enabling debugging:
+
+- `DEBUG_SOURCES` should be a list of source uids which should be debugged
+- `DEBUG_DUMP_DIR` is the directory where the requests get dumped to
+
+Setting these two values will make ParkAPI Sources save all requests in
+`{DEBUG_DUMP_DIR}/{source_uid}/{datetime}-{type}`, with type:
+
+- `metadata`: Metadata like url, http method, http status, request and response headers and request body
+- `response-body`: The response body
+
+With this data, you can start a deeper analysis why things don't work as expected.
+
+
 ## Contribute
 
 We are happy about any contributions. We do not expect that yoy can develop Python, but of course things might speed up if

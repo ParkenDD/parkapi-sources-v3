@@ -33,6 +33,7 @@ class BfrkBasePushConverter(PullConverter, ABC):
 
         source_url = self.config_helper.get(self.source_url_config_key, self.source_info.source_url)
         response = requests.get(source_url, timeout=300)
+        self.handle_debug_request_response(response)
 
         input_dicts = response.json()
 

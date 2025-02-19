@@ -36,8 +36,8 @@ def requests_mock_konstanz(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def konstanz_pull_converter(mocked_config_helper: Mock) -> KonstanzPullConverter:
-    return KonstanzPullConverter(config_helper=mocked_config_helper)
+def konstanz_pull_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> KonstanzPullConverter:
+    return KonstanzPullConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
 
 
 class KonstanzPullConverterTest:

@@ -73,6 +73,7 @@ class MobilithekPullConverter(PullConverter, ABC):
                 self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
             ),
         )
+        self.handle_debug_request_response(response)
 
         root = etree.fromstring(response.text, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 
