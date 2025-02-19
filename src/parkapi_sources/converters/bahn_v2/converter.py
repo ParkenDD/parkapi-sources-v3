@@ -79,7 +79,6 @@ class BahnV2PullConverter(PullConverter):
             'DB-Client-Id': self.config_helper.get('PARK_API_BAHN_API_CLIENT_ID'),
             'DB-Api-Key': self.config_helper.get('PARK_API_BAHN_API_CLIENT_SECRET'),
             'Accept': 'application/vnd.parkinginformation.db-bahnpark.v1+json',
-            'accept': 'application/json',
         }
 
         response = requests.get(
