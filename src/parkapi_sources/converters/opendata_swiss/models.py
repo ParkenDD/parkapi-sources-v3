@@ -7,14 +7,16 @@ from datetime import datetime, time, timezone
 from enum import Enum
 from typing import Optional
 
-from validataclass.dataclasses import validataclass
+from validataclass.dataclasses import DefaultUnset, validataclass
 from validataclass.exceptions import ValidationError
+from validataclass.helpers import OptionalUnset
 from validataclass.validators import (
     DataclassValidator,
     EnumValidator,
     IntegerValidator,
     ListValidator,
     Noneable,
+    NoneToUnsetValue,
     StringValidator,
     TimeFormat,
     TimeValidator,
@@ -34,6 +36,7 @@ class OpenDataSwissAddressInput:
 
 class OpenDataSwissParkingFacilityType(Enum):
     PARK_AND_RAIL = 'PARK_AND_RAIL'
+    PARKING = 'PARKING'
 
 
 class OpenDataSwissCapacityCategoryType(Enum):
@@ -60,10 +63,10 @@ class OpendataSwissReplacingStringValidator(ReplacingStringValidator):
 
 @validataclass
 class OpenDataSwissAdditionalInformationInput:
-    de: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
-    en: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
-    it: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
-    fr: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    deText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    enText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    itText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    frText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
 
 
 class OpenDataSwissOperationTimeDaysOfWeek(Enum):
@@ -105,9 +108,18 @@ class OpenDataSwissParkingFacilityCategory(Enum):
 
 @validataclass
 class OpenDataSwissOperationTimeInput:
-    operatingFrom: Optional[time] = Noneable(TimeValidator(time_format=TimeFormat.WITH_SECONDS))
-    operatingTo: Optional[time] = Noneable(TimeValidator(time_format=TimeFormat.WITH_SECONDS))
-    daysOfWeek: Optional[list[str]] = Noneable(ListValidator(EnumValidator(OpenDataSwissOperationTimeDaysOfWeek)))
+    operatingFrom: OptionalUnset[time] = (
+        NoneToUnsetValue(TimeValidator(time_format=TimeFormat.WITH_SECONDS)),
+        DefaultUnset,
+    )
+    operatingTo: OptionalUnset[time] = (
+        NoneToUnsetValue(TimeValidator(time_format=TimeFormat.WITH_SECONDS)),
+        DefaultUnset,
+    )
+    daysOfWeek: OptionalUnset[list[str]] = (
+        NoneToUnsetValue(ListValidator(EnumValidator(OpenDataSwissOperationTimeDaysOfWeek))),
+        DefaultUnset,
+    )
 
     def __post_init__(self):
         # If any of opening_times From or To is null, raise validation error
@@ -121,18 +133,31 @@ class OpenDataSwissOperationTimeInput:
 class OpenDataSwissPropertiesInput:
     operator: str = StringValidator()
     displayName: str = StringValidator()
-    address: Optional[OpenDataSwissAddressInput] = Noneable(DataclassValidator(OpenDataSwissAddressInput))
+    address: OptionalUnset[OpenDataSwissAddressInput] = (
+        NoneToUnsetValue(DataclassValidator(OpenDataSwissAddressInput)),
+        DefaultUnset,
+    )
     capacities: list[OpenDataSwissCapacitiesInput] = ListValidator(DataclassValidator(OpenDataSwissCapacitiesInput))
-    additionalInformationForCustomers: Optional[OpenDataSwissAdditionalInformationInput] = Noneable(
-        DataclassValidator(OpenDataSwissAdditionalInformationInput)
+    additionalInformationForCustomers: OptionalUnset[OpenDataSwissAdditionalInformationInput] = (
+        NoneToUnsetValue(DataclassValidator(OpenDataSwissAdditionalInformationInput)),
+        DefaultUnset,
     )
     parkingFacilityCategory: OpenDataSwissParkingFacilityCategory = EnumValidator(OpenDataSwissParkingFacilityCategory)
-    parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = Noneable(
-        EnumValidator(OpenDataSwissParkingFacilityType),
+    parkingFacilityType: OptionalUnset[OpenDataSwissParkingFacilityType] = (
+        NoneToUnsetValue(
+            EnumValidator(OpenDataSwissParkingFacilityType),
+        ),
+        DefaultUnset,
     )
-    salesChannels: Optional[list[str]] = Noneable(ListValidator(ReplacingStringValidator(mapping={'\n': ' '})))
-    operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(
-        DataclassValidator(OpenDataSwissOperationTimeInput),
+    salesChannels: OptionalUnset[list[str]] = (
+        NoneToUnsetValue(ListValidator(ReplacingStringValidator(mapping={'\n': ' '}))),
+        DefaultUnset,
+    )
+    operationTime: OptionalUnset[OpenDataSwissOperationTimeInput] = (
+        NoneToUnsetValue(
+            DataclassValidator(OpenDataSwissOperationTimeInput),
+        ),
+        DefaultUnset,
     )
 
     def __post_init__(self):
@@ -202,7 +227,7 @@ class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
 
         if self.properties.additionalInformationForCustomers:
-            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de
+            static_parking_site_input.description = self.properties.additionalInformationForCustomers.deText
         else:
             static_parking_site_input.description = None
 

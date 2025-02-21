@@ -21,15 +21,26 @@ from parkapi_sources.validators import (
 
 class ExcelMappedBooleanValidator(MappedBooleanValidator):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, mapping={'ja': True, 'nein': False}, **kwargs)
+        super().__init__(
+            *args,
+            mapping={
+                'ja': True,
+                'nein': False,
+                'true': True,
+                'false': False,
+                'wahr': True,
+                'falsch': False,
+            },
+            **kwargs,
+        )
 
 
 @validataclass
 class ExcelStaticParkingSiteInput(StaticParkingSiteInput):
     operator_name: Optional[str] = ExcelNoneable(StringValidator(max_length=256))
     uid: str = NumberCastingStringValidator(min_length=1, max_length=256)
-    has_lighting: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator())
-    has_fee: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator())
+    has_lighting: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator()), Default(None)
+    has_fee: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator()), Default(None)
     has_realtime_data: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator(), default=False)
     max_stay: Optional[int] = ExcelNoneable(GermanDurationIntegerValidator()), Default(None)
 

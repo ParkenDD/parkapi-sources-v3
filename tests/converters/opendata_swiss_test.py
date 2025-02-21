@@ -53,7 +53,7 @@ class OpenDataSwissPullConverterTest:
             opendata_swiss_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 560
+        assert len(static_parking_site_inputs) == 649
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
@@ -159,10 +159,10 @@ class OpenDataSwissParkingSiteInputTest:
                 )
             ],
             additionalInformationForCustomers=OpenDataSwissAdditionalInformationInput(
-                de=None,
-                en=None,
-                it=None,
-                fr=None,
+                deText=None,
+                enText=None,
+                itText=None,
+                frText=None,
             ),
             parkingFacilityCategory=OpenDataSwissParkingFacilityCategory.CAR,
             parkingFacilityType=None,
