@@ -4,11 +4,11 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import json
+from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
-from requests import ConnectionError, JSONDecodeError
+from requests import ConnectionError, JSONDecodeError, Response
 from urllib3.exceptions import NewConnectionError
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
@@ -18,12 +18,15 @@ from parkapi_sources.models import GeojsonFeatureInput, GeojsonInput, SourceInfo
 from parkapi_sources.util import ConfigHelper
 
 
-class StaticGeojsonDataMixin:
+class StaticGeojsonDataMixin(ABC):
     config_helper: ConfigHelper
     source_info: SourceInfo
     geojson_validator = DataclassValidator(GeojsonInput)
     geojson_feature_validator = DataclassValidator(GeojsonFeatureInput)
     _base_url = 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources'
+
+    @abstractmethod
+    def request_get(self, **kwargs) -> Response: ...
 
     def _get_static_geojson(self, source_uid: str) -> GeojsonInput:
         base_path: str | None = self.config_helper.get('STATIC_GEOJSON_BASE_PATH')
@@ -32,8 +35,8 @@ class StaticGeojsonDataMixin:
                 return json.loads(geojson_file.read())
         else:
             try:
-                response = requests.get(
-                    f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson',
+                response = self.request_get(
+                    url=f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson',
                     timeout=30,
                 )
             except (ConnectionError, NewConnectionError) as e:

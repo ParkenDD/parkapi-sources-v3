@@ -20,6 +20,7 @@ from parkapi_sources.converters.apcoa.validators import (
     ApcoaParkingSpaceInput,
     ApcoaParkingSpaceType,
 )
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_static_parking_site_inputs
 
 
@@ -43,17 +44,17 @@ def apcoa_ignore_missing_coordinates_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def apcoa_pull_converter(apcoa_config_helper: Mock, mocked_debug_helper: Mock) -> ApcoaPullConverter:
-    return ApcoaPullConverter(config_helper=apcoa_config_helper, debug_helper=mocked_debug_helper)
+def apcoa_pull_converter(apcoa_config_helper: Mock, request_helper: RequestHelper) -> ApcoaPullConverter:
+    return ApcoaPullConverter(config_helper=apcoa_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture
 def apcoa_ignore_missing_coordinates_pull_converter(
-    apcoa_ignore_missing_coordinates_config_helper: Mock, mocked_debug_helper: Mock
+    apcoa_ignore_missing_coordinates_config_helper: Mock, request_helper: RequestHelper
 ) -> ApcoaPullConverter:
     return ApcoaPullConverter(
         config_helper=apcoa_ignore_missing_coordinates_config_helper,
-        debug_helper=mocked_debug_helper,
+        request_helper=request_helper,
     )
 
 

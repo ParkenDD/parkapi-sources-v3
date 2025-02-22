@@ -6,7 +6,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 from abc import ABC, abstractmethod
 from pathlib import Path
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -27,8 +26,7 @@ class KarlsruheBasePullConverter(PullConverter, ABC):
 
         # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
         ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
-        response = requests.get(self.source_info.source_url, verify=str(ca_path), timeout=30)
-        self.handle_debug_request_response(response)
+        response = self.request_get(url=self.source_info.source_url, verify=str(ca_path), timeout=30)
 
         response_data = response.json()
 

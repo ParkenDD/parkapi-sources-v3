@@ -9,12 +9,13 @@ import pytest
 from openpyxl.reader.excel import load_workbook
 
 from parkapi_sources.converters import HuefnerPushConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def huefner_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> HuefnerPushConverter:
-    return HuefnerPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def huefner_push_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> HuefnerPushConverter:
+    return HuefnerPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class HuefnerPushConverterTest:

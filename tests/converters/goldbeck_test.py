@@ -9,12 +9,13 @@ import pytest
 from openpyxl.reader.excel import load_workbook
 
 from parkapi_sources.converters import GoldbeckPushConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def goldbeck_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> GoldbeckPushConverter:
-    return GoldbeckPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def goldbeck_push_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> GoldbeckPushConverter:
+    return GoldbeckPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class GoldbeckPushConverterTest:

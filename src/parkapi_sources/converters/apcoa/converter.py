@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -79,10 +78,9 @@ class ApcoaPullConverter(PullConverter):
             'Ocp-Apim-Subscription-Key': self.config_helper.get('PARK_API_APCOA_API_SUBSCRIPTION_KEY'),
         }
 
-        response = requests.get(
-            self.source_info.source_url,
+        response = self.request_get(
+            url=self.source_info.source_url,
             headers=headers,
             timeout=60,
         )
-        self.handle_debug_request_response(response)
         return self.apcoa_parking_sites_validator.validate(response.json())

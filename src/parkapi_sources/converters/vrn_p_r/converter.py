@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from abc import ABC
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
@@ -33,11 +32,11 @@ class VrnParkAndRidePullConverter(PullConverter, ABC):
         feature_inputs: list[VrnParkAndRideFeaturesInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        response = requests.get(
+        response = self.request_get(
             url='https://spatial.vrn.de/data/rest/services/P_R_Sensorik__Realtime_/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson',
             timeout=30,
         )
-        self.handle_debug_request_response(response)
+
         response_data = response.json()
 
         try:

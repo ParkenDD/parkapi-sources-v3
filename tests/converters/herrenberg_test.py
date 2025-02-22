@@ -10,13 +10,14 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters.herrenberg import HerrenbergPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
 @pytest.fixture
 def herrenberg_pull_converter(
     mocked_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
     requests_mock: Mocker,
 ) -> HerrenbergPullConverter:
     json_path = Path(Path(__file__).parent, 'data', 'herrenberg.json')
@@ -25,7 +26,7 @@ def herrenberg_pull_converter(
 
     requests_mock.get('https://api.stadtnavi.de/herrenberg/parking/parkapi.json', text=json_data)
 
-    return HerrenbergPullConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+    return HerrenbergPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class HerrenbergPullConverterTest:

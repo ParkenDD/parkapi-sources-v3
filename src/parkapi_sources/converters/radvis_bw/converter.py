@@ -4,7 +4,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import pyproj
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -69,11 +68,10 @@ class RadvisBwPullConverter(PullConverter):
         return [], []
 
     def get_data(self) -> dict:
-        response = requests.get(
-            self._base_url,
+        response = self.request_get(
+            url=self._base_url,
             auth=(self.config_helper.get('PARK_API_RADVIS_USER'), self.config_helper.get('PARK_API_RADVIS_PASSWORD')),
             timeout=30,
         )
-        self.handle_debug_request_response(response)
 
         return response.json()

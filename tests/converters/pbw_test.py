@@ -14,6 +14,7 @@ from requests_mock import Mocker
 
 from parkapi_sources.converters.pbw import PbwPullConverter
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 if TYPE_CHECKING:
@@ -31,8 +32,8 @@ def pbw_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def pbw_pull_converter(pbw_config_helper: Mock, mocked_debug_helper: Mock) -> PbwPullConverter:
-    return PbwPullConverter(config_helper=pbw_config_helper, debug_helper=mocked_debug_helper)
+def pbw_pull_converter(pbw_config_helper: Mock, request_helper: RequestHelper) -> PbwPullConverter:
+    return PbwPullConverter(config_helper=pbw_config_helper, request_helper=request_helper)
 
 
 class PbwPullConverterTest:

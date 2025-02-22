@@ -10,12 +10,13 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters.ulm import UlmPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def ulm_pull_converter(mocked_static_geojson_config_helper: Mock, mocked_debug_helper: Mock) -> UlmPullConverter:
-    return UlmPullConverter(config_helper=mocked_static_geojson_config_helper, debug_helper=mocked_debug_helper)
+def ulm_pull_converter(mocked_static_geojson_config_helper: Mock, request_helper: RequestHelper) -> UlmPullConverter:
+    return UlmPullConverter(config_helper=mocked_static_geojson_config_helper, request_helper=request_helper)
 
 
 class UlmPullConverterTest:

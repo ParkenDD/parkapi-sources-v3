@@ -9,12 +9,15 @@ from unittest.mock import Mock
 import pytest
 
 from parkapi_sources.converters import KonstanzBikePushConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def konstanz_bike_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> KonstanzBikePushConverter:
-    return KonstanzBikePushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def konstanz_bike_push_converter(
+    mocked_config_helper: Mock, request_helper: RequestHelper
+) -> KonstanzBikePushConverter:
+    return KonstanzBikePushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class KonstanzBikePushConverterTest:

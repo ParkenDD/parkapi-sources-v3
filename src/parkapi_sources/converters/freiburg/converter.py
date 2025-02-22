@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -69,8 +68,7 @@ class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
         realtime_freiburg_inputs: list[FreiburgFeatureInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        response = requests.get(self.source_info.source_url, timeout=30)
-        self.handle_debug_request_response(response)
+        response = self.request_get(url=self.source_info.source_url, timeout=30)
         response_data = response.json()
 
         try:

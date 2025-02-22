@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import KarlsruhePullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -25,8 +26,8 @@ def requests_mock_karlsruhe(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def karlsruhe_pull_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> KarlsruhePullConverter:
-    return KarlsruhePullConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def karlsruhe_pull_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> KarlsruhePullConverter:
+    return KarlsruhePullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class KarlsruhePullConverterTest:

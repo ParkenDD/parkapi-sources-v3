@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -47,11 +46,10 @@ class KonstanzPullConverter(PullConverter):
         parking_site_inputs: list[KonstanzParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = requests.get(
+        response = self.request_get(
             url=self.source_info.source_url,
             timeout=30,
         )
-        self.handle_debug_request_response(response)
 
         parking_sites_input: KonstanzParkingSitesInput = self.konstanz_parking_sites_validator.validate(response.json())
 
@@ -106,7 +104,7 @@ class KonstanzPullConverter(PullConverter):
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
         realtime_parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = requests.get(
+        response = self.request_get(
             url=self.source_info.source_url,
             auth=(self.config_helper.get('PARK_API_KONSTANZ_USER'), self.config_helper.get('PARK_API_KONSTANZ_PASSWORD')),
             timeout=30,

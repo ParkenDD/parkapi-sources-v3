@@ -6,9 +6,9 @@ Use of this source code is governed by an MIT-style license that can be found in
 from abc import ABC, abstractmethod
 from typing import Optional
 
-import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
+from requests import Response
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -28,12 +28,14 @@ class PullScraperMixin(ABC):
     def realtime_tag_to_dict(self, tag: Tag, **kwargs) -> Optional[dict]:
         pass
 
+    @abstractmethod
+    def request_get(self, **kwargs) -> Response: ...
+
     def load_url_in_soup(self, url: Optional[str] = None):
         if url is None:
             url = self.source_info.public_url
 
-        response = requests.get(url, timeout=30)
-        self.handle_debug_request_response(response)
+        response = self.request_get(url=url, timeout=30)
 
         return BeautifulSoup(response.text, features='html.parser')
 

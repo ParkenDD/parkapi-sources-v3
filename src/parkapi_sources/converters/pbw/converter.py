@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from typing import Optional
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -106,8 +105,7 @@ class PbwPullConverter(PullConverter):
         if data_id is not None:
             parameters['id'] = data_id
 
-        response = requests.get(self._base_url, params=parameters, timeout=60)
-        self.handle_debug_request_response(response)
+        response = self.request_get(url=self._base_url, params=parameters, timeout=60)
         result_dict: dict = response.json()
 
         items: list[dict] = []

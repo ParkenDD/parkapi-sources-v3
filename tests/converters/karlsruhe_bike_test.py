@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import KarlsruheBikePullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -34,9 +35,9 @@ def karlsruhe_bike_config_helper(mocked_config_helper: Mock):
 @pytest.fixture
 def karlsruhe_bike_pull_converter(
     karlsruhe_bike_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> KarlsruheBikePullConverter:
-    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_config_helper, debug_helper=mocked_debug_helper)
+    return KarlsruheBikePullConverter(config_helper=karlsruhe_bike_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture
@@ -51,11 +52,11 @@ def karlsruhe_bike_ignore_missing_capacity_config_helper(mocked_config_helper: M
 @pytest.fixture
 def karlsruhe_bike_ignore_missing_capacity_pull_converter(
     karlsruhe_bike_ignore_missing_capacity_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> KarlsruheBikePullConverter:
     return KarlsruheBikePullConverter(
         config_helper=karlsruhe_bike_ignore_missing_capacity_config_helper,
-        debug_helper=mocked_debug_helper,
+        request_helper=request_helper,
     )
 
 

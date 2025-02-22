@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import VrsVaihingenPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -28,9 +29,9 @@ def vrs_vaihingen_config_helper(mocked_config_helper: Mock):
 @pytest.fixture
 def vrs_vaihingen_pull_converter(
     vrs_vaihingen_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> VrsVaihingenPullConverter:
-    return VrsVaihingenPullConverter(config_helper=vrs_vaihingen_config_helper, debug_helper=mocked_debug_helper)
+    return VrsVaihingenPullConverter(config_helper=vrs_vaihingen_config_helper, request_helper=request_helper)
 
 
 class VrsVaihingenConverterTest:
