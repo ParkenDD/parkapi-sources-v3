@@ -14,6 +14,7 @@ from validataclass.validators import DataclassValidator
 from parkapi_sources.converters import KienzlerBikeAndRidePullConverter
 from parkapi_sources.converters.kienzler.models import KienzlerGeojsonFeatureInput
 from parkapi_sources.models.enums import ExternalIdentifierType, ParkAndRideType
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -57,17 +58,17 @@ def kienzler_config_helper(mocked_config_helper: Mock):
 @pytest.fixture
 def kienzler_pull_converter(
     kienzler_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> KienzlerBikeAndRidePullConverter:
-    return KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, debug_helper=mocked_debug_helper)
+    return KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture
 def kienzler_pull_converter_with_geojson(
     kienzler_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> KienzlerBikeAndRidePullConverter:
-    converter = KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, debug_helper=mocked_debug_helper)
+    converter = KienzlerBikeAndRidePullConverter(config_helper=kienzler_config_helper, request_helper=request_helper)
     converter.use_geojson = True
     converter.geojson_feature_validator = DataclassValidator(KienzlerGeojsonFeatureInput)
     return converter

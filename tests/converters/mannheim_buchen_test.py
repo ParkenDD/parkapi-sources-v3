@@ -10,6 +10,7 @@ import pytest
 
 from parkapi_sources.converters.mannheim_buchen import MannheimPushConverter
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import (
     get_data_path,
     validate_realtime_parking_site_inputs,
@@ -18,8 +19,8 @@ from tests.converters.helper import (
 
 
 @pytest.fixture
-def mannheim_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> MannheimPushConverter:
-    return MannheimPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def mannheim_push_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> MannheimPushConverter:
+    return MannheimPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class MannheimPullConverterTest:

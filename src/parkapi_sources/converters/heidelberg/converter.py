@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
@@ -55,13 +54,13 @@ class HeidelbergPullConverter(PullConverter):
         heidelberg_inputs: list[HeidelbergInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        response = requests.get(
-            self.source_info.source_url,
+        response = self.request_get(
+            url=self.source_info.source_url,
             params={'api-key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY'), 'limit': 50},
             headers={'X-Gravitee-Api-Key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY')},
             timeout=30,
         )
-        self.handle_debug_request_response(response)
+
         response_data = response.json()
         try:
             input_dicts = self.list_validator.validate(response_data)

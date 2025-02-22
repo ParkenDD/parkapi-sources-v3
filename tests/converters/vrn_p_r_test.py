@@ -10,17 +10,18 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import VrnParkAndRidePullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
 @pytest.fixture
 def vrn_p_r_pull_converter(
     mocked_static_geojson_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> VrnParkAndRidePullConverter:
     return VrnParkAndRidePullConverter(
         config_helper=mocked_static_geojson_config_helper,
-        debug_helper=mocked_debug_helper,
+        request_helper=request_helper,
     )
 
 

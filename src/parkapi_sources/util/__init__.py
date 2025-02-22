@@ -4,6 +4,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from .config_helper import ConfigHelper
-from .debug_helper import DebugHelper
 from .encoding import DefaultJSONEncoder
+from .request_helper import RequestHelper
 from .xml_helper import XMLHelper

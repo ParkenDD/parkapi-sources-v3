@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import HerrenbergBikePullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -34,9 +35,9 @@ def herrenberg_bike_config_helper(mocked_config_helper: Mock):
 @pytest.fixture
 def herrenberg_bike_pull_converter(
     herrenberg_bike_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> HerrenbergBikePullConverter:
-    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_config_helper, debug_helper=mocked_debug_helper)
+    return HerrenbergBikePullConverter(config_helper=herrenberg_bike_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture
@@ -51,11 +52,11 @@ def herrenberg_bike_ignore_missing_capacity_config_helper(mocked_config_helper: 
 @pytest.fixture
 def herrenberg_bike_ignore_missing_capacity_pull_converter(
     herrenberg_bike_ignore_missing_capacity_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> HerrenbergBikePullConverter:
     return HerrenbergBikePullConverter(
         config_helper=herrenberg_bike_ignore_missing_capacity_config_helper,
-        debug_helper=mocked_debug_helper,
+        request_helper=request_helper,
     )
 
 

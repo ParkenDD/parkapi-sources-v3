@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import PMBWPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -24,8 +25,8 @@ def p_m_bw_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def p_m_bw_pull_converter(p_m_bw_config_helper: Mock, mocked_debug_helper: Mock) -> PMBWPullConverter:
-    return PMBWPullConverter(config_helper=p_m_bw_config_helper, debug_helper=mocked_debug_helper)
+def p_m_bw_pull_converter(p_m_bw_config_helper: Mock, request_helper: RequestHelper) -> PMBWPullConverter:
+    return PMBWPullConverter(config_helper=p_m_bw_config_helper, request_helper=request_helper)
 
 
 class PMBWConverterTest:

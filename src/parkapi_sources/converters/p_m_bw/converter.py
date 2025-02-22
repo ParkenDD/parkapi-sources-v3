@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
@@ -71,12 +70,11 @@ class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
         p_m_bw_inputs: list[PMBWInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = requests.get(
-            self.source_info.source_url,
+        response = self.request_get(
+            url=self.source_info.source_url,
             headers={'Authorization': f'Bearer {self.config_helper.get("PARK_API_P_M_BW_TOKEN")}'},
             timeout=60,
         )
-        self.handle_debug_request_response(response)
 
         for input_dict in self.list_validator.validate(response.json()):
             try:

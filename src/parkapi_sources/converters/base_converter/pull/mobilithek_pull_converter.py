@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from abc import ABC, abstractmethod
 
-import requests
 from lxml import etree
 
 from parkapi_sources.exceptions import ImportParkingSiteException
@@ -26,14 +25,14 @@ class MobilithekPullConverter(PullConverter, ABC):
     @abstractmethod
     def _handle_static_xml_data(
         self,
-        etree: etree.Element,
+        static_xml_data: etree.Element,
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         pass
 
     @abstractmethod
     def _handle_realtime_xml_data(
         self,
-        etree: etree.Element,
+        realtime_xml_data: etree.Element,
     ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         pass
 
@@ -66,16 +65,14 @@ class MobilithekPullConverter(PullConverter, ABC):
             f'/clientPullService?subscriptionID={subscription_id}'
         )
         # Create an isolated session, because cert is set globally otherwise
-        with requests.Session() as session:
-            response = session.get(
-                url,
-                timeout=30,
-                cert=(
-                    self.config_helper.get('PARK_API_MOBILITHEK_CERT'),
-                    self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
-                ),
-            )
-        self.handle_debug_request_response(response)
+        response = self.request_get(
+            url=url,
+            timeout=30,
+            cert=(
+                self.config_helper.get('PARK_API_MOBILITHEK_CERT'),
+                self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
+            ),
+        )
 
         root = etree.fromstring(response.text, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 

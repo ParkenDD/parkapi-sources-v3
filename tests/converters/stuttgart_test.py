@@ -9,6 +9,7 @@ import pytest
 from lxml import etree
 
 from parkapi_sources.converters import StuttgartPushConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import (
     get_data_path,
     validate_realtime_parking_site_inputs,
@@ -17,8 +18,8 @@ from tests.converters.helper import (
 
 
 @pytest.fixture
-def stuttgart_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> StuttgartPushConverter:
-    return StuttgartPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def stuttgart_push_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> StuttgartPushConverter:
+    return StuttgartPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class StuttgartPullConverterTest:

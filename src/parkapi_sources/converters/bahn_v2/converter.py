@@ -3,7 +3,6 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -81,10 +80,9 @@ class BahnV2PullConverter(PullConverter):
             'Accept': 'application/vnd.parkinginformation.db-bahnpark.v1+json',
         }
 
-        response = requests.get(
-            f'{self.config_helper.get("PARK_API_BAHN_URL", self._base_url)}/parking-facilities',
+        response = self.request_get(
+            url=f'{self.config_helper.get("PARK_API_BAHN_URL", self._base_url)}/parking-facilities',
             headers=headers,
             timeout=60,
         )
-        self.handle_debug_request_response(response)
         return response.json()

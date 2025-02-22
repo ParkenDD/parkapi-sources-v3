@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters.heidelberg import HeidelbergPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -24,8 +25,8 @@ def heidelberg_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def heidelberg_pull_converter(heidelberg_config_helper: Mock, mocked_debug_helper: Mock) -> HeidelbergPullConverter:
-    return HeidelbergPullConverter(config_helper=heidelberg_config_helper, debug_helper=mocked_debug_helper)
+def heidelberg_pull_converter(heidelberg_config_helper: Mock, request_helper: RequestHelper) -> HeidelbergPullConverter:
+    return HeidelbergPullConverter(config_helper=heidelberg_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture

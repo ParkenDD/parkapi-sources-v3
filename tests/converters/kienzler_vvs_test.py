@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import KienzlerVVSPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -36,8 +37,11 @@ def kienzler_config_helper(mocked_config_helper: Mock):
 
 
 @pytest.fixture
-def kienzler_vvs_pull_converter(kienzler_config_helper: Mock, mocked_debug_helper: Mock) -> KienzlerVVSPullConverter:
-    return KienzlerVVSPullConverter(config_helper=kienzler_config_helper, debug_helper=mocked_debug_helper)
+def kienzler_vvs_pull_converter(
+    kienzler_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> KienzlerVVSPullConverter:
+    return KienzlerVVSPullConverter(config_helper=kienzler_config_helper, request_helper=request_helper)
 
 
 class KienzlerVVSPullConverterTest:

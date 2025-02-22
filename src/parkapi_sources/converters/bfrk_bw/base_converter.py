@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from abc import ABC, abstractmethod
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -32,8 +31,7 @@ class BfrkBasePushConverter(PullConverter, ABC):
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
         source_url = self.config_helper.get(self.source_url_config_key, self.source_info.source_url)
-        response = requests.get(source_url, timeout=300)
-        self.handle_debug_request_response(response)
+        response = self.request_get(url=source_url, timeout=300)
 
         input_dicts = response.json()
 

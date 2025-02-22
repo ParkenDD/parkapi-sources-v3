@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -59,8 +58,7 @@ class HerrenbergPullConverter(PullConverter):
         parking_site_inputs: list[HerrenbergParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = requests.get(self.source_info.source_url, timeout=60)
-        self.handle_debug_request_response(response)
+        response = self.request_get(url=self.source_info.source_url, timeout=60)
         parking_sites_input: HerrenbergParkingSitesInput = self.parking_sites_input_validator.validate(response.json())
 
         for parking_site_dict in parking_sites_input.lots:

@@ -11,7 +11,7 @@ import requests
 
 from parkapi_sources.exceptions import MissingConfigException
 from parkapi_sources.models import SourceInfo
-from parkapi_sources.util import ConfigHelper, DebugHelper
+from parkapi_sources.util import ConfigHelper, RequestHelper
 
 
 @pytest.fixture
@@ -31,10 +31,10 @@ def dump_dir() -> Path:
     return dump_dir
 
 
-class DebugHelperTest:
+class RequestHelperTest:
     @staticmethod
     def test_handle_request_response(dump_dir: Path, source_info: SourceInfo):
-        debug_helper = DebugHelper(
+        request_helper = RequestHelper(
             config_helper=ConfigHelper(
                 {
                     'DEBUG_SOURCES': ['test-source'],
@@ -48,7 +48,7 @@ class DebugHelperTest:
             timeout=30,
         )
 
-        debug_helper.handle_request_response(source_info, response)
+        request_helper._handle_request_response(source_info, response)
 
         assert dump_dir.exists()
 
@@ -61,7 +61,7 @@ class DebugHelperTest:
 
     @staticmethod
     def test_handle_request_response_not_in_debug(dump_dir: Path, source_info: SourceInfo):
-        debug_helper = DebugHelper(
+        request_helper = RequestHelper(
             config_helper=ConfigHelper(
                 {
                     'DEBUG_SOURCES': ['other-source'],
@@ -75,13 +75,13 @@ class DebugHelperTest:
             timeout=30,
         )
 
-        debug_helper.handle_request_response(source_info, response)
+        request_helper._handle_request_response(source_info, response)
 
         assert not dump_dir.exists()
 
     @staticmethod
     def test_handle_request_response_dir_not_set(dump_dir: Path, source_info: SourceInfo):
-        debug_helper = DebugHelper(
+        request_helper = RequestHelper(
             config_helper=ConfigHelper(
                 {
                     'DEBUG_SOURCES': ['test-source'],
@@ -95,4 +95,4 @@ class DebugHelperTest:
         )
 
         with pytest.raises(MissingConfigException):
-            debug_helper.handle_request_response(source_info, response)
+            request_helper._handle_request_response(source_info, response)

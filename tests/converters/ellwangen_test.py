@@ -9,12 +9,13 @@ import pytest
 from openpyxl.reader.excel import load_workbook
 
 from parkapi_sources.converters import EllwangenPushConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import get_data_path, validate_static_parking_site_inputs
 
 
 @pytest.fixture
-def ellwangen_push_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> EllwangenPushConverter:
-    return EllwangenPushConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def ellwangen_push_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> EllwangenPushConverter:
+    return EllwangenPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class EllwangenPushConverterTest:

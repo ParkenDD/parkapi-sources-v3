@@ -21,6 +21,7 @@ from parkapi_sources.converters.opendata_swiss.models import (
     OpenDataSwissParkingFacilityCategory,
     OpenDataSwissPropertiesInput,
 )
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_static_parking_site_inputs
 
 
@@ -39,8 +40,10 @@ def requests_mock_opendata_swiss(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def opendata_swiss_pull_converter(mocked_config_helper: Mock, mocked_debug_helper: Mock) -> OpenDataSwissPullConverter:
-    return OpenDataSwissPullConverter(config_helper=mocked_config_helper, debug_helper=mocked_debug_helper)
+def opendata_swiss_pull_converter(
+    mocked_config_helper: Mock, request_helper: RequestHelper
+) -> OpenDataSwissPullConverter:
+    return OpenDataSwissPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class OpenDataSwissPullConverterTest:

@@ -9,6 +9,7 @@ from unittest.mock import Mock, patch
 import pytest
 
 from parkapi_sources.converters import BietigheimBissingenPullConverter
+from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
 
@@ -26,11 +27,11 @@ def bietigheim_bissingen_config_helper(mocked_config_helper: Mock):
 @pytest.fixture
 def bietigheim_bissingen_pull_converter(
     bietigheim_bissingen_config_helper: Mock,
-    mocked_debug_helper: Mock,
+    request_helper: RequestHelper,
 ) -> BietigheimBissingenPullConverter:
     return BietigheimBissingenPullConverter(
         config_helper=bietigheim_bissingen_config_helper,
-        debug_helper=mocked_debug_helper,
+        request_helper=request_helper,
     )
 
 

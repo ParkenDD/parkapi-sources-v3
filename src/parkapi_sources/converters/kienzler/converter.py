@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from abc import abstractmethod
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
@@ -94,7 +93,7 @@ class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
         ids = self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_IDS').split(',')
         result_dicts: list[dict] = []
         for i in range(0, len(ids), 25):
-            response = requests.post(
+            response = self.request_post(
                 url=f'{self.source_info.source_url}/index.php?eID=JSONAPI',
                 json={
                     'user': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
@@ -105,7 +104,6 @@ class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
                 },
                 timeout=30,
             )
-            self.handle_debug_request_response(response)
             result_dicts += response.json()
 
         return result_dicts
