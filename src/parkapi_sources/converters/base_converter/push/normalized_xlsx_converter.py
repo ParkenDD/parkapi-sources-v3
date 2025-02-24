@@ -111,8 +111,17 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
         opening_hours_input = self.excel_opening_time_validator.validate({
             key: value for key, value in parking_site_raw_dict.items() if key.startswith('opening_hours_')
         })
+
+        for boolean_field in ['has_fee', 'is_covered', 'has_lighting']:
+            if boolean_field in parking_site_dict and isinstance(parking_site_dict[boolean_field], str):
+                parking_site_dict[boolean_field] = parking_site_dict[boolean_field].strip().lower()
+
         parking_site_dict['opening_hours'] = opening_hours_input.get_osm_opening_hours()
-        parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
+        parking_site_dict['type'] = (
+            self.type_mapping.get(parking_site_dict.get('type').strip())
+            if isinstance(parking_site_dict['type'], str)
+            else None
+        )
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 
         return parking_site_dict
