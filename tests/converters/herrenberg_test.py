@@ -36,8 +36,8 @@ class HerrenbergPullConverterTest:
             herrenberg_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 21
-        assert len(import_parking_site_exceptions) == 5
+        assert len(static_parking_site_inputs) == 25
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -48,6 +48,6 @@ class HerrenbergPullConverterTest:
         )
 
         assert len(realtime_parking_site_inputs) == 4
-        assert len(import_parking_site_exceptions) == 5
+        assert len(import_parking_site_exceptions) == 1
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
