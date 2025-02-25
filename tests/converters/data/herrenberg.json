@@ -1,7 +1,7 @@
 {
   "data_source": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze",
-  "last_downloaded": "2024-07-13T06:06:01.548094",
-  "last_updated": "2024-07-13T06:06:01.548094",
+  "last_downloaded": "2025-02-25T12:20:03.588839",
+  "last_updated": "2025-02-25T12:20:03.588839",
   "lots": [
     {
       "lot_type": "Parkplatz",
@@ -34,10 +34,11 @@
         "lng": 8.872705
       },
       "total": 97,
-      "url": "https://stadtwerke.herrenberg.de/oepnv-parken/parken/sicher-und-zentral-parken/parkhaeuser-und-parkgebuehren/altstadtgarage/",
+      "total:disabled": 2,
+      "url": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze/Parkplatz?view=publish&item=parkingLocation&id=1008",
       "fee_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00; PH off",
       "notes": {},
-      "free": 86
+      "free": 60
     },
     {
       "lot_type": "Parkplatz",
@@ -84,7 +85,7 @@
         "lng": 8.863247
       },
       "total": 47,
-      "url": "https://stadtwerke.herrenberg.de/oepnv-parken/parken/sicher-und-zentral-parken/parkhaeuser-und-parkgebuehren/kurzzeitparkplaetze-bahnhofstrasse/",
+      "url": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze/Parkplatz?view=publish&item=parkingLocation&id=1018",
       "fee_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00; PH off",
       "notes": {},
       "id": "herrenbergkurzzeitparkplaetzebahnhofstrasse"
@@ -100,7 +101,8 @@
         "lng": 8.86126
       },
       "total": 122,
-      "url": "https://www.dbbahnpark.de/standorte/karte/parkplatz-bahnhof-herrenberg/",
+      "total:disabled": 2,
+      "url": "https://www.bahnhof.de/herrenberg/parkplaetze",
       "notes": {},
       "id": "herrenbergprbahnhofstrasse"
     },
@@ -116,11 +118,11 @@
         "lng": 8.867949
       },
       "total": 90,
-      "url": "https://stadtwerke.herrenberg.de/oepnv-parken/parken/sicher-und-zentral-parken/parkhaeuser-und-parkgebuehren/bronntor-tiefgarage/",
+      "url": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze/Parkplatz?view=publish&item=parkingLocation&id=1015",
       "fee_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00; PH off",
       "opening_hours": "Mo-Fr 07:30-22:00; Sa 07:30-18:00; PH off",
       "notes": {},
-      "free": 90
+      "free": 82
     },
     {
       "lot_type": "Parkplatz",
@@ -193,7 +195,7 @@
         "lng": 8.8615
       },
       "total": 398,
-      "url": "https://stadtwerke.herrenberg.de/oepnv-parken/parken/sicher-und-zentral-parken/parkhaeuser-und-parkgebuehren/p-r-parkhaus/",
+      "url": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze/Parkplatz?view=publish&item=parkingLocation&id=1024",
       "fee_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00; PH off",
       "notes": {},
       "id": "herrenbergprkalkofenstrasse"
@@ -227,7 +229,7 @@
       "total": 47,
       "url": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Service/Parkplaetze/Parkplatz?view=publish&item=parkingLocation&id=1020",
       "notes": {},
-      "free": 4
+      "free": 16
     },
     {
       "lot_type": "Parkplatz",
@@ -273,12 +275,12 @@
       "total": 10,
       "url": "https://www.herrenberg.de/de/Stadtleben/Erlebnis-Herrenberg/Tourismus-Gaeste/uebernachten/Wohnmobilstellplaetze",
       "notes": {},
-      "free": 3
+      "free": 5
     },
     {
       "lot_type": "Park-Carpool",
       "address": "Parkplatz bei der Autobahnmeisterei",
-      "name": "Parken + Mitfahren A81/B296 (Derzeit wg. Bauarbeiten gesperrt)",
+      "name": "Parken + Mitfahren A81/B296",
       "forecast": false,
       "state": "nodata",
       "coords": {
@@ -286,24 +288,9 @@
         "lng": 8.9022
       },
       "total": 10,
-      "url": "https://rp.baden-wuerttemberg.de/rps/Abt4/Seiten/pressemitteilung.aspx?rid=3035",
+      "url": "https://verkehrsinfo-bw.de/?zoom=6&fullscreen=false&center=48.5807694,8.9022611&layers=Beschriftung,Parken%20und%20Mitfahren&suchtext=&openebenencontrol=false",
       "notes": {},
-      "id": "herrenbergparkenmitfahrena81b296(derzeitwgbauarbeitengesperrt)"
-    },
-    {
-      "lot_type": "Park-Carpool",
-      "address": "Parkplatz südl. Ohmstraße Gültstein",
-      "name": "Parken + Mitfahren A81 Herrenberg/Gültstein (Ersatzfläche)",
-      "forecast": false,
-      "state": "nodata",
-      "coords": {
-        "lat": 48.57867,
-        "lng": 8.89462
-      },
-      "total": 50,
-      "url": "https://rp.baden-wuerttemberg.de/rps/Abt4/Seiten/pressemitteilung.aspx?rid=3035",
-      "notes": {},
-      "id": "herrenbergparkenmitfahrena81herrenberggueltstein(ersatzflaeche)"
+      "id": "herrenbergparkenmitfahrena81b296"
     },
     {
       "lot_type": "Barrierefreier-Parkplatz",
@@ -315,24 +302,25 @@
         "lat": 48.59642,
         "lng": 8.87042
       },
+      "total": 0,
       "total:disabled": 1,
       "notes": {},
       "id": "herrenbergmarktplatzparkplatzfuermenschenmitbehinderung"
     },
     {
-      "id": "herrenbergstuttgarterstrasseparkplatzfuermenschenmitbehinderung",
       "lot_type": "Barrierefreier-Parkplatz",
       "address": "Stuttgarter Straße",
       "name": "Stuttgarter Straße - Parkplatz für Menschen mit Behinderung",
       "forecast": false,
-      "state": "many",
+      "state": "nodata",
       "coords": {
         "lat": 48.59799,
         "lng": 8.87116
       },
+      "total": 0,
       "total:disabled": 1,
       "notes": {},
-      "free:disabled": 1
+      "id": "herrenbergstuttgarterstrasseparkplatzfuermenschenmitbehinderung"
     },
     {
       "lot_type": "Barrierefreier-Parkplatz",
@@ -344,6 +332,7 @@
         "lat": 48.5963798,
         "lng": 8.8705467
       },
+      "total": 0,
       "total:disabled": 1,
       "notes": {},
       "id": "herrenbergoberamtparkplatzfuermenschenmitbehinderung"
@@ -358,6 +347,7 @@
         "lat": 48.5954687,
         "lng": 8.8700008
       },
+      "total": 0,
       "total:disabled": 1,
       "notes": {},
       "id": "herrenbergspitalgasseparkplatzfuermenschenmitbehinderung"
@@ -373,6 +363,7 @@
         "lng": 8.877723
       },
       "total": 100,
+      "total:disabled": 5,
       "url": "https://naturfreibad.herrenberg.de/startseite/",
       "notes": {
         "de": "Beim Kauf einer Jahres- oder Saisonkarte für die Herrenberger Bäder, erhalten Sie eine Parkberechtigung für diese Parkmöglichkeiten. Durch die Parkberechtigung fallen keine Parkgebühren an. Für Parkplatznutzer dieser Parkplätze, die keine Parkberechtigung besitzen, fallen Parkgebühren an."
@@ -390,6 +381,7 @@
         "lng": 8.875758
       },
       "total": 80,
+      "total:disabled": 1,
       "url": "https://naturfreibad.herrenberg.de/startseite/",
       "notes": {
         "de": "Beim Kauf einer Jahres- oder Saisonkarte für die Herrenberger Bäder, erhalten Sie eine Parkberechtigung für diese Parkmöglichkeiten. Durch die Parkberechtigung fallen keine Parkgebühren an. Für Parkplatznutzer dieser Parkplätze, die keine Parkberechtigung besitzen, fallen Parkgebühren an."
@@ -412,6 +404,24 @@
         "de": "Mit Parkschein, die ersten 90 Minuten kostenlos "
       },
       "id": "herrenbergparkgarageseelaender"
+    },
+    {
+      "lot_type": "Parkhaus",
+      "address": "Marienstraße 25, 71083 Herrenberg",
+      "name": "Parkhaus Krankenhaus Herrenberg",
+      "forecast": false,
+      "state": "nodata",
+      "coords": {
+        "lat": 48.59140063,
+        "lng": 8.874225116
+      },
+      "total": 249,
+      "url": "https://www.parkme.com/de/lot/368731/krankenhaus-herrenberg-herrenberg-bw-germany#:~:text=58%20Parkpl%C3%A4tze%20%E2%80%A2%20%E2%82%AC%20Marienstra%C3%9Fe%2025.",
+      "opening_hours": "Mo-Su 00:00-24:00",
+      "notes": {
+        "de": "Nur für Besuchende, kostenlos"
+      },
+      "id": "herrenbergparkhauskrankenhausherrenberg"
     }
   ]
 }

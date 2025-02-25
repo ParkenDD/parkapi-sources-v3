@@ -53,9 +53,9 @@ class KarlsruhePropertiesInput(GeojsonBaseFeaturePropertiesInput):
     freie_parkplaetze: Optional[int] = Noneable(IntegerValidator())
     max_durchfahrtshoehe: Optional[Decimal] = Noneable(NumericValidator())
     stand_freieparkplaetze: Optional[datetime] = Noneable(DateTimeValidator())
-    parkhaus_strasse: str = StringValidator()
-    parkhaus_plz: str = StringValidator()
-    parkhaus_gemeinde: str = StringValidator()
+    parkhaus_strasse: Optional[str] = Noneable(StringValidator())
+    parkhaus_plz: Optional[str] = Noneable(StringValidator())
+    parkhaus_gemeinde: Optional[str] = Noneable(StringValidator())
     geschlossen: Optional[KarlsruheOpeningStatus] = Noneable(EnumValidator(KarlsruheOpeningStatus))
     bemerkung: Optional[str] = Noneable(StringValidator())
     parkhaus_internet: Optional[str] = Noneable(UrlValidator())
@@ -77,9 +77,12 @@ class KarlsruheFeatureInput(GeojsonBaseFeatureInput):
     properties: KarlsruhePropertiesInput = DataclassValidator(KarlsruhePropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        address = (
-            f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}'
-        )
+        if self.properties.parkhaus_strasse and self.properties.parkhaus_plz and self.properties.parkhaus_gemeinde:
+            address = f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}'
+        elif self.properties.parkhaus_strasse:
+            address = f'{self.properties.parkhaus_strasse}'
+        else:
+            address = None
         max_height = (
             None if self.properties.max_durchfahrtshoehe is None else int(self.properties.max_durchfahrtshoehe * 100)
         )

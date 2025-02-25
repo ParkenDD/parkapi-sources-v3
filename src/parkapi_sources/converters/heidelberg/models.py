@@ -86,6 +86,7 @@ class HeidelbergParkingSubType(Enum):
 
 @validataclass
 class HeidelbergInput:
+    id: str = StringValidator()
     acceptedPaymentMethod: Optional[HeidelbergPaymentMethodType] = (
         NoneableRemoveValueDict(
             ListValidator(EnumValidator(HeidelbergPaymentMethodType)),
@@ -124,7 +125,7 @@ class HeidelbergInput:
     postalCode: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)  # outsch
     provider: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
     staticName: str = RemoveValueDict(StringValidator())
-    staticParkingSiteId: str = RemoveValueDict(StringValidator())
+    staticParkingSiteId: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
     staticStatus: Optional[HeidelbergParkingSiteStatus] = (
         NoneableRemoveValueDict(EnumValidator(HeidelbergParkingSiteStatus)),
         Default(None),
@@ -169,7 +170,7 @@ class HeidelbergInput:
             address = None
 
         return StaticParkingSiteInput(
-            uid=self.staticParkingSiteId,
+            uid=self.id,
             name=self.staticName,
             description=self.description,
             lat=self.lat,
