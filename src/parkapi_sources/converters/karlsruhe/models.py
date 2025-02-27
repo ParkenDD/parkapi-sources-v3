@@ -80,7 +80,7 @@ class KarlsruheFeatureInput(GeojsonBaseFeatureInput):
         if self.properties.parkhaus_strasse and self.properties.parkhaus_plz and self.properties.parkhaus_gemeinde:
             address = f'{self.properties.parkhaus_strasse}, {self.properties.parkhaus_plz} {self.properties.parkhaus_gemeinde}'
         elif self.properties.parkhaus_strasse:
-            address = f'{self.properties.parkhaus_strasse}'
+            address = f'{self.properties.parkhaus_strasse}, Karlsruhe'
         else:
             address = None
         max_height = (

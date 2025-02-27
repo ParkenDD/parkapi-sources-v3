@@ -59,7 +59,7 @@ class PbwPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = pbw_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 98
+        assert len(static_parking_site_inputs) == 101
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
@@ -98,7 +98,7 @@ class PbwPullConverterTest:
 
         realtime_parking_site_inputs, import_parking_site_exceptions = pbw_pull_converter.get_realtime_parking_sites()
 
-        assert len(realtime_parking_site_inputs) == 98
+        assert len(realtime_parking_site_inputs) == 101
         assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

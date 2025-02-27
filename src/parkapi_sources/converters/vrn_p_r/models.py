@@ -111,8 +111,8 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
     )
     max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     fee_description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
-    realtime_free_capacity: int = IntegerValidator(min_value=0)
-    realtime_occupied: int = IntegerValidator(min_value=0)
+    realtime_free_capacity: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
+    realtime_occupied: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
     realtime_data_updated: OptionalUnset[datetime] = (
         NoneToUnsetValue(TimestampDateTimeValidator(allow_strings=True, divisor=1000)),
         DefaultUnset,
@@ -174,7 +174,9 @@ class VrnParkAndRideFeaturesInput:
 
         return RealtimeParkingSiteInput(
             uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
-            realtime_capacity=self.properties.realtime_free_capacity + self.properties.realtime_occupied,
+            realtime_capacity=self.properties.realtime_free_capacity + self.properties.realtime_occupied
+            if self.properties.realtime_free_capacity != UnsetValue and self.properties.realtime_occupied != UnsetValue
+            else UnsetValue,
             realtime_free_capacity=self.properties.realtime_free_capacity,
             realtime_opening_status=self.properties.realtime_opening_status.to_realtime_opening_status(),
             realtime_data_updated_at=realtime_data_updated_at,

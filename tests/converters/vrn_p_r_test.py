@@ -35,8 +35,8 @@ class VrnParkAndRidePullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = vrn_p_r_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 12
-        assert len(import_parking_site_exceptions) == 2
+        assert len(static_parking_site_inputs) == 14
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -55,7 +55,7 @@ class VrnParkAndRidePullConverterTest:
             vrn_p_r_pull_converter.get_realtime_parking_sites()
         )
 
-        assert len(realtime_parking_site_inputs) == 12
-        assert len(import_parking_site_exceptions) == 2
+        assert len(realtime_parking_site_inputs) == 14
+        assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

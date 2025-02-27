@@ -165,7 +165,7 @@ class HeidelbergInput:
         if self.streetAddress and self.postalCode and self.addressLocality:
             address = f'{self.streetAddress}, {self.postalCode} {self.addressLocality}'
         elif self.streetAddress:
-            address = f'{self.streetAddress}'
+            address = f'{self.streetAddress}, Heidelberg'
         else:
             address = None
 

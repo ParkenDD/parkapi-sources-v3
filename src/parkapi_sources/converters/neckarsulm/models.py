@@ -6,12 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import datetime, timezone
 from decimal import Decimal
 from enum import Enum
+from typing import Optional
 
 from validataclass.dataclasses import validataclass
 from validataclass.validators import DecimalValidator, EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.validators import ExcelNoneable
 from parkapi_sources.validators.boolean_validators import MappedBooleanValidator
 
 
@@ -37,27 +39,33 @@ class NeckarsulmRowInput:
     type: NeckarsulmParkingSiteType = EnumValidator(NeckarsulmParkingSiteType)
     lat: Decimal = DecimalValidator(min_value=40, max_value=60)
     lon: Decimal = DecimalValidator(min_value=7, max_value=10)
-    street: str = StringValidator(max_length=255)
-    postcode: str = StringValidator(max_length=255)
-    city: str = StringValidator(max_length=255)
+    street: Optional[str] = ExcelNoneable(StringValidator(max_length=255))
+    postcode: Optional[str] = ExcelNoneable(StringValidator(max_length=255))
+    city: Optional[str] = ExcelNoneable(StringValidator(max_length=255))
     # max_stay exists in the table as maxparken_1, but has no parsable data format
     capacity: int = IntegerValidator(allow_strings=True)
-    capacity_carsharing: int = IntegerValidator(allow_strings=True)
-    capacity_charging: int = IntegerValidator(allow_strings=True)
-    capacity_woman: int = IntegerValidator(allow_strings=True)
-    capacity_disabled: int = IntegerValidator(allow_strings=True)
-    has_fee: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
-    opening_hours: str = StringValidator(max_length=255)
-    max_height: Decimal = DecimalValidator()
+    capacity_carsharing: Optional[int] = ExcelNoneable(IntegerValidator(allow_strings=True))
+    capacity_charging: Optional[int] = ExcelNoneable(IntegerValidator(allow_strings=True))
+    capacity_woman: Optional[int] = ExcelNoneable(IntegerValidator(allow_strings=True))
+    capacity_disabled: Optional[int] = ExcelNoneable(IntegerValidator(allow_strings=True))
+    has_fee: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False}))
+    opening_hours: Optional[str] = ExcelNoneable(StringValidator(max_length=255))
+    max_height: Optional[Decimal] = ExcelNoneable(DecimalValidator())
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        if self.street and self.postcode and self.city:
+            address = f'{self.street}, {self.postcode} {self.city}'
+        elif self.street:
+            address = f'{self.street}, Neckarsulm'
+        else:
+            address = None
         return StaticParkingSiteInput(
             uid=str(self.uid),
             name=self.name,
             type=self.type.to_parking_site_type_input(),
             lat=self.lat,
             lon=self.lon,
-            address=f'{self.street}, {self.postcode} {self.city}',
+            address=address,
             capacity=self.capacity,
             capacity_carsharing=self.capacity_carsharing,
             capacity_charging=self.capacity_charging,

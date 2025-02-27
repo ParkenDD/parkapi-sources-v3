@@ -27,7 +27,7 @@ class KonstanzBikePushConverterTest:
             konstanz_bike_data,
         )
 
-        assert len(static_parking_site_inputs) == 162
-        assert len(import_parking_site_exceptions) == 5
+        assert len(static_parking_site_inputs) == 166
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
