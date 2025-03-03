@@ -20,7 +20,7 @@ class NeckarsulmBikePushConverter(CsvConverter):
 
     source_info = SourceInfo(
         uid='neckarsulm_bike',
-        name='Stadt Neckarsulm: Fahrad-Abstellanlagen',
+        name='Stadt Neckarsulm: Fahrrad-Abstellanlagen',
         public_url='https://www.neckarsulm.de',
         has_realtime_data=False,
     )

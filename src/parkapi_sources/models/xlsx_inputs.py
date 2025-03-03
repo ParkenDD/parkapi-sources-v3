@@ -4,7 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import time
-from typing import Optional
+from typing import Any, Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import IntegerValidator, StringValidator
@@ -21,15 +21,33 @@ from parkapi_sources.validators import (
 
 class ExcelMappedBooleanValidator(MappedBooleanValidator):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, mapping={'ja': True, 'nein': False}, **kwargs)
+        super().__init__(
+            *args,
+            mapping={
+                'ja': True,
+                'nein': False,
+                'true': True,
+                'false': False,
+                'wahr': True,
+                'falsch': False,
+            },
+            **kwargs,
+        )
+
+    def validate(self, input_data: Any, **kwargs) -> bool:
+        if isinstance(input_data, str):
+            input_data = input_data.lower().strip()
+
+        input_data = self.mapping.get(input_data, input_data)
+        return super().validate(input_data, **kwargs)
 
 
 @validataclass
 class ExcelStaticParkingSiteInput(StaticParkingSiteInput):
     operator_name: Optional[str] = ExcelNoneable(StringValidator(max_length=256))
     uid: str = NumberCastingStringValidator(min_length=1, max_length=256)
-    has_lighting: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator())
-    has_fee: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator())
+    has_lighting: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator()), Default(None)
+    has_fee: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator()), Default(None)
     has_realtime_data: Optional[bool] = ExcelNoneable(ExcelMappedBooleanValidator(), default=False)
     max_stay: Optional[int] = ExcelNoneable(GermanDurationIntegerValidator()), Default(None)
 
