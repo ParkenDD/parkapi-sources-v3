@@ -4,7 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import time
-from typing import Optional
+from typing import Any, Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import IntegerValidator, StringValidator
@@ -33,6 +33,13 @@ class ExcelMappedBooleanValidator(MappedBooleanValidator):
             },
             **kwargs,
         )
+
+    def validate(self, input_data: Any, **kwargs) -> bool:
+        if isinstance(input_data, str):
+            input_data = input_data.lower().strip()
+
+        input_data = self.mapping.get(input_data, input_data)
+        return super().validate(input_data, **kwargs)
 
 
 @validataclass

@@ -50,10 +50,6 @@ class EllwangenPushConverter(NormalizedXlsxConverter):
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        for boolean_field in ['has_fee', 'is_covered', 'has_lighting']:
-            if boolean_field in parking_site_dict and isinstance(parking_site_dict[boolean_field], str):
-                parking_site_dict[boolean_field] = parking_site_dict[boolean_field].strip().lower()
-
         parking_site_dict['opening_hours'] = parking_site_dict['opening_hours'].replace('00:00-00:00', '00:00-24:00')
         parking_site_dict['max_stay'] = parking_site_dict['max_stay'] * 60 if parking_site_dict['max_stay'] else None
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))

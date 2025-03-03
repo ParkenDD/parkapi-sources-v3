@@ -175,7 +175,8 @@ class VrnParkAndRideFeaturesInput:
         return RealtimeParkingSiteInput(
             uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
             realtime_capacity=self.properties.realtime_free_capacity + self.properties.realtime_occupied
-            if self.properties.realtime_free_capacity != UnsetValue and self.properties.realtime_occupied != UnsetValue
+            if self.properties.realtime_free_capacity != UnsetValue
+            and self.properties.realtime_occupied is not UnsetValue
             else UnsetValue,
             realtime_free_capacity=self.properties.realtime_free_capacity,
             realtime_opening_status=self.properties.realtime_opening_status.to_realtime_opening_status(),

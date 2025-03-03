@@ -112,10 +112,6 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
             key: value for key, value in parking_site_raw_dict.items() if key.startswith('opening_hours_')
         })
 
-        for boolean_field in ['has_fee', 'is_covered', 'has_lighting']:
-            if boolean_field in parking_site_dict and isinstance(parking_site_dict[boolean_field], str):
-                parking_site_dict[boolean_field] = parking_site_dict[boolean_field].strip().lower()
-
         parking_site_dict['opening_hours'] = opening_hours_input.get_osm_opening_hours()
         parking_site_dict['type'] = (
             self.type_mapping.get(parking_site_dict.get('type').strip())

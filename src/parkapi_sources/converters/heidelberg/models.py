@@ -87,7 +87,7 @@ class HeidelbergParkingSubType(Enum):
 @validataclass
 class HeidelbergInput:
     id: str = StringValidator()
-    acceptedPaymentMethod: Optional[HeidelbergPaymentMethodType] = (
+    acceptedPaymentMethod: Optional[list[HeidelbergPaymentMethodType]] = (
         NoneableRemoveValueDict(
             ListValidator(EnumValidator(HeidelbergPaymentMethodType)),
         ),

@@ -113,7 +113,10 @@ class RadvisFeaturePropertiesInput:
         Noneable(ReplacingStringValidator(mapping={'\n': ' ', '\r': ''})),
         Default(None),
     )
-    status: StatusType = EnumValidator(StatusType)
+    status: Optional[StatusType] = (
+        Noneable(EnumValidator(StatusType)),
+        Default(None),
+    )
 
     def to_dicts(self) -> list[dict]:
         description: Optional[str] = None
