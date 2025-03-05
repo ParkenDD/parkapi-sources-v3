@@ -16,10 +16,6 @@ class PbwMapper:
         if parking_site_detail_input.ausstattung.einfahrtshoehe:
             max_height = int(parking_site_detail_input.ausstattung.einfahrtshoehe * 100)
 
-        parking_site_type = None
-        if parking_site_detail_input.objekt.art_lang:
-            parking_site_type = parking_site_detail_input.objekt.art_lang.to_parking_site_type_input()
-
         # We use StaticParkingSiteInput without validation because we validated the data before
         return StaticParkingSiteInput(
             uid=str(parking_site_detail_input.id),
@@ -31,7 +27,7 @@ class PbwMapper:
                 f'{parking_site_detail_input.objekt.strasse}, '
                 f'{parking_site_detail_input.objekt.plz} {parking_site_detail_input.objekt.ort}'
             ),
-            type=parking_site_type,
+            type=parking_site_detail_input.objekt.art_lang.to_parking_site_type_input(),
             max_height=max_height,
             # TODO: any way to create a fee_description or has_fee?
             # TODO: which field is maps to is_supervised?
