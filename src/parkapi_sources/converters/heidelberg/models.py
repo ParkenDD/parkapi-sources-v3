@@ -15,6 +15,7 @@ from validataclass.validators import (
     EnumValidator,
     IntegerValidator,
     ListValidator,
+    Noneable,
     NumericValidator,
     StringValidator,
     TimeFormat,
@@ -88,58 +89,64 @@ class HeidelbergParkingSubType(Enum):
 class HeidelbergInput:
     id: str = StringValidator()
     acceptedPaymentMethod: Optional[list[HeidelbergPaymentMethodType]] = (
-        NoneableRemoveValueDict(
-            ListValidator(EnumValidator(HeidelbergPaymentMethodType)),
+        Noneable(
+            RemoveValueDict(ListValidator(EnumValidator(HeidelbergPaymentMethodType))),
         ),
         Default(None),
     )
-    addressLocality: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
+    addressLocality: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
     availableSpotNumber: Optional[int] = NoneableRemoveValueDict(IntegerValidator(min_value=0)), Default(None)
     closingHours: Optional[time] = (
-        NoneableRemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS)),
+        Noneable(RemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS))),
         Default(None),
     )
     description: Optional[str] = (
-        NoneableRemoveValueDict(ReplacingStringValidator(mapping={'\r': '', '\n': ' ', '\xa0': ' '})),
+        Noneable(RemoveValueDict(ReplacingStringValidator(mapping={'\r': '', '\n': ' ', '\xa0': ' '}))),
         Default(None),
     )
     facilities: Optional[list[str]] = (
-        NoneableRemoveValueDict(ListValidator(EnumValidator(HeidelbergFacilityType))),
+        Noneable(RemoveValueDict(ListValidator(EnumValidator(HeidelbergFacilityType)))),
         Default(None),
     )
-    familyParkingSpots: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)
-    googlePlaceId: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
-    handicappedParkingSpots: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)
-    images: Optional[list[str]] = NoneableRemoveValueDict(ListValidator(UrlValidator())), Default(None)
+    familyParkingSpots: Optional[int] = Noneable(RemoveValueDict(IntegerValidator())), Default(None)
+    googlePlaceId: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
+    handicappedParkingSpots: Optional[int] = Noneable(RemoveValueDict(IntegerValidator())), Default(None)
+    images: Optional[list[str]] = Noneable(RemoveValueDict(ListValidator(UrlValidator()))), Default(None)
     lat: Decimal = RemoveValueDict(NumericValidator())
     lon: Decimal = RemoveValueDict(NumericValidator())
-    maximumAllowedHeight: Optional[Decimal] = NoneableRemoveValueDict(ExcelNoneable(NumericValidator())), Default(None)
-    maximumAllowedWidth: Optional[Decimal] = NoneableRemoveValueDict(ExcelNoneable((NumericValidator()))), Default(None)
+    maximumAllowedHeight: Optional[Decimal] = (
+        Noneable(RemoveValueDict(ExcelNoneable(NumericValidator()))),
+        Default(None),
+    )
+    maximumAllowedWidth: Optional[Decimal] = (
+        Noneable(RemoveValueDict(ExcelNoneable((NumericValidator())))),
+        Default(None),
+    )
     observationDateTime: datetime = RemoveValueDict(DateTimeValidator())
     openingHours: Optional[time] = (
-        NoneableRemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS)),
+        Noneable(RemoveValueDict(TimeValidator(time_format=TimeFormat.NO_SECONDS))),
         Default(None),
     )
     type: HeidelbergParkingType = EnumValidator(HeidelbergParkingType)
     parking_type: HeidelbergParkingSubType = RemoveValueDict(EnumValidator(HeidelbergParkingSubType))
-    postalCode: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)  # outsch
-    provider: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
+    postalCode: Optional[int] = Noneable(RemoveValueDict(IntegerValidator())), Default(None)  # outsch
+    provider: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
     staticName: str = RemoveValueDict(StringValidator())
-    staticParkingSiteId: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
+    staticParkingSiteId: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
     staticStatus: Optional[HeidelbergParkingSiteStatus] = (
-        NoneableRemoveValueDict(EnumValidator(HeidelbergParkingSiteStatus)),
+        Noneable(RemoveValueDict(EnumValidator(HeidelbergParkingSiteStatus))),
         Default(None),
     )
-    staticTotalSpotNumber: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)
+    staticTotalSpotNumber: Optional[int] = Noneable(RemoveValueDict(IntegerValidator())), Default(None)
     status: HeidelbergParkingSiteStatus = RemoveValueDict(EnumValidator(HeidelbergParkingSiteStatus))
-    streetAddress: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
-    streetAddressDriveway: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
-    streetAddressExit: Optional[str] = NoneableRemoveValueDict(StringValidator()), Default(None)
+    streetAddress: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
+    streetAddressDriveway: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
+    streetAddressExit: Optional[str] = Noneable(RemoveValueDict(StringValidator())), Default(None)
     totalSpotNumber: int = RemoveValueDict(IntegerValidator())
-    website: Optional[str] = NoneableRemoveValueDict(ExcelNoneable(UrlValidator())), Default(None)
-    womenParkingSpots: Optional[int] = NoneableRemoveValueDict(IntegerValidator()), Default(None)
+    website: Optional[str] = Noneable(RemoveValueDict(ExcelNoneable(UrlValidator()))), Default(None)
+    womenParkingSpots: Optional[int] = Noneable(RemoveValueDict(IntegerValidator())), Default(None)
     prices: Optional[list[dict]] = (
-        NoneableRemoveValueDict(ListValidator(AnythingValidator(allowed_types=[dict]))),
+        Noneable(RemoveValueDict(ListValidator(AnythingValidator(allowed_types=[dict])))),
         Default(None),
     )
 

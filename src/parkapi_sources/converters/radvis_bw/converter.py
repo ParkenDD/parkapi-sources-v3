@@ -12,7 +12,7 @@ from parkapi_sources.converters.base_converter.pull import PullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
-from .models import RadvisFeatureInput
+from .models import RadvisFeatureInput, StatusType
 
 
 class RadvisBwPullConverter(PullConverter):
@@ -48,6 +48,9 @@ class RadvisBwPullConverter(PullConverter):
 
                 # Ignore sources by config, because Radvis has a lot of duplicate data if you import data from other sources, too.
                 if radvis_parking_site_input.properties.quell_system in sources_to_ignore:
+                    continue
+
+                if radvis_parking_site_input.properties.status == StatusType.GEPLANT:
                     continue
 
                 static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(
