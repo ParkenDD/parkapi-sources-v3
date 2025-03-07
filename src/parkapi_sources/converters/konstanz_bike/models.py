@@ -58,10 +58,10 @@ class KonstanzBikeGeometry(Enum):
 @validataclass
 class KonstanzRowInput:
     uid: int = IntegerValidator(allow_strings=True)
-    operator_name: str = StringValidator()
-    district: str = StringValidator()
+    operator_name: Optional[str] = ExcelNoneable(StringValidator())
+    district: Optional[str] = ExcelNoneable(StringValidator())
     capacity: int = IntegerValidator(min_value=1, allow_strings=True)
-    address: str = StringValidator(min_length=1)
+    address: Optional[str] = ExcelNoneable(StringValidator(min_length=1))
     type: KonstanzBikeParkingSiteType = EnumValidator(KonstanzBikeParkingSiteType)
     has_lighting: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'1': True, '0': False}))
     is_covered: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'1': True, '0': False}))
@@ -69,13 +69,19 @@ class KonstanzRowInput:
     geometry: KonstanzBikeGeometry = EnumValidator(KonstanzBikeGeometry)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        if self.address and self.district:
+            address = f'{self.address}, {self.district}'
+        elif self.address:
+            address = f'{self.address}, Konstanz'
+        else:
+            address = None
         return StaticParkingSiteInput(
             uid=str(self.uid),
-            name=self.address,
+            name=self.address if self.address else 'Fahrradabstellanlage Konstanz',
             lat=sum([coordinate[1] for coordinate in self.coordinates]) / len(self.coordinates),
             lon=sum([coordinate[0] for coordinate in self.coordinates]) / len(self.coordinates),
             type=self.type.to_parking_site_type_input(),
-            address=f'{self.address}, Konstanz',
+            address=address,
             capacity=self.capacity,
             has_lighting=self.has_lighting,
             is_covered=self.is_covered,

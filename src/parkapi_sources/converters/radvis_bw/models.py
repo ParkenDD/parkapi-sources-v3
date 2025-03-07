@@ -82,6 +82,7 @@ class RadvisParkingSiteType(Enum):
 
 class StatusType(Enum):
     AKTIV = 'AKTIV'
+    GEPLANT = 'GEPLANT'
 
 
 @validataclass

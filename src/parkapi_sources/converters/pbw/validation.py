@@ -49,6 +49,7 @@ class PbwParkingSiteShortType(Enum):
     PG = 'PG'
     PH = 'PH'
     PA = 'PA'
+    PPL = 'PPL'
 
 
 @validataclass

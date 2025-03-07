@@ -38,8 +38,8 @@ class KarlsruhePullConverterTest:
     ):
         static_parking_site_inputs, import_parking_site_exceptions = karlsruhe_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 75
-        assert len(import_parking_site_exceptions) == 15
+        assert len(static_parking_site_inputs) == 76
+        assert len(import_parking_site_exceptions) == 14
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -53,6 +53,6 @@ class KarlsruhePullConverterTest:
         )
 
         assert len(realtime_parking_site_inputs) == 39
-        assert len(import_parking_site_exceptions) == 15
+        assert len(import_parking_site_exceptions) == 14
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

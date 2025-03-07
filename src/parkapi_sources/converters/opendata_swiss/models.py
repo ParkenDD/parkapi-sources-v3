@@ -34,6 +34,7 @@ class OpenDataSwissAddressInput:
 
 class OpenDataSwissParkingFacilityType(Enum):
     PARK_AND_RAIL = 'PARK_AND_RAIL'
+    PARKING = 'PARKING'
 
 
 class OpenDataSwissCapacityCategoryType(Enum):
@@ -60,10 +61,10 @@ class OpendataSwissReplacingStringValidator(ReplacingStringValidator):
 
 @validataclass
 class OpenDataSwissAdditionalInformationInput:
-    de: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
-    en: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
-    it: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
-    fr: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    deText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    enText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    itText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
+    frText: Optional[str] = Noneable(OpendataSwissReplacingStringValidator())
 
 
 class OpenDataSwissOperationTimeDaysOfWeek(Enum):
@@ -127,8 +128,10 @@ class OpenDataSwissPropertiesInput:
         DataclassValidator(OpenDataSwissAdditionalInformationInput)
     )
     parkingFacilityCategory: OpenDataSwissParkingFacilityCategory = EnumValidator(OpenDataSwissParkingFacilityCategory)
-    parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = Noneable(
-        EnumValidator(OpenDataSwissParkingFacilityType),
+    parkingFacilityType: Optional[OpenDataSwissParkingFacilityType] = (
+        Noneable(
+            EnumValidator(OpenDataSwissParkingFacilityType),
+        ),
     )
     salesChannels: Optional[list[str]] = Noneable(ListValidator(ReplacingStringValidator(mapping={'\n': ' '})))
     operationTime: Optional[OpenDataSwissOperationTimeInput] = Noneable(
@@ -202,7 +205,7 @@ class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
         static_parking_site_input.opening_hours = self.properties.get_osm_opening_hours()
 
         if self.properties.additionalInformationForCustomers:
-            static_parking_site_input.description = self.properties.additionalInformationForCustomers.de
+            static_parking_site_input.description = self.properties.additionalInformationForCustomers.deText
         else:
             static_parking_site_input.description = None
 

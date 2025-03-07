@@ -69,9 +69,9 @@ class KarlsruheBikePullConverterTest:
             karlsruhe_bike_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 296
+        assert len(static_parking_site_inputs) == 313
         # Lots of missing capacities
-        assert len(import_parking_site_exceptions) == 483
+        assert len(import_parking_site_exceptions) == 496
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -84,8 +84,8 @@ class KarlsruheBikePullConverterTest:
             karlsruhe_bike_ignore_missing_capacity_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 296
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_site_inputs) == 313
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
