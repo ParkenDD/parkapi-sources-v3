@@ -1,0 +1,8 @@
+# Mapping basics
+
+Some rules apply to all converters, they are collected in this document.
+
+* Datasets are split up into `StaticInput` and `RealtimeInput`. But inputs have a `uid` which used as the connection
+  between these two objects: same `uid` means same parking site / parking spot / ...
+* `uid`s should be unique in scope of the data source. Therefore, `uid`s are transformed into `original_uid` if used
+  by the ParkAPI project.
