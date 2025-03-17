@@ -20,8 +20,8 @@ class HerrenbergBikePullConverter(PullConverter):
     source_info = SourceInfo(
         uid='herrenberg_bike',
         name='Stadt Herrenberg - Munigrid: Fahrrad-Abstellanlagen',
-        public_url='https://www.munigrid.de/hbg/dataset/8',
-        source_url='https://www.munigrid.de/api/file/11/latest',
+        public_url='https://www.munigrid.de/hbg/dataset/radabstellanlagen',
+        source_url='https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg&distribution=geojson',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Herrenberg - Munigrid',
         attribution_license='CC 0 1.0',
