@@ -35,7 +35,8 @@ class XlsxConverter(PushConverter, ABC):
         pass
 
     def get_mapping_by_header(self, row: tuple[Cell, ...]) -> dict[str, int]:
-        row_values = [cell.value for cell in row]
+        row_values = [cell.value.replace('\n', '') if cell.value else cell.value for cell in row]
+
         mapping: dict[str, int] = {}
         for header_col, target_field in self.header_row.items():
             if header_col not in row_values:
