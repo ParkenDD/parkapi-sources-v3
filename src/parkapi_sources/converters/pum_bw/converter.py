@@ -40,6 +40,8 @@ class PumBwPushConverter(XlsxConverter):
     boolean_mapping: dict[str, bool] = {
         'vorhanden': True,
         'nicht vorhanden': False,
+        'Durchfahrt beleuchtet': True,
+        'teilweise beleuchtet': True,
     }
 
     def handle_xlsx(self, workbook: Workbook) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
@@ -75,9 +77,12 @@ class PumBwPushConverter(XlsxConverter):
         for field in mapping.keys():
             parking_site_dict[field] = row[mapping[field]].value
 
-        parking_site_dict['name'] = (
-            f'{parking_site_dict["autobahn"]}{parking_site_dict["autobahn_no"]} {parking_site_dict["name"]}'
-        )
+        parking_site_dict['name'] = f'{parking_site_dict["name"]}'
+        if parking_site_dict['autobahn'] and parking_site_dict['autobahn_no']:
+            parking_site_dict['name'] = (
+                f'{parking_site_dict["autobahn"]}{parking_site_dict["autobahn_no"]} {parking_site_dict["name"]}'
+            )
+
         parking_site_dict['type'] = 'OFF_STREET_PARKING_GROUND'
         parking_site_dict['park_and_ride_type'] = ['CARPOOL']
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
@@ -85,13 +90,14 @@ class PumBwPushConverter(XlsxConverter):
         parking_site_dict['has_lighting'] = self.boolean_mapping.get(parking_site_dict['has_lighting'].rstrip(), None)
 
         # Since the URL to Google map is in Excel Hyperlink, then we format it to url string for public_url
-        url_input = parking_site_dict['public_url']
-        url_input = (
-            url_input[: url_input.find('q=') + 2]
-            + f'{parking_site_dict["lat"]},{parking_site_dict["lon"]}'
-            + url_input[url_input.find('&ie') :]
-        )
-        public_url_match = re.search(r'(https[^")]+)', url_input)
-        parking_site_dict['public_url'] = public_url_match.group(0) if public_url_match else None
+        if '=HYPERLINK' in parking_site_dict['public_url']:
+            url_input = parking_site_dict['public_url']
+            url_input = (
+                url_input[: url_input.find('q=') + 2]
+                + f'{parking_site_dict["lat"]},{parking_site_dict["lon"]}'
+                + url_input[url_input.find('&ie') :]
+            )
+            public_url_match = re.search(r'(https[^")]+)', url_input)
+            parking_site_dict['public_url'] = public_url_match.group(0) if public_url_match else None
 
         return parking_site_dict
