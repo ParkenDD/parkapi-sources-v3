@@ -8,14 +8,17 @@ from abc import abstractmethod
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    ParkingSitePullConverter,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import KienzlerGeojsonFeatureInput, KienzlerInput
 
 
-class KienzlerBasePullConverter(PullConverter, StaticGeojsonDataMixin):
+class KienzlerBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
     kienzler_list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     kienzler_item_validator = DataclassValidator(KienzlerInput)
     geojson_feature_validator = DataclassValidator(KienzlerGeojsonFeatureInput)

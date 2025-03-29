@@ -9,6 +9,7 @@ from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
@@ -19,7 +20,7 @@ class ParkingSiteItemsInput:
     items: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict]))
 
 
-class ParkApiConverter(JsonConverter, ABC):
+class ParkApiConverter(JsonConverter, ParkingSiteBaseConverter, ABC):
     parking_site_items_validator = DataclassValidator(ParkingSiteItemsInput)
     static_parking_site_validator = DataclassValidator(StaticParkingSiteInput)
     realtime_parking_site_validator = DataclassValidator(RealtimeParkingSiteInput)

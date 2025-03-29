@@ -6,7 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
@@ -14,7 +14,7 @@ from .mapper import BahnMapper
 from .validators import BahnParkingSiteCapacityType, BahnParkingSiteInput
 
 
-class BahnV2PullConverter(PullConverter):
+class BahnV2PullConverter(ParkingSitePullConverter):
     _base_url = 'https://apis.deutschebahn.com/db-api-marketplace/apis/parking-information/db-bahnpark/v2'
     required_config_keys = ['PARK_API_BAHN_API_CLIENT_ID', 'PARK_API_BAHN_API_CLIENT_SECRET']
 

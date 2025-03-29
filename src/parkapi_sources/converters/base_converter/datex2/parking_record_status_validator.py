@@ -31,6 +31,7 @@ class ParkingRecordStatus:
     parkingStatusOriginTime: datetime = DateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
+        discard_milliseconds=True,
     )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:

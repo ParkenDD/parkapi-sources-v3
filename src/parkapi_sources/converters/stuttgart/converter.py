@@ -10,6 +10,7 @@ from lxml import etree
 from lxml.etree import Element
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.datex2 import Datex2RealtimeMixin, ParkingFacilityMixin
 from parkapi_sources.converters.base_converter.push import XmlConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
@@ -18,7 +19,7 @@ from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticP
 from .validators import ParkingFacilityStatus, StuttgartParkingFacility
 
 
-class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConverter):
+class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConverter, ParkingSiteBaseConverter):
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
     static_validator = DataclassValidator(StuttgartParkingFacility)
     realtime_validator = DataclassValidator(ParkingFacilityStatus)

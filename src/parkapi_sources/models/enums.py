@@ -68,3 +68,26 @@ class SupervisionType(Enum):
     NO = 'NO'
     VIDEO = 'VIDEO'
     ATTENDED = 'ATTENDED'
+
+
+class ParkingSpotStatus(Enum):
+    AVAILABLE = 'AVAILABLE'
+    TAKEN = 'TAKEN'
+    UNKNOWN = 'UNKNOWN'
+
+
+class ParkingAudience(Enum):
+    DISABLED = 'DISABLED'
+    WOMEN = 'WOMEN'
+    FAMILY = 'FAMILY'
+    CARSHARING = 'CARSHARING'
+    CHARGING = 'CHARGING'
+    TAXI = 'TAXI'
+    PRIVATE = 'PRIVATE'
+    DELIVERY = 'DELIVERY'
+    TRUCK = 'TRUCK'
+    BUS = 'BUS'
+    NO_PARKING = 'NO_PARKING'
+    NO_STOPPING = 'NO_STOPPING'
+    CUSTOMER = 'CUSTOMER'
+    RESIDENT = 'RESIDENT'

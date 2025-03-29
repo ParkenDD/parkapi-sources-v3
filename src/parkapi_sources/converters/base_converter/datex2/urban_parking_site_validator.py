@@ -7,7 +7,7 @@ from datetime import datetime
 from decimal import Decimal
 from enum import Enum
 
-from validataclass.dataclasses import validataclass
+from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
     DataclassValidator,
     DateTimeValidator,
@@ -19,7 +19,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
 
 
 class ParkingLayout(Enum):
@@ -28,6 +28,15 @@ class ParkingLayout(Enum):
 
 class Language(Enum):
     DE = 'de'
+
+
+class ApplicableForUser(Enum):
+    DISABLED = 'disabled'
+
+    def to_parking_audience(self) -> ParkingAudience | None:
+        return {
+            self.DISABLED: ParkingAudience.DISABLED,
+        }.get(self)
 
 
 class DatexUrbanParkingSiteType(Enum):
@@ -62,13 +71,19 @@ class ParkingName:
 
 
 @validataclass
-class ParkingRecord:
+class AssignedParking:
+    applicableForUser: list[ApplicableForUser] = ListValidator(EnumValidator(ApplicableForUser))
+
+
+@validataclass
+class UrbanParkingSite:
     id: str = StringValidator()
     parkingLayout: ParkingLayout = EnumValidator(ParkingLayout)
     parkingLocation: ParkingLocation = DataclassValidator(ParkingLocation)
     parkingName: list[ParkingName] = ListValidator(DataclassValidator(ParkingName))
     parkingNumberOfSpaces: int = IntegerValidator(allow_strings=True)
-    parkingRecordVersionTime: datetime = DateTimeValidator()
+    parkingRecordVersionTime: datetime = DateTimeValidator(discard_milliseconds=True)
+    assignedParkingAmongOthers: AssignedParking | None = DataclassValidator(AssignedParking), Default(None)
     urbanParkingSiteType: DatexUrbanParkingSiteType = EnumValidator(DatexUrbanParkingSiteType)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:

@@ -8,14 +8,14 @@ from abc import ABC
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import VrnParkAndRideFeaturesInput
 
 
-class VrnParkAndRidePullConverter(PullConverter, ABC):
+class VrnParkAndRidePullConverter(ParkingSitePullConverter, ABC):
     list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     geojson_validator = DataclassValidator(GeojsonInput)
     vrn_p_r_feature_validator = DataclassValidator(VrnParkAndRideFeaturesInput)

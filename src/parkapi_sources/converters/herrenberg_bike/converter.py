@@ -6,14 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import HerrenbergBikeFeatureInput
 
 
-class HerrenbergBikePullConverter(PullConverter):
+class HerrenbergBikePullConverter(ParkingSitePullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
     herrenberg_feature_validator = DataclassValidator(HerrenbergBikeFeatureInput)
 

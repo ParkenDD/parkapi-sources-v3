@@ -8,11 +8,12 @@ from typing import Any
 
 from openpyxl.cell import Cell
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import NormalizedXlsxConverter
 from parkapi_sources.models import SourceInfo
 
 
-class HuefnerPushConverter(NormalizedXlsxConverter):
+class HuefnerPushConverter(NormalizedXlsxConverter, ParkingSiteBaseConverter):
     source_info = SourceInfo(
         uid='huefner',
         name='PARK SERVICE HÜFNER GmbH & Co. KG',

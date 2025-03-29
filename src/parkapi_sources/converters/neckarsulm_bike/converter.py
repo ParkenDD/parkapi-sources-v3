@@ -10,12 +10,13 @@ from io import StringIO
 import pyproj
 from validataclass.exceptions import ValidationError
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import CsvConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
-class NeckarsulmBikePushConverter(CsvConverter):
+class NeckarsulmBikePushConverter(CsvConverter, ParkingSiteBaseConverter):
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
 
     source_info = SourceInfo(

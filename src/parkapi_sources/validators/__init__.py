@@ -8,6 +8,7 @@ from .date_validator import ParsedDateValidator
 from .datetime_validator import Rfc1123DateTimeValidator, SpacedDateTimeValidator, TimestampDateTimeValidator
 from .decimal_validators import GermanDecimalValidator
 from .integer_validators import GermanDurationIntegerValidator
+from .iso_duration_validator import IsoDurationValidator
 from .list_validator import DumpedListValidator, PointCoordinateTupleValidator
 from .noneable import EmptystringNoneable, ExcelNoneable
 from .string_validators import NumberCastingStringValidator, ReplacingStringValidator

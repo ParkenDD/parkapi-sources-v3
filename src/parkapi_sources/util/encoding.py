@@ -4,10 +4,12 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import json
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from decimal import Decimal
 from enum import Enum
 from typing import Any
+
+from isodate import Duration, duration_isoformat
 
 
 def convert_to_serializable_value(obj: Any) -> Any:
@@ -15,6 +17,8 @@ def convert_to_serializable_value(obj: Any) -> Any:
         return obj.strftime('%Y-%m-%dT%H:%M:%SZ')
     if isinstance(obj, date):
         return obj.isoformat()
+    if isinstance(obj, timedelta) or isinstance(obj, Duration):
+        return duration_isoformat(obj)
     if isinstance(obj, Decimal):
         return str(obj)
     if isinstance(obj, Enum):

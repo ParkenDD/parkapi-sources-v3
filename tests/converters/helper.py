@@ -9,7 +9,12 @@ from typing import TYPE_CHECKING
 
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    RealtimeParkingSpotInput,
+    StaticParkingSiteInput,
+    StaticParkingSpotInput,
+)
 from parkapi_sources.util import DefaultJSONEncoder
 
 if TYPE_CHECKING:
@@ -63,3 +68,27 @@ def validate_realtime_parking_site_inputs(realtime_parking_site_inputs: list[Rea
             json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder)
         )
         validator.validate(parking_site_dict)
+
+
+def validate_static_parking_spot_inputs(static_parking_spot_inputs: list[StaticParkingSpotInput]):
+    validator = DataclassValidator(StaticParkingSpotInput)
+
+    for static_parking_spot_input in static_parking_spot_inputs:
+        assert static_parking_spot_input.static_data_updated_at.tzinfo is not None
+        assert isinstance(static_parking_spot_input.uid, str)
+        parking_slot_dict = json.loads(
+            json.dumps(filter_none(static_parking_spot_input.to_dict()), cls=DefaultJSONEncoder)
+        )
+        validator.validate(parking_slot_dict)
+
+
+def validate_realtime_parking_spot_inputs(static_parking_slot_inputs: list[RealtimeParkingSpotInput]):
+    validator = DataclassValidator(RealtimeParkingSpotInput)
+
+    for realtime_parking_spot_input in static_parking_slot_inputs:
+        assert realtime_parking_spot_input.realtime_data_updated_at.tzinfo is not None
+        assert isinstance(realtime_parking_spot_input.uid, str)
+        parking_spot_dict = json.loads(
+            json.dumps(filter_none(realtime_parking_spot_input.to_dict()), cls=DefaultJSONEncoder)
+        )
+        validator.validate(parking_spot_dict)

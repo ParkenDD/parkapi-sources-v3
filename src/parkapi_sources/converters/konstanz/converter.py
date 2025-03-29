@@ -6,14 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import KonstanzParkingSiteInput, KonstanzParkingSitesInput
 
 
-class KonstanzPullConverter(PullConverter):
+class KonstanzPullConverter(ParkingSitePullConverter):
     source_info = SourceInfo(
         uid='konstanz',
         name='Stadt Konstanz',

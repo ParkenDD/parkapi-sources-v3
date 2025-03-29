@@ -10,13 +10,14 @@ import pyproj
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import CsvConverter
 from parkapi_sources.converters.reutlingen_bike.validation import ReutlingenBikeRowInput
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
-class ReutlingenBikePushConverter(CsvConverter):
+class ReutlingenBikePushConverter(CsvConverter, ParkingSiteBaseConverter):
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
     reutlingen_bike_row_validator = DataclassValidator(ReutlingenBikeRowInput)
 

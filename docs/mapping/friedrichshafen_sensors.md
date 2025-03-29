@@ -7,8 +7,8 @@ spots.
 
 Attributes which are set statically:
 
-* `realtime_opening_status` is always set to `OPEN`
 * `has_realtime_data` is always set to `true`
+* `purpose` is always set to `CAR`
 
 
 ## ParkingRecord

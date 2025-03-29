@@ -42,3 +42,9 @@ class BaseConverter(ABC):
 
     def request_delete(self, **kwargs) -> Response:
         return self.request_helper.delete(source_info=self.source_info, **kwargs)
+
+
+class ParkingSiteBaseConverter(ABC): ...
+
+
+class ParkingSpotBaseConverter(ABC): ...

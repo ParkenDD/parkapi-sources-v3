@@ -6,6 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import CsvConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
@@ -13,7 +14,7 @@ from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 from .models import KonstanzRowInput
 
 
-class KonstanzBikePushConverter(CsvConverter):
+class KonstanzBikePushConverter(CsvConverter, ParkingSiteBaseConverter):
     konstanz_bike_row_validator = DataclassValidator(KonstanzRowInput)
     csv_delimiter = ','
 

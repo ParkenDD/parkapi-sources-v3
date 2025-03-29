@@ -6,14 +6,17 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    ParkingSitePullConverter,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import PMBWInput
 
 
-class PMBWPullConverter(PullConverter, StaticGeojsonDataMixin):
+class PMBWPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
     required_config_keys = ['PARK_API_P_M_BW_TOKEN']
 
     list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))

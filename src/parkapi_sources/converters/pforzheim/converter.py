@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
@@ -16,7 +17,7 @@ from parkapi_sources.models.enums import SupervisionType
 from .validation import PforzheimInput
 
 
-class PforzheimPushConverter(JsonConverter):
+class PforzheimPushConverter(JsonConverter, ParkingSiteBaseConverter):
     pforzheim_validator = DataclassValidator(PforzheimInput)
 
     source_info = SourceInfo(

@@ -8,7 +8,7 @@ from typing import Optional
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
@@ -16,7 +16,7 @@ from .mapper import PbwMapper
 from .validation import PbwCityInput, PbwParkingSiteDetailInput, PbwParkingSiteInput, PbwRealtimeInput
 
 
-class PbwPullConverter(PullConverter):
+class PbwPullConverter(ParkingSitePullConverter):
     _base_url = 'https://www.mypbw.de/api/'
     required_config_keys = ['PARK_API_PBW_API_KEY']
 
