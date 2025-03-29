@@ -43,6 +43,8 @@ class MobilithekPullConverter(PullConverter, ABC):
                 self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
             ),
         )
+        # Force UTF-8 encoding, because python requests sets ISO-8859-1 because of RFC 2616
+        response.encoding = 'utf-8'
 
         root = etree.fromstring(response.text, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 

@@ -6,14 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import FreiburgFeatureInput
 
 
-class FreiburgPullConverter(PullConverter, StaticGeojsonDataMixin):
+class FreiburgPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
     freiburg_realtime_feature_validator = DataclassValidator(FreiburgFeatureInput)
     source_info = SourceInfo(
         uid='freiburg',

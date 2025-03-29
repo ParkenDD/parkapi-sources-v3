@@ -5,6 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from .mobilithek_parking_site_pull_converter import MobilithekParkingSitePullConverter
 from .mobilithek_pull_converter import MobilithekPullConverter
-from .pull_converter import PullConverter
+from .pull_converter import ParkingSitePullConverter, ParkingSpotPullConverter, PullConverter
 from .pull_scraper_mixin import PullScraperMixin
 from .static_geojson_mixin import StaticGeojsonDataMixin

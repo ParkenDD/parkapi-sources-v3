@@ -120,6 +120,8 @@ class ParkAPISources:
         converter_uids: Optional[list[str]] = None,
         no_pull_converter: bool = False,
         no_push_converter: bool = False,
+        # custom_converters can be used to inject own converter classes
+        custom_converters: list[BaseConverter] = None,
     ):
         self.config_helper = ConfigHelper(config=config)
         self.request_helper = RequestHelper(config_helper=self.config_helper)
@@ -146,6 +148,9 @@ class ParkAPISources:
                 config_helper=self.config_helper,
                 request_helper=self.request_helper,
             )
+
+        if custom_converters is not None:
+            self.converter_by_uid.update({converter.source_info.uid: converter for converter in custom_converters})
 
     def check_credentials(self):
         for converter in self.converter_by_uid.values():

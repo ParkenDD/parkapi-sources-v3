@@ -9,9 +9,8 @@ from validataclass.validators import AnyOfValidator
 from parkapi_sources.converters.base_converter.datex2 import UrbanParkingSite
 from parkapi_sources.converters.base_converter.datex2.parking_record_status_validator import ParkingRecordStatus
 from parkapi_sources.converters.base_converter.datex2.urban_parking_site_validator import Language
-from parkapi_sources.models import RealtimeParkingSpotInput, StaticParkingSpotInput
+from parkapi_sources.models import ParkingRestrictionInput, RealtimeParkingSpotInput, StaticParkingSpotInput
 from parkapi_sources.models.enums import ParkingSpotStatus, PurposeType
-from parkapi_sources.models.parking_restriction_inputs import ParkingRestrictionInput
 
 
 @validataclass
@@ -20,7 +19,7 @@ class FriedrichshafenSensorsParkingSpot(UrbanParkingSite):
     parkingNumberOfSpaces: int = AnyOfValidator(allowed_values=['1'])
 
     def to_static_parking_spot_input(self) -> StaticParkingSpotInput:
-        name_de = ''
+        name_de: str | None = None
         for name in self.parkingName:
             if name.lang == Language.DE:
                 name_de = name._text
@@ -38,7 +37,7 @@ class FriedrichshafenSensorsParkingSpot(UrbanParkingSite):
             lat=self.parkingLocation.pointByCoordinates.pointCoordinates.latitude,
             lon=self.parkingLocation.pointByCoordinates.pointCoordinates.longitude,
             static_data_updated_at=self.parkingRecordVersionTime,
-            restricted_to=None if len(restricted_to) else restricted_to,
+            restricted_to=restricted_to if len(restricted_to) else None,
         )
 
 

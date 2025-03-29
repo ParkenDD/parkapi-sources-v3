@@ -8,14 +8,14 @@ from abc import ABC, abstractmethod
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 
 from .base_models import BfrkBaseInput
 
 
-class BfrkBasePushConverter(PullConverter, ABC):
+class BfrkBasePushConverter(ParkingSitePullConverter, ABC):
     @property
     @abstractmethod
     def bfrk_validator(self) -> DataclassValidator:

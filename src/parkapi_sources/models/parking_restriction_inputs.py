@@ -4,7 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from isodate import Duration
-from validataclass.dataclasses import Default, validataclass
+from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import EnumValidator, Noneable, StringValidator
 
 from parkapi_sources.models.enums import ParkingAudience
@@ -12,7 +12,7 @@ from parkapi_sources.validators.iso_duration_validator import IsoDurationValidat
 
 
 @validataclass
-class ParkingRestrictionInput:
+class ParkingRestrictionInput(ValidataclassMixin):
     type: ParkingAudience | None = Noneable(EnumValidator(ParkingAudience)), Default(None)
     hours: str | None = Noneable(StringValidator()), Default(None)
     max_stay: Duration | None = Noneable(IsoDurationValidator()), Default(None)

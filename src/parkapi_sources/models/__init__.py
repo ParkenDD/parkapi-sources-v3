@@ -10,6 +10,7 @@ from .geojson_inputs import (
     GeojsonFeatureInput,
     GeojsonInput,
 )
+from .parking_restriction_inputs import ParkingRestrictionInput
 from .parking_site_inputs import CombinedParkingSiteInput, RealtimeParkingSiteInput, StaticParkingSiteInput
 from .parking_spot_inputs import CombinedParkingSpotInput, RealtimeParkingSpotInput, StaticParkingSpotInput
 from .source_info import SourceInfo

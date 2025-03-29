@@ -10,12 +10,13 @@ from openpyxl.cell import Cell
 from openpyxl.workbook.workbook import Workbook
 from validataclass.exceptions import ValidationError
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import XlsxConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 
 
-class PumBwPushConverter(XlsxConverter):
+class PumBwPushConverter(XlsxConverter, ParkingSiteBaseConverter):
     source_info = SourceInfo(
         uid='pum_bw',
         name='Baden-Württemberg: Parken und Mitfahren',

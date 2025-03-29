@@ -15,16 +15,24 @@ class MissingConverterException(Exception):
 class ImportException(Exception):
     source_uid: str
     message: str
+    data: dict | None
 
-    def __init__(self, source_uid: str, message: str):
+    def __init__(self, source_uid: str, message: str, data: dict | None = None):
         self.source_uid = source_uid
         self.message = message
+        self.data = data
 
     def __repr__(self) -> str:
-        return f'{self.__class__.__name__} {self.source_uid}: {self.message}'
+        result = f'{self.__class__.__name__} {self.source_uid}: {self.message}'
+        if self.data:
+            result += f'; data: {self.data}'
+        return result
 
     def __str__(self) -> str:
-        return f'{self.__class__.__name__} {self.source_uid}: {self.message}'
+        result = f'{self.__class__.__name__} {self.source_uid}: {self.message}'
+        if self.data:
+            result += f'; data: {self.data}'
+        return result
 
 
 class ImportSourceException(ImportException):

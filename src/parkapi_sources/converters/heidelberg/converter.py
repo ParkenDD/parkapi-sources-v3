@@ -6,14 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import HeidelbergInput
 
 
-class HeidelbergPullConverter(PullConverter):
+class HeidelbergPullConverter(ParkingSitePullConverter):
     required_config_keys = ['PARK_API_HEIDELBERG_API_KEY']
     list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     heidelberg_validator = DataclassValidator(HeidelbergInput)

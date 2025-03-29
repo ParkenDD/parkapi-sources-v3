@@ -44,7 +44,7 @@ class GeojsonPolygonInput(ValidataclassMixin):
 @validataclass
 class StaticParkingSpotInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
-    name: str = StringValidator(min_length=1, max_length=256)
+    name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
     static_data_updated_at: datetime = DateTimeValidator(
         local_timezone=timezone.utc,
@@ -61,7 +61,7 @@ class StaticParkingSpotInput(ValidataclassMixin):
     geojson: GeojsonPolygonInput | None = Noneable(DataclassValidator(GeojsonPolygonInput)), Default(None)
 
     restricted_to: list[ParkingRestrictionInput] | None = (
-        Noneable(ListValidator(ParkingRestrictionInput)),
+        Noneable(ListValidator(DataclassValidator(ParkingRestrictionInput))),
         Default(None),
     )
 

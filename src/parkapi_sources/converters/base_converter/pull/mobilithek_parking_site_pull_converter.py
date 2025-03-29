@@ -12,9 +12,10 @@ from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteIn
 from parkapi_sources.util import XMLHelper
 
 from .mobilithek_pull_converter import MobilithekPullConverter
+from .pull_converter import ParkingSitePullConverter
 
 
-class MobilithekParkingSitePullConverter(MobilithekPullConverter, ABC):
+class MobilithekParkingSitePullConverter(MobilithekPullConverter, ParkingSitePullConverter, ABC):
     xml_helper = XMLHelper()
 
     @abstractmethod
