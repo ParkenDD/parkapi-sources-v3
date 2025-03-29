@@ -6,53 +6,54 @@ Publication Light at any extension of the model.
 
 We support following data sources:
 
-| name                                                           | purpose    | type        | uid                      | realtime |
-|----------------------------------------------------------------|------------|-------------|--------------------------|----------|
-| Aachen                                                         | car        | pull        | `aachen`                 | yes      |
-| APCOA Services                                                 | car        | pull        | `apcoa`                  | no       |
-| Deutsche Bahn                                                  | car & bike | pull        | `bahn_v2`                | no       |
-| Stadt Bietigheim-Bissingen                                     | car        | pull        | `bietigheim_bissingen`   | yes      |
-| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | car        | pull        | `bfrk_bw_car`            | no       |
-| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | bike       | pull        | `bfrk_bw_bike`           | no       |
-| Stadt Ellwangen                                                | car        | push (xlsx) | `ellwangen`              | no       |
-| Stadt Buchen                                                   | car        | push (json) | `buchen`                 | yes      |
-| Stadt Freiburg                                                 | car        | pull        | `freiburg`               | yes      |
-| GOLDBECK Parking Services                                      | car        | push (xlsx) | `goldbeck`               | no       |
-| Stadt Heidelberg                                               | car        | pull        | `heidelberg`             | yes      |
-| Stadt Herrenberg                                               | car        | pull        | `herrenberg`             | no       |
-| Stadt Herrenberg - Munigrid                                    | bike       | pull        | `herrenberg_bike`        | no       |
-| PARK SERVICE HÜFNER GmbH + Co. KG                              | car        | push (xlsx) | `huefner`                | no       |
-| Stadt Karlsruhe: PKW-Parkplätze                                | car        | pull        | `karlsruhe`              | yes      |
-| Stadt Karlsruhe: Fahhrrad-Abstellangen                         | bike       | pull        | `karlsruhe_bike`         | no       |
-| Kienzler: Bike and Ride                                        | bike       | pull        | `kienzler_bike_and_ride` | yes      |
-| Kienzler: Karlsruhe                                            | bike       | pull        | `kienzler_karlruhe`      | yes      |
-| Kienzler: Neckarsulm                                           | bike       | pull        | `kienzler_neckarsulm`    | yes      |
-| Kienzler: Offenburg                                            | bike       | pull        | `kienzler_offenburg`     | yes      |
-| Kienzler: RadSafe                                              | bike       | pull        | `kienzler_rad_safe`      | yes      |
-| Kienzler: Stuttgart                                            | bike       | pull        | `kienzler_stuttgart`     | yes      |
-| Kienzler: VRN                                                  | bike       | pull        | `kienzler_vrn`           | yes      |
-| Konstanz                                                       | car        | pull        | `konstanz`               | yes      |
-| Stadt Konstanz: Fahrrad-Abstellanlagen                         | bike       | push        | `konstanz_bike`          | no       |
-| Stadt Mannheim                                                 | car        | push (json) | `mannheim`               | yes      |
-| Stadt Neckarsulm: PKW-Parkplätze                               | car        | pull        | `neckarsulm`             | no       |
-| Stadt Neckarsulm: Fahrrad-Abstellanlagen                       | bike       | pull        | `neckarsulm_bike`        | no       |
-| Open-Data-Plattform öV Schweiz                                 | car        | pull (json) | `opendata_swiss`         | no       |
-| P + M Baden-Württemberg                                        | car        | pull        | `p_m_bw`                 | yes      |
-| Baden-Württemberg: Parken und Mitfahren                        | car        | push (xlsx) | `pum_bw`                 | no       |
-| RadVIS Baden-Württemberg (experimental)                        | bike       | pull        | `radvis_bw`              | no       |
-| Parkraumgesellschaft Baden-Württemberg                         | car        | pull        | `pbw`                    | yes      |
-| Stadt Pforzheim                                                | car        | push (csv)  | `pforzheim`              | no       |
-| Stadt Reutlingen: PKW-Parkplätze                               | car        | push (csv)  | `reutlingen`             | no       |
-| Stadt Reutlingen: Fahrrad-Abstellanlagen                       | bike       | push (csv)  | `reutlingen_bike`        | no       |
-| Stadt Stuttgart                                                | car        | push (json) | `stuttgart`              | yes      |
-| Stadt Ulm                                                      | car        | pull        | `ulm`                    | yes      |
-| Velobrix                                                       | bike       | pull        | `velobrix`               | yes      |
-| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | car        | pull        | `vrn_p_r`                | yes      |
-| Verband Region Stuttgart: Bondorf                              | car        | pull        | `vrs_bondorf`            | yes      |
-| Verband Region Stuttgart: Kirchheim                            | car        | pull        | `vrs_kirchheim`          | yes      |
-| Verband Region Stuttgart: Neustadt                             | car        | pull        | `vrs_neustadt`           | yes      |
-| Verband Region Stuttgart: Park and Ride                        | car        | push (xlsx) | `vrs_p_r`                | no       |
-| Verband Region Stuttgart: Vaihingen                            | car        | pull        | `vrs_vaihingen`          | yes      |
+| name                                                           | data type   | purpose    | type        | uid                       | realtime |
+|----------------------------------------------------------------|-------------|------------|-------------|---------------------------|----------|
+| Aachen                                                         | ParkingSite | car        | pull        | `aachen`                  | yes      |
+| APCOA Services                                                 | ParkingSite | car        | pull        | `apcoa`                   | no       |
+| Deutsche Bahn                                                  | ParkingSite | car & bike | pull        | `bahn_v2`                 | no       |
+| Stadt Bietigheim-Bissingen                                     | ParkingSite | car        | pull        | `bietigheim_bissingen`    | yes      |
+| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | ParkingSite | car        | pull        | `bfrk_bw_car`             | no       |
+| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | ParkingSite | bike       | pull        | `bfrk_bw_bike`            | no       |
+| Stadt Buchen                                                   | ParkingSite | car        | push (json) | `buchen`                  | yes      |
+| Stadt Ellwangen                                                | ParkingSite | car        | push (xlsx) | `ellwangen`               | no       |
+| Stadt Freiburg                                                 | ParkingSite | car        | pull        | `freiburg`                | yes      |
+| Friedrichhafen Sensors                                         | ParkingSpot | car        | pull        | `friedrichshafen_sensors` | yes      |
+| GOLDBECK Parking Services                                      | ParkingSite | car        | push (xlsx) | `goldbeck`                | no       |
+| Stadt Heidelberg                                               | ParkingSite | car        | pull        | `heidelberg`              | yes      |
+| Stadt Herrenberg                                               | ParkingSite | car        | pull        | `herrenberg`              | no       |
+| Stadt Herrenberg - Munigrid                                    | ParkingSite | bike       | pull        | `herrenberg_bike`         | no       |
+| PARK SERVICE HÜFNER GmbH + Co. KG                              | ParkingSite | car        | push (xlsx) | `huefner`                 | no       |
+| Stadt Karlsruhe: PKW-Parkplätze                                | ParkingSite | car        | pull        | `karlsruhe`               | yes      |
+| Stadt Karlsruhe: Fahhrrad-Abstellangen                         | ParkingSite | bike       | pull        | `karlsruhe_bike`          | no       |
+| Kienzler: Bike and Ride                                        | ParkingSite | bike       | pull        | `kienzler_bike_and_ride`  | yes      |
+| Kienzler: Karlsruhe                                            | ParkingSite | bike       | pull        | `kienzler_karlruhe`       | yes      |
+| Kienzler: Neckarsulm                                           | ParkingSite | bike       | pull        | `kienzler_neckarsulm`     | yes      |
+| Kienzler: Offenburg                                            | ParkingSite | bike       | pull        | `kienzler_offenburg`      | yes      |
+| Kienzler: RadSafe                                              | ParkingSite | bike       | pull        | `kienzler_rad_safe`       | yes      |
+| Kienzler: Stuttgart                                            | ParkingSite | bike       | pull        | `kienzler_stuttgart`      | yes      |
+| Kienzler: VRN                                                  | ParkingSite | bike       | pull        | `kienzler_vrn`            | yes      |
+| Konstanz                                                       | ParkingSite | car        | pull        | `konstanz`                | yes      |
+| Stadt Konstanz: Fahrrad-Abstellanlagen                         | ParkingSite | bike       | push        | `konstanz_bike`           | no       |
+| Stadt Mannheim                                                 | ParkingSite | car        | push (json) | `mannheim`                | yes      |
+| Stadt Neckarsulm: PKW-Parkplätze                               | ParkingSite | car        | pull        | `neckarsulm`              | no       |
+| Stadt Neckarsulm: Fahrrad-Abstellanlagen                       | ParkingSite | bike       | pull        | `neckarsulm_bike`         | no       |
+| Open-Data-Plattform öV Schweiz                                 | ParkingSite | car        | pull (json) | `opendata_swiss`          | no       |
+| P + M Baden-Württemberg                                        | ParkingSite | car        | pull        | `p_m_bw`                  | yes      |
+| Baden-Württemberg: Parken und Mitfahren                        | ParkingSite | car        | push (xlsx) | `pum_bw`                  | no       |
+| RadVIS Baden-Württemberg (experimental)                        | ParkingSite | bike       | pull        | `radvis_bw`               | no       |
+| Parkraumgesellschaft Baden-Württemberg                         | ParkingSite | car        | pull        | `pbw`                     | yes      |
+| Stadt Pforzheim                                                | ParkingSite | car        | push (csv)  | `pforzheim`               | no       |
+| Stadt Reutlingen: PKW-Parkplätze                               | ParkingSite | car        | push (csv)  | `reutlingen`              | no       |
+| Stadt Reutlingen: Fahrrad-Abstellanlagen                       | ParkingSite | bike       | push (csv)  | `reutlingen_bike`         | no       |
+| Stadt Stuttgart                                                | ParkingSite | car        | push (json) | `stuttgart`               | yes      |
+| Stadt Ulm                                                      | ParkingSite | car        | pull        | `ulm`                     | yes      |
+| Velobrix                                                       | ParkingSite | bike       | pull        | `velobrix`                | yes      |
+| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | ParkingSite | car        | pull        | `vrn_p_r`                 | yes      |
+| Verband Region Stuttgart: Bondorf                              | ParkingSite | car        | pull        | `vrs_bondorf`             | yes      |
+| Verband Region Stuttgart: Kirchheim                            | ParkingSite | car        | pull        | `vrs_kirchheim`           | yes      |
+| Verband Region Stuttgart: Neustadt                             | ParkingSite | car        | pull        | `vrs_neustadt`            | yes      |
+| Verband Region Stuttgart: Park and Ride                        | ParkingSite | car        | push (xlsx) | `vrs_p_r`                 | no       |
+| Verband Region Stuttgart: Vaihingen                            | ParkingSite | car        | pull        | `vrs_vaihingen`           | yes      |
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 
@@ -87,6 +88,7 @@ my_sources = ParkAPISources()
 - `converter_uids: Optional[list[str]] = None` is used for loading just the converter uids you want to load
 - `no_pull_converter: bool = False` is used for limiting converters to pull converters
 - `no_push_converter: bool = False` is used for limiting converters to push converters
+- `custom_converters: list[BaseConverter] = None` is used for additional custom converters
 
 
 ### Configuration
@@ -120,17 +122,24 @@ default, static GeoJSON files are fetched from this repository. This behaviour c
 ### Use converters
 
 After initializing, you will find all initialized converters at `ParkAPISources.converter_by_uid`. As the input is very different, so are
-the methods you have to use. In general, you can differ between two major strategies:
+the methods you have to use. In general, you can differ between two major strategies, pull- and push-converters. Also, each converter has
+to define which data it provides by using the corresponding parent classes, currently `ParkingSite` for parking sites and `ParkingSpot`
+for parking spots.
 
 
 ### Pull converters
 
 Pull converters are responsible for getting data from an external data source. This can be an REST endpoints as well as HTML which is
 scraped. Pull converters always split up in static and realtime data, because at most sources, this is not the same. Each pull converter
-has two methods:
+has at least a method for static parking sites, or two if it supports realtime data. For `ParkingSite`s, it's
 
 1) `get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:`
-2) `def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:`
+2) `get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:`
+
+For `ParkingSpot`s, it's
+
+1) `get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:`
+2) `get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:`
 
 
 ### Push converters
