@@ -37,8 +37,9 @@ def friedrichshafen_sensors_pull_converter(
 
 class FriedrichshafenSensorsConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(
-        friedrichshafen_sensors_pull_converter: FriedrichshafenSensorsPullConverter, requests_mock: Mocker
+    def test_get_static_parking_spots(
+        friedrichshafen_sensors_pull_converter: FriedrichshafenSensorsPullConverter,
+        requests_mock: Mocker,
     ):
         xml_path = Path(Path(__file__).parent, 'data', 'friedrichshafen-sensors-static.xml')
         with xml_path.open() as xml_file:
@@ -49,18 +50,19 @@ class FriedrichshafenSensorsConverterTest:
             text=xml_data,
         )
 
-        static_parking_site_inputs, import_parking_site_exceptions = (
+        static_parking_spot_inputs, import_parking_spot_exceptions = (
             friedrichshafen_sensors_pull_converter.get_static_parking_spots()
         )
 
-        assert len(static_parking_site_inputs) == 55
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_spot_inputs) == 55
+        assert len(import_parking_spot_exceptions) == 0
 
-        validate_static_parking_spot_inputs(static_parking_site_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(
-        friedrichshafen_sensors_pull_converter: FriedrichshafenSensorsPullConverter, requests_mock: Mocker
+    def test_get_realtime_parking_spots(
+        friedrichshafen_sensors_pull_converter: FriedrichshafenSensorsPullConverter,
+        requests_mock: Mocker,
     ):
         xml_path = Path(Path(__file__).parent, 'data', 'friedrichshafen-sensors-realtime.xml')
         with xml_path.open() as xml_file:
@@ -71,11 +73,11 @@ class FriedrichshafenSensorsConverterTest:
             text=xml_data,
         )
 
-        realtime_parking_site_inputs, import_parking_site_exceptions = (
+        realtime_parking_spot_inputs, import_parking_spot_exceptions = (
             friedrichshafen_sensors_pull_converter.get_realtime_parking_spots()
         )
 
-        assert len(realtime_parking_site_inputs) == 55
-        assert len(import_parking_site_exceptions) == 0
+        assert len(realtime_parking_spot_inputs) == 55
+        assert len(import_parking_spot_exceptions) == 0
 
-        validate_realtime_parking_spot_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs)

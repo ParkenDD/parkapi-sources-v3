@@ -9,7 +9,7 @@ from validataclass.validators import DataclassValidator
 from parkapi_sources.converters.base_converter import ParkingSpotBaseConverter
 from parkapi_sources.converters.base_converter.datex2 import ParkingRecordStatusMixin, UrbanParkingSiteMixin
 from parkapi_sources.converters.base_converter.pull import MobilithekPullConverter
-from parkapi_sources.exceptions import ImportParkingSiteException
+from parkapi_sources.exceptions import ImportParkingSpotException
 from parkapi_sources.models import RealtimeParkingSpotInput, SourceInfo, StaticParkingSpotInput
 
 from .validators import FriedrichshafenSensorsParkingRecordStatus, FriedrichshafenSensorsParkingSpot
@@ -32,13 +32,13 @@ class FriedrichshafenSensorsPullConverter(
         has_realtime_data=True,
     )
 
-    def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSiteException]]:
+    def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
         static_xml_data = self._get_xml_data(
             subscription_id=self.config_helper.get(f'PARK_API_MOBILITHEK_{self.config_key}_STATIC_SUBSCRIPTION_ID'),
         )
 
         static_parking_spot_inputs: list[StaticParkingSpotInput] = []
-        static_parking_spot_errors: list[ImportParkingSiteException] = []
+        static_parking_spot_errors: list[ImportParkingSpotException] = []
 
         static_input_dicts: list[dict] = self._transform_static_xml_to_static_input_dicts(static_xml_data)
 
@@ -51,9 +51,9 @@ class FriedrichshafenSensorsPullConverter(
 
             except ValidationError as e:
                 static_parking_spot_errors.append(
-                    ImportParkingSiteException(
+                    ImportParkingSpotException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=self.get_uid_from_static_input_dict(static_input_dict),
+                        parking_spot_uid=self.get_uid_from_static_input_dict(static_input_dict),
                         message=str(e.to_dict()),
                         data=static_input_dict,
                     ),
@@ -61,12 +61,12 @@ class FriedrichshafenSensorsPullConverter(
 
         return static_parking_spot_inputs, static_parking_spot_errors
 
-    def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSiteException]]:
+    def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:
         realtime_xml_data = self._get_xml_data(
             subscription_id=self.config_helper.get(f'PARK_API_MOBILITHEK_{self.config_key}_REALTIME_SUBSCRIPTION_ID'),
         )
         realtime_parking_spot_inputs: list[RealtimeParkingSpotInput] = []
-        realtime_parking_site_errors: list[ImportParkingSiteException] = []
+        realtime_parking_spot_errors: list[ImportParkingSpotException] = []
 
         realtime_input_dicts: list[dict] = self._transform_realtime_xml_to_realtime_input_dicts(realtime_xml_data)
 
@@ -76,13 +76,13 @@ class FriedrichshafenSensorsPullConverter(
                 realtime_parking_spot_inputs.append(realtime_item.to_realtime_parking_spot_input())
 
             except ValidationError as e:
-                realtime_parking_site_errors.append(
-                    ImportParkingSiteException(
+                realtime_parking_spot_errors.append(
+                    ImportParkingSpotException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=self.get_uid_from_realtime_input_dict(realtime_input_dict),
+                        parking_spot_uid=self.get_uid_from_realtime_input_dict(realtime_input_dict),
                         message=str(e.to_dict()),
                         data=realtime_input_dicts,
                     ),
                 )
 
-        return realtime_parking_spot_inputs, realtime_parking_site_errors
+        return realtime_parking_spot_inputs, realtime_parking_spot_errors
