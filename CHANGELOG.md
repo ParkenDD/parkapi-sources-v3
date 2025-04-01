@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.17.4
+
+### Fixes
+
+* [Update pum_bw mapping and data](https://github.com/ParkenDD/parkapi-sources-v3/pull/197)
+* [Changed source_url for herrenberg_bike](https://github.com/ParkenDD/parkapi-sources-v3/pull/194)
+
+
 ## 0.17.3
 
 ### Fixes
