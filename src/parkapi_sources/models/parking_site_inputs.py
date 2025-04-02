@@ -27,18 +27,14 @@ from .enums import ExternalIdentifierType, OpeningStatus, ParkAndRideType, Parki
 
 
 @validataclass
-class BaseParkingSiteInput(ValidataclassMixin):
-    uid: str = StringValidator(min_length=1, max_length=256)
-
-
-@validataclass
 class ExternalIdentifierInput(ValidataclassMixin):
     type: ExternalIdentifierType = EnumValidator(ExternalIdentifierType)
     value: str = StringValidator(max_length=256)
 
 
 @validataclass
-class StaticParkingSiteInput(BaseParkingSiteInput):
+class StaticParkingSiteInput(ValidataclassMixin):
+    uid: str = StringValidator(min_length=1, max_length=256)
     name: str = StringValidator(min_length=1, max_length=256)
     group_uid: OptionalUnsetNone[str] = Noneable(StringValidator(min_length=1, max_length=256)), DefaultUnset
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
@@ -130,7 +126,7 @@ class StaticParkingSiteInput(BaseParkingSiteInput):
 
 
 @validataclass
-class RealtimeParkingSiteInput(BaseParkingSiteInput):
+class RealtimeParkingSiteInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
     realtime_data_updated_at: datetime = DateTimeValidator(
         local_timezone=timezone.utc,
@@ -203,3 +199,7 @@ class RealtimeParkingSiteInput(BaseParkingSiteInput):
         Noneable(IntegerValidator(min_value=0, allow_strings=True)),
         DefaultUnset,
     )
+
+
+@validataclass
+class CombinedParkingSiteInput(StaticParkingSiteInput, RealtimeParkingSiteInput): ...

@@ -6,7 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import (
     RealtimeParkingSiteInput,
@@ -18,7 +18,7 @@ from .mapper import ApcoaMapper
 from .validators import ApcoaParkingSiteInput, ApcoaParkingSitesInput
 
 
-class ApcoaPullConverter(PullConverter):
+class ApcoaPullConverter(ParkingSitePullConverter):
     required_config_keys = ['PARK_API_APCOA_API_SUBSCRIPTION_KEY']
 
     mapper = ApcoaMapper()

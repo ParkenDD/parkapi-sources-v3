@@ -8,7 +8,7 @@ from datetime import datetime
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.converters.herrenberg.models import (
     HerrenbergParkingSiteInput,
     HerrenbergParkingSitesInput,
@@ -18,7 +18,7 @@ from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
-class HerrenbergPullConverter(PullConverter):
+class HerrenbergPullConverter(ParkingSitePullConverter):
     parking_sites_input_validator = DataclassValidator(HerrenbergParkingSitesInput)
     parking_site_validator = DataclassValidator(HerrenbergParkingSiteInput)
 

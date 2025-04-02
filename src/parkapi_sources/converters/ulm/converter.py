@@ -8,12 +8,16 @@ from typing import Any, Optional
 
 from bs4.element import PageElement, Tag
 
-from parkapi_sources.converters.base_converter.pull import PullConverter, PullScraperMixin, StaticGeojsonDataMixin
+from parkapi_sources.converters.base_converter.pull import (
+    ParkingSitePullConverter,
+    PullScraperMixin,
+    StaticGeojsonDataMixin,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 
-class UlmPullConverter(PullConverter, StaticGeojsonDataMixin, PullScraperMixin):
+class UlmPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin, PullScraperMixin):
     source_info = SourceInfo(
         uid='ulm',
         name='Stadt Ulm',

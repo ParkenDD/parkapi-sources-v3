@@ -10,6 +10,8 @@
 
 ## 0.17.3
 
+Released 2025-03-07
+
 ### Fixes
 
 * [Fix and reduce validation errors in converters](https://github.com/ParkenDD/parkapi-sources-v3/pull/191)

@@ -9,7 +9,7 @@ from unittest.mock import Mock
 import pytest
 from requests_mock import Mocker
 
-from parkapi_sources.converters import AachenPullConverter, VrsVaihingenPullConverter
+from parkapi_sources.converters import AachenPullConverter
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
@@ -33,7 +33,7 @@ def aachen_pull_converter(aachen_config_helper: Mock, request_helper: RequestHel
 
 class AachenConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(aachen_pull_converter: VrsVaihingenPullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(aachen_pull_converter: AachenPullConverter, requests_mock: Mocker):
         xml_path = Path(Path(__file__).parent, 'data', 'aachen-static.xml')
         with xml_path.open() as xml_file:
             xml_data = xml_file.read()
@@ -51,7 +51,7 @@ class AachenConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
     @staticmethod
-    def test_get_realtime_parking_sites(aachen_pull_converter: VrsVaihingenPullConverter, requests_mock: Mocker):
+    def test_get_realtime_parking_sites(aachen_pull_converter: AachenPullConverter, requests_mock: Mocker):
         xml_path = Path(Path(__file__).parent, 'data', 'aachen-realtime.xml')
         with xml_path.open() as xml_file:
             xml_data = xml_file.read()

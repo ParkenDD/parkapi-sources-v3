@@ -9,14 +9,14 @@ from pathlib import Path
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter.pull import PullConverter
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import KarlsruheBikeFeatureInput, KarlsruheFeatureInput
 
 
-class KarlsruheBasePullConverter(PullConverter, ABC):
+class KarlsruheBasePullConverter(ParkingSitePullConverter, ABC):
     geojson_validator = DataclassValidator(GeojsonInput)
     karlsruhe_feature_validator: DataclassValidator
 

@@ -9,12 +9,13 @@ from typing import Any
 import pyproj
 from openpyxl.cell import Cell
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import NormalizedXlsxConverter
 from parkapi_sources.models import SourceInfo
 from parkapi_sources.models.enums import ParkAndRideType, PurposeType
 
 
-class VrsParkAndRidePushConverter(NormalizedXlsxConverter):
+class VrsParkAndRidePushConverter(NormalizedXlsxConverter, ParkingSiteBaseConverter):
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
 
     source_info = SourceInfo(

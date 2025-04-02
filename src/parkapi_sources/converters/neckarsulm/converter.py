@@ -6,13 +6,14 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import CsvConverter
 from parkapi_sources.converters.neckarsulm.models import NeckarsulmRowInput
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 
 
-class NeckarsulmPushConverter(CsvConverter):
+class NeckarsulmPushConverter(CsvConverter, ParkingSiteBaseConverter):
     neckarsulm_row_validator = DataclassValidator(NeckarsulmRowInput)
 
     source_info = SourceInfo(

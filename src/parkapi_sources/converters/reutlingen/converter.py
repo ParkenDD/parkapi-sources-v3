@@ -9,6 +9,7 @@ from io import StringIO
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import CsvConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
@@ -16,7 +17,7 @@ from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticP
 from .validation import ReutlingenRowInput
 
 
-class ReutlingenPushConverter(CsvConverter):
+class ReutlingenPushConverter(CsvConverter, ParkingSiteBaseConverter):
     reutlingen_row_validator = DataclassValidator(ReutlingenRowInput)
 
     source_info = SourceInfo(
