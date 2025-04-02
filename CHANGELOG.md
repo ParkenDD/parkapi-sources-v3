@@ -1,6 +1,19 @@
 # Changelog
 
+## 0.18.0
+
+This release is a major change, as it introduces parking spots. If you used internal objects, this update might be
+breaking for you. Existing converters will work exactly the same and have the same interface, so for most users,
+updating will be fine.
+
+### Features
+
+* [ParkingSpot support](https://github.com/ParkenDD/parkapi-sources-v3/pull/198)
+* [Friedrichshafen parking spot sensor data](https://github.com/ParkenDD/parkapi-sources-v3/pull/198)
+
+
 ## 0.17.4
+
 
 ### Fixes
 
