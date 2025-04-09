@@ -47,6 +47,7 @@ We support following data sources:
 | Stadt Reutlingen: Fahrrad-Abstellanlagen                       | ParkingSite | bike       | push (csv)  | `reutlingen_bike`         | no       |
 | Stadt Stuttgart                                                | ParkingSite | car        | push (json) | `stuttgart`               | yes      |
 | Stadt Ulm                                                      | ParkingSite | car        | pull        | `ulm`                     | yes      |
+| Stadt Ulm: E-Quartiershubs Parking Sensors                     | ParkingSpot | car        | pull        | `ulm_sensors`             | yes      |
 | Velobrix                                                       | ParkingSite | bike       | pull        | `velobrix`                | yes      |
 | Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | ParkingSite | car        | pull        | `vrn_p_r`                 | yes      |
 | Verband Region Stuttgart: Bondorf                              | ParkingSite | car        | pull        | `vrs_bondorf`             | yes      |
