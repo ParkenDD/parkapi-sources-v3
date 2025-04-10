@@ -13,8 +13,14 @@ from urllib3.exceptions import NewConnectionError
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import GeojsonFeatureInput, GeojsonInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.exceptions import ImportParkingSiteException, ImportParkingSpotException, ImportSourceException
+from parkapi_sources.models import (
+    GeojsonFeatureInput,
+    GeojsonInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+    StaticParkingSpotInput,
+)
 from parkapi_sources.util import ConfigHelper
 
 
@@ -28,15 +34,15 @@ class StaticGeojsonDataMixin(ABC):
     @abstractmethod
     def request_get(self, **kwargs) -> Response: ...
 
-    def _get_static_geojson(self, source_uid: str) -> GeojsonInput:
-        base_path: str | None = self.config_helper.get('STATIC_GEOJSON_BASE_PATH')
+    def _get_static_geojson(self, source_uid: str, source_group: str) -> GeojsonInput:
+        base_path: str | None = f'{self.config_helper.get("STATIC_GEOJSON_BASE_PATH")}/{source_group}'
         if base_path:
             with Path(base_path, f'{source_uid}.geojson').open() as geojson_file:
                 return json.loads(geojson_file.read())
         else:
             try:
                 response = self.request_get(
-                    url=f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson',
+                    url=f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_group}/{source_uid}.geojson',
                     timeout=30,
                 )
             except (ConnectionError, NewConnectionError) as e:
@@ -58,7 +64,9 @@ class StaticGeojsonDataMixin(ABC):
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
-        feature_inputs, import_parking_site_exceptions = self._get_geojson_features_and_exceptions(source_uid)
+        feature_inputs, import_parking_site_exceptions = self._get_geojson_features_and_exceptions(
+            source_uid, 'parking-sites'
+        )
 
         for feature_input in feature_inputs:
             static_parking_site_inputs.append(
@@ -71,11 +79,33 @@ class StaticGeojsonDataMixin(ABC):
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
+    def _get_static_parking_spots_inputs_and_exceptions(
+        self,
+        source_uid: str,
+    ) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
+        static_parking_spot_inputs: list[StaticParkingSpotInput] = []
+
+        feature_inputs, import_parking_spot_exceptions = self._get_geojson_features_and_exceptions(
+            source_uid, 'parking-spots'
+        )
+
+        for feature_input in feature_inputs:
+            static_parking_spot_inputs.append(
+                feature_input.to_static_parking_spot_input(
+                    # TODO: Use the Last-Updated HTTP header instead, but as Github does not set such an header, we
+                    #  need to move all GeoJSON data in order to use this.
+                    static_data_updated_at=datetime.now(tz=timezone.utc),
+                ),
+            )
+
+        return static_parking_spot_inputs, import_parking_spot_exceptions
+
     def _get_geojson_features_and_exceptions(
         self,
         source_uid: str,
-    ) -> tuple[list[GeojsonFeatureInput], list[ImportParkingSiteException]]:
-        geojson_dict = self._get_static_geojson(source_uid)
+        source_group: str,
+    ) -> tuple[list[GeojsonFeatureInput], list[ImportParkingSiteException] | list[ImportParkingSpotException]]:
+        geojson_dict = self._get_static_geojson(source_uid, source_group)
         try:
             geojson_input = self.geojson_validator.validate(geojson_dict)
         except ValidationError as e:
@@ -85,18 +115,26 @@ class StaticGeojsonDataMixin(ABC):
             ) from e
 
         feature_inputs: list[GeojsonFeatureInput] = []
-        import_parking_site_exceptions: list[ImportParkingSiteException] = []
+        import_parking_exceptions: list[ImportParkingSiteException] = []
+        if source_group == 'parking-spots':
+            import_parking_exceptions: list[ImportParkingSpotException] = []
 
         for feature_dict in geojson_input.features:
             try:
                 feature_inputs.append(self.geojson_feature_validator.validate(feature_dict))
             except ValidationError as e:
-                import_parking_site_exceptions.append(
-                    ImportParkingSiteException(
+                import_parking_exceptions.append(
+                    ImportParkingSpotException(
+                        source_uid=self.source_info.uid,
+                        parking_spot_uid=feature_dict.get('properties', {}).get('uid'),
+                        message=f'Invalid GeoJSON feature for source {source_uid}: {e.to_dict()}',
+                    )
+                    if source_group == 'parking-spots'
+                    else ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=feature_dict.get('properties', {}).get('uid'),
                         message=f'Invalid GeoJSON feature for source {source_uid}: {e.to_dict()}',
                     ),
                 )
 
-        return feature_inputs, import_parking_site_exceptions
+        return feature_inputs, import_parking_exceptions

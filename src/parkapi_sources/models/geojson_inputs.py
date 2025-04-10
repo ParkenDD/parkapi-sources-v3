@@ -23,6 +23,7 @@ from validataclass.validators import (
 
 from .enums import ParkingSiteType
 from .parking_site_inputs import StaticParkingSiteInput
+from .parking_spot_inputs import StaticParkingSpotInput
 
 
 @validataclass
@@ -62,6 +63,13 @@ class GeojsonBaseFeatureInput:
 
     def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
+            lat=self.geometry.coordinates[1],
+            lon=self.geometry.coordinates[0],
+            **self.properties.to_dict(**kwargs),
+        )
+
+    def to_static_parking_spot_input(self, **kwargs) -> StaticParkingSpotInput:
+        return StaticParkingSpotInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
             **self.properties.to_dict(**kwargs),
