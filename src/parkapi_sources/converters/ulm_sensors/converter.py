@@ -42,7 +42,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
             f'PARK_API_{self.config_prefix}_USER',
             f'PARK_API_{self.config_prefix}_PASSWORD',
             f'PARK_API_{self.config_prefix}_CLIENT_ID',
-            f'PARK_API_{self.config_prefix}_ENDPOINT_IDS',
+            f'PARK_API_{self.config_prefix}_IDS',
         ]
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
@@ -115,15 +115,15 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
         parking_spot_dicts: list[dict] = []
-        endpoint_ids = self.config_helper.get(f'PARK_API_{self.config_prefix}_ENDPOINT_IDS').split(',')
+        sensor_ids = self.config_helper.get(f'PARK_API_{self.config_prefix}_IDS').split(',')
 
-        for endpoint_id in endpoint_ids:
+        for sensor_id in sensor_ids:
             response = self.request_get(
-                url=f'{self.source_info.source_url}/consumer-api/v1/collections/sensors/{endpoint_id}/data?count=1',
+                url=f'{self.source_info.source_url}/consumer-api/v1/collections/sensors/{sensor_id}/data?count=1',
                 headers={'Authorization': f'Bearer {self._request_token()}'},
                 timeout=60,
             )
-        parking_spot_dicts += response.json()
+            parking_spot_dicts += response.json()
 
         for parking_spot_dict in parking_spot_dicts:
             try:

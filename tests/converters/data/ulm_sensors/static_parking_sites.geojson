@@ -1,0 +1,40 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "6C5A1B0B-D83C-4C25-A4AF-4DB29D7280A8",
+                "name": "Parkhaus am Rathaus",
+                "purpose": "CAR",
+                "operator_name": "Ulmer Parkbetriebs-GmbH",
+                "public_url": "https://parken-in-ulm.de/",
+                "address": "Neue Str., 89073 Ulm",
+                "type": "UNDERGROUND",
+                "max_stay": 259200,
+                "max_height": 2,
+                "has_lighting": true,
+                "fee_description": "ja",
+                "has_fee": true,
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-04-11T13:58:53+00:00",
+                "lat": 48.3972484187254,
+                "lon": 9.99093039749452,
+                "capacity": 574,
+                "capacity_disabled": 4,
+                "capacity_woman": 64,
+                "capacity_charging": 4,
+                "capacity_carsharing": 0,
+                "opening_hours": "24/7",
+                "tags": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.99093039749452,
+                    48.3972484187254
+                ]
+            }
+        }
+    ]
+}

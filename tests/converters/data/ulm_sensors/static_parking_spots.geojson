@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "pbg-s-eladen-1-11_C699C145-EB2E-4CF5-9A50-1A8A56FBF64D",
+                "name": "Parkhaus Salzstadel",
+                "purpose": "CAR",
+                "static_data_updated_at": "2025-04-11T14:00:36+00:00",
+                "has_realtime_data": true,
+                "lat": 48.4011345561022,
+                "lon": 9.99015968899597,
+                "restricted_to": [
+                    {
+                        "type": "CHARGING",
+                        "hours": "24/7"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.99015968899597,
+                    48.4011345561022
+                ]
+            }
+        }
+    ]
+}

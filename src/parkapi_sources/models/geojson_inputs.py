@@ -16,12 +16,14 @@ from validataclass.validators import (
     EnumValidator,
     IntegerValidator,
     ListValidator,
+    Noneable,
     NumericValidator,
     StringValidator,
     UrlValidator,
 )
 
 from .enums import ParkingSiteType
+from .parking_restriction_inputs import ParkingRestrictionInput
 from .parking_site_inputs import StaticParkingSiteInput
 from .parking_spot_inputs import StaticParkingSpotInput
 
@@ -46,6 +48,17 @@ class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
     address: str = StringValidator(max_length=512)
     description: Optional[str] = StringValidator(max_length=512), Default(None)
     capacity: int = IntegerValidator()
+    has_realtime_data: bool = BooleanValidator()
+
+
+@validataclass
+class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput):
+    uid: str = StringValidator(min_length=1, max_length=256)
+    name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
+    restricted_to: list[ParkingRestrictionInput] | None = (
+        Noneable(ListValidator(DataclassValidator(ParkingRestrictionInput))),
+        Default(None),
+    )
     has_realtime_data: bool = BooleanValidator()
 
 
@@ -87,6 +100,13 @@ class GeojsonBaseFeatureInput:
 class GeojsonFeatureInput(GeojsonBaseFeatureInput):
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
+    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+
+
+@validataclass
+class GeojsonFeatureParkingSpotInput(GeojsonBaseFeatureInput):
+    type: str = AnyOfValidator(allowed_values=['Feature'])
+    properties: GeojsonFeaturePropertiesParkingSpotInput = DataclassValidator(GeojsonFeaturePropertiesParkingSpotInput)
     geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
 
 
