@@ -116,7 +116,8 @@ class UlmSensorsPullConverterTest:
         sensor_ids = ulm_sensors_pull_converter.config_helper.get('PARK_API_ULM_SENSORS_IDS').split(',')
         for sensor_id in sensor_ids:
             requests_mock.post(
-                'https://citysens-iot.swu.de/auth/realms/ocon/protocol/openid-connect/token', text='token'
+                'https://citysens-iot.swu.de/auth/realms/ocon/protocol/openid-connect/token',
+                text='token',
             )
             requests_mock.get(
                 f'https://citysens-iot.swu.de/consumer-api/v1/collections/sensors/{sensor_id}/data?count=1',

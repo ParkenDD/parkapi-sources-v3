@@ -145,7 +145,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
             headers={
                 'Content-Type': 'application/x-www-form-urlencoded',
             },
-            json={
+            data={
                 'client_id': self.config_helper.get(f'PARK_API_{self.config_prefix}_CLIENT_ID'),
                 'grant_type': 'password',
                 'username': self.config_helper.get(f'PARK_API_{self.config_prefix}_USER'),

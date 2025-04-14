@@ -39,7 +39,7 @@ class StaticGeojsonDataMixin(ABC):
     def _get_static_parking_sites_geojson(self, source_uid: str) -> GeojsonInput:
         base_path: str | None = self.config_helper.get('STATIC_GEOJSON_BASE_PATH')
         if base_path:
-            with Path(base_path, f'{source_uid}.geojson').open() as geojson_file:
+            with Path(base_path, 'parking-sites', f'{source_uid}.geojson').open() as geojson_file:
                 return json.loads(geojson_file.read())
         else:
             try:
@@ -63,7 +63,7 @@ class StaticGeojsonDataMixin(ABC):
     def _get_static_parking_spots_geojson(self, source_uid: str) -> GeojsonInput:
         base_path: str | None = self.config_helper.get('STATIC_GEOJSON_BASE_PATH')
         if base_path:
-            with Path(base_path, f'{source_uid}.geojson').open() as geojson_file:
+            with Path(base_path, 'parking-spots', f'{source_uid}.geojson').open() as geojson_file:
                 return json.loads(geojson_file.read())
         else:
             try:

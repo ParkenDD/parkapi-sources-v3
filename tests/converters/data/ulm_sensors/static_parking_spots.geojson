@@ -4,16 +4,16 @@
         {
             "type": "Feature",
             "properties": {
-                "uid": "pbg-s-eladen-1-11_C699C145-EB2E-4CF5-9A50-1A8A56FBF64D",
-                "name": "Parkhaus Salzstadel",
+                "uid": "pbg-b-handicap-w-3-002",
+                "name": "Parkhaus am Bahnhof",
                 "purpose": "CAR",
-                "static_data_updated_at": "2025-04-11T14:00:36+00:00",
+                "static_data_updated_at": "2025-04-14T13:17:24+00:00",
                 "has_realtime_data": true,
-                "lat": 48.4011345561022,
-                "lon": 9.99015968899597,
+                "lat": 48.3982298029325,
+                "lon": 9.98426045923199,
                 "restricted_to": [
                     {
-                        "type": "CHARGING",
+                        "type": "DISABLED",
                         "hours": "24/7"
                     }
                 ]
@@ -21,8 +21,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    9.99015968899597,
-                    48.4011345561022
+                    9.98426045923199,
+                    48.3982298029325
                 ]
             }
         }
