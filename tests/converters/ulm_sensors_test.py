@@ -43,7 +43,7 @@ def ulm_sensors_pull_converter(
 class UlmSensorsPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(ulm_sensors_pull_converter: UlmSensorsPullConverter, requests_mock: Mocker):
-        json_path = Path(Path(__file__).parent, 'data', 'ulm_sensors', 'static_parking_sites.geojson')
+        json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'static-parking-sites.geojson')
         with json_path.open() as json_file:
             json_data = json_file.read()
 
@@ -66,7 +66,7 @@ class UlmSensorsPullConverterTest:
         ulm_sensors_pull_converter: UlmSensorsPullConverter,
         requests_mock: Mocker,
     ):
-        json_path = Path(Path(__file__).parent, 'data', 'ulm_sensors', 'realtime_parking_sites.json')
+        json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'realtime-parking-sites.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
 
@@ -89,7 +89,7 @@ class UlmSensorsPullConverterTest:
 
     @staticmethod
     def test_get_static_parking_spots(ulm_sensors_pull_converter: UlmSensorsPullConverter, requests_mock: Mocker):
-        json_path = Path(Path(__file__).parent, 'data', 'ulm_sensors', 'static_parking_spots.geojson')
+        json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'static-parking-spots.geojson')
         with json_path.open() as json_file:
             json_data = json_file.read()
 
@@ -112,7 +112,7 @@ class UlmSensorsPullConverterTest:
         ulm_sensors_pull_converter: UlmSensorsPullConverter,
         requests_mock: Mocker,
     ):
-        json_path = Path(Path(__file__).parent, 'data', 'ulm_sensors', 'realtime_parking_spots.json')
+        json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'realtime-parking-spots.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
 
