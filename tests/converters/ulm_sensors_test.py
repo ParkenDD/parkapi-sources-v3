@@ -70,7 +70,10 @@ class UlmSensorsPullConverterTest:
         with json_path.open() as json_file:
             json_data = json_file.read()
 
-        requests_mock.post('https://citysens-iot.swu.de/auth/realms/ocon/protocol/openid-connect/token', text=json_data)
+        requests_mock.post(
+            'https://citysens-iot.swu.de/auth/realms/ocon/protocol/openid-connect/token',
+            json={'access_token': 'token'},
+        )
         requests_mock.get(
             'https://citysens-iot.swu.de/consumer-api/v1/collections/sensors/pbg_all_carparks/data', text=json_data
         )
@@ -117,7 +120,7 @@ class UlmSensorsPullConverterTest:
         for sensor_id in sensor_ids:
             requests_mock.post(
                 'https://citysens-iot.swu.de/auth/realms/ocon/protocol/openid-connect/token',
-                text='token',
+                json={'access_token': 'token'},
             )
             requests_mock.get(
                 f'https://citysens-iot.swu.de/consumer-api/v1/collections/sensors/{sensor_id}/data?count=1',

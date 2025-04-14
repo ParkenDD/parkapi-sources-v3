@@ -75,6 +75,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
             headers={'Authorization': f'Bearer {self._request_token()}'},
             timeout=60,
         )
+
         parking_site_dicts = response.json()
 
         for parking_site_dict in parking_site_dicts:
@@ -153,4 +154,5 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
             },
             timeout=30,
         )
-        return response.content
+        token_data = response.json()
+        return token_data['access_token']
