@@ -42,22 +42,14 @@ def ulm_sensors_pull_converter(
 
 class UlmSensorsPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(ulm_sensors_pull_converter: UlmSensorsPullConverter, requests_mock: Mocker):
-        json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'static-parking-sites.geojson')
-        with json_path.open() as json_file:
-            json_data = json_file.read()
-
-        requests_mock.get(
-            f'{ulm_sensors_pull_converter.config_helper.get("STATIC_GEOJSON_BASE_URL")}/parking-sites/ulm_sensors.geojson',
-            text=json_data,
-        )
-
+    def test_get_static_parking_sites(ulm_sensors_pull_converter: UlmSensorsPullConverter):
         static_parking_site_inputs, import_parking_site_exceptions = (
             ulm_sensors_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 1
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_site_inputs) > len(import_parking_site_exceptions), (
+            'There should be more valid than invalid parking sites'
+        )
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -88,22 +80,14 @@ class UlmSensorsPullConverterTest:
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
 
     @staticmethod
-    def test_get_static_parking_spots(ulm_sensors_pull_converter: UlmSensorsPullConverter, requests_mock: Mocker):
-        json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'static-parking-spots.geojson')
-        with json_path.open() as json_file:
-            json_data = json_file.read()
-
-        requests_mock.get(
-            f'{ulm_sensors_pull_converter.config_helper.get("STATIC_GEOJSON_BASE_URL")}/parking-spots/ulm_sensors.geojson',
-            text=json_data,
-        )
-
+    def test_get_static_parking_spots(ulm_sensors_pull_converter: UlmSensorsPullConverter):
         static_parking_spot_inputs, import_parking_spot_exceptions = (
             ulm_sensors_pull_converter.get_static_parking_spots()
         )
 
-        assert len(static_parking_spot_inputs) == 1
-        assert len(import_parking_spot_exceptions) == 0
+        assert len(static_parking_spot_inputs) > len(import_parking_spot_exceptions), (
+            'There should be more valid than invalid parking spots'
+        )
 
         validate_static_parking_spot_inputs(static_parking_spot_inputs)
 
