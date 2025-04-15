@@ -36,7 +36,7 @@ def requests_mock_kienzler_with_geojson(requests_mock: Mocker) -> Mocker:
         json_data = json_file.read()
 
     requests_mock.get(
-        'mock://geojson-url/kienzler_bike_and_ride.geojson',
+        'mock://geojson-url/parking-sites/kienzler_bike_and_ride.geojson',
         text=json_data,
     )
 
@@ -108,8 +108,8 @@ class KienzlerPullConverterTest:
         assert static_parking_site_input.max_height == 1250
         assert static_parking_site_input.max_width == 800
         assert static_parking_site_input.park_and_ride_type == [ParkAndRideType.TRAIN]
-        assert static_parking_site_input.external_identifiers[0].type == ExternalIdentifierType.DHID
-        assert static_parking_site_input.external_identifiers[0].value == 'de:08317:14500_Parent'
+        assert static_parking_site_input.external_identifiers[0]['type'] == ExternalIdentifierType.DHID
+        assert static_parking_site_input.external_identifiers[0]['value'] == 'de:08317:14500_Parent'
         assert static_parking_site_input.lat == Decimal('48.475546')
         assert static_parking_site_input.lon == Decimal('7.947474')
 

@@ -47,7 +47,7 @@ class KienzlerBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin
             )
 
         if self.use_geojson:
-            geojson_features, geojson_parking_site_errors = self._get_geojson_features_and_exceptions(
+            geojson_features, geojson_parking_site_errors = self._get_geojson_parking_sites_features_and_exceptions(
                 source_uid=self.source_info.uid,
             )
 
