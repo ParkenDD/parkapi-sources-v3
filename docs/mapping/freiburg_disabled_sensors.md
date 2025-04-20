@@ -7,7 +7,7 @@ Freiburg provides a GeoJSON with sensor-enabled parking spots.
 | Field     | Type              | Cardinality | Mapping         | Comment |
 |-----------|-------------------|-------------|-----------------|---------|
 | name      | string            | 1           | uid, name       |         |
-| adresse   | hausnummer        | 1           | address         |         |
+| adresse   | string            | 1           | address         |         |
 | status    | [Status](#Status) | 1           | realtime_status |         |
 
 
