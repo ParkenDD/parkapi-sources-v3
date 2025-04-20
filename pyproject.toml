@@ -143,6 +143,11 @@ line-length = 120
     "INP",
 ]
 
+"dev/*" = [
+    # Don't require __init__.py files
+    "INP",
+]
+
 [tool.ruff.lint.flake8-quotes]
 inline-quotes = "single"
 multiline-quotes = "double"
