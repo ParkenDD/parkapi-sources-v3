@@ -67,7 +67,8 @@ class ApcoaPullConverter(ParkingSitePullConverter):
                 continue
 
             static_parking_site_inputs.append(self.mapper.map_static_parking_site(parking_site_input))
-        return static_parking_site_inputs, static_parking_site_errors
+
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []  # ATM only static data can be called from the API

@@ -65,7 +65,7 @@ class RadvisBwPullConverter(ParkingSitePullConverter):
                     ),
                 )
 
-        return static_parking_site_inputs, static_parking_site_errors
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []

@@ -31,7 +31,7 @@ class KonstanzPullConverter(ParkingSitePullConverter):
         for parking_site_input in parking_site_inputs:
             static_parking_sites.append(parking_site_input.to_static_parking_site())
 
-        return static_parking_sites, parking_site_errors
+        return self.apply_static_patches(static_parking_sites), parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         parking_site_inputs, parking_site_errors = self._get_parking_site_inputs()
