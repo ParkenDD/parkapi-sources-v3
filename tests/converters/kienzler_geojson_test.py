@@ -36,7 +36,7 @@ def requests_mock_kienzler_with_geojson(requests_mock: Mocker) -> Mocker:
         json_data = json_file.read()
 
     requests_mock.get(
-        'mock://geojson-url/parking-sites/kienzler_bike_and_ride.geojson',
+        'mock://geojson-url/kienzler_bike_and_ride.geojson',
         text=json_data,
     )
 
