@@ -36,23 +36,10 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
         has_realtime_data=True,
     )
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.required_config_keys = [
-            f'PARK_API_{self.config_prefix}_USER',
-            f'PARK_API_{self.config_prefix}_PASSWORD',
-            f'PARK_API_{self.config_prefix}_CLIENT_ID',
-            f'PARK_API_{self.config_prefix}_IDS',
-        ]
-
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            self._get_static_parking_site_inputs_and_exceptions(
-                source_uid=self.source_info.uid,
-            )
+        return self._get_static_parking_site_inputs_and_exceptions(
+            source_uid=self.source_info.uid,
         )
-
-        return static_parking_site_inputs, import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
@@ -93,11 +80,9 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
         return realtime_ulm_sensors_inputs, import_parking_site_exceptions
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
-        static_parking_spot_inputs, static_parking_spot_errors = self._get_static_parking_spots_inputs_and_exceptions(
+        return self._get_static_parking_spots_inputs_and_exceptions(
             source_uid=self.source_info.uid,
         )
-
-        return static_parking_spot_inputs, static_parking_spot_errors
 
     def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:
         realtime_parking_spot_inputs: list[RealtimeParkingSpotInput] = []

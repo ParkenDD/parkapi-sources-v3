@@ -17,7 +17,7 @@ Each realtime sensor data is mapped to `ParkingSite` as follows.
 | id                            | string                                       | 1           | uid                                     |                                                                                    |
 | maxcarparkfull                | integer                                      | ?           | realtime_capacity                       |                                                                                    |
 | currentcarparkfulltotal       | integer                                      | ?           | realtime_free_capacity                  |                                                                                    |
-| timestamp                     | datetime                                     | ?           | realtime_data_updated_at                |                                                                                    |
+| timestamp                     | datetime                                     | 1           | realtime_data_updated_at                |                                                                                    |
 
 ## `ParkingSpot` Properties
 
@@ -27,7 +27,7 @@ Each realtime sensor data is mapped to `ParkingSpot` as follows.
 |-----------------|-----------------------------------------------------|-------------|-------------------------------------------------|------------------------------------------------------------------------------------|
 | id              | string                                              | 1           | uid                                             |                                                                                    |
 | occupied        | [ParkingSpotStatus](#ParkingSpotStatus)             | 1           | realtime_status                                 |                                                                                    |
-| timestamp       | datetime                                            | ?           | realtime_data_updated_at                        |                                                                                    |
+| timestamp       | datetime                                            | 1           | realtime_data_updated_at                        |                                                                                    |
 
 ### ParkingSpotStatus
 

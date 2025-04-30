@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime
 from decimal import Decimal
-from typing import Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
@@ -16,7 +15,6 @@ from validataclass.validators import (
     EnumValidator,
     IntegerValidator,
     ListValidator,
-    Noneable,
     NumericValidator,
     StringValidator,
     UrlValidator,
@@ -36,23 +34,26 @@ class GeojsonBaseFeaturePropertiesInput(ValidataclassMixin):
         if static_data_updated_at is not None:
             result['static_data_updated_at'] = static_data_updated_at
 
+        if hasattr(self, 'external_identifiers') and self.external_identifiers is not None:
+            result['external_identifiers'] = self.external_identifiers
+
         return result
 
 
 @validataclass
 class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
     uid: str = StringValidator(min_length=1, max_length=256)
-    name: Optional[str] = StringValidator(min_length=1, max_length=256), Default(None)
-    type: Optional[ParkingSiteType] = EnumValidator(ParkingSiteType), Default(None)
-    public_url: Optional[str] = UrlValidator(max_length=4096), Default(None)
-    address: Optional[str] = StringValidator(max_length=512), Default(None)
-    description: Optional[str] = StringValidator(max_length=512), Default(None)
-    capacity: Optional[int] = IntegerValidator(), Default(None)
-    has_realtime_data: Optional[bool] = BooleanValidator(), Default(None)
-    max_height: Optional[int] = Noneable(IntegerValidator()), Default(None)
-    max_width: Optional[int] = IntegerValidator(), Default(None)
-    park_and_ride_type: Optional[list[ParkAndRideType]] = ListValidator(EnumValidator(ParkAndRideType)), Default(None)
-    external_identifiers: Optional[list[ExternalIdentifierInput]] = (
+    name: str | None = StringValidator(min_length=1, max_length=256), Default(None)
+    type: ParkingSiteType | None = EnumValidator(ParkingSiteType), Default(None)
+    public_url: str | None = UrlValidator(max_length=4096), Default(None)
+    address: str | None = StringValidator(max_length=512), Default(None)
+    description: str | None = StringValidator(max_length=512), Default(None)
+    capacity: int | None = IntegerValidator(), Default(None)
+    has_realtime_data: bool | None = BooleanValidator(), Default(None)
+    max_height: int | None = IntegerValidator(), Default(None)
+    max_width: int | None = IntegerValidator(), Default(None)
+    park_and_ride_type: list[ParkAndRideType] | None = ListValidator(EnumValidator(ParkAndRideType)), Default(None)
+    external_identifiers: list[ExternalIdentifierInput] | None = (
         ListValidator(DataclassValidator(ExternalIdentifierInput)),
         Default(None),
     )
@@ -61,12 +62,12 @@ class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
 @validataclass
 class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput):
     uid: str = StringValidator(min_length=1, max_length=256)
-    name: Optional[str] = StringValidator(min_length=1, max_length=256), Default(None)
-    restricted_to: Optional[list[ParkingRestrictionInput]] = (
+    name: str | None = StringValidator(min_length=1, max_length=256), Default(None)
+    restricted_to: list[ParkingRestrictionInput] | None = (
         ListValidator(DataclassValidator(ParkingRestrictionInput)),
         Default(None),
     )
-    has_realtime_data: Optional[bool] = BooleanValidator(), Default(None)
+    has_realtime_data: bool | None = BooleanValidator(), Default(None)
 
 
 @validataclass
