@@ -4,14 +4,16 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
+from enum import Enum
 from typing import Optional
 from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DataclassValidator, IntegerValidator, StringValidator, UrlValidator
+from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, StringValidator, UrlValidator
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models.geojson_inputs import GeojsonFeatureGeometryPointInput
 from parkapi_sources.validators import ExcelNoneable, SpacedDateTimeValidator
 
 
@@ -31,6 +33,43 @@ class FreiburgPropertiesInput:
     park_url: Optional[str] = ExcelNoneable(UrlValidator())
 
 
+class FreiburgParkingSiteTypeInput(Enum):
+    PARKPLATZ = 'Parkplatz'
+    PARKHAUS = 'Parkhaus'
+    TIEFGARAGE = 'Tiefgarage'
+    PARKNRIDE = 'Park&Ride'
+
+    def to_parking_site_type_input(self) -> ParkingSiteType:
+        return {
+            self.PARKPLATZ: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.PARKHAUS: ParkingSiteType.CAR_PARK,
+            self.TIEFGARAGE: ParkingSiteType.UNDERGROUND,
+            self.PARKNRIDE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+        }.get(self, ParkingSiteType.OTHER)
+
+
+@validataclass
+class FreiburgParkAndRideStaticPropertiesInput:
+    ogc_fid: int = IntegerValidator(allow_strings=True)
+    name: str = StringValidator()
+    nummer: str = StringValidator()
+    kategorie: FreiburgParkingSiteTypeInput = EnumValidator(FreiburgParkingSiteTypeInput)
+    kapazitaet: int = IntegerValidator(allow_strings=True)
+
+
+@validataclass
+class FreiburgParkAndRideRealtimePropertiesInput:
+    obs_state: int = IntegerValidator(allow_strings=True)
+    obs_max: int = IntegerValidator(allow_strings=True)
+    obs_free: int = IntegerValidator(allow_strings=True)
+    obs_ts: datetime = SpacedDateTimeValidator(
+        local_timezone=ZoneInfo('Europe/Berlin'),
+        target_timezone=timezone.utc,
+    )
+    park_name: str = StringValidator()
+    park_id: str = StringValidator()
+
+
 @validataclass
 class FreiburgFeatureInput:
     properties: FreiburgPropertiesInput = DataclassValidator(FreiburgPropertiesInput)
@@ -46,4 +85,59 @@ class FreiburgFeatureInput:
             realtime_free_capacity=self.properties.obs_free,
             realtime_data_updated_at=self.properties.obs_ts,
             realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state else OpeningStatus.CLOSED,
+        )
+
+
+@validataclass
+class FreiburgParkAndRideStaticFeatureInput:
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    properties: FreiburgParkAndRideStaticPropertiesInput = DataclassValidator(FreiburgParkAndRideStaticPropertiesInput)
+
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        if self.properties.nummer:
+            name = f'{self.properties.name} ({self.properties.nummer})'
+        else:
+            name = f'{self.properties.name}'
+        return StaticParkingSiteInput(
+            uid=str(self.properties.ogc_fid),
+            lat=self.geometry.coordinates[1],
+            lon=self.geometry.coordinates[0],
+            name=name,
+            capacity=self.properties.kapazitaet,
+            type=self.properties.kategorie.to_parking_site_type_input(),
+            static_data_updated_at=datetime.now(tz=timezone.utc),
+            has_realtime_data=False,
+        )
+
+
+@validataclass
+class FreiburgParkAndRideRealtimeFeatureInput:
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    properties: FreiburgParkAndRideRealtimePropertiesInput = DataclassValidator(
+        FreiburgParkAndRideRealtimePropertiesInput
+    )
+
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        return StaticParkingSiteInput(
+            uid=str(self.properties.park_id),
+            lat=self.geometry.coordinates[1],
+            lon=self.geometry.coordinates[0],
+            name=self.properties.park_name,
+            capacity=self.properties.obs_max,
+            type=ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            purpose=PurposeType.CAR,
+            park_and_ride_type=[ParkAndRideType.YES],
+            static_data_updated_at=datetime.now(tz=timezone.utc),
+            has_realtime_data=True,
+        )
+
+    def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
+        return RealtimeParkingSiteInput(
+            uid=str(self.properties.park_id),
+            realtime_capacity=self.properties.obs_max,
+            realtime_free_capacity=self.properties.obs_free,
+            realtime_data_updated_at=self.properties.obs_ts,
+            realtime_opening_status=OpeningStatus.OPEN
+            if self.properties.obs_state and self.properties.obs_state != -1
+            else OpeningStatus.CLOSED,
         )

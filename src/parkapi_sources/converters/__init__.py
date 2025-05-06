@@ -10,7 +10,11 @@ from .base_converter import BaseConverter
 from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
-from .freiburg import FreiburgPullConverter
+from .freiburg import (
+    FreiburgParkAndRideRealtimePullConverter,
+    FreiburgParkAndRideStaticPullConverter,
+    FreiburgPullConverter,
+)
 from .freiburg_disabled_sensors import FreiburgDisabledSensorsPullConverter
 from .freiburg_disabled_static import FreiburgDisabledStaticPullConverter
 from .friedrichshafen_sensors import FriedrichshafenSensorsPullConverter
