@@ -9,7 +9,11 @@ from unittest.mock import Mock
 import pytest
 from requests_mock import Mocker
 
-from parkapi_sources.converters import FreiburgPullConverter
+from parkapi_sources.converters import (
+    FreiburgParkAndRideRealtimePullConverter,
+    FreiburgParkAndRideStaticPullConverter,
+    FreiburgPullConverter,
+)
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
@@ -20,6 +24,26 @@ def freiburg_pull_converter(
     request_helper: RequestHelper,
 ) -> FreiburgPullConverter:
     return FreiburgPullConverter(config_helper=mocked_static_geojson_config_helper, request_helper=request_helper)
+
+
+@pytest.fixture
+def freiburg_park_and_ride_static_pull_converter(
+    mocked_static_geojson_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> FreiburgParkAndRideStaticPullConverter:
+    return FreiburgParkAndRideStaticPullConverter(
+        config_helper=mocked_static_geojson_config_helper, request_helper=request_helper
+    )
+
+
+@pytest.fixture
+def freiburg_park_and_ride_realtime_pull_converter(
+    mocked_static_geojson_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> FreiburgParkAndRideRealtimePullConverter:
+    return FreiburgParkAndRideRealtimePullConverter(
+        config_helper=mocked_static_geojson_config_helper, request_helper=request_helper
+    )
 
 
 class FreiburgPullConverterTest:
@@ -54,6 +78,76 @@ class FreiburgPullConverterTest:
         )
 
         assert len(realtime_parking_site_inputs) == 19
+        assert len(import_parking_site_exceptions) == 0
+
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+
+
+class FreiburgParkAndRideStaticPullConverterTest:
+    @staticmethod
+    def test_get_static_parking_sites(
+        freiburg_park_and_ride_static_pull_converter: FreiburgParkAndRideStaticPullConverter, requests_mock: Mocker
+    ):
+        # We need to get GeoJSON data
+        requests_mock.real_http = True
+
+        json_path = Path(Path(__file__).parent, 'data', 'freiburg_p_r_static.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            freiburg_park_and_ride_static_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 15
+        assert len(import_parking_site_exceptions) == 0
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+
+class FreiburgParkAndRideRealtimePullConverterTest:
+    @staticmethod
+    def test_get_static_parking_sites(
+        freiburg_park_and_ride_realtime_pull_converter: FreiburgParkAndRideRealtimePullConverter, requests_mock: Mocker
+    ):
+        # We need to get GeoJSON data
+        requests_mock.real_http = True
+
+        json_path = Path(Path(__file__).parent, 'data', 'freiburg_p_r_realtime.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            freiburg_park_and_ride_realtime_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 5
+        assert len(import_parking_site_exceptions) == 0
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_realtime_parking_sites(
+        freiburg_park_and_ride_realtime_pull_converter: FreiburgParkAndRideRealtimePullConverter, requests_mock: Mocker
+    ):
+        # We need to get GeoJSON data
+        requests_mock.real_http = True
+
+        json_path = Path(Path(__file__).parent, 'data', 'freiburg_p_r_realtime.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            freiburg_park_and_ride_realtime_pull_converter.get_realtime_parking_sites()
+        )
+
+        assert len(realtime_parking_site_inputs) == 5
         assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

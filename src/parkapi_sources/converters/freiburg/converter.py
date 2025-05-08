@@ -10,7 +10,7 @@ from parkapi_sources.converters.base_converter.pull import ParkingSitePullConver
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
-from .models import FreiburgFeatureInput
+from .models import FreiburgFeatureInput, FreiburgParkAndRideRealtimeFeatureInput, FreiburgParkAndRideStaticFeatureInput
 
 
 class FreiburgBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
@@ -34,7 +34,7 @@ class FreiburgBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin
 
         for update_dict in realtime_input.features:
             try:
-                realtime_freiburg_inputs.append(self.freiburg_realtime_feature_validator.validate(update_dict))
+                realtime_freiburg_inputs.append(self.freiburg_feature_validator.validate(update_dict))
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
@@ -57,21 +57,6 @@ class FreiburgBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin
             realtime_parking_site_inputs.append(realtime_freiburg_input.to_realtime_parking_site_input())
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
-
-
-class FreiburgPullConverter(FreiburgBasePullConverter):
-    freiburg_realtime_feature_validator = DataclassValidator(FreiburgFeatureInput)
-    source_info = SourceInfo(
-        uid='freiburg',
-        name='Stadt Freiburg',
-        public_url='https://www.freiburg.de/pb/,Lde/231355.html',
-        source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive?request=getfeature&service=wfs&version=1.1.0&typename=pls'
-        '&outputformat=geojson&srsname=epsg:4326',
-        timezone='Europe/Berlin',
-        attribution_contributor='Stadt Freiburg',
-        attribution_license='dl-de/by-2-0',
-        has_realtime_data=True,
-    )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs, import_parking_site_exceptions = (
@@ -99,3 +84,82 @@ class FreiburgPullConverter(FreiburgBasePullConverter):
             )
 
         return static_parking_site_inputs, import_parking_site_exceptions
+
+
+class FreiburgPullConverter(FreiburgBasePullConverter):
+    freiburg_feature_validator = DataclassValidator(FreiburgFeatureInput)
+    source_info = SourceInfo(
+        uid='freiburg',
+        name='Stadt Freiburg',
+        public_url='https://www.freiburg.de/pb/,Lde/231355.html',
+        source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive?request=getfeature&service=wfs&version=1.1.0&typename=pls'
+        '&outputformat=geojson&srsname=epsg:4326',
+        timezone='Europe/Berlin',
+        attribution_contributor='Stadt Freiburg',
+        attribution_license='dl-de/by-2-0',
+        has_realtime_data=True,
+    )
+
+
+class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):
+    freiburg_feature_validator = DataclassValidator(FreiburgParkAndRideStaticFeatureInput)
+    source_info = SourceInfo(
+        uid='freiburg',
+        name='Stadt Freiburg: Park and Ride',
+        source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?SERVICE=WFS&REQUEST=GetFeature&SRSNAME=EPSG:4326'
+        '&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkandride&OUTPUTFORMAT=geojson&crs=4326',
+        timezone='Europe/Berlin',
+        attribution_contributor='Stadt Freiburg',
+        attribution_license='dl-de/by-2-0',
+        has_realtime_data=True,
+    )
+
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        static_parking_site_inputs: StaticParkingSiteInput = []
+        static_raw_parking_site_inputs, import_parking_site_exceptions = self._get_raw_realtime_parking_sites()
+
+        for static_raw_parking_site_input in static_raw_parking_site_inputs:
+            static_parking_site_inputs.append(
+                static_raw_parking_site_input.to_static_parking_site_input(),
+            )
+
+        return static_parking_site_inputs, import_parking_site_exceptions
+
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+        return [], []
+
+
+class FreiburgParkAndRideRealtimePullConverter(FreiburgBasePullConverter):
+    freiburg_feature_validator = DataclassValidator(FreiburgParkAndRideRealtimeFeatureInput)
+    source_info = SourceInfo(
+        uid='freiburg',
+        name='Stadt Freiburg: Park and Ride',
+        source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?SERVICE=WFS&REQUEST=GetFeature&SRSNAME=EPSG:4326'
+        '&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkandride_aktuell&OUTPUTFORMAT=geojson&crs=4326',
+        timezone='Europe/Berlin',
+        attribution_contributor='Stadt Freiburg',
+        attribution_license='dl-de/by-2-0',
+        has_realtime_data=True,
+    )
+
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        static_parking_site_inputs: StaticParkingSiteInput = []
+        static_raw_parking_site_inputs, import_parking_site_exceptions = self._get_raw_realtime_parking_sites()
+
+        for static_raw_parking_site_input in static_raw_parking_site_inputs:
+            static_parking_site_inputs.append(
+                static_raw_parking_site_input.to_static_parking_site_input(),
+            )
+
+        return static_parking_site_inputs, import_parking_site_exceptions
+
+    def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+        realtime_parking_site_inputs: RealtimeParkingSiteInput = []
+        realtime_raw_parking_site_inputs, import_parking_site_exceptions = self._get_raw_realtime_parking_sites()
+
+        for realtime_raw_parking_site_input in realtime_raw_parking_site_inputs:
+            realtime_parking_site_inputs.append(
+                realtime_raw_parking_site_input.to_realtime_parking_site_input(),
+            )
+
+        return realtime_parking_site_inputs, import_parking_site_exceptions
