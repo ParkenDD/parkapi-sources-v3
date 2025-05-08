@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.18.1
+
+### Fixes
+
+* [better handling of mobilithek pull mechanisms](https://github.com/ParkenDD/parkapi-sources-v3/pull/211)
+
+
 ## 0.18.0
 
 This release is a major change, as it introduces parking spots. If you used internal objects, this update might be
