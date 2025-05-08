@@ -6,9 +6,8 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
-from parkapi_sources.converters.base_converter import ParkingSpotBaseConverter
 from parkapi_sources.converters.base_converter.datex2 import ParkingRecordStatusMixin, UrbanParkingSiteMixin
-from parkapi_sources.converters.base_converter.pull import MobilithekPullConverter
+from parkapi_sources.converters.base_converter.pull import MobilithekPullConverterMixin, ParkingSpotPullConverter
 from parkapi_sources.exceptions import ImportParkingSpotException
 from parkapi_sources.models import RealtimeParkingSpotInput, SourceInfo, StaticParkingSpotInput
 
@@ -18,8 +17,8 @@ from .validators import FriedrichshafenSensorsParkingRecordStatus, Friedrichshaf
 class FriedrichshafenSensorsPullConverter(
     UrbanParkingSiteMixin,
     ParkingRecordStatusMixin,
-    ParkingSpotBaseConverter,
-    MobilithekPullConverter,
+    MobilithekPullConverterMixin,
+    ParkingSpotPullConverter,
 ):
     config_key = 'FRIEDRICHSHAFEN_SENSORS'
     static_validator = DataclassValidator(FriedrichshafenSensorsParkingSpot)

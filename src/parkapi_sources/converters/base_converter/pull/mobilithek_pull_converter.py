@@ -4,16 +4,17 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from abc import ABC, abstractmethod
+from typing import Callable
 
 from lxml import etree
 
-from parkapi_sources.util import XMLHelper
-
-from .pull_converter import PullConverter
+from parkapi_sources.util import ConfigHelper, XMLHelper
 
 
-class MobilithekPullConverter(PullConverter, ABC):
+class MobilithekPullConverterMixin(ABC):
     xml_helper = XMLHelper()
+    config_helper: ConfigHelper
+    request_get: Callable
 
     @property
     @abstractmethod
