@@ -63,7 +63,7 @@ class KienzlerBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin
                 # Extend static data with GeoJSON data
                 geojson_feature.update_static_parking_site_input(static_parking_site_inputs_by_uid[uid])
 
-        return list(static_parking_site_inputs_by_uid.values()), static_parking_site_errors
+        return self.apply_static_patches(list(static_parking_site_inputs_by_uid.values())), static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []

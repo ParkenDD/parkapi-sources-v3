@@ -68,7 +68,7 @@ class BahnV2PullConverter(ParkingSitePullConverter):
                         continue
                     static_parking_site_inputs.append(static_parking_site_bike_open)
 
-        return static_parking_site_inputs, static_parking_site_errors
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []  # ATM it's impossible to get realtime data due rate limit restrictions

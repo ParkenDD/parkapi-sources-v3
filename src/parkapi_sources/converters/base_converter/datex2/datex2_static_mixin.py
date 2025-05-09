@@ -60,4 +60,9 @@ class Datex2StaticMixin(ABC):
                         message=str(e.to_dict()),
                     ),
                 )
+
+        # apply_static_patches just exists at pull converters, so we have to check
+        if hasattr(self, 'apply_static_patches'):
+            static_parking_site_inputs = self.apply_static_patches(static_parking_site_inputs)
+
         return static_parking_site_inputs, static_parking_site_errors
