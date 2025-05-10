@@ -1,6 +1,17 @@
 # Changelog
 
+## 0.18.2
+
+Released 2025-05-10
+
+### Fixes
+
+* [better datex2 handling and testing](https://github.com/ParkenDD/parkapi-sources-v3/pull/212)
+
+
 ## 0.18.1
+
+Released 2025-05-08
 
 ### Fixes
 
@@ -8,6 +19,8 @@
 
 
 ## 0.18.0
+
+Released 2025-04-02
 
 This release is a major change, as it introduces parking spots. If you used internal objects, this update might be
 breaking for you. Existing converters will work exactly the same and have the same interface, so for most users,
@@ -21,6 +34,7 @@ updating will be fine.
 
 ## 0.17.4
 
+Released 2025-04-01
 
 ### Fixes
 
