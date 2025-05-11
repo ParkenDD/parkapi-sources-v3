@@ -3,7 +3,7 @@ Copyright 2023 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from decimal import ROUND_HALF_UP, Decimal
+from decimal import Decimal
 
 import pyproj
 from lxml import etree
@@ -15,6 +15,7 @@ from parkapi_sources.converters.base_converter.datex2 import Datex2RealtimeMixin
 from parkapi_sources.converters.base_converter.push import XmlConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.util import round_7d
 
 from .validators import ParkingFacilityStatus, StuttgartParkingFacility
 
@@ -38,8 +39,8 @@ class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConve
             float(static_parking_site_input.lat),
             inverse=True,
         )
-        static_parking_site_input.lat = Decimal(coordinates[1]).quantize(Decimal('1.0000000'), rounding=ROUND_HALF_UP)
-        static_parking_site_input.lon = Decimal(coordinates[0]).quantize(Decimal('1.0000000'), rounding=ROUND_HALF_UP)
+        static_parking_site_input.lat = round_7d(Decimal(coordinates[1]))
+        static_parking_site_input.lon = round_7d(Decimal(coordinates[0]))
 
     def handle_xml(
         self,

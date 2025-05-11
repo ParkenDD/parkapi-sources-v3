@@ -26,7 +26,6 @@ from .parking_restriction_inputs import ParkingRestrictionInput
 
 @validataclass
 class GeojsonPolygonInput(ValidataclassMixin):
-    uid: str = StringValidator(min_length=1, max_length=256)
     type: str = AnyOfValidator(allowed_values=['Polygon'])
     coordinates: list[list[list[float]]] = ListValidator(
         ListValidator(
@@ -45,6 +44,7 @@ class GeojsonPolygonInput(ValidataclassMixin):
 class StaticParkingSpotInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
     name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
+    address: str | None = Noneable(StringValidator(max_length=256)), Default(None)
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
     type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
     static_data_updated_at: datetime = DateTimeValidator(

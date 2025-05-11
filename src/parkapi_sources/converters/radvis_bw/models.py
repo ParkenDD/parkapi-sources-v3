@@ -21,6 +21,7 @@ from validataclass.validators import (
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
+from parkapi_sources.util import round_7d
 from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator
 
 
@@ -176,8 +177,8 @@ class RadvisFeatureInput(GeojsonBaseFeatureInput):
             )
 
             coordinates = proj(float(static_parking_site_input.lon), float(static_parking_site_input.lat), inverse=True)
-            static_parking_site_input.lon = Decimal(coordinates[0]).quantize(Decimal('1.0000000'))
-            static_parking_site_input.lat = Decimal(coordinates[1]).quantize(Decimal('1.0000000'))
+            static_parking_site_input.lon = round_7d(Decimal(coordinates[0]))
+            static_parking_site_input.lat = round_7d(Decimal(coordinates[1]))
 
             static_parking_site_inputs.append(static_parking_site_input)
 
