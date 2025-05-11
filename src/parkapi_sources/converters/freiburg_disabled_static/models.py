@@ -45,6 +45,7 @@ class FreiburgDisabledStaticFeatureInput(GeojsonBaseFeatureInput):
         return StaticParkingSpotInput(
             uid=str(self.properties.fid),
             address=address,
+            desciption=None if self.properties.hinweis == '' else self.properties.hinweis,
             static_data_updated_at=datetime.now(tz=timezone.utc),
             lat=round_7d(Decimal(point.y)),
             lon=round_7d(Decimal(point.x)),
