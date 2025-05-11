@@ -43,6 +43,20 @@ class ParkingSiteType(Enum):
     OTHER = 'OTHER'
 
 
+class ParkingSpotType(Enum):
+    # For cars
+    ON_STREET = 'ON_STREET'
+    OFF_STREET_PARKING_GROUND = 'OFF_STREET_PARKING_GROUND'
+    UNDERGROUND = 'UNDERGROUND'
+    CAR_PARK = 'CAR_PARK'
+
+    # For bikes. See https://wiki.openstreetmap.org/wiki/Key:bicycle_parking for explanations.
+    LOCKERS = 'LOCKERS'
+
+    # For separate lockers
+    LOCKBOX = 'LOCKBOX'
+
+
 class ParkAndRideType(Enum):
     CARPOOL = 'CARPOOL'
     TRAIN = 'TRAIN'

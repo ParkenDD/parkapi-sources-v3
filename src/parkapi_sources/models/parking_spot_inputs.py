@@ -20,7 +20,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from .enums import ParkingSpotStatus, PurposeType
+from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType
 from .parking_restriction_inputs import ParkingRestrictionInput
 
 
@@ -46,6 +46,7 @@ class StaticParkingSpotInput(ValidataclassMixin):
     uid: str = StringValidator(min_length=1, max_length=256)
     name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
+    type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
     static_data_updated_at: datetime = DateTimeValidator(
         local_timezone=timezone.utc,
         target_timezone=timezone.utc,
