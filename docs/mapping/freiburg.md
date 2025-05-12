@@ -1,38 +1,74 @@
-# Park + Mitfahren: Static data of the State of Baden-Württemberg
+# Realtime and Static data of the city of Freiburg
 
-The Ministry of Transport provides static data on Carpooling along the Autobahn/Highways for Cars.
-
-Attributes which are set statically:
-
-* `has_realtime_data` is always set to `False`
-* `type` is always set to `OFF_STREET_PARKING_GROUND`
-* `park_and_ride_type` is always set to `['CARPOOL']`
-
+The city of Freiburg provides realtime ``GEOJSON`` parking data and also static nd realtime Park + Ride data for cars.
 
 ## ParkingSites
 
-A `ParkingSites` provides static data for a `ParkingSite`.
+A `ParkingSites` provides realtime data for a `ParkingSite`.
 
-| Field                                                 | Type                     | Cardinality | Mapping                | Comment                                                                                                                 |
-|-------------------------------------------------------|--------------------------|-------------|------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Id                                                    | integer                  | 1           | uid                    |                                                                                                                         |
-| BAB/B                                                 | string                   | 1           | name                   |                                                                                                                         |
-| Nr                                                    | integer                  | 1           | name                   |                                                                                                                         |
-| Bezeichnung                                           | string                   | 1           | name                   |                                                                                                                         |
-| Anzahl der Pkw-Parkstände                             | integer                  | 1           | capacity               |                                                                                                                         |
-| Anbindung über(Str.Nr. Bundes- oder Landesstraße)     | string                   | 1           | description            |                                                                                                                         |
-| Breite                                                | string (decimal)         | 1           | latitude               |                                                                                                                         |
-| Länge                                                 | string (decimal)         | 1           | longitude              |                                                                                                                         |
-| Beleuchtung(vorhanden / nicht vorhanden)              | HasLightingBoolean       | 1           | has_lighting           |                                                                                                                         |
-| Google Maps                                           | string                   | 1           | public_url             |  Values here are in excel hyperlinks with prefix `=HYPERLINK`. They are formatted into url strings with prefix `https`  |
+| Field                      | Type                     | Cardinality | Mapping                         | Comment                                                             |
+|----------------------------|--------------------------|-------------|---------------------------------|---------------------------------------------------------------------|
+| obs_parkid                 | integer                  | 1           | uid                             |                                                                     |
+| obs_max                    | integer                  | ?           | realtime_capacity/capacity      |                                                                     |
+| obs_free                   | integer                  | ?           | realtime_free_capacity          |                                                                     |
+| obs_ts                     | datetime                 | 1           | realtime_data_updated_at        |                                                                     |
+| obs_state                  | integer                  | ?           | #RealtimeOpeningStatus          |                                                                     |
+| public_url                 | string                   | ?           | public_url                      |                                                                     |
 
 
-#### HasLightingBoolean
+## ParkingSites for P+R Static
 
-| Key                    | Mapping   |
-|------------------------|-----------|
-| vorhanden              | TRUE      |
-| nicht vorhanden        | FALSE     |
-| Durchfahrt beleuchtet  | TRUE      |
-| k. A.                  |           |
-| teilweise beleuchtet   | TRUE      |
+Attributes which are set statically:
+* `has_realtime_data` is always set to `False`
+
+A `ParkingSites` provides static data for a Park and Ride `ParkingSite`.
+
+| Field                      | Type                     | Cardinality | Mapping                         | Comment                                                             |
+|----------------------------|--------------------------|-------------|---------------------------------|---------------------------------------------------------------------|
+| ogc_fid                    | integer                  | 1           | uid                             |                                                                     |
+| kapazitaet                 | integer                  | 1           | capacity                        |                                                                     |
+| name                       | string                   | 1           | name                            |                                                                     |
+| nummer                     | string                   | ?           | name                            |                                                                     |
+| kategorie                  | string                   | 1           | #ParkingSiteType                |                                                                     |
+
+
+## ParkingSites for P+R Realtime and Static
+
+Attributes which are set statically:
+* `type` is always set to `OFF_STREET_PARKING_GROUND`
+* `park_and_ride_type` is always set to `['YES']`
+* `purpose` is always set to `CAR`
+* `has_realtime_data` is always set to `True`
+
+A `ParkingSites` provides static and realtime data for a Park and Ride `ParkingSite`.
+
+| Field                      | Type                     | Cardinality | Mapping                         | Comment                                                             |
+|----------------------------|--------------------------|-------------|---------------------------------|---------------------------------------------------------------------|
+| park_id                    | integer                  | 1           | uid                             |                                                                     |
+| name                       | string                   | 1           | name                            |                                                                     |
+| obs_max                    | integer                  | ?           | realtime_capacity/capacity      |                                                                     |
+| obs_free                   | integer                  | ?           | realtime_free_capacity          |                                                                     |
+| obs_ts                     | datetime                 | 1           | realtime_data_updated_at        |                                                                     |
+| obs_state                  | integer                  | ?           | #RealtimeOpeningStatus          |                                                                     |
+
+
+#### RealtimeOpeningStatus
+
+| Key        | Mapping   | Comment                                                          |
+|------------|-----------|------------------------------------------------------------------|
+| 0          | OPEN      | Free parking spaces (Normalbetrieb, Freie Plätze verfügbar)      |
+| 1          | OPEN      | Less than 30 parking spaces (Weniger als 30 Restplätze)          |
+| 2          | OPEN      | Less than 10 parking spaces (Weniger als 10 Restplätze)          |
+| -1         | CLOSED    | No data (Störung / Keine Daten)                                  |
+| None       | CLOSED    | Null value                                                       |
+
+
+#### ParkingSiteType
+
+| Key           | Mapping                        | 
+|---------------|--------------------------------|
+| Parkplatz     | OFF_STREET_PARKING_GROUND      | 
+| Parkhaus      | CAR_PARK                       | 
+| Tiefgarage    | UNDERGROUND                    | 
+| Park&Ride     | OFF_STREET_PARKING_GROUND      | 
+| None          | OTHER                          | 

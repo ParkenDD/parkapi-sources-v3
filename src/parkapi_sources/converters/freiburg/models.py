@@ -33,7 +33,7 @@ class FreiburgPropertiesInput:
     park_url: Optional[str] = ExcelNoneable(UrlValidator())
 
 
-class FreiburgParkAndRideStaticParkingSiteType(Enum):
+class FreiburgParkingSiteTypeInput(Enum):
     PARKPLATZ = 'Parkplatz'
     PARKHAUS = 'Parkhaus'
     TIEFGARAGE = 'Tiefgarage'
@@ -45,6 +45,7 @@ class FreiburgParkAndRideStaticParkingSiteType(Enum):
             self.PARKPLATZ: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.PARKHAUS: ParkingSiteType.CAR_PARK,
             self.TIEFGARAGE: ParkingSiteType.UNDERGROUND,
+            self.PARKNRIDE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
         }.get(self, ParkingSiteType.OTHER)
 
 
@@ -53,7 +54,7 @@ class FreiburgParkAndRideStaticPropertiesInput:
     ogc_fid: int = IntegerValidator(allow_strings=True)
     name: str = StringValidator()
     nummer: str = StringValidator()
-    kategorie: FreiburgParkAndRideStaticParkingSiteType = EnumValidator(FreiburgParkAndRideStaticParkingSiteType)
+    kategorie: FreiburgParkingSiteTypeInput = EnumValidator(FreiburgParkingSiteTypeInput)
     kapazitaet: int = IntegerValidator(allow_strings=True)
 
 
@@ -137,5 +138,7 @@ class FreiburgParkAndRideRealtimeFeatureInput:
             realtime_capacity=self.properties.obs_max,
             realtime_free_capacity=self.properties.obs_free,
             realtime_data_updated_at=self.properties.obs_ts,
-            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state else OpeningStatus.CLOSED,
+            realtime_opening_status=OpeningStatus.OPEN
+            if self.properties.obs_state and self.properties.obs_state != -1
+            else OpeningStatus.CLOSED,
         )
