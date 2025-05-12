@@ -57,7 +57,7 @@ class PMBWPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
             static_parking_site_input.description = geojson_parking_site_input.description
             static_parking_site_input.type = geojson_parking_site_input.type
 
-        return static_parking_site_inputs, static_parking_site_errors
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
