@@ -17,6 +17,8 @@ We support following data sources:
 | Stadt Buchen                                                   | ParkingSite | car        | push (json) | `buchen`                  | yes      |
 | Stadt Ellwangen                                                | ParkingSite | car        | push (xlsx) | `ellwangen`               | no       |
 | Stadt Freiburg                                                 | ParkingSite | car        | pull        | `freiburg`                | yes      |
+| Stadt Freiburg: Park & Ride Static                             | ParkingSite | car        | pull        | `freiburg_p_r_static`     | no       |
+| Stadt Freiburg: Park & Ride Realtime                           | ParkingSite | car        | pull        | `freiburg_p_r_realtime`   | yes      |
 | Friedrichhafen Sensors                                         | ParkingSpot | car        | pull        | `friedrichshafen_sensors` | yes      |
 | GOLDBECK Parking Services                                      | ParkingSite | car        | push (xlsx) | `goldbeck`                | no       |
 | Stadt Heidelberg                                               | ParkingSite | car        | pull        | `heidelberg`              | yes      |
