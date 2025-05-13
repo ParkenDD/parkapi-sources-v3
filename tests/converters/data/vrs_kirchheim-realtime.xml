@@ -1,0 +1,45 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Version_2.3/DATEXIISchema_2_2_3.xsd">
+            <exchange>
+                <supplierIdentification>
+                    <country>de</country>
+                    <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                </supplierIdentification>
+            </exchange>
+            <payloadPublication lang="de" xsi:type="GenericPublication">
+                <publicationTime>2025-05-09T21:50:02+02:00</publicationTime>
+                <publicationCreator>
+                    <country>de</country>
+                    <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                </publicationCreator>
+                <genericPublicationName>ParkingOccupancy</genericPublicationName>
+                <genericPublicationExtension>
+                    <parkingStatusPublication>
+
+  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
+    <parkingRecordReference id="1445" targetClass="ParkingFacility" version="1"/>
+    <parkingOccupancy>
+      <parkingNumberOfSpacesOverride>16</parkingNumberOfSpacesOverride>
+      <parkingNumberOfVacantSpaces>12</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>4</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>25</parkingOccupancy>
+    </parkingOccupancy>
+    <StationName>Kirchheim am Neckar</StationName>
+    <StationNumber>5723</StationNumber>
+  </parkingRecordStatus>
+
+
+  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
+    <parkingRecordReference id="2143" targetClass="ParkingFacility" version="1"/>
+    <parkingOccupancy>
+      <parkingNumberOfSpacesOverride>16</parkingNumberOfSpacesOverride>
+      <parkingNumberOfVacantSpaces>7</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>9</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>56.25</parkingOccupancy>
+    </parkingOccupancy>
+    <StationName>Kirchheim am Neckar</StationName>
+    <StationNumber>5723</StationNumber>
+  </parkingRecordStatus>
+</parkingStatusPublication>
+                </genericPublicationExtension>
+            </payloadPublication>
+        </d2LogicalModel>

@@ -1,0 +1,45 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Version_2.3/DATEXIISchema_2_2_3.xsd">
+            <exchange>
+                <supplierIdentification>
+                    <country>de</country>
+                    <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                </supplierIdentification>
+            </exchange>
+            <payloadPublication lang="de" xsi:type="GenericPublication">
+                <publicationTime>2025-05-08T22:00:00+02:00</publicationTime>
+                <publicationCreator>
+                    <country>de</country>
+                    <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                </publicationCreator>
+                <genericPublicationName>ParkingOccupancy</genericPublicationName>
+                <genericPublicationExtension>
+                    <parkingStatusPublication>
+
+  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
+    <parkingRecordReference id="1091" targetClass="ParkingFacility" version="1"/>
+    <parkingOccupancy>
+      <parkingNumberOfSpacesOverride>84</parkingNumberOfSpacesOverride>
+      <parkingNumberOfVacantSpaces>70</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>14</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>16.666668</parkingOccupancy>
+    </parkingOccupancy>
+    <StationName>Neustadt-Hohenacker</StationName>
+    <StationNumber>1602</StationNumber>
+  </parkingRecordStatus>
+
+
+  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
+    <parkingRecordReference id="1089" targetClass="ParkingFacility" version="1"/>
+    <parkingOccupancy>
+      <parkingNumberOfSpacesOverride>164</parkingNumberOfSpacesOverride>
+      <parkingNumberOfVacantSpaces>158</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>6</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>3.6585364</parkingOccupancy>
+    </parkingOccupancy>
+    <StationName>Neustadt-Hohenacker</StationName>
+    <StationNumber>1602</StationNumber>
+  </parkingRecordStatus>
+</parkingStatusPublication>
+                </genericPublicationExtension>
+            </payloadPublication>
+        </d2LogicalModel>

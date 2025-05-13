@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from abc import ABC
 
-from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.datex2 import ParkingFacilityMixin
 from parkapi_sources.converters.base_converter.datex2.parking_record_status_mixin import ParkingRecordStatusMixin
 from parkapi_sources.converters.base_converter.pull import MobilithekParkingSitePullConverter
@@ -17,7 +16,6 @@ class VrsBasePullConverter(
     ParkingFacilityMixin,
     ParkingRecordStatusMixin,
     MobilithekParkingSitePullConverter,
-    ParkingSiteBaseConverter,
     ABC,
 ):
     def modify_static_parking_site_input(self, static_parking_site_input: StaticParkingSiteInput) -> None:

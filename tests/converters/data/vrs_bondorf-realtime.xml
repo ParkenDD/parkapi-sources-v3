@@ -1,0 +1,32 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Version_2.3/DATEXIISchema_2_2_3.xsd">
+                        <exchange>
+                                <supplierIdentification>
+                                        <country>de</country>
+                                        <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                                </supplierIdentification>
+                        </exchange>
+                        <payloadPublication lang="de" xsi:type="GenericPublication">
+                                <publicationTime>2025-05-09T21:41:58.5461534+02:00</publicationTime>
+                                <publicationCreator>
+                                        <country>de</country>
+                                        <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                                </publicationCreator>
+                                <genericPublicationName>ParkingOccupancy</genericPublicationName>
+                                <genericPublicationExtension>
+                                        <parkingStatusPublication>
+
+<parkingRecordStatus xsi:type="GroupOfParkingSitesStatus">
+	<parkingRecordReference id="1035[P+R Bondorf]" targetClass="ParkingRecord" version="1.0"/>
+	<parkingStatusOriginTime>2025-05-09T21:41:58.5461534+02:00</parkingStatusOriginTime>
+	<parkingOccupancy>
+		<parkingNumberOfSpacesOverride>313</parkingNumberOfSpacesOverride>
+		<parkingNumberOfVacantSpaces>215</parkingNumberOfVacantSpaces>
+		<parkingNumberOfOccupiedSpaces>98</parkingNumberOfOccupiedSpaces>
+		<parkingOccupancy>31.3099041533546</parkingOccupancy>
+	</parkingOccupancy>
+</parkingRecordStatus>
+
+                                        </parkingStatusPublication>
+                                </genericPublicationExtension>
+                        </payloadPublication>
+                </d2LogicalModel>

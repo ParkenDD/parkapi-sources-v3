@@ -15,6 +15,8 @@ from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 
 class Datex2StaticMixin(ABC):
     source_info: SourceInfo
+    # Can be overwritten by child classes
+    has_realtime_data: bool = True
 
     @abstractmethod
     def _transform_static_xml_to_static_input_dicts(self, xml_data: etree.Element) -> list[dict]:
@@ -47,6 +49,7 @@ class Datex2StaticMixin(ABC):
             try:
                 static_item = self.static_validator.validate(static_input_dict)
                 static_parking_site_input = static_item.to_static_parking_site_input()
+                static_parking_site_input.has_realtime_data = self.has_realtime_data
 
                 self.modify_static_parking_site_input(static_parking_site_input)
 

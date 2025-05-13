@@ -6,7 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from validataclass.dataclasses import validataclass
+from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import DataclassValidator, DateTimeValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import RealtimeParkingSiteInput
@@ -28,10 +28,14 @@ class ParkingRecordReference:
 class ParkingRecordStatus:
     parkingOccupancy: ParkingOccupancy = DataclassValidator(ParkingOccupancy)
     parkingRecordReference: ParkingRecordReference = DataclassValidator(ParkingRecordReference)
-    parkingStatusOriginTime: datetime = DateTimeValidator(
-        local_timezone=ZoneInfo('Europe/Berlin'),
-        target_timezone=timezone.utc,
-        discard_milliseconds=True,
+    # parkingStatusOriginTime is set in some data sources, but not everywhere
+    parkingStatusOriginTime: datetime | None = (
+        DateTimeValidator(
+            local_timezone=ZoneInfo('Europe/Berlin'),
+            target_timezone=timezone.utc,
+            discard_milliseconds=True,
+        ),
+        Default(None),
     )
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
@@ -39,5 +43,5 @@ class ParkingRecordStatus:
             uid=self.parkingRecordReference.id.split('[')[0],
             realtime_capacity=self.parkingOccupancy.parkingNumberOfSpacesOverride,
             realtime_free_capacity=self.parkingOccupancy.parkingNumberOfVacantSpaces,
-            realtime_data_updated_at=self.parkingStatusOriginTime,
+            realtime_data_updated_at=self.parkingStatusOriginTime or datetime.now(timezone.utc),
         )
