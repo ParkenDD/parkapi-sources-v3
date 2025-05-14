@@ -8,6 +8,7 @@ from .geojson_inputs import (
     GeojsonBaseFeaturePropertiesInput,
     GeojsonFeatureGeometryInput,
     GeojsonFeatureInput,
+    GeojsonFeatureParkingSpotInput,
     GeojsonInput,
 )
 from .parking_restriction_inputs import ParkingRestrictionInput
