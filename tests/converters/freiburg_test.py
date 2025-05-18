@@ -22,6 +22,19 @@ def freiburg_pull_converter(
     return FreiburgPullConverter(config_helper=mocked_static_geojson_config_helper, request_helper=request_helper)
 
 
+@pytest.fixture
+def freiburg_local_patch_pull_converter(
+    mocked_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> FreiburgPullConverter:
+    config = {
+        'PARK_API_PARKING_SITE_PATCH_DIR': Path(Path(__file__).parent, 'data', 'patches'),
+        'STATIC_GEOJSON_BASE_URL': 'https://raw.githubusercontent.com/ParkenDD/parkapi-static-data/main/sources',
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return FreiburgPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
+
+
 class FreiburgPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(freiburg_pull_converter: FreiburgPullConverter, requests_mock: Mocker):
@@ -57,3 +70,28 @@ class FreiburgPullConverterTest:
         assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_sites_patched(
+        freiburg_local_patch_pull_converter: FreiburgPullConverter,
+        requests_mock: Mocker,
+    ):
+        # We need to get GeoJSON data
+        requests_mock.real_http = True
+
+        json_path = Path(Path(__file__).parent, 'data', 'freiburg.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            freiburg_local_patch_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 20
+        assert len(import_parking_site_exceptions) == 0
+
+        assert static_parking_site_inputs[0].name == 'New name'
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)

@@ -13,7 +13,13 @@ from .geojson_inputs import (
     GeojsonInput,
 )
 from .parking_restriction_inputs import ParkingRestrictionInput
-from .parking_site_inputs import CombinedParkingSiteInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from .parking_site_inputs import (
+    CombinedParkingSiteInput,
+    RealtimeParkingSiteInput,
+    StaticParkingSiteInput,
+    StaticParkingSitePatchInput,
+    StaticPatchInput,
+)
 from .parking_spot_inputs import CombinedParkingSpotInput, RealtimeParkingSpotInput, StaticParkingSpotInput
 from .source_info import SourceInfo
 from .xlsx_inputs import ExcelOpeningTimeInput, ExcelStaticParkingSiteInput

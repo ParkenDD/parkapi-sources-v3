@@ -165,6 +165,25 @@ At `webapp/models/parking_site_inputs.py`, you can find the definition of `Stati
 `dataclasses` are also [`validataclasses`](https://pypi.org/project/validataclass/), so you can be sure that the data you get is validated.
 
 
+### Patch data with local files
+
+If `PARK_API_PARKING_SITE_PATCH_DIR` is set, all pull converters will check if there is a JSON file in this directory
+called `source_uid.json` (replace `source_uid` with the source you want to patch). It expects a ParkAPI JSON format
+with `uid` as the only required field. A file might look like this:
+
+```
+{
+  "items": [
+    {
+      "uid": "my-uid",
+      "name": "New name"
+    }
+  ]
+}
+
+```
+
+
 ### Debugging
 
 In order to debug ParkAPI Sources, there are two config values which can be used to dump all the requests. Before doing

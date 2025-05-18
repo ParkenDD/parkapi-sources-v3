@@ -9,8 +9,9 @@ from typing import Optional
 
 from validataclass.dataclasses import Default, DefaultUnset, ValidataclassMixin, validataclass
 from validataclass.exceptions import DataclassPostValidationError, ValidationError
-from validataclass.helpers import OptionalUnsetNone
+from validataclass.helpers import OptionalUnset, OptionalUnsetNone
 from validataclass.validators import (
+    AnythingValidator,
     BooleanValidator,
     DataclassValidator,
     DateTimeValidator,
@@ -123,6 +124,36 @@ class StaticParkingSiteInput(ValidataclassMixin):
                         reason='YES and NO cannot be used with specific ParkAndRideTypes',
                     ),
                 )
+
+
+@validataclass
+class StaticPatchInput:
+    items: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict]))
+
+
+@validataclass
+class StaticParkingSitePatchInput(StaticParkingSiteInput):
+    """
+    This validataclass is for patching StaticParkingSiteInputs
+    """
+
+    uid: str = StringValidator(min_length=1, max_length=256)
+
+    name: OptionalUnset[str] = DefaultUnset
+    purpose: OptionalUnset[PurposeType] = DefaultUnset
+    type: OptionalUnset[ParkingSiteType] = DefaultUnset
+
+    # Set min/max to Europe borders
+    lat: OptionalUnset[Decimal] = DefaultUnset
+    lon: OptionalUnset[Decimal] = DefaultUnset
+
+    capacity: OptionalUnset[int] = DefaultUnset
+
+    tags: OptionalUnset[list[str]] = DefaultUnset
+
+    def __post_init__(self):
+        # Don't do additional validation checks
+        pass
 
 
 @validataclass

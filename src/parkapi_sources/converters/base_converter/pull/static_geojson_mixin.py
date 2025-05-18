@@ -7,6 +7,7 @@ import json
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Callable
 
 from requests import ConnectionError, JSONDecodeError, Response
 from urllib3.exceptions import NewConnectionError
@@ -28,6 +29,7 @@ from parkapi_sources.util import ConfigHelper
 class StaticGeojsonDataMixin(ABC):
     config_helper: ConfigHelper
     source_info: SourceInfo
+    apply_static_patches: Callable
     geojson_validator = DataclassValidator(GeojsonInput)
     geojson_feature_parking_sites_validator = DataclassValidator(GeojsonFeatureInput)
     geojson_feature_parking_spots_validator = DataclassValidator(GeojsonFeatureParkingSpotInput)
@@ -103,7 +105,7 @@ class StaticGeojsonDataMixin(ABC):
                 ),
             )
 
-        return static_parking_site_inputs, import_parking_site_exceptions
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
 
     def _get_static_parking_spots_inputs_and_exceptions(
         self,

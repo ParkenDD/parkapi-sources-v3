@@ -70,7 +70,7 @@ class KarlsruheBasePullConverter(ParkingSitePullConverter, ABC):
         for feature_input in feature_inputs:
             static_parking_site_inputs.append(feature_input.to_static_parking_site_input())
 
-        return static_parking_site_inputs, import_parking_site_exceptions
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
 
 
 class KarlsruhePullConverter(KarlsruheBasePullConverter):
