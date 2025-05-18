@@ -34,9 +34,6 @@ class GeojsonBaseFeaturePropertiesInput(ValidataclassMixin):
         if static_data_updated_at is not None:
             result['static_data_updated_at'] = static_data_updated_at
 
-        if hasattr(self, 'external_identifiers') and self.external_identifiers is not None:
-            result['external_identifiers'] = self.external_identifiers
-
         return result
 
 
@@ -100,9 +97,12 @@ class GeojsonBaseFeatureInput:
         static_parking_site.lat = self.geometry.coordinates[1]
         static_parking_site.lon = self.geometry.coordinates[0]
 
-        for key, value in self.properties.to_dict().items():
-            if value is not None:
-                setattr(static_parking_site, key, value)
+        for key in self.properties.to_dict().keys():
+            value = getattr(self.properties, key)
+            if value is None:
+                continue
+
+            setattr(static_parking_site, key, value)
 
 
 @validataclass
