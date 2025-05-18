@@ -134,7 +134,7 @@ class GeojsonFeatureInput(GeojsonBaseFeatureInput):
 class GeojsonFeatureParkingSpotInput(GeojsonBaseFeatureInput):
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonFeaturePropertiesParkingSpotInput = DataclassValidator(GeojsonFeaturePropertiesParkingSpotInput)
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
 
 
 @validataclass
