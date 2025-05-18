@@ -1,9 +1,9 @@
 validataclass~=0.11.0
 pyproj~=3.7.1
-lxml~=5.3.1
+lxml~=5.4.0
 openpyxl~=3.1.5
 requests~=2.32.3
-beautifulsoup4~=4.13.3
-urllib3~=2.3.0
+beautifulsoup4~=4.13.4
+urllib3~=2.4.0
 isodate~=0.7.2
 shapely~=2.1.0
