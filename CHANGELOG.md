@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.19.2
+
+Released 2025-05-18
+
+### Fixes
+
+* Fix typo in description property
+
+
 ## 0.19.1
 
 Released 2025-05-18

@@ -47,7 +47,7 @@ class StaticParkingSpotInput(ValidataclassMixin):
     address: str | None = Noneable(StringValidator(max_length=256)), Default(None)
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
     type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
-    desciption: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
+    description: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
     static_data_updated_at: datetime = DateTimeValidator(
         local_timezone=timezone.utc,
         target_timezone=timezone.utc,
