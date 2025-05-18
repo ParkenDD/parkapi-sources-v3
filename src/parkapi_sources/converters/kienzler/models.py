@@ -5,7 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from decimal import Decimal
-from typing import Any, Optional
+from typing import Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
@@ -71,14 +71,6 @@ class KienzlerGeojsonFeaturePropertiesInput(ValidataclassMixin):
         ),
         Default(None),
     )
-
-    def to_dict(self, **kwargs) -> dict[str, Any]:
-        result = super().to_dict(**kwargs)
-
-        # We want the original structure as we want to use it for updating StaticParkingSiteInputs
-        result['external_identifiers'] = self.external_identifiers
-
-        return result
 
 
 @validataclass

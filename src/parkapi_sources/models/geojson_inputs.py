@@ -5,7 +5,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime
 from decimal import Decimal
-from typing import Optional
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
@@ -21,8 +20,10 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from .enums import ParkingSiteType
-from .parking_site_inputs import StaticParkingSiteInput
+from .enums import ParkAndRideType, ParkingSiteType
+from .parking_restriction_inputs import ParkingRestrictionInput
+from .parking_site_inputs import ExternalIdentifierInput, StaticParkingSiteInput
+from .parking_spot_inputs import StaticParkingSpotInput
 
 
 @validataclass
@@ -39,13 +40,31 @@ class GeojsonBaseFeaturePropertiesInput(ValidataclassMixin):
 @validataclass
 class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
     uid: str = StringValidator(min_length=1, max_length=256)
-    name: str = StringValidator(min_length=1, max_length=256)
-    type: Optional[ParkingSiteType] = EnumValidator(ParkingSiteType), Default(None)
-    public_url: Optional[str] = UrlValidator(max_length=4096), Default(None)
-    address: str = StringValidator(max_length=512)
-    description: Optional[str] = StringValidator(max_length=512), Default(None)
-    capacity: int = IntegerValidator()
-    has_realtime_data: bool = BooleanValidator()
+    name: str | None = StringValidator(min_length=1, max_length=256), Default(None)
+    type: ParkingSiteType | None = EnumValidator(ParkingSiteType), Default(None)
+    public_url: str | None = UrlValidator(max_length=4096), Default(None)
+    address: str | None = StringValidator(max_length=512), Default(None)
+    description: str | None = StringValidator(max_length=512), Default(None)
+    capacity: int | None = IntegerValidator(), Default(None)
+    has_realtime_data: bool | None = BooleanValidator(), Default(None)
+    max_height: int | None = IntegerValidator(), Default(None)
+    max_width: int | None = IntegerValidator(), Default(None)
+    park_and_ride_type: list[ParkAndRideType] | None = ListValidator(EnumValidator(ParkAndRideType)), Default(None)
+    external_identifiers: list[ExternalIdentifierInput] | None = (
+        ListValidator(DataclassValidator(ExternalIdentifierInput)),
+        Default(None),
+    )
+
+
+@validataclass
+class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput):
+    uid: str = StringValidator(min_length=1, max_length=256)
+    name: str | None = StringValidator(min_length=1, max_length=256), Default(None)
+    restricted_to: list[ParkingRestrictionInput] | None = (
+        ListValidator(DataclassValidator(ParkingRestrictionInput)),
+        Default(None),
+    )
+    has_realtime_data: bool | None = BooleanValidator(), Default(None)
 
 
 @validataclass
@@ -67,11 +86,22 @@ class GeojsonBaseFeatureInput:
             **self.properties.to_dict(**kwargs),
         )
 
+    def to_static_parking_spot_input(self, **kwargs) -> StaticParkingSpotInput:
+        return StaticParkingSpotInput(
+            lat=self.geometry.coordinates[1],
+            lon=self.geometry.coordinates[0],
+            **self.properties.to_dict(**kwargs),
+        )
+
     def update_static_parking_site_input(self, static_parking_site: StaticParkingSiteInput) -> None:
         static_parking_site.lat = self.geometry.coordinates[1]
         static_parking_site.lon = self.geometry.coordinates[0]
 
-        for key, value in self.properties.to_dict().items():
+        for key in self.properties.to_dict().keys():
+            value = getattr(self.properties, key)
+            if value is None:
+                continue
+
             setattr(static_parking_site, key, value)
 
 
@@ -79,6 +109,13 @@ class GeojsonBaseFeatureInput:
 class GeojsonFeatureInput(GeojsonBaseFeatureInput):
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
+    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+
+
+@validataclass
+class GeojsonFeatureParkingSpotInput(GeojsonBaseFeatureInput):
+    type: str = AnyOfValidator(allowed_values=['Feature'])
+    properties: GeojsonFeaturePropertiesParkingSpotInput = DataclassValidator(GeojsonFeaturePropertiesParkingSpotInput)
     geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
 
 
