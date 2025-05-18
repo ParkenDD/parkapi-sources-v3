@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.19.3
+
+Released 2025-05-18
+
+### Fixes
+
+* [ensures correct typing in child objects](https://github.com/ParkenDD/parkapi-sources-v3/pull/217)
+* [register Freiburg converters properly](https://github.com/ParkenDD/parkapi-sources-v3/pull/217)
+
+
+### Maintenance
+
+* [Add project URLs ty PyPI](https://github.com/ParkenDD/parkapi-sources-v3/pull/217)
+
+
 ## 0.19.2
 
 Released 2025-05-18
