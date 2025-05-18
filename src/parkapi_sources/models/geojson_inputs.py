@@ -13,6 +13,7 @@ from validataclass.validators import (
     BooleanValidator,
     DataclassValidator,
     EnumValidator,
+    FloatValidator,
     IntegerValidator,
     ListValidator,
     NumericValidator,
@@ -68,16 +69,33 @@ class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput
 
 
 @validataclass
-class GeojsonFeatureGeometryInput:
+class GeojsonFeatureGeometryPointInput:
     type: str = AnyOfValidator(allowed_values=['Point'])
     coordinates: list[Decimal] = ListValidator(NumericValidator(), min_length=2, max_length=2)
+
+
+@validataclass
+class GeojsonFeatureGeometryPolygonInput(ValidataclassMixin):
+    type: str = AnyOfValidator(allowed_values=['Polygon'])
+    coordinates: list[list[list[float]]] = ListValidator(
+        ListValidator(
+            ListValidator(
+                FloatValidator(),
+                min_length=2,
+                max_length=2,
+            ),
+            min_length=1,
+        ),
+        min_length=1,
+        max_length=1,
+    )
 
 
 @validataclass
 class GeojsonBaseFeatureInput:
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonBaseFeaturePropertiesInput = DataclassValidator(GeojsonBaseFeaturePropertiesInput)
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
 
     def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
@@ -109,7 +127,7 @@ class GeojsonBaseFeatureInput:
 class GeojsonFeatureInput(GeojsonBaseFeatureInput):
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
 
 
 @validataclass

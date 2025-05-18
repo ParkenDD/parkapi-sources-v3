@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"numberMatched": 20,
+"name": "beh_parkpl_ueberw",
+"features": [
+{ "type": "Feature", "properties": { "name": "P01 - Erbprinzenstrasse (R)", "adresse": "Erbprinzenstraße 9, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.846680277113961, 47.992113179276828 ] } },
+{ "type": "Feature", "properties": { "name": "P02 - Erbprinzenstrasse (L)", "adresse": "Erbprinzenstraße 11, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.846574833144643, 47.992122989163363 ] } },
+{ "type": "Feature", "properties": { "name": "P03 - Rotteckring 3 (L)", "adresse": "Rotteckring 3, 79098 Freiburg im Breisgau, Germany", "status": 1 }, "geometry": { "type": "Point", "coordinates": [ 7.846168091692846, 47.996148070395094 ] } },
+{ "type": "Feature", "properties": { "name": "P04 - Rotteckring 3 (R)", "adresse": "Rotteckring 3, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.846173934273253, 47.996180482880334 ] } },
+{ "type": "Feature", "properties": { "name": "P05 - Rempartstraße 11 (CopyMan)", "adresse": "Rempartstraße 11, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.847698639523117, 47.993019518379839 ] } },
+{ "type": "Feature", "properties": { "name": "P06 - Humboldtstraße 2", "adresse": "Humboldtstraße 2, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.848366998668638, 47.993459741502193 ] } },
+{ "type": "Feature", "properties": { "name": "P07 - Moltkestrasse (R)", "adresse": "Moltkestraße 5, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.84349642182994, 47.995429092040922 ] } },
+{ "type": "Feature", "properties": { "name": "P08 - Moltkestrasse (L)", "adresse": "Moltkestraße 16b, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.843400680771055, 47.994644166923536 ] } },
+{ "type": "Feature", "properties": { "name": "P09 - Fahnenbergplatz 3 (R)", "adresse": "Rotteckring 3, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.848293, 47.997808 ] } },
+{ "type": "Feature", "properties": { "name": "P10 - Fahnenbergplatz 3 (L)", "adresse": "Rotteckring 3, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.848276, 47.997776 ] } },
+{ "type": "Feature", "properties": { "name": "P11 - Auf der Zinnen", "adresse": "Rempartstraße 11, 79098 Freiburg im Breisgau, Germany", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.8538246475, 47.997126477400002 ] } },
+{ "type": "Feature", "properties": { "name": "P12 - Karlsplatz", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.8544, 47.99683054 ] } },
+{ "type": "Feature", "properties": { "name": "P13 - Karlsplatz", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.85446001, 47.99681545 ] } },
+{ "type": "Feature", "properties": { "name": "P14 - Schwabentor", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.85379985, 47.99282483 ] } },
+{ "type": "Feature", "properties": { "name": "P15 - Schwabentor", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.85379969, 47.99285106 ] } },
+{ "type": "Feature", "properties": { "name": "P16 - Gerberau 12", "adresse": "", "status": 1 }, "geometry": { "type": "Point", "coordinates": [ 7.85010008, 47.99340888 ] } },
+{ "type": "Feature", "properties": { "name": "P17 - Gartenstrasse 28", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.84620015, 47.99119321 ] } },
+{ "type": "Feature", "properties": { "name": "P18 - Gauchstraße 17", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.84799991, 47.99692844 ] } },
+{ "type": "Feature", "properties": { "name": "P19 - Gartenstraße 28", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.84630006, 47.99123629 ] } },
+{ "type": "Feature", "properties": { "name": "P20 - Gauchstrasse 17", "adresse": "", "status": 0 }, "geometry": { "type": "Point", "coordinates": [ 7.84879988, 47.9969509 ] } }
+]
+}
