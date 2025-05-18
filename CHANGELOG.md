@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.19.0
+
+Released: 2025-05-18
+
+### Features
+
+* [ParkingSite patch system](https://github.com/ParkenDD/parkapi-sources-v3/pull/208)
+* [Freiburg ParkingSpots](https://github.com/ParkenDD/parkapi-sources-v3/pull/214)
+* [Ulm Sensors ParkingSites and ParkingSpots](https://github.com/ParkenDD/parkapi-sources-v3/pull/203)
+* [ParkingSpot type support for Friedrichshafen Sensors](https://github.com/ParkenDD/parkapi-sources-v3/pull/213)
+
+
+### Maintenance
+
+* [Dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/216)
+
+
 ## 0.18.2
 
 Released 2025-05-10
