@@ -45,6 +45,12 @@ dependencies = [
     "shapely~=2.1.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/ParkenDD/parkapi-sources-v3"
+Repository = "https://github.com/ParkenDD/parkapi-sources-v3.git"
+Issues = "https://github.com/ParkenDD/parkapi-sources-v3/issues"
+Changelog = "https://github.com/ParkenDD/parkapi-sources-v3/blob/main/CHANGELOG.md"
+
 [project.optional-dependencies]
 testing = [
     "ruff~=0.11.10",

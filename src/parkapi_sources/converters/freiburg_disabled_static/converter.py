@@ -18,7 +18,7 @@ class FreiburgDisabledStaticPullConverter(ParkingSpotPullConverter):
     geojson_feature_validator = DataclassValidator(FreiburgDisabledStaticFeatureInput)
 
     source_info = SourceInfo(
-        uid='freiburg',
+        uid='freiburg_disabled_static',
         name='Stadt Freiburg',
         source_url='https://geoportal.freiburg.de/wms/gut_parken/gut_parken?SERVICE=WFS&REQUEST=GetFeature'
         '&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=behindertenparkplatz_detail&OUTPUTFORMAT=geojson',

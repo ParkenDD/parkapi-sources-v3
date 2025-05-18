@@ -42,9 +42,8 @@ class BietigheimBissingenPullConverterTest:
             bietigheim_bissingen_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) > len(import_parking_site_exceptions), (
-            'There should be more valid then invalid parking sites'
-        )
+        assert len(static_parking_site_inputs) == 13
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

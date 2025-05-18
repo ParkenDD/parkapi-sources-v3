@@ -5,6 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime
 from decimal import Decimal
+from typing import Any
 
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
@@ -98,17 +99,25 @@ class GeojsonBaseFeatureInput:
     geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
 
     def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
+        # Maintain child objects by not using to_dict()
+        input_data: dict[str, Any] = {key: getattr(self.properties, key) for key in self.properties.to_dict().keys()}
+        input_data.update(kwargs)
+
         return StaticParkingSiteInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            **self.properties.to_dict(**kwargs),
+            **input_data,
         )
 
     def to_static_parking_spot_input(self, **kwargs) -> StaticParkingSpotInput:
+        # Maintain child objects by not using to_dict()
+        input_data: dict[str, Any] = {key: getattr(self.properties, key) for key in self.properties.to_dict().keys()}
+        input_data.update(kwargs)
+
         return StaticParkingSpotInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            **self.properties.to_dict(**kwargs),
+            **input_data,
         )
 
     def update_static_parking_site_input(self, static_parking_site: StaticParkingSiteInput) -> None:
