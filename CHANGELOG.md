@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.19.1
+
+Released 2025-05-18
+
+### Fixes
+
+* Add missing dependencies to pyproject.toml
+
+
 ## 0.19.0
 
 Released: 2025-05-18
