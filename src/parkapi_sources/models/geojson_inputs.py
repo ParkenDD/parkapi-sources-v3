@@ -98,18 +98,27 @@ class GeojsonBaseFeatureInput:
     geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
 
     def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
-        return StaticParkingSiteInput(
+        static_parking_site_input = StaticParkingSiteInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            **self.properties.to_dict(**kwargs),
         )
+        for key in self.properties.to_dict().keys():
+            value = getattr(self.properties, key)
+            setattr(static_parking_site_input, key, value)
+
+        return static_parking_site_input
 
     def to_static_parking_spot_input(self, **kwargs) -> StaticParkingSpotInput:
-        return StaticParkingSpotInput(
+        static_parking_spot_input = StaticParkingSpotInput(
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
-            **self.properties.to_dict(**kwargs),
         )
+
+        for key in self.properties.to_dict().keys():
+            value = getattr(self.properties, key)
+            setattr(static_parking_spot_input, key, value)
+
+        return static_parking_spot_input
 
     def update_static_parking_site_input(self, static_parking_site: StaticParkingSiteInput) -> None:
         static_parking_site.lat = self.geometry.coordinates[1]

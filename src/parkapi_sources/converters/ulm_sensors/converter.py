@@ -24,7 +24,12 @@ from .validators import UlmSensorsParkingSiteInput, UlmSensorsParkingSpotInput
 
 
 class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter, StaticGeojsonDataMixin):
-    config_prefix = 'ULM_SENSORS'
+    required_config_keys = [
+        'PARK_API_ULM_SENSORS_IDS',
+        'PARK_API_ULM_SENSORS_CLIENT_ID',
+        'PARK_API_ULM_SENSORS_USER',
+        'PARK_API_ULM_SENSORS_PASSWORD',
+    ]
     ulm_sensors_parking_sites_validator = DataclassValidator(UlmSensorsParkingSiteInput)
     ulm_sensors_parking_spots_validator = DataclassValidator(UlmSensorsParkingSpotInput)
 
@@ -101,7 +106,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
         parking_spot_dicts: list[dict] = []
-        sensor_ids = self.config_helper.get(f'PARK_API_{self.config_prefix}_IDS').split(',')
+        sensor_ids = self.config_helper.get('PARK_API_ULM_SENSORS_IDS').split(',')
 
         for sensor_id in sensor_ids:
             response = self.request_get(
@@ -132,10 +137,10 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
                 'Content-Type': 'application/x-www-form-urlencoded',
             },
             data={
-                'client_id': self.config_helper.get(f'PARK_API_{self.config_prefix}_CLIENT_ID'),
+                'client_id': self.config_helper.get('PARK_API_ULM_SENSORS_CLIENT_ID'),
                 'grant_type': 'password',
-                'username': self.config_helper.get(f'PARK_API_{self.config_prefix}_USER'),
-                'password': self.config_helper.get(f'PARK_API_{self.config_prefix}_PASSWORD'),
+                'username': self.config_helper.get('PARK_API_ULM_SENSORS_USER'),
+                'password': self.config_helper.get('PARK_API_ULM_SENSORS_PASSWORD'),
             },
             timeout=30,
         )
