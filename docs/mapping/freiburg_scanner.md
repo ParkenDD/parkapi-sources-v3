@@ -1,6 +1,6 @@
 # Freiburg Scanner
 
-Freiburg Mercedes is a large dataset with scan car data.
+Freiburg Scanner is a large dataset with scan car data.
 
 Attributes which are set statically:
 
@@ -11,6 +11,6 @@ Attributes which are set statically:
 | Field               | Type    | Cardinality | Mapping                    | Comment                                                                          |
 |---------------------|---------|-------------|----------------------------|----------------------------------------------------------------------------------|
 | id                  | string  | 1           | uid                        |                                                                                  |
-| capacity            | integer | 1           | capacity                   |                                                                                  |
+| capacity            | integer | 1           | capacity                   | Datasets with capacity 0 are ignored                                             |
 | confidence_interval | string  | 1           | capacity_min, capacity_max | Format is `{i,j}`, where i is capacity_min and j is capacity_max, both integers. |
 | is_narrow           | integer | 1           |                            |                                                                                  |
