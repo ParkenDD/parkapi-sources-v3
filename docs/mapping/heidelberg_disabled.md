@@ -4,6 +4,7 @@ Heidelberg provides a GeoJSON with Point geometry, which will create `ParkingSpo
 
 * `has_realtime_data` is set to `false`
 * `static_data_updated_at` is set to the moment of import
+* `purpose` is always set to `CAR`
 
 | Field      | Type   | Cardinality | Mapping       | Comment                     |
 |------------|--------|-------------|---------------|-----------------------------|
@@ -15,4 +16,4 @@ Heidelberg provides a GeoJSON with Point geometry, which will create `ParkingSpo
 | BESCHREIBU | string | ?           | description   |                             |
 | BESCHRIFTU | string | ?           | description   |                             |
 | PARKPLATZ_ | string | ?           |               | Always 'Behinderte'         |
-| Notiz_     | string | ?           |               |                             |
+| Notiz      | string | ?           |               |                             |
