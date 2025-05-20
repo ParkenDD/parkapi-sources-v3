@@ -28,8 +28,8 @@ A `ParkingSites` provides static data for a Park and Ride `ParkingSite`.
 | ogc_fid                    | integer                  | 1           | uid                             |                                                                     |
 | kapazitaet                 | integer                  | 1           | capacity                        |                                                                     |
 | name                       | string                   | 1           | name                            |                                                                     |
-| nummer                     | string                   | ?           | name                            |                                                                     |
-| kategorie                  | string                   | 1           | #ParkingSiteType                |                                                                     |
+| nummer                     | string                   | 1           | name                            | Empyt strings will be ignored                                       |
+| kategorie                  | string                   | 1           | [type](#ParkingSiteType)        |                                                                     |
 
 
 ## ParkingSites for P+R Realtime and Static
@@ -42,14 +42,14 @@ Attributes which are set statically:
 
 A `ParkingSites` provides static and realtime data for a Park and Ride `ParkingSite`.
 
-| Field                      | Type                     | Cardinality | Mapping                         | Comment                                                             |
-|----------------------------|--------------------------|-------------|---------------------------------|---------------------------------------------------------------------|
-| park_id                    | integer                  | 1           | uid                             |                                                                     |
-| name                       | string                   | 1           | name                            |                                                                     |
-| obs_max                    | integer                  | ?           | realtime_capacity/capacity      |                                                                     |
-| obs_free                   | integer                  | ?           | realtime_free_capacity          |                                                                     |
-| obs_ts                     | datetime                 | 1           | realtime_data_updated_at        |                                                                     |
-| obs_state                  | integer                  | ?           | #RealtimeOpeningStatus          |                                                                     |
+| Field                      | Type                     | Cardinality | Mapping                                            | Comment                                                             |
+|----------------------------|--------------------------|-------------|----------------------------------------------------|---------------------------------------------------------------------|
+| park_id                    | integer                  | 1           | uid                                                |                                                                     |
+| name                       | string                   | 1           | name                                               |                                                                     |
+| obs_max                    | integer                  | 1           | realtime_capacity/capacity                         |                                                                     |
+| obs_free                   | integer                  | 1           | realtime_free_capacity                             |                                                                     |
+| obs_ts                     | datetime                 | 1           | realtime_data_updated_at                           |                                                                     |
+| obs_state                  | integer                  | 1           | [realtime_opening_status](#RealtimeOpeningStatus)  |                                                                     |
 
 
 #### RealtimeOpeningStatus
