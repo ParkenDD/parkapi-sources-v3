@@ -13,7 +13,7 @@ from validataclass.validators import DataclassValidator, EnumValidator, IntegerV
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, PurposeType
-from parkapi_sources.models.geojson_inputs import GeojsonFeatureGeometryInput
+from parkapi_sources.models.geojson_inputs import GeojsonFeatureGeometryPointInput
 from parkapi_sources.validators import ExcelNoneable, SpacedDateTimeValidator
 
 
@@ -90,7 +90,7 @@ class FreiburgFeatureInput:
 
 @validataclass
 class FreiburgParkAndRideStaticFeatureInput:
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
     properties: FreiburgParkAndRideStaticPropertiesInput = DataclassValidator(FreiburgParkAndRideStaticPropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
@@ -112,7 +112,7 @@ class FreiburgParkAndRideStaticFeatureInput:
 
 @validataclass
 class FreiburgParkAndRideRealtimeFeatureInput:
-    geometry: GeojsonFeatureGeometryInput = DataclassValidator(GeojsonFeatureGeometryInput)
+    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
     properties: FreiburgParkAndRideRealtimePropertiesInput = DataclassValidator(
         FreiburgParkAndRideRealtimePropertiesInput
     )

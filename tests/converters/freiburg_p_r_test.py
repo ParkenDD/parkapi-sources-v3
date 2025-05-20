@@ -70,7 +70,7 @@ class FreiburgParkAndRideRealtimePullConverterTest:
     def test_get_static_parking_sites(
         freiburg_park_and_ride_realtime_pull_converter: FreiburgParkAndRideRealtimePullConverter, requests_mock: Mocker
     ):
-        freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_realtime.json')
+        freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_sensors.json')
 
         static_parking_site_inputs, import_parking_site_exceptions = (
             freiburg_park_and_ride_realtime_pull_converter.get_static_parking_sites()
@@ -85,7 +85,7 @@ class FreiburgParkAndRideRealtimePullConverterTest:
     def test_get_realtime_parking_sites(
         freiburg_park_and_ride_realtime_pull_converter: FreiburgParkAndRideRealtimePullConverter, requests_mock: Mocker
     ):
-        freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_realtime.json')
+        freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_sensors.json')
 
         realtime_parking_site_inputs, import_parking_site_exceptions = (
             freiburg_park_and_ride_realtime_pull_converter.get_realtime_parking_sites()

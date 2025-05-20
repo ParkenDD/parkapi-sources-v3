@@ -36,7 +36,7 @@ class HeidelbergPullConverter(ParkingSitePullConverter):
         for heidelberg_input in heidelberg_inputs:
             static_parking_site_inputs.append(heidelberg_input.to_static_parking_site())
 
-        return static_parking_site_inputs, import_parking_site_exceptions
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []

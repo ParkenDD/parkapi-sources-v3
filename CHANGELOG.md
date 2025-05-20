@@ -1,5 +1,55 @@
 # Changelog
 
+## 0.19.3
+
+Released 2025-05-18
+
+### Fixes
+
+* [ensures correct typing in child objects](https://github.com/ParkenDD/parkapi-sources-v3/pull/217)
+* [register Freiburg converters properly](https://github.com/ParkenDD/parkapi-sources-v3/pull/217)
+
+
+### Maintenance
+
+* [Add project URLs ty PyPI](https://github.com/ParkenDD/parkapi-sources-v3/pull/217)
+
+
+## 0.19.2
+
+Released 2025-05-18
+
+### Fixes
+
+* Fix typo in description property
+
+
+## 0.19.1
+
+Released 2025-05-18
+
+### Fixes
+
+* Add missing dependencies to pyproject.toml
+
+
+## 0.19.0
+
+Released: 2025-05-18
+
+### Features
+
+* [ParkingSite patch system](https://github.com/ParkenDD/parkapi-sources-v3/pull/208)
+* [Freiburg ParkingSpots](https://github.com/ParkenDD/parkapi-sources-v3/pull/214)
+* [Ulm Sensors ParkingSites and ParkingSpots](https://github.com/ParkenDD/parkapi-sources-v3/pull/203)
+* [ParkingSpot type support for Friedrichshafen Sensors](https://github.com/ParkenDD/parkapi-sources-v3/pull/213)
+
+
+### Maintenance
+
+* [Dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/216)
+
+
 ## 0.18.2
 
 Released 2025-05-10

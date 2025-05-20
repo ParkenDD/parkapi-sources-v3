@@ -15,6 +15,8 @@ from .freiburg import (
     FreiburgParkAndRideStaticPullConverter,
     FreiburgPullConverter,
 )
+from .freiburg_disabled_sensors import FreiburgDisabledSensorsPullConverter
+from .freiburg_disabled_static import FreiburgDisabledStaticPullConverter
 from .friedrichshafen_sensors import FriedrichshafenSensorsPullConverter
 from .goldbeck import GoldbeckPushConverter
 from .heidelberg import HeidelbergPullConverter
@@ -47,6 +49,7 @@ from .reutlingen import ReutlingenPushConverter
 from .reutlingen_bike import ReutlingenBikePushConverter
 from .stuttgart import StuttgartPushConverter
 from .ulm import UlmPullConverter
+from .ulm_sensors import UlmSensorsPullConverter
 from .velobrix import VelobrixPullConverter
 from .vrn_p_r import VrnParkAndRidePullConverter
 from .vrs import VrsBondorfPullConverter, VrsKirchheimPullConverter, VrsNeustadtPullConverter, VrsVaihingenPullConverter

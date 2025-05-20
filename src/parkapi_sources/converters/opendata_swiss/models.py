@@ -97,11 +97,11 @@ class OpenDataSwissParkingFacilityCategory(Enum):
             self.CAR: ParkingSiteType.CAR_PARK,
         }.get(self, ParkingSiteType.OTHER)
 
-    def to_purpose_type_input(self) -> ParkingSiteType:
+    def to_purpose_type_input(self) -> PurposeType:
         return {
             self.CAR: PurposeType.CAR,
             self.BIKE: PurposeType.BIKE,
-        }.get(self, ParkingSiteType.OTHER)
+        }.get(self, PurposeType.CAR)
 
 
 @validataclass

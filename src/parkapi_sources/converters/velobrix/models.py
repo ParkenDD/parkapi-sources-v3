@@ -3,8 +3,8 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import decimal
 from datetime import datetime, timezone
+from decimal import Decimal
 from typing import Optional
 
 from validataclass.dataclasses import Default, validataclass
@@ -42,8 +42,8 @@ class VelobrixPriceModelDescriptionInput:
 class VelobrixInput:
     logicalUnitId: int = IntegerValidator()
     publicName: str = StringValidator()
-    locationLat: decimal = NumericValidator()
-    locationLon: decimal = NumericValidator()
+    locationLat: Decimal = NumericValidator()
+    locationLon: Decimal = NumericValidator()
     locationName: str = StringValidator()
     street: str = StringValidator()
     streetNumber: str = StringValidator()

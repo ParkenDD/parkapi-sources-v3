@@ -10,11 +10,13 @@ from typing import TYPE_CHECKING
 from validataclass.validators import DataclassValidator
 
 from parkapi_sources.models import (
+    ParkingRestrictionInput,
     RealtimeParkingSiteInput,
     RealtimeParkingSpotInput,
     StaticParkingSiteInput,
     StaticParkingSpotInput,
 )
+from parkapi_sources.models.parking_site_inputs import ExternalIdentifierInput
 from parkapi_sources.util import DefaultJSONEncoder
 
 if TYPE_CHECKING:
@@ -50,8 +52,13 @@ def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticP
     validator = DataclassValidator(StaticParkingSiteInput)
 
     for static_parking_site_input in static_parking_site_inputs:
+        if static_parking_site_input.external_identifiers:
+            for external_identifier in static_parking_site_input.external_identifiers:
+                assert isinstance(external_identifier, ExternalIdentifierInput)
+
         assert static_parking_site_input.static_data_updated_at.tzinfo is not None
         assert isinstance(static_parking_site_input.uid, str)
+
         parking_site_dict = json.loads(
             json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder)
         )
@@ -64,8 +71,9 @@ def validate_realtime_parking_site_inputs(realtime_parking_site_inputs: list[Rea
     for realtime_parking_site_input in realtime_parking_site_inputs:
         assert realtime_parking_site_input.realtime_data_updated_at.tzinfo is not None
         assert isinstance(realtime_parking_site_input.uid, str)
+
         parking_site_dict = json.loads(
-            json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder)
+            json.dumps(filter_none(realtime_parking_site_input.to_dict()), cls=DefaultJSONEncoder),
         )
         validator.validate(parking_site_dict)
 
@@ -74,8 +82,13 @@ def validate_static_parking_spot_inputs(static_parking_spot_inputs: list[StaticP
     validator = DataclassValidator(StaticParkingSpotInput)
 
     for static_parking_spot_input in static_parking_spot_inputs:
+        if static_parking_spot_input.restricted_to:
+            for restricted_to in static_parking_spot_input.restricted_to:
+                assert isinstance(restricted_to, ParkingRestrictionInput)
+
         assert static_parking_spot_input.static_data_updated_at.tzinfo is not None
         assert isinstance(static_parking_spot_input.uid, str)
+
         parking_slot_dict = json.loads(
             json.dumps(filter_none(static_parking_spot_input.to_dict()), cls=DefaultJSONEncoder)
         )
@@ -88,6 +101,7 @@ def validate_realtime_parking_spot_inputs(static_parking_slot_inputs: list[Realt
     for realtime_parking_spot_input in static_parking_slot_inputs:
         assert realtime_parking_spot_input.realtime_data_updated_at.tzinfo is not None
         assert isinstance(realtime_parking_spot_input.uid, str)
+
         parking_spot_dict = json.loads(
             json.dumps(filter_none(realtime_parking_spot_input.to_dict()), cls=DefaultJSONEncoder)
         )

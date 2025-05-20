@@ -92,6 +92,6 @@ class FreiburgPullConverterTest:
         assert len(static_parking_site_inputs) == 20
         assert len(import_parking_site_exceptions) == 0
 
-        assert static_parking_site_inputs[0].name == 'P4 Am Bahnhof'
+        assert static_parking_site_inputs[0].name == 'New name'
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

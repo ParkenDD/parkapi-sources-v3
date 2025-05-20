@@ -105,7 +105,7 @@ class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):
     freiburg_feature_validator = DataclassValidator(FreiburgParkAndRideStaticFeatureInput)
     source_info = SourceInfo(
         uid='freiburg_p_r_static',
-        name='Stadt Freiburg: Park and Ride',
+        name='Stadt Freiburg: Park and Ride Statische Parkplätze',
         source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?SERVICE=WFS&REQUEST=GetFeature&SRSNAME=EPSG:4326'
         '&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkandride&OUTPUTFORMAT=geojson&crs=4326',
         timezone='Europe/Berlin',
@@ -132,8 +132,8 @@ class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):
 class FreiburgParkAndRideRealtimePullConverter(FreiburgBasePullConverter):
     freiburg_feature_validator = DataclassValidator(FreiburgParkAndRideRealtimeFeatureInput)
     source_info = SourceInfo(
-        uid='freiburg_p_r_realtime',
-        name='Stadt Freiburg: Park and Ride',
+        uid='freiburg_p_r_sensors',
+        name='Stadt Freiburg: Park and Ride Parkplätze mit Sensoren',
         source_url='https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?SERVICE=WFS&REQUEST=GetFeature&SRSNAME=EPSG:4326'
         '&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkandride_aktuell&OUTPUTFORMAT=geojson&crs=4326',
         timezone='Europe/Berlin',
