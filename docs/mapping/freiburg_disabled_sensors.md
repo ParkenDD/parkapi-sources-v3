@@ -2,6 +2,12 @@
 
 Freiburg provides a GeoJSON with sensor-enabled parking spots.
 
+
+* `restricted_to.type` is set to `DISABLED`
+* `purpose` is set to `CAR`
+* `has_realtime_data` is set to `true`
+* `static_data_updated_at` is set to the moment of import
+
 ## Properties
 
 | Field     | Type              | Cardinality | Mapping         | Comment                                                       |
