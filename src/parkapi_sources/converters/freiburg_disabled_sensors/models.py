@@ -9,8 +9,13 @@ from enum import Enum
 from validataclass.dataclasses import validataclass
 from validataclass.validators import DataclassValidator, EnumValidator, RegexValidator, StringValidator
 
-from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSpotInput, StaticParkingSpotInput
-from parkapi_sources.models.enums import ParkingSpotStatus
+from parkapi_sources.models import (
+    GeojsonBaseFeatureInput,
+    ParkingRestrictionInput,
+    RealtimeParkingSpotInput,
+    StaticParkingSpotInput,
+)
+from parkapi_sources.models.enums import ParkingAudience, ParkingSpotStatus, PurposeType
 
 
 class FreiburgDisabledStatus(Enum):
@@ -44,6 +49,8 @@ class FreiburgDisabledSensorFeatureInput(GeojsonBaseFeatureInput):
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
             has_realtime_data=True,
+            restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
+            purpose=PurposeType.CAR,
         )
 
     def to_realtime_parking_spot_input(self) -> RealtimeParkingSpotInput:

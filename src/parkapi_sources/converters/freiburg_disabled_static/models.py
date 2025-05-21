@@ -11,7 +11,13 @@ import shapely
 from validataclass.dataclasses import validataclass
 from validataclass.validators import DataclassValidator, IntegerValidator, StringValidator
 
-from parkapi_sources.models import GeojsonBaseFeatureInput, GeojsonFeatureGeometryPolygonInput, StaticParkingSpotInput
+from parkapi_sources.models import (
+    GeojsonBaseFeatureInput,
+    GeojsonFeatureGeometryPolygonInput,
+    ParkingRestrictionInput,
+    StaticParkingSpotInput,
+)
+from parkapi_sources.models.enums import ParkingAudience, PurposeType
 from parkapi_sources.models.parking_spot_inputs import GeojsonPolygonInput
 from parkapi_sources.util import round_7d
 
@@ -33,6 +39,7 @@ class FreiburgDisabledStaticFeatureInput(GeojsonBaseFeatureInput):
         address = self.properties.strasse
         if self.properties.hausnummer:
             address += f' {self.properties.hausnummer}'
+        address += ', Freiburg im Breisgau'
 
         geojson = GeojsonPolygonInput(
             type='Polygon',
@@ -51,4 +58,6 @@ class FreiburgDisabledStaticFeatureInput(GeojsonBaseFeatureInput):
             lon=round_7d(Decimal(point.x)),
             has_realtime_data=False,
             geojson=geojson,
+            restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
+            purpose=PurposeType.CAR,
         )
