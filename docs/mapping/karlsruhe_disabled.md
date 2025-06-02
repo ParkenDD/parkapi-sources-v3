@@ -1,6 +1,6 @@
-# Ulm Disabled
+# Karlsruhe Disabled
 
-Ulm provides a GeoJSON with Point geometry for disabled parking spots.
+Karlsruhe provides a GeoJSON with Point geometry for disabled parking spots.
 
 * `has_realtime_data` is set to `false`
 * `purpose` is set to `CAR`
@@ -9,9 +9,9 @@ Ulm provides a GeoJSON with Point geometry for disabled parking spots.
 | Field         | Type               | Cardinality | Mapping                | Comment                                                                                   |
 |---------------|--------------------|-------------|------------------------|-------------------------------------------------------------------------------------------|
 | id            | integer            | 1           | uid                    |                                                                                           |
-| gemeinde      | string             | 1           | address                |                                                                                           |
-| stadtteil     | string             | 1           | address                |                                                                                           |
-| standort      | string             | 1           | name                   |                                                                                           |
+| gemeinde      | string             | 1           | address                | `address` will be `{stadtteil}, {standort}`                                               |
+| stadtteil     | string             | 1           |                        |                                                                                           |
+| standort      | string             | 1           | name, address          |                                                                                           |
 | parkzeit      | integer            | ?           | description            |                                                                                           |
 | max_parkdauer | string             | ?           | description            |                                                                                           |
 | stellplaetze  | integer            | 1           |                        | If stellplaetze is more then 1, multiple slightly distributed `ParkingSpot`s are created. |
