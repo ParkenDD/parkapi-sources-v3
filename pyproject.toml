@@ -55,7 +55,7 @@ Changelog = "https://github.com/ParkenDD/parkapi-sources-v3/blob/main/CHANGELOG.
 testing = [
     "ruff~=0.11.10",
     "pytest~=8.3.5",
-    "pytest-cov~=6.1.1",
+    "pytest-cov>=6.1.1,<6.3.0",
     "requests-mock~=1.12.1",
 ]
 
