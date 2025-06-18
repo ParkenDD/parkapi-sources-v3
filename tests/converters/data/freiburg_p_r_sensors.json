@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"numberMatched": 5,
+"name": "parkandride_aktuell",
+"features": [
+{ "type": "Feature", "properties": { "park_id": "PR165", "park_name": "Paduaallee", "obs_free": 72, "belegt": 140, "obs_max": 212, "prozent": "34", "obs_state": 0, "obs_ts": "2025-05-05T12:34:03", "park_zone": "", "park_url": "" }, "geometry": { "type": "Point", "coordinates": [ 7.80641117750053, 48.012663244634233 ] } },
+{ "type": "Feature", "properties": { "park_id": "PR162", "park_name": "Bissierstraße", "obs_free": 31, "belegt": 94, "obs_max": 125, "prozent": "25", "obs_state": 0, "obs_ts": "2025-05-05T12:34:03", "park_zone": "", "park_url": "" }, "geometry": { "type": "Point", "coordinates": [ 7.819198110411995, 48.001655036435103 ] } },
+{ "type": "Feature", "properties": { "park_id": "PR159", "park_name": "Munzinger Str.", "obs_free": 42, "belegt": 106, "obs_max": 148, "prozent": "28", "obs_state": 0, "obs_ts": "2025-05-05T12:34:03", "park_zone": "", "park_url": "" }, "geometry": { "type": "Point", "coordinates": [ 7.795916600676673, 47.988020164471507 ] } },
+{ "type": "Feature", "properties": { "park_id": "PR156", "park_name": "Moosweiher", "obs_free": 10, "belegt": 7, "obs_max": 17, "prozent": "59", "obs_state": 1, "obs_ts": "2025-05-05T12:34:03", "park_zone": "", "park_url": "" }, "geometry": { "type": "Point", "coordinates": [ 7.808116776273727, 48.029227544337743 ] } },
+{ "type": "Feature", "properties": { "park_id": "PR153", "park_name": "Gundelfinger Str.", "obs_free": 54, "belegt": 282, "obs_max": 336, "prozent": "16", "obs_state": 0, "obs_ts": "2025-05-05T12:34:03", "park_zone": "", "park_url": "" }, "geometry": { "type": "Point", "coordinates": [ 7.86238962871702, 48.03480572289385 ] } }
+]
+}

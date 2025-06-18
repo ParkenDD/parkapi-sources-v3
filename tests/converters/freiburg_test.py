@@ -35,6 +35,17 @@ def freiburg_local_patch_pull_converter(
     return FreiburgPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
+def freiburg_request_mocked_json(requests_mock: Mocker, filename: str):
+    # We need to get GeoJSON data
+    requests_mock.real_http = True
+
+    json_path = Path(Path(__file__).parent, 'data', filename)
+    with json_path.open() as json_file:
+        json_data = json_file.read()
+
+    requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+
+
 class FreiburgPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(freiburg_pull_converter: FreiburgPullConverter, requests_mock: Mocker):
@@ -56,11 +67,7 @@ class FreiburgPullConverterTest:
 
     @staticmethod
     def test_get_realtime_parking_sites(freiburg_pull_converter: FreiburgPullConverter, requests_mock: Mocker):
-        json_path = Path(Path(__file__).parent, 'data', 'freiburg.json')
-        with json_path.open() as json_file:
-            json_data = json_file.read()
-
-        requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+        freiburg_request_mocked_json(requests_mock, 'freiburg.json')
 
         realtime_parking_site_inputs, import_parking_site_exceptions = (
             freiburg_pull_converter.get_realtime_parking_sites()
