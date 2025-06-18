@@ -77,7 +77,6 @@ class ParkAPISources:
         EllwangenPushConverter,
         GoldbeckPushConverter,
         BuchenPushConverter,
-        FreiburgPullConverter,
         FreiburgDisabledSensorsPullConverter,
         FreiburgDisabledStaticPullConverter,
         FreiburgParkAndRideRealtimePullConverter,
