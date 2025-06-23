@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.20.0
+
+Released 2025-06-23
+
+### Features
+
+* [Freiburg P+R Converters](https://github.com/ParkenDD/parkapi-sources-v3/pull/230)
+
+
 ## 0.19.4
 
 Released 2025-06-02
