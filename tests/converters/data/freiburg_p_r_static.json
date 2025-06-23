@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"numberMatched": 15,
+"name": "parkandride",
+"features": [
+{ "type": "Feature", "properties": { "ogc_fid": 8, "name": "Parkhaus der Pädagogischen Hochschule", "nummer": "P20", "kategorie": "Parkhaus", "kapazitaet": 200 }, "geometry": { "type": "Point", "coordinates": [ 7.890891473099281, 47.982361250861665 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 11, "name": "Parkhaus ZO", "nummer": "P21", "kategorie": "Tiefgarage", "kapazitaet": 294 }, "geometry": { "type": "Point", "coordinates": [ 7.871473407028516, 47.987991157092786 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 38, "name": "Berufsschulzentrum", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 212 }, "geometry": { "type": "Point", "coordinates": [ 7.826642513518787, 48.00112014352014 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 40, "name": "Behördenparkplatz", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 270 }, "geometry": { "type": "Point", "coordinates": [ 7.823049247089145, 48.001837094641594 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 41, "name": "Bissierstraße", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 158 }, "geometry": { "type": "Point", "coordinates": [ 7.819198151067819, 48.001655015468074 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 53, "name": "Rieselfeld", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 30 }, "geometry": { "type": "Point", "coordinates": [ 7.794641562123354, 47.995736628638419 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 79, "name": "Paduaallee", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 300 }, "geometry": { "type": "Point", "coordinates": [ 7.806411214003056, 48.012663648073918 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 83, "name": "Moosweiher", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 104 }, "geometry": { "type": "Point", "coordinates": [ 7.808116776273727, 48.029227544337743 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 87, "name": "Messe/XXXLutz", "nummer": "", "kategorie": "Parkplatz", "kapazitaet": 400 }, "geometry": { "type": "Point", "coordinates": [ 7.839287299831284, 48.020414769307109 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 90, "name": "An der Messe", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 77 }, "geometry": { "type": "Point", "coordinates": [ 7.839870423641828, 48.019494391136938 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 92, "name": "Eishalle", "nummer": "", "kategorie": "Parkplatz", "kapazitaet": 450 }, "geometry": { "type": "Point", "coordinates": [ 7.827371272944011, 48.008910546745213 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 89, "name": "Messe Parkplatz", "nummer": "P24", "kategorie": "Parkplatz", "kapazitaet": 2500 }, "geometry": { "type": "Point", "coordinates": [ 7.838684926910434, 48.015585414044295 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 112, "name": "Munzinger Straße", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 148 }, "geometry": { "type": "Point", "coordinates": [ 7.795916600676673, 47.988020164471507 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 113, "name": "Gundelfinger Straße", "nummer": "", "kategorie": "Park&Ride", "kapazitaet": 354 }, "geometry": { "type": "Point", "coordinates": [ 7.86238962871702, 48.03480572289385 ] } },
+{ "type": "Feature", "properties": { "ogc_fid": 117, "name": "Westarkaden", "nummer": "P22", "kategorie": "Parkhaus", "kapazitaet": 750 }, "geometry": { "type": "Point", "coordinates": [ 7.827393911607149, 48.006419635871282 ] } }
+]
+}
