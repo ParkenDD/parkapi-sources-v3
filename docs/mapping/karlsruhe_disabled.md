@@ -12,8 +12,8 @@ Karlsruhe provides a GeoJSON with Point geometry for disabled parking spots.
 | gemeinde      | string             | 1           | address                | `address` will be `{stadtteil}, {standort}`                                               |
 | stadtteil     | string             | 1           |                        |                                                                                           |
 | standort      | string             | 1           | name, address          |                                                                                           |
-| parkzeit      | integer            | ?           | description            |                                                                                           |
-| max_parkdauer | string             | ?           | description            |                                                                                           |
+| parkzeit      | string             | ?           | description            | Unclear format, no reliable converter to `restricted_to.hours` possible.                  |
+| max_parkdauer | string             | ?           | description            | Unclear format, no reliable converter to `restricted_to.may_stay` possible.               |
 | stellplaetze  | integer            | 1           |                        | If stellplaetze is more then 1, multiple slightly distributed `ParkingSpot`s are created. |
 | bemerkung     | strong             | 1           | description            |                                                                                           |
 | stand         | string (date-time) | 1           | static_data_updated_at |                                                                                           |
