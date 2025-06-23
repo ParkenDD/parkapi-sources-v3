@@ -71,7 +71,16 @@ class FreiburgParkAndRideRealtimePropertiesInput:
 
 
 @validataclass
-class FreiburgFeatureInput:
+class FreiburgBaseFeatureInput:
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput | None:
+        return None
+
+    def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput | None:
+        return None
+
+
+@validataclass
+class FreiburgFeatureInput(FreiburgBaseFeatureInput):
     properties: FreiburgPropertiesInput = DataclassValidator(FreiburgPropertiesInput)
 
     def extend_static_parking_site_input(self, static_parking_site_input: StaticParkingSiteInput):
@@ -84,12 +93,12 @@ class FreiburgFeatureInput:
             realtime_capacity=self.properties.obs_max,
             realtime_free_capacity=self.properties.obs_free,
             realtime_data_updated_at=self.properties.obs_ts,
-            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state else OpeningStatus.CLOSED,
+            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state >= 0 else OpeningStatus.CLOSED,
         )
 
 
 @validataclass
-class FreiburgParkAndRideStaticFeatureInput:
+class FreiburgParkAndRideStaticFeatureInput(FreiburgBaseFeatureInput):
     geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
     properties: FreiburgParkAndRideStaticPropertiesInput = DataclassValidator(FreiburgParkAndRideStaticPropertiesInput)
 
@@ -111,7 +120,7 @@ class FreiburgParkAndRideStaticFeatureInput:
 
 
 @validataclass
-class FreiburgParkAndRideRealtimeFeatureInput:
+class FreiburgParkAndRideRealtimeFeatureInput(FreiburgBaseFeatureInput):
     geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
     properties: FreiburgParkAndRideRealtimePropertiesInput = DataclassValidator(
         FreiburgParkAndRideRealtimePropertiesInput
@@ -127,7 +136,7 @@ class FreiburgParkAndRideRealtimeFeatureInput:
             type=ParkingSiteType.OFF_STREET_PARKING_GROUND,
             purpose=PurposeType.CAR,
             park_and_ride_type=[ParkAndRideType.YES],
-            static_data_updated_at=datetime.now(tz=timezone.utc),
+            static_data_updated_at=self.properties.obs_ts,
             has_realtime_data=True,
         )
 
@@ -137,7 +146,5 @@ class FreiburgParkAndRideRealtimeFeatureInput:
             realtime_capacity=self.properties.obs_max,
             realtime_free_capacity=self.properties.obs_free,
             realtime_data_updated_at=self.properties.obs_ts,
-            realtime_opening_status=OpeningStatus.OPEN
-            if self.properties.obs_state and self.properties.obs_state != -1
-            else OpeningStatus.CLOSED,
+            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state == 1 else OpeningStatus.CLOSED,
         )

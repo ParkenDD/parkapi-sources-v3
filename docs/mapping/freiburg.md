@@ -60,15 +60,14 @@ A `ParkingSites` provides static and realtime data for a Park and Ride `ParkingS
 | 1          | OPEN      | Less than 30 parking spaces (Weniger als 30 Restplätze)          |
 | 2          | OPEN      | Less than 10 parking spaces (Weniger als 10 Restplätze)          |
 | -1         | CLOSED    | No data (Störung / Keine Daten)                                  |
-| None       | CLOSED    | Null value                                                       |
 
 
 #### ParkingSiteType
 
-| Key           | Mapping                        | 
+| Key           | Mapping                        |
 |---------------|--------------------------------|
-| Parkplatz     | OFF_STREET_PARKING_GROUND      | 
-| Parkhaus      | CAR_PARK                       | 
-| Tiefgarage    | UNDERGROUND                    | 
-| Park&Ride     | OFF_STREET_PARKING_GROUND      | 
-| None          | OTHER                          | 
+| Parkplatz     | OFF_STREET_PARKING_GROUND      |
+| Parkhaus      | CAR_PARK                       |
+| Tiefgarage    | UNDERGROUND                    |
+| Park&Ride     | OFF_STREET_PARKING_GROUND      |
+| None          | OTHER                          |
