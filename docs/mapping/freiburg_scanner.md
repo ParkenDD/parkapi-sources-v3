@@ -6,6 +6,8 @@ Attributes which are set statically:
 
 * `has_realtime_data` is always set to `False`
 * `type` is always set to `ON_STREET`
+* `purpose` is always set to `CAR`
+* `static_data_updated_at` is set to the moment of the import
 
 
 | Field               | Type    | Cardinality | Mapping                    | Comment                                                                          |
