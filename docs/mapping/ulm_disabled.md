@@ -6,6 +6,8 @@ Ulm provides a simple GeoJSON with Point geometry for disabled parking spots.
 * `static_data_updated_at` is set to the moment of import
 * `purpose` is set to `CAR`
 * `restricted_to.type` is set to `DISABLED`
+* `uid` is set to `{lat}_{lon}`
+* `lat` and `lon` are cut off 7 digits after the comma
 
 
 | Field    | Type         | Cardinality | Mapping   | Comment                                                                               |
