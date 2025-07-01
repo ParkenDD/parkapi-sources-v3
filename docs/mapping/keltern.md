@@ -1,4 +1,4 @@
-****# Keltern
+# Keltern
 
 Keltern provides an Excel table with some static parking site data.
 
