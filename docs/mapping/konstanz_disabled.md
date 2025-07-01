@@ -7,6 +7,7 @@ point.
 * `purpose` is set to `CAR`
 * `restricted_to.type` is set to `DISABLED`
 * `has_realtime_data` is set to `false`
+* `static_data_updated_at` is set to import datetime
 
 
 ## Properties
