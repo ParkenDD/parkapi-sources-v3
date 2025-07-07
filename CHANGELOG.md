@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.20.1
+
+Released 2025-07-07
+
+### Fixes
+
+* [Freiburg P+R Attribute](https://github.com/ParkenDD/parkapi-sources-v3/pull/235)
+* [Freiburg OpeningTime logic](https://github.com/ParkenDD/parkapi-sources-v3/pull/234)
+
+
 ## 0.20.0
 
 Released 2025-06-23
