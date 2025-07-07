@@ -115,6 +115,7 @@ class FreiburgParkAndRideStaticFeatureInput(FreiburgBaseFeatureInput):
             capacity=self.properties.kapazitaet,
             type=self.properties.kategorie.to_parking_site_type_input(),
             static_data_updated_at=datetime.now(tz=timezone.utc),
+            park_and_ride_type=[ParkAndRideType.YES],
             has_realtime_data=False,
         )
 
