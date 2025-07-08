@@ -7,6 +7,7 @@ from .aachen import AachenPullConverter
 from .apcoa import ApcoaPullConverter
 from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
+from .bb_parkhaus import BBParkhausPushConverter
 from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
