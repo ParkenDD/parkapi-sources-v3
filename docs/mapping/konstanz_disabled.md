@@ -12,10 +12,10 @@ point.
 
 ## Properties
 
-| Field      | Type    | Cardinality | Mapping     | Comment                                                                                                              |
-|------------|---------|-------------|-------------|----------------------------------------------------------------------------------------------------------------------|
-| OBJECTID   | integer | 1           | uid         |                                                                                                                      |
-| Name       | string  | 1           | name        |                                                                                                                      |
-| Informatio | string  | 1           |             | Either `1 Behindertenparkplatz` or `{n} Behindertenparkplätze`. Will generate `n` `ParkingSpot`s in the latter case. |
-| Themen     | string  | 1           |             |                                                                                                                      |
-| GlobalID   | string  | 1           |             |                                                                                                                      |
+| Field      | Type    | Cardinality | Mapping       | Comment                                                                                                              |
+|------------|---------|-------------|---------------|----------------------------------------------------------------------------------------------------------------------|
+| OBJECTID   | integer | 1           | uid           |                                                                                                                      |
+| Name       | string  | 1           | name, address | For `address`, everything after `/` or `,` will be cut off, and `, Konstanz` will be added in the end.               |
+| Informatio | string  | 1           |               | Either `1 Behindertenparkplatz` or `{n} Behindertenparkplätze`. Will generate `n` `ParkingSpot`s in the latter case. |
+| Themen     | string  | 1           |               |                                                                                                                      |
+| GlobalID   | string  | 1           |               |                                                                                                                      |
