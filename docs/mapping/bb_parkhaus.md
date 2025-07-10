@@ -6,6 +6,7 @@ Static values:
 
 * `purpose` is always `CAR`
 * `has_realtime_data` is always `false`
+* `static_data_updated_at` is set to the moment of import
 
 | Field                                          | Type                                      | Cardinality | Mapping                                 | Comment                                                                                           |
 |------------------------------------------------|-------------------------------------------|-------------|-----------------------------------------|---------------------------------------------------------------------------------------------------|

@@ -31,7 +31,7 @@ class BBParkhausPushConverter(NormalizedXlsxConverter, ParkingSiteBaseConverter)
         False: 'NO',
     }
 
-    boolean_type_mapping: dict[str, str] = {
+    boolean_type_mapping: dict[str, bool] = {
         'true': True,
         'false': False,
     }
