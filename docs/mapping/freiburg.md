@@ -2,6 +2,28 @@
 
 The city of Freiburg provides realtime ``GEOJSON`` parking data and also static nd realtime Park + Ride data for cars.
 
+#### RealtimeOpeningStatus
+
+| Key        | Mapping        | Comment                                                                                                                    |
+|------------|----------------|----------------------------------------------------------------------------------------------------------------------------|
+| 0          | OPEN           | Free parking spaces (Normalbetrieb, Freie Plätze verfügbar) for [P+R Realtime](#P+R-Realtime)  |
+| 0          | CLOSED         | No data (Störung / Keine Daten) for Normal [ParkingSite](#ParkingSites)                                                    |
+| 1          | OPEN           | Less than 30 parking spaces (Weniger als 30 Restplätze)                                                                    |
+| 2          | OPEN           | Less than 10 parking spaces (Weniger als 10 Restplätze)                                                                    |
+| -1         | CLOSED         | No data (Störung / Keine Daten)                                                                                            |
+
+
+#### ParkingSiteType
+
+| Key           | Mapping                        |
+|---------------|--------------------------------|
+| Parkplatz     | OFF_STREET_PARKING_GROUND      |
+| Parkhaus      | CAR_PARK                       |
+| Tiefgarage    | UNDERGROUND                    |
+| Park&Ride     | OFF_STREET_PARKING_GROUND      |
+| None          | OTHER                          |
+
+
 ## ParkingSites
 
 A `ParkingSites` provides realtime data for a `ParkingSite`.
@@ -16,7 +38,7 @@ A `ParkingSites` provides realtime data for a `ParkingSite`.
 | public_url                 | string                   | ?           | public_url                      |                                                                     |
 
 
-## ParkingSites for P+R Static
+##  P+R-Static ParkingSites
 
 Attributes which are set statically:
 * `has_realtime_data` is always set to `False`
@@ -32,7 +54,7 @@ A `ParkingSites` provides static data for a Park and Ride `ParkingSite`.
 | kategorie                  | string                   | 1           | [type](#ParkingSiteType)        |                                                                     |
 
 
-## ParkingSites for P+R Realtime and Static
+## P+R-Realtime and Static ParkingSites 
 
 Attributes which are set statically:
 * `type` is always set to `OFF_STREET_PARKING_GROUND`
@@ -50,24 +72,3 @@ A `ParkingSites` provides static and realtime data for a Park and Ride `ParkingS
 | obs_free                   | integer                  | 1           | realtime_free_capacity                             |                                                                     |
 | obs_ts                     | datetime                 | 1           | realtime_data_updated_at                           |                                                                     |
 | obs_state                  | integer                  | 1           | [realtime_opening_status](#RealtimeOpeningStatus)  |                                                                     |
-
-
-#### RealtimeOpeningStatus
-
-| Key        | Mapping   | Comment                                                          |
-|------------|-----------|------------------------------------------------------------------|
-| 0          | OPEN      | Free parking spaces (Normalbetrieb, Freie Plätze verfügbar)      |
-| 1          | OPEN      | Less than 30 parking spaces (Weniger als 30 Restplätze)          |
-| 2          | OPEN      | Less than 10 parking spaces (Weniger als 10 Restplätze)          |
-| -1         | CLOSED    | No data (Störung / Keine Daten)                                  |
-
-
-#### ParkingSiteType
-
-| Key           | Mapping                        |
-|---------------|--------------------------------|
-| Parkplatz     | OFF_STREET_PARKING_GROUND      |
-| Parkhaus      | CAR_PARK                       |
-| Tiefgarage    | UNDERGROUND                    |
-| Park&Ride     | OFF_STREET_PARKING_GROUND      |
-| None          | OTHER                          |
