@@ -11,6 +11,7 @@ We support following data sources:
 | Aachen                                                         | ParkingSite | car        | pull        | `aachen`                    | yes      |
 | APCOA Services                                                 | ParkingSite | car        | pull        | `apcoa`                     | no       |
 | Deutsche Bahn                                                  | ParkingSite | car & bike | pull        | `bahn_v2`                   | no       |
+| B+B Parkhaus GmbH & Co. KG                                     | ParkingSite | car        | push (xlsx) | `bb_parkhaus`               | no       |
 | Stadt Bietigheim-Bissingen                                     | ParkingSite | car        | pull        | `bietigheim_bissingen`      | yes      |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | ParkingSite | car        | pull        | `bfrk_bw_car`               | no       |
 | Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | ParkingSite | bike       | pull        | `bfrk_bw_bike`              | no       |
