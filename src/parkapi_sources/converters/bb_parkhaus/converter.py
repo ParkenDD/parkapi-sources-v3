@@ -26,7 +26,7 @@ class BBParkhausPushConverter(NormalizedXlsxConverter, ParkingSiteBaseConverter)
         'Fahrrad': 'BIKE',
     }
 
-    supervision_type_mapping: dict[str, str] = {
+    supervision_type_mapping: dict[bool, str] = {
         True: 'YES',
         False: 'NO',
     }
