@@ -4,13 +4,14 @@ The city of Freiburg provides realtime ``GEOJSON`` parking data and also static 
 
 #### RealtimeOpeningStatus
 
-| Key        | Mapping        | Comment                                                                                                                    |
-|------------|----------------|----------------------------------------------------------------------------------------------------------------------------|
-| 0          | OPEN           | Free parking spaces (Normalbetrieb, Freie Plätze verfügbar) for [P+R Realtime](#P+R-Realtime)  |
-| 0          | CLOSED         | No data (Störung / Keine Daten) for Normal [ParkingSite](#ParkingSites)                                                    |
-| 1          | OPEN           | Less than 30 parking spaces (Weniger als 30 Restplätze)                                                                    |
-| 2          | OPEN           | Less than 10 parking spaces (Weniger als 10 Restplätze)                                                                    |
-| -1         | CLOSED         | No data (Störung / Keine Daten)                                                                                            |
+| Key        | Mapping        | Comment                                                                                                        |
+|------------|----------------|----------------------------------------------------------------------------------------------------------------|
+| 0          | OPEN           | Free parking spaces (Normalbetrieb, Freie Plätze verfügbar) for [P+R Realtime ParkingSites](#P+R-Realtime)     |
+| 1          | OPEN           | Less than 30 parking spaces (Weniger als 30 Restplätze) for [P+R Realtime ParkingSites](#P+R-Realtime)         |
+| 2          | OPEN           | Less than 10 parking spaces (Weniger als 10 Restplätze) for [P+R Realtime ParkingSites](#P+R-Realtime)         |
+| -1         | CLOSED         | No data (Störung / Keine Daten) for [P+R Realtime ParkingSites](#P+R-Realtime)                                 |
+| 0          | CLOSED         | No data (Störung / Keine Daten) for [Normal ParkingSites](#ParkingSites)                                       |
+| 1          | OPEN           | Free parking spaces for [Normal ParkingSites](#ParkingSites)                                                   |
 
 
 #### ParkingSiteType

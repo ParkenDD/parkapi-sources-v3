@@ -93,7 +93,7 @@ class FreiburgFeatureInput(FreiburgBaseFeatureInput):
             realtime_capacity=self.properties.obs_max,
             realtime_free_capacity=self.properties.obs_free,
             realtime_data_updated_at=self.properties.obs_ts,
-            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state > 0 else OpeningStatus.CLOSED,
+            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state == 1 else OpeningStatus.CLOSED,
         )
 
 
