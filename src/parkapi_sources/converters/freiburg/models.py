@@ -22,7 +22,7 @@ class FreiburgPropertiesInput:
     obs_id: int = IntegerValidator(allow_strings=True)
     obs_parkid: int = IntegerValidator(allow_strings=True)
     obs_state: int = IntegerValidator(allow_strings=True)
-    obs_max: int = IntegerValidator(allow_strings=True)
+    obs_max: int = IntegerValidator(min_value=1, allow_strings=True)
     obs_free: int = IntegerValidator(allow_strings=True)
     obs_ts: datetime = SpacedDateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
@@ -54,13 +54,13 @@ class FreiburgParkAndRideStaticPropertiesInput:
     name: str = StringValidator()
     nummer: str = StringValidator()
     kategorie: FreiburgParkingSiteTypeInput = EnumValidator(FreiburgParkingSiteTypeInput)
-    kapazitaet: int = IntegerValidator(allow_strings=True)
+    kapazitaet: int = IntegerValidator(min_value=1, allow_strings=True)
 
 
 @validataclass
 class FreiburgParkAndRideRealtimePropertiesInput:
     obs_state: int = IntegerValidator(allow_strings=True)
-    obs_max: int = IntegerValidator(allow_strings=True)
+    obs_max: int = IntegerValidator(min_value=1, allow_strings=True)
     obs_free: int = IntegerValidator(allow_strings=True)
     obs_ts: datetime = SpacedDateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
@@ -93,7 +93,7 @@ class FreiburgFeatureInput(FreiburgBaseFeatureInput):
             realtime_capacity=self.properties.obs_max,
             realtime_free_capacity=self.properties.obs_free,
             realtime_data_updated_at=self.properties.obs_ts,
-            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state >= 0 else OpeningStatus.CLOSED,
+            realtime_opening_status=OpeningStatus.OPEN if self.properties.obs_state > 0 else OpeningStatus.CLOSED,
         )
 
 
