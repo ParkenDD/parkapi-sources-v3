@@ -6,14 +6,14 @@ The city of Freiburg provides realtime ``GEOJSON`` parking data for cars.
 
 A `ParkingSites` provides realtime data for a `ParkingSite`.
 
-| Field                      | Type                     | Cardinality | Mapping                         | Comment                                                             |
-|----------------------------|--------------------------|-------------|---------------------------------|---------------------------------------------------------------------|
-| obs_parkid                 | integer                  | 1           | uid                             |                                                                     |
-| obs_max                    | integer                  | 1           | realtime_capacity/capacity      |                                                                     |
-| obs_free                   | integer                  | 1           | realtime_free_capacity          |                                                                     |
-| obs_ts                     | datetime                 | 1           | realtime_data_updated_at        |                                                                     |
+| Field                      | Type                     | Cardinality | Mapping                                            | Comment                                                             |
+|----------------------------|--------------------------|-------------|----------------------------------------------------|---------------------------------------------------------------------|
+| obs_parkid                 | integer                  | 1           | uid                                                |                                                                     |
+| obs_max                    | integer                  | 1           | realtime_capacity/capacity                         |                                                                     |
+| obs_free                   | integer                  | 1           | realtime_free_capacity                             |                                                                     |
+| obs_ts                     | datetime                 | 1           | realtime_data_updated_at                           |                                                                     |
 | obs_state                  | integer                  | 1           | [realtime_opening_status](#RealtimeOpeningStatus)  |                                                                     |
-| public_url                 | string                   | ?           | public_url                      |                                                                     |
+| public_url                 | string                   | ?           | public_url                                         |                                                                     |
 
 
 #### RealtimeOpeningStatus
