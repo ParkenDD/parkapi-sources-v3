@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.21.0
+
+Released 2025-07-14
+
+### Features
+
+* [Integrate B+B Parkhaus Push Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/237)
+
+
+### Fixes
+
+* [Freiburg: fixed closed status](https://github.com/ParkenDD/parkapi-sources-v3/pull/242)
+* [recreate Makefile](https://github.com/ParkenDD/parkapi-sources-v3/pull/241)
+
+
 ## 0.20.1
 
 Released 2025-07-07
