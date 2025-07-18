@@ -45,7 +45,7 @@ A `ParkingRecord` provides static data for a `ParkingSpot`.
 | underground               | UNDERGROUND               |
 | undergroundAndMultiStorey | CAR_PARK                  |
 | automatedParkingGarage    | CAR_PARK                  |
-| openSpace                 | OFF_STREET_PARKING_GROUND |
+| openSpace                 |                           |
 | covered                   |                           |
 | nested                    |                           |
 | field                     | OFF_STREET_PARKING_GROUND |

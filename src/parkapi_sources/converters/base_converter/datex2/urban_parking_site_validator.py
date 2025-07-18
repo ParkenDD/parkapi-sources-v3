@@ -43,7 +43,6 @@ class ParkingLayout(Enum):
             self.MULTI_STOREY: ParkingSiteType.CAR_PARK,
             self.SINGLE_LEVEL: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.COVERED: ParkingSiteType.OFF_STREET_PARKING_GROUND,
-            self.OPEN_SPACE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.FIELD: ParkingSiteType.OFF_STREET_PARKING_GROUND,
         }.get(self)
 
