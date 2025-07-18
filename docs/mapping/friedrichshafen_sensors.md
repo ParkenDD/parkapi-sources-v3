@@ -23,8 +23,8 @@ A `ParkingRecord` provides static data for a `ParkingSpot`.
 | parkingRecordVersionTime   | string (datetime)                                     | 1           | static_data_updated_at |                                                         |
 | parkingNumberOfSpaces      | integer                                               | 1           |                        | Has to be 1 at all times, will be validated             |
 | parkingLocation            | [PointByCoordinates](#PointByCoordinates)             | 1           |                        |                                                         |
-| assignedParkingAmongOthers | ApplicableForUser                                     | 1           | restricted_to.type     |                                                         |
-| parkingLayout              | [ParkingLayoutEnum](#ParkingLayoutEnum)               | 1           | type                   |                                                         |
+| assignedParkingAmongOthers | [ApplicableForUser](#ApplicableForUser)               | 1           | restricted_to.type     |                                                         |
+| parkingLayout              | [ParkingLayoutEnum](#ParkingLayoutEnum)               | *           | type                   |                                                         |
 | openingTimes               | Validity                                              | 1           | restricted_to.hours    | Transform to OSM 24/7, as there are just 24/7 datasets. |
 | urbanParkingSiteType       | [UrbanParkingSiteTypeEnum](#UrbanParkingSiteTypeEnum) | 1           | type                   | If type is not onStreet, parkingLayout is used          |
 
