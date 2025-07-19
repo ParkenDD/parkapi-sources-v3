@@ -6,7 +6,8 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from validataclass.dataclasses import Default, validataclass
+from validataclass.dataclasses import Default, DefaultUnset, validataclass
+from validataclass.helpers import UnsetValueType
 from validataclass.validators import DataclassValidator, DateTimeValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import RealtimeParkingSiteInput
@@ -14,7 +15,7 @@ from parkapi_sources.models import RealtimeParkingSiteInput
 
 @validataclass
 class ParkingOccupancy:
-    parkingNumberOfSpacesOverride: int = IntegerValidator(allow_strings=True)
+    parkingNumberOfSpacesOverride: int | UnsetValueType = IntegerValidator(allow_strings=True), DefaultUnset
     parkingNumberOfVacantSpaces: int = IntegerValidator(allow_strings=True)
     # parkingNumberOfOccupiedSpaces and parkingOccupancy are not needed
 

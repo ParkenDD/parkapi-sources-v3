@@ -25,6 +25,11 @@ class ParkingRecordStatusMixin(Datex2RealtimeMixin, ABC):
                 ('parkingStatusPublication', 'parkingRecordStatus'),
             ],
         )
+        # Datex2 version 3
+        if 'messageContainer' in data:
+            return data.get('messageContainer', {}).get('payload', {}).get('parkingRecordStatus', [])
+
+        # Datex2 version 2
         return (
             data.get('d2LogicalModel', {})
             .get('payloadPublication', {})

@@ -29,8 +29,14 @@ class UrbanParkingSiteMixin(Datex2StaticMixin, ABC):
                 ('parkingTable', 'parkingRecord'),
                 ('parkingName', 'values'),
                 ('assignedParkingAmongOthers', 'applicableForUser'),
+                ('parkingRecord', 'parkingLayout'),
             ],
         )
+        # Datex2 version 3
+        if 'messageContainer' in data:
+            return data.get('messageContainer', {}).get('payload', {}).get('parkingTable', {}).get('parkingRecord', [])
+
+        # Datex2 version 2
         return (
             data.get('d2LogicalModel', {})
             .get('payloadPublication', {})

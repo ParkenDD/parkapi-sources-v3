@@ -10,6 +10,7 @@ from .base_converter import BaseConverter
 from .bb_parkhaus import BBParkhausPushConverter
 from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
+from .bietigheim_bissingen_datex import BietigheimBissingenDatexPullConverter
 from .ellwangen import EllwangenPushConverter
 from .freiburg import (
     FreiburgParkAndRideRealtimePullConverter,

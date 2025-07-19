@@ -1,0 +1,47 @@
+<messageContainer xmlns:com="http://datex2.eu/schema/3/common"
+    xmlns:d2="http://datex2.eu/schema/3/d2Payload"
+    xmlns:ex="http://datex2.eu/schema/3/exchangeInformation"
+    xmlns:inf="http://datex2.eu/schema/3/informationManagement"
+    xmlns:par="http://datex2.eu/schema/3/parking" xsi:schemaLocation="http://datex2.eu/schema/3/messageContainer file://root.ad.intra/Programme/Mapforce/Extern/Mobilithek/ParkAndRide/_Doku/DATEX%20Profil%20Parkraummanagement_01-00-00/Schema%20f%C3%BCr%20DeltaPublikation%20(mit%20MessageContainer)/ParkingStatus/DATEXII_3_MessageContainer.xsd" modelBaseVersion="3"
+    xmlns="http://datex2.eu/schema/3/messageContainer"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <payload xsi:type="par:ParkingStatusPublication" lang="de" modelBaseVersion="3" profileName="Parkraummanagement">
+        <com:publicationTime>2025-06-17T13:18:01.739+02:00</com:publicationTime>
+        <com:publicationCreator>
+            <com:country>de</com:country>
+            <com:nationalIdentifier/>
+        </com:publicationCreator>
+        <par:parkingTableReference id="DE-KON-001" version="1" targetClass="par:ParkingTable"/>
+        <par:headerInformation>
+            <com:confidentiality>noRestriction</com:confidentiality>
+            <com:informationStatus>real</com:informationStatus>
+        </par:headerInformation>
+        <par:parkingRecordStatus xsi:type="par:ParkingSiteStatus">
+            <par:parkingRecordReference id="de:00001:00001:parkhaus" version="1" targetClass="par:ParkingRecord"/>
+            <par:parkingStatusOriginTime>2025-06-17T13:18:01.739+02:00</par:parkingStatusOriginTime>
+            <par:parkingOccupancy>
+                <par:parkingNumberOfVacantSpaces>50</par:parkingNumberOfVacantSpaces>
+                <par:parkingOccupancy>50.0</par:parkingOccupancy>
+            </par:parkingOccupancy>
+        </par:parkingRecordStatus>
+        <par:parkingRecordStatus xsi:type="par:ParkingSiteStatus">
+            <par:parkingRecordReference id="de:00001:00002:parkhaus" version="1" targetClass="par:ParkingRecord"/>
+            <par:parkingStatusOriginTime>2025-06-17T13:18:01.739+02:00</par:parkingStatusOriginTime>
+            <par:parkingOccupancy>
+                <par:parkingNumberOfVacantSpaces>400</par:parkingNumberOfVacantSpaces>
+                <par:parkingOccupancy>20.0</par:parkingOccupancy>
+            </par:parkingOccupancy>
+        </par:parkingRecordStatus>
+    </payload>
+    <exchangeInformation modelBaseVersion="3">
+        <ex:exchangeContext>
+            <ex:codedExchangeProtocol>snapshotPush</ex:codedExchangeProtocol>
+            <ex:exchangeSpecificationVersion>exchangeSpecificationVersion0</ex:exchangeSpecificationVersion>
+            <ex:supplierOrCisRequester/>
+        </ex:exchangeContext>
+        <ex:dynamicInformation>
+            <ex:exchangeStatus>online</ex:exchangeStatus>
+            <ex:messageGenerationTimestamp>2025-06-17T13:18:01.739+02:00</ex:messageGenerationTimestamp>
+        </ex:dynamicInformation>
+    </exchangeInformation>
+</messageContainer>
