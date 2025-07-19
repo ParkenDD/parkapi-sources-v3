@@ -1,0 +1,110 @@
+<messageContainer xmlns:com="http://datex2.eu/schema/3/common"
+    xmlns:d2="http://datex2.eu/schema/3/d2Payload"
+    xmlns:egi="http://datex2.eu/schema/3/energyInfrastructure"
+    xmlns:ex="http://datex2.eu/schema/3/exchangeInformation"
+    xmlns:inf="http://datex2.eu/schema/3/informationManagement"
+    xmlns:loc="http://datex2.eu/schema/3/locationReferencing"
+    xmlns:par="http://datex2.eu/schema/3/parking" xsi:schemaLocation="http://datex2.eu/schema/3/messageContainer file://root.ad.intra/Programme/Mapforce/Extern/Mobilithek/ParkAndRide/_Doku/DATEX%20Profil%20Parkraummanagement_01-00-00/Schema%20f%C3%BCr%20DeltaPublikation%20(mit%20MessageContainer)/ParkingTable/DATEXII_3_MessageContainer.xsd" modelBaseVersion="3"
+    xmlns="http://datex2.eu/schema/3/messageContainer"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <payload xsi:type="par:ParkingTablePublication" lang="de" modelBaseVersion="3">
+        <com:publicationTime>2025-06-15T08:00:04.509+02:00</com:publicationTime>
+        <com:publicationCreator>
+            <com:country>de</com:country>
+            <com:nationalIdentifier>DE-NAP-Koelner Verkehrs-Betriebe AG</com:nationalIdentifier>
+        </com:publicationCreator>
+        <par:headerInformation>
+            <com:confidentiality>noRestriction</com:confidentiality>
+            <com:informationStatus>real</com:informationStatus>
+        </par:headerInformation>
+        <par:parkingTable id="DE-KON-001" version="1">
+            <par:parkingTableVersionTime>2025-06-15T08:00:04.509+02:00</par:parkingTableVersionTime>
+            <par:parkingRecord xsi:type="par:UrbanParkingSite" id="de:00001:00001:parkhaus" version="1">
+                <par:parkingName>
+                    <com:values>
+                        <com:value lang="de">Parkhaus Europabrücke</com:value>
+                    </com:values>
+                </par:parkingName>
+                <par:parkingDescription>
+                    <com:values>
+                        <com:value>Parkhaus</com:value>
+                    </com:values>
+                </par:parkingDescription>
+                <par:parkingRecordVersionTime>2025-06-15T08:00:04.509+02:00</par:parkingRecordVersionTime>
+                <par:parkingNumberOfSpaces>100</par:parkingNumberOfSpaces>
+                <par:parkingLocation xsi:type="loc:PointLocation">
+                    <loc:supplementaryPositionalDescription>
+                        <loc:locationDescription>
+                            <com:values>
+                                <com:value lang="de">Parkhaus Europabrücke</com:value>
+                            </com:values>
+                        </loc:locationDescription>
+                    </loc:supplementaryPositionalDescription>
+                    <loc:pointByCoordinates>
+                        <loc:pointCoordinates>
+                            <loc:latitude>47.67337657728699</loc:latitude>
+                            <loc:longitude>9.163877016837477</loc:longitude>
+                        </loc:pointCoordinates>
+                    </loc:pointByCoordinates>
+                </par:parkingLocation>
+                <par:onlyAssignedParking>
+                    <par:parkingDuration>shortTerm24hours</par:parkingDuration>
+                </par:onlyAssignedParking>
+                <par:parkingLayout>openSpace</par:parkingLayout>
+                <par:openingTimes>
+                    <par:lastUpdated>2025-06-15T08:00:04.509+02:00</par:lastUpdated>
+                    <par:available24hours>true</par:available24hours>
+                </par:openingTimes>
+                <par:urbanParkingSiteType>offStreetParking</par:urbanParkingSiteType>
+            </par:parkingRecord>
+            <par:parkingRecord xsi:type="par:UrbanParkingSite" id="de:00001:00002:parkhaus" version="1">
+                <par:parkingName>
+                    <com:values>
+                        <com:value lang="de">Parkhaus Altstadt</com:value>
+                    </com:values>
+                </par:parkingName>
+                <par:parkingDescription>
+                    <com:values>
+                        <com:value>Parkhaus</com:value>
+                    </com:values>
+                </par:parkingDescription>
+                <par:parkingRecordVersionTime>2025-06-15T08:00:04.509+02:00</par:parkingRecordVersionTime>
+                <par:parkingNumberOfSpaces>500</par:parkingNumberOfSpaces>
+                <par:parkingLocation xsi:type="loc:PointLocation">
+                    <loc:supplementaryPositionalDescription>
+                        <loc:locationDescription>
+                            <com:values>
+                                <com:value lang="de">Parkhaus Altstadt</com:value>
+                            </com:values>
+                        </loc:locationDescription>
+                    </loc:supplementaryPositionalDescription>
+                    <loc:pointByCoordinates>
+                        <loc:pointCoordinates>
+                            <loc:latitude>47.662901479466235</loc:latitude>
+                            <loc:longitude>9.1724891712394</loc:longitude>
+                        </loc:pointCoordinates>
+                    </loc:pointByCoordinates>
+                </par:parkingLocation>
+                <par:onlyAssignedParking>
+                    <par:parkingDuration>shortTerm24hours</par:parkingDuration>
+                </par:onlyAssignedParking>
+                <par:openingTimes>
+                    <par:lastUpdated>2025-06-15T08:00:04.509+02:00</par:lastUpdated>
+                    <par:available24hours>true</par:available24hours>
+                </par:openingTimes>
+                <par:urbanParkingSiteType>offStreetParking</par:urbanParkingSiteType>
+            </par:parkingRecord>
+        </par:parkingTable>
+    </payload>
+    <exchangeInformation modelBaseVersion="3">
+        <ex:exchangeContext>
+            <ex:codedExchangeProtocol>snapshotPush</ex:codedExchangeProtocol>
+            <ex:exchangeSpecificationVersion>exchangeSpecificationVersion0</ex:exchangeSpecificationVersion>
+            <ex:supplierOrCisRequester/>
+        </ex:exchangeContext>
+        <ex:dynamicInformation>
+            <ex:exchangeStatus>online</ex:exchangeStatus>
+            <ex:messageGenerationTimestamp>2025-06-15T08:00:04.509+02:00</ex:messageGenerationTimestamp>
+        </ex:dynamicInformation>
+    </exchangeInformation>
+</messageContainer>

@@ -102,7 +102,7 @@ class AssignedParking:
 @validataclass
 class UrbanParkingSite:
     id: str = StringValidator()
-    parkingLayout: ParkingLayout = EnumValidator(ParkingLayout)
+    parkingLayout: list[ParkingLayout] = ListValidator(EnumValidator(ParkingLayout)), Default([])
     parkingLocation: ParkingLocation = DataclassValidator(ParkingLocation)
     parkingName: list[ParkingName] = ListValidator(DataclassValidator(ParkingName))
     parkingNumberOfSpaces: int = IntegerValidator(allow_strings=True)
@@ -119,7 +119,11 @@ class UrbanParkingSite:
         if self.urbanParkingSiteType.to_parking_site_type() == ParkingSiteType.ON_STREET:
             parking_site_type = ParkingSiteType.ON_STREET
         else:
-            parking_site_type = self.parkingLayout.to_parking_site_type()
+            parking_site_type = None
+            for parking_layout in self.parkingLayout:
+                if parking_layout is not None:
+                    parking_site_type = parking_layout.to_parking_site_type()
+                    break
             if parking_site_type is None:
                 parking_site_type = self.urbanParkingSiteType.to_parking_site_type()
             if parking_site_type is None:
