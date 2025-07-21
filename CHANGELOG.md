@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.21.1
+
+Released 2025-07-21
+
+### Fixes
+
+* [Extend Friedrichshafen](https://github.com/ParkenDD/parkapi-sources-v3/pull/244)
+
+
+### Maintenance
+
+* Dependency Updates
+
+
 ## 0.21.0
 
 Released 2025-07-14
