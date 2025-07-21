@@ -15,18 +15,18 @@ Attributes which are set statically:
 
 A `ParkingRecord` provides static data for a `ParkingSpot`.
 
-| Field                      | Type                     | Cardinality | Mapping                | Comment                                                                          |
-|----------------------------|--------------------------|-------------|------------------------|----------------------------------------------------------------------------------|
-| id                         | string                   | 1           | uid                    |                                                                                  |
-| version                    | integer                  | 1           |                        |                                                                                  |
-| parkingName                | string                   | 1           | name                   |                                                                                  |
-| parkingRecordVersionTime   | string (datetime)        | 1           | static_data_updated_at |                                                                                  |
-| parkingNumberOfSpaces      | integer                  | 1           |                        | Has to be 1 at all times, will be validated                                      |
-| parkingLocation            | PointByCoordinates       | 1           |                        |                                                                                  |
-| assignedParkingAmongOthers | ApplicableForUser        | 1           | restricted_to.type     |                                                                                  |
-| parkingLayout              | ParkingLayoutEnum        | 1           |                        | Values in there don't make much sense (`multiStorey` for a single parking spot). |
-| openingTimes               | Validity                 | 1           | restricted_to.hours    | Transform to OSM 24/7, as there are just 24/7 datasets.                          |
-| urbanParkingSiteType       | UrbanParkingSiteTypeEnum | 1           |                        | Should be `offStreetParking` at all times.                                       |
+| Field                      | Type                                                  | Cardinality | Mapping                | Comment                                                 |
+|----------------------------|-------------------------------------------------------|-------------|------------------------|---------------------------------------------------------|
+| id                         | string                                                | 1           | uid                    |                                                         |
+| version                    | integer                                               | 1           |                        |                                                         |
+| parkingName                | string                                                | 1           | name                   |                                                         |
+| parkingRecordVersionTime   | string (datetime)                                     | 1           | static_data_updated_at |                                                         |
+| parkingNumberOfSpaces      | integer                                               | 1           |                        | Has to be 1 at all times, will be validated             |
+| parkingLocation            | [PointByCoordinates](#PointByCoordinates)             | 1           |                        |                                                         |
+| assignedParkingAmongOthers | [ApplicableForUser](#ApplicableForUser)               | 1           | restricted_to.type     |                                                         |
+| parkingLayout              | [ParkingLayoutEnum](#ParkingLayoutEnum)               | *           | type                   |                                                         |
+| openingTimes               | Validity                                              | 1           | restricted_to.hours    | Transform to OSM 24/7, as there are just 24/7 datasets. |
+| urbanParkingSiteType       | [UrbanParkingSiteTypeEnum](#UrbanParkingSiteTypeEnum) | 1           | type                   | If type is not onStreet, parkingLayout is used          |
 
 
 #### ApplicableForUser
@@ -34,6 +34,33 @@ A `ParkingRecord` provides static data for a `ParkingSpot`.
 | Key      | Mapping   |
 |----------|-----------|
 | disabled | DISABLED  |
+
+
+### ParkingLayoutEnum
+
+| Key                       | Mapping                   |
+|---------------------------|---------------------------|
+| multiStorey               | CAR_PARK                  |
+| singleLevel               | OFF_STREET_PARKING_GROUND |
+| underground               | UNDERGROUND               |
+| undergroundAndMultiStorey | CAR_PARK                  |
+| automatedParkingGarage    | CAR_PARK                  |
+| openSpace                 |                           |
+| covered                   |                           |
+| nested                    |                           |
+| field                     | OFF_STREET_PARKING_GROUND |
+| unknown                   |                           |
+| other                     |                           |
+
+
+### UrbanParkingSiteTypeEnum
+
+| Key                 | Mapping                   |
+|---------------------|---------------------------|
+| onStreetParking     | ON_STREET                 |
+| offStreetParking    | OFF_STREET_PARKING_GROUND |
+| other               |                           |
+
 
 
 ### PointByCoordinates
@@ -48,11 +75,11 @@ A `ParkingRecord` provides static data for a `ParkingSpot`.
 
 `ParkingRecordStatus` provides realtime data for a `ParkingSpot`.
 
-| Field                   | Type                   | Cardinality | Mapping                  | Comment |
-|-------------------------|------------------------|-------------|--------------------------|---------|
-| parkingRecordReference  | ParkingRecordReference | 1           | uid                      |         |
-| parkingStatusOriginTime | string (datetime)      | 1           | realtime_data_updated_at |         |
-| parkingOccupancy        | ParkingOccupancy       | 1           |                          |         |
+| Field                   | Type                                              | Cardinality | Mapping                  | Comment |
+|-------------------------|---------------------------------------------------|-------------|--------------------------|---------|
+| parkingRecordReference  | [ParkingRecordReference](#ParkingRecordReference) | 1           | uid                      |         |
+| parkingStatusOriginTime | string (datetime)                                 | 1           | realtime_data_updated_at |         |
+| parkingOccupancy        | [ParkingOccupancy](#ParkingOccupancy)             | 1           |                          |         |
 
 
 ### ParkingRecordReference
