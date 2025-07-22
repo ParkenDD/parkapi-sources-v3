@@ -36,7 +36,7 @@ class FriedrichshafenSensorsParkingSpot(UrbanParkingSite):
         elif self.urbanParkingSiteType.to_parking_site_type() is not None:
             parking_spot_type = ParkingSpotType[self.urbanParkingSiteType.to_parking_site_type().value]
         else:
-            parking_spot_type = ParkingSiteType.OTHER
+            parking_spot_type = None
 
         return StaticParkingSpotInput(
             uid=self.id,
