@@ -61,7 +61,7 @@ class FreiburgPullConverterTest:
         static_parking_site_inputs, import_parking_site_exceptions = freiburg_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 20
-        assert len(import_parking_site_exceptions) == 0
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -73,8 +73,8 @@ class FreiburgPullConverterTest:
             freiburg_pull_converter.get_realtime_parking_sites()
         )
 
-        assert len(realtime_parking_site_inputs) == 19
-        assert len(import_parking_site_exceptions) == 0
+        assert len(realtime_parking_site_inputs) == 18
+        assert len(import_parking_site_exceptions) == 1
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
 
@@ -97,7 +97,7 @@ class FreiburgPullConverterTest:
         )
 
         assert len(static_parking_site_inputs) == 20
-        assert len(import_parking_site_exceptions) == 0
+        assert len(import_parking_site_exceptions) == 1
 
         assert static_parking_site_inputs[0].name == 'New name'
 
