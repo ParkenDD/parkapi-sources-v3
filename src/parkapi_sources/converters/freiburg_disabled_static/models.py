@@ -17,7 +17,7 @@ from parkapi_sources.models import (
     ParkingRestrictionInput,
     StaticParkingSpotInput,
 )
-from parkapi_sources.models.enums import ParkingAudience, PurposeType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSpotType, PurposeType
 from parkapi_sources.models.parking_spot_inputs import GeojsonPolygonInput
 from parkapi_sources.util import round_7d
 
@@ -56,6 +56,7 @@ class FreiburgDisabledStaticFeatureInput(GeojsonBaseFeatureInput):
             static_data_updated_at=datetime.now(tz=timezone.utc),
             lat=round_7d(Decimal(point.y)),
             lon=round_7d(Decimal(point.x)),
+            type=ParkingSpotType.ON_STREET,
             has_realtime_data=False,
             geojson=geojson,
             restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],

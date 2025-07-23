@@ -7,6 +7,7 @@ Freiburg provides a GeoJSON with static parking spots. lat / lon are set to the 
 * `purpose` is set to `CAR`
 * `has_realtime_data` is set to `false`
 * `static_data_updated_at` is set to the moment of import
+* `type` is set to `ON_STREET`
 
 ## Properties
 
