@@ -64,7 +64,7 @@ class FreiburgBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin
                 feature_input.to_static_parking_site_input(),
             )
 
-        return static_parking_site_inputs, import_parking_site_exceptions
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
@@ -118,7 +118,7 @@ class FreiburgPullConverter(FreiburgBasePullConverter):
                 static_parking_site_inputs_by_uid[parking_site_uid],
             )
 
-        return static_parking_site_inputs, import_parking_site_exceptions
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
 
 
 class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):

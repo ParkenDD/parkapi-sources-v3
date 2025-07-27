@@ -171,4 +171,5 @@ class KarlsruheBikeFeatureInput(GeojsonBaseFeatureInput):
             static_data_updated_at=datetime.now(timezone.utc),
             type=parking_site_type,
             purpose=PurposeType.BIKE,
+            has_realtime_data=False,
         )

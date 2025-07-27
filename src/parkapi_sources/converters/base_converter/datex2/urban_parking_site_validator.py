@@ -110,7 +110,7 @@ class UrbanParkingSite:
     assignedParkingAmongOthers: AssignedParking | None = DataclassValidator(AssignedParking), Default(None)
     urbanParkingSiteType: DatexUrbanParkingSiteType = EnumValidator(DatexUrbanParkingSiteType)
 
-    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self, has_realtime_data: bool) -> StaticParkingSiteInput:
         name_de = ''
         for name in self.parkingName:
             if name.lang == Language.DE:
@@ -134,6 +134,7 @@ class UrbanParkingSite:
             lon=self.parkingLocation.pointByCoordinates.pointCoordinates.longitude,
             capacity=self.parkingNumberOfSpaces,
             static_data_updated_at=self.parkingRecordVersionTime,
+            has_realtime_data=has_realtime_data,
         )
 
         if self.parkingLayout == ParkingLayout.COVERED:

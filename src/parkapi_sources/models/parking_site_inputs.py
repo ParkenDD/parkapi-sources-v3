@@ -78,14 +78,13 @@ class StaticParkingSiteInput(ValidataclassMixin):
     photo_url: str | None = Noneable(UrlValidator(max_length=4096)), Default(None)
     related_location: str | None = Noneable(StringValidator(max_length=256)), Default(None)
 
-    has_realtime_data: bool | None = Noneable(BooleanValidator(), default=False), Default(None)
-    static_data_updated_at: datetime | None = (
+    has_realtime_data: bool = BooleanValidator()
+    static_data_updated_at: datetime = (
         DateTimeValidator(
             local_timezone=timezone.utc,
             target_timezone=timezone.utc,
             discard_milliseconds=True,
         ),
-        Default(None),
     )
 
     # Set min/max to Europe borders
@@ -171,8 +170,12 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
     lon: Decimal | UnsetValueType = DefaultUnset
 
     capacity: int | UnsetValueType = DefaultUnset
+    has_realtime_data: bool | UnsetValueType = DefaultUnset
+    static_data_updated_at: datetime | UnsetValueType = DefaultUnset
 
     tags: list[str] | UnsetValueType = DefaultUnset
+    restricted_to: list[str] | UnsetValueType = DefaultUnset
+    external_identifiers: list[dict] | UnsetValueType = DefaultUnset
 
     def __post_init__(self):
         # Don't do additional validation checks

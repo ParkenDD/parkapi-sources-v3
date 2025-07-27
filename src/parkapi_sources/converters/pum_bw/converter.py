@@ -89,6 +89,7 @@ class PumBwPushConverter(XlsxConverter, ParkingSiteBaseConverter):
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
         parking_site_dict['capacity'] = int(parking_site_dict['capacity'])
         parking_site_dict['has_lighting'] = self.boolean_mapping.get(parking_site_dict['has_lighting'].rstrip(), None)
+        parking_site_dict['has_realtime_data'] = False
 
         # Since the URL to Google map is in Excel Hyperlink, then we format it to url string for public_url
         if '=HYPERLINK' in parking_site_dict['public_url']:
