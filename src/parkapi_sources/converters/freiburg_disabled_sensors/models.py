@@ -15,7 +15,7 @@ from parkapi_sources.models import (
     RealtimeParkingSpotInput,
     StaticParkingSpotInput,
 )
-from parkapi_sources.models.enums import ParkingAudience, ParkingSpotStatus, PurposeType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSpotStatus, ParkingSpotType, PurposeType
 
 
 class FreiburgDisabledStatus(Enum):
@@ -48,6 +48,7 @@ class FreiburgDisabledSensorFeatureInput(GeojsonBaseFeatureInput):
             static_data_updated_at=datetime.now(tz=timezone.utc),
             lat=self.geometry.coordinates[1],
             lon=self.geometry.coordinates[0],
+            type=ParkingSpotType.ON_STREET,
             has_realtime_data=True,
             restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
             purpose=PurposeType.CAR,
