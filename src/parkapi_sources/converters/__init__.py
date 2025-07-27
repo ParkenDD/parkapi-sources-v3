@@ -52,6 +52,7 @@ from .pum_bw import PumBwPushConverter
 from .radvis_bw import RadvisBwPullConverter
 from .reutlingen import ReutlingenPushConverter
 from .reutlingen_bike import ReutlingenBikePushConverter
+from .reutlingen_disabled import ReutlingenDisabledPushConverter
 from .stuttgart import StuttgartPushConverter
 from .ulm import UlmPullConverter
 from .ulm_sensors import UlmSensorsPullConverter
