@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.22.0
+
+### Features
+
+* [Synchronize and extend data model](https://github.com/ParkenDD/parkapi-sources-v3/pull/249)
+* [Esslingen Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/250)
+* [Freiburg Scanner Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/251)
+* [Heidelberg EasyPark Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/252)
+* [Keltern Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/253)
+* [Reutlingen Disabled Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/254)
+
+
 ## 0.21.1
 
 Released 2025-07-21
