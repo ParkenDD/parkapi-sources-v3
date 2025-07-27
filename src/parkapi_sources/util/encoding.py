@@ -9,7 +9,9 @@ from decimal import Decimal
 from enum import Enum
 from typing import Any
 
+import shapely
 from isodate import Duration, duration_isoformat
+from shapely.geometry.base import BaseGeometry
 
 
 def convert_to_serializable_value(obj: Any) -> Any:
@@ -25,6 +27,8 @@ def convert_to_serializable_value(obj: Any) -> Any:
         return obj.value
     if isinstance(obj, bytes):
         return obj.decode()
+    if isinstance(obj, BaseGeometry):
+        return shapely.geometry.mapping(obj)
 
     # Serialize data models (not only, but mostly ORM) using to_dict.
     if hasattr(obj, 'to_dict'):

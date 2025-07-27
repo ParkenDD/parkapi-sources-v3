@@ -87,4 +87,5 @@ class KonstanzRowInput:
             is_covered=self.is_covered,
             static_data_updated_at=datetime.now(tz=timezone.utc),
             purpose=PurposeType.BIKE,
+            has_realtime_data=False,
         )

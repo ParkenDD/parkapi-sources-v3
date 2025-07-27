@@ -30,6 +30,7 @@ from parkapi_sources.models import (
     StaticParkingSiteInput,
 )
 from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType, PurposeType
+from parkapi_sources.util import round_7d
 from parkapi_sources.validators import MappedBooleanValidator
 
 
@@ -88,8 +89,8 @@ class KarlsruheFeatureInput(GeojsonBaseFeatureInput):
         )
         return StaticParkingSiteInput(
             uid=str(self.properties.id),
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             name=self.properties.parkhaus_name,
             capacity=self.properties.gesamte_parkplaetze,
             type=ParkingSiteType.CAR_PARK,
@@ -160,8 +161,8 @@ class KarlsruheBikeFeatureInput(GeojsonBaseFeatureInput):
         return StaticParkingSiteInput(
             uid=str(self.properties.id),
             name=self.properties.standort,
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             capacity=self.properties.stellplaetze,
             address=address,
             public_url=self.properties.link,
@@ -170,4 +171,5 @@ class KarlsruheBikeFeatureInput(GeojsonBaseFeatureInput):
             static_data_updated_at=datetime.now(timezone.utc),
             type=parking_site_type,
             purpose=PurposeType.BIKE,
+            has_realtime_data=False,
         )

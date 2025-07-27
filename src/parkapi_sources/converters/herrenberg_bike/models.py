@@ -21,6 +21,7 @@ from validataclass.validators import (
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
+from parkapi_sources.util import round_7d
 from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
 
 
@@ -119,6 +120,7 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
         NoneToUnsetValue(EnumValidator(HerrenbergBikeSupervisionType)),
         DefaultUnset,
     )
+    # TODO: Not sure what to do with that, we we don't get actual realtime updates
     has_realtime_data: OptionalUnset[bool] = (
         NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
         DefaultUnset,
@@ -171,7 +173,8 @@ class HerrenbergBikeFeatureInput(GeojsonBaseFeatureInput):
 
     def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
+            has_realtime_data=False,
             **self.properties.to_dict(**kwargs),
         )

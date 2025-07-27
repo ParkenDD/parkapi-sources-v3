@@ -22,6 +22,7 @@ from validataclass.validators import (
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.util import round_7d
 from parkapi_sources.validators import ReplacingStringValidator
 
 
@@ -187,8 +188,8 @@ class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
             uid=str(self.id),
             name=self.properties.displayName,
             operator_name=self.properties.operator,
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             purpose=self.properties.parkingFacilityCategory.to_purpose_type_input(),
             type=self.properties.parkingFacilityCategory.to_parking_site_type_input(),
             static_data_updated_at=datetime.now(tz=timezone.utc),

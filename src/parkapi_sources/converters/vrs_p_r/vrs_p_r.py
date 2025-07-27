@@ -74,5 +74,6 @@ class VrsParkAndRidePushConverter(NormalizedXlsxConverter, ParkingSiteBaseConver
         parking_site_dict['park_and_ride_type'] = [ParkAndRideType.TRAIN.name]
         parking_site_dict['type'] = self.type_mapping.get(parking_site_dict.get('type'))
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
+        parking_site_dict['has_realtime_data'] = False
 
         return parking_site_dict

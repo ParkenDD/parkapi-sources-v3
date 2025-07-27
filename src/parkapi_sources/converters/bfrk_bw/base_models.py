@@ -71,4 +71,5 @@ class BfrkBaseInput(ABC):
             'photo_url': self.objekt_Foto,
             'external_identifiers': external_identifiers,
             'static_data_updated_at': datetime.now(tz=timezone.utc),
+            'has_realtime_data': False,
         }
