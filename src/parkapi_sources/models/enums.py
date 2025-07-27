@@ -9,6 +9,7 @@ from enum import Enum
 class PurposeType(Enum):
     CAR = 'CAR'
     BIKE = 'BIKE'
+    MOTORCYCLE = 'MOTORCYCLE'
     ITEM = 'ITEM'
 
 
@@ -105,3 +106,22 @@ class ParkingAudience(Enum):
     NO_STOPPING = 'NO_STOPPING'
     CUSTOMER = 'CUSTOMER'
     RESIDENT = 'RESIDENT'
+    CARAVAN = 'CARAVAN'
+
+
+class ParkingSiteSide(Enum):
+    RIGHT = 'RIGHT'
+    LEFT = 'LEFT'
+
+
+class ParkingSiteOrientation(Enum):
+    PARALLEL = 'PARALLEL'
+    DIAGONAL = 'DIAGONAL'
+    PERPENDICULAR = 'PERPENDICULAR'
+
+
+class ParkingType(Enum):
+    LANE = 'LANE'
+    ON_KERB = 'ON_KERB'
+    HALF_ON_KERB = 'HALF_ON_KERB'
+    SHOULDER = 'SHOULDER'

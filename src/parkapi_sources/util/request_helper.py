@@ -7,6 +7,7 @@ import os
 import ssl
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from requests import Response, Session
 from requests.adapters import HTTPAdapter
@@ -14,8 +15,11 @@ from requests.utils import DEFAULT_CA_BUNDLE_PATH, extract_zipped_paths
 from urllib3.util import create_urllib3_context
 
 from parkapi_sources.exceptions import MissingConfigException
-from parkapi_sources.models import SourceInfo
-from parkapi_sources.util import ConfigHelper
+
+from .config_helper import ConfigHelper
+
+if TYPE_CHECKING:
+    from parkapi_sources.models import SourceInfo
 
 
 class CustomHTTPAdapter(HTTPAdapter):
@@ -44,22 +48,22 @@ class RequestHelper:
     def __init__(self, config_helper: ConfigHelper):
         self.config_helper = config_helper
 
-    def get(self, *, source_info: SourceInfo, **kwargs) -> Response:
+    def get(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
         return self._request(source_info=source_info, method='get', **kwargs)
 
-    def post(self, *, source_info: SourceInfo, **kwargs) -> Response:
+    def post(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
         return self._request(source_info=source_info, method='post', **kwargs)
 
-    def put(self, *, source_info: SourceInfo, **kwargs) -> Response:
+    def put(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
         return self._request(source_info=source_info, method='put', **kwargs)
 
-    def patch(self, *, source_info: SourceInfo, **kwargs) -> Response:
+    def patch(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
         return self._request(source_info=source_info, method='patch', **kwargs)
 
-    def delete(self, *, source_info: SourceInfo, **kwargs) -> Response:
+    def delete(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
         return self._request(source_info=source_info, method='delete', **kwargs)
 
-    def _request(self, *, source_info: SourceInfo, method: str, **kwargs) -> Response:
+    def _request(self, *, source_info: 'SourceInfo', method: str, **kwargs) -> Response:
         with Session() as session:
             # Can be removed after https://github.com/psf/requests/issues/6726#issuecomment-2660565040 is resolved
             session.mount('https://', CustomHTTPAdapter())
@@ -70,7 +74,7 @@ class RequestHelper:
 
             return response
 
-    def _handle_request_response(self, source_info: SourceInfo, response: Response):
+    def _handle_request_response(self, source_info: 'SourceInfo', response: Response):
         if source_info.uid not in self.config_helper.get('DEBUG_SOURCES', []):
             return
 

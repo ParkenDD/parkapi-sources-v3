@@ -65,7 +65,9 @@ class PbwPullConverterTest:
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
-        assert static_parking_site_inputs[0].to_dict() == {
+        data = {key: value for key, value in static_parking_site_inputs[0].to_dict().items() if value is not None}
+
+        assert data == {
             'address': 'Flandernstraße 101 A, 73732 Esslingen',
             'capacity': 459,
             'capacity_charging': 0,
@@ -84,6 +86,9 @@ class PbwPullConverterTest:
             'tags': [],
             'type': ParkingSiteType.CAR_PARK,
             'uid': '8',
+            'external_identifiers': [],
+            'park_and_ride_type': [],
+            'restricted_to': [],
         }
 
     @staticmethod

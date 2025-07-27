@@ -51,16 +51,22 @@ def filter_none(data: dict) -> dict:
 def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticParkingSiteInput]):
     validator = DataclassValidator(StaticParkingSiteInput)
 
+    uids: list[str] = []
     for static_parking_site_input in static_parking_site_inputs:
+        assert static_parking_site_input.uid not in uids, 'UID not unique'
+        uids.append(static_parking_site_input.uid)
+
         if static_parking_site_input.external_identifiers:
             for external_identifier in static_parking_site_input.external_identifiers:
                 assert isinstance(external_identifier, ExternalIdentifierInput)
 
-        assert static_parking_site_input.static_data_updated_at.tzinfo is not None
+        if static_parking_site_input.static_data_updated_at is not None:
+            assert static_parking_site_input.static_data_updated_at.tzinfo is not None
+
         assert isinstance(static_parking_site_input.uid, str)
 
         parking_site_dict = json.loads(
-            json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder)
+            json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder),
         )
         validator.validate(parking_site_dict)
 
