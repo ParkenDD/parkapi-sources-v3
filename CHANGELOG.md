@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.23.0
+
+Released 2025-07-28
+
+### Maintenance
+
+* [remove kienzler geojson](https://github.com/ParkenDD/parkapi-sources-v3/pull/255)
+
+This release actually removes a feature, the Kienzler-specific GeoJSON patch mechanism, as there is now a
+[generic patch mechanism](https://github.com/ParkenDD/parkapi-sources-v3/blob/01df26ed963a424d9b1165b1b4e8cd5e9ed83b20/README.md#patch-data-with-local-files).
+
+
 ## 0.22.0
 
 ### Features
