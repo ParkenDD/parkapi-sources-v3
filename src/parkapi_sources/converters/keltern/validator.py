@@ -69,7 +69,7 @@ class KelternRowInput:
             uid=self.id.replace('@GemeindeKeltern', ''),
             capacity=self.capacity,
             name=self.adress_str,
-            capacity_charging=1 if self.hasChargingStation else 0,
+            capacity_charging=1 if self.hasChargingStation else None,
             opening_hours='24/7' if self.hasOpeningHours24h else None,
             description='; '.join(description_fragments),
             address=f'{self.adress_str}, {self.adress_pos} {self.adress_cit}',

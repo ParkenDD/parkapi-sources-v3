@@ -22,12 +22,14 @@ def reutlingen_bike_push_converter(
 
 class ReutlingenBikePushConverterTest:
     @staticmethod
-    def test_get_static_parking_spots(reutlingen_bike_push_converter: ReutlingenDisabledPushConverter):
+    def test_get_static_parking_spots(reutlingen_disabled_push_converter: ReutlingenDisabledPushConverter):
         with get_data_path('reutlingen_disabled.csv').open() as reutlingen_bike_file:
-            reutlingen_bike_data = StringIO(reutlingen_bike_file.read())
+            reutlingen_disabled_data = StringIO(reutlingen_bike_file.read())
 
-        static_parking_spot_inputs, import_parking_spot_exceptions = reutlingen_bike_push_converter.handle_csv_string(
-            reutlingen_bike_data,
+        static_parking_spot_inputs, import_parking_spot_exceptions = (
+            reutlingen_disabled_push_converter.handle_csv_string(
+                reutlingen_disabled_data,
+            )
         )
 
         assert len(static_parking_spot_inputs) == 44
