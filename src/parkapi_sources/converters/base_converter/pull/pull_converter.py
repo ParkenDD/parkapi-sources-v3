@@ -85,6 +85,9 @@ class ParkingSitePullConverter(PullConverter):
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []
 
+    def apply_static_patches(self, parking_inputs: list[StaticParkingSiteInput]) -> list[StaticParkingSiteInput]:
+        return super().apply_static_patches(parking_inputs)  # type: ignore
+
 
 class ParkingSpotPullConverter(PullConverter):
     static_parking_patch_validator = DataclassValidator(StaticParkingSpotPatchInput)
@@ -95,3 +98,6 @@ class ParkingSpotPullConverter(PullConverter):
 
     def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:
         return [], []
+
+    def apply_static_patches(self, parking_inputs: list[StaticParkingSpotInput]) -> list[StaticParkingSpotInput]:
+        return super().apply_static_patches(parking_inputs)  # type: ignore
