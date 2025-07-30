@@ -58,7 +58,7 @@ class FriedrichshafenSensorsPullConverter(
                     ),
                 )
 
-        return static_parking_spot_inputs, static_parking_spot_errors
+        return self.apply_static_patches(static_parking_spot_inputs), static_parking_spot_errors
 
     def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:
         realtime_xml_data = self._get_xml_data(

@@ -10,13 +10,13 @@ from typing import TYPE_CHECKING
 from validataclass.validators import DataclassValidator
 
 from parkapi_sources.models import (
+    ExternalIdentifierInput,
     ParkingRestrictionInput,
     RealtimeParkingSiteInput,
     RealtimeParkingSpotInput,
     StaticParkingSiteInput,
     StaticParkingSpotInput,
 )
-from parkapi_sources.models.parking_site_inputs import ExternalIdentifierInput
 from parkapi_sources.util import DefaultJSONEncoder
 
 if TYPE_CHECKING:

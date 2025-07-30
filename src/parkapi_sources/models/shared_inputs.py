@@ -7,7 +7,7 @@ from isodate import Duration
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import EnumValidator, Noneable, StringValidator
 
-from parkapi_sources.models.enums import ParkingAudience
+from parkapi_sources.models.enums import ExternalIdentifierType, ParkingAudience
 from parkapi_sources.validators.iso_duration_validator import IsoDurationValidator
 
 
@@ -16,3 +16,9 @@ class ParkingRestrictionInput(ValidataclassMixin):
     type: ParkingAudience | None = Noneable(EnumValidator(ParkingAudience)), Default(None)
     hours: str | None = Noneable(StringValidator()), Default(None)
     max_stay: Duration | None = Noneable(IsoDurationValidator()), Default(None)
+
+
+@validataclass
+class ExternalIdentifierInput(ValidataclassMixin):
+    type: ExternalIdentifierType = EnumValidator(ExternalIdentifierType)
+    value: str = StringValidator(max_length=256)
