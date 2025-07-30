@@ -17,9 +17,13 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import (
+    ExternalIdentifierInput,
+    GeojsonBaseFeatureInput,
+    RealtimeParkingSiteInput,
+    StaticParkingSiteInput,
+)
 from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
-from parkapi_sources.models.parking_site_inputs import ExternalIdentifierInput
 
 
 @validataclass

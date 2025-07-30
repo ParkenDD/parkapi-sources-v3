@@ -10,35 +10,23 @@ from parkapi_sources.converters.base_converter.pull import ParkingSpotPullConver
 from parkapi_sources.exceptions import ImportParkingSpotException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, SourceInfo, StaticParkingSpotInput
 
-from .models import FreiburgDisabledStaticFeatureInput
+from .models import KonstanzDisabledFeatureInput
 
 
-class FreiburgDisabledStaticPullConverter(ParkingSpotPullConverter):
+class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
-    geojson_feature_validator = DataclassValidator(FreiburgDisabledStaticFeatureInput)
+    geojson_feature_validator = DataclassValidator(KonstanzDisabledFeatureInput)
 
     source_info = SourceInfo(
-        uid='freiburg_disabled_static',
+        uid='konstanz_disabled',
         name='Stadt Freiburg',
-        source_url='https://geoportal.freiburg.de/wms/gut_parken/gut_parken?SERVICE=WFS&REQUEST=GetFeature'
-        '&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=behindertenparkplatz_detail&OUTPUTFORMAT=geojson',
+        source_url='https://services-eu1.arcgis.com/cgMeYTGtzFtnxdsx/arcgis/rest/services/POI_Verkehr/FeatureServer'
+        '/5/query?outFields=*&where=1%3D1&f=geojson',
         has_realtime_data=False,
     )
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
         static_parking_spot_inputs: list[StaticParkingSpotInput] = []
-
-        freiburg_inputs, import_parking_spot_exceptions = self._get_raw_parking_spots()
-
-        for freiburg_input in freiburg_inputs:
-            static_parking_spot_inputs.append(freiburg_input.to_static_parking_spot_input())
-
-        return self.apply_static_patches(static_parking_spot_inputs), import_parking_spot_exceptions
-
-    def _get_raw_parking_spots(
-        self,
-    ) -> tuple[list[FreiburgDisabledStaticFeatureInput], list[ImportParkingSpotException]]:
-        freiburg_inputs: list[FreiburgDisabledStaticFeatureInput] = []
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
         response = self.request_get(url=self.source_info.source_url, timeout=30)
@@ -54,16 +42,17 @@ class FreiburgDisabledStaticPullConverter(ParkingSpotPullConverter):
 
         for update_dict in realtime_input.features:
             try:
-                freiburg_inputs.append(self.geojson_feature_validator.validate(update_dict))
+                konstanz_input = self.geojson_feature_validator.validate(update_dict)
+                static_parking_spot_inputs += konstanz_input.to_static_parking_spot_inputs()
             except ValidationError as e:
                 import_parking_spot_exceptions.append(
                     ImportParkingSpotException(
                         source_uid=self.source_info.uid,
-                        parking_spot_uid=update_dict.get('properties', {}).get('name'),
-                        message=f'Invalid data at uid {update_dict.get("properties", {}).get("name")}: '
+                        parking_spot_uid=update_dict.get('properties', {}).get('GlobalID'),
+                        message=f'Invalid data at uid {update_dict.get("properties", {}).get("GlobalID")}: '
                         f'{e.to_dict()}, data: {update_dict}',
                     ),
                 )
                 continue
 
-        return freiburg_inputs, import_parking_spot_exceptions
+        return self.apply_static_patches(static_parking_spot_inputs), import_parking_spot_exceptions

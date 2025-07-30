@@ -126,7 +126,7 @@ class StaticGeojsonDataMixin(ABC):
                 ),
             )
 
-        return static_parking_spot_inputs, import_parking_spot_exceptions
+        return self.apply_static_patches(static_parking_spot_inputs), import_parking_spot_exceptions
 
     def _get_geojson_parking_sites_features_and_exceptions(
         self,
