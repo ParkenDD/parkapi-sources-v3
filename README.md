@@ -9,6 +9,7 @@ We support following data sources:
 | name                                                           | data type   | purpose    | type        | uid                         | realtime |
 |----------------------------------------------------------------|-------------|------------|-------------|-----------------------------|----------|
 | Aachen                                                         | ParkingSite | car        | pull        | `aachen`                    | yes      |
+| Stadtwerke Aalen GmbH                                          | ParkingSite | car        | pull        | `aalen`                    | yes      |
 | APCOA Services                                                 | ParkingSite | car        | pull        | `apcoa`                     | no       |
 | Deutsche Bahn                                                  | ParkingSite | car & bike | pull        | `bahn_v2`                   | no       |
 | B+B Parkhaus GmbH & Co. KG                                     | ParkingSite | car        | push (xlsx) | `bb_parkhaus`               | no       |

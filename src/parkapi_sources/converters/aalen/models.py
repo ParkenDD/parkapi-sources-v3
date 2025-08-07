@@ -21,8 +21,8 @@ class AalenOpeningStatus(Enum):
     def to_realtime_opening_status(self) -> OpeningStatus | None:
         return {
             self.OPEN: OpeningStatus.OPEN,
-            self.CLOSED: OpeningStatus.CLOSED,
             self.OCCUPIED: OpeningStatus.OPEN,
+            self.CLOSED: OpeningStatus.CLOSED,
         }.get(self)
 
 
@@ -38,13 +38,10 @@ class AalenInput:
         self, static_parking_site_input: StaticParkingSiteInput
     ) -> RealtimeParkingSiteInput:
         uid = static_parking_site_input.uid
-        realtime_capacity = (
-            self.max if self.max > static_parking_site_input.capacity else static_parking_site_input.capacity
-        )
         return RealtimeParkingSiteInput(
             uid=uid,
             realtime_opening_status=self.status.to_realtime_opening_status(),
-            realtime_capacity=realtime_capacity,
+            realtime_capacity=self.max,
             realtime_free_capacity=self.free,
             realtime_data_updated_at=datetime.now(tz=timezone.utc),
         )

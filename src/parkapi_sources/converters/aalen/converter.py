@@ -20,7 +20,7 @@ class AalenPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
     aalen_realtime_update_validator = DataclassValidator(AalenInput)
     source_info = SourceInfo(
         uid='aalen',
-        name='Stadt Aalen',
+        name='Stadtwerke Aalen GmbH',
         public_url='https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser',
         source_url='https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhausbelegung.json',
         timezone='Europe/Berlin',
