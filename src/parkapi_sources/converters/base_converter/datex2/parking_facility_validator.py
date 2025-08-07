@@ -92,13 +92,14 @@ class ParkingFacility:
     totalParkingCapacityLongTerm: int = IntegerValidator(allow_strings=True)
     totalParkingCapacityShortTerm: int = IntegerValidator(allow_strings=True)
 
-    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self, has_realtime_data: bool) -> StaticParkingSiteInput:
         static_parking_site = StaticParkingSiteInput(
             uid=self.id,
             purpose=PurposeType.CAR,
             name=self.parkingFacilityName,
             type=self.parkingFacilityLayout.to_parking_site_type(),
             static_data_updated_at=self.parkingFacilityRecordVersionTime,
+            has_realtime_data=has_realtime_data,
             lat=self.facilityLocation.locationForDisplay.latitude,
             lon=self.facilityLocation.locationForDisplay.longitude,
             capacity=self.totalParkingCapacity,

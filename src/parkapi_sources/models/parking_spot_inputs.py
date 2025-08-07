@@ -6,38 +6,24 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import datetime, timezone
 from decimal import Decimal
 
+from shapely.geometry.base import BaseGeometry
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
-    AnyOfValidator,
     BooleanValidator,
     DataclassValidator,
     DateTimeValidator,
     EnumValidator,
-    FloatValidator,
     ListValidator,
     Noneable,
     NumericValidator,
     StringValidator,
 )
 
+from parkapi_sources.validators import GeoJSONGeometryValidator
+
 from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType
 from .parking_restriction_inputs import ParkingRestrictionInput
-
-
-@validataclass
-class GeojsonPolygonInput(ValidataclassMixin):
-    type: str = AnyOfValidator(allowed_values=['Polygon'])
-    coordinates: list[list[list[float]]] = ListValidator(
-        ListValidator(
-            ListValidator(
-                FloatValidator(allow_integers=True),
-                min_length=2,
-                max_length=2,
-            ),
-        ),
-        min_length=1,
-        max_length=1,
-    )
+from .parking_site_inputs import ExternalIdentifierInput
 
 
 @validataclass
@@ -60,12 +46,17 @@ class StaticParkingSpotInput(ValidataclassMixin):
     lat: Decimal = NumericValidator(min_value=34, max_value=72)
     lon: Decimal = NumericValidator(min_value=-27, max_value=43)
 
-    geojson: GeojsonPolygonInput | None = Noneable(DataclassValidator(GeojsonPolygonInput)), Default(None)
+    geojson: BaseGeometry | None = Noneable(GeoJSONGeometryValidator()), Default(None)
 
-    restricted_to: list[ParkingRestrictionInput] | None = (
+    restricted_to: list[ParkingRestrictionInput] = (
         Noneable(ListValidator(DataclassValidator(ParkingRestrictionInput))),
-        Default(None),
+        Default([]),
     )
+    external_identifiers: list[ExternalIdentifierInput] = (
+        Noneable(ListValidator(DataclassValidator(ExternalIdentifierInput))),
+        Default([]),
+    )
+    tags: list[str] = ListValidator(StringValidator(min_length=1)), Default([])
 
 
 @validataclass

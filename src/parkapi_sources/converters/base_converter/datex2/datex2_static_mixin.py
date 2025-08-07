@@ -48,9 +48,9 @@ class Datex2StaticMixin(ABC):
         for static_input_dict in static_input_dicts:
             try:
                 static_item = self.static_validator.validate(static_input_dict)
-                static_parking_site_input = static_item.to_static_parking_site_input()
-                static_parking_site_input.has_realtime_data = self.has_realtime_data
-
+                static_parking_site_input = static_item.to_static_parking_site_input(
+                    has_realtime_data=self.has_realtime_data,
+                )
                 self.modify_static_parking_site_input(static_parking_site_input)
 
                 static_parking_site_inputs.append(static_parking_site_input)

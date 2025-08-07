@@ -10,7 +10,12 @@ from typing import Any
 
 from parkapi_sources.converters.base_converter.push import PushConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import (
+    RealtimeParkingSiteInput,
+    RealtimeParkingSpotInput,
+    StaticParkingSiteInput,
+    StaticParkingSpotInput,
+)
 
 
 class CsvConverter(PushConverter, ABC):
@@ -19,7 +24,10 @@ class CsvConverter(PushConverter, ABC):
     def handle_csv_string(
         self,
         data: StringIO,
-    ) -> tuple[list[StaticParkingSiteInput | RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
+    ) -> tuple[
+        list[StaticParkingSiteInput | RealtimeParkingSiteInput | StaticParkingSpotInput | RealtimeParkingSpotInput],
+        list[ImportParkingSiteException],
+    ]:
         return self.handle_csv(list(csv.reader(data, delimiter=self.csv_delimiter)))
 
     def get_mapping_by_header(self, header_row: dict[str, str], row: list[Any]) -> dict[str, int]:

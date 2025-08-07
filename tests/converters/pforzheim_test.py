@@ -21,8 +21,8 @@ def pforzheim_push_converter(mocked_config_helper: Mock, request_helper: Request
 class PforzheimPushConverterTest:
     @staticmethod
     def test_get_static_parking_sites(pforzheim_push_converter: PforzheimPushConverter):
-        with get_data_path('pforzheim.json').open() as reutlingen_file:
-            pforzheim_data = json.loads(reutlingen_file.read())
+        with get_data_path('pforzheim.json').open() as pforzheim_file:
+            pforzheim_data = json.loads(pforzheim_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = pforzheim_push_converter.handle_json(
             pforzheim_data,

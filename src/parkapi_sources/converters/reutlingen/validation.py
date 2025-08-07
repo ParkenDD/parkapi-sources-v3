@@ -46,4 +46,5 @@ class ReutlingenRowInput:
             type=self.type.to_parking_site_type_input(),
             capacity=self.capacity,
             static_data_updated_at=datetime.now(tz=timezone.utc),
+            has_realtime_data=False,
         )

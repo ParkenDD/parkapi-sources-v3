@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from decimal import Decimal
 from enum import Enum
 
+from shapely import GeometryType, Point
 from validataclass.dataclasses import DefaultUnset, ValidataclassMixin, validataclass
 from validataclass.helpers import OptionalUnset, UnsetValue
 from validataclass.validators import (
@@ -21,8 +22,8 @@ from validataclass.validators import (
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, PurposeType
-from parkapi_sources.models.geojson_inputs import GeojsonFeatureGeometryPointInput
-from parkapi_sources.validators import MappedBooleanValidator, TimestampDateTimeValidator
+from parkapi_sources.util import round_7d
+from parkapi_sources.validators import GeoJSONGeometryValidator, MappedBooleanValidator, TimestampDateTimeValidator
 
 
 class VrnParkAndRideType(Enum):
@@ -121,7 +122,7 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
 
 @validataclass
 class VrnParkAndRideFeaturesInput:
-    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
     properties: VrnParkAndRidePropertiesInput = DataclassValidator(VrnParkAndRidePropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
@@ -158,8 +159,8 @@ class VrnParkAndRideFeaturesInput:
             capacity_family=self.properties.capacity_family,
             capacity_truck=self.properties.capacity_truck,
             capacity_bus=self.properties.capacity_bus,
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             purpose=PurposeType.CAR,
             photo_url=self.properties.photo_url,
             public_url=self.properties.public_url,
