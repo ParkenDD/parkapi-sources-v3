@@ -5,6 +5,7 @@ The City of Aalen provides an Excel table with some static parking site data and
 Static values:
 
 * `purpose` is always `CAR`
+* `has_realtime_data` is always `True`
 * `static_data_updated_at` is set to the moment of import
 
 | Field                                          | Type                                      | Cardinality | Mapping                                 | Comment                                                                                           |
