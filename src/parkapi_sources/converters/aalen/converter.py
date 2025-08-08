@@ -32,40 +32,11 @@ class AalenPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
-        import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        static_parking_site_inputs, import_parking_site_exceptions = (
-            self._get_static_parking_site_inputs_and_exceptions(
-                source_uid=self.source_info.uid,
-            )
-        )
-
-        realtime_aalen_inputs, import_realtime_parking_site_exceptions = self._get_raw_realtime_parking_sites()
-        import_parking_site_exceptions += import_realtime_parking_site_exceptions
-
-        static_parking_site_inputs_by_uid: dict[str, StaticParkingSiteInput] = {}
-        for static_parking_site_input in static_parking_site_inputs:
-            static_parking_site_inputs_by_uid[static_parking_site_input.uid] = static_parking_site_input
+        realtime_aalen_inputs, import_parking_site_exceptions = self._get_raw_realtime_parking_sites()
 
         for realtime_aalen_input in realtime_aalen_inputs:
-            # If the uid is not known in our static data: ignore the realtime data
-            matched_uid = None
-            parking_site_name = str(realtime_aalen_input.name)
-
-            # Find which static UID is contained in the realtime parking site name
-            for uid in static_parking_site_inputs_by_uid:
-                if uid in parking_site_name:
-                    matched_uid = uid
-                    break
-
-            if not matched_uid:
-                continue
-
-            # Match static parking site uid with realtime data
-            realtime_parking_site_input = realtime_aalen_input.to_realtime_parking_site_input(
-                static_parking_site_inputs_by_uid[matched_uid]
-            )
-            realtime_parking_site_inputs.append(realtime_parking_site_input)
+            realtime_parking_site_inputs.append(realtime_aalen_input.to_realtime_parking_site_input())
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
 

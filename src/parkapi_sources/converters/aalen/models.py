@@ -9,7 +9,7 @@ from enum import Enum
 from validataclass.dataclasses import validataclass
 from validataclass.validators import EnumValidator, IntegerValidator, StringValidator
 
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import RealtimeParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus
 
 
@@ -30,16 +30,13 @@ class AalenOpeningStatus(Enum):
 class AalenInput:
     name: str = StringValidator()
     status: AalenOpeningStatus = EnumValidator(AalenOpeningStatus)
-    max: int = IntegerValidator(allow_strings=True)
-    occupied: int = IntegerValidator(allow_strings=True)
-    free: int = IntegerValidator(allow_strings=True)
+    max: int = IntegerValidator()
+    occupied: int = IntegerValidator()
+    free: int = IntegerValidator()
 
-    def to_realtime_parking_site_input(
-        self, static_parking_site_input: StaticParkingSiteInput
-    ) -> RealtimeParkingSiteInput:
-        uid = static_parking_site_input.uid
+    def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
-            uid=uid,
+            uid=self.name,
             realtime_opening_status=self.status.to_realtime_opening_status(),
             realtime_capacity=self.max,
             realtime_free_capacity=self.free,
