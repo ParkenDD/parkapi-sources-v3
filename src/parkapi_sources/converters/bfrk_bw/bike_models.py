@@ -9,8 +9,8 @@ from typing import Optional
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import BooleanValidator, EnumValidator, IntegerValidator, StringValidator
 
+from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
-from parkapi_sources.models.parking_site_inputs import StaticParkingSiteInput
 from parkapi_sources.validators import EmptystringNoneable, ReplacingStringValidator
 
 from .base_models import BfrkBaseInput

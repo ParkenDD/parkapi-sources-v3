@@ -24,9 +24,9 @@ from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
 
 from .enums import ParkAndRideType, ParkingSiteType
-from .parking_restriction_inputs import ParkingRestrictionInput
-from .parking_site_inputs import ExternalIdentifierInput, StaticParkingSiteInput
+from .parking_site_inputs import StaticParkingSiteInput
 from .parking_spot_inputs import StaticParkingSpotInput
+from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
 @validataclass

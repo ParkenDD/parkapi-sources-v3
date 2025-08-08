@@ -11,9 +11,8 @@ from typing import Optional
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import IntegerValidator, NumericValidator, StringValidator, UrlValidator
 
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import ExternalIdentifierInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ExternalIdentifierType
-from parkapi_sources.models.parking_site_inputs import ExternalIdentifierInput
 from parkapi_sources.validators import EmptystringNoneable
 
 

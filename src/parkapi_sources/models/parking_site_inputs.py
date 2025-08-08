@@ -3,31 +3,26 @@ Copyright 2023 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime, timezone
+from datetime import datetime
 from decimal import Decimal
 
 from shapely.geometry.base import BaseGeometry
-from validataclass.dataclasses import Default, DefaultUnset, ValidataclassMixin, validataclass
+from validataclass.dataclasses import Default, DefaultUnset, validataclass
 from validataclass.exceptions import DataclassPostValidationError, ValidationError
 from validataclass.helpers import UnsetValueType
 from validataclass.validators import (
     AnythingValidator,
     BooleanValidator,
-    DataclassValidator,
-    DateTimeValidator,
     EnumValidator,
     IntegerValidator,
     ListValidator,
     Noneable,
-    NumericValidator,
     StringValidator,
     UrlValidator,
 )
 
-from parkapi_sources.validators import GeoJSONGeometryValidator
-
+from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
 from .enums import (
-    ExternalIdentifierType,
     OpeningStatus,
     ParkAndRideType,
     ParkingSiteOrientation,
@@ -37,25 +32,15 @@ from .enums import (
     PurposeType,
     SupervisionType,
 )
-from .parking_restriction_inputs import ParkingRestrictionInput
 
 
 @validataclass
-class ExternalIdentifierInput(ValidataclassMixin):
-    type: ExternalIdentifierType = EnumValidator(ExternalIdentifierType)
-    value: str = StringValidator(max_length=256)
-
-
-@validataclass
-class StaticParkingSiteInput(ValidataclassMixin):
-    uid: str = StringValidator(min_length=1, max_length=256)
+class StaticParkingSiteInput(StaticBaseParkingInput):
     name: str = StringValidator(min_length=1, max_length=256)
     group_uid: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
     operator_name: str | None = StringValidator(max_length=256), Default(None)
     public_url: str | None = Noneable(UrlValidator(max_length=4096)), Default(None)
-    address: str | None = Noneable(StringValidator(max_length=512)), Default(None)
-    description: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
+
     type: ParkingSiteType = EnumValidator(ParkingSiteType)
 
     max_stay: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
@@ -78,19 +63,6 @@ class StaticParkingSiteInput(ValidataclassMixin):
     photo_url: str | None = Noneable(UrlValidator(max_length=4096)), Default(None)
     related_location: str | None = Noneable(StringValidator(max_length=256)), Default(None)
 
-    has_realtime_data: bool = BooleanValidator()
-    static_data_updated_at: datetime = (
-        DateTimeValidator(
-            local_timezone=timezone.utc,
-            target_timezone=timezone.utc,
-            discard_milliseconds=True,
-        ),
-    )
-
-    # Set min/max to Europe borders
-    lat: Decimal = NumericValidator(min_value=34, max_value=72)
-    lon: Decimal = NumericValidator(min_value=-27, max_value=43)
-
     capacity: int = IntegerValidator(min_value=0, allow_strings=True)
     capacity_min: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
     capacity_max: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
@@ -112,18 +84,6 @@ class StaticParkingSiteInput(ValidataclassMixin):
     capacity_bus: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
 
     opening_hours: str | None = Noneable(StringValidator(max_length=512)), Default(None)
-
-    external_identifiers: list[ExternalIdentifierInput] = (
-        Noneable(ListValidator(DataclassValidator(ExternalIdentifierInput))),
-        Default([]),
-    )
-    tags: list[str] = ListValidator(StringValidator(min_length=1)), Default([])
-    geojson: BaseGeometry | None = Noneable(GeoJSONGeometryValidator()), Default(None)
-
-    restricted_to: list[ParkingRestrictionInput] = (
-        Noneable(ListValidator(DataclassValidator(ParkingRestrictionInput))),
-        Default([]),
-    )
 
     @property
     def is_supervised(self) -> bool | None:
@@ -160,11 +120,11 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
     This validataclass is for patching StaticParkingSiteInputs
     """
 
-    uid: str = StringValidator(min_length=1, max_length=256)
-
     name: str | UnsetValueType = DefaultUnset
+    address: str | None | UnsetValueType = DefaultUnset
     purpose: PurposeType | UnsetValueType = DefaultUnset
     type: ParkingSiteType | UnsetValueType = DefaultUnset
+    description: str | None | UnsetValueType = DefaultUnset
 
     lat: Decimal | UnsetValueType = DefaultUnset
     lon: Decimal | UnsetValueType = DefaultUnset
@@ -173,9 +133,43 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
     has_realtime_data: bool | UnsetValueType = DefaultUnset
     static_data_updated_at: datetime | UnsetValueType = DefaultUnset
 
+    geojson: BaseGeometry | None | UnsetValueType = DefaultUnset
     tags: list[str] | UnsetValueType = DefaultUnset
     restricted_to: list[str] | UnsetValueType = DefaultUnset
     external_identifiers: list[dict] | UnsetValueType = DefaultUnset
+
+    group_uid: str | None | UnsetValueType = DefaultUnset
+    operator_name: str | None | UnsetValueType = DefaultUnset
+    public_url: str | None | UnsetValueType = DefaultUnset
+
+    max_stay: int | None | UnsetValueType = DefaultUnset
+    max_height: int | None | UnsetValueType = DefaultUnset
+    max_width: int | None | UnsetValueType = DefaultUnset
+    has_lighting: bool | None | UnsetValueType = DefaultUnset
+    is_covered: bool | None | UnsetValueType = DefaultUnset
+    fee_description: str | None | UnsetValueType = DefaultUnset
+    has_fee: bool | None | UnsetValueType = DefaultUnset
+    park_and_ride_type: list[ParkAndRideType] | UnsetValueType = DefaultUnset
+
+    orientation: ParkingSiteOrientation | None | UnsetValueType = DefaultUnset
+    side: ParkingSiteSide | None | UnsetValueType = DefaultUnset
+    parking_type: ParkingType | None | UnsetValueType = DefaultUnset
+
+    supervision_type: SupervisionType | None | UnsetValueType = DefaultUnset
+    photo_url: str | None | UnsetValueType = DefaultUnset
+    related_location: str | None | UnsetValueType = DefaultUnset
+
+    capacity_min: int | None | UnsetValueType = DefaultUnset
+    capacity_max: int | None | UnsetValueType = DefaultUnset
+    capacity_disabled: int | None | UnsetValueType = DefaultUnset
+    capacity_woman: int | None | UnsetValueType = DefaultUnset
+    capacity_family: int | None | UnsetValueType = DefaultUnset
+    capacity_charging: int | None | UnsetValueType = DefaultUnset
+    capacity_carsharing: int | None | UnsetValueType = DefaultUnset
+    capacity_truck: int | None | UnsetValueType = DefaultUnset
+    capacity_bus: int | None | UnsetValueType = DefaultUnset
+
+    opening_hours: str | None | UnsetValueType = DefaultUnset
 
     def __post_init__(self):
         # Don't do additional validation checks
@@ -183,13 +177,7 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
 
 
 @validataclass
-class RealtimeParkingSiteInput(ValidataclassMixin):
-    uid: str = StringValidator(min_length=1, max_length=256)
-    realtime_data_updated_at: datetime = DateTimeValidator(
-        local_timezone=timezone.utc,
-        target_timezone=timezone.utc,
-        discard_milliseconds=True,
-    )
+class RealtimeParkingSiteInput(RealtimeBaseParkingInput):
     realtime_opening_status: OpeningStatus | None = Noneable(EnumValidator(OpeningStatus)), Default(None)
     realtime_capacity: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
     realtime_capacity_disabled: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
