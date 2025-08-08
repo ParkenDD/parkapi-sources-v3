@@ -4,6 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from .aachen import AachenPullConverter
+from .aalen import AalenPullConverter
 from .apcoa import ApcoaPullConverter
 from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
