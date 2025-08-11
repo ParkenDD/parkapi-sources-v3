@@ -7,7 +7,7 @@ Released 2025-08-11
 ### Features
 
 * [Aalen converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/258)
-* [Unify Patching to support ParkingSpot patches(https://github.com/ParkenDD/parkapi-sources-v3/pull/260)
+* [Unify Patching to support ParkingSpot patches](https://github.com/ParkenDD/parkapi-sources-v3/pull/260)
 * [Konstanz Disabled converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/257)
 
 
