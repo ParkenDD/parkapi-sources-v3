@@ -7,6 +7,7 @@ from typing import Optional, Type
 
 from .converters import (
     AachenPullConverter,
+    AalenPullConverter,
     ApcoaPullConverter,
     BahnV2PullConverter,
     BaseConverter,
@@ -75,6 +76,7 @@ from .util import ConfigHelper, RequestHelper
 class ParkAPISources:
     converter_classes: list[Type[BaseConverter]] = [
         AachenPullConverter,
+        AalenPullConverter,
         ApcoaPullConverter,
         BahnV2PullConverter,
         BBParkhausPushConverter,
