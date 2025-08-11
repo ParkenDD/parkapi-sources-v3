@@ -40,7 +40,7 @@ def requests_mock_freiburg_disabled_sensors(requests_mock: Mocker) -> Mocker:
     return requests_mock
 
 
-class FriedrichshafenSensorsConverterTest:
+class FreiburgDisabledSensorsConverterTest:
     @staticmethod
     def test_get_static_parking_spots(
         freiburg_disabled_sensors_pull_converter: FreiburgDisabledSensorsPullConverter,

@@ -42,6 +42,7 @@ from .kienzler import (
 )
 from .konstanz import KonstanzPullConverter
 from .konstanz_bike import KonstanzBikePushConverter
+from .konstanz_disabled import KonstanzDisabledPullConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
 from .neckarsulm import NeckarsulmPushConverter
 from .neckarsulm_bike import NeckarsulmBikePushConverter
