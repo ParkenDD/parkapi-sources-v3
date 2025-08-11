@@ -179,9 +179,10 @@ you get is validated.
 
 ### Patch data with local files
 
-If `PARK_API_PARKING_SITE_PATCH_DIR` is set, all pull converters will check if there is a JSON file in this directory
-called `source_uid.json` (replace `source_uid` with the source you want to patch). It expects a ParkAPI JSON format
-with `uid` as the only required field. A file might look like this:
+If `PARK_API_PARKING_SITE_PATCH_DIR` for parking sites or `PARK_API_PARKING_SPOT_PATCH_DIR` for parking spots is set,
+all pull converters will check if there is a JSON file in this directory called `source_uid.json` (replace `source_uid`
+with the source you want to patch). It expects a ParkAPI JSON format with `uid` as the only required field. A file
+might look like this:
 
 ```
 {
@@ -194,6 +195,8 @@ with `uid` as the only required field. A file might look like this:
 }
 
 ```
+
+If you develop a pull converter, make sure to use `apply_static_patches()` on your parking site or parking spot list.
 
 
 ### Debugging
@@ -258,6 +261,7 @@ also need some `validataclasses` you can put in `models.py`. Validation is cruci
 of this library should not think invalid data. Additionally, if you have very specific new data types, you can write
 new `validataclass` validators you can usually put in `validators.py`.
 
+If you develop a pull converter, make sure to use `apply_static_patches()` on your parking site or parking spot list.
 
 ### Testing the converter
 
