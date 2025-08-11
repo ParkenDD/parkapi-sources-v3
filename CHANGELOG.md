@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.24.0
+
+Released 2025-08-11
+
+### Features
+
+* [Aalen converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/258)
+* [Unify Patching to support ParkingSpot patches(https://github.com/ParkenDD/parkapi-sources-v3/pull/260)
+* [Konstanz Disabled converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/257)
+
+
+### Fixes
+
+* [Bahn_v2: Add park_and_ride_type=TRAIN](https://github.com/ParkenDD/parkapi-sources-v3/pull/259)
+
+
 ## 0.23.0
 
 Released 2025-07-28
