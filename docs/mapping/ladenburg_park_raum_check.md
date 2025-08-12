@@ -10,7 +10,7 @@ Ladenburg ParkRaumCheck is a static GeoJSON file.
 | Field               | Type                                | Cardinality | Mapping                | Comment                                                              |
 |---------------------|-------------------------------------|-------------|------------------------|----------------------------------------------------------------------|
 | Name                | ?                                   | ?           |                        | Always `null`                                                        |
-| Adresse             | string                              | 1           | address                |                                                                      |
+| Adresse             | string                              | 1           | address                | `address` is set to "`Adresse`, `Ort`"                               |
 | Ort                 | string                              | 1           | address                |                                                                      |
 | Widmung             | [Widmung](#Widmung)                 | 1           |                        | Completely in `Bewirtschaftung`                                      |
 | Parkrichtung        | [Parkrichtung](#Parkrichtung)       | 1           | orientation            |                                                                      |
@@ -22,7 +22,7 @@ Ladenburg ParkRaumCheck is a static GeoJSON file.
 | Kapazität           | string                              | 1           | capacity               |                                                                      |
 | Erhebungstag        | string (date)                       | 1           |                        |                                                                      |
 | Kommentar           | string                              | ?           | description            | "Zum Erhebungszeitpunkt Baustelle" will be removed, as it's outdated |
-| Gebührenpflichtig   | bool                                | 1           | has_fee                |                                                                      |
+| Gebührenpflichtig   | bool                                | 1           | has_fee                | Always false                                                         |
 
 
 ### Widmung
@@ -40,14 +40,16 @@ Ladenburg ParkRaumCheck is a static GeoJSON file.
 |-----------------|---------------|
 | Längsparken     | PARALLEL      |
 | Senkrechtparken | PERPENDICULAR |
+| Schrägparken    | DIAGONAL      |
 
 
 ### Ortsbezug
 
-| Key               | Mapping |
-|-------------------|---------|
-| Straßenraum       |         |
-| Parkierungsanlage |         |
+| Key               | Mapping                   |
+|-------------------|---------------------------|
+| Straßenraum       | ON_STREET                 |
+| Parkierungsanlage | OFF_STREET_PARKING_GROUND |
+| Tiefgarage        | UNDERGROUND               |
 
 
 ### Bewirtschaftung
