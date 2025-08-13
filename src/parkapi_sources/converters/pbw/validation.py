@@ -257,7 +257,7 @@ class PbwParkingSiteDetailInput:
     # because of unused fields. But maybe we need it some day?
     id: int = IntegerValidator(allow_strings=True)
     objekt: PbwParkingSiteObjectInput = DataclassValidator(PbwParkingSiteObjectInput)
-    # dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(PbwRealtimeParkingSiteInput)
+    dynamisch: PbwRealtimeParkingSiteInput = DataclassValidator(PbwRealtimeParkingSiteInput)
     position: PbwParkingSitePositionInput = DataclassValidator(PbwParkingSitePositionInput)
     stellplaetze: PbwParkingSitePlacesInput = DataclassValidator(PbwParkingSitePlacesInput)
     typ: PbwParkingSiteType = DataclassValidator(PbwParkingSiteType)

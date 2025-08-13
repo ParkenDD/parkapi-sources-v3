@@ -74,7 +74,7 @@ class PbwPullConverterTest:
             'capacity_disabled': 0,
             'capacity_family': 0,
             'capacity_woman': 0,
-            'has_realtime_data': True,
+            'has_realtime_data': False,
             'lat': Decimal('48.74481873'),
             'lon': Decimal('9.321229'),
             'max_height': 185,

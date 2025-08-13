@@ -31,7 +31,7 @@ class PbwMapper:
             max_height=max_height,
             # TODO: any way to create a fee_description or has_fee?
             # TODO: which field is maps to is_supervised?
-            has_realtime_data=True,
+            has_realtime_data=parking_site_detail_input.dynamisch.kurzparker_frei is not None,
             lat=parking_site_detail_input.position.latitude,
             lon=parking_site_detail_input.position.longitude,
             capacity=parking_site_detail_input.stellplaetze.gesamt,
