@@ -52,6 +52,7 @@ class FreiburgScannerPropertiesInput(DictValidator):
     id: str = StringValidator()
     capacity: int = IntegerValidator()
     confidence_interval: tuple[int, int] = FreiburgConfidenceIntervalValidator()
+    kr_strassenname: str = StringValidator()
 
 
 @validataclass
@@ -68,7 +69,8 @@ class FreiburgScannerFeatureInput:
 
         return StaticParkingSiteInput(
             uid=str(self.properties.id),
-            name=str(self.properties.id),
+            name=self.properties.kr_strassenname,
+            address=f'{self.properties.kr_strassenname}, Freiburg',
             type=ParkingSiteType.ON_STREET,
             lat=round_7d(center.y),
             lon=round_7d(center.x),
