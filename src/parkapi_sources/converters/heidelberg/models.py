@@ -204,7 +204,7 @@ class HeidelbergInput:
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
-            uid=self.staticParkingSiteId,
+            uid=self.id,
             realtime_capacity=self.totalSpotNumber,
             realtime_capacity_disabled=self.handicappedParkingSpots,
             realtime_capacity_woman=self.womenParkingSpots,
