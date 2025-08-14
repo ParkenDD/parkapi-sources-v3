@@ -2,7 +2,13 @@
   "items": [
     {
       "uid": "12",
-      "name": "New name"
+      "name": "New name",
+      "external_identifiers": [
+        {
+          "type": "DHID",
+          "value": "123456789"
+        }
+      ]
     }
   ]
 }
