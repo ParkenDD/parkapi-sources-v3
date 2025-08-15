@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.25.0
+
+Released 2025-08-15
+
+This is a maintenance release with major dependency updates.
+
+### Fixes
+
+* [fix patching system subobjects](https://github.com/ParkenDD/parkapi-sources-v3/pull/268)
+* [Heidelberg: Fix uid mismatch and missing realtime data](https://github.com/ParkenDD/parkapi-sources-v3/pull/267)
+* [freiburg scanner address](https://github.com/ParkenDD/parkapi-sources-v3/pull/266)
+* [https://github.com/ParkenDD/parkapi-sources-v3/pull/265](https://github.com/ParkenDD/parkapi-sources-v3/pull/265)
+
+
+### Maintenance
+
+* Several dependency updates, most notably `lxml` 5.x -> 6.x.
+
+
 ## 0.24.0
 
 Released 2025-08-11
