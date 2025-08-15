@@ -70,7 +70,13 @@ class PullConverter(BaseConverter, ABC):
                 continue
 
             for key, value in parking_patch.to_dict().items():
+                if key in ['external_identifiers', 'restricted_to']:
+                    continue
                 setattr(parking_inputs_by_uid[parking_patch.uid], key, value)
+            if parking_patch.external_identifiers:
+                parking_inputs_by_uid[parking_patch.uid].external_identifiers = parking_patch.external_identifiers
+            if parking_patch.restricted_to:
+                parking_inputs_by_uid[parking_patch.uid].restricted_to = parking_patch.restricted_to
 
         return parking_inputs
 

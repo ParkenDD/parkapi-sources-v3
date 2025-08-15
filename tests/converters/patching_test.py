@@ -9,6 +9,7 @@ from unittest.mock import Mock
 from requests_mock import Mocker
 
 from parkapi_sources.converters import FreiburgDisabledSensorsPullConverter, FreiburgPullConverter
+from parkapi_sources.models import ExternalIdentifierInput
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_static_parking_site_inputs, validate_static_parking_spot_inputs
 
@@ -45,6 +46,7 @@ def test_get_static_parking_sites_patched(
     assert len(import_parking_site_exceptions) == 1
 
     assert static_parking_site_inputs[0].name == 'New name'
+    assert isinstance(static_parking_site_inputs[0].external_identifiers[0], ExternalIdentifierInput)
 
     validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -78,5 +80,6 @@ def test_get_static_parking_spots(
     assert len(import_parking_spot_exceptions) == 0
 
     assert static_parking_spot_inputs[0].name == 'New name'
+    assert isinstance(static_parking_spot_inputs[0].external_identifiers[0], ExternalIdentifierInput)
 
     validate_static_parking_spot_inputs(static_parking_spot_inputs)

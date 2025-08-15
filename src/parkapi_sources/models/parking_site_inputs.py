@@ -32,6 +32,7 @@ from .enums import (
     PurposeType,
     SupervisionType,
 )
+from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
 @validataclass
@@ -135,8 +136,8 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
 
     geojson: BaseGeometry | None | UnsetValueType = DefaultUnset
     tags: list[str] | UnsetValueType = DefaultUnset
-    restricted_to: list[str] | UnsetValueType = DefaultUnset
-    external_identifiers: list[dict] | UnsetValueType = DefaultUnset
+    restricted_to: list[ParkingRestrictionInput] | UnsetValueType = DefaultUnset
+    external_identifiers: list[ExternalIdentifierInput] | UnsetValueType = DefaultUnset
 
     group_uid: str | None | UnsetValueType = DefaultUnset
     operator_name: str | None | UnsetValueType = DefaultUnset
