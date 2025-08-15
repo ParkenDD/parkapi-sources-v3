@@ -4,7 +4,7 @@
 
 Released 2025-08-15
 
-This is a maintenance release with major dependency updates.
+This is a maintenance release with major dependency updates and a minimal python version bump to python 3.12.
 
 ### Fixes
 
@@ -17,6 +17,7 @@ This is a maintenance release with major dependency updates.
 ### Maintenance
 
 * Several dependency updates, most notably `lxml` 5.x -> 6.x.
+* Change the minimal python version to 3.12 due `pyproj` 3.7.2
 
 
 ## 0.24.0
