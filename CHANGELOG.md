@@ -11,7 +11,7 @@ This is a maintenance release with major dependency updates and a minimal python
 * [fix patching system subobjects](https://github.com/ParkenDD/parkapi-sources-v3/pull/268)
 * [Heidelberg: Fix uid mismatch and missing realtime data](https://github.com/ParkenDD/parkapi-sources-v3/pull/267)
 * [freiburg scanner address](https://github.com/ParkenDD/parkapi-sources-v3/pull/266)
-* [https://github.com/ParkenDD/parkapi-sources-v3/pull/265](https://github.com/ParkenDD/parkapi-sources-v3/pull/265)
+* [better pbw realtime data field](https://github.com/ParkenDD/parkapi-sources-v3/pull/265)
 
 
 ### Maintenance
