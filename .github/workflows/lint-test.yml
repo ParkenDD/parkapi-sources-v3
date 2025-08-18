@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: setup Python v3.12
       uses: actions/setup-python@v5
@@ -48,7 +48,7 @@ jobs:
         timezoneLinux: "Europe/Berlin"
 
     - name: checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: setup Python v3.12
       uses: actions/setup-python@v5
