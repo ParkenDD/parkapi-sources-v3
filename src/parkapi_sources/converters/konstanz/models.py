@@ -92,8 +92,8 @@ class KonstanzParkingSiteDataInput:
     max_hei: int = EmptystringNoneable(KonstanzHeightValidator())
     opening_s: Optional[bool] = EmptystringNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False}))
     updated: datetime = TimestampDateTimeValidator(divisor=1000)
-    real_capa: int = NumericIntegerValidator(min_value=0)
-    real_fcap: int = NumericIntegerValidator(min_value=0)
+    real_capa: Optional[int] = EmptystringNoneable(NumericIntegerValidator(min_value=0))
+    real_fcap: Optional[int] = EmptystringNoneable(NumericIntegerValidator(min_value=0))
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
