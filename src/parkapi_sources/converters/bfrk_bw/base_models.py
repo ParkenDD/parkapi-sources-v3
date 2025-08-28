@@ -44,12 +44,15 @@ class BfrkBaseInput(ABC):
     def get_static_parking_site_input_kwargs(self) -> dict:
         external_identifiers = []
         if self.osmlinks:
-            external_identifiers.append(
-                ExternalIdentifierInput(
-                    type=ExternalIdentifierType.OSM,
-                    value=self.osmlinks[0],
-                ),
-            )
+            [
+                external_identifiers.append(
+                    ExternalIdentifierInput(
+                        type=ExternalIdentifierType.OSM,
+                        value=osmlink,
+                    ),
+                )
+                for osmlink in self.osmlinks
+            ]
         if self.hst_dhid:
             external_identifiers.append(
                 ExternalIdentifierInput(
