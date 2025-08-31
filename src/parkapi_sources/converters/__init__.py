@@ -30,6 +30,7 @@ from .herrenberg import HerrenbergPullConverter
 from .herrenberg_bike import HerrenbergBikePullConverter
 from .huefner import HuefnerPushConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
+from .karlsruhe_disabled import KarlsruheDisabledPullConverter
 from .keltern import KelternPushConverter
 from .kienzler import (
     KienzlerBikeAndRidePullConverter,

@@ -3,6 +3,8 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from pathlib import Path
+
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -10,18 +12,18 @@ from parkapi_sources.converters.base_converter.pull import ParkingSpotPullConver
 from parkapi_sources.exceptions import ImportParkingSpotException, ImportSourceException
 from parkapi_sources.models import GeojsonInput, SourceInfo, StaticParkingSpotInput
 
-from .models import KonstanzDisabledFeatureInput
+from .models import KarlsruheDisabledFeatureInput
 
 
-class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
+class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
-    geojson_feature_validator = DataclassValidator(KonstanzDisabledFeatureInput)
+    geojson_feature_validator = DataclassValidator(KarlsruheDisabledFeatureInput)
 
     source_info = SourceInfo(
-        uid='konstanz_disabled',
-        name='Stadt Konstanz: Behindertenparkplätze',
-        source_url='https://services-eu1.arcgis.com/cgMeYTGtzFtnxdsx/arcgis/rest/services/POI_Verkehr/FeatureServer'
-        '/5/query?outFields=*&where=1%3D1&f=geojson',
+        uid='karlsruhe_disabled',
+        name='Stadt Karlsruhe: Behindertenparkplätze',
+        source_url='https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
+        '&srsname=EPSG:4326&typeName=TBA%3Abehinderten_parkplaetze&outputFormat=application%2Fjson',
         has_realtime_data=False,
     )
 
@@ -29,7 +31,9 @@ class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
         static_parking_spot_inputs: list[StaticParkingSpotInput] = []
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
+        ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
+        response = self.request_get(url=self.source_info.source_url, verify=str(ca_path), timeout=30)
         response_data = response.json()
 
         try:
@@ -42,8 +46,8 @@ class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
 
         for update_dict in realtime_input.features:
             try:
-                konstanz_input = self.geojson_feature_validator.validate(update_dict)
-                static_parking_spot_inputs += konstanz_input.to_static_parking_spot_inputs()
+                karlsruhe_input = self.geojson_feature_validator.validate(update_dict)
+                static_parking_spot_inputs += karlsruhe_input.to_static_parking_spot_inputs()
             except ValidationError as e:
                 import_parking_spot_exceptions.append(
                     ImportParkingSpotException(
