@@ -40,6 +40,7 @@ We support following data sources:
 | Kienzler: Offenburg                                            | ParkingSite  | bike       | pull        | `kienzler_offenburg`        | yes      |
 | Kienzler: RadSafe                                              | ParkingSite  | bike       | pull        | `kienzler_rad_safe`         | yes      |
 | Kienzler: Stuttgart                                            | ParkingSite  | bike       | pull        | `kienzler_stuttgart`        | yes      |
+| Kienzler: Ulm                                                  | ParkingSite  | bike       | pull        | `kienzler_ulm`              | yes      |
 | Kienzler: VRN                                                  | ParkingSite  | bike       | pull        | `kienzler_vrn`              | yes      |
 | Konstanz                                                       | ParkingSite  | car        | pull        | `konstanz`                  | yes      |
 | Ladenburg: Parkraumecheck                                      | ParkingSite  | car        | push        | `ladenburg_parkraumcheck`   | no       |

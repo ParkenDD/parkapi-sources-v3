@@ -39,6 +39,7 @@ from .kienzler import (
     KienzlerOffenburgPullConverter,
     KienzlerRadSafePullConverter,
     KienzlerStuttgartPullConverter,
+    KienzlerUlmPullConverter,
     KienzlerVrnPullConverter,
     KienzlerVVSPullConverter,
 )

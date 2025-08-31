@@ -184,3 +184,37 @@ class KienzlerVVSPullConverter(KienzlerBasePullConverter):
         public_url='https://vvs.bike-and-park.de',
         source_url='https://vvs.bike-and-park.de',
     )
+
+
+class KienzlerUlmPullConverter(KienzlerBasePullConverter):
+    """
+    For unknown reasons, Ulm needs another authentication method. It provides the same data format, though.
+    """
+
+    config_prefix = 'ULM'
+
+    source_info = SourceInfo(
+        uid='kienzler_ulm',
+        name='Kienzler: Ulm',
+        has_realtime_data=True,
+        public_url='https://ulm.bike-and-park.de',
+        source_url='https://ulm.bike-and-park.de',
+    )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.required_config_keys = [
+            f'PARK_API_KIENZLER_{self.config_prefix}_USER',
+            f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD',
+        ]
+
+    def _request_kienzler(self) -> list[dict]:
+        response = self.request_get(
+            url=f'{self.source_info.source_url}/api/v1/capacity/units/all',
+            auth=(
+                self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
+                self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD'),
+            ),
+            timeout=30,
+        )
+        return response.json()
