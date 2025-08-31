@@ -13,7 +13,6 @@ from validataclass.exceptions import ValidationError
 from validataclass.validators import (
     AnyOfValidator,
     DataclassValidator,
-    DictValidator,
     IntegerValidator,
     StringValidator,
     Validator,
@@ -48,7 +47,7 @@ class FreiburgConfidenceIntervalValidator(Validator):
 
 
 @validataclass
-class FreiburgScannerPropertiesInput(DictValidator):
+class FreiburgScannerPropertiesInput:
     id: str = StringValidator()
     capacity: int = IntegerValidator()
     confidence_interval: tuple[int, int] = FreiburgConfidenceIntervalValidator()

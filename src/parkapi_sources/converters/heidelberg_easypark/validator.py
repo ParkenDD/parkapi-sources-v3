@@ -14,7 +14,6 @@ from validataclass.dataclasses import validataclass
 from validataclass.validators import (
     AnyOfValidator,
     DataclassValidator,
-    DictValidator,
     EnumValidator,
     IntegerValidator,
     StringValidator,
@@ -56,12 +55,8 @@ class HeidelbergEasyparkSide(Enum):
         }.get(self)
 
 
-class EsslingenParkingParkSite(Enum):
-    pass
-
-
 @validataclass
-class HeidelbergEasyParkPropertiesInput(DictValidator):
+class HeidelbergEasyParkPropertiesInput:
     Segment: int = IntegerValidator(allow_strings=True)
     Abstand1: str = StringValidator()
     Abstand2: str = StringValidator()

@@ -42,6 +42,7 @@ We support following data sources:
 | Kienzler: Stuttgart                                            | ParkingSite | bike       | pull        | `kienzler_stuttgart`        | yes      |
 | Kienzler: VRN                                                  | ParkingSite | bike       | pull        | `kienzler_vrn`              | yes      |
 | Konstanz                                                       | ParkingSite | car        | pull        | `konstanz`                  | yes      |
+| Ladenburg: Parkraumecheck                                      | ParkingSite | car        | push        | `ladenburg_parkraumcheck`   | no       |
 | Stadt Konstanz: Fahrrad-Abstellanlagen                         | ParkingSite | bike       | push        | `konstanz_bike`             | no       |
 | Stadt Konstanz: Behindertenparkplätze                          | ParkingSpot | car        | pull        | `konstanz_disabled`         | no       |
 | Stadt Mannheim                                                 | ParkingSite | car        | push (json) | `mannheim`                  | yes      |

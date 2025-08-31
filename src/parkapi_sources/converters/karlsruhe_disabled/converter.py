@@ -52,8 +52,8 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
                 import_parking_spot_exceptions.append(
                     ImportParkingSpotException(
                         source_uid=self.source_info.uid,
-                        parking_spot_uid=update_dict.get('properties', {}).get('GlobalID'),
-                        message=f'Invalid data at uid {update_dict.get("properties", {}).get("GlobalID")}: '
+                        parking_spot_uid=update_dict.get('properties', {}).get('id'),
+                        message=f'Invalid data at uid {update_dict.get("properties", {}).get("id")}: '
                         f'{e.to_dict()}, data: {update_dict}',
                     ),
                 )
