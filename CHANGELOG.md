@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.26.0
+
+Released 2025-08-31
+
+### Features
+
+* [Kienzler: Ulm Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/277)
+* [Radolfzell Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/276)
+* [Ladenburg Parkraumcheck Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/275)
+* [Karlsruhe Disabled Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/274)
+* [Heidelberg Disabled Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/273)
+
+
+### Fixes
+
+* [bfrk validation errors for osmlinks](https://github.com/ParkenDD/parkapi-sources-v3/pull/272)
+* [Fix missing konstanz data: made realtime data optional](https://github.com/ParkenDD/parkapi-sources-v3/pull/271)
+
+
 ## 0.25.0
 
 Released 2025-08-15
