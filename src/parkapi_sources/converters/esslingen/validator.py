@@ -15,7 +15,6 @@ from validataclass.validators import (
     AnyOfValidator,
     DataclassValidator,
     DateValidator,
-    DictValidator,
     EnumValidator,
     IntegerValidator,
     Noneable,
@@ -51,7 +50,7 @@ class EsslingenOrientation(Enum):
 
 
 @validataclass
-class EsslingenParkingSiteInput(DictValidator):
+class EsslingenParkingSiteInput:
     capacity: int = IntegerValidator()
     Ausrichtung: EsslingenOrientation | None = Noneable(EnumValidator(EsslingenOrientation)), Default(None)
     Bemerkungen: str | None = Noneable(StringValidator()), Default(None)
