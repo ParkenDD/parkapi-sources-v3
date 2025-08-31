@@ -24,6 +24,7 @@ from .freiburg_scanner import FreiburgScannerPullConverter
 from .friedrichshafen_sensors import FriedrichshafenSensorsPullConverter
 from .goldbeck import GoldbeckPushConverter
 from .heidelberg import HeidelbergPullConverter
+from .heidelberg_disabled import HeidelbergDisabledPullConverter
 from .heidelberg_easypark import HeidelbergEasyParkPullConverter
 from .herrenberg import HerrenbergPullConverter
 from .herrenberg_bike import HerrenbergBikePullConverter
