@@ -54,6 +54,7 @@ from .p_m_bw import PMBWPullConverter
 from .pbw import PbwPullConverter
 from .pforzheim import PforzheimPushConverter
 from .pum_bw import PumBwPushConverter
+from .radolfzell import RadolfzellPushConverter
 from .radvis_bw import RadvisBwPullConverter
 from .reutlingen import ReutlingenPushConverter
 from .reutlingen_bike import ReutlingenBikePushConverter
