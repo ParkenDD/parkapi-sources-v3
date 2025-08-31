@@ -18,7 +18,7 @@ from .validator import HeidelbergDisabledParkingSpotInput
 class HeidelbergDisabledPullConverter(ParkingSpotPullConverter):
     source_info = SourceInfo(
         uid='heidelberg_disabled',
-        name='Heidelberg Disabled',
+        name='Stadt Heidelberg: Behindertenparkplätze',
         source_url='https://ckan.datenplattform.heidelberg.de/de/dataset/708df8e2-d452-483e-9e57-f04027d52a17/resource'
         '/6dc64728-65ba-47ed-bbe2-9e59b5dbaa0c/download/features_new.geojson',
         has_realtime_data=False,
