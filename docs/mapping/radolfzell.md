@@ -5,6 +5,7 @@ Radolfzell provides a large GeoJSON with on street `ParkingSite` parking data. T
 * `purpose` is set to `CAR`
 * `has_realtime_data` is set to `false`
 * `uid` is set to `{Längengra}_{Breitengrd}`
+* `static_data_updated_at` is set to the moment of import
 
 `Özeit MF` means Monday until Friday. 1 is begin, 2 is end. If begin is after end, we ignore the opening times, as it's
 ambiguous.
@@ -38,7 +39,7 @@ ambiguous.
 | Regelung   | integer ([Regelung](#Regelung)) | ?           | restricted_to, parking_type |                                                                                                    |
 | Richtung   | integer([Richtung])(#Richtung)) | ?           | orientation                 |                                                                                                    |
 | Stellpl    | integer                         | ?           | capacity                    | null and 0: Dataset is ignored                                                                     |
-| StrPLZOrt2 | string                          | ?           | address                     |                                                                                                    |
+| StrPLZOrt2 | string                          | ?           | name, address               |                                                                                                    |
 | Weite Info | string                          | ?           | description                 |                                                                                                    |
 
 
