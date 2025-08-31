@@ -10,6 +10,7 @@ from .converter import (
     KienzlerOffenburgPullConverter,
     KienzlerRadSafePullConverter,
     KienzlerStuttgartPullConverter,
+    KienzlerUlmPullConverter,
     KienzlerVrnPullConverter,
     KienzlerVVSPullConverter,
 )
