@@ -26,6 +26,8 @@ We support following data sources:
 | Friedrichhafen Sensors                                         | ParkingSpot | car        | pull        | `friedrichshafen_sensors`   | yes      |
 | GOLDBECK Parking Services                                      | ParkingSite | car        | push (xlsx) | `goldbeck`                  | no       |
 | Stadt Heidelberg                                               | ParkingSite | car        | pull        | `heidelberg`                | yes      |
+| Stadt Heidelberg: EasyPark                                     | ParkingSite | car        | pull        | `heidelberg_easypark`       | no       |
+| Stadt Heidelberg: Behindertenparkplätze                        | ParkingSpot | car        | pull        | `heidelberg_disabled`       | no       |
 | Stadt Herrenberg                                               | ParkingSite | car        | pull        | `herrenberg`                | no       |
 | Stadt Herrenberg - Munigrid                                    | ParkingSite | bike       | pull        | `herrenberg_bike`           | no       |
 | PARK SERVICE HÜFNER GmbH + Co. KG                              | ParkingSite | car        | push (xlsx) | `huefner`                   | no       |

@@ -33,6 +33,7 @@ class StaticBaseParkingInput(ValidataclassMixin, ABC):
     purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
     address: str | None = Noneable(StringValidator(max_length=512)), Default(None)
     description: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
+    operator_name: str | None = Noneable(StringValidator(max_length=256)), Default(None)
 
     has_realtime_data: bool = BooleanValidator()
     static_data_updated_at: datetime = (
