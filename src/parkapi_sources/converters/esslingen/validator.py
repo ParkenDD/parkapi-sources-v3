@@ -140,10 +140,12 @@ class EsslingenParkingSiteInput:
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.DISABLED),
                 )
+                static_parking_site_input.capacity_disabled = self.properties.capacity
             case 'Behinderten-Parkplatz beschränkt auf bestimmte Zeiten, sonst für die Öffentlichkeit':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.DISABLED),
                 )
+                static_parking_site_input.capacity_disabled = self.properties.capacity
             case 'Behinderten-Parkplatz beschränkt auf bestimmte Zeiten, sonst nur für Bewohner':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.DISABLED),
@@ -151,6 +153,7 @@ class EsslingenParkingSiteInput:
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.RESIDENT),
                 )
+                static_parking_site_input.capacity_disabled = self.properties.capacity
             case 'Behinderten-Parkplatz beschränkt auf bestimmte Zeiten, sonst für Taxi':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.DISABLED),
@@ -158,16 +161,20 @@ class EsslingenParkingSiteInput:
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.TAXI),
                 )
+                static_parking_site_input.capacity_disabled = self.properties.capacity
             case 'Behinderten-Parkplatz für bestimmte Parkausweis-Nummer':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.DISABLED),
                 )
+                static_parking_site_input.capacity_disabled = self.properties.capacity
+                static_parking_site_input.capacity_disabled = self.properties.capacity
             case 'Motorrad-Parkplatz':
                 static_parking_site_input.purpose = PurposeType.MOTORCYCLE
             case 'Carsharing-Stellplatz':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.CARSHARING),
                 )
+                static_parking_site_input.capacity_carsharing = self.properties.capacity
             case 'Taxi-Stellplatz':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.TAXI),
@@ -176,6 +183,7 @@ class EsslingenParkingSiteInput:
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.CHARGING),
                 )
+                static_parking_site_input.capacity_charging = self.properties.capacity
             case 'Wohnmobil-Parkplatz':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.CARAVAN),
@@ -184,10 +192,12 @@ class EsslingenParkingSiteInput:
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.BUS),
                 )
+                static_parking_site_input.capacity_bus = self.properties.capacity
             case 'Lkw-Parkplatz':
                 static_parking_site_input.restricted_to.append(
                     ParkingRestrictionInput(type=ParkingAudience.TRUCK),
                 )
+                static_parking_site_input.capacity_truck = self.properties.capacity
             case 'Parkplatz privat betrieben für die Öffentlichkeit':
                 static_parking_site_input.type = ParkingSiteType.OFF_STREET_PARKING_GROUND
             case 'Parkhaus oder Tiefgarage privat betrieben für die Öffentlichkeit':
