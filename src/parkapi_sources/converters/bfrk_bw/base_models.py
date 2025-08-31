@@ -9,7 +9,14 @@ from decimal import Decimal
 from typing import Optional
 
 from validataclass.dataclasses import Default, validataclass
-from validataclass.validators import IntegerValidator, NumericValidator, StringValidator, UrlValidator
+from validataclass.validators import (
+    IntegerValidator,
+    ListValidator,
+    Noneable,
+    NumericValidator,
+    StringValidator,
+    UrlValidator,
+)
 
 from parkapi_sources.models import ExternalIdentifierInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ExternalIdentifierType
@@ -26,7 +33,7 @@ class BfrkBaseInput(ABC):
     hst_dhid: Optional[str] = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
     objekt_dhid: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
     infraid: str = StringValidator()
-    osmlinks: Optional[str] = EmptystringNoneable(UrlValidator()), Default(None)
+    osmlinks: Optional[list[str]] = Noneable(ListValidator(EmptystringNoneable(UrlValidator()))), Default(None)
     gemeinde: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
     ortsteil: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
 
@@ -36,14 +43,16 @@ class BfrkBaseInput(ABC):
 
     def get_static_parking_site_input_kwargs(self) -> dict:
         external_identifiers = []
-        # Prevent url1|url2 link "lists"
-        if self.osmlinks and '|' not in self.osmlinks:
-            external_identifiers.append(
-                ExternalIdentifierInput(
-                    type=ExternalIdentifierType.OSM,
-                    value=self.osmlinks,
-                ),
-            )
+        if self.osmlinks:
+            [
+                external_identifiers.append(
+                    ExternalIdentifierInput(
+                        type=ExternalIdentifierType.OSM,
+                        value=osmlink,
+                    ),
+                )
+                for osmlink in self.osmlinks
+            ]
         if self.hst_dhid:
             external_identifiers.append(
                 ExternalIdentifierInput(
