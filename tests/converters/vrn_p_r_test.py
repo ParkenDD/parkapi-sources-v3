@@ -36,7 +36,7 @@ class VrnParkAndRidePullConverterTest:
             json_data = json_file.read()
 
         requests_mock.get(
-            'https://spatial.vrn.de/data/rest/services/P_R_Sensorik__Realtime_/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson',
+            'https://spatial.vrn.de/data/rest/services/P_R_Sensorik__Realtime_/FeatureServer/1/query?where=1%3D1&outFields=*&f=geojson',
             text=json_data,
         )
 
