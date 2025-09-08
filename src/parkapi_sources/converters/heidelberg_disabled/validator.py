@@ -60,7 +60,7 @@ class HeidelbergDisabledParkingSpotInput:
             type=ParkingSpotType.ON_STREET,
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
-            description=', '.join(description for description in descriptions if description),
+            description=', '.join(description for description in descriptions if description) or None,
             has_realtime_data=False,
             restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
         )
