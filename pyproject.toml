@@ -35,9 +35,9 @@ classifiers = [
 dependencies = [
     "validataclass~=0.11.0",
     "pyproj~=3.7.2",
-    "lxml~=6.0.0",
+    "lxml~=6.0.1",
     "openpyxl~=3.1.5",
-    "requests~=2.32.4",
+    "requests~=2.32.5",
     "beautifulsoup4~=4.13.4",
     "urllib3~=2.5.0",
     "isodate~=0.7.2",
@@ -52,9 +52,9 @@ Changelog = "https://github.com/ParkenDD/parkapi-sources-v3/blob/main/CHANGELOG.
 
 [project.optional-dependencies]
 testing = [
-    "ruff~=0.12.9",
-    "pytest~=8.4.1",
-    "pytest-cov~=6.2.1",
+    "ruff~=0.12.12",
+    "pytest~=8.4.2",
+    "pytest-cov~=6.3.0",
     "requests-mock~=1.12.1",
 ]
 

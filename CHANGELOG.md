@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.26.1
+
+Released 2025-09-08
+
+### Fixes
+
+* [update spatial.vrn.de link](https://github.com/ParkenDD/parkapi-sources-v3/pull/280)
+* Better emptystring handling in `heidelberg_disabled`
+
+
+### Maintenance
+
+* Dependency updates
+
+
 ## 0.26.0
 
 Released 2025-08-31
