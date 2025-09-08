@@ -17,7 +17,7 @@ jobs:
 
       # We use Python 3.12 here because it's the minimum Python version supported by this library.
       - name: Setup Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -48,7 +48,7 @@ jobs:
           timezoneLinux: "Europe/Berlin"
 
       - name: Setup Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
