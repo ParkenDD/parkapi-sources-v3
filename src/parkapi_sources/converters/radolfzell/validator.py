@@ -146,7 +146,7 @@ class RadolfzellParkingSiteInput:
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: RadolfzellPropertiesInput = DataclassValidator(RadolfzellPropertiesInput)
     geometry: LineString = GeoJSONGeometryValidator(
-        allowed_geometry_types=[GeometryType.MULTILINESTRING],
+        allowed_geometry_types=[GeometryType.MULTILINESTRING, GeometryType.LINESTRING],
     )
 
     def to_static_parking_site(
