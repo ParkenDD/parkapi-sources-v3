@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.26.2
+
+Released 2025-09-15
+
+### Fixes
+
+* [allow linestrings at radolfzell](https://github.com/ParkenDD/parkapi-sources-v3/pull/285)
+
+
 ## 0.26.1
 
 Released 2025-09-08
