@@ -8,13 +8,14 @@ from enum import Enum
 from typing import Optional
 from zoneinfo import ZoneInfo
 
+from shapely import GeometryType, Point
 from validataclass.dataclasses import validataclass
 from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, StringValidator, UrlValidator
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, PurposeType
-from parkapi_sources.models.geojson_inputs import GeojsonFeatureGeometryPointInput
-from parkapi_sources.validators import ExcelNoneable, SpacedDateTimeValidator
+from parkapi_sources.util import round_7d
+from parkapi_sources.validators import ExcelNoneable, GeoJSONGeometryValidator, SpacedDateTimeValidator
 
 
 @validataclass
@@ -99,7 +100,7 @@ class FreiburgFeatureInput(FreiburgBaseFeatureInput):
 
 @validataclass
 class FreiburgParkAndRideStaticFeatureInput(FreiburgBaseFeatureInput):
-    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
     properties: FreiburgParkAndRideStaticPropertiesInput = DataclassValidator(FreiburgParkAndRideStaticPropertiesInput)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
@@ -109,8 +110,8 @@ class FreiburgParkAndRideStaticFeatureInput(FreiburgBaseFeatureInput):
             name = f'{self.properties.name}'
         return StaticParkingSiteInput(
             uid=str(self.properties.ogc_fid),
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             name=name,
             capacity=self.properties.kapazitaet,
             type=self.properties.kategorie.to_parking_site_type_input(),
@@ -122,7 +123,7 @@ class FreiburgParkAndRideStaticFeatureInput(FreiburgBaseFeatureInput):
 
 @validataclass
 class FreiburgParkAndRideRealtimeFeatureInput(FreiburgBaseFeatureInput):
-    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
     properties: FreiburgParkAndRideRealtimePropertiesInput = DataclassValidator(
         FreiburgParkAndRideRealtimePropertiesInput
     )
@@ -130,8 +131,8 @@ class FreiburgParkAndRideRealtimeFeatureInput(FreiburgBaseFeatureInput):
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             uid=str(self.properties.park_id),
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             name=self.properties.park_name,
             capacity=self.properties.obs_max,
             type=ParkingSiteType.OFF_STREET_PARKING_GROUND,

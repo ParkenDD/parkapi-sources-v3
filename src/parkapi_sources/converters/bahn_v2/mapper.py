@@ -6,7 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from datetime import datetime, timezone
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, PurposeType
 
 from .validators import (
     BahnParkingSiteCapacityType,
@@ -69,6 +69,7 @@ class BahnMapper:
             public_url=bahn_input.url,
             purpose=purpose,
             capacity=capacity_input.total,
+            park_and_ride_type=[ParkAndRideType.TRAIN],
         )
         if bahn_input.access.openingHours.is24h:
             static_parking_site_input.opening_hours = '24/7'

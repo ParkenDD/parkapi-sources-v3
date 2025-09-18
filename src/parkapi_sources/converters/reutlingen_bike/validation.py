@@ -41,4 +41,5 @@ class ReutlingenBikeRowInput:
             capacity=self.capacity,
             purpose=PurposeType.BIKE,
             type=ParkingSiteType.OTHER,
+            has_realtime_data=False,
         )

@@ -45,7 +45,16 @@ def freiburg_request_mocked_json(requests_mock: Mocker, filename: str):
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get('https://geoportal.freiburg.de/wfs/gdm_pls/gdm_plslive', text=json_data)
+    if 'sensors' in filename:
+        requests_mock.get(
+            'https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?SERVICE=WFS&REQUEST=GetFeature&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkandride_aktuell&OUTPUTFORMAT=geojson&crs=4326',
+            text=json_data,
+        )
+    else:
+        requests_mock.get(
+            'https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?SERVICE=WFS&REQUEST=GetFeature&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkandride&OUTPUTFORMAT=geojson&crs=4326',
+            text=json_data,
+        )
 
 
 class FreiburgParkAndRideStaticPullConverterTest:

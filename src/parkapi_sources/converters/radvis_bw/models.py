@@ -4,7 +4,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
-from decimal import Decimal
 from enum import Enum
 from typing import Optional
 
@@ -171,14 +170,14 @@ class RadvisFeatureInput(GeojsonBaseFeatureInput):
 
         for property_dict in property_dicts:
             static_parking_site_input = StaticParkingSiteInput(
-                lat=self.geometry.coordinates[1],
-                lon=self.geometry.coordinates[0],
+                lat=round_7d(self.geometry.y),
+                lon=round_7d(self.geometry.x),
                 **property_dict,
             )
 
             coordinates = proj(float(static_parking_site_input.lon), float(static_parking_site_input.lat), inverse=True)
-            static_parking_site_input.lon = round_7d(Decimal(coordinates[0]))
-            static_parking_site_input.lat = round_7d(Decimal(coordinates[1]))
+            static_parking_site_input.lon = round_7d(coordinates[0])
+            static_parking_site_input.lat = round_7d(coordinates[1])
 
             static_parking_site_inputs.append(static_parking_site_input)
 

@@ -3,8 +3,6 @@ Copyright 2023 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from decimal import Decimal
-
 import pyproj
 from lxml import etree
 from lxml.etree import Element
@@ -39,8 +37,8 @@ class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConve
             float(static_parking_site_input.lat),
             inverse=True,
         )
-        static_parking_site_input.lat = round_7d(Decimal(coordinates[1]))
-        static_parking_site_input.lon = round_7d(Decimal(coordinates[0]))
+        static_parking_site_input.lat = round_7d(coordinates[1])
+        static_parking_site_input.lon = round_7d(coordinates[0])
 
     def handle_xml(
         self,

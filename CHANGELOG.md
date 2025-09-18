@@ -1,5 +1,108 @@
 # Changelog
 
+## 0.26.2
+
+Released 2025-09-15
+
+### Fixes
+
+* [allow linestrings at radolfzell](https://github.com/ParkenDD/parkapi-sources-v3/pull/285)
+
+
+## 0.26.1
+
+Released 2025-09-08
+
+### Fixes
+
+* [update spatial.vrn.de link](https://github.com/ParkenDD/parkapi-sources-v3/pull/280)
+* Better emptystring handling in `heidelberg_disabled`
+
+
+### Maintenance
+
+* Dependency updates
+
+
+## 0.26.0
+
+Released 2025-08-31
+
+### Features
+
+* [Kienzler: Ulm Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/277)
+* [Radolfzell Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/276)
+* [Ladenburg Parkraumcheck Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/275)
+* [Karlsruhe Disabled Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/274)
+* [Heidelberg Disabled Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/273)
+
+
+### Fixes
+
+* [bfrk validation errors for osmlinks](https://github.com/ParkenDD/parkapi-sources-v3/pull/272)
+* [Fix missing konstanz data: made realtime data optional](https://github.com/ParkenDD/parkapi-sources-v3/pull/271)
+
+
+## 0.25.0
+
+Released 2025-08-15
+
+This is a maintenance release with major dependency updates and a minimal python version bump to python 3.12.
+
+### Fixes
+
+* [fix patching system subobjects](https://github.com/ParkenDD/parkapi-sources-v3/pull/268)
+* [Heidelberg: Fix uid mismatch and missing realtime data](https://github.com/ParkenDD/parkapi-sources-v3/pull/267)
+* [freiburg scanner address](https://github.com/ParkenDD/parkapi-sources-v3/pull/266)
+* [better pbw realtime data field](https://github.com/ParkenDD/parkapi-sources-v3/pull/265)
+
+
+### Maintenance
+
+* Several dependency updates, most notably `lxml` 5.x -> 6.x.
+* Change the minimal python version to 3.12 due `pyproj` 3.7.2
+
+
+## 0.24.0
+
+Released 2025-08-11
+
+### Features
+
+* [Aalen converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/258)
+* [Unify Patching to support ParkingSpot patches](https://github.com/ParkenDD/parkapi-sources-v3/pull/260)
+* [Konstanz Disabled converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/257)
+
+
+### Fixes
+
+* [Bahn_v2: Add park_and_ride_type=TRAIN](https://github.com/ParkenDD/parkapi-sources-v3/pull/259)
+
+
+## 0.23.0
+
+Released 2025-07-28
+
+### Maintenance
+
+* [remove kienzler geojson](https://github.com/ParkenDD/parkapi-sources-v3/pull/255)
+
+This release actually removes a feature, the Kienzler-specific GeoJSON patch mechanism, as there is now a
+[generic patch mechanism](https://github.com/ParkenDD/parkapi-sources-v3/blob/01df26ed963a424d9b1165b1b4e8cd5e9ed83b20/README.md#patch-data-with-local-files).
+
+
+## 0.22.0
+
+### Features
+
+* [Synchronize and extend data model](https://github.com/ParkenDD/parkapi-sources-v3/pull/249)
+* [Esslingen Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/250)
+* [Freiburg Scanner Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/251)
+* [Heidelberg EasyPark Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/252)
+* [Keltern Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/253)
+* [Reutlingen Disabled Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/254)
+
+
 ## 0.21.1
 
 Released 2025-07-21

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "P1 Rathaus",
+    "status": "geöffnet",
+    "free": 5,
+    "max": 170,
+    "occupied": 165
+  },
+  {
+    "name": "P2 Reichsstädter Markt",
+    "status": "geöffnet",
+    "free": 93,
+    "max": 120,
+    "occupied": 27
+  },
+  {
+    "name": "P3 Spritzenhausplatz",
+    "status": "geöffnet",
+    "free": 7,
+    "max": 80,
+    "occupied": 73
+  },
+  {
+    "name": "P5 Spitalstraße",
+    "status": "geöffnet",
+    "free": 29,
+    "max": 170,
+    "occupied": 141
+  },
+  {
+    "name": "P6 Bahnhof",
+    "status": "geöffnet",
+    "free": 122,
+    "max": 180,
+    "occupied": 58
+  },
+  {
+    "name": "P1 Kubus",
+    "status": "geöffnet",
+    "free": 4,
+    "max": 34,
+    "occupied": 30
+  }
+]

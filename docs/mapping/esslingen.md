@@ -1,6 +1,6 @@
 ### Esslingen
 
-Esslingen provides its parking spaces as GeoJSON with polygons. Coordinates are in UTM32 and have to be transformed to
+Esslingen provides its parking spots as GeoJSON with polygons. Coordinates are in UTM32 and have to be transformed to
 WSG84.
 
 * `has_realtime_data` is always false
@@ -10,27 +10,28 @@ WSG84.
 | Field                    | Type                          | Cardinality | Mapping                              | Comment                                          |
 |--------------------------|-------------------------------|-------------|--------------------------------------|--------------------------------------------------|
 | Anzahl der Stellplätze   | integer                       | 1           | capacity                             |                                                  |
-| Ausrichtung              | [Ausrichtung](#Ausrichtung)   | 1           | orientation                          |                                                  |
+| Ausrichtung              | [Ausrichtung](#Ausrichtung)   | ?           | orientation                          |                                                  |
 | Bemerkungen              | string                        | ?           | description                          |                                                  |
 | Beschränkung sonstig     | string                        | ?           | description                          |                                                  |
 | fid                      | integer                       | 1           | uid                                  |                                                  |
 | Fläche                   | float                         | 1           |                                      |                                                  |
-| Frei für Parkausweis-Nr  | string                        | 1           | description                          |                                                  |
+| Frei für Parkausweis-Nr  | string                        | ?           | description                          |                                                  |
 | Parkerlaubnis zeitlich   | string                        | ?           | description                          |                                                  |
 | Parkplatz-Typ            | [ParkplatzTyp](#ParkplatzTyp) | 1           | name, purpose, type or restricted_to | See ParkplatzTyp below                           |
 | Parkscheibe erforderlich | string                        | ?           | description                          |                                                  |
 | Parkschein erforderlich  | string                        | ?           | fee_description, has_fee             | has_fee is set to true if this field is not null |
-| Überprüfungsdatum        | integer                       | 1           | static_data_updated_at               |                                                  |
+| Überprüfungsdatum        | date                          | 1           | static_data_updated_at               |                                                  |
 
 
 ### Ausrichtung
 
 
-| Key                  | Mapping  |
-|----------------------|----------|
-| längs                | PARALLEL |
-| quer                 | DIAGONAL |
-| unbekannt            |          |
+| Key         | Mapping  |
+|-------------|----------|
+| längs       | PARALLEL |
+| quer        | DIAGONAL |
+| undefiniert |          |
+| unbekannt   |          |
 
 
 ### ParkplatzTyp

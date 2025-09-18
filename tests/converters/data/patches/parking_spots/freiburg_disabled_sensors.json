@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "uid": "P01",
+      "name": "New name",
+      "external_identifiers": [
+        {
+          "type": "DHID",
+          "value": "123456789"
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,6 @@ from parkapi_sources.converters.base_converter.datex2 import ParkingRecordStatus
 from parkapi_sources.converters.base_converter.pull import MobilithekPullConverterMixin, ParkingSpotPullConverter
 from parkapi_sources.exceptions import ImportParkingSpotException
 from parkapi_sources.models import RealtimeParkingSpotInput, SourceInfo, StaticParkingSpotInput
-from parkapi_sources.models.enums import ParkingSpotType
 
 from .validators import FriedrichshafenSensorsParkingRecordStatus, FriedrichshafenSensorsParkingSpot
 
@@ -46,7 +45,6 @@ class FriedrichshafenSensorsPullConverter(
             try:
                 static_item = self.static_validator.validate(static_input_dict)
                 static_parking_spot_input = static_item.to_static_parking_spot_input()
-                static_parking_spot_input.type = ParkingSpotType.ON_STREET
 
                 static_parking_spot_inputs.append(static_parking_spot_input)
 
@@ -60,7 +58,7 @@ class FriedrichshafenSensorsPullConverter(
                     ),
                 )
 
-        return static_parking_spot_inputs, static_parking_spot_errors
+        return self.apply_static_patches(static_parking_spot_inputs), static_parking_spot_errors
 
     def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:
         realtime_xml_data = self._get_xml_data(

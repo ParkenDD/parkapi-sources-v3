@@ -4,9 +4,9 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime
-from decimal import Decimal
 from typing import Any
 
+from shapely import GeometryType, Point
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
     AnyOfValidator,
@@ -14,18 +14,19 @@ from validataclass.validators import (
     BooleanValidator,
     DataclassValidator,
     EnumValidator,
-    FloatValidator,
     IntegerValidator,
     ListValidator,
-    NumericValidator,
     StringValidator,
     UrlValidator,
 )
 
+from parkapi_sources.util import round_7d
+from parkapi_sources.validators import GeoJSONGeometryValidator
+
 from .enums import ParkAndRideType, ParkingSiteType
-from .parking_restriction_inputs import ParkingRestrictionInput
-from .parking_site_inputs import ExternalIdentifierInput, StaticParkingSiteInput
+from .parking_site_inputs import StaticParkingSiteInput
 from .parking_spot_inputs import StaticParkingSpotInput
+from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
 @validataclass
@@ -70,33 +71,10 @@ class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput
 
 
 @validataclass
-class GeojsonFeatureGeometryPointInput:
-    type: str = AnyOfValidator(allowed_values=['Point'])
-    coordinates: list[Decimal] = ListValidator(NumericValidator(), min_length=2, max_length=2)
-
-
-@validataclass
-class GeojsonFeatureGeometryPolygonInput(ValidataclassMixin):
-    type: str = AnyOfValidator(allowed_values=['Polygon'])
-    coordinates: list[list[list[float]]] = ListValidator(
-        ListValidator(
-            ListValidator(
-                FloatValidator(),
-                min_length=2,
-                max_length=2,
-            ),
-            min_length=1,
-        ),
-        min_length=1,
-        max_length=1,
-    )
-
-
-@validataclass
 class GeojsonBaseFeatureInput:
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonBaseFeaturePropertiesInput = DataclassValidator(GeojsonBaseFeaturePropertiesInput)
-    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
     def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
         # Maintain child objects by not using to_dict()
@@ -104,8 +82,8 @@ class GeojsonBaseFeatureInput:
         input_data.update(kwargs)
 
         return StaticParkingSiteInput(
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             **input_data,
         )
 
@@ -115,14 +93,14 @@ class GeojsonBaseFeatureInput:
         input_data.update(kwargs)
 
         return StaticParkingSpotInput(
-            lat=self.geometry.coordinates[1],
-            lon=self.geometry.coordinates[0],
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             **input_data,
         )
 
     def update_static_parking_site_input(self, static_parking_site: StaticParkingSiteInput) -> None:
-        static_parking_site.lat = self.geometry.coordinates[1]
-        static_parking_site.lon = self.geometry.coordinates[0]
+        static_parking_site.lat = round_7d(self.geometry.y)
+        static_parking_site.lon = round_7d(self.geometry.x)
 
         for key in self.properties.to_dict().keys():
             value = getattr(self.properties, key)
@@ -134,16 +112,14 @@ class GeojsonBaseFeatureInput:
 
 @validataclass
 class GeojsonFeatureInput(GeojsonBaseFeatureInput):
-    type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonFeaturePropertiesInput = DataclassValidator(GeojsonFeaturePropertiesInput)
-    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
 
 @validataclass
 class GeojsonFeatureParkingSpotInput(GeojsonBaseFeatureInput):
-    type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: GeojsonFeaturePropertiesParkingSpotInput = DataclassValidator(GeojsonFeaturePropertiesParkingSpotInput)
-    geometry: GeojsonFeatureGeometryPointInput = DataclassValidator(GeojsonFeatureGeometryPointInput)
+    geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
 
 @validataclass

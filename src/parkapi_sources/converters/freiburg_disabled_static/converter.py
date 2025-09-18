@@ -33,7 +33,7 @@ class FreiburgDisabledStaticPullConverter(ParkingSpotPullConverter):
         for freiburg_input in freiburg_inputs:
             static_parking_spot_inputs.append(freiburg_input.to_static_parking_spot_input())
 
-        return static_parking_spot_inputs, import_parking_spot_exceptions
+        return self.apply_static_patches(static_parking_spot_inputs), import_parking_spot_exceptions
 
     def _get_raw_parking_spots(
         self,

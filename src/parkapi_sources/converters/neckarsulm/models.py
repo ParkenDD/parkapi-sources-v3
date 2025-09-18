@@ -75,5 +75,6 @@ class NeckarsulmRowInput:
             opening_hours='24/7' if self.opening_hours == '00:00-24:00' else None,
             static_data_updated_at=datetime.now(tz=timezone.utc),
             max_height=int(self.max_height * 100) if self.max_height else None,
+            has_realtime_data=False,
             # TODO: we could use the P+R type as park_and_ride_type, but for now p+r in data source is rather broken
         )

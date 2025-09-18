@@ -8,21 +8,16 @@ from abc import abstractmethod
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
-from parkapi_sources.converters.base_converter.pull import (
-    ParkingSitePullConverter,
-    StaticGeojsonDataMixin,
-)
+from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
-from .models import KienzlerGeojsonFeaturePropertiesInput, KienzlerInput
+from .models import KienzlerInput
 
 
-class KienzlerBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
+class KienzlerBasePullConverter(ParkingSitePullConverter):
     kienzler_list_validator = ListValidator(AnythingValidator(allowed_types=[dict]))
     kienzler_item_validator = DataclassValidator(KienzlerInput)
-    geojson_feature_properties_validator = DataclassValidator(KienzlerGeojsonFeaturePropertiesInput)
-    use_geojson = False
 
     @property
     @abstractmethod
@@ -40,30 +35,13 @@ class KienzlerBasePullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         kienzler_parking_sites, static_parking_site_errors = self._get_kienzler_parking_sites()
 
-        static_parking_site_inputs_by_uid: dict[str, StaticParkingSiteInput] = {}
+        static_parking_site_inputs: list[StaticParkingSiteInput] = []
         for kienzler_parking_site in kienzler_parking_sites:
-            static_parking_site_inputs_by_uid[kienzler_parking_site.id] = kienzler_parking_site.to_static_parking_site(
-                self.source_info.public_url,
+            static_parking_site_inputs.append(
+                kienzler_parking_site.to_static_parking_site(self.source_info.public_url),
             )
 
-        if self.use_geojson:
-            geojson_features, geojson_parking_site_errors = self._get_geojson_parking_sites_features_and_exceptions(
-                source_uid=self.source_info.uid,
-            )
-
-            static_parking_site_errors += geojson_parking_site_errors
-
-            # For each Kienzler entry, extend it with GeoJSON feature if the feature exists
-            for geojson_feature in geojson_features:
-                # If the uid is not known in our static data: ignore the GeoJSON data
-                uid = geojson_feature.properties.uid
-                if uid not in static_parking_site_inputs_by_uid:
-                    continue
-
-                # Extend static data with GeoJSON data
-                geojson_feature.update_static_parking_site_input(static_parking_site_inputs_by_uid[uid])
-
-        return self.apply_static_patches(list(static_parking_site_inputs_by_uid.values())), static_parking_site_errors
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
@@ -150,7 +128,6 @@ class KienzlerNeckarsulmPullConverter(KienzlerBasePullConverter):
 
 class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
     config_prefix = 'OFFENBURG'
-    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_offenburg',
@@ -163,7 +140,6 @@ class KienzlerOffenburgPullConverter(KienzlerBasePullConverter):
 
 class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
     config_prefix = 'RADSAFE'
-    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_rad_safe',
@@ -176,7 +152,6 @@ class KienzlerRadSafePullConverter(KienzlerBasePullConverter):
 
 class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
     config_prefix = 'STUTTGART'
-    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_stuttgart',
@@ -189,7 +164,6 @@ class KienzlerStuttgartPullConverter(KienzlerBasePullConverter):
 
 class KienzlerVrnPullConverter(KienzlerBasePullConverter):
     config_prefix = 'VRN'
-    use_geojson = True
 
     source_info = SourceInfo(
         uid='kienzler_vrn',
@@ -210,3 +184,37 @@ class KienzlerVVSPullConverter(KienzlerBasePullConverter):
         public_url='https://vvs.bike-and-park.de',
         source_url='https://vvs.bike-and-park.de',
     )
+
+
+class KienzlerUlmPullConverter(KienzlerBasePullConverter):
+    """
+    For unknown reasons, Ulm needs another authentication method. It provides the same data format, though.
+    """
+
+    config_prefix = 'ULM'
+
+    source_info = SourceInfo(
+        uid='kienzler_ulm',
+        name='Kienzler: Ulm',
+        has_realtime_data=True,
+        public_url='https://ulm.bike-and-park.de',
+        source_url='https://ulm.bike-and-park.de',
+    )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.required_config_keys = [
+            f'PARK_API_KIENZLER_{self.config_prefix}_USER',
+            f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD',
+        ]
+
+    def _request_kienzler(self) -> list[dict]:
+        response = self.request_get(
+            url=f'{self.source_info.source_url}/api/v1/capacity/units/all',
+            auth=(
+                self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
+                self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD'),
+            ),
+            timeout=30,
+        )
+        return response.json()

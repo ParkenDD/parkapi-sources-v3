@@ -1,0 +1,4601 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kirchstraße 20-22",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872814_3",
+        "URN": "F3E",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679016,
+          49.406583
+        ],
+        "type": "Point"
+      },
+      "id": "01e10d390a735e5b177c7a342de393dc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Ab, mit Basis gefunden",
+        "BEZEICHNUN": "Mönchgasse / Heiliggeiststraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077310_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.711874,
+          49.412649
+        ],
+        "type": "Point"
+      },
+      "id": "043c829a07b03ebccb4478b0f31b10c9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Steubenstr. (Grahampark)/Doss. Landstr.",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077229_2",
+        "URN": "E9A",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686395,
+          49.427613
+        ],
+        "type": "Point"
+      },
+      "id": "053a58717092d3d800216e8d8601d6f6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Poststraße 17",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638360_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686287,
+          49.407204
+        ],
+        "type": "Point"
+      },
+      "id": "0586da1bb2270fe43e1425924b718137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenthalstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077358_1",
+        "URN": "F33",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.684041,
+          49.420647
+        ],
+        "type": "Point"
+      },
+      "id": "075cf1e07c7c4d94ad838c2f29ceafb6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Untere Neckarstraße (ggü. Nr. 62)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638346_1",
+        "URN": "F26",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.701577,
+          49.41234
+        ],
+        "type": "Point"
+      },
+      "id": "08a8109806edae3ee02a586466664d83"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Baustelle",
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686013,
+          49.404435
+        ],
+        "type": "Point"
+      },
+      "id": "09ccc50a00536c02677d8896aaa5d646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685805,
+          49.404432
+        ],
+        "type": "Point"
+      },
+      "id": "0b96b3c6e44e29b7715f3d97a785be5a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676245,
+          49.390165
+        ],
+        "type": "Point"
+      },
+      "id": "0bbdc0b10164013b61fc2139745fc479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_6",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685927,
+          49.404432
+        ],
+        "type": "Point"
+      },
+      "id": "0bd248b45ff6ff516583cb173d8c08d7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Rohrbacher Straße (Bergfriedhof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076962_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690169,
+          49.395707
+        ],
+        "type": "Point"
+      },
+      "id": "0bec49d871a9a3d7bc467f5be9ce574c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "In der Neckarhelle 82",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077136_1",
+        "URN": "F0C",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-18",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.747336,
+          49.417407
+        ],
+        "type": "Point"
+      },
+      "id": "0c263c6a23b175d1fd5220ac9c88bc10"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076857_1",
+        "URN": "E7D",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686884,
+          49.412745
+        ],
+        "type": "Point"
+      },
+      "id": "0c998587f851364b160967ef6ba5f157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Vangerowstraße 4 (Thermalbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076896_2",
+        "URN": "E7B",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.67988,
+          49.408857
+        ],
+        "type": "Point"
+      },
+      "id": "106880d6e6c44d8453da8000f5e51503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Poststraße 5",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638363_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Fläche uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.69126,
+          49.408025
+        ],
+        "type": "Point"
+      },
+      "id": "11ba4dd3fa12cbd1d79d1e42d31985c8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kriegsstraße 16",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077316_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "8-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685945,
+          49.429132
+        ],
+        "type": "Point"
+      },
+      "id": "1225ae5767942d51b3134746d85783ce"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661471,
+          49.426261
+        ],
+        "type": "Point"
+      },
+      "id": "12bf420df071badb2666b5b1dc080073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Dossenheimer Landstraße 18a",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638369_1",
+        "URN": "F30",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.684377,
+          49.427882
+        ],
+        "type": "Point"
+      },
+      "id": "1300d6ad34bdb1eb752a06158a545733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bergheimer Straße 63",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872823_1",
+        "URN": "F31",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-19",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686659,
+          49.408038
+        ],
+        "type": "Point"
+      },
+      "id": "1424c3892cf5a7adb2b01b01cbf6ea8b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Akademiestraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076929_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.697848,
+          49.40997
+        ],
+        "type": "Point"
+      },
+      "id": "14e59663f615ede93361b26604822f09"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665096,
+          49.387506
+        ],
+        "type": "Point"
+      },
+      "id": "14e9d305536da7c70ce947aa099e9c19"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhof Kirchheim / Hardtstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872817_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Fläche uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.674993,
+          49.37984
+        ],
+        "type": "Point"
+      },
+      "id": "153dad0ac58f0ab11d81672d3088b5b0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Friedhof Wieblingen",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077010_1",
+        "URN": "F28",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.643019,
+          49.431175
+        ],
+        "type": "Point"
+      },
+      "id": "17ed0c6825cb14d0a334d295a9a70958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhofstraße 36",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872820_1",
+        "URN": "F22",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686951,
+          49.405445
+        ],
+        "type": "Point"
+      },
+      "id": "1935904e1fc1c267a5c688126ce10de2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Tiergartenschwimmbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077475_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.658665,
+          49.420246
+        ],
+        "type": "Point"
+      },
+      "id": "193906de382f3f390d828fb9cb0722f7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hauptbahnhof (Willy-Brandt-Platz)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077007_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Boden uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676509,
+          49.404183
+        ],
+        "type": "Point"
+      },
+      "id": "1a77a4df7afd17c666ca4c0ed8fb69c1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_6",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666115,
+          49.41456
+        ],
+        "type": "Point"
+      },
+      "id": "1c799d4dc8d260ca208274626ebc0450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Dantestraße 1",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077040_1",
+        "URN": "F44",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 7-20",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690262,
+          49.400342
+        ],
+        "type": "Point"
+      },
+      "id": "1debcb7fdb2f187c97f162919885c5ec"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_7",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666189,
+          49.414533
+        ],
+        "type": "Point"
+      },
+      "id": "1ed94a53094923b8760fed5cf19255cf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hauptbahnhof (Willy-Brandt-Platz)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077007_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Boden uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.6765,
+          49.404143
+        ],
+        "type": "Point"
+      },
+      "id": "1ef1f38068fbcc481586f98f3c616b0a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Gibt es nicht?/Baustelle",
+        "BEZEICHNUN": "Blunschlistraße 14",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077415_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-12",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.681038,
+          49.407
+        ],
+        "type": "Point"
+      },
+      "id": "2134bb78881457a09c020d590b38bf96"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Rohrbacher Straße 81",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076905_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691104,
+          49.400978
+        ],
+        "type": "Point"
+      },
+      "id": "21dc48239ceb1f6a2483c3de2edb5489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Heidelberger Straße 14",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872835_1",
+        "URN": "F13",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wtg8-19,2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691236,
+          49.382212
+        ],
+        "type": "Point"
+      },
+      "id": "2205f9d0971f0cc0911d925415e21a8f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund/Mombertplatz 33",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214252_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704516,
+          49.368495
+        ],
+        "type": "Point"
+      },
+      "id": "22d502ff3b45bc1e529d4bdd015034dd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Köpfel (Sportzentrum Ziegelhausen)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077472_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.743336,
+          49.423894
+        ],
+        "type": "Point"
+      },
+      "id": "23fc04860ce807d94f0cb47540b3d940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kirchstraße 16",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076914_1",
+        "URN": "F3F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 9-21",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.678998,
+          49.407083
+        ],
+        "type": "Point"
+      },
+      "id": "24f22d1ff6b456f3b5e4207d3abcf488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund/Mombertplatz 33",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214252_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704504,
+          49.368407
+        ],
+        "type": "Point"
+      },
+      "id": "2792b0f9c3abb2d1539c6839f28a8d30"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kaiserstraße (Agentur für Arbeit)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077292_1",
+        "URN": "F52",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.681158,
+          49.403412
+        ],
+        "type": "Point"
+      },
+      "id": "28f338de63ac36952da29970416ebe49"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Da-Vinci-Straße (Höhe Gadamerplatz 1)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872826_1",
+        "URN": "F4E",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665782,
+          49.40316
+        ],
+        "type": "Point"
+      },
+      "id": "29899f4e21c748bb67ef6d0c17e0c067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Gewerbeschule (Johannes-Gutenberg-Schule)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076980_2",
+        "URN": "F15",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.660147,
+          49.410206
+        ],
+        "type": "Point"
+      },
+      "id": "29b344797dd16b59438821daa6420367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Vangerowstraße 2",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077340_1",
+        "URN": "E78",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.681103,
+          49.409021
+        ],
+        "type": "Point"
+      },
+      "id": "29c33d8c6e47e768a0b42a4eda1542e5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Grabengasse/Seminarstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076971_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Gibt es nicht/Durch Fahrräder belegt"
+      },
+      "geometry": {
+        "coordinates": [
+          8.70645,
+          49.409758
+        ],
+        "type": "Point"
+      },
+      "id": "2bc6b84ed670341c522a6f1e9e29d9f2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße 19",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872802_2",
+        "URN": "E86",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.677762,
+          49.406126
+        ],
+        "type": "Point"
+      },
+      "id": "2cabb3d15c399f81d0598a84ceb3ec10"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kußmaulstr./Handschuhsheimer Landstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077112_1",
+        "URN": "E7F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "9-18, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691127,
+          49.418394
+        ],
+        "type": "Point"
+      },
+      "id": "2eb2cb0c11106438fe09971b691f44b0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Tiergartenschwimmbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077475_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.658699,
+          49.420181
+        ],
+        "type": "Point"
+      },
+      "id": "2f89710ceb575fd8e325e33d0d97f363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_6",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676374,
+          49.390135
+        ],
+        "type": "Point"
+      },
+      "id": "30454a8ade291a9b6edb9c9759c003a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kerweplatz Kirchheim",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214139_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665965,
+          49.377214
+        ],
+        "type": "Point"
+      },
+      "id": "330fb79c80c9566a9c897f9e439ef00b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Steubenstraße 56-58",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077394_1",
+        "URN": "F32",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "8-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687546,
+          49.425311
+        ],
+        "type": "Point"
+      },
+      "id": "3454e48de3a7cb71610f8e167abb5e50"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kaiserstraße (Agentur für Arbeit)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077292_2",
+        "URN": "F53",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.681104,
+          49.403434
+        ],
+        "type": "Point"
+      },
+      "id": "34adb3820b2f8ee90ff776d134ba5f90"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_7",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685969,
+          49.40443
+        ],
+        "type": "Point"
+      },
+      "id": "351783ff5ce27ac4abf85d696edc5ddc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666033,
+          49.414627
+        ],
+        "type": "Point"
+      },
+      "id": "36f768c172ac36b2c4bddf48cb8efdc0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hauptbahnhof (Willy-Brandt-Platz)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077007_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Boden uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676574,
+          49.404195
+        ],
+        "type": "Point"
+      },
+      "id": "3cda7aba656d36b8869d72e725786b7d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Gaisbergstraße 91",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872832_1",
+        "URN": "F45",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 9-17",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.692057,
+          49.400646
+        ],
+        "type": "Point"
+      },
+      "id": "4206b43725220c3a8f681d646d5692d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Ausweis",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_8",
+        "URN": "F38",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676552,
+          49.38985
+        ],
+        "type": "Point"
+      },
+      "id": "441858942ff7e390ad881ec8b5d73de1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Steubenstr. (Grahampark)/Doss. Landstr.",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077229_1",
+        "URN": "F34",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.68639,
+          49.427631
+        ],
+        "type": "Point"
+      },
+      "id": "44e3aec1e1620b8d9de0f95858db4224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhofstraße (Mittelstreifen Höhe Amtsgericht)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911966_2",
+        "URN": "E72",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687971,
+          49.405632
+        ],
+        "type": "Point"
+      },
+      "id": "45d24eb1dd12cee02be0989075031600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685852,
+          49.40443
+        ],
+        "type": "Point"
+      },
+      "id": "45ed80db8002974b4de7c78b3182c926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Gaswerkstraße (Landratsamt)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077373_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.683022,
+          49.405649
+        ],
+        "type": "Point"
+      },
+      "id": "465d73f6673e66cc2cd73985bb1a5e41"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Seminarstraße 4",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077118_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.708489,
+          49.410039
+        ],
+        "type": "Point"
+      },
+      "id": "4878b3e5c0f9fab4f03827a3629c9e45"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686096,
+          49.404438
+        ],
+        "type": "Point"
+      },
+      "id": "48b717c2afb92c5b6a9cb366e255f468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Sofienstraße (DAI)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872855_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Wird neugemacht, Baustelle "
+      },
+      "geometry": {
+        "coordinates": [
+          8.694101,
+          49.407936
+        ],
+        "type": "Point"
+      },
+      "id": "48fd6c2ca7278b95fced354fd0655cda"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Poststraße 17",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638360_2",
+        "URN": "F39",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.6863,
+          49.407171
+        ],
+        "type": "Point"
+      },
+      "id": "49110932c149a956420f986985be835f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661567,
+          49.42628
+        ],
+        "type": "Point"
+      },
+      "id": "496c4fbe0a281880c869d19123893ebc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bergheimer Straße 53-57",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": 33077529,
+        "URN": "F08",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687831,
+          49.408235
+        ],
+        "type": "Point"
+      },
+      "id": "497fb883b5791809bd474a74736194dd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Mönchgasse / Heiliggeiststraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077310_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.711855,
+          49.412709
+        ],
+        "type": "Point"
+      },
+      "id": "499f46039bb568063152c29c2f80815b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Friedhof Kirchheim",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077343_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-20, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.658096,
+          49.375883
+        ],
+        "type": "Point"
+      },
+      "id": "4cac3cf84db4ad116dc02baf77fd9af7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665089,
+          49.387521
+        ],
+        "type": "Point"
+      },
+      "id": "4cd9a02b736a6696f3600a4c622bf03a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076857_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687003,
+          49.412771
+        ],
+        "type": "Point"
+      },
+      "id": "4cda5681137d9dc79ff551707414caae"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Gewerbeschule (Johannes-Gutenberg-Schule)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076980_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.660144,
+          49.410175
+        ],
+        "type": "Point"
+      },
+      "id": "4e1c65ebac0017af9877f194a2039929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße 19",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872802_1",
+        "URN": "F50",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.677703,
+          49.406122
+        ],
+        "type": "Point"
+      },
+      "id": "4fe905f3d63aba3d9429cff4d98f1fb7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Friedhof Rohrbach",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214130_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "2h",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Gibt es nicht"
+      },
+      "geometry": {
+        "coordinates": [
+          8.694931,
+          49.376562
+        ],
+        "type": "Point"
+      },
+      "id": "501194d4c1c839d28a89c6c4dddd30cf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Emil-Maier-Straße (gegenüber Nr. 3)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638357_1",
+        "URN": "E7E",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wtg9-18,1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.672532,
+          49.408214
+        ],
+        "type": "Point"
+      },
+      "id": "504527e9ba3579b6823fa16014a51d57"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Lindenweg 6",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872844_1",
+        "URN": "F12",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686223,
+          49.380492
+        ],
+        "type": "Point"
+      },
+      "id": "5191dbcbc66dcc495bbf1f6be713f62d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Abgrenzung",
+        "BEZEICHNUN": "Theaterstraße (Platz ggü. Nr. 6)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638343_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704308,
+          49.410513
+        ],
+        "type": "Point"
+      },
+      "id": "51baec8f5b8d62b2ddec8f6ec098786f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Akademiestraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076929_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.697825,
+          49.410038
+        ],
+        "type": "Point"
+      },
+      "id": "51fa32af8d4d050311f304ada3dc7926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Gaswerkstraße (Landratsamt)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077373_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.683008,
+          49.405676
+        ],
+        "type": "Point"
+      },
+      "id": "524ea5bc1ac41b4ba5c52e40e7f27658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_7",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661589,
+          49.426248
+        ],
+        "type": "Point"
+      },
+      "id": "57105abb940572f6bcd58f61e943513c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Heinrich-Fuchs-Straße 73",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638385_1",
+        "URN": "F21",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680144,
+          49.379466
+        ],
+        "type": "Point"
+      },
+      "id": "5772c408911241993fe2c2f55e857331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Odenwaldstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872852_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.670125,
+          49.379142
+        ],
+        "type": "Point"
+      },
+      "id": "58540f05c272e524c2b45e3c9a2312d0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bergheimer Straße 17",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077103_1",
+        "URN": "AD0",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.69055,
+          49.408703
+        ],
+        "type": "Point"
+      },
+      "id": "587aa9dc3dd971c0a0b6cd57f0c3ef41"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Landhausstraße (St.-Josefs-Krh.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077400_1",
+        "URN": "F48",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.688553,
+          49.402467
+        ],
+        "type": "Point"
+      },
+      "id": "58878cec6c69d64e42ac75fe1dc1948a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Extra",
+        "BEZEICHNUN": "Kurfürstenanlage 36 (Höhe AOK)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077238_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-19",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685092,
+          49.406044
+        ],
+        "type": "Point"
+      },
+      "id": "59090a3ffa70e60266561a9fa2a2c82a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Poststraße 10",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214146_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691175,
+          49.408107
+        ],
+        "type": "Point"
+      },
+      "id": "5a35334bab5b9c5fc069a8f8a9f87e23"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Baustelle",
+        "BEZEICHNUN": "Voßstraße 7",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872861_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687753,
+          49.409373
+        ],
+        "type": "Point"
+      },
+      "id": "5addc8abd907e77217dd58afc0c6a0c5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Belfortstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077058_1",
+        "URN": "F43",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679471,
+          49.403743
+        ],
+        "type": "Point"
+      },
+      "id": "5cf7d17add2d8e5f97392cdef8389e2c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Peterstaler Straße (Parkplatz Neckarschule)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076860_1",
+        "URN": "F0B",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wgt9-18,2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.756651,
+          49.419353
+        ],
+        "type": "Point"
+      },
+      "id": "5e80fef29ba37537321e37d905ec1903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Landhausstraße (St.-Josefs-Krh.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077400_2",
+        "URN": "E79",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.688561,
+          49.402521
+        ],
+        "type": "Point"
+      },
+      "id": "61097036804efffe802391e5fb27ad6d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Rohrbacher Straße (Helmholtz-Gymn.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077226_2",
+        "URN": "F47",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.689323,
+          49.39577
+        ],
+        "type": "Point"
+      },
+      "id": "61cf6ae6df3cc7a2cae9e920dec71451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666261,
+          49.414513
+        ],
+        "type": "Point"
+      },
+      "id": "62397c6f2310dc00ddd1c54d75b8472a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Baustelle",
+        "BEZEICHNUN": "Schloßparkplatz",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077085_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.712457,
+          49.408947
+        ],
+        "type": "Point"
+      },
+      "id": "6254250984e40e70d62aa1e052c8f46d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_6",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665112,
+          49.387445
+        ],
+        "type": "Point"
+      },
+      "id": "62b1938b9b383e11c208a576fb674205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Zollhofgarten (bei VRNnetbike - Halle02)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872858_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.672715,
+          49.401733
+        ],
+        "type": "Point"
+      },
+      "id": "63a77994321a4fd416b5162c83413b53"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kirchstraße (ggü Nr. 2)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077298_1",
+        "URN": "E7A",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679019,
+          49.408499
+        ],
+        "type": "Point"
+      },
+      "id": "687fea197dffb66a129af06b1a76a74a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_9",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676287,
+          49.390255
+        ],
+        "type": "Point"
+      },
+      "id": "69a460c3388b4c85da65815aab0bfd52"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Lange Sendezeit",
+        "BEZEICHNUN": "Bergheimer Straße 56a",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638350_1",
+        "URN": "F35",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685786,
+          49.408064
+        ],
+        "type": "Point"
+      },
+      "id": "69b84cbe4aba5d542a5134890154514b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666124,
+          49.414607
+        ],
+        "type": "Point"
+      },
+      "id": "6a76bdc02959cafbe25913282dac3d8f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Extra",
+        "BEZEICHNUN": "Im Emmertsgrund / Am Forum (obere Parkebene)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "",
+        "URN": "E8D",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704155,
+          49.363688
+        ],
+        "type": "Point"
+      },
+      "id": "6de3c861a81f637510d743b31daa8a64"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_8",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Zu wenig/Keine Klare Mark."
+      },
+      "geometry": {
+        "coordinates": [
+          8.665945,
+          49.414595
+        ],
+        "type": "Point"
+      },
+      "id": "6e9808f899f5174d6be6dc6a6f6665ee"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kleingemünder Straße (\"Kuchenblech\")",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077253_2",
+        "URN": "AA7",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wgt7-19,2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.760606,
+          49.417413
+        ],
+        "type": "Point"
+      },
+      "id": "730d42a6d19562864782d5879a209410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_9",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.66603,
+          49.414583
+        ],
+        "type": "Point"
+      },
+      "id": "733a895bbf3d804b16d0bedcc64563a3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund / Otto-Hahn-Straße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638366_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Öff. ned Gefunden/Nur mit Ausweis"
+      },
+      "geometry": {
+        "coordinates": [
+          8.706124,
+          49.368203
+        ],
+        "type": "Point"
+      },
+      "id": "73a471a3dd96c7edaa41053cf863b784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Extra",
+        "BEZEICHNUN": "",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076860_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.756899,
+          49.418284
+        ],
+        "type": "Point"
+      },
+      "id": "73f5c502b9f49dc8c80764454487b12c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661602,
+          49.426215
+        ],
+        "type": "Point"
+      },
+      "id": "744e1c563aca722884292ec987bc281f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Grabengasse/Seminarstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076971_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Gibt es nicht/Durch Fahrräder belegt"
+      },
+      "geometry": {
+        "coordinates": [
+          8.706409,
+          49.409799
+        ],
+        "type": "Point"
+      },
+      "id": "77bc82b14fd539bf9f609ed491d902c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund / Otto-Hahn-Straße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638366_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Öffentliche nicht gefunden/Nur mit Ausweis"
+      },
+      "geometry": {
+        "coordinates": [
+          8.706111,
+          49.368245
+        ],
+        "type": "Point"
+      },
+      "id": "786b51a3c19d0cd2e114947d689d6269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kirchstraße 20-22",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872814_1",
+        "URN": "F5E",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679015,
+          49.406621
+        ],
+        "type": "Point"
+      },
+      "id": "7a426693e15188a554235f7102d78e74"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872808_1",
+        "URN": "F3C",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 7-17",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.678152,
+          49.406234
+        ],
+        "type": "Point"
+      },
+      "id": "7d1f0374450449cc6bbbb16386c52c91"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Vangerowstraße 4 (Thermalbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076896_1",
+        "URN": "E75",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679998,
+          49.408849
+        ],
+        "type": "Point"
+      },
+      "id": "7e78ea1159984aa17eb56357427ce768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Sendet langsam",
+        "BEZEICHNUN": "Friedrich-Ebert-Anlage 1 (Jur. Sem.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638325_2",
+        "URN": "E91",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.696798,
+          49.407929
+        ],
+        "type": "Point"
+      },
+      "id": "7f36fac0363bec795c4a236ae4e7229b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Akademiestraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076929_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.697802,
+          49.410093
+        ],
+        "type": "Point"
+      },
+      "id": "825f11cd95da32330e7617310d859649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kerweplatz Kirchheim",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214139_2",
+        "URN": "F65",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665979,
+          49.377184
+        ],
+        "type": "Point"
+      },
+      "id": "8994d69574cb8faa5c9330e634a6088b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 8",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077082_1",
+        "URN": "F2E",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691128,
+          49.413299
+        ],
+        "type": "Point"
+      },
+      "id": "8a7348ea13102068e7114a89b6543e44"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Rohrbacher Straße (Helmholtz-Gymn.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077226_3",
+        "URN": "F3D",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.689326,
+          49.395743
+        ],
+        "type": "Point"
+      },
+      "id": "8da0a5c8950865407c18bc86cf6c1fb7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhofstraße (Mittelstreifen Höhe Amtsgericht)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911966_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Gibts ned"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687858,
+          49.405616
+        ],
+        "type": "Point"
+      },
+      "id": "8f43dbbb1e5960a585050e42216f1731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Ausweis",
+        "BEZEICHNUN": "Schröderstraße/Brückenstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077307_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691754,
+          49.4159
+        ],
+        "type": "Point"
+      },
+      "id": "8f6507828fc0f9c8cdd0f653fb725699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Landhausstraße (Höhe Amtsgericht)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872841_1",
+        "URN": "E77",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "4h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.688958,
+          49.406138
+        ],
+        "type": "Point"
+      },
+      "id": "8f8a181633b3ac0d83b8a799af0af9d9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_6",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661552,
+          49.426318
+        ],
+        "type": "Point"
+      },
+      "id": "9005d130749e3f06e71dac4a3a82cefc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Extra",
+        "BEZEICHNUN": "Im Emmertsgrund / Am Forum (obere Parkebene)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "",
+        "URN": "E8C",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704069,
+          49.363659
+        ],
+        "type": "Point"
+      },
+      "id": "946a58da901ebdb2512f1e0a817fbb92"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Fläche Uneben",
+        "BEZEICHNUN": "Friedhof Handschuhsheim",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076884_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685516,
+          49.433363
+        ],
+        "type": "Point"
+      },
+      "id": "94b9d12e41b5046068f794eb7f8b7e1a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.67607,
+          49.390225
+        ],
+        "type": "Point"
+      },
+      "id": "973b625efb32ce9bd4688f906ffdded3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Zoo)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "33077049_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "30 min",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.664013,
+          49.41512
+        ],
+        "type": "Point"
+      },
+      "id": "98057161b3ed0241539abdd59cddffd2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße (vor Polizei)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077581_2",
+        "URN": "E8A",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.683923,
+          49.407185
+        ],
+        "type": "Point"
+      },
+      "id": "981393b50bee210d4c67061b44ad0d3c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661482,
+          49.42623
+        ],
+        "type": "Point"
+      },
+      "id": "98753ce01602ddcef1a099bf50d8369d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Baustelle",
+        "BEZEICHNUN": "Schloßparkplatz",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077085_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.712565,
+          49.408941
+        ],
+        "type": "Point"
+      },
+      "id": "98b62e121b52143829cd7d1a6e6dd3d4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimerstraße 38a",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872805_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.678087,
+          49.406228
+        ],
+        "type": "Point"
+      },
+      "id": "98c838aaac5b5c1c92ce980efbc87301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Lange Senderzeit",
+        "BEZEICHNUN": "Bergheimer Straße 56a",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638350_3",
+        "URN": "E93",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685693,
+          49.408048
+        ],
+        "type": "Point"
+      },
+      "id": "9906b25995843e1e94d2567c7a4c323d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bluntschlistraße (Hof der Vhs)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638354_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680764,
+          49.408159
+        ],
+        "type": "Point"
+      },
+      "id": "9909354b5f5b8d2aada0c44b2344150c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kleingemünder Straße (\"Kuchenblech\")",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077253_1",
+        "URN": "F10",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wgt7-19,2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.760692,
+          49.417223
+        ],
+        "type": "Point"
+      },
+      "id": "990e2b43326ffc4cfa6a8c055594fa0b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund/Mombertplatz 33",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "42214252_1",
+        "URN": "F71",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Sendet langsam"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704508,
+          49.368453
+        ],
+        "type": "Point"
+      },
+      "id": "99c349b8c93b2311055a9bacfdd956ba"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg Wegen Baustelle",
+        "BEZEICHNUN": "Schröderstraße/Brückenstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077307_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691849,
+          49.415906
+        ],
+        "type": "Point"
+      },
+      "id": "9aa50a4732bec48134211d9fd0b3aeaa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665107,
+          49.387462
+        ],
+        "type": "Point"
+      },
+      "id": "9dfbae489b0ba4a4f145331b0ba892d8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665105,
+          49.387476
+        ],
+        "type": "Point"
+      },
+      "id": "9e25506ed067111fdeda16dd7f78b6bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Gibts Nicht?",
+        "BEZEICHNUN": "Da-Vinci-Straße (Höhe Gadamerplatz 1)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872826_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665813,
+          49.403203
+        ],
+        "type": "Point"
+      },
+      "id": "9f340e67df9a0a20ebb450700519a995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Zollhofgarten (bei VRNnetbike - Halle02)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872858_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.672692,
+          49.40169
+        ],
+        "type": "Point"
+      },
+      "id": "a0a180432dacaa2fa1049e18763c7ece"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Poststraße 50",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077025_1",
+        "URN": "F2B",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687088,
+          49.407189
+        ],
+        "type": "Point"
+      },
+      "id": "a0fd0f7ea449d6cac2a9b7026549b758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 8",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077082_4",
+        "URN": "E89",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690892,
+          49.413288
+        ],
+        "type": "Point"
+      },
+      "id": "a2fd3bae91983d0f38e953125ef59698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Furtwänglerstraße 15",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077442_1",
+        "URN": "F55",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wgt8-20,1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680561,
+          49.421325
+        ],
+        "type": "Point"
+      },
+      "id": "a3fcc5c965fcfdb6ac71f394971eb781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kleinschmidtstraße 5",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077178_1",
+        "URN": "F54",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-18",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687151,
+          49.405008
+        ],
+        "type": "Point"
+      },
+      "id": "a479d67b3ecafd3ce3a366e5d3f47a67"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_7",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.675953,
+          49.390195
+        ],
+        "type": "Point"
+      },
+      "id": "a480675f1eccc721fe33ca9712c8d7cb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bergheimer Straße 109a",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077544_1",
+        "URN": "E8B",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "8-18, 1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680116,
+          49.407773
+        ],
+        "type": "Point"
+      },
+      "id": "a4e6245b45c8dcb77a1943959c056bc1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Lutherstraße 21/23",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872849_1",
+        "URN": "E6F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690175,
+          49.414981
+        ],
+        "type": "Point"
+      },
+      "id": "a7123a6a5c9d7da1f4abaaec92f54b43"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Ausweis, Extra",
+        "BEZEICHNUN": "Kirchstraße 20-22",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872814_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679011,
+          49.406681
+        ],
+        "type": "Point"
+      },
+      "id": "ae4d0648bc74ade865f19deed39fbd15"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 8",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077082_2",
+        "URN": "F41",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691257,
+          49.413293
+        ],
+        "type": "Point"
+      },
+      "id": "b09e54afe73e7512a184a4647f6567f4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Friedhof Kirchheim",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077343_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-20, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.658143,
+          49.375868
+        ],
+        "type": "Point"
+      },
+      "id": "b1c6bed38fa490e939aa863e66cdce44"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Rohrbacher Straße (Bergfriedhof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076962_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690128,
+          49.39565
+        ],
+        "type": "Point"
+      },
+      "id": "b1df0992a6746dfea637ffabd1bf25cb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bluntschlistraße (Hof der Vhs)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638354_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680763,
+          49.408197
+        ],
+        "type": "Point"
+      },
+      "id": "b353f65ddbff85ea95141e6eaadd8ef5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Poststraße 5",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638363_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Fläche uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.691346,
+          49.408041
+        ],
+        "type": "Point"
+      },
+      "id": "b35b34286094d9680b3c7e158b41f114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666197,
+          49.414587
+        ],
+        "type": "Point"
+      },
+      "id": "b382350d355573ce6d2a2accfa7e5599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665098,
+          49.387492
+        ],
+        "type": "Point"
+      },
+      "id": "b3b0813b0e7ae7975974564e8b5691a7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hauptbahnhof (Willy-Brandt-Platz)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077007_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Boden uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676638,
+          49.404159
+        ],
+        "type": "Point"
+      },
+      "id": "b4fd435fb9fbe70f8bfb3d7071e7b839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Zu wenig/Keine Klare Mark.",
+        "BEZEICHNUN": "Hofmeisterweg (Medizinische Klinik)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "37638373_5",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.666277,
+          49.41456
+        ],
+        "type": "Point"
+      },
+      "id": "b6465ca31199fbd558d8e50b02d791d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Neckarstaden 58",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077370_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.708113,
+          49.413276
+        ],
+        "type": "Point"
+      },
+      "id": "b6d9a6bfdb565e46c71b713c92862bab"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hauptbahnhof (Willy-Brandt-Platz)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077007_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Boden uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676565,
+          49.404156
+        ],
+        "type": "Point"
+      },
+      "id": "b7e1e9b98bfc576552b0c85bdda21e25"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Furtwänglerstraße 15",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077442_2",
+        "URN": "F61",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wgt8-20,1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680558,
+          49.421393
+        ],
+        "type": "Point"
+      },
+      "id": "ba926ce7f225214d7ea75a35a9fb06c0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Friedhof Ziegelhausen (Friedhofsweg ggü Nr. 28)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872864_1",
+        "URN": "A97",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.760532,
+          49.419804
+        ],
+        "type": "Point"
+      },
+      "id": "bd036ede220a644ae5e0b88bf820bfbf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kurfürstenanlage 36 (Höhe AOK)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077238_1",
+        "URN": "F09",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-19",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.685176,
+          49.406057
+        ],
+        "type": "Point"
+      },
+      "id": "be88f354766049d57f196d898ec04b57"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "",
+        "BEZEICHNUN": "Bergheimer Straße 153",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077163_1",
+        "URN": "F27",
+        "BESCHREIBU": "",
+        "BESCHRIFTU": "wtg8-19,1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.673939,
+          49.407805
+        ],
+        "type": "Point"
+      },
+      "id": "bfa58f8ebf61e42e5b47960e60a92ceb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhof Kirchheim / Hardtstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872817_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Fläche uneben"
+      },
+      "geometry": {
+        "coordinates": [
+          8.675001,
+          49.379884
+        ],
+        "type": "Point"
+      },
+      "id": "c23e52b1d1112e37afe84547ab5fe3c4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.68605,
+          49.404438
+        ],
+        "type": "Point"
+      },
+      "id": "c27c684254c352c377fc1befdf65e6d8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhofstraße (ggü Nr. 29)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638389_1",
+        "URN": "F1D",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.688811,
+          49.405772
+        ],
+        "type": "Point"
+      },
+      "id": "c4d6415503581572c5c892dc78776e03"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Sofienstraße (Galeria Kaufhof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076995_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.693686,
+          49.408926
+        ],
+        "type": "Point"
+      },
+      "id": "c5a4be8ef2305b7dccc84e6bacec9311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Köpfel (Sportzentrum Ziegelhausen)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077472_2",
+        "URN": "A9F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.743464,
+          49.423937
+        ],
+        "type": "Point"
+      },
+      "id": "c686d5d466069a6e2b6665e7b06f0527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Sendet Komisch",
+        "BEZEICHNUN": "Friedrich-Ebert-Anlage 1 (Jur. Sem.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638325_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.696712,
+          49.40791
+        ],
+        "type": "Point"
+      },
+      "id": "c8ad39337f71c7ccabcf1c50aca2edf5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bergheimer Straße 95",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077286_1",
+        "URN": "F2F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.68222,
+          49.407742
+        ],
+        "type": "Point"
+      },
+      "id": "c9336d22c78a24ffd9c083b41a23de51"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße 35",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076968_1",
+        "URN": "E85",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.675472,
+          49.406028
+        ],
+        "type": "Point"
+      },
+      "id": "cacbb7f6234030bd1715b75865a9ec71"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Franz-Knauff-Straße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077367_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustellenplatz"
+      },
+      "geometry": {
+        "coordinates": [
+          8.689239,
+          49.399143
+        ],
+        "type": "Point"
+      },
+      "id": "cb15db4a0fbed89ff9b3fac751096ae3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Schwetzinger Terrasse (Höhe Sparkasse)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077124_1",
+        "URN": "F67",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.67108,
+          49.399214
+        ],
+        "type": "Point"
+      },
+      "id": "cd8fddf23a0b22d2323bb8f63a2851d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_8",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661448,
+          49.426299
+        ],
+        "type": "Point"
+      },
+      "id": "ce70e6b93cf27ddcf7fba4715c8697e0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Lutherstraße 15",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077268_2",
+        "URN": "F36",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690101,
+          49.414433
+        ],
+        "type": "Point"
+      },
+      "id": "ce76e246eb5eeaa39fa6b3808da42e9b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Brahmsstraße 2",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077361_1",
+        "URN": "F0A",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.761324,
+          49.417542
+        ],
+        "type": "Point"
+      },
+      "id": "ce77086dd47c6b6ce310f999a5ff1389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Kirchstraße 20-22",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872814_2",
+        "URN": "F5F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679016,
+          49.406538
+        ],
+        "type": "Point"
+      },
+      "id": "d00a67afe41467c8d2904bd76d85bd82"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Neckarstaden 58",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077370_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.708057,
+          49.413271
+        ],
+        "type": "Point"
+      },
+      "id": "d0925c31ba671fc628030393bbfc9b81"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_10",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676048,
+          49.390088
+        ],
+        "type": "Point"
+      },
+      "id": "d25c55c2cdfb29cee98f428cf93e0d87"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Ausweis, Extra",
+        "BEZEICHNUN": "Kirchstraße 20-22",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872814_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.679009,
+          49.40665
+        ],
+        "type": "Point"
+      },
+      "id": "d4a507e488bcf9bf7cf3b073fc95e320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Schwalbenweg (Gesellschaftshaus)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077337_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.652423,
+          49.39824
+        ],
+        "type": "Point"
+      },
+      "id": "d4af42fc4524727d566821adef8c7f34"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Erlenweghalle",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872829_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676969,
+          49.375689
+        ],
+        "type": "Point"
+      },
+      "id": "d4bf8575b9f476b0ead94ea10a4a4733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Tiergartenschwimmbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077475_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.658636,
+          49.420286
+        ],
+        "type": "Point"
+      },
+      "id": "d4d0f8f08bf1beac00d7b80107adfcd5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Tiergartenschwimmbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077475_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.658679,
+          49.420211
+        ],
+        "type": "Point"
+      },
+      "id": "d74266ba72edd0e064eccd12bdefc696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhofstraße (ggü Nr. 29)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638389_2",
+        "URN": "E7C",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.688898,
+          49.405788
+        ],
+        "type": "Point"
+      },
+      "id": "d7cdb18a0aea3f289133453625a80c77"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Zoo)",
+        "BETREIBER": "UniversitätsKlinikum",
+        "TYP": "öffentlich",
+        "XTRID": "33077049_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "30 min",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.664108,
+          49.415101
+        ],
+        "type": "Point"
+      },
+      "id": "d829852a8f9aab2b78990b284087ea17"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund / Am Forum (mittlere Parkebene)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077364_1",
+        "URN": "F1E",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704406,
+          49.363983
+        ],
+        "type": "Point"
+      },
+      "id": "d9afa2ce0db7a3c89d9c1fd597fb8948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Tiergartenstraße (Tiergartenschwimmbad)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077475_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Keine Klare Markierung"
+      },
+      "geometry": {
+        "coordinates": [
+          8.65865,
+          49.420266
+        ],
+        "type": "Point"
+      },
+      "id": "da5134f749f65a59471e119d47c8f0fd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Sportzentrum Friedhof Ziegelhausen",
+        "BETREIBER": null,
+        "TYP": null,
+        "XTRID": "42214166_1",
+        "URN": "F0F",
+        "BESCHREIBU": "Kunden",
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.745382,
+          49.421835
+        ],
+        "type": "Point"
+      },
+      "id": "dade36031f11150b5d92da7b0e146698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Markierung",
+        "BEZEICHNUN": "Tiergartenstraße (Sportzentrum Nord)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076986_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.661499,
+          49.426199
+        ],
+        "type": "Point"
+      },
+      "id": "db1d265051c1158ed60a2845c96f0f6a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Lutherstraße 21/23",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872849_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.69017,
+          49.414908
+        ],
+        "type": "Point"
+      },
+      "id": "db5b401d51f89fca68aaf9d66de5bed2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Baustelle",
+        "BEZEICHNUN": "Voßstraße 7",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872861_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687849,
+          49.409389
+        ],
+        "type": "Point"
+      },
+      "id": "dbac7e0e8d74c189e6c927f7675e7140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Karlsruher Straße 86",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872838_1",
+        "URN": "F37",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "9-19",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.68855,
+          49.380761
+        ],
+        "type": "Point"
+      },
+      "id": "dbf92af33dd9936c8cded083bfa4c9e4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Lutherstraße 15",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077268_1",
+        "URN": "EA0",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "7-19, 2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690095,
+          49.414378
+        ],
+        "type": "Point"
+      },
+      "id": "dfe7656237c726c946c42ba39cdd0905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße 35",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076968_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.675542,
+          49.40603
+        ],
+        "type": "Point"
+      },
+      "id": "e037204c37e7906acc0f9ec13933e179"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bahnhofstraße 47",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077109_1",
+        "URN": "F51",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.686931,
+          49.405358
+        ],
+        "type": "Point"
+      },
+      "id": "e1b4025b2efd40c1a1c33a93ddc6678a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Köpfel (Sportzentrum Ziegelhausen)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077472_1",
+        "URN": "AB8",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.743399,
+          49.423915
+        ],
+        "type": "Point"
+      },
+      "id": "e2b6727dd8cfece0ef53b3309f4e66c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße (vor Polizei)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077581_1",
+        "URN": "F73",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.683865,
+          49.407149
+        ],
+        "type": "Point"
+      },
+      "id": "e2bf1d1286fd00033aaa1fa5386b6393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Sofienstraße (Galeria Kaufhof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076995_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.693693,
+          49.408905
+        ],
+        "type": "Point"
+      },
+      "id": "e338be3b551dd67b3a97c4ec984c4ce1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 8",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077082_3",
+        "URN": "E73",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.690997,
+          49.413293
+        ],
+        "type": "Point"
+      },
+      "id": "e39cecf362e633e36b3c83a52897f189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Odenwaldstraße",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872852_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.670063,
+          49.379141
+        ],
+        "type": "Point"
+      },
+      "id": "e513ccb716a69de5079bbbd72545de8c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Blumenstraße 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "46911969_8",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 8-17",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Baustelle"
+      },
+      "geometry": {
+        "coordinates": [
+          8.68589,
+          49.404425
+        ],
+        "type": "Point"
+      },
+      "id": "e83a83820df2a12f87529efc284943a0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Rohrbacher Straße (Helmholtz-Gymn.)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077226_1",
+        "URN": "F4A",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.689322,
+          49.395798
+        ],
+        "type": "Point"
+      },
+      "id": "e8dc3a12c731402be5623075e382b83d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Alte Eppelheimer Straße 36",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872811_1",
+        "URN": "F6F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "Mo-Fr 7-17",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.678234,
+          49.406243
+        ],
+        "type": "Point"
+      },
+      "id": "ea0a82a40a0eb90f31c4a70110e9b1bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte",
+        "Notiz": "Schild abgedeckt"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676162,
+          49.389986
+        ],
+        "type": "Point"
+      },
+      "id": "ea2279a92badb169ed3e3bdca02d1081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Im Emmertsgrund / Am Forum (mittlere Parkebene)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077364_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704324,
+          49.363955
+        ],
+        "type": "Point"
+      },
+      "id": "eac5f1ec0533f23072b073a6489ab680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Uferstraße gegenüber Nr. 38",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076857_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.687113,
+          49.412796
+        ],
+        "type": "Point"
+      },
+      "id": "ebf86dbe135b68210c5ac22f2f4ea759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_3",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676194,
+          49.390094
+        ],
+        "type": "Point"
+      },
+      "id": "ed888b0bea31c87d31551a355bd114ac"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Sofienstraße (Galeria Kaufhof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076995_1",
+        "URN": "F24",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.693676,
+          49.408948
+        ],
+        "type": "Point"
+      },
+      "id": "ef16405013122089eb6c8a26abd278db"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Schwalbenweg (Gesellschaftshaus)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077337_2",
+        "URN": "F2A",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.652472,
+          49.398244
+        ],
+        "type": "Point"
+      },
+      "id": "efa84d72eaca984d0716e2a6cf019fd0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Lange Sendezeit",
+        "BEZEICHNUN": "Bergheimer Straße 56a",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638350_2",
+        "URN": "F1C",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.6856,
+          49.408037
+        ],
+        "type": "Point"
+      },
+      "id": "f2ac34667b28f2f6c1123eebce2ef0bd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Keine Klare Abgrengung",
+        "BEZEICHNUN": "Theaterstraße (Platz ggü. Nr. 6)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638343_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.704223,
+          49.410505
+        ],
+        "type": "Point"
+      },
+      "id": "f8297c7de07b1f458f5931daa0c78a6c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Bluntschlistraße (Hof der Vhs)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "37638354_3",
+        "URN": "E9F",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.680763,
+          49.408232
+        ],
+        "type": "Point"
+      },
+      "id": "f84a3b67ab21ce3967e09fadd78a933b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Erlenweghalle",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "45872829_2",
+        "URN": "F11",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.67695,
+          49.375618
+        ],
+        "type": "Point"
+      },
+      "id": "f8e938e7b58df767a546acbf7f5aed0d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "",
+        "BEZEICHNUN": "Bergheimer Straße 153",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077163_2",
+        "URN": "F2D",
+        "BESCHREIBU": "",
+        "BESCHRIFTU": "wtg8-19,1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.673872,
+          49.407807
+        ],
+        "type": "Point"
+      },
+      "id": "fa6098b6fd4d57ca0e6157ab223e3786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Haselnussweg (gegenüber EZ)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077241_1",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "wgt9-19,2h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.703835,
+          49.375045
+        ],
+        "type": "Point"
+      },
+      "id": "fb53e139688d851e4c82e8b80da92362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Dossenheimer Landstraße 32",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077541_1",
+        "URN": "F1B",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "1h",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.683809,
+          49.42814
+        ],
+        "type": "Point"
+      },
+      "id": "fb73b645390798e328b01a356b51e9f4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "BEZEICHNUN": "Seminarstraße 4",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077118_2",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.708546,
+          49.410048
+        ],
+        "type": "Point"
+      },
+      "id": "fc0e480557eadd8ee71fa563b5f86db0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Schild abgedeckt",
+        "BEZEICHNUN": "Hardtstraße 2 (Zentralbetriebshof)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33077379_4",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": "beschränkt",
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.676313,
+          49.390058
+        ],
+        "type": "Point"
+      },
+      "id": "fc7a27015a83b628fbbf8ad5e5a1572e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Notiz": "Weg",
+        "BEZEICHNUN": "Pleikartsförster Straße (Sportz. Süd)",
+        "BETREIBER": "Stadt Heidelberg",
+        "TYP": "öffentlich",
+        "XTRID": "33076959_7",
+        "URN": "",
+        "BESCHREIBU": null,
+        "BESCHRIFTU": null,
+        "PARKPLATZ_": "Behinderte"
+      },
+      "geometry": {
+        "coordinates": [
+          8.665117,
+          49.387428
+        ],
+        "type": "Point"
+      },
+      "id": "ff5696d92a1e292b1436d01cbd5f36a2"
+    }
+  ],
+  "type": "FeatureCollection"
+}

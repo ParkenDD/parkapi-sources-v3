@@ -33,7 +33,7 @@ class VrnParkAndRidePullConverter(ParkingSitePullConverter, ABC):
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         response = self.request_get(
-            url='https://spatial.vrn.de/data/rest/services/P_R_Sensorik__Realtime_/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson',
+            url='https://spatial.vrn.de/data/rest/services/P_R_Sensorik__Realtime_/FeatureServer/1/query?where=1%3D1&outFields=*&f=geojson',
             timeout=30,
         )
 

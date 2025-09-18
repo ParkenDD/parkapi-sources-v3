@@ -3,79 +3,49 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime, timezone
+from datetime import datetime
 from decimal import Decimal
 
-from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
-from validataclass.validators import (
-    AnyOfValidator,
-    BooleanValidator,
-    DataclassValidator,
-    DateTimeValidator,
-    EnumValidator,
-    FloatValidator,
-    ListValidator,
-    Noneable,
-    NumericValidator,
-    StringValidator,
-)
+from shapely.geometry.base import BaseGeometry
+from validataclass.dataclasses import Default, DefaultUnset, validataclass
+from validataclass.helpers import UnsetValueType
+from validataclass.validators import EnumValidator, Noneable, StringValidator
 
+from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
 from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType
-from .parking_restriction_inputs import ParkingRestrictionInput
+from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
 @validataclass
-class GeojsonPolygonInput(ValidataclassMixin):
-    type: str = AnyOfValidator(allowed_values=['Polygon'])
-    coordinates: list[list[list[float]]] = ListValidator(
-        ListValidator(
-            ListValidator(
-                FloatValidator(allow_integers=True),
-                min_length=2,
-                max_length=2,
-            ),
-        ),
-        min_length=1,
-        max_length=1,
-    )
-
-
-@validataclass
-class StaticParkingSpotInput(ValidataclassMixin):
-    uid: str = StringValidator(min_length=1, max_length=256)
+class StaticParkingSpotInput(StaticBaseParkingInput):
     name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    address: str | None = Noneable(StringValidator(max_length=256)), Default(None)
-    purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
+
     type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
-    description: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
-    static_data_updated_at: datetime = DateTimeValidator(
-        local_timezone=timezone.utc,
-        target_timezone=timezone.utc,
-        discard_milliseconds=True,
-    )
-
-    has_realtime_data: bool = BooleanValidator()
-
-    # Set min/max to Europe borders
-    lat: Decimal = NumericValidator(min_value=34, max_value=72)
-    lon: Decimal = NumericValidator(min_value=-27, max_value=43)
-
-    geojson: GeojsonPolygonInput | None = Noneable(DataclassValidator(GeojsonPolygonInput)), Default(None)
-
-    restricted_to: list[ParkingRestrictionInput] | None = (
-        Noneable(ListValidator(DataclassValidator(ParkingRestrictionInput))),
-        Default(None),
-    )
 
 
 @validataclass
-class RealtimeParkingSpotInput(ValidataclassMixin):
-    uid: str = StringValidator(min_length=1, max_length=256)
-    realtime_data_updated_at: datetime = DateTimeValidator(
-        local_timezone=timezone.utc,
-        target_timezone=timezone.utc,
-        discard_milliseconds=True,
-    )
+class StaticParkingSpotPatchInput(StaticParkingSpotInput):
+    name: str | None | UnsetValueType = DefaultUnset
+    address: str | None | UnsetValueType = DefaultUnset
+    purpose: PurposeType | UnsetValueType = DefaultUnset
+    type: ParkingSpotType | None | UnsetValueType = DefaultUnset
+    description: str | None | UnsetValueType = DefaultUnset
+    static_data_updated_at: datetime | UnsetValueType = DefaultUnset
+
+    has_realtime_data: bool | UnsetValueType = DefaultUnset
+
+    lat: Decimal | UnsetValueType = DefaultUnset
+    lon: Decimal | UnsetValueType = DefaultUnset
+
+    geojson: BaseGeometry | None | UnsetValueType = DefaultUnset
+
+    restricted_to: list[ParkingRestrictionInput] | UnsetValueType = DefaultUnset
+    external_identifiers: list[ExternalIdentifierInput] | UnsetValueType = DefaultUnset
+    tags: list[str] | UnsetValueType = DefaultUnset
+
+
+@validataclass
+class RealtimeParkingSpotInput(RealtimeBaseParkingInput):
     realtime_status: ParkingSpotStatus | None = EnumValidator(ParkingSpotStatus), Default(None)
 
 
