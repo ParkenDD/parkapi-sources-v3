@@ -1,0 +1,78 @@
+[
+    {
+        "organizationId": "8aa646dc-c612-4c0a-b7f5-1d7b224e56f4",
+        "organizationName": "MOBIDATA BW",
+        "parkingLots": [
+            {
+                "id": "0ff8c7e9-5867-46fa-8799-19f1044fe858",
+                "name": "B10 Laupheim",
+                "longitude": 9.90268611907959,
+                "latitude": 48.25733184814453,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Achstetten"
+            },
+            {
+                "id": "2118f891-abb9-439b-9f43-54e976b6ab71",
+                "name": "A8 Aichelberg",
+                "longitude": 9.55628490447998,
+                "latitude": 48.63433837890625,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Aichelberg"
+            },
+            {
+                "id": "515334a4-c032-41c5-92b0-550d4c0d3991",
+                "name": "B27 Waldorfhäslach",
+                "longitude": 9.171835899353027,
+                "latitude": 48.57997131347656,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Walddorfhäslach"
+            },
+            {
+                "id": "555ba2d7-37f6-4b36-8428-087321717a1b",
+                "name": "A81 Osterburken",
+                "longitude": 9.477943420410156,
+                "latitude": 49.408084869384766,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Ravenstein"
+            },
+            {
+                "id": "7d1c853e-22fc-49a7-800e-076eac929c2b",
+                "name": "A5 Achern",
+                "longitude": 8.027649879455566,
+                "latitude": 48.643680572509766,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Achern"
+            },
+            {
+                "id": "9ff03e01-cc7d-47b7-9584-ac3ddc7389f2",
+                "name": "B10 Ulm",
+                "longitude": 9.977621078491211,
+                "latitude": 48.43806076049805,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Ulm"
+            },
+            {
+                "id": "b18dcdbb-f9e2-4dbf-947e-0985b8c7c4ab",
+                "name": "A5 Freiburg Mitte",
+                "longitude": 7.777708530426025,
+                "latitude": 48.02677536010742,
+                "freeParking": true,
+                "ticketParking": false,
+                "hasLiveData": true,
+                "city": "Umkirch"
+            }
+        ]
+    }
+]

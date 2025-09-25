@@ -66,7 +66,7 @@ class PMSensadeParkingLot:
     longitude: Decimal = NumericValidator(min_value=-27, max_value=43)
     parkingSpaces: list[dict] | None = Noneable(ListValidator(DataclassValidator(PMSensadeParkingLotParkingSpaces))), Default(None)
 
-    def to_static_parking_site(self) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         if self.address and self.zip and self.city:
             address = f'{self.address}, {self.zip} {self.city}'
         elif self.address:
