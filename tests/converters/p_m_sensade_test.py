@@ -20,8 +20,8 @@ from tests.converters.helper import (
 @pytest.fixture
 def p_m_sensade_config_helper(mocked_config_helper: Mock):
     config = {
-        'PARK_API_P_M_SENSADE_EMAIL',
-        'PARK_API_P_M_SENSADE_PASSWORD',
+        'PARK_API_P_M_SENSADE_EMAIL': 'mobidatabw@nvbw.de',
+        'PARK_API_P_M_SENSADE_PASSWORD': 'password',
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
@@ -37,7 +37,7 @@ def p_m_sensade_pull_converter(
 
 class UlmSensorsPullConverterTest:
     @staticmethod
-    def test_get_raw_parking_sites(
+    def _test_get_raw_parking_sites(
         p_m_sensade_pull_converter: PMSensadePullConverter,
         requests_mock: Mocker,
     ):
@@ -49,36 +49,36 @@ class UlmSensorsPullConverterTest:
             'https://api.sensade.com/auth/login',
             json={'access_token': 'token'},
         )
-        requests_mock.get(
-            'https://api.sensade.com/parkinglot/parkinglot/', text=json_data
-        )
+        requests_mock.get('https://api.sensade.com/parkinglot/parkinglot', text=json_data)
 
-        realtime_parking_site_inputs, import_parking_site_exceptions = (
-            p_m_sensade_pull_converter._get_raw_parking_sites()
-        )
+        raw_parking_site_inputs, import_parking_site_exceptions = p_m_sensade_pull_converter.get_raw_parking_sites()
 
-        assert len(realtime_parking_site_inputs) == 7
+        assert len(raw_parking_site_inputs) == 7
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        return raw_parking_site_inputs, import_parking_site_exceptions
 
     @staticmethod
     def test_get_static_parking_sites(
         p_m_sensade_pull_converter: PMSensadePullConverter,
         requests_mock: Mocker,
     ):
-        json_path = Path(Path(__file__).parent, 'data', 'p-m-sensade', 'parking-lot.json')
-        with json_path.open() as json_file:
-            json_data = json_file.read()
+        raw_parking_sites = UlmSensorsPullConverterTest._test_get_raw_parking_sites(
+            p_m_sensade_pull_converter, requests_mock
+        )
 
-        raw_parking_sites = p_m_sensade_pull_converter._get_raw_parking_sites()
-        for raw_parking_site in raw_parking_sites:
+        for raw_parking_site in raw_parking_sites[0]:
             requests_mock.post(
-            'https://api.sensade.com/auth/login',
-            json={'access_token': 'token'},
+                'https://api.sensade.com/auth/login',
+                json={'access_token': 'token'},
             )
+
+            json_path = Path(Path(__file__).parent, 'data', 'p-m-sensade', f'parking-lot-{raw_parking_site.id}.json')
+            with json_path.open() as json_file:
+                json_data = json_file.read()
+
             requests_mock.get(
-                f'https://api.sensade.com/parkinglot/parkinglot/{raw_parking_site.uid}',
+                f'https://api.sensade.com/parkinglot/parkinglot/{raw_parking_site.id}',
                 text=json_data,
             )
 
@@ -86,7 +86,7 @@ class UlmSensorsPullConverterTest:
             p_m_sensade_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 220
+        assert len(static_parking_site_inputs) == 7
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
@@ -96,26 +96,32 @@ class UlmSensorsPullConverterTest:
         p_m_sensade_pull_converter: PMSensadePullConverter,
         requests_mock: Mocker,
     ):
-        json_path = Path(Path(__file__).parent, 'data', 'p-m-sensade', 'parking-lot-status.json')
-        with json_path.open() as json_file:
-            json_data = json_file.read()
+        raw_parking_sites = UlmSensorsPullConverterTest._test_get_raw_parking_sites(
+            p_m_sensade_pull_converter, requests_mock
+        )
 
-        raw_parking_sites = p_m_sensade_pull_converter._get_raw_parking_sites()
-        for raw_parking_site in raw_parking_sites:
+        for raw_parking_site in raw_parking_sites[0]:
             requests_mock.post(
-            'https://api.sensade.com/auth/login',
-            json={'access_token': 'token'},
+                'https://api.sensade.com/auth/login',
+                json={'access_token': 'token'},
             )
+
+            json_path = Path(
+                Path(__file__).parent, 'data', 'p-m-sensade', f'parking-lot-status-{raw_parking_site.id}.json'
+            )
+            with json_path.open() as json_file:
+                json_data = json_file.read()
+
             requests_mock.get(
-                f'https://api.sensade.com/parkinglot/parkinglot/getcurrentparkinglotstatus/{raw_parking_site.uid}',
+                f'https://api.sensade.com/parkinglot/parkinglot/getcurrentparkinglotstatus/{raw_parking_site.id}',
                 text=json_data,
             )
 
         realtime_parking_site_inputs, import_parking_site_exceptions = (
-            p_m_sensade_pull_converter.get_static_parking_sites()
+            p_m_sensade_pull_converter.get_realtime_parking_sites()
         )
 
-        assert len(realtime_parking_site_inputs) == 220
+        assert len(realtime_parking_site_inputs) == 7
         assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)

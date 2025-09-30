@@ -8,18 +8,20 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import (
     ParkingSitePullConverter,
-    StaticGeojsonDataMixin,
 )
-from parkapi_sources.exceptions import ImportParkingSiteException, ImportParkingSpotException
+from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import (
     RealtimeParkingSiteInput,
-    RealtimeParkingSpotInput,
     SourceInfo,
     StaticParkingSiteInput,
-    StaticParkingSpotInput,
 )
 
-from .validators import PMSensadeParkingLotsInput, PMSensadeParkingLot, PMSensadeParkingLotStatus
+from .validators import (
+    PMSensadeParkingLot,
+    PMSensadeParkingLotInput,
+    PMSensadeParkingLotsInput,
+    PMSensadeParkingLotStatus,
+)
 
 
 class PMSensadePullConverter(ParkingSitePullConverter):
@@ -29,6 +31,7 @@ class PMSensadePullConverter(ParkingSitePullConverter):
     ]
     p_m_sensade_parking_lot_validator = DataclassValidator(PMSensadeParkingLot)
     p_m_sensade_parking_lots_input_validator = DataclassValidator(PMSensadeParkingLotsInput)
+    p_m_sensade_parking_lot_input_validator = DataclassValidator(PMSensadeParkingLotInput)
     p_m_sensade_parking_lot_status_validator = DataclassValidator(PMSensadeParkingLotStatus)
 
     source_info = SourceInfo(
@@ -50,7 +53,6 @@ class PMSensadePullConverter(ParkingSitePullConverter):
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
-
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
@@ -60,24 +62,24 @@ class PMSensadePullConverter(ParkingSitePullConverter):
             realtime_parking_site_inputs.append(realtime_p_m_sensade_input.to_realtime_parking_site_input())
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
-    
+
     def _get_raw_static_parking_sites(
         self,
     ) -> tuple[list[PMSensadeParkingLot], list[ImportParkingSiteException]]:
-        static_p_m_sensade_inputs: list[PMSensadeParkingLot]
+        static_p_m_sensade_inputs: list[PMSensadeParkingLot] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        static_parking_site_inputs, import_static_parking_site_exceptions = self._get_raw_parking_sites()
+        raw_parking_site_inputs, import_static_parking_site_exceptions = self.get_raw_parking_sites()
         import_parking_site_exceptions += import_static_parking_site_exceptions
         parking_site_dicts: list[dict] = []
 
-        for static_parking_site_input in static_parking_site_inputs:
+        for raw_parking_site_input in raw_parking_site_inputs:
             response = self.request_get(
-                url=f'{self.source_info.source_url}/parkinglot/parkinglot/{static_parking_site_input.uid}',
+                url=f'{self.source_info.source_url}/parkinglot/parkinglot/{raw_parking_site_input.id}',
                 headers={'Authorization': f'Bearer {self._request_token()}'},
                 timeout=60,
             )
-            parking_site_dicts.append(response.json())
+            parking_site_dicts.append(response.json()[0])
 
         for parking_site_dict in parking_site_dicts:
             try:
@@ -86,26 +88,26 @@ class PMSensadePullConverter(ParkingSitePullConverter):
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('uid'),
+                        parking_site_uid=parking_site_dict.get('id'),
                         message=f'validation error for {parking_site_dict}: {e.to_dict()}',
                     ),
                 )
 
         return static_p_m_sensade_inputs, import_parking_site_exceptions
-    
+
     def _get_raw_realtime_parking_sites(
         self,
     ) -> tuple[list[PMSensadeParkingLotStatus], list[ImportParkingSiteException]]:
-        realtime_p_m_sensade_inputs: list[PMSensadeParkingLotStatus]
+        realtime_p_m_sensade_inputs: list[PMSensadeParkingLotStatus] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        static_parking_site_inputs, import_static_parking_site_exceptions = self._get_raw_parking_sites()
+        raw_parking_site_inputs, import_static_parking_site_exceptions = self.get_raw_parking_sites()
         import_parking_site_exceptions += import_static_parking_site_exceptions
         parking_site_dicts: list[dict] = []
 
-        for static_parking_site_input in static_parking_site_inputs:
+        for raw_parking_site_input in raw_parking_site_inputs:
             response = self.request_get(
-                url=f'{self.source_info.source_url}/parkinglot/parkinglot/getcurrentparkinglotstatus/{static_parking_site_input.uid}',
+                url=f'{self.source_info.source_url}/parkinglot/parkinglot/getcurrentparkinglotstatus/{raw_parking_site_input.id}',
                 headers={'Authorization': f'Bearer {self._request_token()}'},
                 timeout=60,
             )
@@ -113,22 +115,24 @@ class PMSensadePullConverter(ParkingSitePullConverter):
 
         for parking_site_dict in parking_site_dicts:
             try:
-                realtime_p_m_sensade_inputs.append(self.p_m_sensade_parking_lot_status_validator.validate(parking_site_dict))
+                realtime_p_m_sensade_inputs.append(
+                    self.p_m_sensade_parking_lot_status_validator.validate(parking_site_dict)
+                )
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('uid'),
+                        parking_site_uid=parking_site_dict.get('parkingLotId'),
                         message=f'validation error for {parking_site_dict}: {e.to_dict()}',
                     ),
                 )
 
         return realtime_p_m_sensade_inputs, import_parking_site_exceptions
 
-    def _get_raw_parking_sites(
+    def get_raw_parking_sites(
         self,
     ) -> tuple[list[PMSensadeParkingLotsInput], list[ImportParkingSiteException]]:
-        static_p_m_sensade_inputs: list[PMSensadeParkingLotsInput] = []
+        raw_p_m_sensade_inputs: list[PMSensadeParkingLotsInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         response = self.request_get(
@@ -137,21 +141,31 @@ class PMSensadePullConverter(ParkingSitePullConverter):
             timeout=60,
         )
 
-        parking_site_dicts = response.json()[0]
+        try:
+            parking_site_dicts = self.p_m_sensade_parking_lots_input_validator.validate(response.json()[0])
+            organization_id = parking_site_dicts.organizationId
+        except ValidationError as e:
+            import_parking_site_exceptions.append(
+                ImportParkingSiteException(
+                    source_uid=self.source_info.uid,
+                    parking_site_uid=organization_id,
+                    message=f'validation error for {parking_site_dicts}: {e.to_dict()}',
+                ),
+            )
 
-        for parking_site_dict in parking_site_dicts:
+        for parking_site_dict in parking_site_dicts.parkingLots:
             try:
-                static_p_m_sensade_inputs.append(self.p_m_sensade_parking_lots_input_validator.validate(parking_site_dict))
+                raw_p_m_sensade_inputs.append(self.p_m_sensade_parking_lot_input_validator.validate(parking_site_dict))
             except ValidationError as e:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=parking_site_dict.get('uid'),
+                        parking_site_uid=parking_site_dict.get('id'),
                         message=f'validation error for {parking_site_dict}: {e.to_dict()}',
                     ),
                 )
 
-        return static_p_m_sensade_inputs, import_parking_site_exceptions
+        return raw_p_m_sensade_inputs, import_parking_site_exceptions
 
     def _request_token(self) -> str:
         response = self.request_post(

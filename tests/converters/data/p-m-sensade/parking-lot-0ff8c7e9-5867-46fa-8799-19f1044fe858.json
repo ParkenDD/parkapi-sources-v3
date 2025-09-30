@@ -1,0 +1,357 @@
+[
+    {
+        "id": "0ff8c7e9-5867-46fa-8799-19f1044fe858",
+        "name": "B10 Laupheim",
+        "country": "Deutschland",
+        "city": "Achstetten",
+        "address": "L265",
+        "zip": 88480,
+        "availableSpaces": 42,
+        "creationDate": "2025-04-10T07:39:03.266573",
+        "latitude": 48.25733184814453,
+        "longitude": 9.90268611907959,
+        "parkingSpaces": [
+            {
+                "id": "009745da-d0c7-4cea-87a1-67922964acd5",
+                "type": "default",
+                "number": "AL-3",
+                "devEui": "3425B4FFFECE1BFD",
+                "latitude": 48.25731682735057,
+                "longitude": 9.902804342355182
+            },
+            {
+                "id": "0bb85ef1-103d-49f7-87c1-e76c57539964",
+                "type": "default",
+                "number": "AL-41",
+                "devEui": "E0798DFFFEE18AE1",
+                "latitude": 48.2571915902903,
+                "longitude": 9.902868191900772
+            },
+            {
+                "id": "122c403a-a4f7-436d-a30a-f5b96429e8c5",
+                "type": "default",
+                "number": "AL-23",
+                "devEui": "1C34F1FFFEA458DA",
+                "latitude": 48.25755025137053,
+                "longitude": 9.903421328547498
+            },
+            {
+                "id": "23659b00-9159-4e23-af7c-e69a24fbd54f",
+                "type": "default",
+                "number": "AL-27",
+                "devEui": "1C34F1FFFEA4588B",
+                "latitude": 48.25748296264018,
+                "longitude": 9.903320356826097
+            },
+            {
+                "id": "258e1091-7ff5-4644-8030-9772c1ddc3ea",
+                "type": "default",
+                "number": "AL-4",
+                "devEui": "3425B4FFFECE1E7F",
+                "latitude": 48.25733854606686,
+                "longitude": 9.902839196455348
+            },
+            {
+                "id": "2a8955c5-f9c7-458c-b3a7-3469ef361926",
+                "type": "default",
+                "number": "AL-34",
+                "devEui": "3425B4FFFECE345E",
+                "latitude": 48.25731308050226,
+                "longitude": 9.903071380219924
+            },
+            {
+                "id": "2c1c149d-19d5-4a2b-9281-3d2570647f2c",
+                "type": "default",
+                "number": "AL-36",
+                "devEui": "E0798DFFFEE124F2",
+                "latitude": 48.25727590757291,
+                "longitude": 9.903009844833118
+            },
+            {
+                "id": "2c9ed330-b511-4a7b-825a-b22a19e29062",
+                "type": "default",
+                "number": "AL-38",
+                "devEui": "3425B4FFFECE202F",
+                "latitude": 48.2572432001517,
+                "longitude": 9.902954322035376
+            },
+            {
+                "id": "427ab691-32d4-463e-af17-7558aa949473",
+                "type": "default",
+                "number": "AL-13",
+                "devEui": "E0798DFFFEE18DD5",
+                "latitude": 48.25754119048427,
+                "longitude": 9.90314055985998
+            },
+            {
+                "id": "4f2e1b25-dc69-4571-b329-a718604bf792",
+                "type": "default",
+                "number": "AL-17",
+                "devEui": "E0798DFFFEE18C1F",
+                "latitude": 48.25761767917248,
+                "longitude": 9.903253770334556
+            },
+            {
+                "id": "54f40070-dbd9-43ae-8cb9-87ff50e5976c",
+                "type": "default",
+                "number": "AL-5",
+                "devEui": "3425B4FFFECE2276",
+                "latitude": 48.25735822601132,
+                "longitude": 9.902872535486944
+            },
+            {
+                "id": "5b1442e5-aa1b-49ec-992e-d5aa36b9501c",
+                "type": "default",
+                "number": "AL-26",
+                "devEui": "3425B4FFFECE32B3",
+                "latitude": 48.25750345686515,
+                "longitude": 9.903350470617497
+            },
+            {
+                "id": "60bc9e3e-3d72-4d80-b923-2f1e9ca13596",
+                "type": "default",
+                "number": "AL-37",
+                "devEui": "3425B4FFFECE1BBF",
+                "latitude": 48.25726071693689,
+                "longitude": 9.902983177361326
+            },
+            {
+                "id": "62aa71f1-3f99-45b8-88e0-a89e09bb8462",
+                "type": "default",
+                "number": "AL-32",
+                "devEui": "3425B4FFFECE3461",
+                "latitude": 48.25740072401774,
+                "longitude": 9.903194307283192
+            },
+            {
+                "id": "64d6c6b5-dfb7-4249-bdd4-bf9b2e2f3426",
+                "type": "default",
+                "number": "AL-10",
+                "devEui": "E0798DFFFEE18BE2",
+                "latitude": 48.2574901325368,
+                "longitude": 9.903065311755151
+            },
+            {
+                "id": "676c7a14-ab83-4f79-b0ae-8cf075b4c6e2",
+                "type": "default",
+                "number": "AL-6",
+                "devEui": "3425B4FFFECE2052",
+                "latitude": 48.25737450803914,
+                "longitude": 9.90289887831736
+            },
+            {
+                "id": "695bcd19-3a51-4332-ad2e-32e33d9b47a5",
+                "type": "default",
+                "number": "AL-2",
+                "devEui": "3425B4FFFECE1EA8",
+                "latitude": 48.2572999319231,
+                "longitude": 9.902776388971157
+            },
+            {
+                "id": "7591b68a-10d7-4d51-833a-f4a59c69e662",
+                "type": "default",
+                "number": "AL-42",
+                "devEui": "3425B4FFFECE2F2D",
+                "latitude": 48.25717410646253,
+                "longitude": 9.90283829059736
+            },
+            {
+                "id": "77ac7830-4d3c-4fa5-b45f-11d791cb9b91",
+                "type": "default",
+                "number": "AL-7",
+                "devEui": "3425B4FFFECE3296",
+                "latitude": 48.25739275961327,
+                "longitude": 9.902927789987
+            },
+            {
+                "id": "8469ba8a-2bc7-4b31-9153-618c304598c4",
+                "type": "default",
+                "number": "AL-40",
+                "devEui": "3425B4FFFECE202B",
+                "latitude": 48.25720946725369,
+                "longitude": 9.902897990055076
+            },
+            {
+                "id": "905095c5-c4d2-4ea2-863e-6918d6ccc6a3",
+                "type": "default",
+                "number": "AL-22",
+                "devEui": "1C34F1FFFEA4588E",
+                "latitude": 48.25756511702762,
+                "longitude": 9.90344520823107
+            },
+            {
+                "id": "91226989-da93-4521-9a72-d5fd241dac78",
+                "type": "default",
+                "number": "AL-16",
+                "devEui": "3425B4FFFECE3290",
+                "latitude": 48.25759789957247,
+                "longitude": 9.903224277264968
+            },
+            {
+                "id": "95399e4d-fe3a-45c8-871d-545424a65b95",
+                "type": "default",
+                "number": "AL-24",
+                "devEui": "1C34F1FFFEA45883",
+                "latitude": 48.25753443930116,
+                "longitude": 9.903397305004203
+            },
+            {
+                "id": "9748bfa8-bd04-4789-970c-35b9f2fce902",
+                "type": "default",
+                "number": "AL-20",
+                "devEui": "1C34F1FFFEA74E06",
+                "latitude": 48.2576701547354,
+                "longitude": 9.903329813503635
+            },
+            {
+                "id": "97fe6bb8-aed1-4598-a165-6ae01ec4f41c",
+                "type": "default",
+                "number": "AL-39",
+                "devEui": "3425B4FFFECE3276",
+                "latitude": 48.25722667250413,
+                "longitude": 9.902926891038543
+            },
+            {
+                "id": "a18e338a-da0f-4df2-b037-f4f573f9ceee",
+                "type": "default",
+                "number": "AL-35",
+                "devEui": "3425B4FFFECE1BF8",
+                "latitude": 48.25729488828492,
+                "longitude": 9.903041894893644
+            },
+            {
+                "id": "a44fab40-d84a-4667-98f0-3498030cbfce",
+                "type": "default",
+                "number": "AL-11",
+                "devEui": "3425B4FFFECE2053",
+                "latitude": 48.25750546601832,
+                "longitude": 9.90308858204325
+            },
+            {
+                "id": "a8e98b42-05be-4ae1-9751-34bc1f7b7236",
+                "type": "default",
+                "number": "AL-19",
+                "devEui": "1C34F1FFFEA74DDF",
+                "latitude": 48.25765205320489,
+                "longitude": 9.903302596471509
+            },
+            {
+                "id": "b13067bc-e3ea-4e8d-980c-67d69ad88335",
+                "type": "default",
+                "number": "AL-8",
+                "devEui": "E0798DFFFEE18AB7",
+                "latitude": 48.25740860897819,
+                "longitude": 9.902954346587778
+            },
+            {
+                "id": "b1870e37-fe0b-4b7e-a9bf-72d919a1adea",
+                "type": "default",
+                "number": "AL-12",
+                "devEui": "3425B4FFFECE1BB2",
+                "latitude": 48.25752259229026,
+                "longitude": 9.903113460625544
+            },
+            {
+                "id": "b1fdc644-7529-435b-a9a6-3dfe84b2d23b",
+                "type": "default",
+                "number": "AL-21",
+                "devEui": "1C34F1FFFEA458A7",
+                "latitude": 48.25758248667235,
+                "longitude": 9.903471532711386
+            },
+            {
+                "id": "b3f2dd58-81b3-4597-ae61-da2b11a0a332",
+                "type": "default",
+                "number": "AL-18",
+                "devEui": "1C34F1FFFEA74DDD",
+                "latitude": 48.25763505362532,
+                "longitude": 9.9032784202052
+            },
+            {
+                "id": "b8c9c2a3-72dd-4770-976b-8147234f9fe0",
+                "type": "default",
+                "number": "AL-25",
+                "devEui": "E0798DFFFEE18DCC",
+                "latitude": 48.25751772339976,
+                "longitude": 9.903373246305993
+            },
+            {
+                "id": "ba8ffb68-da5e-496f-93ea-b969846e6eec",
+                "type": "default",
+                "number": "AL-15",
+                "devEui": "3425B4FFFECE2024",
+                "latitude": 48.2575779916037,
+                "longitude": 9.903193513270416
+            },
+            {
+                "id": "bb23862d-0f24-4032-b220-900b23ddd916",
+                "type": "default",
+                "number": "AL-14",
+                "devEui": "3425B4FFFECE1E9A",
+                "latitude": 48.2575598279155,
+                "longitude": 9.903166568092567
+            },
+            {
+                "id": "bc7375c3-c0d0-4ec7-b328-fc9a80a4280c",
+                "type": "default",
+                "number": "AL-9",
+                "devEui": "3425B4FFFECE2059",
+                "latitude": 48.25747402647533,
+                "longitude": 9.903043261031783
+            },
+            {
+                "id": "dabc8715-8e99-4a5e-8681-07b724b99427",
+                "type": "default",
+                "number": "AL-30",
+                "devEui": "3425B4FFFECE2EF6",
+                "latitude": 48.25743204519026,
+                "longitude": 9.90324202683636
+            },
+            {
+                "id": "db0c4a88-b1a3-4259-8c4c-1d82bb1c65bb",
+                "type": "default",
+                "number": "AL-1",
+                "devEui": "3425B4FFFECE1BFB",
+                "latitude": 48.25728285827753,
+                "longitude": 9.90274811151264
+            },
+            {
+                "id": "e292e718-a21b-4f85-b39b-d29380fd8dd9",
+                "type": "default",
+                "number": "AL-31",
+                "devEui": "3425B4FFFECE345A",
+                "latitude": 48.25741615719167,
+                "longitude": 9.903217018754574
+            },
+            {
+                "id": "f2a848b1-376b-46e9-9868-563fe3069741",
+                "type": "default",
+                "number": "AL-28",
+                "devEui": "1C34F1FFFEA74DA8",
+                "latitude": 48.25746664881986,
+                "longitude": 9.90329503753797
+            },
+            {
+                "id": "f873f77b-148a-4871-8f96-186a6b5bedbc",
+                "type": "default",
+                "number": "AL-29",
+                "devEui": "E0798DFFFEE18C32",
+                "latitude": 48.25744767112386,
+                "longitude": 9.903265528767202
+            },
+            {
+                "id": "ffa84cda-4ec7-4dcd-8c8c-7c2e34436c23",
+                "type": "default",
+                "number": "AL-33",
+                "devEui": "3425B4FFFECE3460",
+                "latitude": 48.25738540105169,
+                "longitude": 9.903170673310353
+            }
+        ],
+        "freeParking": true,
+        "ticketParking": false,
+        "ticketRestrictions": [],
+        "timeRestrictions": [],
+        "hasLiveData": true
+    }
+]

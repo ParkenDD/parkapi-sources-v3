@@ -4,27 +4,26 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
-from zoneinfo import ZoneInfo
 from decimal import Decimal
+from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
+    AnythingValidator,
     BooleanValidator,
     DateTimeValidator,
     IntegerValidator,
-    Noneable,
-    StringValidator,
     ListValidator,
-    AnythingValidator,
+    Noneable,
     NumericValidator,
-    DataclassValidator,
+    StringValidator,
 )
 
 from parkapi_sources.models import (
     RealtimeParkingSiteInput,
     StaticParkingSiteInput,
 )
-from parkapi_sources.models.enums import ParkingSiteType, ParkAndRideType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType
 
 
 @validataclass
@@ -37,16 +36,6 @@ class PMSensadeParkingLotInput:
     ticketParking: bool | None = Noneable(BooleanValidator()), Default(None)
     hasLiveData: bool = BooleanValidator()
     city: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-
-
-@validataclass
-class PMSensadeParkingLotParkingSpaces:
-    id: str = StringValidator(min_length=1, max_length=256)
-    type: str = StringValidator(min_length=1, max_length=256)
-    number: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    devEui: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    latitude: Decimal = NumericValidator(min_value=34, max_value=72)
-    longitude: Decimal = NumericValidator(min_value=-27, max_value=43)
 
 
 @validataclass
@@ -64,7 +53,8 @@ class PMSensadeParkingLot:
     )
     latitude: Decimal = NumericValidator(min_value=34, max_value=72)
     longitude: Decimal = NumericValidator(min_value=-27, max_value=43)
-    parkingSpaces: list[dict] | None = Noneable(ListValidator(DataclassValidator(PMSensadeParkingLotParkingSpaces))), Default(None)
+
+    parkingSpaces: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict]))
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         if self.address and self.zip and self.city:
@@ -85,7 +75,7 @@ class PMSensadeParkingLot:
             park_and_ride_type=[ParkAndRideType.YES],
             has_realtime_data=True,
         )
-    
+
 
 @validataclass
 class PMSensadeParkingLotStatus:
@@ -97,14 +87,25 @@ class PMSensadeParkingLotStatus:
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
-            uid=self.id,
+            uid=self.parkingLotId,
             realtime_capacity=self.totalSpaceCount,
             realtime_free_capacity=self.availableSpaceCount,
             realtime_data_updated_at=datetime.now(tz=timezone.utc),
         )
-    
+
+
+@validataclass
+class PMSensadeParkingLotParkingSpace:
+    id: str = StringValidator(min_length=1, max_length=256)
+    type: str = StringValidator(min_length=1, max_length=256)
+    number: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
+    devEui: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
+    latitude: Decimal = NumericValidator(min_value=34, max_value=72)
+    longitude: Decimal = NumericValidator(min_value=-27, max_value=43)
+
+
 @validataclass
 class PMSensadeParkingLotsInput:
     organizationId: str = StringValidator(min_length=1, max_length=256)
     organizationName: str = StringValidator(min_length=1, max_length=256)
-    parkingLots: list[dict] = ListValidator(DataclassValidator(PMSensadeParkingLotInput))
+    parkingLots: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict]))
