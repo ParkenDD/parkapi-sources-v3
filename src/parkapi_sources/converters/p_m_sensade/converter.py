@@ -143,12 +143,11 @@ class PMSensadePullConverter(ParkingSitePullConverter):
 
         try:
             parking_site_dicts = self.p_m_sensade_parking_lots_input_validator.validate(response.json()[0])
-            organization_id = parking_site_dicts.organizationId
         except ValidationError as e:
             import_parking_site_exceptions.append(
                 ImportParkingSiteException(
                     source_uid=self.source_info.uid,
-                    parking_site_uid=organization_id,
+                    parking_site_uid='mobidatabw',
                     message=f'validation error for {parking_site_dicts}: {e.to_dict()}',
                 ),
             )
@@ -174,7 +173,7 @@ class PMSensadePullConverter(ParkingSitePullConverter):
                 'Content-Type': 'application/json-patch+json',
                 'accept': 'text/plain',
             },
-            data={
+            json={
                 'email': self.config_helper.get('PARK_API_P_M_SENSADE_EMAIL'),
                 'password': self.config_helper.get('PARK_API_P_M_SENSADE_PASSWORD'),
             },
