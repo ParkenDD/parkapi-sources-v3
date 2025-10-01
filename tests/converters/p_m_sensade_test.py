@@ -14,6 +14,7 @@ from parkapi_sources.util import RequestHelper
 from tests.converters.helper import (
     validate_realtime_parking_site_inputs,
     validate_static_parking_site_inputs,
+    validate_static_parking_spot_inputs,
 )
 
 
@@ -125,3 +126,36 @@ class UlmSensorsPullConverterTest:
         assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_spots(
+        p_m_sensade_pull_converter: PMSensadePullConverter,
+        requests_mock: Mocker,
+    ):
+        raw_parking_sites = UlmSensorsPullConverterTest._test_get_raw_parking_sites(
+            p_m_sensade_pull_converter, requests_mock
+        )
+
+        for raw_parking_site in raw_parking_sites[0]:
+            requests_mock.post(
+                'https://api.sensade.com/auth/login',
+                text='token',
+            )
+
+            json_path = Path(Path(__file__).parent, 'data', 'p-m-sensade', f'parking-lot-{raw_parking_site.id}.json')
+            with json_path.open() as json_file:
+                json_data = json_file.read()
+
+            requests_mock.get(
+                f'https://api.sensade.com/parkinglot/parkinglot/{raw_parking_site.id}',
+                text=json_data,
+            )
+
+        static_parking_spot_inputs, import_parking_spot_exceptions = (
+            p_m_sensade_pull_converter.get_static_parking_spots()
+        )
+
+        assert len(static_parking_spot_inputs) == 580
+        assert len(import_parking_spot_exceptions) == 0
+
+        validate_static_parking_spot_inputs(static_parking_spot_inputs)
