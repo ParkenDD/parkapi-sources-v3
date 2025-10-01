@@ -180,5 +180,4 @@ class PMSensadePullConverter(ParkingSitePullConverter):
             },
             timeout=30,
         )
-        token_data = response.json()
-        return token_data['access_token']
+        return response.text

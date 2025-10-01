@@ -47,7 +47,7 @@ class UlmSensorsPullConverterTest:
 
         requests_mock.post(
             'https://api.sensade.com/auth/login',
-            json={'access_token': 'token'},
+            text='token',
         )
         requests_mock.get('https://api.sensade.com/parkinglot/parkinglot', text=json_data)
 
@@ -70,7 +70,7 @@ class UlmSensorsPullConverterTest:
         for raw_parking_site in raw_parking_sites[0]:
             requests_mock.post(
                 'https://api.sensade.com/auth/login',
-                json={'access_token': 'token'},
+                text='token',
             )
 
             json_path = Path(Path(__file__).parent, 'data', 'p-m-sensade', f'parking-lot-{raw_parking_site.id}.json')
@@ -103,7 +103,7 @@ class UlmSensorsPullConverterTest:
         for raw_parking_site in raw_parking_sites[0]:
             requests_mock.post(
                 'https://api.sensade.com/auth/login',
-                json={'access_token': 'token'},
+                text='token',
             )
 
             json_path = Path(
