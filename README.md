@@ -51,6 +51,8 @@ We support following data sources:
 | Stadt Neckarsulm: Fahrrad-Abstellanlagen                       | ParkingSite  | bike       | pull        | `neckarsulm_bike`           | no       |
 | Open-Data-Plattform öV Schweiz                                 | ParkingSite  | car        | pull (json) | `opendata_swiss`            | no       |
 | P + M Baden-Württemberg                                        | ParkingSite  | car        | pull        | `p_m_bw`                    | yes      |
+| P + M Sensade                                                  | ParkingSite  | car        | pull        | `p_m_sensade`               | yes      |
+| P + M Sensade                                                  | ParkingSpot  | car        | pull        | `p_m_sensade`               | no       |
 | Baden-Württemberg: Parken und Mitfahren                        | ParkingSite  | car        | push (xlsx) | `pum_bw`                    | no       |
 | RadVIS Baden-Württemberg (experimental)                        | ParkingSite  | bike       | pull        | `radvis_bw`                 | no       |
 | Parkraumgesellschaft Baden-Württemberg                         | ParkingSite  | car        | pull        | `pbw`                       | yes      |

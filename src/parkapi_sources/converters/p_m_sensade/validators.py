@@ -120,7 +120,7 @@ class PMSensadeParkingLotParkingSpace:
             address=self.address,
             static_data_updated_at=self.static_data_updated_at,
             type=self.type,
-            has_realtime_data=self.has_realtime_data,
+            has_realtime_data=False,
         )
 
 
