@@ -41,6 +41,8 @@ Attributes which are set statically:
 * `has_realtime_data` is always `True`
 * `realtime_data_updated_at` is set to the moment of import
 
+| Field                         | Type                                         | Cardinality | Mapping                                   | Comment                                                                            |
+|-------------------------------|----------------------------------------------|-------------|-------------------------------------------|------------------------------------------------------------------------------------|
 | parkingLotId                  | string                                       | 1           | uid                                       |                                                                                    |
 | totalSpaceCount               | integer                                      | ?           | realtime_capacity                         |                                                                                    |
 | availableSpaceCount           | integer                                      | ?           | realtime_free_capacity                    |                                                                                    |
