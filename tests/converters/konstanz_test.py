@@ -69,11 +69,11 @@ class KonstanzOpeningTimeValidatorTest:
         [
             (
                 'Mo-Fr:  07:00  -  01:30  Uhr\nSa:  07:00  -  01:30  Uhr\nSo:  08:00  -  00:30  Uhr',
-                'Mo-Fr 07:00-01:30,Sa 07:00-01:30,Su 08:00-00:30',
+                'Mo-Fr 07:00-01:30, Sa 07:00-01:30, Su 08:00-00:30',
             ),
             (
                 'Mo-Fr:  06:00  -  23:00  Uhr\nSa:  06:00  -  23:00  Uhr\nSo: geschlossen',
-                'Mo-Fr 06:00-23:00,Sa 06:00-23:00',
+                'Mo-Fr 06:00-23:00, Sa 06:00-23:00',
             ),
             (
                 'ganztägig',

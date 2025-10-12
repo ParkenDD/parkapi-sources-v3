@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+from opening_hours import OpeningHours
 from validataclass.validators import DataclassValidator
 
 from parkapi_sources.models import (
@@ -64,6 +65,9 @@ def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticP
             assert static_parking_site_input.static_data_updated_at.tzinfo is not None
 
         assert isinstance(static_parking_site_input.uid, str)
+
+        if static_parking_site_input.opening_hours:
+            OpeningHours(static_parking_site_input.opening_hours)
 
         parking_site_dict = json.loads(
             json.dumps(filter_none(static_parking_site_input.to_dict()), cls=DefaultJSONEncoder),

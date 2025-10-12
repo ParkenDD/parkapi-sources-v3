@@ -23,6 +23,7 @@ from validataclass.validators import (
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType
+from parkapi_sources.validators import OsmOpeningTimesValidator
 
 
 @validataclass
@@ -96,12 +97,19 @@ class HerrenbergParkingSiteInput:
     total_disabled: Optional[int] = IntegerValidator(min_value=0), Default(None)
     url: Optional[str] = UrlValidator(max_length=4096), Default(None)
     fee_hours: Optional[str] = StringValidator(max_length=4096), Default(None)
-    opening_hours: Optional[str] = StringValidator(max_length=512), Default(None)
+    opening_hours: Optional[str] = OsmOpeningTimesValidator(max_length=512), Default(None)
     address: str = StringValidator(max_length=512)
     notes: Optional[HerrenbergNotesInput] = DataclassValidator(HerrenbergNotesInput), Default(None)
     coords: HerrenbergCoordsInput = DataclassValidator(HerrenbergCoordsInput)
     state: Optional[HerrenbergState] = EnumValidator(HerrenbergState)
     free: Optional[int] = IntegerValidator(min_value=0), Default(None)
+
+    @staticmethod
+    def __pre_validate__(input_data: dict) -> dict:
+        # Fix non-prettified weekdays
+        if 'opening_hours' in input_data:
+            input_data['opening_hours'] = input_data['opening_hours'].replace('Mo - Su', 'Mo-Su')
+        return input_data
 
     def to_static_parking_site(self, static_data_updated_at: datetime) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(

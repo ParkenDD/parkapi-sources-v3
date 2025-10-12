@@ -205,7 +205,7 @@ class RadolfzellParkingSiteInput:
             static_parking_site_input.opening_hours = '24/7'
         else:
             opening_hour_fragments = []
-            for timeframe, osm_output in [('weekday', 'Mo-Fr'), ('saturday', 'Sa'), ('sunday', 'So')]:
+            for timeframe, osm_output in [('weekday', 'Mo-Fr'), ('saturday', 'Sa'), ('sunday', 'Su')]:
                 begin: time | None = getattr(self.properties, f'opening_times_{timeframe}_begin')
                 end: time | None = getattr(self.properties, f'opening_times_{timeframe}_end')
                 if begin is not None and end is not None and begin < end:
@@ -215,7 +215,7 @@ class RadolfzellParkingSiteInput:
                 # Catch situation where all opening times are equal
                 if all(x[-11:] == opening_hour_fragments[0][-11:] for x in opening_hour_fragments):
                     opening_hour_fragments = [
-                        f'Mo-So {self.properties.opening_times_saturday_begin.strftime("%H:%M")}'
+                        f'Mo-Su {self.properties.opening_times_saturday_begin.strftime("%H:%M")}'
                         f'-{self.properties.opening_times_saturday_end.strftime("%H:%M")}'
                     ]
                 static_parking_site_input.opening_hours = '; '.join(opening_hour_fragments)
