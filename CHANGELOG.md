@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.27.0
+
+Released 2025-10-13
+
+### Features
+
+* [Integrate P+M or carpooling from Sensade API](https://github.com/ParkenDD/parkapi-sources-v3/pull/288)
+
+
+### Fixes
+
+* [kienzler: change public_url to use direct_link value](https://github.com/ParkenDD/parkapi-sources-v3/pull/290)
+* [ensure valid osm opening times](https://github.com/ParkenDD/parkapi-sources-v3/pull/289)
+
+
 ## 0.26.2
 
 Released 2025-09-15
