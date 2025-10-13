@@ -73,7 +73,14 @@ class PMSensadePullConverter(ParkingSitePullConverter, ParkingSpotPullConverter)
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
         static_sensade_parking_lots, import_parking_site_exceptions = self._get_static_sensade_parking_lots()
-        import_parking_spot_exceptions += import_parking_site_exceptions
+        import_parking_spot_exceptions += [
+            ImportParkingSpotException(
+                source_uid=exceptions.source_uid,
+                parking_spot_uid=getattr(exceptions, 'parking_site_uid', None),
+                message=exceptions.message,
+            )
+            for exceptions in import_parking_site_exceptions
+        ]
 
         for static_sensade_parking_lot in static_sensade_parking_lots:
             for parking_space in static_sensade_parking_lot.parkingSpaces:
