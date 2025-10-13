@@ -14,5 +14,6 @@ from .integer_validators import GermanDurationIntegerValidator
 from .iso_duration_validator import IsoDurationValidator
 from .list_validator import DumpedListValidator, PointCoordinateTupleValidator
 from .noneable import EmptystringNoneable, ExcelNoneable
+from .opening_times_validator import OsmOpeningTimesValidator
 from .string_validators import NumberCastingStringValidator, ReplacingStringValidator
 from .time_validators import ExcelTimeValidator

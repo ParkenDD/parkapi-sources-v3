@@ -70,7 +70,7 @@ class KonstanzOpeningTimeValidator(StringValidator):
                 f'{opening_times.group(1)}:{opening_times.group(2)}-{opening_times.group(3)}:{opening_times.group(4)}',
             )
 
-        return ','.join(result_fragments)
+        return ', '.join(result_fragments)
 
 
 class NumericIntegerValidator(IntegerValidator):
