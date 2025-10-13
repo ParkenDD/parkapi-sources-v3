@@ -15,6 +15,7 @@ from validataclass.validators import (
     ListValidator,
     NumericValidator,
     StringValidator,
+    UrlValidator,
 )
 
 from parkapi_sources.models import (
@@ -34,6 +35,7 @@ class KienzlerInput:
     long: Decimal = NumericValidator()
     bookable: int = IntegerValidator(min_value=0)
     sum_boxes: int = IntegerValidator(min_value=0)
+    direct_link: str | None = UrlValidator(), Default(None)
 
     def to_static_parking_site(self, base_url: str) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
@@ -46,7 +48,7 @@ class KienzlerInput:
             capacity=self.sum_boxes,
             type=ParkingSiteType.LOCKERS,
             static_data_updated_at=datetime.now(tz=timezone.utc),
-            public_url=f'{base_url}/order/booking/?preselect_unit_uid={self.id[4:]}',
+            public_url=self.direct_link,
             opening_hours='24/7',
             has_fee=True,
         )
