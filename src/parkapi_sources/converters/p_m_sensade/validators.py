@@ -12,7 +12,6 @@ from validataclass.validators import (
     AnythingValidator,
     BooleanValidator,
     DateTimeValidator,
-    EnumValidator,
     IntegerValidator,
     ListValidator,
     Noneable,
@@ -100,26 +99,17 @@ class PMSensadeParkingLotParkingSpace:
     devEui: str | None = Noneable(StringValidator(min_length=0, max_length=256)), Default(None)
     latitude: Decimal = NumericValidator(min_value=34, max_value=72)
     longitude: Decimal = NumericValidator(min_value=-27, max_value=43)
-    name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    address: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    purpose: PurposeType = EnumValidator(PurposeType)
-    type: ParkingSiteType = EnumValidator(ParkingSiteType)
-    has_realtime_data: bool = BooleanValidator()
-    static_data_updated_at: datetime = DateTimeValidator(
-        local_timezone=ZoneInfo('Europe/Berlin'),
-        target_timezone=timezone.utc,
-    )
 
-    def to_static_parking_spot_input(self) -> StaticParkingSpotInput:
+    def to_static_parking_spot_input(self, static_parking_site_input: StaticParkingSiteInput) -> StaticParkingSpotInput:
         return StaticParkingSpotInput(
             uid=self.id,
-            name=self.name,
+            name=static_parking_site_input.name,
             lat=self.latitude,
             lon=self.longitude,
-            purpose=self.purpose,
-            address=self.address,
-            static_data_updated_at=self.static_data_updated_at,
-            type=self.type,
+            purpose=PurposeType.CAR,
+            address=static_parking_site_input.address,
+            static_data_updated_at=static_parking_site_input.creationDate,
+            type=ParkingSiteType.OFF_STREET_PARKING_GROUND,
             has_realtime_data=False,
         )
 

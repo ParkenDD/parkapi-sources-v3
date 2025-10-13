@@ -52,7 +52,7 @@ class UlmSensorsPullConverterTest:
         )
         requests_mock.get('https://api.sensade.com/parkinglot/parkinglot', text=json_data)
 
-        raw_parking_site_inputs, import_parking_site_exceptions = p_m_sensade_pull_converter.get_raw_parking_sites()
+        raw_parking_site_inputs, import_parking_site_exceptions = p_m_sensade_pull_converter._get_sensade_parking_lots()
 
         assert len(raw_parking_site_inputs) == 7
         assert len(import_parking_site_exceptions) == 0
