@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.27.1
+
+Released 2025-10-14
+
+### Fixes
+
+* [Change Enum ParkingSiteType to ParkingSpotType at Sensade](https://github.com/ParkenDD/parkapi-sources-v3/pull/293)
 
 
 ## 0.27.0
