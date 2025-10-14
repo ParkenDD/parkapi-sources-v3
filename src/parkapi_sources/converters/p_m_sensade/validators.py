@@ -20,7 +20,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput, StaticParkingSpotInput
-from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, ParkingSpotType, PurposeType
 
 
 @validataclass
@@ -109,7 +109,7 @@ class PMSensadeParkingLotParkingSpace:
             purpose=PurposeType.CAR,
             address=static_parking_site_input.address,
             static_data_updated_at=static_parking_site_input.creationDate,
-            type=ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            type=ParkingSpotType.OFF_STREET_PARKING_GROUND,
             has_realtime_data=False,
         )
 
