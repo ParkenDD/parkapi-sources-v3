@@ -23,8 +23,14 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType, SupervisionType
+from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import (
+    OpeningStatus,
+    ParkAndRideType,
+    ParkingAudience,
+    ParkingSiteType,
+    SupervisionType,
+)
 from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator, Rfc1123DateTimeValidator
 
 from .validators import NoneableRemoveValueDict, RemoveValueDict
@@ -176,7 +182,7 @@ class HeidelbergInput:
         else:
             address = None
 
-        return StaticParkingSiteInput(
+        static_parking_site_input = StaticParkingSiteInput(
             uid=self.id,
             name=self.staticName,
             description=self.description,
@@ -188,9 +194,6 @@ class HeidelbergInput:
             max_width=None if self.maximumAllowedWidth is None else int(self.maximumAllowedWidth * 100),
             photo_url=self.images[0] if len(self.images) else None,
             capacity=self.totalSpotNumber,
-            capacity_disabled=self.handicappedParkingSpots,
-            capacity_woman=self.womenParkingSpots,
-            capacity_family=self.familyParkingSpots,
             opening_hours=opening_hours,
             static_data_updated_at=self.observationDateTime,
             type=parking_site_type,
@@ -202,18 +205,69 @@ class HeidelbergInput:
             has_fee=len(self.prices) > 0,
         )
 
+        restrictions: list[ParkingSiteRestrictionInput] = []
+        if self.handicappedParkingSpots is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    capacity=self.handicappedParkingSpots,
+                ),
+            )
+        if self.womenParkingSpots is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.WOMEN,
+                    capacity=self.womenParkingSpots,
+                ),
+            )
+        if self.familyParkingSpots is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.FAMILY,
+                    capacity=self.familyParkingSpots,
+                )
+            )
+        if len(restrictions):
+            static_parking_site_input.restrictions = restrictions
+
+        return static_parking_site_input
+
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
-        return RealtimeParkingSiteInput(
+        realtime_parking_site_input = RealtimeParkingSiteInput(
             uid=self.id,
             realtime_capacity=self.totalSpotNumber,
-            realtime_capacity_disabled=self.handicappedParkingSpots,
-            realtime_capacity_woman=self.womenParkingSpots,
-            realtime_capacity_family=self.familyParkingSpots,
             realtime_free_capacity=self.availableSpotNumber,
             # TODO: most likely broken, as there are realtime open parking sites with static status broken / unknown
             realtime_opening_status=self.status.to_opening_status(),
             realtime_data_updated_at=self.observationDateTime,
         )
+
+        restrictions: list[ParkingSiteRestrictionInput] = []
+        if self.handicappedParkingSpots is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    realtime_capacity=self.handicappedParkingSpots,
+                ),
+            )
+        if self.womenParkingSpots is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.WOMEN,
+                    realtime_capacity=self.womenParkingSpots,
+                ),
+            )
+        if self.familyParkingSpots is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.FAMILY,
+                    realtime_capacity=self.familyParkingSpots,
+                )
+            )
+        if len(restrictions):
+            realtime_parking_site_input.restrictions = restrictions
+
+        return realtime_parking_site_input
 
 
 @validataclass

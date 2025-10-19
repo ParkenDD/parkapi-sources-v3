@@ -12,7 +12,7 @@ from openpyxl.workbook.workbook import Workbook
 from validataclass.exceptions import ValidationError
 
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import ParkingAudience, StaticParkingSiteInput
 
 from .xlsx_converter import XlsxConverter
 
@@ -105,7 +105,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
         for field in mapping.keys():
             parking_site_raw_dict[field] = row[mapping[field]].value
 
-        parking_site_dict = {
+        parking_site_dict: dict[str, Any] = {
             key: value for key, value in parking_site_raw_dict.items() if not key.startswith('opening_hours_')
         }
         opening_hours_input = self.excel_opening_time_validator.validate({
@@ -120,4 +120,22 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
         )
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 
+        restrictions: list[tuple[str, ParkingAudience]] = [
+            ('capacity_disabled', ParkingAudience.DISABLED),
+            ('capacity_woman', ParkingAudience.WOMEN),
+            ('capacity_family', ParkingAudience.FAMILY),
+            ('capacity_charging', ParkingAudience.CHARGING),
+            ('capacity_carsharing', ParkingAudience.CARSHARING),
+            ('capacity_truck', ParkingAudience.TRUCK),
+            ('capacity_bus', ParkingAudience.BUS),
+        ]
+        parking_site_dict['restrictions'] = []
+        for key, audience in restrictions:
+            if parking_site_dict.get(key) is not None:
+                parking_site_dict['restrictions'].append(
+                    {
+                        'type': audience.value,
+                        'capacity': parking_site_dict.get(key),
+                    },
+                )
         return parking_site_dict

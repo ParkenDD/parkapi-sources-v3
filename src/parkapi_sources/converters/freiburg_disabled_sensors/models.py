@@ -11,7 +11,7 @@ from validataclass.validators import DataclassValidator, EnumValidator, RegexVal
 
 from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
-    ParkingRestrictionInput,
+    ParkingSpotRestrictionInput,
     RealtimeParkingSpotInput,
     StaticParkingSpotInput,
 )
@@ -50,7 +50,7 @@ class FreiburgDisabledSensorFeatureInput(GeojsonBaseFeatureInput):
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
             has_realtime_data=True,
-            restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
+            restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
             purpose=PurposeType.CAR,
         )
 

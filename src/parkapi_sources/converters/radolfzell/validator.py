@@ -24,7 +24,11 @@ from validataclass.validators import (
     TimeValidator,
 )
 
-from parkapi_sources.models import ParkingAudience, ParkingRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models import (
+    ParkingAudience,
+    ParkingSiteRestrictionInput,
+    StaticParkingSiteInput,
+)
 from parkapi_sources.models.enums import (
     ParkAndRideType,
     ParkingSiteOrientation,
@@ -179,15 +183,35 @@ class RadolfzellParkingSiteInput:
             capacity=self.properties.Stellpl,
             geojson=self.geometry,
             has_realtime_data=False,
-            capacity_disabled=self.properties.Behindstlp,
             has_lighting=self.properties.Beleucht,
-            capacity_carsharing=self.properties.Carsharing,
             has_fee=self.properties.gebpflicht,
             fee_description=self.properties.fee_description,
-            capacity_charging=self.properties.Ladeplatz,
             max_height=self.properties.max_height,
             description=', '.join(description for description in descriptions if description),
+            restrictions=[],
         )
+
+        if self.properties.Behindstlp is not None:
+            static_parking_site_input.restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    capacity=self.properties.Behindstlp,
+                ),
+            )
+        if self.properties.Ladeplatz is not None:
+            static_parking_site_input.restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    capacity=self.properties.Ladeplatz,
+                ),
+            )
+        if self.properties.Carsharing is not None:
+            static_parking_site_input.restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CARSHARING,
+                    capacity=self.properties.Carsharing,
+                ),
+            )
 
         if self.properties.max_stay:
             static_parking_site_input.max_stay = int(self.properties.max_stay.total_seconds()) // 60
@@ -223,6 +247,6 @@ class RadolfzellParkingSiteInput:
         if self.properties.Regelung == RadolfzellProperty.ON_KERB:
             static_parking_site_input.parking_type = ParkingType.ON_KERB
         elif self.properties.Regelung == RadolfzellProperty.RESIDENT_PARKING:
-            static_parking_site_input.restricted_to = [ParkingRestrictionInput(type=ParkingAudience.RESIDENT)]
+            static_parking_site_input.restrictions = [ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT)]
 
         return static_parking_site_input

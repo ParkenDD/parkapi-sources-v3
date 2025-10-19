@@ -63,7 +63,7 @@ class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
 class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput):
     uid: str = StringValidator(min_length=1, max_length=256)
     name: str | None = StringValidator(min_length=1, max_length=256), Default(None)
-    restricted_to: list[ParkingRestrictionInput] | None = (
+    restrictions: list[ParkingRestrictionInput] | None = (
         ListValidator(DataclassValidator(ParkingRestrictionInput)),
         Default(None),
     )

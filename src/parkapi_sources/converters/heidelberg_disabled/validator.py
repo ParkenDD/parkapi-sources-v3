@@ -15,7 +15,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import ParkingRestrictionInput, StaticParkingSpotInput
+from parkapi_sources.models import ParkingSpotRestrictionInput, StaticParkingSpotInput
 from parkapi_sources.models.enums import ParkingAudience, ParkingSpotType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
@@ -62,5 +62,5 @@ class HeidelbergDisabledParkingSpotInput:
             lon=round_7d(self.geometry.x),
             description=', '.join(description for description in descriptions if description) or None,
             has_realtime_data=False,
-            restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
+            restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
         )

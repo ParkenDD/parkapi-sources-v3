@@ -11,8 +11,8 @@ from typing import Optional
 from validataclass.dataclasses import validataclass
 from validataclass.validators import DecimalValidator, EnumValidator, IntegerValidator, StringValidator
 
-from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType
 from parkapi_sources.validators import ExcelNoneable
 from parkapi_sources.validators.boolean_validators import MappedBooleanValidator
 
@@ -59,6 +59,36 @@ class NeckarsulmRowInput:
             address = f'{self.street}, Neckarsulm'
         else:
             address = None
+
+        restrictions: list[ParkingSiteRestrictionInput] = []
+        if self.capacity_carsharing is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CARSHARING,
+                    capacity=self.capacity_carsharing,
+                ),
+            )
+        if self.capacity_charging is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    capacity=self.capacity_charging,
+                ),
+            )
+        if self.capacity_woman is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.WOMEN,
+                    capacity=self.capacity_woman,
+                ),
+            )
+        if self.capacity_disabled is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    capacity=self.capacity_disabled,
+                ),
+            )
         return StaticParkingSiteInput(
             uid=str(self.uid),
             name=self.name,
@@ -67,10 +97,7 @@ class NeckarsulmRowInput:
             lon=self.lon,
             address=address,
             capacity=self.capacity,
-            capacity_carsharing=self.capacity_carsharing,
-            capacity_charging=self.capacity_charging,
-            capacity_woman=self.capacity_woman,
-            capacity_disabled=self.capacity_disabled,
+            restrictions=restrictions,
             has_fee=self.has_fee,
             opening_hours='24/7' if self.opening_hours == '00:00-24:00' else None,
             static_data_updated_at=datetime.now(tz=timezone.utc),
