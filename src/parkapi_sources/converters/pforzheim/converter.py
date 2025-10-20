@@ -11,8 +11,8 @@ from validataclass.validators import DataclassValidator
 from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
-from parkapi_sources.models.enums import SupervisionType
+from parkapi_sources.models import ParkingSiteRestrictionInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkingAudience, SupervisionType
 
 from .validation import PforzheimInput
 
@@ -53,14 +53,27 @@ class PforzheimPushConverter(JsonConverter, ParkingSiteBaseConverter):
                 address=input_data.address,
                 description=input_data.description,
                 capacity=input_data.capacity,
-                capacity_woman=input_data.quantitySpacesReservedForWomen,
-                capacity_disabled=input_data.quantitySpacesReservedForMobilityImpededPerson,
                 fee_description=input_data.feeInformation,
                 supervision_type=SupervisionType.YES if 'ja' in input_data.securityInformation.lower() else False,
                 opening_hours='24/7' if input_data.hasOpeningHours24h else None,
                 static_data_updated_at=datetime.now(tz=timezone.utc),
                 has_realtime_data=False,
+                restrictions=[],
             )
+            if input_data.quantitySpacesReservedForWomen:
+                parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.WOMEN,
+                        capacity=input_data.quantitySpacesReservedForWomen,
+                    ),
+                )
+            if input_data.quantitySpacesReservedForMobilityImpededPerson:
+                parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.DISABLED,
+                        capacity=input_data.quantitySpacesReservedForMobilityImpededPerson,
+                    ),
+                )
             static_parking_site_inputs.append(parking_site_input)
 
         return static_parking_site_inputs, static_parking_site_errors

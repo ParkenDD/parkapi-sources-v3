@@ -24,8 +24,8 @@ from parkapi_sources.converters.konstanz.validators import (
     KonstanzOpeningTimeValidator,
     NumericIntegerValidator,
 )
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType
+from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import OpeningStatus, ParkingAudience, ParkingSiteType
 from parkapi_sources.validators import (
     EmptystringNoneable,
     GermanDurationIntegerValidator,
@@ -114,9 +114,17 @@ class KonstanzParkingSiteDataInput:
             lon=self.lon,
             opening_hours=self.opening_h,
             capacity=self.max_cap,
-            capacity_disabled=self.capacity_d,
-            capacity_woman=self.capacity_w,
             static_data_updated_at=self.updated,
+            restrictions=[
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    capacity=self.capacity_d,
+                ),
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.WOMEN,
+                    capacity=self.capacity_w,
+                ),
+            ],
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:

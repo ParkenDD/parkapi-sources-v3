@@ -17,8 +17,8 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType
+from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkAndRideType, ParkingAudience, ParkingSiteType
 from parkapi_sources.validators import SpacedDateTimeValidator
 
 
@@ -69,26 +69,39 @@ class PMBWInput:
             name=self.long_name,
             static_data_updated_at=self.time,
             capacity=self.capacity.car,
-            capacity_charging=self.capacity.car_charging,
-            capacity_disabled=self.capacity.car_handicap,
-            capacity_woman=self.capacity.car_women,
             has_realtime_data=True,
             lat=self.location.lat,
             lon=self.location.lng,
             type=ParkingSiteType.ON_STREET,
             park_and_ride_type=[ParkAndRideType.CARPOOL] if self.category == PMBWCategory.P_M else None,
+            restrictions=[
+                ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED, capacity=self.capacity.car_handicap),
+                ParkingSiteRestrictionInput(type=ParkingAudience.WOMEN, capacity=self.capacity.car_women),
+                ParkingSiteRestrictionInput(type=ParkingAudience.CHARGING, capacity=self.capacity.car_charging),
+            ],
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
             uid=self.id,
             realtime_capacity=self.capacity.car,
-            realtime_capacity_charging=self.capacity.car_charging,
-            realtime_capacity_disabled=self.capacity.car_handicap,
-            realtime_capacity_woman=self.capacity.car_women,
             realtime_free_capacity=self.free_capacity.car,
-            realtime_free_capacity_charging=self.free_capacity.car_charging,
-            realtime_free_capacity_disabled=self.free_capacity.car_handicap,
-            realtime_free_capacity_woman=self.free_capacity.car_women,
             realtime_data_updated_at=self.time,
+            restrictions=[
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    realtime_capacity=self.capacity.car_handicap,
+                    realtime_free_capacity=self.free_capacity.car_handicap,
+                ),
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.WOMEN,
+                    realtime_capacity=self.capacity.car_women,
+                    realtime_free_capacity=self.free_capacity.car_women,
+                ),
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    realtime_capacity=self.capacity.car_charging,
+                    realtime_free_capacity=self.free_capacity.car_charging,
+                ),
+            ],
         )

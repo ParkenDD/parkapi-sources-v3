@@ -5,7 +5,12 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import (
+    ParkingAudience,
+    ParkingSiteRestrictionInput,
+    RealtimeParkingSiteInput,
+    StaticParkingSiteInput,
+)
 
 from .validation import PbwParkingSiteDetailInput, PbwRealtimeInput
 
@@ -17,7 +22,7 @@ class PbwMapper:
             max_height = int(parking_site_detail_input.ausstattung.einfahrtshoehe * 100)
 
         # We use StaticParkingSiteInput without validation because we validated the data before
-        return StaticParkingSiteInput(
+        static_parking_site_input = StaticParkingSiteInput(
             uid=str(parking_site_detail_input.id),
             name=parking_site_detail_input.objekt.name,
             operator_name='Parkraumgesellschaft Baden-Württemberg mbH',
@@ -35,12 +40,42 @@ class PbwMapper:
             lat=parking_site_detail_input.position.latitude,
             lon=parking_site_detail_input.position.longitude,
             capacity=parking_site_detail_input.stellplaetze.gesamt,
-            capacity_disabled=parking_site_detail_input.stellplaetze.behinderte,
-            capacity_family=parking_site_detail_input.stellplaetze.familien,
-            capacity_woman=parking_site_detail_input.stellplaetze.frauen,
-            capacity_charging=parking_site_detail_input.stellplaetze.elektrofahrzeuge,
             # TODO: opening_hours
         )
+
+        restrictions: list[ParkingSiteRestrictionInput] = []
+        if parking_site_detail_input.stellplaetze.behinderte is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    capacity=parking_site_detail_input.stellplaetze.behinderte,
+                ),
+            )
+        if parking_site_detail_input.stellplaetze.frauen is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.WOMEN,
+                    capacity=parking_site_detail_input.stellplaetze.frauen,
+                ),
+            )
+        if parking_site_detail_input.stellplaetze.familien is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.FAMILY,
+                    capacity=parking_site_detail_input.stellplaetze.familien,
+                ),
+            )
+        if parking_site_detail_input.stellplaetze.elektrofahrzeuge is not None:
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    capacity=parking_site_detail_input.stellplaetze.elektrofahrzeuge,
+                ),
+            )
+        if len(restrictions):
+            static_parking_site_input.restrictions = restrictions
+
+        return static_parking_site_input
 
     def map_realtime_parking_site(self, realtime_input: PbwRealtimeInput) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(

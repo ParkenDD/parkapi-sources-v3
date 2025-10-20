@@ -55,7 +55,7 @@ class StaticBaseParkingInput(ValidataclassMixin, ABC):
     tags: list[str] = ListValidator(StringValidator(min_length=1)), Default([])
     geojson: BaseGeometry | None = Noneable(GeoJSONGeometryValidator()), Default(None)
 
-    restricted_to: list[ParkingRestrictionInput] = (
+    restrictions: list[ParkingRestrictionInput] = (
         Noneable(ListValidator(DataclassValidator(ParkingRestrictionInput))),
         Default([]),
     )

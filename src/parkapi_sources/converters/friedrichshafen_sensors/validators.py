@@ -9,7 +9,11 @@ from validataclass.validators import AnyOfValidator
 from parkapi_sources.converters.base_converter.datex2 import UrbanParkingSite
 from parkapi_sources.converters.base_converter.datex2.parking_record_status_validator import ParkingRecordStatus
 from parkapi_sources.converters.base_converter.datex2.urban_parking_site_validator import Language
-from parkapi_sources.models import ParkingRestrictionInput, RealtimeParkingSpotInput, StaticParkingSpotInput
+from parkapi_sources.models import (
+    ParkingSpotRestrictionInput,
+    RealtimeParkingSpotInput,
+    StaticParkingSpotInput,
+)
 from parkapi_sources.models.enums import ParkingSiteType, ParkingSpotStatus, ParkingSpotType, PurposeType
 
 
@@ -24,10 +28,10 @@ class FriedrichshafenSensorsParkingSpot(UrbanParkingSite):
             if name.lang == Language.DE:
                 name_de = name._text
 
-        restricted_to: list[ParkingRestrictionInput] = []
+        restrictions: list[ParkingSpotRestrictionInput] = []
         if self.assignedParkingAmongOthers:
             for user in self.assignedParkingAmongOthers.applicableForUser:
-                restricted_to.append(ParkingRestrictionInput(type=user.to_parking_audience()))
+                restrictions.append(ParkingSpotRestrictionInput(type=user.to_parking_audience()))
 
         if self.urbanParkingSiteType.to_parking_site_type() == ParkingSiteType.ON_STREET:
             parking_spot_type = ParkingSpotType.ON_STREET
@@ -47,7 +51,7 @@ class FriedrichshafenSensorsParkingSpot(UrbanParkingSite):
             lat=self.parkingLocation.pointByCoordinates.pointCoordinates.latitude,
             lon=self.parkingLocation.pointByCoordinates.pointCoordinates.longitude,
             static_data_updated_at=self.parkingRecordVersionTime,
-            restricted_to=restricted_to if len(restricted_to) else None,
+            restrictions=restrictions if len(restrictions) else None,
         )
 
 

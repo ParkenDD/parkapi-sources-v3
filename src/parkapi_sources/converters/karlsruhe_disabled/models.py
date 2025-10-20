@@ -12,7 +12,7 @@ from validataclass.validators import DataclassValidator, DateTimeValidator, Inte
 from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
     ParkingAudience,
-    ParkingRestrictionInput,
+    ParkingSpotRestrictionInput,
     StaticParkingSpotInput,
 )
 from parkapi_sources.util import generate_point, round_7d
@@ -73,7 +73,7 @@ class KarlsruheDisabledFeatureInput(GeojsonBaseFeatureInput):
                     lat=lat,
                     lon=lon,
                     has_realtime_data=False,
-                    restricted_to=[ParkingRestrictionInput(type=ParkingAudience.DISABLED)],
+                    restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
                 ),
             )
 

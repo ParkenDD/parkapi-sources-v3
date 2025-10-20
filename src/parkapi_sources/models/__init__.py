@@ -25,6 +25,7 @@ from .geojson_inputs import (
 )
 from .parking_site_inputs import (
     CombinedParkingSiteInput,
+    ParkingSiteRestrictionInput,
     RealtimeParkingSiteInput,
     StaticParkingSiteInput,
     StaticParkingSitePatchInput,
@@ -32,6 +33,7 @@ from .parking_site_inputs import (
 )
 from .parking_spot_inputs import (
     CombinedParkingSpotInput,
+    ParkingSpotRestrictionInput,
     RealtimeParkingSpotInput,
     StaticParkingSpotInput,
     StaticParkingSpotPatchInput,

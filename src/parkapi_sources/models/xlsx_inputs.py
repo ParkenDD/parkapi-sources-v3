@@ -52,13 +52,13 @@ class ExcelStaticParkingSiteInput(StaticParkingSiteInput):
     max_stay: Optional[int] = ExcelNoneable(GermanDurationIntegerValidator()), Default(None)
 
     capacity: int = IntegerValidator(min_value=0)
-    capacity_disabled: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
-    capacity_woman: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
-    capacity_family: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
-    capacity_charging: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
-    capacity_carsharing: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
-    capacity_truck: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
-    capacity_bus: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0))
+    capacity_disabled: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    capacity_woman: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    capacity_family: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    capacity_charging: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    capacity_carsharing: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    capacity_truck: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    capacity_bus: Optional[int] = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
 
 
 @validataclass
