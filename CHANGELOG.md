@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.28.0
+
+Released 2025-10-20
+
+This release is breaking by normalizing `restrictions` and therefore removing `capacity_{audience}` from
+`StaticParkingSiteInput` and `RealtimeParkingSiteInput`.
+
+### Features
+
+* [restrictions system](https://github.com/ParkenDD/parkapi-sources-v3/pull/295)
+
+
 ## 0.27.1
 
 Released 2025-10-14
