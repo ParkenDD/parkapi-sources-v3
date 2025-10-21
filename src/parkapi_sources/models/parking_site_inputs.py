@@ -13,6 +13,7 @@ from validataclass.helpers import UnsetValueType
 from validataclass.validators import (
     AnythingValidator,
     BooleanValidator,
+    DataclassValidator,
     EnumValidator,
     IntegerValidator,
     ListValidator,
@@ -36,6 +37,13 @@ from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
 @validataclass
+class ParkingSiteRestrictionInput(ParkingRestrictionInput):
+    capacity: int | None = Noneable(IntegerValidator()), Default(None)
+    realtime_capacity: int | None = Noneable(IntegerValidator()), Default(None)
+    realtime_free_capacity: int | None = Noneable(IntegerValidator()), Default(None)
+
+
+@validataclass
 class StaticParkingSiteInput(StaticBaseParkingInput):
     name: str = StringValidator(min_length=1, max_length=256)
     group_uid: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
@@ -56,6 +64,11 @@ class StaticParkingSiteInput(StaticBaseParkingInput):
         Default([]),
     )
 
+    restrictions: list[ParkingSiteRestrictionInput] = (
+        Noneable(ListValidator(DataclassValidator(ParkingSiteRestrictionInput))),
+        Default([]),
+    )
+
     orientation: ParkingSiteOrientation | None = Noneable(EnumValidator(ParkingSiteOrientation)), Default(None)
     side: ParkingSiteSide | None = Noneable(EnumValidator(ParkingSiteSide)), Default(None)
     parking_type: ParkingType | None = Noneable(EnumValidator(ParkingType)), Default(None)
@@ -67,22 +80,6 @@ class StaticParkingSiteInput(StaticBaseParkingInput):
     capacity: int = IntegerValidator(min_value=0, allow_strings=True)
     capacity_min: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
     capacity_max: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    capacity_disabled: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    capacity_woman: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    capacity_family: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    capacity_charging: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    capacity_carsharing: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    capacity_truck: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    capacity_bus: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
 
     opening_hours: str | None = Noneable(StringValidator(max_length=512)), Default(None)
 
@@ -136,7 +133,7 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
 
     geojson: BaseGeometry | None | UnsetValueType = DefaultUnset
     tags: list[str] | UnsetValueType = DefaultUnset
-    restricted_to: list[ParkingRestrictionInput] | UnsetValueType = DefaultUnset
+    restrictions: list[ParkingSiteRestrictionInput] | UnsetValueType = DefaultUnset
     external_identifiers: list[ExternalIdentifierInput] | UnsetValueType = DefaultUnset
 
     group_uid: str | None | UnsetValueType = DefaultUnset
@@ -162,13 +159,6 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
 
     capacity_min: int | None | UnsetValueType = DefaultUnset
     capacity_max: int | None | UnsetValueType = DefaultUnset
-    capacity_disabled: int | None | UnsetValueType = DefaultUnset
-    capacity_woman: int | None | UnsetValueType = DefaultUnset
-    capacity_family: int | None | UnsetValueType = DefaultUnset
-    capacity_charging: int | None | UnsetValueType = DefaultUnset
-    capacity_carsharing: int | None | UnsetValueType = DefaultUnset
-    capacity_truck: int | None | UnsetValueType = DefaultUnset
-    capacity_bus: int | None | UnsetValueType = DefaultUnset
 
     opening_hours: str | None | UnsetValueType = DefaultUnset
 
@@ -181,45 +171,12 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
 class RealtimeParkingSiteInput(RealtimeBaseParkingInput):
     realtime_opening_status: OpeningStatus | None = Noneable(EnumValidator(OpeningStatus)), Default(None)
     realtime_capacity: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_capacity_disabled: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_capacity_woman: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_capacity_family: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_capacity_charging: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_capacity_carsharing: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_capacity_truck: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_capacity_bus: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
 
     realtime_free_capacity: int | None = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    realtime_free_capacity_disabled: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_free_capacity_woman: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_free_capacity_family: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_free_capacity_charging: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_free_capacity_carsharing: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_free_capacity_truck: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
-    )
-    realtime_free_capacity_bus: int | None = (
-        Noneable(IntegerValidator(min_value=0, allow_strings=True)),
-        Default(None),
+
+    restrictions: list[ParkingSiteRestrictionInput] = (
+        Noneable(ListValidator(DataclassValidator(ParkingSiteRestrictionInput))),
+        Default([]),
     )
 
 

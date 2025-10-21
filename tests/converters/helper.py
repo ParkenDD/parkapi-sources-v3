@@ -12,7 +12,8 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.models import (
     ExternalIdentifierInput,
-    ParkingRestrictionInput,
+    ParkingSiteRestrictionInput,
+    ParkingSpotRestrictionInput,
     RealtimeParkingSiteInput,
     RealtimeParkingSpotInput,
     StaticParkingSiteInput,
@@ -57,6 +58,10 @@ def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticP
         assert static_parking_site_input.uid not in uids, 'UID not unique'
         uids.append(static_parking_site_input.uid)
 
+        if static_parking_site_input.restrictions:
+            for restriction in static_parking_site_input.restrictions:
+                assert isinstance(restriction, ParkingSiteRestrictionInput)
+
         if static_parking_site_input.external_identifiers:
             for external_identifier in static_parking_site_input.external_identifiers:
                 assert isinstance(external_identifier, ExternalIdentifierInput)
@@ -79,6 +84,10 @@ def validate_realtime_parking_site_inputs(realtime_parking_site_inputs: list[Rea
     validator = DataclassValidator(RealtimeParkingSiteInput)
 
     for realtime_parking_site_input in realtime_parking_site_inputs:
+        if realtime_parking_site_input.restrictions:
+            for restriction in realtime_parking_site_input.restrictions:
+                assert isinstance(restriction, ParkingSiteRestrictionInput)
+
         assert realtime_parking_site_input.realtime_data_updated_at.tzinfo is not None
         assert isinstance(realtime_parking_site_input.uid, str)
 
@@ -92,9 +101,9 @@ def validate_static_parking_spot_inputs(static_parking_spot_inputs: list[StaticP
     validator = DataclassValidator(StaticParkingSpotInput)
 
     for static_parking_spot_input in static_parking_spot_inputs:
-        if static_parking_spot_input.restricted_to:
-            for restricted_to in static_parking_spot_input.restricted_to:
-                assert isinstance(restricted_to, ParkingRestrictionInput)
+        if static_parking_spot_input.restrictions:
+            for restriction in static_parking_spot_input.restrictions:
+                assert isinstance(restriction, ParkingSpotRestrictionInput)
 
         assert static_parking_spot_input.static_data_updated_at.tzinfo is not None
         assert isinstance(static_parking_spot_input.uid, str)

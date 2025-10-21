@@ -3,8 +3,8 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import PurposeType
+from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkingAudience, PurposeType
 
 from .validators import (
     ApcoaNavigationLocationType,
@@ -63,27 +63,57 @@ class ApcoaMapper:
         static_parking_site_input.opening_hours = apcoa_input.get_osm_opening_hours()
 
         # Map all additional capacities
+        restrictions: list[ParkingSiteRestrictionInput] = []
         for capacity_data in apcoa_input.Spaces:
             if capacity_data.Type == ApcoaParkingSpaceType.DISABLED_SPACES:
-                static_parking_site_input.capacity_disabled = capacity_data.Count
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.DISABLED,
+                        capacity=capacity_data.Count,
+                    ),
+                )
             elif capacity_data.Type == ApcoaParkingSpaceType.WOMEN_SPACES:
-                static_parking_site_input.capacity_woman = capacity_data.Count
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.WOMEN,
+                        capacity=capacity_data.Count,
+                    ),
+                )
             elif capacity_data.Type in [
                 ApcoaParkingSpaceType.ELECTRIC_CAR_CHARGING_SPACES,
                 ApcoaParkingSpaceType.ELECTRIC_CAR_FAST_CHARGING_SPACES,
                 ApcoaParkingSpaceType.EV_CHARGING,
                 ApcoaParkingSpaceType.EV_CHARGING_BAYS,
             ]:
-                static_parking_site_input.capacity_charging = capacity_data.Count
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.CHARGING,
+                        capacity=capacity_data.Count,
+                    ),
+                )
             elif capacity_data.Type in [
                 ApcoaParkingSpaceType.CAR_RENTAL_AND_SHARING,
                 ApcoaParkingSpaceType.PICKUP_AND_DROPOFF,
                 ApcoaParkingSpaceType.CARSHARING_SPACES,
             ]:
-                static_parking_site_input.capacity_carsharing = capacity_data.Count
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.CARSHARING,
+                        capacity=capacity_data.Count,
+                    ),
+                )
             elif capacity_data.Type == ApcoaParkingSpaceType.BUS_OR_COACHES_SPACES:
-                static_parking_site_input.capacity_bus = capacity_data.Count
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.BUS,
+                        capacity=capacity_data.Count,
+                    ),
+                )
             elif capacity_data.Type == ApcoaParkingSpaceType.FAMILY_SPACES:
-                static_parking_site_input.capacity_family = capacity_data.Count
-
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.FAMILY,
+                        capacity=capacity_data.Count,
+                    ),
+                )
         return static_parking_site_input

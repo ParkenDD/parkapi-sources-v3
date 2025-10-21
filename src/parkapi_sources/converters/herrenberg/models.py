@@ -21,8 +21,8 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingSiteType
+from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingAudience, ParkingSiteType
 from parkapi_sources.validators import OsmOpeningTimesValidator
 
 
@@ -112,7 +112,7 @@ class HerrenbergParkingSiteInput:
         return input_data
 
     def to_static_parking_site(self, static_data_updated_at: datetime) -> StaticParkingSiteInput:
-        return StaticParkingSiteInput(
+        static_parking_site_input = StaticParkingSiteInput(
             uid=self.id,
             name=self.name,
             lat=self.coords.lat,
@@ -128,10 +128,19 @@ class HerrenbergParkingSiteInput:
             public_url=self.url,
             opening_hours=self.opening_hours,
             has_fee=self.fee_hours is not None,
-            capacity_disabled=self.total_disabled,
             has_realtime_data=self.state != HerrenbergState.NODATA,
             static_data_updated_at=static_data_updated_at,
         )
+
+        if self.total_disabled is not None:
+            static_parking_site_input.restrictions = [
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.DISABLED,
+                    capacity=self.total_disabled,
+                )
+            ]
+
+        return static_parking_site_input
 
     def to_realtime_parking_site(self, realtime_data_updated_at: datetime) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(

@@ -21,7 +21,11 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import ParkingAudience, ParkingRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models import (
+    ParkingAudience,
+    ParkingSiteRestrictionInput,
+    StaticParkingSiteInput,
+)
 from parkapi_sources.models.enums import ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import (
@@ -50,7 +54,7 @@ class LadenburgParkraumcheckProperty(Enum):
     CARSHARING = 'Carsharing'
     TAXI = 'Taxi'
 
-    def to_restricted_to_type(self) -> ParkingAudience | None:
+    def to_restriction_type(self) -> ParkingAudience | None:
         return {
             self.CHARGING: ParkingAudience.CHARGING,
             self.DISABLED: ParkingAudience.DISABLED,
@@ -104,13 +108,13 @@ class LadenburgParkraumcheckParkingSiteInput:
         if self.properties.Gebuehreninformation:
             description = f'{description}, Bewirtschaftung: {self.properties.Gebuehreninformation}'
 
-        parking_restriction: ParkingRestrictionInput | None = None
-        if self.properties.Maximale_Parkdauer or self.properties.Bewirtschaftung.to_restricted_to_type():
-            parking_restriction = ParkingRestrictionInput()
+        parking_restriction: ParkingSiteRestrictionInput | None = None
+        if self.properties.Maximale_Parkdauer or self.properties.Bewirtschaftung.to_restriction_type():
+            parking_restriction = ParkingSiteRestrictionInput()
             if self.properties.Maximale_Parkdauer:
                 parking_restriction.max_stay = Duration(minutes=self.properties.Maximale_Parkdauer)
-            if self.properties.Bewirtschaftung.to_restricted_to_type():
-                parking_restriction.type = self.properties.Bewirtschaftung.to_restricted_to_type()
+            if self.properties.Bewirtschaftung.to_restriction_type():
+                parking_restriction.type = self.properties.Bewirtschaftung.to_restriction_type()
 
         return StaticParkingSiteInput(
             uid=str(self.properties.fid),
@@ -126,5 +130,5 @@ class LadenburgParkraumcheckParkingSiteInput:
             orientation=self.properties.Parkrichtung.to_parking_side_orientation(),
             geojson=self.geometry,
             has_realtime_data=False,
-            restricted_to=[] if parking_restriction is None else [parking_restriction],
+            restrictions=[] if parking_restriction is None else [parking_restriction],
         )

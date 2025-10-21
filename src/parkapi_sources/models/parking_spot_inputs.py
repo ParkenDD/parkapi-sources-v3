@@ -9,7 +9,7 @@ from decimal import Decimal
 from shapely.geometry.base import BaseGeometry
 from validataclass.dataclasses import Default, DefaultUnset, validataclass
 from validataclass.helpers import UnsetValueType
-from validataclass.validators import EnumValidator, Noneable, StringValidator
+from validataclass.validators import DataclassValidator, EnumValidator, ListValidator, Noneable, StringValidator
 
 from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
 from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType
@@ -17,10 +17,19 @@ from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
 @validataclass
+class ParkingSpotRestrictionInput(ParkingRestrictionInput): ...
+
+
+@validataclass
 class StaticParkingSpotInput(StaticBaseParkingInput):
     name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
 
     type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
+
+    restrictions: list[ParkingSpotRestrictionInput] = (
+        Noneable(ListValidator(DataclassValidator(ParkingSpotRestrictionInput))),
+        Default([]),
+    )
 
 
 @validataclass
@@ -39,7 +48,7 @@ class StaticParkingSpotPatchInput(StaticParkingSpotInput):
 
     geojson: BaseGeometry | None | UnsetValueType = DefaultUnset
 
-    restricted_to: list[ParkingRestrictionInput] | UnsetValueType = DefaultUnset
+    restrictions: list[ParkingSpotRestrictionInput] | UnsetValueType = DefaultUnset
     external_identifiers: list[ExternalIdentifierInput] | UnsetValueType = DefaultUnset
     tags: list[str] | UnsetValueType = DefaultUnset
 

@@ -12,7 +12,7 @@ from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import GeojsonInput, SourceInfo, StaticParkingSiteInput
 
-from .validator import EsslingenParkingSiteInput
+from .validator import EsslingenParkingSiteFeatureInput
 
 
 class EsslingenPushConverter(JsonConverter, ParkingSiteBaseConverter):
@@ -22,7 +22,7 @@ class EsslingenPushConverter(JsonConverter, ParkingSiteBaseConverter):
         has_realtime_data=False,
     )
     geojson_validator = DataclassValidator(GeojsonInput)
-    esslingen_parking_site_validator = DataclassValidator(EsslingenParkingSiteInput)
+    esslingen_parking_site_validator = DataclassValidator(EsslingenParkingSiteFeatureInput)
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
 
     def handle_json(self, data: dict | list) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

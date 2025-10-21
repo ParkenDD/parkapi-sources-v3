@@ -21,7 +21,11 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import ParkingRestrictionInput, PurposeType, StaticParkingSiteInput
+from parkapi_sources.models import (
+    ParkingSiteRestrictionInput,
+    PurposeType,
+    StaticParkingSiteInput,
+)
 from parkapi_sources.models.enums import (
     ParkingAudience,
     ParkingSiteOrientation,
@@ -80,7 +84,7 @@ class EsslingenParkingSiteInput:
 
 
 @validataclass
-class EsslingenParkingSiteInput:
+class EsslingenParkingSiteFeatureInput:
     type: str = AnyOfValidator(allowed_values=['Feature'])
     properties: EsslingenParkingSiteInput = DataclassValidator(EsslingenParkingSiteInput)
     geometry: LineString = GeoJSONGeometryValidator(
@@ -132,60 +136,60 @@ class EsslingenParkingSiteInput:
 
         match self.properties.parking_type:
             case 'Bewohner-Parkplatz':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.RESIDENT),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
                 )
             case 'Behinderten-Parkplatz allgemein':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.DISABLED),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED),
                 )
             case 'Behinderten-Parkplatz beschränkt auf bestimmte Zeiten, sonst für die Öffentlichkeit':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.DISABLED),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED),
                 )
             case 'Behinderten-Parkplatz beschränkt auf bestimmte Zeiten, sonst nur für Bewohner':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.DISABLED),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED),
                 )
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.RESIDENT),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
                 )
             case 'Behinderten-Parkplatz beschränkt auf bestimmte Zeiten, sonst für Taxi':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.DISABLED),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED),
                 )
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.TAXI),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.TAXI),
                 )
             case 'Behinderten-Parkplatz für bestimmte Parkausweis-Nummer':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.DISABLED),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED),
                 )
             case 'Motorrad-Parkplatz':
                 static_parking_site_input.purpose = PurposeType.MOTORCYCLE
             case 'Carsharing-Stellplatz':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.CARSHARING),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.CARSHARING),
                 )
             case 'Taxi-Stellplatz':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.TAXI),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.TAXI),
                 )
             case 'Parkplatz für Elektrofahrzeuge während des Ladevorgangs':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.CHARGING),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.CHARGING),
                 )
             case 'Wohnmobil-Parkplatz':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.CARAVAN),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.CARAVAN),
                 )
             case 'Omnibus-Parkplatz':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.BUS),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.BUS),
                 )
             case 'Lkw-Parkplatz':
-                static_parking_site_input.restricted_to.append(
-                    ParkingRestrictionInput(type=ParkingAudience.TRUCK),
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.TRUCK),
                 )
             case 'Parkplatz privat betrieben für die Öffentlichkeit':
                 static_parking_site_input.type = ParkingSiteType.OFF_STREET_PARKING_GROUND

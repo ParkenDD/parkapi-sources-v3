@@ -13,7 +13,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters.pbw import PbwPullConverter
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
@@ -70,10 +70,6 @@ class PbwPullConverterTest:
         assert data == {
             'address': 'Flandernstraße 101 A, 73732 Esslingen',
             'capacity': 459,
-            'capacity_charging': 0,
-            'capacity_disabled': 0,
-            'capacity_family': 0,
-            'capacity_woman': 0,
             'has_realtime_data': False,
             'lat': Decimal('48.74481873'),
             'lon': Decimal('9.321229'),
@@ -88,7 +84,40 @@ class PbwPullConverterTest:
             'uid': '8',
             'external_identifiers': [],
             'park_and_ride_type': [],
-            'restricted_to': [],
+            'restrictions': [
+                {
+                    'capacity': 0,
+                    'hours': None,
+                    'max_stay': None,
+                    'realtime_capacity': None,
+                    'realtime_free_capacity': None,
+                    'type': ParkingAudience.DISABLED,
+                },
+                {
+                    'capacity': 0,
+                    'hours': None,
+                    'max_stay': None,
+                    'realtime_capacity': None,
+                    'realtime_free_capacity': None,
+                    'type': ParkingAudience.WOMEN,
+                },
+                {
+                    'capacity': 0,
+                    'hours': None,
+                    'max_stay': None,
+                    'realtime_capacity': None,
+                    'realtime_free_capacity': None,
+                    'type': ParkingAudience.FAMILY,
+                },
+                {
+                    'capacity': 0,
+                    'hours': None,
+                    'max_stay': None,
+                    'realtime_capacity': None,
+                    'realtime_free_capacity': None,
+                    'type': ParkingAudience.CHARGING,
+                },
+            ],
         }
 
     @staticmethod

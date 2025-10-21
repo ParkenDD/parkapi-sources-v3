@@ -13,7 +13,7 @@ from validataclass.validators import DateValidator, EnumValidator, IntegerValida
 from parkapi_sources.models import (
     ParkAndRideType,
     ParkingAudience,
-    ParkingRestrictionInput,
+    ParkingSiteRestrictionInput,
     ParkingSiteType,
     StaticParkingSiteInput,
 )
@@ -69,7 +69,6 @@ class KelternRowInput:
             uid=self.id.replace('@GemeindeKeltern', ''),
             capacity=self.capacity,
             name=self.adress_str,
-            capacity_charging=1 if self.hasChargingStation else None,
             opening_hours='24/7' if self.hasOpeningHours24h else None,
             description='; '.join(description_fragments),
             address=f'{self.adress_str}, {self.adress_pos} {self.adress_cit}',
@@ -80,10 +79,19 @@ class KelternRowInput:
             lat=self.locations_latitude,
             lon=self.locations_longitude,
         )
+        if self.type == KelternParkingSiteType.DISABLED or self.hasChargingStation:
+            static_parking_site.restrictions = []
         if self.type == KelternParkingSiteType.DISABLED:
-            static_parking_site.restricted_to = [
-                ParkingRestrictionInput(
+            static_parking_site.restrictions = [
+                ParkingSiteRestrictionInput(
                     type=ParkingAudience.DISABLED,
+                ),
+            ]
+        if self.hasChargingStation:
+            static_parking_site.restrictions = [
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    capacity=1,
                 ),
             ]
         return static_parking_site

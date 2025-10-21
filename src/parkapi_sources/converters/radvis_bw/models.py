@@ -18,8 +18,8 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
+from parkapi_sources.models import GeojsonBaseFeatureInput, ParkingSiteRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType, SupervisionType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator
 
@@ -141,11 +141,18 @@ class RadvisFeaturePropertiesInput:
                 'name': 'Abstellanlage',
                 'type': self.stellplatzart.to_parking_site_type(),
                 'capacity': self.anzahl_stellplaetze,
-                'capacity_charging': self.anzahl_lademoeglichkeiten,
                 'purpose': PurposeType.BIKE,
                 **base_data,
             },
         ]
+        if self.anzahl_lademoeglichkeiten is not None:
+            results[0]['restrictions'] = [
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    capacity=self.anzahl_lademoeglichkeiten,
+                )
+            ]
+
         if self.anzahl_schliessfaecher:
             results[0]['group_uid'] = str(self.id)
             results.append({
