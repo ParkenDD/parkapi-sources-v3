@@ -5,7 +5,6 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters.freiburg_vag_bike import FreiburgVAGBikePullConverter
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_static_parking_site_inputs
 

@@ -17,8 +17,8 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator, MappedBooleanValidator
 
@@ -34,7 +34,7 @@ class FreiburgVAGBikePropertiesInput:
     lon: Optional[float] = Noneable(FloatValidator())
     lat: Optional[float] = Noneable(FloatValidator())
     capacity: int = IntegerValidator(min_value=0, allow_strings=True)
-    capacity_charging: Optional[str] = Noneable(StringValidator())
+    capacity_charging: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True))
     capacity_cargobike: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True))
     max_heighth: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True))
     max_width: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True))
@@ -50,6 +50,15 @@ class FreiburgVAGBikePropertiesInput:
         parking_type = ParkingSiteType.LOCKBOX
         if 'box' in self.type.lower() or 'schließfächer' in self.type.lower():
             parking_type = ParkingSiteType.LOCKERS
+
+        parking_site_restrictions: list[ParkingSiteRestrictionInput] = []
+        if self.capacity_charging is not None:
+            parking_site_restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=ParkingAudience.CHARGING,
+                    capacity=self.capacity_charging,
+                ),
+            )
 
         return StaticParkingSiteInput(
             uid=str(self.original_uid),
@@ -67,7 +76,7 @@ class FreiburgVAGBikePropertiesInput:
             is_covered=self.is_covered,
             has_fee=self.has_fee,
             fee_description=self.fee_description,
-            capacity_charging=int(self.capacity_charging) if self.capacity_charging.isdigit() else None,
+            restrictions=parking_site_restrictions,
             has_realtime_data=self.has_realtime_data if self.has_realtime_data is not None else False,
             opening_hours='24/7' if self.durchg_geoeffnet else None,
             static_data_updated_at=datetime.now(tz=timezone.utc),
