@@ -47,10 +47,6 @@ class FreiburgVAGBikePropertiesInput:
     public_url: Optional[str] = Noneable(UrlValidator())
 
     def to_static_parking_site_input(self, geometry: Point) -> StaticParkingSiteInput:
-        parking_type = ParkingSiteType.LOCKBOX
-        if 'box' in self.type.lower() or 'schließfächer' in self.type.lower():
-            parking_type = ParkingSiteType.LOCKERS
-
         parking_site_restrictions: list[ParkingSiteRestrictionInput] = []
         if self.capacity_charging is not None:
             parking_site_restrictions.append(
@@ -67,7 +63,7 @@ class FreiburgVAGBikePropertiesInput:
             name=self.name,
             operator_name=self.operator_name,
             capacity=self.capacity,
-            type=parking_type,
+            type=ParkingSiteType.LOCKERS,
             purpose=PurposeType.BIKE if self.purpose.lower() == 'bike' else PurposeType.ITEM,
             related_location=self.related_location,
             public_url=self.public_url,
