@@ -38,7 +38,7 @@ Attributes which are set statically by the converter:
 | Key        | Mapping      |
 |------------|--------------|
 | bike       | BIKE         |
-| None       | ITEMS        |
+| None       | ITEM         |
 
 
 ## ParkingSiteRestriction
