@@ -1,0 +1,239 @@
+{
+  "type": "FeatureCollection",
+  "numberMatched": 8,
+  "name": "fahrradboxen",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 3,
+        "original_uid": 3,
+        "name": "Paduaallee",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.807216193,
+        "lat": 48.01370193,
+        "capacity": 3,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 3,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.8090290878335, 48.0282803187136]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 6,
+        "original_uid": 6,
+        "name": "Wirthstraße",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.796293968,
+        "lat": 47.98857099,
+        "capacity": 3,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 3,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.8119744556536, 48.0272954487593]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 4,
+        "original_uid": 4,
+        "name": "Messe / Universität",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.832268363,
+        "lat": 48.01294288,
+        "capacity": 3,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 3,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.83226197046735, 48.0129450767601]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 2,
+        "original_uid": 2,
+        "name": "Messe",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.840269023,
+        "lat": 48.0189108,
+        "capacity": 6,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 6,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.8402838720944, 48.018875997671]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 5,
+        "original_uid": 5,
+        "name": "Bahnhof Herdern",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.850617745,
+        "lat": 48.00809232,
+        "capacity": 5,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 5,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.850617745, 48.00809232]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "original_uid": 7,
+        "name": "Bahnhof Wiehre",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.854746113,
+        "lat": 47.98268178,
+        "capacity": 15,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 15,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.854746113, 47.98268178]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 1,
+        "original_uid": 1,
+        "name": "Gundelfinger Straße",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.863646814,
+        "lat": 48.03519741,
+        "capacity": 3,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 3,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.86362469535523, 48.0351937625978]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 8,
+        "original_uid": 8,
+        "name": "Bahnhof Littenweiler",
+        "purpose": "bike",
+        "type": "Schließfächer/Boxen",
+        "operator_name": "Freiburger Verkehrs-AG",
+        "lon": 7.895674981,
+        "lat": 47.98146516,
+        "capacity": 3,
+        "capacity_charging": "nein",
+        "capacity_cargobike": 3,
+        "max_heighth": 115,
+        "max_width": 85,
+        "is_covered": "ja",
+        "related_location": "Bike + Ride",
+        "has_realtime_data": "nein",
+        "has_fee": "ja",
+        "fee_description": "50€ für 6 Monate, 80€ für 12 Monate, 65€ für 12 Monate für RVF-Abo-Kund*innen",
+        "durchg_geoeffnet": "ja",
+        "public_url": "https://www.vag-freiburg.de/mehr-mobilitaet/mehr-fahrrad/fahrradboxen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.895674981, 47.98146516]
+      }
+    }
+  ]
+}
