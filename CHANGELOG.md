@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.29.0
+
+Released 2025-11-03
+
+### Features
+
+* [Add Freiburg VAG bike boxes](https://github.com/ParkenDD/parkapi-sources-v3/pull/296)
+
+
 ## 0.28.0
 
 Released 2025-10-20
