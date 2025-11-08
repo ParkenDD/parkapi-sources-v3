@@ -6,7 +6,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 from decimal import Decimal
-from typing import Optional
 
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
@@ -29,20 +28,42 @@ class BfrkBaseInput(ABC):
     # min / max are bounding box of Baden-Württemberg
     lat: Decimal = NumericValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
     lon: Decimal = NumericValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
-    objekt_Foto: Optional[str] = EmptystringNoneable(UrlValidator()), Default(None)
-    hst_dhid: Optional[str] = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
-    objekt_dhid: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
+    objekt_Foto: str | None = EmptystringNoneable(UrlValidator()), Default(None)
+    hst_dhid: str | None = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
+    objekt_dhid: str | None = EmptystringNoneable(StringValidator()), Default(None)
     infraid: str = StringValidator()
-    osmlinks: Optional[list[str]] = Noneable(ListValidator(EmptystringNoneable(UrlValidator()))), Default(None)
-    gemeinde: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
-    ortsteil: Optional[str] = EmptystringNoneable(StringValidator()), Default(None)
+    osmlinks: list[str] | None = Noneable(ListValidator(EmptystringNoneable(UrlValidator()))), Default(None)
+    gemeinde: str | None = EmptystringNoneable(StringValidator()), Default(None)
+    ortsteil: str | None = EmptystringNoneable(StringValidator()), Default(None)
 
     @abstractmethod
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
         pass
 
     def get_static_parking_site_input_kwargs(self) -> dict:
-        external_identifiers = []
+        return {
+            'uid': self.infraid,
+            'lat': self.lat,
+            'lon': self.lon,
+            'name': 'Parkplatz',
+            'address': self._get_address(),
+            'photo_url': self.objekt_Foto,
+            'external_identifiers': self._get_external_identifiers(),
+            'static_data_updated_at': datetime.now(tz=timezone.utc),
+            'has_realtime_data': False,
+        }
+
+    def _get_address(self) -> str | None:
+        if self.gemeinde and self.ortsteil:
+            return f'{self.ortsteil}, {self.gemeinde}'
+        elif self.gemeinde:
+            return self.gemeinde
+        elif self.ortsteil:
+            return self.ortsteil
+        return None
+
+    def _get_external_identifiers(self) -> list[ExternalIdentifierInput]:
+        external_identifiers: list[ExternalIdentifierInput] = []
         if self.osmlinks:
             [
                 external_identifiers.append(
@@ -60,24 +81,4 @@ class BfrkBaseInput(ABC):
                     value=self.hst_dhid,
                 ),
             )
-
-        if self.gemeinde and self.ortsteil:
-            address = f'{self.ortsteil}, {self.gemeinde}'
-        elif self.gemeinde:
-            address = self.gemeinde
-        elif self.ortsteil:
-            address = self.ortsteil
-        else:
-            address = None
-
-        return {
-            'uid': self.infraid,
-            'lat': self.lat,
-            'lon': self.lon,
-            'name': 'Parkplatz',
-            'address': address,
-            'photo_url': self.objekt_Foto,
-            'external_identifiers': external_identifiers,
-            'static_data_updated_at': datetime.now(tz=timezone.utc),
-            'has_realtime_data': False,
-        }
+        return external_identifiers

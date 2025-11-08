@@ -9,7 +9,7 @@ BFRK BW Car is a large JSON dataset with static ParkingSite and ParkingSpot data
 
 If `stellplaetzegesamt` is more than 0, a `ParkingSite` is generated.
 
-If `behindertenstellplaetze_lat`, `behindertenstellplaetze_lon` and `behindertenstellplaetze` are set and
+If `behindertenplaetze_lat`, `behindertenplaetze_lon` and `behindertenstellplaetze` are set and
 `behindertenstellplaetze` is more than 0, one or more `ParkingSpot`s are generated, with
 `restricted_to.type = 'DISABLED'`.
 
