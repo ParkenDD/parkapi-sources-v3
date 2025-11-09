@@ -60,11 +60,6 @@ class ParkRaumCheckBasePushConverter(JsonConverter, ParkingSiteBaseConverter, AB
 
         return static_parking_sites, parking_site_errors
 
-    @staticmethod
-    def _transform_key(key: str) -> str:
-        key = key.replace(' ', '_').lower()
-        return key.replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue')
-
 
 class ParkRaumCheckKehlPushConverter(ParkRaumCheckBasePushConverter):
     source_info = SourceInfo(
