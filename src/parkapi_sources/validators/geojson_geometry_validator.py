@@ -41,7 +41,7 @@ class GeoJSONGeometryValidator(Validator):
             raise InvalidGeoJSONGeometryError(reason='Empty GeoJSON geometry')
 
         if self.allowed_geometry_types and GeometryType(get_type_id(geometry)) not in self.allowed_geometry_types:
-            raise InvalidGeoJSONGeometryError(reason='Invalid geometgry type')
+            raise InvalidGeoJSONGeometryError(reason='Invalid geometry type')
 
         if self.projection is not None:
             geometry = transform(geometry, lambda *args: self.projection(*args, inverse=True), interleaved=False)
