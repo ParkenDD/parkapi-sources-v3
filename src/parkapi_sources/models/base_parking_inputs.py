@@ -18,6 +18,7 @@ from validataclass.validators import (
     Noneable,
     NumericValidator,
     StringValidator,
+    UrlValidator,
 )
 
 from parkapi_sources.validators import GeoJSONGeometryValidator
@@ -47,6 +48,8 @@ class StaticBaseParkingInput(ValidataclassMixin, ABC):
     # Set min/max to Europe borders
     lat: Decimal = NumericValidator(min_value=34, max_value=72)
     lon: Decimal = NumericValidator(min_value=-27, max_value=43)
+
+    photo_url: str | None = Noneable(UrlValidator(max_length=4096)), Default(None)
 
     external_identifiers: list[ExternalIdentifierInput] = (
         Noneable(ListValidator(DataclassValidator(ExternalIdentifierInput))),

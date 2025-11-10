@@ -11,7 +11,7 @@ from requests_mock import Mocker
 
 from parkapi_sources.converters.bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from parkapi_sources.util import RequestHelper
-from tests.converters.helper import validate_static_parking_site_inputs
+from tests.converters.helper import validate_static_parking_site_inputs, validate_static_parking_spot_inputs
 
 
 @pytest.fixture
@@ -46,6 +46,23 @@ class BfrkCarPullConverterTest:
         assert len(import_parking_site_exceptions) == 30
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_spots(bfrk_car_push_converter: BfrkBwCarPushConverter, requests_mock: Mocker):
+        json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_car.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://bfrk-kat-api.efa-bw.de/bfrk_api/parkplaetze',
+            text=json_data,
+        )
+
+        static_parking_spot_inputs, import_parking_site_exceptions = bfrk_car_push_converter.get_static_parking_spots()
+        assert len(static_parking_spot_inputs) == 1436
+        assert len(import_parking_site_exceptions) == 30
+
+        validate_static_parking_spot_inputs(static_parking_spot_inputs)
 
 
 @pytest.fixture

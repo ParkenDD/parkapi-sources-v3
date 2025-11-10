@@ -74,7 +74,6 @@ class StaticParkingSiteInput(StaticBaseParkingInput):
     parking_type: ParkingType | None = Noneable(EnumValidator(ParkingType)), Default(None)
 
     supervision_type: SupervisionType | None = Noneable(EnumValidator(SupervisionType)), Default(None)
-    photo_url: str | None = Noneable(UrlValidator(max_length=4096)), Default(None)
     related_location: str | None = Noneable(StringValidator(max_length=256)), Default(None)
 
     capacity: int = IntegerValidator(min_value=0, allow_strings=True)

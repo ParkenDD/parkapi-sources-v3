@@ -6,71 +6,72 @@ to stay compatible to DATEX II Parking Publication Light at any extension of the
 
 We support following data sources:
 
-| name                                                           | data type    | purpose    | type        | uid                         | realtime |
-|----------------------------------------------------------------|--------------|------------|-------------|-----------------------------|----------|
-| Aachen                                                         | ParkingSite  | car        | pull        | `aachen`                    | yes      |
-| Stadtwerke Aalen GmbH                                          | ParkingSite  | car        | pull        | `aalen`                     | yes      |
-| APCOA Services                                                 | ParkingSite  | car        | pull        | `apcoa`                     | no       |
-| Deutsche Bahn                                                  | ParkingSite  | car & bike | pull        | `bahn_v2`                   | no       |
-| B+B Parkhaus GmbH & Co. KG                                     | ParkingSite  | car        | push (xlsx) | `bb_parkhaus`               | no       |
-| Stadt Bietigheim-Bissingen                                     | ParkingSite  | car        | pull        | `bietigheim_bissingen`      | yes      |
-| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze     | ParkingSite  | car        | pull        | `bfrk_bw_car`               | no       |
-| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze | ParkingSite  | bike       | pull        | `bfrk_bw_bike`              | no       |
-| Stadt Buchen                                                   | ParkingSite  | car        | push (json) | `buchen`                    | yes      |
-| Stadt Ellwangen                                                | ParkingSite  | car        | push (xlsx) | `ellwangen`                 | no       |
-| Stadt Freiburg                                                 | ParkingSite  | car        | pull        | `freiburg`                  | yes      |
-| Stadt Freiburg: Statische Behindertenparkplätze                | ParkingSpot  | car        | pull        | `freiburg_disabled_static`  | no       |
-| Stadt Freiburg: Behindertenparkplätze mit Sensoren             | ParkingSpot  | car        | pull        | `freiburg_disabled_sensors` | yes      |
-| Stadt Freiburg: Park & Ride Statische Parkplätze               | ParkingSite  | car        | pull        | `freiburg_p_r_static`       | no       |
-| Stadt Freiburg: Park & Ride Parkplätze mit Sensoren            | ParkingSite  | car        | pull        | `freiburg_p_r_sensors`      | yes      |
-| Friedrichhafen Sensors                                         | ParkingSpot  | car        | pull        | `friedrichshafen_sensors`   | yes      |
-| GOLDBECK Parking Services                                      | ParkingSite  | car        | push (xlsx) | `goldbeck`                  | no       |
-| Stadt Heidelberg                                               | ParkingSite  | car        | pull        | `heidelberg`                | yes      |
-| Stadt Heidelberg: EasyPark                                     | ParkingSite  | car        | pull        | `heidelberg_easypark`       | no       |
-| Stadt Heidelberg: Behindertenparkplätze                        | ParkingSpot  | car        | pull        | `heidelberg_disabled`       | no       |
-| Stadt Herrenberg                                               | ParkingSite  | car        | pull        | `herrenberg`                | no       |
-| Stadt Herrenberg - Munigrid                                    | ParkingSite  | bike       | pull        | `herrenberg_bike`           | no       |
-| PARK SERVICE HÜFNER GmbH + Co. KG                              | ParkingSite  | car        | push (xlsx) | `huefner`                   | no       |
-| Stadt Karlsruhe: PKW-Parkplätze                                | ParkingSite  | car        | pull        | `karlsruhe`                 | yes      |
-| Stadt Karlsruhe: Fahrrad-Abstellangen                          | ParkingSite  | bike       | pull        | `karlsruhe_bike`            | no       |
-| Stadt Karlsruhe: Behindertenparkplätze                         | ParkingSpot  | car        | pull        | `karlsruhe_disabled`        | no       |
-| Kienzler: Bike and Ride                                        | ParkingSite  | bike       | pull        | `kienzler_bike_and_ride`    | yes      |
-| Kienzler: Karlsruhe                                            | ParkingSite  | bike       | pull        | `kienzler_karlruhe`         | yes      |
-| Kienzler: Neckarsulm                                           | ParkingSite  | bike       | pull        | `kienzler_neckarsulm`       | yes      |
-| Kienzler: Offenburg                                            | ParkingSite  | bike       | pull        | `kienzler_offenburg`        | yes      |
-| Kienzler: RadSafe                                              | ParkingSite  | bike       | pull        | `kienzler_rad_safe`         | yes      |
-| Kienzler: Stuttgart                                            | ParkingSite  | bike       | pull        | `kienzler_stuttgart`        | yes      |
-| Kienzler: Ulm                                                  | ParkingSite  | bike       | pull        | `kienzler_ulm`              | yes      |
-| Kienzler: VRN                                                  | ParkingSite  | bike       | pull        | `kienzler_vrn`              | yes      |
-| Konstanz                                                       | ParkingSite  | car        | pull        | `konstanz`                  | yes      |
-| Ladenburg: Parkraumecheck                                      | ParkingSite  | car        | push        | `ladenburg_parkraumcheck`   | no       |
-| Stadt Konstanz: Fahrrad-Abstellanlagen                         | ParkingSite  | bike       | push        | `konstanz_bike`             | no       |
-| Stadt Konstanz: Behindertenparkplätze                          | ParkingSpot  | car        | pull        | `konstanz_disabled`         | no       |
-| Stadt Mannheim                                                 | ParkingSite  | car        | push (json) | `mannheim`                  | yes      |
-| Stadt Neckarsulm: PKW-Parkplätze                               | ParkingSite  | car        | pull        | `neckarsulm`                | no       |
-| Stadt Neckarsulm: Fahrrad-Abstellanlagen                       | ParkingSite  | bike       | pull        | `neckarsulm_bike`           | no       |
-| Open-Data-Plattform öV Schweiz                                 | ParkingSite  | car        | pull (json) | `opendata_swiss`            | no       |
-| P + M Baden-Württemberg                                        | ParkingSite  | car        | pull        | `p_m_bw`                    | yes      |
-| P + M Sensade                                                  | ParkingSite  | car        | pull        | `p_m_sensade`               | yes      |
-| P + M Sensade                                                  | ParkingSpot  | car        | pull        | `p_m_sensade`               | no       |
-| Baden-Württemberg: Parken und Mitfahren                        | ParkingSite  | car        | push (xlsx) | `pum_bw`                    | no       |
-| RadVIS Baden-Württemberg (experimental)                        | ParkingSite  | bike       | pull        | `radvis_bw`                 | no       |
-| Parkraumgesellschaft Baden-Württemberg                         | ParkingSite  | car        | pull        | `pbw`                       | yes      |
-| Stadt Pforzheim                                                | ParkingSite  | car        | push (csv)  | `pforzheim`                 | no       |
-| Radolfzell                                                     | ParkingSite  | car        | push (json) | `radolfzell`                | no       |
-| Stadt Reutlingen: PKW-Parkplätze                               | ParkingSite  | car        | push (csv)  | `reutlingen`                | no       |
-| Stadt Reutlingen: Fahrrad-Abstellanlagen                       | ParkingSite  | bike       | push (csv)  | `reutlingen_bike`           | no       |
-| Stadt Stuttgart                                                | ParkingSite  | car        | push (json) | `stuttgart`                 | yes      |
-| Stadt Ulm                                                      | ParkingSite  | car        | pull        | `ulm`                       | yes      |
-| Stadt Ulm: E-Quartiershubs Sensors                             | ParkingSite  | car        | pull        | `ulm_sensors`               | yes      |
-| Stadt Ulm: E-Quartiershubs Sensors                             | ParkingSpot  | car        | pull        | `ulm_sensors`               | yes      |
-| Velobrix                                                       | ParkingSite  | bike       | pull        | `velobrix`                  | yes      |
-| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze              | ParkingSite  | car        | pull        | `vrn_p_r`                   | yes      |
-| Verband Region Stuttgart: Bondorf                              | ParkingSite  | car        | pull        | `vrs_bondorf`               | yes      |
-| Verband Region Stuttgart: Kirchheim                            | ParkingSite  | car        | pull        | `vrs_kirchheim`             | yes      |
-| Verband Region Stuttgart: Neustadt                             | ParkingSite  | car        | pull        | `vrs_neustadt`              | yes      |
-| Verband Region Stuttgart: Park and Ride                        | ParkingSite  | car        | push (xlsx) | `vrs_p_r`                   | no       |
-| Verband Region Stuttgart: Vaihingen                            | ParkingSite  | car        | pull        | `vrs_vaihingen`             | yes      |
+| name                                                                  | data type   | purpose    | type        | uid                         | realtime |
+|-----------------------------------------------------------------------|-------------|------------|-------------|-----------------------------|----------|
+| Aachen                                                                | ParkingSite | car        | pull        | `aachen`                    | yes      |
+| Stadtwerke Aalen GmbH                                                 | ParkingSite | car        | pull        | `aalen`                     | yes      |
+| APCOA Services                                                        | ParkingSite | car        | pull        | `apcoa`                     | no       |
+| Deutsche Bahn                                                         | ParkingSite | car & bike | pull        | `bahn_v2`                   | no       |
+| B+B Parkhaus GmbH & Co. KG                                            | ParkingSite | car        | push (xlsx) | `bb_parkhaus`               | no       |
+| Stadt Bietigheim-Bissingen                                            | ParkingSite | car        | pull        | `bietigheim_bissingen`      | yes      |
+| Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze            | ParkingSite | car        | pull        | `bfrk_bw_car`               | no       |
+| Barrierefreie Reisekette Baden-Württemberg: PKW-Behindertenparkplätze | ParkingSpot | car        | pull        | `bfrk_bw_car`               | no       |
+| Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze        | ParkingSite | bike       | pull        | `bfrk_bw_bike`              | no       |
+| Stadt Buchen                                                          | ParkingSite | car        | push (json) | `buchen`                    | yes      |
+| Stadt Ellwangen                                                       | ParkingSite | car        | push (xlsx) | `ellwangen`                 | no       |
+| Stadt Freiburg                                                        | ParkingSite | car        | pull        | `freiburg`                  | yes      |
+| Stadt Freiburg: Statische Behindertenparkplätze                       | ParkingSpot | car        | pull        | `freiburg_disabled_static`  | no       |
+| Stadt Freiburg: Behindertenparkplätze mit Sensoren                    | ParkingSpot | car        | pull        | `freiburg_disabled_sensors` | yes      |
+| Stadt Freiburg: Park & Ride Statische Parkplätze                      | ParkingSite | car        | pull        | `freiburg_p_r_static`       | no       |
+| Stadt Freiburg: Park & Ride Parkplätze mit Sensoren                   | ParkingSite | car        | pull        | `freiburg_p_r_sensors`      | yes      |
+| Friedrichhafen Sensors                                                | ParkingSpot | car        | pull        | `friedrichshafen_sensors`   | yes      |
+| GOLDBECK Parking Services                                             | ParkingSite | car        | push (xlsx) | `goldbeck`                  | no       |
+| Stadt Heidelberg                                                      | ParkingSite | car        | pull        | `heidelberg`                | yes      |
+| Stadt Heidelberg: EasyPark                                            | ParkingSite | car        | pull        | `heidelberg_easypark`       | no       |
+| Stadt Heidelberg: Behindertenparkplätze                               | ParkingSpot | car        | pull        | `heidelberg_disabled`       | no       |
+| Stadt Herrenberg                                                      | ParkingSite | car        | pull        | `herrenberg`                | no       |
+| Stadt Herrenberg - Munigrid                                           | ParkingSite | bike       | pull        | `herrenberg_bike`           | no       |
+| PARK SERVICE HÜFNER GmbH + Co. KG                                     | ParkingSite | car        | push (xlsx) | `huefner`                   | no       |
+| Stadt Karlsruhe: PKW-Parkplätze                                       | ParkingSite | car        | pull        | `karlsruhe`                 | yes      |
+| Stadt Karlsruhe: Fahrrad-Abstellangen                                 | ParkingSite | bike       | pull        | `karlsruhe_bike`            | no       |
+| Stadt Karlsruhe: Behindertenparkplätze                                | ParkingSpot | car        | pull        | `karlsruhe_disabled`        | no       |
+| Kienzler: Bike and Ride                                               | ParkingSite | bike       | pull        | `kienzler_bike_and_ride`    | yes      |
+| Kienzler: Karlsruhe                                                   | ParkingSite | bike       | pull        | `kienzler_karlruhe`         | yes      |
+| Kienzler: Neckarsulm                                                  | ParkingSite | bike       | pull        | `kienzler_neckarsulm`       | yes      |
+| Kienzler: Offenburg                                                   | ParkingSite | bike       | pull        | `kienzler_offenburg`        | yes      |
+| Kienzler: RadSafe                                                     | ParkingSite | bike       | pull        | `kienzler_rad_safe`         | yes      |
+| Kienzler: Stuttgart                                                   | ParkingSite | bike       | pull        | `kienzler_stuttgart`        | yes      |
+| Kienzler: Ulm                                                         | ParkingSite | bike       | pull        | `kienzler_ulm`              | yes      |
+| Kienzler: VRN                                                         | ParkingSite | bike       | pull        | `kienzler_vrn`              | yes      |
+| Konstanz                                                              | ParkingSite | car        | pull        | `konstanz`                  | yes      |
+| Ladenburg: Parkraumecheck                                             | ParkingSite | car        | push        | `ladenburg_parkraumcheck`   | no       |
+| Stadt Konstanz: Fahrrad-Abstellanlagen                                | ParkingSite | bike       | push        | `konstanz_bike`             | no       |
+| Stadt Konstanz: Behindertenparkplätze                                 | ParkingSpot | car        | pull        | `konstanz_disabled`         | no       |
+| Stadt Mannheim                                                        | ParkingSite | car        | push (json) | `mannheim`                  | yes      |
+| Stadt Neckarsulm: PKW-Parkplätze                                      | ParkingSite | car        | pull        | `neckarsulm`                | no       |
+| Stadt Neckarsulm: Fahrrad-Abstellanlagen                              | ParkingSite | bike       | pull        | `neckarsulm_bike`           | no       |
+| Open-Data-Plattform öV Schweiz                                        | ParkingSite | car        | pull (json) | `opendata_swiss`            | no       |
+| P + M Baden-Württemberg                                               | ParkingSite | car        | pull        | `p_m_bw`                    | yes      |
+| P + M Sensade                                                         | ParkingSite | car        | pull        | `p_m_sensade`               | yes      |
+| P + M Sensade                                                         | ParkingSpot | car        | pull        | `p_m_sensade`               | no       |
+| Baden-Württemberg: Parken und Mitfahren                               | ParkingSite | car        | push (xlsx) | `pum_bw`                    | no       |
+| RadVIS Baden-Württemberg (experimental)                               | ParkingSite | bike       | pull        | `radvis_bw`                 | no       |
+| Parkraumgesellschaft Baden-Württemberg                                | ParkingSite | car        | pull        | `pbw`                       | yes      |
+| Stadt Pforzheim                                                       | ParkingSite | car        | push (csv)  | `pforzheim`                 | no       |
+| Radolfzell                                                            | ParkingSite | car        | push (json) | `radolfzell`                | no       |
+| Stadt Reutlingen: PKW-Parkplätze                                      | ParkingSite | car        | push (csv)  | `reutlingen`                | no       |
+| Stadt Reutlingen: Fahrrad-Abstellanlagen                              | ParkingSite | bike       | push (csv)  | `reutlingen_bike`           | no       |
+| Stadt Stuttgart                                                       | ParkingSite | car        | push (json) | `stuttgart`                 | yes      |
+| Stadt Ulm                                                             | ParkingSite | car        | pull        | `ulm`                       | yes      |
+| Stadt Ulm: E-Quartiershubs Sensors                                    | ParkingSite | car        | pull        | `ulm_sensors`               | yes      |
+| Stadt Ulm: E-Quartiershubs Sensors                                    | ParkingSpot | car        | pull        | `ulm_sensors`               | yes      |
+| Velobrix                                                              | ParkingSite | bike       | pull        | `velobrix`                  | yes      |
+| Verkehrsverbund Rhein-Neckar GmbH: P+R Parkplätze                     | ParkingSite | car        | pull        | `vrn_p_r`                   | yes      |
+| Verband Region Stuttgart: Bondorf                                     | ParkingSite | car        | pull        | `vrs_bondorf`               | yes      |
+| Verband Region Stuttgart: Kirchheim                                   | ParkingSite | car        | pull        | `vrs_kirchheim`             | yes      |
+| Verband Region Stuttgart: Neustadt                                    | ParkingSite | car        | pull        | `vrs_neustadt`              | yes      |
+| Verband Region Stuttgart: Park and Ride                               | ParkingSite | car        | push (xlsx) | `vrs_p_r`                   | no       |
+| Verband Region Stuttgart: Vaihingen                                   | ParkingSite | car        | pull        | `vrs_vaihingen`             | yes      |
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
 
