@@ -9,27 +9,27 @@ GeoJSON file. `ParkRaumCheckSachsenheimOnStreetPushConverter` and `ParkRaumCheck
 
 A `ParkingRecord` provides static data for a `ParkingSite`.
 
-| Field               | Type                                            | Cardinality | Mapping                  | Comment                          |
-|---------------------|-------------------------------------------------|-------------|--------------------------|----------------------------------|
-| fid                 | integer                                         | 1           | uid                      |                                  |
-| Name                | string                                          | 1           | name                     |                                  |
-| Adresse             | string                                          | 1           | address                  |                                  |
-| Ort                 | string                                          | 1           | address                  |                                  |
-| Widmung             | [SachsenheimDedication](#SachsenheimDedication) | 1           |                          |                                  |
-| Parkrichtung        | [ParkingOrientation](#ParkingOrientation)       | ?           | orientation              | In Sachsenheim, cardinality is 1 |
-| Ortsbezug           | [SachsenheimLocation](#SachsenheimLocation)     | 1           | type, park_and_ride_type |                                  |
-| Haltestellen-ID     | string                                          | ?           | external_identifiers     |                                  |
-| Gebührenpflichtig   | bool                                            | 1           | has_fee                  |                                  |
-| Gebühreninformation | string                                          | ?           | fee_description          |                                  |
-| Bewirtschaftung     | [ParkingManagementType](#ParkingManagementType) | 1           | restrictions.type        |                                  |
-| Maximale_Parkdauer  | integer                                         | ?           | restrictions.max_stay    | Used in Sachsenheim              |
-| Max. Parkdauer      | integer                                         | ?           | restrictions.max_stay    | Used in Kehl                     |
-| Kapazität           | integer                                         | 1           | capacity                 |                                  |
-| Erhebungstag        | string (date)                                   | 1           |                          |                                  |
-| Kommentar           | string                                          | ?           | description              |                                  |
+| Field               | Type                                                | Cardinality | Mapping                  | Comment                                                                                           |
+|---------------------|-----------------------------------------------------|-------------|--------------------------|---------------------------------------------------------------------------------------------------|
+| fid                 | integer                                             | 1           | uid                      |                                                                                                   |
+| Name                | string                                              | ?           | name                     | At Sachsenheim, cardinality is 1. At Kehl, it's always `null`, therefore defaulting to Parkplatz. |
+| Adresse             | string                                              | 1           | address                  |                                                                                                   |
+| Ort                 | string                                              | 1           | address                  |                                                                                                   |
+| Widmung             | [ParkRaumCheckDedication](#ParkRaumCheckDedication) | 1           |                          |                                                                                                   |
+| Parkrichtung        | [ParkingOrientation](#ParkingOrientation)           | ?           | orientation              | In Sachsenheim, cardinality is 1                                                                  |
+| Ortsbezug           | [ParkRaumCheckLocation](#ParkRaumCheckLocation)     | 1           | type, park_and_ride_type | Kehl just uses Straßenraum                                                                        |
+| Haltestellen-ID     | string                                              | ?           | external_identifiers     | Always `null` for Kehl                                                                            |
+| Gebührenpflichtig   | bool                                                | 1           | has_fee                  |                                                                                                   |
+| Gebühreninformation | string                                              | ?           | fee_description          |                                                                                                   |
+| Bewirtschaftung     | [ParkingManagementType](#ParkingManagementType)     | 1           | restrictions.type        |                                                                                                   |
+| Maximale_Parkdauer  | integer                                             | ?           | restrictions.max_stay    | Used in Sachsenheim                                                                               |
+| Max. Parkdauer      | integer                                             | ?           | restrictions.max_stay    | Used in Kehl                                                                                      |
+| Kapazität           | integer                                             | 1           | capacity                 |                                                                                                   |
+| Erhebungstag        | string (date)                                       | 1           |                          |                                                                                                   |
+| Kommentar           | string                                              | ?           | description              |                                                                                                   |
 
 
-### SachsenheimDedication
+### ParkRaumCheckDedication
 
 | Key                    | Effect                                |
 |------------------------|---------------------------------------|
@@ -40,7 +40,7 @@ A `ParkingRecord` provides static data for a `ParkingSite`.
 | E-Ladesäule            | Used in Kehl                          |
 
 
-### SachsenheimLocation
+### ParkRaumCheckLocation
 
 | Key         | Mapping                                                                      |
 |-------------|------------------------------------------------------------------------------|

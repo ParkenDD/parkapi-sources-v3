@@ -114,9 +114,9 @@ class ParkRaumCheckPropertiesInput(ValidataclassMixin):
     def to_to_static_parking_site_dict(self) -> dict[str, Any]:
         restrictions: list[ParkingSiteRestrictionInput] = []
         if self.bewirtschaftung == ParkingManagementType.DISABLED:
-            restrictions.append(ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED))
+            restrictions.append(ParkingSiteRestrictionInput(type=ParkingAudience.DISABLED, capacity=self.kapazitaet))
         elif self.bewirtschaftung == ParkingManagementType.CHARGING:
-            restrictions.append(ParkingSiteRestrictionInput(type=ParkingAudience.CHARGING))
+            restrictions.append(ParkingSiteRestrictionInput(type=ParkingAudience.CHARGING, capacity=self.kapazitaet))
         if self.maximale_parkdauer:
             restrictions.append(
                 ParkingSiteRestrictionInput(
