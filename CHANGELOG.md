@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.30.1
+
+Released 2025-11-12
+
+### Features
+
+* [bfrk: add missing base class](https://github.com/ParkenDD/parkapi-sources-v3/pull/302)
+
+
 ## 0.30.0
 
 Released 2025-11-10
