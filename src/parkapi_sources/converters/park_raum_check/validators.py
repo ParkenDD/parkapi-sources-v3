@@ -9,7 +9,6 @@ from typing import Any
 
 import shapely
 from isodate import Duration
-from pyproj import Transformer
 from shapely import GeometryType, LineString
 from shapely.geometry.polygon import Polygon
 from validataclass.dataclasses import ValidataclassMixin, validataclass
@@ -180,39 +179,30 @@ class KehlPropertiesInput(ParkRaumCheckPropertiesInput):
 
 @validataclass
 class ParkRaumCheckBaseFeatureInput:
-    geometry: LineString = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.LINESTRING])
+    geometry: LineString | Polygon = GeoJSONGeometryValidator(
+        allowed_geometry_types=[GeometryType.LINESTRING, GeometryType.POLYGON],
+    )
     properties: ParkRaumCheckPropertiesInput = DataclassValidator(ParkRaumCheckPropertiesInput)
 
     def to_static_parking_site(
         self,
         static_data_updated_at: datetime,
-        transformer: Transformer | None = None,
     ) -> StaticParkingSiteInput:
-        if transformer:
-            geometry = shapely.transform(self.geometry, transformer.transform, interleaved=False)
-        else:
-            geometry = self.geometry
-
-        center = shapely.centroid(geometry)
+        center = shapely.centroid(self.geometry)
 
         return StaticParkingSiteInput(
             purpose=PurposeType.CAR,
             lat=round_7d(center.y),
             lon=round_7d(center.x),
             static_data_updated_at=static_data_updated_at,
+            geojson=self.geometry,
             **self.properties.to_to_static_parking_site_dict(),
         )
 
 
 @validataclass
-class SachsenheimOnStreetFeatureInput(ParkRaumCheckBaseFeatureInput):
+class SachsenheimFeatureInput(ParkRaumCheckBaseFeatureInput):
     properties: SachsenheimPropertiesInput = DataclassValidator(SachsenheimPropertiesInput)
-
-
-@validataclass
-class SachsenheimOffStreetFeatureInput(ParkRaumCheckBaseFeatureInput):
-    properties: SachsenheimPropertiesInput = DataclassValidator(SachsenheimPropertiesInput)
-    geometry: Polygon = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POLYGON])
 
 
 @validataclass

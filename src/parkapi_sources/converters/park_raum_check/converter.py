@@ -6,8 +6,6 @@ Use of this source code is governed by an MIT-style license that can be found in
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 
-import pyproj
-from pyproj import Transformer
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -16,12 +14,11 @@ from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import GeojsonInput, SourceInfo, StaticParkingSiteInput
 
-from .validators import KehlFeatureInput, SachsenheimOffStreetFeatureInput, SachsenheimOnStreetFeatureInput
+from .validators import KehlFeatureInput, SachsenheimFeatureInput
 
 
 class ParkRaumCheckBasePushConverter(JsonConverter, ParkingSiteBaseConverter, ABC):
     geojson_validator = DataclassValidator(GeojsonInput)
-    transformer: Transformer | None = None
 
     @property
     @abstractmethod
@@ -43,7 +40,6 @@ class ParkRaumCheckBasePushConverter(JsonConverter, ParkingSiteBaseConverter, AB
                 heidelberg_parking_site_input = self.parking_site_validator.validate(parking_site_dict)
                 static_parking_site = heidelberg_parking_site_input.to_static_parking_site(
                     static_data_updated_at=static_data_updated_at,
-                    transformer=self.transformer,
                 )
                 if static_parking_site is None:
                     continue
@@ -63,27 +59,17 @@ class ParkRaumCheckBasePushConverter(JsonConverter, ParkingSiteBaseConverter, AB
 
 class ParkRaumCheckKehlPushConverter(ParkRaumCheckBasePushConverter):
     source_info = SourceInfo(
-        uid='park_raum_check_sachsenheim_on_street',
-        name='Stadt Sachsenheim: Parkplätze',
+        uid='park_raum_check_kehl',
+        name='Stadt Kehl: ParkRaumCheck',
         has_realtime_data=False,
     )
     parking_site_validator = DataclassValidator(KehlFeatureInput)
 
 
-class ParkRaumCheckSachsenheimOnStreetPushConverter(ParkRaumCheckBasePushConverter):
+class ParkRaumCheckSachsenheimPushConverter(ParkRaumCheckBasePushConverter):
     source_info = SourceInfo(
-        uid='park_raum_check_sachsenheim_on_street',
-        name='Stadt Sachsenheim: Straße',
+        uid='park_raum_check_sachsenheim',
+        name='Stadt Sachsenheim: ParkRaumCheck',
         has_realtime_data=False,
     )
-    parking_site_validator = DataclassValidator(SachsenheimOnStreetFeatureInput)
-    transformer = Transformer.from_crs(pyproj.CRS.from_epsg(3857), pyproj.CRS.from_epsg(4326), always_xy=True)
-
-
-class ParkRaumCheckSachsenheimOffStreetPushConverter(ParkRaumCheckBasePushConverter):
-    source_info = SourceInfo(
-        uid='park_raum_check_kehl',
-        name='Stadt Sachsenheim: Parkplätze',
-        has_realtime_data=False,
-    )
-    parking_site_validator = DataclassValidator(SachsenheimOffStreetFeatureInput)
+    parking_site_validator = DataclassValidator(SachsenheimFeatureInput)
