@@ -6,6 +6,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
+from parkapi_sources.converters.base_converter.pull import ParkingSpotPullConverter
 from parkapi_sources.exceptions import ImportParkingSpotException
 from parkapi_sources.models import SourceInfo, StaticParkingSpotInput
 
@@ -13,7 +14,7 @@ from .base_converter import BfrkBasePushConverter
 from .car_models import BfrkCarInput
 
 
-class BfrkBwCarPushConverter(BfrkBasePushConverter):
+class BfrkBwCarPushConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
     bfrk_validator = DataclassValidator(BfrkCarInput)
     source_url_config_key = 'PARK_API_BFRK_BW_CAR_OVERRIDE_SOURCE_URL'
 
