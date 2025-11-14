@@ -49,7 +49,6 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
             source_uid=self.source_info.uid,
         )
 
-        print(feature_inputs)
         for feature_input in feature_inputs:
             static_parking_site_input = feature_input.to_static_parking_site_input(
                 static_data_updated_at=datetime.now(tz=timezone.utc),

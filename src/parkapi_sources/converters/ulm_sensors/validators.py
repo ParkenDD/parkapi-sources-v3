@@ -17,12 +17,12 @@ from validataclass.validators import (
 
 from parkapi_sources.models import (
     ParkingRestrictionInput,
-    ParkingSpotRestrictionInput,
     ParkingSiteRestrictionInput,
+    ParkingSpotRestrictionInput,
     RealtimeParkingSiteInput,
     RealtimeParkingSpotInput,
-    StaticParkingSpotInput,
     StaticParkingSiteInput,
+    StaticParkingSpotInput,
 )
 from parkapi_sources.models.enums import ParkingSpotStatus
 
