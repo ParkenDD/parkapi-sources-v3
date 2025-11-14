@@ -47,6 +47,7 @@ class UlmSensorsPullConverterTest:
             ulm_sensors_pull_converter.get_static_parking_sites()
         )
 
+        #print(static_parking_site_inputs)
         assert len(static_parking_site_inputs) > len(import_parking_site_exceptions), (
             'There should be more valid than invalid parking sites'
         )

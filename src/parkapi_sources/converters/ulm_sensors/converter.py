@@ -44,9 +44,23 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        return self._get_static_parking_site_inputs_and_exceptions(
+        static_parking_site_inputs: list[StaticParkingSiteInput] = []
+        feature_inputs, import_parking_site_exceptions = self._get_geojson_parking_sites_features_and_exceptions(
             source_uid=self.source_info.uid,
         )
+
+        print(feature_inputs)
+        for feature_input in feature_inputs:
+            static_parking_site_input = feature_input.to_static_parking_site_input(
+                static_data_updated_at=datetime.now(tz=timezone.utc),
+            )
+            static_parking_site_inputs.append(
+                UlmSensorsParkingSiteInput(
+                    id=static_parking_site_input.uid, timestamp=datetime.now(timezone.utc)
+                ).extend_static_parking_site_input(static_parking_site_input)
+            )
+
+        return static_parking_site_inputs, import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
