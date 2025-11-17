@@ -24,9 +24,9 @@ from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
 
 from .enums import ParkAndRideType, ParkingSiteType
-from .parking_site_inputs import StaticParkingSiteInput
-from .parking_spot_inputs import StaticParkingSpotInput
-from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
+from .parking_site_inputs import ParkingSiteRestrictionInput, StaticParkingSiteInput
+from .parking_spot_inputs import ParkingSpotRestrictionInput, StaticParkingSpotInput
+from .shared_inputs import ExternalIdentifierInput
 
 
 @validataclass
@@ -57,14 +57,18 @@ class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
         ListValidator(DataclassValidator(ExternalIdentifierInput)),
         Default(None),
     )
+    restrictions: list[ParkingSiteRestrictionInput] | None = (
+        ListValidator(DataclassValidator(ParkingSiteRestrictionInput)),
+        Default(None),
+    )
 
 
 @validataclass
 class GeojsonFeaturePropertiesParkingSpotInput(GeojsonBaseFeaturePropertiesInput):
     uid: str = StringValidator(min_length=1, max_length=256)
     name: str | None = StringValidator(min_length=1, max_length=256), Default(None)
-    restrictions: list[ParkingRestrictionInput] | None = (
-        ListValidator(DataclassValidator(ParkingRestrictionInput)),
+    restrictions: list[ParkingSpotRestrictionInput] | None = (
+        ListValidator(DataclassValidator(ParkingSpotRestrictionInput)),
         Default(None),
     )
     has_realtime_data: bool | None = BooleanValidator(), Default(None)

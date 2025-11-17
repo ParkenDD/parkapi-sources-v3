@@ -40,7 +40,9 @@ class UlmSensorsParkingSiteInput:
         return RealtimeParkingSiteInput(
             uid=self.id,
             realtime_capacity=self.maxcarparkfull,
-            realtime_free_capacity=self.currentcarparkfulltotal,
+            realtime_free_capacity=self.maxcarparkfull - self.currentcarparkfulltotal
+            if self.maxcarparkfull and self.currentcarparkfulltotal
+            else None,
             realtime_data_updated_at=self.timestamp,
         )
 
