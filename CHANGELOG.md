@@ -1,10 +1,25 @@
 # Changelog
 
+## 0.31.0
+
+Released 2025-11-17
+
+### Features
+
+* [ParkRaumCheck mapping + implementation](https://github.com/ParkenDD/parkapi-sources-v3/pull/196)
+
+
+### Fixes
+
+* [freiburg_vag_bike: Map Bike + Ride to park_and_ride_type](https://github.com/ParkenDD/parkapi-sources-v3/pull/304)
+* [Hotfix: for mismatched realtime_free_capacity data](https://github.com/ParkenDD/parkapi-sources-v3/pull/303)
+
+
 ## 0.30.1
 
 Released 2025-11-12
 
-### Features
+### Fixes
 
 * [bfrk: add missing base class](https://github.com/ParkenDD/parkapi-sources-v3/pull/302)
 
