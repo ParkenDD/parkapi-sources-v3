@@ -18,7 +18,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator, MappedBooleanValidator
 
@@ -75,6 +75,7 @@ class FreiburgVAGBikePropertiesInput:
             restrictions=parking_site_restrictions,
             has_realtime_data=self.has_realtime_data if self.has_realtime_data is not None else False,
             opening_hours='24/7' if self.durchg_geoeffnet else None,
+            park_and_ride_type=[ParkAndRideType.YES] if self.related_location == 'Bike + Ride' else None,
             static_data_updated_at=datetime.now(tz=timezone.utc),
         )
 
