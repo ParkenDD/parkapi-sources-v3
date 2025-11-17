@@ -48,8 +48,12 @@ class FreiburgVAGBikePullConverter(ParkingSitePullConverter):
         for feature_dict in geojson_input.features:
             properties = feature_dict.get('properties', {})
             capacity_charging = properties.get('capacity_charging')
-            if isinstance(capacity_charging, str) and capacity_charging.strip().lower() == 'nein':
-                properties['capacity_charging'] = 0
+            properties['capacity_charging'] = (
+                capacity_charging
+                if not (isinstance(capacity_charging, str) and capacity_charging.strip().lower() == 'nein')
+                else None
+            )
+
             try:
                 feature_input = self.geojson_feature_validator.validate(feature_dict)
             except ValidationError as e:
