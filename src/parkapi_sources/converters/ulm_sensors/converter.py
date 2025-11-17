@@ -3,8 +3,6 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime, timezone
-
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -44,22 +42,9 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_parking_site_inputs: list[StaticParkingSiteInput] = []
-        feature_inputs, import_parking_site_exceptions = self._get_geojson_parking_sites_features_and_exceptions(
+        return self._get_static_parking_site_inputs_and_exceptions(
             source_uid=self.source_info.uid,
         )
-
-        for feature_input in feature_inputs:
-            static_parking_site_input = feature_input.to_static_parking_site_input(
-                static_data_updated_at=datetime.now(tz=timezone.utc),
-            )
-            static_parking_site_inputs.append(
-                UlmSensorsParkingSiteInput(
-                    id=static_parking_site_input.uid, timestamp=datetime.now(timezone.utc)
-                ).extend_static_parking_site_input(static_parking_site_input)
-            )
-
-        return static_parking_site_inputs, import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
@@ -100,22 +85,9 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
         return realtime_ulm_sensors_inputs, import_parking_site_exceptions
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
-        static_parking_spot_inputs: list[StaticParkingSpotInput] = []
-        feature_inputs, import_parking_spot_exceptions = self._get_geojson_parking_spots_features_and_exceptions(
+        return self._get_static_parking_spots_inputs_and_exceptions(
             source_uid=self.source_info.uid,
         )
-
-        for feature_input in feature_inputs:
-            static_parking_spot_input = feature_input.to_static_parking_spot_input(
-                static_data_updated_at=datetime.now(tz=timezone.utc),
-            )
-            static_parking_spot_inputs.append(
-                UlmSensorsParkingSpotInput(
-                    id=static_parking_spot_input.uid, occupied=False, timestamp=datetime.now(timezone.utc)
-                ).extend_static_parking_spot_input(static_parking_spot_input)
-            )
-
-        return static_parking_spot_inputs, import_parking_spot_exceptions
 
     def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:
         realtime_parking_spot_inputs: list[RealtimeParkingSpotInput] = []

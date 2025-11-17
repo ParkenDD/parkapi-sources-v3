@@ -16,13 +16,8 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import (
-    ParkingRestrictionInput,
-    ParkingSiteRestrictionInput,
-    ParkingSpotRestrictionInput,
     RealtimeParkingSiteInput,
     RealtimeParkingSpotInput,
-    StaticParkingSiteInput,
-    StaticParkingSpotInput,
 )
 from parkapi_sources.models.enums import ParkingSpotStatus
 
@@ -40,33 +35,6 @@ class UlmSensorsParkingSiteInput:
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
-
-    def extend_static_parking_site_input(self, static_parking_site_input: StaticParkingSiteInput):
-        parking_site_restrictions: list[ParkingSiteRestrictionInput] = []
-        for restrictions in static_parking_site_input.restrictions or []:
-            if isinstance(restrictions, ParkingSiteRestrictionInput):
-                parking_site_restrictions.append(restrictions)
-
-            elif isinstance(restrictions, ParkingRestrictionInput):
-                parking_site_restrictions.append(
-                    ParkingSiteRestrictionInput(
-                        type=restrictions.type,
-                        hours=restrictions.hours,
-                        max_stay=restrictions.max_stay,
-                    )
-                )
-
-            elif isinstance(restrictions, dict):
-                parking_site_restrictions.append(
-                    ParkingSiteRestrictionInput(
-                        type=restrictions.get('type'),
-                        hours=restrictions.get('hours'),
-                        max_stay=restrictions.get('max_stay'),
-                    )
-                )
-
-        static_parking_site_input.restrictions = parking_site_restrictions
-        return static_parking_site_input
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
         return RealtimeParkingSiteInput(
@@ -87,33 +55,6 @@ class UlmSensorsParkingSpotInput:
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
-
-    def extend_static_parking_spot_input(self, static_parking_spot_input: StaticParkingSpotInput):
-        parking_spot_restrictions: list[ParkingSpotRestrictionInput] = []
-        for restrictions in static_parking_spot_input.restrictions or []:
-            if isinstance(restrictions, ParkingSpotRestrictionInput):
-                parking_spot_restrictions.append(restrictions)
-
-            elif isinstance(restrictions, ParkingRestrictionInput):
-                parking_spot_restrictions.append(
-                    ParkingSpotRestrictionInput(
-                        type=restrictions.type,
-                        hours=restrictions.hours,
-                        max_stay=restrictions.max_stay,
-                    )
-                )
-
-            elif isinstance(restrictions, dict):
-                parking_spot_restrictions.append(
-                    ParkingSpotRestrictionInput(
-                        type=restrictions.get('type'),
-                        hours=restrictions.get('hours'),
-                        max_stay=restrictions.get('max_stay'),
-                    )
-                )
-
-        static_parking_spot_input.restrictions = parking_spot_restrictions
-        return static_parking_spot_input
 
     def to_realtime_parking_spot_input(self) -> RealtimeParkingSpotInput:
         if self.occupied:
