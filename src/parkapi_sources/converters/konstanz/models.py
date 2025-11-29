@@ -97,7 +97,7 @@ class KonstanzParkingSiteDataInput:
     real_fcap: Optional[int] = EmptystringNoneable(NumericIntegerValidator(min_value=0))
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
-        max_stay: Duration | None = None if self.max_stay is None else Duration(minutes=self.max_stay)
+        max_stay: Duration | None = None if self.max_stay is None else Duration(seconds=self.max_stay)
         restrictions = [
             ParkingSiteRestrictionInput(
                 type=ParkingAudience.DISABLED,

@@ -129,7 +129,7 @@ class VrnParkAndRideFeaturesInput:
             static_data_updated_at = self.properties.realtime_data_updated
 
         max_stay: Duration | None = (
-            None if self.properties.max_stay is None else Duration(minutes=self.properties.max_stay)
+            None if self.properties.max_stay is None else Duration(seconds=self.properties.max_stay)
         )
 
         parking_site_restrictions: list[ParkingSiteRestrictionInput] = []
