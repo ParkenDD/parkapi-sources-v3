@@ -8,6 +8,7 @@ from decimal import Decimal
 from enum import Enum
 from typing import Optional
 
+from isodate import Duration
 from validataclass.dataclasses import validataclass
 from validataclass.validators import (
     AnythingValidator,
@@ -96,6 +97,22 @@ class KonstanzParkingSiteDataInput:
     real_fcap: Optional[int] = EmptystringNoneable(NumericIntegerValidator(min_value=0))
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
+        max_stay: Duration | None = None if self.max_stay is None else Duration(minutes=self.max_stay)
+        restrictions = [
+            ParkingSiteRestrictionInput(
+                type=ParkingAudience.DISABLED,
+                capacity=self.capacity_d,
+                max_stay=max_stay,
+            ),
+            ParkingSiteRestrictionInput(
+                type=ParkingAudience.WOMEN,
+                capacity=self.capacity_w,
+                max_stay=max_stay,
+            ),
+        ]
+        if max_stay is not None:
+            restrictions.append(ParkingSiteRestrictionInput(max_stay=max_stay))
+
         return StaticParkingSiteInput(
             uid=str(self.id),
             name=self.name,
@@ -115,16 +132,7 @@ class KonstanzParkingSiteDataInput:
             opening_hours=self.opening_h,
             capacity=self.max_cap,
             static_data_updated_at=self.updated,
-            restrictions=[
-                ParkingSiteRestrictionInput(
-                    type=ParkingAudience.DISABLED,
-                    capacity=self.capacity_d,
-                ),
-                ParkingSiteRestrictionInput(
-                    type=ParkingAudience.WOMEN,
-                    capacity=self.capacity_w,
-                ),
-            ],
+            restrictions=restrictions,
         )
 
     def to_realtime_parking_site(self) -> RealtimeParkingSiteInput:

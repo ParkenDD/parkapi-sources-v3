@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from decimal import Decimal
 from enum import Enum
 
+from isodate import Duration
 from shapely import GeometryType, Point
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.helpers import OptionalUnset, UnsetValue
@@ -127,12 +128,19 @@ class VrnParkAndRideFeaturesInput:
         else:
             static_data_updated_at = self.properties.realtime_data_updated
 
+        max_stay: Duration | None = (
+            None if self.properties.max_stay is None else Duration(minutes=self.properties.max_stay)
+        )
+
         parking_site_restrictions: list[ParkingSiteRestrictionInput] = []
+        if max_stay is not None:
+            parking_site_restrictions.append(ParkingSiteRestrictionInput(max_stay=max_stay))
         if self.properties.capacity_disabled is not None:
             parking_site_restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.DISABLED,
                     capacity=self.properties.capacity_disabled,
+                    max_stay=max_stay,
                 ),
             )
         if self.properties.capacity_woman is not None:
@@ -140,12 +148,15 @@ class VrnParkAndRideFeaturesInput:
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.WOMEN,
                     capacity=self.properties.capacity_woman,
+                    max_stay=max_stay,
                 ),
             )
         if self.properties.capacity_family is not None:
             parking_site_restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.FAMILY,
+                    capacity=self.properties.capacity_family,
+                    max_stay=max_stay,
                 )
             )
         if self.properties.capacity_bus is not None:
@@ -153,6 +164,7 @@ class VrnParkAndRideFeaturesInput:
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.BUS,
                     capacity=self.properties.capacity_bus,
+                    max_stay=max_stay,
                 ),
             )
         if self.properties.capacity_truck is not None:
@@ -160,12 +172,15 @@ class VrnParkAndRideFeaturesInput:
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.TRUCK,
                     capacity=self.properties.capacity_truck,
+                    max_stay=max_stay,
                 ),
             )
         if self.properties.capacity_carsharing is not None:
             parking_site_restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.CHARGING,
+                    capacity=self.properties.capacity_carsharing,
+                    max_stay=max_stay,
                 ),
             )
         if self.properties.capacity_charging is not None:
@@ -173,6 +188,7 @@ class VrnParkAndRideFeaturesInput:
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.CHARGING,
                     capacity=self.properties.capacity_charging,
+                    max_stay=max_stay,
                 ),
             )
 
