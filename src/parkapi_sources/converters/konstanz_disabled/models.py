@@ -13,6 +13,8 @@ from validataclass.validators import DataclassValidator, IntegerValidator, Strin
 
 from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
+    ParkingAudience,
+    ParkingSpotRestrictionInput,
     StaticParkingSpotInput,
 )
 from parkapi_sources.util import generate_point, round_7d
@@ -67,6 +69,7 @@ class KonstanzDisabledFeatureInput(GeojsonBaseFeatureInput):
                     lat=lat,
                     lon=lon,
                     has_realtime_data=False,
+                    restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
                 ),
             )
 
