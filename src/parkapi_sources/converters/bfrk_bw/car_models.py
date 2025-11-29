@@ -106,6 +106,7 @@ class BfrkCarInput(BfrkBaseInput):
             static_parking_spot_inputs.append(
                 StaticParkingSpotInput(
                     uid=f'{self.infraid}-{i}',
+                    parking_site_uid=self.infraid,
                     static_data_updated_at=datetime.now(tz=timezone.utc),
                     has_realtime_data=False,
                     lat=lat,

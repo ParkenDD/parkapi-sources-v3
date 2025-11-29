@@ -23,6 +23,7 @@ class ParkingSpotRestrictionInput(ParkingRestrictionInput): ...
 @validataclass
 class StaticParkingSpotInput(StaticBaseParkingInput):
     name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
+    parking_site_uid: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
 
     type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
 
@@ -35,6 +36,7 @@ class StaticParkingSpotInput(StaticBaseParkingInput):
 @validataclass
 class StaticParkingSpotPatchInput(StaticParkingSpotInput):
     name: str | None | UnsetValueType = DefaultUnset
+    parking_site_uid: str | None | UnsetValueType = DefaultUnset
     address: str | None | UnsetValueType = DefaultUnset
     purpose: PurposeType | UnsetValueType = DefaultUnset
     type: ParkingSpotType | None | UnsetValueType = DefaultUnset
