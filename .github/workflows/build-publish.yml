@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       # We use Python 3.12 here because it's the minimum Python version supported by this library.
       - name: Setup Python 3.12
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Set timezone to Europe/Berlin
         uses: szenius/set-timezone@v2.0

@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.32.0
+
+Released 2025-12-01
+
+### Features
+
+* [relation between parking sites and spots](https://github.com/ParkenDD/parkapi-sources-v3/pull/306)
+
+
+### Fixes
+
+* [set disabled restriction at konstanz disabled](https://github.com/ParkenDD/parkapi-sources-v3/pull/307)
+* [add max_stay to restrictions](https://github.com/ParkenDD/parkapi-sources-v3/pull/308)
+
+
 ## 0.31.0
 
 Released 2025-11-17
