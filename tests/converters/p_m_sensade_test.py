@@ -36,7 +36,7 @@ def p_m_sensade_pull_converter(
     return PMSensadePullConverter(config_helper=p_m_sensade_config_helper, request_helper=request_helper)
 
 
-class UlmSensorsPullConverterTest:
+class PMSensadePullConverterTest:
     @staticmethod
     def _test_get_raw_parking_sites(
         p_m_sensade_pull_converter: PMSensadePullConverter,
@@ -64,7 +64,7 @@ class UlmSensorsPullConverterTest:
         p_m_sensade_pull_converter: PMSensadePullConverter,
         requests_mock: Mocker,
     ):
-        raw_parking_sites = UlmSensorsPullConverterTest._test_get_raw_parking_sites(
+        raw_parking_sites = PMSensadePullConverterTest._test_get_raw_parking_sites(
             p_m_sensade_pull_converter, requests_mock
         )
 
@@ -97,7 +97,7 @@ class UlmSensorsPullConverterTest:
         p_m_sensade_pull_converter: PMSensadePullConverter,
         requests_mock: Mocker,
     ):
-        raw_parking_sites = UlmSensorsPullConverterTest._test_get_raw_parking_sites(
+        raw_parking_sites = PMSensadePullConverterTest._test_get_raw_parking_sites(
             p_m_sensade_pull_converter, requests_mock
         )
 
@@ -132,7 +132,7 @@ class UlmSensorsPullConverterTest:
         p_m_sensade_pull_converter: PMSensadePullConverter,
         requests_mock: Mocker,
     ):
-        raw_parking_sites = UlmSensorsPullConverterTest._test_get_raw_parking_sites(
+        raw_parking_sites = PMSensadePullConverterTest._test_get_raw_parking_sites(
             p_m_sensade_pull_converter, requests_mock
         )
 

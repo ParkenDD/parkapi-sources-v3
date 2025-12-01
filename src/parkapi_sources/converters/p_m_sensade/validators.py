@@ -100,10 +100,11 @@ class PMSensadeParkingLotParkingSpace:
     latitude: Decimal = NumericValidator(min_value=34, max_value=72)
     longitude: Decimal = NumericValidator(min_value=-27, max_value=43)
 
-    def to_static_parking_spot_input(self, static_parking_site_input: StaticParkingSiteInput) -> StaticParkingSpotInput:
+    def to_static_parking_spot_input(self, static_parking_site_input: PMSensadeParkingLot) -> StaticParkingSpotInput:
         return StaticParkingSpotInput(
             uid=self.id,
             name=static_parking_site_input.name,
+            parking_site_uid=static_parking_site_input.id,
             lat=self.latitude,
             lon=self.longitude,
             purpose=PurposeType.CAR,
