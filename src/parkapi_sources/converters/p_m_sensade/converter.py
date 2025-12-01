@@ -171,8 +171,8 @@ class PMSensadePullConverter(ParkingSitePullConverter, ParkingSpotPullConverter)
 
     def _get_sensade_parking_lots(
         self,
-    ) -> tuple[list[PMSensadeParkingLotsInput], list[ImportParkingSiteException]]:
-        sensade_parking_lots: list[PMSensadeParkingLotsInput] = []
+    ) -> tuple[list[PMSensadeParkingLotInput], list[ImportParkingSiteException]]:
+        sensade_parking_lots: list[PMSensadeParkingLotInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
         response = self.request_get(
@@ -181,16 +181,18 @@ class PMSensadePullConverter(ParkingSitePullConverter, ParkingSpotPullConverter)
             timeout=60,
         )
 
+        json_data = response.json()[0]
         try:
-            parking_site_dicts = self.p_m_sensade_parking_lots_input_validator.validate(response.json()[0])
+            parking_site_dicts = self.p_m_sensade_parking_lots_input_validator.validate(json_data)
         except ValidationError as e:
             import_parking_site_exceptions.append(
                 ImportParkingSiteException(
                     source_uid=self.source_info.uid,
                     parking_site_uid='mobidatabw',
-                    message=f'validation error for {parking_site_dicts}: {e.to_dict()}',
+                    message=f'validation error for {json_data}: {e.to_dict()}',
                 ),
             )
+            return sensade_parking_lots, import_parking_site_exceptions
 
         for parking_site_dict in parking_site_dicts.parkingLots:
             try:
