@@ -104,6 +104,7 @@ class PMSensadeParkingLotParkingSpace:
         return StaticParkingSpotInput(
             uid=self.id,
             name=static_parking_site_input.name,
+            parking_site_uid=static_parking_site_input.uid,
             lat=self.latitude,
             lon=self.longitude,
             purpose=PurposeType.CAR,

@@ -69,7 +69,7 @@ class PMSensadePullConverter(ParkingSitePullConverter, ParkingSpotPullConverter)
     def get_static_parking_spots(
         self,
     ) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
-        static_parking_spot_inputs: list[PMSensadeParkingLotParkingSpace] = []
+        static_parking_spot_inputs: list[StaticParkingSpotInput] = []
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
         static_sensade_parking_lots, import_parking_site_exceptions = self._get_static_sensade_parking_lots()
