@@ -86,12 +86,11 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
 
         for parking_site_dict in parking_site_dicts:
             facility_id = parking_site_dict.get('id')
-            if facility_id not in raw_realtime_parking_site_by_id:
+            raw_realtime_input = raw_realtime_parking_site_by_id.get(facility_id)
+            if raw_realtime_input is None:
                 continue
 
-            raw_realtime_input = raw_realtime_parking_site_by_id.get(parking_site_dict.get('id'))
-            total_counter = raw_realtime_input.get_total_counter() if raw_realtime_input else None
-
+            total_counter = raw_realtime_input.get_total_counter()
             if total_counter is None:
                 continue
 
@@ -126,6 +125,12 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
         )
         parking_site_dicts = response.json()
         for parking_site_dict in parking_site_dicts:
+            counters = parking_site_dict.get("counters") or []
+            parking_site_dict["counters"] = [
+                c for c in counters
+                if c.get("type", {}).get("type") == "TOTAL"
+            ]
+
             try:
                 heilbronn_goldbeck_occupancies_inputs.append(
                     self.heilbronn_goldbeck_occupancies_validator.validate(parking_site_dict)
