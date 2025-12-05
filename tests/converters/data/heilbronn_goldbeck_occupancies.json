@@ -1,0 +1,603 @@
+[
+    {
+        "facilityId": 2066,
+        "counters": [],
+        "valuesFrom": "2025-12-03T13:35:01.906"
+    },
+    {
+        "facilityId": 2068,
+        "counters": [
+            {
+                "nativeId": "C1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "C1",
+                "name": "Kurzparker",
+                "counterFeatures": [],
+                "maxPlaces": 692,
+                "occupiedPlaces": 442,
+                "freePlaces": 250,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "C2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "C2",
+                "name": "Dauerparker",
+                "counterFeatures": [],
+                "maxPlaces": 9999,
+                "occupiedPlaces": 0,
+                "freePlaces": 9999,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "C3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "C3",
+                "name": "Gesamt",
+                "counterFeatures": [],
+                "maxPlaces": 692,
+                "occupiedPlaces": 441,
+                "freePlaces": 251,
+                "status": "FREE"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:01.623"
+    },
+    {
+        "facilityId": 2076,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 70,
+                "occupiedPlaces": 70,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 6,
+                "occupiedPlaces": 3,
+                "freePlaces": 3,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 76,
+                "occupiedPlaces": 73,
+                "freePlaces": 3,
+                "status": "FREE"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:01.144"
+    },
+    {
+        "facilityId": 2141,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 375,
+                "occupiedPlaces": 207,
+                "freePlaces": 168,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 5,
+                "occupiedPlaces": 0,
+                "freePlaces": 5,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 380,
+                "occupiedPlaces": 207,
+                "freePlaces": 173,
+                "status": "FREE"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:00.47"
+    },
+    {
+        "facilityId": 2607,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 489,
+                "occupiedPlaces": 348,
+                "freePlaces": 141,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 1,
+                "freePlaces": -1,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 489,
+                "occupiedPlaces": 349,
+                "freePlaces": 140,
+                "status": "FREE"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:03.144"
+    },
+    {
+        "facilityId": 2608,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 750,
+                "occupiedPlaces": 544,
+                "freePlaces": 206,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 4,
+                "freePlaces": -4,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 750,
+                "occupiedPlaces": 548,
+                "freePlaces": 202,
+                "status": "FREE"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:01.525"
+    },
+    {
+        "facilityId": 2609,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 160,
+                "occupiedPlaces": 160,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 160,
+                "occupiedPlaces": 160,
+                "freePlaces": 0,
+                "status": "FULL"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:02.221"
+    },
+    {
+        "facilityId": 2610,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 249,
+                "occupiedPlaces": 249,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 249,
+                "occupiedPlaces": 249,
+                "freePlaces": 0,
+                "status": "FULL"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:02.689"
+    },
+    {
+        "facilityId": 2409,
+        "counters": [
+            {
+                "nativeId": "0",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "0",
+                "name": "Pre-booked",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "freePlaces": 0,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "1",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "1",
+                "name": "Not reserved",
+                "counterFeatures": [],
+                "maxPlaces": 395,
+                "occupiedPlaces": 51,
+                "freePlaces": 344,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "2",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "2",
+                "name": "Reserved",
+                "counterFeatures": [],
+                "maxPlaces": 10,
+                "occupiedPlaces": 33,
+                "freePlaces": -23,
+                "status": "FULL"
+            },
+            {
+                "nativeId": "3",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "3",
+                "name": "Total",
+                "counterFeatures": [],
+                "maxPlaces": 405,
+                "occupiedPlaces": 84,
+                "freePlaces": 321,
+                "status": "FREE"
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:00.44"
+    },
+    {
+        "facilityId": 2483,
+        "counters": [
+            {
+                "nativeId": "total",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "UNKNOWN"
+                },
+                "key": "total",
+                "counterFeatures": [],
+                "maxPlaces": 643,
+                "occupiedPlaces": 205,
+                "freePlaces": 438,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "totalWithReservation",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "totalWithReservation",
+                "counterFeatures": [],
+                "maxPlaces": 0,
+                "occupiedPlaces": 0,
+                "status": "UNKNOWN"
+            },
+            {
+                "nativeId": "totalWithoutReservation",
+                "type": {
+                    "type": "TOTAL",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "totalWithoutReservation",
+                "counterFeatures": [],
+                "maxPlaces": 643,
+                "occupiedPlaces": 205,
+                "freePlaces": 438,
+                "status": "FREE"
+            },
+            {
+                "nativeId": "shortTermParker",
+                "type": {
+                    "type": "SHORT_TERM_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "shortTermParker",
+                "counterFeatures": [],
+                "occupiedPlaces": 13
+            },
+            {
+                "nativeId": "seasonParkerWithReservation",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "seasonParkerWithReservation",
+                "counterFeatures": [],
+                "occupiedPlaces": 0
+            },
+            {
+                "nativeId": "seasonParkerWithoutReservation",
+                "type": {
+                    "type": "CONTRACT_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "seasonParkerWithoutReservation",
+                "counterFeatures": [],
+                "occupiedPlaces": 192
+            },
+            {
+                "nativeId": "debitCardWithReservation",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "debitCardWithReservation",
+                "counterFeatures": [],
+                "occupiedPlaces": 0
+            },
+            {
+                "nativeId": "debitCardWithoutReservation",
+                "type": {
+                    "type": "PREPAID_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "debitCardWithoutReservation",
+                "counterFeatures": [],
+                "occupiedPlaces": 0
+            },
+            {
+                "nativeId": "congressTicketWithReservation",
+                "type": {
+                    "type": "FIXED_PERIOD_PARKER",
+                    "reservationStatus": "ONLY_RESERVATIONS"
+                },
+                "key": "congressTicketWithReservation",
+                "counterFeatures": [],
+                "occupiedPlaces": 0
+            },
+            {
+                "nativeId": "congressTicketWithoutReservation",
+                "type": {
+                    "type": "FIXED_PERIOD_PARKER",
+                    "reservationStatus": "NO_RESERVATIONS"
+                },
+                "key": "congressTicketWithoutReservation",
+                "counterFeatures": [],
+                "occupiedPlaces": 0
+            }
+        ],
+        "valuesFrom": "2025-12-03T13:35:06.436"
+    }
+]
