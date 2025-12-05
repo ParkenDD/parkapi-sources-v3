@@ -34,20 +34,18 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        raw_static_parking_site_inputs, static_parking_site_errors = self._get_raw_static_parking_sites()
         raw_realtime_parking_site_inputs, realtime_parking_site_errors = self._get_raw_realtime_parking_sites()
         raw_realtime_parking_site_by_id: dict[int, HeilbronnGoldbeckOccupanciesInput] = {
             raw_realtime_input.facilityId: raw_realtime_input for raw_realtime_input in raw_realtime_parking_site_inputs
         }
+
+        raw_static_parking_site_inputs, static_parking_site_errors = self._get_raw_static_parking_sites(
+            raw_realtime_parking_site_by_id
+        )
         import_parking_site_exceptions = static_parking_site_errors + realtime_parking_site_errors
 
         for raw_static_input in raw_static_parking_site_inputs:
             raw_realtime_input = raw_realtime_parking_site_by_id.get(raw_static_input.id)
-            total_counter = raw_realtime_input.get_total_counter() if raw_realtime_input else None
-
-            if total_counter is None:
-                continue
-
             static_parking_site_inputs.append(
                 raw_static_input.to_static_parking_site_input(
                     raw_realtime_input,
@@ -71,6 +69,7 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
 
     def _get_raw_static_parking_sites(
         self,
+        raw_realtime_parking_site_by_id: dict[int, HeilbronnGoldbeckOccupanciesInput],
     ) -> tuple[list[HeilbronnGoldbeckFacilitiesInput], list[ImportParkingSiteException]]:
         heilbronn_goldbeck_facilities_inputs: list[HeilbronnGoldbeckFacilitiesInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
@@ -84,7 +83,18 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
             ),
         )
         parking_site_dicts = response.json()
+
         for parking_site_dict in parking_site_dicts:
+            facility_id = parking_site_dict.get('id')
+            if facility_id not in raw_realtime_parking_site_by_id:
+                continue
+
+            raw_realtime_input = raw_realtime_parking_site_by_id.get(parking_site_dict.get('id'))
+            total_counter = raw_realtime_input.get_total_counter() if raw_realtime_input else None
+
+            if total_counter is None:
+                continue
+
             try:
                 heilbronn_goldbeck_facilities_inputs.append(
                     self.heilbronn_goldbeck_facilities_validator.validate(parking_site_dict)

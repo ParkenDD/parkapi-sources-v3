@@ -60,7 +60,7 @@ class HeilbronnGoldbeckPullConverterTest:
         )
 
         assert len(static_parking_site_inputs) == 8
-        assert len(import_parking_site_exceptions) == 6
+        assert len(import_parking_site_exceptions) == 1
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
