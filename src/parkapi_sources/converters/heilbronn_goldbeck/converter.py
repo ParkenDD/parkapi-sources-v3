@@ -24,7 +24,7 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
 
     source_info = SourceInfo(
         uid='heilbronn_goldbeck',
-        name='Stadtwerke Heilbronn E-Quartiersgarage from Goldbeck API',
+        name='Stadtwerke Heilbronn - Goldbeck Parking Services',
         public_url='https://www.stadtwerke-heilbronn.de/swh/parken-und-laden/parken/',
         source_url='https://control.goldbeck-parking.de',
         has_realtime_data=True,
@@ -125,8 +125,14 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
         )
         parking_site_dicts = response.json()
         for parking_site_dict in parking_site_dicts:
-            counters = parking_site_dict.get('counters') or []
-            parking_site_dict['counters'] = [c for c in counters if c.get('type', {}).get('type') == 'TOTAL']
+            counters = parking_site_dict.get('counters', [])
+            allowed_resrvations = ['UNKNOWN', 'NO_RESERVATIONS']
+            parking_site_dict['counters'] = [
+                c
+                for c in counters
+                if c.get('type', {}).get('type') == 'TOTAL'
+                and c.get('type', {}).get('reservationStatus') in allowed_resrvations
+            ]
 
             try:
                 heilbronn_goldbeck_occupancies_inputs.append(

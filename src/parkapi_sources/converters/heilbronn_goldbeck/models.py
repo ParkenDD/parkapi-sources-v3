@@ -211,10 +211,10 @@ class HeilbronnGoldbeckFacilitiesInput:
         fee_description = None
         has_fee = False
         if self.tariffs:
-            has_fee = True
             for tariff in self.tariffs:
                 fee_description = tariff.get_fee_description()
                 if fee_description:
+                    has_fee = True
                     break
 
         return StaticParkingSiteInput(
@@ -226,7 +226,6 @@ class HeilbronnGoldbeckFacilitiesInput:
             address=self.postalAddress.to_address(),
             capacity=total_counter.maxPlaces,
             has_fee=has_fee,
-            fee_description=fee_description,
             type=ParkingSiteType.CAR_PARK,
             has_realtime_data=True,
             static_data_updated_at=self.lastUpdatedAt,

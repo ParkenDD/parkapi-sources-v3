@@ -59,8 +59,8 @@ class HeilbronnGoldbeckPullConverterTest:
             heilbronn_goldbeck_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 8
-        assert len(import_parking_site_exceptions) == 1
+        assert len(static_parking_site_inputs) == 9
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -80,7 +80,7 @@ class HeilbronnGoldbeckPullConverterTest:
             heilbronn_goldbeck_pull_converter.get_realtime_parking_sites()
         )
 
-        assert len(realtime_parking_site_inputs) == 8
-        assert len(import_parking_site_exceptions) == 1
+        assert len(realtime_parking_site_inputs) == 9
+        assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
