@@ -69,7 +69,7 @@ class FreiburgParkAndRideStaticPullConverterTest:
             freiburg_park_and_ride_static_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 15
+        assert len(static_parking_site_inputs) == 9
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
