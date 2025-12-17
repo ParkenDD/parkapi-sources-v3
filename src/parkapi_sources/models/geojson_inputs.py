@@ -61,6 +61,7 @@ class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
         ListValidator(DataclassValidator(ParkingSiteRestrictionInput)),
         Default(None),
     )
+    opening_hours: str | None = StringValidator(max_length=512), Default(None)
 
 
 @validataclass
