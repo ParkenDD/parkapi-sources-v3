@@ -1,0 +1,981 @@
+[
+    {
+        "id": 2682,
+        "key": "F-2682",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-17T17:05:25.127952",
+        "name": "Heilbronn, SWHN Mitarbeiter E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.4467678,
+            "latitude": 48.953437
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Etzelstraße, 9",
+            "street1": "Etzelstraße",
+            "street2": "9",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2686,
+        "key": "F-2686",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:16:58.396213",
+        "name": "Heilbronn, HNVG Lampenpark E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.21611785,
+            "latitude": 49.1519699
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Weipertstraße, 41",
+            "street1": "Weipertstraße",
+            "street2": "41",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2685,
+        "key": "F-2685",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:30:36.652854",
+        "name": "Heilbronn, HNVG Tiefgarage E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2191573,
+            "latitude": 49.1512868
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Etzelstraße, 1",
+            "street1": "Etzelstraße",
+            "street2": "1",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2696,
+        "key": "F-2696",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T10:11:03.552893",
+        "name": "Heilbronn, Technisches Rathaus E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2201593,
+            "latitude": 49.1378427
+        },
+        "postalAddress": {
+            "name": "74072 Heilbronn - Cäcilienstraße, 49",
+            "street1": "Cäcilienstraße",
+            "street2": "49",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2141,
+        "key": "HEILBRONN_-_BOLLWERKSTURM",
+        "parentId": 2140,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-17T17:07:20.709752",
+        "name": "Heilbronn, Bollwerksturm",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.21611786,
+            "latitude": 49.1463623
+        },
+        "postalAddress": {
+            "name": "Heilbronn Bollwerksturm",
+            "street1": "Mannheimer Str.",
+            "street2": "25",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        },
+        "tariffs": [
+            {
+                "id": 1067,
+                "key": "eb3a5e79-697a-4e63-92a0-230b9056b242",
+                "name": "Tariff_2141",
+                "isActive": true,
+                "freePassageTimeValue": 0,
+                "freePassageTimeUnit": "MINUTE",
+                "gracePeriodAfterPaymentTimeValue": 15,
+                "gracePeriodAfterPaymentTimeUnit": "MINUTE",
+                "tariffItems": [
+                    {
+                        "type": "PlainTextTariffItem",
+                        "key": "0711a4fb-3455-4c3b-b4a1-5c94a372ed95",
+                        "priority": 0,
+                        "timeDefinitions": [],
+                        "lastUpdatedAt": "2024-12-30T17:02:22.675224",
+                        "plainTextValue": "<p><strong style=\"color: rgb(0, 112, 192);\"><u>Parktarife</u></strong></p><p><strong>pro Stunde</strong> 2,50 EUR</p><p><strong>Tagestarif max.</strong> 16,00 EUR</p><p><strong>Abendpauschale (18h-6h)</strong>&nbsp;<strong> </strong>&nbsp;4,00 EUR</p><p><br></p><h3><strong style=\"color: rgb(0, 112, 192);\">Hier kannst Du über die SWHN App bezahlen!</strong></h3><h3><strong style=\"color: rgb(226, 0, 49);\">Ohne Papierticket. Ohne Kassenautomat. </strong></h3><h3><strong style=\"color: rgb(0, 112, 192);\">Einfach Kennzeichen hinterlegen und stadtPARKEN aktivieren!</strong></h3><p><br></p>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2687,
+        "key": "F-2687",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:31:26.779325",
+        "name": "Heilbronn, HNVG Verwaltung E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2178868,
+            "latitude": 49.1516948
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Etzelstraße, 11",
+            "street1": "Etzelstraße",
+            "street2": "11",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2688,
+        "key": "F-2688",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:35:02.460698",
+        "name": "Heilbronn, Wohlgelegen E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2081089,
+            "latitude": 49.15530776
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Im Zukunftspark, 12",
+            "street1": "Im Zukunftspark",
+            "street2": "12",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2067,
+        "key": "494164981",
+        "parentId": 1414,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-07-16T16:51:21.910618",
+        "name": "Skidata GPS - Heilbronn Plattenwald",
+        "definitionId": 1,
+        "tenantId": 1085
+    },
+    {
+        "id": 2689,
+        "key": "F-2689",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:40:05.269533",
+        "name": "Massenbachhausen, Massenbachhausen E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.04876518,
+            "latitude": 49.17372894
+        },
+        "postalAddress": {
+            "name": "74252 Massenbachhausen - Heilbronner Str., 58",
+            "street1": "Heilbronner Str.",
+            "street2": "58",
+            "city": "Massenbachhausen",
+            "cityId": 321,
+            "zip": "74252",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2408,
+        "key": "F-2408",
+        "parentId": 1430,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-07-16T16:52:01.177277",
+        "name": "S&B DE - Heilbronn Wohlgelegen",
+        "definitionId": 1,
+        "tenantId": 1085
+    },
+    {
+        "id": 2065,
+        "key": "Heilbronn_Geusndbrunnen",
+        "parentId": 1430,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-10-16T13:15:13.156208",
+        "name": "S&B DE - Heilbronn Gesundbrunnen",
+        "definitionId": 1,
+        "tenantId": 1085
+    },
+    {
+        "id": 2076,
+        "key": "HEILBRONN_-_LOHTORSTRASSE",
+        "parentId": 2075,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-11-19T12:11:45.433823",
+        "name": "Heilbronn, Lohtorstraße",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.217758,
+            "latitude": 49.14335
+        },
+        "postalAddress": {
+            "name": "Heilbronn - Lohtorstraße",
+            "street1": "Gerberstraße / Lohtorstraße",
+            "street2": "1",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        },
+        "tariffs": [
+            {
+                "id": 1173,
+                "key": "f58ddad7-de4c-47c4-8989-01a9adc6c314",
+                "name": "Tariff_2076",
+                "isActive": true,
+                "freePassageTimeValue": 0,
+                "freePassageTimeUnit": "MINUTE",
+                "gracePeriodAfterPaymentTimeValue": 15,
+                "gracePeriodAfterPaymentTimeUnit": "MINUTE",
+                "tariffItems": [
+                    {
+                        "type": "PlainTextTariffItem",
+                        "key": "825c9209-72fb-4252-a66d-8db561861f0b",
+                        "priority": 0,
+                        "timeDefinitions": [],
+                        "lastUpdatedAt": "2025-01-01T02:50:12.330305",
+                        "plainTextValue": "<h3><strong style=\"color: rgb(0, 112, 192);\">Parktarife</strong></h3><p><strong>pro Stunde</strong> 3,ß0 EUR</p><p><strong>Tagestarif max.</strong> 16,00 EUR</p><p><br></p><p><span style=\"color: rgb(17, 17, 17);\">Hier kannst du digital mit unserer App parken – ohne Papierticket und ohne Kassenautomaten.</span></p><p>Digital parken &amp; bezahlen – tippe unten auf jetzt<span style=\"color: rgb(226, 0, 49);\"> </span><strong style=\"color: rgb(226, 0, 49);\">stadtPARKEN</strong>!</p>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2068,
+        "key": "HEILBRONN_-_KLINIK_AM_PLATTENWALD",
+        "parentId": 2067,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-09-23T08:13:38.63701",
+        "name": "Heilbronn, Klinik am Plattenwald",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.23604679,
+            "latitude": 49.21205139
+        },
+        "postalAddress": {
+            "name": "Heilbronn - Klinik am Plattenwald",
+            "street1": "Am Plattenwald",
+            "street2": "1",
+            "city": "Bad Friedrichshall",
+            "cityId": 104,
+            "zip": "74711",
+            "isoCountryCode": "DE"
+        },
+        "tariffs": [
+            {
+                "id": 1007,
+                "key": "d1464852-d98c-4cab-a770-15869a371bff",
+                "name": "Tariff_2068",
+                "isActive": true,
+                "freePassageTimeValue": 0,
+                "freePassageTimeUnit": "MINUTE",
+                "gracePeriodAfterPaymentTimeValue": 15,
+                "gracePeriodAfterPaymentTimeUnit": "MINUTE",
+                "tariffItems": [
+                    {
+                        "type": "PlainTextTariffItem",
+                        "key": "f14a819d-051a-4a0b-a7b9-3b2d3915dbcc",
+                        "priority": 0,
+                        "timeDefinitions": [],
+                        "lastUpdatedAt": "2024-06-30T09:27:21.746562",
+                        "plainTextValue": "<h3><strong style=\"color: rgb(0, 112, 192);\">Parktarife</strong></h3><p><strong style=\"color: black;\">Kurzparker (die ersten 20 Min)</strong> <span style=\"color: black;\">kostenlos</span></p><p><strong style=\"color: black;\">21. - 60. Minute</strong> <span style=\"color: black;\">1,40 EUR</span></p><p><strong style=\"color: black;\">pro weitere Stunde</strong> <span style=\"color: black;\">1,40 EUR</span></p><p><strong style=\"color: black;\">Tagestarif max.</strong> <span style=\"color: black;\">8,00 EUR</span></p><p><strong style=\"color: black;\">Wochentarif max. (einmalige Ein- und Ausfahrt)</strong> <span style=\"color: black;\">28,00 EUR</span></p><p><strong style=\"color: black;\">7-Tages-Ticket</strong> <span style=\"color: black;\">41,00 EUR</span></p><p><br></p><p><span style=\"color: rgb(17, 17, 17);\">Hier kannst du </span><span style=\"color: rgb(226, 0, 49);\">ab </span><strong style=\"color: rgb(0, 112, 192);\">2025</strong> <span style=\"color: rgb(17, 17, 17);\">digital mit unserer App parken – ohne Papierticket und ohne Kassenautomaten.</span></p><p>Digital parken &amp; bezahlen – tippe unten auf jetzt<span style=\"color: rgb(226, 0, 49);\"> </span><strong style=\"color: rgb(226, 0, 49);\">stadtPARKEN</strong>!</p>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2690,
+        "key": "F-2690",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:43:40.707227",
+        "name": "Heilbronn, Bürgeramt Neckargartach E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2015968,
+            "latitude": 49.168545
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Mittelstraße, 3",
+            "street1": "Mittelstraße",
+            "street2": "3",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2483,
+        "key": "F-2483",
+        "parentId": 2084,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-12-30T17:01:23.829156",
+        "name": "Heilbronn, Quartiersgarage Neckarbogen",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.2101593,
+            "latitude": 49.1464653
+        },
+        "postalAddress": {
+            "name": "74072 Heilbronn - Paula-Fuchs-Allee, 15",
+            "street1": "Paula-Fuchs-Allee",
+            "street2": "15",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        },
+        "tariffs": [
+            {
+                "id": 1196,
+                "key": "1e24b9f4-c1a7-4d5a-b5d7-e26781b613c5",
+                "name": "Tariff_2483",
+                "isActive": true,
+                "freePassageTimeValue": 0,
+                "freePassageTimeUnit": "MINUTE",
+                "gracePeriodAfterPaymentTimeValue": 15,
+                "gracePeriodAfterPaymentTimeUnit": "MINUTE",
+                "tariffItems": [
+                    {
+                        "type": "PlainTextTariffItem",
+                        "key": "3cb30451-ed5d-4e43-8e14-4486d7dbbf3c",
+                        "priority": 0,
+                        "timeDefinitions": [],
+                        "lastUpdatedAt": "2024-12-30T17:01:23.905488",
+                        "plainTextValue": "<h3><strong style=\"color: rgb(0, 112, 192);\">Parktarife</strong></h3><p><strong>pro Stunde</strong> <span style=\"color: rgb(226, 0, 49);\">&nbsp;&nbsp;&nbsp;</span>2,50 EUR</p><p><strong>Tagestarif max.</strong>&nbsp;&nbsp;16,00 EUR</p><p>&nbsp;</p><p>Hier kannst Du digital mit App parken - ohne Papierticket und ohne Kassenautomat.</p><p>Digital parken &amp; bezahlen – hinterlege dein Kennzeichen für<span style=\"color: rgb(226, 0, 49);\"> </span><strong style=\"color: rgb(226, 0, 49);\">stadtPARKEN</strong>!</p>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2484,
+        "key": "F-2484",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-06-28T06:51:13.988159",
+        "name": "Heilbronn, Quartiersgarage Neckarbogen E-Charge",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.20921,
+            "latitude": 49.14591
+        },
+        "postalAddress": {
+            "name": "Heilbronn Quartiersgarage Neckarbogen",
+            "street1": "Paula-Fuchs-Allee",
+            "street2": "15",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2691,
+        "key": "F-2691",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:47:34.361911",
+        "name": "Heilbronn, Lohtorstraße E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.21872615,
+            "latitude": 49.14321136
+        },
+        "postalAddress": {
+            "name": "74072 Heilbronn - Lohtorstraße, 12",
+            "street1": "Lohtorstraße",
+            "street2": "12",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2694,
+        "key": "F-2694",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-09-10T12:58:29.888663",
+        "name": "Heilbronn, SWHN Verwaltung E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2183508,
+            "latitude": 49.1515717
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Etzelstraße, 9",
+            "street1": "Etzelstraße",
+            "street2": "9",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2692,
+        "key": "F-2692",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-12T09:51:44.38402",
+        "name": "Heilbronn, Bürgeramt Frankenbach E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.171816,
+            "latitude": 49.159619
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Speyer Straße, 21",
+            "street1": "Speyer Straße",
+            "street2": "21",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2693,
+        "key": "F-2693",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-14T18:57:43.367011",
+        "name": "Bad Friedrichshall, Klinik am Plattenwald E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2361886,
+            "latitude": 49.2121077
+        },
+        "postalAddress": {
+            "name": "74177 Bad Friedrichshall - Am Plattenwald, 1",
+            "street1": "Am Plattenwald",
+            "street2": "1",
+            "city": "Bad Friedrichshall",
+            "cityId": 323,
+            "zip": "74177",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2695,
+        "key": "F-2695",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-14T17:58:42.423609",
+        "name": "Heilbronn, PP Academy E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.20404243,
+            "latitude": 49.12516403
+        },
+        "postalAddress": {
+            "name": "74081 Heilbronn - Bottwarbahnstraße, 70",
+            "street1": "Bottwarbahnstraße",
+            "street2": "70",
+            "city": "Heilbronn",
+            "cityId": 322,
+            "zip": "74081",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2075,
+        "key": "SB_HN_LOHTOR",
+        "parentId": 1430,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-07-16T16:52:02.356968",
+        "name": "S&B DE - Heilbronn Lohtorstraße",
+        "definitionId": 1,
+        "tenantId": 1085
+    },
+    {
+        "id": 2140,
+        "key": "F-2140",
+        "parentId": 1430,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-07-16T16:52:02.471034",
+        "name": "S&B DE - Heilbronn Bollwerksturm",
+        "definitionId": 1,
+        "tenantId": 1085
+    },
+    {
+        "id": 2607,
+        "key": "F-2607",
+        "parentId": 2065,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-12-09T13:23:44.255463",
+        "name": "Heilbronn, Klinik am Gesundbrunnen P1",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.191551,
+            "latitude": 49.155065
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Am Gesundbrunnen, 20-26",
+            "street1": "Am Gesundbrunnen",
+            "street2": "20-26",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2066,
+        "key": "HEILBRONN_-_KLINIK_AM_GESUNDBRUNNEN",
+        "parentId": 2065,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-04-23T13:15:32.448939",
+        "name": "Heilbronn, Klinik am Gesundbrunnen",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.190613,
+            "latitude": 49.153337
+        },
+        "postalAddress": {
+            "name": "Heilbronn - Klinik am Gesundbrunnen",
+            "street1": "Am Gesundbrunnen",
+            "street2": "20-26",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        },
+        "tariffs": [
+            {
+                "id": 1066,
+                "key": "7588a43b-3443-4b74-8a69-b58fa0680590",
+                "name": "Tariff_2066",
+                "isActive": true,
+                "freePassageTimeValue": 0,
+                "freePassageTimeUnit": "MINUTE",
+                "gracePeriodAfterPaymentTimeValue": 15,
+                "gracePeriodAfterPaymentTimeUnit": "MINUTE",
+                "tariffItems": [
+                    {
+                        "type": "PlainTextTariffItem",
+                        "key": "ebae5a0b-c381-4d76-85fd-8ddf1a09c29a",
+                        "priority": 0,
+                        "timeDefinitions": [],
+                        "lastUpdatedAt": "2024-06-30T09:26:38.805904",
+                        "plainTextValue": "<h3><strong style=\"color: rgb(0, 112, 192);\">Parktarife</strong></h3><p><strong style=\"color: black;\">Kurzparker (die ersten 20 MIn) </strong> <span style=\"color: black;\">kostenlos</span></p><p><strong style=\"color: black;\">21. - 60. Minute</strong> <span style=\"color: black;\">1,50 EUR</span></p><p><strong style=\"color: black;\">pro weitere Stunde</strong> <span style=\"color: black;\">1,50 EUR</span></p><p><strong style=\"color: black;\">Tagestarif max.</strong> <span style=\"color: black;\">9,00 EUR</span></p><p><strong style=\"color: black;\">Wochentarif max.</strong>\t<strong style=\"color: black;\">(einmalige Ein- und Ausfahrt)</strong> <span style=\"color: black;\">33,50 EUR</span></p><p><strong style=\"color: black;\">7-Tages-Ticket</strong> <span style=\"color: black;\">50,00 EUR</span></p><p><br></p><p><span style=\"color: rgb(17, 17, 17);\">Hier kannst du </span><span style=\"color: rgb(226, 0, 49);\">ab </span><strong style=\"color: rgb(0, 112, 192);\">2025</strong> <span style=\"color: rgb(17, 17, 17);\">digital mit unserer App parken – ohne Papierticket und ohne Kassenautomaten.</span></p><p>Digital parken &amp; bezahlen – tippe unten auf jetzt<span style=\"color: rgb(226, 0, 49);\"> </span><strong style=\"color: rgb(226, 0, 49);\">stadtPARKEN</strong>!</p><p><br></p>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2608,
+        "key": "F-2608",
+        "parentId": 2065,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-12-08T16:20:47.966447",
+        "name": "Heilbronn, Klinik am Gesundbrunnen P2",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.191551,
+            "latitude": 49.155065
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Am Gesundbrunnen, 20-26",
+            "street1": "Am Gesundbrunnen",
+            "street2": "20-26",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2609,
+        "key": "F-2609",
+        "parentId": 2065,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-12-08T16:21:20.033112",
+        "name": "Heilbronn, Klinik am Gesundbrunnen P3",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.188946,
+            "latitude": 49.154706
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Am Gesundbrunnen, 20-26",
+            "street1": "Am Gesundbrunnen",
+            "street2": "20-26",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2610,
+        "key": "F-2610",
+        "parentId": 2065,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-12-08T16:22:55.177289",
+        "name": "Heilbronn, Klinik am Gesundbrunnen P4",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.188681,
+            "latitude": 49.154588
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Am Gesundbrunnen, 20-28",
+            "street1": "Am Gesundbrunnen",
+            "street2": "20-28",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2409,
+        "key": "F-2409",
+        "parentId": 2408,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2024-12-30T17:01:46.809854",
+        "name": "Heilbronn, Wohlgelegen",
+        "definitionId": 14,
+        "tenantId": 1085,
+        "position": {
+            "longitude": 9.2087054,
+            "latitude": 49.1550065
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn, Wohlgelegen - Im Zukunftspark, 16",
+            "street1": "Im Zukunftspark",
+            "street2": "16",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        },
+        "tariffs": [
+            {
+                "id": 1172,
+                "key": "3bf6b7a0-1409-4677-97cd-6be68ad34e54",
+                "name": "Tariff_2409",
+                "isActive": true,
+                "freePassageTimeValue": 0,
+                "freePassageTimeUnit": "MINUTE",
+                "gracePeriodAfterPaymentTimeValue": 15,
+                "gracePeriodAfterPaymentTimeUnit": "MINUTE",
+                "tariffItems": [
+                    {
+                        "type": "PlainTextTariffItem",
+                        "key": "c81d55fe-3a72-4968-a71d-ff0cde8f008f",
+                        "priority": 0,
+                        "timeDefinitions": [],
+                        "lastUpdatedAt": "2024-12-30T17:01:46.858293",
+                        "plainTextValue": "<h3><strong style=\"color: rgb(0, 112, 192);\">Parktarife</strong></h3><p><strong>pro Stunde</strong> 2,50 EUR</p><p><strong>Tagestarif max.</strong> 16,00 EUR</p><p><br></p><p><span style=\"color: rgb(17, 17, 17);\">Hier kannst du digital mit unserer App parken – ohne Papierticket und ohne Kassenautomaten.</span></p><p>Digital parken &amp; bezahlen – tippe unten auf jetzt<span style=\"color: rgb(226, 0, 49);\"> </span><strong style=\"color: rgb(226, 0, 49);\">stadtPARKEN</strong>!</p>"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2677,
+        "key": "F-2677",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-08-17T03:15:30.118829",
+        "name": "Heilbronn, Bürgeramt Kirchhausen E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.0654937,
+            "latitude": 49.077095
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Schloßplatz, 2",
+            "street1": "Schloßplatz",
+            "street2": "2",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2673,
+        "key": "F-2673",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T14:34:35.417841",
+        "name": "Heilbronn, Klinik am Gesundbrunnen E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.1928658,
+            "latitude": 49.1542435
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Am Gesundbrunnen, 28",
+            "street1": "Am Gesundbrunnen",
+            "street2": "28",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2674,
+        "key": "F-2674",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T14:44:34.890639",
+        "name": "Heilbronn, Bollwerksturm E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2203457,
+            "latitude": 49.1464324
+        },
+        "postalAddress": {
+            "name": "74072 Heilbronn - Mannheimer Straße, 25",
+            "street1": "Mannheimer Straße",
+            "street2": "25",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2675,
+        "key": "F-2675",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T14:55:06.839681",
+        "name": "Heilbronn, Sozialamt Gymnasiumstraße E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2245848,
+            "latitude": 49.1404993
+        },
+        "postalAddress": {
+            "name": "74072 Heilbronn - Gymnasiumstraße, 44",
+            "street1": "Gymnasiumstraße",
+            "street2": "44",
+            "city": "Heilbronn",
+            "cityId": 107,
+            "zip": "74072",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2676,
+        "key": "F-2676",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T14:56:55.32576",
+        "name": "Heilbronn, Bürgerhaus Böckingen E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.1933937,
+            "latitude": 49.1334268
+        },
+        "postalAddress": {
+            "name": "74080 Heilbronn - Kirchsteige, 5",
+            "street1": "Kirchsteige",
+            "street2": "5",
+            "city": "Heilbronn",
+            "cityId": 318,
+            "zip": "74080",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2678,
+        "key": "F-2678",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T15:10:28.162873",
+        "name": "Heilbronn, Deponie Wartberg E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.2525011,
+            "latitude": 49.1588821
+        },
+        "postalAddress": {
+            "name": "74076 Heilbronn - Vogelsangklinge, 1",
+            "street1": "Vogelsangklinge",
+            "street2": "1",
+            "city": "Heilbronn",
+            "cityId": 227,
+            "zip": "74076",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2680,
+        "key": "F-2680",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T15:32:06.982294",
+        "name": "Heilbronn, Bürgeramt Biberach E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.1470478,
+            "latitude": 49.1926883
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Unterlandstraße, 49",
+            "street1": "Unterlandstraße",
+            "street2": "49",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2681,
+        "key": "F-2681",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-08T15:35:43.091169",
+        "name": "Heilbronn, Bürgeramt Klingenberg E-Laden",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.1613826,
+            "latitude": 49.1193569
+        },
+        "postalAddress": {
+            "name": "74078 Heilbronn - Theodor-Heuss-Straße, 113",
+            "street1": "Theodor-Heuss-Straße",
+            "street2": "113",
+            "city": "Heilbronn",
+            "cityId": 103,
+            "zip": "74078",
+            "isoCountryCode": "DE"
+        }
+    },
+    {
+        "id": 2679,
+        "key": "F-2679",
+        "parentId": 2411,
+        "status": "ACTIVE",
+        "active": true,
+        "lastUpdatedAt": "2025-07-14T18:28:56.704942",
+        "name": "Löwenstein, Klinikum Löwenstein E-Laden\t\t",
+        "definitionId": 14,
+        "tenantId": 1196,
+        "position": {
+            "longitude": 9.4029053,
+            "latitude": 49.0900653
+        },
+        "postalAddress": {
+            "name": "74245 Löwenstein - Geißhölzle, 62",
+            "street1": "Geißhölzle",
+            "street2": "62",
+            "city": "Löwenstein",
+            "cityId": 319,
+            "zip": "74245",
+            "isoCountryCode": "DE"
+        }
+    }
+]
