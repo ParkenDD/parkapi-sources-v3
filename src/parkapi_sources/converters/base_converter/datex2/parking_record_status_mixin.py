@@ -26,7 +26,8 @@ class ParkingRecordStatusMixin(Datex2RealtimeMixin, ABC):
             ],
         )
         return (
-            data.get('d2LogicalModel', {})
+            data
+            .get('d2LogicalModel', {})
             .get('payloadPublication', {})
             .get('genericPublicationExtension', {})
             .get('parkingStatusPublication', {})

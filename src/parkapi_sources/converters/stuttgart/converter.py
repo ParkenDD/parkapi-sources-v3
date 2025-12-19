@@ -68,7 +68,8 @@ class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConve
             ],
         )
         return (
-            data.get('d2LogicalModel', {})
+            data
+            .get('d2LogicalModel', {})
             .get('payloadPublication', {})
             .get('genericPublicationExtension', {})
             .get('parkingFacilityTableStatusPublication', {})
