@@ -22,3 +22,7 @@ class BfrkBwBikePushConverter(BfrkBasePushConverter):
         source_url='https://bfrk-kat-api.efa-bw.de/bfrk_api/fahrradanlagen',
         has_realtime_data=False,
     )
+
+    @staticmethod
+    def check_ignore_item(input_data: BfrkBikeInput) -> bool:
+        return input_data.stellplatzanzahl == 0

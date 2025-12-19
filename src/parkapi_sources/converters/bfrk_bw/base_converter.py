@@ -26,6 +26,10 @@ class BfrkBasePushConverter(ParkingSitePullConverter, ABC):
     def source_url_config_key(self) -> str:
         pass
 
+    @staticmethod
+    def check_ignore_item(input_data: BfrkBaseInput) -> bool:
+        return False
+
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
@@ -46,6 +50,10 @@ class BfrkBasePushConverter(ParkingSitePullConverter, ABC):
                         message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
+                continue
+
+            # Ignore parking spots without capacity
+            if self.check_ignore_item(input_data):
                 continue
 
             static_parking_site_inputs.append(input_data.to_static_parking_site_input())
