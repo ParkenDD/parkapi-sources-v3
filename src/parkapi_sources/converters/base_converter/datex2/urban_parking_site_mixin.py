@@ -32,7 +32,8 @@ class UrbanParkingSiteMixin(Datex2StaticMixin, ABC):
             ],
         )
         return (
-            data.get('d2LogicalModel', {})
+            data
+            .get('d2LogicalModel', {})
             .get('payloadPublication', {})
             .get('genericPublicationExtension', {})
             .get('parkingTablePublication', {})
