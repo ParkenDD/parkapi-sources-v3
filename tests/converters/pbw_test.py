@@ -13,7 +13,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters.pbw import PbwPullConverter
-from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
@@ -84,40 +84,7 @@ class PbwPullConverterTest:
             'uid': '8',
             'external_identifiers': [],
             'park_and_ride_type': [],
-            'restrictions': [
-                {
-                    'capacity': 0,
-                    'hours': None,
-                    'max_stay': None,
-                    'realtime_capacity': None,
-                    'realtime_free_capacity': None,
-                    'type': ParkingAudience.DISABLED,
-                },
-                {
-                    'capacity': 0,
-                    'hours': None,
-                    'max_stay': None,
-                    'realtime_capacity': None,
-                    'realtime_free_capacity': None,
-                    'type': ParkingAudience.WOMEN,
-                },
-                {
-                    'capacity': 0,
-                    'hours': None,
-                    'max_stay': None,
-                    'realtime_capacity': None,
-                    'realtime_free_capacity': None,
-                    'type': ParkingAudience.FAMILY,
-                },
-                {
-                    'capacity': 0,
-                    'hours': None,
-                    'max_stay': None,
-                    'realtime_capacity': None,
-                    'realtime_free_capacity': None,
-                    'type': ParkingAudience.CHARGING,
-                },
-            ],
+            'restrictions': [],
         }
 
     @staticmethod

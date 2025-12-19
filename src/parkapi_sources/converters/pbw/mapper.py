@@ -44,28 +44,28 @@ class PbwMapper:
         )
 
         restrictions: list[ParkingSiteRestrictionInput] = []
-        if parking_site_detail_input.stellplaetze.behinderte is not None:
+        if parking_site_detail_input.stellplaetze.behinderte:
             restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.DISABLED,
                     capacity=parking_site_detail_input.stellplaetze.behinderte,
                 ),
             )
-        if parking_site_detail_input.stellplaetze.frauen is not None:
+        if parking_site_detail_input.stellplaetze.frauen:
             restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.WOMEN,
                     capacity=parking_site_detail_input.stellplaetze.frauen,
                 ),
             )
-        if parking_site_detail_input.stellplaetze.familien is not None:
+        if parking_site_detail_input.stellplaetze.familien:
             restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.FAMILY,
                     capacity=parking_site_detail_input.stellplaetze.familien,
                 ),
             )
-        if parking_site_detail_input.stellplaetze.elektrofahrzeuge is not None:
+        if parking_site_detail_input.stellplaetze.elektrofahrzeuge:
             restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.CHARGING,

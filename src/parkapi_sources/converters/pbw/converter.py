@@ -69,6 +69,10 @@ class PbwPullConverter(ParkingSitePullConverter):
                     )
                     continue
 
+                # Ignore parking sites without parking spaces
+                if parking_site_detail_input.stellplaetze.gesamt == 0:
+                    continue
+
                 static_parking_site_inputs.append(
                     self.mapper.map_static_parking_site(parking_site_detail_input),
                 )
