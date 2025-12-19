@@ -18,7 +18,6 @@ from validataclass.validators import (
     ListValidator,
     StringValidator,
     UrlValidator,
-    Osm
 )
 
 from parkapi_sources.util import round_7d
