@@ -43,6 +43,8 @@ class KelternPushConverter(XlsxConverter, ParkingSiteBaseConverter):
 
             try:
                 keltern_row_input = self.keltern_row_validator.validate(parking_site_raw_dict)
+                if keltern_row_input.capacity == 0:
+                    continue
                 static_parking_site_inputs.append(keltern_row_input.to_static_parking_site_input())
 
             except ValidationError as e:
