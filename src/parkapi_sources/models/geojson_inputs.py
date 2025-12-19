@@ -18,10 +18,11 @@ from validataclass.validators import (
     ListValidator,
     StringValidator,
     UrlValidator,
+    Osm
 )
 
 from parkapi_sources.util import round_7d
-from parkapi_sources.validators import GeoJSONGeometryValidator
+from parkapi_sources.validators import GeoJSONGeometryValidator, OsmOpeningTimesValidator
 
 from .enums import ParkAndRideType, ParkingSiteType
 from .parking_site_inputs import ParkingSiteRestrictionInput, StaticParkingSiteInput
@@ -61,7 +62,7 @@ class GeojsonFeaturePropertiesInput(GeojsonBaseFeaturePropertiesInput):
         ListValidator(DataclassValidator(ParkingSiteRestrictionInput)),
         Default(None),
     )
-    opening_hours: str | None = StringValidator(max_length=512), Default(None)
+    opening_hours: str | None = OsmOpeningTimesValidator(max_length=512), Default(None)
 
 
 @validataclass
