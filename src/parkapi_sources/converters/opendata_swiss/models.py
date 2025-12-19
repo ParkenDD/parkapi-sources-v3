@@ -20,8 +20,13 @@ from validataclass.validators import (
     TimeValidator,
 )
 
-from parkapi_sources.models import GeojsonBaseFeatureInput, RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
+from parkapi_sources.models import (
+    GeojsonBaseFeatureInput,
+    ParkingSiteRestrictionInput,
+    RealtimeParkingSiteInput,
+    StaticParkingSiteInput,
+)
+from parkapi_sources.models.enums import ParkAndRideType, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import ReplacingStringValidator
 
@@ -221,11 +226,24 @@ class OpenDataSwissFeatureInput(GeojsonBaseFeatureInput):
                 sales_channel.replace('_', ' ') for sales_channel in self.properties.salesChannels
             ])
 
+        restrictions: list[ParkingSiteRestrictionInput] = []
         for capacities_input in self.properties.capacities:
             if capacities_input.categoryType == OpenDataSwissCapacityCategoryType.DISABLED_PARKING_SPACE:
-                static_parking_site_input.capacity_disabled = capacities_input.total
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.DISABLED,
+                        capacity=capacities_input.total,
+                    ),
+                )
             elif capacities_input.categoryType == OpenDataSwissCapacityCategoryType.WITH_CHARGING_STATION:
-                static_parking_site_input.capacity_charging = capacities_input.total
+                restrictions.append(
+                    ParkingSiteRestrictionInput(
+                        type=ParkingAudience.CHARGING,
+                        capacity=capacities_input.total,
+                    ),
+                )
+
+        static_parking_site_input.restrictions = restrictions
 
         return static_parking_site_input
 

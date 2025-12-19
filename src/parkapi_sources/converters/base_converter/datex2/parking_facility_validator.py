@@ -21,8 +21,8 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
 
 
 class FacilityLayout(Enum):
@@ -39,17 +39,17 @@ class InnerAssignedParkingSpace:
     descriptionOfAssignedParkingSpaces: dict = AnythingValidator(allowed_types=dict)
     numberOfAssignedParkingSpaces: int = IntegerValidator(allow_strings=True)
 
-    def get_sub_capacity(self) -> str | None:
+    def get_audience(self) -> ParkingAudience | None:
         if self.descriptionOfAssignedParkingSpaces == {'personTypeForWhichSpacesAssigned': 'women'}:
-            return 'capacity_woman'
+            return ParkingAudience.WOMEN
         if self.descriptionOfAssignedParkingSpaces == {'personTypeForWhichSpacesAssigned': 'families'}:
-            return 'capacity_family'
+            return ParkingAudience.FAMILY
         if self.descriptionOfAssignedParkingSpaces == {'personTypeForWhichSpacesAssigned': 'disabled'}:
-            return 'capacity_disabled'
+            return ParkingAudience.DISABLED
         if self.descriptionOfAssignedParkingSpaces == {
             'characteristicsOfVehiclesForWhichSpacesAssigned': {'fuelType': 'battery'}
         }:
-            return 'capacity_charging'
+            return ParkingAudience.CHARGING
         return None
 
 
@@ -105,14 +105,18 @@ class ParkingFacility:
             capacity=self.totalParkingCapacity,
             operator_name=self.owner.contactName,
         )
+        restrictions: list[ParkingSiteRestrictionInput] = []
         for assigned_parking_space in self.assignedParkingSpaces:
-            sub_capacity = assigned_parking_space.assignedParkingSpaces.get_sub_capacity()
-            if sub_capacity is None:
+            audience = assigned_parking_space.assignedParkingSpaces.get_audience()
+            if audience is None or assigned_parking_space.assignedParkingSpaces.numberOfAssignedParkingSpaces == 0:
                 continue
-            setattr(
-                static_parking_site,
-                sub_capacity,
-                assigned_parking_space.assignedParkingSpaces.numberOfAssignedParkingSpaces,
+            restrictions.append(
+                ParkingSiteRestrictionInput(
+                    type=audience,
+                    capacity=assigned_parking_space.assignedParkingSpaces.numberOfAssignedParkingSpaces,
+                )
             )
+        if restrictions:
+            static_parking_site.restrictions = restrictions
 
         return static_parking_site

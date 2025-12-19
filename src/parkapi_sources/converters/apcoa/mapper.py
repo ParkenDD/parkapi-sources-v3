@@ -116,4 +116,6 @@ class ApcoaMapper:
                         capacity=capacity_data.Count,
                     ),
                 )
+        static_parking_site_input.restrictions = restrictions
+
         return static_parking_site_input
