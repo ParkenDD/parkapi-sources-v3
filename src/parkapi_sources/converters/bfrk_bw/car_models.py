@@ -74,7 +74,7 @@ class BfrkCarInput(BfrkBaseInput):
             operator_name=self.eigentuemer,
             **self.get_static_parking_site_input_kwargs(),
         )
-        if self.behindertenstellplaetze is not None:
+        if self.behindertenstellplaetze is not None and self.behindertenstellplaetze > 0:
             static_parking_site_input.restrictions = [
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.DISABLED,
