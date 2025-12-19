@@ -134,6 +134,22 @@ class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):
         has_realtime_data=True,
     )
 
+    def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
+        static_parking_site_inputs: list[StaticParkingSiteInput] = []
+
+        freiburg_feature_inputs: list[FreiburgParkAndRideStaticFeatureInput]
+        freiburg_feature_inputs, import_parking_site_exceptions = self._get_raw_features()
+
+        for feature_input in freiburg_feature_inputs:
+            if feature_input.properties.kategorie.value != 'Park&Ride':
+                continue
+
+            static_parking_site_inputs.append(
+                feature_input.to_static_parking_site_input(),
+            )
+
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
+
 
 class FreiburgParkAndRideRealtimePullConverter(FreiburgBasePullConverter):
     freiburg_feature_validator = DataclassValidator(FreiburgParkAndRideRealtimeFeatureInput)
