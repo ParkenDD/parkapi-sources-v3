@@ -3,20 +3,43 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
+from enum import Enum
 
 from shapely import GeometryType, Point
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DataclassValidator, DateTimeValidator, IntegerValidator, Noneable, StringValidator
+from validataclass.validators import (
+    AnythingValidator,
+    DataclassValidator,
+    DateTimeValidator,
+    EnumValidator,
+    IntegerValidator,
+    ListValidator,
+    Noneable,
+    StringValidator,
+)
 
 from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
     ParkingAudience,
     ParkingSpotRestrictionInput,
+    ParkingSpotStatus,
+    RealtimeParkingSpotInput,
     StaticParkingSpotInput,
 )
 from parkapi_sources.util import generate_point, round_7d
-from parkapi_sources.validators import GeoJSONGeometryValidator
+from parkapi_sources.validators import CommaSeparatedListValidator, GeoJSONGeometryValidator
+
+
+class ParkingStatus(Enum):
+    AVAILABLE = 0
+    TAKEN = 1
+
+    def to_realtime_status(self) -> ParkingSpotStatus:
+        return {
+            self.AVAILABLE: ParkingSpotStatus.AVAILABLE,
+            self.TAKEN: ParkingSpotStatus.TAKEN,
+        }.get(self)
 
 
 @validataclass
@@ -29,6 +52,7 @@ class KarlsruheDisabledPropertiesInput:
     max_parkdauer: str | None = Noneable(StringValidator())
     stellplaetze: int = IntegerValidator()
     bemerkung: str | None = Noneable(StringValidator())
+    sensorenliste: list[str] | None = Noneable(CommaSeparatedListValidator(StringValidator()))
     stand: datetime = DateTimeValidator()
 
 
@@ -78,3 +102,38 @@ class KarlsruheDisabledFeatureInput(GeojsonBaseFeatureInput):
             )
 
         return static_parking_spot_inputs
+
+
+@validataclass
+class KarlsruheDisabledRealtimeDataInput:
+    parking_status: ParkingStatus = EnumValidator(ParkingStatus)
+
+
+@validataclass
+class KarlsruheDisabledRealtimeReadingInput:
+    data: KarlsruheDisabledRealtimeDataInput = DataclassValidator(KarlsruheDisabledRealtimeDataInput)
+    measured_at: datetime = DateTimeValidator(
+        local_timezone=timezone.utc,
+        target_timezone=timezone.utc,
+        discard_milliseconds=True,
+    )
+
+
+@validataclass
+class KarlsruheDisabledRealtimeItemInput:
+    id: str = StringValidator()
+    last_readings: list[KarlsruheDisabledRealtimeReadingInput] = ListValidator(
+        DataclassValidator(KarlsruheDisabledRealtimeReadingInput), min_length=1
+    )
+
+    def to_realtime_parking_spot_input(self, parking_spot_uid: str) -> RealtimeParkingSpotInput:
+        return RealtimeParkingSpotInput(
+            uid=parking_spot_uid,
+            realtime_status=self.last_readings[0].data.parking_status.to_realtime_status(),
+            realtime_data_updated_at=self.last_readings[0].measured_at,
+        )
+
+
+@validataclass
+class KarlsruheDisabledRealtimeInput:
+    body: list[dict] = ListValidator(AnythingValidator(allowed_types=dict), min_length=1)
