@@ -11,7 +11,7 @@ from requests_mock import Mocker
 
 from parkapi_sources.converters import KarlsruheDisabledPullConverter
 from parkapi_sources.util import RequestHelper
-from tests.converters.helper import validate_static_parking_spot_inputs
+from tests.converters.helper import validate_realtime_parking_spot_inputs, validate_static_parking_spot_inputs
 
 
 @pytest.fixture
@@ -19,6 +19,8 @@ def karlsruhe_disabled_pull_converter(
     mocked_config_helper: Mock,
     request_helper: RequestHelper,
 ) -> KarlsruheDisabledPullConverter:
+    config = {'PARK_API_KARLSRUHE_DISABLED_AUTH': 'AUTH'}
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return KarlsruheDisabledPullConverter(
         config_helper=mocked_config_helper,
         request_helper=request_helper,
@@ -27,16 +29,24 @@ def karlsruhe_disabled_pull_converter(
 
 @pytest.fixture
 def requests_mock_karlsruhe_disabled(requests_mock: Mocker) -> Mocker:
-    json_path = Path(Path(__file__).parent, 'data', 'karlsruhe_disabled.geojson')
-    with json_path.open() as json_file:
-        json_data = json_file.read()
+    static_json_path = Path(Path(__file__).parent, 'data', 'karlsruhe_disabled_static.geojson')
+    with static_json_path.open() as static_json_file:
+        static_json_data = static_json_file.read()
+
+    realtime_json_path = Path(Path(__file__).parent, 'data', 'karlsruhe_disabled_realtime.json')
+    with realtime_json_path.open() as realtime_json_file:
+        realtime_json_data = realtime_json_file.read()
 
     requests_mock.get(
         'https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature&srsname=EPSG:4326'
         '&typeName=TBA%3Abehinderten_parkplaetze&outputFormat=application%2Fjson',
-        text=json_data,
+        text=static_json_data,
     )
 
+    requests_mock.get(
+        'https://mobil.trk.de/swkiot/tags/c9ac643f-aedd-4794-83fb-7b7337744480/devices?limit=99&last_readings=1&auth=AUTH',
+        text=realtime_json_data,
+    )
     return requests_mock
 
 
@@ -50,7 +60,21 @@ class KarlsruheDisabledConverterTest:
             karlsruhe_disabled_pull_converter.get_static_parking_spots()
         )
 
-        assert len(static_parking_spot_inputs) == 1166
-        assert len(import_parking_spot_exceptions) == 0
+        assert len(static_parking_spot_inputs) == 1165
+        assert len(import_parking_spot_exceptions) == 4
 
         validate_static_parking_spot_inputs(static_parking_spot_inputs)
+
+    @staticmethod
+    def test_get_realtime_parking_spots(
+        karlsruhe_disabled_pull_converter: KarlsruheDisabledPullConverter,
+        requests_mock_karlsruhe_disabled: Mocker,
+    ):
+        realtime_parking_spot_inputs, import_parking_spot_exceptions = (
+            karlsruhe_disabled_pull_converter.get_realtime_parking_spots()
+        )
+
+        assert len(realtime_parking_spot_inputs) == 54
+        assert len(import_parking_spot_exceptions) == 8
+
+        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs)
