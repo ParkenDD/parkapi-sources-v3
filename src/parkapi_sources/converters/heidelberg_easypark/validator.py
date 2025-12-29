@@ -102,6 +102,8 @@ class HeidelbergEasyParkParkingSiteInput:
     def to_static_parking_site(self, static_data_updated_at: datetime) -> StaticParkingSiteInput | None:
         if self.properties.Ausrichtun == HeidelbergEasyparkOrientation.FORBIDDEN:
             return None
+        if self.properties.Kapazitaet == 0:
+            return None
 
         center = shapely.centroid(self.geometry)
 

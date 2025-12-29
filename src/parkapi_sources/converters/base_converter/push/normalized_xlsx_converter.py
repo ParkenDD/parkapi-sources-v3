@@ -131,7 +131,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
         ]
         parking_site_dict['restrictions'] = []
         for key, audience in restrictions:
-            if parking_site_dict.get(key) is not None:
+            if parking_site_dict.get(key) is not None and parking_site_dict.get(key):
                 parking_site_dict['restrictions'].append(
                     {
                         'type': audience.value,

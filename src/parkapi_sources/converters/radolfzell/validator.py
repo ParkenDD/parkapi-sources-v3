@@ -239,8 +239,10 @@ class RadolfzellParkingSiteInput:
                 # Catch situation where all opening times are equal
                 if all(x[-11:] == opening_hour_fragments[0][-11:] for x in opening_hour_fragments):
                     opening_hour_fragments = [
-                        f'Mo-Su {self.properties.opening_times_saturday_begin.strftime("%H:%M")}'
-                        f'-{self.properties.opening_times_saturday_end.strftime("%H:%M")}'
+                        (
+                            f'Mo-Su {self.properties.opening_times_saturday_begin.strftime("%H:%M")}'
+                            f'-{self.properties.opening_times_saturday_end.strftime("%H:%M")}'
+                        )
                     ]
                 static_parking_site_input.opening_hours = '; '.join(opening_hour_fragments)
 

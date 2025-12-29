@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.32.1
+
+Released 2025-12-19
+
+### Fixes
+
+* [filter pbw parking sites](https://github.com/ParkenDD/parkapi-sources-v3/pull/328)
+* [filter heidelberg easypark](https://github.com/ParkenDD/parkapi-sources-v3/pull/327)
+* [filter bfrk](https://github.com/ParkenDD/parkapi-sources-v3/pull/326)
+* [fix vrs p+r restrictions](https://github.com/ParkenDD/parkapi-sources-v3/pull/325)
+* [add missing restrictions ](https://github.com/ParkenDD/parkapi-sources-v3/pull/324)
+* [add keltern filter](https://github.com/ParkenDD/parkapi-sources-v3/pull/323)
+* [add opening_hours to the geojson input converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/320)
+* [Remove parking places not Park and ride](https://github.com/ParkenDD/parkapi-sources-v3/pull/317)
+
+
+### Maintenance
+
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/329)
+
+
 ## 0.32.0
 
 Released 2025-12-01

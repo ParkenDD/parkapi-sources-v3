@@ -15,7 +15,7 @@ A `ParkingSites` provides static data for a Park and Ride `ParkingSite`.
 | kapazitaet                 | integer                  | 1           | capacity                        |                                                                     |
 | name                       | string                   | 1           | name                            |                                                                     |
 | nummer                     | string                   | 1           | name                            | Empty strings will be ignored                                       |
-| kategorie                  | string                   | 1           | [type](#ParkingSiteType)        |                                                                     |
+| kategorie                  | string                   | 1           | [type](#ParkingSiteType)        | Parking places whose `kategorie` are not `Park&Ride` are removed.   |
 
 
 ## P+R-Realtime and Static ParkingSites 
@@ -50,8 +50,4 @@ A `ParkingSites` provides static and realtime data for a Park and Ride `ParkingS
 
 | Key           | Mapping                        |
 |---------------|--------------------------------|
-| Parkplatz     | OFF_STREET_PARKING_GROUND      |
-| Parkhaus      | CAR_PARK                       |
-| Tiefgarage    | UNDERGROUND                    |
 | Park&Ride     | OFF_STREET_PARKING_GROUND      |
-| None          | OTHER                          |

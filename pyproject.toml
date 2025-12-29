@@ -38,8 +38,8 @@ dependencies = [
     "lxml~=6.0.2",
     "openpyxl~=3.1.5",
     "requests~=2.32.5",
-    "beautifulsoup4~=4.14.2",
-    "urllib3~=2.5.0",
+    "beautifulsoup4~=4.14.3",
+    "urllib3~=2.6.2",
     "isodate~=0.7.2",
     "shapely~=2.1.2",
     "opening-hours-py~=1.1.5",
@@ -53,8 +53,8 @@ Changelog = "https://github.com/ParkenDD/parkapi-sources-v3/blob/main/CHANGELOG.
 
 [project.optional-dependencies]
 testing = [
-    "ruff~=0.14.5",
-    "pytest~=9.0.1",
+    "ruff~=0.14.10",
+    "pytest~=9.0.2",
     "pytest-cov~=7.0.0",
     "requests-mock~=1.12.1",
 ]
