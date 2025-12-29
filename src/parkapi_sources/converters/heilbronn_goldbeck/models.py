@@ -65,15 +65,13 @@ class HeilbronnGoldbeckCounterTypeInput:
 
 @validataclass
 class HeilbronnGoldbeckCounterInput:
-    nativeId: Optional[str] = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
+    nativeId: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
     type: HeilbronnGoldbeckCounterTypeInput = DataclassValidator(HeilbronnGoldbeckCounterTypeInput)
-    key: Optional[str] = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    name: Optional[str] = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    counterFeatures: Optional[list[str]] = Noneable(ListValidator(StringValidator(max_length=256))), Default([])
+    name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
     maxPlaces: int = IntegerValidator(min_value=0, allow_strings=True)
     occupiedPlaces: int = IntegerValidator(min_value=0, allow_strings=True)
     freePlaces: int = IntegerValidator(allow_strings=True)
-    status: Optional[CounterStatus] = Noneable(EnumValidator(CounterStatus)), Default(None)
+    status: CounterStatus | None = Noneable(EnumValidator(CounterStatus)), Default(None)
 
     def is_total_counter(self) -> bool:
         return self.type.type.value == 'TOTAL' and (
@@ -118,13 +116,13 @@ class HeilbronnGoldbeckPositionInput:
 
 @validataclass
 class HeilbronnGoldbeckPostalAddressInput:
-    name: Optional[str] = Noneable(StringValidator(max_length=512)), Default(None)
-    street1: Optional[str] = Noneable(StringValidator(max_length=512)), Default(None)
-    street2: Optional[str] = Noneable(StringValidator(max_length=512)), Default(None)
-    city: Optional[str] = Noneable(StringValidator(max_length=512)), Default(None)
-    cityId: Optional[int] = Noneable(IntegerValidator(min_value=0)), Default(None)
-    zip: Optional[str] = Noneable(StringValidator(max_length=32)), Default(None)
-    isoCountryCode: Optional[str] = Noneable(StringValidator(max_length=4)), Default(None)
+    name: str | None = Noneable(StringValidator(max_length=512)), Default(None)
+    street1: str | None = Noneable(StringValidator(max_length=512)), Default(None)
+    street2: str | None = Noneable(StringValidator(max_length=512)), Default(None)
+    city: str | None = Noneable(StringValidator(max_length=512)), Default(None)
+    cityId: str | None = Noneable(IntegerValidator(min_value=0)), Default(None)
+    zip: str | None = Noneable(StringValidator(max_length=32)), Default(None)
+    isoCountryCode: str | None = Noneable(StringValidator(max_length=4)), Default(None)
 
     def to_address(self) -> Optional[str]:
         parts: list[str] = []
@@ -144,11 +142,11 @@ class HeilbronnGoldbeckPostalAddressInput:
 
 @validataclass
 class HeilbronnGoldbeckTariffItemInput:
-    type: Optional[str] = Noneable(StringValidator(max_length=256)), Default(None)
-    key: Optional[str] = Noneable(StringValidator(max_length=256)), Default(None)
-    priority: Optional[int] = Noneable(IntegerValidator()), Default(None)
+    type: str | None = Noneable(StringValidator(max_length=256)), Default(None)
+    key: str | None = Noneable(StringValidator(max_length=256)), Default(None)
+    priority: int | None = Noneable(IntegerValidator()), Default(None)
     timeDefinitions: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict])), Default([])
-    lastUpdatedAt: Optional[datetime] = (
+    lastUpdatedAt: datetime | None = (
         Noneable(
             DateTimeValidator(
                 local_timezone=timezone.utc,
@@ -157,19 +155,24 @@ class HeilbronnGoldbeckTariffItemInput:
         ),
         Default(None),
     )
-    plainTextValue: Optional[str] = Noneable(StringValidator(max_length=4096, unsafe=True)), Default(None)
+    plainTextValue: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
 
 
 @validataclass
 class HeilbronnGoldbeckTariffInput:
-    id: Optional[int] = Noneable(IntegerValidator(min_value=0)), Default(None)
-    key: Optional[str] = Noneable(StringValidator(max_length=256)), Default(None)
-    name: Optional[str] = Noneable(StringValidator(max_length=256)), Default(None)
-    isActive: Optional[bool] = Noneable(BooleanValidator()), Default(None)
-    tariffItems: Optional[list[HeilbronnGoldbeckTariffItemInput]] = (
+    id: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
+    key: str | None = Noneable(StringValidator(max_length=256)), Default(None)
+    name: str | None = Noneable(StringValidator(max_length=256)), Default(None)
+    isActive: bool | None = Noneable(BooleanValidator()), Default(None)
+    tariffItems: list[HeilbronnGoldbeckTariffItemInput] = (
         Noneable(ListValidator(DataclassValidator(HeilbronnGoldbeckTariffItemInput))),
         Default([]),
     )
+
+    def has_tariff_input(self) -> Optional[bool]:
+        if self.isActive:
+            return self.isActive
+        return False
 
     def get_fee_description(self) -> Optional[str]:
         for tariff_item in self.tariffItems:
@@ -184,21 +187,18 @@ class HeilbronnGoldbeckFacilitiesInput:
     key: Optional[str] = Noneable(StringValidator(min_length=1, max_length=256))
     parentId: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
     status: Optional[FacilityStatus] = Noneable((EnumValidator(FacilityStatus))), Default(None)
-    active: Optional[bool] = Noneable(BooleanValidator()), Default(None)
     lastUpdatedAt: datetime = DateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
         discard_milliseconds=True,
     )
     name: str = StringValidator(min_length=1, max_length=256, unsafe=True)
-    definitionId: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
-    tenantId: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
     position: HeilbronnGoldbeckPositionInput = DataclassValidator(HeilbronnGoldbeckPositionInput)
     postalAddress: Optional[HeilbronnGoldbeckPostalAddressInput] = (
         Noneable(DataclassValidator(HeilbronnGoldbeckPostalAddressInput)),
         Default(None),
     )
-    tariffs: Optional[list[HeilbronnGoldbeckTariffInput]] = (
+    tariffs: list[HeilbronnGoldbeckTariffInput] = (
         Noneable(ListValidator(DataclassValidator(HeilbronnGoldbeckTariffInput))),
         Default([]),
     )
@@ -212,9 +212,9 @@ class HeilbronnGoldbeckFacilitiesInput:
         has_fee = False
         if self.tariffs:
             for tariff in self.tariffs:
-                fee_description = tariff.get_fee_description()
-                if fee_description:
-                    has_fee = True
+                if tariff.has_tariff_input():
+                    has_fee = tariff.has_tariff_input()
+                    fee_description = tariff.get_fee_description()
                     break
 
         return StaticParkingSiteInput(
@@ -228,5 +228,6 @@ class HeilbronnGoldbeckFacilitiesInput:
             has_fee=has_fee,
             type=ParkingSiteType.CAR_PARK,
             has_realtime_data=True,
+            fee_description=fee_description,
             static_data_updated_at=self.lastUpdatedAt,
         )

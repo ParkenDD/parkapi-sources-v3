@@ -126,12 +126,12 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
         parking_site_dicts = response.json()
         for parking_site_dict in parking_site_dicts:
             counters = parking_site_dict.get('counters', [])
-            allowed_resrvations = ['UNKNOWN', 'NO_RESERVATIONS']
+            allowed_reservations = ['UNKNOWN', 'NO_RESERVATIONS']
             parking_site_dict['counters'] = [
                 c
                 for c in counters
                 if c.get('type', {}).get('type') == 'TOTAL'
-                and c.get('type', {}).get('reservationStatus') in allowed_resrvations
+                and c.get('type', {}).get('reservationStatus') in allowed_reservations
             ]
 
             try:
