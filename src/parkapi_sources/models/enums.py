@@ -98,15 +98,13 @@ class ParkingAudience(Enum):
     CARSHARING = 'CARSHARING'
     CHARGING = 'CHARGING'
     TAXI = 'TAXI'
-    PRIVATE = 'PRIVATE'
     DELIVERY = 'DELIVERY'
     TRUCK = 'TRUCK'
     BUS = 'BUS'
-    NO_PARKING = 'NO_PARKING'
-    NO_STOPPING = 'NO_STOPPING'
     CUSTOMER = 'CUSTOMER'
     RESIDENT = 'RESIDENT'
     CARAVAN = 'CARAVAN'
+    CARGOBIKE = 'CARGOBIKE'
 
 
 class ParkingSiteSide(Enum):
