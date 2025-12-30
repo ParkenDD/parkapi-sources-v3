@@ -11,7 +11,6 @@ from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
-    AnythingValidator,
     BooleanValidator,
     DataclassValidator,
     DateTimeValidator,
@@ -67,15 +66,20 @@ class HeilbronnGoldbeckCounterTypeInput:
 class HeilbronnGoldbeckCounterInput:
     nativeId: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
     type: HeilbronnGoldbeckCounterTypeInput = DataclassValidator(HeilbronnGoldbeckCounterTypeInput)
-    name: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
-    maxPlaces: int = IntegerValidator(min_value=0, allow_strings=True)
-    occupiedPlaces: int = IntegerValidator(min_value=0, allow_strings=True)
-    freePlaces: int = IntegerValidator(allow_strings=True)
+    maxPlaces: int | None = IntegerValidator(min_value=0, allow_strings=True), Default(None)
+    occupiedPlaces: int | None = IntegerValidator(min_value=0, allow_strings=True), Default(None)
+    freePlaces: int | None = IntegerValidator(allow_strings=True), Default(None)
     status: CounterStatus | None = Noneable(EnumValidator(CounterStatus)), Default(None)
 
     def is_total_counter(self) -> bool:
-        return self.type.type.value == 'TOTAL' and (
-            self.type.reservationStatus.value == 'UNKNOWN' or self.type.reservationStatus.value == 'NO_RESERVATIONS'
+        return (
+            self.type.type is CounterType.TOTAL
+            and self.type.reservationStatus
+            in {
+                ReservationStatus.UNKNOWN,
+                ReservationStatus.NO_RESERVATIONS,
+            }
+            and self.maxPlaces is not None
         )
 
 
@@ -97,12 +101,15 @@ class HeilbronnGoldbeckOccupanciesInput:
     def to_realtime_parking_site_input(self) -> Optional[RealtimeParkingSiteInput]:
         total_counter = self.get_total_counter()
         if total_counter:
+            if total_counter.freePlaces < 0 and total_counter.occupiedPlaces:
+                realtime_free_capacity = total_counter.maxPlaces - total_counter.occupiedPlaces
+            else:
+                realtime_free_capacity = total_counter.freePlaces
+
             return RealtimeParkingSiteInput(
                 uid=str(self.facilityId),
                 realtime_capacity=total_counter.maxPlaces,
-                realtime_free_capacity=total_counter.maxPlaces - total_counter.occupiedPlaces
-                if total_counter.freePlaces < 0 and total_counter.occupiedPlaces
-                else total_counter.freePlaces,
+                realtime_free_capacity=realtime_free_capacity,
                 realtime_data_updated_at=self.valuesFrom,
             )
         return None
@@ -120,9 +127,7 @@ class HeilbronnGoldbeckPostalAddressInput:
     street1: str | None = Noneable(StringValidator(max_length=512)), Default(None)
     street2: str | None = Noneable(StringValidator(max_length=512)), Default(None)
     city: str | None = Noneable(StringValidator(max_length=512)), Default(None)
-    cityId: str | None = Noneable(IntegerValidator(min_value=0)), Default(None)
     zip: str | None = Noneable(StringValidator(max_length=32)), Default(None)
-    isoCountryCode: str | None = Noneable(StringValidator(max_length=4)), Default(None)
 
     def to_address(self) -> Optional[str]:
         parts: list[str] = []
@@ -142,27 +147,13 @@ class HeilbronnGoldbeckPostalAddressInput:
 
 @validataclass
 class HeilbronnGoldbeckTariffItemInput:
-    type: str | None = Noneable(StringValidator(max_length=256)), Default(None)
     key: str | None = Noneable(StringValidator(max_length=256)), Default(None)
-    priority: int | None = Noneable(IntegerValidator()), Default(None)
-    timeDefinitions: list[dict] = ListValidator(AnythingValidator(allowed_types=[dict])), Default([])
-    lastUpdatedAt: datetime | None = (
-        Noneable(
-            DateTimeValidator(
-                local_timezone=timezone.utc,
-                target_timezone=timezone.utc,
-            )
-        ),
-        Default(None),
-    )
     plainTextValue: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
 
 
 @validataclass
 class HeilbronnGoldbeckTariffInput:
     id: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
-    key: str | None = Noneable(StringValidator(max_length=256)), Default(None)
-    name: str | None = Noneable(StringValidator(max_length=256)), Default(None)
     isActive: bool | None = Noneable(BooleanValidator()), Default(None)
     tariffItems: list[HeilbronnGoldbeckTariffItemInput] = (
         Noneable(ListValidator(DataclassValidator(HeilbronnGoldbeckTariffItemInput))),
@@ -183,9 +174,7 @@ class HeilbronnGoldbeckTariffInput:
 
 @validataclass
 class HeilbronnGoldbeckFacilitiesInput:
-    id: int = IntegerValidator(min_value=0, allow_strings=True), Default(None)
-    key: Optional[str] = Noneable(StringValidator(min_length=1, max_length=256))
-    parentId: Optional[int] = Noneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
+    id: int = IntegerValidator(min_value=0, allow_strings=True)
     status: Optional[FacilityStatus] = Noneable((EnumValidator(FacilityStatus))), Default(None)
     lastUpdatedAt: datetime = DateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),

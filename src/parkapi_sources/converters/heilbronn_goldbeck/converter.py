@@ -125,15 +125,6 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
         )
         parking_site_dicts = response.json()
         for parking_site_dict in parking_site_dicts:
-            counters = parking_site_dict.get('counters', [])
-            allowed_reservations = ['UNKNOWN', 'NO_RESERVATIONS']
-            parking_site_dict['counters'] = [
-                c
-                for c in counters
-                if c.get('type', {}).get('type') == 'TOTAL'
-                and c.get('type', {}).get('reservationStatus') in allowed_reservations
-            ]
-
             try:
                 heilbronn_goldbeck_occupancies_inputs.append(
                     self.heilbronn_goldbeck_occupancies_validator.validate(parking_site_dict)
