@@ -86,7 +86,9 @@ class HeilbronnGoldbeckCounterInput:
 @validataclass
 class HeilbronnGoldbeckOccupanciesInput:
     facilityId: int = IntegerValidator(min_value=0, allow_strings=True)
-    counters: list[HeilbronnGoldbeckCounterInput] = ListValidator(DataclassValidator(HeilbronnGoldbeckCounterInput))
+    counters: list[HeilbronnGoldbeckCounterInput] = ListValidator(
+        DataclassValidator(HeilbronnGoldbeckCounterInput), min_length=1
+    )
     valuesFrom: datetime = DateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,

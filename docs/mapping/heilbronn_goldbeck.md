@@ -24,7 +24,7 @@ Static data are pulled from the `occupancies` and `facilities` API endpoints.
 | postalAddress.street2        | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
 | postalAddress.zip            | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
 | postalAddress.city           | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
-| counters                     | [Counters](#Counters)   | *           | capacity, realtime_capacity, realtime_free_capacity   | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
+| counters                     | [Counters](#Counters)   | +           | capacity, realtime_capacity, realtime_free_capacity   | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
 | tariffs                      | [Tariffs](#Tariffs)     | ?           | has_fee, fee_description                              |                                                                                                          |
 | lastUpdatedAt                | datetime                | 1           | static_data_updated_at                                |                                                                                                          |
 
