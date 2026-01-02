@@ -14,30 +14,30 @@ Static values:
 
 Static data are pulled from the `occupancies` and `facilities` API endpoints. 
 
-| Source field/path            | Type        | Cardinality | Target field              | Comment                                                                                                  |
-|------------------------------|-------------|-------------|---------------------------|----------------------------------------------------------------------------------------------------------|
-| id                           | integer     | 1           | uid                       |                                                                                                          |
-| name                         | string      | 1           | name                      |                                                                                                          |
-| position.latitude            | number      | 1           | lat                       |                                                                                                          |
-| position.longitude`          | number      | 1           | lon                       |                                                                                                          |
-| postalAddress.street1        | string      | ?           | address                   | Combined as `<street1> <street2>, <zip> <city>` when available                                         |
-| postalAddress.street2        | string      | ?           | address                   | Combined as `<street1> <street2>, <zip> <city>` when available                                         |
-| postalAddress.zip            | string      | ?           | address                   | Combined as `<street1> <street2>, <zip> <city>` when available                                         |
-| postalAddress.city           | string      | ?           | address                   | Combined as `<street1> <street2>, <zip> <city>` when available                                         |
-| counters                     | list        | ?           | [Counters](#Counters)     | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
-| tariffs                      | list        | ?           | [Tariffs](#Tariffs)       |                                                                                                          |
-| lastUpdatedAt                | datetime    | 1           | static_data_updated_at    |                                                                                                          |
+| Source field/path            | Type                    | Cardinality | Target field                                          | Comment                                                                                                  |
+|------------------------------|-------------------------|-------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| id                           | integer                 | 1           | uid                                                   |                                                                                                          |
+| name                         | string                  | 1           | name                                                  |                                                                                                          |
+| position.latitude            | number                  | 1           | lat                                                   |                                                                                                          |
+| position.longitude`          | number                  | 1           | lon                                                   |                                                                                                          |
+| postalAddress.street1        | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
+| postalAddress.street2        | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
+| postalAddress.zip            | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
+| postalAddress.city           | string                  | ?           | address                                               | Combined as `<street1> <street2>, <zip> <city>` when available                                           |
+| counters                     | [Counters](#Counters)   | *           | capacity, realtime_capacity, realtime_free_capacity   | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
+| tariffs                      | [Tariffs](#Tariffs)     | ?           | has_fee, fee_description                              |                                                                                                          |
+| lastUpdatedAt                | datetime                | 1           | static_data_updated_at                                |                                                                                                          |
 
 Realtime values:
 
 * Only facilities marked `active` in static data are emitted
 * Requires a realtime counter when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`; otherwise the site is skipped with a warning
 
-| Source field/path           | Type        | Cardinality | Target field              | Comment                                                                                                  |
-|-----------------------------|-------------|-------------|---------------------------|----------------------------------------------------------------------------------------------------------|
-| facilityId                  | integer     | 1           | uid                       |                                                                                                          |
-| counters                    | list        | ?           | [Counters](#Counters)     | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
-| valuesFrom                  | datetime    | 1           | realtime_data_updated_at  |                                                                                    |
+| Source field/path           | Type                      | Cardinality | Target field                                          | Comment                                                                                                  |
+|-----------------------------|---------------------------|-------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| facilityId                  | integer                   | 1           | uid                                                   |                                                                                                          |
+| counters                    | [Counters](#Counters)     | *           | capacity, realtime_capacity, realtime_free_capacity   | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
+| valuesFrom                  | datetime                  | 1           | realtime_data_updated_at                              |                                                                                    |
 
 
 ## Counters

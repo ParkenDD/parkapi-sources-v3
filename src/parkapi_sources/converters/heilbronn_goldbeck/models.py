@@ -156,7 +156,7 @@ class HeilbronnGoldbeckTariffInput:
     id: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
     isActive: bool | None = Noneable(BooleanValidator()), Default(None)
     tariffItems: list[HeilbronnGoldbeckTariffItemInput] = (
-        Noneable(ListValidator(DataclassValidator(HeilbronnGoldbeckTariffItemInput))),
+        ListValidator(DataclassValidator(HeilbronnGoldbeckTariffItemInput)),
         Default([]),
     )
 
