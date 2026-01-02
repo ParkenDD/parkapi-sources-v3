@@ -36,7 +36,7 @@ Realtime values:
 | Source field/path           | Type                      | Cardinality | Target field                                          | Comment                                                                                                  |
 |-----------------------------|---------------------------|-------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | facilityId                  | integer                   | 1           | uid                                                   |                                                                                                          |
-| counters                    | [Counters](#Counters)     | *           | capacity, realtime_capacity, realtime_free_capacity   | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
+| counters                    | [Counters](#Counters)     | *           | realtime_capacity, realtime_free_capacity             | when `type` is `TOTAL` and `reservationStatus` is `UNKNOWN` or `reservationStatus` is `NO_RESERVATIONS`  |
 | valuesFrom                  | datetime                  | 1           | realtime_data_updated_at                              |                                                                                    |
 
 
