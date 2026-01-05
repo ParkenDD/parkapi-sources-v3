@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.33.0
+
+Released 2026-01-05
+
+### Features
+
+* [Stadtwerke Heilbronn: GOLDBECK Parking Services](https://github.com/ParkenDD/parkapi-sources-v3/pull/315)
+* [Karlsruhe Disabled: Realtime Extension](https://github.com/ParkenDD/parkapi-sources-v3/pull/330)
+* [Parking Audience Enum update, now supporting CARGOBIKE](https://github.com/ParkenDD/parkapi-sources-v3/pull/332)
+
+
 ## 0.32.1
 
 Released 2025-12-19
