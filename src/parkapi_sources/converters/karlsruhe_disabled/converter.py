@@ -88,7 +88,9 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
             for i, sensor_uid in enumerate(karlsruhe_input.properties.sensorenliste):
                 sensors_by_uid[sensor_uid] = f'{karlsruhe_input.properties.id}_{i}'
 
-        response = self.request_get(url=self.realtime_source_url.format(auth=auth))
+        # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
+        ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
+        response = self.request_get(url=self.realtime_source_url.format(auth=auth), verify=str(ca_path))
         try:
             realtime_body: KarlsruheDisabledRealtimeInput = self.realtime_validator.validate(response.json())
         except ValidationError as e:
