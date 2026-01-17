@@ -3,13 +3,21 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from decimal import Decimal
 
 from shapely.geometry.base import BaseGeometry
 from validataclass.dataclasses import Default, DefaultUnset, validataclass
-from validataclass.helpers import UnsetValueType
-from validataclass.validators import DataclassValidator, EnumValidator, ListValidator, Noneable, StringValidator
+from validataclass.exceptions import DataclassPostValidationError, RequiredValueError
+from validataclass.helpers import UnsetValue, UnsetValueType
+from validataclass.validators import (
+    DataclassValidator,
+    DateTimeValidator,
+    EnumValidator,
+    ListValidator,
+    Noneable,
+    StringValidator,
+)
 
 from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
 from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType
@@ -61,4 +69,22 @@ class RealtimeParkingSpotInput(RealtimeBaseParkingInput):
 
 
 @validataclass
-class CombinedParkingSpotInput(StaticParkingSpotInput, RealtimeParkingSpotInput): ...
+class CombinedParkingSpotInput(StaticParkingSpotInput, RealtimeParkingSpotInput):
+    realtime_data_updated_at: datetime | UnsetValueType = (
+        DateTimeValidator(
+            local_timezone=timezone.utc,
+            target_timezone=timezone.utc,
+            discard_milliseconds=True,
+        ),
+        DefaultUnset,
+    )
+
+    def __post_init__(self):
+        if self.has_realtime_data is True and self.realtime_data_updated_at is UnsetValue:
+            raise DataclassPostValidationError(
+                field_errors={
+                    'realtime_data_updated_at': RequiredValueError(
+                        reason='Realtime data updated at is required when has_realtime_data is set to True.',
+                    ),
+                },
+            )
