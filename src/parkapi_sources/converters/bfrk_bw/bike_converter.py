@@ -23,6 +23,11 @@ class BfrkBwBikePushConverter(BfrkBasePushConverter):
         has_realtime_data=False,
     )
 
-    @staticmethod
-    def check_ignore_item(input_data: BfrkBikeInput) -> bool:
-        return input_data.stellplatzanzahl == 0
+    def check_ignore_item(self, input_data: BfrkBikeInput) -> bool:
+        if input_data.stellplatzanzahl == 0:
+            return True
+
+        if self.config_helper.get('PARK_API_BFRK_BW_BIKE_FILTER_UNCONFIRMED', True) is False:
+            return False
+
+        return input_data.koordinatenqualitaet != 'validierte-Position'

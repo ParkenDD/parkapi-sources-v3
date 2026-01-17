@@ -35,9 +35,10 @@ class BfrkBaseInput(ABC):
     osmlinks: list[str] | None = Noneable(ListValidator(EmptystringNoneable(UrlValidator()))), Default(None)
     gemeinde: str | None = EmptystringNoneable(StringValidator()), Default(None)
     ortsteil: str | None = EmptystringNoneable(StringValidator()), Default(None)
+    koordinatenqualitaet: str | None = EmptystringNoneable(StringValidator()), Default(None)
 
     @abstractmethod
-    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput | None:
         pass
 
     def get_static_parking_site_input_kwargs(self) -> dict:

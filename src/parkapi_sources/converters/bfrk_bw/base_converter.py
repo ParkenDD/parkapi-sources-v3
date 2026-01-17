@@ -26,8 +26,7 @@ class BfrkBasePushConverter(ParkingSitePullConverter, ABC):
     def source_url_config_key(self) -> str:
         pass
 
-    @staticmethod
-    def check_ignore_item(input_data: BfrkBaseInput) -> bool:
+    def check_ignore_item(self, input_data: BfrkBaseInput) -> bool:
         return False
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
