@@ -26,9 +26,14 @@ class BfrkBwCarPushConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
         has_realtime_data=False,
     )
 
-    @staticmethod
-    def check_ignore_item(input_data: BfrkCarInput) -> bool:
-        return input_data.stellplaetzegesamt == 0
+    def check_ignore_item(self, input_data: BfrkCarInput) -> bool:
+        if input_data.stellplaetzegesamt == 0:
+            return True
+
+        if self.config_helper.get('PARK_API_BFRK_BW_CAR_FILTER_UNCONFIRMED', True) is False:
+            return False
+
+        return input_data.koordinatenqualitaet != 'validierte-Position'
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
         static_parking_spot_inputs: list[StaticParkingSpotInput] = []
