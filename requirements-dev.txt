@@ -1,5 +1,5 @@
-ruff~=0.14.10
+ruff~=0.14.13
 pytest~=9.0.2
 pytest-cov~=7.0.0
 requests-mock~=1.12.1
-tox~=4.32.0
+tox~=4.34.1

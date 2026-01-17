@@ -1,6 +1,21 @@
 # Changelog
 
-# 0.33.2
+## 0.33.3
+
+Released 2026-01-17
+
+### Fixes
+
+* [add bfrk filter and add tests](https://github.com/ParkenDD/parkapi-sources-v3/issues/322)
+* [set karlsruhe disabled attribute properly](https://github.com/ParkenDD/parkapi-sources-v3/pull/338)
+* [better-realtime_data_updated_at-logic-at-combined-inputs](https://github.com/ParkenDD/parkapi-sources-v3/pull/337)
+
+### Maintenance
+
+* dependency updates
+
+
+## 0.33.2
 
 Released 2026-01-15
 
@@ -9,7 +24,7 @@ Released 2026-01-15
 * [fix karlsruhe tls](https://github.com/ParkenDD/parkapi-sources-v3/pull/336)
 
 
-# 0.33.1
+## 0.33.1
 
 Released 2026-01-12
 
