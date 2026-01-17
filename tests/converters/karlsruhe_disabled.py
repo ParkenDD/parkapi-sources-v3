@@ -65,6 +65,36 @@ class KarlsruheDisabledConverterTest:
 
         validate_static_parking_spot_inputs(static_parking_spot_inputs)
 
+        realtime_enabled_spot = next(iter(item for item in static_parking_spot_inputs if item.uid == '22_1'))
+        assert realtime_enabled_spot.has_realtime_data is True
+        realtime_disabled_spot = next(iter(item for item in static_parking_spot_inputs if item.uid == '1_1'))
+        assert realtime_disabled_spot.has_realtime_data is False
+
+    @staticmethod
+    def test_get_static_parking_spots_without_realtime_data(
+        mocked_config_helper: Mock,
+        request_helper: RequestHelper,
+        requests_mock_karlsruhe_disabled: Mocker,
+    ):
+        karlsruhe_disabled_pull_converter = KarlsruheDisabledPullConverter(
+            config_helper=mocked_config_helper,
+            request_helper=request_helper,
+        )
+
+        static_parking_spot_inputs, import_parking_spot_exceptions = (
+            karlsruhe_disabled_pull_converter.get_static_parking_spots()
+        )
+
+        assert len(static_parking_spot_inputs) == 1165
+        assert len(import_parking_spot_exceptions) == 4
+
+        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+
+        realtime_enabled_spot = next(iter(item for item in static_parking_spot_inputs if item.uid == '22_1'))
+        assert realtime_enabled_spot.has_realtime_data is False
+        realtime_disabled_spot = next(iter(item for item in static_parking_spot_inputs if item.uid == '1_1'))
+        assert realtime_disabled_spot.has_realtime_data is False
+
     @staticmethod
     def test_get_realtime_parking_spots(
         karlsruhe_disabled_pull_converter: KarlsruheDisabledPullConverter,

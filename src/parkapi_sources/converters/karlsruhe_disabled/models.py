@@ -61,7 +61,7 @@ class KarlsruheDisabledFeatureInput(GeojsonBaseFeatureInput):
     properties: KarlsruheDisabledPropertiesInput = DataclassValidator(KarlsruheDisabledPropertiesInput)
     geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
-    def to_static_parking_spot_inputs(self) -> list[StaticParkingSpotInput]:
+    def to_static_parking_spot_inputs(self, realtime_parking_spot_uids: list[str]) -> list[StaticParkingSpotInput]:
         static_parking_spot_inputs = []
 
         descriptions: list[str] = [
@@ -96,7 +96,7 @@ class KarlsruheDisabledFeatureInput(GeojsonBaseFeatureInput):
                     description=', '.join(description for description in descriptions if description),
                     lat=lat,
                     lon=lon,
-                    has_realtime_data=False,
+                    has_realtime_data=f'{self.properties.id}_{i}' in realtime_parking_spot_uids,
                     restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
                 ),
             )

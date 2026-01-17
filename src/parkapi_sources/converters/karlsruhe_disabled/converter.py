@@ -40,10 +40,19 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
 
         features_data = self._get_static_data()
 
+        realtime_parking_spot_uids: list[str] = []
+        try:
+            realtime_parking_spot_inputs, _ = self.get_realtime_parking_spots()
+            realtime_parking_spot_uids: list[str] = [item.uid for item in realtime_parking_spot_inputs]
+        except ImportSourceException:
+            ...
+
         for update_dict in features_data.features:
             try:
                 karlsruhe_input: KarlsruheDisabledFeatureInput = self.geojson_feature_validator.validate(update_dict)
-                static_parking_spot_inputs += karlsruhe_input.to_static_parking_spot_inputs()
+                static_parking_spot_inputs += karlsruhe_input.to_static_parking_spot_inputs(
+                    realtime_parking_spot_uids=realtime_parking_spot_uids,
+                )
             except ValidationError as e:
                 import_parking_spot_exceptions.append(
                     ImportParkingSpotException(
