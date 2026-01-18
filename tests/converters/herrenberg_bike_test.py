@@ -20,10 +20,7 @@ def requests_mock_herrenberg_bike(requests_mock: Mocker) -> Mocker:
     with json_path.open() as json_file:
         json_data = json_file.read()
 
-    requests_mock.get(
-        'https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg&distribution=geojson',
-        text=json_data,
-    )
+    requests_mock.get('https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg', text=json_data)
 
     return requests_mock
 
