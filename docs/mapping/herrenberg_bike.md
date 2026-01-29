@@ -9,19 +9,19 @@ Static values:
 
 The static data is provided over a GeoJSON endpoint. 
 
-| Source field/path                         | Type                                          | Cardinality | Target field             | Comment         |
-|-------------------------------------------|-----------------------------------------------|-------------|--------------------------|-----------------|
-| properties.fid                            | integer                                       | 1           | uid                      |                 |
-| properties.Standortbeschreibung           | string                                        | 1           | name                     |                 |
-| properties.Erfassungsdatum                | datetime                                      | 1           | static_data_updated_at   |                 |
-| geometry.coordinates                      | float                                         | 1           | lat                      |                 |
-| geometry.coordinates                      | float                                         | 1           | lon                      |                 |
-| properties.Typ_Anlage                     | [ParkingSiteType](#ParkingSiteType)           | 1           | type                     |                 |
-| properties.Davon_Ueberdacht               | [IsCovered](#IsCovered)                       | ?           | is_covered               |                 |
-| properties.Anzahl_E_Ladepunkte            | [RestrictionsCharging](#RestrictionsCharging) | ?           | restrictions             |                 |
-| properties.Gebuehrenpflichtig             | [HasFee](#HasFee)                             | ?           | has_fee                  |                 |
-| properties.Beleuchtet                     | [HasLightning](#HasLightning)                 | ?           | has_lighting             |                 |
-| properties.SonstigeAnmerkungen            | string                                        | ?           | description              |                 |
+| Source field/path                         | Type                                          | Cardinality | Target field             | Comment                                         |
+|-------------------------------------------|-----------------------------------------------|-------------|--------------------------|-------------------------------------------------|
+| properties.fid                            | integer                                       | 1           | uid                      |                                                 |
+| properties.Standortbeschreibung           | string                                        | 1           | name                     |                                                 |
+| properties.Erfassungsdatum                | datetime                                      | 1           | static_data_updated_at   | Converted to this format`2025-04-29T06:56:45Z`  |
+| geometry.coordinates                      | float                                         | 1           | lat                      |                                                 |
+| geometry.coordinates                      | float                                         | 1           | lon                      |                                                 |
+| properties.Typ_Anlage                     | [ParkingSiteType](#ParkingSiteType)           | 1           | type                     |                                                 |
+| properties.Davon_Ueberdacht               | [IsCovered](#IsCovered)                       | ?           | is_covered               |                                                 |
+| properties.Anzahl_E_Ladepunkte            | [RestrictionsCharging](#RestrictionsCharging) | ?           | restrictions             |                                                 |
+| properties.Gebuehrenpflichtig             | [HasFee](#HasFee)                             | ?           | has_fee                  |                                                 |
+| properties.Beleuchtet                     | [HasLightning](#HasLightning)                 | ?           | has_lighting             |                                                 |
+| properties.SonstigeAnmerkungen            | string                                        | ?           | description              |                                                 |
 
 
 ## ParkingSiteType
