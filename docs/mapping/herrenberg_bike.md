@@ -4,6 +4,7 @@ Stadt Herrenberg provides static GeoJSON bike parking data on Munigrid platform.
 
 * `purpose` is always `BIKE`
 * `has_realtime_data` is always `false`
+* `park_and_ride_type` is always `TRAIN` if `Bahnhof` is present in the `properties.Standortbeschreibung`
 
 Static values:
 
@@ -30,11 +31,11 @@ The static data is provided over a GeoJSON API endpoint.
 |-------------------------------|----------------------------------------------------------------|
 | Bügel                         | `type` set to `STANDS`                                         |
 | Reine Vorderradhalterung      | `type` set to `WALL_LOOPS`                                     |
-| Bügel + Vorderradhalterung    | `type` set to `WALL_LOOPS`                                     |
+| Bügel + Vorderradhalterung    | `type` set to `SAFE_WALL_LOOPS`                                |
 | Fahrradboxen                  | `type` set to `LOCKERS`                                        |
 | lean_and_stick                | `type` set to `STANDS`                                         |
 | Holzkonstruktion              | `type` set to `SHED`                                           |
-| Nische zum Abstellen          | `type` set to `SHED`                                           |
+| Nische zum Abstellen          | `type` set to `OTHER`                                          |
 | Stange                        | `type` set to `STANDS`                                         |
 | safe_loops                    | `type` set to `SAFE_WALL_LOOPS`                                |
 | lockers                       | `type` set to `LOCKERS`                                        |
