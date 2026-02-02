@@ -16,6 +16,7 @@ One or more `ParkingSpot`s are generated if:
 * `oeffentlichvorhanden` is not set or `== true`
 * `behindertenstellplaetze` is set and `>= 1`
 * `behindertenplaetze_lat` and `behindertenplaetze_lon` are set
+
 Multiple `ParkingSpot`s are distributed a bit from each other.
 
 
