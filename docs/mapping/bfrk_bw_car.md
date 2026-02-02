@@ -30,7 +30,7 @@ Multiple `ParkingSpot`s are distributed a bit from each other.
 | gemeinde                | string                        | ?           | address                            | address                            |                                                 |
 | ortsteil                | string                        | ?           | address += ` (`ortsteil`)`         | address += ` (`ortsteil`)`         | set only if ortsteil != gemeinde                |
 | eigentuemer             | string                        | ?           | operator_name                      | operator_name                      | set only if `!= ""`                             |
-| bedingungen             | string                        | ?           | description                        |                                    | set only if not starts with `keine`             |
+| bedingungen             | string                        | ?           | description                        | description                        | set only if not starts with `keine`             |
 | objekt_Foto             | string (url)                  | ?           | photo_url                          |                                    | set only if `!= ""`                             |
 | stellplaetzegesamt      | integer                       | ?           | capacity                           |                                    |                                                 |
 | frauenstellplaetze      | integer                       | ?           | restrictions[`WOMAN`].capacity     |                                    | set only if `>= 1`                              |
