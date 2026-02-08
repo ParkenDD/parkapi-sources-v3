@@ -41,7 +41,7 @@ class BielefeldParkingSiteInput:
     bez: str = StringValidator()
     wkt: str = StringValidator()
     typ: BielefeldType = EnumValidator(BielefeldType)
-    kapazitaet: int | None = ExcelNoneable(IntegerValidator(min_value=0)), Default(None)
+    kapazitaet: int | None = ExcelNoneable(IntegerValidator(min_value=0, allow_strings=True)), Default(None)
     hoehe: str | None = ExcelNoneable(StringValidator()), Default(None)
     einfahrtshoehe: Decimal | None = ExcelNoneable(NumericValidator()), Default(None)
     zufahrt: str | None = ExcelNoneable(StringValidator()), Default(None)
