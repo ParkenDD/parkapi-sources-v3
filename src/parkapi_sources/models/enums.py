@@ -105,6 +105,7 @@ class ParkingAudience(Enum):
     RESIDENT = 'RESIDENT'
     CARAVAN = 'CARAVAN'
     CARGOBIKE = 'CARGOBIKE'
+    MOTORBIKE = 'MOTORBIKE'
 
 
 class ParkingSiteSide(Enum):

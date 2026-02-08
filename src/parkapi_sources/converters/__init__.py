@@ -13,6 +13,7 @@ from .bb_parkhaus import BBParkhausPushConverter
 from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
+from .bonn import BonnPullConverter
 from .ellwangen import EllwangenPushConverter
 from .esslingen import EsslingenPushConverter
 from .freiburg import (

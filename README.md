@@ -15,6 +15,7 @@ We support following data sources:
 | Deutsche Bahn                                                         | ParkingSite | car & bike | pull        | `bahn_v2`                     | no       |
 | Stadt Basel                                                           | ParkingSite | car        | pull        | `basel`                       | yes      |
 | Stadt Bielefeld                                                       | ParkingSite | car        | pull        | `bielefeld`                   | no       |
+| Stadt Bonn                                                            | ParkingSite | car        | pull        | `bonn`                        | no       |
 | B+B Parkhaus GmbH & Co. KG                                            | ParkingSite | car        | push (xlsx) | `bb_parkhaus`                 | no       |
 | Stadt Bietigheim-Bissingen                                            | ParkingSite | car        | pull        | `bietigheim_bissingen`        | yes      |
 | Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze            | ParkingSite | car        | pull        | `bfrk_bw_car`                 | no       |
