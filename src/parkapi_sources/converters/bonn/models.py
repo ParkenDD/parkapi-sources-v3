@@ -8,9 +8,9 @@ from enum import Enum
 
 from shapely import GeometryType, Point
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DataclassValidator, IntegerValidator, Noneable, StringValidator
+from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
 
-from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
+from parkapi_sources.models import GeojsonBaseFeatureInput, ParkingAudience, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator, ReplacingStringValidator
@@ -22,15 +22,19 @@ class BonnArt(Enum):
     MOTORRADPARKPLATZ = 3
     WOHNMOBIL = 4
 
-    def to_parking_site_type(self) -> ParkingSiteType:
-        return ParkingSiteType.OFF_STREET_PARKING_GROUND
+    def to_audience(self) -> ParkingAudience | None:
+        return {
+            self.BUSPARKPLATZ: ParkingAudience.BUS,
+            self.WOHNMOBIL: ParkingAudience.CARAVAN,
+            self.MOTORRADPARKPLATZ: ParkingAudience.MOTORBIKE,
+        }.get(self)
 
 
 @validataclass
 class BonnPropertiesInput:
     parkplatz_id: int = IntegerValidator()
     bezeichnung: str | None = Noneable(ReplacingStringValidator(mapping={'\n': ' ', '\r': ''}))
-    art: BonnArt = IntegerValidator()
+    art: BonnArt = EnumValidator(BonnArt)
     inhalt: str = StringValidator()
 
     def __post_init__(self):
@@ -48,7 +52,7 @@ class BonnFeatureInput(GeojsonBaseFeatureInput):
             name=self.properties.bezeichnung or self.properties.inhalt,
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
-            type=self.properties.art.to_parking_site_type(),
+            type=ParkingSiteType.CAR_PARK,
             capacity=0,
             description=self.properties.inhalt,
             purpose=PurposeType.CAR,
