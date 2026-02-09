@@ -25,12 +25,12 @@ Multiple `ParkingSpot`s are distributed a bit from each other.
 | infraid                 | string                        | 1           | uid                                | uid                                |                                                 |
 | lat                     | numeric                       | 1           | lat                                |                                    |                                                 |
 | lon                     | numeric                       | 1           | lon                                |                                    |                                                 |
-| bauart                  | [BfrkBauart](#BfrkBauart)     | ?           | type, name                         | type, name                         |                                                 |
+| bauart                  | [BfrkBauart](#BfrkBauart)     | ?           | type, name                         | type, name                         | defined by 25% of all sites                     |
 | art                     | [BfrkArt](#BfrkArt)           | ?           | type, name, park_and_ride_type     | type, name, park_and_ride_type     | set only if not bauart is not set               |
 | gemeinde                | string                        | ?           | address                            | address                            |                                                 |
 | ortsteil                | string                        | ?           | address += ` (`ortsteil`)`         | address += ` (`ortsteil`)`         | set only if ortsteil != gemeinde                |
 | eigentuemer             | string                        | ?           | operator_name                      | operator_name                      | set only if `!= ""`                             |
-| bedingungen             | string                        | ?           | description                        | description                        | set only if not starts with `keine`             |
+| bedingungen             | string                        | ?           | description                        | description                        | set only if `!= "keine"|"keine Angabe"|"keine Angaben"` |
 | objekt_Foto             | string (url)                  | ?           | photo_url                          |                                    | set only if `!= ""`                             |
 | stellplaetzegesamt      | integer                       | ?           | capacity                           |                                    |                                                 |
 | frauenstellplaetze      | integer                       | ?           | restrictions[`WOMAN`].capacity     |                                    | set only if `>= 1`                              |
