@@ -52,7 +52,7 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
                 ),
             )
 
-        return static_parking_site_inputs, import_parking_site_exceptions
+        return self.apply_static_patches(static_parking_site_inputs), import_parking_site_exceptions
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
