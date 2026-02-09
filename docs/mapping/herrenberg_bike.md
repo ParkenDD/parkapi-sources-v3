@@ -31,14 +31,8 @@ The static data is provided over a GeoJSON API endpoint.
 | Bügel                         | `type` set to `STANDS`                                         |
 | Reine Vorderradhalterung      | `type` set to `WALL_LOOPS`                                     |
 | Bügel + Vorderradhalterung    | `type` set to `SAFE_WALL_LOOPS`                                |
-| Fahrradboxen                  | `type` set to `LOCKERS`                                        |
-| lean_and_stick                | `type` set to `STANDS`                                         |
-| Holzkonstruktion              | `type` set to `FLOOR`                                           |
-| Nische zum Abstellen          | `type` set to `FLOOR`                                          |
-| Stange                        | `type` set to `STANDS`                                         |
-| safe_loops                    | `type` set to `SAFE_WALL_LOOPS`                                |
-| lockers                       | `type` set to `LOCKERS`                                        |
-
+| Schließfächer/ Boxen          | `type` set to `LOCKERS`                                        |
+| andere                        | `type` set to `FLOOR`                                          |
 
 ## IsCovered
 
