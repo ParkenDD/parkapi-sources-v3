@@ -33,6 +33,7 @@ from .heilbronn_goldbeck import HeilbronnGoldbeckPullConverter
 from .herrenberg import HerrenbergPullConverter
 from .herrenberg_bike import HerrenbergBikePullConverter
 from .huefner import HuefnerPushConverter
+from .jena import JenaPullConverter
 from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
 from .karlsruhe_disabled import KarlsruheDisabledPullConverter
 from .keltern import KelternPushConverter

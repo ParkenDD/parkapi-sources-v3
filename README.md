@@ -36,6 +36,7 @@ We support following data sources:
 | Stadt Herrenberg                                                      | ParkingSite | car        | pull        | `herrenberg`                  | no       |
 | Stadt Herrenberg - Munigrid                                           | ParkingSite | bike       | pull        | `herrenberg_bike`             | no       |
 | PARK SERVICE HÜFNER GmbH + Co. KG                                     | ParkingSite | car        | push (xlsx) | `huefner`                     | no       |
+| Stadt Jena                                                            | ParkingSite | car        | pull        | `jena`                        | no       |
 | Stadt Karlsruhe: PKW-Parkplätze                                       | ParkingSite | car        | pull        | `karlsruhe`                   | yes      |
 | Stadt Karlsruhe: Fahrrad-Abstellangen                                 | ParkingSite | bike       | pull        | `karlsruhe_bike`              | no       |
 | Stadt Karlsruhe: Behindertenparkplätze                                | ParkingSpot | car        | pull        | `karlsruhe_disabled`          | no       |
