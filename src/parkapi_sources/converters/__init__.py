@@ -11,6 +11,7 @@ from .base_converter import BaseConverter
 from .basel import BaselPullConverter
 from .bb_parkhaus import BBParkhausPushConverter
 from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
+from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
 from .esslingen import EsslingenPushConverter
