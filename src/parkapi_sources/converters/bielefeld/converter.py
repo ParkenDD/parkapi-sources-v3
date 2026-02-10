@@ -29,8 +29,9 @@ class BielefeldPullConverter(ParkingSitePullConverter):
             '&NW_INFO=/parkplaetze_p_EPSG25832_CSV.csv'
         ),
         has_realtime_data=False,
-        attribution_license='CC BY 4.0',
         attribution_contributor='Stadt Bielefeld',
+        attribution_license='CC BY 4.0',
+        attribution_url='https://creativecommons.org/licenses/by/4.0/',
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

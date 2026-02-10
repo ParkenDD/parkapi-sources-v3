@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.34.0
+
+Released 2026-02-10
+
+### Features
+
+* [Bielefeld](https://github.com/ParkenDD/parkapi-sources-v3/pull/347)
+* [Jena](https://github.com/ParkenDD/parkapi-sources-v3/pull/344)
+* [Basel](https://github.com/ParkenDD/parkapi-sources-v3/pull/86)
+
+
+### Fixes
+
+* [herrenberg_bike: update to the new mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/340)
+* [heilbronn_goldbeck: add static data patching possibility](https://github.com/ParkenDD/parkapi-sources-v3/pull/345)
+
+
 ## 0.33.3
 
 Released 2026-01-17

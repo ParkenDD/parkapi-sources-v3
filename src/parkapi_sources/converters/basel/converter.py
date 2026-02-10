@@ -24,6 +24,8 @@ class BaselPullConverter(ParkingSitePullConverter):
         source_url='https://data.bs.ch/api/v2/catalog/datasets/100088/exports/json',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Basel',
+        attribution_license='CC BY 4.0',
+        attribution_url='https://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=True,
     )
 
