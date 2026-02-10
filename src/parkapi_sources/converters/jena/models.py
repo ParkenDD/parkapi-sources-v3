@@ -8,7 +8,13 @@ from enum import Enum
 
 from shapely import GeometryType, Point
 from validataclass.dataclasses import validataclass
-from validataclass.validators import AnythingValidator, DataclassValidator, IntegerValidator, StringValidator
+from validataclass.validators import (
+    AnythingValidator,
+    DataclassValidator,
+    EnumValidator,
+    IntegerValidator,
+    StringValidator,
+)
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, ParkingSiteRestrictionInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
@@ -42,7 +48,7 @@ class JenaPropertiesInput:
     id: int = IntegerValidator()
     gid: int = IntegerValidator()
     name: str = StringValidator()
-    art: str = StringValidator()
+    art: JenaArt = EnumValidator(JenaArt)
     the_geom: dict = AnythingValidator(allowed_types=[dict])
 
 
@@ -52,9 +58,8 @@ class JenaFeatureInput(GeojsonBaseFeatureInput):
     geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
     def to_static_parking_site(self) -> StaticParkingSiteInput:
-        art = JenaArt(self.properties.art)
         restrictions: list[ParkingSiteRestrictionInput] = []
-        restriction = art.to_restriction()
+        restriction = self.properties.art.to_restriction()
         if restriction is not None:
             restrictions.append(restriction)
 
@@ -63,7 +68,7 @@ class JenaFeatureInput(GeojsonBaseFeatureInput):
             name=self.properties.name,
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
-            type=art.to_parking_site_type(),
+            type=self.properties.art.to_parking_site_type(),
             capacity=0,
             restrictions=restrictions,
             purpose=PurposeType.CAR,
