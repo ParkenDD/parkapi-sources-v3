@@ -17,6 +17,7 @@ One or more `ParkingSpot`s are generated if:
 * `behindertenstellplaetze` is set and `>= 1`
 * `behindertenplaetze_lat` and `behindertenplaetze_lon` are set
 
+`ParkingSpot`s obtain a `parking_site_id` to reference their `ParkingSite`, if existing.
 Multiple `ParkingSpot`s are distributed a bit from each other.
 
 
@@ -26,7 +27,7 @@ Multiple `ParkingSpot`s are distributed a bit from each other.
 | lat                     | numeric                       | 1           | lat                                |                                    |                                                 |
 | lon                     | numeric                       | 1           | lon                                |                                    |                                                 |
 | bauart                  | [BfrkBauart](#BfrkBauart)     | ?           | type, name                         | type, name                         | defined by 25% of all sites                     |
-| art                     | [BfrkArt](#BfrkArt)           | ?           | type, name, park_and_ride_type     | type, name, park_and_ride_type     | set only if not bauart is not set               |
+| art                     | [BfrkArt](#BfrkArt)           | ?           | type, name, park_and_ride_type     | type, name, park_and_ride_type     | set type, name only if not set by bauart        |
 | gemeinde                | string                        | ?           | address                            | address                            |                                                 |
 | ortsteil                | string                        | ?           | address += ` (`ortsteil`)`         | address += ` (`ortsteil`)`         | set only if ortsteil != gemeinde                |
 | eigentuemer             | string                        | ?           | operator_name                      | operator_name                      | set only if `!= ""`                             |
