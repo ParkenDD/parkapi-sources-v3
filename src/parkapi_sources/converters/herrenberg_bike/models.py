@@ -4,13 +4,15 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import date, datetime, time, timezone
-from enum import Enum
-from typing import Optional
+from enum import Enum, StrEnum, auto
+from typing import Any
 
+from typing_extensions import override
 from validataclass.dataclasses import DefaultUnset, ValidataclassMixin, validataclass
 from validataclass.helpers import OptionalUnset
 from validataclass.validators import (
     DataclassValidator,
+    DateValidator,
     EnumValidator,
     IntegerValidator,
     Noneable,
@@ -25,153 +27,67 @@ from parkapi_sources.util import round_7d
 from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
 
 
-class HerrenbergBikeType(Enum):
-    STANDS = 'stands'
-    WALL_LOOPS = 'wall_loops'
-    RACK = 'rack'
-    SHED = 'shed'
-    BOLLARD = 'bollard'
-    WIDE_STANDS = 'wide_stands'
-    BUILDING = 'building'
-    LOCKERS = 'lockers'
-    WAVE = 'wave'
-    ANCHORS = 'anchors'
-    FLOOR = 'floor'
-    SAFE_LOOPS = 'safe_loops'
-    GROUND_SLOTS = 'ground_slots'
-    LEAN_AND_STICK = 'lean_and_stick'
-    CROSSBAR = 'crossbar'
-    OTHER = 'other'
+class HerrenbergBikeType(StrEnum):
+    BÜGEL = auto()
+    REINE_VORDERRADHALTERUNG = auto()
+    BÜGEL_PLUS_VORDERRADHALTERUNG = auto()
+    SCHLIEẞFÄCHER_BOXEN = auto()
+    ANDERE = auto()
 
-    def to_parking_site_type(self) -> ParkingSiteType | None:
-        if self in [
-            self.OTHER,
-            self.BOLLARD,
-            self.LEAN_AND_STICK,
-            self.WAVE,
-            self.ANCHORS,
-            self.CROSSBAR,
-            self.RACK,
-            self.GROUND_SLOTS,
-        ]:
-            return ParkingSiteType.OTHER
-        return {
-            self.SAFE_LOOPS: ParkingSiteType.SAFE_WALL_LOOPS,
-            self.WIDE_STANDS: ParkingSiteType.STANDS,
-            self.STANDS: ParkingSiteType.STANDS,
-            self.SHED: ParkingSiteType.SHED,
-            self.BUILDING: ParkingSiteType.BUILDING,
-            self.LOCKERS: ParkingSiteType.LOCKERS,
-            self.FLOOR: ParkingSiteType.FLOOR,
-            self.WALL_LOOPS: ParkingSiteType.WALL_LOOPS,
-        }.get(self)
-
-
-class HerrenbergBikeAccessType(Enum):
-    YES = 'yes'
-    PRIVATE = 'private'
-    CUSTOMERS = 'customers'
-    MEMBERS = 'members'
-
-
-class HerrenbergBikeSupervisionType(Enum):
-    YES = 'ja'
-    NO = 'nein'
-    VIDEO = 'video'
-    BEWACHT = 'bewacht'
-    UNKNOWN = 'unbekannt'
-
-    def to_supervision_type(self) -> SupervisionType | None:
-        return {
-            self.YES: SupervisionType.YES,
-            self.NO: SupervisionType.NO,
-            self.VIDEO: SupervisionType.VIDEO,
-            self.BEWACHT: SupervisionType.ATTENDED,
-        }.get(self)
-
-
-@validataclass
-class HerrenbergBikeAddressInput:
-    street: str | None = Noneable(StringValidator(max_length=512))
-    houseNo: str | None = Noneable(StringValidator(max_length=512))
-    zipCode: str | None = Noneable(StringValidator(max_length=512))
-    location: str | None = Noneable(StringValidator(max_length=512))
+    def to_parking_site_type(self) -> ParkingSiteType:
+        match self:
+            case self.SCHLIEẞFÄCHER_BOXEN:
+                return ParkingSiteType.LOCKBOX
+            case self.BÜGEL:
+                return ParkingSiteType.STANDS
+            case self.REINE_VORDERRADHALTERUNG:
+                return ParkingSiteType.WALL_LOOPS
+            case self.BÜGEL_PLUS_VORDERRADHALTERUNG:
+                return ParkingSiteType.SAFE_WALL_LOOPS
+            case self.ANDERE:
+                return ParkingSiteType.FLOOR
 
 
 @validataclass
 class HerrenbergBikePropertiesInput(ValidataclassMixin):
-    original_uid: str = StringValidator(min_length=1, max_length=256)
-    name: str = StringValidator(min_length=0, max_length=256)
-    type: OptionalUnset[HerrenbergBikeType] = NoneToUnsetValue(EnumValidator(HerrenbergBikeType)), DefaultUnset
-    public_url: OptionalUnset[str] = NoneToUnsetValue(UrlValidator(max_length=4096)), DefaultUnset
-    address: OptionalUnset[HerrenbergBikeAddressInput] = (
-        NoneToUnsetValue(DataclassValidator(HerrenbergBikeAddressInput)),
-        DefaultUnset,
-    )
-    description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
-    operator_name: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
-    capacity: int = IntegerValidator(min_value=0)
-    capacity_charging: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    # capacity_cargobike is unsupported yet: https://github.com/ParkenDD/parkapi-sources-v3/issues/174
-    # capacity_cargobike: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    max_height: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    max_width: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    supervision_type: OptionalUnset[HerrenbergBikeSupervisionType] = (
-        NoneToUnsetValue(EnumValidator(HerrenbergBikeSupervisionType)),
-        DefaultUnset,
-    )
-    # TODO: Not sure what to do with that, we we don't get actual realtime updates
-    has_realtime_data: OptionalUnset[bool] = (
-        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
-        DefaultUnset,
-    )
-    # access is unsupported yet
-    # access: OptionalUnset[HerrenbergBikeAccessType] = (
-    #    NoneToUnsetValue(EnumValidator(HerrenbergBikeAccessType)),
-    #    DefaultUnset,
-    # )
-    date_surveyed: OptionalUnset[date] = NoneToUnsetValue(ParsedDateValidator(date_format='%Y-%m-%d')), DefaultUnset
-    has_lighting: OptionalUnset[bool] = (
-        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
-        DefaultUnset,
-    )
-    has_fee: OptionalUnset[bool] = (
-        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
-        DefaultUnset,
-    )
-    is_covered: OptionalUnset[bool] = (
-        NoneToUnsetValue(MappedBooleanValidator(mapping={'true': True, 'false': False})),
-        DefaultUnset,
-    )
-    related_location: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
-    opening_hours: OptionalUnset[str] = NoneToUnsetValue(StringValidator(min_length=0, max_length=256)), DefaultUnset
-    max_stay: OptionalUnset[int] = NoneToUnsetValue(IntegerValidator(min_value=0)), DefaultUnset
-    fee_description: OptionalUnset[str] = NoneToUnsetValue(StringValidator(max_length=512)), DefaultUnset
+    fid: int = IntegerValidator(min_value=1)  # to uid
+    Standortbeschreibung: str = StringValidator(multiline=True)  # to name
+    Erfassungsdatum: date = DateValidator()  # static_data_updated_at, no conversion
+    Typ_Anlage: HerrenbergBikeType = EnumValidator(HerrenbergBikeType)  # mapped to type
+    Davon_Ueberdacht: int = IntegerValidator()  # >=1 True else False
+    Anzahl_E_Ladepunkte: int = IntegerValidator()  # restrictions (type: CHARGING capacity: str to int)
+    Gebuehrenpflichtig: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
+    SonstigeAnmrkungen: str = StringValidator(multiline=True)  # optional, should be unset if ""
+    OSM_ID: str = StringValidator()  # -> external_identifiers (type:OSM value: ## )
 
-    def to_dict(self, **kwargs) -> dict:
-        ignore_keys = ['type', 'original_uid', 'supervision_type', 'date_surveyed']
-        result = {key: value for key, value in super().to_dict(**kwargs).items() if key not in ignore_keys}
+    @override
+    def to_dict(self, *, keep_unset_values: bool = False) -> dict[str, Any]:
+        result: dict[str, Any] = {}
 
-        result['uid'] = self.original_uid
-        result['purpose'] = PurposeType.BIKE
-        result['type'] = self.type.to_parking_site_type()
-        if result['name'] == '':
-            result['name'] = 'Fahrrad-Abstellanlagen'
-        if self.date_surveyed:
-            result['static_data_updated_at'] = datetime.combine(self.date_surveyed, time(), tzinfo=timezone.utc)
+        result['uid'] = self.fid
+        result['name'] = self.StandortBeschreibung
+        result['static_data_updated_at'] = self.Erfassungdatum
+        result['type'] = HerrenbergBikeType(self.Typ_Anlage).to_parking_site_type()
+        result['is_covered'] = self.Davon_Ueberdacht > 0
+        result['restriction']
+        result['has_fee']
+        result['has_lighting']
+        if description := self.SonstigeAnmerkungen:
+            result['description'] = descripion
         else:
-            result['static_data_updated_at'] = datetime.now(timezone.utc)
-        if self.supervision_type:
-            result['supervision_type'] = self.supervision_type.to_supervision_type()
+            result['description'] = None
+
+        result['external_identifier'] = {'type': 'OSM', 'value': self.OSM_ID}
 
         return result
 
 
 @validataclass
 class HerrenbergBikeFeatureInput(GeojsonBaseFeatureInput):
-    properties: HerrenbergBikePropertiesInput = DataclassValidator(HerrenbergBikePropertiesInput)
+    properties: DataclassValidator[HerrenbergBikePropertiesInput] = DataclassValidator(HerrenbergBikePropertiesInput)
 
-    def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
+    @override
+    def to_static_parking_site_input(self, **kwargs: Any) -> StaticParkingSiteInput:
         return StaticParkingSiteInput(
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
