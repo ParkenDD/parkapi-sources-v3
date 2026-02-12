@@ -3,28 +3,24 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import date, datetime, time, timezone
-from enum import Enum, StrEnum, auto
+from datetime import date
+from enum import StrEnum, auto
 from typing import Any
 
 from typing_extensions import override
-from validataclass.dataclasses import DefaultUnset, ValidataclassMixin, validataclass
-from validataclass.helpers import OptionalUnset
+from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
     DataclassValidator,
     DateValidator,
     EnumValidator,
     IntegerValidator,
-    Noneable,
-    NoneToUnsetValue,
     StringValidator,
-    UrlValidator,
 )
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType, SupervisionType
+from parkapi_sources.models.enums import ParkingSiteType
 from parkapi_sources.util import round_7d
-from parkapi_sources.validators import MappedBooleanValidator, ParsedDateValidator
+from parkapi_sources.validators import MappedBooleanValidator
 
 
 class HerrenbergBikeType(StrEnum):
@@ -57,7 +53,8 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     Davon_Ueberdacht: int = IntegerValidator()  # >=1 True else False
     Anzahl_E_Ladepunkte: int = IntegerValidator()  # restrictions (type: CHARGING capacity: str to int)
     Gebuehrenpflichtig: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
-    SonstigeAnmrkungen: str = StringValidator(multiline=True)  # optional, should be unset if ""
+    Beleuchtet: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
+    SonstigeAnmrkungen: str = StringValidator(multiline=True), Default('')  # optional, should be unset if ""
     OSM_ID: str = StringValidator()  # -> external_identifiers (type:OSM value: ## )
 
     @override
@@ -69,13 +66,10 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
         result['static_data_updated_at'] = self.Erfassungdatum
         result['type'] = HerrenbergBikeType(self.Typ_Anlage).to_parking_site_type()
         result['is_covered'] = self.Davon_Ueberdacht > 0
-        result['restriction']
-        result['has_fee']
-        result['has_lighting']
-        if description := self.SonstigeAnmerkungen:
-            result['description'] = descripion
-        else:
-            result['description'] = None
+        result['restriction'] = {'type': 'CHARGING', 'capacity': self.Anzahl_E_Ladepunkte}
+        result['has_fee'] = self.Gebuehrenpflichtig
+        result['has_lighting'] = self.Beleuchtet
+        result['description'] = self.SonstigeAnmrkungen
 
         result['external_identifier'] = {'type': 'OSM', 'value': self.OSM_ID}
 
