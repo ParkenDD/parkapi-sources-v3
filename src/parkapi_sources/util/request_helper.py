@@ -7,7 +7,7 @@ import os
 import ssl
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any, TypedDict, Unpack
 
 from requests import Response, Session
 from requests.adapters import HTTPAdapter
@@ -44,26 +44,46 @@ class CustomHTTPAdapter(HTTPAdapter):
         return super().proxy_manager_for(*args, **kwargs)
 
 
+class RequestKwargs(TypedDict):
+    url: str
+    data: Any | None
+    headers: dict[str, str] | None
+    cookies: Any | None
+    files: Any | None
+    auth: Any | None
+    timeout: int | None
+    allow_redirects: bool
+    proxies: Any | None
+    hooks: Any | None
+    stream: Any | None
+    verify: Any | None
+    cert: Any | None
+    json: Any | None
+    params: Any | None
+
+
 class RequestHelper:
+    config_helper: ConfigHelper
+
     def __init__(self, config_helper: ConfigHelper):
         self.config_helper = config_helper
 
-    def get(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
+    def get(self, *, source_info: 'SourceInfo', **kwargs: Unpack[RequestKwargs]) -> Response:
         return self._request(source_info=source_info, method='get', **kwargs)
 
-    def post(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
+    def post(self, *, source_info: 'SourceInfo', **kwargs: Unpack[RequestKwargs]) -> Response:
         return self._request(source_info=source_info, method='post', **kwargs)
 
-    def put(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
+    def put(self, *, source_info: 'SourceInfo', **kwargs: Unpack[RequestKwargs]) -> Response:
         return self._request(source_info=source_info, method='put', **kwargs)
 
-    def patch(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
+    def patch(self, *, source_info: 'SourceInfo', **kwargs: Unpack[RequestKwargs]) -> Response:
         return self._request(source_info=source_info, method='patch', **kwargs)
 
-    def delete(self, *, source_info: 'SourceInfo', **kwargs) -> Response:
+    def delete(self, *, source_info: 'SourceInfo', **kwargs: Unpack[RequestKwargs]) -> Response:
         return self._request(source_info=source_info, method='delete', **kwargs)
 
-    def _request(self, *, source_info: 'SourceInfo', method: str, **kwargs) -> Response:
+    def _request(self, *, source_info: 'SourceInfo', method: str, **kwargs: Unpack[RequestKwargs]) -> Response:
         with Session() as session:
             # Can be removed after https://github.com/psf/requests/issues/6726#issuecomment-2660565040 is resolved
             session.mount('https://', CustomHTTPAdapter())
@@ -74,7 +94,7 @@ class RequestHelper:
 
             return response
 
-    def _handle_request_response(self, source_info: 'SourceInfo', response: Response):
+    def _handle_request_response(self, source_info: 'SourceInfo', response: Response) -> None:
         if source_info.uid not in self.config_helper.get('DEBUG_SOURCES', []):
             return
 
