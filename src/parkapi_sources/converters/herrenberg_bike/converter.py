@@ -4,6 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from typing import override
+
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -75,6 +76,7 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
 
         return False
 
+    @override
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         feature_inputs, import_parking_site_exceptions = self._get_feature_inputs()
 
@@ -84,5 +86,6 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
 
         return static_parking_site_inputs, import_parking_site_exceptions
 
+    @override
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         return [], []
