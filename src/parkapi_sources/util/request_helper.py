@@ -7,7 +7,7 @@ import os
 import ssl
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, TypedDict, Unpack
+from typing import TYPE_CHECKING, Any, NotRequired, TypedDict, Unpack
 
 from requests import Response, Session
 from requests.adapters import HTTPAdapter
@@ -45,21 +45,21 @@ class CustomHTTPAdapter(HTTPAdapter):
 
 
 class RequestKwargs(TypedDict):
-    url: str
-    data: Any | None
-    headers: dict[str, str] | None
-    cookies: Any | None
-    files: Any | None
-    auth: Any | None
-    timeout: int | None
-    allow_redirects: bool
-    proxies: Any | None
-    hooks: Any | None
-    stream: Any | None
-    verify: Any | None
-    cert: Any | None
-    json: Any | None
-    params: Any | None
+    url: str | None
+    data: NotRequired[Any | None]
+    headers: NotRequired[dict[str, str] | None]
+    cookies: NotRequired[Any | None]
+    files: NotRequired[Any | None]
+    auth: NotRequired[Any | None]
+    timeout: NotRequired[int | None]
+    allow_redirects: NotRequired[bool]
+    proxies: NotRequired[Any | None]
+    hooks: NotRequired[Any | None]
+    stream: NotRequired[Any | None]
+    verify: NotRequired[Any | None]
+    cert: NotRequired[Any | None]
+    json: NotRequired[Any | None]
+    params: NotRequired[Any | None]
 
 
 class RequestHelper:
