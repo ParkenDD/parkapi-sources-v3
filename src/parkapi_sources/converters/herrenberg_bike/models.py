@@ -43,7 +43,7 @@ class HerrenbergBikeType(Enum):
     CROSSBAR = 'crossbar'
     OTHER = 'other'
 
-    def to_parking_site_type(self) -> ParkingSiteType:
+    def to_parking_site_type(self) -> ParkingSiteType | None:
         if self in [
             self.OTHER,
             self.BOLLARD,
@@ -81,7 +81,7 @@ class HerrenbergBikeSupervisionType(Enum):
     BEWACHT = 'bewacht'
     UNKNOWN = 'unbekannt'
 
-    def to_supervision_type(self) -> SupervisionType:
+    def to_supervision_type(self) -> SupervisionType | None:
         return {
             self.YES: SupervisionType.YES,
             self.NO: SupervisionType.NO,
@@ -92,10 +92,10 @@ class HerrenbergBikeSupervisionType(Enum):
 
 @validataclass
 class HerrenbergBikeAddressInput:
-    street: Optional[str] = Noneable(StringValidator(max_length=512))
-    houseNo: Optional[str] = Noneable(StringValidator(max_length=512))
-    zipCode: Optional[str] = Noneable(StringValidator(max_length=512))
-    location: Optional[str] = Noneable(StringValidator(max_length=512))
+    street: str | None = Noneable(StringValidator(max_length=512))
+    houseNo: str | None = Noneable(StringValidator(max_length=512))
+    zipCode: str | None = Noneable(StringValidator(max_length=512))
+    location: str | None = Noneable(StringValidator(max_length=512))
 
 
 @validataclass
