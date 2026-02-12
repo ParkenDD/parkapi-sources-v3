@@ -3,6 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from typing import override
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -17,17 +18,20 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
     herrenberg_feature_validator = DataclassValidator(HerrenbergBikeFeatureInput)
 
-    source_info = SourceInfo(
-        uid='herrenberg_bike',
-        name='Stadt Herrenberg - Munigrid: Fahrrad-Abstellanlagen',
-        public_url='https://www.munigrid.de/hbg/dataset/radabstellanlagen',
-        source_url='https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg&distribution=geojson',
-        timezone='Europe/Berlin',
-        attribution_contributor='Stadt Herrenberg - Munigrid',
-        attribution_license='CC 0 1.0',
-        attribution_url='https://creativecommons.org/publicdomain/zero/1.0/',
-        has_realtime_data=False,
-    )
+    @property
+    @override
+    def source_info(self) -> SourceInfo:
+        return SourceInfo(
+            uid='herrenberg_bike',
+            name='Stadt Herrenberg - Munigrid: Fahrrad-Abstellanlagen',
+            public_url='https://www.munigrid.de/hbg/dataset/radabstellanlagen',
+            source_url='https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg&distribution=geojson',
+            timezone='Europe/Berlin',
+            attribution_contributor='Stadt Herrenberg - Munigrid',
+            attribution_license='CC 0 1.0',
+            attribution_url='https://creativecommons.org/publicdomain/zero/1.0/',
+            has_realtime_data=False,
+        )
 
     def _get_feature_inputs(self) -> tuple[list[HerrenbergBikeFeatureInput], list[ImportParkingSiteException]]:
         feature_inputs: list[HerrenbergBikeFeatureInput] = []
@@ -38,11 +42,11 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
 
         try:
             geojson_input = self.geojson_validator.validate(response_data)
-        except ValidationError as e:
+        except ValidationError as error:
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
-                message=f'Invalid Input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}',
-            ) from e
+                message=f'Invalid Input at source {self.source_info.uid}: {error.to_dict()}, data: {response_data}',
+            ) from error
 
         for feature_dict in geojson_input.features:
             if self._should_ignore_dataset(feature_dict):
@@ -50,13 +54,13 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
 
             try:
                 feature_input = self.herrenberg_feature_validator.validate(feature_dict)
-            except ValidationError as e:
+            except ValidationError as error:
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
                         parking_site_uid=feature_dict.get('properties', {}).get('id'),
                         message=f'Invalid data at uid {feature_dict.get("properties", {}).get("id")}: '
-                        f'{e.to_dict()}, data: {feature_dict}',
+                        f'{error.to_dict()}, data: {feature_dict}',
                     ),
                 )
                 continue
