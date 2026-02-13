@@ -3,11 +3,11 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from datetime import date
-from enum import StrEnum, auto
+from datetime import date, datetime, timezone
+from enum import StrEnum
 from typing import Any
 
-from typing_extensions import override
+from typing_extensions import NotRequired, TypedDict, override
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
     DataclassValidator,
@@ -18,17 +18,20 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ExternalIdentifierType, ParkingAudience, ParkingSiteType
+from parkapi_sources.models.parking_site_inputs import ParkingSiteRestrictionInput
+from parkapi_sources.models.shared_inputs import ExternalIdentifierInput
 from parkapi_sources.util import round_7d
+from parkapi_sources.util.dict import AnyDict
 from parkapi_sources.validators import MappedBooleanValidator
 
 
 class HerrenbergBikeType(StrEnum):
-    BÜGEL = auto()
-    REINE_VORDERRADHALTERUNG = auto()
-    BÜGEL_PLUS_VORDERRADHALTERUNG = auto()
-    SCHLIEẞFÄCHER_BOXEN = auto()
-    ANDERE = auto()
+    BÜGEL = 'Bügel'
+    REINE_VORDERRADHALTERUNG = 'Reine Vorderradhalterung'
+    BÜGEL_PLUS_VORDERRADHALTERUNG = 'Bügel + Vorderradhalterung'
+    SCHLIEẞFÄCHER_BOXEN = 'Schließfächer/ Boxen'
+    ANDERE = 'andere'
 
     def to_parking_site_type(self) -> ParkingSiteType:
         match self:
@@ -44,36 +47,75 @@ class HerrenbergBikeType(StrEnum):
                 return ParkingSiteType.FLOOR
 
 
+class HerrenbergProperties(TypedDict):
+    uid: str
+    name: str
+    static_data_updated_at: datetime
+    type: ParkingSiteType
+    capacity: int
+    description: str | None
+    is_covered: NotRequired[bool]
+    has_fee: NotRequired[int]
+    has_lighting: NotRequired[int]
+    external_identifiers: NotRequired[list[ExternalIdentifierInput]]
+    restrictions: NotRequired[list[ParkingSiteRestrictionInput]]
+
+
 @validataclass
 class HerrenbergBikePropertiesInput(ValidataclassMixin):
-    fid: int = IntegerValidator(min_value=1)  # to uid
-    Standortbeschreibung: str = StringValidator(multiline=True)  # to name
-    Erfassungsdatum: date = DateValidator()  # static_data_updated_at, no conversion
-    Typ_Anlage: HerrenbergBikeType = EnumValidator(HerrenbergBikeType)  # mapped to type
-    Davon_Ueberdacht: int = IntegerValidator()  # >=1 True else False
-    Anzahl_E_Ladepunkte: int = IntegerValidator()  # restrictions (type: CHARGING capacity: str to int)
-    Gebuehrenpflichtig: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
-    Beleuchtet: bool = MappedBooleanValidator(mapping={'ja': True, 'nein': False})
-    SonstigeAnmrkungen: str = StringValidator(multiline=True), Default('')  # optional, should be unset if ""
-    OSM_ID: str = StringValidator()  # -> external_identifiers (type:OSM value: ## )
+    fid: int = IntegerValidator(min_value=1)
+    Standortbeschreibung: str = StringValidator(multiline=True)
+    Erfassungsdatum: date = DateValidator()
+    Typ_Anlage: HerrenbergBikeType = EnumValidator(HerrenbergBikeType)
+    Anzahl_Abstellmoeglichkeiten: int = IntegerValidator()
+    Davon_Ueberdacht: int | None = IntegerValidator(), Default(None)
+    Anzahl_E_Ladepunkte: int | None = IntegerValidator(allow_strings=True), Default(None)
+    Gebuehrenpflichtig: bool | None = MappedBooleanValidator(mapping={'ja': True, 'nein': False}), Default(None)
+    Beleuchtet: bool | None = MappedBooleanValidator(mapping={'ja': True, 'nein': False, '': False}), Default(None)
+    SonstigeAnmrkungen: str = StringValidator(multiline=True), Default(None)
+    OSM_ID: str | None = StringValidator(), Default(None)
 
     @override
-    def to_dict(self, *, keep_unset_values: bool = False) -> dict[str, Any]:
-        result: dict[str, Any] = {}
+    def to_dict(self, *, keep_unset_values: bool = False) -> AnyDict:
+        result: HerrenbergProperties = {
+            'uid': str(self.fid),
+            'name': self.remove_new_lines(self.Standortbeschreibung),
+            'static_data_updated_at': datetime.combine(self.Erfassungsdatum, datetime.min.time(), timezone.utc),
+            'type': HerrenbergBikeType(self.Typ_Anlage).to_parking_site_type(),
+            'description': self.SonstigeAnmrkungen,
+            'capacity': self.Anzahl_Abstellmoeglichkeiten,
+        }
 
-        result['uid'] = self.fid
-        result['name'] = self.StandortBeschreibung
-        result['static_data_updated_at'] = self.Erfassungdatum
-        result['type'] = HerrenbergBikeType(self.Typ_Anlage).to_parking_site_type()
-        result['is_covered'] = self.Davon_Ueberdacht > 0
-        result['restriction'] = {'type': 'CHARGING', 'capacity': self.Anzahl_E_Ladepunkte}
-        result['has_fee'] = self.Gebuehrenpflichtig
-        result['has_lighting'] = self.Beleuchtet
-        result['description'] = self.SonstigeAnmrkungen
+        if self.Davon_Ueberdacht:
+            result['is_covered'] = self.Davon_Ueberdacht > 0
 
-        result['external_identifier'] = {'type': 'OSM', 'value': self.OSM_ID}
+        if self.Gebuehrenpflichtig:
+            result['has_fee'] = self.Gebuehrenpflichtig
 
-        return result
+        if self.Beleuchtet:
+            result['has_lighting'] = self.Beleuchtet
+
+        if self.OSM_ID:
+            result['external_identifiers'] = [
+                ExternalIdentifierInput(type=ExternalIdentifierType.OSM, value=self.OSM_ID)
+            ]
+
+        result['restrictions'] = self.get_restrictions(self.Anzahl_E_Ladepunkte)
+
+        return dict(result)
+
+    @staticmethod
+    def get_restrictions(capacity: int | None) -> list[ParkingSiteRestrictionInput]:
+        restriction = ParkingSiteRestrictionInput()
+
+        if capacity:
+            restriction = ParkingSiteRestrictionInput(capacity=capacity, type=ParkingAudience.CHARGING)
+
+        return [restriction]
+
+    @staticmethod
+    def remove_new_lines(input: str) -> str:
+        return input.replace('\n', '; ')
 
 
 @validataclass
@@ -86,5 +128,5 @@ class HerrenbergBikeFeatureInput(GeojsonBaseFeatureInput):
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
             has_realtime_data=False,
-            **self.properties.to_dict(**kwargs),
+            **self.properties.to_dict(),
         )

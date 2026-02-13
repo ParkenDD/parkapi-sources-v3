@@ -50,9 +50,6 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
             ) from error
 
         for feature_dict in geojson_input.features:
-            if self._should_ignore_dataset(feature_dict):
-                continue
-
             try:
                 feature_input = self.herrenberg_feature_validator.validate(feature_dict)
             except ValidationError as error:
@@ -69,12 +66,6 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
             feature_inputs.append(feature_input)
 
         return feature_inputs, import_parking_site_exceptions
-
-    def _should_ignore_dataset(self, feature_dict: dict) -> bool:
-        if self.config_helper.get('PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES'):
-            return feature_dict.get('properties', {}).get('capacity') is None
-
-        return False
 
     @override
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
