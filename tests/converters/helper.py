@@ -20,6 +20,7 @@ from parkapi_sources.models import (
     StaticParkingSpotInput,
 )
 from parkapi_sources.util import DefaultJSONEncoder
+from parkapi_sources.util.dict import AnyDict
 
 if TYPE_CHECKING:
     from requests_mock.request import Request
@@ -46,7 +47,7 @@ def static_geojson_callback(request: 'Request', context: 'Context'):
     return json.loads(geojson_data)
 
 
-def filter_none(data: dict) -> dict:
+def filter_none(data: AnyDict) -> AnyDict:
     return {key: value for key, value in data.items() if value is not None}
 
 
