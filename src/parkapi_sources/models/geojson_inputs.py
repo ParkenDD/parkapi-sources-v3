@@ -81,7 +81,7 @@ class GeojsonBaseFeatureInput:
     properties: GeojsonBaseFeaturePropertiesInput = DataclassValidator(GeojsonBaseFeaturePropertiesInput)
     geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
-    def to_static_parking_site_input(self, **kwargs) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self, **kwargs: Any) -> StaticParkingSiteInput:
         # Maintain child objects by not using to_dict()
         input_data: dict[str, Any] = {key: getattr(self.properties, key) for key in self.properties.to_dict().keys()}
         input_data.update(kwargs)
@@ -92,7 +92,7 @@ class GeojsonBaseFeatureInput:
             **input_data,
         )
 
-    def to_static_parking_spot_input(self, **kwargs) -> StaticParkingSpotInput:
+    def to_static_parking_spot_input(self, **kwargs: Any) -> StaticParkingSpotInput:
         # Maintain child objects by not using to_dict()
         input_data: dict[str, Any] = {key: getattr(self.properties, key) for key in self.properties.to_dict().keys()}
         input_data.update(kwargs)
