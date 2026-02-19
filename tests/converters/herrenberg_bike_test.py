@@ -72,8 +72,8 @@ class HerrenbergBikePullConverterTest:
             herrenberg_bike_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 184
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_site_inputs) == 218
+        assert len(import_parking_site_exceptions) == 4
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -86,8 +86,8 @@ class HerrenbergBikePullConverterTest:
             herrenberg_bike_ignore_missing_capacity_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 184
-        assert len(import_parking_site_exceptions) == 0
+        assert len(static_parking_site_inputs) == 218
+        assert len(import_parking_site_exceptions) == 4
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

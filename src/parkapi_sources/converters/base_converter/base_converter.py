@@ -4,6 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from abc import ABC, abstractmethod
+from typing import Unpack
 
 from requests import Response
 from validataclass.validators import DataclassValidator
@@ -16,6 +17,7 @@ from parkapi_sources.models import (
     StaticParkingSpotInput,
 )
 from parkapi_sources.util import ConfigHelper, RequestHelper
+from parkapi_sources.util.request_helper import RequestKwargs
 
 
 class BaseConverter(ABC):
@@ -36,19 +38,19 @@ class BaseConverter(ABC):
     def source_info(self) -> SourceInfo:
         pass
 
-    def request_get(self, **kwargs) -> Response:
+    def request_get(self, **kwargs: Unpack[RequestKwargs]) -> Response:
         return self.request_helper.get(source_info=self.source_info, **kwargs)
 
-    def request_post(self, **kwargs) -> Response:
+    def request_post(self, **kwargs: Unpack[RequestKwargs]) -> Response:
         return self.request_helper.post(source_info=self.source_info, **kwargs)
 
-    def request_put(self, **kwargs) -> Response:
+    def request_put(self, **kwargs: Unpack[RequestKwargs]) -> Response:
         return self.request_helper.put(source_info=self.source_info, **kwargs)
 
-    def request_patch(self, **kwargs) -> Response:
+    def request_patch(self, **kwargs: Unpack[RequestKwargs]) -> Response:
         return self.request_helper.patch(source_info=self.source_info, **kwargs)
 
-    def request_delete(self, **kwargs) -> Response:
+    def request_delete(self, **kwargs: Unpack[RequestKwargs]) -> Response:
         return self.request_helper.delete(source_info=self.source_info, **kwargs)
 
 
