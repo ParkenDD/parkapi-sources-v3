@@ -24,6 +24,7 @@ from parkapi_sources.models.shared_inputs import ExternalIdentifierInput
 from parkapi_sources.util import round_7d
 from parkapi_sources.util.dict import AnyDict
 from parkapi_sources.validators import MappedBooleanValidator
+from parkapi_sources.validators.string_validators import ReplacingStringValidator
 
 
 class HerrenbergBikeType(StrEnum):
@@ -64,7 +65,7 @@ class HerrenbergProperties(TypedDict):
 @validataclass
 class HerrenbergBikePropertiesInput(ValidataclassMixin):
     fid: int = IntegerValidator(min_value=1)
-    Standortbeschreibung: str = StringValidator(multiline=True)
+    Standortbeschreibung: str = ReplacingStringValidator(mapping={'\n': ' ', '\r\n': ' ', '\r': ' '}), Default(None)
     Erfassungsdatum: date = DateValidator()
     Typ_Anlage: HerrenbergBikeType = EnumValidator(HerrenbergBikeType)
     Anzahl_Abstellmoeglichkeiten: int = IntegerValidator()
@@ -72,14 +73,14 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
     Anzahl_E_Ladepunkte: int | None = IntegerValidator(allow_strings=True), Default(None)
     Gebuehrenpflichtig: bool | None = MappedBooleanValidator(mapping={'ja': True, 'nein': False}), Default(None)
     Beleuchtet: bool | None = MappedBooleanValidator(mapping={'ja': True, 'nein': False, '': False}), Default(None)
-    SonstigeAnmrkungen: str = StringValidator(multiline=True), Default(None)
+    SonstigeAnmrkungen: str = ReplacingStringValidator(mapping={'\n': ' ', '\r\n': ' ', '\r': ' '}), Default(None)
     OSM_ID: str | None = StringValidator(), Default(None)
 
     @override
     def to_dict(self, *, keep_unset_values: bool = False) -> AnyDict:
         result: HerrenbergProperties = {
             'uid': str(self.fid),
-            'name': self.remove_new_lines(self.Standortbeschreibung),
+            'name': self.Standortbeschreibung,
             'static_data_updated_at': datetime.combine(self.Erfassungsdatum, datetime.min.time(), timezone.utc),
             'type': HerrenbergBikeType(self.Typ_Anlage).to_parking_site_type(),
             'description': self.SonstigeAnmrkungen,
