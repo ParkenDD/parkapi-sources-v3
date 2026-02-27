@@ -16,7 +16,7 @@ A `ParkingSite` is generated if:
 | infraid              | string                            | 1           | uid                                |                                            |
 | lat                  | numeric                           | 1           | lat                                |                                            |
 | lon                  | numeric                           | 1           | lon                                |                                            |
-| anlagentyp           | [BfrkAnlagentyp](#BfrkAnlagentyp) | ?           | type, name                         |                                            |
+| anlagentyp           | [BfrkAnlagentyp](#BfrkAnlagentyp) | ?           | type, name, park_and_ride_type     |                                            |
 | gemeinde             | string                            | ?           | address                            |                                            |
 | ortsteil             | string                            | ?           | address += ` (`ortsteil`)`         | set only if ortsteil != gemeinde           |
 | notiz                | string                            | ?           | description                        | set only if `!= "keine"`                   |
@@ -30,14 +30,14 @@ A `ParkingSite` is generated if:
 | osmlinks             | [string (url)]                    | ?           | external_identifiers[`OSM`].value  | one entry for each link                    |
 
 ### BfrkAnlagentyp
-| Key                     | Mapping: type | Mapping: name       |
-|-------------------------|---------------|---------------------|
-| Anlehnbuegel            | STANDS        | `Anlehnbügel`       |
-| Vorderradhalter         | WALL_LOOPS    | `Vorderradhalter`   |
-| Fahrradboxen            | LOCKERS       | `Fahrradboxen`      |
-| Fahrradsammelanlage     | SHED          | `Sammelanlage`      |
-| doppelstoeckig          | TWO_TIER      | `Zweistock-Anlage`  |
-| Fahrradparkhaus         | BUILDING      | `Fahrradparkhaus`   |
-| automatischesParksystem | BUILDING      | `Fahrradparkhaus`   |
-| Sonstiges               | FLOOR         | `Fahrradstellplatz` |
+| Key                     | Mapping: type | Mapping: name       | Mapping: park_and_ride_type |
+|-------------------------|---------------|---------------------|-----------------------------|
+| Anlehnbuegel            | STANDS        | `Anlehnbügel`       |                             |
+| Vorderradhalter         | WALL_LOOPS    | `Vorderradhalter`   |                             |
+| Fahrradboxen            | LOCKERS       | `Fahrradboxen`      | [ParkAndRideType.YES]       |
+| Fahrradsammelanlage     | SHED          | `Sammelanlage`      | [ParkAndRideType.YES]       |
+| doppelstoeckig          | TWO_TIER      | `Zweistock-Anlage`  | [ParkAndRideType.YES]       |
+| Fahrradparkhaus         | BUILDING      | `Fahrradparkhaus`   | [ParkAndRideType.YES]       |
+| automatischesParksystem | BUILDING      | `Fahrradparkhaus`   | [ParkAndRideType.YES]       |
+| Sonstiges               | FLOOR         | `Fahrradstellplatz` |                             |
 
