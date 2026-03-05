@@ -24,12 +24,12 @@ from parkapi_sources.validators import EmptystringNoneable
 
 @validataclass
 class BfrkBaseInput(ABC):
-    objektid: int = IntegerValidator()
+    objektid: int = IntegerValidator()  # TODO: I guess that it's an error that is was deleted in the documentation.
     # min / max are bounding box of Baden-Württemberg
     lat: Decimal = NumericValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
     lon: Decimal = NumericValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
     objekt_Foto: str | None = EmptystringNoneable(UrlValidator()), Default(None)
-    hst_dhid: str | None = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
+    hst_dhid: str = StringValidator(max_length=256)
     objekt_dhid: str | None = EmptystringNoneable(StringValidator()), Default(None)
     infraid: str = StringValidator()
     osmlinks: list[str] | None = Noneable(ListValidator(EmptystringNoneable(UrlValidator()))), Default(None)
