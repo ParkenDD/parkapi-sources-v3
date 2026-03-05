@@ -9,18 +9,18 @@ Static values:
 
 The static data is provided over a GeoJSON API endpoint.
 
-| Source field/path                       | Type                                          | Cardinality | Target field           | Comment                                                                                    |
-| --------------------------------------- | --------------------------------------------- | ----------- | ---------------------- | -------------------------------------------------------------------------------------------|
-| geometry.coordinates                    | float                                         | 1           | lon/lat                | Set midpoint of the Polygon as the coordinates                                             |
-| properties.OBJECTID                     | integer                                       | 1           | uid                    |                                                                                            |
-| properties.Lagebezeichnung              | string                                        | 1           | name                   |                                                                                            |
-| properties.Kapazitaet                   | int                                           | 1           | capacity               |                                                                                            |
-| properties.Art                          | [Art](#Art)                                   | 1           | type                   |                                                                                            |
-| properties.Ueberdachung                 | [Ueberdachung](#Ueberdachung)                 | ?           | is_covered             |                                                                                            |
-| properties.Eigentuemer_Baulasttraeger   | string                                        | ?           | operator_name          |                                                                                            |
-| properties.Beleuchtung                  | [Beleuchtung](#Beleuchtung)                   | ?           | has_lighting           |                                                                                            |
-| properties.Anmerkung                    | string                                        | ?           | description            |                                                                                            |
-| properties.Stadtteil                    | string                                        | ?           | name                   | Set if available in addition to `Lagebezeichnung, Stadtteil` e.g. `Rathausplatz, Altstadt` |
+| Source field/path                       | Type                                          | Cardinality | Target field           | Comment                                                                 |
+| --------------------------------------- | --------------------------------------------- | ----------- | ---------------------- | ------------------------------------------------------------------------|
+| geometry.coordinates                    | float                                         | 1           | lon/lat                | Set midpoint of the Polygon as the coordinates                                                      |
+| properties.OBJECTID                     | integer                                       | 1           | uid                    |                                                |
+| properties.Lagebezeichnung              | string                                        | ?           | name                   | Set if the values are `!= null or ""` else use `Art`                                              |
+| properties.Kapazitaet                   | int                                           | 1           | capacity               |                                                |
+| properties.Art                          | [Art](#Art)                                   | 1           | type                   |                                                |
+| properties.Ueberdachung                 | [Ueberdachung](#Ueberdachung)                 | ?           | is_covered             |                                                |
+| properties.Eigentuemer_Baulasttraeger   | string                                        | ?           | operator_name          | Remove parking space entry If the value `== privat`                                                |
+| properties.Beleuchtung                  | [Beleuchtung](#Beleuchtung)                   | ?           | has_lighting           |                                                |
+| properties.Anmerkung                    | string                                        | ?           | description            |                                                |
+| properties.Stadtteil                    | string                                        | ?           | name                   | Set if available in addition to `Lagebezeichnung, Stadtteil` e.g. `Rathausplatz, Altstadt`  |
 
 ## Art
 
