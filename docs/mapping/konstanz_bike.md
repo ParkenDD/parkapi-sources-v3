@@ -19,7 +19,7 @@ The static data is provided over a GeoJSON API endpoint.
 | properties.Ueberdachung                 | [Ueberdachung](#Ueberdachung)                 | ?           | is_covered             |                                                |
 | properties.Eigentuemer_Baulasttraeger   | string                                        | ?           | operator_name          | Remove parking space entry If the value `== privat`                                                |
 | properties.Beleuchtung                  | [Beleuchtung](#Beleuchtung)                   | ?           | has_lighting           |                                                |
-| properties.Anmerkung                    | string                                        | ?           | description            |                                                |
+| properties.Anmerkung                    | string                                        | ?           | description            | Set only if `!= null`                                               |
 | properties.Stadtteil                    | string                                        | ?           | name                   | Set if available in addition to `Lagebezeichnung, Stadtteil` e.g. `Feuerwehr, Petershausen-West`  |
 
 ## Art
