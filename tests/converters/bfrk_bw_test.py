@@ -59,8 +59,8 @@ class BfrkCarPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = bfrk_car_push_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 552
-        assert len(import_parking_site_exceptions) == 30
+        assert len(static_parking_site_inputs) == 1492
+        assert len(import_parking_site_exceptions) == 154
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -81,8 +81,8 @@ class BfrkCarPullConverterTest:
             bfrk_car_push_converter_unconfirmed.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 2275
-        assert len(import_parking_site_exceptions) == 30
+        assert len(static_parking_site_inputs) == 2140
+        assert len(import_parking_site_exceptions) == 154
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -98,8 +98,8 @@ class BfrkCarPullConverterTest:
         )
 
         static_parking_spot_inputs, import_parking_site_exceptions = bfrk_car_push_converter.get_static_parking_spots()
-        assert len(static_parking_spot_inputs) == 1436
-        assert len(import_parking_site_exceptions) == 30
+        assert len(static_parking_spot_inputs) == 1216
+        assert len(import_parking_site_exceptions) == 154
 
         validate_static_parking_spot_inputs(static_parking_spot_inputs)
 
@@ -119,8 +119,8 @@ class BfrkCarPullConverterTest:
         static_parking_spot_inputs, import_parking_site_exceptions = (
             bfrk_car_push_converter_unconfirmed.get_static_parking_spots()
         )
-        assert len(static_parking_spot_inputs) == 1436
-        assert len(import_parking_site_exceptions) == 30
+        assert len(static_parking_spot_inputs) == 1216
+        assert len(import_parking_site_exceptions) == 154
 
         validate_static_parking_spot_inputs(static_parking_spot_inputs)
 
