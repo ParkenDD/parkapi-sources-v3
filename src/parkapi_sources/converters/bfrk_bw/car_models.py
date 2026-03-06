@@ -38,19 +38,19 @@ from .base_models import BfrkBaseInput
 
 
 class BfrkArt(Enum):
-    PARK_AND_RIDE_PARKING_SITE = 'Park+Ride'
-    SHORT_TERM_PARKING_SITE = 'Kurzzeit'
-    DISABLED_PARKING_SPACE = 'Behindertenplätze'
-    OFF_STREET_PARKING_GROUND = 'Parkplatz'
+    CAR_PARK = 'Parkhaus'
+    OFF_STREET_PARKING_GROUND = 'Park+Ride'
     OFF_STREET_PARKING_GROUND_2 = 'Parkplatz_ohne_Park+Ride'
+    OFF_STREET_PARKING_GROUND_3 = 'Kurzzeit'
+    OFF_STREET_PARKING_GROUND_4 = 'Behindertenplätze'
 
     def to_parking_site_type(self) -> ParkingSiteType:
         return {
-            self.PARK_AND_RIDE_PARKING_SITE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
-            self.SHORT_TERM_PARKING_SITE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
-            self.DISABLED_PARKING_SPACE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.CAR_PARK: ParkingSiteType.CAR_PARK,
             self.OFF_STREET_PARKING_GROUND: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.OFF_STREET_PARKING_GROUND_2: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.OFF_STREET_PARKING_GROUND_3: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.OFF_STREET_PARKING_GROUND_4: ParkingSiteType.OFF_STREET_PARKING_GROUND,
         }.get(self)
 
 
@@ -86,7 +86,7 @@ class Orientierung(Enum):
 
 @validataclass
 class BfrkCarInput(BfrkBaseInput):
-    art: BfrkArt | None = Noneable(EnumValidator(BfrkArt)), Default(BfrkArt.OFF_STREET_PARKING_GROUND)
+    art: BfrkArt = EnumValidator(BfrkArt), Default(BfrkArt.OFF_STREET_PARKING_GROUND)
     bauart: BfrkBauart | None = Noneable(EnumValidator(BfrkBauart)), Default(None)
     orientierung: Orientierung | None = Noneable(EnumValidator(Orientierung)), Default(None)
     stellplaetzegesamt: int = IntegerValidator()
@@ -129,7 +129,7 @@ class BfrkCarInput(BfrkBaseInput):
                 ),
             ]
 
-        if self.art == BfrkArt.PARK_AND_RIDE_PARKING_SITE:
+        if self.art == BfrkArt.OFF_STREET_PARKING_GROUND:
             static_parking_site_input.park_and_ride_type = [ParkAndRideType.YES]
 
         return static_parking_site_input
