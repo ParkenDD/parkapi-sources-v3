@@ -76,4 +76,7 @@ class PforzheimPushConverter(JsonConverter, ParkingSiteBaseConverter):
                 )
             static_parking_site_inputs.append(parking_site_input)
 
+        if hasattr(self, 'apply_static_patches'):
+            static_parking_site_inputs = self.apply_static_patches(static_parking_site_inputs)
+
         return static_parking_site_inputs, static_parking_site_errors
