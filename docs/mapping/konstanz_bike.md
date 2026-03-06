@@ -32,6 +32,7 @@ The static data is provided over a GeoJSON API endpoint.
 | Vorderrad-Rahmenhalter     | `SAFE_WALL_LOOPS` |
 | Markierte Fläche           | `FLOOR`           |
 | Fahrradbox                 | `LOCKERS`         |
+| Sammelschließanlage        | `SHED`         |
 
 ## Ueberdachung
 
