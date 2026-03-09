@@ -25,7 +25,7 @@ Multiple `ParkingSpot`s are distributed a bit from each other.
 | infraid                 | string                        | 1           | uid                                | uid                                |                                                         |
 | lat                     | numeric                       | 1           | lat                                |                                    |                                                         |
 | lon                     | numeric                       | 1           | lon                                |                                    |                                                         |
-| bauart                  | [BfrkBauart](#BfrkBauart)     | ?           | type, name                         | type, name                         | defined by 25% of all sites                             |
+| bauart                  | [BfrkBauart](#BfrkBauart)     | ?           | type, name, parking_type           | type, name, parking_type           | defined by 25% of all sites                             |
 | art                     | [BfrkArt](#BfrkArt)           | ?           | type, name, park_and_ride_type     | type, name, park_and_ride_type     | set type, name only if not set by bauart                |
 | gemeinde                | string                        | ?           | address                            | address                            |                                                         |
 | ortsteil                | string                        | ?           | address += ` (`ortsteil`)`         | address += ` (`ortsteil`)`         | set only if ortsteil != gemeinde                        |
@@ -49,13 +49,13 @@ Multiple `ParkingSpot`s are distributed a bit from each other.
 | osmlinks                | string (url)                  | *           | external_identifiers[`OSM`].value  | external_identifiers[`OSM`].value  | one entry for each link                                 |
 
 ### BfrkBauart
-| Key                      | Mapping: type             | Mapping: name       |
-|--------------------------|---------------------------|---------------------|
-| parkhaus_hoch            | CAR_PARK                  | `Parkhaus`          |
-| parkhaus_tief            | UNDERGROUND               | `Tiefgarage`        |
-| parkplatz                | OFF_STREET_PARKING_GROUND | `Parkplatz`         |
-| strasse_parkbucht        | OFF_STREET_PARKING_GROUND | `Parkplatz`         |
-| auf_strasse              | ON_STREET                 | `Straßen-Parkplatz` |
+| Key                      | Mapping: type             | Mapping: name       | Mapping: parking_type |
+|--------------------------|---------------------------|---------------------|-----------------------|
+| parkhaus_hoch            | CAR_PARK                  | `Parkhaus`          |                       |
+| parkhaus_tief            | UNDERGROUND               | `Tiefgarage`        |                       |
+| parkplatz                | OFF_STREET_PARKING_GROUND | `Parkplatz`         |                       |
+| strasse_parkbucht        | ON_STREET                 | `Straßen-Parkplatz` | ON_KERB               |
+| auf_strasse              | ON_STREET                 | `Straßen-Parkplatz` | LANE                  |
 
 ### BfrkArt
 | Key                      | Mapping: type             | Mapping: name | Mapping: park_and_ride_type |
