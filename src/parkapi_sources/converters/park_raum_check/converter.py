@@ -54,10 +54,7 @@ class ParkRaumCheckBasePushConverter(JsonConverter, ParkingSiteBaseConverter, AB
                     ),
                 )
 
-        if hasattr(self, 'apply_static_patches'):
-            static_parking_sites = self.apply_static_patches(static_parking_sites)
-
-        return static_parking_sites, parking_site_errors
+        return self.apply_static_patches(static_parking_sites), parking_site_errors
 
 
 class ParkRaumCheckKehlPushConverter(ParkRaumCheckBasePushConverter):

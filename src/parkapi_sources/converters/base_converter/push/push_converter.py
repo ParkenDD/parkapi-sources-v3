@@ -6,7 +6,8 @@ Use of this source code is governed by an MIT-style license that can be found in
 from abc import ABC
 
 from parkapi_sources.converters import BaseConverter
+from parkapi_sources.converters.base_converter.pull.static_patch_mixin import StaticPatchMixin
 
 
-class PushConverter(BaseConverter, ABC):
+class PushConverter(StaticPatchMixin, BaseConverter, ABC):
     pass
