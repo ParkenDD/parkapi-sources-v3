@@ -73,9 +73,11 @@ class StaticPatchMixin(ABC):
 
         if not self.static_parking_patch_validator:
             return parking_inputs
-        
+
         try:
-            json_file_path = Path(self.config_helper.get(self.config_value_for_patch_dir), f'{self.source_info.uid}.json')
+            json_file_path = Path(
+                self.config_helper.get(self.config_value_for_patch_dir), f'{self.source_info.uid}.json'
+            )
         except TypeError:
             return parking_inputs
 
@@ -116,4 +118,3 @@ class StaticPatchMixin(ABC):
                 parking_inputs_by_uid[parking_patch.uid].restrictions = parking_patch.restrictions
 
         return parking_inputs
-        

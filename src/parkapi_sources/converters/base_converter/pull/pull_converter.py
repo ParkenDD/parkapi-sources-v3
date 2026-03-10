@@ -20,6 +20,7 @@ from parkapi_sources.models import (
 
 from .static_patch_mixin import StaticPatchMixin
 
+
 class PullConverter(StaticPatchMixin, BaseConverter, ABC):
     pass
 
