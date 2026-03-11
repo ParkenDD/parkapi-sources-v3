@@ -9,7 +9,6 @@ from decimal import Decimal
 
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
-    IntegerValidator,
     ListValidator,
     Noneable,
     NumericValidator,
@@ -24,7 +23,6 @@ from parkapi_sources.validators import EmptystringNoneable
 
 @validataclass
 class BfrkBaseInput(ABC):
-    objektid: int = IntegerValidator()  # TODO: I guess that it's an error that is was deleted in the documentation.
     # min / max are bounding box of Baden-Württemberg
     lat: Decimal = NumericValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
     lon: Decimal = NumericValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
