@@ -55,8 +55,8 @@ class BfrkBaseInput(ABC):
         }
 
     def _get_address(self) -> str | None:
-        if self.gemeinde and self.ortsteil:
-            return f'{self.ortsteil}, {self.gemeinde}'
+        if self.gemeinde and self.ortsteil and self.ortsteil != self.gemeinde:
+            return f'{self.gemeinde} ({self.ortsteil})'
         elif self.gemeinde:
             return self.gemeinde
         elif self.ortsteil:

@@ -27,6 +27,9 @@ class BfrkBwCarPullConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
     )
 
     def check_ignore_item(self, input_data: BfrkCarInput) -> bool:
+        if input_data.oeffentlichvorhanden is False:
+            return True
+
         if input_data.stellplaetzegesamt == 0:
             return True
 
@@ -55,6 +58,9 @@ class BfrkBwCarPullConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
                         message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
+                continue
+
+            if input_data.oeffentlichvorhanden is False:
                 continue
 
             new_static_parking_spot_inputs = input_data.to_static_parking_spot_inputs()
