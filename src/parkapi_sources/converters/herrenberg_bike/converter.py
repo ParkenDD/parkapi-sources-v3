@@ -19,20 +19,17 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
     geojson_validator = DataclassValidator(GeojsonInput)
     herrenberg_feature_validator = DataclassValidator(HerrenbergBikeFeatureInput)
 
-    @property
-    @override
-    def source_info(self) -> SourceInfo:
-        return SourceInfo(
-            uid='herrenberg_bike',
-            name='Stadt Herrenberg - Munigrid: Fahrrad-Abstellanlagen',
-            public_url='https://www.munigrid.de/hbg/dataset/radabstellanlagen',
-            source_url='https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg&distribution=geojson',
-            timezone='Europe/Berlin',
-            attribution_contributor='Stadt Herrenberg - Munigrid',
-            attribution_license='CC 0 1.0',
-            attribution_url='https://creativecommons.org/publicdomain/zero/1.0/',
-            has_realtime_data=False,
-        )
+    source_info = SourceInfo(
+        uid='herrenberg_bike',
+        name='Stadt Herrenberg - Munigrid: Fahrrad-Abstellanlagen',
+        public_url='https://www.munigrid.de/hbg/dataset/radabstellanlagen',
+        source_url='https://www.munigrid.de/api/dataset/download?key=radabstellanlagen&org=hbg',
+        timezone='Europe/Berlin',
+        attribution_contributor='Stadt Herrenberg - Munigrid',
+        attribution_license='CC 0 1.0',
+        attribution_url='https://creativecommons.org/publicdomain/zero/1.0/',
+        has_realtime_data=False,
+    )
 
     def _get_feature_inputs(self) -> tuple[list[HerrenbergBikeFeatureInput], list[ImportParkingSiteException]]:
         feature_inputs: list[HerrenbergBikeFeatureInput] = []

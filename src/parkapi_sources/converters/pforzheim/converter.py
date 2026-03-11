@@ -76,4 +76,4 @@ class PforzheimPushConverter(JsonConverter, ParkingSiteBaseConverter):
                 )
             static_parking_site_inputs.append(parking_site_input)
 
-        return static_parking_site_inputs, static_parking_site_errors
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors

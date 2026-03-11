@@ -93,7 +93,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
                 )
                 continue
 
-        return static_parking_site_inputs, static_parking_site_errors
+        return self.apply_static_patches(static_parking_site_inputs), static_parking_site_errors
 
     def map_row_to_parking_site_dict(
         self,
