@@ -107,12 +107,10 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
 
     @staticmethod
     def get_restrictions(capacity: int | None) -> list[ParkingSiteRestrictionInput]:
-        restriction = ParkingSiteRestrictionInput()
+        if capacity is None:
+            return []
 
-        if capacity:
-            restriction = ParkingSiteRestrictionInput(capacity=capacity, type=ParkingAudience.CHARGING)
-
-        return [restriction]
+        return [ParkingSiteRestrictionInput(capacity=capacity, type=ParkingAudience.CHARGING)]
 
     @staticmethod
     def remove_new_lines(input: str) -> str:
