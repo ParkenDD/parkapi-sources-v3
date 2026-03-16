@@ -9,7 +9,6 @@ from decimal import Decimal
 
 from validataclass.dataclasses import Default, validataclass
 from validataclass.validators import (
-    IntegerValidator,
     ListValidator,
     Noneable,
     NumericValidator,
@@ -24,12 +23,11 @@ from parkapi_sources.validators import EmptystringNoneable
 
 @validataclass
 class BfrkBaseInput(ABC):
-    objektid: int = IntegerValidator()
     # min / max are bounding box of Baden-Württemberg
     lat: Decimal = NumericValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
     lon: Decimal = NumericValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
     objekt_Foto: str | None = EmptystringNoneable(UrlValidator()), Default(None)
-    hst_dhid: str | None = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
+    hst_dhid: str = StringValidator(max_length=256)
     objekt_dhid: str | None = EmptystringNoneable(StringValidator()), Default(None)
     infraid: str = StringValidator()
     osmlinks: list[str] | None = Noneable(ListValidator(EmptystringNoneable(UrlValidator()))), Default(None)
@@ -55,8 +53,8 @@ class BfrkBaseInput(ABC):
         }
 
     def _get_address(self) -> str | None:
-        if self.gemeinde and self.ortsteil:
-            return f'{self.ortsteil}, {self.gemeinde}'
+        if self.gemeinde and self.ortsteil and self.ortsteil != self.gemeinde:
+            return f'{self.gemeinde} ({self.ortsteil})'
         elif self.gemeinde:
             return self.gemeinde
         elif self.ortsteil:

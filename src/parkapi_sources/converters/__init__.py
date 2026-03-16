@@ -10,7 +10,7 @@ from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
 from .basel import BaselPullConverter
 from .bb_parkhaus import BBParkhausPushConverter
-from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPushConverter
+from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPullConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
