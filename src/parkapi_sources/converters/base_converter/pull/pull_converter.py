@@ -18,10 +18,8 @@ from parkapi_sources.models import (
     StaticParkingSpotPatchInput,
 )
 
-from .static_patch_mixin import StaticPatchMixin
 
-
-class PullConverter(StaticPatchMixin, BaseConverter, ABC):
+class PullConverter(BaseConverter, ABC):
     pass
 
 

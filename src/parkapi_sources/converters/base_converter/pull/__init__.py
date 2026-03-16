@@ -8,4 +8,3 @@ from .mobilithek_pull_converter import MobilithekPullConverterMixin
 from .pull_converter import ParkingSitePullConverter, ParkingSpotPullConverter, PullConverter
 from .pull_scraper_mixin import PullScraperMixin
 from .static_geojson_mixin import StaticGeojsonDataMixin
-from .static_patch_mixin import StaticPatchMixin
