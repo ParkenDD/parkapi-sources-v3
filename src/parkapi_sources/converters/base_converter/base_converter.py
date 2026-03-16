@@ -36,8 +36,6 @@ class BaseConverter(ABC):
     static_parking_spot_validator = DataclassValidator(StaticParkingSpotInput)
     realtime_parking_spot_validator = DataclassValidator(RealtimeParkingSpotInput)
     static_patch_input_validator = DataclassValidator(StaticPatchInput)
-    static_parking_patch_validator: DataclassValidator | None = None
-    config_value_for_patch_dir: str | None = None
     required_config_keys: list[str] = []
 
     def __init__(self, config_helper: ConfigHelper, request_helper: RequestHelper):
@@ -47,6 +45,16 @@ class BaseConverter(ABC):
     @property
     @abstractmethod
     def source_info(self) -> SourceInfo:
+        pass
+
+    @property
+    @abstractmethod
+    def static_parking_patch_validator(self) -> DataclassValidator:
+        pass
+
+    @property
+    @abstractmethod
+    def config_value_for_patch_dir(self) -> str:
         pass
 
     def request_get(self, **kwargs: Unpack[RequestKwargs]) -> Response:
@@ -118,10 +126,20 @@ class BaseConverter(ABC):
 
 
 class ParkingSiteBaseConverter(BaseConverter, ABC):
-    static_parking_patch_validator = DataclassValidator(StaticParkingSitePatchInput)
-    config_value_for_patch_dir = 'PARK_API_PARKING_SITE_PATCH_DIR'
+    @property
+    def static_parking_patch_validator(self) -> DataclassValidator:
+        return DataclassValidator(StaticParkingSitePatchInput)
+
+    @property
+    def config_value_for_patch_dir(self) -> str:
+        return 'PARK_API_PARKING_SITE_PATCH_DIR'
 
 
 class ParkingSpotBaseConverter(BaseConverter, ABC):
-    static_parking_patch_validator = DataclassValidator(StaticParkingSpotPatchInput)
-    config_value_for_patch_dir = 'PARK_API_PARKING_SPOT_PATCH_DIR'
+    @property
+    def static_parking_patch_validator(self) -> DataclassValidator:
+        return DataclassValidator(StaticParkingSpotPatchInput)
+
+    @property
+    def config_value_for_patch_dir(self) -> str:
+        return 'PARK_API_PARKING_SPOT_PATCH_DIR'
