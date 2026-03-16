@@ -14,7 +14,7 @@ from .base_converter import BfrkBasePushConverter
 from .car_models import BfrkCarInput
 
 
-class BfrkBwCarPushConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
+class BfrkBwCarPullConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
     bfrk_validator = DataclassValidator(BfrkCarInput)
     source_url_config_key = 'PARK_API_BFRK_BW_CAR_OVERRIDE_SOURCE_URL'
 
@@ -27,6 +27,9 @@ class BfrkBwCarPushConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
     )
 
     def check_ignore_item(self, input_data: BfrkCarInput) -> bool:
+        if input_data.oeffentlichvorhanden is False:
+            return True
+
         if input_data.stellplaetzegesamt == 0:
             return True
 
@@ -55,6 +58,9 @@ class BfrkBwCarPushConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
                         message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
+                continue
+
+            if input_data.oeffentlichvorhanden is False:
                 continue
 
             new_static_parking_spot_inputs = input_data.to_static_parking_spot_inputs()
