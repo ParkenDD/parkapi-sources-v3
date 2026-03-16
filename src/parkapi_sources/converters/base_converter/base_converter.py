@@ -126,20 +126,10 @@ class BaseConverter(ABC):
 
 
 class ParkingSiteBaseConverter(BaseConverter, ABC):
-    @property
-    def static_parking_patch_validator(self) -> DataclassValidator:
-        return DataclassValidator(StaticParkingSitePatchInput)
-
-    @property
-    def config_value_for_patch_dir(self) -> str:
-        return 'PARK_API_PARKING_SITE_PATCH_DIR'
+    static_parking_patch_validator = DataclassValidator(StaticParkingSitePatchInput)
+    config_value_for_patch_dir = 'PARK_API_PARKING_SITE_PATCH_DIR'
 
 
 class ParkingSpotBaseConverter(BaseConverter, ABC):
-    @property
-    def static_parking_patch_validator(self) -> DataclassValidator:
-        return DataclassValidator(StaticParkingSpotPatchInput)
-
-    @property
-    def config_value_for_patch_dir(self) -> str:
-        return 'PARK_API_PARKING_SPOT_PATCH_DIR'
+    static_parking_patch_validator = DataclassValidator(StaticParkingSpotPatchInput)
+    config_value_for_patch_dir = 'PARK_API_PARKING_SPOT_PATCH_DIR'
