@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.34.1
+
+Released 2026-03-16
+
+### Fixes
+
+* [Add support for static patches to xlsx push converters and others](https://github.com/ParkenDD/parkapi-sources-v3/pull/362)
+* [refactor bfrk car source](https://github.com/ParkenDD/parkapi-sources-v3/pull/366)
+* [herrenberg bike: update url and fix AttributeError](https://github.com/ParkenDD/parkapi-sources-v3/pull/355)
+
+
 ## 0.34.0
 
 Released 2026-02-10
