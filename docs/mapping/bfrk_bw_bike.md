@@ -27,7 +27,7 @@ A `ParkingSite` is generated if:
 | kostenpflichtig      | boolean                           | ?           | has_fee                            |                                            |
 | kostenpflichtignotiz | string                            | ?           | fee_description                    | set only if not starts with `keine Angabe` |
 | hst_dhid             | string                            | 1           | external_identifiers[`DHID`].value |                                            |
-| osmlinks             | [string (url)]                    | ?           | external_identifiers[`OSM`].value  | one entry for each link                    |
+| osmlinks             | string (url)                      | *           | external_identifiers[`OSM`].value  | one entry for each link                    |
 
 ### BfrkAnlagentyp
 | Key                     | Mapping: type | Mapping: name       | Mapping: park_and_ride_type |
