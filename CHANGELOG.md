@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.34.2
+
+Released 2026-03-16
+
+### Fixes
+
+* [herrenberg bike: remove empty restructions](https://github.com/ParkenDD/parkapi-sources-v3/pull/367)
+
+
 ## 0.34.1
 
 Released 2026-03-16
