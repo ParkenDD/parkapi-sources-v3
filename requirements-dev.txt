@@ -2,4 +2,4 @@ ruff~=0.15.6
 pytest~=9.0.2
 pytest-cov~=7.0.0
 requests-mock~=1.12.1
-tox~=4.49.1
+tox~=4.50.3
