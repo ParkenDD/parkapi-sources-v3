@@ -1,6 +1,6 @@
 # Friedrichshafen EasyPark
 
-Friedrichshafen provides a CSV file from EasyPark. Therefore, this will be a push converter.
+Friedrichshafen provides a static CSV file of Onstreet Parking sites inventory. Therefore, this will be a push converter.
 
 Static values:
 
