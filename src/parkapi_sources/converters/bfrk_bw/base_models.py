@@ -67,8 +67,9 @@ class BfrkBaseInput(ABC):
         gemeinde 'Leonberg' + ortsteil 'Höfingen (Württ)' -> address 'Leonberg (Höfingen)'
         """
         if self.gemeinde and self.ortsteil and self.ortsteil != self.gemeinde:
-            # remove any part in parentheses from 'ortsteil' value, and strip trailing whitespace
-            self.ortsteil = re.sub(pattern=r'\(.*\)', repl='', string=str(self.ortsteil)).strip()
+            # remove any part in parentheses (plus optional leading space) from 'ortsteil' value,
+            # and strip trailing whitespace
+            self.ortsteil = re.sub(pattern=r' ?\(.*\)', repl='', string=str(self.ortsteil)).strip()
             # if the first word is identical, don't add ortsteil:
             if self.gemeinde.split()[0] == self.ortsteil.split()[0]:
                 return self.gemeinde
