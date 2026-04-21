@@ -8,7 +8,7 @@ Static values:
 * `purpose` is always `CAR`
 * `has_realtime_data` is always `false`
 * Sites having the field `park_angle` with value `no_parking` should not be integrated.
-* `has_fee` is always `true` if `permission_period` contains `Gebührenpflichtig` or `Parkscheibe`.
+* `has_fee` is always `true` if `permission_period` contains `Gebührenpflichtig`.
 
 
 | Field                     | Type                        | Cardinality | Mapping                                                     | Comment                                                                                                                            |
