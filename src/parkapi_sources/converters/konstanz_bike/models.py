@@ -4,88 +4,94 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
-from decimal import Decimal
 from enum import Enum
-from typing import Any, Optional
 
+import shapely
+from shapely import GeometryType
+from shapely.geometry.multipolygon import MultiPolygon
+from shapely.geometry.polygon import Polygon
 from validataclass.dataclasses import validataclass
-from validataclass.exceptions import ValidationError
-from validataclass.validators import EnumValidator, IntegerValidator, StringValidator
+from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
-from parkapi_sources.validators import ExcelNoneable
-from parkapi_sources.validators.boolean_validators import MappedBooleanValidator
+from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.util import round_7d
+from parkapi_sources.validators import EmptystringNoneable, GeoJSONGeometryValidator
 
 
-@validataclass
-class PolygonListValidator(StringValidator):
-    def validate(self, input_data: Any, **kwargs) -> list[tuple[Decimal, Decimal]]:
-        input_data = super().validate(input_data, **kwargs)
-        items = input_data.split(',')
-        try:
-            return [(Decimal(items[i]), Decimal(items[i + 1])) for i in range(0, len(items), 2)]
-        except ValueError as e:
-            raise ValidationError(code='invalid_polygon', reason='Invalid polygon data') from e
-
-
-class KonstanzBikeParkingSiteType(Enum):
-    STANDS_BOTH_SIDE = 'Anlehnbügel beidseitig'
+class ArtProperty(Enum):
     STANDS_SINGLE_SIDE = 'Anlehnbügel einseitig'
-    EXTENDED_STANDS = 'Anlehnbügel mit Rahmenhalter'
+    STANDS_BOTH_SIDE = 'Anlehnbügel beidseitig'
     WALL_LOOPS = 'Vorderradhalter'
     SAFE_WALL_LOOPS = 'Vorderrad-Rahmenhalter'
     FLOOR = 'Markierte Fläche'
     LOCKERS = 'Fahrradbox'
+    SHED = 'Sammelschließanlage'
 
     def to_parking_site_type_input(self) -> ParkingSiteType:
         return {
-            self.STANDS_BOTH_SIDE: ParkingSiteType.STANDS,
             self.STANDS_SINGLE_SIDE: ParkingSiteType.STANDS,
-            self.EXTENDED_STANDS: ParkingSiteType.STANDS,
+            self.STANDS_BOTH_SIDE: ParkingSiteType.STANDS,
             self.WALL_LOOPS: ParkingSiteType.WALL_LOOPS,
             self.SAFE_WALL_LOOPS: ParkingSiteType.SAFE_WALL_LOOPS,
             self.FLOOR: ParkingSiteType.FLOOR,
             self.LOCKERS: ParkingSiteType.LOCKERS,
+            self.SHED: ParkingSiteType.SHED,
         }.get(self)
 
 
-class KonstanzBikeGeometry(Enum):
-    POLYGON = 'Polygon'
-    MULTI_POLYGON = 'MultiPolygon'
+class UeberdachungProperty(Enum):
+    true = 1  # roof available
+    false = 0  # roof not available
+
+
+class BeleuchtungProperty(Enum):
+    true = 1  # lighting available
+    false = 0  # lighting not available
 
 
 @validataclass
-class KonstanzRowInput:
-    uid: int = IntegerValidator(allow_strings=True)
-    operator_name: Optional[str] = ExcelNoneable(StringValidator())
-    district: Optional[str] = ExcelNoneable(StringValidator())
-    capacity: int = IntegerValidator(min_value=1, allow_strings=True)
-    address: Optional[str] = ExcelNoneable(StringValidator(min_length=1))
-    type: KonstanzBikeParkingSiteType = EnumValidator(KonstanzBikeParkingSiteType)
-    has_lighting: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'1': True, '0': False}))
-    is_covered: Optional[bool] = ExcelNoneable(MappedBooleanValidator(mapping={'1': True, '0': False}))
-    coordinates: list[tuple[Decimal, Decimal]] = PolygonListValidator()
-    geometry: KonstanzBikeGeometry = EnumValidator(KonstanzBikeGeometry)
+class KonstanzProperty:
+    OBJECTID: int = IntegerValidator()
+    Lagebezeichnung: str | None = StringValidator()
+    Art: ArtProperty = EnumValidator(ArtProperty)
+    Ueberdachung: EnumValidator[UeberdachungProperty] | None = EnumValidator(UeberdachungProperty)
+    Beleuchtung: EnumValidator[BeleuchtungProperty] | None = EnumValidator(BeleuchtungProperty)
+    Kapazitaet: int = IntegerValidator(min_value=1, allow_strings=True)
+    Stadtteil: str | None = EmptystringNoneable(StringValidator())
+    Anmerkung: str | None = EmptystringNoneable(StringValidator())
+    Eigentuemer_Baulasttraeger: str | None = EmptystringNoneable(StringValidator())
+
+
+@validataclass
+class KonstanzBikeParkingSiteInput:
+    geometry: Polygon | MultiPolygon = GeoJSONGeometryValidator(
+        allowed_geometry_types=[GeometryType.POLYGON, GeometryType.MULTIPOLYGON],
+    )
+    properties: KonstanzProperty = DataclassValidator(KonstanzProperty)
 
     def to_static_parking_site_input(self) -> StaticParkingSiteInput:
-        if self.address and self.district:
-            address = f'{self.address}, {self.district}'
-        elif self.address:
-            address = f'{self.address}, Konstanz'
-        else:
-            address = None
-        return StaticParkingSiteInput(
-            uid=str(self.uid),
-            name=self.address if self.address else 'Fahrradabstellanlage Konstanz',
-            lat=sum([coordinate[1] for coordinate in self.coordinates]) / len(self.coordinates),
-            lon=sum([coordinate[0] for coordinate in self.coordinates]) / len(self.coordinates),
-            type=self.type.to_parking_site_type_input(),
-            address=address,
-            capacity=self.capacity,
-            has_lighting=self.has_lighting,
-            is_covered=self.is_covered,
+        center = shapely.centroid(self.geometry)
+        name = self.properties.Lagebezeichnung if self.properties.Lagebezeichnung else self.properties.Art.value
+        if self.properties.Stadtteil:
+            name += ', ' + self.properties.Stadtteil
+
+        static_parking_site_input = StaticParkingSiteInput(
+            uid=str(self.properties.OBJECTID),
+            name=name,
+            type=self.properties.Art.to_parking_site_type_input(),
+            is_covered=True if self.properties.Ueberdachung == UeberdachungProperty.true else False,
+            has_lighting=True if self.properties.Beleuchtung == BeleuchtungProperty.true else False,
+            capacity=self.properties.Kapazitaet,
+            lat=round_7d(center.y),
+            lon=round_7d(center.x),
             static_data_updated_at=datetime.now(tz=timezone.utc),
-            purpose=PurposeType.BIKE,
             has_realtime_data=False,
         )
+
+        if self.properties.Eigentuemer_Baulasttraeger != 'privat':
+            static_parking_site_input.operator_name = self.properties.Eigentuemer_Baulasttraeger
+        if self.properties.Anmerkung:
+            static_parking_site_input.description = self.properties.Anmerkung
+
+        return static_parking_site_input

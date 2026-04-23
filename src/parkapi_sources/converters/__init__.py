@@ -49,7 +49,7 @@ from .kienzler import (
     KienzlerVVSPullConverter,
 )
 from .konstanz import KonstanzPullConverter
-from .konstanz_bike import KonstanzBikePushConverter
+from .konstanz_bike import KonstanzBikePullConverter
 from .konstanz_disabled import KonstanzDisabledPullConverter
 from .ladenburg_parkraumcheck import LadenburgParkraumcheckPushConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
