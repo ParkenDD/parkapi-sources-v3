@@ -8,7 +8,7 @@ A parking space is represented by a `parkingRecord`. For each `parkingRecord` a 
 * `opening_hours` is set to `24/7`
 * `has_realtime_data` is set to `false`
 
-| Datex II Field (simplified)                  | Type      | Cardinality | Mapping                      | Comment                                                    |
+| Datex II field (simplified)                  | Type      | Cardinality | Mapping                      | Comment                                                    |
 |----------------------------------------------|-----------|-------------|------------------------------|------------------------------------------------------------|
 | type                                         | enum      | 1           |                              | always `InterUrbanParkingSite`
 | id                                           | string    | 1           | uid                          |
@@ -29,7 +29,7 @@ A parking space is represented by a `parkingRecord`. For each `parkingRecord` a 
 | parkingLocation.pointCoordinates.latitude    | numeric   | 1           | lat
 | parkingLocation.pointCoordinates.longitude   | numeric   | 1           | lon
 | tariffsAndPayment.freeOfCharge               | boolean   | 1           | has_fee                      | always true, has_fee=not(freeOfCharge)
-| parkingEquipmentOrServiceFacility            |           | ?           |                              | type == `refuseBin`|`toilet`|`shower`|`tollTerminal`|`motorwayRestaurant`|`picnicFacilities`|...
+| parkingEquipmentOrServiceFacility            |           | ?           |                              | type == `refuseBin`\|`toilet`\|`shower`\|`tollTerminal`\|`motorwayRestaurant`\|`picnicFacilities`\|...
 | groupOfParkingSpaces[lorry]                  | integer   | 1           | restrictions[TRUCK].capacity | set only if != 0
 | groupOfParkingSpaces[car]                    | integer   | 1
 | groupOfParkingSpaces[refrigeratedGoods]      | integer   | 1
@@ -45,7 +45,7 @@ A parking space is represented by a `parkingRecord`. For each `parkingRecord` a 
 | parkingSiteAddress.contactUnknown            | boolean   | ?
 | parkingUsageScenario[truckParking]           |           | 1           |                              | always `noDynamicParkingManagement`
 | parkingUsageScenario[restArea]               |           | 1
-| parkingAccess                                |           | *           |                              | category == `vehicleEntrance`|`vehicleExit`|`unspecified`|`unknown`
+| parkingAccess                                |           | *           |                              | category == `vehicleEntrance`\|`vehicleExit`\|`unspecified`\|`unknown`
 | parkingStandardsAndSecurity                  |           | 1
 | interUrbanParkingSiteLocation                | enum      | 1           |                              | always `motorway`
 | interUrbanParkingSiteExtension               | null      | 1
