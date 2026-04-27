@@ -25,7 +25,7 @@ class KonstanzBikePushConverterTest:
         static_parking_site_inputs, import_parking_site_exceptions = (
             konstanz_bike_pull_converter.get_static_parking_sites()
         )
-        assert len(static_parking_site_inputs) == 246
-        assert len(import_parking_site_exceptions) == 95
+        assert len(static_parking_site_inputs) == 340
+        assert len(import_parking_site_exceptions) == 6
 
         validate_static_parking_site_inputs(static_parking_site_inputs)

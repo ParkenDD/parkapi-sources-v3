@@ -11,7 +11,7 @@ from shapely import GeometryType
 from shapely.geometry.multipolygon import MultiPolygon
 from shapely.geometry.polygon import Polygon
 from validataclass.dataclasses import validataclass
-from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, StringValidator
+from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
 
 from parkapi_sources.models import StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType
@@ -55,8 +55,8 @@ class KonstanzProperty:
     OBJECTID: int = IntegerValidator()
     Lagebezeichnung: str | None = StringValidator()
     Art: ArtProperty = EnumValidator(ArtProperty)
-    Ueberdachung: EnumValidator[UeberdachungProperty] | None = EnumValidator(UeberdachungProperty)
-    Beleuchtung: EnumValidator[BeleuchtungProperty] | None = EnumValidator(BeleuchtungProperty)
+    Ueberdachung: EnumValidator[UeberdachungProperty] | None = Noneable(EnumValidator(UeberdachungProperty))
+    Beleuchtung: EnumValidator[BeleuchtungProperty] | None = Noneable(EnumValidator(BeleuchtungProperty))
     Kapazitaet: int = IntegerValidator(min_value=1, allow_strings=True)
     Stadtteil: str | None = EmptystringNoneable(StringValidator())
     Anmerkung: str | None = EmptystringNoneable(StringValidator())
