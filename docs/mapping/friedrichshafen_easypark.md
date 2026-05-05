@@ -11,16 +11,15 @@ Static values:
 * `has_fee` is always `true` if `permission_period` contains `Gebührenpflichtig`.
 
 
-| Field                     | Type                        | Cardinality | Mapping                         | Comment                                                                            |
-|---------------------------|-----------------------------|-------------|---------------------------------|------------------------------------------------------------------------------------|
-| id                        | integer                     | 1           | uid                             |                                                                                    |
-| length                    | integer                     | 1           | capacity                        | [ParkAngleCapacity](#ParkAngleCapacity) is used for the calculation of `capacity`. |
-| street_side               | [StreetSide](#StreetSide)   | 1           | capacity                        | [ParkAngleCapacity](#ParkAngleCapacity) is used for the calculation of `capacity`. |
-| park_angle                | [ParkAngle](#ParkAngle)     | 1           | capacity                        | [ParkAngleCapacity](#ParkAngleCapacity) is used for the calculation of `capacity`. |
-| location_on_sidewalk      | numeric                     | 1           | lat/lon/geojson                 | The center of the LineString coordinates is used as latitude and longitude         |
-| permissions_translation   | string                      | 1           | description/fee_description     |                                                                                    |
-| permission_period         | string                      | ?           | fee_description                 |                                                                                    |
-| time_limited              | string                      | ?           | fee_description                 | If available, add to  `fee_description`                                            |
+| Field                     | Type                        | Cardinality | Mapping                         | Comment                                                                                       |
+|---------------------------|-----------------------------|-------------|---------------------------------|-----------------------------------------------------------------------------------------------|
+| id                        | integer                     | 1           | uid                             |                                                                                               |
+| length                    | integer                     | 1           | capacity                        | [ParkAngleCapacity](#ParkAngleCapacity) uses `length` for the calculation of `capacity`.      |
+| park_angle                | [ParkAngle](#ParkAngle)     | 1           | capacity                        | [ParkAngleCapacity](#ParkAngleCapacity) uses `park_angle` for the calculation of `capacity`.  |
+| location_on_sidewalk      | numeric                     | 1           | lat/lon/geojson                 | The center of the LineString coordinates is used as latitude and longitude                    |
+| permissions_translation   | string                      | 1           | description/fee_description     |                                                                                               |
+| permission_period         | string                      | ?           | fee_description                 |                                                                                               |
+| time_limited              | string                      | ?           | fee_description                 | If available, add to  `fee_description`                                                       |
 
 
 ### ParkAngle
@@ -44,13 +43,6 @@ The result of the capacity should be rounded down to whole numbers e.g. if `leng
 | perpendicular | capacity      | Calculate `capacity` with field `length / 2.5` , where 2.5 (in metres) is estimated vehicle length when parked perpendicular to the street side  |
 | diagonal      | capacity      | Calculate `capacity` with field `length / 3` , where 3 (in metres) is estimated vehicle length when parked diagonally on the street side         |   
 
-
-### StreetSide
-
-| Key       | Mapping |
-|-----------|---------|
-| right     | RIGHT   |
-| left      | LEFT    |
 
 
 
