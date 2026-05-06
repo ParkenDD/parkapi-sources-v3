@@ -30,7 +30,6 @@ Static values:
 | parallel      | PARALLEL      |
 | perpendicular | PERPENDICULAR |
 | diagonal      | DIAGONAL      |
-| no_parking    |               |
 
 
 ### ParkAngleCapacity
