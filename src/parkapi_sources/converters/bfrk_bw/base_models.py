@@ -3,6 +3,7 @@ Copyright 2024 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+import re
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 from decimal import Decimal
@@ -53,8 +54,28 @@ class BfrkBaseInput(ABC):
         }
 
     def _get_address(self) -> str | None:
+        """
+        Returns a normalized address string by combining the values of 'gemeinde' and 'ortsteil',
+        with a few additional checks to avoid nested parentheses and duplication.
+
+        Examples:
+
+        gemeinde 'Stuttgart' + ortsteil None -> address 'Stuttgart'
+        gemeinde None + ortsteil 'Stuttgart' -> address 'Stuttgart'
+        gemeinde 'Basel' + ortsteil 'Basel' -> address 'Basel'
+        gemeinde 'Renningen' + ortsteil 'Malmsheim' -> address 'Renningen (Malmsheim)'
+        gemeinde 'Geislingen an der Steige' + ortsteil 'Geislingen (Steige)' -> address 'Geislingen an der Steige'
+        gemeinde 'Leonberg' + ortsteil 'Höfingen (Württ)' -> address 'Leonberg (Höfingen)'
+        """
         if self.gemeinde and self.ortsteil and self.ortsteil != self.gemeinde:
-            return f'{self.gemeinde} ({self.ortsteil})'
+            # remove any part in parentheses (plus optional leading space) from 'ortsteil' value,
+            # and strip trailing whitespace
+            self.ortsteil = re.sub(pattern=r' ?\(.*\)', repl='', string=str(self.ortsteil)).strip()
+            # if the first word is identical, don't add ortsteil:
+            if self.gemeinde.split()[0] == self.ortsteil.split()[0]:
+                return self.gemeinde
+            else:
+                return f'{self.gemeinde} ({self.ortsteil})'
         elif self.gemeinde:
             return self.gemeinde
         elif self.ortsteil:

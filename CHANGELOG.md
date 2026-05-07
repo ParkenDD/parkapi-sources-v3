@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.35.0
+
+### Features
+
+* [Recreate konstanz bike](https://github.com/ParkenDD/parkapi-sources-v3/pull/374)
+
+
+### Fixes
+
+* [Adapt BFRK bike parking changes](https://github.com/ParkenDD/parkapi-sources-v3/pull/373)
+
+
 ## 0.34.2
 
 Released 2026-03-16
