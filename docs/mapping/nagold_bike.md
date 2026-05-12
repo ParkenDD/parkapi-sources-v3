@@ -16,17 +16,17 @@ Attributes which are set statically by the converter:
 | Field                 | Type                              | Cardinality | Mapping                                           | Comment                                                             |
 |-----------------------|-----------------------------------|-------------|---------------------------------------------------|---------------------------------------------------------------------|
 | OBJECTID              | string                            | 1           | uid                                               |                                                                     |
-| Strasse               | string                            | 1           | name                                              | Street name used as primary name                                    |
-| Lagebeschr            | string                            | ?           | description                                       | Location description (e.g. "Am Parkplatz vom Polizeirevier")        |
+| Strasse               | string                            | 1           | name                                              | Street name used as parking facility name                           |
+| Lagebeschr            | string                            | ?           | description                                       | Parking description (e.g. "Am Parkplatz vom Polizeirevier")         |
 | coordinates[1]        | numeric                           | 1           | lat                                               | GeoJSON geometry coordinates index 1                                |
 | coordinates[0]        | numeric                           | 1           | lon                                               | GeoJSON geometry coordinates index 0                                |
 | Stellplatz            | [Stellplatz](#Stellplatz)         | ?           | type                                              | See [Stellplatz](#Stellplatz)                                       |
 | Anzahl_Bue            | integer                           | 1           | capacity                                          |                                                                     |
 | Anzahl_Lad            | integer                           | ?           | [restrictions](#ParkingSiteRestriction)           | Map to `CHARGING` restrictions if > 0                               |
-| Beleuchtun            | [Beleuchtung](#Beleuchtung)       | ?           | has_lighting                                      |                                                                     |
-| Ueberdachu            | [Ueberdachung](#Ueberdachung)     | ?           | is_covered                                        |                                                                     |
+| Beleuchtun            | [Beleuchtung](#Beleuchtung)       | ?           | has_lighting                                      | See [Beleuchtung](#Beleuchtung)                                     |
+| Ueberdachu            | [Ueberdachung](#Ueberdachung)     | ?           | is_covered                                        | See [Ueberdachung](#Ueberdachung)                                   |
 | Bike_and_R            | [Bike_and_Ride](#Bike_and_Ride)   | ?           | park_and_ride_type                                | See [Bike_and_Ride](#Bike_and_Ride)                                 |
-| Ueberwachu            | [Ueberwachung](#Ueberwachung)     | ?           | supervision_type                                  |                                                                     |
+| Ueberwachu            | [Ueberwachung](#Ueberwachung)     | ?           | supervision_type                                  | See [Ueberwachung](#Ueberwachung)                                   |
 | Betreiber             | string                            | ?           | operator_name                                     | Omit if blank                                                       |
 | last_edi_1            | epoch ms                          | ?           | static_data_updated_at                            | Convert epoch milliseconds to ISO 8601                              |
 | created_da            | epoch ms                          | ?           | static_data_updated_at                            | Fallback if `last_edi_1` is not available                           |
