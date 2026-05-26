@@ -15,6 +15,7 @@ from parkapi_sources.models import (
     ParkingAudience,
     ParkingSiteRestrictionInput,
     ParkingSiteType,
+    PurposeType,
     StaticParkingSiteInput,
 )
 from parkapi_sources.models.xlsx_inputs import ExcelMappedBooleanValidator
@@ -69,6 +70,7 @@ class KelternRowInput:
             uid=self.id.replace('@GemeindeKeltern', ''),
             capacity=self.capacity,
             name=self.adress_str,
+            purpose=PurposeType.CAR,
             opening_hours='24/7' if self.hasOpeningHours24h else None,
             description='; '.join(description_fragments),
             address=f'{self.adress_str}, {self.adress_pos} {self.adress_cit}',

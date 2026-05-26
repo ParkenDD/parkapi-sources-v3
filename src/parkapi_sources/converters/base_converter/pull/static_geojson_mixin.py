@@ -19,6 +19,7 @@ from parkapi_sources.models import (
     GeojsonFeatureInput,
     GeojsonFeatureParkingSpotInput,
     GeojsonInput,
+    PurposeType,
     SourceInfo,
     StaticParkingSiteInput,
     StaticParkingSpotInput,
@@ -89,6 +90,7 @@ class StaticGeojsonDataMixin(ABC):
     def _get_static_parking_site_inputs_and_exceptions(
         self,
         source_uid: str,
+        purpose: PurposeType,
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
 
@@ -99,6 +101,7 @@ class StaticGeojsonDataMixin(ABC):
         for feature_input in feature_inputs:
             static_parking_site_inputs.append(
                 feature_input.to_static_parking_site_input(
+                    purpose=purpose,
                     # TODO: Use the Last-Updated HTTP header instead, but as Github does not set such an header, we
                     #  need to move all GeoJSON data in order to use this.
                     static_data_updated_at=datetime.now(tz=timezone.utc),
@@ -110,6 +113,7 @@ class StaticGeojsonDataMixin(ABC):
     def _get_static_parking_spots_inputs_and_exceptions(
         self,
         source_uid: str,
+        purpose: PurposeType,
     ) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
         static_parking_spot_inputs: list[StaticParkingSpotInput] = []
 
@@ -120,6 +124,7 @@ class StaticGeojsonDataMixin(ABC):
         for feature_input in feature_inputs:
             static_parking_spot_inputs.append(
                 feature_input.to_static_parking_spot_input(
+                    purpose=purpose,
                     # TODO: Use the Last-Updated HTTP header instead, but as Github does not set such an header, we
                     #  need to move all GeoJSON data in order to use this.
                     static_data_updated_at=datetime.now(tz=timezone.utc),

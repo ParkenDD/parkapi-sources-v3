@@ -10,7 +10,13 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter, StaticGeojsonDataMixin
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    GeojsonInput,
+    PurposeType,
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .models import (
     FreiburgBaseFeatureInput,
@@ -96,6 +102,7 @@ class FreiburgPullConverter(FreiburgBasePullConverter):
         static_parking_site_inputs, import_parking_site_exceptions = (
             self._get_static_parking_site_inputs_and_exceptions(
                 source_uid=self.source_info.uid,
+                purpose=PurposeType.CAR,
             )
         )
 

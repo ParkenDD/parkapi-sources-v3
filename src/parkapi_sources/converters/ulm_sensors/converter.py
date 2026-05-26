@@ -13,6 +13,7 @@ from parkapi_sources.converters.base_converter.pull import (
 )
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportParkingSpotException
 from parkapi_sources.models import (
+    PurposeType,
     RealtimeParkingSiteInput,
     RealtimeParkingSpotInput,
     SourceInfo,
@@ -44,6 +45,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         return self._get_static_parking_site_inputs_and_exceptions(
             source_uid=self.source_info.uid,
+            purpose=PurposeType.CAR,
         )
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
@@ -87,6 +89,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
         return self._get_static_parking_spots_inputs_and_exceptions(
             source_uid=self.source_info.uid,
+            purpose=PurposeType.CAR,
         )
 
     def get_realtime_parking_spots(self) -> tuple[list[RealtimeParkingSpotInput], list[ImportParkingSpotException]]:

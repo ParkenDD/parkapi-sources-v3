@@ -18,7 +18,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import GeojsonBaseFeatureInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ExternalIdentifierType, ParkingAudience, ParkingSiteType
+from parkapi_sources.models.enums import ExternalIdentifierType, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.models.parking_site_inputs import ParkingSiteRestrictionInput
 from parkapi_sources.models.shared_inputs import ExternalIdentifierInput
 from parkapi_sources.util import round_7d
@@ -126,6 +126,7 @@ class HerrenbergBikeFeatureInput(GeojsonBaseFeatureInput):
         return StaticParkingSiteInput(
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
+            purpose=PurposeType.BIKE,
             has_realtime_data=False,
             **self.properties.to_dict(),
         )

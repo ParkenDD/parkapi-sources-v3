@@ -12,7 +12,7 @@ from openpyxl.workbook.workbook import Workbook
 from validataclass.exceptions import ValidationError
 
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import ParkingAudience, StaticParkingSiteInput
+from parkapi_sources.models import ParkingAudience, PurposeType, StaticParkingSiteInput
 
 from .xlsx_converter import XlsxConverter
 
@@ -118,6 +118,7 @@ class NormalizedXlsxConverter(XlsxConverter, ABC):
             if isinstance(parking_site_dict['type'], str)
             else None
         )
+        parking_site_dict.setdefault('purpose', PurposeType.CAR.name)
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
 
         restrictions: list[tuple[str, ParkingAudience]] = [

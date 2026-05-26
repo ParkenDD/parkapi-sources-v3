@@ -18,7 +18,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkAndRideType, ParkingAudience, ParkingSiteType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.validators import SpacedDateTimeValidator
 
 
@@ -67,6 +67,7 @@ class PMBWInput:
         return StaticParkingSiteInput(
             uid=self.id,
             name=self.long_name,
+            purpose=PurposeType.CAR,
             static_data_updated_at=self.time,
             capacity=self.capacity.car,
             has_realtime_data=True,

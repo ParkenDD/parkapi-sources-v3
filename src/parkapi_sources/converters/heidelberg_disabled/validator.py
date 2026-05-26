@@ -16,7 +16,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import ParkingSpotRestrictionInput, StaticParkingSpotInput
-from parkapi_sources.models.enums import ParkingAudience, ParkingSpotType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSpotType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
 
@@ -54,6 +54,7 @@ class HeidelbergDisabledParkingSpotInput:
         return StaticParkingSpotInput(
             uid=self.id,
             name=self.properties.BESCHRIFTU or None,
+            purpose=PurposeType.CAR,
             operator_name=self.properties.BETREIBER,
             address=f'{address}, Heidelberg' if address else None,
             static_data_updated_at=static_data_updated_at,

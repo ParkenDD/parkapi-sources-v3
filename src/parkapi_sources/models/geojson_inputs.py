@@ -23,7 +23,7 @@ from validataclass.validators import (
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator, OsmOpeningTimesValidator
 
-from .enums import ParkAndRideType, ParkingSiteType
+from .enums import ParkAndRideType, ParkingSiteType, PurposeType
 from .parking_site_inputs import ParkingSiteRestrictionInput, StaticParkingSiteInput
 from .parking_spot_inputs import ParkingSpotRestrictionInput, StaticParkingSpotInput
 from .shared_inputs import ExternalIdentifierInput
@@ -81,7 +81,7 @@ class GeojsonBaseFeatureInput:
     properties: GeojsonBaseFeaturePropertiesInput = DataclassValidator(GeojsonBaseFeaturePropertiesInput)
     geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
-    def to_static_parking_site_input(self, **kwargs: Any) -> StaticParkingSiteInput:
+    def to_static_parking_site_input(self, purpose: PurposeType, **kwargs: Any) -> StaticParkingSiteInput:
         # Maintain child objects by not using to_dict()
         input_data: dict[str, Any] = {key: getattr(self.properties, key) for key in self.properties.to_dict().keys()}
         input_data.update(kwargs)
@@ -89,10 +89,11 @@ class GeojsonBaseFeatureInput:
         return StaticParkingSiteInput(
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
+            purpose=purpose,
             **input_data,
         )
 
-    def to_static_parking_spot_input(self, **kwargs: Any) -> StaticParkingSpotInput:
+    def to_static_parking_spot_input(self, purpose: PurposeType, **kwargs: Any) -> StaticParkingSpotInput:
         # Maintain child objects by not using to_dict()
         input_data: dict[str, Any] = {key: getattr(self.properties, key) for key in self.properties.to_dict().keys()}
         input_data.update(kwargs)
@@ -100,6 +101,7 @@ class GeojsonBaseFeatureInput:
         return StaticParkingSpotInput(
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
+            purpose=purpose,
             **input_data,
         )
 

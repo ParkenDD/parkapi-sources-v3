@@ -11,7 +11,7 @@ from parkapi_sources.converters.base_converter.pull import (
     StaticGeojsonDataMixin,
 )
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import PurposeType, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import PMBWInput
 
@@ -34,6 +34,7 @@ class PMBWPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
 
         geojson_parking_site_inputs, geojson_parking_site_errors = self._get_static_parking_site_inputs_and_exceptions(
             source_uid=self.source_info.uid,
+            purpose=PurposeType.CAR,
         )
 
         static_parking_site_errors += geojson_parking_site_errors

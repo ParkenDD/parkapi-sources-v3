@@ -10,7 +10,12 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter.pull import ParkingSitePullConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
-from parkapi_sources.models import GeojsonInput, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import (
+    GeojsonInput,
+    RealtimeParkingSiteInput,
+    SourceInfo,
+    StaticParkingSiteInput,
+)
 
 from .models import HerrenbergBikeFeatureInput
 

@@ -19,7 +19,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
 
@@ -69,6 +69,7 @@ class FreiburgScannerFeatureInput:
         return StaticParkingSiteInput(
             uid=str(self.properties.id),
             name=self.properties.kr_strassenname,
+            purpose=PurposeType.CAR,
             address=f'{self.properties.kr_strassenname}, Freiburg',
             type=ParkingSiteType.ON_STREET,
             lat=round_7d(center.y),

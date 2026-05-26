@@ -14,7 +14,7 @@ from validataclass.exceptions import ValidationError
 from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import XlsxConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import PurposeType, SourceInfo, StaticParkingSiteInput
 
 
 class PumBwPushConverter(XlsxConverter, ParkingSiteBaseConverter):
@@ -85,6 +85,7 @@ class PumBwPushConverter(XlsxConverter, ParkingSiteBaseConverter):
             )
 
         parking_site_dict['type'] = 'OFF_STREET_PARKING_GROUND'
+        parking_site_dict['purpose'] = PurposeType.CAR.name
         parking_site_dict['park_and_ride_type'] = ['CARPOOL']
         parking_site_dict['static_data_updated_at'] = datetime.now(tz=timezone.utc).isoformat()
         parking_site_dict['capacity'] = int(parking_site_dict['capacity'])

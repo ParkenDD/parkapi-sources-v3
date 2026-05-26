@@ -34,6 +34,7 @@ from parkapi_sources.models.enums import (
     ParkingSiteOrientation,
     ParkingSiteType,
     ParkingType,
+    PurposeType,
 )
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import (
@@ -175,6 +176,7 @@ class RadolfzellParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=f'{self.properties.lat}_{self.properties.lon}',
             name=self.properties.StrPLZOrt2 or 'Parkplatz',
+            purpose=PurposeType.CAR,
             address=self.properties.StrPLZOrt2,
             static_data_updated_at=static_data_updated_at,
             type=ParkingSiteType.ON_STREET,

@@ -92,6 +92,7 @@ class KarlsruheFeatureInput(GeojsonBaseFeatureInput):
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
             name=self.properties.parkhaus_name,
+            purpose=PurposeType.CAR,
             capacity=self.properties.gesamte_parkplaetze,
             type=ParkingSiteType.CAR_PARK,
             address=address,
