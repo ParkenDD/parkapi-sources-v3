@@ -16,10 +16,10 @@ Each object in the JSON array is mapped to a `ParkingSite` as follows.
 
 | Field              | Type                                | Cardinality | Mapping     | Comment                                              |
 |--------------------|-------------------------------------|-------------|-------------|------------------------------------------------------|
-| id                 | string                              | 1           | uid         | Also used for `external_identifiers`                 |
+| id                 | string                              | 1           | uid         |                                                      |
 | name               | string                              | 1           | name        |                                                      |
 | actualStatus       | [ActualStatus](#ActualStatus)       | 1           |             | Contains realtime capacity and occupancy values      |
-| location           | [Location](#Location)               | 1           |             | Contains geographic coordinates                      |
+| location           | [Location](#Location)               | 1           |             | Contains geometric information e.g. coordinates      |
 
 
 ## ActualStatus
@@ -34,5 +34,5 @@ Each object in the JSON array is mapped to a `ParkingSite` as follows.
 
 | Field     | Type    | Cardinality | Mapping | Comment               |
 |-----------|---------|-------------|---------|-----------------------|
-| latitude  | decimal | 1           | lat     | Transformed to string |
-| longitude | decimal | 1           | lon     | Transformed to string | 
+| latitude  | decimal | 1           | lat     | Transform to string |
+| longitude | decimal | 1           | lon     | Transform to string | 
