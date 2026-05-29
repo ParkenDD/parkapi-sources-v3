@@ -1,6 +1,6 @@
-# Ellwangen Parking via Sensit API
+# Ellwangen Parking Lots via Sensit API
 
-Ellwangen provides JSON sensor data for realtime parking sites via a secured Sensit REST-API Endpoint `/api/v1/parkingLots`. The feed contains one parking object with static
+Ellwangen provides JSON realtime parking lots data via a secured Sensit REST-API Endpoint `/api/v1/parkingLots`. The feed contains one parking object with static
 location and capacity fields together with realtime occupancy information.
 
 Attributes which are set statically:
