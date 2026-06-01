@@ -14,7 +14,7 @@ from validataclass.dataclasses import validataclass
 from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import EmptystringNoneable, GeoJSONGeometryValidator
 
@@ -79,6 +79,7 @@ class KonstanzBikeParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(self.properties.OBJECTID),
             name=name,
+            purpose=PurposeType.BIKE,
             type=self.properties.Art.to_parking_site_type_input(),
             is_covered=True if self.properties.Ueberdachung == UeberdachungProperty.true else False,
             has_lighting=True if self.properties.Beleuchtung == BeleuchtungProperty.true else False,

@@ -29,6 +29,7 @@ from parkapi_sources.models.enums import (
     ParkAndRideType,
     ParkingAudience,
     ParkingSiteType,
+    PurposeType,
     SupervisionType,
 )
 from parkapi_sources.validators import ExcelNoneable, ReplacingStringValidator, Rfc1123DateTimeValidator
@@ -185,6 +186,7 @@ class HeidelbergInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=self.id,
             name=self.staticName,
+            purpose=PurposeType.CAR,
             description=self.description,
             lat=self.lat,
             lon=self.lon,

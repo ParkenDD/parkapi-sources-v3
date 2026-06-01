@@ -16,7 +16,7 @@ from validataclass.validators import (
     UrlValidator,
 )
 
-from parkapi_sources.models import ParkingSiteType, RealtimeParkingSiteInput, StaticParkingSiteInput
+from parkapi_sources.models import ParkingSiteType, PurposeType, RealtimeParkingSiteInput, StaticParkingSiteInput
 
 
 @validataclass
@@ -44,6 +44,7 @@ class BaselParkingSiteInput:
         return StaticParkingSiteInput(
             uid=self.id2,
             name=self.name,
+            purpose=PurposeType.CAR,
             lat=self.geo_point_2d.lat,
             lon=self.geo_point_2d.lon,
             capacity=self.total,

@@ -10,7 +10,7 @@ from validataclass.dataclasses import validataclass
 from validataclass.validators import DecimalValidator, EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.validators import PointCoordinateTupleValidator
 
 
@@ -40,6 +40,7 @@ class ReutlingenRowInput:
         return StaticParkingSiteInput(
             uid=str(self.uid),
             name=self.name,
+            purpose=PurposeType.CAR,
             address=f'{self.name}, Reutlingen',
             lat=self.coordinates[1],
             lon=self.coordinates[0],

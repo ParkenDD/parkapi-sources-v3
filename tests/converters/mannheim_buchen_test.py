@@ -23,7 +23,7 @@ def mannheim_push_converter(mocked_config_helper: Mock, request_helper: RequestH
     return MannheimPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
-class MannheimPullConverterTest:
+class MannheimPushConverterTest:
     @staticmethod
     def test_get_parking_sites(mannheim_push_converter: MannheimPushConverter):
         # TODO: set proper test files as soon as we get them

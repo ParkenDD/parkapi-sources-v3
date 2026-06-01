@@ -20,7 +20,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import (
     EmptystringNoneable,
@@ -121,6 +121,7 @@ class HeidelbergEasyParkParkingSiteInput:
         return StaticParkingSiteInput(
             uid=f'{self.properties.Segment}-{self.properties.Abstand1}-{self.properties.Abstand2}',
             name=self.properties.Strassenna or 'Parkplatz',
+            purpose=PurposeType.CAR,
             address=address,
             static_data_updated_at=static_data_updated_at,
             type=ParkingSiteType.ON_STREET,

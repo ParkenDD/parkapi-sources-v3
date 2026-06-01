@@ -15,6 +15,7 @@ from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
     ParkingAudience,
     ParkingSpotRestrictionInput,
+    PurposeType,
     StaticParkingSpotInput,
 )
 from parkapi_sources.util import generate_point, round_7d
@@ -65,6 +66,7 @@ class KonstanzDisabledFeatureInput(GeojsonBaseFeatureInput):
                 StaticParkingSpotInput(
                     uid=f'{self.properties.GlobalID}_{i}',
                     name=f'{self.properties.Name} {i + 1} / {self.properties.Informatio}',
+                    purpose=PurposeType.CAR,
                     static_data_updated_at=datetime.now(tz=timezone.utc),
                     lat=lat,
                     lon=lon,

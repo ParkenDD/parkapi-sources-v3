@@ -31,7 +31,7 @@ from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 class StaticBaseParkingInput(ValidataclassMixin, ABC):
     uid: str = StringValidator(min_length=1, max_length=256)
 
-    purpose: PurposeType = EnumValidator(PurposeType), Default(PurposeType.CAR)
+    purpose: PurposeType = EnumValidator(PurposeType)
     address: str | None = Noneable(StringValidator(max_length=512)), Default(None)
     description: str | None = Noneable(StringValidator(max_length=4096)), Default(None)
     operator_name: str | None = Noneable(StringValidator(max_length=256)), Default(None)

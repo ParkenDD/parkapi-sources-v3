@@ -12,7 +12,7 @@ from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import JsonConverter
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import ParkingSiteRestrictionInput, SourceInfo, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingAudience, SupervisionType
+from parkapi_sources.models.enums import ParkingAudience, PurposeType, SupervisionType
 
 from .validation import PforzheimInput
 
@@ -47,6 +47,7 @@ class PforzheimPushConverter(JsonConverter, ParkingSiteBaseConverter):
             parking_site_input = StaticParkingSiteInput(
                 uid=input_data.Id,
                 name=input_data.name,
+                purpose=PurposeType.CAR,
                 type=input_data.type.to_parking_site_type_input(),
                 lat=input_data.lat,
                 lon=input_data.lon,

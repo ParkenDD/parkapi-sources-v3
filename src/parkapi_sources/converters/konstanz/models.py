@@ -26,7 +26,7 @@ from parkapi_sources.converters.konstanz.validators import (
     NumericIntegerValidator,
 )
 from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkingAudience, ParkingSiteType
+from parkapi_sources.models.enums import OpeningStatus, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.validators import (
     EmptystringNoneable,
     GermanDurationIntegerValidator,
@@ -116,6 +116,7 @@ class KonstanzParkingSiteDataInput:
         return StaticParkingSiteInput(
             uid=str(self.id),
             name=self.name,
+            purpose=PurposeType.CAR,
             operator_name=self.operator,
             public_url=self.public_url,
             address=self.address,

@@ -26,7 +26,7 @@ from parkapi_sources.models import (
     ParkingSiteRestrictionInput,
     StaticParkingSiteInput,
 )
-from parkapi_sources.models.enums import ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType
+from parkapi_sources.models.enums import ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import (
     GeoJSONGeometryValidator,
@@ -119,6 +119,7 @@ class LadenburgParkraumcheckParkingSiteInput:
         return StaticParkingSiteInput(
             uid=str(self.properties.fid),
             name=self.properties.Adresse,
+            purpose=PurposeType.CAR,
             address=f'{self.properties.Adresse}, {self.properties.Ort}',
             static_data_updated_at=static_data_updated_at,
             type=ParkingSiteType.ON_STREET,

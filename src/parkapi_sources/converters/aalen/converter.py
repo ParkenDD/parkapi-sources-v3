@@ -11,7 +11,7 @@ from parkapi_sources.converters.base_converter.pull import (
     StaticGeojsonDataMixin,
 )
 from parkapi_sources.exceptions import ImportParkingSiteException
-from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
+from parkapi_sources.models import PurposeType, RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 
 from .models import AalenInput
 
@@ -28,7 +28,10 @@ class AalenPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        return self._get_static_parking_site_inputs_and_exceptions(source_uid=self.source_info.uid)
+        return self._get_static_parking_site_inputs_and_exceptions(
+            source_uid=self.source_info.uid,
+            purpose=PurposeType.CAR,
+        )
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []

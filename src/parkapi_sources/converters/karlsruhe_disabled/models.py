@@ -24,6 +24,7 @@ from parkapi_sources.models import (
     ParkingAudience,
     ParkingSpotRestrictionInput,
     ParkingSpotStatus,
+    PurposeType,
     RealtimeParkingSpotInput,
     StaticParkingSpotInput,
 )
@@ -91,6 +92,7 @@ class KarlsruheDisabledFeatureInput(GeojsonBaseFeatureInput):
                 StaticParkingSpotInput(
                     uid=f'{self.properties.id}_{i}',
                     name=item_name,
+                    purpose=PurposeType.CAR,
                     address=f'{self.properties.standort}, {self.properties.gemeinde}',
                     static_data_updated_at=self.properties.stand,
                     description=', '.join(description for description in descriptions if description),

@@ -118,6 +118,7 @@ class EsslingenParkingSiteFeatureInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(self.properties.fid),
             name=str(self.properties.fid),
+            purpose=PurposeType.CAR,
             type=ParkingSiteType.ON_STREET,
             lat=round_7d(center.y),
             lon=round_7d(center.x),

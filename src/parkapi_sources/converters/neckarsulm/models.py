@@ -12,7 +12,7 @@ from validataclass.dataclasses import validataclass
 from validataclass.validators import DecimalValidator, EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.validators import ExcelNoneable
 from parkapi_sources.validators.boolean_validators import MappedBooleanValidator
 
@@ -92,6 +92,7 @@ class NeckarsulmRowInput:
         return StaticParkingSiteInput(
             uid=str(self.uid),
             name=self.name,
+            purpose=PurposeType.CAR,
             type=self.type.to_parking_site_type_input(),
             lat=self.lat,
             lon=self.lon,

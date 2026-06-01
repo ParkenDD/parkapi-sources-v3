@@ -22,7 +22,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingAudience, ParkingSiteType
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.validators import OsmOpeningTimesValidator
 
 
@@ -115,6 +115,7 @@ class HerrenbergParkingSiteInput:
         static_parking_site_input = StaticParkingSiteInput(
             uid=self.id,
             name=self.name,
+            purpose=PurposeType.CAR,
             lat=self.coords.lat,
             lon=self.coords.lng,
             operator_name='Stadt Herrenberg',

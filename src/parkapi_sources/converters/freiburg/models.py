@@ -113,6 +113,7 @@ class FreiburgParkAndRideStaticFeatureInput(FreiburgBaseFeatureInput):
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
             name=name,
+            purpose=PurposeType.CAR,
             capacity=self.properties.kapazitaet,
             type=self.properties.kategorie.to_parking_site_type_input(),
             static_data_updated_at=datetime.now(tz=timezone.utc),

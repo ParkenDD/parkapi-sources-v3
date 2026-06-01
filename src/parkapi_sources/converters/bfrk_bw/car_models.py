@@ -32,6 +32,7 @@ from parkapi_sources.models.enums import (
     ParkingSiteType,
     ParkingSpotType,
     ParkingType,
+    PurposeType,
 )
 from parkapi_sources.util import generate_point, round_7d
 from parkapi_sources.validators import EmptystringNoneable, ReplacingStringValidator
@@ -188,6 +189,7 @@ class BfrkCarInput(BfrkBaseInput):
 
         static_parking_site_input = StaticParkingSiteInput(
             type=parking_site_type,
+            purpose=PurposeType.CAR,
             capacity=self.stellplaetzegesamt,
             description=self._get_description(),
             operator_name=self.eigentuemer,
@@ -258,6 +260,7 @@ class BfrkCarInput(BfrkBaseInput):
                     uid=f'{self.infraid}-{i}',
                     parking_site_uid=self.infraid,
                     name=name,
+                    purpose=PurposeType.CAR,
                     type=spot_type,
                     description=description,
                     static_data_updated_at=datetime.now(tz=timezone.utc),
