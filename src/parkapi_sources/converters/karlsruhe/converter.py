@@ -90,6 +90,9 @@ class KarlsruhePullConverter(KarlsruheBasePullConverter):
     )
 
     def _should_ignore_dataset(self, feature_dict: dict) -> bool:
+        if self.config_helper.get('PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES'):
+            return feature_dict.get('properties', {}).get('gesamte_parkplaetze') is None
+
         return False
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:

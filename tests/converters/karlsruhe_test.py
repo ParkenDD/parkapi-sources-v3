@@ -26,8 +26,35 @@ def requests_mock_karlsruhe(requests_mock: Mocker) -> Mocker:
 
 
 @pytest.fixture
-def karlsruhe_pull_converter(mocked_config_helper: Mock, request_helper: RequestHelper) -> KarlsruhePullConverter:
-    return KarlsruhePullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
+def karlsruhe_config_helper(mocked_config_helper: Mock):
+    config = {}
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def karlsruhe_pull_converter(karlsruhe_config_helper: Mock, request_helper: RequestHelper) -> KarlsruhePullConverter:
+    return KarlsruhePullConverter(config_helper=karlsruhe_config_helper, request_helper=request_helper)
+
+
+@pytest.fixture
+def karlsruhe_ignore_missing_capacity_config_helper(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES': True,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def karlsruhe_ignore_missing_capacity_pull_converter(
+    karlsruhe_ignore_missing_capacity_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> KarlsruhePullConverter:
+    return KarlsruhePullConverter(
+        config_helper=karlsruhe_ignore_missing_capacity_config_helper,
+        request_helper=request_helper,
+    )
 
 
 class KarlsruhePullConverterTest:
@@ -40,6 +67,20 @@ class KarlsruhePullConverterTest:
 
         assert len(static_parking_site_inputs) == 76
         assert len(import_parking_site_exceptions) == 14
+
+        validate_static_parking_site_inputs(static_parking_site_inputs)
+
+    @staticmethod
+    def test_get_static_parking_sites_ignore_missing_capacities(
+        karlsruhe_ignore_missing_capacity_pull_converter: KarlsruhePullConverter,
+        requests_mock_karlsruhe: Mocker,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_ignore_missing_capacity_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 76
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
