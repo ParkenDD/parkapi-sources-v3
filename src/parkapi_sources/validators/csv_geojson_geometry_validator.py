@@ -3,6 +3,7 @@ Copyright 2026 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+import re
 from typing import Any, override
 
 from shapely import GeometryType
@@ -19,22 +20,26 @@ class CsvGeoJSONGeometryValidator(GeoJSONGeometryValidator):
         **kwargs,
     ):
         if allowed_geometry_types != [GeometryType.LINESTRING]:
-            raise ValidationError(reason='CsvGeoJSONGeometryValidator only supports LINESTRING')
+            # This exception is raised because the validator was not tested with other GeoJSONGeometry types.
+            raise ValidationError(
+                code='unsupported_geometry_type', reason='CsvGeoJSONGeometryValidator only supports LINESTRING'
+            )
         super().__init__(allowed_geometry_types, **kwargs)
 
     @override
     def validate(self, input_data: Any, **kwargs: Any) -> BaseGeometry:
         if type(input_data) is not str:
-            raise ValidationError(reason='Wrong datatype found for CsvGeoJSONGeometryValidator')
+            raise ValidationError(
+                code='invalid_input_data_type', reason='Wrong datatype found for CsvGeoJSONGeometryValidator'
+            )
 
-        input_data = input_data.replace('LINESTRING (', '')
-        input_data = input_data.replace(')', '')
-        points = input_data.split(',')
-        points_geo_str = []
+        # This finds pairs of decimal numbers separated by a whitespace
+        pattern = r'\d+.\d+\s\d+.\d+'
+        points = re.findall(pattern, input_data)
+        points_geojson_format = []
         for point in points:
-            point = point.strip()
             coordinate = point.split(' ')
-            points_geo_str.append([float(c) for c in coordinate])
+            points_geojson_format.append([float(c) for c in coordinate])
 
-        points_geo_json = {'coordinates': points_geo_str, 'type': 'LineString'}
-        return super().validate(points_geo_json, **kwargs)
+        geojson = {'coordinates': points_geojson_format, 'type': 'LineString'}
+        return super().validate(geojson, **kwargs)
