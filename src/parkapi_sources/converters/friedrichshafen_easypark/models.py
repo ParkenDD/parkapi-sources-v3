@@ -64,8 +64,8 @@ class FriedrichshafenEasyParkRowInput:
             fee_description=self._get_fee_description(),
             has_realtime_data=False,
             static_data_updated_at=datetime.now(tz=timezone.utc),
-            lat=round_7d(center.x),
-            lon=round_7d(center.y),
+            lon=round_7d(center.x),
+            lat=round_7d(center.y),
             geojson=self.location_on_sidewalk,
             has_fee=True if self.permission_period and 'Gebührenpflichtig' in self.permission_period else False,
         )
