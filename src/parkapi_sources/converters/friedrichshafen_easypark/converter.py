@@ -24,7 +24,7 @@ class FriedrichshafenEasyParkPushConverter(CsvConverter, ParkingSiteBaseConverte
         has_realtime_data=False,
     )
 
-    header_mapping: dict[str, str] = {
+    header_mapping = {
         'id': 'id',
         'length': 'length',
         'park_angle': 'park_angle',
