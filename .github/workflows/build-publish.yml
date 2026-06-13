@@ -80,13 +80,13 @@ jobs:
           path: dist/
 
       - name: Upload package to GitHub release assets
-        uses: AButler/upload-release-assets@v3.0
+        uses: AButler/upload-release-assets@v4.0.0
         with:
           files: dist/*
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish package to PyPI
-        uses: pypa/gh-action-pypi-publish@v1.13.0
+        uses: pypa/gh-action-pypi-publish@v1.14.0
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
