@@ -25,6 +25,7 @@ from validataclass.validators import (
 
 from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
 from .enums import (
+    LinearParkingPosition,
     OpeningStatus,
     ParkAndRideType,
     ParkingSiteOrientation,
@@ -73,6 +74,10 @@ class StaticParkingSiteInput(StaticBaseParkingInput):
     orientation: ParkingSiteOrientation | None = Noneable(EnumValidator(ParkingSiteOrientation)), Default(None)
     side: ParkingSiteSide | None = Noneable(EnumValidator(ParkingSiteSide)), Default(None)
     parking_type: ParkingType | None = Noneable(EnumValidator(ParkingType)), Default(None)
+    linear_parking_position: LinearParkingPosition | None = (
+        Noneable(EnumValidator(LinearParkingPosition)),
+        Default(None),
+    )
 
     supervision_type: SupervisionType | None = Noneable(EnumValidator(SupervisionType)), Default(None)
     related_location: str | None = Noneable(StringValidator(max_length=256)), Default(None)

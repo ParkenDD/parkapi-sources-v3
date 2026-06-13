@@ -10,7 +10,10 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
 from parkapi_sources.converters.base_converter.push import CsvConverter
-from parkapi_sources.converters.friedrichshafen_easypark.models import FriedrichshafenEasyParkRowInput
+from parkapi_sources.converters.friedrichshafen_easypark.models import (
+    FriedrichshafenEasyParkRowInput,
+    FriedrichshafenParkingSiteOrientation,
+)
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import SourceInfo, StaticParkingSiteInput
 
@@ -60,6 +63,10 @@ class FriedrichshafenEasyParkPushConverter(CsvConverter, ParkingSiteBaseConverte
                         message=f'validation error for {input_dict}: {e.to_dict()}',
                     ),
                 )
+                continue
+
+            # Ignore parking sites with type NO_PARKING
+            if input_data.park_angle == FriedrichshafenParkingSiteOrientation.NO_PARKING:
                 continue
 
             static_parking_site_inputs.append(input_data.to_static_parking_site_input())

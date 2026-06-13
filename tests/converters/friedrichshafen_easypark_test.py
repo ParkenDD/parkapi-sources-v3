@@ -23,7 +23,7 @@ def friedrichshafen_easypark_push_converter(
 class FriedrichshafenEasyParkPushConverterTest:
     @staticmethod
     def test_get_static_parking_sites(friedrichshafen_easypark_push_converter: FriedrichshafenEasyParkPushConverter):
-        with get_data_path('friedrichshafen_inventory.csv').open(encoding='utf-8-sig') as friedrichshafen_easypark_file:
+        with get_data_path('friedrichshafen_easypark.csv').open(encoding='utf-8-sig') as friedrichshafen_easypark_file:
             friedrichshafen_easypark_data = StringIO(friedrichshafen_easypark_file.read())
 
         static_parking_site_inputs, import_parking_site_exceptions = (
@@ -31,6 +31,6 @@ class FriedrichshafenEasyParkPushConverterTest:
         )
 
         assert len(static_parking_site_inputs) == 1681
-        assert len(import_parking_site_exceptions) == 16
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
