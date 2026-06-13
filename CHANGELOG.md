@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.36.0
+
+### Features
+
+* [linear parking position support](https://github.com/ParkenDD/parkapi-sources-v3/pull/384)
+* [Friedrichshafen Easypark Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/382)
+
+
+### Fixes
+
+* [add config flag `PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES` to ignore missing data at karlsruhe](https://github.com/ParkenDD/parkapi-sources-v3/pull/380)
+* [fix konstanz bike test not being mocked](https://github.com/ParkenDD/parkapi-sources-v3/pull/376)
+
+
+### Maintenance
+
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/383)
+* [enforces to set purpose](https://github.com/ParkenDD/parkapi-sources-v3/pull/378)
+
 ## 0.35.0
 
 ### Features
