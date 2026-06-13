@@ -5,6 +5,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from decimal import Decimal
+from enum import Enum
 
 import shapely
 from shapely import GeometryType, LineString
@@ -12,17 +13,24 @@ from validataclass.dataclasses import validataclass
 from validataclass.validators import EnumValidator, IntegerValidator, StringValidator
 
 from parkapi_sources.models import PurposeType, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType
+from parkapi_sources.models.enums import LinearParkingPosition, ParkingSiteOrientation, ParkingSiteSide, ParkingSiteType
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import ExcelNoneable, GermanDecimalValidator
 from parkapi_sources.validators.csv_geojson_geometry_validator import CsvGeoJSONGeometryValidator
+
+
+class FriedrichshafenParkingSiteOrientation(Enum):
+    PARALLEL = 'PARALLEL'
+    DIAGONAL = 'DIAGONAL'
+    PERPENDICULAR = 'PERPENDICULAR'
+    NO_PARKING = 'NO_PARKING'
 
 
 @validataclass
 class FriedrichshafenEasyParkRowInput:
     id: int = IntegerValidator(allow_strings=True)
     length: Decimal = GermanDecimalValidator()
-    park_angle: ParkingSiteOrientation = EnumValidator(ParkingSiteOrientation)
+    park_angle: FriedrichshafenParkingSiteOrientation = EnumValidator(FriedrichshafenParkingSiteOrientation)
     street_side: ParkingSiteSide = EnumValidator(ParkingSiteSide)
     location_on_sidewalk: LineString = CsvGeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.LINESTRING])
     permissions_translation: str = StringValidator()
@@ -35,8 +43,9 @@ class FriedrichshafenEasyParkRowInput:
         return StaticParkingSiteInput(
             uid=str(self.id),
             type=ParkingSiteType.ON_STREET,
+            linear_parking_position=LinearParkingPosition.PARKING_CENTER_LINE,
             capacity=self._get_capacity(),
-            orientation=self.park_angle,
+            orientation=ParkingSiteOrientation[self.park_angle.name],
             name='Straßenparkplatz',
             purpose=PurposeType.CAR,
             side=self.street_side,
@@ -59,9 +68,12 @@ class FriedrichshafenEasyParkRowInput:
         return fee_description
 
     def _get_capacity(self) -> int:
-        if self.park_angle == ParkingSiteOrientation.PARALLEL:
+        if self.park_angle == FriedrichshafenParkingSiteOrientation.PARALLEL:
             return int(self.length / Decimal('5'))
-        if self.park_angle == ParkingSiteOrientation.PERPENDICULAR:
+        if self.park_angle == FriedrichshafenParkingSiteOrientation.PERPENDICULAR:
             return int(self.length / Decimal('2.5'))
-        if self.park_angle == ParkingSiteOrientation.DIAGONAL:
+        if self.park_angle == FriedrichshafenParkingSiteOrientation.DIAGONAL:
             return int(self.length / Decimal('3'))
+
+        # Will never happen as long as FriedrichshafenParkingSiteOrientation does not change
+        raise ValueError(f'Unknown orientation: {self.park_angle}')

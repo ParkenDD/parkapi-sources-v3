@@ -123,3 +123,8 @@ class ParkingType(Enum):
     ON_KERB = 'ON_KERB'
     HALF_ON_KERB = 'HALF_ON_KERB'
     SHOULDER = 'SHOULDER'
+
+
+class LinearParkingPosition(Enum):
+    ROAD_CENTER_LINE = 'ROAD_CENTER_LINE'
+    PARKING_CENTER_LINE = 'PARKING_CENTER_LINE'
