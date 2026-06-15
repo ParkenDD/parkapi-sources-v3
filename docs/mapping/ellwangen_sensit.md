@@ -9,6 +9,7 @@ Attributes which are set statically:
 * `purpose` is always set to `CAR`
 * `has_realtime_data` is always set to `true`
 * `realtime_data_updated_at` not provided, to be set in the converter
+* `static_data_updated_at` not provided, to be set in the converter
 
 ## ParkingSite
 
@@ -32,7 +33,7 @@ Each object in the JSON array is mapped to a `ParkingSite` as follows.
 
 ## Location
 
-| Field     | Type    | Cardinality | Mapping | Comment               |
-|-----------|---------|-------------|---------|-----------------------|
-| latitude  | decimal | 1           | lat     | Transform to string |
-| longitude | decimal | 1           | lon     | Transform to string | 
+| Field     | Type    | Cardinality | Mapping | Comment                                                             |
+|-----------|---------|-------------|---------|---------------------------------------------------------------------|
+| latitude  | decimal | 1           | lat     | Transform to string and round up to 6 decimal places e.g. 48.961891 |
+| longitude | decimal | 1           | lon     | Transform to string and round up to 6 decimal places e.g. 10.130910 | 
