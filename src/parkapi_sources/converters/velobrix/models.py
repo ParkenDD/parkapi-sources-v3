@@ -20,7 +20,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkAndRideType, ParkingSiteType, PurposeType
 
 
 @validataclass
@@ -72,6 +72,7 @@ class VelobrixInput:
             operator_name=self.tenantName,
             capacity=self.countLogicalBoxes,
             type=ParkingSiteType.LOCKBOX,
+            park_and_ride_type=[ParkAndRideType.TRAIN],
             has_realtime_data=self.countFreeLogicalBoxes is not None,
             has_fee=True,
             fee_description=None if self.priceModelDescription is None else self.priceModelDescription.description,
