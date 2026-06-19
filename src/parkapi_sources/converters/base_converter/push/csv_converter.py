@@ -31,6 +31,9 @@ class CsvConverter(PushConverter, ABC):
         return self.handle_csv(list(csv.reader(data, delimiter=self.csv_delimiter)))
 
     def get_mapping_by_header(self, header_row: dict[str, str], row: list[Any]) -> dict[str, int]:
+        # Remove possible BOM:
+        if row and row[0] and row[0][0] == '\ufeff':
+            row[0] = row[0][1:]
         mapping: dict[str, int] = {}
         for header_field, target_field in header_row.items():
             if header_field not in row:
