@@ -1,6 +1,25 @@
 # Changelog
 
-Released 2026-06-16
+Released 2026-06-21
+
+## 0.37.0
+
+### Features
+
+* [Ellwangen parking via Sensit API](https://github.com/ParkenDD/parkapi-sources-v3/pull/390)
+* [velobrix: add park_and_ride_type=TRAIN](https://github.com/ParkenDD/parkapi-sources-v3/pull/388)
+
+
+### Fixes
+
+* [fix BOM issues](https://github.com/ParkenDD/parkapi-sources-v3/pull/389)
+
+
+### Maintenance
+
+* [move to uv](https://github.com/ParkenDD/parkapi-sources-v3/pull/392)
+* [test converter registration](https://github.com/ParkenDD/parkapi-sources-v3/pull/391)
+
 
 ## 0.36.1
 
