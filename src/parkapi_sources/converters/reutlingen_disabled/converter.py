@@ -26,7 +26,7 @@ class ReutlingenDisabledPushConverter(CsvConverter, ParkingSpotBaseConverter):
     )
 
     header_mapping: dict[str, str] = {
-        '\ufeffid': 'uid',
+        'id': 'uid',
         'ort': 'name',
         'GEOM': 'coordinates',
     }

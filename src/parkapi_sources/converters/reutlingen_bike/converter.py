@@ -29,7 +29,7 @@ class ReutlingenBikePushConverter(CsvConverter, ParkingSiteBaseConverter):
     )
 
     header_mapping: dict[str, str] = {
-        '\ufeffSTANDORT': 'name',
+        'STANDORT': 'name',
         'ANZAHL': 'capacity',
         'ANLAGE': 'additional_name',
         'GEOM': 'coordinates',
