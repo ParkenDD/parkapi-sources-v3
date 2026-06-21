@@ -15,17 +15,20 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      # We use Python 3.12 here because it's the minimum Python version supported by this library.
-      - name: Setup Python 3.12
-        uses: actions/setup-python@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
         with:
+          # We use Python 3.12 here because it's the minimum Python version supported by this library.
           python-version: '3.12'
+          enable-cache: true
 
-      - name: Install dependencies
-        run: pip install --upgrade pip build
+      - name: Set package version from release tag
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: uv version --no-sync "${TAG#v}"
 
       - name: Build package
-        run: python -m build
+        run: uv build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v7
@@ -34,7 +37,7 @@ jobs:
           path: dist/
 
   test:
-    # This job tests the built package by installing it via pip and running unit tests (without tox).
+    # This job tests the built package by installing it via uv and running unit tests.
     name: Test package
     needs: build
     runs-on: ubuntu-latest
@@ -47,10 +50,11 @@ jobs:
         with:
           timezoneLinux: "Europe/Berlin"
 
-      - name: Setup Python 3.12
-        uses: actions/setup-python@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: '3.12'
+          enable-cache: true
 
       - name: Download build artifacts
         uses: actions/download-artifact@v8
@@ -58,14 +62,14 @@ jobs:
           name: dist_packages
           path: dist/
 
-      - name: Install test dependencies
-        run: pip install -r requirements.txt -r requirements-dev.txt
+      - name: Install dev dependencies (without the project itself)
+        run: uv sync --locked --no-install-project
 
       - name: Install built package
-        run: pip install dist/parkapi_sources-*.whl
+        run: uv pip install --no-deps dist/parkapi_sources-*.whl
 
       - name: Run unit tests
-        run: python -m pytest
+        run: uv run --no-sync pytest
 
   publish:
     name: Publish package
@@ -73,6 +77,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
       - name: Download build artifacts
         uses: actions/download-artifact@v8
         with:
@@ -86,7 +93,6 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish package to PyPI
-        uses: pypa/gh-action-pypi-publish@v1.14.0
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
+        env:
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        run: uv publish

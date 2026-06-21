@@ -1,5 +1,0 @@
-ruff~=0.15.17
-pytest~=9.0.3
-pytest-cov~=7.1.0
-requests-mock~=1.12.1
-tox~=4.55.1
