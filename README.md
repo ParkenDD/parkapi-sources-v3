@@ -349,15 +349,18 @@ ruff format ./src ./tests
 ruff check --fix ./src ./tests
 ```
 
-If you don't have `ruff` installed globally, you can create a virtual environment for these tools:
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management. Set up the development
+environment (creating a virtualenv and installing all runtime and dev dependencies from the lockfile) with:
 
 ```bash
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt -r requirements-dev.txt
+uv sync
+```
 
-ruff format ./src ./tests
-ruff check --fix ./src ./tests
+You can then run the linting and formatting tools through uv:
+
+```bash
+uv run ruff format ./src ./tests
+uv run ruff check --fix ./src ./tests
 ```
 
 
@@ -372,8 +375,8 @@ README.md file.
 
 If you created a merge request, the maintainers will review your code. If everything is fine, it will be merged to
 `main`, and a new release will be created soon. As written above, we follow SemVer, so any new converter will add plus
-one to the minor version. In order to use this new release, please keep in mind to update your
-`requirements.txt` / update the dependency manager you use.
+one to the minor version. In order to use this new release, please keep in mind to update the version in the
+dependency manager you use.
 
 
 ## Licence
