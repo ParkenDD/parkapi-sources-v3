@@ -22,6 +22,7 @@ We support following data sources:
 | Barrierefreie Reisekette Baden-Württemberg: Fahrrad-Parkplätze        | ParkingSite | bike       | pull        | `bfrk_bw_bike`                | no       |
 | Stadt Buchen                                                          | ParkingSite | car        | push (json) | `buchen`                      | yes      |
 | Stadt Ellwangen                                                       | ParkingSite | car        | push (xlsx) | `ellwangen`                   | no       |
+| Stadt Ellwangen: Sensit                                               | ParkingSite | car        | pull        | `ellwangen_sensit`            | yes      |
 | Stadt Freiburg                                                        | ParkingSite | car        | pull        | `freiburg`                    | yes      |
 | Stadt Freiburg: Statische Behindertenparkplätze                       | ParkingSpot | car        | pull        | `freiburg_disabled_static`    | no       |
 | Stadt Freiburg: Behindertenparkplätze mit Sensoren                    | ParkingSpot | car        | pull        | `freiburg_disabled_sensors`   | yes      |

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "name": "Ellwangen Marktplatz",
+        "actualStatus": {
+            "full": false,
+            "parkingCapacity": 45,
+            "vacantSpaces": 2,
+            "displayValue": 0
+        },
+        "location": {
+            "latitude": 48.961891174316406,
+            "longitude": 10.13090991973877,
+            "altitude": 0.0
+        },
+        "bays": null
+    }
+]

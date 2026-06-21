@@ -14,6 +14,7 @@ from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPullConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
+from .ellwangen_sensit import EllwangenSensitPullConverter
 from .esslingen import EsslingenPushConverter
 from .freiburg import (
     FreiburgParkAndRideRealtimePullConverter,
