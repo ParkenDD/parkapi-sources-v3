@@ -93,6 +93,15 @@ ParkAPI Sources is a python module published at [PyPI](https://pypi.org/project/
 pip install parkapi-sources
 ```
 
+If your project uses [uv](https://docs.astral.sh/uv/), add parkapi-sources as a dependency instead:
+
+```shell
+uv add parkapi-sources
+```
+
+This adds it to your `pyproject.toml` and pins it in your `uv.lock`. To pull in a newer release later, run
+`uv lock --upgrade-package parkapi-sources` (or `uv add parkapi-sources@latest`).
+
 If you use parkapi-sources in a project, we recommend to fix the version. As long as parkapi-sources is beta, breaking
 changes might be introduced on minor version level (like: change from 0.1.1 to 0.2.0). As soon as 1.0 is released, we
 will follow [Semantic Versioning](https://semver.org), which means that breaking changes will just appear on major version changes
