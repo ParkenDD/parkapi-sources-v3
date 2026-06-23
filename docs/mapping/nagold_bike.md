@@ -8,10 +8,12 @@ The city of Nagold publishes a GeoJSON dataset with locations of bicycle parking
 Static values:
 
 Each bicycle parking installation is mapped to a static `ParkingSite` as follows.
+Parking installations with `"Stellplatz": " "` and `"Anzahl_Bue": 0` should not be integrated.
 Attributes which are set statically by the converter:
 
-* `has_realtime_data` is always set to `False`
+* `has_realtime_data` is always set to `false`
 * `opening_hours` is set to `24/7` when `Immer_geoe` is `ja`
+* `purpose` is always set to `BIKE`
 
 | Field                 | Type                              | Cardinality | Mapping                                           | Comment                                                             |
 |-----------------------|-----------------------------------|-------------|---------------------------------------------------|---------------------------------------------------------------------|
@@ -20,16 +22,15 @@ Attributes which are set statically by the converter:
 | Lagebeschr            | string                            | ?           | description                                       | Parking description (e.g. "Am Parkplatz vom Polizeirevier")         |
 | coordinates[1]        | numeric                           | 1           | lat                                               | GeoJSON geometry coordinates index 1                                |
 | coordinates[0]        | numeric                           | 1           | lon                                               | GeoJSON geometry coordinates index 0                                |
-| Stellplatz            | [Stellplatz](#Stellplatz)         | ?           | type                                              | See [Stellplatz](#Stellplatz)                                       |
+| Stellplatz            | [Stellplatz](#Stellplatz)         | 1           | type                                              | See [Stellplatz](#Stellplatz)                                       |
 | Anzahl_Bue            | integer                           | 1           | capacity                                          |                                                                     |
-| Anzahl_Lad            | integer                           | ?           | [restrictions](#ParkingSiteRestriction)           | Map to `CHARGING` restrictions if > 0                               |
-| Beleuchtun            | [Beleuchtung](#Beleuchtung)       | ?           | has_lighting                                      | See [Beleuchtung](#Beleuchtung)                                     |
-| Ueberdachu            | [Ueberdachung](#Ueberdachung)     | ?           | is_covered                                        | See [Ueberdachung](#Ueberdachung)                                   |
-| Bike_and_R            | [Bike_and_Ride](#Bike_and_Ride)   | ?           | park_and_ride_type                                | See [Bike_and_Ride](#Bike_and_Ride)                                 |
-| Ueberwachu            | [Ueberwachung](#Ueberwachung)     | ?           | supervision_type                                  | See [Ueberwachung](#Ueberwachung)                                   |
+| Anzahl_Lad            | integer                           | 1           | [restrictions](#ParkingSiteRestriction)           | Map to `CHARGING` restrictions if > 0                               |
+| Beleuchtun            | [Beleuchtung](#Beleuchtung)       | 1           | has_lighting                                      | See [Beleuchtung](#Beleuchtung)                                     |
+| Ueberdachu            | [Ueberdachung](#Ueberdachung)     | 1           | is_covered                                        | See [Ueberdachung](#Ueberdachung)                                   |
+| Bike_and_R            | [Bike_and_Ride](#ParkAndRideType) | 1           | park_and_ride_type                                | See [Bike_and_Ride](#ParkAndRideType)                                 |
+| Ueberwachu            | [Ueberwachung](#Ueberwachung)     | 1           | supervision_type                                  | See [Ueberwachung](#Ueberwachung)                                   |
 | Betreiber             | string                            | ?           | operator_name                                     | Omit if blank                                                       |
-| last_edi_1            | epoch ms                          | ?           | static_data_updated_at                            | Convert epoch milliseconds to ISO 8601                              |
-| created_da            | epoch ms                          | ?           | static_data_updated_at                            | Fallback if `last_edi_1` is not available                           |
+| last_edi_1            | epoch ms                          | 1           | static_data_updated_at                            | Convert epoch milliseconds to ISO 8601                              |
 
 
 ## Beleuchtung
@@ -54,7 +55,6 @@ Attributes which are set statically by the converter:
 |----------------------|--------------|
 | Anlehnbügel          | `STANDS`     |
 | Vorderradanschluss   | `WALL_LOOPS` |
-| None                 | `STANDS`     |
 
 
 ## ParkAndRideType
