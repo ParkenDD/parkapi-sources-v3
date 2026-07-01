@@ -1,6 +1,6 @@
-# Bundesautobahn rest areas
+# Bundesautobahn truck rest areas
 
-Toll Collect publishes a large Datex II `ParkingTablePublication` with truck and car parking spaces (mostly rest areas)
+Toll Collect publishes a large Datex II `ParkingTablePublication` with truck parking spaces (mostly rest areas)
 along the German motorways, provided via the Mobilithek. A parking space is represented by a `parkingRecord` of type
 `InterUrbanParkingSite`. For each `parkingRecord` a `ParkingSite` is generated using the generic
 `InterUrbanParkingSiteMixin`.
@@ -11,6 +11,7 @@ Static values:
 * `type` is always `OFF_STREET_PARKING_GROUND` (derived from `interUrbanParkingSiteLocation`, which is always `motorway`)
 * `has_realtime_data` is always `true`
 * parking records with a `parkingNumberOfSpaces` of `0` are ignored
+* `restrictions[0].type` is always `TRUCK`
 
 | Datex II field                 | Type                                                            | Cardinality | Mapping                | Comment                                                  |
 |--------------------------------|-----------------------------------------------------------------|-------------|------------------------|----------------------------------------------------------|
@@ -33,13 +34,13 @@ Static values:
 
 ### operator
 
-| Datex II field                 | Type    | Cardinality | Mapping | Comment       |
-|--------------------------------|---------|-------------|---------|---------------|
-| contactOrganisationName.values | string  | 1           |         |               |
-| contactDetailsTelephoneNumber  | string  | ?           |         |               |
-| contactDetailsEMail            | string  | ?           |         |               |
-| urlLinkAddress                 | string  | ?           |         |               |
-| publishingAgreement            | boolean | 1           |         | always `true` |
+| Datex II field                 | Type    | Cardinality | Mapping       | Comment                                        |
+|--------------------------------|---------|-------------|---------------|------------------------------------------------|
+| contactOrganisationName.values | string  | 1           | operator_name | Prefixed with `Die Autobahn GmbH des Bundes, ` |
+| contactDetailsTelephoneNumber  | string  | ?           |               |                                                |
+| contactDetailsEMail            | string  | ?           |               |                                                |
+| urlLinkAddress                 | string  | ?           |               |                                                |
+| publishingAgreement            | boolean | 1           |               | always `true`                                  |
 
 ### parkingLocation
 
