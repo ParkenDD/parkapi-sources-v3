@@ -72,8 +72,8 @@ class ApcoaPullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = apcoa_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 329
-        assert len(import_parking_site_exceptions) == 24
+        assert len(static_parking_site_inputs) == 318
+        assert len(import_parking_site_exceptions) == 11
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -95,8 +95,8 @@ class ApcoaPullConverterTest:
             apcoa_ignore_missing_coordinates_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 329
-        assert len(import_parking_site_exceptions) == 19
+        assert len(static_parking_site_inputs) == 318
+        assert len(import_parking_site_exceptions) == 6
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 

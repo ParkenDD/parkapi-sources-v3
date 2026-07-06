@@ -44,7 +44,7 @@ class ApcoaPullConverter(ParkingSitePullConverter):
             if (
                 parking_site_dict.get('SiteIdLong').startswith('S1180_')
                 and parking_site_dict.get('ShowAs') == 'SURVEILLANCE_OBJECT'
-            ):
+            ) or parking_site_dict.get('ShowAs') == 'HIDDEN':
                 continue
 
             # Ignore missing coordinates if requested
