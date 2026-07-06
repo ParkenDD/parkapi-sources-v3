@@ -70,6 +70,7 @@ from .reutlingen import ReutlingenPushConverter
 from .reutlingen_bike import ReutlingenBikePushConverter
 from .reutlingen_disabled import ReutlingenDisabledPushConverter
 from .stuttgart import StuttgartPushConverter
+from .toll_collect import TollCollectPullConverter
 from .ulm import UlmPullConverter
 from .ulm_sensors import UlmSensorsPullConverter
 from .velobrix import VelobrixPullConverter
