@@ -5,6 +5,8 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from .datex2_realtime_mixin import Datex2RealtimeMixin
 from .datex2_static_mixin import Datex2StaticMixin
+from .inter_urban_parking_site_mixin import InterUrbanParkingSiteMixin
+from .inter_urban_parking_site_validator import InterUrbanParkingSite
 from .parking_facility_mixin import ParkingFacilityMixin
 from .parking_facility_validator import ParkingFacility
 from .parking_record_status_mixin import ParkingRecordStatusMixin

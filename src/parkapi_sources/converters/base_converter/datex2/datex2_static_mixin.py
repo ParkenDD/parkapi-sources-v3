@@ -51,6 +51,9 @@ class Datex2StaticMixin(ABC):
                 static_parking_site_input = static_item.to_static_parking_site_input(
                     has_realtime_data=self.has_realtime_data,
                 )
+                # A validataclass can return None to signal that the parking site should be ignored
+                if static_parking_site_input is None:
+                    continue
                 self.modify_static_parking_site_input(static_parking_site_input)
 
                 static_parking_site_inputs.append(static_parking_site_input)

@@ -70,6 +70,7 @@ We support following data sources:
 | Stadt Reutlingen: PKW-Parkplätze                                      | ParkingSite | car        | push (csv)  | `reutlingen`                  | no       |
 | Stadt Reutlingen: Fahrrad-Abstellanlagen                              | ParkingSite | bike       | push (csv)  | `reutlingen_bike`             | no       |
 | Stadt Stuttgart                                                       | ParkingSite | car        | push (json) | `stuttgart`                   | yes      |
+| Toll Collect: Truck Parking                                           | ParkingSite | car        | pull        | `toll_collect`                | yes      |
 | Stadt Ulm                                                             | ParkingSite | car        | pull        | `ulm`                         | yes      |
 | Stadt Ulm: E-Quartiershubs Sensors                                    | ParkingSite | car        | pull        | `ulm_sensors`                 | yes      |
 | Stadt Ulm: E-Quartiershubs Sensors                                    | ParkingSpot | car        | pull        | `ulm_sensors`                 | yes      |
