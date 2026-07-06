@@ -9,11 +9,13 @@ Static values:
 
 Each bicycle parking installation is mapped to a static `ParkingSite` as follows.
 Parking installations with `"Stellplatz": " "` and `"Anzahl_Bue": 0` should not be integrated.
+
 Attributes which are set statically by the converter:
 
 * `has_realtime_data` is always set to `false`
 * `opening_hours` is set to `24/7` when `Immer_geoe` is `ja`
 * `purpose` is always set to `BIKE`
+* `lat` and `lon` are set from the standard GeoJSON coordinates point, 
 
 | Field                 | Type                              | Cardinality | Mapping                                           | Comment                                                             |
 |-----------------------|-----------------------------------|-------------|---------------------------------------------------|---------------------------------------------------------------------|
@@ -30,7 +32,7 @@ Attributes which are set statically by the converter:
 | Bike_and_R            | [Bike_and_Ride](#ParkAndRideType) | 1           | park_and_ride_type                                | See [Bike_and_Ride](#ParkAndRideType)                                 |
 | Ueberwachu            | [Ueberwachung](#Ueberwachung)     | 1           | supervision_type                                  | See [Ueberwachung](#Ueberwachung)                                   |
 | Betreiber             | string                            | ?           | operator_name                                     | Omit if blank                                                       |
-| last_edi_1            | epoch ms                          | 1           | static_data_updated_at                            | Convert epoch milliseconds to ISO 8601                              |
+| last_edi_1            | integer                           | 1           | static_data_updated_at                            | Convert epoch milliseconds to ISO 8601                              |
 
 
 ## Beleuchtung
