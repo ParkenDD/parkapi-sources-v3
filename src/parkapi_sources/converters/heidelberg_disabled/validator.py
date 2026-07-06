@@ -53,7 +53,7 @@ class HeidelbergDisabledParkingSpotInput:
 
         return StaticParkingSpotInput(
             uid=self.id,
-            name=self.properties.BESCHRIFTU or None,
+            name=self.properties.BEZEICHNUN or None,
             purpose=PurposeType.CAR,
             operator_name=self.properties.BETREIBER,
             address=f'{address}, Heidelberg' if address else None,
