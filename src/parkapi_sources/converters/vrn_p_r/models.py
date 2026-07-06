@@ -10,7 +10,7 @@ from enum import Enum
 from isodate import Duration
 from shapely import GeometryType, Point
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
-from validataclass.helpers import OptionalUnset, UnsetValue
+from validataclass.helpers import UnsetValue
 from validataclass.validators import (
     DataclassValidator,
     EnumValidator,
@@ -73,8 +73,8 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
     photo_url: str | None = Noneable(UrlValidator(max_length=4096)), Default(None)
     lat: Decimal | None = NumericValidator()
     lon: Decimal | None = NumericValidator()
-    address: OptionalUnset[str] = Noneable(StringValidator(min_length=0, max_length=256)), Default(None)
-    operator_name: OptionalUnset[str] = Noneable(StringValidator(min_length=0, max_length=256)), Default(None)
+    address: str | None = Noneable(StringValidator(min_length=0, max_length=256)), Default(None)
+    operator_name: str | None = Noneable(StringValidator(min_length=0, max_length=256)), Default(None)
     capacity: int = IntegerValidator(min_value=0)
     capacity_charging: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
     capacity_family: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
@@ -84,15 +84,16 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
     capacity_carsharing: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
     capacity_disabled: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
     max_height: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
-    has_realtime_data: OptionalUnset[bool] = (
+    has_realtime_data: bool = (
         Noneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})),
-        Default(None),
+        Default(False),
     )
     vrn_sensor_id: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
-    realtime_opening_status: VrnParkAndRidePropertiesOpeningStatus | None = (
-        Noneable(EnumValidator(VrnParkAndRidePropertiesOpeningStatus)),
-        Default(None),
-    )
+    # ATM we just get UNKNOWN
+    # realtime_opening_status: VrnParkAndRidePropertiesOpeningStatus | None = (
+    #    Noneable(EnumValidator(VrnParkAndRidePropertiesOpeningStatus)),
+    #    Default(None),
+    # )
     has_lighting: bool | None = Noneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})), Default(None)
     has_fee: bool | None = Noneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})), Default(None)
     is_covered: bool | None = Noneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})), Default(None)
@@ -102,11 +103,11 @@ class VrnParkAndRidePropertiesInput(ValidataclassMixin):
         Noneable(EnumValidator(VrnParkAndRidePRType)),
         Default(None),
     )
-    max_stay: OptionalUnset[int] = Noneable(IntegerValidator(min_value=0)), Default(None)
-    fee_description: OptionalUnset[str] = Noneable(StringValidator(max_length=512)), Default(None)
-    realtime_free_capacity: OptionalUnset[int] = Noneable(IntegerValidator(min_value=0)), Default(None)
-    realtime_occupied: OptionalUnset[int] = Noneable(IntegerValidator(min_value=0)), Default(None)
-    realtime_data_updated: OptionalUnset[datetime] = (
+    max_stay: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
+    fee_description: str | None = Noneable(StringValidator(max_length=512)), Default(None)
+    realtime_free_capacity: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
+    realtime_occupied: int | None = Noneable(IntegerValidator(min_value=0)), Default(None)
+    realtime_data_updated: datetime | None = (
         Noneable(TimestampDateTimeValidator(allow_strings=True, divisor=1000)),
         Default(None),
     )
@@ -178,7 +179,7 @@ class VrnParkAndRideFeaturesInput:
         if self.properties.capacity_carsharing is not None:
             parking_site_restrictions.append(
                 ParkingSiteRestrictionInput(
-                    type=ParkingAudience.CHARGING,
+                    type=ParkingAudience.CARSHARING,
                     capacity=self.properties.capacity_carsharing,
                     max_stay=max_stay,
                 ),
@@ -217,7 +218,10 @@ class VrnParkAndRideFeaturesInput:
             restrictions=parking_site_restrictions,
         )
 
-    def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
+    def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput | None:
+        if self.properties.realtime_free_capacity is None:
+            return None
+
         if self.properties.realtime_data_updated is None:
             realtime_data_updated_at = datetime.now(timezone.utc)
         else:
@@ -232,6 +236,5 @@ class VrnParkAndRideFeaturesInput:
             uid=f'{self.properties.original_uid}-{self.properties.vrn_sensor_id}',
             realtime_capacity=realtime_capacity,
             realtime_free_capacity=self.properties.realtime_free_capacity,
-            realtime_opening_status=self.properties.realtime_opening_status.to_realtime_opening_status(),
             realtime_data_updated_at=realtime_data_updated_at,
         )

@@ -87,6 +87,9 @@ class VrnParkAndRidePullConverter(ParkingSitePullConverter, ABC):
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
 
         for feature_input in feature_inputs:
-            realtime_parking_site_inputs.append(feature_input.to_realtime_parking_site_input())
+            realtime_parking_site_input = feature_input.to_realtime_parking_site_input()
+            if realtime_parking_site_input is None:
+                continue
+            realtime_parking_site_inputs.append(realtime_parking_site_input)
 
         return realtime_parking_site_inputs, import_parking_site_exceptions
