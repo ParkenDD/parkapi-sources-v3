@@ -3,7 +3,7 @@
 Toll Collect publishes a large Datex II `ParkingTablePublication` with truck parking spaces (mostly rest areas)
 along the German motorways, provided via the Mobilithek. A parking space is represented by a `parkingRecord` of type
 `InterUrbanParkingSite`. For each `parkingRecord` a `ParkingSite` is generated using the generic
-`InterUrbanParkingSiteMixin`.
+class `InterUrbanParkingSiteMixin`.
 
 Static values:
 
