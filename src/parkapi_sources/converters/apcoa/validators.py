@@ -7,7 +7,6 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from decimal import Decimal
 from enum import Enum
-from typing import Optional
 from zoneinfo import ZoneInfo
 
 from validataclass.dataclasses import validataclass
@@ -25,7 +24,7 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models.enums import ParkingSiteType
-from parkapi_sources.validators import SpacedDateTimeValidator
+from parkapi_sources.validators import NoneableEnumValidator, SpacedDateTimeValidator
 
 
 class ApcoaParkingSpaceType(Enum):
@@ -107,20 +106,20 @@ class ApcoaLocationGeocoordinatesInput:
 @validataclass
 class ApcoaNavigationLocationsInput:
     GeoCoordinates: ApcoaLocationGeocoordinatesInput = DataclassValidator(ApcoaLocationGeocoordinatesInput)
-    LocationType: Optional[str] = Noneable(StringValidator())
+    LocationType: str | None = Noneable(StringValidator())
 
 
 @validataclass
 class ApcoaAdressInput:
-    Street: Optional[str] = Noneable(StringValidator())
-    Zip: Optional[str] = Noneable(StringValidator())
-    City: Optional[str] = Noneable(StringValidator())
-    Region: Optional[str] = Noneable(StringValidator())
+    Street: str | None = Noneable(StringValidator())
+    Zip: str | None = Noneable(StringValidator())
+    City: str | None = Noneable(StringValidator())
+    Region: str | None = Noneable(StringValidator())
 
 
 @validataclass
 class ApcoaParkingSpaceInput:
-    Type: ApcoaParkingSpaceType = EnumValidator(ApcoaParkingSpaceType)
+    Type: ApcoaParkingSpaceType | None = NoneableEnumValidator(ApcoaParkingSpaceType)
     Count: int = IntegerValidator(allow_strings=True)
 
 
@@ -132,32 +131,32 @@ class ApcoaOpeningHoursInput:
 
 @validataclass
 class ApcoaCarparkPhotoURLInput:
-    CarparkPhotoURL1: Optional[str] = Noneable(UrlValidator())
-    CarparkPhotoURL2: Optional[str] = Noneable(UrlValidator())
-    CarparkPhotoURL3: Optional[str] = Noneable(UrlValidator())
-    CarparkPhotoURL4: Optional[str] = Noneable(UrlValidator())
+    CarparkPhotoURL1: str | None = Noneable(UrlValidator())
+    CarparkPhotoURL2: str | None = Noneable(UrlValidator())
+    CarparkPhotoURL3: str | None = Noneable(UrlValidator())
+    CarparkPhotoURL4: str | None = Noneable(UrlValidator())
 
 
 @validataclass
 class ApcoaIndicativeTariffInput:
-    MinPrefix: Optional[str] = Noneable(StringValidator())
-    MinValue: Optional[Decimal] = Noneable(NumericValidator())
-    MinSuffix: Optional[str] = Noneable(StringValidator())
-    MaxPrefix: Optional[str] = Noneable(StringValidator())
-    MaxValue: Optional[Decimal] = Noneable(NumericValidator())
-    MaxSuffix: Optional[str] = Noneable(StringValidator())
-    Currency: Optional[str] = Noneable(StringValidator())
-    CurrencyCode: Optional[str] = Noneable(StringValidator())
-    TaxRate: Optional[Decimal] = Noneable(NumericValidator())
+    MinPrefix: str | None = Noneable(StringValidator())
+    MinValue: Decimal | None = Noneable(NumericValidator())
+    MinSuffix: str | None = Noneable(StringValidator())
+    MaxPrefix: str | None = Noneable(StringValidator())
+    MaxValue: Decimal | None = Noneable(NumericValidator())
+    MaxSuffix: str | None = Noneable(StringValidator())
+    Currency: str | None = Noneable(StringValidator())
+    CurrencyCode: str | None = Noneable(StringValidator())
+    TaxRate: Decimal | None = Noneable(NumericValidator())
 
 
 @validataclass
 class ApcoaParkingSiteInput:
     CarParkId: int = IntegerValidator(allow_strings=True)
-    CarparkLongName: Optional[str] = Noneable(StringValidator())
-    CarparkShortName: Optional[str] = Noneable(StringValidator())
-    CarParkWebsiteURL: Optional[str] = Noneable(UrlValidator())
-    CarParkPhotoURLs: Optional[ApcoaCarparkPhotoURLInput] = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
+    CarparkLongName: str | None = Noneable(StringValidator())
+    CarparkShortName: str | None = Noneable(StringValidator())
+    CarParkWebsiteURL: str | None = Noneable(UrlValidator())
+    CarParkPhotoURLs: ApcoaCarparkPhotoURLInput | None = Noneable(DataclassValidator(ApcoaCarparkPhotoURLInput))
     CarparkType: ApcoaCarparkTypeNameInput = DataclassValidator(ApcoaCarparkTypeNameInput)
     Address: ApcoaAdressInput = DataclassValidator(ApcoaAdressInput)
     NavigationLocations: list[ApcoaNavigationLocationsInput] = ListValidator(
@@ -169,7 +168,7 @@ class ApcoaParkingSiteInput:
         local_timezone=ZoneInfo('Europe/Berlin'),
         target_timezone=timezone.utc,
     )
-    IndicativeTariff: Optional[ApcoaIndicativeTariffInput] = Noneable(DataclassValidator(ApcoaIndicativeTariffInput))
+    IndicativeTariff: ApcoaIndicativeTariffInput | None = Noneable(DataclassValidator(ApcoaIndicativeTariffInput))
 
     # TODO: ignored multiple attributes which do not matter so far
 
