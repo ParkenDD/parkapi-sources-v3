@@ -1,8 +1,24 @@
 # Changelog
 
-Released 2026-06-21
+## 0.38.0
+
+### Features
+
+* [Toll Collect truck parking](https://github.com/ParkenDD/parkapi-sources-v3/pull/400)
+
+
+### Fixes
+
+* [add vrn p+r realtime fix](https://github.com/ParkenDD/parkapi-sources-v3/pull/401)
+* [ignore apcoa hidden, add mapping docs](https://github.com/ParkenDD/parkapi-sources-v3/pull/403)
+* [allow any apcoa type and ignore it](https://github.com/ParkenDD/parkapi-sources-v3/pull/404)
+* [fix heidelberg disabled name](https://github.com/ParkenDD/parkapi-sources-v3/pull/402)
+
 
 ## 0.37.0
+
+Released 2026-06-21
+
 
 ### Features
 
@@ -23,6 +39,8 @@ Released 2026-06-21
 
 ## 0.36.1
 
+Released 2026-06-16
+
 ### Fixes
 
 * [fix friedrichshafen easypark converter registration](https://github.com/ParkenDD/parkapi-sources-v3/pull/387)
@@ -30,7 +48,7 @@ Released 2026-06-21
 
 ## 0.36.0
 
-Released 2026-06-15
+Released 2026-06-13
 
 ### Features
 
@@ -50,6 +68,8 @@ Released 2026-06-15
 * [enforces to set purpose](https://github.com/ParkenDD/parkapi-sources-v3/pull/378)
 
 ## 0.35.0
+
+Released 2026-05-04
 
 ### Features
 
