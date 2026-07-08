@@ -17,8 +17,9 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import RealtimeParkingSiteInput
-from parkapi_sources.models.enums import OpeningStatus
+from parkapi_sources.converters.base_converter.datex2 import InterUrbanParkingSite
+from parkapi_sources.models import ParkingSiteRestrictionInput, RealtimeParkingSiteInput
+from parkapi_sources.models.enums import OpeningStatus, ParkingAudience
 
 
 class ParkingSiteOpeningStatus(Enum):
@@ -31,6 +32,22 @@ class ParkingSiteOpeningStatus(Enum):
             self.OPEN: OpeningStatus.OPEN,
             self.CLOSED: OpeningStatus.CLOSED,
         }.get(self, OpeningStatus.UNKNOWN)
+
+
+@validataclass
+class TollCollectInterUrbanParkingSite(InterUrbanParkingSite):
+    def _get_has_realtime_data(self, has_realtime_data: bool) -> bool:
+        return True
+
+    def _get_restrictions(self) -> list[ParkingSiteRestrictionInput]:
+        return [ParkingSiteRestrictionInput(type=ParkingAudience.TRUCK)]
+
+    def _get_operator_name(self) -> str | None:
+        operator_name = super()._get_operator_name()
+        if operator_name is None:
+            return None
+
+        return f'Die Autobahn GmbH des Bundes, {operator_name}'
 
 
 @validataclass

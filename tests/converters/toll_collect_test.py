@@ -10,6 +10,7 @@ import pytest
 from requests_mock import Mocker
 
 from parkapi_sources.converters import TollCollectPullConverter
+from parkapi_sources.models.enums import ParkingAudience
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_realtime_parking_site_inputs, validate_static_parking_site_inputs
 
@@ -52,6 +53,17 @@ class TollCollectConverterTest:
 
         assert len(static_parking_site_inputs) > 0
         assert len(import_parking_site_exceptions) == 0
+
+        # Toll Collect adds the TRUCK restriction and the operator name prefix via its child validator
+        assert all(
+            any(restriction.type == ParkingAudience.TRUCK for restriction in static_parking_site_input.restrictions)
+            for static_parking_site_input in static_parking_site_inputs
+        )
+        assert any(
+            static_parking_site_input.operator_name is not None
+            and static_parking_site_input.operator_name.startswith('Die Autobahn GmbH des Bundes, ')
+            for static_parking_site_input in static_parking_site_inputs
+        )
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
