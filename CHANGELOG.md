@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.38.1
+
+### Fixes
+
+* [add child class attributes at toll collect](https://github.com/ParkenDD/parkapi-sources-v3/pull/405)
+
+
 ## 0.38.0
 
 ### Features
