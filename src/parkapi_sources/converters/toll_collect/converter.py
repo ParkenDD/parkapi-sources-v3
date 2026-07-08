@@ -13,7 +13,7 @@ from parkapi_sources.converters.base_converter.pull import MobilithekParkingSite
 from parkapi_sources.exceptions import ImportParkingSiteException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo
 
-from .models import TollCollectParkingRecordStatus
+from .models import TollCollectInterUrbanParkingSite, TollCollectParkingRecordStatus
 
 
 class TollCollectPullConverter(
@@ -23,6 +23,7 @@ class TollCollectPullConverter(
     ParkingSiteBaseConverter,
 ):
     config_key = 'TOLL_COLLECT'
+    static_validator = DataclassValidator(TollCollectInterUrbanParkingSite)
     realtime_validator = DataclassValidator(TollCollectParkingRecordStatus)
 
     source_info = SourceInfo(

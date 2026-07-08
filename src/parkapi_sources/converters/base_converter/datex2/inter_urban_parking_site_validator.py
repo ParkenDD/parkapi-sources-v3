@@ -20,7 +20,7 @@ from validataclass.validators import (
     StringValidator,
 )
 
-from parkapi_sources.models import StaticParkingSiteInput
+from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType
 from parkapi_sources.validators import MappedBooleanValidator
 
@@ -85,6 +85,11 @@ class ParkingSiteAddress:
 
 
 @validataclass
+class Operator:
+    contactOrganisationName: LocalisedName | None = Noneable(DataclassValidator(LocalisedName)), Default(None)
+
+
+@validataclass
 class TariffsAndPayment:
     freeOfCharge: bool | None = MappedBooleanValidator(mapping={'true': True, 'false': False}), Default(None)
 
@@ -102,6 +107,7 @@ class InterUrbanParkingSite:
     )
     tariffsAndPayment: TariffsAndPayment | None = DataclassValidator(TariffsAndPayment), Default(None)
     parkingSiteAddress: ParkingSiteAddress | None = Noneable(DataclassValidator(ParkingSiteAddress)), Default(None)
+    operator: Operator | None = Noneable(DataclassValidator(Operator)), Default(None)
 
     def to_static_parking_site_input(self, has_realtime_data: bool) -> StaticParkingSiteInput | None:
         # Parking sites without any spaces are ignored
@@ -128,8 +134,13 @@ class InterUrbanParkingSite:
             lon=self.parkingLocation.pointByCoordinates.pointCoordinates.longitude,
             capacity=self.parkingNumberOfSpaces,
             static_data_updated_at=self.parkingRecordVersionTime,
-            has_realtime_data=has_realtime_data,
+            has_realtime_data=self._get_has_realtime_data(has_realtime_data),
+            restrictions=self._get_restrictions(),
         )
+
+        operator_name = self._get_operator_name()
+        if operator_name is not None:
+            static_parking_site_input.operator_name = operator_name
 
         if self.tariffsAndPayment is not None and self.tariffsAndPayment.freeOfCharge is not None:
             static_parking_site_input.has_fee = not self.tariffsAndPayment.freeOfCharge
@@ -139,6 +150,28 @@ class InterUrbanParkingSite:
             static_parking_site_input.address = address
 
         return static_parking_site_input
+
+    def _get_has_realtime_data(self, has_realtime_data: bool) -> bool:
+        """
+        Can be overwritten by subclass to set a source-specific realtime flag.
+        """
+        return has_realtime_data
+
+    def _get_restrictions(self) -> list[ParkingSiteRestrictionInput]:
+        """
+        Can be overwritten by subclass to add source-specific restrictions.
+        """
+        return []
+
+    def _get_operator_name(self) -> str | None:
+        if self.operator is None or self.operator.contactOrganisationName is None:
+            return None
+
+        organisation_name = self.operator.contactOrganisationName.values._text.strip()
+        if not organisation_name:
+            return None
+
+        return organisation_name
 
     def _get_address(self) -> str | None:
         if self.parkingSiteAddress is None:
