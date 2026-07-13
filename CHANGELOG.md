@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.38.3
+
+### Fixes
+
+* [fix more karlsruhe ca](https://github.com/ParkenDD/parkapi-sources-v3/pull/409)
+
+
 ## 0.38.2
 
 ### Fixes
