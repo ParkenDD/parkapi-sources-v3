@@ -3,8 +3,6 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-from pathlib import Path
-
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -67,9 +65,7 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
         return self.apply_static_patches(static_parking_spot_inputs), import_parking_spot_exceptions
 
     def _get_static_data(self) -> GeojsonInput:
-        # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
-        ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
-        response = self.request_get(url=self.source_info.source_url, verify=str(ca_path), timeout=30)
+        response = self.request_get(url=self.source_info.source_url, timeout=30)
         response_data = response.json()
 
         try:
@@ -97,9 +93,7 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
             for i, sensor_uid in enumerate(karlsruhe_input.properties.sensorenliste):
                 sensors_by_uid[sensor_uid] = f'{karlsruhe_input.properties.id}_{i}'
 
-        # Karlsruhes http-server config misses the intermediate cert GeoTrust TLS RSA CA G1, so we add it here manually.
-        ca_path = Path(Path(__file__).parent, 'files', 'ca.crt.pem')
-        response = self.request_get(url=self.realtime_source_url.format(auth=auth), verify=str(ca_path))
+        response = self.request_get(url=self.realtime_source_url.format(auth=auth))
         try:
             realtime_body: KarlsruheDisabledRealtimeInput = self.realtime_validator.validate(response.json())
         except ValidationError as e:
