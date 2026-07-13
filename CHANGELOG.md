@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.38.2
+
+### Fixes
+
+* [remove karlsruhe cert injection](https://github.com/ParkenDD/parkapi-sources-v3/pull/408)
+
+
 ## 0.38.1
 
 ### Fixes
