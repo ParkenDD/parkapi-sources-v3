@@ -117,7 +117,7 @@ class EsslingenParkingSiteFeatureInput:
 
         static_parking_site_input = StaticParkingSiteInput(
             uid=str(self.properties.fid),
-            name=str(self.properties.fid),
+            name=str(self.properties.parking_type),
             purpose=PurposeType.CAR,
             type=ParkingSiteType.ON_STREET,
             lat=round_7d(center.y),
@@ -193,8 +193,16 @@ class EsslingenParkingSiteFeatureInput:
                     ParkingSiteRestrictionInput(type=ParkingAudience.TRUCK),
                 )
             case 'Parkplatz privat betrieben für die Öffentlichkeit':
+                static_parking_site_input.name = 'Parkplatz'
                 static_parking_site_input.type = ParkingSiteType.OFF_STREET_PARKING_GROUND
             case 'Parkhaus oder Tiefgarage privat betrieben für die Öffentlichkeit':
+                static_parking_site_input.name = 'Parkhaus'
                 static_parking_site_input.type = ParkingSiteType.CAR_PARK
+            case (
+                'Parkplatz für die Öffentlichkeit ohne Beschränkungen'
+                | 'Parkplatz für die Öffentlichkeit mit Parkschein'
+                | 'Parkplatz für die Öffentlichkeit mit sonstigen Beschränkungen'
+            ):
+                static_parking_site_input.name = 'Straßen-Parkplatz'
 
         return static_parking_site_input
