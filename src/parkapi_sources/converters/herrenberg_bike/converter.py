@@ -40,7 +40,7 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
         feature_inputs: list[HerrenbergBikeFeatureInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        response = self.request_get(url=self.source_info.source_url)
         response_data = response.json()
 
         try:

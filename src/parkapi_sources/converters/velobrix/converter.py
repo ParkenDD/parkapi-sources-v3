@@ -58,7 +58,6 @@ class VelobrixPullConverter(ParkingSitePullConverter):
         response = self.request_get(
             url=self.source_info.source_url,
             headers=headers,
-            timeout=30,
         )
 
         response_data = response.json()

@@ -38,7 +38,6 @@ class MobilithekPullConverterMixin(ABC):
         # Create an isolated session, because cert is set globally otherwise
         response = self.request_get(
             url=url,
-            timeout=30,
             cert=(
                 self.config_helper.get('PARK_API_MOBILITHEK_CERT'),
                 self.config_helper.get('PARK_API_MOBILITHEK_KEY'),

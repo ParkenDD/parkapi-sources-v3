@@ -74,7 +74,6 @@ class RadvisBwPullConverter(ParkingSitePullConverter):
         response = self.request_get(
             url=self._base_url,
             auth=(self.config_helper.get('PARK_API_RADVIS_USER'), self.config_helper.get('PARK_API_RADVIS_PASSWORD')),
-            timeout=30,
         )
 
         return response.json()

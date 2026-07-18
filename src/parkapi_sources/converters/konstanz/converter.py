@@ -48,7 +48,6 @@ class KonstanzPullConverter(ParkingSitePullConverter):
 
         response = self.request_get(
             url=self.source_info.source_url,
-            timeout=30,
         )
 
         parking_sites_input: KonstanzParkingSitesInput = self.konstanz_parking_sites_validator.validate(response.json())
@@ -107,7 +106,6 @@ class KonstanzPullConverter(PullConverter):
         response = self.request_get(
             url=self.source_info.source_url,
             auth=(self.config_helper.get('PARK_API_KONSTANZ_USER'), self.config_helper.get('PARK_API_KONSTANZ_PASSWORD')),
-            timeout=30,
         )
 
         response_by_lines = response.text.splitlines()

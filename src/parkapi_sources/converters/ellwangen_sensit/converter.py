@@ -65,7 +65,6 @@ class EllwangenSensitPullConverter(ParkingSitePullConverter):
 
         response = self.request_get(
             url=self.source_info.source_url,
-            timeout=30,
             auth=(
                 self.config_helper.get('PARK_API_ELLWANGEN_SENSIT_USER'),
                 self.config_helper.get('PARK_API_ELLWANGEN_SENSIT_PASSWORD'),

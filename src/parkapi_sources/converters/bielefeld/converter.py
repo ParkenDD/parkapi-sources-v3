@@ -38,7 +38,7 @@ class BielefeldPullConverter(ParkingSitePullConverter):
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        response = self.request_get(url=self.source_info.source_url)
         reader = csv.DictReader(StringIO(response.text), delimiter=';')
 
         for row in reader:

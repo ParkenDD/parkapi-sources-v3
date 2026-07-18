@@ -4,15 +4,11 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import os
-import ssl
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, NotRequired, TypedDict, Unpack
 
 from requests import Response, Session
-from requests.adapters import HTTPAdapter
-from requests.utils import DEFAULT_CA_BUNDLE_PATH, extract_zipped_paths
-from urllib3.util import create_urllib3_context
 
 from parkapi_sources.exceptions import MissingConfigException
 
@@ -22,28 +18,6 @@ if TYPE_CHECKING:
     from parkapi_sources.models import SourceInfo
 
 
-class CustomHTTPAdapter(HTTPAdapter):
-    """
-    This class is necessary because of https://github.com/psf/requests/issues/6726#issuecomment-2660565040
-    and should be removed after requests resolved this bug.
-    """
-
-    @staticmethod
-    def _get_reset_ssl_context() -> ssl.SSLContext:
-        # Create a fresh SSLContext and load CA certificates
-        ssl_context = create_urllib3_context()
-        ssl_context.load_verify_locations(extract_zipped_paths(DEFAULT_CA_BUNDLE_PATH))
-        return ssl_context
-
-    def init_poolmanager(self, *args, **kwargs):
-        kwargs['ssl_context'] = self._get_reset_ssl_context()
-        return super().init_poolmanager(*args, **kwargs)
-
-    def proxy_manager_for(self, *args, **kwargs):
-        kwargs['ssl_context'] = self._get_reset_ssl_context()
-        return super().proxy_manager_for(*args, **kwargs)
-
-
 class RequestKwargs(TypedDict):
     url: str | None
     data: NotRequired[Any | None]
@@ -51,7 +25,7 @@ class RequestKwargs(TypedDict):
     cookies: NotRequired[Any | None]
     files: NotRequired[Any | None]
     auth: NotRequired[Any | None]
-    timeout: NotRequired[int | None]
+    timeout: NotRequired[int | tuple[int, int] | None]
     allow_redirects: NotRequired[bool]
     proxies: NotRequired[Any | None]
     hooks: NotRequired[Any | None]
@@ -83,11 +57,14 @@ class RequestHelper:
     def delete(self, *, source_info: 'SourceInfo', **kwargs: Unpack[RequestKwargs]) -> Response:
         return self._request(source_info=source_info, method='delete', **kwargs)
 
-    def _request(self, *, source_info: 'SourceInfo', method: str, **kwargs: Unpack[RequestKwargs]) -> Response:
-        with Session() as session:
-            # Can be removed after https://github.com/psf/requests/issues/6726#issuecomment-2660565040 is resolved
-            session.mount('https://', CustomHTTPAdapter())
+    # Default (connect, read) timeout applied when a caller does not set one. The short connect timeout
+    # bounds the TLS handshake, so an unresponsive host cannot block a request indefinitely.
+    DEFAULT_TIMEOUT = (5, 30)
 
+    def _request(self, *, source_info: 'SourceInfo', method: str, **kwargs: Unpack[RequestKwargs]) -> Response:
+        kwargs.setdefault('timeout', self.DEFAULT_TIMEOUT)
+
+        with Session() as session:
             response = session.request(method=method, **kwargs)
 
             self._handle_request_response(source_info, response)

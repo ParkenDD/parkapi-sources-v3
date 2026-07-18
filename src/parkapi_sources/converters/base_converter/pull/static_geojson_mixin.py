@@ -48,7 +48,6 @@ class StaticGeojsonDataMixin(ABC):
             try:
                 response = self.request_get(
                     url=f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/{source_uid}.geojson',
-                    timeout=30,
                 )
             except (ConnectionError, NewConnectionError) as e:
                 raise ImportParkingSiteException(
@@ -72,7 +71,6 @@ class StaticGeojsonDataMixin(ABC):
             try:
                 response = self.request_get(
                     url=f'{self.config_helper.get("STATIC_GEOJSON_BASE_URL")}/parking-spots/{source_uid}.geojson',
-                    timeout=30,
                 )
             except (ConnectionError, NewConnectionError) as e:
                 raise ImportParkingSpotException(
