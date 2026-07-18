@@ -1,6 +1,19 @@
 # Changelog
 
+## 0.38.4
+
+Released 2026-07-18
+
+### Fixes
+
+* [readable name for esslingen](https://github.com/ParkenDD/parkapi-sources-v3/pull/407)
+* [change name to readable names from parking type](https://github.com/ParkenDD/parkapi-sources-v3/pull/410)
+* [fix timeout issues](https://github.com/ParkenDD/parkapi-sources-v3/pull/411)
+
+
 ## 0.38.3
+
+Released 2026-07-13
 
 ### Fixes
 
@@ -9,6 +22,8 @@
 
 ## 0.38.2
 
+Released 2026-07-13
+
 ### Fixes
 
 * [remove karlsruhe cert injection](https://github.com/ParkenDD/parkapi-sources-v3/pull/408)
@@ -16,12 +31,16 @@
 
 ## 0.38.1
 
+Released 2026-07-08
+
 ### Fixes
 
 * [add child class attributes at toll collect](https://github.com/ParkenDD/parkapi-sources-v3/pull/405)
 
 
 ## 0.38.0
+
+Released 2026-07-06
 
 ### Features
 
@@ -39,7 +58,6 @@
 ## 0.37.0
 
 Released 2026-06-21
-
 
 ### Features
 
