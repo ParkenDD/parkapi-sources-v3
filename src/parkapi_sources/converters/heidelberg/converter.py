@@ -58,7 +58,6 @@ class HeidelbergPullConverter(ParkingSitePullConverter):
             url=self.source_info.source_url,
             params={'api-key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY'), 'limit': 50},
             headers={'X-Gravitee-Api-Key': self.config_helper.get('PARK_API_HEIDELBERG_API_KEY')},
-            timeout=30,
         )
 
         response_data = response.json()

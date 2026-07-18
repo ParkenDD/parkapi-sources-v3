@@ -65,7 +65,7 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
         return self.apply_static_patches(static_parking_spot_inputs), import_parking_spot_exceptions
 
     def _get_static_data(self) -> GeojsonInput:
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        response = self.request_get(url=self.source_info.source_url)
         response_data = response.json()
 
         try:

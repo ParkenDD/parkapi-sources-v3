@@ -83,7 +83,6 @@ class KienzlerBasePullConverter(ParkingSitePullConverter):
                     'context': 'unit',
                     'ids': self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_IDS').split(',')[i : i + 25],
                 },
-                timeout=30,
             )
             result_dicts += response.json()
 
@@ -215,6 +214,5 @@ class KienzlerUlmPullConverter(KienzlerBasePullConverter):
                 self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_USER'),
                 self.config_helper.get(f'PARK_API_KIENZLER_{self.config_prefix}_PASSWORD'),
             ),
-            timeout=30,
         )
         return response.json()

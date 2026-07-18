@@ -51,7 +51,7 @@ class FreiburgDisabledSensorsPullConverter(ParkingSpotPullConverter):
         freiburg_inputs: list[FreiburgDisabledSensorFeatureInput] = []
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
 
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        response = self.request_get(url=self.source_info.source_url)
         response_data = response.json()
 
         try:

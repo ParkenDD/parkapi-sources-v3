@@ -76,7 +76,6 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
 
         response = self.request_get(
             url=f'{self.source_info.source_url}/ipaw/services/v4x0/facilities?address=true&position=true&tariffs=true',
-            timeout=30,
             auth=(
                 self.config_helper.get('PARK_API_HEILBRONN_GOLDBECK_USERNAME'),
                 self.config_helper.get('PARK_API_HEILBRONN_GOLDBECK_PASSWORD'),
@@ -117,7 +116,6 @@ class HeilbronnGoldbeckPullConverter(ParkingSitePullConverter):
 
         response = self.request_get(
             url=f'{self.source_info.source_url}/ipaw/services/v4x0/occupancies',
-            timeout=30,
             auth=(
                 self.config_helper.get('PARK_API_HEILBRONN_GOLDBECK_USERNAME'),
                 self.config_helper.get('PARK_API_HEILBRONN_GOLDBECK_PASSWORD'),

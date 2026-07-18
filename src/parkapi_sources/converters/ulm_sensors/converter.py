@@ -145,7 +145,6 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
                 'username': self.config_helper.get('PARK_API_ULM_SENSORS_USER'),
                 'password': self.config_helper.get('PARK_API_ULM_SENSORS_PASSWORD'),
             },
-            timeout=30,
         )
         token_data = response.json()
         return token_data['access_token']

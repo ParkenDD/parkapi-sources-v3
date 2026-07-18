@@ -23,7 +23,7 @@ class KarlsruheBasePullConverter(ParkingSitePullConverter, ABC):
         feature_inputs: list[KarlsruheFeatureInput] = []
         import_parking_site_exceptions: list[ImportParkingSiteException] = []
 
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        response = self.request_get(url=self.source_info.source_url)
 
         response_data = response.json()
 
@@ -111,8 +111,7 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
         uid='karlsruhe_bike',
         name='Stadt Karlsruhe: Fahrrad-Abstellanlagen',
         public_url='https://web1.karlsruhe.de/service/Parken/',
-        source_url='https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
-        '&typeName=TBA%3Afahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326',
+        source_url='https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=TBA%3Afahrradanlagen&outputFormat=application%2Fjson&srsName=EPSG:4326',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Karlsruhe',
         attribution_license='Creative Commons Namensnennung - 4.0 International (CC-BY 4.0)',

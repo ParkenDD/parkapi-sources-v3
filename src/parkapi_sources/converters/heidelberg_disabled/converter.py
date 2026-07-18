@@ -33,7 +33,6 @@ class HeidelbergDisabledPullConverter(ParkingSpotPullConverter):
         static_data_updated_at = datetime.now(timezone.utc)
         response = self.request_get(
             url=self.source_info.source_url,
-            timeout=30,
         )
 
         parking_spots_input: GeojsonInput = self.geojson_validator.validate(response.json())

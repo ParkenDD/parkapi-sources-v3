@@ -35,7 +35,7 @@ class PullScraperMixin(ABC):
         if url is None:
             url = self.source_info.public_url
 
-        response = self.request_get(url=url, timeout=30)
+        response = self.request_get(url=url)
 
         return BeautifulSoup(response.text, features='html.parser')
 

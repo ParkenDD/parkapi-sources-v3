@@ -219,6 +219,5 @@ class PMSensadePullConverter(ParkingSitePullConverter, ParkingSpotPullConverter)
                 'email': self.config_helper.get('PARK_API_P_M_SENSADE_EMAIL'),
                 'password': self.config_helper.get('PARK_API_P_M_SENSADE_PASSWORD'),
             },
-            timeout=30,
         )
         return response.text

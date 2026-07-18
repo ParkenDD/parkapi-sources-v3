@@ -32,7 +32,7 @@ class JenaPullConverter(ParkingSitePullConverter):
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = self.request_get(url=self.source_info.source_url, timeout=30)
+        response = self.request_get(url=self.source_info.source_url)
         geojson_input = self.geojson_validator.validate(response.json())
 
         for feature_dict in geojson_input.features:
