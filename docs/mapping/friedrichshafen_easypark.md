@@ -12,16 +12,16 @@ Static values:
 * `has_fee` is always `true` if `permission_period` contains `Gebührenpflichtig`.
 
 
-| Field                   | Type                                              | Cardinality | Mapping                         | Comment                                                                                      |
-|-------------------------|---------------------------------------------------|-------------|---------------------------------|----------------------------------------------------------------------------------------------|
-| id                      | integer                                           | 1           | uid                             |                                                                                              |
-| length                  | integer                                           | 1           | capacity                        | [ParkAngleCapacity](#ParkAngleCapacity) uses `length` for the calculation of `capacity`.     |
-| park_angle              | [ParkingSiteOrientation](#ParkingSiteOrientation) | 1           | orientation/capacity            | [ParkAngleCapacity](#ParkAngleCapacity) uses `park_angle` for the calculation of `capacity`. |
-| street_side             | [ParkingSiteSide](#ParkingSiteSide)               | 1           | side                            |                                                                                              |
-| location_on_sidewalk    | numeric                                           | 1           | lat/lon/geojson                 | The center of the LineString coordinates is used as latitude and longitude                   |
-| permissions_translation | string                                            | 1           | description/fee_description     |                                                                                              |
-| permission_period       | string                                            | ?           | fee_description                 |                                                                                              |
-| time_limited            | string                                            | ?           | fee_description                 | If available, add to  `fee_description`                                                      |
+| Field                   | Type                                              | Cardinality | Mapping                                             | Comment                                                                                      |
+|-------------------------|---------------------------------------------------|-------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------|
+| id                      | integer                                           | 1           | uid                                                 |                                                                                              |
+| length                  | integer                                           | 1           | capacity                                            | [ParkAngleCapacity](#ParkAngleCapacity) uses `length` for the calculation of `capacity`.     |
+| park_angle              | [ParkingSiteOrientation](#ParkingSiteOrientation) | 1           | orientation/capacity                                | [ParkAngleCapacity](#ParkAngleCapacity) uses `park_angle` for the calculation of `capacity`. |
+| street_side             | [ParkingSiteSide](#ParkingSiteSide)               | 1           | side                                                |                                                                                              |
+| location_on_sidewalk    | numeric                                           | 1           | lat/lon/geojson                                     | The center of the LineString coordinates is used as latitude and longitude                   |
+| permissions_translation | [PermissionsTranslation](#PermissionsTranslation) | 1           | restrictions, has_fee, description/fee_description  |                                                                                              |
+| permission_period       | string                                            | ?           | fee_description                                     |                                                                                              |
+| time_limited            | string                                            | ?           | fee_description                                     | If available, add to  `fee_description`                                                      |
 
 
 ### ParkingSiteOrientation
@@ -51,3 +51,17 @@ The result of the capacity should be rounded down to whole numbers e.g. if `leng
 |---------|---------|
 | right   | RIGHT   |
 | left    | LEFT    |
+
+
+### PermissionsTranslation
+
+| Key                                          | Mapping                                              |
+|----------------------------------------------|------------------------------------------------------|
+| Gebührenpflichtiges Parken/Bewohnerparken    | restrictions[0].type = `RESIDENT`, has_fee = `true`  |
+| Parken mit Parkscheibe/Bewohnerparken        | restrictions[0].type = `RESIDENT`                    |
+| Bewohnerparken                               | restrictions[0].type = `RESIDENT`                    |
+| Behindertenparkplätze                        | restrictions[0].type = `DISABLED`                    |
+| Carsharing                                   | restrictions[0].type = `CARSHARING`                  |
+| E-Parkplatz                                  | restrictions[0].type = `CHARGING`                    |
+| Gebührenfreies Parken                        | has_fee = `false`                                    |
+
