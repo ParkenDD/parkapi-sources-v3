@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.38.5
+
+Released 2026-08-02
+
+### Maintenance
+
+* [Mapping nagold bike converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/377)
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/415)
+
+
 ## 0.38.4
 
 Released 2026-07-18
