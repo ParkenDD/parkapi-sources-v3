@@ -8,7 +8,7 @@ The city of Nagold publishes a GeoJSON dataset with locations of bicycle parking
 Static values:
 
 Each bicycle parking installation is mapped to a static `ParkingSite` as follows.
-Parking installations with `"Stellplatzart": " "` and `"Anzahl_Buegel_Stellplaetze": 0` should not be integrated.
+Parking installations with `"Stellplatzart": " "`, `"Anzahl_Buegel_Stellplaetze": 0` and `"Betreiber":"privat"` should not be integrated.
 
 Attributes which are set statically by the converter:
 
@@ -31,7 +31,7 @@ Attributes which are set statically by the converter:
 | Ueberdachung               | [Ueberdachung](#Ueberdachung)       | 1           | is_covered                               | See [Ueberdachung](#Ueberdachung)                           |
 | Bike_and_Ride              | [ParkAndRideType](#ParkAndRideType) | 1           | park_and_ride_type                       | See [ParkAndRideType](#ParkAndRideType)                     |
 | Ueberwachung               | [Ueberwachung](#Ueberwachung)       | 1           | supervision_type                         | See [Ueberwachung](#Ueberwachung)                           |
-| Betreiber                  | string                              | ?           | operator_name                            | Omit if blank                                               |
+| Betreiber                  | string                              | ?           | operator_name                            | Omit if blank or `privat`                                   |
 | last_edited_date           | integer                             | 1           | static_data_updated_at                   | Convert epoch milliseconds to ISO 8601                      |
 
 
