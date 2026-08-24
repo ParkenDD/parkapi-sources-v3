@@ -70,7 +70,7 @@ class PMSensadeParkingLot:
             capacity=self.availableSpaces,
             static_data_updated_at=self.creationDate,
             type=ParkingSiteType.OFF_STREET_PARKING_GROUND,
-            park_and_ride_type=[ParkAndRideType.YES],
+            park_and_ride_type=[ParkAndRideType.CARPOOL],
             has_realtime_data=True,
         )
 

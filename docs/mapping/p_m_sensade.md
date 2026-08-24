@@ -15,7 +15,7 @@ Each parking lot endpoint is mapped to static `ParkingSite` as follows.
 Attributes which are set statically:
 * `has_realtime_data` is set to `true`
 * `purpose` is set to `CAR`
-* `park_and_ride_type` is set to `YES`
+* `park_and_ride_type` is set to `CARPOOL`
 * `type` is set to `OFF_STREET_PARKING_GROUND`
 
 
