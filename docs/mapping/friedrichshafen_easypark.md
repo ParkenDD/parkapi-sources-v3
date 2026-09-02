@@ -55,13 +55,13 @@ The result of the capacity should be rounded down to whole numbers e.g. if `leng
 
 ### PermissionsTranslation
 
-| Key                                          | Mapping                                              |
-|----------------------------------------------|------------------------------------------------------|
-| Gebührenpflichtiges Parken/Bewohnerparken    | restrictions[0].type = `RESIDENT`, has_fee = `true`  |
-| Parken mit Parkscheibe/Bewohnerparken        | restrictions[0].type = `RESIDENT`                    |
-| Bewohnerparken                               | restrictions[0].type = `RESIDENT`                    |
-| Behindertenparkplätze                        | restrictions[0].type = `DISABLED`                    |
-| Carsharing                                   | restrictions[0].type = `CARSHARING`                  |
-| E-Parkplatz                                  | restrictions[0].type = `CHARGING`                    |
-| Gebührenfreies Parken                        | has_fee = `false`                                    |
-
+| Key                                                   | Mapping                                              |
+|-------------------------------------------------------|------------------------------------------------------|
+| Gebührenpflichtiges Parken/Bewohnerparken             | restrictions[0].type = `RESIDENT`, has_fee = `true`  |
+| Parken mit Parkscheibe/Bewohnerparken                 | restrictions[0].type = `RESIDENT`                    |
+| Bewohnerparken                                        | restrictions[0].type = `RESIDENT`                    |
+| Behindertenparkplätze                                 | restrictions[0].type = `DISABLED`                    |
+| Carsharing                                            | restrictions[0].type = `CARSHARING`                  |
+| E-Parkplatz                                           | restrictions[0].type = `CHARGING`                    |
+| Gebührenfreies Parken, Parken mit Parkscheibe         | has_fee = `false`                                    |
+| Gebührenpflichtiges Parken                            | has_fee = `true`                                     |
