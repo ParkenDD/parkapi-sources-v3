@@ -171,6 +171,19 @@ class NagoldBikePushConverterTest:
         assert '809' not in [item.uid for item in static_parking_site_inputs]
 
     @staticmethod
+    def test_blank_street_is_reported(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
+        # A single blank means "no value", so it must not end up as name and address
+        nagold_bike_data['features'][0]['properties']['Strasse'] = ' '
+
+        static_parking_site_inputs, import_parking_site_exceptions = nagold_bike_push_converter.handle_json(
+            nagold_bike_data,
+        )
+
+        assert len(static_parking_site_inputs) == 36
+        assert len(import_parking_site_exceptions) == 1
+        assert import_parking_site_exceptions[0].parking_site_uid == '809'
+
+    @staticmethod
     def test_invalid_feature_is_reported(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
         nagold_bike_data['features'][0]['properties']['Stellplatz'] = 'Fahrradgarage'
 

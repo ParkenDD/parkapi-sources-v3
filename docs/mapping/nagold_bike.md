@@ -8,7 +8,8 @@ The dataset is exported from a shapefile-based cadastre, therefore all property 
 below use the property names as they appear in the GeoJSON.
 
 Missing values are not represented as `null` or as an empty string, but as a single blank (`" "`), so `" "` has to be
-treated as "no value" for every string and enum field.
+treated as "no value" for every string and enum field. For the two required fields `Strasse` and `Stellplatz` a blank
+is an import error, unless the feature is skipped as described below.
 
 
 ## `ParkingSite` Properties
@@ -17,9 +18,12 @@ Each bicycle parking installation is mapped to a static `ParkingSite` as follows
 
 Features which are not integrated:
 
-* Parking installations with `"Betreiber": "privat"` are not public parking and are skipped.
-* Features in which every field is blank and which have no capacity (`"Stellplatz": " "` and `"Anzahl_Bue": 0`) are
-  surveying artifacts. They are silently skipped and not reported as import errors.
+* Parking installations whose `Betreiber` is `privat` are not public parking and are skipped. The value is compared
+  case-insensitively and without surrounding whitespace, but has to be exactly `privat`: an operator like
+  `privat (Anwohner)` is integrated as usual.
+* Features without a stand type and without capacity (`"Stellplatz": " "` and `"Anzahl_Bue": 0`) are surveying
+  artifacts. They are silently skipped and not reported as import errors. All other fields of such a feature are
+  ignored, even if they carry values.
 
 A feature with `Anzahl_Sch` greater than zero describes two installations at the same location: the bike stands and
 additional lockers. As both have their own type and capacity, they are mapped to two separate `ParkingSite`s, see
@@ -36,12 +40,12 @@ Attributes which are set statically by the converter:
 | Field          | Type                              | Cardinality | Mapping                                 | Comment                                                                                                                 |
 |----------------|-----------------------------------|-------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | OBJECTID       | integer                           | 1           | uid                                     | Cast to string                                                                                                          |
-| Strasse        | string                            | 1           | name                                    | Street name used as parking facility name                                                                               |
+| Strasse        | string                            | 1           | name                                    | Street name used as parking facility name, a blank street is an import error                                            |
 | Lagebeschr     | string                            | ?           | description                             | Parking description (e.g. "Am Parkplatz vom Polizeirevier")                                                             |
 | coordinates[1] | numeric                           | 1           | lat                                     | GeoJSON geometry coordinates index 1, rounded to 7 decimal places (e.g. 48.552221802366965 becomes 48.5522218)          |
 | coordinates[0] | numeric                           | 1           | lon                                     | GeoJSON geometry coordinates index 0, rounded to 7 decimal places (e.g. 8.7234782203195511 becomes 8.7234782)           |
 | Stellplatz     | [Stellplatz](#stellplatz)         | 1           | type                                    | See [Stellplatz](#stellplatz)                                                                                           |
-| Anzahl_Bue     | integer                           | 1           | capacity                                |                                                                                                                         |
+| Anzahl_Bue     | integer                           | 1           | capacity                                | `0` is accepted and results in a `ParkingSite` without capacity, unless the feature is skipped as a surveying artifact  |
 | Anzahl_Sch     | integer                           | ?           | capacity                                | Capacity of the separate `LOCKERS` site, see [Lockers](#lockers)                                                        |
 | Anzahl_Lad     | integer                           | ?           | [restrictions](#parkingsiterestriction) | Map to `CHARGING` restriction if > 0                                                                                    |
 | Beleuchtun     | [Beleuchtung](#beleuchtung)       | ?           | has_lighting                            | See [Beleuchtung](#beleuchtung)                                                                                         |
@@ -53,6 +57,9 @@ Attributes which are set statically by the converter:
 | Gebueren_1     | string                            | ?           | fee_description                         | See [Gebuehren](#gebuehren)                                                                                             |
 | Gebueren_2     | string                            | ?           | fee_description                         | See [Gebuehren](#gebuehren)                                                                                             |
 | last_edi_1     | integer                           | 1           | static_data_updated_at                  | Convert epoch milliseconds to ISO 8601                                                                                  |
+
+Text fields are limited in length, values above the limit are reported as import errors: `Strasse` and `Betreiber` are
+limited to 256, `Gebueren_1` and `Gebueren_2` to 2048 and `Lagebeschr` to 4096 characters.
 
 
 ## Beleuchtung
@@ -79,7 +86,8 @@ Attributes which are set statically by the converter:
 | Vorderradanschluss                   | `WALL_LOOPS`      |
 | Vorderradhalter mit Rahmen-Sicherung | `SAFE_WALL_LOOPS` |
 
-Any other non-blank value is reported as an import error.
+Any other value is reported as an import error, a blank `Stellplatz` included. Only the surveying artifacts described
+above, which have a blank `Stellplatz` and no capacity, are skipped silently.
 
 
 ## Lockers

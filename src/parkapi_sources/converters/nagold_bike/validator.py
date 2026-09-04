@@ -13,6 +13,7 @@ from validataclass.validators import (
     DataclassValidator,
     EnumValidator,
     IntegerValidator,
+    RegexValidator,
     StringValidator,
 )
 
@@ -43,7 +44,7 @@ class NagoldBikeStandType(Enum):
             self.STANDS: ParkingSiteType.STANDS,
             self.WALL_LOOPS: ParkingSiteType.WALL_LOOPS,
             self.SAFE_WALL_LOOPS: ParkingSiteType.SAFE_WALL_LOOPS,
-        }.get(self, ParkingSiteType.OTHER)
+        }.get(self)
 
 
 class NagoldBikeParkAndRideType(Enum):
@@ -71,7 +72,8 @@ class NagoldBikeSupervisionType(Enum):
 @validataclass
 class NagoldBikePropertiesInput:
     OBJECTID: int = IntegerValidator(allow_strings=True)
-    Strasse: str = StringValidator(min_length=1, max_length=256)
+    # The source uses a single blank instead of an empty value, so a street name needs at least one real character
+    Strasse: str = RegexValidator(pattern=r'.*\S.*', max_length=256)
     Lagebeschr: str | None = EmptystringNoneable(StringValidator(max_length=4096)), Default(None)
     Stellplatz: NagoldBikeStandType = EnumValidator(NagoldBikeStandType)
     Anzahl_Bue: int = IntegerValidator(min_value=0, allow_strings=True)
