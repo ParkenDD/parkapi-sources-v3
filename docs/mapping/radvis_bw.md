@@ -1,6 +1,6 @@
 # RadVIS BW Bike Parking
 
-The state of Baden-Württemberg publishes a GeoJSON dataset with locations of bicycle parking facilities. 
+The state of Baden-Württemberg publishes a GeoJSON dataset with locations of bicycle parking facilities.
 Each feature describes a group of bicycle stands or racks available for public use.
 
 The geometry coordinates are in a projected CRS (UTM zone 32N, WGS84 ellipsoid, EPSG:25832). The converter reprojects them to WGS84 lat/lon using `pyproj` before creating the `ParkingSite`.
@@ -34,13 +34,14 @@ Attributes which are set statically by the converter:
 | abstellanlagen_ort             | [AbstellanlagenOrt](#AbstellanlagenOrt)  | 1           | related_location, park_and_ride_type              | See [AbstellanlagenOrt](#AbstellanlagenOrt); `BIKE_AND_RIDE` maps to `park_and_ride_type.[YES]` |
 | stellplatzart                  | [Stellplatzart](#Stellplatzart)          | 1           | type, purpose                                     | See [Stellplatzart](#Stellplatzart); `SCHLIESSFACH` maps to `purpose.ITEM`                      |
 | ueberdacht                     | boolean                                  | 1           | is_covered                                        |                                                                                                 |
-| gebuehren_pro_tag              | integer                                  | ?           | has_fee                                           | `has_fee` set to `true` if not "" or null                                                       |
-| gebuehren_pro_monat            | integer                                  | ?           | has_fee                                           | `has_fee` set to `true` if not "" or null                                                       |
-| gebuehren_pro_jahr             | integer                                  | ?           | has_fee                                           | `has_fee` set to `true` if not "" or null                                                       |
+| gebuehren_pro_tag              | integer                                  | ?           | has_fee                                           | See [Gebühren](#Gebühren)                                                                       |
+| gebuehren_pro_monat            | integer                                  | ?           | has_fee                                           | See [Gebühren](#Gebühren)                                                                       |
+| gebuehren_pro_jahr             | integer                                  | ?           | has_fee                                           | See [Gebühren](#Gebühren)                                                                       |
 | beschreibung_gebuehren         | string                                   | ?           | fee_description                                   |                                                                                                 |
 | beschreibung                   | string                                   | ?           | description                                       | Combined with `weitere_information` (see below)                                                 |
 | weitere_information            | string                                   | ?           | description                                       | Appended to `beschreibung`, separated by a space, if present                                    |
 | photo_url                      | string                                   | ?           | photo_url                                         |                                                                                                 |
+| groessenklasse                 | string                                   | ?           | tags                                              | Prefixed with `BW_SIZE_`, so `BASISANGEBOT_XS` becomes `BW_SIZE_BASISANGEBOT_XS`                |
 | zuletzt_bearbeitet_am          | datetime                                 | 1           | static_data_updated_at                            |                                                                                                 |
 
 
@@ -69,6 +70,18 @@ Attributes which are set statically by the converter:
 | UNBEKANNT        |             |
 
 
+## Gebühren
+
+As a fee of `0` means that the parking site is free of charge, `has_fee` is mapped from the three fee fields
+`gebuehren_pro_tag`, `gebuehren_pro_monat` and `gebuehren_pro_jahr` as follows:
+
+| Data                                      | Mapping          |
+|-------------------------------------------|------------------|
+| At least one fee field is set and not `0` | `has_fee: true`  |
+| All set fee fields are `0`                | `has_fee: false` |
+| All fee fields are `""` or null           | `has_fee` unset  |
+
+
 ## AbstellanlagenOrt
 
 | Key                      | Mapping                                         |
@@ -79,7 +92,7 @@ Attributes which are set statically by the converter:
 | STRASSENRAUM             | `Straßenraum`                                   |
 | BILDUNGSEINRICHTUNG      | `Bildungseinrichtung`                           |
 | UNBEKANNT                | `Unbekannt`                                     |
-| SONSTIGES                | `Sontiges`                                      |
+| SONSTIGES                | `Sonstiges`                                     |
 
 
 ## ParkingSiteRestriction
