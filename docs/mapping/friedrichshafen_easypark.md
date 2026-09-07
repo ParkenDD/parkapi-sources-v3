@@ -9,7 +9,10 @@ Static values:
 * `purpose` is always `CAR`
 * `has_realtime_data` is always `false`
 * Sites having the field `park_angle` with value `no_parking` should not be integrated.
-* `has_fee` is always `true` if `permission_period` contains `Gebührenpflichtig`.
+* Sites having a `permissions_translation` which is no car parking at all (`Fahrradparkplatz`,
+  `Fahrradparkplatz/E-Scooter`, `Feuerwehrzufahrt`) should not be integrated.
+* `has_fee` is `true` if `permission_period` contains `Gebührenpflichtig`, or if
+  [PermissionsTranslation](#PermissionsTranslation) maps it to `true`. Otherwise it's `false`.
 
 
 | Field                   | Type                                              | Cardinality | Mapping                                             | Comment                                                                                      |
@@ -19,9 +22,12 @@ Static values:
 | park_angle              | [ParkingSiteOrientation](#ParkingSiteOrientation) | 1           | orientation/capacity                                | [ParkAngleCapacity](#ParkAngleCapacity) uses `park_angle` for the calculation of `capacity`. |
 | street_side             | [ParkingSiteSide](#ParkingSiteSide)               | 1           | side                                                |                                                                                              |
 | location_on_sidewalk    | numeric                                           | 1           | lat/lon/geojson                                     | The center of the LineString coordinates is used as latitude and longitude                   |
-| permissions_translation | [PermissionsTranslation](#PermissionsTranslation) | 1           | restrictions, has_fee, description/fee_description  |                                                                                              |
-| permission_period       | string                                            | ?           | fee_description                                     |                                                                                              |
+| permissions_translation | [PermissionsTranslation](#PermissionsTranslation) | 1           | restrictions, has_fee, description/fee_description  | Surrounding whitespace is stripped before the value is mapped.                               |
+| permission_period       | string                                            | ?           | fee_description                                     | If available, add to  `fee_description`                                                      |
 | time_limited            | string                                            | ?           | fee_description                                     | If available, add to  `fee_description`                                                      |
+
+`fee_description` is built by joining `permissions_translation`, `permission_period` and `time_limited` with `; `,
+skipping the fields which are not set.
 
 
 ### ParkingSiteOrientation
@@ -55,13 +61,21 @@ The result of the capacity should be rounded down to whole numbers e.g. if `leng
 
 ### PermissionsTranslation
 
-| Key                                                   | Mapping                                              |
-|-------------------------------------------------------|------------------------------------------------------|
-| Gebührenpflichtiges Parken/Bewohnerparken             | restrictions[0].type = `RESIDENT`, has_fee = `true`  |
-| Parken mit Parkscheibe/Bewohnerparken                 | restrictions[0].type = `RESIDENT`                    |
-| Bewohnerparken                                        | restrictions[0].type = `RESIDENT`                    |
-| Behindertenparkplätze                                 | restrictions[0].type = `DISABLED`                    |
-| Carsharing                                            | restrictions[0].type = `CARSHARING`                  |
-| E-Parkplatz                                           | restrictions[0].type = `CHARGING`                    |
-| Gebührenfreies Parken, Parken mit Parkscheibe         | has_fee = `false`                                    |
-| Gebührenpflichtiges Parken                            | has_fee = `true`                                     |
+Values which are not listed below are handled as validation error, so that new values in the source data get noticed.
+
+| Key                                       | restrictions[0].type | has_fee | Comment                          |
+|-------------------------------------------|----------------------|---------|----------------------------------|
+| Gebührenpflichtiges Parken/Bewohnerparken | `RESIDENT`           | `true`  |                                  |
+| Gebührenpflichtiges Parken                |                      | `true`  |                                  |
+| Gebührenfreies Parken                     |                      | `false` |                                  |
+| Parken mit Parkscheibe/Bewohnerparken     | `RESIDENT`           | `false` |                                  |
+| Parken mit Parkscheibe                    |                      | `false` |                                  |
+| Bewohnerparken                            | `RESIDENT`           | `false` |                                  |
+| Behindertenparkplätze                     | `DISABLED`           | `false` |                                  |
+| Carsharing                                | `CARSHARING`         | `false` |                                  |
+| E-Parkplatz                               | `CHARGING`           | `false` |                                  |
+| Ladezone                                  | `DELIVERY`           | `false` |                                  |
+| Busparkplatz                              | `BUS`                | `false` |                                  |
+| Fahrradparkplatz                          |                      |         | Not integrated: no car parking   |
+| Fahrradparkplatz/E-Scooter                |                      |         | Not integrated: no car parking   |
+| Feuerwehrzufahrt                          |                      |         | Not integrated: no car parking   |
