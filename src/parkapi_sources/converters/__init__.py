@@ -55,6 +55,7 @@ from .konstanz_bike import KonstanzBikePullConverter
 from .konstanz_disabled import KonstanzDisabledPullConverter
 from .ladenburg_parkraumcheck import LadenburgParkraumcheckPushConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
+from .nagold_bike import NagoldBikePushConverter
 from .neckarsulm import NeckarsulmPushConverter
 from .neckarsulm_bike import NeckarsulmBikePushConverter
 from .opendata_swiss import OpenDataSwissPullConverter
