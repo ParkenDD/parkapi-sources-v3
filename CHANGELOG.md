@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.39.0
+
+Released 2026-09-07
+
+### Features
+
+* [Nagold Bike Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/416)
+* [Update mapping nagold bike](https://github.com/ParkenDD/parkapi-sources-v3/pull/417)
+
+
+### Fixes
+
+* [Update park and ride typen to carpool](https://github.com/ParkenDD/parkapi-sources-v3/pull/420)
+* [radvis update](https://github.com/ParkenDD/parkapi-sources-v3/pull/421)
+* [RADVIS: add new mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/419)
+* [updated friedrichshafen easypark](https://github.com/ParkenDD/parkapi-sources-v3/pull/423)
+* [Friedrichshafen: Update permissions_translation](https://github.com/ParkenDD/parkapi-sources-v3/pull/413)
+
+
+### Maintenance
+
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/422)
+
+
 ## 0.38.5
 
 Released 2026-08-02
