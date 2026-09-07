@@ -60,7 +60,9 @@ class NagoldBikePushConverter(JsonConverter, ParkingSiteBaseConverter):
         The dataset contains placeholder features without a stand type and without any capacity. These are surveying
         artifacts and not actual bike parking installations, therefore they are ignored instead of reported as errors.
         """
-        return not str(properties.get('Stellplatz') or '').strip() and not properties.get('Anzahl_Bue')
+        return not str(properties.get('Stellplatzart') or '').strip() and not properties.get(
+            'Anzahl_Buegel_Stellplaetze',
+        )
 
     @staticmethod
     def _is_private(properties: AnyDict) -> bool:

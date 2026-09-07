@@ -42,9 +42,9 @@ class NagoldBikePushConverterTest:
             nagold_bike_data,
         )
 
-        # The source has 37 features, one of them is a placeholder without stand type and capacity. One feature has
-        # lockers and therefore results in two ParkingSites.
-        assert len(static_parking_site_inputs) == 37
+        # The source has 34 features, one of them is privately operated and therefore ignored. One feature has lockers
+        # and therefore results in two ParkingSites.
+        assert len(static_parking_site_inputs) == 34
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
@@ -60,6 +60,7 @@ class NagoldBikePushConverterTest:
         parking_site = parking_sites_by_uid['809']
         assert parking_site.name == 'Oberamteistraße'
         assert parking_site.address == 'Oberamteistraße, 72202 Nagold'
+        # The trailing whitespace of the source is stripped
         assert parking_site.description == 'Am Parkplatz vom Polizeirevier'
         assert parking_site.purpose == PurposeType.BIKE
         assert parking_site.type == ParkingSiteType.WALL_LOOPS
@@ -71,14 +72,17 @@ class NagoldBikePushConverterTest:
         assert parking_site.opening_hours == '24/7'
         assert parking_site.park_and_ride_type == [ParkAndRideType.NO]
         assert parking_site.supervision_type == SupervisionType.NO
-        assert parking_site.operator_name is None
+        assert parking_site.operator_name == 'Stadt Nagold'
         assert parking_site.restrictions == []
         assert parking_site.has_realtime_data is False
-        assert parking_site.static_data_updated_at == datetime(2024, 9, 27, 0, 0, tzinfo=timezone.utc)
+        assert parking_site.static_data_updated_at == datetime(2026, 7, 29, 10, 26, 32, tzinfo=timezone.utc)
 
-        # Anlehnbügel maps to STANDS, Bike_and_R "ja" maps to park and ride YES
+        # Anlehnbügel maps to STANDS, Bike_and_Ride "ja" maps to park and ride YES
         assert parking_sites_by_uid['422'].type == ParkingSiteType.STANDS
         assert parking_sites_by_uid['422'].park_and_ride_type == [ParkAndRideType.YES]
+
+        # Vorderradhalter mit Rahmen-Sicherung maps to SAFE_WALL_LOOPS
+        assert parking_sites_by_uid['812'].type == ParkingSiteType.SAFE_WALL_LOOPS
 
     @staticmethod
     def test_charging_restriction(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
@@ -129,46 +133,52 @@ class NagoldBikePushConverterTest:
     @staticmethod
     def test_fee_mapping(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
         nagold_bike_data['features'][0]['properties'] |= {
-            'Gebueren_p': 'ja',
-            'Gebueren_1': '1 € pro Tag',
-            'Gebueren_2': '15 € pro Monat',
+            'Gebueren_pro_Tag_Cent': 100,
+            'Gebueren_pro_Monat_Cent': 1500,
+            'Beschreibung_Kostenkonditionen': 'Bezahlung nur mit Karte',
         }
-        nagold_bike_data['features'][1]['properties']['Gebueren_p'] = 'nein'
+        # All fees set to zero means there is no fee, so they do not show up in the fee description
+        nagold_bike_data['features'][1]['properties'] |= {
+            'Gebueren_pro_Tag_Cent': 0,
+            'Gebueren_pro_Monat_Cent': 0,
+            'Gebueren_pro_Jahr_Cent': 0,
+        }
 
         static_parking_site_inputs, _ = nagold_bike_push_converter.handle_json(nagold_bike_data)
         parking_sites_by_uid = {item.uid: item for item in static_parking_site_inputs}
 
-        assert parking_sites_by_uid['809'].has_fee is True
-        assert parking_sites_by_uid['809'].fee_description == '1 € pro Tag, 15 € pro Monat'
-
-        assert parking_sites_by_uid['413'].has_fee is False
-        assert parking_sites_by_uid['413'].fee_description is None
-
-    @staticmethod
-    def test_safe_wall_loops_mapping(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
-        # Vorderradhalter mit Rahmen-Sicherung does not occur in the source data yet
-        nagold_bike_data['features'][0]['properties']['Stellplatz'] = 'Vorderradhalter mit Rahmen-Sicherung'
-
-        static_parking_site_inputs, import_parking_site_exceptions = nagold_bike_push_converter.handle_json(
-            nagold_bike_data,
+        assert parking_sites_by_uid['415'].has_fee is True
+        assert (
+            parking_sites_by_uid['415'].fee_description == '1,00 € pro Tag, 15,00 € pro Monat, Bezahlung nur mit Karte'
         )
-        parking_sites_by_uid = {item.uid: item for item in static_parking_site_inputs}
 
-        assert len(import_parking_site_exceptions) == 0
-        assert parking_sites_by_uid['809'].type == ParkingSiteType.SAFE_WALL_LOOPS
+        assert parking_sites_by_uid['823'].has_fee is False
+        assert parking_sites_by_uid['823'].fee_description is None
 
     @staticmethod
     def test_private_operator_is_ignored(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
-        # Betreiber privat does not occur in the source data yet
-        nagold_bike_data['features'][0]['properties']['Betreiber'] = 'privat'
+        static_parking_site_inputs, import_parking_site_exceptions = nagold_bike_push_converter.handle_json(
+            nagold_bike_data,
+        )
+
+        assert len(import_parking_site_exceptions) == 0
+        assert '2010' not in [item.uid for item in static_parking_site_inputs]
+
+    @staticmethod
+    def test_placeholder_is_ignored(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
+        # Placeholder features without stand type and capacity do not occur in the source data anymore
+        nagold_bike_data['features'][0]['properties'] |= {
+            'Stellplatzart': None,
+            'Anzahl_Buegel_Stellplaetze': 0,
+        }
 
         static_parking_site_inputs, import_parking_site_exceptions = nagold_bike_push_converter.handle_json(
             nagold_bike_data,
         )
 
-        assert len(static_parking_site_inputs) == 36
+        assert len(static_parking_site_inputs) == 33
         assert len(import_parking_site_exceptions) == 0
-        assert '809' not in [item.uid for item in static_parking_site_inputs]
+        assert '415' not in [item.uid for item in static_parking_site_inputs]
 
     @staticmethod
     def test_blank_street_is_reported(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
@@ -179,18 +189,18 @@ class NagoldBikePushConverterTest:
             nagold_bike_data,
         )
 
-        assert len(static_parking_site_inputs) == 36
+        assert len(static_parking_site_inputs) == 33
         assert len(import_parking_site_exceptions) == 1
-        assert import_parking_site_exceptions[0].parking_site_uid == '809'
+        assert import_parking_site_exceptions[0].parking_site_uid == '415'
 
     @staticmethod
     def test_invalid_feature_is_reported(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
-        nagold_bike_data['features'][0]['properties']['Stellplatz'] = 'Fahrradgarage'
+        nagold_bike_data['features'][0]['properties']['Stellplatzart'] = 'Fahrradgarage'
 
         static_parking_site_inputs, import_parking_site_exceptions = nagold_bike_push_converter.handle_json(
             nagold_bike_data,
         )
 
-        assert len(static_parking_site_inputs) == 36
+        assert len(static_parking_site_inputs) == 33
         assert len(import_parking_site_exceptions) == 1
-        assert import_parking_site_exceptions[0].parking_site_uid == '809'
+        assert import_parking_site_exceptions[0].parking_site_uid == '415'

@@ -72,45 +72,88 @@ class NagoldBikeSupervisionType(Enum):
 @validataclass
 class NagoldBikePropertiesInput:
     OBJECTID: int = IntegerValidator(allow_strings=True)
-    # The source uses a single blank instead of an empty value, so a street name needs at least one real character
+    # A street name is required, and has to have at least one non-whitespace character to be a real value
     Strasse: str = RegexValidator(pattern=r'.*\S.*', max_length=256)
-    Lagebeschr: str | None = EmptystringNoneable(StringValidator(max_length=4096)), Default(None)
-    Stellplatz: NagoldBikeStandType = EnumValidator(NagoldBikeStandType)
-    Anzahl_Bue: int = IntegerValidator(min_value=0, allow_strings=True)
-    Anzahl_Sch: int = IntegerValidator(min_value=0, allow_strings=True), Default(0)
-    Anzahl_Lad: int = IntegerValidator(min_value=0, allow_strings=True), Default(0)
-    Beleuchtun: bool | None = (
+    Lagebeschreibung: str | None = EmptystringNoneable(StringValidator(max_length=4096)), Default(None)
+    Stellplatzart: NagoldBikeStandType = EnumValidator(NagoldBikeStandType)
+    Anzahl_Buegel_Stellplaetze: int = IntegerValidator(min_value=0, allow_strings=True)
+    Anzahl_Schliessfaecher: int = IntegerValidator(min_value=0, allow_strings=True), Default(0)
+    Anzahl_Lademoeglichkeiten: int = IntegerValidator(min_value=0, allow_strings=True), Default(0)
+    Beleuchtung: bool | None = (
         EmptystringNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})),
         Default(None),
     )
-    Ueberdachu: bool | None = (
+    Ueberdachung: bool | None = (
         EmptystringNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})),
         Default(None),
     )
-    Immer_geoe: bool | None = (
+    Immer_geoeffnet_zugaenglich: bool | None = (
         EmptystringNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})),
         Default(None),
     )
-    Bike_and_R: NagoldBikeParkAndRideType | None = (
+    Bike_and_Ride: NagoldBikeParkAndRideType | None = (
         EmptystringNoneable(EnumValidator(NagoldBikeParkAndRideType)),
         Default(None),
     )
-    Ueberwachu: NagoldBikeSupervisionType | None = (
+    Ueberwachung: NagoldBikeSupervisionType | None = (
         EmptystringNoneable(EnumValidator(NagoldBikeSupervisionType)),
         Default(None),
     )
     Betreiber: str | None = EmptystringNoneable(StringValidator(max_length=256)), Default(None)
-    Gebueren_p: bool | None = (
-        EmptystringNoneable(MappedBooleanValidator(mapping={'ja': True, 'nein': False})),
+    Gebueren_pro_Tag_Cent: int | None = (
+        EmptystringNoneable(IntegerValidator(min_value=0, allow_strings=True)),
         Default(None),
     )
-    Gebueren_1: str | None = EmptystringNoneable(StringValidator(max_length=2048)), Default(None)
-    Gebueren_2: str | None = EmptystringNoneable(StringValidator(max_length=2048)), Default(None)
-    last_edi_1: datetime = TimestampDateTimeValidator(allow_strings=True, divisor=1000)
+    Gebueren_pro_Monat_Cent: int | None = (
+        EmptystringNoneable(IntegerValidator(min_value=0, allow_strings=True)),
+        Default(None),
+    )
+    Gebueren_pro_Jahr_Cent: int | None = (
+        EmptystringNoneable(IntegerValidator(min_value=0, allow_strings=True)),
+        Default(None),
+    )
+    Beschreibung_Kostenkonditionen: str | None = EmptystringNoneable(StringValidator(max_length=2048)), Default(None)
+    last_edited_date: datetime = TimestampDateTimeValidator(allow_strings=True, divisor=1000)
+
+    @property
+    def description(self) -> str | None:
+        """
+        The source has trailing whitespace in several location descriptions.
+        """
+        return self.Lagebeschreibung.strip() or None if self.Lagebeschreibung else None
+
+    @property
+    def fees_in_cent(self) -> list[tuple[int, str]]:
+        return [
+            (fee, interval)
+            for fee, interval in [
+                (self.Gebueren_pro_Tag_Cent, 'pro Tag'),
+                (self.Gebueren_pro_Monat_Cent, 'pro Monat'),
+                (self.Gebueren_pro_Jahr_Cent, 'pro Jahr'),
+            ]
+            if fee is not None
+        ]
+
+    @property
+    def has_fee(self) -> bool | None:
+        """
+        Without any fee value the source does not tell if there is a fee, so the result stays unknown.
+        """
+        if not self.fees_in_cent:
+            return None
+
+        return any(fee > 0 for fee, _ in self.fees_in_cent)
 
     @property
     def fee_description(self) -> str | None:
-        return ', '.join(value for value in [self.Gebueren_1, self.Gebueren_2] if value) or None
+        fee_descriptions = [
+            f'{fee / 100:.2f} € {interval}'.replace('.', ',') for fee, interval in self.fees_in_cent if fee > 0
+        ]
+
+        if self.Beschreibung_Kostenkonditionen:
+            fee_descriptions.append(self.Beschreibung_Kostenkonditionen)
+
+        return ', '.join(fee_descriptions) or None
 
 
 @validataclass
@@ -121,15 +164,16 @@ class NagoldBikeFeatureInput:
 
     def to_static_parking_sites(self) -> list[StaticParkingSiteInput]:
         """
-        A feature can describe two installations at the same location: the bike stands themselves and, if Anzahl_Sch
-        is set, additional lockers. As both have their own type and capacity, they become two separate ParkingSites.
+        A feature can describe two installations at the same location: the bike stands themselves and, if
+        Anzahl_Schliessfaecher is set, additional lockers. As both have their own type and capacity, they become two
+        separate ParkingSites.
         """
         restrictions: list[ParkingSiteRestrictionInput] = []
-        if self.properties.Anzahl_Lad > 0:
+        if self.properties.Anzahl_Lademoeglichkeiten > 0:
             restrictions.append(
                 ParkingSiteRestrictionInput(
                     type=ParkingAudience.CHARGING,
-                    capacity=self.properties.Anzahl_Lad,
+                    capacity=self.properties.Anzahl_Lademoeglichkeiten,
                 ),
             )
 
@@ -137,19 +181,19 @@ class NagoldBikeFeatureInput:
             self._to_static_parking_site(
                 uid=str(self.properties.OBJECTID),
                 name=self.properties.Strasse,
-                parking_site_type=self.properties.Stellplatz.to_parking_site_type(),
-                capacity=self.properties.Anzahl_Bue,
+                parking_site_type=self.properties.Stellplatzart.to_parking_site_type(),
+                capacity=self.properties.Anzahl_Buegel_Stellplaetze,
                 restrictions=restrictions,
             ),
         ]
 
-        if self.properties.Anzahl_Sch > 0:
+        if self.properties.Anzahl_Schliessfaecher > 0:
             static_parking_sites.append(
                 self._to_static_parking_site(
                     uid=f'{self.properties.OBJECTID}-lockers',
                     name=f'{self.properties.Strasse} (Schließfächer)',
                     parking_site_type=ParkingSiteType.LOCKERS,
-                    capacity=self.properties.Anzahl_Sch,
+                    capacity=self.properties.Anzahl_Schliessfaecher,
                     restrictions=[],
                 ),
             )
@@ -169,25 +213,25 @@ class NagoldBikeFeatureInput:
             name=name,
             # The source has no house numbers, so the address is limited to the street
             address=f'{self.properties.Strasse}, 72202 Nagold',
-            description=self.properties.Lagebeschr,
+            description=self.properties.description,
             operator_name=self.properties.Betreiber,
             purpose=PurposeType.BIKE,
             type=parking_site_type,
             lat=round_7d(self.geometry.y),
             lon=round_7d(self.geometry.x),
             capacity=capacity,
-            has_lighting=self.properties.Beleuchtun,
-            is_covered=self.properties.Ueberdachu,
-            has_fee=self.properties.Gebueren_p,
+            has_lighting=self.properties.Beleuchtung,
+            is_covered=self.properties.Ueberdachung,
+            has_fee=self.properties.has_fee,
             fee_description=self.properties.fee_description,
-            opening_hours='24/7' if self.properties.Immer_geoe else None,
+            opening_hours='24/7' if self.properties.Immer_geoeffnet_zugaenglich else None,
             park_and_ride_type=(
-                [] if self.properties.Bike_and_R is None else self.properties.Bike_and_R.to_park_and_ride_types()
+                [] if self.properties.Bike_and_Ride is None else self.properties.Bike_and_Ride.to_park_and_ride_types()
             ),
             supervision_type=(
-                None if self.properties.Ueberwachu is None else self.properties.Ueberwachu.to_supervision_type()
+                None if self.properties.Ueberwachung is None else self.properties.Ueberwachung.to_supervision_type()
             ),
             restrictions=restrictions,
             has_realtime_data=False,
-            static_data_updated_at=self.properties.last_edi_1,
+            static_data_updated_at=self.properties.last_edited_date,
         )
