@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - name: checkout
-      uses: actions/checkout@v7
+      uses: actions/checkout@v7.0.1
 
     - name: install uv
-      uses: astral-sh/setup-uv@v9.0.0
+      uses: astral-sh/setup-uv@v10.0.1
       with:
         python-version: '3.12'
         enable-cache: true
@@ -41,10 +41,10 @@ jobs:
         timezoneLinux: "Europe/Berlin"
 
     - name: checkout
-      uses: actions/checkout@v7
+      uses: actions/checkout@v7.0.1
 
     - name: install uv
-      uses: astral-sh/setup-uv@v9.0.0
+      uses: astral-sh/setup-uv@v10.0.1
       with:
         python-version: '3.12'
         enable-cache: true

@@ -54,6 +54,7 @@ We support following data sources:
 | Stadt Konstanz: Fahrrad-Abstellanlagen                                | ParkingSite | bike       | push        | `konstanz_bike`               | no       |
 | Stadt Konstanz: Behindertenparkplätze                                 | ParkingSpot | car        | pull        | `konstanz_disabled`           | no       |
 | Stadt Mannheim                                                        | ParkingSite | car        | push (json) | `mannheim`                    | yes      |
+| Stadt Nagold: Fahrrad-Abstellanlagen                                  | ParkingSite | bike       | push (json) | `nagold_bike`                 | no       |
 | Stadt Neckarsulm: PKW-Parkplätze                                      | ParkingSite | car        | pull        | `neckarsulm`                  | no       |
 | Stadt Neckarsulm: Fahrrad-Abstellanlagen                              | ParkingSite | bike       | pull        | `neckarsulm_bike`             | no       |
 | Open-Data-Plattform öV Schweiz                                        | ParkingSite | car        | pull (json) | `opendata_swiss`              | no       |
