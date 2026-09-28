@@ -8,9 +8,9 @@ Stadt Herrenberg provides car parking data as JSON through the Stadtnavi ParkAPI
 * `has_realtime_data` is set to `true`
 
 A `ParkingSite` and `ParkingSpot` are generated for each valid entry in `lots`.
-A `ParkingSpot` is generated for disabled parking information if `total:disabled` is set and `>= 1` 
-or `total` is set and `== 1`. A `ParkingSite` is also generated if `total` is set and `>= 1`.
-The `ParkingSpot` with `total:disabled >= 2` should have their coordinates slightly distributed 
+A `ParkingSpot` is generated for disabled parking information if `total:disabled` is set and `>= 1`. 
+A `ParkingSite` is also generated if `total` is set and `>= 1`. The `ParkingSpot` with 
+`total:disabled >= 2` should have their coordinates slightly distributed 
 from its `ParkingSite` and obtain a `parking_site_id` to reference it.
 
 Before validation, source keys containing `:` are normalized by replacing `:` with `_`, for example `total:disabled` becomes `total_disabled`.
@@ -44,7 +44,7 @@ Before validation, source keys containing `:` are normalized by replacing `:` wi
 | lots[].coords.lat         | numeric                 | 1           | lat                               |                                                                          |
 | lots[].coords.lng         | numeric                 | 1           | lon                               |                                                                          |
 | lots[].address            | string                  | 1           | address                           |                                                                          |
-| lots[].total:disabled     | integer                 | ?           | restrictions[`DISABLED`].capacity | `ParkingSpot` is generated only when this value is exactly `1`.          |
+| lots[].total:disabled     | integer                 | ?           | restrictions[`DISABLED`]          | `ParkingSpot` is generated only when this value is exactly `1`.          |
 | lots[].notes.de           | string                  | ?           | description                       |                                                                          |
 | lots[].url                | URL                     | ?           | public_url                        |                                                                          |
 | lots[].opening_hours      | string                  | ?           | opening_hours                     | OSM opening times. `Mo - Su` is normalized to `Mo-Su`.                   |
@@ -65,15 +65,15 @@ Realtime `ParkingSite` data is generated for entries where `state != nodata` or 
 
 ## LotType
 
-| Key                      | Mapping: type             | Mapping: park_and_ride_type |
-| ------------------------ | ------------------------- | --------------------------- |
-| Parkplatz                | OFF_STREET_PARKING_GROUND |                             |
-| Parkhaus                 | CAR_PARK                  |                             |
-| Wohnmobilparkplatz       | OFF_STREET_PARKING_GROUND |                             |
-| Park-Carpool             | OFF_STREET_PARKING_GROUND | [ParkAndRideType.CARPOOL]   |
-| Park-Ride                | OFF_STREET_PARKING_GROUND | [ParkAndRideType.YES]       |
-| Barrierefreier-Parkplatz | ON_STREET                 |                             |
-| Tiefgarage               | UNDERGROUND               |                             |
+| Key                      | Mapping: type             | Mapping: park_and_ride_type | Mapping: restrictions |
+| ------------------------ | ------------------------- | --------------------------- | ----------------------|
+| Parkplatz                | OFF_STREET_PARKING_GROUND |                             |                       |
+| Parkhaus                 | CAR_PARK                  |                             |                       |
+| Wohnmobilparkplatz       | OFF_STREET_PARKING_GROUND |                             | restrictions[CARAVAN] |
+| Park-Carpool             | OFF_STREET_PARKING_GROUND | [ParkAndRideType.CARPOOL]   |                       |
+| Park-Ride                | OFF_STREET_PARKING_GROUND | [ParkAndRideType.YES]       |                       |
+| Barrierefreier-Parkplatz | ON_STREET                 |                             |                       |
+| Tiefgarage               | UNDERGROUND               |                             |                       |
 
 ## LotsState
 
