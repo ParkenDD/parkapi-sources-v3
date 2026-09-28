@@ -10,8 +10,6 @@ Stadt Herrenberg provides car parking data as JSON through the Stadtnavi ParkAPI
 A `ParkingSite` and `ParkingSpot` are generated for each valid entry in `lots`.
 A `ParkingSpot` is only generated for disabled parking information if `total:disabled` is set and `>= 1`
 and `total` is set and `== 0`. A `ParkingSite` is also generated if `total` is set and `>= 1`. 
-The `ParkingSpot` with `total:disabled >= 2` should have their coordinates slightly distributed 
-from its `ParkingSite` and obtain a `parking_site_id` to reference it.
 
 Before validation, source keys containing `:` are normalized by replacing `:` with `_`, for example `total:disabled` becomes `total_disabled`.
 
