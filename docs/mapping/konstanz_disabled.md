@@ -12,7 +12,7 @@ Konstanz provides a GeoJSON with Point geometry, which results in ParkingSpots.
 
 | field        | type                                | Cardinality | Target field | Comment                          |
 |--------------|-------------------------------------|-------------|--------------|----------------------------------|
-| OBJECTID     | integer                             | 1           | uid          |                                  |
+| OBJECTID     | integer                             | 1           |              |                                  |
 | Name         | string                              | 1           | name         | name set to "`Name`-`Stadtteil`" |
 | Straßennummer| string                              | 1           |              |                                  |
 | adress       | string                              | 1           | address      |                                  |
@@ -21,7 +21,7 @@ Konstanz provides a GeoJSON with Point geometry, which results in ParkingSpots.
 | Anordnung    | [Anordnung](#Anordnung)             | 1           | orientation  |                                  |
 | Breite       | string                              | 1           |              |                                  |
 | description  | string                              | ?           | description  | set if present                   |
-| GlobalID     | string                              | 1           |              |                                  |
+| GlobalID     | string                              | 1           | uid          |                                  |
 
 
 ### ParkingSpotType
