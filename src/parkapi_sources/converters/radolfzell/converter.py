@@ -22,6 +22,7 @@ class RadolfzellPushConverter(JsonConverter, ParkingSiteBaseConverter):
         uid='radolfzell',
         name='Radolfzell',
         has_realtime_data=False,
+        public_url='https://www.radolfzell.de/Umwelt-und-Mobilitaet/Mobilitaet/Parken',
     )
     geojson_validator = DataclassValidator(GeojsonInput)
     radolfzell_validator = DataclassValidator(RadolfzellParkingSiteInput)

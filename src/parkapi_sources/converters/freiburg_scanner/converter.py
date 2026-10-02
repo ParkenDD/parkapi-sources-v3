@@ -22,6 +22,7 @@ class FreiburgScannerPullConverter(ParkingSitePullConverter):
         source_url='https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:4326'
         '&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkkartierung_mercedes_kanten&OUTPUTFORMAT=geojson',
         has_realtime_data=False,
+        public_url='https://www.freiburg.de/pb/2551535.html',
     )
     geojson_validator = DataclassValidator(GeojsonInput)
     freiburg_scanner_feature_validator = DataclassValidator(FreiburgScannerFeatureInput)

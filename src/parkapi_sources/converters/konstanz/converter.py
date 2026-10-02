@@ -20,6 +20,7 @@ class KonstanzPullConverter(ParkingSitePullConverter):
         source_url='https://services.gis.konstanz.digital/geoportal/rest/services/Fachdaten/Parkplaetze_Parkleitsystem'
         '/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json',
         has_realtime_data=True,
+        public_url='https://www.konstanz.de/leben+in+konstanz/mobilitaet/parkleitsystem',
     )
     konstanz_parking_sites_validator = DataclassValidator(KonstanzParkingSitesInput)
     konstanz_parking_site_validator = DataclassValidator(KonstanzParkingSiteInput)

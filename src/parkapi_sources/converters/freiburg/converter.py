@@ -139,6 +139,7 @@ class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):
         attribution_contributor='Stadt Freiburg',
         attribution_license='dl-de/by-2-0',
         has_realtime_data=True,
+        public_url='https://www.freiburg.de/pb/890766.html'
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
@@ -169,4 +170,5 @@ class FreiburgParkAndRideRealtimePullConverter(FreiburgBasePullConverter):
         attribution_contributor='Stadt Freiburg',
         attribution_license='dl-de/by-2-0',
         has_realtime_data=True,
+        public_url='https://www.freiburg.de/pb/890766.html',
     )
