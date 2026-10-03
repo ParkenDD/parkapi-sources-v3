@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.39.1
+
+Released 2026-10-03
+
+### Fixes
+
+* [Correct usage of Push and PullConverter](https://github.com/ParkenDD/parkapi-sources-v3/pull/427)
+* [Correct Mapping Spec for Orientation in Esslingen](https://github.com/ParkenDD/parkapi-sources-v3/pull/430)
+* [Update mapping konstanz disabled](https://github.com/ParkenDD/parkapi-sources-v3/pull/424)
+* [Add missing public_urls](https://github.com/ParkenDD/parkapi-sources-v3/pull/432)
+
+
+### Maintenance
+
+* [Add Esslingen to README](https://github.com/ParkenDD/parkapi-sources-v3/pull/429)
+* [fix readme sources](https://github.com/ParkenDD/parkapi-sources-v3/pull/435)
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/433)
+
+
 ## 0.39.0
 
 Released 2026-09-07
