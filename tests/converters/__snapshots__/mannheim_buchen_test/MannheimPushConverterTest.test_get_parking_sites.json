@@ -1,0 +1,20 @@
+[
+  {
+    "address": "Haagstraße, 74722 Buchen",
+    "capacity": 60,
+    "description": "Parkhaus Haagstrasse",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.52211082686668",
+    "lon": "9.326514294042138",
+    "name": "P8 Parkdeck Altstadt Haagstraße",
+    "operator_name": "Stadt Buchen",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-20T16:05:33Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "P8_Parkdeck_Altstadt_Haagstrasse"
+  }
+]

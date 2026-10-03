@@ -1,0 +1,359 @@
+[
+  {
+    "address": "Salzstadelgasse 14, 89073 Ulm",
+    "capacity": 525,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "max_height": 200,
+    "name": "Parkhaus Salzstadel",
+    "opening_hours": "24/7",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 68,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 20,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "c699c145-eb2e-4cf5-9a50-1a8a56fbf64d"
+  },
+  {
+    "address": "Friedrich-Ebert-Straße 8, 89073 Ulm",
+    "capacity": 600,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3980858",
+    "lon": "9.9847249",
+    "max_height": 200,
+    "name": "Parkhaus Deutschhaus",
+    "opening_hours": "24/7",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 70,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "fd12a50d-0722-4a0a-ac47-cd88eff6862a"
+  },
+  {
+    "address": "Schwilmengasse 1-1, 89073 Ulm",
+    "capacity": 390,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "max_height": 200,
+    "name": "Parkhaus Fischerviertel",
+    "opening_hours": "24/7",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 54,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 20,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "132becee-d7c9-441e-a76e-3adb216a76ba"
+  },
+  {
+    "address": "Wichernstraße, 89073 Ulm",
+    "capacity": 410,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "max_height": 200,
+    "name": "Congresscentrum Nord",
+    "opening_hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 58,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 16,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "057786ef-ef3e-4837-a0b9-f8d609e9ed34"
+  },
+  {
+    "address": "Neue Str., 89073 Ulm",
+    "capacity": 574,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "max_height": 200,
+    "name": "Parkhaus am Rathaus",
+    "opening_hours": "24/7",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 64,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "6c5a1b0b-d83c-4c25-a4af-4db29d7280a8"
+  },
+  {
+    "address": "Herbert-von-Karajan-Platz 1, 89073 Ulm",
+    "capacity": 74,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4007540",
+    "lon": "9.9855005",
+    "max_height": 200,
+    "name": "Parkhaus Theater",
+    "opening_hours": "Mo-Fr 18:30-02:00; Sa 06:30-02:00; Su 06:30-02:00",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "fd6b8240-b9d2-4f85-b877-3eae4e9b1c87"
+  },
+  {
+    "address": "Bahnhofplatz 8, 89073 Ulm",
+    "capacity": 547,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "max_height": 200,
+    "name": "Parkhaus am Bahnhof",
+    "opening_hours": "24/7",
+    "public_url": "https://parken-in-ulm.de/",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 8,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 56,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 32,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "6173ba87-78ec-436c-85f0-b02c75c6b33b"
+  }
+]

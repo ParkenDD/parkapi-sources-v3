@@ -7,6 +7,7 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import ReutlingenBikePushConverter
 from parkapi_sources.util import RequestHelper
@@ -23,7 +24,10 @@ def reutlingen_bike_push_converter(
 
 class ReutlingenBikePushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(reutlingen_bike_push_converter: ReutlingenBikePushConverter):
+    def test_get_static_parking_sites(
+        reutlingen_bike_push_converter: ReutlingenBikePushConverter,
+        snapshot: SnapshotAssertion,
+    ):
         with get_data_path('reutlingen_bike.csv').open() as reutlingen_bike_file:
             reutlingen_bike_data = StringIO(reutlingen_bike_file.read())
 
@@ -34,4 +38,4 @@ class ReutlingenBikePushConverterTest:
         assert len(static_parking_site_inputs) == 332
         assert len(import_parking_site_exceptions) == 2
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

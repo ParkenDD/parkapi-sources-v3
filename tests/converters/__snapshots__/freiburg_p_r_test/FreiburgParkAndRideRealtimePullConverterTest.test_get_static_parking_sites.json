@@ -1,0 +1,87 @@
+[
+  {
+    "capacity": 212,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.0126632",
+    "lon": "7.8064112",
+    "name": "Paduaallee",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-05-05T10:34:03Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PR165"
+  },
+  {
+    "capacity": 125,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.0016550",
+    "lon": "7.8191981",
+    "name": "Bissierstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-05-05T10:34:03Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PR162"
+  },
+  {
+    "capacity": 148,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9880202",
+    "lon": "7.7959166",
+    "name": "Munzinger Str.",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-05-05T10:34:03Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PR159"
+  },
+  {
+    "capacity": 17,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.0292275",
+    "lon": "7.8081168",
+    "name": "Moosweiher",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-05-05T10:34:03Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PR156"
+  },
+  {
+    "capacity": 336,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.0348057",
+    "lon": "7.8623896",
+    "name": "Gundelfinger Str.",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-05-05T10:34:03Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PR153"
+  }
+]

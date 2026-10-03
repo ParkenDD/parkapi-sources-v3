@@ -4,10 +4,12 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import json
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import TYPE_CHECKING
 
 from opening_hours import OpeningHours
+from syrupy.assertion import SnapshotAssertion
 from validataclass.validators import DataclassValidator
 
 from parkapi_sources.models import (
@@ -32,8 +34,8 @@ def get_data_path(filename: str) -> Path:
 
 
 def static_geojson_callback(request: 'Request', context: 'Context'):
-    source_uid: str = request.path[1:-8]
-    geojson_path = Path(Path(__file__).parent.parent.parent, 'data', f'{source_uid}.geojson')
+    source_uid: str = Path(request.path).stem
+    geojson_path = Path(Path(__file__).parent, 'data', 'static_geojson', f'{source_uid}.geojson')
 
     # If the GeoJSON does not exist: return an HTTP 404
     if not geojson_path.exists():
@@ -51,7 +53,34 @@ def filter_none(data: AnyDict) -> AnyDict:
     return {key: value for key, value in data.items() if value is not None}
 
 
-def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticParkingSiteInput]):
+VOLATILE_DATETIME_KEYS: tuple[str, ...] = ('static_data_updated_at', 'realtime_data_updated_at')
+VOLATILE_DATETIME_TOLERANCE: timedelta = timedelta(minutes=10)
+
+
+def assert_snapshot(inputs: list, snapshot: SnapshotAssertion):
+    """
+    Compares the JSON representation of converter results against the stored snapshot. Several converters set
+    static_data_updated_at or realtime_data_updated_at to the current time, so timestamps close to now are replaced
+    by a placeholder to keep snapshots stable.
+    """
+    now = datetime.now(tz=timezone.utc)
+    snapshot_data: list[AnyDict] = []
+    for item in inputs:
+        item_dict: AnyDict = json.loads(json.dumps(filter_none(item.to_dict()), cls=DefaultJSONEncoder))
+        for key in VOLATILE_DATETIME_KEYS:
+            if key not in item_dict:
+                continue
+            if abs(datetime.fromisoformat(item_dict[key]) - now) < VOLATILE_DATETIME_TOLERANCE:
+                item_dict[key] = '<now>'
+        snapshot_data.append(item_dict)
+
+    assert snapshot_data == snapshot
+
+
+def validate_static_parking_site_inputs(
+    static_parking_site_inputs: list[StaticParkingSiteInput],
+    snapshot: SnapshotAssertion,
+):
     validator = DataclassValidator(StaticParkingSiteInput)
 
     uids: list[str] = []
@@ -80,8 +109,13 @@ def validate_static_parking_site_inputs(static_parking_site_inputs: list[StaticP
         )
         validator.validate(parking_site_dict)
 
+    assert_snapshot(static_parking_site_inputs, snapshot)
 
-def validate_realtime_parking_site_inputs(realtime_parking_site_inputs: list[RealtimeParkingSiteInput]):
+
+def validate_realtime_parking_site_inputs(
+    realtime_parking_site_inputs: list[RealtimeParkingSiteInput],
+    snapshot: SnapshotAssertion,
+):
     validator = DataclassValidator(RealtimeParkingSiteInput)
 
     for realtime_parking_site_input in realtime_parking_site_inputs:
@@ -97,8 +131,13 @@ def validate_realtime_parking_site_inputs(realtime_parking_site_inputs: list[Rea
         )
         validator.validate(parking_site_dict)
 
+    assert_snapshot(realtime_parking_site_inputs, snapshot)
 
-def validate_static_parking_spot_inputs(static_parking_spot_inputs: list[StaticParkingSpotInput]):
+
+def validate_static_parking_spot_inputs(
+    static_parking_spot_inputs: list[StaticParkingSpotInput],
+    snapshot: SnapshotAssertion,
+):
     validator = DataclassValidator(StaticParkingSpotInput)
 
     for static_parking_spot_input in static_parking_spot_inputs:
@@ -114,8 +153,13 @@ def validate_static_parking_spot_inputs(static_parking_spot_inputs: list[StaticP
         )
         validator.validate(parking_slot_dict)
 
+    assert_snapshot(static_parking_spot_inputs, snapshot)
 
-def validate_realtime_parking_spot_inputs(static_parking_slot_inputs: list[RealtimeParkingSpotInput]):
+
+def validate_realtime_parking_spot_inputs(
+    static_parking_slot_inputs: list[RealtimeParkingSpotInput],
+    snapshot: SnapshotAssertion,
+):
     validator = DataclassValidator(RealtimeParkingSpotInput)
 
     for realtime_parking_spot_input in static_parking_slot_inputs:
@@ -126,3 +170,5 @@ def validate_realtime_parking_spot_inputs(static_parking_slot_inputs: list[Realt
             json.dumps(filter_none(realtime_parking_spot_input.to_dict()), cls=DefaultJSONEncoder)
         )
         validator.validate(parking_spot_dict)
+
+    assert_snapshot(static_parking_slot_inputs, snapshot)

@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from unittest.mock import Mock
 
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import NagoldBikePushConverter
 from parkapi_sources.models.enums import (
@@ -37,7 +38,11 @@ def nagold_bike_data() -> dict:
 
 class NagoldBikePushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(nagold_bike_push_converter: NagoldBikePushConverter, nagold_bike_data: dict):
+    def test_get_static_parking_sites(
+        nagold_bike_push_converter: NagoldBikePushConverter,
+        nagold_bike_data: dict,
+        snapshot: SnapshotAssertion,
+    ):
         static_parking_site_inputs, import_parking_site_exceptions = nagold_bike_push_converter.handle_json(
             nagold_bike_data,
         )
@@ -47,7 +52,7 @@ class NagoldBikePushConverterTest:
         assert len(static_parking_site_inputs) == 34
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_static_parking_site_mapping(

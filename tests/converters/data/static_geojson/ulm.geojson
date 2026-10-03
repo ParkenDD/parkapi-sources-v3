@@ -1,0 +1,213 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "am-bahnhof-8",
+        "name": "Am Bahnhof",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-in-ulm.de/parkhaus/am-bahnhof-8",
+        "address": "Bahnhofsplatz 8, 89073 Ulm",
+        "capacity": 540,
+        "capacity_charging": 32,
+        "capacity_disabled": 8,
+        "capacity_women": 56,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.98379,
+          48.39808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "am-rathaus-1",
+        "name": "Am Rathaus",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/am-rathaus-1",
+        "address": "Memmigergasse 5, 89073 Ulm",
+        "capacity": 555,
+        "capacity_charging": 4,
+        "capacity_disabled": 4,
+        "capacity_women": 64,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.993047,
+          48.397305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "ccu-nord-5",
+        "name": "CCU Nord",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/ccu-nord-5",
+        "address": "Wichernstraße, 89073 Ulm",
+        "capacity": 400,
+        "capacity_charging": 16,
+        "capacity_disabled": 4,
+        "capacity_women": 58,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.001591,
+          48.401814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "ccu-sud-6",
+        "name": "CCU Süd",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/ccu-sud-6",
+        "address": "Basteistraße 46, 89073 Ulm",
+        "capacity": 235,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.004385,
+          48.401223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "deutschhaus-3",
+        "name": "Deutschhaus",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-in-ulm.de/parkhaus/deutschhaus-3",
+        "address": "Friedrich-Ebert-Straße 8, 89073 Ulm",
+        "capacity": 594,
+        "capacity_charging": 4,
+        "capacity_disabled": 2,
+        "capacity_women": 70,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.984545,
+          48.397917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "fischerviertel-4",
+        "name": "Fischerviertel",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/fischerviertel-4",
+        "address": "Schwilmengasse, 89073 Ulm",
+        "capacity": 326,
+        "capacity_charging": 18,
+        "capacity_disabled": 1,
+        "capacity_women": 54,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.988355,
+          48.396583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "frauenstrae-9",
+        "name": "Frauenstraße",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/frauenstrae-9",
+        "address": "Memmigergasse 5, 89073 Ulm",
+        "capacity": 780,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.996022,
+          48.400979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "kornhaus-10",
+        "name": "Kornhaus",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/kornhaus-10",
+        "address": "Rosengasse 9, 89073 Ulm",
+        "capacity": 70,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99491,
+          48.40093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "salzstadel-2",
+        "name": "Salzstadel",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/salzstadel-2",
+        "address": "Salzstadelgasse 14, 89073 Ulm",
+        "capacity": 520,
+        "capacity_charging": 18,
+        "capacity_disabled": 2,
+        "capacity_women": 68,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.990002,
+          48.40116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "theater-7",
+        "name": "Theater",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-in-ulm.de/parkhaus/theater-7",
+        "address": "Olgastraße 63, 89073 Ulm",
+        "capacity": 80,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.98559,
+          48.40062
+        ]
+      }
+    }
+  ]
+}

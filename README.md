@@ -310,6 +310,17 @@ several cases two tests, one for static, one for realtime data) stored at `tests
 If you test a `PullConverter`, you will need no mock requests. This can be done using the fantastic
 [`requests_mock`](https://pypi.org/project/requests-mock/) library.
 
+The `validate_*_inputs()` helpers in `tests/converters/helper.py` validate the converter results and compare them
+against a [`syrupy`](https://pypi.org/project/syrupy/) snapshot stored as JSON at `tests/converters/__snapshots__/`.
+Timestamps which converters set to the current time are replaced by `<now>`. When you add a converter or
+intentionally change its output, (re-)generate the snapshots and review the resulting diff:
+
+```bash
+uv run pytest tests/converters/uid_test.py --snapshot-update
+```
+
+If your converter uses static GeoJSON data, put the GeoJSON file at `tests/converters/data/static_geojson/uid.geojson`.
+
 If you created new validators, these should be tested with different inputs. Usually, `pytest.parametrize` is a nice
 approach to do this.
 

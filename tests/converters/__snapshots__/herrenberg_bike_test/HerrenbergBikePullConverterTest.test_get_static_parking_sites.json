@@ -1,0 +1,6423 @@
+[
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "738705285"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5893834",
+    "lon": "8.8577438",
+    "name": "Firmenparkplatz GWW",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "987"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "95685677"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5979418",
+    "lon": "8.8639358",
+    "name": "VfL",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "988"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11306929066"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6242120",
+    "lon": "8.8351455",
+    "name": "Dorfplatz Oberjesingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "989"
+  },
+  {
+    "capacity": 40,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "702362944"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5943441",
+    "lon": "8.8623401",
+    "name": "Bahnhof Kaufland Seite Unterführung",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "990"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7863584959"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5956847",
+    "lon": "8.8700297",
+    "name": "Spital Gasse",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "991"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "6595890251"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5964232",
+    "lon": "8.8704200",
+    "name": "Beim Rathaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-10T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "992"
+  },
+  {
+    "capacity": 11,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556497"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5719360",
+    "lon": "8.8828960",
+    "name": "Ammerstadion",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "993"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171350998"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6020800",
+    "lon": "8.8715800",
+    "name": "Affstätter Tal 33",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "994"
+  },
+  {
+    "capacity": 28,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030673"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6111864",
+    "lon": "8.8512297",
+    "name": "Netto Kuppingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "995"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7037980288"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5947865",
+    "lon": "8.8685433",
+    "name": "Hindenburgstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "996"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503363"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5935597",
+    "lon": "8.8661466",
+    "name": "Sabine Gall Fußpflege",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-07T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "997"
+  },
+  {
+    "capacity": 56,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1197958026"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5981233",
+    "lon": "8.8639398",
+    "name": "Volksbank Stadion",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "998"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140534023"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5979032",
+    "lon": "8.8707059",
+    "name": "Mrs. Sporty",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "999"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11370686695"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5773550",
+    "lon": "8.9201320",
+    "name": "Evangelisches Gemeindehaus Kayh",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-01T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1000"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113693804"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5975897",
+    "lon": "8.8634578",
+    "name": "Schießmauer 1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1001"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500514"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6050830",
+    "lon": "8.8627560",
+    "name": "Spielplatz Kaffeeberg Affstätt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1002"
+  },
+  {
+    "capacity": 9,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5758434",
+    "lon": "8.8766534",
+    "name": "Feuerwehr Gültstein",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-10-15T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1003"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8989440174"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5940300",
+    "lon": "8.8736561",
+    "name": "VHS",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-12-04T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1004"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "5895582372"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6033736",
+    "lon": "8.9076880",
+    "name": "Schönbuchturm",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1005"
+  },
+  {
+    "capacity": 40,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140873575"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5980682",
+    "lon": "8.8706929",
+    "name": "TAKKO Fashion",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1006"
+  },
+  {
+    "capacity": 16,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11178512972"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6036419",
+    "lon": "8.9088514",
+    "name": "Schönbuchturm",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1007"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353065"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6016670",
+    "lon": "8.8712780",
+    "name": "Affstätter Tal 39",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1008"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619782"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5968553",
+    "lon": "8.8716759",
+    "name": "Stiftskirche",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-09T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1009"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556496"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5754440",
+    "lon": "8.8779060",
+    "name": "Karolinenstift",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1010"
+  },
+  {
+    "capacity": 36,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030671"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6221946",
+    "lon": "8.8278027",
+    "name": "Wasenäckerhalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1011"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619777"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6114943",
+    "lon": "8.8441621",
+    "name": "Kindertageseinrichtung Brühlweg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1012"
+  },
+  {
+    "capacity": 22,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030669"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6221088",
+    "lon": "8.8281661",
+    "name": "Evangelisches Gemeindehaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1013"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503369"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5978894",
+    "lon": "8.8703905",
+    "name": "Nufringer Tor unten",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1014"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881813"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6147510",
+    "lon": "8.8380949",
+    "name": "Kinderhaus Keltenstraße 11",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1015"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11953298209"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5932832",
+    "lon": "8.8641194",
+    "name": "Walther-Knoll-Straße ",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-07-11T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1016"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500517"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5843961",
+    "lon": "8.8347237",
+    "name": "Hohenzollernstraße 83",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1017"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171350999"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6020450",
+    "lon": "8.8717830",
+    "name": "Affstätter Tal 31",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1018"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500522"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5841615",
+    "lon": "8.8352038",
+    "name": "Metzgerei Gräther",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1019"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7037980288 "
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5947376",
+    "lon": "8.8690675",
+    "name": "Hindenburgstraße 16",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1020"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503365"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5910676",
+    "lon": "8.8686400",
+    "name": "Goethestraße 12",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-07T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1021"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11141108458"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6024370",
+    "lon": "8.8698280",
+    "name": "Gym24",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1022"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353053"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6018220",
+    "lon": "8.8687580",
+    "name": "H+Hotel",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1023"
+  },
+  {
+    "capacity": 248,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "28298726"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5900282",
+    "lon": "8.8750249",
+    "name": "Hallenbad Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1024"
+  },
+  {
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5944964",
+    "lon": "8.8622215",
+    "name": "Rückseite BayWa",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1025"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254817169"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5889533",
+    "lon": "8.8579336",
+    "name": "Habichtstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1026"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113769606"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5973653",
+    "lon": "8.8638859",
+    "name": "VFL Gebäude 1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1028"
+  },
+  {
+    "capacity": 33,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7726452136"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5956513",
+    "lon": "8.8608979",
+    "name": "Kaufland",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1029"
+  },
+  {
+    "capacity": 22,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503366"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5975910",
+    "lon": "8.8681410",
+    "name": "Lidl",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1030"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619781"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5982763",
+    "lon": "8.8718583",
+    "name": "Am Joachimsberg 10",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-09T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1031"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140917938"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5932863",
+    "lon": "8.8544229",
+    "name": "Kirche St. Martin (hinten)",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1032"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137789465"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5946853",
+    "lon": "8.8558139",
+    "name": "Straßenverkehr Kfz Zulassungsstelle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1033"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137694809"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6006998",
+    "lon": "8.8590005",
+    "name": "Johannes-Kepler-Straße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1034"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "6595792653"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5957262",
+    "lon": "8.8678733",
+    "name": "Bronntor",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1035"
+  },
+  {
+    "capacity": 36,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1266968724, 1266968726"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5919833",
+    "lon": "8.8746767",
+    "name": "Krankenhaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1036"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120158"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6072199",
+    "lon": "8.8591193",
+    "name": "Rathaus Affstätt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1037"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8875319144"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5974458",
+    "lon": "8.8679338",
+    "name": "Technisches Rathaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1038"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353056"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6006512",
+    "lon": "8.8707529",
+    "name": "Affstätter Tal 57",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1039"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8974144401"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5749725",
+    "lon": "8.8781736",
+    "name": "Altes Rathaus Gueltstein",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1040"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11138405691"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5983603",
+    "lon": "8.8595729",
+    "name": "Christuskirche",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1041"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "4917775354"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5772686",
+    "lon": "8.8828745",
+    "name": "Steinpilzweg 25",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-23T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1042"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137716397"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5964813",
+    "lon": "8.8562139",
+    "name": "Conny & Team Friseure",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1043"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "13136489724"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5952937",
+    "lon": "8.8675079",
+    "name": "Unterführung Zinser",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-09-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1044"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254817171"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5921610",
+    "lon": "8.8590877",
+    "name": "Bahnhofstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1045"
+  },
+  {
+    "capacity": 9,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "5730734679"
+      }
+    ],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5938259",
+    "lon": "8.8628375",
+    "name": "Bahnhof-Süd",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-10-30T00:00:00Z",
+    "tags": [],
+    "type": "LOCKBOX",
+    "uid": "1046"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881819"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6103875",
+    "lon": "8.8431144",
+    "name": "Stephanus-Stift",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1047"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503368"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5978894",
+    "lon": "8.8703905",
+    "name": "Nufringer Tor unten",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1048"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "9082074724"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5947263",
+    "lon": "8.8561929",
+    "name": "FSL Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1049"
+  },
+  {
+    "capacity": 7,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "13136159022"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5946581",
+    "lon": "8.8700104",
+    "name": "Mauerwerk",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-09-09T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1050"
+  },
+  {
+    "capacity": 26,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8875319143"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5973296",
+    "lon": "8.8676567",
+    "name": "Seeländerplatz",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1051"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8533065301"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5915761",
+    "lon": "8.8738394",
+    "name": "Marienstraße Ecke Kleiststraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1052"
+  },
+  {
+    "capacity": 88,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "184050437"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5928567",
+    "lon": "8.8537828",
+    "name": "Görlitzer Straße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-22T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1053"
+  },
+  {
+    "capacity": 28,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8565577475"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5982810",
+    "lon": "8.8690797",
+    "name": "Vor Parkhauseinfahrt Seeländer",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-12-04T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1054"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8974144399"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5751750",
+    "lon": "8.8774980",
+    "name": "Vor der Grundschule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1055"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "5322238594"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5950933",
+    "lon": "8.8696066",
+    "name": "Graben",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-07T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1056"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11939048667"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5956458",
+    "lon": "8.8677199",
+    "name": "Bronntor",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-09T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1057"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353059"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6010470",
+    "lon": "8.8717300",
+    "name": "Affstätter Tal 19",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1058"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137799936"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5937103",
+    "lon": "8.8547929",
+    "name": "Kirche St. Martin",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1059"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11357713109"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5964337",
+    "lon": "8.8723248",
+    "name": "Vor dem Dekanat",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-11-16T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1060"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8985746492"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5926926",
+    "lon": "8.8696242",
+    "name": "Kinderhaus Alzental",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-12-04T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1061"
+  },
+  {
+    "capacity": 221,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140435438"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5929497",
+    "lon": "8.8562134",
+    "name": "Jerg-Ratgeb-Schule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1062"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11306929065"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6233814",
+    "lon": "8.8318578",
+    "name": "Kindertageseinrichtung Mahdenstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1063"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353054"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6008262",
+    "lon": "8.8691729",
+    "name": "Elektro Hämmerle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1064"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137732875"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5964233",
+    "lon": "8.8566979",
+    "name": "Württembergische Weimann & Bühl",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1065"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11792008718, 11792008719"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5924109",
+    "lon": "8.8602480",
+    "name": "Haus am Sommerrain",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1066"
+  },
+  {
+    "capacity": 7,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619780"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5942790",
+    "lon": "8.8755628",
+    "name": "Brahmstrasse 2",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-02T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1067"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500519"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5814406",
+    "lon": "8.8395326",
+    "name": "Grundschule Haslach",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1068"
+  },
+  {
+    "capacity": 9,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11872074870"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5943787",
+    "lon": "8.8692561",
+    "name": "Volksbank Rückseite",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1069"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11141100025"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6025700",
+    "lon": "8.8707170",
+    "name": "Logopädie in Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1070"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1044290591"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5975682",
+    "lon": "8.8643259",
+    "name": "VfL Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1071"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120157"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6072403",
+    "lon": "8.8580184",
+    "name": "Leinenbrunnen 1. Arztpraxis Dr Nüßle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1072"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11871388454"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5974124",
+    "lon": "8.8702643",
+    "name": "Froschgasse 18/1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1073"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113769607"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5973080",
+    "lon": "8.8636094",
+    "name": "VFL Gebäude 1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1074"
+  },
+  {
+    "capacity": 11,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "13230185420"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5938767",
+    "lon": "8.8679314",
+    "name": "Albert-Schweitzer-Schule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-10-13T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1075"
+  },
+  {
+    "capacity": 18,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500516"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5839448",
+    "lon": "8.8304768",
+    "name": "Sporthalle Haslach",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1076"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "6596031262"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5950511",
+    "lon": "8.8712992",
+    "name": "Diakonieladen Herrenberg / auf dem Graben",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-09T00:00:00Z",
+    "tags": [],
+    "type": "FLOOR",
+    "uid": "1077"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353057"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6006482",
+    "lon": "8.8718859",
+    "name": "Affstätter Tal 13",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1078"
+  },
+  {
+    "capacity": 36,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "791359748"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5850156",
+    "lon": "8.8680389",
+    "name": "Herrenberg Zwerchweg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1079"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556495"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5752110",
+    "lon": "8.8784120",
+    "name": "Platz bei der Kreissparkasse Gueltstein",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1080"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113769605"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5976675",
+    "lon": "8.8636969",
+    "name": "Schießmauer 1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1081"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8166630686"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5829746",
+    "lon": "8.8394485",
+    "name": "Bezirksamt Haslach",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1082"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500515"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6066700",
+    "lon": "8.8574580",
+    "name": "KiTa Gartenstraße Affstätt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "FLOOR",
+    "uid": "1083"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030670"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6119831",
+    "lon": "8.8412875",
+    "name": "Ärztehaus Kuppingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1084"
+  },
+  {
+    "capacity": 17,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140871398"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5958876",
+    "lon": "8.8687221",
+    "name": "Bäcker Baier",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-22T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1085"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "931776782"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5815770",
+    "lon": "8.8392489",
+    "name": "Grundschule Haslach",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1086"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140259176"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5987732",
+    "lon": "8.8677939",
+    "name": "Feuerwehr",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1087"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353058"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6007112",
+    "lon": "8.8717089",
+    "name": "Affstätter Tal 15",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1088"
+  },
+  {
+    "capacity": 100,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "3521364926"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5898777",
+    "lon": "8.8763129",
+    "name": "Naturfreibad herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1089"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7725324526"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5920990",
+    "lon": "8.8625471",
+    "name": "St. Josef",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1090"
+  },
+  {
+    "capacity": 55,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307699591"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5881890",
+    "lon": "8.8756464",
+    "name": "Sporthalle / Platz",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1091"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7725324513"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5928428",
+    "lon": "8.8645338",
+    "name": "Horberstraße 31",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1092"
+  },
+  {
+    "capacity": 9,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619776"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6230640",
+    "lon": "8.8386619",
+    "name": "Kindertageseinrichtung Würmstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1093"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140323985"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5945433",
+    "lon": "8.8596559",
+    "name": "Schreinerei Bayer",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1094"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7726452137"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5944733",
+    "lon": "8.8603609",
+    "name": "Aldi",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1095"
+  },
+  {
+    "capacity": 144,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881815"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6156055",
+    "lon": "8.8411919",
+    "name": "Karl-Kühnle-Grundschule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1096"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113693795"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5980316",
+    "lon": "8.8712071",
+    "name": "Stuttgarter Straße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-10T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1098"
+  },
+  {
+    "capacity": 16,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8071796322"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5979685",
+    "lon": "8.8688391",
+    "name": "Rossmann",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1099"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11306929067"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6250426",
+    "lon": "8.8363338",
+    "name": "Bezirksamt Oberjesingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1100"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353062"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6013250",
+    "lon": "8.8720580",
+    "name": "Affstätter Tal 23",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1101"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881817"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6138331",
+    "lon": "8.8408704",
+    "name": "katholische Kirche St. Antonius Kuppingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1102"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8985746479"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5938012",
+    "lon": "8.8680900",
+    "name": "Musikschule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1103"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353052"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6013200",
+    "lon": "8.8699170",
+    "name": "Türkisches Kulturzentrum",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1104"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353051"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.6039300",
+    "lon": "8.8705330",
+    "name": "Toom",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1105"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500521"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5804690",
+    "lon": "8.8404762",
+    "name": "Ehem. ev. Gemeindehaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1106"
+  },
+  {
+    "capacity": 16,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120163"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.6075110",
+    "lon": "8.8593000",
+    "name": "Conrad-Weiser-Straße 1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1107"
+  },
+  {
+    "capacity": 132,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "28353623"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5943441",
+    "lon": "8.8623401",
+    "name": "Bahnhof Herrenberg (Kaufland Seite direkt nach Unterführung)",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1108"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503362"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5931106",
+    "lon": "8.8671874",
+    "name": "Invita Betreutes Wohnen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-07T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1109"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8869841470"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5749830",
+    "lon": "8.8864958",
+    "name": "Rewe Gültstein",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-22T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1110"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307699590"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5893921",
+    "lon": "8.8735740",
+    "name": "Realschule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1111"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030674"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6116162",
+    "lon": "8.8517337",
+    "name": "DM Kuppingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1112"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619775"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5834659",
+    "lon": "8.9137576",
+    "name": "Dorfplatz Brunnen Mönchberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1113"
+  },
+  {
+    "capacity": 88,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1201631952"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5926947",
+    "lon": "8.8561722",
+    "name": "Aischbachhalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-10-30T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1114"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120156"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6045242",
+    "lon": "8.8591872",
+    "name": "Wohnhaus Nelkenstraße 6",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1115"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120162"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6083720",
+    "lon": "8.8603450",
+    "name": "KiTa an der Raingasse",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1116"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619779"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5948183",
+    "lon": "8.8728256",
+    "name": "Tübinger Str. Bioladen u. Blattwerk",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-01T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1117"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8989440175"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5943283",
+    "lon": "8.8730167",
+    "name": "Stadtbibliothek",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1118"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7920727074"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5877770",
+    "lon": "8.8777732",
+    "name": "Calisthenics Station",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1119"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7694258259"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5951999",
+    "lon": "8.8724409",
+    "name": "Tübinger Straße / Stadt Graben Staffel",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-09T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1120"
+  },
+  {
+    "capacity": 60,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "269604959"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5905299",
+    "lon": "8.8732170",
+    "name": "Schickhardt Gymnasium",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-07-09T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1121"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8974144400"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5721354",
+    "lon": "8.8824076",
+    "name": "TV-Halle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1122"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7718690363"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5794515",
+    "lon": "8.8941532",
+    "name": "ROX Boulderhalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1123"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "6595792648"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5962062",
+    "lon": "8.8685356",
+    "name": "Bronntor",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1124"
+  },
+  {
+    "capacity": 11,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11138437839"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5986312",
+    "lon": "8.8672559",
+    "name": "Tafellädle Deutsches Rotes Kreuz",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-22T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1125"
+  },
+  {
+    "capacity": 21,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881814"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6150964",
+    "lon": "8.8399973",
+    "name": "Kita Oberjesingerstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1126"
+  },
+  {
+    "capacity": 24,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1523545080"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5773410",
+    "lon": "8.8818710",
+    "name": "Bahnhof Gueltstein",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1127"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7920751014"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5881274",
+    "lon": "8.8776787",
+    "name": "Calisthenics Park / Baseball Field",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1128"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503364"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5887597",
+    "lon": "8.8653207",
+    "name": "Kern Kanzlei",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-07T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1129"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12035580693"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5867501",
+    "lon": "8.8759098",
+    "name": "Kita am Naturfreibad",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1130"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "2910430212"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5960039",
+    "lon": "8.8678065",
+    "name": "KSK Innenhof",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1131"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11306929064"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5889093",
+    "lon": "8.8572091",
+    "name": "Reiherweg Ecke zur Habichtstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1132"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8071796321"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5980251",
+    "lon": "8.8689241",
+    "name": "Rossmann",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1133"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7920727079"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5876608",
+    "lon": "8.8776934",
+    "name": "Calisthenics",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1134"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12947259748"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5782865",
+    "lon": "8.9191968",
+    "name": "Kita Mirabellenstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-07-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1135"
+  },
+  {
+    "capacity": 112,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "182241738"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5892185",
+    "lon": "8.8727350",
+    "name": "Realschule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-07-09T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1136"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113693796"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5963352",
+    "lon": "8.8707336",
+    "name": "Beim Oberamt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-10T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1137"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8085654178"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5977478",
+    "lon": "8.8684246",
+    "name": "Deichmann",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1138"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353055"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6006702",
+    "lon": "8.8706009",
+    "name": "Affstätter Tal 59",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1139"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "9812479517"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5837480",
+    "lon": "8.9196654",
+    "name": "Schützenhaus Mönchberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1140"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254817170"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5905680",
+    "lon": "8.8595768",
+    "name": "Friedrich Fröbel Schule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1141"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556499"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5823970",
+    "lon": "8.8927820",
+    "name": "Bäcker Baier Parkplatz",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1142"
+  },
+  {
+    "capacity": 11,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030672"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6117852",
+    "lon": "8.8500901",
+    "name": "Bolzplatz Kuppingen Römerstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1143"
+  },
+  {
+    "capacity": 22,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7524683951"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5983546",
+    "lon": "8.8701170",
+    "name": "Stadthalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1144"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "6595792653"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5960006",
+    "lon": "8.8694950",
+    "name": "Bronntor",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-09T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1146"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "597429170"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6027993",
+    "lon": "8.9046621",
+    "name": "Weg zum Schönbuchturm",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-02T00:00:00Z",
+    "tags": [],
+    "type": "FLOOR",
+    "uid": "1147"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8043805372"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5767910",
+    "lon": "8.9144880",
+    "name": "Vor der Sporthalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-01T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1148"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8989440176"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5943750",
+    "lon": "8.8731367",
+    "name": "Stadtbibliothek",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-12-04T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1149"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307699587"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5949046",
+    "lon": "8.8708676",
+    "name": "Seegers Back Spezialitäten",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1150"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1374795720"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6017379",
+    "lon": "8.9036023",
+    "name": "Waldfriedhof",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1151"
+  },
+  {
+    "capacity": 150,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12293842963"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5898698",
+    "lon": "8.8746001",
+    "name": "Schickardt-See",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1152"
+  },
+  {
+    "capacity": 50,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556498"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5710770",
+    "lon": "8.8811130",
+    "name": "Reithalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1153"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7793922195"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5986312",
+    "lon": "8.8704839",
+    "name": "Seestraße 31",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1154"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171351000"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6019530",
+    "lon": "8.8720120",
+    "name": "Affstätter Tal 29",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1155"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "6595769516"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5943056",
+    "lon": "8.8620243",
+    "name": "Parkhaus Kalkofenstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1156"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12794291040"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5813542",
+    "lon": "8.9166104",
+    "name": "Mönchberg Friedhof Kirchplatz",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-22T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1157"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503367"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5973267",
+    "lon": "8.8689019",
+    "name": "Seelesplatz",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1158"
+  },
+  {
+    "capacity": 1,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353064"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6016370",
+    "lon": "8.8715120",
+    "name": "Affstätter Tal 37",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1159"
+  },
+  {
+    "capacity": 108,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "184185613"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5925505",
+    "lon": "8.8557588",
+    "name": "Sporthalle Markweg/Mensa",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1160"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500518"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5831333",
+    "lon": "8.8387016",
+    "name": "Ehem Volksbank Haslach",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1161"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619778"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6027420",
+    "lon": "8.9033000",
+    "name": "Naturfreundehaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-02T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1162"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "659284923"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5953900",
+    "lon": "8.8699525",
+    "name": "Spital Gasse 13",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1164"
+  },
+  {
+    "capacity": 11,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7725324514, 7725324515"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5935311",
+    "lon": "8.8637798",
+    "name": "Apotheke am Bahnhof",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1165"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307030675"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6099049",
+    "lon": "8.8465432",
+    "name": "Bushaltestelle Jennerstraße Fahrtrichtung Wildberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1166"
+  },
+  {
+    "capacity": 12,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12794837745"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5972253",
+    "lon": "8.8529002",
+    "name": "KiTa im Steingraben",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1167"
+  },
+  {
+    "capacity": 40,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254817168"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5883328",
+    "lon": "8.8544477",
+    "name": "Adlerstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1168"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140362956"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5940233",
+    "lon": "8.8542859",
+    "name": "Weinberg Bäckerei",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1169"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120163"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.6066420",
+    "lon": "8.8607850",
+    "name": "Kindergarten Mittelfeldstraße Affstätt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1170"
+  },
+  {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353063"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6015870",
+    "lon": "8.8717870",
+    "name": "Affstätter Tal 35",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1171"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12216286183"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5928334",
+    "lon": "8.8612724",
+    "name": "Bahnhofstraße 29",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1172"
+  },
+  {
+    "capacity": 96,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "28353623"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5942558",
+    "lon": "8.8622888",
+    "name": "Hauptbahnhof Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1173"
+  },
+  {
+    "capacity": 28,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137757702"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5939103",
+    "lon": "8.8549479",
+    "name": "Jerg-Ratgeb-Schule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1174"
+  },
+  {
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881816"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6137868",
+    "lon": "8.8422745",
+    "name": "Elektrohaus Brenner. Raiffeisenstraße 2",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1175"
+  },
+  {
+    "capacity": 112,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12989497684"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5886001",
+    "lon": "8.8751663",
+    "name": "Längenholz Schulzentrum",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-07-10T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1176"
+  },
+  {
+    "capacity": 46,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120155"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6042170",
+    "lon": "8.8595010",
+    "name": "Gemeindehalle Affstätt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1177"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353060"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6009870",
+    "lon": "8.8719800",
+    "name": "Affstätter Tal 17",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1179"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307619774"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5791320",
+    "lon": "8.9090840",
+    "name": "Haltestelle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1180"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11872074877"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5951251",
+    "lon": "8.8677321",
+    "name": "Zinser",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-22T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1181"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11306929068"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6232192",
+    "lon": "8.8347516",
+    "name": "Volksbank und Kreissparkasse",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1182"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140439331"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5937863",
+    "lon": "8.8606939",
+    "name": "EN Storage",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1183"
+  },
+  {
+    "capacity": 24,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11140488154"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5946402",
+    "lon": "8.8658359",
+    "name": "Binder Optik",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1184"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11185503361"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5932549",
+    "lon": "8.8677482",
+    "name": "Bismarckstraße 12",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-07T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1185"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113693797"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5961735",
+    "lon": "8.8646168",
+    "name": "Kegelcenter Restaurant",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1186"
+  },
+  {
+    "capacity": 14,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "7524683950"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5984414",
+    "lon": "8.8699584",
+    "name": "Stadthalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1187"
+  },
+  {
+    "capacity": 57,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "702362941, 702362942, 702362943, 702362944"
+      }
+    ],
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5943441",
+    "lon": "8.8623401",
+    "name": "Bahnhof/ Aldi",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "LOCKBOX",
+    "uid": "1188"
+  },
+  {
+    "capacity": 9,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120159"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.6073590",
+    "lon": "8.8573790",
+    "name": "Evang. Gemeindehaus",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1189"
+  },
+  {
+    "capacity": 34,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "1080195117"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5928563",
+    "lon": "8.8555109",
+    "name": "Jerg-Ratgeb-Schule",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1190"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307500520"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5814938",
+    "lon": "8.8399296",
+    "name": "KiTa Haslach",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-25T00:00:00Z",
+    "tags": [],
+    "type": "FLOOR",
+    "uid": "1191"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "999690967"
+      }
+    ],
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5972160",
+    "lon": "8.8639975",
+    "name": "VFL Gebäude 1",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1192"
+  },
+  {
+    "capacity": 1,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11171353061"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6012780",
+    "lon": "8.8722170",
+    "name": "Affstätter Tal 21",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1193"
+  },
+  {
+    "capacity": 144,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "81512766"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5869086",
+    "lon": "8.8855282",
+    "name": "Bahnhof Herrenberg (Post / Bäcker Seite )",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1194"
+  },
+  {
+    "capacity": 35,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556494"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5752000",
+    "lon": "8.8758140",
+    "name": "Spielplatz Goldregen Straße Gueltstein",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1195"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8974144403"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5724150",
+    "lon": "8.8830520",
+    "name": "Ammertalhalle",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-29T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1196"
+  },
+  {
+    "capacity": 11,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881812"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.6033677",
+    "lon": "8.8075982",
+    "name": "TSV Kuppingen. NEUFFER-Sportpark; Martinslehle 1. 71083 Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1197"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137728912"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5963551",
+    "lon": "8.8588640",
+    "name": "Allfinanz Deutsche Vermögensberatung",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1198"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "9808497396"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5945112",
+    "lon": "8.8658139",
+    "name": "Binder Optik",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1199"
+  },
+  {
+    "capacity": 8,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11254881818"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6131061",
+    "lon": "8.8363378",
+    "name": "Gemeindehalle Kuppingen",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1200"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12794437308"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6097595",
+    "lon": "8.8464118",
+    "name": "Bushaltestelle Jennerstraße Fahrtrichtung Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-19T00:00:00Z",
+    "tags": [],
+    "type": "SAFE_WALL_LOOPS",
+    "uid": "1201"
+  },
+  {
+    "capacity": 18,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8071796325"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5979075",
+    "lon": "8.8687191",
+    "name": " Denns Biomarkt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-12T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1202"
+  },
+  {
+    "capacity": 258,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "81512766"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5934869",
+    "lon": "8.8624484",
+    "name": "Bahnhof Herrenberg ( Bäcker / Post Seite )",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-09-09T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1203"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307699588"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5929954",
+    "lon": "8.8726627",
+    "name": "Marienstraße / Physiotherapie Sven Schöffel",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-10-11T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1204"
+  },
+  {
+    "capacity": 5,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307120161"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6073190",
+    "lon": "8.8569330",
+    "name": "Freiwillige Feuerwehr Affstätt",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-20T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1205"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11307556493"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5974022",
+    "lon": "8.8739214",
+    "name": "Schlosskeller",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-09-26T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1206"
+  },
+  {
+    "capacity": 46,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11113693798"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5966352",
+    "lon": "8.8655689",
+    "name": "Kita Aischbachstraße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-14T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1207"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "11137684052"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6004852",
+    "lon": "8.8588083",
+    "name": "Johannes-Kepler-Straße",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2023-08-23T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1208"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "8085654177"
+      }
+    ],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "is_covered": true,
+    "lat": "48.5979480",
+    "lon": "8.8686709",
+    "name": "Denns Bio",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-24T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1209"
+  }
+]

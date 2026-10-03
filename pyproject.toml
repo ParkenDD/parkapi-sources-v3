@@ -59,6 +59,7 @@ dev = [
     "pytest~=9.1.1",
     "pytest-cov~=7.1.0",
     "requests-mock~=1.12.1",
+    "syrupy~=6.1.1",
 ]
 
 [build-system]
@@ -95,14 +96,14 @@ lint.select = [
     "FLY", # flynt (use f-string instead of static join)
 ]
 
-# Enable preview rules since a lot of basic pycodestyle rules are in preview mode for some reason
-preview = true
-
 lint.ignore = [
     "B008", # do not perform function calls in argument defaults
     "C901", # too complex
     "ISC001", # single-line-implicit-string-concatenation - conflicts with formatter
 ]
+
+# Enable preview rules since a lot of basic pycodestyle rules are in preview mode for some reason
+preview = true
 
 exclude = [
     ".bzr",

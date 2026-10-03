@@ -1,0 +1,102 @@
+[
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P01"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P02"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "TAKEN",
+    "uid": "P03"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P04"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P05"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P06"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P07"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P08"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P09"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P10"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P11"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P12"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P13"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P14"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P15"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "TAKEN",
+    "uid": "P16"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P17"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P18"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P19"
+  },
+  {
+    "realtime_data_updated_at": "<now>",
+    "realtime_status": "AVAILABLE",
+    "uid": "P20"
+  }
+]

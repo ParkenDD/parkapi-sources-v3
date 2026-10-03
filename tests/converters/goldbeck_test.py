@@ -7,6 +7,7 @@ from unittest.mock import Mock
 
 import pytest
 from openpyxl.reader.excel import load_workbook
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import GoldbeckPushConverter
 from parkapi_sources.util import RequestHelper
@@ -20,7 +21,7 @@ def goldbeck_push_converter(mocked_config_helper: Mock, request_helper: RequestH
 
 class GoldbeckPushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(goldbeck_push_converter: GoldbeckPushConverter):
+    def test_get_static_parking_sites(goldbeck_push_converter: GoldbeckPushConverter, snapshot: SnapshotAssertion):
         workbook = load_workbook(filename=str(get_data_path('goldbeck.xlsx').absolute()))
 
         static_parking_site_inputs, import_parking_site_exceptions = goldbeck_push_converter.handle_xlsx(workbook)
@@ -28,4 +29,4 @@ class GoldbeckPushConverterTest:
         assert len(static_parking_site_inputs) == 11
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

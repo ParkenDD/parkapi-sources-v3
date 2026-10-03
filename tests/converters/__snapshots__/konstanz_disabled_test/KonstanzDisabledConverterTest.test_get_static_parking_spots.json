@@ -1,0 +1,1748 @@
+[
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6831356",
+    "lon": "9.1762633",
+    "name": "Am Pfeiferhölzle 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "aedd20e9-2b37-4f02-a160-24be3ee8147f_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6689690",
+    "lon": "9.1775755",
+    "name": "Benediktinerplatz / Landratsamt 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f21e00f2-9540-4967-ae42-0fb32051f494_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6689870",
+    "lon": "9.1775755",
+    "name": "Benediktinerplatz / Landratsamt 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f21e00f2-9540-4967-ae42-0fb32051f494_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6686992",
+    "lon": "9.1789389",
+    "name": "Benediktinerplatz / Polizei 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "e681121a-6eaa-46f1-a85a-e1fb8cd67a69_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6754640",
+    "lon": "9.1775023",
+    "name": "Bismarcksteig 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "a9a56b67-3d8e-4097-9627-405e44fcc212_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6576061",
+    "lon": "9.1750444",
+    "name": "Bodanplatz 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "58fea526-6cd1-4ec2-a8fe-eb432b5d05c2_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6576241",
+    "lon": "9.1750444",
+    "name": "Bodanplatz 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "58fea526-6cd1-4ec2-a8fe-eb432b5d05c2_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6787121",
+    "lon": "9.2047659",
+    "name": "Brachsengang 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "74c88c2c-2043-4741-9778-b88052a804bf_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6582762",
+    "lon": "9.1692389",
+    "name": "Döbeleplatz 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6c862845-d079-4669-9121-58dfc970320c_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6582942",
+    "lon": "9.1692389",
+    "name": "Döbeleplatz 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6c862845-d079-4669-9121-58dfc970320c_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6628110",
+    "lon": "9.1636125",
+    "name": "Gottlieber Straße 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "b574bdff-3c56-49d4-9f75-a88698237276_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6628290",
+    "lon": "9.1636125",
+    "name": "Gottlieber Straße 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "b574bdff-3c56-49d4-9f75-a88698237276_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6560541",
+    "lon": "9.1779080",
+    "name": "Hafenstraße / Klein Venedig 1 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "67ac5cce-2973-4ecb-9107-13af581f19cf_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6560721",
+    "lon": "9.1779080",
+    "name": "Hafenstraße / Klein Venedig 2 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "67ac5cce-2973-4ecb-9107-13af581f19cf_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6560541",
+    "lon": "9.1778813",
+    "name": "Hafenstraße / Klein Venedig 3 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "67ac5cce-2973-4ecb-9107-13af581f19cf_2"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6675042",
+    "lon": "9.1916661",
+    "name": "Hebelstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "7dc23fff-d964-4803-a36d-b43ebaf63a34_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6649274",
+    "lon": "9.1742650",
+    "name": "Inselgasse / AOK 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "85f33afc-2848-45a3-8230-48b1e5addceb_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6649454",
+    "lon": "9.1742650",
+    "name": "Inselgasse / AOK 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "85f33afc-2848-45a3-8230-48b1e5addceb_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6674157",
+    "lon": "9.1992146",
+    "name": "Johann-Sebastian-Bach-Straße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "477aaed0-424f-49f7-ba29-d157ee815239_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6611527",
+    "lon": "9.1713538",
+    "name": "Lutherplatz 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "ea1e071f-41a4-498a-bcf9-349f98c5af54_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6727737",
+    "lon": "9.1716706",
+    "name": "Markgrafenstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "38cc6d21-277d-43d6-af99-a2282465ced6_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6709665",
+    "lon": "9.1815038",
+    "name": "Moltkestraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "485c57a4-768d-44b2-9fe7-99f26b0e9ed1_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6609932",
+    "lon": "9.1759792",
+    "name": "Münzgasse 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "134a4c00-f19c-4a33-8ee0-e97a7078f477_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6610112",
+    "lon": "9.1759792",
+    "name": "Münzgasse 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "134a4c00-f19c-4a33-8ee0-e97a7078f477_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6602020",
+    "lon": "9.1712794",
+    "name": "Obere Laube 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f3761742-02dc-47cf-b0a6-3bd6fa71466c_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6602200",
+    "lon": "9.1712794",
+    "name": "Obere Laube 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f3761742-02dc-47cf-b0a6-3bd6fa71466c_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6665488",
+    "lon": "9.2135337",
+    "name": "Eichhornstraße / Hörnle 1 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6665668",
+    "lon": "9.2135337",
+    "name": "Eichhornstraße / Hörnle 2 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6665488",
+    "lon": "9.2135070",
+    "name": "Eichhornstraße / Hörnle 3 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_2"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6665308",
+    "lon": "9.2135337",
+    "name": "Eichhornstraße / Hörnle 4 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_3"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7187383",
+    "lon": "9.1779081",
+    "name": "Milanweg / Strandbad Litzelstetten 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "7aa1c50f-1f59-4159-8259-7b45fcab2168_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6641246",
+    "lon": "9.2083945",
+    "name": "Hermann-Hesse-Weg / Therme 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "444d26c9-e68a-48b8-8812-2c85376807fd_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6798184",
+    "lon": "9.1736036",
+    "name": "Riesenbergweg / Friedhof 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "04eb5458-8e00-4204-9288-be2eb0fd4481_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6798364",
+    "lon": "9.1736036",
+    "name": "Riesenbergweg / Friedhof 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "04eb5458-8e00-4204-9288-be2eb0fd4481_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6898699",
+    "lon": "9.1600828",
+    "name": "Schwaketenbad 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "1909d84e-a769-473b-bcfa-287e1b6be1b1_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6898879",
+    "lon": "9.1600828",
+    "name": "Schwaketenbad 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "1909d84e-a769-473b-bcfa-287e1b6be1b1_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7459263",
+    "lon": "9.1380601",
+    "name": "Uferstraße / Strandbad Wallhausen 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "37d747de-b546-4ce7-b74c-278622507df7_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7080035",
+    "lon": "9.1705386",
+    "name": "Waldfriedhof 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "7a1acce6-e376-4938-9cff-c8fc9f68429e_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6653775",
+    "lon": "9.1766787",
+    "name": "Rheingasse 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "75f64e0f-3cab-4400-acd0-5f62e3000ef1_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6673998",
+    "lon": "9.1652077",
+    "name": "Rheingutstraße 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f55e32db-da2d-47f6-90cd-e48f5a18dee5_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6674178",
+    "lon": "9.1652077",
+    "name": "Rheingutstraße 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f55e32db-da2d-47f6-90cd-e48f5a18dee5_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6820057",
+    "lon": "9.1478343",
+    "name": "Riedstraße / Haltepunkt Wollmatingen 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "dd42f893-57a4-4f9a-bc0c-5d9282233509_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6572928",
+    "lon": "9.1717497",
+    "name": "Scheffelstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "5ed3be32-8f10-45dc-a1a3-0e3a97f6bdc2_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6883562",
+    "lon": "9.1573301",
+    "name": "Schwaketenstraße / Halle Wollmatingen 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "7f4e3d2c-70e1-4682-b1f3-e24b2a60ce71_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6883742",
+    "lon": "9.1573301",
+    "name": "Schwaketenstraße / Halle Wollmatingen 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "7f4e3d2c-70e1-4682-b1f3-e24b2a60ce71_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6802017",
+    "lon": "9.1859313",
+    "name": "Sonnenbühlstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "1ccafd09-7565-48ad-a312-66d052ce3956_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6689807",
+    "lon": "9.1759400",
+    "name": "Spanierstraße / Rheinstrandbad 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "e78a49e8-00d9-4cf6-a5e5-11faf6fe96c2_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6689987",
+    "lon": "9.1759400",
+    "name": "Spanierstraße / Rheinstrandbad 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "e78a49e8-00d9-4cf6-a5e5-11faf6fe96c2_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6709800",
+    "lon": "9.1834796",
+    "name": "St.-Gebhard-Platz 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "04ae7d36-d155-4338-a52f-017f16da36fc_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6615775",
+    "lon": "9.1735158",
+    "name": "St.-Stephans-Platz, Südseite 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "37e0bef3-78da-4526-a12f-038c07697f51_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6627189",
+    "lon": "9.1744038",
+    "name": "St.-Stephansplatz, Kirche Nordseite 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "9e7f2d4b-b008-42a8-9d0f-72c25858ccf5_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6627369",
+    "lon": "9.1744038",
+    "name": "St.-Stephansplatz, Kirche Nordseite 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "9e7f2d4b-b008-42a8-9d0f-72c25858ccf5_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6624159",
+    "lon": "9.1741509",
+    "name": "St.-Stephans-Platz, Kirche Südseite 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "0386790b-b8e3-4dc5-81a1-8498f1df64ec_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6624339",
+    "lon": "9.1741509",
+    "name": "St.-Stephans-Platz, Kirche Südseite 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "0386790b-b8e3-4dc5-81a1-8498f1df64ec_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6715049",
+    "lon": "9.1760976",
+    "name": "St.-Gebhard-Straße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3ad6741d-4126-4744-bdf1-7e72ef5ccb9b_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6818102",
+    "lon": "9.2101977",
+    "name": "Schiffstraße, Fähreparkplatz 1 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f9b854a0-7517-4be9-a798-d8a77b39ec2f_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6818282",
+    "lon": "9.2101977",
+    "name": "Schiffstraße, Fähreparkplatz 2 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f9b854a0-7517-4be9-a798-d8a77b39ec2f_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6818102",
+    "lon": "9.2101710",
+    "name": "Schiffstraße, Fähreparkplatz 3 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "f9b854a0-7517-4be9-a798-d8a77b39ec2f_2"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6807879",
+    "lon": "9.2022480",
+    "name": "Staader Straße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "9714ecbd-77ba-4ccb-9353-8cde516f806c_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6603458",
+    "lon": "9.1674053",
+    "name": "Tägermoosstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6f1254a2-43d8-4ed5-aa9e-fc703f05c249_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6605461",
+    "lon": "9.1701156",
+    "name": "Talgartenstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "21e53d27-a9a8-4ac2-b1ee-e7df6424f228_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640071",
+    "lon": "9.1770510",
+    "name": "Theatergasse / Stadttheater 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "1ac13d01-8862-41fe-9434-3259b086ad17_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640251",
+    "lon": "9.1770510",
+    "name": "Theatergasse / Stadttheater 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "1ac13d01-8862-41fe-9434-3259b086ad17_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6688551",
+    "lon": "9.1809075",
+    "name": "Theodor-Heuss-Straße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "07220ac8-b881-4c67-b120-74fc34ccee93_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6895974",
+    "lon": "9.1861103",
+    "name": "Universitätsstraße / Uni-Hauptzufahrt 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6b7141b8-c9bc-42a4-88c1-41aff74027c1_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6896154",
+    "lon": "9.1861103",
+    "name": "Universitätsstraße / Uni-Hauptzufahrt 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6b7141b8-c9bc-42a4-88c1-41aff74027c1_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6624275",
+    "lon": "9.1728714",
+    "name": "Untere Laube / Comeniusschule 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3436ace7-2ded-4b3e-a5b7-c61e592a3afe_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6638507",
+    "lon": "9.1719884",
+    "name": "Wallgutstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "bf7cf31b-588f-4965-b825-48c6f7db62d4_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640578",
+    "lon": "9.1707297",
+    "name": "Wallgutstraße / Marienhaus 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "669b6b1e-4219-4c6a-8357-1df8ec5e15c1_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640758",
+    "lon": "9.1707297",
+    "name": "Wallgutstraße / Marienhaus 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "669b6b1e-4219-4c6a-8357-1df8ec5e15c1_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6673304",
+    "lon": "9.1738226",
+    "name": "Webersteig 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "82965b0f-4adf-46e0-9e00-65c8d21b9c63_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6714855",
+    "lon": "9.1832088",
+    "name": "Zähringerplatz 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "52365a13-b629-4fec-b50f-85a133f870a7_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6616601",
+    "lon": "9.1769854",
+    "name": "Zollernstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "d625169e-da71-48c1-b56d-9fb0396f3370_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6875144",
+    "lon": "9.2021143",
+    "name": "Zur Allmannshöhe 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "866cbb58-3bde-4326-9964-734f0744fc71_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6686673",
+    "lon": "9.1891930",
+    "name": "Neuhauser Straße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "3161d8b5-fec0-4fba-a5d3-f148c05be55a_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6726328",
+    "lon": "9.1872886",
+    "name": "Luisenstraße / Klinikum Haupteingang 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6a907156-76ca-45ef-b74e-840361ac1052_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6726508",
+    "lon": "9.1872886",
+    "name": "Luisenstraße / Klinikum Haupteingang 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "6a907156-76ca-45ef-b74e-840361ac1052_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6729070",
+    "lon": "9.1869549",
+    "name": "Luisenstraße / Klinikum 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "89c4ea6c-0860-4a24-99d1-debf01e83918_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6729250",
+    "lon": "9.1869549",
+    "name": "Luisenstraße / Klinikum 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "89c4ea6c-0860-4a24-99d1-debf01e83918_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6732797",
+    "lon": "9.1896393",
+    "name": "Luisenstraße / Klinikum 7b 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "fc82ceff-8f2e-4834-b38f-0131808f1b79_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6732977",
+    "lon": "9.1896393",
+    "name": "Luisenstraße / Klinikum 7b 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "fc82ceff-8f2e-4834-b38f-0131808f1b79_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7059362",
+    "lon": "9.1968786",
+    "name": "Insel Mainau 1 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7059542",
+    "lon": "9.1968786",
+    "name": "Insel Mainau 2 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7059362",
+    "lon": "9.1968519",
+    "name": "Insel Mainau 3 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_2"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7059182",
+    "lon": "9.1968786",
+    "name": "Insel Mainau 4 / 4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_3"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6811126",
+    "lon": "9.1459783",
+    "name": "Byk-Gulden-Str. / Finanzamt 1 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "a7ca62d0-05b9-4d2f-bb23-b509ac8f6a59_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6811306",
+    "lon": "9.1459783",
+    "name": "Byk-Gulden-Str. / Finanzamt 2 / 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "a7ca62d0-05b9-4d2f-bb23-b509ac8f6a59_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6670229",
+    "lon": "9.2106944",
+    "name": "Eichhornstraße 1 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "347e6477-054b-404a-b565-73e28deaf86c_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6670409",
+    "lon": "9.2106944",
+    "name": "Eichhornstraße 2 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "347e6477-054b-404a-b565-73e28deaf86c_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6670229",
+    "lon": "9.2106677",
+    "name": "Eichhornstraße 3 / 3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "347e6477-054b-404a-b565-73e28deaf86c_2"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6720606",
+    "lon": "9.1648391",
+    "name": "P&R am Seerhein 1 / 5",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6720786",
+    "lon": "9.1648391",
+    "name": "P&R am Seerhein 2 / 5",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_1"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6720606",
+    "lon": "9.1648124",
+    "name": "P&R am Seerhein 3 / 5",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_2"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6720426",
+    "lon": "9.1648391",
+    "name": "P&R am Seerhein 4 / 5",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_3"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6720606",
+    "lon": "9.1648658",
+    "name": "P&R am Seerhein 5 / 5",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_4"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6728657",
+    "lon": "9.1746342",
+    "name": "Bruder-Klaus-Straße Höhe Bahnhof Petershausen 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "46d5285f-eff0-46da-b980-317c22dbc671_0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6718523",
+    "lon": "9.1843111",
+    "name": "Brugierstraße 1 / 1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "b71b5bfd-80e4-4f76-9850-4543e3ffe722_0"
+  }
+]

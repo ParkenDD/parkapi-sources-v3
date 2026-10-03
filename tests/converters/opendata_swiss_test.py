@@ -9,6 +9,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import OpenDataSwissPullConverter
 from parkapi_sources.converters.opendata_swiss.models import (
@@ -41,7 +42,8 @@ def requests_mock_opendata_swiss(requests_mock: Mocker) -> Mocker:
 
 @pytest.fixture
 def opendata_swiss_pull_converter(
-    mocked_config_helper: Mock, request_helper: RequestHelper
+    mocked_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> OpenDataSwissPullConverter:
     return OpenDataSwissPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
@@ -51,6 +53,7 @@ class OpenDataSwissPullConverterTest:
     def test_get_static_parking_sites(
         opendata_swiss_pull_converter: OpenDataSwissPullConverter,
         requests_mock_opendata_swiss: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_site_inputs, import_parking_site_exceptions = (
             opendata_swiss_pull_converter.get_static_parking_sites()
@@ -59,7 +62,7 @@ class OpenDataSwissPullConverterTest:
         assert len(static_parking_site_inputs) == 649
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
 
 class OpenDataSwissParkingSiteInputTest:

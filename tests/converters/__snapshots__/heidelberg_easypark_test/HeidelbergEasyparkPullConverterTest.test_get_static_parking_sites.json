@@ -1,0 +1,4514 @@
+[
+  {
+    "address": "Tischbeinstraße, Heidelberg",
+    "capacity": 2,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.680040000004151,
+          49.43390999889488
+        ],
+        [
+          8.6800126294566,
+          49.4339077646807
+        ],
+        [
+          8.679985258911568,
+          49.433905530460045
+        ],
+        [
+          8.679957888369051,
+          49.43390329623293
+        ],
+        [
+          8.67993051782905,
+          49.43390106199932
+        ],
+        [
+          8.679903147291567,
+          49.43389882775924
+        ],
+        [
+          8.679869276254916,
+          49.4338960628782
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4339030",
+    "lon": "8.6799546",
+    "name": "Tischbeinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1324239330-0.0-12.475"
+  },
+  {
+    "address": "Tischbeinstraße, Heidelberg",
+    "capacity": 3,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.679796402219432,
+          49.43389011416111
+        ],
+        [
+          8.679769031694281,
+          49.433887879889305
+        ],
+        [
+          8.679741661171649,
+          49.43388564561105
+        ],
+        [
+          8.679714290651534,
+          49.4338834113263
+        ],
+        [
+          8.679686920133934,
+          49.4338811770351
+        ],
+        [
+          8.679659549618851,
+          49.43387894273739
+        ],
+        [
+          8.679632179106285,
+          49.433876708433246
+        ],
+        [
+          8.679604808596238,
+          49.433874474122604
+        ],
+        [
+          8.679577438088709,
+          49.433872239805495
+        ],
+        [
+          8.679528855444039,
+          49.43386827387668
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4338792",
+    "lon": "8.6796626",
+    "name": "Tischbeinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1324239330-17.8-37.35"
+  },
+  {
+    "address": "Tischbeinstraße, Heidelberg",
+    "capacity": 5,
+    "description": "Halteverbot, Zeitabhängig - Halteverbot:Mo, Di, Mi, Do, Fr, Sa 7-18",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.679330077241062,
+          49.43385204687099
+        ],
+        [
+          8.679302706758795,
+          49.43384981248889
+        ],
+        [
+          8.679275336279046,
+          49.43384757810033
+        ],
+        [
+          8.679247965801814,
+          49.4338453437053
+        ],
+        [
+          8.679220595327102,
+          49.43384310930378
+        ],
+        [
+          8.679193224854902,
+          49.4338408748958
+        ],
+        [
+          8.679165854385223,
+          49.43383864048135
+        ],
+        [
+          8.679138483918061,
+          49.433836406060415
+        ],
+        [
+          8.679111113453414,
+          49.433834171632995
+        ],
+        [
+          8.679083742991287,
+          49.43383193719914
+        ],
+        [
+          8.67905680701054,
+          49.43382883780868
+        ],
+        [
+          8.67903271484108,
+          49.43382007703324
+        ],
+        [
+          8.67900862268022,
+          49.43381131625275
+        ],
+        [
+          8.678984229376109,
+          49.433802445957426
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4338353",
+    "lon": "8.6791554",
+    "name": "Tischbeinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1324239330-51.875-77.9"
+  },
+  {
+    "address": "Tischbeinstraße, Heidelberg",
+    "capacity": 3,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.68167855796032,
+          49.43338927788477
+        ],
+        [
+          8.681700248485855,
+          49.433400330204485
+        ],
+        [
+          8.681712368564648,
+          49.43341649033276
+        ],
+        [
+          8.681724488651382,
+          49.433432650459736
+        ],
+        [
+          8.681736608746062,
+          49.43344881058545
+        ],
+        [
+          8.681748728848687,
+          49.433464970709856
+        ],
+        [
+          8.68175972878533,
+          49.43348124651328
+        ],
+        [
+          8.681755856726591,
+          49.433499058146765
+        ],
+        [
+          8.681751984665015,
+          49.43351686978005
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4334469",
+    "lon": "8.6817299",
+    "name": "Tischbeinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1324239328-5.35-21.35"
+  },
+  {
+    "address": "Tischbeinstraße, Heidelberg",
+    "capacity": 8,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.68173819042262,
+          49.433580323722126
+        ],
+        [
+          8.681734318348113,
+          49.43359813535453
+        ],
+        [
+          8.681730446270771,
+          49.433615946986755
+        ],
+        [
+          8.681726574190595,
+          49.4336337586188
+        ],
+        [
+          8.681722702107585,
+          49.43365157025064
+        ],
+        [
+          8.681718830021742,
+          49.433669381882304
+        ],
+        [
+          8.681714957933066,
+          49.43368719351378
+        ],
+        [
+          8.681711085841552,
+          49.433705005145065
+        ],
+        [
+          8.681707213747206,
+          49.433722816776154
+        ],
+        [
+          8.681703341650028,
+          49.43374062840704
+        ],
+        [
+          8.681699469550011,
+          49.433758440037764
+        ],
+        [
+          8.681695597447161,
+          49.43377625166829
+        ],
+        [
+          8.681691725341478,
+          49.4337940632986
+        ],
+        [
+          8.681687853232962,
+          49.43381187492874
+        ],
+        [
+          8.681683981121608,
+          49.433829686558695
+        ],
+        [
+          8.681680109007424,
+          49.43384749818842
+        ],
+        [
+          8.681676236890404,
+          49.433865309818
+        ],
+        [
+          8.681672364770547,
+          49.43388312144738
+        ],
+        [
+          8.681668492647859,
+          49.43390093307658
+        ],
+        [
+          8.681664620522335,
+          49.43391874470556
+        ],
+        [
+          8.68165812452466,
+          49.43394421873145
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4337624",
+    "lon": "8.6816986",
+    "name": "Tischbeinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1324239328-28.475-69.35"
+  },
+  {
+    "address": "Tischbeinstraße, Heidelberg",
+    "capacity": 21,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.681536831499416,
+          49.434023682852256
+        ],
+        [
+          8.681509432464702,
+          49.43402160208157
+        ],
+        [
+          8.681482033432337,
+          49.43401952130438
+        ],
+        [
+          8.681454634402323,
+          49.43401744052066
+        ],
+        [
+          8.681427235374654,
+          49.43401535973048
+        ],
+        [
+          8.681399836349335,
+          49.434013278933826
+        ],
+        [
+          8.681372437326363,
+          49.434011198130676
+        ],
+        [
+          8.681345038305743,
+          49.43400911732104
+        ],
+        [
+          8.68131763928747,
+          49.4340070365049
+        ],
+        [
+          8.681290240271544,
+          49.43400495568228
+        ],
+        [
+          8.681262841257968,
+          49.43400287485318
+        ],
+        [
+          8.681235442246741,
+          49.4340007940176
+        ],
+        [
+          8.681208043237865,
+          49.43399871317553
+        ],
+        [
+          8.681180644231334,
+          49.43399663232696
+        ],
+        [
+          8.68115324522715,
+          49.43399455147189
+        ],
+        [
+          8.681125846225317,
+          49.43399247061036
+        ],
+        [
+          8.681098447225835,
+          49.43399038974235
+        ],
+        [
+          8.681071048228699,
+          49.43398830886783
+        ],
+        [
+          8.681043649233912,
+          49.433986227986814
+        ],
+        [
+          8.681016250241475,
+          49.433984147099316
+        ],
+        [
+          8.680988851251385,
+          49.43398206620535
+        ],
+        [
+          8.680961452263643,
+          49.4339799853049
+        ],
+        [
+          8.680934053278252,
+          49.433977904397935
+        ],
+        [
+          8.680906654295208,
+          49.433975823484474
+        ],
+        [
+          8.680879255314514,
+          49.433973742564554
+        ],
+        [
+          8.680851856336169,
+          49.433971661638154
+        ],
+        [
+          8.680824457360172,
+          49.433969580705266
+        ],
+        [
+          8.680797058386524,
+          49.43396749976587
+        ],
+        [
+          8.680769659415226,
+          49.43396541881998
+        ],
+        [
+          8.680742260446275,
+          49.43396333786762
+        ],
+        [
+          8.680714861479672,
+          49.43396125690878
+        ],
+        [
+          8.68068746251542,
+          49.43395917594344
+        ],
+        [
+          8.680660063553516,
+          49.4339570949716
+        ],
+        [
+          8.68063266459396,
+          49.4339550139933
+        ],
+        [
+          8.680605265636753,
+          49.43395293300849
+        ],
+        [
+          8.680577866681897,
+          49.43395085201721
+        ],
+        [
+          8.680550467729388,
+          49.43394877101944
+        ],
+        [
+          8.680523068779227,
+          49.43394669001516
+        ],
+        [
+          8.680495669831416,
+          49.433944609004406
+        ],
+        [
+          8.680468270885957,
+          49.43394252798717
+        ],
+        [
+          8.680440871942842,
+          49.433940446963454
+        ],
+        [
+          8.680413473002078,
+          49.43393836593325
+        ],
+        [
+          8.68038607406366,
+          49.43393628489653
+        ],
+        [
+          8.680358675127597,
+          49.43393420385335
+        ],
+        [
+          8.680331276193877,
+          49.433932122803675
+        ],
+        [
+          8.680303877262508,
+          49.43393004174752
+        ],
+        [
+          8.68027647833349,
+          49.433927960684876
+        ],
+        [
+          8.680249079406819,
+          49.43392587961575
+        ],
+        [
+          8.680221680482498,
+          49.43392379854011
+        ],
+        [
+          8.680194281560526,
+          49.433921717458006
+        ],
+        [
+          8.6801668826409,
+          49.4339196363694
+        ],
+        [
+          8.680139483723625,
+          49.43391755527433
+        ],
+        [
+          8.6801120848087,
+          49.433915474172736
+        ],
+        [
+          8.680084685896125,
+          49.43391339306468
+        ],
+        [
+          8.680040000004151,
+          49.43390999889488
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4339668",
+    "lon": "8.6807884",
+    "name": "Tischbeinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1324239328-85.35-194.6118737613033"
+  },
+  {
+    "address": "Hans-Thoma-Straße, Heidelberg",
+    "capacity": 1,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.680823042243576,
+          49.432734356053736
+        ],
+        [
+          8.680825485748738,
+          49.43271643701992
+        ],
+        [
+          8.680827929252091,
+          49.432698517985976
+        ],
+        [
+          8.68083037275363,
+          49.43268059895195
+        ],
+        [
+          8.680833763109016,
+          49.43265573629202
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4326950",
+    "lon": "8.6808284",
+    "name": "Hans-Thoma-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764336-10.675-19.45"
+  },
+  {
+    "address": "Hans-Thoma-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.680841989149911,
+          49.43259408577657
+        ],
+        [
+          8.680844230439353,
+          49.43257615550233
+        ],
+        [
+          8.680846471727124,
+          49.43255822522798
+        ],
+        [
+          8.680848713013233,
+          49.43254029495351
+        ],
+        [
+          8.680850954297679,
+          49.43252236467897
+        ],
+        [
+          8.680853195580458,
+          49.432504434404315
+        ],
+        [
+          8.680855941149591,
+          49.432482469817714
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4325383",
+    "lon": "8.6808490",
+    "name": "Hans-Thoma-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764335-1.775-14.225"
+  },
+  {
+    "address": "Heidelberg",
+    "capacity": 2,
+    "description": "elektrisches_Fahrzeug, Parkschild, Parkuhr, Zeitabhängig",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.680576619014882,
+          49.4329034515574
+        ],
+        [
+          8.680583581848637,
+          49.43288604438042
+        ],
+        [
+          8.680598701994363,
+          49.43285549558922
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4328793",
+    "lon": "8.6805872",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764332-30.625-36.2"
+  },
+  {
+    "address": "Hans-Thoma-Straße, Heidelberg",
+    "capacity": 3,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.680299562389644,
+          49.43317255962807
+        ],
+        [
+          8.680272154886053,
+          49.43317052957894
+        ],
+        [
+          8.680244747384753,
+          49.43316849952331
+        ],
+        [
+          8.680217339885749,
+          49.4331664694612
+        ],
+        [
+          8.680189932389034,
+          49.43316443939258
+        ],
+        [
+          8.680162524894614,
+          49.433162409317475
+        ],
+        [
+          8.680135117402488,
+          49.4331603792359
+        ],
+        [
+          8.680107709912653,
+          49.4331583491478
+        ],
+        [
+          8.680080302425111,
+          49.43315631905323
+        ],
+        [
+          8.680038163417487,
+          49.43315319777015
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4331629",
+    "lon": "8.6801689",
+    "name": "Hans-Thoma-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764331-12.525-31.6"
+  },
+  {
+    "address": "Hans-Thoma-Straße, Heidelberg",
+    "capacity": 1,
+    "description": "Behindertenparkplatz, Parkschild, privat",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.679965191002474,
+          49.43314779258512
+        ],
+        [
+          8.679937783526857,
+          49.4331457624568
+        ],
+        [
+          8.679887079703004,
+          49.43314200670227
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4331449",
+    "lon": "8.6799261",
+    "name": "Hans-Thoma-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764331-36.925-42.625"
+  },
+  {
+    "address": "Hans-Thoma-Straße, Heidelberg",
+    "capacity": 4,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.679887079703004,
+          49.43314200670227
+        ],
+        [
+          8.679859672233924,
+          49.43313997655544
+        ],
+        [
+          8.679832264767132,
+          49.4331379464021
+        ],
+        [
+          8.679804857302635,
+          49.433135916242314
+        ],
+        [
+          8.679777449840428,
+          49.433133886075986
+        ],
+        [
+          8.679750042380517,
+          49.43313185590318
+        ],
+        [
+          8.6797226349229,
+          49.433129825723896
+        ],
+        [
+          8.679695227467572,
+          49.43312779553812
+        ],
+        [
+          8.67966782001454,
+          49.43312576534584
+        ],
+        [
+          8.679640412563801,
+          49.433123735147085
+        ],
+        [
+          8.679593819902804,
+          49.43312028379429
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4331311",
+    "lon": "8.6797404",
+    "name": "Hans-Thoma-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764331-42.625-64.025"
+  },
+  {
+    "address": "Hans-Thoma-Straße, Heidelberg",
+    "capacity": 4,
+    "description": "außer_für_Bewohner, ohne_Beschilderung, Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa 7-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.679520847586769,
+          49.433114878329036
+        ],
+        [
+          8.679493440148327,
+          49.43311284809547
+        ],
+        [
+          8.679466032712178,
+          49.43311081785541
+        ],
+        [
+          8.67943862527832,
+          49.43310878760882
+        ],
+        [
+          8.679411217846756,
+          49.43310675735578
+        ],
+        [
+          8.679383810417486,
+          49.43310472709624
+        ],
+        [
+          8.679356402990509,
+          49.43310269683022
+        ],
+        [
+          8.679328995565823,
+          49.43310066655769
+        ],
+        [
+          8.67930158814343,
+          49.43309863627868
+        ],
+        [
+          8.679274180723334,
+          49.43309660599315
+        ],
+        [
+          8.679246773305529,
+          49.433094575701155
+        ],
+        [
+          8.679216625148593,
+          49.43309234237247
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4331036",
+    "lon": "8.6793687",
+    "name": "Hans-Thoma-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322764331-69.35-91.55"
+  },
+  {
+    "address": "Franz-Knauff-Straße, Heidelberg",
+    "capacity": 1,
+    "description": "nur_Bewohner, Parkschild",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.689471608064865,
+          49.39920453271141
+        ],
+        [
+          8.689444142722975,
+          49.399203006853746
+        ],
+        [
+          8.689416677382818,
+          49.39920148098959
+        ],
+        [
+          8.689389218317224,
+          49.39919992072708
+        ],
+        [
+          8.689346304784285,
+          49.39919562940399
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3992007",
+    "lon": "8.6894089",
+    "name": "Franz-Knauff-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322379211-20.225-29.375"
+  },
+  {
+    "address": "Franz-Knauff-Straße, Heidelberg",
+    "capacity": 1,
+    "description": "Behindertenparkplatz, Parkschild, Parkuhr, Zeitabhängig - Behindertenparkplatz:Mo, Di, Mi, Do, Fr 8-20,Parkuhr:Mo, Di, Mi, Do, Fr 8-20 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 8-20",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.689235955734263,
+          49.399184594500106
+        ],
+        [
+          8.689208709062932,
+          49.399181869816296
+        ],
+        [
+          8.689181505152183,
+          49.39917897952228
+        ],
+        [
+          8.689145584125013,
+          49.399174669031694
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3991798",
+    "lon": "8.6891907",
+    "name": "Franz-Knauff-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1322379211-37.475-44.125"
+  },
+  {
+    "address": "Hertzstraße, Heidelberg",
+    "capacity": 6,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.684816564512278,
+          49.367698454269565
+        ],
+        [
+          8.68481832083284,
+          49.3676805009052
+        ],
+        [
+          8.68482007715209,
+          49.367662547540746
+        ],
+        [
+          8.68482183347003,
+          49.367644594176234
+        ],
+        [
+          8.68482358978666,
+          49.367626640811594
+        ],
+        [
+          8.68482534610198,
+          49.367608687446904
+        ],
+        [
+          8.684827102415994,
+          49.367590734082114
+        ],
+        [
+          8.684828858728695,
+          49.36757278071724
+        ],
+        [
+          8.684831844457282,
+          49.36754225999674
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3676204",
+    "lon": "8.6848242",
+    "name": "Hertzstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1313560606-30.25-47.65"
+  },
+  {
+    "address": "Hertzstraße, Heidelberg",
+    "capacity": 4,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.684835862012568,
+          49.367501191673945
+        ],
+        [
+          8.684837618318737,
+          49.36748323830866
+        ],
+        [
+          8.684839374623596,
+          49.36746528494327
+        ],
+        [
+          8.684841130927145,
+          49.36744733157779
+        ],
+        [
+          8.684842887229385,
+          49.36742937821226
+        ],
+        [
+          8.684845455819053,
+          49.36740312141497
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3674522",
+    "lon": "8.6848407",
+    "name": "Hertzstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1313560606-52.225-63.15"
+  },
+  {
+    "address": "Hertzstraße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.684852568821972,
+          49.36733041028309
+        ],
+        [
+          8.684854325115682,
+          49.36731245691698
+        ],
+        [
+          8.684856081408082,
+          49.36729450355081
+        ],
+        [
+          8.68485895733406,
+          49.36726510491345
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3672978",
+    "lon": "8.6848558",
+    "name": "Hertzstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1313560606-71.25-78.525"
+  },
+  {
+    "address": "Hertzstraße, Heidelberg",
+    "capacity": 3,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.684863326100388,
+          49.36722044591433
+        ],
+        [
+          8.684865082386075,
+          49.367202492547705
+        ],
+        [
+          8.684866838670454,
+          49.367184539180975
+        ],
+        [
+          8.684870109746615,
+          49.36715110103526
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3671858",
+    "lon": "8.6848667",
+    "name": "Hertzstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1313560606-83.5-91.225"
+  },
+  {
+    "address": "Kleinschmidtstraße, Heidelberg",
+    "capacity": 5,
+    "description": "nur_Bewohner, Parkschild, Parkuhr, Zeitabhängig - nur_Bewohner:Mo, Di, Mi, Do, Fr, Sa, So 0-7 19-24",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.687090000004074,
+          49.40597921123229
+        ],
+        [
+          8.687090000004503,
+          49.40596122138423
+        ],
+        [
+          8.687090000004899,
+          49.40594323153613
+        ],
+        [
+          8.687090000005265,
+          49.405925241687974
+        ],
+        [
+          8.6870900000056,
+          49.40590725183974
+        ],
+        [
+          8.687090000005908,
+          49.405889261991476
+        ],
+        [
+          8.68709000000618,
+          49.40587127214313
+        ],
+        [
+          8.687090000006423,
+          49.40585328229474
+        ],
+        [
+          8.687090000006636,
+          49.40583529244631
+        ],
+        [
+          8.687090000006817,
+          49.4058173025978
+        ],
+        [
+          8.687090000006968,
+          49.405799312749245
+        ],
+        [
+          8.687090000007089,
+          49.40578132290065
+        ],
+        [
+          8.68709000000718,
+          49.40576333305197
+        ],
+        [
+          8.687090000007236,
+          49.40574534320326
+        ],
+        [
+          8.687090000007267,
+          49.405718358430065
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4058488",
+    "lon": "8.6870900",
+    "name": "Kleinschmidtstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1308811309-25.75-54.75"
+  },
+  {
+    "address": "Kleinschmidtstraße, Heidelberg",
+    "capacity": 2,
+    "description": "nur_Bewohner, Parkschild, Parkuhr, Zeitabhängig - nur_Bewohner:Mo, Di, Mi, Do, Fr, Sa, So 0-7 19-24",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.687090000006886,
+          49.40563043304319
+        ],
+        [
+          8.687090000006718,
+          49.40561244319406
+        ],
+        [
+          8.687090000006519,
+          49.405594453344854
+        ],
+        [
+          8.68709000000629,
+          49.40557646349562
+        ],
+        [
+          8.687090000006028,
+          49.40555847364631
+        ],
+        [
+          8.687090000005735,
+          49.40554048379693
+        ],
+        [
+          8.687090000005371,
+          49.40552024521634
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4055753",
+    "lon": "8.6870900",
+    "name": "Kleinschmidtstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1308811309-64.525-76.775"
+  },
+  {
+    "address": "Kolbenzeil, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.682445160339293,
+          49.37623001461298
+        ],
+        [
+          8.682446319962786,
+          49.37621204061682
+        ],
+        [
+          8.682448262330174,
+          49.376181934173054
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3762060",
+    "lon": "8.6824467",
+    "name": "Kolbenzeil",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1307230781-8.9-14.25"
+  },
+  {
+    "address": "Kolbenzeil, Heidelberg",
+    "capacity": 9,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.682453408142333,
+          49.376102174563684
+        ],
+        [
+          8.68245456775959,
+          49.37608420056702
+        ],
+        [
+          8.682455727375972,
+          49.37606622657025
+        ],
+        [
+          8.682456886991478,
+          49.37604825257344
+        ],
+        [
+          8.682458046606103,
+          49.37603027857657
+        ],
+        [
+          8.682459206219853,
+          49.376012304579625
+        ],
+        [
+          8.682460365832727,
+          49.375994330582614
+        ],
+        [
+          8.682461525444724,
+          49.375976356585525
+        ],
+        [
+          8.682462685055844,
+          49.375958382588365
+        ],
+        [
+          8.682463844666085,
+          49.375940408591134
+        ],
+        [
+          8.682465004275453,
+          49.37592243459384
+        ],
+        [
+          8.682466163883939,
+          49.37590446059648
+        ],
+        [
+          8.682467323491554,
+          49.375886486599036
+        ],
+        [
+          8.68246848309829,
+          49.37586851260154
+        ],
+        [
+          8.682469642704147,
+          49.37585053860397
+        ],
+        [
+          8.68247080230913,
+          49.37583256460633
+        ],
+        [
+          8.682471961913235,
+          49.37581459060863
+        ],
+        [
+          8.682473121516463,
+          49.37579661661083
+        ],
+        [
+          8.682474281118814,
+          49.375778642612985
+        ],
+        [
+          8.68247544072029,
+          49.37576066861508
+        ],
+        [
+          8.682476600320888,
+          49.375742694617074
+        ],
+        [
+          8.682477759920609,
+          49.375724720619026
+        ],
+        [
+          8.682480000004109,
+          49.375689998895126
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3758961",
+    "lon": "8.6824667",
+    "name": "Kolbenzeil",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1307230781-23.125-68.98855039978386"
+  },
+  {
+    "address": "Kolbenzeil, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.682480000004109,
+          49.375689998895126
+        ],
+        [
+          8.682481889238943,
+          49.375672051299894
+        ],
+        [
+          8.68248377847237,
+          49.37565410370458
+        ],
+        [
+          8.682485667704391,
+          49.375636156109174
+        ],
+        [
+          8.682488879395597,
+          49.375605645196785
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3756478",
+    "lon": "8.6824844",
+    "name": "Kolbenzeil",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1307230780-0.0-9.4"
+  },
+  {
+    "address": "Kolbenzeil, Heidelberg",
+    "capacity": 5,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.682495137458698,
+          49.37554619378585
+        ],
+        [
+          8.68249702668226,
+          49.375528246189894
+        ],
+        [
+          8.682498915904416,
+          49.375510298593866
+        ],
+        [
+          8.682500805125166,
+          49.37549235099776
+        ],
+        [
+          8.682502694344508,
+          49.37547440340153
+        ],
+        [
+          8.682504583562446,
+          49.37545645580523
+        ],
+        [
+          8.682506472778973,
+          49.37543850820883
+        ],
+        [
+          8.682508361994097,
+          49.37542056061234
+        ],
+        [
+          8.682510251207813,
+          49.37540261301578
+        ],
+        [
+          8.682512140420123,
+          49.375384665419105
+        ],
+        [
+          8.682514029631024,
+          49.375366717822345
+        ],
+        [
+          8.68251591884052,
+          49.3753487702255
+        ],
+        [
+          8.682519106878354,
+          49.37531848365566
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3754323",
+    "lon": "8.6825071",
+    "name": "Kolbenzeil",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1307230780-16.025-41.4"
+  },
+  {
+    "address": "Kolbenzeil, Heidelberg",
+    "capacity": 3,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.682528325873237,
+          49.37524339229369
+        ],
+        [
+          8.68253056717045,
+          49.37522546197904
+        ],
+        [
+          8.682532808466002,
+          49.37520753166433
+        ],
+        [
+          8.682535049759892,
+          49.37518960134947
+        ],
+        [
+          8.682537291052121,
+          49.375171671034515
+        ],
+        [
+          8.682539532342687,
+          49.375153740719476
+        ],
+        [
+          8.682541773631595,
+          49.375135810404316
+        ],
+        [
+          8.68254401491884,
+          49.37511788008905
+        ],
+        [
+          8.68254838542419,
+          49.37508291597402
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3751632",
+    "lon": "8.6825384",
+    "name": "Kolbenzeil",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1307230780-49.775-67.675"
+  },
+  {
+    "address": "Da-Vinci-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.66601756058302,
+          49.40368009700808
+        ],
+        [
+          8.66600714956691,
+          49.403663439420235
+        ],
+        [
+          8.665996738557821,
+          49.4036467818314
+        ],
+        [
+          8.665986327555753,
+          49.40363012424164
+        ],
+        [
+          8.665975916560704,
+          49.40361346665086
+        ],
+        [
+          8.665960690493087,
+          49.403589104922624
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4036346",
+    "lon": "8.6659891",
+    "name": "Da-Vinci-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306831882-21.6-32.525"
+  },
+  {
+    "address": "Da-Vinci-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.665943512383548,
+          49.40356161989341
+        ],
+        [
+          8.665933101417371,
+          49.403544962298646
+        ],
+        [
+          8.665922690458213,
+          49.403528304702924
+        ],
+        [
+          8.665912279506076,
+          49.40351164710623
+        ],
+        [
+          8.66590186856096,
+          49.40349498950856
+        ],
+        [
+          8.665885991883176,
+          49.40346958667026
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4035156",
+    "lon": "8.6659148",
+    "name": "Da-Vinci-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306831882-35.825-46.875"
+  },
+  {
+    "address": "Da-Vinci-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.6658681631743,
+          49.40344106052947
+        ],
+        [
+          8.665857752258932,
+          49.40342440292769
+        ],
+        [
+          8.665847341350585,
+          49.403407745324955
+        ],
+        [
+          8.665836930449254,
+          49.40339108772124
+        ],
+        [
+          8.66582677993119,
+          49.40337436380058
+        ],
+        [
+          8.665813897082765,
+          49.40335181893631
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4033967",
+    "lon": "8.6658407",
+    "name": "Da-Vinci-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306831882-50.3-60.975"
+  },
+  {
+    "address": "Da-Vinci-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.665798004239218,
+          49.4033240065783
+        ],
+        [
+          8.66578837222153,
+          49.40330715060266
+        ],
+        [
+          8.66577874021041,
+          49.40329029462618
+        ],
+        [
+          8.665769108205861,
+          49.40327343864885
+        ],
+        [
+          8.66575947620788,
+          49.40325658267069
+        ],
+        [
+          8.665742499827434,
+          49.403226874007125
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4032754",
+    "lon": "8.6657703",
+    "name": "Da-Vinci-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306831882-64.275-75.8"
+  },
+  {
+    "address": "Da-Vinci-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.66572347667359,
+          49.403193583444875
+        ],
+        [
+          8.665713844706731,
+          49.40317672746274
+        ],
+        [
+          8.665704212746443,
+          49.40315987147978
+        ],
+        [
+          8.665694580792724,
+          49.403143015495964
+        ],
+        [
+          8.665684948845575,
+          49.40312615951134
+        ],
+        [
+          8.66567218652572,
+          49.40310382533039
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4031487",
+    "lon": "8.6656978",
+    "name": "Da-Vinci-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306831882-79.75-90.4"
+  },
+  {
+    "address": "Da-Vinci-Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.665573363924265,
+          49.40295876230023
+        ],
+        [
+          8.665562124583033,
+          49.40294233560047
+        ],
+        [
+          8.665550885249278,
+          49.40292590889962
+        ],
+        [
+          8.665539645923001,
+          49.40290948219764
+        ],
+        [
+          8.6655284066042,
+          49.402893055494516
+        ],
+        [
+          8.66551267157044,
+          49.40287005810826
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4029144",
+    "lon": "8.6655430",
+    "name": "Da-Vinci-Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306831882-108.05-118.85"
+  },
+  {
+    "address": "Güteramtsstrasse, Heidelberg",
+    "capacity": 1,
+    "description": "elektrisches_Fahrzeug, Parkschild",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.673077175365467,
+          49.40215933038067
+        ],
+        [
+          8.673065406903975,
+          49.402143062305996
+        ],
+        [
+          8.673053638450238,
+          49.40212679423012
+        ],
+        [
+          8.673033779202141,
+          49.402099341849244
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4021293",
+    "lon": "8.6730555",
+    "name": "Güteramtsstrasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306818157-27.6-34.975"
+  },
+  {
+    "address": "Güteramtsstrasse, Heidelberg",
+    "capacity": 1,
+    "description": "elektrisches_Fahrzeug, Parkschild, Parkuhr, Zeitabhängig",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.673017597608911,
+          49.40207697324002
+        ],
+        [
+          8.673005829186678,
+          49.40206070515911
+        ],
+        [
+          8.672994060772204,
+          49.402044437077016
+        ],
+        [
+          8.672970671071454,
+          49.40201210426016
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4020445",
+    "lon": "8.6729941",
+    "name": "Güteramtsstrasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306818157-37.725-45.7"
+  },
+  {
+    "address": "Güteramtsstrasse, Heidelberg",
+    "capacity": 1,
+    "description": "Parken_auf_dem_Seitenstreifen, Parkschild",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.67295404822099,
+          49.401989125588635
+        ],
+        [
+          8.672942279840635,
+          49.401972857501136
+        ],
+        [
+          8.672930511468035,
+          49.40195658941239
+        ],
+        [
+          8.672912123401375,
+          49.40193117052126
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4019601",
+    "lon": "8.6729331",
+    "name": "Güteramtsstrasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1306818157-48.525-55.65"
+  },
+  {
+    "address": "Heidelberg",
+    "capacity": 6,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.762551784102453,
+          49.4149466293871
+        ],
+        [
+          8.76257787257274,
+          49.414940805076505
+        ],
+        [
+          8.762603961036868,
+          49.414934980759995
+        ],
+        [
+          8.762630049494838,
+          49.41492915643761
+        ],
+        [
+          8.762656137946657,
+          49.41492333210932
+        ],
+        [
+          8.76268222639232,
+          49.41491750777514
+        ],
+        [
+          8.762708314831826,
+          49.41491168343502
+        ],
+        [
+          8.762734403265178,
+          49.41490585908903
+        ],
+        [
+          8.762760491692374,
+          49.414900034737116
+        ],
+        [
+          8.762786580113413,
+          49.41489421037932
+        ],
+        [
+          8.762812668528298,
+          49.41488838601562
+        ],
+        [
+          8.762838756937029,
+          49.41488256164602
+        ],
+        [
+          8.762864845339601,
+          49.414876737270525
+        ],
+        [
+          8.762890933736019,
+          49.41487091288911
+        ],
+        [
+          8.762917022126281,
+          49.4148650885018
+        ],
+        [
+          8.76294311051039,
+          49.41485926410859
+        ],
+        [
+          8.76298061255176,
+          49.41485089153303
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4148988",
+    "lon": "8.7627662",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1305793740-56.1-88.975"
+  },
+  {
+    "address": "Königsberger Straße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.66672400631573,
+          49.383757948489304
+        ],
+        [
+          8.66672624760651,
+          49.38374001819221
+        ],
+        [
+          8.666728488895629,
+          49.38372208789502
+        ],
+        [
+          8.666730730183083,
+          49.383704157597705
+        ],
+        [
+          8.666734820528399,
+          49.38367143480488
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3837147",
+    "lon": "8.6667294",
+    "name": "Königsberger Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1305411043-3.575-13.225"
+  },
+  {
+    "address": "Königsberger Straße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.666744021556482,
+          49.383596821295214
+        ],
+        [
+          8.666746195366162,
+          49.38357888745727
+        ],
+        [
+          8.666748369174229,
+          49.38356095361922
+        ],
+        [
+          8.666750542980681,
+          49.3835430197811
+        ],
+        [
+          8.66675328740902,
+          49.38352037831031
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3835586",
+    "lon": "8.6667487",
+    "name": "Königsberger Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1305411042-3.7-12.225"
+  },
+  {
+    "address": "Königsberger Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.666760596814518,
+          49.38346007577843
+        ],
+        [
+          8.666762770611887,
+          49.383442141939746
+        ],
+        [
+          8.666764944407642,
+          49.38342420810095
+        ],
+        [
+          8.666767118201783,
+          49.38340627426206
+        ],
+        [
+          8.666769291994308,
+          49.38338834042306
+        ],
+        [
+          8.666772878748446,
+          49.3833587495885
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3834094",
+    "lon": "8.6667667",
+    "name": "Königsberger Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1305411042-18.95-30.25"
+  },
+  {
+    "address": "Königsberger Straße, Heidelberg",
+    "capacity": 7,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.666670904620899,
+          49.38414769496643
+        ],
+        [
+          8.666673363978907,
+          49.38412977685667
+        ],
+        [
+          8.666675823335094,
+          49.38411185874676
+        ],
+        [
+          8.66667828268946,
+          49.38409394063674
+        ],
+        [
+          8.666680742042004,
+          49.384076022526635
+        ],
+        [
+          8.666683201392729,
+          49.38405810441639
+        ],
+        [
+          8.666685660741633,
+          49.384040186306045
+        ],
+        [
+          8.666688120088715,
+          49.38402226819558
+        ],
+        [
+          8.666690579433975,
+          49.38400435008502
+        ],
+        [
+          8.666693038777419,
+          49.38398643197433
+        ],
+        [
+          8.666695498119038,
+          49.38396851386354
+        ],
+        [
+          8.666697957458837,
+          49.38395059575264
+        ],
+        [
+          8.666700416796816,
+          49.38393267764163
+        ],
+        [
+          8.666702876132973,
+          49.3839147595305
+        ],
+        [
+          8.666705335467311,
+          49.383896841419265
+        ],
+        [
+          8.666707794799827,
+          49.383878923307904
+        ],
+        [
+          8.666710254130521,
+          49.38386100519645
+        ],
+        [
+          8.666714312022188,
+          49.38383144031228
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3839896",
+    "lon": "8.6666926",
+    "name": "Königsberger Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1305411040-17.0-52.3"
+  },
+  {
+    "address": "Große Michelsgasse, Heidelberg",
+    "capacity": 4,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.690392284713928,
+          49.391223884701176
+        ],
+        [
+          8.690419764419925,
+          49.39122251070719
+        ],
+        [
+          8.69044724412442,
+          49.3912211367067
+        ],
+        [
+          8.690474719471908,
+          49.39121972813111
+        ],
+        [
+          8.690502173836167,
+          49.39121815302339
+        ],
+        [
+          8.690529628198698,
+          49.39121657790914
+        ],
+        [
+          8.690557082559506,
+          49.39121500278838
+        ],
+        [
+          8.690584536918587,
+          49.391213427661086
+        ],
+        [
+          8.690611991275944,
+          49.39121185252727
+        ],
+        [
+          8.690639445631573,
+          49.39121027738693
+        ],
+        [
+          8.690694011158262,
+          49.391207146776146
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3912157",
+    "lon": "8.6905432",
+    "name": "Große Michelsgasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957790-8.9-30.875"
+  },
+  {
+    "address": "Große Michelsgasse, Heidelberg",
+    "capacity": 3,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.690755097085717,
+          49.391203642036636
+        ],
+        [
+          8.690782551432351,
+          49.391202066862284
+        ],
+        [
+          8.690810005777259,
+          49.39120049168143
+        ],
+        [
+          8.690837460120443,
+          49.39119891649403
+        ],
+        [
+          8.6908649144619,
+          49.39119734130014
+        ],
+        [
+          8.690892368801629,
+          49.391195766099706
+        ],
+        [
+          8.690919823139636,
+          49.39119419089276
+        ],
+        [
+          8.690947277475916,
+          49.39119261567926
+        ],
+        [
+          8.690974731810469,
+          49.391191040459255
+        ],
+        [
+          8.691028610937014,
+          49.391187949071046
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3911958",
+    "lon": "8.6908919",
+    "name": "Große Michelsgasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957790-35.325-55.25"
+  },
+  {
+    "address": "Große Michelsgasse, Heidelberg",
+    "capacity": 4,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.69107425375876,
+          49.39118533023208
+        ],
+        [
+          8.691101708085332,
+          49.391183754981896
+        ],
+        [
+          8.691129162410178,
+          49.391182179725206
+        ],
+        [
+          8.691156616733299,
+          49.391180604461994
+        ],
+        [
+          8.691184071054694,
+          49.391179029192244
+        ],
+        [
+          8.69121152537436,
+          49.39117745391599
+        ],
+        [
+          8.691238979692304,
+          49.39117587863321
+        ],
+        [
+          8.691266434008519,
+          49.391174303343895
+        ],
+        [
+          8.69129388832301,
+          49.39117272804807
+        ],
+        [
+          8.691321342635776,
+          49.39117115274572
+        ],
+        [
+          8.691348796946814,
+          49.391169577436834
+        ],
+        [
+          8.691399930596523,
+          49.391166643406656
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3911760",
+    "lon": "8.6912371",
+    "name": "Große Michelsgasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957790-58.575-82.3"
+  },
+  {
+    "address": "Große Michelsgasse, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.691452093776634,
+          49.39116365027874
+        ],
+        [
+          8.691479548079453,
+          49.39116207493879
+        ],
+        [
+          8.691507002380545,
+          49.391160499592345
+        ],
+        [
+          8.691534456679912,
+          49.39115892423933
+        ],
+        [
+          8.691561910977553,
+          49.391157348879815
+        ],
+        [
+          8.691589365273467,
+          49.39115577351378
+        ],
+        [
+          8.691616819567656,
+          49.39115419814122
+        ],
+        [
+          8.691645646574695,
+          49.39115254399301
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3911581",
+    "lon": "8.6915489",
+    "name": "Große Michelsgasse",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957790-86.1-100.2"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.69024242782222,
+          49.39195930368767
+        ],
+        [
+          8.690243147174549,
+          49.391941319922395
+        ],
+        [
+          8.690243866526322,
+          49.39192333615704
+        ],
+        [
+          8.690245215309398,
+          49.39188961659686
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3919245",
+    "lon": "8.6902438",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957788-6.75-14.5"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.690248677177017,
+          49.391803069724695
+        ],
+        [
+          8.690249396524518,
+          49.39178508595889
+        ],
+        [
+          8.690250107295736,
+          49.39176710205227
+        ],
+        [
+          8.690250773400953,
+          49.391749117412544
+        ],
+        [
+          8.690251439505651,
+          49.39173113277277
+        ],
+        [
+          8.690252105609835,
+          49.39171314813292
+        ],
+        [
+          8.690252921586755,
+          49.39169111694902
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3917471",
+    "lon": "8.6902508",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957788-24.125-36.575"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.690258125502947,
+          49.39155061194758
+        ],
+        [
+          8.690258791601941,
+          49.391532627307114
+        ],
+        [
+          8.690259457700423,
+          49.391514642666614
+        ],
+        [
+          8.690260123798385,
+          49.39149665802602
+        ],
+        [
+          8.690260789895829,
+          49.39147867338539
+        ],
+        [
+          8.690261597538289,
+          49.391456867008536
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3915037",
+    "lon": "8.6902599",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957788-52.2-62.625"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.690267517451062,
+          49.391297028511545
+        ],
+        [
+          8.69026818354277,
+          49.39127904387023
+        ],
+        [
+          8.690268849633963,
+          49.39126105922884
+        ],
+        [
+          8.690270000004013,
+          49.39122999889507
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3912635",
+    "lon": "8.6902688",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304957788-80.4-87.85409541326138"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.689988143073942,
+          49.394356949956425
+        ],
+        [
+          8.689990586577428,
+          49.39433903090696
+        ],
+        [
+          8.689994679441716,
+          49.3943090164989
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3943330",
+    "lon": "8.6899914",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304952213-14.85-20.2"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 2,
+    "description": "Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Sa 7-14 Mo, Di, Mi, Do, Fr 7-19 - Parkuhr:120 min - Mo, Di, Mi, Do, Fr, Sa, So 7-19",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.689873341242695,
+          49.395327434227596
+        ],
+        [
+          8.689875515038926,
+          49.39530950038135
+        ],
+        [
+          8.689877688833544,
+          49.39529156653505
+        ],
+        [
+          8.68987986262655,
+          49.39527363268864
+        ],
+        [
+          8.689882036417941,
+          49.39525569884212
+        ],
+        [
+          8.68988565034256,
+          49.39522588382206
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3952767",
+    "lon": "8.6898795",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304952212-21.475-32.8"
+  },
+  {
+    "address": "Rohrbacher Straße, Heidelberg",
+    "capacity": 14,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.689895219098611,
+          49.39514650662735
+        ],
+        [
+          8.689897371299832,
+          49.3951285716714
+        ],
+        [
+          8.689899523499454,
+          49.395110636715366
+        ],
+        [
+          8.689901675697481,
+          49.39509270175925
+        ],
+        [
+          8.68990382789391,
+          49.395074766803006
+        ],
+        [
+          8.689905980088739,
+          49.39505683184669
+        ],
+        [
+          8.689908132281971,
+          49.39503889689026
+        ],
+        [
+          8.689910284473608,
+          49.39502096193374
+        ],
+        [
+          8.689912436663647,
+          49.39500302697712
+        ],
+        [
+          8.689914588852089,
+          49.3949850920204
+        ],
+        [
+          8.689916741038932,
+          49.394967157063576
+        ],
+        [
+          8.689918893224178,
+          49.39494922210664
+        ],
+        [
+          8.689920968405833,
+          49.39493128335896
+        ],
+        [
+          8.689922962063195,
+          49.39491334059796
+        ],
+        [
+          8.689924955719073,
+          49.39489539783687
+        ],
+        [
+          8.68992694937347,
+          49.39487745507566
+        ],
+        [
+          8.689928943026384,
+          49.39485951231438
+        ],
+        [
+          8.689930936677817,
+          49.394841569552966
+        ],
+        [
+          8.689932930327766,
+          49.39482362679151
+        ],
+        [
+          8.689934923976232,
+          49.39480568402995
+        ],
+        [
+          8.689936917623214,
+          49.394787741268274
+        ],
+        [
+          8.689938911268715,
+          49.39476979850652
+        ],
+        [
+          8.689940904912735,
+          49.394751855744666
+        ],
+        [
+          8.689942898555271,
+          49.39473391298273
+        ],
+        [
+          8.689944892196324,
+          49.3947159702207
+        ],
+        [
+          8.689946885835896,
+          49.39469802745857
+        ],
+        [
+          8.689948879473983,
+          49.39468008469636
+        ],
+        [
+          8.689950873110588,
+          49.39466214193403
+        ],
+        [
+          8.689952866745712,
+          49.39464419917165
+        ],
+        [
+          8.68995486037935,
+          49.39462625640913
+        ],
+        [
+          8.689956854011509,
+          49.39460831364655
+        ],
+        [
+          8.689958847642185,
+          49.39459037088386
+        ],
+        [
+          8.689960841271375,
+          49.39457242812108
+        ],
+        [
+          8.689962834899088,
+          49.3945544853582
+        ],
+        [
+          8.689964828525314,
+          49.39453654259525
+        ],
+        [
+          8.689967445157485,
+          49.39451299271872
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3948298",
+    "lon": "8.6899319",
+    "name": "Rohrbacher Straße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304952211-4.85-75.475"
+  },
+  {
+    "address": "Heidelberg",
+    "capacity": 7,
+    "description": "Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa, So 7-19 - Parkuhr:120 min",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.692480000003984,
+          49.39904999889504
+        ],
+        [
+          8.692492577659163,
+          49.39903399101618
+        ],
+        [
+          8.69250515530615,
+          49.3990179831359
+        ],
+        [
+          8.692517732944944,
+          49.39900197525419
+        ],
+        [
+          8.69253031057554,
+          49.39898596737105
+        ],
+        [
+          8.692542888197945,
+          49.39896995948647
+        ],
+        [
+          8.692555465812156,
+          49.398953951600504
+        ],
+        [
+          8.692568043418172,
+          49.39893794371306
+        ],
+        [
+          8.692580621015995,
+          49.398921935824205
+        ],
+        [
+          8.692595123724239,
+          49.398889504022335
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3989716",
+    "lon": "8.6925406",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304947764-0.0-19.8"
+  },
+  {
+    "address": "Steigerweg, Heidelberg",
+    "capacity": 1,
+    "description": "Parkschild, Parkuhr, Zeitabhängig - Parkuhr:Mo, Di, Mi, Do, Fr, Sa, So 7-19 - Parkuhr:120 min",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.692500389713471,
+          49.398709609220745
+        ],
+        [
+          8.692515454956204,
+          49.39869454399076
+        ],
+        [
+          8.692530520189708,
+          49.39867947875873
+        ],
+        [
+          8.6925538712834,
+          49.39865612764516
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3986829",
+    "lon": "8.6925271",
+    "name": "Steigerweg",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304947762-10.3-17.4"
+  },
+  {
+    "address": "Im Schuhmachergewann, Heidelberg",
+    "capacity": 4,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.639048156678443,
+          49.42754382436606
+        ],
+        [
+          8.639021221585427,
+          49.42753995540007
+        ],
+        [
+          8.638994286496676,
+          49.42753608642781
+        ],
+        [
+          8.638967351412196,
+          49.427532217449276
+        ],
+        [
+          8.638940416331984,
+          49.427528348464485
+        ],
+        [
+          8.638913481256044,
+          49.42752447947342
+        ],
+        [
+          8.63888654618437,
+          49.42752061047611
+        ],
+        [
+          8.638859611116963,
+          49.4275167414725
+        ],
+        [
+          8.638832676053823,
+          49.42751287246264
+        ],
+        [
+          8.638805740994957,
+          49.4275090034465
+        ],
+        [
+          8.638767358543443,
+          49.4275034900877
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4275237",
+    "lon": "8.6389078",
+    "name": "Im Schuhmachergewann",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304947366-18.7-39.55"
+  },
+  {
+    "address": "Im Schuhmachergewann, Heidelberg",
+    "capacity": 3,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.638630999904217,
+          49.42748390305217
+        ],
+        [
+          8.638604064877311,
+          49.42748003398912
+        ],
+        [
+          8.638577129854667,
+          49.42747616491981
+        ],
+        [
+          8.638550194836299,
+          49.42747229584424
+        ],
+        [
+          8.638523259822195,
+          49.427468426762395
+        ],
+        [
+          8.638496324812362,
+          49.427464557674256
+        ],
+        [
+          8.638469389806795,
+          49.4274606885799
+        ],
+        [
+          8.6384424548055,
+          49.42745681947925
+        ],
+        [
+          8.638415519808472,
+          49.427452950372334
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4274684",
+    "lon": "8.6385233",
+    "name": "Im Schuhmachergewann",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304947366-49.675-65.675"
+  },
+  {
+    "address": "Im Schuhmachergewann, Heidelberg",
+    "capacity": 6,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.638271754334031,
+          49.4274322989082
+        ],
+        [
+          8.638244819364056,
+          49.42742842976156
+        ],
+        [
+          8.63821788439835,
+          49.42742456060867
+        ],
+        [
+          8.638190949436911,
+          49.42742069144951
+        ],
+        [
+          8.638164014479742,
+          49.42741682228409
+        ],
+        [
+          8.63813707952684,
+          49.42741295311239
+        ],
+        [
+          8.63811014457821,
+          49.42740908393443
+        ],
+        [
+          8.638083209633846,
+          49.427405214750195
+        ],
+        [
+          8.638056274693751,
+          49.4274013455597
+        ],
+        [
+          8.638029339757924,
+          49.42739747636295
+        ],
+        [
+          8.638002404826368,
+          49.42739360715991
+        ],
+        [
+          8.63797546989908,
+          49.42738973795062
+        ],
+        [
+          8.637948534976061,
+          49.42738586873507
+        ],
+        [
+          8.63792160005731,
+          49.42738199951324
+        ],
+        [
+          8.637894665142827,
+          49.427378130285156
+        ],
+        [
+          8.637867730232614,
+          49.427374261050794
+        ],
+        [
+          8.63784079532667,
+          49.42737039181016
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4274013",
+    "lon": "8.6380563",
+    "name": "Im Schuhmachergewann",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304947366-76.35-108.35"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 5,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.760720740603336,
+          49.42314171620178
+        ],
+        [
+          8.760698483569392,
+          49.423131093586164
+        ],
+        [
+          8.760676226545064,
+          49.42312047096626
+        ],
+        [
+          8.760653969530352,
+          49.42310984834209
+        ],
+        [
+          8.760631712525257,
+          49.423099225713585
+        ],
+        [
+          8.760609455529778,
+          49.42308860308083
+        ],
+        [
+          8.760587198543915,
+          49.42307798044378
+        ],
+        [
+          8.760564941567669,
+          49.423067357802424
+        ],
+        [
+          8.760542684601038,
+          49.4230567351568
+        ],
+        [
+          8.760520427644025,
+          49.42304611250685
+        ],
+        [
+          8.760498170696629,
+          49.423035489852666
+        ],
+        [
+          8.76047591375885,
+          49.42302486719416
+        ],
+        [
+          8.760453656830684,
+          49.423014244531394
+        ],
+        [
+          8.760431399912136,
+          49.4230036218643
+        ],
+        [
+          8.760399962031073,
+          49.42298861733973
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4230652",
+    "lon": "8.7605604",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-5.325-34.15"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 7,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.760228178195625,
+          49.42289670403943
+        ],
+        [
+          8.760207348637262,
+          49.42288491378789
+        ],
+        [
+          8.760186519088887,
+          49.42287312353259
+        ],
+        [
+          8.760165689550494,
+          49.422861333273524
+        ],
+        [
+          8.760144860022088,
+          49.4228495430107
+        ],
+        [
+          8.760124030503667,
+          49.42283775274411
+        ],
+        [
+          8.76010320099523,
+          49.42282596247377
+        ],
+        [
+          8.760082371496777,
+          49.42281417219968
+        ],
+        [
+          8.760061542008309,
+          49.42280238192179
+        ],
+        [
+          8.760040712529825,
+          49.422790591640165
+        ],
+        [
+          8.760019883061329,
+          49.422778801354774
+        ],
+        [
+          8.759999053602815,
+          49.422767011065645
+        ],
+        [
+          8.759978224154287,
+          49.42275522077274
+        ],
+        [
+          8.759957394715743,
+          49.42274343047607
+        ],
+        [
+          8.759936565287184,
+          49.42273164017562
+        ],
+        [
+          8.759915735868608,
+          49.42271984987143
+        ],
+        [
+          8.759894906460017,
+          49.42270805956348
+        ],
+        [
+          8.759874077061413,
+          49.42269626925178
+        ],
+        [
+          8.759839448208332,
+          49.42267666785023
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4227867",
+    "lon": "8.7600338",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-50.275-87.6"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 5,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.759681705808266,
+          49.422600786335934
+        ],
+        [
+          8.759659193020038,
+          49.422590395814574
+        ],
+        [
+          8.759636680241329,
+          49.42258000528881
+        ],
+        [
+          8.75961416747213,
+          49.42256961475867
+        ],
+        [
+          8.759591654712448,
+          49.42255922422414
+        ],
+        [
+          8.75956914196228,
+          49.42254883368522
+        ],
+        [
+          8.759546082638574,
+          49.4225391472986
+        ],
+        [
+          8.759519919392849,
+          49.422533459663576
+        ],
+        [
+          8.759493756153187,
+          49.422527772022676
+        ],
+        [
+          8.759467592919595,
+          49.42252208437582
+        ],
+        [
+          8.75944142969207,
+          49.422516396723054
+        ],
+        [
+          8.759415266470613,
+          49.422510709064376
+        ],
+        [
+          8.759374059409117,
+          49.422501750989966
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4225430",
+    "lon": "8.7595306",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-101.825-126.975"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 3,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.759249591238667,
+          49.4224869376933
+        ],
+        [
+          8.7592220745095,
+          49.42248574132119
+        ],
+        [
+          8.759194557781692,
+          49.42248454494249
+        ],
+        [
+          8.759167041055244,
+          49.42248334855727
+        ],
+        [
+          8.75913952433016,
+          49.42248215216551
+        ],
+        [
+          8.759112007606436,
+          49.42248095576721
+        ],
+        [
+          8.759084478660458,
+          49.42247999890124
+        ],
+        [
+          8.75905690088464,
+          49.422479998928836
+        ],
+        [
+          8.759029323108848,
+          49.422479998949846
+        ],
+        [
+          8.758974857001727,
+          49.422479998972
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4224820",
+    "lon": "8.7591123",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-136.225-156.175"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 4,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.758876955898018,
+          49.4224799989474
+        ],
+        [
+          8.758849378122378,
+          49.42247999892548
+        ],
+        [
+          8.758821800346764,
+          49.422479998897025
+        ],
+        [
+          8.758794535387352,
+          49.42247738718156
+        ],
+        [
+          8.75876729227862,
+          49.422474593055135
+        ],
+        [
+          8.758740049173001,
+          49.422471798922224
+        ],
+        [
+          8.758712806070498,
+          49.42246900478297
+        ],
+        [
+          8.758685562971113,
+          49.42246621063725
+        ],
+        [
+          8.758658319874845,
+          49.422463416485144
+        ],
+        [
+          8.758631076781693,
+          49.42246062232662
+        ],
+        [
+          8.758603833691659,
+          49.42245782816167
+        ],
+        [
+          8.75855820152283,
+          49.42245314792102
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4224690",
+    "lon": "8.7587175",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-163.275-186.625"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 8,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.758081037729198,
+          49.42238489964083
+        ],
+        [
+          8.758054234017198,
+          49.42238066743116
+        ],
+        [
+          8.758029470326026,
+          49.422372919733235
+        ],
+        [
+          8.758005089344454,
+          49.422364512535125
+        ],
+        [
+          8.757980708371226,
+          49.422356105331886
+        ],
+        [
+          8.757956327406342,
+          49.42234769812351
+        ],
+        [
+          8.757931946449801,
+          49.42233929090997
+        ],
+        [
+          8.757907565501606,
+          49.42233088369131
+        ],
+        [
+          8.757883184561756,
+          49.42232247646751
+        ],
+        [
+          8.757858803630247,
+          49.42231406923855
+        ],
+        [
+          8.757834422707084,
+          49.422305662004476
+        ],
+        [
+          8.757810041792265,
+          49.422297254765255
+        ],
+        [
+          8.75778566088579,
+          49.42228884752087
+        ],
+        [
+          8.757761279987662,
+          49.422280440271386
+        ],
+        [
+          8.757737080288692,
+          49.422271813323384
+        ],
+        [
+          8.75771289063772,
+          49.42226317419749
+        ],
+        [
+          8.757688700995253,
+          49.42225453506648
+        ],
+        [
+          8.757664511361295,
+          49.42224589593046
+        ],
+        [
+          8.75764032173584,
+          49.422237256789366
+        ],
+        [
+          8.757616132118892,
+          49.422228617643206
+        ],
+        [
+          8.757588918809995,
+          49.422218898597734
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4223050",
+    "lon": "8.7578341",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-222.075-262.325"
+  },
+  {
+    "address": "Am Bächenbuckel, Heidelberg",
+    "capacity": 4,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.757502743402842,
+          49.42218812157816
+        ],
+        [
+          8.757478656757677,
+          49.42217937524852
+        ],
+        [
+          8.757456188762209,
+          49.422168943729076
+        ],
+        [
+          8.757433720776275,
+          49.42215851220526
+        ],
+        [
+          8.757411252799873,
+          49.42214808067707
+        ],
+        [
+          8.757388784833006,
+          49.42213764914452
+        ],
+        [
+          8.757366316875672,
+          49.42212721760762
+        ],
+        [
+          8.75734384892787,
+          49.42211678606632
+        ],
+        [
+          8.757321380989604,
+          49.42210635452065
+        ],
+        [
+          8.75729891306087,
+          49.422095922970634
+        ],
+        [
+          8.757272794105699,
+          49.42208379628825
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4221369",
+    "lon": "8.7573874",
+    "name": "Am Bächenbuckel",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304646354-269.45-289.775"
+  },
+  {
+    "address": "Simferopolstraße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.662399394714042,
+          49.40349561429972
+        ],
+        [
+          8.662382968288368,
+          49.40348116703141
+        ],
+        [
+          8.662366541872322,
+          49.40346671976074
+        ],
+        [
+          8.662334921048545,
+          49.40343890875811
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4034673",
+    "lon": "8.6623672",
+    "name": "Simferopolstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1304253254-36.6-44.45"
+  },
+  {
+    "address": "Kumamotostraße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.661456218544139,
+          49.40393790073995
+        ],
+        [
+          8.661440243974184,
+          49.40392323921225
+        ],
+        [
+          8.66142426941373,
+          49.4039085776823
+        ],
+        [
+          8.66140829486278,
+          49.40389391615012
+        ],
+        [
+          8.661392320321331,
+          49.40387925461573
+        ],
+        [
+          8.661360770629884,
+          49.403850298078765
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4038941",
+    "lon": "8.6614085",
+    "name": "Kumamotostraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303942077-33.025-44.975"
+  },
+  {
+    "address": "Kumamotostraße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.661289684119168,
+          49.403785054204185
+        ],
+        [
+          8.661273709648272,
+          49.403770392653286
+        ],
+        [
+          8.661257735186876,
+          49.403755731100134
+        ],
+        [
+          8.66123297479049,
+          49.40373300568839
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4037590",
+    "lon": "8.6612613",
+    "name": "Kumamotostraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303942077-53.875-60.975"
+  },
+  {
+    "address": "Bautzenstraße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.664460000004349,
+          49.40288999889499
+        ],
+        [
+          8.664443685970431,
+          49.40287549758596
+        ],
+        [
+          8.664417583536132,
+          49.402852295486646
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4028711",
+    "lon": "8.6644388",
+    "name": "Bautzenstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303941809-0.0-5.2"
+  },
+  {
+    "address": "Bautzenstraße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.664156732080704,
+          49.402622711159694
+        ],
+        [
+          8.664140195019732,
+          49.402608317882134
+        ],
+        [
+          8.664123657968418,
+          49.40259392460219
+        ],
+        [
+          8.664107120926763,
+          49.40257953131986
+        ],
+        [
+          8.664090583894765,
+          49.40256513803514
+        ],
+        [
+          8.664061230686759,
+          49.40253958994893
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4025812",
+    "lon": "8.6641090",
+    "name": "Bautzenstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303941809-36.975-48.525"
+  },
+  {
+    "address": "Bautzenstraße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.664031877509178,
+          49.4025140418552
+        ],
+        [
+          8.664015340521123,
+          49.40249964855967
+        ],
+        [
+          8.663998803542729,
+          49.402485255261745
+        ],
+        [
+          8.66398226657399,
+          49.40247086196146
+        ],
+        [
+          8.663950846359997,
+          49.402443514684336
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.4024788",
+    "lon": "8.6639914",
+    "name": "Bautzenstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303941809-52.075-61.875"
+  },
+  {
+    "address": "Einsteinstraße, Heidelberg",
+    "capacity": 2,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.672725936261287,
+          49.39995095639202
+        ],
+        [
+          8.672709219229198,
+          49.399936652366705
+        ],
+        [
+          8.672692502206809,
+          49.39992234833891
+        ],
+        [
+          8.672675785194123,
+          49.39990804430871
+        ],
+        [
+          8.67265906819114,
+          49.39989374027606
+        ],
+        [
+          8.67262605213875,
+          49.399865489804476
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3999082",
+    "lon": "8.6726760",
+    "name": "Einsteinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303934532-12.45-24.4"
+  },
+  {
+    "address": "Einsteinstraße, Heidelberg",
+    "capacity": 1,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.672477480371334,
+          49.39973836256492
+        ],
+        [
+          8.672460763483443,
+          49.399724058503445
+        ],
+        [
+          8.672444046605255,
+          49.39970975443951
+        ],
+        [
+          8.67242628493281,
+          49.39969455636894
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3997165",
+    "lon": "8.6724519",
+    "name": "Einsteinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303934532-42.175-48.3"
+  },
+  {
+    "address": "Einsteinstraße, Heidelberg",
+    "capacity": 3,
+    "description": "",
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          8.672404970940335,
+          49.39967631868062
+        ],
+        [
+          8.672388254094528,
+          49.399662014608595
+        ],
+        [
+          8.672371537258426,
+          49.39964771053411
+        ],
+        [
+          8.672354820432021,
+          49.39963340645724
+        ],
+        [
+          8.672338103615322,
+          49.399619102377905
+        ],
+        [
+          8.672321386808324,
+          49.39960479829614
+        ],
+        [
+          8.672304670011028,
+          49.39959049421193
+        ],
+        [
+          8.67227123644554,
+          49.39956188603625
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.3996191",
+    "lon": "8.6723381",
+    "name": "Einsteinstraße",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "side": "RIGHT",
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "-1303934532-50.85-66.85"
+  }
+]
