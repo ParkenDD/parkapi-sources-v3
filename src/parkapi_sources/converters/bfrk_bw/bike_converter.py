@@ -7,11 +7,11 @@ from validataclass.validators import DataclassValidator
 
 from parkapi_sources.models import SourceInfo
 
-from .base_converter import BfrkBasePushConverter
+from .base_converter import BfrkBasePullConverter
 from .bike_models import BfrkBikeInput
 
 
-class BfrkBwBikePushConverter(BfrkBasePushConverter):
+class BfrkBwBikePullConverter(BfrkBasePullConverter):
     bfrk_validator = DataclassValidator(BfrkBikeInput)
     source_url_config_key = 'PARK_API_BFRK_BW_BIKE_OVERRIDE_SOURCE_URL'
 
