@@ -159,7 +159,7 @@ def bfrk_bike_pull_converter_unconfirmed(
 class BfrkBikePullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(
-        bfrk_bike_pull_converter_unconfirmed: BfrkBwBikePullConverter,
+        bfrk_bike_pull_converter: BfrkBwBikePullConverter,
         requests_mock: Mocker,
         snapshot: SnapshotAssertion,
     ):
@@ -180,7 +180,7 @@ class BfrkBikePullConverterTest:
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_static_parking_sites_unconformed(
+    def test_get_static_parking_sites_unconfirmed(
         bfrk_bike_pull_converter_unconfirmed: BfrkBwBikePullConverter,
         requests_mock: Mocker,
         snapshot: SnapshotAssertion,
