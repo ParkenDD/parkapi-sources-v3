@@ -10,11 +10,11 @@ from parkapi_sources.converters.base_converter.pull import ParkingSpotPullConver
 from parkapi_sources.exceptions import ImportParkingSpotException
 from parkapi_sources.models import SourceInfo, StaticParkingSpotInput
 
-from .base_converter import BfrkBasePushConverter
+from .base_converter import BfrkBasePullConverter
 from .car_models import BfrkCarInput
 
 
-class BfrkBwCarPullConverter(BfrkBasePushConverter, ParkingSpotPullConverter):
+class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
     bfrk_validator = DataclassValidator(BfrkCarInput)
     source_url_config_key = 'PARK_API_BFRK_BW_CAR_OVERRIDE_SOURCE_URL'
 

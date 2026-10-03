@@ -138,7 +138,7 @@ class FreiburgParkAndRideStaticPullConverter(FreiburgBasePullConverter):
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Freiburg',
         attribution_license='dl-de/by-2-0',
-        has_realtime_data=True,
+        has_realtime_data=False,
         public_url='https://www.freiburg.de/pb/890766.html',
     )
 

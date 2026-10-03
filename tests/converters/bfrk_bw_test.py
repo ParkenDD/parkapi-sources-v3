@@ -9,7 +9,7 @@ from unittest.mock import Mock
 import pytest
 from requests_mock import Mocker
 
-from parkapi_sources.converters.bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPullConverter
+from parkapi_sources.converters.bfrk_bw import BfrkBwBikePullConverter, BfrkBwCarPullConverter
 from parkapi_sources.util import RequestHelper
 from tests.converters.helper import validate_static_parking_site_inputs, validate_static_parking_spot_inputs
 
@@ -33,14 +33,16 @@ def mocked_bfrk_bw_config_helper_no_filter(mocked_config_helper: Mock):
 
 @pytest.fixture
 def bfrk_car_pull_converter(
-    mocked_bfrk_bw_config_helper: Mock, request_helper: RequestHelper
+    mocked_bfrk_bw_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> BfrkBwCarPullConverter:
     return BfrkBwCarPullConverter(config_helper=mocked_bfrk_bw_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture
 def bfrk_car_pull_converter_unconfirmed(
-    mocked_bfrk_bw_config_helper_no_filter: Mock, request_helper: RequestHelper
+    mocked_bfrk_bw_config_helper_no_filter: Mock,
+    request_helper: RequestHelper,
 ) -> BfrkBwCarPullConverter:
     return BfrkBwCarPullConverter(config_helper=mocked_bfrk_bw_config_helper_no_filter, request_helper=request_helper)
 
@@ -66,7 +68,8 @@ class BfrkCarPullConverterTest:
 
     @staticmethod
     def test_get_static_parking_sites_unconfirmed(
-        bfrk_car_pull_converter_unconfirmed: BfrkBwCarPullConverter, requests_mock: Mocker
+        bfrk_car_pull_converter_unconfirmed: BfrkBwCarPullConverter,
+        requests_mock: Mocker,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_car.json')
         with json_path.open() as json_file:
@@ -105,7 +108,8 @@ class BfrkCarPullConverterTest:
 
     @staticmethod
     def test_get_static_parking_spots_unconfirmed(
-        bfrk_car_pull_converter_unconfirmed: BfrkBwCarPullConverter, requests_mock: Mocker
+        bfrk_car_pull_converter_unconfirmed: BfrkBwCarPullConverter,
+        requests_mock: Mocker,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_car.json')
         with json_path.open() as json_file:
@@ -126,23 +130,24 @@ class BfrkCarPullConverterTest:
 
 
 @pytest.fixture
-def bfrk_bike_push_converter(
-    mocked_bfrk_bw_config_helper: Mock, request_helper: RequestHelper
-) -> BfrkBwBikePushConverter:
-    return BfrkBwBikePushConverter(config_helper=mocked_bfrk_bw_config_helper, request_helper=request_helper)
+def bfrk_bike_pull_converter(
+    mocked_bfrk_bw_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> BfrkBwBikePullConverter:
+    return BfrkBwBikePullConverter(config_helper=mocked_bfrk_bw_config_helper, request_helper=request_helper)
 
 
 @pytest.fixture
-def bfrk_bike_push_converter_unconfirmed(
+def bfrk_bike_pull_converter_unconfirmed(
     mocked_bfrk_bw_config_helper_no_filter: Mock,
     request_helper: RequestHelper,
-) -> BfrkBwBikePushConverter:
-    return BfrkBwBikePushConverter(config_helper=mocked_bfrk_bw_config_helper_no_filter, request_helper=request_helper)
+) -> BfrkBwBikePullConverter:
+    return BfrkBwBikePullConverter(config_helper=mocked_bfrk_bw_config_helper_no_filter, request_helper=request_helper)
 
 
 class BfrkBikePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(bfrk_bike_push_converter: BfrkBwBikePushConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(bfrk_bike_pull_converter: BfrkBwBikePullConverter, requests_mock: Mocker):
         json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_bike.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
@@ -152,7 +157,7 @@ class BfrkBikePullConverterTest:
             text=json_data,
         )
 
-        static_parking_site_inputs, import_parking_site_exceptions = bfrk_bike_push_converter.get_static_parking_sites()
+        static_parking_site_inputs, import_parking_site_exceptions = bfrk_bike_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 714
         assert len(import_parking_site_exceptions) == 79
@@ -161,7 +166,8 @@ class BfrkBikePullConverterTest:
 
     @staticmethod
     def test_get_static_parking_sites_unconformed(
-        bfrk_bike_push_converter_unconfirmed: BfrkBwBikePushConverter, requests_mock: Mocker
+        bfrk_bike_pull_converter_unconfirmed: BfrkBwBikePullConverter,
+        requests_mock: Mocker,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_bike.json')
         with json_path.open() as json_file:
@@ -173,7 +179,7 @@ class BfrkBikePullConverterTest:
         )
 
         static_parking_site_inputs, import_parking_site_exceptions = (
-            bfrk_bike_push_converter_unconfirmed.get_static_parking_sites()
+            bfrk_bike_pull_converter_unconfirmed.get_static_parking_sites()
         )
 
         assert len(static_parking_site_inputs) == 2922
