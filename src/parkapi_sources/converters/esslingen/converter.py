@@ -20,6 +20,7 @@ class EsslingenPushConverter(JsonConverter, ParkingSiteBaseConverter):
         uid='esslingen',
         name='Esslingen',
         has_realtime_data=False,
+        public_url='https://www.esslingen.de/mobilitaet-und-klimaschutz/parken',
     )
     geojson_validator = DataclassValidator(GeojsonInput)
     esslingen_parking_site_validator = DataclassValidator(EsslingenParkingSiteFeatureInput)

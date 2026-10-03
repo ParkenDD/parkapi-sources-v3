@@ -21,6 +21,7 @@ class LadenburgParkraumcheckPushConverter(JsonConverter, ParkingSiteBaseConverte
         uid='ladenburg_parkraumcheck',
         name='Ladenburg: Parkraumcheck',
         has_realtime_data=False,
+        public_url='https://www.ladenburg.de/de/Entdecken-Geniessen/Parkplaetze',
     )
     geojson_validator = DataclassValidator(GeojsonInput)
     ladenburg_parkraumcheck_validator = DataclassValidator(LadenburgParkraumcheckParkingSiteInput)

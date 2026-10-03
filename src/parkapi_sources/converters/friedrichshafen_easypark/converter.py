@@ -25,6 +25,7 @@ class FriedrichshafenEasyParkPushConverter(CsvConverter, ParkingSiteBaseConverte
         uid='friedrichshafen_easypark',
         name='Friedrichshafen EasyPark',
         has_realtime_data=False,
+        public_url='https://www.friedrichshafen.de/wirtschaft-mobilitaet/anreise-parken/parken/',
     )
 
     header_mapping = {

@@ -22,6 +22,7 @@ class HeidelbergEasyParkPullConverter(ParkingSitePullConverter):
         source_url='https://ckan.datenplattform.heidelberg.de/de/dataset/fecde4f4-41c0-4c3b-b763-41a84dad39f8/resource'
         '/12e9e778-880a-49a9-90cc-2fbb615f2da6/download/inventory_data_offset-1.json',
         has_realtime_data=False,
+        public_url='https://ckan.datenplattform.heidelberg.de/de/dataset/on-street-parkplatze',
     )
     geojson_validator = DataclassValidator(GeojsonInput)
     heidelberg_parking_site_validator = DataclassValidator(HeidelbergEasyParkParkingSiteInput)

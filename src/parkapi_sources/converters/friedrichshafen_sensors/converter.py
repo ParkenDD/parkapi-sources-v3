@@ -29,6 +29,7 @@ class FriedrichshafenSensorsPullConverter(
         name='Stadt Friedrichshafen: Sensors',
         timezone='Europe/Berlin',
         has_realtime_data=True,
+        public_url='https://www.friedrichshafen.de/wirtschaft-mobilitaet/anreise-parken/parken/',
     )
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:

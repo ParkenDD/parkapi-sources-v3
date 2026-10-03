@@ -23,6 +23,7 @@ class VelobrixPullConverter(ParkingSitePullConverter):
         source_url='https://admin.velobrix.de/tenantapi/api/v1/locations',
         timezone='Europe/Berlin',
         has_realtime_data=True,
+        public_url='https://www.velobrix.de/',
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
