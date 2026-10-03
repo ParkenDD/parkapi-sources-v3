@@ -7,6 +7,7 @@ from unittest.mock import Mock
 
 import pytest
 from openpyxl.reader.excel import load_workbook
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import KelternPushConverter
 from parkapi_sources.util import RequestHelper
@@ -20,7 +21,7 @@ def keltern_push_converter(mocked_config_helper: Mock, request_helper: RequestHe
 
 class PamBwPushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(keltern_push_converter: KelternPushConverter):
+    def test_get_static_parking_sites(keltern_push_converter: KelternPushConverter, snapshot: SnapshotAssertion):
         workbook = load_workbook(filename=str(get_data_path('keltern.xlsx').absolute()))
 
         static_parking_site_inputs, import_parking_site_exceptions = keltern_push_converter.handle_xlsx(workbook)
@@ -28,4 +29,4 @@ class PamBwPushConverterTest:
         assert len(static_parking_site_inputs) == 127
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

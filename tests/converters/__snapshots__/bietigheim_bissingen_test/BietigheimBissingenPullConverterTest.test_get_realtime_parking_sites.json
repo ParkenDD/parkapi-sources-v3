@@ -1,0 +1,114 @@
+[
+  {
+    "realtime_capacity": 106,
+    "realtime_data_updated_at": "2025-02-27T10:17:47Z",
+    "realtime_free_capacity": 25,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Mühlwiesenstr."
+  },
+  {
+    "realtime_capacity": 56,
+    "realtime_data_updated_at": "2025-02-27T10:15:40Z",
+    "realtime_free_capacity": 25,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkhaus Kronenzentrum"
+  },
+  {
+    "realtime_capacity": 52,
+    "realtime_data_updated_at": "2025-02-27T10:14:03Z",
+    "realtime_free_capacity": 8,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Kronenzentrum"
+  },
+  {
+    "realtime_capacity": 137,
+    "realtime_data_updated_at": "2025-02-27T13:44:48Z",
+    "realtime_free_capacity": 92,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Farbstr."
+  },
+  {
+    "realtime_capacity": 100,
+    "realtime_data_updated_at": "2025-02-17T02:19:19Z",
+    "realtime_free_capacity": 100,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "virtuelles Parkhaus am Standort KI_1-2"
+  },
+  {
+    "realtime_capacity": 98,
+    "realtime_data_updated_at": "2025-02-27T13:44:48Z",
+    "realtime_free_capacity": 34,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkhaus Turmstr."
+  },
+  {
+    "realtime_capacity": 84,
+    "realtime_data_updated_at": "2025-02-27T13:44:48Z",
+    "realtime_free_capacity": 38,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkhaus Farbstr."
+  },
+  {
+    "realtime_capacity": 32,
+    "realtime_data_updated_at": "2025-02-27T13:43:49Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Löchgauer Str."
+  },
+  {
+    "realtime_capacity": 50,
+    "realtime_data_updated_at": "2025-02-27T13:44:19Z",
+    "realtime_free_capacity": 11,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Holzgartenstr. 1"
+  },
+  {
+    "realtime_capacity": 572,
+    "realtime_data_updated_at": "2025-02-27T10:10:46Z",
+    "realtime_free_capacity": 251,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkhaus Kaufland"
+  },
+  {
+    "realtime_capacity": 71,
+    "realtime_data_updated_at": "2025-02-27T13:43:19Z",
+    "realtime_free_capacity": 29,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "Parkplatz Am Japangarten"
+  },
+  {
+    "realtime_capacity": 51,
+    "realtime_data_updated_at": "2025-02-27T13:37:47Z",
+    "realtime_free_capacity": 14,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Holzgartenstr. 3"
+  },
+  {
+    "realtime_capacity": 67,
+    "realtime_data_updated_at": "2025-02-27T13:44:19Z",
+    "realtime_free_capacity": 4,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkhaus Löchgauer Str."
+  },
+  {
+    "realtime_capacity": 64,
+    "realtime_data_updated_at": "2025-02-27T13:44:48Z",
+    "realtime_free_capacity": 18,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Parkplatz Holzgartenstr. 2"
+  }
+]

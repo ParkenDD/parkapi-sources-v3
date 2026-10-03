@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import AalenPullConverter
 from parkapi_sources.util import RequestHelper
@@ -37,16 +38,20 @@ def aalen_request_mocked_json(requests_mock: Mocker, filename: str):
 
 class AalenPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(aalen_pull_converter: AalenPullConverter):
+    def test_get_static_parking_sites(aalen_pull_converter: AalenPullConverter, snapshot: SnapshotAssertion):
         static_parking_site_inputs, import_parking_site_exceptions = aalen_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 6
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_realtime_parking_sites(aalen_pull_converter: AalenPullConverter, requests_mock: Mocker):
+    def test_get_realtime_parking_sites(
+        aalen_pull_converter: AalenPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         aalen_request_mocked_json(requests_mock, 'aalen.json')
 
         realtime_parking_site_inputs, import_parking_site_exceptions = aalen_pull_converter.get_realtime_parking_sites()
@@ -54,4 +59,4 @@ class AalenPullConverterTest:
         assert len(realtime_parking_site_inputs) == 6
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

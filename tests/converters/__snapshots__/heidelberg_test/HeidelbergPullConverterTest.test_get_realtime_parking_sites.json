@@ -1,0 +1,662 @@
+[
+  {
+    "realtime_capacity": 39,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 1,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P00"
+  },
+  {
+    "realtime_capacity": 528,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 143,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 176,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P01"
+  },
+  {
+    "realtime_capacity": 140,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 4,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P03"
+  },
+  {
+    "realtime_capacity": 440,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 218,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 11,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 32,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P04"
+  },
+  {
+    "realtime_capacity": 129,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 7,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 35,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P05"
+  },
+  {
+    "realtime_capacity": 185,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 3,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 3,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 25,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P06"
+  },
+  {
+    "realtime_capacity": 486,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 245,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 3,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 4,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 6,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P07"
+  },
+  {
+    "realtime_capacity": 300,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 4,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 31,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P08"
+  },
+  {
+    "realtime_capacity": 310,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 8,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 6,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 60,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P09"
+  },
+  {
+    "realtime_capacity": 186,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 2,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 3,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 25,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P10"
+  },
+  {
+    "realtime_capacity": 155,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 10,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P11"
+  },
+  {
+    "realtime_capacity": 142,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 3,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 27,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P12"
+  },
+  {
+    "realtime_capacity": 279,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 5,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 25,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P13"
+  },
+  {
+    "realtime_capacity": 190,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 132,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 5,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 29,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P14"
+  },
+  {
+    "realtime_capacity": 150,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 37,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 5,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 28,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P15"
+  },
+  {
+    "realtime_capacity": 138,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 13,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 7,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 22,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P16"
+  },
+  {
+    "realtime_capacity": 34,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 4,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P17"
+  },
+  {
+    "realtime_capacity": 80,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 57,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 4,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P18"
+  },
+  {
+    "realtime_capacity": 160,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 104,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 2,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 20,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P25"
+  },
+  {
+    "realtime_capacity": 55,
+    "realtime_data_updated_at": "2024-06-08T13:25:00Z",
+    "realtime_free_capacity": 55,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "uid": "urn:ngsiv2:OffStreetParking:P26"
+  }
+]

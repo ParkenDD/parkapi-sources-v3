@@ -1,0 +1,30 @@
+[
+  {
+    "realtime_data_updated_at": "2025-02-25T12:20:03Z",
+    "realtime_free_capacity": 60,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "herrenbergaltstadtgarage"
+  },
+  {
+    "realtime_data_updated_at": "2025-02-25T12:20:03Z",
+    "realtime_free_capacity": 82,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "herrenbergbronntor"
+  },
+  {
+    "realtime_data_updated_at": "2025-02-25T12:20:03Z",
+    "realtime_free_capacity": 16,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "herrenbergvolksbank"
+  },
+  {
+    "realtime_data_updated_at": "2025-02-25T12:20:03Z",
+    "realtime_free_capacity": 5,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "herrenbergwohnmobilhafenherrenberg"
+  }
+]

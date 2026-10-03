@@ -7,6 +7,7 @@ from pathlib import Path
 from unittest.mock import Mock
 
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import FreiburgDisabledSensorsPullConverter, FreiburgPullConverter
 from parkapi_sources.models import ExternalIdentifierInput
@@ -18,6 +19,7 @@ def test_get_static_parking_sites_patched(
     mocked_config_helper: Mock,
     request_helper: RequestHelper,
     requests_mock: Mocker,
+    snapshot: SnapshotAssertion,
 ):
     config = {
         'PARK_API_PARKING_SITE_PATCH_DIR': Path(Path(__file__).parent, 'data', 'patches', 'parking_sites'),
@@ -48,13 +50,14 @@ def test_get_static_parking_sites_patched(
     assert static_parking_site_inputs[0].name == 'New name'
     assert isinstance(static_parking_site_inputs[0].external_identifiers[0], ExternalIdentifierInput)
 
-    validate_static_parking_site_inputs(static_parking_site_inputs)
+    validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
 
 def test_get_static_parking_spots(
     request_helper: RequestHelper,
     mocked_config_helper: Mock,
     requests_mock: Mocker,
+    snapshot: SnapshotAssertion,
 ):
     config = {'PARK_API_PARKING_SPOT_PATCH_DIR': Path(Path(__file__).parent, 'data', 'patches', 'parking_spots')}
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
@@ -82,4 +85,4 @@ def test_get_static_parking_spots(
     assert static_parking_spot_inputs[0].name == 'New name'
     assert isinstance(static_parking_spot_inputs[0].external_identifiers[0], ExternalIdentifierInput)
 
-    validate_static_parking_spot_inputs(static_parking_spot_inputs)
+    validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)

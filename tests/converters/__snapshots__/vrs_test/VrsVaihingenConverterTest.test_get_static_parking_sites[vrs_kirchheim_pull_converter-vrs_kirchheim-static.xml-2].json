@@ -1,0 +1,38 @@
+[
+  {
+    "capacity": 137,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.03938458",
+    "lon": "9.15068356",
+    "name": "P+R Kirchheim am Neckar Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-30T12:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1445"
+  },
+  {
+    "capacity": 16,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.04038955",
+    "lon": "9.14972843",
+    "name": "P+R Kirchheim am Neckar West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-30T12:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "2143"
+  }
+]

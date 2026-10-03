@@ -1,0 +1,2576 @@
+[
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-01"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-02"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-03"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-04"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-05"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-06"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-07"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-08"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-09"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-10"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-11"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-12"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-13"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-14"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-15"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-16"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-17"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-18"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-19"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4011346",
+    "lon": "9.9901597",
+    "name": "Parkhaus Salzstadel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-s-eladen-1-20"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-01"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-02"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-03"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-04"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-05"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-06"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-07"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-08"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-09"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-10"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-11"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-12"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-13"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-14"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-15"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-16"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-17"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-18"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-19"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3965828",
+    "lon": "9.9882761",
+    "name": "Parkhaus Fischerviertel",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-f-eladen-0-20"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c01-19296d"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c02-1921b0"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c03-192985"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c04-192995"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c05-1921cd"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c06-1921dd"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c07-192968"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c08-1921da"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c09-192980"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c10-1921bc"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c11-192996"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c12-19298a"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c13-1921bb"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c14-1921d4"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c15-192987"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.4016318",
+    "lon": "10.0024306",
+    "name": "Congresscentrum Nord",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "Mo-Fr 06:30-22:15; Sa 08:30-22:15",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-c16-19297d"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r01-192851"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r02-19284f"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r03-192839"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r04-192835"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r05-192837"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r06-192838"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r07-192832"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r08-192834"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r09-192833"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r10-192836"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r11-192830"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r12-192831"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r13-19283c"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r14-19283d"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r15-19283b"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r16-19283a"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r17-192827"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r18-19283e"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r19-19283f"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r20-192840"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r21-19282f"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r22-19282e"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r23-192841"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r24-19282c"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r25-192842"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r26-19282b"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r27-19282d"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r28-19282a"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r29-192829"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r30-192825"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r31-192826"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3972484",
+    "lon": "9.9909304",
+    "name": "Parkhaus am Rathaus",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-r32-192828"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-006"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-007"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-008"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-009"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-010"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-011"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-012"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-013"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-014"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-015"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-016"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-017"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-018"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-019"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-020"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-o-1-021"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-054"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-055"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-056"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-057"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-058"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-059"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-060"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-061"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-062"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-063"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-064"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-065"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-066"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-067"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-068"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-elade-w-1-069"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-1-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-1-002"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-2-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-2-002"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-3-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-3-002"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-4-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-o-4-002"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-1-003"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-1-004"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-2-003"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-2-004"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-3-003"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-3-004"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-4-003"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-familie-w-4-004"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-o-1-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-o-2-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-o-3-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-o-4-001"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-w-2-002"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-w-3-002"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.3982298",
+    "lon": "9.9842605",
+    "name": "Parkhaus am Bahnhof",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": "24/7",
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "pbg-b-handicap-w-4-002"
+  }
+]
