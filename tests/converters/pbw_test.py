@@ -11,6 +11,7 @@ from unittest.mock import ANY, Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters.pbw import PbwPullConverter
 from parkapi_sources.models.enums import ParkingSiteType, PurposeType
@@ -38,7 +39,11 @@ def pbw_pull_converter(pbw_config_helper: Mock, request_helper: RequestHelper) -
 
 class PbwPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(pbw_pull_converter: PbwPullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(
+        pbw_pull_converter: PbwPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         def generate_response(request: 'Request', context: 'Context'):
             request_type = request.qs['type'][0]
             if request_type == 'catalog-city':
@@ -63,7 +68,7 @@ class PbwPullConverterTest:
         assert len(static_parking_site_inputs) == 101
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
         data = {key: value for key, value in static_parking_site_inputs[0].to_dict().items() if value is not None}
 
@@ -88,7 +93,11 @@ class PbwPullConverterTest:
         }
 
     @staticmethod
-    def test_get_realtime_parking_sites(pbw_pull_converter: PbwPullConverter, requests_mock: Mocker):
+    def test_get_realtime_parking_sites(
+        pbw_pull_converter: PbwPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         json_path = Path(Path(__file__).parent, 'data', 'pbw', 'object-dynamic-all.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
@@ -103,4 +112,4 @@ class PbwPullConverterTest:
         assert len(realtime_parking_site_inputs) == 101
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

@@ -1,0 +1,1952 @@
+[
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9284917",
+    "lon": "11.5859544",
+    "name": "Eichplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "185"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9285518",
+    "lon": "11.5869752",
+    "name": "Rathausparkplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "186"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9209251",
+    "lon": "11.5902682",
+    "name": "Seidelparkplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "194"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9343180",
+    "lon": "11.5926191",
+    "name": "Wiesenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7748"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9334972",
+    "lon": "11.5803135",
+    "name": "Lessingstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "452"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9257698",
+    "lon": "11.5884964",
+    "name": "Busbahnhof-Knebelstraße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "384"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9303244",
+    "lon": "11.5911918",
+    "name": "Am Anger 15 (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "399"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9261110",
+    "lon": "11.5893282",
+    "name": "Paradiesstraße (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "397"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9020444",
+    "lon": "11.5731462",
+    "name": "Friedrich-Zucker-Straße (Columbus-Center)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1732"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9305915",
+    "lon": "11.5873034",
+    "name": "Bibliotheksplatz (3)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "379"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9317563",
+    "lon": "11.5936620",
+    "name": "Schillerpassage",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "196"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9358604",
+    "lon": "11.5912887",
+    "name": "Ärztehaus Nollendorfer Straße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "7746"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9262444",
+    "lon": "11.5838650",
+    "name": "Engelplatz (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "382"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9240683",
+    "lon": "11.5833884",
+    "name": "Erbertstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "191"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9143701",
+    "lon": "11.5887119",
+    "name": "Am Stadion",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1742"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8857965",
+    "lon": "11.6077407",
+    "name": "Theobald-Renner-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1718"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9295800",
+    "lon": "11.5771321",
+    "name": "Ziegelmühlenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "178"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9186823",
+    "lon": "11.5486197",
+    "name": "Otto-Schott-Platz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1749"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9263140",
+    "lon": "11.5883785",
+    "name": "Grietgasse",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "193"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9191773",
+    "lon": "11.5707393",
+    "name": "Fachhochschule Max v. Rohr-Straße (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "408"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8833732",
+    "lon": "11.5937517",
+    "name": "Bahnhof Jena-Göschwitz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1715"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9266279",
+    "lon": "11.5896010",
+    "name": "Commerzbank",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "198"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9301423",
+    "lon": "11.5779086",
+    "name": "Semmelweisstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "177"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9309823",
+    "lon": "11.5798588",
+    "name": "Ärztehaus Wagnergasse (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "391"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9313776",
+    "lon": "11.5921389",
+    "name": "Am Anger 26 (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "400"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9307077",
+    "lon": "11.5804269",
+    "name": "Wagnergasse/Quergasse",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7742"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9399148",
+    "lon": "11.5881904",
+    "name": "Nordfriedhof",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1758"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9337781",
+    "lon": "11.5929826",
+    "name": "Wiesenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "3436"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9263563",
+    "lon": "11.5825837",
+    "name": "Postcarrè",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1759"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9248121",
+    "lon": "11.5880217",
+    "name": "ICE-Bahnhof Jena-Paradies",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "189"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9428072",
+    "lon": "11.5947723",
+    "name": "Hölleinplatz (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "404"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9249689",
+    "lon": "11.5858560",
+    "name": "Knebelstraße (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "695"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8838056",
+    "lon": "11.6189426",
+    "name": "Erlanger-Allee (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "365"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9263166",
+    "lon": "11.5830281",
+    "name": "Postcarrè (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "401"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9364962",
+    "lon": "11.5921157",
+    "name": "Spitzweidenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "181"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8854582",
+    "lon": "11.6197911",
+    "name": "Universitätklinik (4)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "367"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9295524",
+    "lon": "11.5826014",
+    "name": "Johannisplatz (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "392"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9230052",
+    "lon": "11.5785922",
+    "name": "Westbahnhof (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "398"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9151345",
+    "lon": "11.6398263",
+    "name": "Am Steinkreuz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1735"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8822673",
+    "lon": "11.6198835",
+    "name": "Salvador-Allende-Platz (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "366"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9162733",
+    "lon": "11.5873064",
+    "name": "Roland-Ducke",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1739"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9313140",
+    "lon": "11.5914245",
+    "name": "Am Anger",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "172"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9294745",
+    "lon": "11.5887483",
+    "name": "Schlossgasse",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "184"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9370793",
+    "lon": "11.5924452",
+    "name": "Saalbahnhof (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "403"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8984542",
+    "lon": "11.5732716",
+    "name": "Hermann-Pistor-Straße (Win-Center)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1733"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9284293",
+    "lon": "11.5842361",
+    "name": "Neue Mitte",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "202"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9231280",
+    "lon": "11.5784177",
+    "name": "Westbahnhof",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "195"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9195931",
+    "lon": "11.5908864",
+    "name": "Seidelstr.",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7738"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8836966",
+    "lon": "11.6066954",
+    "name": "Karl-Marx-Allee (Kaufland)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1721"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9318379",
+    "lon": "11.5840159",
+    "name": "Philosophenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "179"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9143701",
+    "lon": "11.5887119",
+    "name": "Am Stadion",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1738"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9351533",
+    "lon": "11.5970098",
+    "name": "Am Gries",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1753"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9314605",
+    "lon": "11.5778364",
+    "name": "August-Bebel-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "175"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9006186",
+    "lon": "11.5720622",
+    "name": "Friedrich-Zucker-Straße (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "370"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8829788",
+    "lon": "11.6040383",
+    "name": "Karl-Marx-Allee (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "362"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9256737",
+    "lon": "11.5862665",
+    "name": "Am Volksbad (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "162"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9326429",
+    "lon": "11.5885434",
+    "name": "Sophienstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "180"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9280393",
+    "lon": "11.5869209",
+    "name": "Rathausgasse (5)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "390"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9311187",
+    "lon": "11.5884229",
+    "name": "Bibliotheksweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1761"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9002404",
+    "lon": "11.5931282",
+    "name": "Keßlerstraße (Burgaupark)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1730"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9289891",
+    "lon": "11.5869610",
+    "name": "Weigelstraße (4)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "341"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9211517",
+    "lon": "11.5698679",
+    "name": "Tatzendprommenade (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "409"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9281531",
+    "lon": "11.5857187",
+    "name": "Eichplatz (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "389"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9264398",
+    "lon": "11.5854691",
+    "name": "Holzmarktpassage",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "197"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9263283",
+    "lon": "11.5841456",
+    "name": "Engelplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "187"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9248468",
+    "lon": "11.5822733",
+    "name": "Ernst-Haeckel-Platz (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "386"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8980793",
+    "lon": "11.5737034",
+    "name": "WIN Center (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "369"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8854481",
+    "lon": "11.6082192",
+    "name": "Theobald-Renner-Straße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "7744"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9256770",
+    "lon": "11.5864388",
+    "name": "Am Volksbad",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1745"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9294319",
+    "lon": "11.5891073",
+    "name": "Schlossgasse (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "395"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9360577",
+    "lon": "11.5882598",
+    "name": "Ärztehaus Nollendorfer Straße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "406"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8844639",
+    "lon": "11.6230816",
+    "name": "Am Klinikum",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1711"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9252559",
+    "lon": "11.5821545",
+    "name": "Ernst-Haeckel-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "192"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9206212",
+    "lon": "11.5927833",
+    "name": "Jenertal",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7736"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9294014",
+    "lon": "11.5884753",
+    "name": "Schlossgasse (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "394"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9254474",
+    "lon": "11.5821961",
+    "name": "Ärztehaus Westbahnhofstraße (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "387"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9259761",
+    "lon": "11.5882458",
+    "name": "Busbahnhof",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "207"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9321678",
+    "lon": "11.5883415",
+    "name": "Käthe-Kollwitz-Straße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "402"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9281218",
+    "lon": "11.5802949",
+    "name": "Carl-Zeiss-Platz (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "380"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9215206",
+    "lon": "11.5724244",
+    "name": "Carl-Pulfrich-Straße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "410"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8980968",
+    "lon": "11.5828730",
+    "name": "GalaxSea Freizeitbad (4)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "368"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9318454",
+    "lon": "11.5773070",
+    "name": "Stoystraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "174"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9191700",
+    "lon": "11.5687485",
+    "name": "Fachhochschule Lichtenhainer Oberweg (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "407"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9269487",
+    "lon": "11.5816568",
+    "name": "Goethe Galerie",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "200"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9212134",
+    "lon": "11.5706381",
+    "name": "Max-Grossmann-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1743"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9359243",
+    "lon": "11.5906549",
+    "name": "Nollendorfer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1751"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9023732",
+    "lon": "11.5722441",
+    "name": "Columbus Center (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "371"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9234295",
+    "lon": "11.5914138",
+    "name": "Jenaplan",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7732"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9233503",
+    "lon": "11.6272355",
+    "name": "Windberg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7740"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8872399",
+    "lon": "11.6080932",
+    "name": "Theobald-Renner-Straße (1)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "364"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9276900",
+    "lon": "11.5855907",
+    "name": "City-Carré (C&A)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "199"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8874338",
+    "lon": "11.6137899",
+    "name": "Platanenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1719"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9359270",
+    "lon": "11.6040562",
+    "name": "Jenzigweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1756"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8858947",
+    "lon": "11.6297881",
+    "name": "Drackendorf Center",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1713"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9290027",
+    "lon": "11.5830780",
+    "name": "Krautgasse",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "201"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9306680",
+    "lon": "11.5766604",
+    "name": "Lassallestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "176"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9262925",
+    "lon": "11.5786374",
+    "name": "Kinderklinik Forstweg (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "388"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9316831",
+    "lon": "11.5875195",
+    "name": "Planetarium",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "173"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9296844",
+    "lon": "11.5806278",
+    "name": "Bachstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "188"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9217089",
+    "lon": "11.5917463",
+    "name": "Wöllnitzer Str.",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7734"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8832466",
+    "lon": "11.6034677",
+    "name": "Schwimmhalle (4)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "411"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.9247648",
+    "lon": "11.5878167",
+    "name": "Paradiesbahnhof (2)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "383"
+  },
+  {
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "50.8916602",
+    "lon": "11.6163770",
+    "name": "Lobdeburgweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1709"
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "realtime_data_updated_at": "2022-02-11T13:16:01Z",
+    "realtime_free_capacity": 245,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717289"
+  },
+  {
+    "realtime_data_updated_at": "2023-01-07T01:39:00Z",
+    "realtime_free_capacity": 229,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717312"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:08Z",
+    "realtime_free_capacity": 457,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "12717253"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:11Z",
+    "realtime_free_capacity": 451,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717315"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:13Z",
+    "realtime_free_capacity": 528,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717375"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 30,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717384"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:44:51Z",
+    "realtime_free_capacity": 579,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "12717229"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 83,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717447"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 70,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717250"
+  },
+  {
+    "realtime_data_updated_at": "2022-07-27T16:10:00Z",
+    "realtime_free_capacity": 17,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717432"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:06Z",
+    "realtime_free_capacity": 141,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "12717226"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:05:00Z",
+    "realtime_free_capacity": 58,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717411"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 5,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717223"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:05Z",
+    "realtime_free_capacity": 305,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717414"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:14Z",
+    "realtime_free_capacity": 202,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717408"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 217,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717429"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:06:00Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717363"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:15Z",
+    "realtime_free_capacity": 483,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12718752"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-18T08:04:00Z",
+    "realtime_free_capacity": 71,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717426"
+  },
+  {
+    "realtime_data_updated_at": "1970-01-01T00:00:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717450"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:06:00Z",
+    "realtime_free_capacity": 48,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717366"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:07:00Z",
+    "realtime_free_capacity": 56,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717262"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 58,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717372"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:06:00Z",
+    "realtime_free_capacity": 204,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717256"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:13Z",
+    "realtime_free_capacity": 1022,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "12718764"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78319431"
+  },
+  {
+    "realtime_data_updated_at": "2022-07-27T15:08:00Z",
+    "realtime_free_capacity": 47,
+    "restrictions": [],
+    "uid": "78280073"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78319371"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78357200"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 34,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12718779"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78241073"
+  },
+  {
+    "realtime_data_updated_at": "2022-12-09T13:18:00Z",
+    "realtime_free_capacity": 149,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717435"
+  },
+  {
+    "realtime_data_updated_at": "1970-01-01T00:00:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717244"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:15Z",
+    "realtime_free_capacity": 694,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717441"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78319401"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717345"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78357190"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:05:00Z",
+    "realtime_free_capacity": 17,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78278879"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78319463"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 158,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78278431"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 148,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78278545"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 215,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78278577"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 7,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78257172"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78319492"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:04:00Z",
+    "realtime_free_capacity": 21,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78318611"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:07Z",
+    "realtime_free_capacity": 302,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "12717417"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:31Z",
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "78357206"
+  },
+  {
+    "realtime_data_updated_at": "2023-09-23T16:06:00Z",
+    "realtime_free_capacity": 21,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78241093"
+  },
+  {
+    "realtime_data_updated_at": "2023-10-07T01:45:15Z",
+    "realtime_free_capacity": 266,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "78279135"
+  }
+]

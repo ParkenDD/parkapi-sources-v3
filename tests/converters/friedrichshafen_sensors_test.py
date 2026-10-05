@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import FriedrichshafenSensorsPullConverter
 from parkapi_sources.util import RequestHelper
@@ -28,7 +29,8 @@ def friedrichshafen_sensors_config_helper(mocked_config_helper: Mock):
 
 @pytest.fixture
 def friedrichshafen_sensors_pull_converter(
-    friedrichshafen_sensors_config_helper: Mock, request_helper: RequestHelper
+    friedrichshafen_sensors_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> FriedrichshafenSensorsPullConverter:
     return FriedrichshafenSensorsPullConverter(
         config_helper=friedrichshafen_sensors_config_helper, request_helper=request_helper
@@ -40,6 +42,7 @@ class FriedrichshafenSensorsConverterTest:
     def test_get_static_parking_spots(
         friedrichshafen_sensors_pull_converter: FriedrichshafenSensorsPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         xml_path = Path(Path(__file__).parent, 'data', 'friedrichshafen-sensors-static.xml')
         with xml_path.open() as xml_file:
@@ -57,12 +60,13 @@ class FriedrichshafenSensorsConverterTest:
         assert len(static_parking_spot_inputs) == 55
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_spots(
         friedrichshafen_sensors_pull_converter: FriedrichshafenSensorsPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         xml_path = Path(Path(__file__).parent, 'data', 'friedrichshafen-sensors-realtime.xml')
         with xml_path.open() as xml_file:
@@ -80,4 +84,4 @@ class FriedrichshafenSensorsConverterTest:
         assert len(realtime_parking_spot_inputs) == 55
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs)
+        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs, snapshot)

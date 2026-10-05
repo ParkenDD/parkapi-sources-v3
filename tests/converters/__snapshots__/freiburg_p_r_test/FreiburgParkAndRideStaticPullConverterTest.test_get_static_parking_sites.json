@@ -1,0 +1,155 @@
+[
+  {
+    "capacity": 212,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0011201",
+    "lon": "7.8266425",
+    "name": "Berufsschulzentrum",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "38"
+  },
+  {
+    "capacity": 270,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0018371",
+    "lon": "7.8230492",
+    "name": "Behördenparkplatz",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "40"
+  },
+  {
+    "capacity": 158,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0016550",
+    "lon": "7.8191982",
+    "name": "Bissierstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "41"
+  },
+  {
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.9957366",
+    "lon": "7.7946416",
+    "name": "Rieselfeld",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "53"
+  },
+  {
+    "capacity": 300,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0126636",
+    "lon": "7.8064112",
+    "name": "Paduaallee",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "79"
+  },
+  {
+    "capacity": 104,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0292275",
+    "lon": "7.8081168",
+    "name": "Moosweiher",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "83"
+  },
+  {
+    "capacity": 77,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0194944",
+    "lon": "7.8398704",
+    "name": "An der Messe",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "90"
+  },
+  {
+    "capacity": 148,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.9880202",
+    "lon": "7.7959166",
+    "name": "Munzinger Straße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "112"
+  },
+  {
+    "capacity": 354,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.0348057",
+    "lon": "7.8623896",
+    "name": "Gundelfinger Straße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "113"
+  }
+]

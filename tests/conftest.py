@@ -10,6 +10,9 @@ import pytest
 
 from parkapi_sources.util import ConfigHelper, RequestHelper
 
+# Enable pytest assertion rewriting in the helper module, so failing snapshot assertions show a diff
+pytest.register_assert_rewrite('tests.converters.helper')
+
 
 @pytest.fixture
 def mocked_config_helper() -> Mock:

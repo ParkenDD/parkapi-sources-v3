@@ -1,0 +1,37 @@
+[
+  {
+    "realtime_capacity": 11,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 10,
+    "restrictions": [],
+    "uid": "unit1676"
+  },
+  {
+    "realtime_capacity": 11,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 11,
+    "restrictions": [],
+    "uid": "unit567"
+  },
+  {
+    "realtime_capacity": 10,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 7,
+    "restrictions": [],
+    "uid": "unit574"
+  },
+  {
+    "realtime_capacity": 12,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 3,
+    "restrictions": [],
+    "uid": "unit621"
+  },
+  {
+    "realtime_capacity": 11,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 11,
+    "restrictions": [],
+    "uid": "unit629"
+  }
+]

@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters.jena import JenaPullConverter
 from parkapi_sources.util import RequestHelper
@@ -21,7 +22,11 @@ def jena_pull_converter(mocked_config_helper: Mock, request_helper: RequestHelpe
 
 class JenaPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(jena_pull_converter: JenaPullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(
+        jena_pull_converter: JenaPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         json_path = Path(Path(__file__).parent, 'data', 'jena.geojson')
         with json_path.open() as json_file:
             json_data = json_file.read()
@@ -33,4 +38,4 @@ class JenaPullConverterTest:
         assert len(static_parking_site_inputs) == 103
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

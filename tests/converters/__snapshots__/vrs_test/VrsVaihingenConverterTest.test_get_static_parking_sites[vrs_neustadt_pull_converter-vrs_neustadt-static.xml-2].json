@@ -1,0 +1,64 @@
+[
+  {
+    "capacity": 172,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.85907687",
+    "lon": "9.32321713",
+    "name": "P+R Neustadt-Hohenacker Erbach West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 19,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-04-30T12:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1089"
+  },
+  {
+    "capacity": 79,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.85980951",
+    "lon": "9.32479772",
+    "name": "P+R Neustadt-Hohenacker Erbach Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 20,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2025-04-30T12:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1091"
+  }
+]

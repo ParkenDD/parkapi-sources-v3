@@ -1,0 +1,90 @@
+[
+  {
+    "realtime_capacity": 930,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 881,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "4"
+  },
+  {
+    "realtime_capacity": 161,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 132,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "3"
+  },
+  {
+    "realtime_capacity": 288,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 177,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "5"
+  },
+  {
+    "realtime_capacity": 288,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 234,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "1"
+  },
+  {
+    "realtime_capacity": 118,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 73,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "2"
+  },
+  {
+    "realtime_capacity": 312,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 191,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "6"
+  },
+  {
+    "realtime_capacity": 359,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 182,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "0"
+  },
+  {
+    "realtime_capacity": 335,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 269,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "7"
+  },
+  {
+    "realtime_capacity": 176,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 111,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "46"
+  },
+  {
+    "realtime_capacity": 834,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 708,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "31"
+  },
+  {
+    "realtime_capacity": 350,
+    "realtime_data_updated_at": "2024-08-17T06:30:05Z",
+    "realtime_free_capacity": 214,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "30"
+  }
+]

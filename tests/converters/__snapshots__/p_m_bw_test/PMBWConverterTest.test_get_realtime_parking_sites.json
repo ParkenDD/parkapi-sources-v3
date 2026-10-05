@@ -1,0 +1,66 @@
+[
+  {
+    "realtime_capacity": 111,
+    "realtime_data_updated_at": "2024-06-18T07:59:51Z",
+    "realtime_free_capacity": 31,
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 4,
+        "realtime_free_capacity": 3,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": 0,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": 0,
+        "type": "CHARGING"
+      }
+    ],
+    "uid": "fcde2f18-c277-11ed-b3ce-0050563bb33b"
+  },
+  {
+    "realtime_capacity": 134,
+    "realtime_data_updated_at": "2024-06-18T07:59:59Z",
+    "realtime_free_capacity": 5,
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": 0,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": 0,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": 0,
+        "realtime_free_capacity": 0,
+        "type": "CHARGING"
+      }
+    ],
+    "uid": "ff57e1d7-32c4-11ee-8f99-0050563bb33b"
+  }
+]
