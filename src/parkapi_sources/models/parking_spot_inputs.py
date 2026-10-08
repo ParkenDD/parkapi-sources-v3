@@ -20,7 +20,7 @@ from validataclass.validators import (
 )
 
 from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
-from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType, ParkingOrientation
+from .enums import ParkingOrientation, ParkingSpotStatus, ParkingSpotType, PurposeType
 from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
