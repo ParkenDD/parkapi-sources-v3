@@ -25,6 +25,7 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
         source_url='https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=1.0.0&request=GetFeature'
         '&srsname=EPSG:4326&typeName=TBA%3Abehinderten_parkplaetze&outputFormat=application%2Fjson',
         has_realtime_data=True,
+        public_url='https://mobil.trk.de/geoserver/web/?1&workspace=TBA&layer=behinderten_parkplaetze',
     )
 
     realtime_source_url = (

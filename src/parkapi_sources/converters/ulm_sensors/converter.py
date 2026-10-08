@@ -40,6 +40,7 @@ class UlmSensorsPullConverter(ParkingSpotPullConverter, ParkingSitePullConverter
         timezone='Europe/Berlin',
         source_url='https://citysens-iot.swu.de',
         has_realtime_data=True,
+        public_url='https://www.ulm.de/leben-in-ulm/digitale-stadt/im-digitalen-wandel/mobilitaet',
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

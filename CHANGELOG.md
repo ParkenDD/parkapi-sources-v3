@@ -1,5 +1,58 @@
 # Changelog
 
+## 0.39.1
+
+Released 2026-10-03
+
+### Fixes
+
+* [Correct usage of Push and PullConverter](https://github.com/ParkenDD/parkapi-sources-v3/pull/427)
+* [Correct Mapping Spec for Orientation in Esslingen](https://github.com/ParkenDD/parkapi-sources-v3/pull/430)
+* [Update mapping konstanz disabled](https://github.com/ParkenDD/parkapi-sources-v3/pull/424)
+* [Add missing public_urls](https://github.com/ParkenDD/parkapi-sources-v3/pull/432)
+
+
+### Maintenance
+
+* [Add Esslingen to README](https://github.com/ParkenDD/parkapi-sources-v3/pull/429)
+* [fix readme sources](https://github.com/ParkenDD/parkapi-sources-v3/pull/435)
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/433)
+
+
+## 0.39.0
+
+Released 2026-09-07
+
+### Features
+
+* [Nagold Bike Converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/416)
+* [Update mapping nagold bike](https://github.com/ParkenDD/parkapi-sources-v3/pull/417)
+
+
+### Fixes
+
+* [Update park and ride typen to carpool](https://github.com/ParkenDD/parkapi-sources-v3/pull/420)
+* [radvis update](https://github.com/ParkenDD/parkapi-sources-v3/pull/421)
+* [RADVIS: add new mapping](https://github.com/ParkenDD/parkapi-sources-v3/pull/419)
+* [updated friedrichshafen easypark](https://github.com/ParkenDD/parkapi-sources-v3/pull/423)
+* [Friedrichshafen: Update permissions_translation](https://github.com/ParkenDD/parkapi-sources-v3/pull/413)
+
+
+### Maintenance
+
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/422)
+
+
+## 0.38.5
+
+Released 2026-08-02
+
+### Maintenance
+
+* [Mapping nagold bike converter](https://github.com/ParkenDD/parkapi-sources-v3/pull/377)
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/415)
+
+
 ## 0.38.4
 
 Released 2026-07-18

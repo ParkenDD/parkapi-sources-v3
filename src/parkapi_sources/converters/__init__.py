@@ -10,7 +10,7 @@ from .bahn_v2 import BahnV2PullConverter
 from .base_converter import BaseConverter
 from .basel import BaselPullConverter
 from .bb_parkhaus import BBParkhausPushConverter
-from .bfrk_bw import BfrkBwBikePushConverter, BfrkBwCarPullConverter
+from .bfrk_bw import BfrkBwBikePullConverter, BfrkBwCarPullConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .ellwangen import EllwangenPushConverter
@@ -55,6 +55,7 @@ from .konstanz_bike import KonstanzBikePullConverter
 from .konstanz_disabled import KonstanzDisabledPullConverter
 from .ladenburg_parkraumcheck import LadenburgParkraumcheckPushConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
+from .nagold_bike import NagoldBikePushConverter
 from .neckarsulm import NeckarsulmPushConverter
 from .neckarsulm_bike import NeckarsulmBikePushConverter
 from .opendata_swiss import OpenDataSwissPullConverter

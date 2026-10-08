@@ -62,6 +62,7 @@ class ParkRaumCheckKehlPushConverter(ParkRaumCheckBasePushConverter):
         uid='park_raum_check_kehl',
         name='Stadt Kehl: ParkRaumCheck',
         has_realtime_data=False,
+        public_url='https://www.kehl.de/im+fokus/fokusthema+nr_+2/parkpad',
     )
     parking_site_validator = DataclassValidator(KehlFeatureInput)
 
@@ -71,5 +72,6 @@ class ParkRaumCheckSachsenheimPushConverter(ParkRaumCheckBasePushConverter):
         uid='park_raum_check_sachsenheim',
         name='Stadt Sachsenheim: ParkRaumCheck',
         has_realtime_data=False,
+        public_url='https://www.sachsenheim.de/',
     )
     parking_site_validator = DataclassValidator(SachsenheimFeatureInput)

@@ -25,6 +25,7 @@ class FriedrichshafenEasyParkPushConverter(CsvConverter, ParkingSiteBaseConverte
         uid='friedrichshafen_easypark',
         name='Friedrichshafen EasyPark',
         has_realtime_data=False,
+        public_url='https://www.friedrichshafen.de/wirtschaft-mobilitaet/anreise-parken/parken/',
     )
 
     header_mapping = {
@@ -65,8 +66,11 @@ class FriedrichshafenEasyParkPushConverter(CsvConverter, ParkingSiteBaseConverte
                 )
                 continue
 
-            # Ignore parking sites with type NO_PARKING
-            if input_data.park_angle == FriedrichshafenParkingSiteOrientation.NO_PARKING:
+            # Ignore parking sites with type NO_PARKING as well as areas which are no car parking sites at all
+            if (
+                input_data.park_angle == FriedrichshafenParkingSiteOrientation.NO_PARKING
+                or input_data.permissions_translation.is_no_car_parking()
+            ):
                 continue
 
             static_parking_site_inputs.append(input_data.to_static_parking_site_input())

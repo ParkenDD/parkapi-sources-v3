@@ -23,6 +23,7 @@ class FreiburgDisabledSensorsPullConverter(ParkingSpotPullConverter):
         source_url='https://geoportal.freiburg.de/wfs/gdm_parkpl/gdm_parkpl?SERVICE=WFS&REQUEST=GetFeature'
         '&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=beh_parkpl_ueberw&OUTPUTFORMAT=geojson',
         has_realtime_data=True,
+        public_url='https://www.freiburg.de/pb/890399.html',
     )
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:

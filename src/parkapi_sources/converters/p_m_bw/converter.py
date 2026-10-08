@@ -27,6 +27,7 @@ class PMBWPullConverter(ParkingSitePullConverter, StaticGeojsonDataMixin):
         name='Parken und Mitfahren Baden-Württemberg',
         source_url='https://api.cloud-telartec.de/v1/parkings',
         has_realtime_data=True,
+        public_url='https://mitfahren-bw.de/mitfahrparkplaetze.html',
     )
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

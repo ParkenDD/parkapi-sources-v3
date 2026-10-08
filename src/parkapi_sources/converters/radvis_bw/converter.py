@@ -37,9 +37,10 @@ class RadvisBwPullConverter(ParkingSitePullConverter):
         static_parking_site_errors: list[ImportParkingSiteException] = []
 
         parking_site_features = self.geojson_validator.validate(self.get_data())
-        sources_to_ignore: list[str] = []
-        if self.config_helper.get('PARK_API_RADVIS_IGNORE_SOURCES'):
-            sources_to_ignore = self.config_helper.get('PARK_API_RADVIS_IGNORE_SOURCES')
+        # RadVIS contains duplicated data from MobiDataBW, therefore MOBIDATABW is ignored by default.
+        sources_to_ignore = self.config_helper.get('PARK_API_RADVIS_IGNORE_SOURCES') or 'MOBIDATABW'
+        if isinstance(sources_to_ignore, str):
+            sources_to_ignore = [source.strip() for source in sources_to_ignore.split(',')]
 
         for feature_dict in parking_site_features.features:
             try:
@@ -49,11 +50,12 @@ class RadvisBwPullConverter(ParkingSitePullConverter):
                 if radvis_parking_site_input.properties.quell_system in sources_to_ignore:
                     continue
 
-                if radvis_parking_site_input.properties.status == StatusType.GEPLANT:
+                # Parking sites which are just planned or out of order should not be integrated.
+                if radvis_parking_site_input.properties.status in [StatusType.GEPLANT, StatusType.AUSSER_BETRIEB]:
                     continue
 
-                static_parking_site_inputs += radvis_parking_site_input.to_static_parking_site_inputs_with_proj(
-                    self.proj,
+                static_parking_site_inputs.append(
+                    radvis_parking_site_input.to_static_parking_site_input_with_proj(self.proj),
                 )
 
             except ValidationError as e:

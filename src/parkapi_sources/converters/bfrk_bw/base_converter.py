@@ -15,7 +15,7 @@ from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteIn
 from .base_models import BfrkBaseInput
 
 
-class BfrkBasePushConverter(ParkingSitePullConverter, ABC):
+class BfrkBasePullConverter(ParkingSitePullConverter, ABC):
     @property
     @abstractmethod
     def bfrk_validator(self) -> DataclassValidator:

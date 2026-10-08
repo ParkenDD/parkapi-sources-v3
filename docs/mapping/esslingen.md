@@ -25,12 +25,13 @@ WSG84.
 
 ### Ausrichtung
 
-| Key         | Mapping  |
-|-------------|----------|
-| längs       | PARALLEL |
-| quer        | DIAGONAL |
-| undefiniert |          |
-| unbekannt   |          |
+| Key         | Mapping       |
+|-------------|---------------|
+| längs       | PARALLEL      |
+| quer        | PERPENDICULAR |
+| schräg      | DIAGONAL      |
+| undefiniert |               |
+| unbekannt   |               |
 
 
 ### ParkplatzTyp
