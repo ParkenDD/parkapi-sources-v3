@@ -33,8 +33,8 @@ A `ParkingSite` is generated if:
 |-----------------------------------|-----------------|-------------------------------------|-----------------------------|
 | Anlehnbuegel                      | STANDS          | `Anlehnbügel`                       |                             |
 | Vorderradhalter                   | WALL_LOOPS      | `Vorderradhalter`                   |                             |
-| VorderradhalterOhneBuegelzusatz   | WALL_LOOPS      | `VorderradhalterOhneBuegelzusatz`   |                             |
-| VorderradhalterMitBuegelzusatz    | SAFE_WALL_LOOPS | `VorderradhalterMitBuegelzusatz`    | [ParkAndRideType.YES]       |
+| VorderradhalterOhneBuegelzusatz   | WALL_LOOPS      | `Vorderradhalter Ohne Bügelzusatz`  |                             |
+| VorderradhalterMitBuegelzusatz    | SAFE_WALL_LOOPS | `Vorderradhalter Mit Bügelzusatz`   | [ParkAndRideType.YES]       |
 | Fahrradboxen                      | LOCKERS         | `Fahrradboxen`                      | [ParkAndRideType.YES]       |
 | Fahrradsammelanlage               | SHED            | `Sammelanlage`                      | [ParkAndRideType.YES]       |
 | doppelstoeckig                    | TWO_TIER        | `Zweistock-Anlage`                  | [ParkAndRideType.YES]       |
