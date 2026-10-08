@@ -17,7 +17,7 @@ from parkapi_sources.models import ParkingSiteRestrictionInput, PurposeType, Sta
 from parkapi_sources.models.enums import (
     LinearParkingPosition,
     ParkingAudience,
-    ParkingSiteOrientation,
+    ParkingOrientation,
     ParkingSiteSide,
     ParkingSiteType,
 )
@@ -99,7 +99,7 @@ class FriedrichshafenEasyParkRowInput:
             type=ParkingSiteType.ON_STREET,
             linear_parking_position=LinearParkingPosition.PARKING_CENTER_LINE,
             capacity=self._get_capacity(),
-            orientation=ParkingSiteOrientation[self.park_angle.name],
+            orientation=ParkingOrientation[self.park_angle.name],
             name='Straßenparkplatz',
             purpose=PurposeType.CAR,
             side=self.street_side,

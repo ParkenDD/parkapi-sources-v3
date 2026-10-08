@@ -112,7 +112,7 @@ class ParkingSiteSide(Enum):
     LEFT = 'LEFT'
 
 
-class ParkingSiteOrientation(Enum):
+class ParkingOrientation(Enum):
     PARALLEL = 'PARALLEL'
     DIAGONAL = 'DIAGONAL'
     PERPENDICULAR = 'PERPENDICULAR'
