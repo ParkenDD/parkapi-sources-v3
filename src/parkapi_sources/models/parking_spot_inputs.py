@@ -20,7 +20,7 @@ from validataclass.validators import (
 )
 
 from .base_parking_inputs import RealtimeBaseParkingInput, StaticBaseParkingInput
-from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType
+from .enums import ParkingSpotStatus, ParkingSpotType, PurposeType, ParkingOrientation
 from .shared_inputs import ExternalIdentifierInput, ParkingRestrictionInput
 
 
@@ -34,6 +34,7 @@ class StaticParkingSpotInput(StaticBaseParkingInput):
     parking_site_uid: str | None = Noneable(StringValidator(min_length=1, max_length=256)), Default(None)
 
     type: ParkingSpotType | None = Noneable(EnumValidator(ParkingSpotType)), Default(None)
+    orientation: ParkingOrientation | None = Noneable(EnumValidator(ParkingOrientation)), Default(None)
 
     restrictions: list[ParkingSpotRestrictionInput] = (
         Noneable(ListValidator(DataclassValidator(ParkingSpotRestrictionInput))),
@@ -58,6 +59,7 @@ class StaticParkingSpotPatchInput(StaticParkingSpotInput):
 
     geojson: BaseGeometry | None | UnsetValueType = DefaultUnset
 
+    orientation: ParkingOrientation | None | UnsetValueType = DefaultUnset
     restrictions: list[ParkingSpotRestrictionInput] | UnsetValueType = DefaultUnset
     external_identifiers: list[ExternalIdentifierInput] | UnsetValueType = DefaultUnset
     tags: list[str] | UnsetValueType = DefaultUnset
