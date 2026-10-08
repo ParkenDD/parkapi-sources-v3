@@ -10,7 +10,6 @@ A `ParkingSite` is generated if:
 * `anlagentyp` is set
 * `stellplatzanzahl` is set and `>= 1`
 
-
 | Field                | Type                              | Cardinality | Mapping                            | Comment                                                                                           |
 |----------------------|-----------------------------------|-------------|------------------------------------|---------------------------------------------------------------------------------------------------|
 | infraid              | string                            | 1           | uid                                |                                                                                                   |
@@ -30,13 +29,15 @@ A `ParkingSite` is generated if:
 | osmlinks             | string (url)                      | *           | external_identifiers[`OSM`].value  | one entry for each link                                                                           |
 
 ### BfrkAnlagentyp
-| Key                     | Mapping: type | Mapping: name       | Mapping: park_and_ride_type |
-|-------------------------|---------------|---------------------|-----------------------------|
-| Anlehnbuegel            | STANDS        | `Anlehnbügel`       |                             |
-| Vorderradhalter         | WALL_LOOPS    | `Vorderradhalter`   |                             |
-| Fahrradboxen            | LOCKERS       | `Fahrradboxen`      | [ParkAndRideType.YES]       |
-| Fahrradsammelanlage     | SHED          | `Sammelanlage`      | [ParkAndRideType.YES]       |
-| doppelstoeckig          | TWO_TIER      | `Zweistock-Anlage`  | [ParkAndRideType.YES]       |
-| Fahrradparkhaus         | BUILDING      | `Fahrradparkhaus`   | [ParkAndRideType.YES]       |
-| automatischesParksystem | BUILDING      | `Fahrradparkhaus`   | [ParkAndRideType.YES]       |
-| Sonstiges               | FLOOR         | `Fahrradstellplatz` |                             |
+| Key                               | Mapping: type   | Mapping: name                       | Mapping: park_and_ride_type |
+|-----------------------------------|-----------------|-------------------------------------|-----------------------------|
+| Anlehnbuegel                      | STANDS          | `Anlehnbügel`                       |                             |
+| Vorderradhalter                   | WALL_LOOPS      | `Vorderradhalter`                   |                             |
+| VorderradhalterOhneBuegelzusatz   | WALL_LOOPS      | `VorderradhalterOhneBuegelzusatz`   |                             |
+| VorderradhalterMitBuegelzusatz    | SAFE_WALL_LOOPS | `VorderradhalterMitBuegelzusatz`    | [ParkAndRideType.YES]       |
+| Fahrradboxen                      | LOCKERS         | `Fahrradboxen`                      | [ParkAndRideType.YES]       |
+| Fahrradsammelanlage               | SHED            | `Sammelanlage`                      | [ParkAndRideType.YES]       |
+| doppelstoeckig                    | TWO_TIER        | `Zweistock-Anlage`                  | [ParkAndRideType.YES]       |
+| Fahrradparkhaus                   | BUILDING        | `Fahrradparkhaus`                   | [ParkAndRideType.YES]       |
+| automatischesParksystem           | BUILDING        | `Fahrradparkhaus`                   | [ParkAndRideType.YES]       |
+| Sonstiges                         | FLOOR           | `Fahrradstellplatz`                 |                             |
