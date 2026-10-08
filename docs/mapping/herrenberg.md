@@ -23,7 +23,7 @@ Before validation, source keys containing `:` are normalized by replacing `:` wi
 | lots[].coords.lat         | numeric                 | 1           | lat                               |                                                                          |
 | lots[].coords.lng         | numeric                 | 1           | lon                               |                                                                          |
 | lots[].address            | string                  | 1           | address                           |                                                                          |
-| lots[].total              | integer                 | 1           | capacity                          | Set if present and >= 1                                                  |
+| lots[].total              | integer                 | 1           | capacity                          | Set if >= 1                                                  |
 | lots[].total:disabled     | integer                 | ?           | restrictions[`DISABLED`].capacity | Set if present and >= 1                                                  |
 | lots[].notes.de           | string                  | ?           | description                       |                                                                          |
 | lots[].url                | URL                     | ?           | public_url                        |                                                                          |
@@ -36,9 +36,9 @@ Before validation, source keys containing `:` are normalized by replacing `:` wi
 
 | field                     | Type                    | Cardinality | Target field                      | Comment                                                                               |
 | ------------------------- | ----------------------- | ----------- | --------------------------------- | ------------------------------------------------------------------------------------- |
-| id                        | string                  | 1           | uid                               |                                                                                       |
-| name                      | string                  | 1           | name                              |                                                                                       |
-| lot_type                  | [LotType](#LotType)     | 1           | type, park_and_ride_type          |                                                                                       |
+| lots[].id                        | string                  | 1           | uid                               |                                                                                       |
+| lots[].name                      | string                  | 1           | name                              |                                                                                       |
+| lots[].lot_type                  | [LotType](#LotType)     | 1           | type, park_and_ride_type          |                                                                                       |
 | lots[].coords.lat         | numeric                 | 1           | lat                               |                                                                                       |
 | lots[].coords.lng         | numeric                 | 1           | lon                               |                                                                                       |
 | lots[].address            | string                  | 1           | address                           |                                                                                       |
@@ -52,7 +52,7 @@ Before validation, source keys containing `:` are normalized by replacing `:` wi
 
 ## Realtime `ParkingSite`
 
-Realtime `ParkingSite` data is generated for entries where `state != nodata` or `state == unknown`.
+Realtime `ParkingSite` data is generated for entries where `state != nodata` or `state != unknown`.
 
 | field        | Type                    | Cardinality | Target field             | Comment                                               |
 | ------------ | ----------------------- | ----------- | ------------------------ | ----------------------------------------------------- |
