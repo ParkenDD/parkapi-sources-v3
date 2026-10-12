@@ -31,7 +31,7 @@ A `ParkingSite` is generated if:
 ### BfrkAnlagentyp
 | Key                               | Mapping: type   | Mapping: name                       | Mapping: park_and_ride_type |
 |-----------------------------------|-----------------|-------------------------------------|-----------------------------|
-| Anlehnbuegel                      | STANDS          | `Anlehnbügel`                       |                             |
+| Anlehnbuegel                      | STANDS          | `Anlehnbügel`                       | [ParkAndRideType.YES]       |
 | Vorderradhalter                   | WALL_LOOPS      | `Vorderradhalter`                   |                             |
 | VorderradhalterOhneBuegelzusatz   | WALL_LOOPS      | `Vorderradhalter Ohne Bügelzusatz`  |                             |
 | VorderradhalterMitBuegelzusatz    | SAFE_WALL_LOOPS | `Vorderradhalter Mit Bügelzusatz`   | [ParkAndRideType.YES]       |
