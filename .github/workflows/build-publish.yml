@@ -57,7 +57,7 @@ jobs:
           enable-cache: true
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v8.0.1
+        uses: actions/download-artifact@v8.0.2
         with:
           name: dist_packages
           path: dist/
@@ -81,7 +81,7 @@ jobs:
         uses: astral-sh/setup-uv@v10.2.0
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v8.0.1
+        uses: actions/download-artifact@v8.0.2
         with:
           name: dist_packages
           path: dist/
