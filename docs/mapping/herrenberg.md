@@ -7,7 +7,6 @@ Stadt Herrenberg provides car parking data as JSON through the Stadtnavi ParkAPI
 * `static_data_updated_at` is set to `last_updated`
 * `has_realtime_data` is set to `true`
 
-A `ParkingSite` and `ParkingSpot` are generated for each valid entry in `lots`.
 A `ParkingSpot` is only generated for disabled parking information if `total:disabled` is set and `>= 1`
 and `total` is set and `== 0`. A `ParkingSite` is also generated if `total` is set and `>= 1`. 
 
@@ -81,5 +80,6 @@ Realtime `ParkingSite` data is generated for entries where `state != nodata` or 
 | closed  | CLOSED                           |
 | many    | OPEN                             |
 | full    | OPEN                             |
+| few     | OPEN                             |
 | nodata  |                                  |
 | unknown |                                  |
