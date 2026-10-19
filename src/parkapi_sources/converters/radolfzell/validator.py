@@ -31,7 +31,7 @@ from parkapi_sources.models import (
 )
 from parkapi_sources.models.enums import (
     ParkAndRideType,
-    ParkingSiteOrientation,
+    ParkingOrientation,
     ParkingSiteType,
     ParkingType,
     PurposeType,
@@ -60,11 +60,11 @@ class RadolfzellOrientation(Enum):
     PERPENDICULAR = 2
     DIAGONAL = 3
 
-    def to_parking_side_orientation(self) -> ParkingSiteOrientation:
+    def to_parking_side_orientation(self) -> ParkingOrientation:
         return {
-            self.PARALLEL: ParkingSiteOrientation.PARALLEL,
-            self.DIAGONAL: ParkingSiteOrientation.DIAGONAL,
-            self.PERPENDICULAR: ParkingSiteOrientation.PERPENDICULAR,
+            self.PARALLEL: ParkingOrientation.PARALLEL,
+            self.DIAGONAL: ParkingOrientation.DIAGONAL,
+            self.PERPENDICULAR: ParkingOrientation.PERPENDICULAR,
         }.get(self)
 
 

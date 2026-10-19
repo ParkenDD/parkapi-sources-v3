@@ -111,8 +111,9 @@ class ParkingSiteSide(Enum):
     RIGHT = 'RIGHT'
     LEFT = 'LEFT'
 
-
-class ParkingSiteOrientation(Enum):
+# keep compatibility with legacy attribute ParkingSiteOrientation
+ParkingSiteOrientation = ParkingOrientation
+class ParkingOrientation(Enum):
     PARALLEL = 'PARALLEL'
     DIAGONAL = 'DIAGONAL'
     PERPENDICULAR = 'PERPENDICULAR'

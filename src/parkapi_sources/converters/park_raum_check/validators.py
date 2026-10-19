@@ -31,7 +31,7 @@ from parkapi_sources.models import (
     PurposeType,
     StaticParkingSiteInput,
 )
-from parkapi_sources.models.enums import ParkingSiteOrientation
+from parkapi_sources.models.enums import ParkingOrientation
 from parkapi_sources.util import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator, ReplacingStringValidator
 
@@ -51,12 +51,12 @@ class SachsenheimParkingOrientation(Enum):
     PERPENDICULAR_2 = 'Querparken'
     NONE = 'Keine'
 
-    def to_parking_side_orientation(self) -> ParkingSiteOrientation | None:
+    def to_parking_side_orientation(self) -> ParkingOrientation | None:
         return {
-            self.DIAGONAL: ParkingSiteOrientation.DIAGONAL,
-            self.PARALLEL: ParkingSiteOrientation.PARALLEL,
-            self.PERPENDICULAR_1: ParkingSiteOrientation.PERPENDICULAR,
-            self.PERPENDICULAR_2: ParkingSiteOrientation.PERPENDICULAR,
+            self.DIAGONAL: ParkingOrientation.DIAGONAL,
+            self.PARALLEL: ParkingOrientation.PARALLEL,
+            self.PERPENDICULAR_1: ParkingOrientation.PERPENDICULAR,
+            self.PERPENDICULAR_2: ParkingOrientation.PERPENDICULAR,
         }.get(self)
 
 

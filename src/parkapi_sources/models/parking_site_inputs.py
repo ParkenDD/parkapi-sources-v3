@@ -28,7 +28,7 @@ from .enums import (
     LinearParkingPosition,
     OpeningStatus,
     ParkAndRideType,
-    ParkingSiteOrientation,
+    ParkingOrientation,
     ParkingSiteSide,
     ParkingSiteType,
     ParkingType,
@@ -71,7 +71,7 @@ class StaticParkingSiteInput(StaticBaseParkingInput):
         Default([]),
     )
 
-    orientation: ParkingSiteOrientation | None = Noneable(EnumValidator(ParkingSiteOrientation)), Default(None)
+    orientation: ParkingOrientation | None = Noneable(EnumValidator(ParkingOrientation)), Default(None)
     side: ParkingSiteSide | None = Noneable(EnumValidator(ParkingSiteSide)), Default(None)
     parking_type: ParkingType | None = Noneable(EnumValidator(ParkingType)), Default(None)
     linear_parking_position: LinearParkingPosition | None = (
@@ -154,7 +154,7 @@ class StaticParkingSitePatchInput(StaticParkingSiteInput):
     has_fee: bool | None | UnsetValueType = DefaultUnset
     park_and_ride_type: list[ParkAndRideType] | UnsetValueType = DefaultUnset
 
-    orientation: ParkingSiteOrientation | None | UnsetValueType = DefaultUnset
+    orientation: ParkingOrientation | None | UnsetValueType = DefaultUnset
     side: ParkingSiteSide | None | UnsetValueType = DefaultUnset
     parking_type: ParkingType | None | UnsetValueType = DefaultUnset
 
