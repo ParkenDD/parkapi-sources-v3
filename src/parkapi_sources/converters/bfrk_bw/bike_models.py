@@ -17,7 +17,7 @@ from .base_models import BfrkBaseInput
 
 
 class BfrkBikeType(Enum):
-    WALL_LOOPS = 'Vorderradhalter', 
+    WALL_LOOPS = ('Vorderradhalter',)
     WALL_LOOPS_WITHOUT_BRACKET = 'VorderradhalterOhneBuegelzusatz'
     SAFE_WALL_LOOPS = 'VorderradhalterMitBuegelzusatz'
     STANDS = 'Anlehnbuegel'
