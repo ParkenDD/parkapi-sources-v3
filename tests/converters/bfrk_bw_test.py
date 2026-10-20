@@ -159,8 +159,8 @@ class BfrkBikePullConverterTest:
 
         static_parking_site_inputs, import_parking_site_exceptions = bfrk_bike_pull_converter.get_static_parking_sites()
 
-        assert len(static_parking_site_inputs) == 714
-        assert len(import_parking_site_exceptions) == 79
+        assert len(static_parking_site_inputs) == 1729
+        assert len(import_parking_site_exceptions) == 492
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
 
@@ -182,7 +182,7 @@ class BfrkBikePullConverterTest:
             bfrk_bike_pull_converter_unconfirmed.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 2922
-        assert len(import_parking_site_exceptions) == 79
+        assert len(static_parking_site_inputs) == 2538
+        assert len(import_parking_site_exceptions) == 492
 
         validate_static_parking_site_inputs(static_parking_site_inputs)
