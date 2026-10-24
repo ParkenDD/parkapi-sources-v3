@@ -101,3 +101,18 @@ class KarlsruhePullConverterTest:
         assert len(import_parking_site_exceptions) == 14
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)
+
+    @staticmethod
+    def test_get_realtime_parking_sites_ignore_missing_capacities(
+        karlsruhe_ignore_missing_capacity_pull_converter: KarlsruhePullConverter,
+        requests_mock_karlsruhe: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_ignore_missing_capacity_pull_converter.get_realtime_parking_sites()
+        )
+
+        assert len(realtime_parking_site_inputs) == 39
+        assert len(import_parking_site_exceptions) == 0
+
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)
