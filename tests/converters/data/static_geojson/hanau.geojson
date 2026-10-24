@@ -1,0 +1,271 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-am-forum",
+        "name": "Parkhaus Am Forum",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-hanau.de/parken/parkhaus-am-forum-am-frankfurter-tor-verwaltung",
+        "address": "Am Frankfurter Tor 10, 63450 Hanau",
+        "capacity": 491,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.913654,
+          50.134264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-city-center",
+        "name": "Parkhaus City Center",
+        "type": "CAR_PARK",
+        "public_url": "https://www.apcoa.de/parken/hanau/city-center/",
+        "address": "Kurt-Blaum-Platz 8, 63450 Hanau",
+        "capacity": 526,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.922597,
+          50.13128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-congress-park",
+        "name": "Parkhaus Congress Park",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Eugen-Kaiser-Straße, 63450 Hanau",
+        "capacity": 246,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.916136,
+          50.139814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-gloria-palais",
+        "name": "Parkhaus Gloria Palais",
+        "type": "CAR_PARK",
+        "public_url": "https://www.google.de/maps/place/Am+Steinheimer+Tor+1,+63450+Hanau/@50.1314467,8.908425,17z/data=!3m1!4b1!4m2!3m1!1s0x47bd16e037dfdc5d:0xb2787f9c4393f044?hl=de",
+        "address": "Am Steinheimer Tor 1a, 63450 Hanau",
+        "capacity": 280,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.908575,
+          50.132539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-kinopolis",
+        "name": "Parkhaus Kinopolis",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Am Steinheimer Tor 17, 63450 Hanau",
+        "capacity": 174,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.915746,
+          50.129269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-kinopolis-2",
+        "name": "Parkhaus Kinopolis 2",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Steinheimer Str., 63450 Hanau",
+        "capacity": 199,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.914273,
+          50.129825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-klinikum",
+        "name": "Parkhaus Klinikum",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Leimenstraße 33-35, 63450 Hanau",
+        "capacity": 243,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9217978,
+          50.1344339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-nuernberger-strasse",
+        "name": "Parkhaus Nürnberger Straße",
+        "type": "CAR_PARK",
+        "public_url": "https://parken-hanau.de/parken/parkhaus-nuernberger-strasse",
+        "address": "Nürnberger Str. 16, 63450 Hanau",
+        "capacity": 329,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.920955,
+          50.132298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkplatz-klinikum",
+        "name": "Parkplatz Klinikum",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Leimenstraße, 63450 Hanau",
+        "capacity": 0,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.922359,
+          50.133315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkplatz-main-kinzig-halle",
+        "name": "Parkplatz Main-Kinzig-Halle",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Eberhardstraße, 63450 Hanau",
+        "capacity": 91,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.921375,
+          50.137234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "tiefgarage-am-markt",
+        "name": "Tiefgarage Am Markt",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-hanau.de/parken/tiefgarage-am-markt",
+        "address": "Am Markt, 63450 Hanau",
+        "capacity": 170,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.916543,
+          50.132449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "tiefgarage-congress-park",
+        "name": "Tiefgarage Congress Park",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Heinrich-Bott-Straße, 63450 Hanau",
+        "capacity": 63,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.918148,
+          50.138479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "tiefgarage-forum",
+        "name": "Tiefgarage Forum",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Im Forum 5, 63450 Hanau",
+        "capacity": 437,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.91619,
+          50.135262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "tiefgarage-klinikum-sued",
+        "name": "Tiefgarage Klinikum Süd",
+        "type": "UNDERGROUND",
+        "public_url": "https://parken-hanau.de/parken",
+        "address": "Röderstraße 1, 63450 Hanau",
+        "capacity": 75,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.923727,
+          50.131262
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 331,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkplatz-hauptbahnhof"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 526,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "e-quartiersgarage-neckarbogen"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 16,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "kaethchenhof"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 2,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "stadtgalerie"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 164,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "theaterforum-k3"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 159,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "am-bollwerksturm"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 230,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "kiliansplatz"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 163,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "harmonie"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 392,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "bildungscampus-mitte"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 481,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-experimenta"
+  }
+]
