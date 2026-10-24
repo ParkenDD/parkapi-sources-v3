@@ -7,6 +7,7 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import ReutlingenDisabledPushConverter
 from parkapi_sources.util import RequestHelper
@@ -15,14 +16,18 @@ from tests.converters.helper import get_data_path, validate_static_parking_spot_
 
 @pytest.fixture
 def reutlingen_disabled_push_converter(
-    mocked_config_helper: Mock, request_helper: RequestHelper
+    mocked_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> ReutlingenDisabledPushConverter:
     return ReutlingenDisabledPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class ReutlingenBikePushConverterTest:
     @staticmethod
-    def test_get_static_parking_spots(reutlingen_disabled_push_converter: ReutlingenDisabledPushConverter):
+    def test_get_static_parking_spots(
+        reutlingen_disabled_push_converter: ReutlingenDisabledPushConverter,
+        snapshot: SnapshotAssertion,
+    ):
         with get_data_path('reutlingen_disabled.csv').open() as reutlingen_disabled_file:
             reutlingen_disabled_data = StringIO(reutlingen_disabled_file.read())
 
@@ -35,4 +40,4 @@ class ReutlingenBikePushConverterTest:
         assert len(static_parking_spot_inputs) == 44
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)

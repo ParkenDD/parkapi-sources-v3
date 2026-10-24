@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import HeilbronnGoldbeckPullConverter
 from parkapi_sources.util import RequestHelper
@@ -29,7 +30,8 @@ def heilbronn_goldbeck_config_helper(mocked_config_helper: Mock):
 
 @pytest.fixture
 def heilbronn_goldbeck_pull_converter(
-    heilbronn_goldbeck_config_helper: Mock, request_helper: RequestHelper
+    heilbronn_goldbeck_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> HeilbronnGoldbeckPullConverter:
     return HeilbronnGoldbeckPullConverter(config_helper=heilbronn_goldbeck_config_helper, request_helper=request_helper)
 
@@ -37,7 +39,9 @@ def heilbronn_goldbeck_pull_converter(
 class HeilbronnGoldbeckPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(
-        heilbronn_goldbeck_pull_converter: HeilbronnGoldbeckPullConverter, requests_mock: Mocker
+        heilbronn_goldbeck_pull_converter: HeilbronnGoldbeckPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'heilbronn_goldbeck_facilities.json')
         with json_path.open() as json_file:
@@ -62,11 +66,13 @@ class HeilbronnGoldbeckPullConverterTest:
         assert len(static_parking_site_inputs) == 9
         assert len(import_parking_site_exceptions) == 1
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_sites(
-        heilbronn_goldbeck_pull_converter: HeilbronnGoldbeckPullConverter, requests_mock: Mocker
+        heilbronn_goldbeck_pull_converter: HeilbronnGoldbeckPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'heilbronn_goldbeck_occupancies.json')
         with json_path.open() as json_file:
@@ -83,4 +89,4 @@ class HeilbronnGoldbeckPullConverterTest:
         assert len(realtime_parking_site_inputs) == 9
         assert len(import_parking_site_exceptions) == 1
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

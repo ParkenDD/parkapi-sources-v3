@@ -1,0 +1,100 @@
+[
+  {
+    "realtime_capacity": 264,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 234,
+    "restrictions": [],
+    "uid": "2-2-2-1222006-951"
+  },
+  {
+    "realtime_capacity": 113,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 75,
+    "restrictions": [],
+    "uid": "2-2-2-178382-191"
+  },
+  {
+    "realtime_capacity": 52,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 46,
+    "restrictions": [],
+    "uid": "2-2-2-182424-720"
+  },
+  {
+    "realtime_capacity": 176,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 129,
+    "restrictions": [],
+    "uid": "2-2-2-182421-721"
+  },
+  {
+    "realtime_capacity": 156,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 126,
+    "restrictions": [],
+    "uid": "2-2-2-178316-498"
+  },
+  {
+    "realtime_capacity": 190,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 155,
+    "restrictions": [],
+    "uid": "2-2-2-178381-718"
+  },
+  {
+    "realtime_capacity": 61,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 50,
+    "restrictions": [],
+    "uid": "2-2-2-178317-499"
+  },
+  {
+    "realtime_capacity": 0,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 0,
+    "restrictions": [],
+    "uid": "2-2-2-179058-155"
+  },
+  {
+    "realtime_capacity": 52,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 47,
+    "restrictions": [],
+    "uid": "2-2-2-153768-664"
+  },
+  {
+    "realtime_capacity": 45,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 37,
+    "restrictions": [],
+    "uid": "2-2-2-178562-676"
+  },
+  {
+    "realtime_capacity": 20,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 16,
+    "restrictions": [],
+    "uid": "2-2-2-153768-678"
+  },
+  {
+    "realtime_capacity": 62,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 59,
+    "restrictions": [],
+    "uid": "2-2-2-178654-679"
+  },
+  {
+    "realtime_capacity": 94,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 48,
+    "restrictions": [],
+    "uid": "2-2-2-178684-931"
+  },
+  {
+    "realtime_capacity": 34,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 22,
+    "restrictions": [],
+    "uid": "2-2-2-178685-932"
+  }
+]

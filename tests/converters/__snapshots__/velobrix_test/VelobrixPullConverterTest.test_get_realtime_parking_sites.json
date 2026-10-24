@@ -1,0 +1,23 @@
+[
+  {
+    "realtime_capacity": 16,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 16,
+    "restrictions": [],
+    "uid": "23"
+  },
+  {
+    "realtime_capacity": 16,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 16,
+    "restrictions": [],
+    "uid": "24"
+  },
+  {
+    "realtime_capacity": 14,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 14,
+    "restrictions": [],
+    "uid": "25"
+  }
+]

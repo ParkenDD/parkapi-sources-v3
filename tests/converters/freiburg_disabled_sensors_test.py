@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import FreiburgDisabledSensorsPullConverter
 from parkapi_sources.util import RequestHelper
@@ -45,6 +46,7 @@ class FreiburgDisabledSensorsConverterTest:
     def test_get_static_parking_spots(
         freiburg_disabled_sensors_pull_converter: FreiburgDisabledSensorsPullConverter,
         requests_mock_freiburg_disabled_sensors: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_spot_inputs, import_parking_spot_exceptions = (
             freiburg_disabled_sensors_pull_converter.get_static_parking_spots()
@@ -53,12 +55,13 @@ class FreiburgDisabledSensorsConverterTest:
         assert len(static_parking_spot_inputs) == 20
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_spots(
         freiburg_disabled_sensors_pull_converter: FreiburgDisabledSensorsPullConverter,
         requests_mock_freiburg_disabled_sensors: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         realtime_parking_spot_inputs, import_parking_spot_exceptions = (
             freiburg_disabled_sensors_pull_converter.get_realtime_parking_spots()
@@ -67,4 +70,4 @@ class FreiburgDisabledSensorsConverterTest:
         assert len(realtime_parking_spot_inputs) == 20
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs)
+        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs, snapshot)

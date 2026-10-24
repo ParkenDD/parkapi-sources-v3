@@ -1,0 +1,465 @@
+[
+  {
+    "address": "Lago Shopping Center, Hafenstraße 31, 78462 Konstanz",
+    "capacity": 930,
+    "description": "Ausfahrt: 24 Stunden möglich",
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 24,00 €, Nachttarif: 1,00 €/h",
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "47.65615688",
+    "lon": "9.17639495",
+    "max_height": 190,
+    "name": "Parkhaus LAGO",
+    "opening_hours": "Mo-Fr 07:00-01:30, Sa 07:00-01:30, Su 07:00-01:30",
+    "operator_name": "Girlan Immobilien GmbH",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107856/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 46,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "4"
+  },
+  {
+    "address": "Salmannsweilergasse 1, 78462 Konstanz",
+    "capacity": 161,
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 24,00 €",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "lat": "47.66137161",
+    "lon": "9.17645279",
+    "max_height": 205,
+    "name": "Parkhaus Fischmarkt",
+    "opening_hours": "24/7",
+    "operator_name": "Parkhaus Fischmarkt Konstanz GmbH",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107878/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "3"
+  },
+  {
+    "address": "Dammgasse 3, 78462 Konstanz",
+    "capacity": 288,
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 24,00 €",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "lat": "47.65954045",
+    "lon": "9.17627984",
+    "max_height": 195,
+    "name": "Parkhaus Marktstätte",
+    "opening_hours": "24/7",
+    "operator_name": "Gateway Parking Management GmbH",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107867/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 9,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "5"
+  },
+  {
+    "address": "Bruderturmgasse / Augustinerplatz, 78462 Konstanz",
+    "capacity": 288,
+    "description": "Ausfahrt: 24 Stunden möglich",
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 24,00 €",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "lat": "47.65962598",
+    "lon": "9.17339558",
+    "max_height": 205,
+    "name": "Parkhaus Augustiner / Karstadt",
+    "opening_hours": "Mo-Fr 07:00-01:30, Sa 07:00-01:30, Su 08:00-01:30",
+    "operator_name": "B+B Parkhaus GmbH & Co KG",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107900/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "1"
+  },
+  {
+    "address": "Benediktinerplatz 8, 78467 Konstanz",
+    "capacity": 118,
+    "description": "Ausfahrt: 24 Stunden möglich",
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 13,00 €, Nachttarif: halber Preis",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "lat": "47.66877251",
+    "lon": "9.17727692",
+    "max_height": 205,
+    "name": "Parkhaus Benediktinerplatz",
+    "opening_hours": "Mo-Fr 07:00-01:30, Sa 07:00-01:30, Su 08:00-00:30",
+    "operator_name": "WOBAK, Städtische Wohnbau GmbH",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107911/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "2"
+  },
+  {
+    "address": "Steinstraße 2, 78467 Konstanz",
+    "capacity": 312,
+    "description": "Ausfahrt: 24 Stunden möglich",
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 10,00 €",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "lat": "47.67266707",
+    "lon": "9.18296264",
+    "max_height": 200,
+    "max_stay": 2592000,
+    "name": "Tiefgarage Seerheincenter",
+    "opening_hours": "Mo-Fr 06:00-23:00, Sa 06:00-23:00",
+    "operator_name": "Contipark Unternehmensgruppe",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107922/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": "P30D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": "P30D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "P30D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "6"
+  },
+  {
+    "address": "Untere Laube 26, 78462 Konstanz",
+    "capacity": 359,
+    "description": "hinter Bürgerbüro, Ausfahrt: 24 Stunden möglich",
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 24,00 €",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "lat": "47.66306933",
+    "lon": "9.17190511",
+    "max_height": 205,
+    "name": "Parkhaus Altstadt",
+    "opening_hours": "Mo-Fr 06:30-01:30, Sa 06:30-01:30, Su 06:30-01:30",
+    "operator_name": "Parkhaus Laube Betriebs-GmbH & Co KG",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107845/Parkhaus.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "0"
+  },
+  {
+    "address": "Grenzbachstraee / Zur Laube, 78462 Konstanz",
+    "capacity": 335,
+    "external_identifiers": [],
+    "fee_description": "Tageshöchstsatz: 23,00 €  Gebührenpflichtige Parkzeit für PKW: werktags (Mo. bis Sa.) von 9:00 bis 20:00 Uhr Gebührenpflichtige Parkzeit für Wohnmobile und Busse:  Montag bis Sonntag ganzt",
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "47.65791602",
+    "lon": "9.16860392",
+    "max_stay": 86400,
+    "name": "Parkplatz Döbele",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Konstanz",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107889/Parkplatz.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": "P1D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": "P1D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "P1D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7"
+  },
+  {
+    "address": "Schänzlebrücke, 78467 Konstanz",
+    "capacity": 176,
+    "external_identifiers": [],
+    "fee_description": "an Sonn- und Feiertagen gebührenfrei",
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "47.67331027",
+    "lon": "9.16394436",
+    "max_stay": 86400,
+    "name": "Parkplatz Bodenseeforum",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Konstanz",
+    "park_and_ride_type": [],
+    "public_url": "https://www.konstanz.de/site/Konstanz/node/107933/Parkplatz.html",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": "P1D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": "P1D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "P1D",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "46"
+  },
+  {
+    "address": "Universitätsstraße 10, 79464 Konstanz",
+    "capacity": 834,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "47.68778674",
+    "lon": "9.18557279",
+    "max_height": 180,
+    "name": "Parkhaus Uni Süd",
+    "opening_hours": "24/7",
+    "operator_name": "PBW Parkraumgesellschaft Baden-Württemberg mbH",
+    "park_and_ride_type": [],
+    "public_url": "https://www.pbw.de/?menu=parkplatz-finder&profile=kurz-dauer&search=*261%2078464%20Konstanz%20Parkhaus%20S%C3%BCd,%20Universit%C3%A4tsstra%C3%9Fe%2010&anchor=results#!",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "31"
+  },
+  {
+    "address": "Eggerhaldestraße, 78464 Konstanz",
+    "capacity": 350,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "47.6907219",
+    "lon": "9.18351245",
+    "max_height": 350,
+    "name": "Parkplatz Uni Nord",
+    "opening_hours": "24/7",
+    "operator_name": "PBW Parkraumgesellschaft Baden-Württemberg mbH",
+    "park_and_ride_type": [],
+    "public_url": "https://www.pbw.de/?menu=parkplatz-finder&profile=kurz-dauer&search=*263%2078464%20Konstanz%20Parkplatz%20Nord&anchor=results",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2024-08-17T06:30:05Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "30"
+  }
+]

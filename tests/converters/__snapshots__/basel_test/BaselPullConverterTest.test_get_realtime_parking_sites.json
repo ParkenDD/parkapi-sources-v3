@@ -1,0 +1,114 @@
+[
+  {
+    "realtime_capacity": 750,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 286,
+    "restrictions": [],
+    "uid": "badbahnhof"
+  },
+  {
+    "realtime_capacity": 170,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 113,
+    "restrictions": [],
+    "uid": "claramatte"
+  },
+  {
+    "realtime_capacity": 526,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 244,
+    "restrictions": [],
+    "uid": "steinen"
+  },
+  {
+    "realtime_capacity": 1114,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 805,
+    "restrictions": [],
+    "uid": "city"
+  },
+  {
+    "realtime_capacity": 142,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 38,
+    "restrictions": [],
+    "uid": "storchen"
+  },
+  {
+    "realtime_capacity": 97,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 83,
+    "restrictions": [],
+    "uid": "aeschen"
+  },
+  {
+    "realtime_capacity": 350,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 251,
+    "restrictions": [],
+    "uid": "kunstmuseum"
+  },
+  {
+    "realtime_capacity": 752,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 711,
+    "restrictions": [],
+    "uid": "messe"
+  },
+  {
+    "realtime_capacity": 120,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 87,
+    "restrictions": [],
+    "uid": "europe"
+  },
+  {
+    "realtime_capacity": 250,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 242,
+    "restrictions": [],
+    "uid": "rebgasse"
+  },
+  {
+    "realtime_capacity": 52,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 22,
+    "restrictions": [],
+    "uid": "clarahuus"
+  },
+  {
+    "realtime_capacity": 840,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 542,
+    "restrictions": [],
+    "uid": "elisabethen"
+  },
+  {
+    "realtime_capacity": 72,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 71,
+    "restrictions": [],
+    "uid": "postbasel"
+  },
+  {
+    "realtime_capacity": 100,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 50,
+    "restrictions": [],
+    "uid": "bahnhofsued"
+  },
+  {
+    "realtime_capacity": 162,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 167,
+    "restrictions": [],
+    "uid": "anfos"
+  },
+  {
+    "realtime_capacity": 286,
+    "realtime_data_updated_at": "2024-07-28T12:06:00Z",
+    "realtime_free_capacity": 123,
+    "restrictions": [],
+    "uid": "centralbahnparking"
+  }
+]

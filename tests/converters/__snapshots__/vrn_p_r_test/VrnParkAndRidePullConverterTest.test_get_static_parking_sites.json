@@ -1,0 +1,737 @@
+[
+  {
+    "capacity": 263,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": true,
+    "has_lighting": true,
+    "has_realtime_data": true,
+    "is_covered": true,
+    "lat": "49.2911400",
+    "lon": "8.6649200",
+    "name": "P+R Parkhaus am Bahnhof Wiesloch-Walldorf",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/1222006/p-r-parkhaus-am-bahnhof-wiesloch-walldorf-walldorf-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 10,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "2-2-2-1222006-951"
+  },
+  {
+    "capacity": 114,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3721500",
+    "lon": "8.2557800",
+    "name": "P+R Haßloch, Bf Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178382/bahnhofsvorplatz-1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178382-191"
+  },
+  {
+    "capacity": 87,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3156100",
+    "lon": "8.5371500",
+    "name": "P+R Hockenheim Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/182424/hockenheim-sd-hockenheim-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-182424-720"
+  },
+  {
+    "capacity": 288,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3164000",
+    "lon": "8.5377200",
+    "name": "P+R Hockenheim Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/182421/hockenheim-nord-hockenheim-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-182421-721"
+  },
+  {
+    "capacity": 140,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3797500",
+    "lon": "8.3055700",
+    "name": "P+R Böhl-Iggelheim, Bf Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178316/am-bahnhof-bhl-iggelheim-rp-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178316-498"
+  },
+  {
+    "capacity": 190,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3722500",
+    "lon": "8.2531500",
+    "name": "P+R Haßloch, Bf Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178381/p-r-haloch-haloch-rp-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178381-718"
+  },
+  {
+    "capacity": 61,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3803500",
+    "lon": "8.3054500",
+    "name": "P+R Böhl-Iggelheim, Bf Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178317/bahnhofsvorplatz-nord-bhl-iggelheim-rp-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178317-499"
+  },
+  {
+    "capacity": 32,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.6483700",
+    "lon": "8.7806500",
+    "name": "P+R Fürth (Odw.) Bf P1",
+    "opening_hours": "24/7",
+    "operator_name": "Multiguide",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/lot_img/179058/532b13142edc49bfb0a3ebab49035ce9.jpg",
+    "public_url": "https://www.parkme.com/lot/179058/frth-odw-bf-p1-frth-he-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-179058-155"
+  },
+  {
+    "capacity": 52,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Customers Only: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3431359",
+    "lon": "8.6687835",
+    "name": "P+R St. Ilgen-Sandhausen, Am Güterbahnhof",
+    "opening_hours": "24/7",
+    "operator_name": "Sonah",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/153768/st-ilgen-sandhausen-leimen-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-153768-664"
+  },
+  {
+    "capacity": 45,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3942800",
+    "lon": "8.7898600",
+    "name": "P+R Neckargemünd",
+    "opening_hours": "24/7",
+    "operator_name": "Sonah",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178562/neckargemuend-neckargemnd-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178562-676"
+  },
+  {
+    "capacity": 20,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Customers Only: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3420500",
+    "lon": "8.6684800",
+    "name": "P+R St. Ilgen-Sandhausen, Leimbachstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Sonah",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/153768/st-ilgen-sandhausen-leimen-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-153768-678"
+  },
+  {
+    "capacity": 62,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Customers Only: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.3417400",
+    "lon": "8.6692400",
+    "name": "P+R St. Ilgen-Sandhausen, Bf Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Sonah",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178654/st-ilgen-sandhausen-leimen-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 6,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178654-679"
+  },
+  {
+    "capacity": 104,
+    "external_identifiers": [],
+    "fee_description": "Mo-So: Kostenlos",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.2916970",
+    "lon": "8.6655710",
+    "name": "Parkplatz Staatsbahnhofstraße 1",
+    "opening_hours": "24/7",
+    "operator_name": "Verkehrsverbund Rhein-Neckar GmbH",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178684/staatsbahnhofstrae-1",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178684-931"
+  },
+  {
+    "capacity": 34,
+    "external_identifiers": [],
+    "fee_description": "Mo-So: Kostenlos",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.2907420",
+    "lon": "8.6637840",
+    "name": "Parkplatz Wiesloch-Walldorf",
+    "opening_hours": "24/7",
+    "operator_name": "Verkehrsverbund Rhein-Neckar GmbH",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178685/parkplatz-wiesloch-walldorf-wiesloch-bw-germany",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178685-932"
+  },
+  {
+    "capacity": 28,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.6097200",
+    "lon": "8.7535300",
+    "name": "P+R Rimbach-Zotzenbach Bf P1",
+    "opening_hours": "24/7",
+    "operator_name": "MVVEnergie SmartCities",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/logo_ivm.png",
+    "public_url": "https://www.parkme.com/lot/179073/rimbach-zotzenbach-bf-p1-mrlenbach-he-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-179073-None"
+  },
+  {
+    "capacity": 37,
+    "external_identifiers": [],
+    "fee_description": "[{'string': 'Mo-So: Kostenlos', 'langIso639': 'de'}]",
+    "has_fee": false,
+    "has_realtime_data": true,
+    "is_covered": false,
+    "lat": "49.7016900",
+    "lon": "8.6135800",
+    "name": "P+R Bensheim-Auerbach",
+    "opening_hours": "24/7",
+    "operator_name": "MVVEnergie SmartCities",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "photo_url": "https://d13esfgglb25od.cloudfront.net/vrn.jpg",
+    "public_url": "https://www.parkme.com/lot/178307/bensheim-auerbach-bensheim-he-germany",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2-2-2-178307-None"
+  }
+]

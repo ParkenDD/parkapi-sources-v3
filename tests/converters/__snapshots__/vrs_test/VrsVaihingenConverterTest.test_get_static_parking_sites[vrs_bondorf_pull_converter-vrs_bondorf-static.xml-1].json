@@ -1,0 +1,29 @@
+[
+  {
+    "capacity": 314,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.52436858335742",
+    "lon": "8.82821456169721",
+    "name": "P+R Bondorf",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2024-02-16T06:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1035"
+  }
+]
