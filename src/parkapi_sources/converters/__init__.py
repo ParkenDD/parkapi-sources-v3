@@ -13,6 +13,7 @@ from .bb_parkhaus import BBParkhausPushConverter
 from .bfrk_bw import BfrkBwBikePullConverter, BfrkBwCarPullConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
+from .dresden import DresdenPullConverter
 from .ellwangen import EllwangenPushConverter
 from .ellwangen_sensit import EllwangenSensitPullConverter
 from .esslingen import EsslingenPushConverter
@@ -28,9 +29,11 @@ from .freiburg_vag_bike import FreiburgVAGBikePullConverter
 from .friedrichshafen_easypark import FriedrichshafenEasyParkPushConverter
 from .friedrichshafen_sensors import FriedrichshafenSensorsPullConverter
 from .goldbeck import GoldbeckPushConverter
+from .hanau import HanauPullConverter
 from .heidelberg import HeidelbergPullConverter
 from .heidelberg_disabled import HeidelbergDisabledPullConverter
 from .heidelberg_easypark import HeidelbergEasyParkPullConverter
+from .heilbronn import HeilbronnPullConverter
 from .heilbronn_goldbeck import HeilbronnGoldbeckPullConverter
 from .herrenberg import HerrenbergPullConverter
 from .herrenberg_bike import HerrenbergBikePullConverter
@@ -54,10 +57,12 @@ from .konstanz import KonstanzPullConverter
 from .konstanz_bike import KonstanzBikePullConverter
 from .konstanz_disabled import KonstanzDisabledPullConverter
 from .ladenburg_parkraumcheck import LadenburgParkraumcheckPushConverter
+from .magdeburg import MagdeburgPullConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
 from .nagold_bike import NagoldBikePushConverter
 from .neckarsulm import NeckarsulmPushConverter
 from .neckarsulm_bike import NeckarsulmBikePushConverter
+from .nuernberg import NuernbergPullConverter
 from .opendata_swiss import OpenDataSwissPullConverter
 from .p_m_bw import PMBWPullConverter
 from .p_m_sensade import PMSensadePullConverter
@@ -78,3 +83,4 @@ from .velobrix import VelobrixPullConverter
 from .vrn_p_r import VrnParkAndRidePullConverter
 from .vrs import VrsBondorfPullConverter, VrsKirchheimPullConverter, VrsNeustadtPullConverter, VrsVaihingenPullConverter
 from .vrs_p_r import VrsParkAndRidePushConverter
+from .zuerich import ZuerichPullConverter

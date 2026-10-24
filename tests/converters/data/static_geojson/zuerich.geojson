@@ -1,0 +1,689 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "accu",
+        "name": "Parkhaus Accu",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/accu.jsp?pid=accu",
+        "address": "Otto-Schütz-Weg, Zürich",
+        "capacity": 194,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.540748,
+          47.414848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "albisriederplatz",
+        "name": "Parkhaus Albisriederplatz",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/albisriederplatz.jsp?pid=albisriederplatz",
+        "address": "Badenerstrasse 380, Zürich",
+        "capacity": 66,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.509675,
+          47.379458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "bleicherweg",
+        "name": "Parkhaus Bleicherweg",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/bleicherweg.jsp?pid=bleicherweg",
+        "address": "Beethovenstrasse 35, Zürich",
+        "capacity": 275,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.535761,
+          47.367417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "center_11",
+        "name": "Parkhaus Center Eleven",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/center_11.jsp?pid=center_11",
+        "address": "Sophie-Täuber-Strasse 4, Zürich",
+        "capacity": 342,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.540263,
+          47.412805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "cityport",
+        "name": "Parkhaus Cityport",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/cityport.jsp?pid=cityport",
+        "address": "Affolternstrasse 56, Zürich",
+        "capacity": 153,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.540662,
+          47.410876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "cp",
+        "name": "Parkhaus City Parking",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/cp.jsp?pid=cp",
+        "address": "Gessnerallee 14, Zürich",
+        "capacity": 620,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.533806,
+          47.374211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "crowne_plaza",
+        "name": "Parkhaus Crowne Plaza",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/crowne_plaza.jsp?pid=crowne_plaza",
+        "address": "Badenerstrasse 420, Zürich",
+        "capacity": 520,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.50685,
+          47.38115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "dorflinde",
+        "name": "Parkhaus Dorflinde",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/dorflinde.jsp?pid=dorflinde",
+        "address": "Schwamendingenstrasse 31, Zürich",
+        "capacity": 98,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.550214,
+          47.407194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "feldegg",
+        "name": "Parkhaus Feldegg",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/feldegg.jsp?pid=feldegg",
+        "address": "Riesbachstrasse 7, Zürich",
+        "capacity": 346,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.55344,
+          47.360644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "globus",
+        "name": "Parkhaus Globus",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/globus.jsp?pid=globus",
+        "address": "Löwenstrasse 50, Zürich",
+        "capacity": 178,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.537618,
+          47.375773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "hardau",
+        "name": "Parkhaus Hardau II",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/hardau.jsp?pid=hardau",
+        "address": "Bullingerstrasse 73, Zürich",
+        "capacity": 982,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.510323,
+          47.380354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "hb",
+        "name": "Parkhaus Hauptbahnhof",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/hb.jsp?pid=hb",
+        "address": "Sihlquai 41, Zürich",
+        "capacity": 176,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.537886,
+          47.381218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "helvetia",
+        "name": "Parkhaus Helvetiaplatz",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/helvetia.jsp?pid=helvetia",
+        "address": "Molkenstrasse 5/9, Zürich",
+        "capacity": 11,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.52734,
+          47.37621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "jelmoli",
+        "name": "Parkhaus Jelmoli",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/jelmoli.jsp?pid=jelmoli",
+        "address": "Steinmühleplatz 1, Zürich",
+        "capacity": 222,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.536227,
+          47.373847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "jungholz",
+        "name": "Parkhaus Jungholz",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/jungholz.jsp?pid=jungholz",
+        "address": "Jungholzstrasse 19, Zürich",
+        "capacity": 124,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.543973,
+          47.413423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "max_bill_platz",
+        "name": "Parkhaus Max-Bill-Platz",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/max_bill_platz.jsp?pid=max_bill_platz",
+        "address": "Armin-Bollinger-Weg, Zürich",
+        "capacity": 59,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.539274,
+          47.414062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "messe",
+        "name": "Parkhaus Messe Zürich AG",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/messe.jsp?pid=messe",
+        "address": "Andreasstrasse 65, Zürich",
+        "capacity": 2000,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.553929,
+          47.413568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "nordhaus",
+        "name": "Parkhaus Nordhaus",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/nordhaus.jsp?pid=nordhaus",
+        "address": "Siewerdtstrasse 8, Zürich",
+        "capacity": 175,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.547353,
+          47.411839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "octavo",
+        "name": "Parkhaus Octavo",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/octavo.jsp?pid=octavo",
+        "address": "Brown-Boveri-Strasse 2, Zürich",
+        "capacity": 123,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.536066,
+          47.413199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "opera",
+        "name": "Parkhaus Opéra",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/opera.jsp?pid=opera",
+        "address": "Schillerstrasse 5, Zürich",
+        "capacity": 299,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.54647,
+          47.36558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "p_west",
+        "name": "Parkhaus P West",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/p_west.jsp?pid=p_west",
+        "address": "Förrlibuckstrasse 151, Zürich",
+        "capacity": 1000,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.511443,
+          47.391929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_hyatt",
+        "name": "Parkhaus Park Hyatt",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/park_hyatt.jsp?pid=park_hyatt",
+        "address": "Beethovenstrasse 21, Zürich",
+        "capacity": 267,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.536077,
+          47.36586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkside",
+        "name": "Parkhaus Parkside",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/parkside.jsp?pid=parkside",
+        "address": "Sophie-Täuber-Strasse 10, Zürich",
+        "capacity": 38,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.539574,
+          47.412654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "pfingstweid",
+        "name": "Parkhaus Pfingstweid",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/pfingstweid.jsp?pid=pfingstweid",
+        "address": "Pfingstweidstrasse 1, Zürich",
+        "capacity": 276,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.51633,
+          47.38715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "promenade",
+        "name": "Parkhaus Hohe Promenade",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/promenade.jsp?pid=promenade",
+        "address": "Rämistrasse 22a, Zürich",
+        "capacity": 556,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.547632,
+          47.368666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "puls5",
+        "name": "Puls 5 Parkgarage",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/puls5.jsp?pid=puls5",
+        "address": "Giessereistrasse 18, Zürich",
+        "capacity": 62,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.51795,
+          47.39076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "stampfenbach",
+        "name": "Parkhaus Stampfenbach",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/stampfenbach.jsp?pid=stampfenbach",
+        "address": "Niklausstrasse 1, Zürich",
+        "capacity": 237,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.539633,
+          47.38699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "talgarten",
+        "name": "Parkhaus Talgarten",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/talgarten.jsp?pid=talgarten",
+        "address": "Nüschelerstrasse 31, Zürich",
+        "capacity": 110,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.535883,
+          47.372177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "theater_11",
+        "name": "Parkplatz Theater 11",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.pls-zh.ch/parkhaus/theater_11.jsp?pid=theater_11",
+        "address": "Dörfli-/Thurgauerstrasse, Zürich",
+        "capacity": 188,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5492841,
+          47.4101016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "uni_irchel",
+        "name": "Parkhaus Uni Irchel",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/uni_irchel.jsp?pid=uni_irchel",
+        "address": "Winterthurerstrasse 181, Zürich",
+        "capacity": 1227,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.547235,
+          47.397478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "unispital_nord",
+        "name": "Parkhaus USZ Nord",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/unispital_nord.jsp?pid=unispital_nord",
+        "address": "Frauenklinikstrasse, Zürich",
+        "capacity": 90,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5497022,
+          47.3787809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "unispital_sued",
+        "name": "Parkplatz USZ Süd",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.pls-zh.ch/parkhaus/unispital_sued.jsp?pid=unispital_sued",
+        "address": "Gloriastrasse, Zürich",
+        "capacity": 80,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5514107,
+          47.3747904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "urania",
+        "name": "Parkhaus Urania",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/urania.jsp?pid=urania",
+        "address": "Uraniastrasse 3, Zürich",
+        "capacity": 607,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.540615,
+          47.374112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "utoquai",
+        "name": "Parkhaus Utoquai",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/utoquai.jsp?pid=utoquai",
+        "address": "Färberstrasse 6, Zürich",
+        "capacity": 175,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.547986,
+          47.361727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "zueri11",
+        "name": "Parkhaus Züri 11 Shopping",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/zueri11.jsp?pid=zueri11",
+        "address": "Nansenstrasse 5/7, Zürich",
+        "capacity": 60,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.545035,
+          47.4105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "zuerichhorn",
+        "name": "Parkhaus Zürichhorn",
+        "type": "CAR_PARK",
+        "public_url": "https://www.pls-zh.ch/parkhaus/zuerichhorn.jsp?pid=zuerichhorn",
+        "address": "Dufourstrasse 142, Zürich",
+        "capacity": 245,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.553629,
+          47.356073
+        ]
+      }
+    }
+  ]
+}

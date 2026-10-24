@@ -1,0 +1,154 @@
+[
+  {
+    "realtime_capacity": 525,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-hauptmarkt"
+  },
+  {
+    "realtime_capacity": 65,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-hans-sachs-platz"
+  },
+  {
+    "realtime_capacity": 250,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 205,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-sebalder-hoefe"
+  },
+  {
+    "realtime_capacity": 365,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 5,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-karstadt"
+  },
+  {
+    "realtime_capacity": 370,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-katharinenhof"
+  },
+  {
+    "realtime_capacity": 146,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-findelgasse"
+  },
+  {
+    "realtime_capacity": 301,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 81,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "ph-nuernberger-akademie"
+  },
+  {
+    "realtime_capacity": 260,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-adlerstrasse"
+  },
+  {
+    "realtime_capacity": 441,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-woehrl"
+  },
+  {
+    "realtime_capacity": 452,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-jakobsmarkt"
+  },
+  {
+    "realtime_capacity": 100,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 2,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-maximum"
+  },
+  {
+    "realtime_capacity": 220,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 2,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-galeria-kaufhof"
+  },
+  {
+    "realtime_capacity": 200,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-city-point"
+  },
+  {
+    "realtime_capacity": 476,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-sterntor"
+  },
+  {
+    "realtime_capacity": 200,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 53,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-erler-klinik"
+  },
+  {
+    "realtime_capacity": 486,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 14,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-hauptbahnhof"
+  },
+  {
+    "realtime_capacity": 180,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-theater"
+  },
+  {
+    "realtime_capacity": 92,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-adcom-center"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2026-10-24T12:42:40Z",
+    "realtime_free_capacity": 153,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-city-park-center"
+  }
+]

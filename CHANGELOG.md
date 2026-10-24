@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.41.0
+
+Unreleased
+
+### Features
+
+* New converters ported from ParkAPI2-sources: `dresden`, `hanau`, `heilbronn`, `magdeburg`, `nuernberg` and
+  `zuerich`
+
+
 ## 0.40.1
 
 Released 2026-10-24

@@ -21,6 +21,7 @@ We support following data sources:
 | Stadt Bielefeld                                                       | ParkingSite | car              | pull        | `bielefeld`                   | no       |
 | Stadt Bietigheim-Bissingen                                            | ParkingSite | car              | pull        | `bietigheim_bissingen`        | yes      |
 | Stadt Buchen                                                          | ParkingSite | car              | push (json) | `buchen`                      | yes      |
+| Landeshauptstadt Dresden                                              | ParkingSite | car              | pull        | `dresden`                     | yes      |
 | Stadt Ellwangen                                                       | ParkingSite | car              | push (xlsx) | `ellwangen`                   | no       |
 | Stadt Ellwangen: Sensit                                               | ParkingSite | car              | pull        | `ellwangen_sensit`            | yes      |
 | Stadt Esslingen                                                       | ParkingSite | car & motorcycle | push (json) | `esslingen`                   | no       |
@@ -34,9 +35,11 @@ We support following data sources:
 | Stadt Friedrichshafen: EasyPark                                       | ParkingSite | car              | push (csv)  | `friedrichshafen_easypark`    | no       |
 | Stadt Friedrichshafen: Sensoren                                       | ParkingSpot | car              | pull        | `friedrichshafen_sensors`     | yes      |
 | GOLDBECK Parking Services                                             | ParkingSite | car              | push (xlsx) | `goldbeck`                    | no       |
+| Stadt Hanau                                                           | ParkingSite | car              | pull        | `hanau`                       | yes      |
 | Stadt Heidelberg                                                      | ParkingSite | car              | pull        | `heidelberg`                  | yes      |
 | Stadt Heidelberg: Behindertenparkplätze                               | ParkingSpot | car              | pull        | `heidelberg_disabled`         | no       |
 | Stadt Heidelberg: EasyPark                                            | ParkingSite | car              | pull        | `heidelberg_easypark`         | no       |
+| Stadt Heilbronn                                                       | ParkingSite | car              | pull        | `heilbronn`                   | yes      |
 | Stadtwerke Heilbronn: GOLDBECK Parking Services                       | ParkingSite | car              | pull        | `heilbronn_goldbeck`          | yes      |
 | Stadt Herrenberg                                                      | ParkingSite | car              | pull        | `herrenberg`                  | yes      |
 | Stadt Herrenberg - Munigrid                                           | ParkingSite | bike             | pull        | `herrenberg_bike`             | no       |
@@ -59,10 +62,12 @@ We support following data sources:
 | Stadt Konstanz: Fahrrad-Abstellanlagen                                | ParkingSite | bike             | pull        | `konstanz_bike`               | no       |
 | Stadt Konstanz: Behindertenparkplätze                                 | ParkingSpot | car              | pull        | `konstanz_disabled`           | no       |
 | Ladenburg: Parkraumcheck                                              | ParkingSite | car              | push (json) | `ladenburg_parkraumcheck`     | no       |
+| Landeshauptstadt Magdeburg                                            | ParkingSite | car              | pull        | `magdeburg`                   | yes      |
 | Stadt Mannheim                                                        | ParkingSite | car              | push (json) | `mannheim`                    | yes      |
 | Stadt Nagold: Fahrrad-Abstellanlagen                                  | ParkingSite | bike             | push (json) | `nagold_bike`                 | no       |
 | Stadt Neckarsulm: PKW-Parkplätze                                      | ParkingSite | car              | push (csv)  | `neckarsulm`                  | no       |
 | Stadt Neckarsulm: Fahrrad-Abstellanlagen                              | ParkingSite | bike             | push (csv)  | `neckarsulm_bike`             | no       |
+| Stadt Nürnberg                                                        | ParkingSite | car              | pull        | `nuernberg`                   | yes      |
 | Open-Data-Plattform öV Schweiz                                        | ParkingSite | car              | pull        | `opendata_swiss`              | no       |
 | P + M Baden-Württemberg                                               | ParkingSite | car              | pull        | `p_m_bw`                      | yes      |
 | P + M Sensade                                                         | ParkingSite | car              | pull        | `p_m_sensade`                 | yes      |
@@ -89,6 +94,7 @@ We support following data sources:
 | Verband Region Stuttgart: Neustadt                                    | ParkingSite | car              | pull        | `vrs_neustadt`                | yes      |
 | Verband Region Stuttgart: Park and Ride                               | ParkingSite | car              | push (xlsx) | `vrs-p-r`                     | no       |
 | Verband Region Stuttgart: Vaihingen                                   | ParkingSite | car              | pull        | `vrs_vaihingen`               | yes      |
+| Parkleitsystem Stadt Zürich                                           | ParkingSite | car              | pull        | `zuerich`                     | yes      |
 
 
 New converters for new sources are always welcome, please have a look at "Contribute" below.
