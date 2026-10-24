@@ -1,0 +1,114 @@
+[
+  {
+    "realtime_capacity": 170,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 26,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "tiefgarage-am-markt"
+  },
+  {
+    "realtime_capacity": 431,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 199,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-am-forum"
+  },
+  {
+    "realtime_capacity": 305,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 121,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-nuernberger-strasse"
+  },
+  {
+    "realtime_capacity": 87,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 38,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-kinopolis-2"
+  },
+  {
+    "realtime_capacity": 46,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 7,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkplatz-klinikum"
+  },
+  {
+    "realtime_capacity": 200,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 148,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-congress-park"
+  },
+  {
+    "realtime_capacity": 66,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 21,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "tiefgarage-congress-park"
+  },
+  {
+    "realtime_capacity": 447,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 1,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "tiefgarage-forum"
+  },
+  {
+    "realtime_capacity": 194,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 96,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-kinopolis"
+  },
+  {
+    "realtime_capacity": 220,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 187,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-city-center"
+  },
+  {
+    "realtime_capacity": 85,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 37,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "tiefgarage-klinikum-sued"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 321,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-gloria-palais"
+  },
+  {
+    "realtime_capacity": 67,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 19,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkplatz-main-kinzig-halle"
+  },
+  {
+    "realtime_capacity": 243,
+    "realtime_data_updated_at": "2026-10-24T12:58:00Z",
+    "realtime_free_capacity": 50,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkhaus-klinikum"
+  }
+]
