@@ -47,6 +47,12 @@ class BaselPullConverter(ParkingSitePullConverter):
 
         return realtime_parking_site_inputs, parking_site_errors
 
+    def _should_ignore_dataset(self, parking_site_dict: dict) -> bool:
+        if self.config_helper.get('PARK_API_BASEL_IGNORE_MISSING_CAPACITIES'):
+            return parking_site_dict.get('total') is None
+
+        return False
+
     def _get_parking_site_inputs(self) -> tuple[list[BaselParkingSiteInput], list[ImportParkingSiteException]]:
         parking_site_inputs: list[BaselParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
@@ -55,6 +61,9 @@ class BaselPullConverter(ParkingSitePullConverter):
         parking_sites_dicts: list[dict] = self.parking_sites_input_validator.validate(response.json())
 
         for parking_site_dict in parking_sites_dicts:
+            if self._should_ignore_dataset(parking_site_dict):
+                continue
+
             try:
                 parking_site_inputs.append(self.parking_site_validator.validate(parking_site_dict))
             except ValidationError as e:

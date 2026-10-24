@@ -8,6 +8,12 @@ Unreleased
 
 * New converters ported from ParkAPI2-sources: `dresden`, `hanau`, `heilbronn`, `magdeburg`, `nuernberg` and
   `zuerich`
+* Add config flag `PARK_API_BASEL_IGNORE_MISSING_CAPACITIES` to ignore parking sites without capacity at `basel`
+* Map `status` to `realtime_opening_status` at `basel`
+
+### Fixes
+
+* `toll_collect` realtime import skips the parking sites the static import ignores (sites without any spaces)
 
 
 ## 0.40.1

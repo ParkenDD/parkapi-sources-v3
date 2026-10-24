@@ -106,4 +106,10 @@ class TollCollectConverterTest:
         # The free capacity is calculated from the static total capacity and the realtime occupied spaces
         assert any(item.realtime_free_capacity is not None for item in realtime_parking_site_inputs)
 
+        # Parking sites the static import ignores (no spaces at all) are skipped in the realtime import as well
+        static_parking_site_inputs, _ = toll_collect_pull_converter.get_static_parking_sites()
+        static_uids = {static_parking_site_input.uid for static_parking_site_input in static_parking_site_inputs}
+        assert {item.uid for item in realtime_parking_site_inputs} <= static_uids
+        assert all(item.realtime_capacity != 0 for item in realtime_parking_site_inputs)
+
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

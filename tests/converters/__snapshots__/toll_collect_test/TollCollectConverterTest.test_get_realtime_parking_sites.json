@@ -327,13 +327,6 @@
     "uid": "DE-NW-000193"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-10T14:06:59Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-SH-007108"
-  },
-  {
     "realtime_capacity": 26,
     "realtime_data_updated_at": "2026-06-11T05:08:29Z",
     "realtime_free_capacity": 5,
@@ -582,14 +575,6 @@
     "uid": "DE-NI-361302"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:33:14Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-BY-008631"
-  },
-  {
     "realtime_capacity": 110,
     "realtime_data_updated_at": "2026-06-11T05:11:59Z",
     "realtime_free_capacity": 24,
@@ -668,13 +653,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BY-000348"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T03:09:58Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NW-000161"
   },
   {
     "realtime_capacity": 11,
@@ -763,13 +741,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-ST-002020"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:43:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-RP-000106"
   },
   {
     "realtime_capacity": 43,
@@ -1393,13 +1364,6 @@
     "uid": "DE-HE-300005"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:57:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-RP-000055"
-  },
-  {
     "realtime_capacity": 37,
     "realtime_data_updated_at": "2026-06-11T05:11:29Z",
     "realtime_free_capacity": 17,
@@ -1486,13 +1450,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-TH-071062"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T03:35:44Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-005323"
   },
   {
     "realtime_capacity": 22,
@@ -1893,13 +1850,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-NI-363101"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:10:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NW-000178"
   },
   {
     "realtime_capacity": 62,
@@ -2347,27 +2297,12 @@
     "uid": "DE-NI-251701"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:51:14Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-RP-002268"
-  },
-  {
     "realtime_capacity": 21,
     "realtime_data_updated_at": "2026-06-11T05:11:44Z",
     "realtime_free_capacity": 10,
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-008005"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:49:59Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-RP-000015"
   },
   {
     "realtime_capacity": 9,
@@ -2573,14 +2508,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-004530"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:10:59Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-BY-000381"
   },
   {
     "realtime_capacity": 24,
@@ -2932,13 +2859,6 @@
     "uid": "DE-BW-008010"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:30:59Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-HE-003200"
-  },
-  {
     "realtime_capacity": 11,
     "realtime_data_updated_at": "2026-06-11T05:05:44Z",
     "realtime_free_capacity": 7,
@@ -2953,13 +2873,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-005070"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:04:44Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-HE-660005"
   },
   {
     "realtime_capacity": 133,
@@ -3007,13 +2920,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BY-000340"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:37:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-BY-000301"
   },
   {
     "realtime_capacity": 6,
@@ -3071,14 +2977,6 @@
     "uid": "DE-BY-000289"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:11:14Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-NW-000109"
-  },
-  {
     "realtime_capacity": 90,
     "realtime_data_updated_at": "2026-06-11T05:11:29Z",
     "realtime_free_capacity": 52,
@@ -3093,13 +2991,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BY-000443"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:05:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-HE-500025"
   },
   {
     "realtime_capacity": 34,
@@ -3236,13 +3127,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-005630"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T03:44:44Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-BB-424901"
   },
   {
     "realtime_capacity": 30,
@@ -3584,14 +3468,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-008040"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-10T17:38:14Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-SH-023204"
   },
   {
     "realtime_capacity": 7,
@@ -4312,13 +4188,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-081515"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:10:59Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-HE-660006"
   },
   {
     "realtime_capacity": 13,
@@ -5139,13 +5008,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-BW-081640"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T02:56:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-HE-003199"
   },
   {
     "realtime_capacity": 8,
@@ -6514,20 +6376,6 @@
     "uid": "DE-NI-362802"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T03:54:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-SH-007207"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T03:54:44Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-005324"
-  },
-  {
     "realtime_capacity": 8,
     "realtime_data_updated_at": "2026-06-10T03:14:29Z",
     "realtime_free_capacity": 8,
@@ -6550,13 +6398,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-HE-671001"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:00:59Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-005318"
   },
   {
     "realtime_capacity": 119,
@@ -8332,14 +8173,6 @@
     "uid": "DE-ST-009081"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:08:14Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-HE-700001"
-  },
-  {
     "realtime_capacity": 12,
     "realtime_data_updated_at": "2026-06-11T05:08:15Z",
     "realtime_free_capacity": 9,
@@ -8943,13 +8776,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-NI-311502"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:04:14Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-271406"
   },
   {
     "realtime_capacity": 9,
@@ -9599,13 +9425,6 @@
     "uid": "DE-RP-000050"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:24:59Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-292004"
-  },
-  {
     "realtime_capacity": 30,
     "realtime_data_updated_at": "2026-06-11T05:10:44Z",
     "realtime_free_capacity": 11,
@@ -9915,13 +9734,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-NI-352401"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-10T12:17:14Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-BY-000431"
   },
   {
     "realtime_capacity": 20,
@@ -10714,13 +10526,6 @@
     "uid": "DE-BW-005110"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:58:14Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-RP-000036"
-  },
-  {
     "realtime_capacity": 24,
     "realtime_data_updated_at": "2026-06-11T05:09:44Z",
     "realtime_free_capacity": 3,
@@ -10847,13 +10652,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-NI-301705"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:08:44Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-BE-000001"
   },
   {
     "realtime_capacity": 41,
@@ -12971,14 +12769,6 @@
     "uid": "DE-MV-190016"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:07:59Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-SH-023104"
-  },
-  {
     "realtime_capacity": 6,
     "realtime_data_updated_at": "2026-06-11T04:59:59Z",
     "realtime_free_capacity": 2,
@@ -13033,13 +12823,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-NI-005331"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-10T19:35:29Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-005312"
   },
   {
     "realtime_capacity": 7,
@@ -13232,13 +13015,6 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-HE-500001"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:11:14Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NW-000173"
   },
   {
     "realtime_capacity": 35,
@@ -13984,13 +13760,6 @@
     "uid": "DE-NW-000222"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:08:44Z",
-    "realtime_opening_status": "UNKNOWN",
-    "restrictions": [],
-    "uid": "DE-NI-005317"
-  },
-  {
     "realtime_capacity": 4,
     "realtime_data_updated_at": "2026-06-11T03:19:59Z",
     "realtime_free_capacity": 4,
@@ -14346,14 +14115,6 @@
     "uid": "DE-BY-000075"
   },
   {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T05:09:44Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-HE-450016"
-  },
-  {
     "realtime_capacity": 8,
     "realtime_data_updated_at": "2026-06-11T05:05:59Z",
     "realtime_free_capacity": 5,
@@ -14480,13 +14241,5 @@
     "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "DE-NI-371501"
-  },
-  {
-    "realtime_capacity": 0,
-    "realtime_data_updated_at": "2026-06-11T04:59:44Z",
-    "realtime_free_capacity": 0,
-    "realtime_opening_status": "OPEN",
-    "restrictions": [],
-    "uid": "DE-BY-000448"
   }
 ]
