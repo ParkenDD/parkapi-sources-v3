@@ -2,7 +2,7 @@
 
 ## 0.41.0
 
-Unreleased
+Released 2026-10-24
 
 ### Features
 
