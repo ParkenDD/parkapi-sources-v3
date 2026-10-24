@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.40.1
+
+Released 2026-10-24
+
+### Maintenance
+
+* [introduce syrupy](https://github.com/ParkenDD/parkapi-sources-v3/pull/434)
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/446)
+
+
 ## 0.40.0
 
 Released 2026-10-20
