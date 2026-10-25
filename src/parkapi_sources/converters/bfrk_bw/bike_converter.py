@@ -26,6 +26,12 @@ class BfrkBwBikePullConverter(BfrkBasePullConverter):
         has_realtime_data=False,
     )
 
+    def check_ignore_input_dict(self, input_dict: dict) -> bool:
+        if self.config_helper.get('PARK_API_BFRK_BW_BIKE_IGNORE_MISSING_CAPACITIES', True) is False:
+            return False
+
+        return input_dict.get('stellplatzanzahl') is None
+
     def check_ignore_item(self, input_data: BfrkBikeInput) -> bool:
         if input_data.stellplatzanzahl == 0:
             return True

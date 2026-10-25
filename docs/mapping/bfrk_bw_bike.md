@@ -10,6 +10,9 @@ A `ParkingSite` is generated if:
 * `anlagentyp` is set
 * `stellplatzanzahl` is set and `>= 1`
 
+Datasets without `stellplatzanzahl` are ignored silently. If the config key
+`PARK_API_BFRK_BW_BIKE_IGNORE_MISSING_CAPACITIES` is set to `false`, they are reported as validation errors instead.
+
 | Field                | Type                              | Cardinality | Mapping                            | Comment                                                                                           |
 |----------------------|-----------------------------------|-------------|------------------------------------|---------------------------------------------------------------------------------------------------|
 | infraid              | string                            | 1           | uid                                |                                                                                                   |
