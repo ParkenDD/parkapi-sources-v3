@@ -43,6 +43,15 @@ def mocked_bfrk_bw_config_helper_no_filter_private(mocked_config_helper: Mock):
 
 
 @pytest.fixture
+def mocked_bfrk_bw_config_helper_ignore_invalid_coordinates(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_BFRK_BW_CAR_IGNORE_INVALID_COORDINATES': True,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
 def mocked_bfrk_bw_config_helper_no_ignore_missing_capacities(mocked_config_helper: Mock):
     config = {
         'PARK_API_BFRK_BW_BIKE_IGNORE_MISSING_CAPACITIES': False,
@@ -74,6 +83,17 @@ def bfrk_car_pull_converter_no_filter_private(
 ) -> BfrkBwCarPullConverter:
     return BfrkBwCarPullConverter(
         config_helper=mocked_bfrk_bw_config_helper_no_filter_private,
+        request_helper=request_helper,
+    )
+
+
+@pytest.fixture
+def bfrk_car_pull_converter_ignore_invalid_coordinates(
+    mocked_bfrk_bw_config_helper_ignore_invalid_coordinates: Mock,
+    request_helper: RequestHelper,
+) -> BfrkBwCarPullConverter:
+    return BfrkBwCarPullConverter(
+        config_helper=mocked_bfrk_bw_config_helper_ignore_invalid_coordinates,
         request_helper=request_helper,
     )
 
@@ -189,6 +209,48 @@ class BfrkCarPullConverterTest:
 
         assert len(static_parking_site_inputs) == 2127
         assert len(import_parking_site_exceptions) == 9
+
+    @staticmethod
+    def test_get_static_parking_sites_ignore_invalid_coordinates(
+        bfrk_car_pull_converter_ignore_invalid_coordinates: BfrkBwCarPullConverter,
+        requests_mock: Mocker,
+    ):
+        json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_car.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://bfrk-kat-api.efa-bw.de/bfrk_api/parkplaetze',
+            text=json_data,
+        )
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            bfrk_car_pull_converter_ignore_invalid_coordinates.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 1482
+        assert len(import_parking_site_exceptions) == 4
+
+    @staticmethod
+    def test_get_static_parking_spots_ignore_invalid_coordinates(
+        bfrk_car_pull_converter_ignore_invalid_coordinates: BfrkBwCarPullConverter,
+        requests_mock: Mocker,
+    ):
+        json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_car.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://bfrk-kat-api.efa-bw.de/bfrk_api/parkplaetze',
+            text=json_data,
+        )
+
+        static_parking_spot_inputs, import_parking_spot_exceptions = (
+            bfrk_car_pull_converter_ignore_invalid_coordinates.get_static_parking_spots()
+        )
+
+        assert len(static_parking_spot_inputs) == 1395
+        assert len(import_parking_spot_exceptions) == 4
 
 
 @pytest.fixture
