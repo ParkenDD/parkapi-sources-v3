@@ -21,3 +21,16 @@ class NoneableEnumValidator(EnumValidator):
             return super().validate(input_data, **kwargs)
         except ValueNotAllowedError:
             return None
+
+
+class StrippingEnumValidator(EnumValidator):
+    """
+    Variant of `EnumValidator` that strips leading and trailing whitespace from string input before matching it
+    against the Enum values.
+    """
+
+    def validate(self, input_data: Any, **kwargs: Any) -> Any:
+        if isinstance(input_data, str):
+            input_data = input_data.strip()
+
+        return super().validate(input_data, **kwargs)
