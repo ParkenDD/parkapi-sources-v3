@@ -1,0 +1,79 @@
+[
+  {
+    "capacity": 220,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.317013",
+    "lon": "9.498012",
+    "max_height": 200,
+    "name": "City Point",
+    "operator_name": "City-Point Kassel GmbH & Co. KG",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:10Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "7[City Point]"
+  },
+  {
+    "capacity": 980,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.313118",
+    "lon": "9.496904",
+    "max_height": 210,
+    "name": "Friedrichsplatz",
+    "operator_name": "Parkhausgesellschaft der Stadt Kassel mbh",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 15,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 143,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2026-10-25T08:00:10Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "1[Friedrichsplatz]"
+  },
+  {
+    "capacity": 322,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.313217",
+    "lon": "9.491046",
+    "max_height": 200,
+    "name": "Wilhelmsstraße",
+    "operator_name": "Verwaltung Parkhaus Wilhelmsstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 18,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2026-10-25T08:00:10Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "4[Wilhelmsstraße]"
+  }
+]

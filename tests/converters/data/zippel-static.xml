@@ -1,0 +1,112 @@
+<ns:d2LogicalModel xmlns:ns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 ITP_Deutschland_ParkingTable.xsd">
+      <ns:exchange>
+        <ns:supplierIdentification>
+          <ns:country>de</ns:country>
+          <ns:nationalIdentifier>Zippel Logistik GmbH</ns:nationalIdentifier>
+        </ns:supplierIdentification>
+      </ns:exchange>
+      <ns:payloadPublication lang="de" xsi:type="ns:GenericPublication">
+        <ns:publicationTime>2026-10-25T09:27:56.8618587+01:00</ns:publicationTime>
+        <ns:publicationCreator>
+          <ns:country>de</ns:country>
+          <ns:nationalIdentifier>Zippel Logistik GmbH</ns:nationalIdentifier>
+        </ns:publicationCreator>
+        <ns:genericPublicationName>ParkingTablePublication</ns:genericPublicationName>
+        <ns:genericPublicationExtension>
+          <ns:parkingTablePublication>
+            <ns:parkingTable id="DE000000-1000-0000-0000-0322313000000" version="1">
+              <ns:parkingTableName>
+                <ns:values>
+                  <ns:value lang="de">2.Mecklenb. Grundst. eGbr</ns:value>
+                </ns:values>
+              </ns:parkingTableName>
+              <ns:parkingTableVersionTime>2026-10-25T09:27:56.8618587+01:00</ns:parkingTableVersionTime>
+              <ns:parkingRecord id="DE000000-2000-0000-0000-0322313000000" version="1" xsi:type="ns:InterUrbanParkingSite">
+                <ns:parkingName>
+                  <ns:values>
+                    <ns:value lang="de">P &amp; R Spedition Zippel</ns:value>
+                  </ns:values>
+                </ns:parkingName>
+                <ns:parkingRecordVersionTime>2026-10-25T09:27:57.0738596+01:00</ns:parkingRecordVersionTime>
+                <ns:operator id="DE000000-3000-0000-0000-0322313000000" version="1" xsi:type="ns:ContactDetails">
+                  <ns:contactOrganisationName>
+                    <ns:values>
+                      <ns:value lang="de">2.Mecklenb. Grundst. eGbr</ns:value>
+                    </ns:values>
+                  </ns:contactOrganisationName>
+                </ns:operator>
+                <ns:parkingLocation xsi:type="ns:Point">
+                  <ns:pointByCoordinates>
+                    <ns:pointCoordinates>
+                      <ns:latitude>0</ns:latitude>
+                      <ns:longitude>0</ns:longitude>
+                    </ns:pointCoordinates>
+                  </ns:pointByCoordinates>
+                </ns:parkingLocation>
+                <ns:tariffsAndPayment>
+                  <ns:chargeBand id="DE000000-5000-0000-0000-0322313000000" version="1">
+                    <ns:chargeCurrency>eur</ns:chargeCurrency>
+                    <ns:charge>
+                      <ns:charge>15</ns:charge>
+                    </ns:charge>
+                  </ns:chargeBand>
+                </ns:tariffsAndPayment>
+                <ns:groupOfParkingSpaces groupIndex="1">
+                  <ns:parkingSpaceBasics xsi:type="ns:GroupOfParkingSpaces">
+                    <ns:parkingSpaceOrGroupIdentifier>
+                      <ns:values>
+                        <ns:value lang="de">LKW-Plätze</ns:value>
+                      </ns:values>
+                    </ns:parkingSpaceOrGroupIdentifier>
+                    <ns:assignedParkingAmongOthers>
+                      <ns:vehicleCharacteristics>
+                        <ns:vehicleType>lorry</ns:vehicleType>
+                      </ns:vehicleCharacteristics>
+                    </ns:assignedParkingAmongOthers>
+                    <ns:parkingNumberOfSpaces>42</ns:parkingNumberOfSpaces>
+                    <ns:parkingTypeOfGroup>other</ns:parkingTypeOfGroup>
+                  </ns:parkingSpaceBasics>
+                </ns:groupOfParkingSpaces>
+                <ns:parkingSiteAddress id="DE000000-3000-0000-0000-0322313000000" version="1" xsi:type="ns:ContactDetails">
+                  <ns:contactDetailsStreet>298</ns:contactDetailsStreet>
+                  <ns:contactDetailsHouseNumber>Wendenstraße</ns:contactDetailsHouseNumber>
+                  <ns:contactDetailsPostcode>20637</ns:contactDetailsPostcode>
+                  <ns:contactDetailsCity>
+                    <ns:values>
+                      <ns:value lang="de">Hamburg</ns:value>
+                    </ns:values>
+                  </ns:contactDetailsCity>
+                </ns:parkingSiteAddress>
+                <ns:parkingAccess id="DE000000-4000-0000-0000-0322313000000">
+                  <ns:accessCategory>vehicleEntrance</ns:accessCategory>
+                  <ns:primaryRoad>
+                    <ns:roadIdentifier>
+                      <ns:values>
+                        <ns:value lang="de">A19</ns:value>
+                      </ns:values>
+                    </ns:roadIdentifier>
+                    <ns:roadDestination>
+                      <ns:values>
+                        <ns:value lang="de">Rostock</ns:value>
+                      </ns:values>
+                    </ns:roadDestination>
+                  </ns:primaryRoad>
+                  <ns:location xsi:type="ns:Point">
+                    <ns:pointByCoordinates>
+                      <ns:pointCoordinates>
+                        <ns:latitude>5401888</ns:latitude>
+                        <ns:longitude>1221571</ns:longitude>
+                      </ns:pointCoordinates>
+                    </ns:pointByCoordinates>
+                  </ns:location>
+                </ns:parkingAccess>
+                <ns:parkingStandardsAndSecurity>
+                  <ns:parkingSecurity>unknown</ns:parkingSecurity>
+                </ns:parkingStandardsAndSecurity>
+                <ns:interUrbanParkingSiteLocation>motorway</ns:interUrbanParkingSiteLocation>
+              </ns:parkingRecord>
+            </ns:parkingTable>
+          </ns:parkingTablePublication>
+        </ns:genericPublicationExtension>
+      </ns:payloadPublication>
+    </ns:d2LogicalModel>

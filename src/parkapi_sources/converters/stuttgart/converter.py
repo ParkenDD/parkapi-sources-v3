@@ -4,24 +4,22 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import pyproj
-from lxml import etree
 from lxml.etree import Element
 from validataclass.validators import DataclassValidator
 
 from parkapi_sources.converters.base_converter import ParkingSiteBaseConverter
-from parkapi_sources.converters.base_converter.datex2 import Datex2RealtimeMixin, ParkingFacilityMixin
+from parkapi_sources.converters.base_converter.datex2 import ParkingFacilityMixin, ParkingFacilityStatusMixin
 from parkapi_sources.converters.base_converter.push import XmlConverter
 from parkapi_sources.exceptions import ImportParkingSiteException, ImportSourceException
 from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo, StaticParkingSiteInput
 from parkapi_sources.util import round_7d
 
-from .validators import ParkingFacilityStatus, StuttgartParkingFacility
+from .validators import StuttgartParkingFacility
 
 
-class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConverter, ParkingSiteBaseConverter):
+class StuttgartPushConverter(ParkingFacilityMixin, ParkingFacilityStatusMixin, XmlConverter, ParkingSiteBaseConverter):
     proj: pyproj.Proj = pyproj.Proj(proj='utm', zone=32, ellps='WGS84', preserve_units=True)
     static_validator = DataclassValidator(StuttgartParkingFacility)
-    realtime_validator = DataclassValidator(ParkingFacilityStatus)
 
     source_info = SourceInfo(
         uid='stuttgart',
@@ -58,23 +56,3 @@ class StuttgartPushConverter(ParkingFacilityMixin, Datex2RealtimeMixin, XmlConve
             source_uid=self.source_info.uid,
             message='Unknown XML data structure',
         )
-
-    def _transform_realtime_xml_to_realtime_input_dicts(self, realtime_xml_data: etree.Element) -> list[dict]:
-        data = self.xml_helper.xml_to_dict(
-            realtime_xml_data,
-            ensure_array_keys=[
-                ('parkingFacilityTableStatusPublication', 'parkingFacilityStatus'),
-                ('parkingFacilityStatus', 'parkingFacilityStatus'),
-            ],
-        )
-        return (
-            data
-            .get('d2LogicalModel', {})
-            .get('payloadPublication', {})
-            .get('genericPublicationExtension', {})
-            .get('parkingFacilityTableStatusPublication', {})
-            .get('parkingFacilityStatus', [])
-        )
-
-    def get_uid_from_realtime_input_dict(self, input_dict: dict) -> str:
-        return input_dict.get('parkingFacilityReference', {}).get('id')

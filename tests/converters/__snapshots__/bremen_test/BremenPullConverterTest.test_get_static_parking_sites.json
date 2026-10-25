@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 205,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "53.17002",
+    "lon": "8.626014",
+    "name": "Am Vegesacker Hafen",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T00:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "Ski_HAFEN"
+  },
+  {
+    "capacity": 769,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "53.079563",
+    "lon": "8.803435",
+    "name": "PH02 Am Brill",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T00:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "Ski_BRILL"
+  },
+  {
+    "capacity": 390,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "53.105328",
+    "lon": "8.852021",
+    "name": "UNI P4 Parkplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "Ski_UNIP4"
+  }
+]

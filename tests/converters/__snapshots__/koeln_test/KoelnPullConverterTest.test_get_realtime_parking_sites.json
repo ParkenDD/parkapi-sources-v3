@@ -1,0 +1,34 @@
+[
+  {
+    "realtime_capacity": 300,
+    "realtime_data_updated_at": "2026-10-25T08:23:59Z",
+    "realtime_free_capacity": 183,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH19"
+  },
+  {
+    "realtime_capacity": 442,
+    "realtime_data_updated_at": "2026-10-25T08:24:03Z",
+    "realtime_free_capacity": 55,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "PH20"
+  },
+  {
+    "realtime_capacity": 140,
+    "realtime_data_updated_at": "2026-10-25T08:24:00Z",
+    "realtime_free_capacity": 121,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "D_P002"
+  },
+  {
+    "realtime_capacity": 0,
+    "realtime_data_updated_at": "2026-10-24T21:58:59Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH01"
+  }
+]

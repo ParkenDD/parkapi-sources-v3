@@ -1,0 +1,50 @@
+[
+  {
+    "capacity": 685,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.59489",
+    "lon": "11.00144",
+    "name": "Erlangen Hbf GESAMT",
+    "operator_name": "Erlangen Hbf GESAMT",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2023-12-31T23:02:44Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "de:09562:3111_1"
+  },
+  {
+    "capacity": 194,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.59489",
+    "lon": "11.00144",
+    "name": "Erlangen Hbf Parkfeld 4",
+    "operator_name": "Erlangen Hbf Parkfeld 4",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2023-12-31T23:02:44Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "de:09562:3111_3"
+  },
+  {
+    "capacity": 52,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.775154",
+    "lon": "11.036422",
+    "name": "Eggolsheim",
+    "operator_name": "Eggolsheim",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2023-12-31T23:02:44Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "de:09474:9250"
+  }
+]

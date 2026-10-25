@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 500,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.2171",
+    "lon": "6.779992",
+    "name": "PH 25 - Talstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:10Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "25[PH 25 - Talstraße]"
+  },
+  {
+    "capacity": 641,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.208904",
+    "lon": "6.773777",
+    "name": "PH 52 - Düsseldorf Arcaden",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:10Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "52[PH 52 - Düsseldorf Arcaden]"
+  },
+  {
+    "capacity": 360,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.215363",
+    "lon": "6.77718",
+    "name": "PH 29 - Friedrichstr.",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:10Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "29[PH 29 - Friedrichstr.]"
+  }
+]

@@ -28,6 +28,7 @@ class InterUrbanParkingSiteMixin(Datex2StaticMixin, ABC):
             ensure_array_keys=[
                 ('parkingTable', 'parkingRecord'),
                 ('parkingName', 'values'),
+                ('parkingRecord', 'groupOfParkingSpaces'),
             ],
         )
         return (
