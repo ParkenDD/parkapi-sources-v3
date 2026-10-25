@@ -63,13 +63,34 @@ def basel_ignore_missing_capacity_pull_converter(
     )
 
 
+@pytest.fixture
+def basel_not_ignore_missing_capacity_config_helper(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_BASEL_IGNORE_MISSING_CAPACITIES': False,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def basel_not_ignore_missing_capacity_pull_converter(
+    basel_not_ignore_missing_capacity_config_helper: Mock,
+    request_helper: RequestHelper,
+    requests_mock_basel: Mocker,
+) -> BaselPullConverter:
+    return BaselPullConverter(
+        config_helper=basel_not_ignore_missing_capacity_config_helper,
+        request_helper=request_helper,
+    )
+
+
 class BaselPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(basel_pull_converter: BaselPullConverter, snapshot: SnapshotAssertion):
         static_parking_site_inputs, import_parking_site_exceptions = basel_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 16
-        assert len(import_parking_site_exceptions) == 1
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
@@ -78,7 +99,7 @@ class BaselPullConverterTest:
         realtime_parking_site_inputs, import_parking_site_exceptions = basel_pull_converter.get_realtime_parking_sites()
 
         assert len(realtime_parking_site_inputs) == 16
-        assert len(import_parking_site_exceptions) == 1
+        assert len(import_parking_site_exceptions) == 0
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)
 
@@ -107,5 +128,33 @@ class BaselPullConverterTest:
 
         assert len(realtime_parking_site_inputs) == 16
         assert len(import_parking_site_exceptions) == 0
+
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)
+
+    @staticmethod
+    def test_get_static_parking_sites_not_ignore_missing_capacities(
+        basel_not_ignore_missing_capacity_pull_converter: BaselPullConverter,
+        snapshot: SnapshotAssertion,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            basel_not_ignore_missing_capacity_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 16
+        assert len(import_parking_site_exceptions) == 1
+
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
+
+    @staticmethod
+    def test_get_realtime_parking_sites_not_ignore_missing_capacities(
+        basel_not_ignore_missing_capacity_pull_converter: BaselPullConverter,
+        snapshot: SnapshotAssertion,
+    ):
+        realtime_parking_site_inputs, import_parking_site_exceptions = (
+            basel_not_ignore_missing_capacity_pull_converter.get_realtime_parking_sites()
+        )
+
+        assert len(realtime_parking_site_inputs) == 16
+        assert len(import_parking_site_exceptions) == 1
 
         validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

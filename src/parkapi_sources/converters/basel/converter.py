@@ -48,7 +48,7 @@ class BaselPullConverter(ParkingSitePullConverter):
         return realtime_parking_site_inputs, parking_site_errors
 
     def _should_ignore_dataset(self, parking_site_dict: dict) -> bool:
-        if self.config_helper.get('PARK_API_BASEL_IGNORE_MISSING_CAPACITIES'):
+        if self.config_helper.get('PARK_API_BASEL_IGNORE_MISSING_CAPACITIES', True):
             return parking_site_dict.get('total') is None
 
         return False
