@@ -50,6 +50,7 @@ class BfrkArt(Enum):
     OFF_STREET_PARKING_GROUND_4 = 'Behindertenplätze'
     UNKNOWN = 'unbekannt'
     CUSTOMER = 'kundenparkplatz'
+    PRIVATE = 'privatparkplatz'
 
     def to_parking_site_type(self) -> ParkingSiteType:
         return {
@@ -60,6 +61,7 @@ class BfrkArt(Enum):
             self.OFF_STREET_PARKING_GROUND_4: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.UNKNOWN: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.CUSTOMER: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.PRIVATE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
         }.get(self)
 
     def to_parking_spot_type(self) -> ParkingSpotType:

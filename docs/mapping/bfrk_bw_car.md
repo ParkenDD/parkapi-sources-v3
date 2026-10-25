@@ -9,11 +9,16 @@ BFRK BW Car is a large JSON dataset with static `ParkingSite` and `ParkingSpot` 
 A `ParkingSite` is generated if:
 * `oeffentlichvorhanden` is not set or `== true`
 * `stellplaetzegesamt` is set and `>= 1`
+* `art` is not `privatparkplatz`
 
 One or more `ParkingSpot`s are generated if:
 * `oeffentlichvorhanden` is not set or `== true`
 * `behindertenstellplaetze` is set and `>= 1`
 * `behindertenplaetze_lat` and `behindertenplaetze_lon` are set
+* `art` is not `privatparkplatz`
+
+Datasets with `art` `privatparkplatz` are ignored. If the config key `PARK_API_BFRK_BW_CAR_FILTER_PRIVATE` is set to
+`false`, they are imported instead.
 
 `ParkingSpot`s obtain a `parking_site_id` to reference their `ParkingSite`, if existing.
 
@@ -69,6 +74,7 @@ Multiple `ParkingSpot`s are distributed a bit from each other.
 | Behindertenplätze        | OFF_STREET_PARKING_GROUND | `Parkplatz`   |                             |
 | unbekannt                | OFF_STREET_PARKING_GROUND | `Parkplatz`   |                             |
 | kundenparkplatz          | OFF_STREET_PARKING_GROUND | `Parkplatz`   |                             |
+| privatparkplatz          | OFF_STREET_PARKING_GROUND | `Parkplatz`   |                             |
 
 
 ### Orientierung
