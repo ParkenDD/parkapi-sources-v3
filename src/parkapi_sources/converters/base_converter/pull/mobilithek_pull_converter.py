@@ -17,6 +17,8 @@ class MobilithekPullConverterMixin(ABC):
     request_get: Callable
     # The Mobilithek offers DATEX II v2 and v3 publications at different endpoints
     mobilithek_datex2_version: int = 2
+    # Publications in the Mobilithek container format wrap the actual document and have an endpoint of their own
+    mobilithek_container: bool = False
 
     @property
     @abstractmethod
@@ -33,7 +35,9 @@ class MobilithekPullConverterMixin(ABC):
         ]
 
     def _get_xml_data(self, subscription_id: int) -> etree.Element:
-        if self.mobilithek_datex2_version == 3:
+        if self.mobilithek_container:
+            url = f'https://mobilithek.info:8443/mobilithek/api/v1.0/container/subscription?subscriptionID={subscription_id}'
+        elif self.mobilithek_datex2_version == 3:
             url = f'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/datexv3?subscriptionID={subscription_id}'
         else:
             url = (
@@ -53,4 +57,21 @@ class MobilithekPullConverterMixin(ABC):
         # because of RFC 2616.
         root = etree.fromstring(response.content, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 
+        if self.mobilithek_container:
+            return self._unwrap_container(root)
+
         return root
+
+    @staticmethod
+    def _unwrap_container(root: etree.Element) -> etree.Element:
+        """
+        The container format has the actual document as single child of container/body/xml. If the container does not
+        look like this, the container itself is returned, so the following import fails at the unexpected root element.
+        """
+        xml_element = root.find('{*}body/{*}xml')
+        if xml_element is None:
+            return root
+        children = [child for child in xml_element if isinstance(child.tag, str)]
+        if len(children) != 1:
+            return root
+        return children[0]
