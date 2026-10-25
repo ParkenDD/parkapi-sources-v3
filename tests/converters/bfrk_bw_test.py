@@ -33,6 +33,15 @@ def mocked_bfrk_bw_config_helper_no_filter(mocked_config_helper: Mock):
 
 
 @pytest.fixture
+def mocked_bfrk_bw_config_helper_no_ignore_missing_capacities(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_BFRK_BW_BIKE_IGNORE_MISSING_CAPACITIES': False,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
 def bfrk_car_pull_converter(
     mocked_bfrk_bw_config_helper: Mock,
     request_helper: RequestHelper,
@@ -156,6 +165,17 @@ def bfrk_bike_pull_converter_unconfirmed(
     return BfrkBwBikePullConverter(config_helper=mocked_bfrk_bw_config_helper_no_filter, request_helper=request_helper)
 
 
+@pytest.fixture
+def bfrk_bike_pull_converter_no_ignore_missing_capacities(
+    mocked_bfrk_bw_config_helper_no_ignore_missing_capacities: Mock,
+    request_helper: RequestHelper,
+) -> BfrkBwBikePullConverter:
+    return BfrkBwBikePullConverter(
+        config_helper=mocked_bfrk_bw_config_helper_no_ignore_missing_capacities,
+        request_helper=request_helper,
+    )
+
+
 class BfrkBikePullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(
@@ -175,7 +195,7 @@ class BfrkBikePullConverterTest:
         static_parking_site_inputs, import_parking_site_exceptions = bfrk_bike_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 1994
-        assert len(import_parking_site_exceptions) == 153
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
@@ -199,6 +219,27 @@ class BfrkBikePullConverterTest:
         )
 
         assert len(static_parking_site_inputs) == 2877
-        assert len(import_parking_site_exceptions) == 153
+        assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
+
+    @staticmethod
+    def test_get_static_parking_sites_no_ignore_missing_capacities(
+        bfrk_bike_pull_converter_no_ignore_missing_capacities: BfrkBwBikePullConverter,
+        requests_mock: Mocker,
+    ):
+        json_path = Path(Path(__file__).parent, 'data', 'bfrk_bw_bike.json')
+        with json_path.open() as json_file:
+            json_data = json_file.read()
+
+        requests_mock.get(
+            'https://bfrk-kat-api.efa-bw.de/bfrk_api/fahrradanlagen',
+            text=json_data,
+        )
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            bfrk_bike_pull_converter_no_ignore_missing_capacities.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 1994
+        assert len(import_parking_site_exceptions) == 153
