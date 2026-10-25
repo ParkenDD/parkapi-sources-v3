@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.43.0
+
+Released 2026-10-25
+
+### Features
+
+* All HTTP requests send the User-Agent `ParkApiSources/{version}`, which can be overwritten by config value
+  `USER_AGENT`
+
+### Fixes
+
+* `basel` uses the shared request helper instead of plain `requests`, so it sends the User-Agent as well
+
+
 ## 0.42.0
 
 Released 2026-10-25
