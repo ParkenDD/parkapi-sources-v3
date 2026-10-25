@@ -23,6 +23,9 @@ class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
         name='Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze',
         public_url='https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-haltestellen',
         source_url='https://bfrk-kat-api.efa-bw.de/bfrk_api/parkplaetze',
+        attribution_contributor='Nahverkehrsgesellschaft Baden-Württemberg mbH (NVBW)',
+        attribution_license='Datenlizenz Deutschland – Namensnennung – Version 2.0',
+        attribution_url='https://www.govdata.de/dl-de/by-2-0',
         has_realtime_data=False,
     )
 

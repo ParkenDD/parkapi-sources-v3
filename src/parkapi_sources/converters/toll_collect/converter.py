@@ -30,6 +30,9 @@ class TollCollectPullConverter(
         uid='toll_collect',
         name='Toll Collect: Truck Parking',
         public_url='https://www.toll-collect.de',
+        attribution_contributor='Toll Collect GmbH',
+        attribution_license='Nutzungsbedingungen der Toll Collect GmbH',
+        attribution_url='https://company.toll-collect.de/go/sid-agb-lb',
         has_realtime_data=True,
     )
 
