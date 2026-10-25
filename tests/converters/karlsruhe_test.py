@@ -28,7 +28,9 @@ def requests_mock_karlsruhe(requests_mock: Mocker) -> Mocker:
 
 @pytest.fixture
 def karlsruhe_config_helper(mocked_config_helper: Mock):
-    config = {}
+    config = {
+        'PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES': False,
+    }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
 

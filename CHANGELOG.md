@@ -1,24 +1,5 @@
 # Changelog
 
-## 0.41.1
-
-### Features
-
-* Add config flag `PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_TYPES` to ignore parking sites without `Typ_Anlage` at
-  `herrenberg_bike`
-* Add config flag `PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES` to ignore parking sites without
-  `Anzahl_Abstellmoeglichkeiten` at `herrenberg_bike`, defaulting to `true`
-* Accept `Polygon` geometries at `herrenberg_bike`, using the centroid as point and the polygon as `geojson`
-
-### Fixes
-
-* `herrenberg_bike` reports the right uid at validation errors
-* `herrenberg_bike` accepts `Erfassungsdatum` in format `DD.MM.YYYY` as well
-* `herrenberg_bike` accepts an empty `Gebuehrenpflichtig` as `false`
-* `herrenberg_bike` ignores leading and trailing whitespace at `Typ_Anlage`
-* `herrenberg_bike` maps `SonstigeAnmerkungen` to `description`, which was ignored before due to a typo
-
-
 ## 0.41.0
 
 Released 2026-10-24
