@@ -23,7 +23,7 @@ class FreiburgPropertiesInput:
     obs_id: int = IntegerValidator(allow_strings=True)
     obs_parkid: int = IntegerValidator(allow_strings=True)
     obs_state: int = IntegerValidator(allow_strings=True)
-    obs_max: int = IntegerValidator(min_value=1, allow_strings=True)
+    obs_max: int = IntegerValidator(min_value=0, allow_strings=True)
     obs_free: int = IntegerValidator(allow_strings=True)
     obs_ts: datetime = SpacedDateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
@@ -61,7 +61,7 @@ class FreiburgParkAndRideStaticPropertiesInput:
 @validataclass
 class FreiburgParkAndRideRealtimePropertiesInput:
     obs_state: int = IntegerValidator(allow_strings=True)
-    obs_max: int = IntegerValidator(min_value=1, allow_strings=True)
+    obs_max: int = IntegerValidator(min_value=0, allow_strings=True)
     obs_free: int = IntegerValidator(allow_strings=True)
     obs_ts: datetime = SpacedDateTimeValidator(
         local_timezone=ZoneInfo('Europe/Berlin'),
@@ -85,7 +85,9 @@ class FreiburgFeatureInput(FreiburgBaseFeatureInput):
     properties: FreiburgPropertiesInput = DataclassValidator(FreiburgPropertiesInput)
 
     def extend_static_parking_site_input(self, static_parking_site_input: StaticParkingSiteInput):
-        static_parking_site_input.capacity = self.properties.obs_max
+        # A capacity of 0 means a closed parking site, so we keep the static capacity
+        if self.properties.obs_max > 0:
+            static_parking_site_input.capacity = self.properties.obs_max
         static_parking_site_input.public_url = self.properties.park_url
 
     def to_realtime_parking_site_input(self) -> RealtimeParkingSiteInput:
