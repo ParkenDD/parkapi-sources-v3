@@ -3,6 +3,8 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
+from typing import Any
+
 from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator
 
@@ -98,17 +100,25 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
                 sensors_by_uid[sensor_uid] = f'{karlsruhe_input.properties.id}_{i}'
 
         response = self.request_get(url=self.realtime_source_url.format(auth=auth))
+        response_data = response.json()
         try:
-            realtime_body: KarlsruheDisabledRealtimeInput = self.realtime_validator.validate(response.json())
+            realtime_body: KarlsruheDisabledRealtimeInput = self.realtime_validator.validate(response_data)
         except ValidationError as e:
+            if isinstance(response_data, dict) and isinstance(response_data.get('body'), list):
+                response_data = {
+                    **response_data,
+                    'body': [self._without_interfaces(item) for item in response_data['body']],
+                }
             raise ImportSourceException(
                 source_uid=self.source_info.uid,
-                message=f'Invalid input at source {self.source_info.uid}: {e.to_dict()}, data: {response.content.decode()}',
+                message=f'Invalid input at source {self.source_info.uid}: {e.to_dict()}, data: {response_data}',
             ) from e
 
         realtime_parking_spot_inputs: list[RealtimeParkingSpotInput] = []
         import_parking_spot_exceptions: list[ImportParkingSpotException] = []
         for realtime_dict in realtime_body.body:
+            if self._should_ignore_realtime_dataset(realtime_dict):
+                continue
             try:
                 realtime_item: KarlsruheDisabledRealtimeItemInput = self.realtime_item_validator.validate(realtime_dict)
                 if realtime_item.id not in sensors_by_uid:
@@ -123,9 +133,25 @@ class KarlsruheDisabledPullConverter(ParkingSpotPullConverter):
                     ImportParkingSpotException(
                         source_uid=self.source_info.uid,
                         parking_spot_uid=realtime_dict.get('id'),
-                        message=f'Invalid data at uid {realtime_dict.get("id")}: {e.to_dict()}, data: {realtime_dict}',
+                        message=f'Invalid data at uid {realtime_dict.get("id")}: {e.to_dict()}, '
+                        f'data: {self._without_interfaces(realtime_dict)}',
                     ),
                 )
                 continue
 
         return realtime_parking_spot_inputs, import_parking_spot_exceptions
+
+    def _should_ignore_realtime_dataset(self, realtime_dict: dict) -> bool:
+        if self.config_helper.get('PARK_API_KARLSRUHE_DISABLED_IGNORE_MISSING_READINGS', True):
+            return not realtime_dict.get('last_readings')
+
+        return False
+
+    @staticmethod
+    def _without_interfaces(realtime_dict: Any) -> Any:
+        """
+        Interfaces contain secrets like LoRaWAN device keys, so they must not end up in logs.
+        """
+        if not isinstance(realtime_dict, dict):
+            return realtime_dict
+        return {key: value for key, value in realtime_dict.items() if key != 'interfaces'}
