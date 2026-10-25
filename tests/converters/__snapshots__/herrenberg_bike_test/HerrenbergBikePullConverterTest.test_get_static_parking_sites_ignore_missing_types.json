@@ -473,6 +473,7 @@
   },
   {
     "capacity": 9,
+    "description": "Vorschlag OV Gültstein zu Ersetzen",
     "external_identifiers": [],
     "has_realtime_data": false,
     "lat": "48.5758434",
@@ -1084,6 +1085,7 @@
   },
   {
     "capacity": 248,
+    "description": "unklar ob 112 oder 192 - nochmal nachzählen!",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -1115,6 +1117,7 @@
   },
   {
     "capacity": 40,
+    "description": "in OSM noch nicht aktuell",
     "external_identifiers": [],
     "has_lighting": true,
     "has_realtime_data": false,
@@ -1409,6 +1412,7 @@
   },
   {
     "capacity": 36,
+    "description": "30 Reine Vorderradhalterung und  6 Bügel + Vorderradhalterung;  Quelle: OSM",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -1439,6 +1443,7 @@
   },
   {
     "capacity": 5,
+    "description": "Ein Bügel verbogen und nicht benutzbar",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -1586,6 +1591,7 @@
   },
   {
     "capacity": 12,
+    "description": "aus OSM",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -1734,6 +1740,7 @@
   },
   {
     "capacity": 4,
+    "description": "So nah am Autoparkplatz, dass es nur eine Frage der Zeit ist, bis ein Rad hier zu Schrott gefahren wird. M.E. völlig unbrauchbar.",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -1911,6 +1918,7 @@
   },
   {
     "capacity": 88,
+    "description": "bis 2025 gesperrt",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -2118,6 +2126,7 @@
   },
   {
     "capacity": 6,
+    "description": "Zugänglichkeit: Unklar. ob Tor immer geöffnet",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -2294,6 +2303,7 @@
   },
   {
     "capacity": 10,
+    "description": "4 Bügel + Vorderradhalterung und 6 Reine Vorderradhalterung",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -2469,6 +2479,7 @@
   },
   {
     "capacity": 3,
+    "description": "Viel zu wenig Parkmöglichkeiten",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -2821,6 +2832,7 @@
   },
   {
     "capacity": 3,
+    "description": "Fußweg und Autoparkplatz",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -2850,6 +2862,7 @@
   },
   {
     "capacity": 17,
+    "description": "11 Reine Vorderradhalterung + 3 Anlehnbügel",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -3200,6 +3213,35 @@
     "uid": "1096"
   },
   {
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "OSM",
+        "value": "12768217726"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.6035930",
+    "lon": "8.8836147",
+    "name": "Murmelbahn",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-28T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1097"
+  },
+  {
     "capacity": 10,
     "external_identifiers": [
       {
@@ -3437,6 +3479,7 @@
   },
   {
     "capacity": 6,
+    "description": "Gebäude wird umgewidmet. bitte Bauanträge prüfen",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -3703,6 +3746,7 @@
   },
   {
     "capacity": 3,
+    "description": "Privatgrundstück",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -3998,6 +4042,7 @@
   },
   {
     "capacity": 11,
+    "description": "5 Reine Vorderradhalterung + 3 Anlehnbügel",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -4590,6 +4635,35 @@
     "external_identifiers": [
       {
         "type": "OSM",
+        "value": "7725324516"
+      }
+    ],
+    "has_realtime_data": false,
+    "lat": "48.5936235",
+    "lon": "8.8635200",
+    "name": "Post Herrenberg",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2025-04-25T00:00:00Z",
+    "tags": [],
+    "type": "WALL_LOOPS",
+    "uid": "1145"
+  },
+  {
+    "capacity": 6,
+    "external_identifiers": [
+      {
+        "type": "OSM",
         "value": "6595792653"
       }
     ],
@@ -4617,6 +4691,7 @@
   },
   {
     "capacity": 8,
+    "description": "Das Holz ist teilweise stark verrottet",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -4907,6 +4982,7 @@
   },
   {
     "capacity": 6,
+    "description": "aufgestellt 2024/2025",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -5469,6 +5545,7 @@
   },
   {
     "capacity": 46,
+    "description": "die Bügel haben jeweils eine Querstrebe für Kinderfahrräder. Da die Baustelle noch immer nicht abgeschlossen ist, sind weitere Veränderungen möglich.",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -5558,6 +5635,7 @@
   },
   {
     "capacity": 6,
+    "description": "Aufgestellt 2024/2025",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -5765,6 +5843,7 @@
   },
   {
     "capacity": 57,
+    "description": "in OSM als versch. Punkte erfasst",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -5797,6 +5876,7 @@
   },
   {
     "capacity": 9,
+    "description": "Durch Holzgatter zu erreichen",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -5858,6 +5938,7 @@
   },
   {
     "capacity": 8,
+    "description": "Nur für Kinderfahrräder gedacht",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -6213,6 +6294,7 @@
   },
   {
     "capacity": 258,
+    "description": "192 Vorderradklemmen, 66 Anlehnbügel",
     "external_identifiers": [
       {
         "type": "OSM",
@@ -6419,5 +6501,84 @@
     "tags": [],
     "type": "STANDS",
     "uid": "1209"
+  },
+  {
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            8.920366403519361,
+            48.57806028716436
+          ],
+          [
+            8.920259223138574,
+            48.57781713760026
+          ],
+          [
+            8.919970948739554,
+            48.577651036933815
+          ],
+          [
+            8.919593105021344,
+            48.57761472005206
+          ],
+          [
+            8.919245652042525,
+            48.57771971704874
+          ],
+          [
+            8.919038901851042,
+            48.5779326928046
+          ],
+          [
+            8.919038497313736,
+            48.57818602985094
+          ],
+          [
+            8.919244569634975,
+            48.578399295469005
+          ],
+          [
+            8.91959169346557,
+            48.57850477850575
+          ],
+          [
+            8.919969657636269,
+            48.5784689881525
+          ],
+          [
+            8.920258458536512,
+            48.57830328784658
+          ],
+          [
+            8.920366403519361,
+            48.57806028716436
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_realtime_data": false,
+    "lat": "48.5780598",
+    "lon": "8.9196888",
+    "name": "Fahrradabstellanlage Polygon",
+    "park_and_ride_type": [],
+    "purpose": "BIKE",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2026-05-01T00:00:00Z",
+    "tags": [],
+    "type": "STANDS",
+    "uid": "1220"
   }
 ]

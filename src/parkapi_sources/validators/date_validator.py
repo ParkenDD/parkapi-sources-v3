@@ -11,18 +11,22 @@ from validataclass.validators import StringValidator
 
 
 class ParsedDateValidator(StringValidator):
-    date_format: str
+    date_formats: list[str]
 
-    def __init__(self, *args, date_format: str, **kwargs):
+    def __init__(self, *args, date_format: str | list[str], **kwargs):
         super().__init__(*args, **kwargs)
-        self.date_format = date_format
+        self.date_formats = [date_format] if isinstance(date_format, str) else date_format
 
     def validate(self, input_data: Any, **kwargs) -> date:
         input_data = super().validate(input_data, **kwargs)
 
-        try:
-            return datetime.strptime(input_data, self.date_format).date()
-        except ValueError as e:
-            raise ValidationError(
-                code='invalid_date', reason=f'{input_data} does not have required date format {self.date_format}.'
-            ) from e
+        for date_format in self.date_formats:
+            try:
+                return datetime.strptime(input_data, date_format).date()
+            except ValueError:
+                continue
+
+        raise ValidationError(
+            code='invalid_date',
+            reason=f'{input_data} does not have required date format {", ".join(self.date_formats)}.',
+        )
