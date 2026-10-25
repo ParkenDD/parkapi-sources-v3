@@ -192,6 +192,11 @@ GeoJSON files. Per default, static GeoJSON files are fetched from this repositor
 - `STATIC_GEOJSON_BASE_PATH` defines a lokal path instead, so the application will load files locally without network
   requests
 
+All HTTP requests are sent with the User-Agent `ParkApiSources/{version}`, where `{version}` is the released package
+version, or `dev` if ParkAPI Sources is not installed from a release build. You can override it:
+
+- `USER_AGENT` defines a custom User-Agent header for all requests
+
 
 ### Use converters
 
