@@ -1,5 +1,48 @@
 # Changelog
 
+## 0.42.0
+
+Released 2026-10-25
+
+### Features
+
+* New DATEX II converters via Mobilithek: `bremen`, `duesseldorf`, `erfurt`, `frankfurt`, `halle`, `kassel`, `koeln`,
+  `magdeburg_ifak`, `oberstdorf`, `p_r_hessen`, `vgn`, `wiesbaden`, `wuppertal` and `zippel`
+* New converter `dortmund`
+* New Karlsruhe converters: `karlsruhe_p_r`, `karlsruhe_p_m`, `karlsruhe_truck`, `karlsruhe_bus`, `karlsruhe_caravan`
+  and `karlsruhe_motorcycle`
+* Support for the Mobilithek container format at Mobilithek pull converters
+* Add licence attributions to several converters
+* Add config flag `PARK_API_BFRK_BW_BIKE_IGNORE_MISSING_CAPACITIES` to ignore parking sites without `stellplatzanzahl`
+  at `bfrk_bw_bike`, defaulting to `true`
+* Add config flag `PARK_API_BFRK_BW_CAR_FILTER_PRIVATE` to ignore datasets with `art` `privatparkplatz` at
+  `bfrk_bw_car`, defaulting to `true`
+* Add config flag `PARK_API_BFRK_BW_CAR_IGNORE_INVALID_COORDINATES` to ignore datasets with coordinates outside of
+  Baden-Württemberg at `bfrk_bw_car`
+* Add config flag `PARK_API_KARLSRUHE_DISABLED_IGNORE_MISSING_READINGS` to ignore realtime items with empty
+  `last_readings` at `karlsruhe_disabled`, defaulting to `true`
+* Add config flag `PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_TYPES` to ignore parking sites without `Typ_Anlage` at
+  `herrenberg_bike`
+* Add config flag `PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES` to ignore parking sites without
+  `Anzahl_Abstellmoeglichkeiten` at `herrenberg_bike`, defaulting to `true`
+* Accept `Polygon` geometries at `herrenberg_bike`, using the centroid as point and the polygon as `geojson`
+* `PARK_API_BASEL_IGNORE_MISSING_CAPACITIES`, `PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES` and
+  `PARK_API_KARLSRUHE_BIKE_IGNORE_MISSING_CAPACITIES` default to `true`
+
+### Fixes
+
+* `freiburg` accepts a realtime capacity of `0` and keeps the static capacity in this case
+* `herrenberg_bike` reports the right uid at validation errors
+* `herrenberg_bike` accepts `Erfassungsdatum` in format `DD.MM.YYYY` as well
+* `herrenberg_bike` accepts an empty `Gebuehrenpflichtig` as `false`
+* `herrenberg_bike` ignores leading and trailing whitespace at `Typ_Anlage`
+* `herrenberg_bike` maps `SonstigeAnmerkungen` to `description`, which was ignored before due to a typo
+
+### Maintenance
+
+* `stuttgart` uses the shared DATEX II `ParkingFacilityStatusMixin` for realtime data
+
+
 ## 0.41.0
 
 Released 2026-10-24
