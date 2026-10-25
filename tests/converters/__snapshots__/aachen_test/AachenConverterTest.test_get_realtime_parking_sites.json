@@ -3,6 +3,7 @@
     "realtime_capacity": 560,
     "realtime_data_updated_at": "2025-02-07T19:05:34Z",
     "realtime_free_capacity": 412,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P1"
   },
@@ -10,6 +11,7 @@
     "realtime_capacity": 497,
     "realtime_data_updated_at": "2025-02-07T19:07:26Z",
     "realtime_free_capacity": 291,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P2"
   },
@@ -17,6 +19,7 @@
     "realtime_capacity": 186,
     "realtime_data_updated_at": "2025-02-07T19:08:24Z",
     "realtime_free_capacity": 143,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P3"
   },
@@ -24,6 +27,7 @@
     "realtime_capacity": 0,
     "realtime_data_updated_at": "2025-02-03T07:53:35Z",
     "realtime_free_capacity": 0,
+    "realtime_opening_status": "CLOSED",
     "restrictions": [],
     "uid": "P5"
   },
@@ -31,6 +35,7 @@
     "realtime_capacity": 999,
     "realtime_data_updated_at": "2025-02-07T19:08:28Z",
     "realtime_free_capacity": 624,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P6"
   },
@@ -38,6 +43,7 @@
     "realtime_capacity": 717,
     "realtime_data_updated_at": "2025-02-07T19:07:35Z",
     "realtime_free_capacity": 554,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P7"
   },
@@ -45,6 +51,7 @@
     "realtime_capacity": 600,
     "realtime_data_updated_at": "2025-02-07T19:05:47Z",
     "realtime_free_capacity": 443,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P8"
   },
@@ -52,6 +59,7 @@
     "realtime_capacity": 500,
     "realtime_data_updated_at": "2025-02-07T19:08:18Z",
     "realtime_free_capacity": 74,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P9"
   },
@@ -59,6 +67,7 @@
     "realtime_capacity": 319,
     "realtime_data_updated_at": "2025-02-07T19:08:18Z",
     "realtime_free_capacity": 42,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P10"
   },
@@ -66,6 +75,7 @@
     "realtime_capacity": 176,
     "realtime_data_updated_at": "2025-02-07T18:49:09Z",
     "realtime_free_capacity": 130,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P12"
   },
@@ -73,6 +83,7 @@
     "realtime_capacity": 348,
     "realtime_data_updated_at": "2025-02-07T19:08:18Z",
     "realtime_free_capacity": 271,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P11"
   },
@@ -80,6 +91,7 @@
     "realtime_capacity": 180,
     "realtime_data_updated_at": "2025-02-04T00:11:19Z",
     "realtime_free_capacity": 180,
+    "realtime_opening_status": "CLOSED",
     "restrictions": [],
     "uid": "P14"
   },
@@ -87,6 +99,7 @@
     "realtime_capacity": 0,
     "realtime_data_updated_at": "2025-02-03T08:00:03Z",
     "realtime_free_capacity": 0,
+    "realtime_opening_status": "CLOSED",
     "restrictions": [],
     "uid": "P13"
   },
@@ -94,6 +107,7 @@
     "realtime_capacity": 305,
     "realtime_data_updated_at": "2025-02-07T02:15:11Z",
     "realtime_free_capacity": 80,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P16"
   },
@@ -101,6 +115,7 @@
     "realtime_capacity": 160,
     "realtime_data_updated_at": "2025-02-07T18:51:25Z",
     "realtime_free_capacity": 118,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P15"
   },
@@ -108,6 +123,7 @@
     "realtime_capacity": 569,
     "realtime_data_updated_at": "2025-02-07T19:09:47Z",
     "realtime_free_capacity": 518,
+    "realtime_opening_status": "CLOSED",
     "restrictions": [],
     "uid": "P18"
   },
@@ -115,6 +131,7 @@
     "realtime_capacity": 480,
     "realtime_data_updated_at": "2025-02-07T18:56:15Z",
     "realtime_free_capacity": 429,
+    "realtime_opening_status": "OPEN",
     "restrictions": [],
     "uid": "P17"
   }

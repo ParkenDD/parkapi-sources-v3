@@ -1,0 +1,34 @@
+[
+  {
+    "realtime_capacity": 0,
+    "realtime_data_updated_at": "2026-10-16T11:05:09Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Ski_SMS"
+  },
+  {
+    "realtime_capacity": 205,
+    "realtime_data_updated_at": "2026-10-16T11:05:09Z",
+    "realtime_free_capacity": 169,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Ski_HAFEN"
+  },
+  {
+    "realtime_capacity": 769,
+    "realtime_data_updated_at": "2026-10-16T11:05:09Z",
+    "realtime_free_capacity": 415,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Ski_BRILL"
+  },
+  {
+    "realtime_capacity": 390,
+    "realtime_data_updated_at": "2026-10-16T11:05:09Z",
+    "realtime_free_capacity": 81,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "Ski_UNIP4"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 120,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "52.137653",
+    "lon": "11.637448",
+    "name": "Universitätsplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:09Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "PH01"
+  },
+  {
+    "capacity": 184,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "52.138298",
+    "lon": "11.6441",
+    "name": "Listemannstrasse",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:09Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "PH02"
+  },
+  {
+    "capacity": 300,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "52.132656",
+    "lon": "11.634863",
+    "name": "Karstadt",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:09Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "PH03"
+  }
+]

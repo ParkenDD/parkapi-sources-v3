@@ -1,0 +1,23 @@
+[
+  {
+    "realtime_data_updated_at": "2026-10-25T08:15:36Z",
+    "realtime_free_capacity": 665,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH01"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-25T02:59:14Z",
+    "realtime_free_capacity": 292,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH02"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-25T08:08:17Z",
+    "realtime_free_capacity": 682,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH03"
+  }
+]

@@ -15,6 +15,8 @@ class MobilithekPullConverterMixin(ABC):
     xml_helper = XMLHelper()
     config_helper: ConfigHelper
     request_get: Callable
+    # The Mobilithek offers DATEX II v2 and v3 publications at different endpoints
+    mobilithek_datex2_version: int = 2
 
     @property
     @abstractmethod
@@ -31,10 +33,13 @@ class MobilithekPullConverterMixin(ABC):
         ]
 
     def _get_xml_data(self, subscription_id: int) -> etree.Element:
-        url = (
-            f'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/{subscription_id}'
-            f'/clientPullService?subscriptionID={subscription_id}'
-        )
+        if self.mobilithek_datex2_version == 3:
+            url = f'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/datexv3?subscriptionID={subscription_id}'
+        else:
+            url = (
+                f'https://mobilithek.info:8443/mobilithek/api/v1.0/subscription/{subscription_id}'
+                f'/clientPullService?subscriptionID={subscription_id}'
+            )
         # Create an isolated session, because cert is set globally otherwise
         response = self.request_get(
             url=url,
@@ -43,9 +48,9 @@ class MobilithekPullConverterMixin(ABC):
                 self.config_helper.get('PARK_API_MOBILITHEK_KEY'),
             ),
         )
-        # Force UTF-8 encoding, because python requests sets ISO-8859-1 because of RFC 2616
-        response.encoding = 'utf-8'
-
-        root = etree.fromstring(response.text, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
+        # Parse the raw bytes: lxml uses the encoding of the XML declaration, or UTF-8 if there is none. Parsing
+        # response.text fails at documents with an encoding declaration, and python requests would assume ISO-8859-1
+        # because of RFC 2616.
+        root = etree.fromstring(response.content, parser=etree.XMLParser(resolve_entities=False))  # noqa: S320
 
         return root

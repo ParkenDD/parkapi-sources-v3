@@ -15,6 +15,8 @@ from parkapi_sources.models import RealtimeParkingSiteInput, SourceInfo
 
 class Datex2RealtimeMixin(ABC):
     source_info: SourceInfo
+    # The root element of a valid document, d2LogicalModel at DATEX II v2 and payload at DATEX II v3
+    datex2_root_element: str = 'd2LogicalModel'
 
     @abstractmethod
     def _transform_realtime_xml_to_realtime_input_dicts(self, xml_data: etree.Element) -> list[dict]:
@@ -35,6 +37,16 @@ class Datex2RealtimeMixin(ABC):
     ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         realtime_parking_site_inputs: list[RealtimeParkingSiteInput] = []
         realtime_parking_site_errors: list[ImportParkingSiteException] = []
+
+        root_element = etree.QName(realtime_xml_data).localname
+        if root_element != self.datex2_root_element:
+            realtime_parking_site_errors.append(
+                ImportParkingSiteException(
+                    source_uid=self.source_info.uid,
+                    message=f'Invalid DATEX II root element {root_element}, expected {self.datex2_root_element}.',
+                ),
+            )
+            return realtime_parking_site_inputs, realtime_parking_site_errors
 
         realtime_input_dicts: list[dict] = self._transform_realtime_xml_to_realtime_input_dicts(realtime_xml_data)
 

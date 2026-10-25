@@ -17,6 +17,8 @@ class Datex2StaticMixin(ABC):
     source_info: SourceInfo
     # Can be overwritten by child classes
     has_realtime_data: bool = True
+    # The root element of a valid document, d2LogicalModel at DATEX II v2 and payload at DATEX II v3
+    datex2_root_element: str = 'd2LogicalModel'
 
     @abstractmethod
     def _transform_static_xml_to_static_input_dicts(self, xml_data: etree.Element) -> list[dict]:
@@ -42,6 +44,16 @@ class Datex2StaticMixin(ABC):
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         static_parking_site_inputs: list[StaticParkingSiteInput] = []
         static_parking_site_errors: list[ImportParkingSiteException] = []
+
+        root_element = etree.QName(static_xml_data).localname
+        if root_element != self.datex2_root_element:
+            static_parking_site_errors.append(
+                ImportParkingSiteException(
+                    source_uid=self.source_info.uid,
+                    message=f'Invalid DATEX II root element {root_element}, expected {self.datex2_root_element}.',
+                ),
+            )
+            return static_parking_site_inputs, static_parking_site_errors
 
         static_input_dicts: list[dict] = self._transform_static_xml_to_static_input_dicts(static_xml_data)
 

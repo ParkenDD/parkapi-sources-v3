@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 700,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "50.075996",
+    "lon": "8.244657",
+    "name": "TG RMCC",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:19:16Z",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "PH01"
+  },
+  {
+    "capacity": 292,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "50.078163",
+    "lon": "8.239902",
+    "name": "PH Luisenplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T02:59:40Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "PH02"
+  },
+  {
+    "capacity": 800,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "50.078445",
+    "lon": "8.235777",
+    "name": "PH Luisenforum",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:21:08Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "PH03"
+  }
+]

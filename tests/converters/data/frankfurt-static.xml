@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<d2:payload xmlns:d2="http://datex2.eu/schema/3/d2Payload" xmlns="http://datex2.eu/schema/3/parking" xmlns:com="http://datex2.eu/schema/3/common" xmlns:loc="http://datex2.eu/schema/3/locationReferencing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="de" modelBaseVersion="3" profileVersion="02-00-00 (Rev A.1)" xsi:schemaLocation="http://datex2.eu/schema/3/d2Payload DATEXII_3_D2Payload.xsd http://datex2.eu/schema/3/common DATEXII_3_Common.xsd http://datex2.eu/schema/3/locationReferencing DATEXII_3_LocationReferencing.xsd http://datex2.eu/schema/3/parking DATEXII_3_Parking.xsd" xsi:type="ParkingTablePublication">
+<com:publicationTime>2026-10-25T09:00:05.063+01:00</com:publicationTime>
+<com:publicationCreator>
+<com:country>DE</com:country>
+<com:nationalIdentifier>DE-NAP-Stadt Frankfurt am Main</com:nationalIdentifier>
+</com:publicationCreator>
+<headerInformation>
+<com:confidentiality>noRestriction</com:confidentiality>
+<com:informationStatus>real</com:informationStatus>
+</headerInformation>
+<parkingTable id="PARKING-TABLE" version="1792915205125">
+<parkingTableVersionTime>2026-10-25T09:00:05.125+01:00</parkingTableVersionTime>
+<parkingRecord id="244382" version="1787653526115" xsi:type="UrbanParkingSite">
+<parkingName>
+<com:values>
+<com:value lang="de">Mainzer Landstraße</com:value>
+</com:values>
+</parkingName>
+<parkingAlias>
+<com:values>
+<com:value lang="de">Galluswarte Kleyerstraße</com:value>
+</com:values>
+</parkingAlias>
+<parkingDescription>
+<com:values>
+<com:value lang="de"/>
+</com:values>
+</parkingDescription>
+<parkingRecordVersionTime>2026-08-25T12:25:25.923+02:00</parkingRecordVersionTime>
+<parkingNumberOfSpaces>290</parkingNumberOfSpaces>
+<operator id="245961" version="1762287732638" xsi:type="ContactDetails">
+<contactOrganisationName>
+<com:values>
+<com:value lang="de">APCOA PARKING Deutschland GmbH</com:value>
+</com:values>
+</contactOrganisationName>
+<contactDetailsEMail>https://www.apcoa.de/kundenservice/kontakt</contactDetailsEMail>
+</operator>
+<parkingLocation xsi:type="loc:PointLocation">
+<loc:supplementaryPositionalDescription>
+<loc:locationDescription>
+<com:values>
+<com:value lang="de">Kleyerstraße 20, 60326 Frankfurt am Main</com:value>
+</com:values>
+</loc:locationDescription>
+</loc:supplementaryPositionalDescription>
+<loc:pointByCoordinates>
+<loc:pointCoordinates>
+<loc:latitude>50.10211</loc:latitude>
+<loc:longitude>8.6411295</loc:longitude>
+</loc:pointCoordinates>
+</loc:pointByCoordinates>
+</parkingLocation>
+<tariffsAndPayment>
+<lastUpdated>2025-07-29T10:45:44.226+02:00</lastUpdated>
+<acceptedMeansOfPayment>cash</acceptedMeansOfPayment>
+<acceptedMeansOfPayment>paymentCard</acceptedMeansOfPayment>
+<freeOfCharge>false</freeOfCharge>
+<chargeBand id="250228" version="1756800927076">
+<chargeCurrency>eur</chargeCurrency>
+<chargeBandName>
+<com:values>
+<com:value lang="de">Standardtarif</com:value>
+</com:values>
+</chargeBandName>
+<applicableForUser>allUsers</applicableForUser>
+<charge>
+<charge>1.7</charge>
+<chargeInterval>3600.0</chargeInterval>
+<chargeType>additionalIntervalPrice</chargeType>
+<chargeTypeDescription>
+<com:values>
+<com:value lang="de">je angefangene Stunde: 1,70 €</com:value>
+</com:values>
+</chargeTypeDescription>
+</charge>
+<charge>
+<charge>19.0</charge>
+<chargeType>flat</chargeType>
+<chargeTypeDescription>
+<com:values>
+<com:value lang="de">Tagesmax. (ab der 6. Stunde)</com:value>
+</com:values>
+</chargeTypeDescription>
+</charge>
+</chargeBand>
+<chargeBand id="250240" version="1756800927076">
+<chargeCurrency>eur</chargeCurrency>
+<chargeBandName>
+<com:values>
+<com:value lang="de">Sonderregelungen</com:value>
+</com:values>
+</chargeBandName>
+<applicableForUser>allUsers</applicableForUser>
+<charge>
+<charge>34.0</charge>
+<chargeType>flat</chargeType>
+<chargeTypeDescription>
+<com:values>
+<com:value lang="de">Parkscheinverlust: 34,00 €</com:value>
+</com:values>
+</chargeTypeDescription>
+</charge>
+</chargeBand>
+<acceptedPaymentCards>
+<paymentCards>debitCard</paymentCards>
+<paymentCards>creditCard</paymentCards>
+<paymentCardBrands>maestro</paymentCardBrands>
+<paymentCardBrands>masterCard</paymentCardBrands>
+<paymentCardBrands>visa</paymentCardBrands>
+<paymentCardBrands>americanExpress</paymentCardBrands>
+</acceptedPaymentCards>
+</tariffsAndPayment>
+<parkingEquipmentOrServiceFacility equipmentOrServiceFacilityIndex="1">
+<parkingEquipmentOrServiceFacility xsi:type="Equipment">
+<nameOrBrand>
+<com:values>
+<com:value lang="de">Aufzug</com:value>
+</com:values>
+</nameOrBrand>
+<equipmentType>elevator</equipmentType>
+</parkingEquipmentOrServiceFacility>
+</parkingEquipmentOrServiceFacility>
+<groupOfParkingSpaces groupIndex="1">
+<parkingSpaceBasics xsi:type="GroupOfParkingSpaces">
+<parkingSpaceOrGroupIdentifier>
+<com:values>
+<com:value lang="de">Ebene 0 Tiefgarage Mainzer Landstraße</com:value>
+<com:value>1</com:value>
+</com:values>
+</parkingSpaceOrGroupIdentifier>
+<parkingReservation>unknown</parkingReservation>
+<parkingNumberOfSpaces>0</parkingNumberOfSpaces>
+<parkingTypeOfGroup>other</parkingTypeOfGroup>
+</parkingSpaceBasics>
+</groupOfParkingSpaces>
+<parkingReservation>unknown</parkingReservation>
+<openingTimes>
+<lastUpdated>2026-10-25T09:00:05.110+01:00</lastUpdated>
+<available24hours>true</available24hours>
+</openingTimes>
+<parkingAccess id="249773">
+<accessCategory>vehicleEntranceAndExit</accessCategory>
+<accessName>
+<com:values>
+<com:value lang="de">Zufahrt Tiefgarage Mainzer Landstraße: Kleyerstraße 20</com:value>
+</com:values>
+</accessName>
+<accessOnlyAssignedFor>
+<vehicleCharacteristics>
+<com:heightCharacteristic>
+<com:comparisonOperator>lessThanOrEqualTo</com:comparisonOperator>
+<com:vehicleHeight>2.0</com:vehicleHeight>
+</com:heightCharacteristic>
+</vehicleCharacteristics>
+</accessOnlyAssignedFor>
+<location xsi:type="loc:PointLocation">
+<loc:pointByCoordinates>
+<loc:pointCoordinates>
+<loc:latitude>50.10201</loc:latitude>
+<loc:longitude>8.641496</loc:longitude>
+</loc:pointCoordinates>
+</loc:pointByCoordinates>
+</location>
+</parkingAccess>
+<parkingAccess id="249777">
+<accessCategory>vehicleEntranceAndExit</accessCategory>
+<accessName>
+<com:values>
+<com:value lang="de">Ausfahrt Tiefgarage Mainzer Landstraße: Kleyerstraße 20</com:value>
+</com:values>
+</accessName>
+<location xsi:type="loc:PointLocation">
+<loc:pointByCoordinates>
+<loc:pointCoordinates>
+<loc:latitude>50.101826</loc:latitude>
+<loc:longitude>8.641033</loc:longitude>
+</loc:pointCoordinates>
+</loc:pointByCoordinates>
+</location>
+</parkingAccess>
+<parkingStandardsAndSecurity>
+<parkingSecurity>none</parkingSecurity>
+</parkingStandardsAndSecurity>
+<urbanParkingSiteType>other</urbanParkingSiteType>
+</parkingRecord>
+<parkingRecord id="258336" version="1788252780235" xsi:type="UrbanParkingSite">
+<parkingName>
+<com:values>
+<com:value lang="de">P+R Kalbach</com:value>
+</com:values>
+</parkingName>
+<parkingDescription>
+<com:values>
+<com:value lang="de"/>
+</com:values>
+</parkingDescription>
+<parkingRecordVersionTime>2026-09-01T10:53:00.185+02:00</parkingRecordVersionTime>
+<parkingNumberOfSpaces>376</parkingNumberOfSpaces>
+<parkingLocation xsi:type="loc:PointLocation">
+<loc:supplementaryPositionalDescription>
+<loc:locationDescription>
+<com:values>
+<com:value lang="de">Oberer Kalbacher Weg , 60437  Frankfurt am Main Bonames</com:value>
+</com:values>
+</loc:locationDescription>
+</loc:supplementaryPositionalDescription>
+<loc:pointByCoordinates>
+<loc:pointCoordinates>
+<loc:latitude>50.183296</loc:latitude>
+<loc:longitude>8.6570835</loc:longitude>
+</loc:pointCoordinates>
+</loc:pointByCoordinates>
+</parkingLocation>
+<tariffsAndPayment>
+<lastUpdated>2025-10-22T19:20:48.063+02:00</lastUpdated>
+<freeOfCharge>true</freeOfCharge>
+</tariffsAndPayment>
+<parkingReservation>unknown</parkingReservation>
+<openingTimes>
+<lastUpdated>2026-10-25T09:00:06.285+01:00</lastUpdated>
+<available24hours>true</available24hours>
+</openingTimes>
+<urbanParkingSiteType>other</urbanParkingSiteType>
+</parkingRecord>
+<parkingRecord id="259349" version="1788264060497" xsi:type="UrbanParkingSite">
+<parkingName>
+<com:values>
+<com:value lang="de">Busparkplatz Theodor-Stern-Kai</com:value>
+</com:values>
+</parkingName>
+<parkingDescription>
+<com:values>
+<com:value lang="de"/>
+</com:values>
+</parkingDescription>
+<parkingRecordVersionTime>2026-09-01T14:01:00.437+02:00</parkingRecordVersionTime>
+<parkingNumberOfSpaces>21</parkingNumberOfSpaces>
+<parkingLocation xsi:type="loc:PointLocation">
+<loc:pointByCoordinates>
+<loc:pointCoordinates>
+<loc:latitude>50.09884</loc:latitude>
+<loc:longitude>8.665573</loc:longitude>
+</loc:pointCoordinates>
+</loc:pointByCoordinates>
+</parkingLocation>
+<onlyAssignedParking>
+<vehicleCharacteristics>
+<com:vehicleType>bus</com:vehicleType>
+</vehicleCharacteristics>
+</onlyAssignedParking>
+<tariffsAndPayment>
+<lastUpdated>2025-10-22T19:24:20.769+02:00</lastUpdated>
+<freeOfCharge>true</freeOfCharge>
+</tariffsAndPayment>
+<parkingReservation>unknown</parkingReservation>
+<openingTimes>
+<lastUpdated>2026-10-25T09:00:06.316+01:00</lastUpdated>
+<available24hours>true</available24hours>
+</openingTimes>
+<urbanParkingSiteType>other</urbanParkingSiteType>
+</parkingRecord>
+<informationManager>
+<com:country>DE</com:country>
+<com:nationalIdentifier>DE-NAP-Stadt Frankfurt am Main</com:nationalIdentifier>
+</informationManager>
+</parkingTable>
+</d2:payload>
