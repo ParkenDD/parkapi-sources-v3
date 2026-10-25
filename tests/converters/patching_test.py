@@ -45,7 +45,7 @@ def test_get_static_parking_sites_patched(
     )
 
     assert len(static_parking_site_inputs) == 20
-    assert len(import_parking_site_exceptions) == 1
+    assert len(import_parking_site_exceptions) == 0
 
     assert static_parking_site_inputs[0].name == 'New name'
     assert isinstance(static_parking_site_inputs[0].external_identifiers[0], ExternalIdentifierInput)
