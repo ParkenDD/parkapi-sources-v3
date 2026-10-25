@@ -1,0 +1,3017 @@
+[
+  {
+    "address": "Bad Herrenalb",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8017951",
+    "lon": "8.4402335",
+    "name": "Bad Herrenalb: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "1"
+  },
+  {
+    "address": "Haueneberstein, Baden-Baden",
+    "capacity": 80,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8112806",
+    "lon": "8.2091880",
+    "name": "Baden-Baden: Haueneberstein",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "2"
+  },
+  {
+    "address": "Haguenau",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.8150469",
+    "lon": "7.7822183",
+    "name": "Haguenau: Gare SNCF / Place Désiré Brumbt",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-11-18T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "3"
+  },
+  {
+    "address": "Haguenau",
+    "capacity": 600,
+    "description": "Parking SILO",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8131338",
+    "lon": "7.7813256",
+    "name": "Haguenau: Gare SNCF / Moulin Neuf",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-10-10T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "4"
+  },
+  {
+    "address": "Kuppenheim",
+    "capacity": 48,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8337680",
+    "lon": "8.2567344",
+    "name": "Kuppenheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "5"
+  },
+  {
+    "address": "Frauenalb, Marxzell",
+    "capacity": 13,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8365430",
+    "lon": "8.4405160",
+    "name": "Marxzell: Frauenalb-Schielberg",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "6"
+  },
+  {
+    "address": "Rastatt",
+    "capacity": 170,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8595860",
+    "lon": "8.2163846",
+    "name": "Rastatt: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "7"
+  },
+  {
+    "address": "Marxzell",
+    "capacity": 45,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8644806",
+    "lon": "8.4472740",
+    "name": "Marxzell: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "8"
+  },
+  {
+    "address": "Muggensturm",
+    "capacity": 6,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8761552",
+    "lon": "8.2737170",
+    "name": "Muggensturm: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "9"
+  },
+  {
+    "address": "Muggensturm",
+    "capacity": 14,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8796965",
+    "lon": "8.2873370",
+    "name": "Muggensturm: Badesee",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "10"
+  },
+  {
+    "address": "Ötigheim",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8885437",
+    "lon": "8.2404426",
+    "name": "Ötigheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "11"
+  },
+  {
+    "address": "Bietigheim",
+    "capacity": 47,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9118394",
+    "lon": "8.2584312",
+    "name": "Bietigheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "12"
+  },
+  {
+    "address": "Durmersheim",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9287987",
+    "lon": "8.2725019",
+    "name": "Durmersheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "13"
+  },
+  {
+    "address": "Ettlingen",
+    "capacity": 130,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9360515",
+    "lon": "8.4170459",
+    "name": "Ettlingen: Ettlingen Albgaubad",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "14"
+  },
+  {
+    "address": "Durmersheim",
+    "capacity": 43,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9376385",
+    "lon": "8.2803215",
+    "name": "Durmersheim: Durmersheim Nord",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "15"
+  },
+  {
+    "address": "Ettlingen",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9472457",
+    "lon": "8.3877184",
+    "name": "Ettlingen: Ettlingen West",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "16"
+  },
+  {
+    "address": "Mörsch, Rheinstetten",
+    "capacity": 64,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9528445",
+    "lon": "8.2911130",
+    "name": "Rheinstetten: Merkurstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "17"
+  },
+  {
+    "address": "Mörsch, Rheinstetten",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9591061",
+    "lon": "8.2838100",
+    "name": "Rheinstetten: Bach West",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "18"
+  },
+  {
+    "address": "Schweighouse-sur-Moder",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8285586",
+    "lon": "7.7423533",
+    "name": "Schweighouse-sur-Moder: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "19"
+  },
+  {
+    "address": "Bischwiller",
+    "capacity": 200,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7650497",
+    "lon": "7.8524562",
+    "name": "Bischwiller: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "20"
+  },
+  {
+    "address": "Brumath",
+    "capacity": 200,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7333317",
+    "lon": "7.7002638",
+    "name": "Brumath: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "21"
+  },
+  {
+    "address": "Mommenheim",
+    "capacity": 230,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7558230",
+    "lon": "7.6434622",
+    "name": "Mommenheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "22"
+  },
+  {
+    "address": "Freudenstadt",
+    "capacity": 33,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4613469",
+    "lon": "8.4307069",
+    "name": "Freudenstadt: Hauptbahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "24"
+  },
+  {
+    "address": "Freudenstadt",
+    "capacity": 22,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4680939",
+    "lon": "8.4106027",
+    "name": "Freudenstadt: Stadtbahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "25"
+  },
+  {
+    "address": "Freudenstadt",
+    "capacity": 33,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4667140",
+    "lon": "8.4216673",
+    "name": "Freudenstadt: Schulzentrum",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "26"
+  },
+  {
+    "address": "Bad Rotenfels, Gaggenau",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8159729",
+    "lon": "8.3030508",
+    "name": "Gaggenau: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "27"
+  },
+  {
+    "address": "Germersheim",
+    "capacity": 251,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2249266",
+    "lon": "8.3649828",
+    "name": "Germersheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "28"
+  },
+  {
+    "address": "Sondernheim, Germersheim",
+    "capacity": 33,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1951795",
+    "lon": "8.3605330",
+    "name": "Germersheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "29"
+  },
+  {
+    "address": "Hilpertsau, Gernsbach",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7399732",
+    "lon": "8.3490057",
+    "name": "Gernsbach: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "30"
+  },
+  {
+    "address": "Gondelsheim",
+    "capacity": 34,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0595791",
+    "lon": "8.6607499",
+    "name": "Gondelsheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "31"
+  },
+  {
+    "address": "Hagenbach",
+    "capacity": 12,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0164310",
+    "lon": "8.2532000",
+    "name": "Hagenbach: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "32"
+  },
+  {
+    "address": "Insheim",
+    "capacity": 8,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1578895",
+    "lon": "8.1521857",
+    "name": "Insheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "33"
+  },
+  {
+    "address": "Ispringen",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9139778",
+    "lon": "8.6724646",
+    "name": "Ispringen: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "34"
+  },
+  {
+    "address": "Jockgrim",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0922371",
+    "lon": "8.2725126",
+    "name": "Jockgrim: Jockgrim",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "35"
+  },
+  {
+    "address": "Ersingen, Kämpfelbach",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9307422",
+    "lon": "8.6385110",
+    "name": "Kämpfelbach: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "36"
+  },
+  {
+    "address": "Kandel",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0796999",
+    "lon": "8.1992881",
+    "name": "Kandel: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "37"
+  },
+  {
+    "address": "Kapellen (Pfalz), Kapellen-Drusweiler",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1058331",
+    "lon": "8.0321572",
+    "name": "Kapellen-Drusweiler: Kapellen (Pfalz)",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "38"
+  },
+  {
+    "address": "Königsbach, Königsbach-Stein",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9632654",
+    "lon": "8.6075373",
+    "name": "Königsbach-Stein: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "39"
+  },
+  {
+    "address": "Malsch",
+    "capacity": 90,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8893688",
+    "lon": "8.3229693",
+    "name": "Malsch: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "40"
+  },
+  {
+    "address": "Odenheim, Östringen",
+    "capacity": 53,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1790039",
+    "lon": "8.7464970",
+    "name": "Östringen: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "41"
+  },
+  {
+    "address": "Gochsheim, Kraichtal",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1093885",
+    "lon": "8.7443668",
+    "name": "Kraichtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "42"
+  },
+  {
+    "address": "Münzesheim, Kraichtal",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1261834",
+    "lon": "8.7158478",
+    "name": "Kraichtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "43"
+  },
+  {
+    "address": "Menzingen, Kraichtal",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1358739",
+    "lon": "8.7751520",
+    "name": "Kraichtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "44"
+  },
+  {
+    "address": "Unteröwisheim, Kraichtal",
+    "capacity": 14,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1463337",
+    "lon": "8.6685130",
+    "name": "Kraichtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "45"
+  },
+  {
+    "address": "Oberöwisheim, Kraichtal",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1404901",
+    "lon": "8.6862316",
+    "name": "Kraichtal: Oberöwisheim",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "46"
+  },
+  {
+    "address": "Landau",
+    "capacity": 235,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1977927",
+    "lon": "8.1260122",
+    "name": "Landau: Hauptbahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "47"
+  },
+  {
+    "address": "Lingenfeld",
+    "capacity": 9,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2522061",
+    "lon": "8.3496472",
+    "name": "Lingenfeld: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "48"
+  },
+  {
+    "address": "Maikammer-Kirrweiler, Maikammer",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.3060281",
+    "lon": "8.1476693",
+    "name": "Maikammer: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "49"
+  },
+  {
+    "address": "Edesheim, Edesheim (Pfalz)",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2641923",
+    "lon": "8.1389399",
+    "name": "Edesheim (Pfalz): Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "50"
+  },
+  {
+    "address": "Wilferdingen, Remchingen",
+    "capacity": 100,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9542000",
+    "lon": "8.5697865",
+    "name": "Remchingen: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "51"
+  },
+  {
+    "address": "Jöhlingen, Walzbachtal",
+    "capacity": 47,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0306834",
+    "lon": "8.5694715",
+    "name": "Walzbachtal: Jöhlingen West",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "52"
+  },
+  {
+    "address": "Jöhlingen, Walzbachtal",
+    "capacity": 34,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0279138",
+    "lon": "8.5748279",
+    "name": "Walzbachtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "53"
+  },
+  {
+    "address": "Wössingen, Walzbachtal",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0151659",
+    "lon": "8.6056306",
+    "name": "Walzbachtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "54"
+  },
+  {
+    "address": "Wössingen, Walzbachtal",
+    "capacity": 41,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0157146",
+    "lon": "8.6107554",
+    "name": "Walzbachtal: Wössingen Ost",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "55"
+  },
+  {
+    "address": "Zeutern, Ubstadt-Weiher",
+    "capacity": 8,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1785329",
+    "lon": "8.6780180",
+    "name": "Ubstadt-Weiher: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "56"
+  },
+  {
+    "address": "Bahnbrücken, Kraichtal",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1194447",
+    "lon": "8.7647223",
+    "name": "Kraichtal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "57"
+  },
+  {
+    "address": "Odenheim, Östringen",
+    "capacity": 13,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1822069",
+    "lon": "8.7361989",
+    "name": "Östringen: Odenheim West",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "58"
+  },
+  {
+    "address": "Bühl",
+    "capacity": 40,
+    "description": "Oberamthofstraße",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6958034",
+    "lon": "8.1290792",
+    "name": "Bühl: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "59"
+  },
+  {
+    "address": "Bruchhausen, Ettlingen",
+    "capacity": 5,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9238229",
+    "lon": "8.3734532",
+    "name": "Ettlingen: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "60"
+  },
+  {
+    "address": "Maximiliansau, Wörth am Rhein",
+    "capacity": 6,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0374375",
+    "lon": "8.2968485",
+    "name": "Wörth am Rhein: Eisenbahnstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "61"
+  },
+  {
+    "address": "Maximiliansau, Wörth am Rhein",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0386695",
+    "lon": "8.2910262",
+    "name": "Wörth am Rhein: West",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "62"
+  },
+  {
+    "address": "Wissembourg",
+    "capacity": 100,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0315347",
+    "lon": "7.9498520",
+    "name": "Wissembourg: Wissembourg Gare",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "63"
+  },
+  {
+    "address": "Kapsweyer",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0386536",
+    "lon": "8.0218606",
+    "name": "Kapsweyer: Kapsweyer",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "64"
+  },
+  {
+    "address": "Steinfeld",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0448039",
+    "lon": "8.0406964",
+    "name": "Steinfeld: Steinfeld",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "65"
+  },
+  {
+    "address": "Rohrbach",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1368497",
+    "lon": "8.1414660",
+    "name": "Rohrbach: Rohrbach",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "66"
+  },
+  {
+    "address": "Berg, Berg (Pfalz)",
+    "capacity": 9,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9807438",
+    "lon": "8.2130975",
+    "name": "Berg (Pfalz): Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "67"
+  },
+  {
+    "address": "Neudorf, Graben-Neudorf",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1758371",
+    "lon": "8.4936773",
+    "name": "Graben-Neudorf: Neudorf Nord",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "68"
+  },
+  {
+    "address": "Neudorf, Graben-Neudorf",
+    "capacity": 200,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1615107",
+    "lon": "8.4907753",
+    "name": "Graben-Neudorf: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "69"
+  },
+  {
+    "address": "Waghäusel",
+    "capacity": 150,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2479559",
+    "lon": "8.5081237",
+    "name": "Waghäusel: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "70"
+  },
+  {
+    "address": "Wiesental, Waghäusel",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2255927",
+    "lon": "8.5028376",
+    "name": "Waghäusel: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "71"
+  },
+  {
+    "address": "Eggenstein, Eggenstein-Leopoldshafen",
+    "capacity": 25,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0855189",
+    "lon": "8.4022964",
+    "name": "Eggenstein-Leopoldshafen: Schweriner Straße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "72"
+  },
+  {
+    "address": "Leopoldshafen, Eggenstein-Leopoldshafen",
+    "capacity": 27,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0903224",
+    "lon": "8.4011466",
+    "name": "Eggenstein-Leopoldshafen: Viermorgen",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "73"
+  },
+  {
+    "address": "Leopoldshafen, Eggenstein-Leopoldshafen",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0966765",
+    "lon": "8.4014802",
+    "name": "Eggenstein-Leopoldshafen: Leopoldstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "74"
+  },
+  {
+    "address": "Leopoldshafen, Eggenstein-Leopoldshafen",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1012659",
+    "lon": "8.4049527",
+    "name": "Eggenstein-Leopoldshafen: Frankfurter Straße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "75"
+  },
+  {
+    "address": "Bad Bergzabern",
+    "capacity": 80,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1030322",
+    "lon": "8.0039302",
+    "name": "Bad Bergzabern: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "76"
+  },
+  {
+    "address": "Barbelroth",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1044957",
+    "lon": "8.0710361",
+    "name": "Barbelroth: Barbelroth",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "77"
+  },
+  {
+    "address": "Rheinzabern",
+    "capacity": 7,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1205885",
+    "lon": "8.2733503",
+    "name": "Rheinzabern: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "78"
+  },
+  {
+    "address": "Hochstetten, Linkenheim-Hochstetten",
+    "capacity": 60,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1288163",
+    "lon": "8.4168489",
+    "name": "Linkenheim-Hochstetten: Grenzstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "79"
+  },
+  {
+    "address": "Rülzheim",
+    "capacity": 6,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1603998",
+    "lon": "8.2872330",
+    "name": "Rülzheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "80"
+  },
+  {
+    "address": "Bellheim",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1874727",
+    "lon": "8.2944705",
+    "name": "Bellheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "81"
+  },
+  {
+    "address": "Landau",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1958128",
+    "lon": "8.1070046",
+    "name": "Landau: Westbahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "82"
+  },
+  {
+    "address": "Annweiler",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2053810",
+    "lon": "7.9662066",
+    "name": "Annweiler: Annweiler",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "83"
+  },
+  {
+    "address": "Germersheim",
+    "capacity": 43,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2089546",
+    "lon": "8.3741568",
+    "name": "Germersheim: Süd / Nolte",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "84"
+  },
+  {
+    "address": "Germersheim",
+    "capacity": 54,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2192193",
+    "lon": "8.3791021",
+    "name": "Germersheim: Mitte / Rhein",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "85"
+  },
+  {
+    "address": "Germersheim",
+    "capacity": 13,
+    "description": "Am alten Bahnhof",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2252025",
+    "lon": "8.3665049",
+    "name": "Germersheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "86"
+  },
+  {
+    "address": "Essingen, Knöringen-Essingen",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2382023",
+    "lon": "8.1476437",
+    "name": "Knöringen-Essingen: Knöringen-Essingen",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "87"
+  },
+  {
+    "address": "Edenkoben",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2822425",
+    "lon": "8.1406562",
+    "name": "Edenkoben: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "88"
+  },
+  {
+    "address": "Langenbrücken, Bad Schönborn",
+    "capacity": 60,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2012566",
+    "lon": "8.6418715",
+    "name": "Bad Schönborn: Bad Schönborn Süd",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "89"
+  },
+  {
+    "address": "Heidelsheim",
+    "capacity": 12,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1052014",
+    "lon": "8.6450184",
+    "name": "Heidelsheim: Heidelsheim Nord",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "90"
+  },
+  {
+    "address": "Mingolsheim, Bad Schönborn",
+    "capacity": 200,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2211180",
+    "lon": "8.6472766",
+    "name": "Bad Schönborn: Kronau",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "91"
+  },
+  {
+    "address": "Helmsheim, Bruchsal",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0859605",
+    "lon": "8.6514123",
+    "name": "Bruchsal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "92"
+  },
+  {
+    "address": "Zeutern, Ubstadt-Weiher",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1777231",
+    "lon": "8.6703028",
+    "name": "Ubstadt-Weiher: Sportplatz",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "93"
+  },
+  {
+    "address": "Bauerbach, Bretten",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0741267",
+    "lon": "8.7484349",
+    "name": "Bretten: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "94"
+  },
+  {
+    "address": "Flehingen, Oberderdingen",
+    "capacity": 100,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0836323",
+    "lon": "8.7754736",
+    "name": "Oberderdingen: Oberderdingen-Flehingen",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "95"
+  },
+  {
+    "address": "Flehingen, Oberderdingen",
+    "capacity": 6,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0847045",
+    "lon": "8.7846373",
+    "name": "Oberderdingen: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "96"
+  },
+  {
+    "address": "Zaisenhausen",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1054011",
+    "lon": "8.8173328",
+    "name": "Zaisenhausen: Zaisenhausen",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "97"
+  },
+  {
+    "address": "Sulzfeld",
+    "capacity": 80,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1079518",
+    "lon": "8.8532100",
+    "name": "Sulzfeld: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "98"
+  },
+  {
+    "address": "Philippsburg",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2317886",
+    "lon": "8.4535904",
+    "name": "Philippsburg: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "99"
+  },
+  {
+    "address": "Büchig, Stutensee",
+    "capacity": 12,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0471405",
+    "lon": "8.4601421",
+    "name": "Stutensee: Büchig",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "100"
+  },
+  {
+    "address": "Blankenloch, Stutensee",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0662046",
+    "lon": "8.4634950",
+    "name": "Stutensee: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "101"
+  },
+  {
+    "address": "Blankenloch, Stutensee",
+    "capacity": 18,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0570711",
+    "lon": "8.4678191",
+    "name": "Stutensee: Blankenloch Süd",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "102"
+  },
+  {
+    "address": "Blankenloch, Stutensee",
+    "capacity": 60,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0739329",
+    "lon": "8.4686593",
+    "name": "Stutensee: Blankenloch Nord",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "103"
+  },
+  {
+    "address": "Blankenloch, Stutensee",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0602858",
+    "lon": "8.4700473",
+    "name": "Stutensee: Tolna-Platz",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "104"
+  },
+  {
+    "address": "Friedrichstal, Stutensee",
+    "capacity": 32,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1005392",
+    "lon": "8.4747591",
+    "name": "Stutensee: Saint Riquier Platz",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "105"
+  },
+  {
+    "address": "Blankenloch, Stutensee",
+    "capacity": 13,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0690499",
+    "lon": "8.4760710",
+    "name": "Stutensee: Mühlenweg",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "106"
+  },
+  {
+    "address": "Friedrichstal, Stutensee",
+    "capacity": 24,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1094279",
+    "lon": "8.4773480",
+    "name": "Stutensee: Friedrichstal Nord",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "107"
+  },
+  {
+    "address": "Spöck, Stutensee",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1132479",
+    "lon": "8.5039535",
+    "name": "Stutensee: Spöck Wendeschleife",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "108"
+  },
+  {
+    "address": "Weingarten",
+    "capacity": 80,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0590349",
+    "lon": "8.5198890",
+    "name": "Weingarten: Weingarten",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "109"
+  },
+  {
+    "address": "Untergrombach, Bruchsal",
+    "capacity": 90,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0873521",
+    "lon": "8.5479386",
+    "name": "Bruchsal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "110"
+  },
+  {
+    "address": "Bruchsal",
+    "capacity": 120,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1099822",
+    "lon": "8.5740631",
+    "name": "Bruchsal: Gewerbliches Bildungszentrum",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "111"
+  },
+  {
+    "address": "Bruchsal",
+    "capacity": 47,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1247463",
+    "lon": "8.5904314",
+    "name": "Bruchsal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "112"
+  },
+  {
+    "address": "Bruchsal",
+    "capacity": 16,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1197266",
+    "lon": "8.5946985",
+    "name": "Bruchsal: Tunnelstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "113"
+  },
+  {
+    "address": "Ubstadt, Ubstadt-Weiher",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1667091",
+    "lon": "8.6232920",
+    "name": "Ubstadt-Weiher: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "114"
+  },
+  {
+    "address": "Ubstadt, Ubstadt-Weiher",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1565961",
+    "lon": "8.6256758",
+    "name": "Ubstadt-Weiher: Ubstadt Ort",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "115"
+  },
+  {
+    "address": "Forchheim, Rheinstetten",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9644266",
+    "lon": "8.3380947",
+    "name": "Rheinstetten: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "116"
+  },
+  {
+    "address": "Mörsch, Rheinstetten",
+    "capacity": 49,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9676703",
+    "lon": "8.3047116",
+    "name": "Rheinstetten: Rösselsbrünnle",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "117"
+  },
+  {
+    "address": "Forchheim, Rheinstetten",
+    "capacity": 14,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9707230",
+    "lon": "8.3084015",
+    "name": "Rheinstetten: Oberfeldstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "118"
+  },
+  {
+    "address": "Forchheim, Rheinstetten",
+    "capacity": 62,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9790482",
+    "lon": "8.3172454",
+    "name": "Rheinstetten: Hallenbad",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "119"
+  },
+  {
+    "address": "Oberreut, Karlsruhe",
+    "capacity": 65,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9885637",
+    "lon": "8.3641639",
+    "name": "Karlsruhe: Albert-Braun-Str.",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "120"
+  },
+  {
+    "address": "Daxlanden, Karlsruhe",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9911321",
+    "lon": "8.3348674",
+    "name": "Karlsruhe: Hammäcker",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "121"
+  },
+  {
+    "address": "Neuburg",
+    "capacity": 5,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9920248",
+    "lon": "8.2387462",
+    "name": "Neuburg: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "122"
+  },
+  {
+    "address": "Südweststadt, Karlsruhe",
+    "capacity": 60,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9969368",
+    "lon": "8.3782027",
+    "name": "Karlsruhe: Europahalle",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "123"
+  },
+  {
+    "address": "Daxlanden, Karlsruhe",
+    "capacity": 74,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9980667",
+    "lon": "8.3386828",
+    "name": "Karlsruhe: Thomas-Mann-Str.",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "124"
+  },
+  {
+    "address": "Weststadt, Karlsruhe",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0055036",
+    "lon": "8.3671556",
+    "name": "Karlsruhe: Kühler Krug",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "125"
+  },
+  {
+    "address": "Rintheim, Karlsruhe",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0117118",
+    "lon": "8.4400603",
+    "name": "Karlsruhe: Ostring",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "126"
+  },
+  {
+    "address": "Mühlburg, Karlsruhe",
+    "capacity": 25,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0150155",
+    "lon": "8.3513073",
+    "name": "Karlsruhe: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "127"
+  },
+  {
+    "address": "Knielingen, Karlsruhe",
+    "capacity": 23,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0157620",
+    "lon": "8.3457701",
+    "name": "Karlsruhe: Rheinhafen",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "128"
+  },
+  {
+    "address": "Hagsfeld, Karlsruhe",
+    "capacity": 70,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0257626",
+    "lon": "8.4466765",
+    "name": "Karlsruhe: Fächerbad",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "129"
+  },
+  {
+    "address": "Hagsfeld, Karlsruhe",
+    "capacity": 25,
+    "description": "Neubrunnenstraße",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0277473",
+    "lon": "8.4537729",
+    "name": "Karlsruhe: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "130"
+  },
+  {
+    "address": "Knielingen, Karlsruhe",
+    "capacity": 35,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0352149",
+    "lon": "8.3358658",
+    "name": "Karlsruhe: Rheinbergstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "131"
+  },
+  {
+    "address": "Neureut, Karlsruhe",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0445470",
+    "lon": "8.3743951",
+    "name": "Karlsruhe: Welschneureuter Str.",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "132"
+  },
+  {
+    "address": "Neureut, Karlsruhe",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0460508",
+    "lon": "8.3775468",
+    "name": "Karlsruhe: Bärenweg",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "133"
+  },
+  {
+    "address": "Neureut, Karlsruhe",
+    "capacity": 19,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0508396",
+    "lon": "8.3854392",
+    "name": "Karlsruhe: Adolf-Ehrmann-Bad",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "134"
+  },
+  {
+    "address": "Eggenstein, Eggenstein-Leopoldshafen",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0757201",
+    "lon": "8.3981159",
+    "name": "Eggenstein-Leopoldshafen: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "135"
+  },
+  {
+    "address": "Etzenrot, Waldbronn",
+    "capacity": 13,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9152271",
+    "lon": "8.4579999",
+    "name": "Waldbronn: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "137"
+  },
+  {
+    "address": "Durlach, Karlsruhe",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0029248",
+    "lon": "8.4629414",
+    "name": "Karlsruhe: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "139"
+  },
+  {
+    "address": "Spielberg, Karlsbad",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8979978",
+    "lon": "8.4738188",
+    "name": "Karlsbad: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "140"
+  },
+  {
+    "address": "Reichenbach, Waldbronn",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9206001",
+    "lon": "8.4790366",
+    "name": "Waldbronn: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "141"
+  },
+  {
+    "address": "Grötzingen, Karlsruhe",
+    "capacity": 38,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0058215",
+    "lon": "8.4940146",
+    "name": "Karlsruhe: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "142"
+  },
+  {
+    "address": "Langensteinbach, Karlsbad",
+    "capacity": 8,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9153439",
+    "lon": "8.5029985",
+    "name": "Karlsbad: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "143"
+  },
+  {
+    "address": "Ittersbach, Karlsbad",
+    "capacity": 25,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8844654",
+    "lon": "8.5099634",
+    "name": "Karlsbad: Industrie",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "144"
+  },
+  {
+    "address": "Ittersbach, Karlsbad",
+    "capacity": 22,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8699842",
+    "lon": "8.5106031",
+    "name": "Karlsbad: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "145"
+  },
+  {
+    "address": "Berghausen, Pfinztal",
+    "capacity": 35,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0066210",
+    "lon": "8.5200099",
+    "name": "Pfinztal: Pfinzbrücke",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "146"
+  },
+  {
+    "address": "Berghausen, Pfinztal",
+    "capacity": 24,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0103004",
+    "lon": "8.5261912",
+    "name": "Pfinztal: Hummelberg",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "147"
+  },
+  {
+    "address": "Berghausen, Pfinztal",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0054744",
+    "lon": "8.5300315",
+    "name": "Pfinztal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "148"
+  },
+  {
+    "address": "Berghausen, Pfinztal",
+    "capacity": 14,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0021564",
+    "lon": "8.5374795",
+    "name": "Pfinztal: Am Stadion",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "149"
+  },
+  {
+    "address": "Söllingen, Pfinztal",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9914548",
+    "lon": "8.5394931",
+    "name": "Pfinztal: Reetzstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "150"
+  },
+  {
+    "address": "Söllingen, Pfinztal",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9876894",
+    "lon": "8.5431654",
+    "name": "Pfinztal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "151"
+  },
+  {
+    "address": "Söllingen, Pfinztal",
+    "capacity": 5,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9836885",
+    "lon": "8.5510507",
+    "name": "Pfinztal: Kapellenstraße",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "152"
+  },
+  {
+    "address": "Kleinsteinbach, Pfinztal",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9670730",
+    "lon": "8.5552188",
+    "name": "Pfinztal: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "153"
+  },
+  {
+    "address": "Diedelsheim, Bretten",
+    "capacity": 12,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0399761",
+    "lon": "8.6744365",
+    "name": "Bretten: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "154"
+  },
+  {
+    "address": "Bretten",
+    "capacity": 139,
+    "description": "Rinklinger Straße",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0365392",
+    "lon": "8.6955577",
+    "name": "Bretten: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "155"
+  },
+  {
+    "address": "Pforzheim",
+    "capacity": 150,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8954295",
+    "lon": "8.7041633",
+    "name": "Pforzheim: Hauptbahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "156"
+  },
+  {
+    "address": "Bretten",
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0303210",
+    "lon": "8.7085190",
+    "name": "Bretten: Wannenweg",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "157"
+  },
+  {
+    "address": "Ruit, Bretten",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0098303",
+    "lon": "8.7213122",
+    "name": "Bretten: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "158"
+  },
+  {
+    "address": "Ölbronn-Dürrn",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9853039",
+    "lon": "8.7533519",
+    "name": "Ölbronn-Dürrn: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "159"
+  },
+  {
+    "address": "Rebland, Baden-Baden",
+    "capacity": 80,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7323672",
+    "lon": "8.1463395",
+    "name": "Baden-Baden: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "160"
+  },
+  {
+    "address": "Sinzheim",
+    "capacity": 225,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7599252",
+    "lon": "8.1592735",
+    "name": "Sinzheim: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "161"
+  },
+  {
+    "address": "Sinzheim",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7716577",
+    "lon": "8.1700929",
+    "name": "Sinzheim: Sinzheim Nord",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "162"
+  },
+  {
+    "address": "Cité, Baden-Baden",
+    "capacity": 341,
+    "description": "P+R Parkhaus Cineplex; kostenpflichtige Parkplätze",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.7819924",
+    "lon": "8.1956424",
+    "name": "Baden-Baden: Kino-Cité",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "163"
+  },
+  {
+    "address": "Oos Nord (neben Bahnhof), Baden-Baden",
+    "capacity": 237,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.7906586",
+    "lon": "8.1920974",
+    "name": "Baden-Baden: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "164"
+  },
+  {
+    "address": "Oos West (Flugstraße), Baden-Baden",
+    "capacity": 188,
+    "description": "kostenpflichtige Parkplätze",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.7895185",
+    "lon": "8.1879369",
+    "name": "Baden-Baden: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "165"
+  },
+  {
+    "address": "Oos Süd (Güterbahnhofstraße), Baden-Baden",
+    "capacity": 279,
+    "description": "kostenpflichtige Parkplätze",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.7879463",
+    "lon": "8.1893774",
+    "name": "Baden-Baden: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "166"
+  },
+  {
+    "address": "Wörth, Wörth am Rhein",
+    "capacity": 230,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0454207",
+    "lon": "8.2743771",
+    "name": "Wörth am Rhein: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "167"
+  },
+  {
+    "address": "Schaidt, Wörth am Rhein",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0610966",
+    "lon": "8.0801941",
+    "name": "Wörth am Rhein: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "168"
+  },
+  {
+    "address": "Gölshausen, Bretten",
+    "capacity": 7,
+    "description": "Im Weißhofer Grund",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0451867",
+    "lon": "8.7248135",
+    "name": "Bretten: Bahnhof",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "173"
+  },
+  {
+    "address": "Saverne",
+    "capacity": 379,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7447898",
+    "lon": "7.3637469",
+    "name": "Saverne: Gare SNCF / Rue de la Poste",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-10-22T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "174"
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "address": "Thiebauthstraße, Ettlingen",
+    "capacity": 1,
+    "description": "vor dem Postgebäude",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9395619",
+    "lon": "8.4098380",
+    "name": "Thiebauthstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2024-02-19T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "1"
+  },
+  {
+    "address": "Pforzheimer Straße, Ettlingen",
+    "capacity": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9428687",
+    "lon": "8.4096897",
+    "name": "Pforzheimer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2024-02-19T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "2"
+  },
+  {
+    "address": "Thomas-Mann-Straße, Ettlingen",
+    "capacity": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9455484",
+    "lon": "8.4066379",
+    "name": "Thomas-Mann-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2024-02-19T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "3"
+  },
+  {
+    "address": "AutohofHerzl - Stuttgarter Straße 8, Bruchsal",
+    "capacity": 60,
+    "description": "Nähe Einkaufsmarkt und Restaurant; Sa: Flohmarkt",
+    "external_identifiers": [],
+    "fee_description": "10 € ab 16 Uhr, 8 € Rückerstattung im Restaurant",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.0957677",
+    "lon": "8.6428970",
+    "name": "AutohofHerzl - Stuttgarter Straße 8",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 60,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2024-02-19T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "4"
+  },
+  {
+    "address": "Alter Meßplatz, Landau",
+    "capacity": 3,
+    "description": "Parken an den Adventssamstagen kostenfrei",
+    "external_identifiers": [],
+    "fee_description": "Kurzzeit 3,0 Cent je Minute; Tagestarif 3,00 Euro; Monatstarif 25 Euro; 4-Monatstarif 100 Euro; Jahrestarif 250 Euro",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.2018764",
+    "lon": "8.1094011",
+    "name": "Alter Meßplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2024-02-19T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "5"
+  },
+  {
+    "address": "Rudolf-Link-Straße, Palmbach, Karlsruhe",
+    "capacity": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9439899",
+    "lon": "8.4900030",
+    "name": "Rudolf-Link-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2024-09-16T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "6"
+  }
+]

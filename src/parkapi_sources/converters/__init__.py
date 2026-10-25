@@ -14,6 +14,7 @@ from .bfrk_bw import BfrkBwBikePullConverter, BfrkBwCarPullConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
 from .bremen import BremenPullConverter
+from .dortmund import DortmundPullConverter
 from .dresden import DresdenPullConverter
 from .duesseldorf import DuesseldorfPullConverter
 from .ellwangen import EllwangenPushConverter
@@ -44,7 +45,16 @@ from .herrenberg import HerrenbergPullConverter
 from .herrenberg_bike import HerrenbergBikePullConverter
 from .huefner import HuefnerPushConverter
 from .jena import JenaPullConverter
-from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
+from .karlsruhe import (
+    KarlsruheBikePullConverter,
+    KarlsruheBusPullConverter,
+    KarlsruheCaravanPullConverter,
+    KarlsruheMotorcyclePullConverter,
+    KarlsruheParkAndCarpoolPullConverter,
+    KarlsruheParkAndRidePullConverter,
+    KarlsruhePullConverter,
+    KarlsruheTruckPullConverter,
+)
 from .karlsruhe_disabled import KarlsruheDisabledPullConverter
 from .kassel import KasselPullConverter
 from .keltern import KelternPushConverter
