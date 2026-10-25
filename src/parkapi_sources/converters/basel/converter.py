@@ -3,7 +3,6 @@ Copyright 2025 binary butterfly GmbH
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE.txt.
 """
 
-import requests
 from validataclass.exceptions import ValidationError
 from validataclass.validators import AnythingValidator, DataclassValidator, ListValidator
 
@@ -57,7 +56,7 @@ class BaselPullConverter(ParkingSitePullConverter):
         parking_site_inputs: list[BaselParkingSiteInput] = []
         parking_site_errors: list[ImportParkingSiteException] = []
 
-        response = requests.get(self.source_info.source_url, timeout=60)
+        response = self.request_get(url=self.source_info.source_url, timeout=60)
         parking_sites_dicts: list[dict] = self.parking_sites_input_validator.validate(response.json())
 
         for parking_site_dict in parking_sites_dicts:

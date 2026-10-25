@@ -25,7 +25,9 @@ jobs:
       - name: Set package version from release tag
         env:
           TAG: ${{ github.event.release.tag_name }}
-        run: uv version --no-sync "${TAG#v}"
+        run: |
+          uv version --no-sync "${TAG#v}"
+          printf "__version__ = '%s'\n" "${TAG#v}" > src/parkapi_sources/_version.py
 
       - name: Build package
         run: uv build
