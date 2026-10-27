@@ -1,0 +1,7454 @@
+[
+  {
+    "address": "Im Haltinger, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.887583,
+          47.985518
+        ],
+        [
+          7.887604,
+          47.985476
+        ],
+        [
+          7.887646,
+          47.985447
+        ],
+        [
+          7.887723,
+          47.98542
+        ],
+        [
+          7.888092,
+          47.985359
+        ],
+        [
+          7.888173,
+          47.985347
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9854042",
+    "lon": "7.8878620",
+    "name": "Im Haltinger",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "00041ef82a63cbeeae1639bfc3e4a70c"
+  },
+  {
+    "address": "Rosbaumweg, Freiburg",
+    "capacity": 30,
+    "capacity_max": 33,
+    "capacity_min": 27,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.830144,
+          48.01297
+        ],
+        [
+          7.8312,
+          48.013605
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0132875",
+    "lon": "7.8306720",
+    "name": "Rosbaumweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "000e51767675e13c88f61f481c744148"
+  },
+  {
+    "address": "Lessingstraße, Freiburg",
+    "capacity": 11,
+    "capacity_max": 12,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.842434,
+          47.990807
+        ],
+        [
+          7.842795,
+          47.990703
+        ],
+        [
+          7.842885,
+          47.990677
+        ],
+        [
+          7.843119,
+          47.990612
+        ],
+        [
+          7.843221,
+          47.990583
+        ],
+        [
+          7.843271,
+          47.990569
+        ],
+        [
+          7.843558,
+          47.990483
+        ],
+        [
+          7.843643,
+          47.990458
+        ],
+        [
+          7.843704,
+          47.990439
+        ],
+        [
+          7.844001,
+          47.990344
+        ],
+        [
+          7.844224,
+          47.990275
+        ],
+        [
+          7.844285,
+          47.990253
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9905369",
+    "lon": "7.8433616",
+    "name": "Lessingstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "001f80d29043ac165f05d8e4a759bc98"
+  },
+  {
+    "address": "Barbarastraße, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.840001,
+          48.003782
+        ],
+        [
+          7.83968,
+          48.003946
+        ],
+        [
+          7.839659,
+          48.003956
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0038693",
+    "lon": "7.8398301",
+    "name": "Barbarastraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "003b6a4b3a5bd56dc1440e98fd0dff62"
+  },
+  {
+    "address": "Sternwaldstraße, Freiburg",
+    "capacity": 10,
+    "capacity_max": 11,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.860185,
+          47.985312
+        ],
+        [
+          7.859992,
+          47.985963
+        ],
+        [
+          7.85998,
+          47.985996
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9856543",
+    "lon": "7.8600835",
+    "name": "Sternwaldstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "003bbd21ee48682b95ef5ee646db0796"
+  },
+  {
+    "address": "Staudingerstraße, Freiburg",
+    "capacity": 18,
+    "capacity_max": 19,
+    "capacity_min": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.824513,
+          47.993094
+        ],
+        [
+          7.824674,
+          47.993042
+        ],
+        [
+          7.824871,
+          47.992963
+        ],
+        [
+          7.825032,
+          47.992895
+        ],
+        [
+          7.825168,
+          47.992836
+        ],
+        [
+          7.825546,
+          47.992642
+        ],
+        [
+          7.825607,
+          47.9926
+        ],
+        [
+          7.826065,
+          47.992335
+        ],
+        [
+          7.826492,
+          47.992096
+        ],
+        [
+          7.826847,
+          47.991927
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9925359",
+    "lon": "7.8256914",
+    "name": "Staudingerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "00585777254f7e49f9ec1284717ca815"
+  },
+  {
+    "address": "Tennenbacher Straße, Freiburg",
+    "capacity": 16,
+    "capacity_max": 17,
+    "capacity_min": 14,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.849204,
+          48.004998
+        ],
+        [
+          7.849364,
+          48.004951
+        ],
+        [
+          7.849449,
+          48.004933
+        ],
+        [
+          7.84958,
+          48.004903
+        ],
+        [
+          7.849723,
+          48.004873
+        ],
+        [
+          7.850088,
+          48.004792
+        ],
+        [
+          7.850184,
+          48.00477
+        ],
+        [
+          7.85075,
+          48.004645
+        ],
+        [
+          7.850901,
+          48.004611
+        ],
+        [
+          7.85093,
+          48.004604
+        ],
+        [
+          7.85121,
+          48.00453
+        ],
+        [
+          7.851679,
+          48.004405
+        ],
+        [
+          7.851739,
+          48.004388
+        ],
+        [
+          7.852523,
+          48.004128
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0045940",
+    "lon": "7.8508720",
+    "name": "Tennenbacher Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "006198ccdfd981040228ad7bb2388b9b"
+  },
+  {
+    "address": "Reutestraße, Freiburg",
+    "capacity": 26,
+    "capacity_max": 28,
+    "capacity_min": 23,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.862978,
+          47.962906
+        ],
+        [
+          7.863448,
+          47.962517
+        ],
+        [
+          7.864526,
+          47.961861
+        ],
+        [
+          7.864813,
+          47.961608
+        ],
+        [
+          7.865029,
+          47.961352
+        ],
+        [
+          7.865414,
+          47.96094
+        ],
+        [
+          7.865773,
+          47.960488
+        ],
+        [
+          7.865982,
+          47.960319
+        ],
+        [
+          7.866074,
+          47.960286
+        ],
+        [
+          7.866176,
+          47.960254
+        ],
+        [
+          7.866257,
+          47.960227
+        ],
+        [
+          7.866363,
+          47.960177
+        ],
+        [
+          7.866405,
+          47.960152
+        ],
+        [
+          7.866422,
+          47.960094
+        ],
+        [
+          7.866409,
+          47.960028
+        ],
+        [
+          7.866337,
+          47.959959
+        ],
+        [
+          7.866106,
+          47.959784
+        ],
+        [
+          7.866002,
+          47.959636
+        ],
+        [
+          7.865976,
+          47.959405
+        ],
+        [
+          7.866064,
+          47.959276
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9611837",
+    "lon": "7.8649962",
+    "name": "Reutestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "007347341f1f2a7d7a81565616e0ae37"
+  },
+  {
+    "address": "Großtalstraße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.910716,
+          47.969656
+        ],
+        [
+          7.910725,
+          47.969271
+        ],
+        [
+          7.910712,
+          47.96917
+        ],
+        [
+          7.910679,
+          47.969036
+        ],
+        [
+          7.910628,
+          47.968873
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9692606",
+    "lon": "7.9107015",
+    "name": "Großtalstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "007b7d3d17e27fa6e6f0a35e81fbc896"
+  },
+  {
+    "address": "Hochrüttestraße, Freiburg",
+    "capacity": 11,
+    "capacity_max": 12,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.894826,
+          47.975819
+        ],
+        [
+          7.894981,
+          47.97575
+        ],
+        [
+          7.895211,
+          47.975718
+        ],
+        [
+          7.895296,
+          47.975721
+        ],
+        [
+          7.895384,
+          47.975739
+        ],
+        [
+          7.895592,
+          47.975785
+        ],
+        [
+          7.89592,
+          47.975845
+        ],
+        [
+          7.896205,
+          47.975894
+        ],
+        [
+          7.896486,
+          47.975906
+        ],
+        [
+          7.896899,
+          47.975886
+        ],
+        [
+          7.897364,
+          47.975848
+        ],
+        [
+          7.897773,
+          47.975766
+        ],
+        [
+          7.8981,
+          47.975674
+        ],
+        [
+          7.898329,
+          47.97557
+        ],
+        [
+          7.898971,
+          47.975291
+        ],
+        [
+          7.899685,
+          47.974822
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9756291",
+    "lon": "7.8973215",
+    "name": "Hochrüttestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "009327c253a804ec190989fa3abcb6c7"
+  },
+  {
+    "address": "Am Neugraben, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.720746,
+          48.002229
+        ],
+        [
+          7.721168,
+          48.002735
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0024820",
+    "lon": "7.7209570",
+    "name": "Am Neugraben",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "00b27c377ceed63723c7e7bdf2d1ea57"
+  },
+  {
+    "address": "Molzhofstraße, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.912334,
+          47.950628
+        ],
+        [
+          7.912427,
+          47.95074
+        ],
+        [
+          7.912529,
+          47.95101
+        ],
+        [
+          7.912594,
+          47.95117
+        ],
+        [
+          7.91269,
+          47.951365
+        ],
+        [
+          7.912716,
+          47.951404
+        ],
+        [
+          7.912807,
+          47.951538
+        ],
+        [
+          7.912891,
+          47.951644
+        ],
+        [
+          7.912985,
+          47.951715
+        ],
+        [
+          7.91319,
+          47.951849
+        ],
+        [
+          7.913412,
+          47.951984
+        ],
+        [
+          7.913562,
+          47.952077
+        ],
+        [
+          7.914006,
+          47.952405
+        ],
+        [
+          7.914022,
+          47.952452
+        ],
+        [
+          7.913988,
+          47.952514
+        ],
+        [
+          7.913506,
+          47.952728
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9518124",
+    "lon": "7.9132081",
+    "name": "Molzhofstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "00c5cf03dcfe951ec68305f9728c2572"
+  },
+  {
+    "address": "Karlstraße, Freiburg",
+    "capacity": 29,
+    "capacity_max": 31,
+    "capacity_min": 26,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.856914,
+          48.002493
+        ],
+        [
+          7.856737,
+          48.00161
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0020515",
+    "lon": "7.8568255",
+    "name": "Karlstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "011f13cc611651bed6eda6e6f54c8131"
+  },
+  {
+    "address": "L187, Freiburg",
+    "capacity": 1,
+    "capacity_max": 1,
+    "capacity_min": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809121,
+          48.061358
+        ],
+        [
+          7.809273,
+          48.06137
+        ],
+        [
+          7.80943,
+          48.061381
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0613698",
+    "lon": "7.8092755",
+    "name": "L187",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01565ad0268c029b6a296a06bafd1a63"
+  },
+  {
+    "address": "Bernlappstraße, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.863285,
+          48.02472
+        ],
+        [
+          7.86305,
+          48.024769
+        ],
+        [
+          7.862856,
+          48.024797
+        ],
+        [
+          7.862735,
+          48.024797
+        ],
+        [
+          7.861314,
+          48.024662
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0247407",
+    "lon": "7.8623015",
+    "name": "Bernlappstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01646aac2f50ec0d1fa3763f991ca916"
+  },
+  {
+    "address": "Großtalstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.910632,
+          47.970129
+        ],
+        [
+          7.910716,
+          47.969656
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9698925",
+    "lon": "7.9106740",
+    "name": "Großtalstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "017cc8caa764be75fff7b7c494695c0f"
+  },
+  {
+    "address": "Bugginger Straße, Freiburg",
+    "capacity": 18,
+    "capacity_max": 19,
+    "capacity_min": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.803241,
+          47.996042
+        ],
+        [
+          7.803292,
+          47.996163
+        ],
+        [
+          7.803386,
+          47.9962
+        ],
+        [
+          7.803584,
+          47.996217
+        ],
+        [
+          7.804375,
+          47.996211
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9961984",
+    "lon": "7.8037695",
+    "name": "Bugginger Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "017d3e128d93d5ecacb97378def5e54f"
+  },
+  {
+    "address": "Hans-Bunte-Straße, Freiburg",
+    "capacity": 20,
+    "capacity_max": 22,
+    "capacity_min": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.859661,
+          48.031413
+        ],
+        [
+          7.859848,
+          48.031567
+        ],
+        [
+          7.860001,
+          48.031722
+        ],
+        [
+          7.860103,
+          48.03185
+        ],
+        [
+          7.860201,
+          48.032049
+        ],
+        [
+          7.860244,
+          48.032162
+        ],
+        [
+          7.860285,
+          48.032302
+        ],
+        [
+          7.860299,
+          48.032397
+        ],
+        [
+          7.8603,
+          48.03247
+        ],
+        [
+          7.860302,
+          48.032528
+        ],
+        [
+          7.8603,
+          48.032566
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0319378",
+    "lon": "7.8600803",
+    "name": "Hans-Bunte-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "018bc7694766561a94b876db55a295b7"
+  },
+  {
+    "address": "Große Roos, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.697338,
+          47.96569
+        ],
+        [
+          7.697307,
+          47.965625
+        ],
+        [
+          7.697338,
+          47.965546
+        ],
+        [
+          7.697563,
+          47.965339
+        ],
+        [
+          7.69788,
+          47.965018
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9653424",
+    "lon": "7.6975623",
+    "name": "Große Roos",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01b98150b32364858a14dc04c5d0ac32"
+  },
+  {
+    "address": "Scheibenbergweg, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.904929,
+          47.988796
+        ],
+        [
+          7.904851,
+          47.988883
+        ],
+        [
+          7.90482,
+          47.988945
+        ],
+        [
+          7.904819,
+          47.989
+        ],
+        [
+          7.904861,
+          47.989062
+        ],
+        [
+          7.904947,
+          47.98911
+        ],
+        [
+          7.90525,
+          47.989303
+        ],
+        [
+          7.905563,
+          47.989537
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9891914",
+    "lon": "7.9051190",
+    "name": "Scheibenbergweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01c3da9ef392beab83fbc02fb9b5d897"
+  },
+  {
+    "address": "Sautierstraße, Freiburg",
+    "capacity": 44,
+    "capacity_max": 48,
+    "capacity_min": 39,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.852728,
+          48.005028
+        ],
+        [
+          7.852755,
+          48.005144
+        ],
+        [
+          7.852826,
+          48.005456
+        ],
+        [
+          7.852891,
+          48.00574
+        ],
+        [
+          7.853,
+          48.006216
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0056220",
+    "lon": "7.8528641",
+    "name": "Sautierstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01d340f4d23804302ae75816a92648e8"
+  },
+  {
+    "address": "Elsässer Straße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811907,
+          48.024716
+        ],
+        [
+          7.811838,
+          48.024932
+        ],
+        [
+          7.811733,
+          48.02514
+        ],
+        [
+          7.811595,
+          48.025265
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0250096",
+    "lon": "7.8117810",
+    "name": "Elsässer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01dac85cb4b82d98a9a92c175ef3f966"
+  },
+  {
+    "address": "Humbergweg, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.801879,
+          48.01943
+        ],
+        [
+          7.802322,
+          48.020116
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0197730",
+    "lon": "7.8021005",
+    "name": "Humbergweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01df2e97159c81d1857c4e46c5bce8f5"
+  },
+  {
+    "address": "K9860, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.798014,
+          48.035651
+        ],
+        [
+          7.797268,
+          48.035999
+        ],
+        [
+          7.797102,
+          48.036127
+        ],
+        [
+          7.79698,
+          48.036274
+        ],
+        [
+          7.79691,
+          48.036408
+        ],
+        [
+          7.796868,
+          48.036573
+        ],
+        [
+          7.796838,
+          48.036828
+        ],
+        [
+          7.796837,
+          48.037047
+        ],
+        [
+          7.796834,
+          48.037293
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0363156",
+    "lon": "7.7971911",
+    "name": "K9860",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "01f602d37351442cc922304f3a109f22"
+  },
+  {
+    "address": "Sternwaldstraße, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.859679,
+          47.98759
+        ],
+        [
+          7.859693,
+          47.987636
+        ],
+        [
+          7.859703,
+          47.987672
+        ],
+        [
+          7.859773,
+          47.987907
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9877485",
+    "lon": "7.8597259",
+    "name": "Sternwaldstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "020b0052614e68f1e42a709d526068b4"
+  },
+  {
+    "address": "Feldbergstraße, Freiburg",
+    "capacity": 31,
+    "capacity_max": 34,
+    "capacity_min": 27,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.818546,
+          47.985738
+        ],
+        [
+          7.818544,
+          47.985783
+        ],
+        [
+          7.818538,
+          47.986058
+        ],
+        [
+          7.818501,
+          47.986331
+        ],
+        [
+          7.818475,
+          47.986481
+        ],
+        [
+          7.818455,
+          47.986578
+        ],
+        [
+          7.818406,
+          47.986787
+        ],
+        [
+          7.818289,
+          47.987233
+        ],
+        [
+          7.818283,
+          47.987309
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9865280",
+    "lon": "7.8184449",
+    "name": "Feldbergstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "021683eac2ded25a79f28df0324c96e8"
+  },
+  {
+    "address": "Wöhlerstraße, Freiburg",
+    "capacity": 31,
+    "capacity_max": 34,
+    "capacity_min": 27,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.849421,
+          48.033402
+        ],
+        [
+          7.84998,
+          48.03356
+        ],
+        [
+          7.850148,
+          48.033615
+        ],
+        [
+          7.850908,
+          48.033826
+        ],
+        [
+          7.851132,
+          48.033881
+        ],
+        [
+          7.851217,
+          48.033893
+        ],
+        [
+          7.851298,
+          48.033888
+        ],
+        [
+          7.851436,
+          48.033845
+        ],
+        [
+          7.851526,
+          48.033767
+        ],
+        [
+          7.852417,
+          48.032894
+        ],
+        [
+          7.852491,
+          48.032848
+        ],
+        [
+          7.852559,
+          48.032832
+        ],
+        [
+          7.852622,
+          48.032834
+        ],
+        [
+          7.852688,
+          48.032849
+        ],
+        [
+          7.852834,
+          48.032947
+        ],
+        [
+          7.852943,
+          48.033064
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0334584",
+    "lon": "7.8512764",
+    "name": "Wöhlerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "021a8ed22bddd36703252d6c1540e8cd"
+  },
+  {
+    "address": "Verlorener Weg, Freiburg",
+    "capacity": 15,
+    "capacity_max": 16,
+    "capacity_min": 13,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.820568,
+          48.015113
+        ],
+        [
+          7.821188,
+          48.015613
+        ],
+        [
+          7.821486,
+          48.015862
+        ],
+        [
+          7.82183,
+          48.01614
+        ],
+        [
+          7.821898,
+          48.016195
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0156534",
+    "lon": "7.8212335",
+    "name": "Verlorener Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0223074c666fe85df461d7e0b04562ba"
+  },
+  {
+    "address": "Habsburgerstraße, Freiburg",
+    "capacity": 11,
+    "capacity_max": 12,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.854818,
+          48.003498
+        ],
+        [
+          7.854812,
+          48.003568
+        ],
+        [
+          7.85481,
+          48.003625
+        ],
+        [
+          7.854882,
+          48.003945
+        ],
+        [
+          7.854942,
+          48.004216
+        ],
+        [
+          7.854972,
+          48.004341
+        ],
+        [
+          7.855014,
+          48.004517
+        ],
+        [
+          7.855023,
+          48.004556
+        ],
+        [
+          7.855102,
+          48.004853
+        ],
+        [
+          7.8551,
+          48.004879
+        ],
+        [
+          7.855076,
+          48.004937
+        ],
+        [
+          7.855064,
+          48.004961
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0042341",
+    "lon": "7.8549498",
+    "name": "Habsburgerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02314dcedb0f062bf84e477f5e3387af"
+  },
+  {
+    "address": "Wege - Waltershofen, Freiburg",
+    "capacity": 18,
+    "capacity_max": 19,
+    "capacity_min": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.710191,
+          48.026365
+        ],
+        [
+          7.71021,
+          48.026327
+        ],
+        [
+          7.710207,
+          48.026273
+        ],
+        [
+          7.710118,
+          48.02605
+        ],
+        [
+          7.710052,
+          48.025897
+        ],
+        [
+          7.71007,
+          48.025856
+        ],
+        [
+          7.710108,
+          48.025834
+        ],
+        [
+          7.710396,
+          48.025714
+        ],
+        [
+          7.710744,
+          48.025621
+        ],
+        [
+          7.712367,
+          48.02537
+        ],
+        [
+          7.71247,
+          48.025362
+        ],
+        [
+          7.713107,
+          48.025374
+        ],
+        [
+          7.7134,
+          48.025403
+        ],
+        [
+          7.71426,
+          48.025342
+        ],
+        [
+          7.714413,
+          48.025323
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0255445",
+    "lon": "7.7119915",
+    "name": "Wege - Waltershofen",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "024764ad9f22282dd97f27adee4fcc4e"
+  },
+  {
+    "address": "Laubenweg, Freiburg",
+    "capacity": 33,
+    "capacity_max": 36,
+    "capacity_min": 29,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815622,
+          47.993182
+        ],
+        [
+          7.815538,
+          47.993121
+        ],
+        [
+          7.81545,
+          47.993056
+        ],
+        [
+          7.815234,
+          47.992899
+        ],
+        [
+          7.815174,
+          47.992855
+        ],
+        [
+          7.81505,
+          47.992763
+        ],
+        [
+          7.814925,
+          47.992673
+        ],
+        [
+          7.814877,
+          47.992638
+        ],
+        [
+          7.814624,
+          47.992453
+        ],
+        [
+          7.814599,
+          47.992435
+        ],
+        [
+          7.814458,
+          47.992333
+        ],
+        [
+          7.814313,
+          47.992227
+        ],
+        [
+          7.814239,
+          47.992175
+        ],
+        [
+          7.814193,
+          47.992136
+        ],
+        [
+          7.814178,
+          47.99209
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9926453",
+    "lon": "7.8148876",
+    "name": "Laubenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "025c56f0f6f8109b1c8155af5409b2c0"
+  },
+  {
+    "address": "Basler Straße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.844431,
+          47.987833
+        ],
+        [
+          7.84454,
+          47.98785
+        ],
+        [
+          7.846109,
+          47.988087
+        ],
+        [
+          7.846214,
+          47.988102
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9879681",
+    "lon": "7.8453224",
+    "name": "Basler Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "026a4a0baf700a529363048831a9c3cc"
+  },
+  {
+    "address": "Dorfgraben, Freiburg",
+    "capacity": 9,
+    "capacity_max": 9,
+    "capacity_min": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.700317,
+          47.971637
+        ],
+        [
+          7.700159,
+          47.971646
+        ],
+        [
+          7.700039,
+          47.971627
+        ],
+        [
+          7.699826,
+          47.971553
+        ],
+        [
+          7.699262,
+          47.971384
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9715372",
+    "lon": "7.6997861",
+    "name": "Dorfgraben",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "026e6551630c7d07fd833196febe17fc"
+  },
+  {
+    "address": "Leinenweberstraße, Freiburg",
+    "capacity": 40,
+    "capacity_max": 44,
+    "capacity_min": 36,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812686,
+          48.037489
+        ],
+        [
+          7.812612,
+          48.037468
+        ],
+        [
+          7.811094,
+          48.037026
+        ],
+        [
+          7.81096,
+          48.03699
+        ],
+        [
+          7.810584,
+          48.036872
+        ],
+        [
+          7.810514,
+          48.036852
+        ],
+        [
+          7.809984,
+          48.0367
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0370951",
+    "lon": "7.8113348",
+    "name": "Leinenweberstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "027b9c718cfcb2c3f97d0404d417bd49"
+  },
+  {
+    "address": "Rebenweg, Freiburg",
+    "capacity": 23,
+    "capacity_max": 25,
+    "capacity_min": 20,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807545,
+          47.989811
+        ],
+        [
+          7.80718,
+          47.990018
+        ],
+        [
+          7.806508,
+          47.990438
+        ],
+        [
+          7.806399,
+          47.990506
+        ],
+        [
+          7.80608,
+          47.990709
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9902532",
+    "lon": "7.8068084",
+    "name": "Rebenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0280bc5e4d8be6998380a804b97c6d5a"
+  },
+  {
+    "address": "Zähringer Straße, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.860197,
+          48.025393
+        ],
+        [
+          7.860225,
+          48.025273
+        ],
+        [
+          7.860275,
+          48.024968
+        ],
+        [
+          7.860268,
+          48.024865
+        ],
+        [
+          7.860247,
+          48.024701
+        ],
+        [
+          7.860251,
+          48.024685
+        ],
+        [
+          7.860253,
+          48.02466
+        ],
+        [
+          7.860255,
+          48.024609
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0250023",
+    "lon": "7.8602486",
+    "name": "Zähringer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0285f4755cf5a8720da0eb497723a122"
+  },
+  {
+    "address": "Seestraße, Freiburg",
+    "capacity": 26,
+    "capacity_max": 28,
+    "capacity_min": 23,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813172,
+          48.058655
+        ],
+        [
+          7.813176,
+          48.058682
+        ],
+        [
+          7.813182,
+          48.058711
+        ],
+        [
+          7.813201,
+          48.058853
+        ],
+        [
+          7.813161,
+          48.059875
+        ],
+        [
+          7.813168,
+          48.059976
+        ],
+        [
+          7.813272,
+          48.060058
+        ],
+        [
+          7.813447,
+          48.06017
+        ],
+        [
+          7.813681,
+          48.060333
+        ],
+        [
+          7.814027,
+          48.060609
+        ],
+        [
+          7.814234,
+          48.060877
+        ],
+        [
+          7.81442,
+          48.061005
+        ],
+        [
+          7.814741,
+          48.061062
+        ],
+        [
+          7.815057,
+          48.061047
+        ],
+        [
+          7.815582,
+          48.060984
+        ],
+        [
+          7.815763,
+          48.061012
+        ],
+        [
+          7.815807,
+          48.061073
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0603036",
+    "lon": "7.8140501",
+    "name": "Seestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "029042278df9688cd5156ce2f307ad77"
+  },
+  {
+    "address": "Magdalénienstraße, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.694162,
+          47.966542
+        ],
+        [
+          7.693942,
+          47.966459
+        ],
+        [
+          7.693806,
+          47.966406
+        ],
+        [
+          7.693751,
+          47.966382
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9664635",
+    "lon": "7.6939559",
+    "name": "Magdalénienstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02a329077cc617ff3b843085c8bf234f"
+  },
+  {
+    "address": "Malteserordensstraße, Freiburg",
+    "capacity": 11,
+    "capacity_max": 12,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.794816,
+          47.980569
+        ],
+        [
+          7.794652,
+          47.98021
+        ],
+        [
+          7.794551,
+          47.980006
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9802865",
+    "lon": "7.7946855",
+    "name": "Malteserordensstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02ac8fde5852e53e88a83d0506ae86e2"
+  },
+  {
+    "address": "Rheinstraße, Freiburg",
+    "capacity": 34,
+    "capacity_max": 37,
+    "capacity_min": 30,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.850672,
+          47.99962
+        ],
+        [
+          7.849046,
+          47.999911
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9997655",
+    "lon": "7.8498590",
+    "name": "Rheinstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02b7a3f6060137cf58ca6e32fd1923cf"
+  },
+  {
+    "address": "Emmendinger Straße, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.849493,
+          48.00846
+        ],
+        [
+          7.849826,
+          48.008749
+        ],
+        [
+          7.849852,
+          48.008802
+        ],
+        [
+          7.850199,
+          48.009121
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0087881",
+    "lon": "7.8498480",
+    "name": "Emmendinger Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02b85f5f161176b719c40210650e1d39"
+  },
+  {
+    "address": "Hebelstraße, Freiburg",
+    "capacity": 27,
+    "capacity_max": 29,
+    "capacity_min": 24,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.847279,
+          48.000236
+        ],
+        [
+          7.846922,
+          47.999393
+        ],
+        [
+          7.846913,
+          47.999373
+        ],
+        [
+          7.846836,
+          47.99918
+        ],
+        [
+          7.846749,
+          47.998951
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9995953",
+    "lon": "7.8470096",
+    "name": "Hebelstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02bdac0edf6a7932d270f0b7392fd5c9"
+  },
+  {
+    "address": "Rötebuckweg, Freiburg",
+    "capacity": 24,
+    "capacity_max": 26,
+    "capacity_min": 21,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.863555,
+          48.017955
+        ],
+        [
+          7.863367,
+          48.01824
+        ],
+        [
+          7.863344,
+          48.018276
+        ],
+        [
+          7.863312,
+          48.01835
+        ],
+        [
+          7.863289,
+          48.018404
+        ],
+        [
+          7.863242,
+          48.018725
+        ],
+        [
+          7.863241,
+          48.019618
+        ],
+        [
+          7.863121,
+          48.019859
+        ],
+        [
+          7.862948,
+          48.020025
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0190021",
+    "lon": "7.8632558",
+    "name": "Rötebuckweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02bff0cfa81242142b29320835f7ee2e"
+  },
+  {
+    "address": "Emmendinger Straße, Freiburg",
+    "capacity": 17,
+    "capacity_max": 18,
+    "capacity_min": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.847278,
+          48.006156
+        ],
+        [
+          7.847337,
+          48.006195
+        ],
+        [
+          7.847418,
+          48.006249
+        ],
+        [
+          7.84778,
+          48.006625
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0063799",
+    "lon": "7.8475379",
+    "name": "Emmendinger Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02d07a8d543c5645bbfc6dd9e0ba832d"
+  },
+  {
+    "address": "Hofackerstraße, Freiburg",
+    "capacity": 17,
+    "capacity_max": 18,
+    "capacity_min": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812634,
+          48.014153
+        ],
+        [
+          7.811709,
+          48.013469
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0138110",
+    "lon": "7.8121715",
+    "name": "Hofackerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02d1c985c64fde04fe335f4849bfbc9a"
+  },
+  {
+    "address": "Oberer Kirchweg, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.718665,
+          47.981453
+        ],
+        [
+          7.718591,
+          47.981303
+        ],
+        [
+          7.717906,
+          47.98078
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9810962",
+    "lon": "7.7183102",
+    "name": "Oberer Kirchweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02e5dfaac126fa83ac3cf37e87fd9aee"
+  },
+  {
+    "address": "Liebigstraße, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.849435,
+          48.020053
+        ],
+        [
+          7.849871,
+          48.020097
+        ],
+        [
+          7.850284,
+          48.02011
+        ],
+        [
+          7.850529,
+          48.020108
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0200933",
+    "lon": "7.8499814",
+    "name": "Liebigstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "02f202aded6f0f3097a50b79c5495bda"
+  },
+  {
+    "address": "Walter-Gropius-Straße, Freiburg",
+    "capacity": 14,
+    "capacity_max": 15,
+    "capacity_min": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.824038,
+          47.976255
+        ],
+        [
+          7.824437,
+          47.976156
+        ],
+        [
+          7.825229,
+          47.975964
+        ],
+        [
+          7.82554,
+          47.975885
+        ],
+        [
+          7.82566,
+          47.975854
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9760556",
+    "lon": "7.8248493",
+    "name": "Walter-Gropius-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "032e822e3c69a22b0173209f63f1470d"
+  },
+  {
+    "address": "Moltkestraße, Freiburg",
+    "capacity": 34,
+    "capacity_max": 37,
+    "capacity_min": 30,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.843176,
+          47.99388
+        ],
+        [
+          7.843284,
+          47.994311
+        ],
+        [
+          7.843432,
+          47.9949
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9943900",
+    "lon": "7.8433039",
+    "name": "Moltkestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "036a6b883e4aa709ca5f779a729306bb"
+  },
+  {
+    "address": "Spechtweg, Freiburg",
+    "capacity": 28,
+    "capacity_max": 30,
+    "capacity_min": 25,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808186,
+          48.019429
+        ],
+        [
+          7.807955,
+          48.019642
+        ],
+        [
+          7.807815,
+          48.01978
+        ],
+        [
+          7.807711,
+          48.019956
+        ],
+        [
+          7.807674,
+          48.020063
+        ],
+        [
+          7.807649,
+          48.020346
+        ],
+        [
+          7.807647,
+          48.020663
+        ],
+        [
+          7.807646,
+          48.020711
+        ],
+        [
+          7.807645,
+          48.020786
+        ],
+        [
+          7.807635,
+          48.02096
+        ],
+        [
+          7.807607,
+          48.021196
+        ],
+        [
+          7.807643,
+          48.021222
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0202691",
+    "lon": "7.8077489",
+    "name": "Spechtweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "037c77dbc7163884704e3fb9be4a685a"
+  },
+  {
+    "address": "Großtalstraße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.908734,
+          47.965848
+        ],
+        [
+          7.908462,
+          47.965624
+        ],
+        [
+          7.908345,
+          47.965504
+        ],
+        [
+          7.908296,
+          47.965422
+        ],
+        [
+          7.908266,
+          47.965314
+        ],
+        [
+          7.908243,
+          47.965163
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9655405",
+    "lon": "7.9084309",
+    "name": "Großtalstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "03a62b670278128d24e5f20e275a1594"
+  },
+  {
+    "address": "Egonstraße, Freiburg",
+    "capacity": 31,
+    "capacity_max": 34,
+    "capacity_min": 27,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.83731,
+          47.999901
+        ],
+        [
+          7.836507,
+          48.000171
+        ],
+        [
+          7.836305,
+          48.000237
+        ],
+        [
+          7.835956,
+          48.000356
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0001282",
+    "lon": "7.8366329",
+    "name": "Egonstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "03fd836bb6ea338fb94b56ba506b1d97"
+  },
+  {
+    "address": "Siegelsbachstraße, Freiburg",
+    "capacity": 23,
+    "capacity_max": 25,
+    "capacity_min": 20,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.90764,
+          47.968958
+        ],
+        [
+          7.90697,
+          47.968962
+        ],
+        [
+          7.906844,
+          47.968959
+        ],
+        [
+          7.906808,
+          47.968921
+        ],
+        [
+          7.907026,
+          47.968514
+        ],
+        [
+          7.907101,
+          47.968205
+        ],
+        [
+          7.907079,
+          47.967878
+        ],
+        [
+          7.906924,
+          47.967376
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9684339",
+    "lon": "7.9070789",
+    "name": "Siegelsbachstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "041859efd73c6282fc1e5eafad7ec0ef"
+  },
+  {
+    "address": "Im Sauergarten, Freiburg",
+    "capacity": 28,
+    "capacity_max": 30,
+    "capacity_min": 25,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.698863,
+          47.96849
+        ],
+        [
+          7.698775,
+          47.968493
+        ],
+        [
+          7.698379,
+          47.968281
+        ],
+        [
+          7.698326,
+          47.968251
+        ],
+        [
+          7.697684,
+          47.967908
+        ],
+        [
+          7.6975,
+          47.967826
+        ],
+        [
+          7.697384,
+          47.967774
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9681444",
+    "lon": "7.6981229",
+    "name": "Im Sauergarten",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "041cc428417c397b5afb43b9a3e63f62"
+  },
+  {
+    "address": "Alemannenstraße, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.908881,
+          47.977237
+        ],
+        [
+          7.90937,
+          47.977134
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9771855",
+    "lon": "7.9091255",
+    "name": "Alemannenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "045e1d1279a59525e63b6fc361c5e018"
+  },
+  {
+    "address": "Birkenweg, Freiburg",
+    "capacity": 1,
+    "capacity_max": 1,
+    "capacity_min": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.832255,
+          47.980236
+        ],
+        [
+          7.832236,
+          47.980242
+        ],
+        [
+          7.831427,
+          47.980462
+        ],
+        [
+          7.831179,
+          47.980529
+        ],
+        [
+          7.830549,
+          47.980701
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9804687",
+    "lon": "7.8314021",
+    "name": "Birkenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "045e80162de00e08b9fa033cba85f9fe"
+  },
+  {
+    "address": "Habsburgerstraße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.853575,
+          48.000136
+        ],
+        [
+          7.853548,
+          48.000066
+        ],
+        [
+          7.853338,
+          47.999551
+        ],
+        [
+          7.85324,
+          47.999299
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9997178",
+    "lon": "7.8534067",
+    "name": "Habsburgerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0466456e0f5457532579f5d9c838599b"
+  },
+  {
+    "address": "Bachwinkel, Freiburg",
+    "capacity": 8,
+    "capacity_max": 8,
+    "capacity_min": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.803303,
+          48.048249
+        ],
+        [
+          7.803295,
+          48.048376
+        ],
+        [
+          7.80324,
+          48.048504
+        ],
+        [
+          7.803196,
+          48.048668
+        ],
+        [
+          7.803093,
+          48.04889
+        ],
+        [
+          7.802974,
+          48.049018
+        ],
+        [
+          7.80276,
+          48.04911
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0487401",
+    "lon": "7.8031126",
+    "name": "Bachwinkel",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0470d98b38213ddf11b8f6c008b6d592"
+  },
+  {
+    "address": "Hagelstauden, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.803443,
+          47.984894
+        ],
+        [
+          7.80336,
+          47.984899
+        ],
+        [
+          7.803293,
+          47.984896
+        ],
+        [
+          7.803206,
+          47.984874
+        ],
+        [
+          7.803118,
+          47.984836
+        ],
+        [
+          7.803032,
+          47.984779
+        ],
+        [
+          7.802983,
+          47.984724
+        ],
+        [
+          7.802802,
+          47.984482
+        ],
+        [
+          7.802778,
+          47.984469
+        ],
+        [
+          7.802731,
+          47.984465
+        ],
+        [
+          7.802586,
+          47.984467
+        ],
+        [
+          7.802491,
+          47.984461
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9846762",
+    "lon": "7.8029630",
+    "name": "Hagelstauden",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "04902d206abc9ffd4e96ad3c6d7e780c"
+  },
+  {
+    "address": "Georg-de-Hevesy-Weg, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.785674,
+          47.996439
+        ],
+        [
+          7.786241,
+          47.996323
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9963810",
+    "lon": "7.7859575",
+    "name": "Georg-de-Hevesy-Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "04a4d9ac15decf5d70f353c0ff35f2bd"
+  },
+  {
+    "address": "Willy-Brandt-Allee, Freiburg",
+    "capacity": 38,
+    "capacity_max": 41,
+    "capacity_min": 34,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.789868,
+          48.000816
+        ],
+        [
+          7.789489,
+          48.000991
+        ],
+        [
+          7.788741,
+          48.001331
+        ],
+        [
+          7.788219,
+          48.001568
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0011929",
+    "lon": "7.7890439",
+    "name": "Willy-Brandt-Allee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "04dcdba950de0efd110e5072e4384d18"
+  },
+  {
+    "address": "Carl-Kistner-Straße, Freiburg",
+    "capacity": 12,
+    "capacity_max": 13,
+    "capacity_min": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.820093,
+          47.990436
+        ],
+        [
+          7.82021,
+          47.99041
+        ],
+        [
+          7.820276,
+          47.9904
+        ],
+        [
+          7.820481,
+          47.990356
+        ],
+        [
+          7.820582,
+          47.990337
+        ],
+        [
+          7.820691,
+          47.990302
+        ],
+        [
+          7.820751,
+          47.990282
+        ],
+        [
+          7.82107,
+          47.990184
+        ],
+        [
+          7.821262,
+          47.990128
+        ],
+        [
+          7.821493,
+          47.990061
+        ],
+        [
+          7.821613,
+          47.990026
+        ],
+        [
+          7.821706,
+          47.989998
+        ],
+        [
+          7.822027,
+          47.989906
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9901843",
+    "lon": "7.8210631",
+    "name": "Carl-Kistner-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "04eed8914c7b76aefffd4f41af3998f9"
+  },
+  {
+    "address": "Johanna-Kohlund-Straße, Freiburg",
+    "capacity": 18,
+    "capacity_max": 19,
+    "capacity_min": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.793372,
+          48.000187
+        ],
+        [
+          7.793062,
+          47.999859
+        ],
+        [
+          7.792769,
+          47.999555
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9998703",
+    "lon": "7.7930713",
+    "name": "Johanna-Kohlund-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "04f40c10b76946a053f067d25d4d41c7"
+  },
+  {
+    "address": "Sonnenbergstraße, Freiburg",
+    "capacity": 25,
+    "capacity_max": 27,
+    "capacity_min": 22,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.894826,
+          47.975819
+        ],
+        [
+          7.894688,
+          47.975643
+        ],
+        [
+          7.894551,
+          47.975433
+        ],
+        [
+          7.894411,
+          47.975192
+        ],
+        [
+          7.894379,
+          47.97508
+        ],
+        [
+          7.894321,
+          47.974871
+        ],
+        [
+          7.894297,
+          47.974368
+        ],
+        [
+          7.894226,
+          47.974164
+        ],
+        [
+          7.894004,
+          47.974006
+        ],
+        [
+          7.893832,
+          47.973833
+        ],
+        [
+          7.893672,
+          47.973621
+        ],
+        [
+          7.893541,
+          47.973548
+        ],
+        [
+          7.89339,
+          47.973558
+        ],
+        [
+          7.893315,
+          47.973576
+        ],
+        [
+          7.893198,
+          47.973633
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9745064",
+    "lon": "7.8941458",
+    "name": "Sonnenbergstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0504985b59ddb8ffccb953fb93e54de9"
+  },
+  {
+    "address": "Oltmannstraße, Freiburg",
+    "capacity": 42,
+    "capacity_max": 46,
+    "capacity_min": 37,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.831604,
+          47.979381
+        ],
+        [
+          7.831492,
+          47.979411
+        ],
+        [
+          7.831315,
+          47.979459
+        ],
+        [
+          7.831216,
+          47.979485
+        ],
+        [
+          7.83006,
+          47.979812
+        ],
+        [
+          7.829924,
+          47.979842
+        ],
+        [
+          7.829691,
+          47.979906
+        ],
+        [
+          7.829542,
+          47.979941
+        ],
+        [
+          7.829315,
+          47.979998
+        ],
+        [
+          7.829169,
+          47.980011
+        ],
+        [
+          7.829051,
+          47.980018
+        ],
+        [
+          7.828975,
+          47.979996
+        ],
+        [
+          7.828884,
+          47.979958
+        ],
+        [
+          7.828599,
+          47.979762
+        ],
+        [
+          7.828444,
+          47.979658
+        ],
+        [
+          7.828402,
+          47.97963
+        ],
+        [
+          7.828227,
+          47.979513
+        ],
+        [
+          7.827994,
+          47.979358
+        ],
+        [
+          7.827846,
+          47.979266
+        ],
+        [
+          7.827748,
+          47.979201
+        ],
+        [
+          7.827071,
+          47.978752
+        ],
+        [
+          7.826978,
+          47.978686
+        ],
+        [
+          7.826822,
+          47.978578
+        ],
+        [
+          7.82667,
+          47.978473
+        ],
+        [
+          7.826575,
+          47.978385
+        ],
+        [
+          7.826398,
+          47.978222
+        ],
+        [
+          7.82617,
+          47.977888
+        ],
+        [
+          7.826111,
+          47.977766
+        ],
+        [
+          7.826085,
+          47.977714
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9792812",
+    "lon": "7.8286396",
+    "name": "Oltmannstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05375aad9e2a8e247e938a1e028e6733"
+  },
+  {
+    "address": "Vorarlberger Weg, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.796044,
+          47.978301
+        ],
+        [
+          7.79588,
+          47.978297
+        ],
+        [
+          7.795745,
+          47.978306
+        ],
+        [
+          7.795609,
+          47.978332
+        ],
+        [
+          7.795446,
+          47.978391
+        ],
+        [
+          7.79529,
+          47.978468
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9783457",
+    "lon": "7.7956584",
+    "name": "Vorarlberger Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05621de1aad502aa56ffdfc0668fc309"
+  },
+  {
+    "address": "Heimenhauser Weg, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.790016,
+          47.978508
+        ],
+        [
+          7.790216,
+          47.978674
+        ],
+        [
+          7.790381,
+          47.978798
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9786552",
+    "lon": "7.7901968",
+    "name": "Heimenhauser Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "057040c701feae25e1f4c5273f7d8088"
+  },
+  {
+    "address": "Wege - Munzingen, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.682606,
+          47.96968
+        ],
+        [
+          7.682413,
+          47.969608
+        ],
+        [
+          7.682171,
+          47.969557
+        ],
+        [
+          7.68193,
+          47.969514
+        ],
+        [
+          7.681554,
+          47.969493
+        ],
+        [
+          7.6812,
+          47.969489
+        ],
+        [
+          7.680786,
+          47.969508
+        ],
+        [
+          7.680515,
+          47.969526
+        ],
+        [
+          7.680374,
+          47.969526
+        ],
+        [
+          7.6802,
+          47.969503
+        ],
+        [
+          7.680077,
+          47.96947
+        ],
+        [
+          7.679996,
+          47.969432
+        ],
+        [
+          7.679991,
+          47.969392
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9695214",
+    "lon": "7.6812837",
+    "name": "Wege - Munzingen",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "057cc08f039af1b9cfb6e09c5ec22b3a"
+  },
+  {
+    "address": "Händelstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.858622,
+          48.015806
+        ],
+        [
+          7.85808,
+          48.015252
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0155290",
+    "lon": "7.8583510",
+    "name": "Händelstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "057e002d883024c667e9763686dec1ac"
+  },
+  {
+    "address": "Käte-Vordtriede-Weg, Freiburg",
+    "capacity": 15,
+    "capacity_max": 16,
+    "capacity_min": 13,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.785327,
+          47.997944
+        ],
+        [
+          7.78546,
+          47.998249
+        ],
+        [
+          7.785653,
+          47.998629
+        ],
+        [
+          7.785851,
+          47.998968
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9984626",
+    "lon": "7.7855761",
+    "name": "Käte-Vordtriede-Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0598176fcc78e72dcda7e5249a6a39b1"
+  },
+  {
+    "address": "Schrödergasse, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.715539,
+          48.000679
+        ],
+        [
+          7.715021,
+          48.000522
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0006005",
+    "lon": "7.7152800",
+    "name": "Schrödergasse",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05b0f9bffa776d93984d58e4e2ef388b"
+  },
+  {
+    "address": "Katharinenstraße, Freiburg",
+    "capacity": 8,
+    "capacity_max": 8,
+    "capacity_min": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.848872,
+          47.999484
+        ],
+        [
+          7.849046,
+          47.999911
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9996975",
+    "lon": "7.8489590",
+    "name": "Katharinenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05c382b81986c8c879e2c0a381074a86"
+  },
+  {
+    "address": "Bollerstaudenstraße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.789472,
+          48.002834
+        ],
+        [
+          7.789778,
+          48.003165
+        ],
+        [
+          7.789863,
+          48.003256
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0030452",
+    "lon": "7.7896673",
+    "name": "Bollerstaudenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "08c0c67de4998322a2ae89c13fca9d51"
+  },
+  {
+    "address": "Händelstraße, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.859245,
+          48.016638
+        ],
+        [
+          7.859262,
+          48.016606
+        ],
+        [
+          7.859255,
+          48.016551
+        ],
+        [
+          7.858622,
+          48.015806
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0162143",
+    "lon": "7.8589658",
+    "name": "Händelstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05d8d5c0901d7b3517a4c1cdfa055bf7"
+  },
+  {
+    "address": "Am Hagmättle, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.907305,
+          47.978468
+        ],
+        [
+          7.906755,
+          47.977797
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9781325",
+    "lon": "7.9070300",
+    "name": "Am Hagmättle",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05dce01a41a274894f8e815997f2e5a5"
+  },
+  {
+    "address": "Gabelsbergerstraße, Freiburg",
+    "capacity": 33,
+    "capacity_max": 36,
+    "capacity_min": 29,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81498,
+          47.978212
+        ],
+        [
+          7.814984,
+          47.97815
+        ],
+        [
+          7.814985,
+          47.977998
+        ],
+        [
+          7.814985,
+          47.977902
+        ],
+        [
+          7.814987,
+          47.97769
+        ],
+        [
+          7.814988,
+          47.977602
+        ],
+        [
+          7.814972,
+          47.97755
+        ],
+        [
+          7.81492,
+          47.977517
+        ],
+        [
+          7.814805,
+          47.9775
+        ],
+        [
+          7.814379,
+          47.977461
+        ],
+        [
+          7.813885,
+          47.977411
+        ],
+        [
+          7.81387,
+          47.977508
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9776134",
+    "lon": "7.8146005",
+    "name": "Gabelsbergerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "05fa7e9d29aa0ab2129a223d15da194e"
+  },
+  {
+    "address": "Sudermannstraße, Freiburg",
+    "capacity": 10,
+    "capacity_max": 11,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811699,
+          48.007455
+        ],
+        [
+          7.812176,
+          48.007839
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0076470",
+    "lon": "7.8119375",
+    "name": "Sudermannstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "061ac04d03757e23bf776e331e5adf47"
+  },
+  {
+    "address": "Fendrichstraße, Freiburg",
+    "capacity": 20,
+    "capacity_max": 22,
+    "capacity_min": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.891064,
+          47.98753
+        ],
+        [
+          7.89083,
+          47.98759
+        ],
+        [
+          7.890648,
+          47.987196
+        ],
+        [
+          7.890618,
+          47.987113
+        ],
+        [
+          7.890581,
+          47.987011
+        ],
+        [
+          7.890036,
+          47.985881
+        ],
+        [
+          7.890028,
+          47.985866
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9868190",
+    "lon": "7.8904935",
+    "name": "Fendrichstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "06380e6491f71e520f25bd402d2279d0"
+  },
+  {
+    "address": "Blankreutestraße, Freiburg",
+    "capacity": 93,
+    "capacity_max": 102,
+    "capacity_min": 83,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817142,
+          48.035853
+        ],
+        [
+          7.817021,
+          48.035821
+        ],
+        [
+          7.816653,
+          48.035708
+        ],
+        [
+          7.816548,
+          48.035678
+        ],
+        [
+          7.815416,
+          48.035358
+        ],
+        [
+          7.815344,
+          48.035337
+        ],
+        [
+          7.815243,
+          48.035307
+        ],
+        [
+          7.814828,
+          48.035187
+        ],
+        [
+          7.81477,
+          48.035168
+        ],
+        [
+          7.814537,
+          48.035102
+        ],
+        [
+          7.81428,
+          48.035029
+        ],
+        [
+          7.813872,
+          48.034912
+        ],
+        [
+          7.813651,
+          48.034848
+        ],
+        [
+          7.81282,
+          48.034607
+        ],
+        [
+          7.812361,
+          48.034477
+        ],
+        [
+          7.812117,
+          48.034406
+        ],
+        [
+          7.812049,
+          48.034389
+        ],
+        [
+          7.811937,
+          48.034369
+        ],
+        [
+          7.81179,
+          48.034362
+        ],
+        [
+          7.811639,
+          48.034378
+        ],
+        [
+          7.811566,
+          48.034398
+        ],
+        [
+          7.811502,
+          48.034424
+        ],
+        [
+          7.811444,
+          48.034452
+        ],
+        [
+          7.811389,
+          48.034496
+        ],
+        [
+          7.811367,
+          48.034525
+        ],
+        [
+          7.811347,
+          48.034551
+        ],
+        [
+          7.811282,
+          48.034653
+        ],
+        [
+          7.811238,
+          48.034728
+        ],
+        [
+          7.81121,
+          48.034774
+        ],
+        [
+          7.811181,
+          48.034824
+        ],
+        [
+          7.810985,
+          48.035121
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0350105",
+    "lon": "7.8139224",
+    "name": "Blankreutestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "065d1ca14f2d7fddaad5519bc12bfe64"
+  },
+  {
+    "address": "Schlangenweg, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.869612,
+          48.005507
+        ],
+        [
+          7.8698,
+          48.005228
+        ],
+        [
+          7.869897,
+          48.005139
+        ],
+        [
+          7.870216,
+          48.004967
+        ],
+        [
+          7.870541,
+          48.004778
+        ],
+        [
+          7.870643,
+          48.004691
+        ],
+        [
+          7.870778,
+          48.004562
+        ],
+        [
+          7.870865,
+          48.00443
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0049609",
+    "lon": "7.8702289",
+    "name": "Schlangenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "069e9a34e0a72c317a7224c7a1816a32"
+  },
+  {
+    "address": "Reinhold-Schneider-Straße, Freiburg",
+    "capacity": 8,
+    "capacity_max": 8,
+    "capacity_min": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.901283,
+          47.983157
+        ],
+        [
+          7.901189,
+          47.983181
+        ],
+        [
+          7.900949,
+          47.983243
+        ],
+        [
+          7.900612,
+          47.983333
+        ],
+        [
+          7.900451,
+          47.983375
+        ],
+        [
+          7.900303,
+          47.983293
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9832767",
+    "lon": "7.9007863",
+    "name": "Reinhold-Schneider-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "06a533807efa9fe53302ecce93690147"
+  },
+  {
+    "address": "Adelheid-Steinmann-Straße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.796159,
+          47.99811
+        ],
+        [
+          7.796332,
+          47.998283
+        ],
+        [
+          7.796619,
+          47.998576
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9983424",
+    "lon": "7.7963896",
+    "name": "Adelheid-Steinmann-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "06c6bf5e3cfe4fa81eacd75b52619375"
+  },
+  {
+    "address": "Butzenhofstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.911609,
+          47.950598
+        ],
+        [
+          7.911563,
+          47.950472
+        ],
+        [
+          7.911488,
+          47.95035
+        ],
+        [
+          7.911467,
+          47.950278
+        ],
+        [
+          7.911459,
+          47.950178
+        ],
+        [
+          7.911466,
+          47.95
+        ],
+        [
+          7.911358,
+          47.949512
+        ],
+        [
+          7.911324,
+          47.949361
+        ],
+        [
+          7.911259,
+          47.949199
+        ],
+        [
+          7.911142,
+          47.948994
+        ],
+        [
+          7.911107,
+          47.948934
+        ],
+        [
+          7.911094,
+          47.948861
+        ],
+        [
+          7.911123,
+          47.948765
+        ],
+        [
+          7.911254,
+          47.948763
+        ],
+        [
+          7.911401,
+          47.948784
+        ],
+        [
+          7.911555,
+          47.948822
+        ],
+        [
+          7.911692,
+          47.948852
+        ],
+        [
+          7.911781,
+          47.948843
+        ],
+        [
+          7.911878,
+          47.948769
+        ],
+        [
+          7.911948,
+          47.948668
+        ],
+        [
+          7.912055,
+          47.948521
+        ],
+        [
+          7.912083,
+          47.948359
+        ],
+        [
+          7.912028,
+          47.94826
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9492649",
+    "lon": "7.9115120",
+    "name": "Butzenhofstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "06e41e42f3a011687d74a6add2444873"
+  },
+  {
+    "address": "Ferdinand-Weiß-Straße, Freiburg",
+    "capacity": 30,
+    "capacity_max": 33,
+    "capacity_min": 27,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.823814,
+          47.998384
+        ],
+        [
+          7.823982,
+          47.998315
+        ],
+        [
+          7.824554,
+          47.998156
+        ],
+        [
+          7.825186,
+          47.997989
+        ],
+        [
+          7.82556,
+          47.997905
+        ],
+        [
+          7.825788,
+          47.997855
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9980989",
+    "lon": "7.8247950",
+    "name": "Ferdinand-Weiß-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "06e77bf16ac7ffc71b04c8c83f57dc7b"
+  },
+  {
+    "address": "Wege - Opfingen, Freiburg",
+    "capacity": 21,
+    "capacity_max": 23,
+    "capacity_min": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.718557,
+          47.995045
+        ],
+        [
+          7.718554,
+          47.995008
+        ],
+        [
+          7.718413,
+          47.993331
+        ],
+        [
+          7.718408,
+          47.99327
+        ],
+        [
+          7.718358,
+          47.993181
+        ],
+        [
+          7.717367,
+          47.992024
+        ],
+        [
+          7.717352,
+          47.992006
+        ],
+        [
+          7.717332,
+          47.991981
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9934113",
+    "lon": "7.7181886",
+    "name": "Wege - Opfingen",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "06f5020ad19393dcc03898cd8adace55"
+  },
+  {
+    "address": "Eichhalde, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.873153,
+          48.010065
+        ],
+        [
+          7.873073,
+          48.010259
+        ],
+        [
+          7.873054,
+          48.010383
+        ],
+        [
+          7.873033,
+          48.010515
+        ],
+        [
+          7.873008,
+          48.010599
+        ],
+        [
+          7.872962,
+          48.010654
+        ],
+        [
+          7.872877,
+          48.010692
+        ],
+        [
+          7.872777,
+          48.010708
+        ],
+        [
+          7.872685,
+          48.010708
+        ],
+        [
+          7.872606,
+          48.010693
+        ],
+        [
+          7.872522,
+          48.010657
+        ],
+        [
+          7.87153,
+          48.010117
+        ],
+        [
+          7.870314,
+          48.009522
+        ],
+        [
+          7.869999,
+          48.009361
+        ],
+        [
+          7.869802,
+          48.009246
+        ],
+        [
+          7.869588,
+          48.009135
+        ],
+        [
+          7.86947,
+          48.009082
+        ],
+        [
+          7.869351,
+          48.009067
+        ],
+        [
+          7.869249,
+          48.009084
+        ],
+        [
+          7.869163,
+          48.009116
+        ],
+        [
+          7.869096,
+          48.009167
+        ],
+        [
+          7.869069,
+          48.009226
+        ],
+        [
+          7.869065,
+          48.00929
+        ],
+        [
+          7.869095,
+          48.009361
+        ],
+        [
+          7.869142,
+          48.009415
+        ],
+        [
+          7.869431,
+          48.009703
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0098812",
+    "lon": "7.8710309",
+    "name": "Eichhalde",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "070abd5d71fc943b1cd13cc19c07cf8f"
+  },
+  {
+    "address": "Madisonallee, Freiburg",
+    "capacity": 1,
+    "capacity_max": 1,
+    "capacity_min": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.835889,
+          48.01248
+        ],
+        [
+          7.835776,
+          48.012415
+        ],
+        [
+          7.835616,
+          48.012334
+        ],
+        [
+          7.835446,
+          48.012238
+        ],
+        [
+          7.835297,
+          48.01215
+        ],
+        [
+          7.835236,
+          48.012114
+        ],
+        [
+          7.83494,
+          48.011939
+        ],
+        [
+          7.834582,
+          48.011727
+        ],
+        [
+          7.834511,
+          48.011685
+        ],
+        [
+          7.834365,
+          48.011609
+        ],
+        [
+          7.834269,
+          48.011554
+        ],
+        [
+          7.834175,
+          48.011484
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0119893",
+    "lon": "7.8350274",
+    "name": "Madisonallee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "070f9251234e18c975f6bcc22dd540cc"
+  },
+  {
+    "address": "Weißerlenstraße, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.810934,
+          48.040215
+        ],
+        [
+          7.810414,
+          48.040073
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0401440",
+    "lon": "7.8106740",
+    "name": "Weißerlenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0719b627c95f86bd03b364959b18aa7a"
+  },
+  {
+    "address": "Spitzackerstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.855877,
+          47.96758
+        ],
+        [
+          7.855834,
+          47.9675
+        ],
+        [
+          7.85581,
+          47.9674
+        ],
+        [
+          7.855802,
+          47.967298
+        ],
+        [
+          7.855822,
+          47.96724
+        ],
+        [
+          7.855922,
+          47.967098
+        ],
+        [
+          7.856024,
+          47.966966
+        ],
+        [
+          7.856028,
+          47.966888
+        ],
+        [
+          7.856007,
+          47.966828
+        ],
+        [
+          7.855912,
+          47.966748
+        ],
+        [
+          7.855824,
+          47.966672
+        ],
+        [
+          7.855793,
+          47.966631
+        ],
+        [
+          7.855797,
+          47.966569
+        ],
+        [
+          7.855867,
+          47.966456
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9669999",
+    "lon": "7.8558856",
+    "name": "Spitzackerstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "071f3246061a4be93acd5f036e20ab12"
+  },
+  {
+    "address": "Heinrich-Rosenberg-Platz, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.859823,
+          48.004462
+        ],
+        [
+          7.859955,
+          48.004467
+        ],
+        [
+          7.86006,
+          48.004472
+        ],
+        [
+          7.860145,
+          48.004486
+        ],
+        [
+          7.860216,
+          48.004506
+        ],
+        [
+          7.86036,
+          48.004554
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0044901",
+    "lon": "7.8600947",
+    "name": "Heinrich-Rosenberg-Platz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07211978418674d50c018677d0e38dc1"
+  },
+  {
+    "address": "Wendlinger Straße, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.793014,
+          47.975332
+        ],
+        [
+          7.793068,
+          47.975292
+        ],
+        [
+          7.793151,
+          47.975276
+        ],
+        [
+          7.793288,
+          47.975287
+        ],
+        [
+          7.79347,
+          47.975301
+        ],
+        [
+          7.793804,
+          47.975309
+        ],
+        [
+          7.793997,
+          47.975314
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9752997",
+    "lon": "7.7934986",
+    "name": "Wendlinger Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07299249eefa024c8a89ea67849d9a9e"
+  },
+  {
+    "address": "Mathias-Blank-Straße, Freiburg",
+    "capacity": 32,
+    "capacity_max": 35,
+    "capacity_min": 28,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.821639,
+          47.994074
+        ],
+        [
+          7.821508,
+          47.99415
+        ],
+        [
+          7.82133,
+          47.994221
+        ],
+        [
+          7.82122,
+          47.994261
+        ],
+        [
+          7.820969,
+          47.994348
+        ],
+        [
+          7.820788,
+          47.994412
+        ],
+        [
+          7.820269,
+          47.994607
+        ],
+        [
+          7.819865,
+          47.99475
+        ],
+        [
+          7.819684,
+          47.994816
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9944579",
+    "lon": "7.8206674",
+    "name": "Mathias-Blank-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "074abd5f93b6c43d9816f87811c77836"
+  },
+  {
+    "address": "Sonnenbrunnenstraße, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.719232,
+          48.02279
+        ],
+        [
+          7.719263,
+          48.022715
+        ],
+        [
+          7.719348,
+          48.022597
+        ],
+        [
+          7.719535,
+          48.022418
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0225929",
+    "lon": "7.7193683",
+    "name": "Sonnenbrunnenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "075304d0724ba83b9139fb8fcca0c44f"
+  },
+  {
+    "address": "Alte Rathausstraße, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.716485,
+          47.983101
+        ],
+        [
+          7.716285,
+          47.982695
+        ],
+        [
+          7.716241,
+          47.982655
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9828721",
+    "lon": "7.7163708",
+    "name": "Alte Rathausstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "076d0dd5820878797385cd35254c9a17"
+  },
+  {
+    "address": "Prinz-Eugen-Straße, Freiburg",
+    "capacity": 23,
+    "capacity_max": 25,
+    "capacity_min": 20,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.85272,
+          47.983292
+        ],
+        [
+          7.852876,
+          47.983234
+        ],
+        [
+          7.853069,
+          47.983064
+        ],
+        [
+          7.853314,
+          47.982777
+        ],
+        [
+          7.853449,
+          47.982602
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9829838",
+    "lon": "7.8531134",
+    "name": "Prinz-Eugen-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0773ddd929e431cc5eb82c8990de2e4c"
+  },
+  {
+    "address": "Bodenlei, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.711966,
+          47.997869
+        ],
+        [
+          7.712081,
+          47.997862
+        ],
+        [
+          7.712311,
+          47.997875
+        ],
+        [
+          7.712305,
+          47.997922
+        ],
+        [
+          7.712326,
+          47.997977
+        ],
+        [
+          7.712372,
+          47.998024
+        ],
+        [
+          7.712546,
+          47.998145
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9979512",
+    "lon": "7.7122759",
+    "name": "Bodenlei",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0777715829b660ab02ef2a064319cbce"
+  },
+  {
+    "address": "Hartkirchweg, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.794816,
+          47.980569
+        ],
+        [
+          7.794263,
+          47.980734
+        ],
+        [
+          7.794147,
+          47.98078
+        ],
+        [
+          7.794063,
+          47.980816
+        ],
+        [
+          7.793949,
+          47.980877
+        ],
+        [
+          7.79384,
+          47.980958
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9807345",
+    "lon": "7.7943146",
+    "name": "Hartkirchweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07896240788e834a10f3fa12e0be7d0a"
+  },
+  {
+    "address": "Im Sauergarten, Freiburg",
+    "capacity": 15,
+    "capacity_max": 16,
+    "capacity_min": 13,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.695954,
+          47.967757
+        ],
+        [
+          7.69599,
+          47.967728
+        ],
+        [
+          7.696323,
+          47.967555
+        ],
+        [
+          7.696618,
+          47.967401
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9675756",
+    "lon": "7.6962837",
+    "name": "Im Sauergarten",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "078a9630c544906343a7a94061d1e6b6"
+  },
+  {
+    "address": "Franz-Josef-Gassenschmidt-Weg, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.796498,
+          47.983325
+        ],
+        [
+          7.796444,
+          47.983273
+        ],
+        [
+          7.796463,
+          47.983085
+        ],
+        [
+          7.796498,
+          47.983021
+        ],
+        [
+          7.796466,
+          47.982942
+        ],
+        [
+          7.796473,
+          47.982839
+        ],
+        [
+          7.796483,
+          47.982751
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9830473",
+    "lon": "7.7964690",
+    "name": "Franz-Josef-Gassenschmidt-Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "078c5e817d20f38aa5fd04df33d0ae9e"
+  },
+  {
+    "address": "Kaiserstuhlstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.8416,
+          48.013163
+        ],
+        [
+          7.842463,
+          48.012518
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0128405",
+    "lon": "7.8420315",
+    "name": "Kaiserstuhlstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07a2b3e53ea65dea559dad48bc9f0415"
+  },
+  {
+    "address": "Waltersbergweg, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.869206,
+          48.007219
+        ],
+        [
+          7.869361,
+          48.007226
+        ],
+        [
+          7.869544,
+          48.007234
+        ],
+        [
+          7.869627,
+          48.007214
+        ],
+        [
+          7.869819,
+          48.007119
+        ],
+        [
+          7.870347,
+          48.006542
+        ],
+        [
+          7.870527,
+          48.006413
+        ],
+        [
+          7.870722,
+          48.006382
+        ],
+        [
+          7.873423,
+          48.006186
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0065217",
+    "lon": "7.8712297",
+    "name": "Waltersbergweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07a383aa01ab3284f6fc777d303ad53f"
+  },
+  {
+    "address": "Schulhalde, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.71571,
+          48.022807
+        ],
+        [
+          7.71581,
+          48.023075
+        ],
+        [
+          7.715886,
+          48.023155
+        ],
+        [
+          7.716068,
+          48.023277
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0230701",
+    "lon": "7.7158530",
+    "name": "Schulhalde",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07a5b7af02f91d10969944d6658effb3"
+  },
+  {
+    "address": "Steinmattenstraße, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.869864,
+          48.031979
+        ],
+        [
+          7.87013,
+          48.031621
+        ],
+        [
+          7.870546,
+          48.031775
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0317491",
+    "lon": "7.8701670",
+    "name": "Steinmattenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07b36f02c784c2a529c2d5fed7528fd3"
+  },
+  {
+    "address": "Sarahof, Freiburg",
+    "capacity": 10,
+    "capacity_max": 11,
+    "capacity_min": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.789941,
+          47.980437
+        ],
+        [
+          7.789955,
+          47.980366
+        ],
+        [
+          7.789987,
+          47.980189
+        ],
+        [
+          7.790014,
+          47.980055
+        ],
+        [
+          7.79,
+          47.980026
+        ],
+        [
+          7.789936,
+          47.980012
+        ],
+        [
+          7.789761,
+          47.98001
+        ],
+        [
+          7.789711,
+          47.980007
+        ],
+        [
+          7.789702,
+          47.980006
+        ],
+        [
+          7.789668,
+          47.979972
+        ],
+        [
+          7.789682,
+          47.979858
+        ],
+        [
+          7.789712,
+          47.979626
+        ],
+        [
+          7.789748,
+          47.979565
+        ],
+        [
+          7.789774,
+          47.979547
+        ],
+        [
+          7.789968,
+          47.979429
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9799109",
+    "lon": "7.7898393",
+    "name": "Sarahof",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07c9d99cce9152620aac13a3ae1cf1a4"
+  },
+  {
+    "address": "Im Pfaffengrund, Freiburg",
+    "capacity": 9,
+    "capacity_max": 9,
+    "capacity_min": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.910263,
+          47.968705
+        ],
+        [
+          7.909645,
+          47.968842
+        ],
+        [
+          7.909068,
+          47.968902
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9688206",
+    "lon": "7.9096683",
+    "name": "Im Pfaffengrund",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07ccfe9e32e60c211ffc9bb4a6d6b75b"
+  },
+  {
+    "address": "Im Mohnacker, Freiburg",
+    "capacity": 12,
+    "capacity_max": 13,
+    "capacity_min": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.710081,
+          48.000096
+        ],
+        [
+          7.710088,
+          48.000051
+        ],
+        [
+          7.710115,
+          48.000012
+        ],
+        [
+          7.710158,
+          47.999972
+        ],
+        [
+          7.710602,
+          47.999714
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9998854",
+    "lon": "7.7103184",
+    "name": "Im Mohnacker",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "07f0fc8ce1f0050b1ee604905014f539"
+  },
+  {
+    "address": "Sulzburger Straße, Freiburg",
+    "capacity": 18,
+    "capacity_max": 19,
+    "capacity_min": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808286,
+          47.995758
+        ],
+        [
+          7.808743,
+          47.995758
+        ],
+        [
+          7.80922,
+          47.995757
+        ],
+        [
+          7.809779,
+          47.995757
+        ],
+        [
+          7.809889,
+          47.995774
+        ],
+        [
+          7.809928,
+          47.995826
+        ],
+        [
+          7.80993,
+          47.995851
+        ],
+        [
+          7.809927,
+          47.995887
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9957631",
+    "lon": "7.8091487",
+    "name": "Sulzburger Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "082ad753ecba51d3576bf18cf708a961"
+  },
+  {
+    "address": "Richard-Strauß-Straße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.863116,
+          48.014415
+        ],
+        [
+          7.863014,
+          48.014291
+        ],
+        [
+          7.862915,
+          48.014087
+        ],
+        [
+          7.862832,
+          48.013796
+        ],
+        [
+          7.862885,
+          48.013437
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0139455",
+    "lon": "7.8629171",
+    "name": "Richard-Strauß-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0859d6714909f28b05bedac9db38bc1f"
+  },
+  {
+    "address": "Schlangenweg, Freiburg",
+    "capacity": 9,
+    "capacity_max": 9,
+    "capacity_min": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.870865,
+          48.00443
+        ],
+        [
+          7.871097,
+          48.003975
+        ],
+        [
+          7.871241,
+          48.003616
+        ],
+        [
+          7.871337,
+          48.003464
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0039458",
+    "lon": "7.8710999",
+    "name": "Schlangenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0867e324e0a10dcc030618489ea52355"
+  },
+  {
+    "address": "Wirthstraße, Freiburg",
+    "capacity": 245,
+    "capacity_max": 269,
+    "capacity_min": 220,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813227,
+          48.023497
+        ],
+        [
+          7.813379,
+          48.02357
+        ],
+        [
+          7.813464,
+          48.023624
+        ],
+        [
+          7.813749,
+          48.023795
+        ],
+        [
+          7.813913,
+          48.023894
+        ],
+        [
+          7.814613,
+          48.024315
+        ],
+        [
+          7.814697,
+          48.024366
+        ],
+        [
+          7.814963,
+          48.024551
+        ],
+        [
+          7.814997,
+          48.024602
+        ],
+        [
+          7.815023,
+          48.024657
+        ],
+        [
+          7.815033,
+          48.024688
+        ],
+        [
+          7.815042,
+          48.024717
+        ],
+        [
+          7.815048,
+          48.024762
+        ],
+        [
+          7.815052,
+          48.024788
+        ],
+        [
+          7.815039,
+          48.024865
+        ],
+        [
+          7.814995,
+          48.024949
+        ],
+        [
+          7.814943,
+          48.025015
+        ],
+        [
+          7.814896,
+          48.025068
+        ],
+        [
+          7.814756,
+          48.025176
+        ],
+        [
+          7.814424,
+          48.025406
+        ],
+        [
+          7.814265,
+          48.025519
+        ],
+        [
+          7.814158,
+          48.025587
+        ],
+        [
+          7.813812,
+          48.025805
+        ],
+        [
+          7.813282,
+          48.026118
+        ],
+        [
+          7.81286,
+          48.026367
+        ],
+        [
+          7.812625,
+          48.026524
+        ],
+        [
+          7.812455,
+          48.026658
+        ],
+        [
+          7.812333,
+          48.026774
+        ],
+        [
+          7.812109,
+          48.027016
+        ],
+        [
+          7.811921,
+          48.027219
+        ],
+        [
+          7.811887,
+          48.027257
+        ],
+        [
+          7.811748,
+          48.027415
+        ],
+        [
+          7.811532,
+          48.027663
+        ],
+        [
+          7.811199,
+          48.027971
+        ],
+        [
+          7.810997,
+          48.02814
+        ],
+        [
+          7.810848,
+          48.028237
+        ],
+        [
+          7.810727,
+          48.02829
+        ],
+        [
+          7.810567,
+          48.028326
+        ],
+        [
+          7.810432,
+          48.028341
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0259041",
+    "lon": "7.8131681",
+    "name": "Wirthstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "089dab6d80231b9f0db3c3a66f38798f"
+  },
+  {
+    "address": "Feldbergstraße, Freiburg",
+    "capacity": 17,
+    "capacity_max": 18,
+    "capacity_min": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.818542,
+          47.985093
+        ],
+        [
+          7.818547,
+          47.985193
+        ],
+        [
+          7.818546,
+          47.98544
+        ],
+        [
+          7.818546,
+          47.985738
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9854154",
+    "lon": "7.8185460",
+    "name": "Feldbergstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "08a7a3b773c3371e99a94d0f587988c4"
+  },
+  {
+    "address": "Im Haltinger, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.887807,
+          47.986288
+        ],
+        [
+          7.8878,
+          47.986274
+        ],
+        [
+          7.88778,
+          47.986212
+        ],
+        [
+          7.887718,
+          47.986064
+        ],
+        [
+          7.887729,
+          47.986019
+        ],
+        [
+          7.887583,
+          47.985518
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9859055",
+    "lon": "7.8876919",
+    "name": "Im Haltinger",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "08c95d5ffc3a6132fcb9a1eb2cefcd5c"
+  },
+  {
+    "address": "Schwarzwaldstraße, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.87098,
+          47.98839
+        ],
+        [
+          7.87023,
+          47.988504
+        ],
+        [
+          7.870085,
+          47.988531
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9884585",
+    "lon": "7.8705322",
+    "name": "Schwarzwaldstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "08ddfa86fd3d5d1a10cdc656101e149f"
+  },
+  {
+    "address": "Mülhauser Straße, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.826763,
+          48.011678
+        ],
+        [
+          7.827252,
+          48.012045
+        ],
+        [
+          7.827558,
+          48.012271
+        ],
+        [
+          7.827588,
+          48.012292
+        ],
+        [
+          7.827639,
+          48.012331
+        ],
+        [
+          7.827736,
+          48.012406
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0120419",
+    "lon": "7.8272496",
+    "name": "Mülhauser Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "08ec7b5551fb281cb29ea075c1a28189"
+  },
+  {
+    "address": "Egertenstraße, Freiburg",
+    "capacity": 12,
+    "capacity_max": 13,
+    "capacity_min": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.827449,
+          47.993585
+        ],
+        [
+          7.827492,
+          47.993644
+        ],
+        [
+          7.82762,
+          47.993826
+        ],
+        [
+          7.827665,
+          47.993889
+        ],
+        [
+          7.827732,
+          47.993984
+        ],
+        [
+          7.827897,
+          47.99419
+        ],
+        [
+          7.827977,
+          47.994293
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9939422",
+    "lon": "7.8277087",
+    "name": "Egertenstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "090154aa42c6e0011dd1cfbe6ec0e8b4"
+  },
+  {
+    "address": "Schubertstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.860487,
+          48.013522
+        ],
+        [
+          7.861279,
+          48.01391
+        ],
+        [
+          7.861694,
+          48.014099
+        ],
+        [
+          7.862096,
+          48.014219
+        ],
+        [
+          7.86242,
+          48.014298
+        ],
+        [
+          7.862782,
+          48.014368
+        ],
+        [
+          7.863116,
+          48.014415
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0140570",
+    "lon": "7.8617727",
+    "name": "Schubertstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "090d99568eda1975441dc1c2871f6e8b"
+  },
+  {
+    "address": "Rivanerweg, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.709073,
+          47.982564
+        ],
+        [
+          7.709186,
+          47.982559
+        ],
+        [
+          7.709623,
+          47.982579
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9825675",
+    "lon": "7.7093480",
+    "name": "Rivanerweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0912b3c147ce1832e48dfa2713bd2e22"
+  },
+  {
+    "address": "Oberer Weg, Freiburg",
+    "capacity": 13,
+    "capacity_max": 14,
+    "capacity_min": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.719372,
+          48.00373
+        ],
+        [
+          7.719142,
+          48.003478
+        ],
+        [
+          7.718752,
+          48.003188
+        ],
+        [
+          7.718466,
+          48.002818
+        ],
+        [
+          7.717532,
+          48.001827
+        ],
+        [
+          7.717536,
+          48.001744
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0027612",
+    "lon": "7.7184138",
+    "name": "Oberer Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "092a5a4d1ee56458c7bdd0204c7b7e5d"
+  },
+  {
+    "address": "Rosenstauden, Freiburg",
+    "capacity": 7,
+    "capacity_max": 7,
+    "capacity_min": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807545,
+          47.989811
+        ],
+        [
+          7.80734,
+          47.989665
+        ],
+        [
+          7.807188,
+          47.98955
+        ],
+        [
+          7.807043,
+          47.989439
+        ],
+        [
+          7.806883,
+          47.989318
+        ],
+        [
+          7.806584,
+          47.989085
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9894517",
+    "lon": "7.8070617",
+    "name": "Rosenstauden",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "093dff76455549f5444a835562e38ee9"
+  },
+  {
+    "address": "Waldallee, Freiburg",
+    "capacity": 2,
+    "capacity_max": 2,
+    "capacity_min": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.803075,
+          48.019241
+        ],
+        [
+          7.803452,
+          48.019174
+        ],
+        [
+          7.803667,
+          48.01911
+        ],
+        [
+          7.803853,
+          48.019066
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0191605",
+    "lon": "7.8034655",
+    "name": "Waldallee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "09871a5bc433e3546f01224983bbf189"
+  },
+  {
+    "address": "Kußmaulstraße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812703,
+          48.00625
+        ],
+        [
+          7.81265,
+          48.006269
+        ],
+        [
+          7.812414,
+          48.006439
+        ],
+        [
+          7.812217,
+          48.00658
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0064089",
+    "lon": "7.8124568",
+    "name": "Kußmaulstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "09b62ffd4e2df18802b1096d5fa63a43"
+  },
+  {
+    "address": "Blankreutestraße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.810985,
+          48.035121
+        ],
+        [
+          7.810848,
+          48.035328
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0352245",
+    "lon": "7.8109165",
+    "name": "Blankreutestraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "09c51bd5205eb922ea023286ff91dfa5"
+  },
+  {
+    "address": "Sudermannstraße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812176,
+          48.007839
+        ],
+        [
+          7.812355,
+          48.00798
+        ],
+        [
+          7.812443,
+          48.008048
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0079438",
+    "lon": "7.8123093",
+    "name": "Sudermannstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "09c83e3b1780719dc1866cfb9774cb1e"
+  },
+  {
+    "address": "Andreas-Hofer-Straße, Freiburg",
+    "capacity": 18,
+    "capacity_max": 19,
+    "capacity_min": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.810731,
+          47.978677
+        ],
+        [
+          7.810634,
+          47.978702
+        ],
+        [
+          7.810553,
+          47.978722
+        ],
+        [
+          7.810429,
+          47.97875
+        ],
+        [
+          7.810284,
+          47.978783
+        ],
+        [
+          7.810182,
+          47.978805
+        ],
+        [
+          7.810099,
+          47.978824
+        ],
+        [
+          7.809617,
+          47.978945
+        ],
+        [
+          7.809481,
+          47.978979
+        ],
+        [
+          7.809384,
+          47.979
+        ],
+        [
+          7.809016,
+          47.979087
+        ],
+        [
+          7.808733,
+          47.979147
+        ],
+        [
+          7.808671,
+          47.979159
+        ],
+        [
+          7.808469,
+          47.979199
+        ],
+        [
+          7.808244,
+          47.979234
+        ],
+        [
+          7.808117,
+          47.979252
+        ],
+        [
+          7.807803,
+          47.979301
+        ],
+        [
+          7.807765,
+          47.979306
+        ],
+        [
+          7.807415,
+          47.979352
+        ],
+        [
+          7.807002,
+          47.979386
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9790845",
+    "lon": "7.8088758",
+    "name": "Andreas-Hofer-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0a1c021ef34a24900665c226d32eb49c"
+  },
+  {
+    "address": "Ferdinand-Weiß-Straße, Freiburg",
+    "capacity": 19,
+    "capacity_max": 20,
+    "capacity_min": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.831899,
+          47.995358
+        ],
+        [
+          7.831964,
+          47.995326
+        ],
+        [
+          7.832071,
+          47.995276
+        ],
+        [
+          7.832141,
+          47.995248
+        ],
+        [
+          7.832699,
+          47.995042
+        ],
+        [
+          7.832776,
+          47.995015
+        ],
+        [
+          7.832891,
+          47.994974
+        ],
+        [
+          7.833084,
+          47.994903
+        ],
+        [
+          7.833266,
+          47.994837
+        ],
+        [
+          7.833318,
+          47.994818
+        ],
+        [
+          7.83347,
+          47.994761
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9950514",
+    "lon": "7.8326811",
+    "name": "Ferdinand-Weiß-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0a535e4e2d70c764d14e29f36e8310a8"
+  },
+  {
+    "address": "Im Wännele, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.72312,
+          48.0249
+        ],
+        [
+          7.723094,
+          48.025142
+        ],
+        [
+          7.723057,
+          48.025434
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0251671",
+    "lon": "7.7230898",
+    "name": "Im Wännele",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0a6aaf0b52fa3c8aae2ed04f5b8d9c61"
+  },
+  {
+    "address": "Elsässer Straße, Freiburg",
+    "capacity": 1,
+    "capacity_max": 1,
+    "capacity_min": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811595,
+          48.025265
+        ],
+        [
+          7.811554,
+          48.025332
+        ],
+        [
+          7.81152,
+          48.025394
+        ],
+        [
+          7.811432,
+          48.025558
+        ],
+        [
+          7.811313,
+          48.025786
+        ],
+        [
+          7.811248,
+          48.025911
+        ],
+        [
+          7.811028,
+          48.026278
+        ],
+        [
+          7.810905,
+          48.0265
+        ],
+        [
+          7.810787,
+          48.026707
+        ],
+        [
+          7.810662,
+          48.026902
+        ],
+        [
+          7.810551,
+          48.027053
+        ],
+        [
+          7.810298,
+          48.027366
+        ],
+        [
+          7.809903,
+          48.027823
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0265843",
+    "lon": "7.8108078",
+    "name": "Elsässer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0aab94a1513d1a3c090c7a7ebef3e2d9"
+  },
+  {
+    "address": "Bußstraße, Freiburg",
+    "capacity": 15,
+    "capacity_max": 16,
+    "capacity_min": 13,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.865449,
+          47.986086
+        ],
+        [
+          7.866464,
+          47.986136
+        ],
+        [
+          7.866831,
+          47.986169
+        ],
+        [
+          7.867111,
+          47.986175
+        ],
+        [
+          7.868373,
+          47.986204
+        ],
+        [
+          7.869052,
+          47.986208
+        ],
+        [
+          7.869402,
+          47.986192
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9861684",
+    "lon": "7.8674249",
+    "name": "Bußstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0ac13766711a81b9779811ad5be4de3b"
+  },
+  {
+    "address": "Am Intenbächle, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.90826,
+          47.964
+        ],
+        [
+          7.908057,
+          47.963989
+        ],
+        [
+          7.907655,
+          47.964114
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9640329",
+    "lon": "7.9079545",
+    "name": "Am Intenbächle",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0ad1cb07230c769efb62073c9feed32d"
+  },
+  {
+    "address": "Hasemannstraße, Freiburg",
+    "capacity": 21,
+    "capacity_max": 23,
+    "capacity_min": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.884389,
+          47.988776
+        ],
+        [
+          7.884374,
+          47.988671
+        ],
+        [
+          7.883988,
+          47.986754
+        ],
+        [
+          7.883987,
+          47.986739
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9877571",
+    "lon": "7.8841898",
+    "name": "Hasemannstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0af03459c73a22ba28a85ae3d8a6a56d"
+  },
+  {
+    "address": "Zähringer Straße, Freiburg",
+    "capacity": 5,
+    "capacity_max": 5,
+    "capacity_min": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.858086,
+          48.021708
+        ],
+        [
+          7.858235,
+          48.022088
+        ],
+        [
+          7.858261,
+          48.022158
+        ],
+        [
+          7.858327,
+          48.022251
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0219847",
+    "lon": "7.8581970",
+    "name": "Zähringer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b297758b02e6c8422f28b4e97d3ba5c"
+  },
+  {
+    "address": "Schwarzwaldstraße, Freiburg",
+    "capacity": 3,
+    "capacity_max": 3,
+    "capacity_min": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.868266,
+          47.988672
+        ],
+        [
+          7.868004,
+          47.988667
+        ],
+        [
+          7.867702,
+          47.988657
+        ],
+        [
+          7.867358,
+          47.988644
+        ],
+        [
+          7.866778,
+          47.988618
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9886486",
+    "lon": "7.8675219",
+    "name": "Schwarzwaldstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b5d24172707f10a8f1ab430d2467499"
+  },
+  {
+    "address": "Stockmattenweg, Freiburg",
+    "capacity": 4,
+    "capacity_max": 4,
+    "capacity_min": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811699,
+          48.007455
+        ],
+        [
+          7.81128,
+          48.007147
+        ],
+        [
+          7.811228,
+          48.007105
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0072811",
+    "lon": "7.8114627",
+    "name": "Stockmattenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b6442f80b26e07d1b8717edcc88ba55"
+  },
+  {
+    "address": "Ellen-Gottlieb-Straße, Freiburg",
+    "capacity": 63,
+    "capacity_max": 69,
+    "capacity_min": 56,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.848037,
+          48.013142
+        ],
+        [
+          7.848088,
+          48.013325
+        ],
+        [
+          7.848256,
+          48.014049
+        ],
+        [
+          7.848268,
+          48.014098
+        ],
+        [
+          7.848336,
+          48.01439
+        ],
+        [
+          7.848342,
+          48.014414
+        ],
+        [
+          7.848358,
+          48.014484
+        ],
+        [
+          7.848367,
+          48.014523
+        ],
+        [
+          7.848409,
+          48.01471
+        ],
+        [
+          7.84842,
+          48.01476
+        ],
+        [
+          7.848458,
+          48.014926
+        ],
+        [
+          7.848487,
+          48.015054
+        ],
+        [
+          7.848555,
+          48.015335
+        ],
+        [
+          7.848564,
+          48.01537
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0142553",
+    "lon": "7.8483034",
+    "name": "Ellen-Gottlieb-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b6feb30c4b2764d5538fb8059a67e53"
+  },
+  {
+    "address": "Zähringer Straße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.857465,
+          48.020968
+        ],
+        [
+          7.857137,
+          48.02013
+        ],
+        [
+          7.857056,
+          48.019921
+        ],
+        [
+          7.856915,
+          48.019687
+        ],
+        [
+          7.856819,
+          48.019444
+        ],
+        [
+          7.856757,
+          48.019295
+        ],
+        [
+          7.85673,
+          48.019138
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0200536",
+    "lon": "7.8570903",
+    "name": "Zähringer Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b75f9e380fe788737761f97f8c8e2f7"
+  },
+  {
+    "address": "Fritz-Geiges-Straße, Freiburg",
+    "capacity": 34,
+    "capacity_max": 37,
+    "capacity_min": 30,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.890028,
+          47.988559
+        ],
+        [
+          7.889983,
+          47.98847
+        ],
+        [
+          7.889527,
+          47.987394
+        ],
+        [
+          7.888995,
+          47.986154
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9873573",
+    "lon": "7.8895099",
+    "name": "Fritz-Geiges-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b8ce3ff4900df731a24385fe1bd1be2"
+  },
+  {
+    "address": "Haslacher Straße, Freiburg",
+    "capacity": 1,
+    "capacity_max": 1,
+    "capacity_min": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.831304,
+          47.99306
+        ],
+        [
+          7.831143,
+          47.993128
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9930940",
+    "lon": "7.8312235",
+    "name": "Haslacher Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0b93a21dc544280fa4f251f91afeb6bb"
+  },
+  {
+    "address": "Schwarzwaldstraße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.904727,
+          47.986551
+        ],
+        [
+          7.904842,
+          47.986511
+        ],
+        [
+          7.90525,
+          47.986381
+        ],
+        [
+          7.905449,
+          47.986317
+        ],
+        [
+          7.905474,
+          47.98631
+        ],
+        [
+          7.905836,
+          47.986214
+        ],
+        [
+          7.90608,
+          47.986172
+        ],
+        [
+          7.906293,
+          47.986145
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9863186",
+    "lon": "7.9055030",
+    "name": "Schwarzwaldstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0ba0ea7d798f68e5df1aacdb3971125f"
+  },
+  {
+    "address": "Drachenweg, Freiburg",
+    "capacity": 19,
+    "capacity_max": 20,
+    "capacity_min": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.827307,
+          48.01548
+        ],
+        [
+          7.828143,
+          48.016002
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0157410",
+    "lon": "7.8277250",
+    "name": "Drachenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0ba7de7cc40a2660bdbffeeba74a5b41"
+  },
+  {
+    "address": "Engesserstraße, Freiburg",
+    "capacity": 21,
+    "capacity_max": 23,
+    "capacity_min": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.841424,
+          48.018854
+        ],
+        [
+          7.841635,
+          48.018913
+        ],
+        [
+          7.841734,
+          48.018947
+        ],
+        [
+          7.841827,
+          48.018979
+        ],
+        [
+          7.842177,
+          48.019096
+        ],
+        [
+          7.842447,
+          48.019197
+        ],
+        [
+          7.842584,
+          48.019251
+        ],
+        [
+          7.842704,
+          48.019294
+        ],
+        [
+          7.842828,
+          48.019338
+        ],
+        [
+          7.843415,
+          48.019553
+        ],
+        [
+          7.84374,
+          48.019668
+        ],
+        [
+          7.843881,
+          48.019715
+        ],
+        [
+          7.844617,
+          48.019963
+        ],
+        [
+          7.84528,
+          48.020186
+        ],
+        [
+          7.845424,
+          48.020234
+        ],
+        [
+          7.846812,
+          48.020705
+        ],
+        [
+          7.846913,
+          48.020742
+        ],
+        [
+          7.847129,
+          48.020815
+        ],
+        [
+          7.847396,
+          48.020906
+        ],
+        [
+          7.847958,
+          48.021098
+        ],
+        [
+          7.847996,
+          48.021109
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0199856",
+    "lon": "7.8447083",
+    "name": "Engesserstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0bd6359c727ed20875942811c0e43c35"
+  },
+  {
+    "address": "Stadtstraße, Freiburg",
+    "capacity": 6,
+    "capacity_max": 6,
+    "capacity_min": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.862177,
+          48.003506
+        ],
+        [
+          7.862247,
+          48.003538
+        ],
+        [
+          7.862318,
+          48.00358
+        ],
+        [
+          7.862405,
+          48.003644
+        ],
+        [
+          7.862726,
+          48.004032
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0037449",
+    "lon": "7.8624714",
+    "name": "Stadtstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0be13dec6771aa7a0340a9b9fc617de2"
+  },
+  {
+    "address": "Erlenweg, Freiburg",
+    "capacity": 9,
+    "capacity_max": 9,
+    "capacity_min": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.830102,
+          47.992502
+        ],
+        [
+          7.829819,
+          47.992121
+        ],
+        [
+          7.829726,
+          47.992006
+        ],
+        [
+          7.829686,
+          47.991956
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "47.9922272",
+    "lon": "7.8298963",
+    "name": "Erlenweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0be54945e2f4fa331393bc3f6df1d1be"
+  },
+  {
+    "address": "Johanna-Kohlund-Straße, Freiburg",
+    "capacity": 1,
+    "capacity_max": 1,
+    "capacity_min": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.793713,
+          48.000529
+        ],
+        [
+          7.793495,
+          48.000315
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0004220",
+    "lon": "7.7936040",
+    "name": "Johanna-Kohlund-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0bec06ba9f7dcf56bce6cc6fe0ba7b65"
+  },
+  {
+    "address": "Eugen-Martin-Straße, Freiburg",
+    "capacity": 21,
+    "capacity_max": 23,
+    "capacity_min": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.84479,
+          48.014046
+        ],
+        [
+          7.845368,
+          48.013578
+        ],
+        [
+          7.845534,
+          48.013449
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_realtime_data": false,
+    "lat": "48.0137462",
+    "lon": "7.8451610",
+    "name": "Eugen-Martin-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0c06cdcf2c8865cca6fb3f6fd71b75c2"
+  }
+]

@@ -13,9 +13,15 @@ from .bb_parkhaus import BBParkhausPushConverter
 from .bfrk_bw import BfrkBwBikePullConverter, BfrkBwCarPullConverter
 from .bielefeld import BielefeldPullConverter
 from .bietigheim_bissingen import BietigheimBissingenPullConverter
+from .bremen import BremenPullConverter
+from .dortmund import DortmundPullConverter
+from .dresden import DresdenPullConverter
+from .duesseldorf import DuesseldorfPullConverter
 from .ellwangen import EllwangenPushConverter
 from .ellwangen_sensit import EllwangenSensitPullConverter
+from .erfurt import ErfurtPullConverter
 from .esslingen import EsslingenPushConverter
+from .frankfurt import FrankfurtPullConverter
 from .freiburg import (
     FreiburgParkAndRideRealtimePullConverter,
     FreiburgParkAndRideStaticPullConverter,
@@ -28,16 +34,29 @@ from .freiburg_vag_bike import FreiburgVAGBikePullConverter
 from .friedrichshafen_easypark import FriedrichshafenEasyParkPushConverter
 from .friedrichshafen_sensors import FriedrichshafenSensorsPullConverter
 from .goldbeck import GoldbeckPushConverter
+from .halle import HallePullConverter
+from .hanau import HanauPullConverter
 from .heidelberg import HeidelbergPullConverter
 from .heidelberg_disabled import HeidelbergDisabledPullConverter
 from .heidelberg_easypark import HeidelbergEasyParkPullConverter
+from .heilbronn import HeilbronnPullConverter
 from .heilbronn_goldbeck import HeilbronnGoldbeckPullConverter
 from .herrenberg import HerrenbergPullConverter
 from .herrenberg_bike import HerrenbergBikePullConverter
 from .huefner import HuefnerPushConverter
 from .jena import JenaPullConverter
-from .karlsruhe import KarlsruheBikePullConverter, KarlsruhePullConverter
+from .karlsruhe import (
+    KarlsruheBikePullConverter,
+    KarlsruheBusPullConverter,
+    KarlsruheCaravanPullConverter,
+    KarlsruheMotorcyclePullConverter,
+    KarlsruheParkAndCarpoolPullConverter,
+    KarlsruheParkAndRidePullConverter,
+    KarlsruhePullConverter,
+    KarlsruheTruckPullConverter,
+)
 from .karlsruhe_disabled import KarlsruheDisabledPullConverter
+from .kassel import KasselPullConverter
 from .keltern import KelternPushConverter
 from .kienzler import (
     KienzlerBikeAndRidePullConverter,
@@ -50,17 +69,23 @@ from .kienzler import (
     KienzlerVrnPullConverter,
     KienzlerVVSPullConverter,
 )
+from .koeln import KoelnPullConverter
 from .konstanz import KonstanzPullConverter
 from .konstanz_bike import KonstanzBikePullConverter
 from .konstanz_disabled import KonstanzDisabledPullConverter
 from .ladenburg_parkraumcheck import LadenburgParkraumcheckPushConverter
+from .magdeburg import MagdeburgPullConverter
+from .magdeburg_ifak import MagdeburgIfakPullConverter
 from .mannheim_buchen import BuchenPushConverter, MannheimPushConverter
 from .nagold_bike import NagoldBikePushConverter
 from .neckarsulm import NeckarsulmPushConverter
 from .neckarsulm_bike import NeckarsulmBikePushConverter
+from .nuernberg import NuernbergPullConverter
+from .oberstdorf import OberstdorfPullConverter
 from .opendata_swiss import OpenDataSwissPullConverter
 from .p_m_bw import PMBWPullConverter
 from .p_m_sensade import PMSensadePullConverter
+from .p_r_hessen import PRHessenPullConverter
 from .park_raum_check import ParkRaumCheckKehlPushConverter, ParkRaumCheckSachsenheimPushConverter
 from .pbw import PbwPullConverter
 from .pforzheim import PforzheimPushConverter
@@ -75,6 +100,11 @@ from .toll_collect import TollCollectPullConverter
 from .ulm import UlmPullConverter
 from .ulm_sensors import UlmSensorsPullConverter
 from .velobrix import VelobrixPullConverter
+from .vgn import VgnPullConverter
 from .vrn_p_r import VrnParkAndRidePullConverter
 from .vrs import VrsBondorfPullConverter, VrsKirchheimPullConverter, VrsNeustadtPullConverter, VrsVaihingenPullConverter
 from .vrs_p_r import VrsParkAndRidePushConverter
+from .wiesbaden import WiesbadenPullConverter
+from .wuppertal import WuppertalPullConverter
+from .zippel import ZippelPullConverter
+from .zuerich import ZuerichPullConverter

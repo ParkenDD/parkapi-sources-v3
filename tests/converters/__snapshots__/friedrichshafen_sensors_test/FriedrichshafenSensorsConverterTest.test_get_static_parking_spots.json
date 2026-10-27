@@ -1,0 +1,1047 @@
+[
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652096",
+    "lon": "9.478454",
+    "name": "A1225b_Metzstraße_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH19"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65672",
+    "lon": "9.474328",
+    "name": "A1227_Riedleparkstraße_Nord_Hsnr.45",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH21"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.655594",
+    "lon": "9.475008",
+    "name": "A1226_Riedleparkstraße_Nord_Hsnr.45",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH20"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.655754",
+    "lon": "9.4793825",
+    "name": "A1233_Wendelgardstraße_Musikschule_Hsnr.25",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH27"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65997",
+    "lon": "9.484511",
+    "name": "A1232_Schwabstraße_Nord_Hsnr.21",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH26"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.655422",
+    "lon": "9.4664755",
+    "name": "A1235_Werastraße_Hsnr.39",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH29"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65576",
+    "lon": "9.479422",
+    "name": "A1234_Wendelgardstraße_Musikschule_Hsnr.25",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH28"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.6498",
+    "lon": "9.466815",
+    "name": "A1229_Olgastraße_Süd_Hsnr.2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH23"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.656765",
+    "lon": "9.474313",
+    "name": "A1228_Riedleparkstraße_Süd_Hsnr.34",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH22"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65904",
+    "lon": "9.483835",
+    "name": "A1231_Schwabstraße_Süd_Ecke_Ehlerstr.17",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH25"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652565",
+    "lon": "9.469517",
+    "name": "A1230_Olgastraße_Nord_Hsnr.30",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH24"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.654026",
+    "lon": "9.474781",
+    "name": "A1209_Eugenstraße_Hsnr.73",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH09"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.656883",
+    "lon": "9.4778185",
+    "name": "A1208_Katharinenstraße_Bodenseesporthalle_Hsnr.28",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH08"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.668274",
+    "lon": "9.41688",
+    "name": "A1258_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH52"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.668358",
+    "lon": "9.416836",
+    "name": "A1257_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH51"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.6523",
+    "lon": "9.483517",
+    "name": "A1210_Eckenerstraße_Hinterer_Hafen_Hsnr.16",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH10"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.668243",
+    "lon": "9.416998",
+    "name": "A1260_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH54"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.66826",
+    "lon": "9.416939",
+    "name": "A1259_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH53"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.6684",
+    "lon": "9.416705",
+    "name": "A1256_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH50"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652355",
+    "lon": "9.4784775",
+    "name": "A1224a_Metzstraße_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH16"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65253",
+    "lon": "9.484441",
+    "name": "A1215_Eckenerstraße_Hinterer_Hafen_Hsnr.16",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH15"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652157",
+    "lon": "9.47845",
+    "name": "A1225a_Metzstraße_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH18"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652252",
+    "lon": "9.478463",
+    "name": "A1224b_Metzstraße_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH17"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652298",
+    "lon": "9.483722",
+    "name": "A1212_Eckenerstraße_Hinterer_Hafen_Hsnr.16",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH12"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.668224",
+    "lon": "9.417042",
+    "name": "A1261_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH55"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652298",
+    "lon": "9.48362",
+    "name": "A1211_Eckenerstraße_Hinterer_Hafen_Hsnr.16",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH11"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652523",
+    "lon": "9.484377",
+    "name": "A1214_Eckenerstraße_Hinterer_Hafen_Hsnr.16",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH14"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652298",
+    "lon": "9.483824",
+    "name": "A1213_Eckenerstraße_Hinterer_Hafen_Hsnr.16",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH13"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.653366",
+    "lon": "9.485273",
+    "name": "A1245_Werderstraße_Hsnr.9",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH41"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652763",
+    "lon": "9.457826",
+    "name": "A1244_Mietingerplatz_Strandbad_Hsnr.11",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH40"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.659138",
+    "lon": "9.462456",
+    "name": "A1248_Hochstraße_Friedhof_Hsnr.41",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH43"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.6591",
+    "lon": "9.462487",
+    "name": "A1247_Hochstraße_Friedhof_Hsnr.41",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH42"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.653355",
+    "lon": "9.477577",
+    "name": "A1205_Bissmarkstraße_VHS_Hsnr.5",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH05"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.668373",
+    "lon": "9.416686",
+    "name": "A1255_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH49"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.668346",
+    "lon": "9.416657",
+    "name": "A1254_Zeppelinstraße_Strandbad_Fischbach",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH48"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65449",
+    "lon": "9.478439",
+    "name": "A1204_Charlottenstraße_Hsnr.24",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH04"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65237",
+    "lon": "9.484058",
+    "name": "A1207_Katharinenstraße_Bodenseesporthalle_Hsnr.28",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH07"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.656864",
+    "lon": "9.477724",
+    "name": "A1206_Katharinenstraße_Bodenseesporthalle_Hsnr.28",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH06"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.655052",
+    "lon": "9.480775",
+    "name": "A1201_Allmandstraße_Süd_Hsnr.3",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH01"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.657944",
+    "lon": "9.452322",
+    "name": "A1251_Glärnischstraße_LRA_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH45"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.657913",
+    "lon": "9.45232",
+    "name": "A1250_Glärnischstraße_LRA_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH44"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65238",
+    "lon": "9.486455",
+    "name": "A1253_Östliche_Uferstraße_Hinterer_Hafen_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH47"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65425",
+    "lon": "9.47802",
+    "name": "A1203_Charlottenstraße_Alte_Feuerwache_Hsnr.12",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH03"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65231",
+    "lon": "9.486453",
+    "name": "A1252_Östliche_Uferstraße_Hinterer_Hafen_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH46"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.656967",
+    "lon": "9.480398",
+    "name": "A1202_Allmandstraße_Nord_Hsnr.22",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH02"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652466",
+    "lon": "9.472845",
+    "name": "A1236_Bahnhofsplatz_Post_Hsnr.1",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH30"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652847",
+    "lon": "9.474116",
+    "name": "A1238a_Bahnhofsplatz_Kiosk_Hsnr.4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH32"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652363",
+    "lon": "9.473936",
+    "name": "A1237_Bahnhofsplatz_Kiosk_Hsnr.4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH31"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.6528",
+    "lon": "9.457743",
+    "name": "A1242_Mietingerplatz_Strandbad_Hsnr.11",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH38"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65909",
+    "lon": "9.475823",
+    "name": "A1241b_Margaretenstraße_Kinderhaus_Hsnr.31",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH37"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652782",
+    "lon": "9.457778",
+    "name": "A1243_Mietingerplatz_Strandbad_Hsnr.11",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH39"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.65062",
+    "lon": "9.464482",
+    "name": "A1239_Klosterstraße_Schlosskirche_Hsnr.4",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH34"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.652843",
+    "lon": "9.474173",
+    "name": "A1238b_Bahnhofsplatz_Touristinfo_Hsnr.2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH33"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.659008",
+    "lon": "9.476073",
+    "name": "A1241a_Margaretenstraße_Kinderhaus_Hsnr.31",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH36"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.661587",
+    "lon": "9.507188",
+    "name": "A1240_Zirbelweg_Hsnr.15",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-07-18T00:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "PH35"
+  }
+]

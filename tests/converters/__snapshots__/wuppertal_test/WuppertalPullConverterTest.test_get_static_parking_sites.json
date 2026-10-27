@@ -1,0 +1,84 @@
+[
+  {
+    "capacity": 55,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.254448",
+    "lon": "7.1450715",
+    "name": "Parkpaletten Stadthalle",
+    "operator_name": "Stadtverwaltung Wuppertal",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:02:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "60[Parkpaletten Stadthalle]"
+  },
+  {
+    "capacity": 124,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.25247",
+    "lon": "7.141964",
+    "name": "Stadthalle",
+    "operator_name": "Stadtverwaltung Wuppertal",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 9,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2026-10-25T08:02:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "32[Stadthalle]"
+  },
+  {
+    "capacity": 138,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.252434",
+    "lon": "7.1411157",
+    "name": "Stadthalle/Hotel",
+    "operator_name": "Stadtverwaltung Wuppertal",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 9,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      }
+    ],
+    "static_data_updated_at": "2026-10-25T08:02:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "33[Stadthalle/Hotel]"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "realtime_data_updated_at": "2026-10-24T12:45:00Z",
+    "realtime_free_capacity": 110,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_nord_uniplatz"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 665,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_mitte_alleecenter"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:56:00Z",
+    "realtime_free_capacity": 99,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_mitte_petri_ost"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:54:00Z",
+    "realtime_free_capacity": 45,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_mitte_petri_west"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:59:00Z",
+    "realtime_free_capacity": 300,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_hbf_citycarre"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 307,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_hbf_maritim"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:50:00Z",
+    "realtime_free_capacity": 203,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_hbf_ulrichshaus"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T05:00:00Z",
+    "realtime_free_capacity": 50,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_hassel_domviertel"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:56:00Z",
+    "realtime_free_capacity": 50,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_hassel_frieden"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:00Z",
+    "realtime_free_capacity": 555,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_pur_messeparkplatz"
+  }
+]

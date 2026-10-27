@@ -9,6 +9,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters.apcoa import ApcoaPullConverter
 from parkapi_sources.converters.apcoa.validators import (
@@ -50,7 +51,8 @@ def apcoa_pull_converter(apcoa_config_helper: Mock, request_helper: RequestHelpe
 
 @pytest.fixture
 def apcoa_ignore_missing_coordinates_pull_converter(
-    apcoa_ignore_missing_coordinates_config_helper: Mock, request_helper: RequestHelper
+    apcoa_ignore_missing_coordinates_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> ApcoaPullConverter:
     return ApcoaPullConverter(
         config_helper=apcoa_ignore_missing_coordinates_config_helper,
@@ -60,7 +62,11 @@ def apcoa_ignore_missing_coordinates_pull_converter(
 
 class ApcoaPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(apcoa_pull_converter: ApcoaPullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(
+        apcoa_pull_converter: ApcoaPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         json_path = Path(Path(__file__).parent, 'data', 'apcoa.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
@@ -75,12 +81,13 @@ class ApcoaPullConverterTest:
         assert len(static_parking_site_inputs) == 318
         assert len(import_parking_site_exceptions) == 11
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_static_parking_sites_ignore_missing_coordinates(
         apcoa_ignore_missing_coordinates_pull_converter: ApcoaPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'apcoa.json')
         with json_path.open() as json_file:
@@ -98,7 +105,7 @@ class ApcoaPullConverterTest:
         assert len(static_parking_site_inputs) == 318
         assert len(import_parking_site_exceptions) == 6
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
 
 class ApcoaParkingSiteInputTest:

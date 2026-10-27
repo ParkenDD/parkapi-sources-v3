@@ -1,5 +1,109 @@
 # Changelog
 
+## 0.43.0
+
+Released 2026-10-25
+
+### Features
+
+* All HTTP requests send the User-Agent `ParkApiSources/{version}`, which can be overwritten by config value
+  `USER_AGENT`
+
+### Fixes
+
+* `basel` uses the shared request helper instead of plain `requests`, so it sends the User-Agent as well
+
+
+## 0.42.0
+
+Released 2026-10-25
+
+### Features
+
+* New DATEX II converters via Mobilithek: `bremen`, `duesseldorf`, `erfurt`, `frankfurt`, `halle`, `kassel`, `koeln`,
+  `magdeburg_ifak`, `oberstdorf`, `p_r_hessen`, `vgn`, `wiesbaden`, `wuppertal` and `zippel`
+* New converter `dortmund`
+* New Karlsruhe converters: `karlsruhe_p_r`, `karlsruhe_p_m`, `karlsruhe_truck`, `karlsruhe_bus`, `karlsruhe_caravan`
+  and `karlsruhe_motorcycle`
+* Support for the Mobilithek container format at Mobilithek pull converters
+* Add licence attributions to several converters
+* Add config flag `PARK_API_BFRK_BW_BIKE_IGNORE_MISSING_CAPACITIES` to ignore parking sites without `stellplatzanzahl`
+  at `bfrk_bw_bike`, defaulting to `true`
+* Add config flag `PARK_API_BFRK_BW_CAR_FILTER_PRIVATE` to ignore datasets with `art` `privatparkplatz` at
+  `bfrk_bw_car`, defaulting to `true`
+* Add config flag `PARK_API_BFRK_BW_CAR_IGNORE_INVALID_COORDINATES` to ignore datasets with coordinates outside of
+  Baden-Württemberg at `bfrk_bw_car`
+* Add config flag `PARK_API_KARLSRUHE_DISABLED_IGNORE_MISSING_READINGS` to ignore realtime items with empty
+  `last_readings` at `karlsruhe_disabled`, defaulting to `true`
+* Add config flag `PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_TYPES` to ignore parking sites without `Typ_Anlage` at
+  `herrenberg_bike`
+* Add config flag `PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES` to ignore parking sites without
+  `Anzahl_Abstellmoeglichkeiten` at `herrenberg_bike`, defaulting to `true`
+* Accept `Polygon` geometries at `herrenberg_bike`, using the centroid as point and the polygon as `geojson`
+* `PARK_API_BASEL_IGNORE_MISSING_CAPACITIES`, `PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES` and
+  `PARK_API_KARLSRUHE_BIKE_IGNORE_MISSING_CAPACITIES` default to `true`
+
+### Fixes
+
+* `freiburg` accepts a realtime capacity of `0` and keeps the static capacity in this case
+* `herrenberg_bike` reports the right uid at validation errors
+* `herrenberg_bike` accepts `Erfassungsdatum` in format `DD.MM.YYYY` as well
+* `herrenberg_bike` accepts an empty `Gebuehrenpflichtig` as `false`
+* `herrenberg_bike` ignores leading and trailing whitespace at `Typ_Anlage`
+* `herrenberg_bike` maps `SonstigeAnmerkungen` to `description`, which was ignored before due to a typo
+
+### Maintenance
+
+* `stuttgart` uses the shared DATEX II `ParkingFacilityStatusMixin` for realtime data
+
+
+## 0.41.0
+
+Released 2026-10-24
+
+### Features
+
+* New converters ported from ParkAPI2-sources: `dresden`, `hanau`, `heilbronn`, `magdeburg`, `nuernberg` and
+  `zuerich`
+* Add config flag `PARK_API_BASEL_IGNORE_MISSING_CAPACITIES` to ignore parking sites without capacity at `basel`
+* Map `status` to `realtime_opening_status` at `basel`
+
+### Fixes
+
+* `toll_collect` realtime import skips the parking sites the static import ignores (sites without any spaces)
+
+
+## 0.40.1
+
+Released 2026-10-24
+
+### Maintenance
+
+* [introduce syrupy](https://github.com/ParkenDD/parkapi-sources-v3/pull/434)
+* [dependency updates](https://github.com/ParkenDD/parkapi-sources-v3/pull/446)
+
+
+## 0.40.0
+
+Released 2026-10-20
+
+### Features
+
+* [Parking spot orientation](https://github.com/ParkenDD/parkapi-sources-v3/pull/436)
+
+
+### Fixes
+
+* [BFRK: Update bike parking types for SAFE_WALL_LOOPS and WALL_LOOPS](https://github.com/ParkenDD/parkapi-sources-v3/pull/437)
+* [fix definition](https://github.com/ParkenDD/parkapi-sources-v3/pull/444)
+* [Hotfix: bfrk_bw_bike - Add SAFE_WALL_LOOPS and WALL_LOOPS](https://github.com/ParkenDD/parkapi-sources-v3/pull/445)
+
+
+### Maintenance
+
+* [Add Herrenberg mapping for ParkingSite and ParkingSpot](https://github.com/ParkenDD/parkapi-sources-v3/pull/412)
+
+
 ## 0.39.1
 
 Released 2026-10-03

@@ -17,3 +17,6 @@ __pycache__/
 .mypy_cache/
 .coverage
 .tox
+
+# Generated during package build
+/src/parkapi_sources/_version.py

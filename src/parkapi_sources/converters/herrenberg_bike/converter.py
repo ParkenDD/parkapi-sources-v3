@@ -52,15 +52,20 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
             ) from error
 
         for feature_dict in geojson_input.features:
+            if self._should_ignore_feature(feature_dict):
+                continue
+
             try:
                 feature_input = self.herrenberg_feature_validator.validate(feature_dict)
             except ValidationError as error:
+                parking_site_uid = feature_dict.get('properties', {}).get('fid')
+                if parking_site_uid is not None:
+                    parking_site_uid = str(parking_site_uid)
                 import_parking_site_exceptions.append(
                     ImportParkingSiteException(
                         source_uid=self.source_info.uid,
-                        parking_site_uid=feature_dict.get('properties', {}).get('id'),
-                        message=f'Invalid data at uid {feature_dict.get("properties", {}).get("id")}: '
-                        f'{error.to_dict()}, data: {feature_dict}',
+                        parking_site_uid=parking_site_uid,
+                        message=f'Invalid data at uid {parking_site_uid}: {error.to_dict()}, data: {feature_dict}',
                     ),
                 )
                 continue
@@ -68,6 +73,19 @@ class HerrenbergBikePullConverter(ParkingSitePullConverter):
             feature_inputs.append(feature_input)
 
         return feature_inputs, import_parking_site_exceptions
+
+    def _should_ignore_feature(self, feature_dict: dict) -> bool:
+        properties: dict = feature_dict.get('properties', {})
+
+        if self.config_helper.get('PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES', True):
+            if properties.get('Anzahl_Abstellmoeglichkeiten') in (None, ''):
+                return True
+
+        if self.config_helper.get('PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_TYPES', False):
+            if properties.get('Typ_Anlage') in (None, ''):
+                return True
+
+        return False
 
     @override
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

@@ -22,6 +22,9 @@ class FreiburgDisabledSensorsPullConverter(ParkingSpotPullConverter):
         name='Stadt Freiburg',
         source_url='https://geoportal.freiburg.de/wfs/gdm_parkpl/gdm_parkpl?SERVICE=WFS&REQUEST=GetFeature'
         '&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=beh_parkpl_ueberw&OUTPUTFORMAT=geojson',
+        attribution_contributor='Stadt Freiburg',
+        attribution_license='Datenlizenz Deutschland – Namensnennung – Version 2.0',
+        attribution_url='https://www.govdata.de/dl-de/by-2-0',
         has_realtime_data=True,
         public_url='https://www.freiburg.de/pb/890399.html',
     )

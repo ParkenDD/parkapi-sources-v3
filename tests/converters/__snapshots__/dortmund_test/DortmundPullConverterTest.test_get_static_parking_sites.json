@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 34,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.513363",
+    "lon": "7.4617534",
+    "name": "Kath. Centrum",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-09-03T04:36:45Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "101059"
+  },
+  {
+    "capacity": 396,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.510727",
+    "lon": "7.456745",
+    "name": "St.-Johannes-Hospital",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-09-03T04:36:45Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "107394"
+  },
+  {
+    "capacity": 265,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "51.517082",
+    "lon": "7.4679403",
+    "name": "Konzerthaus / Burgwall",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-09-03T04:36:45Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "101067"
+  }
+]

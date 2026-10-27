@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import (
     FreiburgParkAndRideRealtimePullConverter,
@@ -62,6 +63,7 @@ class FreiburgParkAndRideStaticPullConverterTest:
     def test_get_static_parking_sites(
         freiburg_park_and_ride_static_pull_converter: FreiburgParkAndRideStaticPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_static.json')
 
@@ -72,7 +74,7 @@ class FreiburgParkAndRideStaticPullConverterTest:
         assert len(static_parking_site_inputs) == 9
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
 
 class FreiburgParkAndRideRealtimePullConverterTest:
@@ -80,6 +82,7 @@ class FreiburgParkAndRideRealtimePullConverterTest:
     def test_get_static_parking_sites(
         freiburg_park_and_ride_realtime_pull_converter: FreiburgParkAndRideRealtimePullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_sensors.json')
 
@@ -90,12 +93,13 @@ class FreiburgParkAndRideRealtimePullConverterTest:
         assert len(static_parking_site_inputs) == 5
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_sites(
         freiburg_park_and_ride_realtime_pull_converter: FreiburgParkAndRideRealtimePullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         freiburg_request_mocked_json(requests_mock, 'freiburg_p_r_sensors.json')
 
@@ -106,4 +110,4 @@ class FreiburgParkAndRideRealtimePullConverterTest:
         assert len(realtime_parking_site_inputs) == 5
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

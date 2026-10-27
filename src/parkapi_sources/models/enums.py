@@ -118,6 +118,10 @@ class ParkingOrientation(Enum):
     PERPENDICULAR = 'PERPENDICULAR'
 
 
+# keep compatibility with legacy attribute ParkingSiteOrientation
+ParkingSiteOrientation = ParkingOrientation
+
+
 class ParkingType(Enum):
     LANE = 'LANE'
     ON_KERB = 'ON_KERB'

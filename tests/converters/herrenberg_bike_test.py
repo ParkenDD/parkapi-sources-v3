@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import HerrenbergBikePullConverter
 from parkapi_sources.util import RequestHelper
@@ -44,21 +45,41 @@ def herrenberg_bike_pull_converter(
 
 
 @pytest.fixture
-def herrenberg_bike_ignore_missing_capacity_config_helper(mocked_config_helper: Mock):
+def herrenberg_bike_ignore_missing_types_config_helper(mocked_config_helper: Mock):
     config = {
-        'PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES': True,
+        'PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_TYPES': True,
     }
     mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
     return mocked_config_helper
 
 
 @pytest.fixture
-def herrenberg_bike_ignore_missing_capacity_pull_converter(
-    herrenberg_bike_ignore_missing_capacity_config_helper: Mock,
+def herrenberg_bike_ignore_missing_types_pull_converter(
+    herrenberg_bike_ignore_missing_types_config_helper: Mock,
     request_helper: RequestHelper,
 ) -> HerrenbergBikePullConverter:
     return HerrenbergBikePullConverter(
-        config_helper=herrenberg_bike_ignore_missing_capacity_config_helper,
+        config_helper=herrenberg_bike_ignore_missing_types_config_helper,
+        request_helper=request_helper,
+    )
+
+
+@pytest.fixture
+def herrenberg_bike_not_ignore_missing_capacities_config_helper(mocked_config_helper: Mock):
+    config = {
+        'PARK_API_HERRENBERG_BIKE_IGNORE_MISSING_CAPACITIES': False,
+    }
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return mocked_config_helper
+
+
+@pytest.fixture
+def herrenberg_bike_not_ignore_missing_capacities_pull_converter(
+    herrenberg_bike_not_ignore_missing_capacities_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> HerrenbergBikePullConverter:
+    return HerrenbergBikePullConverter(
+        config_helper=herrenberg_bike_not_ignore_missing_capacities_config_helper,
         request_helper=request_helper,
     )
 
@@ -66,34 +87,54 @@ def herrenberg_bike_ignore_missing_capacity_pull_converter(
 class HerrenbergBikePullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(
-        herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker
+        herrenberg_bike_pull_converter: HerrenbergBikePullConverter,
+        requests_mock_herrenberg_bike: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_site_inputs, import_parking_site_exceptions = (
             herrenberg_bike_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 218
-        assert len(import_parking_site_exceptions) == 4
+        assert len(static_parking_site_inputs) == 221
+        assert len(import_parking_site_exceptions) == 2
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_static_parking_sites_ignore_missing_capacities(
-        herrenberg_bike_ignore_missing_capacity_pull_converter: HerrenbergBikePullConverter,
+    def test_get_static_parking_sites_ignore_missing_types(
+        herrenberg_bike_ignore_missing_types_pull_converter: HerrenbergBikePullConverter,
         requests_mock_herrenberg_bike: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_site_inputs, import_parking_site_exceptions = (
-            herrenberg_bike_ignore_missing_capacity_pull_converter.get_static_parking_sites()
+            herrenberg_bike_ignore_missing_types_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 218
-        assert len(import_parking_site_exceptions) == 4
+        assert len(static_parking_site_inputs) == 221
+        assert len(import_parking_site_exceptions) == 1
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
+
+    @staticmethod
+    def test_get_static_parking_sites_not_ignore_missing_capacities(
+        herrenberg_bike_not_ignore_missing_capacities_pull_converter: HerrenbergBikePullConverter,
+        requests_mock_herrenberg_bike: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            herrenberg_bike_not_ignore_missing_capacities_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 221
+        assert len(import_parking_site_exceptions) == 3
+
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_sites(
-        herrenberg_bike_pull_converter: HerrenbergBikePullConverter, requests_mock_herrenberg_bike: Mocker
+        herrenberg_bike_pull_converter: HerrenbergBikePullConverter,
+        requests_mock_herrenberg_bike: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         realtime_parking_site_inputs, import_parking_site_exceptions = (
             herrenberg_bike_pull_converter.get_realtime_parking_sites()
@@ -102,4 +143,4 @@ class HerrenbergBikePullConverterTest:
         assert len(realtime_parking_site_inputs) == 0
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

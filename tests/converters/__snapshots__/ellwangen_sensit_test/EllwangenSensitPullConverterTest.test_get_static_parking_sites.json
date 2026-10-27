@@ -1,0 +1,17 @@
+[
+  {
+    "capacity": 45,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.9618912",
+    "lon": "10.1309099",
+    "name": "Ellwangen Marktplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "realtime_capacity": 170,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 5,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "P1 Rathaus"
+  },
+  {
+    "realtime_capacity": 120,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 93,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "P2 Reichsstädter Markt"
+  },
+  {
+    "realtime_capacity": 80,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 7,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "P3 Spritzenhausplatz"
+  },
+  {
+    "realtime_capacity": 170,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 29,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "P5 Spitalstraße"
+  },
+  {
+    "realtime_capacity": 180,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 122,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "P6 Bahnhof"
+  },
+  {
+    "realtime_capacity": 34,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 4,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "P1 Kubus"
+  }
+]

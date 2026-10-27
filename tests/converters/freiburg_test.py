@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import FreiburgPullConverter
 from parkapi_sources.util import RequestHelper
@@ -47,7 +48,11 @@ def freiburg_request_mocked_json(requests_mock: Mocker, filename: str):
 
 class FreiburgPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(freiburg_pull_converter: FreiburgPullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(
+        freiburg_pull_converter: FreiburgPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         # We need to get GeoJSON data
         requests_mock.real_http = True
 
@@ -60,19 +65,23 @@ class FreiburgPullConverterTest:
         static_parking_site_inputs, import_parking_site_exceptions = freiburg_pull_converter.get_static_parking_sites()
 
         assert len(static_parking_site_inputs) == 20
-        assert len(import_parking_site_exceptions) == 1
+        assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_realtime_parking_sites(freiburg_pull_converter: FreiburgPullConverter, requests_mock: Mocker):
+    def test_get_realtime_parking_sites(
+        freiburg_pull_converter: FreiburgPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         freiburg_request_mocked_json(requests_mock, 'freiburg.json')
 
         realtime_parking_site_inputs, import_parking_site_exceptions = (
             freiburg_pull_converter.get_realtime_parking_sites()
         )
 
-        assert len(realtime_parking_site_inputs) == 18
-        assert len(import_parking_site_exceptions) == 1
+        assert len(realtime_parking_site_inputs) == 19
+        assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

@@ -9,6 +9,7 @@ from unittest.mock import Mock
 import pytest
 from _pytest.fixtures import FixtureRequest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import (
     VrsBondorfPullConverter,
@@ -87,6 +88,7 @@ class VrsVaihingenConverterTest:
         converter_name: str,
         filename: str,
         result_count: int,
+        snapshot: SnapshotAssertion,
     ):
         xml_path = Path(Path(__file__).parent, 'data', filename)
         with xml_path.open() as xml_file:
@@ -103,7 +105,7 @@ class VrsVaihingenConverterTest:
         assert len(static_parking_site_inputs) == result_count
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @pytest.mark.parametrize(
         'converter_name, filename, result_count',
@@ -121,6 +123,7 @@ class VrsVaihingenConverterTest:
         converter_name: str,
         filename: str,
         result_count: int,
+        snapshot: SnapshotAssertion,
     ):
         xml_path = Path(Path(__file__).parent, 'data', filename)
         with xml_path.open() as xml_file:
@@ -138,4 +141,4 @@ class VrsVaihingenConverterTest:
         assert len(static_parking_site_inputs) == result_count
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(static_parking_site_inputs)
+        validate_realtime_parking_site_inputs(static_parking_site_inputs, snapshot)

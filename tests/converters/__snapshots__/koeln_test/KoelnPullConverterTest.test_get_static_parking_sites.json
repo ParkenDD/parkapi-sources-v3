@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 300,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "50.93699",
+    "lon": "6.9574895",
+    "name": "Am Gürzenich",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "PH19"
+  },
+  {
+    "capacity": 442,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "50.938637",
+    "lon": "6.94856",
+    "name": "Karstadt",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "PH20"
+  },
+  {
+    "capacity": 140,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "50.938835",
+    "lon": "6.981044",
+    "name": "LANXESS arena P2",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-25T08:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "D_P002"
+  }
+]

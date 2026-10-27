@@ -1,0 +1,38 @@
+[
+  {
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "48.740051",
+    "lon": "9.300496",
+    "name": "Esslingen, Bahnhof Mobilitätsstation, Sofortbuchung",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "public_url": "https://vvs.bike-and-park.de/order/booking/?preselect_unit_uid=2817",
+    "purpose": "BIKE",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "LOCKERS",
+    "uid": "unit2817"
+  },
+  {
+    "capacity": 30,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "48.740051",
+    "lon": "9.300496",
+    "name": "Esslingen, Bahnhof Mobilitätsstation, Zukunftsbuchung",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "public_url": "https://vvs.bike-and-park.de/order/booking/?preselect_unit_uid=2825",
+    "purpose": "BIKE",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "LOCKERS",
+    "uid": "unit2825"
+  }
+]

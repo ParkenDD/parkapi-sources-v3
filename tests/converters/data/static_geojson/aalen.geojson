@@ -1,0 +1,205 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "P1 Rathaus",
+                "name": "P1 Tiefgarage Rathaus",
+                "purpose": "CAR",
+                "operator_name": "Stadtwerke Aalen GmbH",
+                "public_url": "https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser",
+                "address": "Friedrichstrasse 10, 73430 Aalen",
+                "type": "UNDERGROUND",
+                "max_height": 205,
+                "has_lighting": true,
+                "is_covered": true,
+                "has_fee": true,
+                "supervision_type": "VIDEO",
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-08-11T11:38:16+00:00",
+                "lat": 48.8363099178679,
+                "lon": 10.0931956686424,
+                "capacity": 251,
+                "capacity_charging": 6,
+                "opening_hours": "24/7",
+                "external_identifiers": [],
+                "tags": [],
+                "restricted_to": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0931956686424,
+                    48.8363099178679
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "P2 Reichsstädter Markt",
+                "name": "P2 Parkhaus Reichstädter Markt",
+                "purpose": "CAR",
+                "operator_name": "Stadtwerke Aalen GmbH",
+                "public_url": "https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser",
+                "address": "Friedrichstrasse 26, 73430 Aalen",
+                "type": "CAR_PARK",
+                "max_height": 210,
+                "has_lighting": true,
+                "is_covered": true,
+                "has_fee": true,
+                "supervision_type": "VIDEO",
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-08-11T11:38:16+00:00",
+                "lat": 48.8376463326277,
+                "lon": 10.0907913471389,
+                "capacity": 310,
+                "opening_hours": "Mo-Fr 07:00-20:30; Sa 07:00-21:00",
+                "external_identifiers": [],
+                "tags": [],
+                "restricted_to": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0907913471389,
+                    48.8376463326277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "P3 Spritzenhausplatz",
+                "name": "P3 Tiefgarage Spritzenhausplatz",
+                "purpose": "CAR",
+                "operator_name": "Stadtwerke Aalen GmbH",
+                "public_url": "https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser",
+                "address": "Bahnhofstrasse 13, 73430 Aalen",
+                "type": "UNDERGROUND",
+                "max_height": 205,
+                "has_lighting": true,
+                "is_covered": true,
+                "has_fee": true,
+                "supervision_type": "VIDEO",
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-08-11T11:38:16+00:00",
+                "lat": 48.8398838373726,
+                "lon": 10.0941506704377,
+                "capacity": 151,
+                "opening_hours": "Mo-Fr 07:00-20:30; Sa 07:00-21:00",
+                "external_identifiers": [],
+                "tags": [],
+                "restricted_to": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0941506704377,
+                    48.8398838373726
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "P5 Spitalstraße",
+                "name": "P5 Parkhaus Spitalstrasse",
+                "purpose": "CAR",
+                "operator_name": "Stadtwerke Aalen GmbH",
+                "public_url": "https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser",
+                "address": "Caroline-Fürgang-Strasse 2, 73430 Aalen",
+                "type": "CAR_PARK",
+                "max_height": 210,
+                "has_lighting": true,
+                "is_covered": true,
+                "has_fee": true,
+                "supervision_type": "VIDEO",
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-08-11T11:38:16+00:00",
+                "lat": 48.8390549337159,
+                "lon": 10.0911023931614,
+                "capacity": 190,
+                "capacity_charging": 4,
+                "opening_hours": "24/7",
+                "external_identifiers": [],
+                "tags": [],
+                "restricted_to": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0911023931614,
+                    48.8390549337159
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "P6 Bahnhof",
+                "name": "P6 Parkhaus Bahnhof",
+                "purpose": "CAR",
+                "operator_name": "Stadtwerke Aalen GmbH",
+                "public_url": "https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser",
+                "address": "Bahnhof 1, 73430 Aalen",
+                "type": "CAR_PARK",
+                "max_height": 210,
+                "has_lighting": true,
+                "is_covered": true,
+                "has_fee": true,
+                "supervision_type": "VIDEO",
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-08-11T11:38:16+00:00",
+                "lat": 48.8417589332262,
+                "lon": 10.0959794698663,
+                "capacity": 390,
+                "capacity_charging": 6,
+                "opening_hours": "24/7",
+                "external_identifiers": [],
+                "tags": [],
+                "restricted_to": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0959794698663,
+                    48.8417589332262
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "uid": "P1 Kubus",
+                "name": "KUBUS",
+                "purpose": "CAR",
+                "operator_name": "Stadtwerke Aalen GmbH",
+                "public_url": "https://www.sw-aalen.de/privatkunden/dienstleistungen/parken/parkhaeuser",
+                "address": "Gmünderstrasse 20, 73430 Aalen",
+                "type": "CAR_PARK",
+                "has_lighting": true,
+                "is_covered": false,
+                "has_fee": true,
+                "supervision_type": "NO",
+                "has_realtime_data": true,
+                "static_data_updated_at": "2025-08-11T11:38:16+00:00",
+                "lat": 48.8361099378405,
+                "lon": 10.0920329218743,
+                "capacity": 30,
+                "opening_hours": "24/7",
+                "external_identifiers": [],
+                "tags": [],
+                "restricted_to": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0920329218743,
+                    48.8361099378405
+                ]
+            }
+        }
+    ]
+}

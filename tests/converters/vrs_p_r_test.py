@@ -7,6 +7,7 @@ from unittest.mock import Mock
 
 import pytest
 from openpyxl.reader.excel import load_workbook
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import VrsParkAndRidePushConverter
 from parkapi_sources.util import RequestHelper
@@ -20,7 +21,7 @@ def vrs_p_r_push_converter(mocked_config_helper: Mock, request_helper: RequestHe
 
 class VrsParkAndRidePushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(vrs_p_r_push_converter: VrsParkAndRidePushConverter):
+    def test_get_static_parking_sites(vrs_p_r_push_converter: VrsParkAndRidePushConverter, snapshot: SnapshotAssertion):
         workbook = load_workbook(filename=str(get_data_path('vrs_p_r.xlsx').absolute()))
 
         static_parking_site_inputs, import_parking_site_exceptions = vrs_p_r_push_converter.handle_xlsx(workbook)
@@ -28,4 +29,4 @@ class VrsParkAndRidePushConverterTest:
         assert len(static_parking_site_inputs) == 219
         assert len(import_parking_site_exceptions) == 2
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

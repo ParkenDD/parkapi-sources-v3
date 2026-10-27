@@ -1,0 +1,128 @@
+[
+  {
+    "address": "L265, 88480 Achstetten",
+    "capacity": 42,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.25733184814453",
+    "lon": "9.90268611907959",
+    "name": "B10 Laupheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:39:03Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "0ff8c7e9-5867-46fa-8799-19f1044fe858"
+  },
+  {
+    "address": "P+M-Parkplatz, 73101 Aichelberg",
+    "capacity": 100,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.63433837890625",
+    "lon": "9.55628490447998",
+    "name": "A8 Aichelberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:38:52Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2118f891-abb9-439b-9f43-54e976b6ab71"
+  },
+  {
+    "address": "Walddorfhäslach, 72141 Walddorfhäslach",
+    "capacity": 104,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.57997131347656",
+    "lon": "9.171835899353027",
+    "name": "B27 Waldorfhäslach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:38:47Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "515334a4-c032-41c5-92b0-550d4c0d3991"
+  },
+  {
+    "address": "L515, 74747 Ravenstein",
+    "capacity": 118,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.408084869384766",
+    "lon": "9.477943420410156",
+    "name": "A81 Osterburken",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:39:07Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "555ba2d7-37f6-4b36-8428-087321717a1b"
+  },
+  {
+    "address": "Zum Schießstand, 77855 Achern",
+    "capacity": 68,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.643680572509766",
+    "lon": "8.027649879455566",
+    "name": "A5 Achern",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:38:40Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7d1c853e-22fc-49a7-800e-076eac929c2b"
+  },
+  {
+    "address": "L1165, 89081 Ulm",
+    "capacity": 51,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.43806076049805",
+    "lon": "9.977621078491211",
+    "name": "B10 Ulm",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:38:58Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9ff03e01-cc7d-47b7-9584-ac3ddc7389f2"
+  },
+  {
+    "address": "Brugesstraße 49, 79224 Umkirch",
+    "capacity": 97,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.02677536010742",
+    "lon": "7.777708530426025",
+    "name": "A5 Freiburg Mitte",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-04-10T05:38:35Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "b18dcdbb-f9e2-4dbf-947e-0985b8c7c4ab"
+  }
+]

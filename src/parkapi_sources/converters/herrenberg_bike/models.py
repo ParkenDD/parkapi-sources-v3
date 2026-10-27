@@ -7,12 +7,13 @@ from datetime import date, datetime, timezone
 from enum import StrEnum
 from typing import Any
 
+import shapely
+from shapely import GeometryType
+from shapely.geometry import Point, Polygon
 from typing_extensions import NotRequired, TypedDict, override
 from validataclass.dataclasses import Default, ValidataclassMixin, validataclass
 from validataclass.validators import (
     DataclassValidator,
-    DateValidator,
-    EnumValidator,
     IntegerValidator,
     StringValidator,
 )
@@ -23,7 +24,12 @@ from parkapi_sources.models.parking_site_inputs import ParkingSiteRestrictionInp
 from parkapi_sources.models.shared_inputs import ExternalIdentifierInput
 from parkapi_sources.util import round_7d
 from parkapi_sources.util.dict import AnyDict
-from parkapi_sources.validators import MappedBooleanValidator
+from parkapi_sources.validators import (
+    GeoJSONGeometryValidator,
+    MappedBooleanValidator,
+    ParsedDateValidator,
+    StrippingEnumValidator,
+)
 from parkapi_sources.validators.string_validators import ReplacingStringValidator
 
 
@@ -66,14 +72,20 @@ class HerrenbergProperties(TypedDict):
 class HerrenbergBikePropertiesInput(ValidataclassMixin):
     fid: int = IntegerValidator(min_value=1)
     Standortbeschreibung: str = ReplacingStringValidator(mapping={'\n': ' ', '\r\n': ' ', '\r': ' '}), Default(None)
-    Erfassungsdatum: date = DateValidator()
-    Typ_Anlage: HerrenbergBikeType = EnumValidator(HerrenbergBikeType)
+    Erfassungsdatum: date = ParsedDateValidator(date_format=['%Y-%m-%d', '%d.%m.%Y'])
+    Typ_Anlage: HerrenbergBikeType = StrippingEnumValidator(HerrenbergBikeType)
     Anzahl_Abstellmoeglichkeiten: int = IntegerValidator()
     Davon_Ueberdacht: int | None = IntegerValidator(), Default(None)
     Anzahl_E_Ladepunkte: int | None = IntegerValidator(allow_strings=True), Default(None)
-    Gebuehrenpflichtig: bool | None = MappedBooleanValidator(mapping={'ja': True, 'nein': False}), Default(None)
+    Gebuehrenpflichtig: bool | None = (
+        MappedBooleanValidator(mapping={'ja': True, 'nein': False, '': False}),
+        Default(None),
+    )
     Beleuchtet: bool | None = MappedBooleanValidator(mapping={'ja': True, 'nein': False, '': False}), Default(None)
-    SonstigeAnmrkungen: str = ReplacingStringValidator(mapping={'\n': ' ', '\r\n': ' ', '\r': ' '}), Default(None)
+    SonstigeAnmerkungen: str | None = (
+        ReplacingStringValidator(mapping={'\n': ' ', '\r\n': ' ', '\r': ' '}),
+        Default(None),
+    )
     OSM_ID: str | None = StringValidator(), Default(None)
 
     @override
@@ -83,7 +95,7 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
             'name': self.Standortbeschreibung,
             'static_data_updated_at': datetime.combine(self.Erfassungsdatum, datetime.min.time(), timezone.utc),
             'type': HerrenbergBikeType(self.Typ_Anlage).to_parking_site_type(),
-            'description': self.SonstigeAnmrkungen,
+            'description': self.SonstigeAnmerkungen or None,
             'capacity': self.Anzahl_Abstellmoeglichkeiten,
         }
 
@@ -120,13 +132,25 @@ class HerrenbergBikePropertiesInput(ValidataclassMixin):
 @validataclass
 class HerrenbergBikeFeatureInput(GeojsonBaseFeatureInput):
     properties: DataclassValidator[HerrenbergBikePropertiesInput] = DataclassValidator(HerrenbergBikePropertiesInput)
+    geometry: Point | Polygon = GeoJSONGeometryValidator(
+        allowed_geometry_types=[GeometryType.POINT, GeometryType.POLYGON],
+    )
 
     @override
     def to_static_parking_site_input(self, **kwargs: Any) -> StaticParkingSiteInput:
+        input_data: dict[str, Any] = self.properties.to_dict()
+
+        # Polygons are kept as geojson, and their centroid is used as the point of the parking site
+        if isinstance(self.geometry, Polygon):
+            point = shapely.centroid(self.geometry)
+            input_data['geojson'] = self.geometry
+        else:
+            point = self.geometry
+
         return StaticParkingSiteInput(
-            lat=round_7d(self.geometry.y),
-            lon=round_7d(self.geometry.x),
+            lat=round_7d(point.y),
+            lon=round_7d(point.x),
             purpose=PurposeType.BIKE,
             has_realtime_data=False,
-            **self.properties.to_dict(),
+            **input_data,
         )

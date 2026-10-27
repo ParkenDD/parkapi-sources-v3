@@ -1,0 +1,1049 @@
+[
+  {
+    "address": "Schneidmühlstraße 5, 69115 Heidelberg",
+    "capacity": 39,
+    "description": "Personal über Rufanlage erreichbar",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40966598",
+    "lon": "8.69190675",
+    "max_height": 180,
+    "name": "Am Bismarckplatz",
+    "opening_hours": "06:00-22:00",
+    "operator_name": "Park-One GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p0_einausfahrt_schneidmuehlstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P00"
+  },
+  {
+    "address": "Poststraße 7, 69115 Heidelberg",
+    "capacity": 528,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40772852",
+    "lon": "8.68947287",
+    "max_height": 180,
+    "max_width": 240,
+    "name": "Poststraße",
+    "opening_hours": "24/7",
+    "operator_name": "Park und Tank Betriebsgesellschaft Heidelberg mbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p1_einfahrt_poststr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 176,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P01"
+  },
+  {
+    "address": "Kurfürstenanlage 1, 69115 Heidelberg",
+    "capacity": 140,
+    "description": "Bezahlung nur an der Rezeption!",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40640258",
+    "lon": "8.69175979",
+    "max_height": 200,
+    "max_width": 200,
+    "name": "Hilton",
+    "opening_hours": "24/7",
+    "operator_name": "Crowne Plaza Heidelberg City Centre",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p3_einausfahrt_bahnhofstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P03"
+  },
+  {
+    "address": "Sofienstraße, 69117 Heidelberg",
+    "capacity": 440,
+    "description": "Kurzparker: Bitte bei Einfahrt die LED-Anzeige beachten: Aktuelle Stundentarife ab 2,40  WC und Wickelmöglichkeit im Darmstädter Hof Centrum, Personal vor Ort nur Mo.-Fr. 12 - 15 Uhr",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41086995",
+    "lon": "8.69470835",
+    "max_height": 180,
+    "max_width": 320,
+    "name": "Darmstädter Hof",
+    "opening_hours": "24/7",
+    "operator_name": "APCOA PARKING Deutschland GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p4_einfahrt_sofienstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 11,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 32,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P04"
+  },
+  {
+    "address": "Friedrich-Ebert-Anlage 1, 69117 Heidelberg",
+    "capacity": 129,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40774505",
+    "lon": "8.69449174",
+    "max_height": 190,
+    "max_width": 200,
+    "name": "Europäischer Hof",
+    "opening_hours": "24/7",
+    "operator_name": "Europäischer Hof, Fritz Gabler GmbH & Co. KG",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p5_ausfahrt_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 7,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 35,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P05"
+  },
+  {
+    "address": "Untere Neckarstraße 2, 69117 Heidelberg",
+    "capacity": 185,
+    "description": "Fahrstuhl nur während den Öffnungszeiten des Modehaus Henschel in Betrieb, Münzschlitze am Automaten etwas weiter oben",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41168783",
+    "lon": "8.69673066",
+    "max_height": 200,
+    "name": "Henschel",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p6_einausfahrt_neckarstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 25,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P06"
+  },
+  {
+    "address": "Plöck 31 - 41, 69117 Heidelberg",
+    "capacity": 486,
+    "description": "WC und Wickelmöglichkeit im Kaufhof während der Öffnungszeiten, Familienparkplätze befinden sich im 1. Parkdeck",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.409091",
+    "lon": "8.69682939",
+    "max_height": 215,
+    "max_width": 270,
+    "name": "Kaufhof",
+    "opening_hours": "24/7",
+    "operator_name": "Würzburger Stadtverkehrs GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p7_einfahrt_ploeck_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 6,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P07"
+  },
+  {
+    "address": "Untere Neckarstraße 44, 69117 Heidelberg",
+    "capacity": 300,
+    "description": "nur der Ausgang Hauptstraße ist barrierefrei",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.4120721",
+    "lon": "8.69962504",
+    "max_height": 190,
+    "max_width": 200,
+    "name": "Kongresshaus",
+    "opening_hours": "24/7",
+    "operator_name": "E.B. Parkgaragen Betriebs GmbH & Co. Engelblock KG",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p8_einfahrt_untere-neckarstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 31,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P08"
+  },
+  {
+    "address": "Friedrich-Ebert-Anlage 51c, 69117 Heidelberg",
+    "capacity": 310,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40912579",
+    "lon": "8.70289004",
+    "max_height": 180,
+    "name": "Am Theater",
+    "opening_hours": "24/7",
+    "operator_name": "PBW Parkraumgesellschaft Baden-Württemberg mbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p9_einausfahrt_friedrich-ebert-anlage_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 6,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 60,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P09"
+  },
+  {
+    "address": "Friedrich-Ebert-Platz, 69117 Heidelberg",
+    "capacity": 186,
+    "description": "Münzschlitze etwas weiter oben, Kostenloses WLAN: Heidelberg4you",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40857229",
+    "lon": "8.69861561",
+    "max_height": 210,
+    "name": "Friedrich-Ebert-Platz",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p10_einfahrt_friedrich-ebert-anlage_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 25,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P10"
+  },
+  {
+    "address": "Graben-/Sandgasse, 69117 Heidelberg",
+    "capacity": 155,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41026927",
+    "lon": "8.705099",
+    "max_height": 180,
+    "name": "Unibibliothek",
+    "opening_hours": "24/7",
+    "operator_name": "PBW Parkraumgesellschaft Baden-Württemberg mbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p11_einausfahrt_ploeck_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 10,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P11"
+  },
+  {
+    "address": "Neue Schlossstraße, 69117 Heidelberg",
+    "capacity": 142,
+    "description": "Behinderten-WC nur während Öffnungszeiten der Bergbahn an der Talstation, Münzschlitze etwas weiter oben, Kostenloses WLAN: Heidelberg4you",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41130104",
+    "lon": "8.71202897",
+    "max_height": 180,
+    "name": "Kornmarkt/Schloss",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p12_einausfahrt_schlossstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 27,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P12"
+  },
+  {
+    "address": "Karlsplatz, 69117 Heidelberg",
+    "capacity": 279,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41276116",
+    "lon": "8.71315965",
+    "max_height": 190,
+    "max_width": 200,
+    "name": "Karlsplatz/Rathaus",
+    "opening_hours": "24/7",
+    "operator_name": "E.B. Parkgaragen Betriebs GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p13_einfahrt_haupstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 25,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P13"
+  },
+  {
+    "address": "Luisenstraße 7, 69117 Heidelberg",
+    "capacity": 190,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.4102938",
+    "lon": "8.69161067",
+    "max_height": 200,
+    "max_width": 250,
+    "name": "ATOS-Klinik",
+    "opening_hours": "06:00-22:45",
+    "operator_name": "Grundbesitzgesell. Heidelberg mbH & Co. KG",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p14_einausfahrt_luisenstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 29,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P14"
+  },
+  {
+    "address": "Thibautstr. 1A, 69115 Heidelberg",
+    "capacity": 150,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40981021",
+    "lon": "8.68734874",
+    "max_height": 200,
+    "max_width": 0,
+    "name": "Klinikum Bergheim",
+    "opening_hours": "24/7",
+    "operator_name": "PBW Parkraumgesellschaft  Baden-Württemberg mbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p15_einausfahrt_thibaustr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 28,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P15"
+  },
+  {
+    "address": "Uferstraße, 69120 Heidelberg",
+    "capacity": 138,
+    "description": "Münzschlitze etweas weiter oben, öffentliche Toilette an Theodor-Heuss-Brücke direkt gegenüber Einfahrt",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41362573",
+    "lon": "8.69252242",
+    "max_height": 200,
+    "max_width": 180,
+    "name": "Nordbrückenkopf",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p16_einausfahrt_uferstr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 7,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 22,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "ATTENDED",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P16"
+  },
+  {
+    "address": "Poststraße 15, 69115 Heidelberg",
+    "capacity": 34,
+    "description": "WC und Wickelmöglichkeit in der Stadtbücherei während Öffnungszeiten",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40749955",
+    "lon": "8.68612841",
+    "max_height": 180,
+    "max_width": 300,
+    "name": "Stadtbücherei",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtbücherei Heidelberg",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p17_einausfahrt_poststr_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P17"
+  },
+  {
+    "address": "Kurfürsten-Anlage 62, 69115 Heidelberg",
+    "capacity": 80,
+    "description": "Gegensprechanlage nur während der Öffnungszeiten der Verwaltung: Mo.-Do. 07:00-17:00 Uhr Fr. 07:00-16:00 Uhr",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.40567194",
+    "lon": "8.67582048",
+    "max_height": 200,
+    "max_width": 250,
+    "name": "BG RCI",
+    "opening_hours": "06:00-21:00",
+    "operator_name": "BG Rohstoffe und chemische Industrie",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p18_einausfahrt_karl-metz-str_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P18"
+  },
+  {
+    "address": "Berliner Straße 41-49, 69120 Heidelberg",
+    "capacity": 160,
+    "description": "Notruftaste wird ins P10 verbunden, welches 24/7 besetzt ist. Kunden von Rewe, Aldi und Rossmann parken 1 Std. kostenlos",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "49.41844137",
+    "lon": "8.67531771",
+    "max_height": 210,
+    "max_width": 458,
+    "name": "Mathematikon",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p25_einausfahrt_im-neuenheimer-feld_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 20,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P25"
+  },
+  {
+    "address": "Heuauer Weg, 69115 Heidelberg",
+    "capacity": 55,
+    "description": "",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": true,
+    "lat": "49.37612",
+    "lon": "8.6586",
+    "max_height": 250,
+    "max_width": 250,
+    "name": "P+R Kirchheim",
+    "opening_hours": "24/7",
+    "operator_name": "",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:25:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "urn:ngsiv2:OffStreetParking:P26"
+  },
+  {
+    "address": "Nina-Simone-Straße 6, 69126 Heidelberg",
+    "capacity": 353,
+    "description": "P19 ist ein Free Flow Parkhaus ohne Schranken an der Ein- bzw. Ausfahrt. Zum Bezahlen gibt man sein Kennzeichen am Automaten ein und bezahlt dann mit Bargeld oder kontaktlos.",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.38771538",
+    "lon": "8.68101524",
+    "max_height": 210,
+    "name": "Campbell Barracks",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "photo_url": "https://parken.heidelberg.de/static/asset/parking/picture/p19_einausfahrt_campbell_barracks_640x480.jpg",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:24:34Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P19"
+  },
+  {
+    "address": "Caroline-Herschel-Straße 1, 69124 Heidelberg",
+    "capacity": 671,
+    "description": "Parkhaus bei der Großsporthalle SNP Dome  Für Veranstaltungen im SNP Dome gilt eine Veranstaltungspauschale von 5 Euro  jeweils zwei Stunden vor und zwei Stunden nach der Veranstaltung.",
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.3954774",
+    "lon": "8.6702232",
+    "max_height": 210,
+    "name": "Parkhaus hip",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Heidelberg Garagen GmbH",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "FAMILY"
+      }
+    ],
+    "static_data_updated_at": "2024-06-08T13:24:57Z",
+    "supervision_type": "VIDEO",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "urn:ngsiv2:OffStreetParking:P20"
+  }
+]
