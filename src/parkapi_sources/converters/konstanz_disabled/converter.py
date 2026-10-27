@@ -21,7 +21,7 @@ class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
         uid='konstanz_disabled',
         name='Stadt Konstanz: Behindertenparkplätze',
         source_url='https://services-eu1.arcgis.com/cgMeYTGtzFtnxdsx/arcgis/rest/services/Verkehr/FeatureServer'
-            '/1/query?outFields=*&where=1%3D1&f=geojson',
+        '/1/query?outFields=*&where=1%3D1&f=geojson',
         attribution_contributor='Stadt Konstanz',
         attribution_license='CC BY 4.0',
         attribution_url='https://creativecommons.org/licenses/by/4.0/',

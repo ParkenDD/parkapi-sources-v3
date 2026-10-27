@@ -50,6 +50,7 @@ class KonstanzDisabledParkingSpotTypeInput(Enum):
             self.ON_STREET: ParkingSpotType.CAR_PARK,
         }.get(self, ParkingSpotType.OTHER)
 
+
 class Orientierung(Enum):
     PARALLEL = 'längs'
     PERPENDICULAR = 'quer'
@@ -61,6 +62,7 @@ class Orientierung(Enum):
             self.PERPENDICULAR: ParkingOrientation.PERPENDICULAR,
             self.DIAGONAL: ParkingOrientation.DIAGONAL,
         }.get(self)
+
 
 @validataclass
 class KonstanzDisabledPropertiesInput:
@@ -80,15 +82,17 @@ class KonstanzDisabledFeatureInput(GeojsonBaseFeatureInput):
     geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
     def to_static_parking_spot_inputs(self) -> list[StaticParkingSpotInput]:
-        return [StaticParkingSpotInput(
-                    uid=f'{self.properties.GlobalID}',
-                    name=f'{self.properties.Name}-{self.properties.Stadtteil}',
-                    purpose=PurposeType.CAR,
-                    address=self.properties.adress,
-                    description=self.properties.description,
-                    static_data_updated_at=datetime.now(tz=timezone.utc),
-                    lat=self.geometry.y,
-                    lon=self.geometry.x,
-                    has_realtime_data=False,
-                    restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
-                )]
+        return [
+            StaticParkingSpotInput(
+                uid=f'{self.properties.GlobalID}',
+                name=f'{self.properties.Name}-{self.properties.Stadtteil}',
+                purpose=PurposeType.CAR,
+                address=self.properties.adress,
+                description=self.properties.description,
+                static_data_updated_at=datetime.now(tz=timezone.utc),
+                lat=self.geometry.y,
+                lon=self.geometry.x,
+                has_realtime_data=False,
+                restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
+            )
+        ]
