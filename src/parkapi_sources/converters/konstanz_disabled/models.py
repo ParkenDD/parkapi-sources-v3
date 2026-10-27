@@ -20,7 +20,6 @@ from parkapi_sources.models import (
     StaticParkingSpotInput,
 )
 from parkapi_sources.models.enums import ParkingOrientation, ParkingSpotType
-from parkapi_sources.util import generate_point, round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
 
 
