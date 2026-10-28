@@ -6,7 +6,7 @@ All rights reserved.
 
 import json
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from decimal import Decimal
 from enum import Enum
 from typing import Any
@@ -37,6 +37,8 @@ class TestDictClass:
     'input_data,output_data',
     [
         (datetime(2024, 6, 1, 12), '2024-06-01T12:00:00Z'),
+        (datetime(2024, 6, 1, 12, tzinfo=timezone.utc), '2024-06-01T12:00:00Z'),
+        (datetime(2024, 6, 1, 12, tzinfo=timezone(timedelta(hours=2))), '2024-06-01T10:00:00Z'),
         (date(2024, 6, 1), '2024-06-01'),
         (Decimal('1.30'), '1.30'),
         (TestEnum.TEST, 'TEST'),

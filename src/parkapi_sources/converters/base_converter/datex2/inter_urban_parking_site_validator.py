@@ -28,11 +28,17 @@ from parkapi_sources.validators import MappedBooleanValidator
 
 class InterUrbanParkingSiteLocation(Enum):
     MOTORWAY = 'motorway'
+    NEARBY_MOTORWAY = 'nearbyMotorway'
+    LAY_BY = 'layBy'
+    ON_STREET = 'onStreet'
     OTHER = 'other'
 
     def to_parking_site_type(self) -> ParkingSiteType | None:
         return {
             self.MOTORWAY: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.NEARBY_MOTORWAY: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.LAY_BY: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.ON_STREET: ParkingSiteType.ON_STREET,
         }.get(self)
 
 
@@ -69,7 +75,8 @@ class ParkingName:
 
 @validataclass
 class LocalisedValue:
-    _text: str = StringValidator()
+    # DATEX II strings can be empty, which leads to a value element without text
+    _text: str = StringValidator(), Default('')
     lang: Language | None = Noneable(EnumValidator(Language)), Default(None)
 
 
@@ -97,7 +104,11 @@ class Operator:
 
 @validataclass
 class TariffsAndPayment:
-    freeOfCharge: bool | None = MappedBooleanValidator(mapping={'true': True, 'false': False}), Default(None)
+    # xs:boolean allows 1 and 0 as well
+    freeOfCharge: bool | None = (
+        MappedBooleanValidator(mapping={'true': True, 'false': False, '1': True, '0': False}),
+        Default(None),
+    )
 
 
 @validataclass

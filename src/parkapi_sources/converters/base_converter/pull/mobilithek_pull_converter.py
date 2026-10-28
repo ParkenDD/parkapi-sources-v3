@@ -31,8 +31,10 @@ class MobilithekPullConverterMixin(ABC):
             'PARK_API_MOBILITHEK_CERT',
             'PARK_API_MOBILITHEK_KEY',
             f'PARK_API_MOBILITHEK_{self.config_key}_STATIC_SUBSCRIPTION_ID',
-            f'PARK_API_MOBILITHEK_{self.config_key}_REALTIME_SUBSCRIPTION_ID',
         ]
+        # Sources without realtime data just have a static subscription
+        if self.source_info.has_realtime_data:
+            self.required_config_keys.append(f'PARK_API_MOBILITHEK_{self.config_key}_REALTIME_SUBSCRIPTION_ID')
 
     def _get_xml_data(self, subscription_id: int) -> etree.Element:
         if self.mobilithek_container:

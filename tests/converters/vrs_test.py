@@ -75,7 +75,7 @@ class VrsVaihingenConverterTest:
     @pytest.mark.parametrize(
         'converter_name, filename, result_count',
         [
-            ('vrs_bondorf_pull_converter', 'vrs_bondorf-static.xml', 1),
+            ('vrs_bondorf_pull_converter', 'vrs_bondorf-static.xml', 3),
             ('vrs_kirchheim_pull_converter', 'vrs_kirchheim-static.xml', 2),
             ('vrs_neustadt_pull_converter', 'vrs_neustadt-static.xml', 2),
             ('vrs_vaihingen_pull_converter', 'vrs_vaihingen-static.xml', 1),
@@ -110,7 +110,7 @@ class VrsVaihingenConverterTest:
     @pytest.mark.parametrize(
         'converter_name, filename, result_count',
         [
-            ('vrs_bondorf_pull_converter', 'vrs_bondorf-realtime.xml', 1),
+            ('vrs_bondorf_pull_converter', 'vrs_bondorf-realtime.xml', 2),
             ('vrs_kirchheim_pull_converter', 'vrs_kirchheim-realtime.xml', 2),
             ('vrs_neustadt_pull_converter', 'vrs_neustadt-realtime.xml', 2),
             ('vrs_vaihingen_pull_converter', 'vrs_vaihingen-realtime.xml', 1),

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Profile_Intelligent_Truck_Parking_Status/ITP_Deutschland_ParkingStatus.xsd"
+                modelBaseVersion="2">
+    <exchange>
+        <supplierIdentification>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-ENMO GmbH &amp; Co.KG</nationalIdentifier>
+        </supplierIdentification>
+    </exchange>
+    <payloadPublication xsi:type="GenericPublication" lang="de">
+        <publicationTime>2026-10-26T19:30:01+00:00</publicationTime>
+        <publicationCreator>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-ENMO GmbH &amp; Co.KG</nationalIdentifier>
+        </publicationCreator>
+        <genericPublicationName>ParkingStatusPublication</genericPublicationName>
+        <genericPublicationExtension>
+            <parkingStatusPublication>
+                <parkingTableReference targetClass="ParkingTable" id="236a7a68-e289-48c8-ab3f-ab19e9f5b9a6" version="1"/>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference targetClass="ParkingRecord" id="2730064b-4d55-4726-a313-ea74e549ddd6" version="1"/>
+                    <parkingStatusOriginTime>2026-10-26T19:30:01+00:00</parkingStatusOriginTime>
+                    <parkingSpaceStatus parkingSpaceIndex="1">
+                        <parkingSpaceStatus>
+                            <parkingSpaceOccupied>0</parkingSpaceOccupied>
+                        </parkingSpaceStatus>
+                    </parkingSpaceStatus>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>48</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfVehicles>25</parkingNumberOfVehicles>
+                    </parkingOccupancy>
+                    <groupOfParkingSpacesStatus groupIndex="1">
+                        <groupOfParkingSpacesStatus>
+                            <parkingNumberOfVacantSpaces>48</parkingNumberOfVacantSpaces>
+                            <parkingNumberOfOccupiedSpaces>25</parkingNumberOfOccupiedSpaces>
+                            <parkingOccupancyGraded>percentage30</parkingOccupancyGraded>
+                        </groupOfParkingSpacesStatus>
+                    </groupOfParkingSpacesStatus>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+            </parkingStatusPublication>
+        </genericPublicationExtension>
+    </payloadPublication>
+</d2LogicalModel>

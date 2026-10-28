@@ -97,7 +97,7 @@ class KarlsruhePullConverter(KarlsruheBasePullConverter):
 
     def _should_ignore_dataset(self, feature_dict: dict) -> bool:
         if self.config_helper.get('PARK_API_KARLSRUHE_CAR_IGNORE_MISSING_CAPACITIES', True):
-            return feature_dict.get('properties', {}).get('gesamte_parkplaetze') is None
+            return feature_dict.get('properties', {}).get('gesamte_parkplaetze') in (None, 0)
 
         return False
 
@@ -130,7 +130,7 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
 
     def _should_ignore_dataset(self, feature_dict: dict) -> bool:
         if self.config_helper.get('PARK_API_KARLSRUHE_BIKE_IGNORE_MISSING_CAPACITIES', True):
-            return feature_dict.get('properties', {}).get('stellplaetze') is None
+            return feature_dict.get('properties', {}).get('stellplaetze') in (None, 0)
 
         return False
 
@@ -141,8 +141,8 @@ class KarlsruheBikePullConverter(KarlsruheBasePullConverter):
 class KarlsruheLayerBasePullConverter(KarlsruheBasePullConverter, ABC):
     """
     Base for the further layers of the TechnologieRegion Karlsruhe GeoServer, which are published at the Mobilithek
-    by Digitale Mobilität. Parking sites without capacity are ignored per default, which can be disabled with the
-    config key PARK_API_{CONFIG_KEY}_IGNORE_MISSING_CAPACITIES.
+    by Digitale Mobilität. Parking sites without capacity or with a capacity of 0 are ignored per default, which can be
+    disabled with the config key PARK_API_{CONFIG_KEY}_IGNORE_MISSING_CAPACITIES.
     """
 
     config_key: str
@@ -156,7 +156,7 @@ class KarlsruheLayerBasePullConverter(KarlsruheBasePullConverter, ABC):
 
     def _should_ignore_dataset(self, feature_dict: dict) -> bool:
         if self.config_helper.get(f'PARK_API_{self.config_key}_IGNORE_MISSING_CAPACITIES', True):
-            return feature_dict.get('properties', {}).get('stellplaetze') is None
+            return feature_dict.get('properties', {}).get('stellplaetze') in (None, 0)
 
         return False
 

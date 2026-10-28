@@ -2,14 +2,14 @@
   {
     "realtime_capacity": 84,
     "realtime_data_updated_at": "<now>",
-    "realtime_free_capacity": 70,
+    "realtime_free_capacity": 72,
     "restrictions": [],
     "uid": "1091"
   },
   {
-    "realtime_capacity": 164,
+    "realtime_capacity": 166,
     "realtime_data_updated_at": "<now>",
-    "realtime_free_capacity": 158,
+    "realtime_free_capacity": 149,
     "restrictions": [],
     "uid": "1089"
   }

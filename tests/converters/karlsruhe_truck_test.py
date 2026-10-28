@@ -29,6 +29,16 @@ def karlsruhe_truck_pull_converter(
     return KarlsruheTruckPullConverter(config_helper=karlsruhe_truck_config_helper, request_helper=request_helper)
 
 
+@pytest.fixture
+def karlsruhe_truck_not_ignore_missing_capacities_pull_converter(
+    mocked_config_helper: Mock,
+    request_helper: RequestHelper,
+) -> KarlsruheTruckPullConverter:
+    config = {'PARK_API_KARLSRUHE_TRUCK_IGNORE_MISSING_CAPACITIES': False}
+    mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+    return KarlsruheTruckPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
+
+
 class KarlsruheTruckPullConverterTest:
     @staticmethod
     def test_get_static_parking_sites(
@@ -44,7 +54,24 @@ class KarlsruheTruckPullConverterTest:
             karlsruhe_truck_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 6
+        # The parking site with 0 spaces is ignored
+        assert len(static_parking_site_inputs) == 5
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
+
+    @staticmethod
+    def test_get_static_parking_sites_not_ignore_missing_capacities(
+        karlsruhe_truck_not_ignore_missing_capacities_pull_converter: KarlsruheTruckPullConverter,
+        requests_mock: Mocker,
+    ):
+        requests_mock.get(
+            'https://mobil.trk.de/geoserver/TBA/ows', text=get_data_path('karlsruhe_truck.json').read_text()
+        )
+
+        static_parking_site_inputs, import_parking_site_exceptions = (
+            karlsruhe_truck_not_ignore_missing_capacities_pull_converter.get_static_parking_sites()
+        )
+
+        assert len(static_parking_site_inputs) == 6
+        assert len(import_parking_site_exceptions) == 0
