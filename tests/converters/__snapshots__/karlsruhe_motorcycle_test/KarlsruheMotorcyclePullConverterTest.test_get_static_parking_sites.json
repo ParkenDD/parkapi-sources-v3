@@ -825,24 +825,6 @@
     "uid": "79"
   },
   {
-    "address": "Jollystraße, Karlsruhe",
-    "capacity": 0,
-    "description": "unter Hirschbrücke",
-    "external_identifiers": [],
-    "has_fee": false,
-    "has_realtime_data": false,
-    "lat": "49.0024609",
-    "lon": "8.3910461",
-    "name": "Jollystraße",
-    "park_and_ride_type": [],
-    "purpose": "MOTORCYCLE",
-    "restrictions": [],
-    "static_data_updated_at": "2024-08-29T22:00:00Z",
-    "tags": [],
-    "type": "OTHER",
-    "uid": "80"
-  },
-  {
     "address": "Rue du Moulin Neuf (Parking Pole d'échange), Haguenau, Haguenau",
     "capacity": 3,
     "external_identifiers": [],
@@ -876,24 +858,6 @@
     "tags": [],
     "type": "OTHER",
     "uid": "83"
-  },
-  {
-    "address": "Bannwaldallee, Karlsruhe",
-    "capacity": 0,
-    "description": "unter der L 605 Brücke",
-    "external_identifiers": [],
-    "has_fee": false,
-    "has_realtime_data": false,
-    "lat": "48.9916029",
-    "lon": "8.3784331",
-    "name": "Bannwaldallee",
-    "park_and_ride_type": [],
-    "purpose": "MOTORCYCLE",
-    "restrictions": [],
-    "static_data_updated_at": "2024-11-24T23:00:00Z",
-    "tags": [],
-    "type": "OTHER",
-    "uid": "84"
   },
   {
     "address": "Plittersdorf Fähre, Plittersdorf, Rastatt",

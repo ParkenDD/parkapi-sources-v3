@@ -1,0 +1,56 @@
+{
+  "modelBaseVersion": "3",
+  "parkingPublicationLight": {
+    "publicationTime": "2026-10-21T09:00:34.351938203Z",
+    "parkingSite": [
+      {
+        "id": "parking-disabled-koeln-385",
+        "type": "other",
+        "name": "Vorsterstraße 68",
+        "description": "Behindertenparkplätze",
+        "numberOfSpaces": 2,
+        "locationAndDimension": {
+          "locationDescriptor": "Vorsterstraße 68, Köln",
+          "specificAccessInformation": [
+            "Parkplatz"
+          ],
+          "coordinatesForDisplay": {
+            "latitude": 50.938652,
+            "longitude": 7.001797
+          }
+        }
+      },
+      {
+        "id": "parking-disabled-koeln-380",
+        "type": "other",
+        "name": "Limburger Straße 24",
+        "description": "Behindertenparkplätze",
+        "numberOfSpaces": 1,
+        "locationAndDimension": {
+          "locationDescriptor": "Limburger Straße 24, Köln",
+          "coordinatesForDisplay": {
+            "latitude": 50.94012,
+            "longitude": 6.938445
+          }
+        }
+      },
+      {
+        "id": "parking-disabled-koeln-12",
+        "type": "other",
+        "name": "Deutzer Weg",
+        "description": "Behindertenparkplätze",
+        "numberOfSpaces": 2,
+        "locationAndDimension": {
+          "locationDescriptor": "Deutzer Weg, Köln",
+          "specificAccessInformation": [
+            "Parkplatz Haltestelle Porz, Steinstraße"
+          ],
+          "coordinatesForDisplay": {
+            "latitude": 50.891178,
+            "longitude": 7.056459
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:messageContainer xmlns:con="http://datex2.eu/schema/3/messageContainer" xmlns:prk="http://datex2.eu/schema/3/parking" xmlns:ex="http://datex2.eu/schema/3/exchangeInformation" xmlns:com="http://datex2.eu/schema/3/common" xmlns:fac="http://datex2.eu/schema/3/facilities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datex2.eu/schema/3/messageContainer http://datex2.eu/schema/3/messageContainer.xsd http://datex2.eu/schema/3/parking          http://datex2.eu/schema/3/parking.xsd http://datex2.eu/schema/3/exchangeInformation http://datex2.eu/schema/3/exchangeInformation.xsd http://datex2.eu/schema/3/common           http://datex2.eu/schema/3/common.xsd http://datex2.eu/schema/3/facilities       http://datex2.eu/schema/3/facilities.xsd" modelBaseVersion="3">
+  <con:payload lang="de" xsi:type="prk:ParkingStatusPublication" modelBaseVersion="3">
+    <com:publicationTime>2026-10-26T19:40:02.089Z</com:publicationTime>
+    <com:publicationCreator>
+      <com:country>de</com:country>
+      <com:nationalIdentifier>DE-NAP-ChristophorusParking</com:nationalIdentifier>
+    </com:publicationCreator>
+    <prk:parkingStatusInformation>
+      <fac:reference targetClass="fac:FacilityObject" id="christophorus-parking" version="1"/>
+      <fac:lastUpdated>2026-10-26T19:40:02.089Z</fac:lastUpdated>
+      <prk:occupancy>
+        <prk:numberOfVacantSpaces>43</prk:numberOfVacantSpaces>
+        <prk:numberOfOccupiedSpaces>15</prk:numberOfOccupiedSpaces>
+        <prk:occupancy>22</prk:occupancy>
+      </prk:occupancy>
+    </prk:parkingStatusInformation>
+  </con:payload>
+  <con:exchangeInformation modelBaseVersion="3">
+    <ex:exchangeContext>
+      <ex:codedExchangeProtocol>snapshotPull</ex:codedExchangeProtocol>
+      <ex:exchangeSpecificationVersion>3.0</ex:exchangeSpecificationVersion>
+      <ex:supplierOrCisRequester/>
+    </ex:exchangeContext>
+    <ex:dynamicInformation>
+      <ex:exchangeStatus>online</ex:exchangeStatus>
+      <ex:messageGenerationTimestamp>2026-10-26T19:40:02.089Z</ex:messageGenerationTimestamp>
+    </ex:dynamicInformation>
+  </con:exchangeInformation>
+</con:messageContainer>
