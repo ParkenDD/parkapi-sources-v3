@@ -38,7 +38,7 @@ class Datex2StaticMixin(ABC):
         Can be overwritten by subclass.
         """
 
-    def _handle_static_xml_data(
+    def handle_static_xml_data(
         self,
         static_xml_data: etree.Element,
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:

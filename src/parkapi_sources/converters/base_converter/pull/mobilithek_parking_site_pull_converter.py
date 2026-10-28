@@ -19,14 +19,14 @@ class MobilithekParkingSitePullConverter(MobilithekPullConverterMixin, ParkingSi
     xml_helper = XMLHelper()
 
     @abstractmethod
-    def _handle_static_xml_data(
+    def handle_static_xml_data(
         self,
         static_xml_data: etree.Element,
     ) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
         pass
 
     @abstractmethod
-    def _handle_realtime_xml_data(
+    def handle_realtime_xml_data(
         self,
         realtime_xml_data: etree.Element,
     ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
@@ -42,7 +42,7 @@ class MobilithekParkingSitePullConverter(MobilithekPullConverterMixin, ParkingSi
         except etree.XMLSyntaxError as e:
             return [], [self._get_invalid_xml_exception(e)]
 
-        return self._handle_static_xml_data(static_xml_data)
+        return self.handle_static_xml_data(static_xml_data)
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
         # Sources without realtime data have no realtime subscription
@@ -58,7 +58,7 @@ class MobilithekParkingSitePullConverter(MobilithekPullConverterMixin, ParkingSi
         except etree.XMLSyntaxError as e:
             return [], [self._get_invalid_xml_exception(e)]
 
-        return self._handle_realtime_xml_data(realtime_xml_data)
+        return self.handle_realtime_xml_data(realtime_xml_data)
 
     def _get_invalid_xml_exception(self, error: etree.XMLSyntaxError) -> ImportParkingSiteException:
         return ImportParkingSiteException(

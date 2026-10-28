@@ -31,7 +31,7 @@ class Datex2RealtimeMixin(ABC):
     def get_uid_from_realtime_input_dict(self, input_dict: dict) -> str:
         pass
 
-    def _handle_realtime_xml_data(
+    def handle_realtime_xml_data(
         self,
         realtime_xml_data: etree.Element,
     ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:

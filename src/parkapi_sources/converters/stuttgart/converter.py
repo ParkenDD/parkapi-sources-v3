@@ -47,9 +47,9 @@ class StuttgartPushConverter(ParkingFacilityMixin, ParkingFacilityStatusMixin, X
         )
 
         if len(root.xpath(f'{path_prefix}/*[name()="parkingFacilityTablePublication"]/*')):
-            return self._handle_static_xml_data(static_xml_data=root)
+            return self.handle_static_xml_data(static_xml_data=root)
         if len(root.xpath(f'{path_prefix}/*[name()="parkingFacilityTableStatusPublication"]/*')):
-            return self._handle_realtime_xml_data(realtime_xml_data=root)
+            return self.handle_realtime_xml_data(realtime_xml_data=root)
 
         # There's no known XML format
         raise ImportSourceException(

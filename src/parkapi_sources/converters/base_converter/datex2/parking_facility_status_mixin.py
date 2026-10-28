@@ -40,11 +40,11 @@ class ParkingFacilityStatusMixin(Datex2RealtimeMixin, ABC):
     def get_uid_from_realtime_input_dict(self, input_dict: dict) -> str:
         return input_dict.get('parkingFacilityReference', {}).get('id')
 
-    def _handle_realtime_xml_data(
+    def handle_realtime_xml_data(
         self,
         realtime_xml_data: etree.Element,
     ) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
-        realtime_parking_site_inputs, realtime_parking_site_errors = super()._handle_realtime_xml_data(
+        realtime_parking_site_inputs, realtime_parking_site_errors = super().handle_realtime_xml_data(
             realtime_xml_data,
         )
 
