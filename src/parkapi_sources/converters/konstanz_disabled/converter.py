@@ -47,7 +47,7 @@ class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
         for update_dict in realtime_input.features:
             try:
                 konstanz_input = self.geojson_feature_validator.validate(update_dict)
-                static_parking_spot_inputs += konstanz_input.to_static_parking_spot_inputs()
+                static_parking_spot_inputs.append(konstanz_input.to_static_parking_spot_input())
             except ValidationError as e:
                 import_parking_spot_exceptions.append(
                     ImportParkingSpotException(
