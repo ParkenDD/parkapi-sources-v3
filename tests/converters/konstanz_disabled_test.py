@@ -38,7 +38,7 @@ class KonstanzDisabledConverterTest:
             json_data = json_file.read()
 
         requests_mock.get(
-            'https://services-eu1.arcgis.com/cgMeYTGtzFtnxdsx/arcgis/rest/services/POI_Verkehr/FeatureServer/5'
+            'https://services-eu1.arcgis.com/cgMeYTGtzFtnxdsx/arcgis/rest/services/Verkehr/FeatureServer/1'
             '/query?outFields=*&where=1%3D1&f=geojson',
             text=json_data,
         )
@@ -57,7 +57,7 @@ class KonstanzDisabledConverterTest:
                 },
             })
 
-        assert len(static_parking_spot_inputs) == 97
+        assert len(static_parking_spot_inputs) == 106
         assert len(import_parking_spot_exceptions) == 0
 
         validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)
