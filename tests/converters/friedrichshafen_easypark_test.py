@@ -7,6 +7,7 @@ from io import StringIO
 from unittest.mock import Mock
 
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters.friedrichshafen_easypark.converter import FriedrichshafenEasyParkPushConverter
 from parkapi_sources.models.enums import ParkingAudience
@@ -16,14 +17,18 @@ from tests.converters.helper import get_data_path, validate_static_parking_site_
 
 @pytest.fixture
 def friedrichshafen_easypark_push_converter(
-    mocked_config_helper: Mock, request_helper: RequestHelper
+    mocked_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> FriedrichshafenEasyParkPushConverter:
     return FriedrichshafenEasyParkPushConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
 
 class FriedrichshafenEasyParkPushConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(friedrichshafen_easypark_push_converter: FriedrichshafenEasyParkPushConverter):
+    def test_get_static_parking_sites(
+        friedrichshafen_easypark_push_converter: FriedrichshafenEasyParkPushConverter,
+        snapshot: SnapshotAssertion,
+    ):
         with get_data_path('friedrichshafen_easypark.csv').open() as friedrichshafen_easypark_file:
             friedrichshafen_easypark_data = StringIO(friedrichshafen_easypark_file.read())
 
@@ -56,4 +61,4 @@ class FriedrichshafenEasyParkPushConverterTest:
         assert disabled_parking_site.has_fee is False
         assert [restriction.type for restriction in disabled_parking_site.restrictions] == [ParkingAudience.DISABLED]
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

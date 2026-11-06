@@ -8,10 +8,12 @@ from pathlib import Path
 
 import pytest
 import requests
+from requests_mock import Mocker
 
 from parkapi_sources.exceptions import MissingConfigException
 from parkapi_sources.models import SourceInfo
 from parkapi_sources.util import ConfigHelper, RequestHelper
+from parkapi_sources.version import __version__
 
 
 @pytest.fixture
@@ -96,3 +98,34 @@ class RequestHelperTest:
 
         with pytest.raises(MissingConfigException):
             request_helper._handle_request_response(source_info, response)
+
+    @staticmethod
+    def test_request_default_user_agent(requests_mock: Mocker, source_info: SourceInfo):
+        requests_mock.get('https://example.com/data.json', text='{}')
+        request_helper = RequestHelper(config_helper=ConfigHelper({}))
+
+        request_helper.get(source_info=source_info, url='https://example.com/data.json')
+
+        assert requests_mock.last_request.headers['User-Agent'] == f'ParkApiSources/{__version__}'
+
+    @staticmethod
+    def test_request_configured_user_agent(requests_mock: Mocker, source_info: SourceInfo):
+        requests_mock.get('https://example.com/data.json', text='{}')
+        request_helper = RequestHelper(config_helper=ConfigHelper({'USER_AGENT': 'MyService/1.0'}))
+
+        request_helper.get(source_info=source_info, url='https://example.com/data.json')
+
+        assert requests_mock.last_request.headers['User-Agent'] == 'MyService/1.0'
+
+    @staticmethod
+    def test_request_header_user_agent_takes_precedence(requests_mock: Mocker, source_info: SourceInfo):
+        requests_mock.get('https://example.com/data.json', text='{}')
+        request_helper = RequestHelper(config_helper=ConfigHelper({'USER_AGENT': 'MyService/1.0'}))
+
+        request_helper.get(
+            source_info=source_info,
+            url='https://example.com/data.json',
+            headers={'user-agent': 'Custom/2.0'},
+        )
+
+        assert requests_mock.last_request.headers['User-Agent'] == 'Custom/2.0'

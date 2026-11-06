@@ -25,6 +25,9 @@ class BahnV2PullConverter(ParkingSitePullConverter):
         uid='bahn_v2',
         name='Deutsche Bahn Parkplätze',
         public_url='https://www.dbbahnpark.de',
+        attribution_contributor='Deutsche Bahn AG',
+        attribution_license='Datenlizenz Deutschland – Namensnennung – Version 2.0',
+        attribution_url='https://www.govdata.de/dl-de/by-2-0',
         has_realtime_data=False,  # ATM it's impossible to get realtime data due rate limit restrictions
     )
 

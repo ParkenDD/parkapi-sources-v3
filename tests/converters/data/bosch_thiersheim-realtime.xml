@@ -1,0 +1,30 @@
+<ns:d2LogicalModel xmlns:ns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 ITP_Deutschland_ParkingStatus.xsd">
+      <ns:exchange>
+        <ns:supplierIdentification>
+          <ns:country>de</ns:country>
+          <ns:nationalIdentifier>DE-NAP-Bosch Service Solutions</ns:nationalIdentifier>
+        </ns:supplierIdentification>
+      </ns:exchange>
+      <ns:payloadPublication lang="de" xsi:type="ns:GenericPublication">
+        <ns:publicationTime>2026-04-10T10:35:46.6563232+02:00</ns:publicationTime>
+        <ns:publicationCreator>
+          <ns:country>de</ns:country>
+          <ns:nationalIdentifier>DE-NAP-Bosch Service Solutions</ns:nationalIdentifier>
+        </ns:publicationCreator>
+        <ns:genericPublicationName>ParkingStatusPublication</ns:genericPublicationName>
+        <ns:genericPublicationExtension>
+          <ns:parkingStatusPublication>
+            <ns:parkingTableReference id="DE000000-1000-0000-0000-0308155000000" targetClass="ParkingTable" version="1"/>
+            <ns:parkingRecordStatus xsi:type="ns:ParkingSiteStatus">
+              <ns:parkingRecordReference id="DE000000-2000-0000-0000-0308155000000" targetClass="ParkingRecord" version="1"/>
+              <ns:parkingStatusOriginTime>2026-04-10T10:35:46.6573257+02:00</ns:parkingStatusOriginTime>
+              <ns:parkingOccupancy>
+                <ns:parkingNumberOfVacantSpaces>0</ns:parkingNumberOfVacantSpaces>
+              </ns:parkingOccupancy>
+              <ns:parkingSiteStatus>unknown</ns:parkingSiteStatus>
+              <ns:parkingSiteOpeningStatus>statusUnknown</ns:parkingSiteOpeningStatus>
+            </ns:parkingRecordStatus>
+          </ns:parkingStatusPublication>
+        </ns:genericPublicationExtension>
+      </ns:payloadPublication>
+    </ns:d2LogicalModel>

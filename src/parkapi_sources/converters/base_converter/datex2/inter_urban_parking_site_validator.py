@@ -8,6 +8,7 @@ from decimal import Decimal
 from enum import Enum
 
 from validataclass.dataclasses import Default, validataclass
+from validataclass.exceptions import DataclassPostValidationError, RequiredValueError
 from validataclass.validators import (
     AnythingValidator,
     DataclassValidator,
@@ -21,22 +22,33 @@ from validataclass.validators import (
 )
 
 from parkapi_sources.models import ParkingSiteRestrictionInput, StaticParkingSiteInput
-from parkapi_sources.models.enums import ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.validators import MappedBooleanValidator
 
 
 class InterUrbanParkingSiteLocation(Enum):
     MOTORWAY = 'motorway'
+    NEARBY_MOTORWAY = 'nearbyMotorway'
+    LAY_BY = 'layBy'
+    ON_STREET = 'onStreet'
     OTHER = 'other'
 
     def to_parking_site_type(self) -> ParkingSiteType | None:
         return {
             self.MOTORWAY: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.NEARBY_MOTORWAY: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.LAY_BY: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.ON_STREET: ParkingSiteType.ON_STREET,
         }.get(self)
 
 
 class Language(Enum):
     DE = 'de'
+
+
+class VehicleType(Enum):
+    LORRY = 'lorry'
+    OTHER = 'other'
 
 
 @validataclass
@@ -63,7 +75,8 @@ class ParkingName:
 
 @validataclass
 class LocalisedValue:
-    _text: str = StringValidator()
+    # DATEX II strings can be empty, which leads to a value element without text
+    _text: str = StringValidator(), Default('')
     lang: Language | None = Noneable(EnumValidator(Language)), Default(None)
 
 
@@ -91,7 +104,37 @@ class Operator:
 
 @validataclass
 class TariffsAndPayment:
-    freeOfCharge: bool | None = MappedBooleanValidator(mapping={'true': True, 'false': False}), Default(None)
+    # xs:boolean allows 1 and 0 as well
+    freeOfCharge: bool | None = (
+        MappedBooleanValidator(mapping={'true': True, 'false': False, '1': True, '0': False}),
+        Default(None),
+    )
+
+
+@validataclass
+class VehicleCharacteristics:
+    vehicleType: VehicleType = EnumValidator(VehicleType), Default(VehicleType.OTHER)
+
+
+@validataclass
+class AssignedParking:
+    vehicleCharacteristics: VehicleCharacteristics | None = DataclassValidator(VehicleCharacteristics), Default(None)
+
+
+@validataclass
+class ParkingSpaceBasics:
+    parkingNumberOfSpaces: int = IntegerValidator(allow_strings=True)
+    assignedParkingAmongOthers: AssignedParking | None = DataclassValidator(AssignedParking), Default(None)
+
+    def is_lorry_group(self) -> bool:
+        if self.assignedParkingAmongOthers is None or self.assignedParkingAmongOthers.vehicleCharacteristics is None:
+            return False
+        return self.assignedParkingAmongOthers.vehicleCharacteristics.vehicleType == VehicleType.LORRY
+
+
+@validataclass
+class GroupOfParkingSpaces:
+    parkingSpaceBasics: ParkingSpaceBasics = DataclassValidator(ParkingSpaceBasics)
 
 
 @validataclass
@@ -99,7 +142,11 @@ class InterUrbanParkingSite:
     id: str = StringValidator()
     parkingLocation: ParkingLocation = DataclassValidator(ParkingLocation)
     parkingName: list[ParkingName] = ListValidator(DataclassValidator(ParkingName))
-    parkingNumberOfSpaces: int = IntegerValidator(allow_strings=True)
+    parkingNumberOfSpaces: int | None = IntegerValidator(allow_strings=True), Default(None)
+    groupOfParkingSpaces: list[GroupOfParkingSpaces] = (
+        ListValidator(DataclassValidator(GroupOfParkingSpaces)),
+        Default([]),
+    )
     parkingRecordVersionTime: datetime = DateTimeValidator(discard_milliseconds=True)
     interUrbanParkingSiteLocation: InterUrbanParkingSiteLocation | None = (
         EnumValidator(InterUrbanParkingSiteLocation),
@@ -109,9 +156,28 @@ class InterUrbanParkingSite:
     parkingSiteAddress: ParkingSiteAddress | None = Noneable(DataclassValidator(ParkingSiteAddress)), Default(None)
     operator: Operator | None = Noneable(DataclassValidator(Operator)), Default(None)
 
+    def __post_init__(self):
+        if self.capacity is None:
+            raise DataclassPostValidationError(
+                field_errors={
+                    'parkingNumberOfSpaces': RequiredValueError(
+                        reason='Either parkingNumberOfSpaces or groupOfParkingSpaces is required.',
+                    ),
+                },
+            )
+
+    @property
+    def capacity(self) -> int | None:
+        if self.parkingNumberOfSpaces is not None:
+            return self.parkingNumberOfSpaces
+        # Without a total number of spaces, the groups of parking spaces add up to the capacity
+        if len(self.groupOfParkingSpaces) == 0:
+            return None
+        return sum(group.parkingSpaceBasics.parkingNumberOfSpaces for group in self.groupOfParkingSpaces)
+
     def to_static_parking_site_input(self, has_realtime_data: bool) -> StaticParkingSiteInput | None:
         # Parking sites without any spaces are ignored
-        if self.parkingNumberOfSpaces == 0:
+        if self.capacity == 0:
             return None
 
         name_de = ''
@@ -132,7 +198,7 @@ class InterUrbanParkingSite:
             type=parking_site_type,
             lat=self.parkingLocation.pointByCoordinates.pointCoordinates.latitude,
             lon=self.parkingLocation.pointByCoordinates.pointCoordinates.longitude,
-            capacity=self.parkingNumberOfSpaces,
+            capacity=self.capacity,
             static_data_updated_at=self.parkingRecordVersionTime,
             has_realtime_data=self._get_has_realtime_data(has_realtime_data),
             restrictions=self._get_restrictions(),
@@ -161,7 +227,14 @@ class InterUrbanParkingSite:
         """
         Can be overwritten by subclass to add source-specific restrictions.
         """
-        return []
+        lorry_capacity = sum(
+            group.parkingSpaceBasics.parkingNumberOfSpaces
+            for group in self.groupOfParkingSpaces
+            if group.parkingSpaceBasics.is_lorry_group()
+        )
+        if lorry_capacity == 0:
+            return []
+        return [ParkingSiteRestrictionInput(type=ParkingAudience.TRUCK, capacity=lorry_capacity)]
 
     def _get_operator_name(self) -> str | None:
         if self.operator is None or self.operator.contactOrganisationName is None:

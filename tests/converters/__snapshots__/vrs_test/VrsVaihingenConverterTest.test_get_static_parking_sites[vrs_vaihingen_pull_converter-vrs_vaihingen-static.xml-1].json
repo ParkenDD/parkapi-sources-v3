@@ -1,0 +1,20 @@
+[
+  {
+    "capacity": 454,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.94597135471903",
+    "lon": "8.959873193581712",
+    "name": "P+R Vaihingen an der Enz",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-20T06:00:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1230"
+  }
+]

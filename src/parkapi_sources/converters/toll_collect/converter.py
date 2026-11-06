@@ -30,6 +30,9 @@ class TollCollectPullConverter(
         uid='toll_collect',
         name='Toll Collect: Truck Parking',
         public_url='https://www.toll-collect.de',
+        attribution_contributor='Toll Collect GmbH',
+        attribution_license='Nutzungsbedingungen der Toll Collect GmbH',
+        attribution_url='https://company.toll-collect.de/go/sid-agb-lb',
         has_realtime_data=True,
     )
 
@@ -39,7 +42,7 @@ class TollCollectPullConverter(
         static_xml_data = self._get_xml_data(
             subscription_id=self.config_helper.get(f'PARK_API_MOBILITHEK_{self.config_key}_STATIC_SUBSCRIPTION_ID'),
         )
-        capacity_by_uid = self._get_capacity_by_uid(static_xml_data)
+        capacity_by_uid, ignored_uids = self._get_capacity_by_uid(static_xml_data)
 
         realtime_xml_data = self._get_xml_data(
             subscription_id=self.config_helper.get(f'PARK_API_MOBILITHEK_{self.config_key}_REALTIME_SUBSCRIPTION_ID'),
@@ -53,6 +56,9 @@ class TollCollectPullConverter(
         for realtime_input_dict in realtime_input_dicts:
             try:
                 realtime_item = self.realtime_validator.validate(realtime_input_dict)
+                # Parking sites the static import ignores do not exist, so there is nothing to update
+                if realtime_item.uid in ignored_uids:
+                    continue
                 realtime_parking_site_inputs.append(
                     realtime_item.to_realtime_parking_site_input(capacity=capacity_by_uid.get(realtime_item.uid)),
                 )
@@ -68,13 +74,25 @@ class TollCollectPullConverter(
 
         return realtime_parking_site_inputs, realtime_parking_site_errors
 
-    def _get_capacity_by_uid(self, static_xml_data: etree.Element) -> dict[str, int]:
+    def _get_capacity_by_uid(self, static_xml_data: etree.Element) -> tuple[dict[str, int], set[str]]:
+        """
+        Returns the capacity of every parking site the static import keeps, and the uids of the ones it ignores. Both
+        are decided by `to_static_parking_site_input()`, the same as in the static import, so the realtime import
+        skips exactly the parking sites the static import skips.
+        """
         capacity_by_uid: dict[str, int] = {}
+        ignored_uids: set[str] = set()
         for static_input_dict in self._transform_static_xml_to_static_input_dicts(static_xml_data):
             try:
                 static_item = self.static_validator.validate(static_input_dict)
             except ValidationError:
                 continue
-            capacity_by_uid[static_item.id] = static_item.parkingNumberOfSpaces
+            static_parking_site_input = static_item.to_static_parking_site_input(
+                has_realtime_data=self.has_realtime_data,
+            )
+            if static_parking_site_input is None:
+                ignored_uids.add(static_item.id)
+                continue
+            capacity_by_uid[static_item.id] = static_parking_site_input.capacity
 
-        return capacity_by_uid
+        return capacity_by_uid, ignored_uids

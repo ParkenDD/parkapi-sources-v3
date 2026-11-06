@@ -22,6 +22,9 @@ class PumBwPushConverter(XlsxConverter, ParkingSiteBaseConverter):
         uid='pum_bw',
         name='Baden-Württemberg: Parken und Mitfahren',
         public_url='https://mobidata-bw.de/dataset/p-m-parkplatze-baden-wurttemberg',
+        attribution_contributor='Ministerium für Verkehr Baden-Württemberg',
+        attribution_license='Datenlizenz Deutschland – Zero – Version 2.0',
+        attribution_url='https://www.govdata.de/dl-de/zero-2-0',
         has_realtime_data=False,
     )
 

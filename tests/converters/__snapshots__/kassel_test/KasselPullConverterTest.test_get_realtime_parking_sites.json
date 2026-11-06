@@ -1,0 +1,26 @@
+[
+  {
+    "realtime_capacity": 220,
+    "realtime_data_updated_at": "2026-10-25T08:28:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "7[City Point]"
+  },
+  {
+    "realtime_capacity": 980,
+    "realtime_data_updated_at": "2026-10-25T08:28:00Z",
+    "realtime_free_capacity": 957,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "1[Friedrichsplatz]"
+  },
+  {
+    "realtime_capacity": 322,
+    "realtime_data_updated_at": "2026-10-25T08:28:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "UNKNOWN",
+    "restrictions": [],
+    "uid": "4[Wilhelmsstraße]"
+  }
+]

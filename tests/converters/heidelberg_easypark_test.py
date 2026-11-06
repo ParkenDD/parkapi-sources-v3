@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import HeidelbergEasyParkPullConverter
 from parkapi_sources.util import RequestHelper
@@ -31,7 +32,8 @@ def requests_mock_heidelberg_easypark(requests_mock: Mocker) -> Mocker:
 
 @pytest.fixture
 def heidelberg_easypark_pull_converter(
-    mocked_config_helper: Mock, request_helper: RequestHelper
+    mocked_config_helper: Mock,
+    request_helper: RequestHelper,
 ) -> HeidelbergEasyParkPullConverter:
     return HeidelbergEasyParkPullConverter(config_helper=mocked_config_helper, request_helper=request_helper)
 
@@ -41,6 +43,7 @@ class HeidelbergEasyparkPullConverterTest:
     def test_get_static_parking_sites(
         heidelberg_easypark_pull_converter: HeidelbergEasyParkPullConverter,
         requests_mock_heidelberg_easypark: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_site_inputs, import_parking_site_exceptions = (
             heidelberg_easypark_pull_converter.get_static_parking_sites()
@@ -49,4 +52,4 @@ class HeidelbergEasyparkPullConverterTest:
         assert len(static_parking_site_inputs) == 72
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

@@ -1,0 +1,20 @@
+[
+  {
+    "realtime_data_updated_at": "2023-12-31T23:02:12Z",
+    "realtime_free_capacity": 685,
+    "restrictions": [],
+    "uid": "de:09562:3111_1"
+  },
+  {
+    "realtime_data_updated_at": "2023-12-31T23:02:12Z",
+    "realtime_free_capacity": 194,
+    "restrictions": [],
+    "uid": "de:09562:3111_3"
+  },
+  {
+    "realtime_data_updated_at": "2023-12-31T23:02:12Z",
+    "realtime_free_capacity": 52,
+    "restrictions": [],
+    "uid": "de:09474:9250"
+  }
+]

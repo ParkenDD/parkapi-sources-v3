@@ -26,6 +26,9 @@ class BfrkBasePullConverter(ParkingSitePullConverter, ABC):
     def source_url_config_key(self) -> str:
         pass
 
+    def check_ignore_input_dict(self, input_dict: dict) -> bool:
+        return False
+
     def check_ignore_item(self, input_data: BfrkBaseInput) -> bool:
         return False
 
@@ -39,6 +42,10 @@ class BfrkBasePullConverter(ParkingSitePullConverter, ABC):
         input_dicts = response.json()
 
         for input_dict in input_dicts:
+            # Ignore datasets before validation, e.g. if required fields are missing
+            if self.check_ignore_input_dict(input_dict):
+                continue
+
             try:
                 input_data: BfrkBaseInput = self.bfrk_validator.validate(input_dict)
             except ValidationError as e:

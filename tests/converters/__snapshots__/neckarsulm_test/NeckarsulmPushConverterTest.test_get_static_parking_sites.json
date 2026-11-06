@@ -1,0 +1,2046 @@
+[
+  {
+    "address": "Wilfenseeweg, 74172 Neckarsulm",
+    "capacity": 203,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.190044818",
+    "lon": "9.24487198",
+    "name": "AQUAtoll P1",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "4"
+  },
+  {
+    "address": "Kalbenstraße, 74172 Neckarsulm",
+    "capacity": 46,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.200819259",
+    "lon": "9.247521261",
+    "name": "Friedhof am Wald West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "36"
+  },
+  {
+    "address": "Stuttgarter Straße, 74172 Neckarsulm",
+    "capacity": 38,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.198342637",
+    "lon": "9.235565896",
+    "name": "Stuttgarter Straße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "38"
+  },
+  {
+    "address": "Hezenbergstraße, 74172 Neckarsulm",
+    "capacity": 24,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.2008202",
+    "lon": "9.22938424",
+    "name": "Hezenberghalle",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "39"
+  },
+  {
+    "address": "Bahnhofplatz 1, 74172 Neckarsulm",
+    "capacity": 97,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.189347241",
+    "lon": "9.219008201",
+    "name": "Bahnhof West Parken",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "50"
+  },
+  {
+    "address": "Bahnhofplatz 1, 74172 Neckarsulm",
+    "capacity": 12,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.188914559",
+    "lon": "9.220340123",
+    "name": "Bahnhof Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "51"
+  },
+  {
+    "address": "Pichterichstraße, 74172 Neckarsulm",
+    "capacity": 29,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.187090939",
+    "lon": "9.237969854",
+    "name": "Sportanlagen Pichterich",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2"
+  },
+  {
+    "address": "Badstraße, 74172 Neckarsulm",
+    "capacity": 250,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.192329117",
+    "lon": "9.207860603",
+    "name": "Ernst-Freyer-Bad",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "58"
+  },
+  {
+    "address": "Schweinshagweg, 74172 Neckarsulm",
+    "capacity": 116,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.200138472",
+    "lon": "9.263243332",
+    "name": "Schweinshag",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "13"
+  },
+  {
+    "address": "Odenwaldstraße, 74172 Neckarsulm",
+    "capacity": 46,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.184470484",
+    "lon": "9.223963732",
+    "name": "Odenwaldstraße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "52"
+  },
+  {
+    "address": "Platten, 74172 Neckarsulm",
+    "capacity": 37,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.211482587",
+    "lon": "9.2438167",
+    "name": "Sportplatz Amorbach",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "24"
+  },
+  {
+    "address": "Schwabenweg, 74172 Neckarsulm",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.211825744",
+    "lon": "9.247131236",
+    "name": "Sportanlagen Schwabenweg",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "25"
+  },
+  {
+    "address": "Amorbacher Straße, 74172 Neckarsulm",
+    "capacity": 36,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.210012384",
+    "lon": "9.249823434",
+    "name": "Amorbacher Straße /Lautenbacher Straße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "27"
+  },
+  {
+    "address": "Grenchenstraße, 74172 Neckarsulm",
+    "capacity": 29,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.211789242",
+    "lon": "9.254206679",
+    "name": "Grenchenstraßw",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "33"
+  },
+  {
+    "address": "Im Grund, 74172 Neckarsulm",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.208936023",
+    "lon": "9.303929874",
+    "name": "Friedhof Dahenfeld",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "22"
+  },
+  {
+    "address": "Raiffeisenstraße, 74172 Neckarsulm",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.197291423",
+    "lon": "9.198123334",
+    "name": "Verwaltungsstelle Obereisesheim",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "64"
+  },
+  {
+    "address": "Heinestraße, 74172 Neckarsulm",
+    "capacity": 26,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.1997953",
+    "lon": "9.197518873",
+    "name": "Friedhof Obereisesheim",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "66"
+  },
+  {
+    "address": "Eberwinstraße 1, 74172 Neckarsulm",
+    "capacity": 43,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.202243062",
+    "lon": "9.201976993",
+    "name": "Eberwinhalle",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "67"
+  },
+  {
+    "address": "In den Prügelwiesen, 74172 Neckarsulm",
+    "capacity": 26,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.207023513",
+    "lon": "9.293597702",
+    "name": "Sportanlagen Dahenfeld",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "17"
+  },
+  {
+    "address": "Erlenbacher Straße, 74172 Neckarsulm",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.207180389",
+    "lon": "9.294709495",
+    "name": "Hüttberghalle Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "19"
+  },
+  {
+    "address": "Heilbronner Straße / B27, 74172 Neckarsulm",
+    "capacity": 75,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.174728079",
+    "lon": "9.224488834",
+    "name": "B27 Südknoten",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "55"
+  },
+  {
+    "address": "Bahnhofplatz 1, 74172 Neckarsulm",
+    "capacity": 74,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.188369117",
+    "lon": "9.218871483",
+    "name": "Bahnhof West P+R",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "69"
+  },
+  {
+    "address": "Lautenbacher Straße, 74172 Neckarsulm",
+    "capacity": 80,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.212442171",
+    "lon": "9.258492752",
+    "name": "Lautenbacher Straße/Grüne Mitte",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "70"
+  },
+  {
+    "address": "In den Prügelwiesen, 74172 Neckarsulm",
+    "capacity": 37,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.207486725",
+    "lon": "9.295181795",
+    "name": "Hüttberghalle Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "71"
+  },
+  {
+    "address": "Lautenbacher Str. 60-21, 74172 Neckarsulm",
+    "capacity": 24,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.211553851",
+    "lon": "9.256104592",
+    "name": "Lautenbacher Straße/Grundschule",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "72"
+  },
+  {
+    "address": "Lautenbacher Str. 51, 74172 Neckarsulm",
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.211024442",
+    "lon": "9.25400319",
+    "name": "Verwaltungsstelle Amorbach",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "73"
+  },
+  {
+    "address": "Amorbacher Str. 20, 74172 Neckarsulm",
+    "capacity": 9,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.21063939",
+    "lon": "9.249717477",
+    "name": "Amorbach Neue Mitte",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "74"
+  },
+  {
+    "address": "Kalbenstraße, 74172 Neckarsulm",
+    "capacity": 37,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.199916453",
+    "lon": "9.244836556",
+    "name": "Friedhof am Wald Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "75"
+  },
+  {
+    "address": "Sulmstraße 2/1, 74172 Neckarsulm",
+    "capacity": 22,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.192499648",
+    "lon": "9.227637343",
+    "name": "P7 Sulmstraße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "77"
+  },
+  {
+    "address": "Kolpingstraße 16, 74172 Neckarsulm",
+    "capacity": 29,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.191767684",
+    "lon": "9.226047423",
+    "max_height": 170,
+    "name": "P1 Kolpinggarage",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "76"
+  },
+  {
+    "address": "Heidelberger Straße 18, 74172 Neckarsulm",
+    "capacity": 53,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.202792951",
+    "lon": "9.242682953",
+    "name": "Heidelberger Straße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "78"
+  },
+  {
+    "address": "Reisachmühlweg, 74172 Neckarsulm",
+    "capacity": 280,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.187977472",
+    "lon": "9.24179867",
+    "name": "AQUAtoll P3 Überlaufparkplatz",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1"
+  },
+  {
+    "address": "Wilfenseeweg, 74172 Neckarsulm",
+    "capacity": 112,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.190182118",
+    "lon": "9.242363704",
+    "name": "AQUAtoll P2",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "3"
+  },
+  {
+    "address": "Holzweg 1, 74172 Neckarsulm",
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.209030062",
+    "lon": "9.169940273",
+    "name": "Waldschänke",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "68"
+  },
+  {
+    "address": "Urbanstraße 17, 74172 Neckarsulm",
+    "capacity": 46,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.192040967",
+    "lon": "9.222704021",
+    "name": "P5 Urbanstraße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "44"
+  },
+  {
+    "address": "Kolpingstraße 16, 74172 Neckarsulm",
+    "capacity": 42,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.191757712",
+    "lon": "9.226092622",
+    "name": "P1 Kolpingdeck",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "49"
+  },
+  {
+    "address": "Sulmstraße 2/1, 74172 Neckarsulm",
+    "capacity": 179,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.192583767",
+    "lon": "9.226893368",
+    "max_height": 200,
+    "name": "P7 Stadtmauer Tiefgarage",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "9"
+  },
+  {
+    "address": "Seestraße 17, 74172 Neckarsulm",
+    "capacity": 287,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.194946528",
+    "lon": "9.224679899",
+    "max_height": 200,
+    "name": "P6 Seestraße/Ballei",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "40"
+  },
+  {
+    "address": "Binswanger Str. 7, 74172 Neckarsulm",
+    "capacity": 41,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.190337563",
+    "lon": "9.225988985",
+    "max_height": 190,
+    "name": "P3 Klostergraben",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "47"
+  },
+  {
+    "capacity": 57,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.191269505",
+    "lon": "9.225063399",
+    "max_height": 195,
+    "name": "P2 Rathaus",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "48"
+  }
+]

@@ -1,0 +1,2038 @@
+[
+  {
+    "address": "Wiesenstraße, 74343 Sachsenheim",
+    "capacity": 72,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.062831454049256,
+            48.96162355399606
+          ],
+          [
+            9.062462726777547,
+            48.961488814163346
+          ],
+          [
+            9.06241267330175,
+            48.96151620033767
+          ],
+          [
+            9.062359282927567,
+            48.961530441142386
+          ],
+          [
+            9.06233592463886,
+            48.961563304522365
+          ],
+          [
+            9.0630934005726,
+            48.96183497430068
+          ],
+          [
+            9.063148459395977,
+            48.961791156694595
+          ],
+          [
+            9.063203518219355,
+            48.96179882477843
+          ],
+          [
+            9.063213528914513,
+            48.96185578765009
+          ],
+          [
+            9.0636873684854,
+            48.96201462608317
+          ],
+          [
+            9.06377079094506,
+            48.961926991148154
+          ],
+          [
+            9.063266919288697,
+            48.96175391169915
+          ],
+          [
+            9.063213528914513,
+            48.9617550071406
+          ],
+          [
+            9.062831454049256,
+            48.96162355399606
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9617495",
+    "lon": "9.0630538",
+    "name": "P+R Wiesenstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 49,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.062632908595257,
+            48.96101229232265
+          ],
+          [
+            9.06259286581462,
+            48.961060492439934
+          ],
+          [
+            9.062561165279948,
+            48.961050633328824
+          ],
+          [
+            9.06252612784689,
+            48.96109664249734
+          ],
+          [
+            9.06166520806317,
+            48.96081949138765
+          ],
+          [
+            9.061715261538968,
+            48.960742808990425
+          ],
+          [
+            9.061982213409888,
+            48.960833732391286
+          ],
+          [
+            9.062008908596981,
+            48.96079758214332
+          ],
+          [
+            9.062632908595257,
+            48.96101229232265
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9609204",
+    "lon": "9.0621632",
+    "name": "P+R West",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "3"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 31,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.065376673293576,
+            48.959139572157575
+          ],
+          [
+            9.065820480778985,
+            48.95911875767465
+          ],
+          [
+            9.06582381767737,
+            48.95922392549944
+          ],
+          [
+            9.065381678641158,
+            48.95923926245536
+          ],
+          [
+            9.065376673293576,
+            48.959139572157575
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9591803",
+    "lon": "9.0656026",
+    "name": "Parkhaus Hauptstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "5"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 23,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.065551860458868,
+            48.95923926245536
+          ],
+          [
+            9.065907240137033,
+            48.95922392549944
+          ],
+          [
+            9.065910577035421,
+            48.959200920056716
+          ],
+          [
+            9.065963967409603,
+            48.95919982455919
+          ],
+          [
+            9.065965635858797,
+            48.959124235171
+          ],
+          [
+            9.065855518212043,
+            48.959113280177704
+          ],
+          [
+            9.065545186662098,
+            48.959125330670204
+          ],
+          [
+            9.065551860458868,
+            48.95923926245536
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9591736",
+    "lon": "9.0657480",
+    "name": "Parkdeck: Obere Straße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "6"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 0,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.067413815458128,
+            48.961582034619326
+          ],
+          [
+            9.067750842195162,
+            48.961561221155684
+          ],
+          [
+            9.067745836847582,
+            48.96149549437133
+          ],
+          [
+            9.067809237916928,
+            48.96149111258264
+          ],
+          [
+            9.067820917061278,
+            48.96158093917408
+          ],
+          [
+            9.067775868933063,
+            48.96166419294366
+          ],
+          [
+            9.06777920583145,
+            48.961688292693125
+          ],
+          [
+            9.067699120270174,
+            48.96169376990728
+          ],
+          [
+            9.06770245716856,
+            48.9617167742002
+          ],
+          [
+            9.067410478559738,
+            48.961734301273395
+          ],
+          [
+            9.067413815458128,
+            48.961582034619326
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9616346",
+    "lon": "9.0676127",
+    "name": "Freibad Ost",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9"
+  },
+  {
+    "address": "Brunnenstraße, 74343 Sachsenheim",
+    "capacity": 21,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.064033633526142,
+            48.96067747562845
+          ],
+          [
+            9.064077622864088,
+            48.960779061828404
+          ],
+          [
+            9.064130713444369,
+            48.9607700983485
+          ],
+          [
+            9.064165601539981,
+            48.96086471277743
+          ],
+          [
+            9.064236894604933,
+            48.96085674525348
+          ],
+          [
+            9.064238411478653,
+            48.960620706779515
+          ],
+          [
+            9.064088240980142,
+            48.960634650011556
+          ],
+          [
+            9.06409127472759,
+            48.96066452835281
+          ],
+          [
+            9.064033633526142,
+            48.96067747562845
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9607286",
+    "lon": "9.0641604",
+    "name": "Brunnenstraße: Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "10"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 13,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.062320593881712,
+          48.96006109441773
+        ],
+        [
+          9.062563493049138,
+          48.960524708362044
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9602929",
+    "lon": "9.0624420",
+    "name": "VR Bank Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1"
+  },
+  {
+    "address": "Von-Koenig-Straße, 74343 Sachsenheim",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.062695586634172,
+          48.96053146867324
+        ],
+        [
+          9.063234959127481,
+          48.96037628325904
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9604539",
+    "lon": "9.0629653",
+    "name": "Von-Koenig-Straße: Bäcker",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "13"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.062822854301137,
+          48.960976131897674
+        ],
+        [
+          9.062947091785551,
+          48.96101791213111
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9609970",
+    "lon": "9.0628850",
+    "name": "Kurzparker Bahnhof: West",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "14"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "geojson": {
+      "coordinates": [
+        [
+          9.063263745861676,
+          48.961114404441275
+        ],
+        [
+          9.063368287159538,
+          48.96114822644395
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9611313",
+    "lon": "9.0633160",
+    "name": "Kurzparker Bahnhof: Ost",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT30M",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "15"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.06357358202707,
+          48.961116393971494
+        ],
+        [
+          9.06360994421763,
+          48.961072624288676
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9610945",
+    "lon": "9.0635918",
+    "name": "Kurzparker Bahnhof: Süd VII",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "19"
+  },
+  {
+    "address": "Von-Koenig-Straß, 74343 Sachsenheim",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063575097118342,
+          48.96029769558948
+        ],
+        [
+          9.063632670586731,
+          48.960293716463674
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9602957",
+    "lon": "9.0636039",
+    "name": "Von-Koenig-Straße 11",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "20"
+  },
+  {
+    "address": "Von-Koenig-Straße, 74343 Sachsenheim",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063040269898856,
+          48.96051754179685
+        ],
+        [
+          9.063325107058244,
+          48.960432985677926
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9604753",
+    "lon": "9.0631827",
+    "name": "Apotheke Parkplätze",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "21"
+  },
+  {
+    "address": "Brunnenstraße, 74343 Sachsenheim",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          9.064911407621425,
+          48.960569270175384
+        ],
+        [
+          9.0649583754509,
+          48.960457855139545
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9605136",
+    "lon": "9.0649349",
+    "name": "Brunnenstraße 15",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "23"
+  },
+  {
+    "address": "Brunnenstraße, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.06516442786407,
+          48.96000622378433
+        ],
+        [
+          9.065217456058637,
+          48.959905750173455
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9599560",
+    "lon": "9.0651909",
+    "name": "Brunnenstraße 3",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "24"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063815996630801,
+          48.95952673403732
+        ],
+        [
+          9.064090228151274,
+          48.959518775662374
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9595228",
+    "lon": "9.0639531",
+    "name": "Hauptstraße: Parkstreifen I",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "26"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.064550815898368,
+          48.95947003058817
+        ],
+        [
+          9.06465232701368,
+          48.95944814502916
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9594591",
+    "lon": "9.0646016",
+    "name": "Hauptstraße: Parkstreifen II",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "27"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.065078067661487,
+          48.95938746229256
+        ],
+        [
+          9.065172003320434,
+          48.95937254029685
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9593800",
+    "lon": "9.0651250",
+    "name": "Hauptstraße: Parkstreifen III",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "28"
+  },
+  {
+    "address": "Brunnenstraße, 74343 Sachsenheim",
+    "capacity": 3,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.065347753908142,
+          48.95955657793203
+        ],
+        [
+          9.06537351045979,
+          48.959659041834634
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9596078",
+    "lon": "9.0653606",
+    "name": "Brunnenstraße 4",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "29"
+  },
+  {
+    "address": "Äußerer Schlosshof, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.065928033865827,
+          48.96022308692785
+        ],
+        [
+          9.065949245143653,
+          48.96018130602857
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9602022",
+    "lon": "9.0659386",
+    "name": "Schlosshof Nord",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "31"
+  },
+  {
+    "address": "Äußerer Schlosshof, 74343 Sachsenheim",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.066031060072413,
+          48.960121618968905
+        ],
+        [
+          9.066203780477574,
+          48.960063921410004
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9600928",
+    "lon": "9.0661174",
+    "name": "Schlosshof Ost",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "32"
+  },
+  {
+    "address": "Äußerer Schlosshof, 74343 Sachsenheim",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.066009848794586,
+          48.959981354097536
+        ],
+        [
+          9.066035605346231,
+          48.959981354097536
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9599814",
+    "lon": "9.0660227",
+    "name": "Schlosshof Ost: behindert",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "34"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 3,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.062509987953186,
+          48.96060209777242
+        ],
+        [
+          9.062544835052474,
+          48.960673721545476
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9606379",
+    "lon": "9.0625274",
+    "name": "Bahnhofstraße: Straßenraum",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "35"
+  },
+  {
+    "address": "Von-Koenig-Straße, 74343 Sachsenheim",
+    "capacity": 17,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063532674562689,
+          48.960188269514234
+        ],
+        [
+          9.063496312372129,
+          48.96009575455421
+        ],
+        [
+          9.063429648356102,
+          48.960103712837096
+        ],
+        [
+          9.063490252007036,
+          48.96024696171173
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9601493",
+    "lon": "9.0634774",
+    "name": "Von-Koenig-Straße Parkhaus UG",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "38"
+  },
+  {
+    "address": "Äußerer Schlosshof, 74343 Sachsenheim",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.065751240137457,
+          48.96007375007285
+        ],
+        [
+          9.065750405912858,
+          48.96006060433086
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9600672",
+    "lon": "9.0657508",
+    "name": "Schlosshof West: behindert",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "44"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 23,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "geojson": {
+      "coordinates": [
+        [
+          9.064828475356634,
+          48.96167141798727
+        ],
+        [
+          9.065150052585766,
+          48.96177698585169
+        ],
+        [
+          9.065245615630273,
+          48.96179790021342
+        ],
+        [
+          9.065330560558722,
+          48.96179889613518
+        ],
+        [
+          9.065661239030186,
+          48.96172519787065
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9617536",
+    "lon": "9.0652421",
+    "name": "Busschleife Mitte",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "46"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 31,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "geojson": {
+      "coordinates": [
+        [
+          9.064798137882189,
+          48.961721214177565
+        ],
+        [
+          9.065139434469708,
+          48.961830765621244
+        ],
+        [
+          9.06523044689305,
+          48.96184670035664
+        ],
+        [
+          9.065341178674778,
+          48.96185367180178
+        ],
+        [
+          9.06576893706447,
+          48.96175507555858
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9618025",
+    "lon": "9.0652811",
+    "name": "Busschleife Nord",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "47"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Elektrofahrzeuge während des Ladevorgangs",
+    "geojson": {
+      "coordinates": [
+        [
+          9.06485881283108,
+          48.96156784175216
+        ],
+        [
+          9.064887633431805,
+          48.96157082953118
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9615693",
+    "lon": "9.0648732",
+    "name": "E-Laden Bahnhofstraße",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "48"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          9.06491038653764,
+          48.96157282138377
+        ],
+        [
+          9.065515619152842,
+          48.96166145874324
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9616171",
+    "lon": "9.0652130",
+    "name": "Busschleife Süd",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "49"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          9.066839849912425,
+          48.96177399808502
+        ],
+        [
+          9.066550127031462,
+          48.96173615302497
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9617551",
+    "lon": "9.0666950",
+    "name": "Badmauer Straßenraum 3",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "50"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          9.066471249597903,
+          48.961729181563406
+        ],
+        [
+          9.066199729201609,
+          48.961689344621504
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9617093",
+    "lon": "9.0663355",
+    "name": "Badmauer Straßenraum 2",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "51"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          9.06581292640242,
+          48.96163357284938
+        ],
+        [
+          9.065617249692242,
+          48.96160668286553
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9616201",
+    "lon": "9.0657151",
+    "name": "Badmauer Straßenraum 1",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "52"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.06287777574974,
+          48.960902558498724
+        ],
+        [
+          9.062927832582576,
+          48.960834834556096
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9608687",
+    "lon": "9.0629028",
+    "name": "Kurzparker Bahnhof: Süd I",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "54"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.062968788173078,
+          48.96092446916635
+        ],
+        [
+          9.063014294384747,
+          48.960863716837
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9608941",
+    "lon": "9.0629915",
+    "name": "Kurzparker: Bahnhof Süd II",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "55"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063155363640924,
+          48.960985221421716
+        ],
+        [
+          9.063197836105148,
+          48.960930444801306
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9609578",
+    "lon": "9.0631766",
+    "name": "Kurzparker Bahnhof: Süd III",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "56"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063228173579596,
+          48.961007132053034
+        ],
+        [
+          9.063266095422653,
+          48.96095932702684
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9609832",
+    "lon": "9.0632471",
+    "name": "Kurzparker: Bahnhof Süd IV",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "57"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.06339502968905,
+          48.96106290452568
+        ],
+        [
+          9.06343446840583,
+          48.96101509955295
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9610390",
+    "lon": "9.0634147",
+    "name": "Kurzparker Bahnhof: Süd V",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "58"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063448120269332,
+          48.9610768476341
+        ],
+        [
+          9.063483008364944,
+          48.96103402236013
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9610554",
+    "lon": "9.0634656",
+    "name": "Kurzparker: Bahnhof Süd VI",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "59"
+  },
+  {
+    "address": "Brunnenstraße, 74343 Sachsenheim",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.064021498536365,
+          48.96064560540543
+        ],
+        [
+          9.064027566031253,
+          48.96066353240838
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9606546",
+    "lon": "9.0640245",
+    "name": "Brunnenstraße Parkplatz: behindert",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "60"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.064421953199052,
+          48.959704428701066
+        ],
+        [
+          9.064409818209272,
+          48.959592880655215
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9596487",
+    "lon": "9.0644159",
+    "name": "Polizei Parkplatz West",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "63"
+  },
+  {
+    "address": "Hauptstraße, 74343 Sachsenheim",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.06455847183406,
+          48.959690485208974
+        ],
+        [
+          9.064546336844279,
+          48.95958292099613
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9596367",
+    "lon": "9.0645524",
+    "name": "Polizei Parkplatz Ost",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "64"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 10,
+    "external_identifiers": [
+      {
+        "type": "DHID",
+        "value": "de:08118:5639_Parent"
+      }
+    ],
+    "geojson": {
+      "coordinates": [
+        [
+          9.064079139737807,
+          48.96128101413235
+        ],
+        [
+          9.064594876803394,
+          48.96143637929785
+        ],
+        [
+          9.064710159206287,
+          48.96146824901557
+        ],
+        [
+          9.065341178674773,
+          48.96155987434057
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9614438",
+    "lon": "9.0647050",
+    "name": "Busschleife: Straßenraum (links)",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "65"
+  },
+  {
+    "address": "Von-Koenig-Straße, 74343 Sachsenheim",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.063242963098377,
+          48.9603747076875
+        ],
+        [
+          9.063255856525018,
+          48.960369727936275
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9603722",
+    "lon": "9.0632494",
+    "name": "Von-Koenig-Straße: behindert",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "66"
+  },
+  {
+    "address": "Bahnhofstraße, 74343 Sachsenheim",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Fr_7-18/Sa_7-12",
+    "geojson": {
+      "coordinates": [
+        [
+          9.062559140025726,
+          48.960836277558734
+        ],
+        [
+          9.062587169214074,
+          48.960896461147456
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9608664",
+    "lon": "9.0625732",
+    "name": "Bahnhofstraße 5",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "68"
+  }
+]

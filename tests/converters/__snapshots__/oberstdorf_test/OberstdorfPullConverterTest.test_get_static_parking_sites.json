@@ -1,0 +1,47 @@
+[
+  {
+    "capacity": 200,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.404915",
+    "lon": "10.285671",
+    "name": "PP Nebelhornbahn-Talsstation",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-06T12:16:19Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "30195"
+  },
+  {
+    "capacity": 197,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.352184",
+    "lon": "10.266863",
+    "name": "PP Faistenoy",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-06T12:16:19Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "30185"
+  },
+  {
+    "capacity": 750,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.352753",
+    "lon": "10.265865",
+    "name": "PP Fellhornbahn",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-06T12:16:19Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "30187"
+  }
+]

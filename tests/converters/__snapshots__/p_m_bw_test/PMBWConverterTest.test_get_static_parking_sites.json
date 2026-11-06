@@ -1,0 +1,90 @@
+[
+  {
+    "address": "Mercedesstraße 51, 72108 Rottenburg am Neckar",
+    "capacity": 111,
+    "description": "A81 Ausfahrt 29-Rottenburg, über die B 28a und Mercedesstraße im Gewerbegebiet Ergenzingen Ost",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.50571",
+    "lon": "8.82799",
+    "name": "A81 Ergenzingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2024-06-18T07:59:51Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "fcde2f18-c277-11ed-b3ce-0050563bb33b"
+  },
+  {
+    "address": "74395 Mundelsheim",
+    "capacity": 134,
+    "description": "A81 Ausfahrt 13-Mundelsheim, über die L 1115 zwischen Mundelsheim und Großbottwar",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "49.0055564",
+    "lon": "9.2372623",
+    "name": "A81 Mundelsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "WOMEN"
+      },
+      {
+        "capacity": 0,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "2024-06-18T07:59:59Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "ff57e1d7-32c4-11ee-8f99-0050563bb33b"
+  }
+]

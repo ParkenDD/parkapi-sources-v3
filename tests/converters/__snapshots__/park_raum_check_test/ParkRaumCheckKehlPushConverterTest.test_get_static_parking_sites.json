@@ -1,0 +1,8534 @@
+[
+  {
+    "address": "Ludwig-Trick-Straße, 77694 Kehl",
+    "capacity": 13,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80499345203844,
+          48.57307817496734
+        ],
+        [
+          7.805065121185638,
+          48.573021201608654
+        ],
+        [
+          7.805151742888723,
+          48.572899408045714
+        ],
+        [
+          7.805220206345449,
+          48.57276140065464
+        ],
+        [
+          7.805265383197397,
+          48.57266132701964
+        ],
+        [
+          7.805369486377978,
+          48.57235460659281
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5727363",
+    "lon": "7.8052136",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "1"
+  },
+  {
+    "address": "Ludwig-Trick-Straße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805434036831817,
+          48.57219644534762
+        ],
+        [
+          7.805676533337913,
+          48.571468035412224
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5718322",
+    "lon": "7.8055553",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2"
+  },
+  {
+    "address": "Ludwig-Trick-Straße, 77694 Kehl",
+    "capacity": 23,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805827147530337,
+          48.571093914111884
+        ],
+        [
+          7.806233739197882,
+          48.56983319019805
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704636",
+    "lon": "7.8060304",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "3"
+  },
+  {
+    "address": "Ludwig-Trick-Straße, 77694 Kehl",
+    "capacity": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806341034221264,
+          48.56954952298563
+        ],
+        [
+          7.80661602375487,
+          48.56855521297552
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5690524",
+    "lon": "7.8064785",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "4"
+  },
+  {
+    "address": "Ludwig-Trick-Straße, 77694 Kehl",
+    "capacity": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806657272184911,
+          48.56843303497192
+        ],
+        [
+          7.806782981685989,
+          48.567919624177165
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5681763",
+    "lon": "7.8067201",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "5"
+  },
+  {
+    "address": "Ludwig-Trick-Straße, 77694 Kehl",
+    "capacity": 26,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806835033276276,
+          48.56774642809407
+        ],
+        [
+          7.807185503261181,
+          48.566345225352414
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5670458",
+    "lon": "7.8070103",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "6"
+  },
+  {
+    "address": "Friedensstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805419901202091,
+          48.57313255769993
+        ],
+        [
+          7.805524841688654,
+          48.57316751894411
+        ],
+        [
+          7.805617512607725,
+          48.57322758446844
+        ],
+        [
+          7.80569316233758,
+          48.57327013083834
+        ],
+        [
+          7.805830277472941,
+          48.573409657653094
+        ],
+        [
+          7.805907538295532,
+          48.57344140820087
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5732761",
+    "lon": "7.8056709",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "7"
+  },
+  {
+    "address": "Hagenstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805569898848205,
+          48.57221776806773
+        ],
+        [
+          7.80648836389046,
+          48.57235969186366
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5722887",
+    "lon": "7.8060291",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "8"
+  },
+  {
+    "address": "Guntherstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805978650849241,
+          48.57130291723686
+        ],
+        [
+          7.806415913065863,
+          48.57136514379131
+        ],
+        [
+          7.806821287079156,
+          48.57143551396104
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5713660",
+    "lon": "7.8064005",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "9"
+  },
+  {
+    "address": "Hildebrandstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806758609674671,
+          48.56845834804982
+        ],
+        [
+          7.807477821310369,
+          48.56856894272366
+        ],
+        [
+          7.807852565293013,
+          48.568615020920156
+        ],
+        [
+          7.808236088415291,
+          48.56863603124151
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5685624",
+    "lon": "7.8074957",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "10"
+  },
+  {
+    "address": "Gernotstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808323374449494,
+          48.56858677623588
+        ],
+        [
+          7.808409199945357,
+          48.56803831792117
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5683125",
+    "lon": "7.8083663",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "11"
+  },
+  {
+    "address": "Rüdigerstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806930386996558,
+          48.56782072290918
+        ],
+        [
+          7.807796695391748,
+          48.56792260277478
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5678717",
+    "lon": "7.8073635",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "12"
+  },
+  {
+    "address": "Rüdigerstraße, 77694 Kehl",
+    "capacity": 18,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.8079388410192,
+          48.56793837734894
+        ],
+        [
+          7.808451778958142,
+          48.568001996090445
+        ],
+        [
+          7.808820891210568,
+          48.56801775433965
+        ],
+        [
+          7.809529889818596,
+          48.56798838668946
+        ],
+        [
+          7.809768229639606,
+          48.56794532015074
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5679904",
+    "lon": "7.8088539",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "13"
+  },
+  {
+    "address": "Giselherstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808176343831717,
+          48.567360552883635
+        ],
+        [
+          7.808649227618973,
+          48.5673793999125
+        ],
+        [
+          7.809143226673989,
+          48.56740474590176
+        ],
+        [
+          7.809272435623793,
+          48.56740129626812
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5673838",
+    "lon": "7.8087244",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "14"
+  },
+  {
+    "address": "Etzelstraße, 77694 Kehl",
+    "capacity": 21,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807896705887463,
+          48.56787467127963
+        ],
+        [
+          7.80813142635377,
+          48.56694060390829
+        ],
+        [
+          7.808215873577175,
+          48.56661235277932
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5672433",
+    "lon": "7.8080556",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "15"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807325881243007,
+          48.56624473408214
+        ],
+        [
+          7.807519322377218,
+          48.56627842101323
+        ],
+        [
+          7.80778767558913,
+          48.56635173932827
+        ],
+        [
+          7.808071504072031,
+          48.56647977154062
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5663416",
+    "lon": "7.8077052",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "16"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 14,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808307002524823,
+          48.566610774032014
+        ],
+        [
+          7.808544057021247,
+          48.56674687158451
+        ],
+        [
+          7.80920218092,
+          48.56723896862585
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5669145",
+    "lon": "7.8087614",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "17"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809393049614826,
+          48.56740334568465
+        ],
+        [
+          7.809650657592758,
+          48.56764580057231
+        ],
+        [
+          7.80982286978818,
+          48.56787576500592
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5676304",
+    "lon": "7.8096182",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "18"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809871399835138,
+          48.567977821494054
+        ],
+        [
+          7.810067392796618,
+          48.568407778800015
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5681928",
+    "lon": "7.8099694",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "19"
+  },
+  {
+    "address": "Dankwartstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80721658125416,
+          48.56964115449286
+        ],
+        [
+          7.807284346532083,
+          48.56944261935066
+        ],
+        [
+          7.807369789708597,
+          48.5692346602644
+        ],
+        [
+          7.807495499209674,
+          48.568980559094946
+        ],
+        [
+          7.8077007592544,
+          48.568689413474395
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5691504",
+    "lon": "7.8074298",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "20"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 20,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807918406341186,
+          48.56972516736412
+        ],
+        [
+          7.808433648077709,
+          48.56938995668603
+        ],
+        [
+          7.808597096611772,
+          48.56926962410572
+        ],
+        [
+          7.808730236808396,
+          48.56920516010563
+        ],
+        [
+          7.809401349994621,
+          48.56882768592227
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5692636",
+    "lon": "7.8086520",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "21"
+  },
+  {
+    "address": "Völkerstraße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808819131866516,
+          48.569266666523156
+        ],
+        [
+          7.809298399339372,
+          48.569377794695946
+        ],
+        [
+          7.809517408860782,
+          48.56943498336805
+        ],
+        [
+          7.809807129976545,
+          48.56950971846706
+        ],
+        [
+          7.810146938471647,
+          48.56961207287996
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5694306",
+    "lon": "7.8094854",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "22"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.810178120320558,
+          48.56879615623191
+        ],
+        [
+          7.810244166913884,
+          48.5690808024837
+        ],
+        [
+          7.81030112903156,
+          48.5694063890401
+        ],
+        [
+          7.810303093242514,
+          48.56953376364936
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5691632",
+    "lon": "7.8102537",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "23"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80998411920571,
+          48.57024433266759
+        ],
+        [
+          7.810117662015626,
+          48.57004663329583
+        ],
+        [
+          7.810237817709836,
+          48.569772412827845
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5700142",
+    "lon": "7.8101215",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "24"
+  },
+  {
+    "address": "Brunhildstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807999093545045,
+          48.57139655706016
+        ],
+        [
+          7.808369327557982,
+          48.571489183577825
+        ],
+        [
+          7.808737617111919,
+          48.57160615545366
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5714956",
+    "lon": "7.8083700",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "25"
+  },
+  {
+    "address": "Kriemhildstraße, 77694 Kehl",
+    "capacity": 22,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808127729610594,
+          48.57120844997175
+        ],
+        [
+          7.808884932933489,
+          48.570132939904724
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5706707",
+    "lon": "7.8085063",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "26"
+  },
+  {
+    "address": "Brunhildstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807173123086788,
+          48.57106522324033
+        ],
+        [
+          7.807973539050678,
+          48.5712341839509
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5711497",
+    "lon": "7.8075733",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "27"
+  },
+  {
+    "address": "Siegfriedstraße, 77694 Kehl",
+    "capacity": 13,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807458297722348,
+          48.57219815766745
+        ],
+        [
+          7.807862903631423,
+          48.571370659127815
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5717844",
+    "lon": "7.8076606",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "28"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806763836340509,
+          48.571959978891094
+        ],
+        [
+          7.807041482360293,
+          48.57125663788846
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5716083",
+    "lon": "7.8069027",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "29"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807119900052934,
+          48.57086766320171
+        ],
+        [
+          7.807306263986812,
+          48.570489601679654
+        ],
+        [
+          7.80748281929259,
+          48.57020889322746
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5705336",
+    "lon": "7.8072930",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "30"
+  },
+  {
+    "address": "Gudrunstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806828929854187,
+          48.57205743441589
+        ],
+        [
+          7.807419015610569,
+          48.57218689440464
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5721222",
+    "lon": "7.8071240",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "31"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806583215832779,
+          48.572367559635595
+        ],
+        [
+          7.806642955511632,
+          48.5722070815975
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5722873",
+    "lon": "7.8066131",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "32"
+  },
+  {
+    "address": "Hildebrandstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808402257299643,
+          48.568651661656176
+        ],
+        [
+          7.80894127053025,
+          48.568682053902236
+        ],
+        [
+          7.809379701182165,
+          48.5686695685271
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5686709",
+    "lon": "7.8088908",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "33"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806406432907543,
+          48.572642861957654
+        ],
+        [
+          7.806454284874687,
+          48.572520736148554
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5725818",
+    "lon": "7.8064304",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "51"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806247118019354,
+          48.57324850542626
+        ],
+        [
+          7.80639216506283,
+          48.57286819656531
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5730584",
+    "lon": "7.8063196",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "52"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80936420040635,
+          48.57100959605781
+        ],
+        [
+          7.809765881546511,
+          48.57050920856608
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5707594",
+    "lon": "7.8095650",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "53"
+  },
+  {
+    "address": "Gustav-Weis-Straße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80894514056989,
+          48.571554266385405
+        ],
+        [
+          7.809264516700413,
+          48.57113550446828
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5713449",
+    "lon": "7.8091048",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "54"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808194045680135,
+          48.57241331042447
+        ],
+        [
+          7.808410516725284,
+          48.57212297597279
+        ],
+        [
+          7.808711751185251,
+          48.571757260964034
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5720822",
+    "lon": "7.8084490",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "58"
+  },
+  {
+    "address": "Gudrunstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807665546931269,
+          48.57228405757973
+        ],
+        [
+          7.808094505636737,
+          48.57241409946967
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5723491",
+    "lon": "7.8078800",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "59"
+  },
+  {
+    "address": "Färberstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811325062889136,
+          48.56857347730878
+        ],
+        [
+          7.81149924941072,
+          48.56904568095456
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5688096",
+    "lon": "7.8114122",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "62"
+  },
+  {
+    "address": "Hofreit, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811664992275945,
+          48.569192607135804
+        ],
+        [
+          7.812203958393579,
+          48.56929542339831
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5692440",
+    "lon": "7.8119345",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "64"
+  },
+  {
+    "address": "Hofreit, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812412958777492,
+          48.5693380144173
+        ],
+        [
+          7.812970762679184,
+          48.56943696880409
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5693875",
+    "lon": "7.8126919",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "65"
+  },
+  {
+    "address": "Rötzstraße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812399037292908,
+          48.569201741272
+        ],
+        [
+          7.812826286999548,
+          48.5682427543167
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5687222",
+    "lon": "7.8126127",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "66"
+  },
+  {
+    "address": "Färberstraße, 77694 Kehl",
+    "capacity": 23,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811598981419643,
+          48.56924473330231
+        ],
+        [
+          7.811670675119464,
+          48.56950273236465
+        ],
+        [
+          7.811874462005975,
+          48.570090211464326
+        ],
+        [
+          7.812246936397344,
+          48.571081212483534
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5701672",
+    "lon": "7.8119102",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "67"
+  },
+  {
+    "address": "Friedrichstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81261778914271,
+          48.57089801800136
+        ],
+        [
+          7.813561156494976,
+          48.57112644558682
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710122",
+    "lon": "7.8130895",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "68"
+  },
+  {
+    "address": "Friedrichstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813776490347124,
+          48.57117846360561
+        ],
+        [
+          7.81398669720279,
+          48.57121465002189
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5711966",
+    "lon": "7.8138816",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "69"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813716721584052,
+          48.571063769530106
+        ],
+        [
+          7.813888504443903,
+          48.570658225468605
+        ],
+        [
+          7.814047467626708,
+          48.57031420646385
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5706877",
+    "lon": "7.8138791",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "70"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813118619348459,
+          48.57005116316205
+        ],
+        [
+          7.814032272073867,
+          48.57022311661618
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5701371",
+    "lon": "7.8135754",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "71"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813200573352896,
+          48.57011777731722
+        ],
+        [
+          7.814050833867385,
+          48.57028452842236
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5702012",
+    "lon": "7.8136257",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "72"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81412201039049,
+          48.5701587719101
+        ],
+        [
+          7.81427423673945,
+          48.569831890466475
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5699953",
+    "lon": "7.8141981",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "73"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814448372003279,
+          48.5695914030797
+        ],
+        [
+          7.814493135087796,
+          48.569505424395906
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5695484",
+    "lon": "7.8144708",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "74"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814469585424882,
+          48.56937855086946
+        ],
+        [
+          7.814583309299725,
+          48.56916011453038
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5692693",
+    "lon": "7.8145264",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "75"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81349534846062,
+          48.56889613278689
+        ],
+        [
+          7.814559577396503,
+          48.56909701874749
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5689966",
+    "lon": "7.8140275",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "76"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813522060391317,
+          48.56886078119163
+        ],
+        [
+          7.814434208990805,
+          48.569030099187884
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5689454",
+    "lon": "7.8139781",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "77"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811697826865366,
+          48.568193291821224
+        ],
+        [
+          7.811974524911823,
+          48.56813657517741
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5681649",
+    "lon": "7.8118362",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "78"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812180397502583,
+          48.568099223432974
+        ],
+        [
+          7.812359956952472,
+          48.568079633991736
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5680894",
+    "lon": "7.8122702",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "79"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813024199708625,
+          48.56805873523348
+        ],
+        [
+          7.813622653341342,
+          48.568001370419665
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5680301",
+    "lon": "7.8133234",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "80"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814343966228327,
+          48.56794724451079
+        ],
+        [
+          7.814842875810729,
+          48.567905651532016
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5679264",
+    "lon": "7.8145934",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "81"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81517512749183,
+          48.56783067241354
+        ],
+        [
+          7.816165893403271,
+          48.56774677753209
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5677887",
+    "lon": "7.8156705",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "82"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815186109212334,
+          48.56786710029338
+        ],
+        [
+          7.816157357182493,
+          48.56779069280959
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5678289",
+    "lon": "7.8156717",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "83"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816379571614026,
+          48.56772868392791
+        ],
+        [
+          7.817362645554961,
+          48.567645440210526
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5676871",
+    "lon": "7.8168711",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "84"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816389194523945,
+          48.56777154974347
+        ],
+        [
+          7.817366359984232,
+          48.56768285619986
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5677272",
+    "lon": "7.8168778",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "85"
+  },
+  {
+    "address": "Goldscheuerstraße, 77694 Kehl",
+    "capacity": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81506114918442,
+          48.567990371703964
+        ],
+        [
+          7.815287305185399,
+          48.569120840808246
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5685556",
+    "lon": "7.8151742",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "86"
+  },
+  {
+    "address": "Goldscheuerstraße, 77694 Kehl",
+    "capacity": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815146053085637,
+          48.567985424441474
+        ],
+        [
+          7.815371540479958,
+          48.56911255139087
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5685490",
+    "lon": "7.8152588",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "89"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814227751851204,
+          48.57027378078864
+        ],
+        [
+          7.81477013060432,
+          48.5703764061534
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5703251",
+    "lon": "7.8144989",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "99"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814212106964407,
+          48.57031745531152
+        ],
+        [
+          7.814692591053496,
+          48.57040766565512
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5703626",
+    "lon": "7.8144523",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "100"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814903600785725,
+          48.570431209161114
+        ],
+        [
+          7.815248223088594,
+          48.570454418926225
+        ],
+        [
+          7.815505033138329,
+          48.57047171466852
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704515",
+    "lon": "7.8152043",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "101"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814915792496889,
+          48.57038611038556
+        ],
+        [
+          7.815492115962694,
+          48.57042450597389
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704053",
+    "lon": "7.8152040",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "102"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81579106525724,
+          48.57047796074614
+        ],
+        [
+          7.81662957120006,
+          48.57045998186668
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704690",
+    "lon": "7.8162103",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "103"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815762008037039,
+          48.570432729062816
+        ],
+        [
+          7.816677714414031,
+          48.57042384457707
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704283",
+    "lon": "7.8162199",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "104"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814740732405535,
+          48.569130645644826
+        ],
+        [
+          7.815237792862606,
+          48.56922291237396
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5691768",
+    "lon": "7.8149893",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "105"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814698986790038,
+          48.56907924858043
+        ],
+        [
+          7.815239316916,
+          48.56917954723954
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5691294",
+    "lon": "7.8149692",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "106"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815486155037106,
+          48.56923954661928
+        ],
+        [
+          7.81645862573217,
+          48.5691432241939
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5691914",
+    "lon": "7.8159724",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "107"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815470847003317,
+          48.569173104788
+        ],
+        [
+          7.816441424462711,
+          48.569076969883554
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5691250",
+    "lon": "7.8159561",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "108"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81666985744895,
+          48.56912622868321
+        ],
+        [
+          7.817643260001889,
+          48.56902981373152
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5690780",
+    "lon": "7.8171566",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "109"
+  },
+  {
+    "address": "Bürgermeister-Mathias-Krauß-Straße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816658194158759,
+          48.56908272854772
+        ],
+        [
+          7.817631900915461,
+          48.568986283461605
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5690345",
+    "lon": "7.8171450",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "110"
+  },
+  {
+    "address": "Luisenstraße, 77694 Kehl",
+    "capacity": 14,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816332238766854,
+          48.56786405851905
+        ],
+        [
+          7.816463349848055,
+          48.5685376661527
+        ],
+        [
+          7.816567453028634,
+          48.5690042795906
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5684350",
+    "lon": "7.8164461",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "111"
+  },
+  {
+    "address": "Luisenstraße, 77694 Kehl",
+    "capacity": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816477590377476,
+          48.56902215118959
+        ],
+        [
+          7.816239920852002,
+          48.56785496004291
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5684386",
+    "lon": "7.8163588",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "112"
+  },
+  {
+    "address": "Luisenstraße, 77694 Kehl",
+    "capacity": 19,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81659519750836,
+          48.56920249151679
+        ],
+        [
+          7.816817153346199,
+          48.5703098645074
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5697562",
+    "lon": "7.8167062",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "113"
+  },
+  {
+    "address": "Luisenstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816740549118982,
+          48.57033066001233
+        ],
+        [
+          7.816522521703049,
+          48.56920379126457
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5697672",
+    "lon": "7.8166315",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "114"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817001789175907,
+          48.570438536556914
+        ],
+        [
+          7.817897469371085,
+          48.5703891473241
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704138",
+    "lon": "7.8174496",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "115"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817064643926445,
+          48.57039174675861
+        ],
+        [
+          7.817921039902536,
+          48.5703423574801
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5703671",
+    "lon": "7.8174928",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "116"
+  },
+  {
+    "address": "Karlstraße, 77694 Kehl",
+    "capacity": 19,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817515675866836,
+          48.56778006002528
+        ],
+        [
+          7.817759238025172,
+          48.56889916196695
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5683396",
+    "lon": "7.8176375",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "117"
+  },
+  {
+    "address": "Karlstraße, 77694 Kehl",
+    "capacity": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817688526430816,
+          48.56891735854187
+        ],
+        [
+          7.817460677960113,
+          48.56778655894661
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5683520",
+    "lon": "7.8175746",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "118"
+  },
+  {
+    "address": "Karlstraße, 77694 Kehl",
+    "capacity": 21,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817719953806075,
+          48.56907251657093
+        ],
+        [
+          7.817841801787852,
+          48.569711733823475
+        ],
+        [
+          7.817952221751426,
+          48.57024682808085
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5696601",
+    "lon": "7.8178339",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "119"
+  },
+  {
+    "address": "Karlstraße, 77694 Kehl",
+    "capacity": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817805473806759,
+          48.56906487478417
+        ],
+        [
+          7.817916865954247,
+          48.56979549796825
+        ],
+        [
+          7.818012130185533,
+          48.57024097933625
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5696544",
+    "lon": "7.8179006",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "120"
+  },
+  {
+    "address": "Karlstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.818075475988826,
+          48.57048435152583
+        ],
+        [
+          7.818140294950318,
+          48.570753716709056
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5706190",
+    "lon": "7.8181079",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "121"
+  },
+  {
+    "address": "Karlstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.818186943102371,
+          48.571101177952976
+        ],
+        [
+          7.8181400080992,
+          48.570917189190304
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710092",
+    "lon": "7.8181635",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "122"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.819622869718314,
+          48.57084457711289
+        ],
+        [
+          7.819836936410955,
+          48.57070042593248
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5707725",
+    "lon": "7.8197299",
+    "name": "Parkplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "123"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817217482937888,
+          48.57144490611778
+        ],
+        [
+          7.817417219792747,
+          48.57141201448377
+        ],
+        [
+          7.817571410352663,
+          48.57139056957779
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5714166",
+    "lon": "7.8173943",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "124"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817745243022122,
+          48.571361976355654
+        ],
+        [
+          7.817928896746352,
+          48.57134638004586
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5713542",
+    "lon": "7.8178371",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "125"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817952221751434,
+          48.57134053142845
+        ],
+        [
+          7.818013357817387,
+          48.571335332656844
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5713379",
+    "lon": "7.8179828",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "126"
+  },
+  {
+    "address": "Pfarrgasse, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.819408068312822,
+          48.571615724558704
+        ],
+        [
+          7.819689293295203,
+          48.57188321658136
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5717495",
+    "lon": "7.8195487",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "127"
+  },
+  {
+    "address": "Pfarrgasse, 77694 Kehl",
+    "capacity": 14,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.819805678480532,
+          48.571946895717666
+        ],
+        [
+          7.81991954624953,
+          48.57202161407236
+        ],
+        [
+          7.82018111013187,
+          48.572210993211065
+        ],
+        [
+          7.820541756523052,
+          48.57238446956114
+        ],
+        [
+          7.820601516831808,
+          48.57241587039448
+        ],
+        [
+          7.82113379084506,
+          48.57262738999056
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5723203",
+    "lon": "7.8204519",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "128"
+  },
+  {
+    "address": "Lammstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817131903611661,
+          48.57155059585201
+        ],
+        [
+          7.817224127151005,
+          48.57171761997672
+        ],
+        [
+          7.817415244876861,
+          48.57189957528904
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5717354",
+    "lon": "7.8172602",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "129"
+  },
+  {
+    "address": "Lammstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817581476933803,
+          48.5720139302937
+        ],
+        [
+          7.817632546418614,
+          48.57209126092827
+        ],
+        [
+          7.817663973793885,
+          48.5721653422656
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5720878",
+    "lon": "7.8176262",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "130"
+  },
+  {
+    "address": "Johann-Gerber-Straße, 77694 Kehl",
+    "capacity": 20,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817750903976319,
+          48.57234081420223
+        ],
+        [
+          7.818063188965424,
+          48.572309199789586
+        ],
+        [
+          7.818343807520113,
+          48.57227689248426
+        ],
+        [
+          7.818909125518185,
+          48.572194114062995
+        ],
+        [
+          7.819428168262869,
+          48.57212042266967
+        ],
+        [
+          7.819528539442635,
+          48.57210222724738
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5722303",
+    "lon": "7.8186409",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "133"
+  },
+  {
+    "address": "Heßlöhlstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.819711663713782,
+          48.572063155480194
+        ],
+        [
+          7.819620327904405,
+          48.57213593718632
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5720995",
+    "lon": "7.8196660",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "134"
+  },
+  {
+    "address": "Heßlöhlstraße, 77694 Kehl",
+    "capacity": 14,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.819484146671252,
+          48.57219586479389
+        ],
+        [
+          7.819304078596074,
+          48.57238173328411
+        ],
+        [
+          7.819149866178042,
+          48.57254091270269
+        ],
+        [
+          7.819068640929464,
+          48.57259626139757
+        ],
+        [
+          7.818868564561972,
+          48.57266696461463
+        ],
+        [
+          7.818506265851446,
+          48.57275202720752
+        ],
+        [
+          7.81821958926266,
+          48.57280524811533
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5725898",
+    "lon": "7.8188998",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "135"
+  },
+  {
+    "address": "Heßlöhlstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817781089872038,
+          48.57271103894753
+        ],
+        [
+          7.817808097772661,
+          48.57275587711505
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5727335",
+    "lon": "7.8177946",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "136"
+  },
+  {
+    "address": "Lammstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81763770247237,
+          48.572463453567465
+        ],
+        [
+          7.817649673454259,
+          48.57252185750824
+        ],
+        [
+          7.817695646695523,
+          48.57259796860941
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5725329",
+    "lon": "7.8176610",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "137"
+  },
+  {
+    "address": "Fabrikstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817530137975532,
+          48.57272238044103
+        ],
+        [
+          7.817202733306755,
+          48.57273598650916
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5727292",
+    "lon": "7.8173664",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "138"
+  },
+  {
+    "address": "Fabrikstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817200914831041,
+          48.572696279946356
+        ],
+        [
+          7.817528319499818,
+          48.57268267387823
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5726895",
+    "lon": "7.8173646",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "139"
+  },
+  {
+    "address": "Fabrikstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816317135633794,
+          48.572514993048514
+        ],
+        [
+          7.81604153554561,
+          48.572435185868194
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5724751",
+    "lon": "7.8161793",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "140"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815412496987487,
+          48.57325981639338
+        ],
+        [
+          7.815735311455604,
+          48.57324468438929
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5732523",
+    "lon": "7.8155739",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "142"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815452763312051,
+          48.573363787766446
+        ],
+        [
+          7.815970690483126,
+          48.573340865671035
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5733523",
+    "lon": "7.8157117",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "143"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815300425913898,
+          48.572583922671
+        ],
+        [
+          7.815314487163015,
+          48.572636257175944
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5726101",
+    "lon": "7.8153075",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "144"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 19,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815199871151675,
+          48.572805588949926
+        ],
+        [
+          7.815315759597981,
+          48.573678949684734
+        ],
+        [
+          7.815417898567609,
+          48.57399540926311
+        ],
+        [
+          7.815496467005782,
+          48.57412277231264
+        ],
+        [
+          7.815581650896281,
+          48.5742289447001
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5735405",
+    "lon": "7.8153274",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "145"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815377141190306,
+          48.57344826434964
+        ],
+        [
+          7.815384998034124,
+          48.57355808369678
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5735032",
+    "lon": "7.8153811",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "146"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815451781206571,
+          48.573629563617054
+        ],
+        [
+          7.81575034127163,
+          48.57361916654402
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5736244",
+    "lon": "7.8156011",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "147"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815443433310016,
+          48.573849526192284
+        ],
+        [
+          7.81546602173599,
+          48.57394927256907
+        ],
+        [
+          7.815519055431756,
+          48.574072736867166
+        ],
+        [
+          7.815593695448021,
+          48.57418645371709
+        ],
+        [
+          7.815632979667108,
+          48.574227391720456
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5740479",
+    "lon": "7.8155197",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "148"
+  },
+  {
+    "address": "Kinzigallee, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815783146281973,
+          48.57429650090422
+        ],
+        [
+          7.815805352170086,
+          48.57433962536434
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5743181",
+    "lon": "7.8157942",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "149"
+  },
+  {
+    "address": "Kahllachweg, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817918878272426,
+          48.57353572891263
+        ],
+        [
+          7.817861803751782,
+          48.57343806374547
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5734869",
+    "lon": "7.8178903",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "150"
+  },
+  {
+    "address": "Kahllachweg, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817874305529531,
+          48.573247388875764
+        ],
+        [
+          7.817833242408875,
+          48.57315517971068
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5732013",
+    "lon": "7.8178538",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "151"
+  },
+  {
+    "address": "Goldscheuerstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815568454028183,
+          48.57052518124709
+        ],
+        [
+          7.815612105478896,
+          48.57112458031018
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5708249",
+    "lon": "7.8155903",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "152"
+  },
+  {
+    "address": "Goldscheuerstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815661215199573,
+          48.57127619659226
+        ],
+        [
+          7.815962721581063,
+          48.57161606555843
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5714461",
+    "lon": "7.8158120",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "153"
+  },
+  {
+    "address": "Bankstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815740775266192,
+          48.57110943792873
+        ],
+        [
+          7.81594037868145,
+          48.571080917118465
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710952",
+    "lon": "7.8158406",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "154"
+  },
+  {
+    "address": "Bankstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815913699219555,
+          48.571061440691004
+        ],
+        [
+          7.815980528202063,
+          48.57105682816207
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710591",
+    "lon": "7.8159471",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "155"
+  },
+  {
+    "address": "Bankstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816147325517417,
+          48.570985637424286
+        ],
+        [
+          7.816147325517417,
+          48.57106184178045
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710237",
+    "lon": "7.8161473",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "156"
+  },
+  {
+    "address": "Bankstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81700516673487,
+          48.5711544641351
+        ],
+        [
+          7.817060164641592,
+          48.57116447180625
+        ],
+        [
+          7.817077351487447,
+          48.57118221267219
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5711637",
+    "lon": "7.8170437",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "157"
+  },
+  {
+    "address": "Bankstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.817093644653521,
+          48.57122505121734
+        ],
+        [
+          7.817118537203835,
+          48.57126662112846
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5712458",
+    "lon": "7.8171061",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "158"
+  },
+  {
+    "address": "Friedrichstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.814944073617729,
+          48.57135475943501
+        ],
+        [
+          7.815019044547372,
+          48.57134377395593
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5713493",
+    "lon": "7.8149816",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "159"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811437852235083,
+          48.5709476750939
+        ],
+        [
+          7.811752558985002,
+          48.57110322419965
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710254",
+    "lon": "7.8115952",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "160"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.811179706235817,
+          48.57089898908215
+        ],
+        [
+          7.811668702090424,
+          48.571133314990185
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5710162",
+    "lon": "7.8114242",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "161"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.812046301793035,
+          48.57135559597256
+        ],
+        [
+          7.812253554720178,
+          48.57146205256236
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5714088",
+    "lon": "7.8121499",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "162"
+  },
+  {
+    "address": "Kanzmattstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810936484985045,
+          48.5683627281129
+        ],
+        [
+          7.811088211006005,
+          48.56832821524143
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5683455",
+    "lon": "7.8110123",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "163"
+  },
+  {
+    "address": "Bierkellerstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813226330195309,
+          48.57017339379411
+        ],
+        [
+          7.812968036454815,
+          48.57012335444026
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5701484",
+    "lon": "7.8130972",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "164"
+  },
+  {
+    "address": "Bierkellerstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813198831241949,
+          48.57024097933627
+        ],
+        [
+          7.812913038548094,
+          48.57018704088202
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5702140",
+    "lon": "7.8130559",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "165"
+  },
+  {
+    "address": "Bierkellerstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813158564917385,
+          48.570342357480136
+        ],
+        [
+          7.812850183797554,
+          48.57029036871379
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5703164",
+    "lon": "7.8130044",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "166"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.816894739678894,
+          48.57153093607006
+        ],
+        [
+          7.816197850762151,
+          48.57171983615327
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5716254",
+    "lon": "7.8165463",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "167"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.816084502660233,
+          48.57175903078895
+        ],
+        [
+          7.815228106684144,
+          48.57200272059104
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5718809",
+    "lon": "7.8156563",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "168"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.814902819065662,
+          48.57203082542231
+        ],
+        [
+          7.814581800407339,
+          48.57212033574207
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5720756",
+    "lon": "7.8147423",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "169"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.81477314632185,
+          48.57213821161295
+        ],
+        [
+          7.814566904171646,
+          48.572195397163114
+        ],
+        [
+          7.814371956234427,
+          48.572245434466474
+        ],
+        [
+          7.814057682481734,
+          48.57233316208659
+        ],
+        [
+          7.813766979260492,
+          48.57241439122878
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5722753",
+    "lon": "7.8142698",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "170"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.815112463764209,
+          48.572148608990524
+        ],
+        [
+          7.815210674311926,
+          48.57232666374959
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5722376",
+    "lon": "7.8151616",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "171"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.815191032202382,
+          48.57260869080747
+        ],
+        [
+          7.815178264831179,
+          48.57252421282152
+        ],
+        [
+          7.815150115567636,
+          48.57244494696694
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5725258",
+    "lon": "7.8151745",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "172"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "nein",
+    "geojson": {
+      "coordinates": [
+        [
+          7.815148682680402,
+          48.57244078755095
+        ],
+        [
+          7.815132955971556,
+          48.57239513569878
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5724180",
+    "lon": "7.8151408",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "173"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.820050319015123,
+          48.57088137621851
+        ],
+        [
+          7.819991448772114,
+          48.57082387839179
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5708526",
+    "lon": "7.8200209",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "175"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.819496202895477,
+          48.57096766609295
+        ],
+        [
+          7.819642916330375,
+          48.57089278526492
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5709302",
+    "lon": "7.8195696",
+    "name": "Parkplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "176"
+  },
+  {
+    "address": "Friedhofstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.819537915086366,
+          48.57099251910024
+        ],
+        [
+          7.819695396906574,
+          48.570934794333944
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5709637",
+    "lon": "7.8196167",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "177"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813470899638819,
+          48.57121367181573
+        ],
+        [
+          7.813470899638819,
+          48.571455064523114
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5713344",
+    "lon": "7.8134709",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "178"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813610777455769,
+          48.571240358389375
+        ],
+        [
+          7.813610777455769,
+          48.571325555962545
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5712830",
+    "lon": "7.8136108",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "179"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813608813244814,
+          48.571452970957246
+        ],
+        [
+          7.813608813244814,
+          48.57162089565417
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5715369",
+    "lon": "7.8136088",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "180"
+  },
+  {
+    "address": "Herderstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813608813244814,
+          48.571341325138846
+        ],
+        [
+          7.813608813244814,
+          48.57143997694488
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5713907",
+    "lon": "7.8136088",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "181"
+  },
+  {
+    "address": "Rathausplatz, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Elektrofahrzeuge während des Ladevorgangs",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813305788793982,
+          48.57162927786184
+        ],
+        [
+          7.813247541772138,
+          48.571655144328545
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5716422",
+    "lon": "7.8132767",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "182"
+  },
+  {
+    "address": "Rathausplatz, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813221706954165,
+          48.5716663423878
+        ],
+        [
+          7.81311733523688,
+          48.57171269197598
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5716895",
+    "lon": "7.8131695",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "183"
+  },
+  {
+    "address": "Rathausplatz, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813050570464021,
+          48.57177666978693
+        ],
+        [
+          7.813073984236233,
+          48.57180033408051
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5717885",
+    "lon": "7.8130623",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "184"
+  },
+  {
+    "address": "Rathausplatz, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.81308035922373,
+          48.57180677727682
+        ],
+        [
+          7.813153670072936,
+          48.5718808724523
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5718438",
+    "lon": "7.8131170",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "185"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812052223097361,
+          48.57189777166026
+        ],
+        [
+          7.811664291433882,
+          48.57205763186431
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5719777",
+    "lon": "7.8118583",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "186"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812066831391278,
+          48.571891809610726
+        ],
+        [
+          7.812104772145335,
+          48.57187647096523
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5718841",
+    "lon": "7.8120858",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "187"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Elektrofahrzeuge während des Ladevorgangs",
+    "geojson": {
+      "coordinates": [
+        [
+          7.8116505419572,
+          48.572063480398775
+        ],
+        [
+          7.811586705101184,
+          48.572088824040314
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5720762",
+    "lon": "7.8116186",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "188"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.811562152464254,
+          48.57209532240789
+        ],
+        [
+          7.811368372797184,
+          48.57217436180739
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5721348",
+    "lon": "7.8114653",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "189"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812269170160373,
+          48.57206374767452
+        ],
+        [
+          7.811942129427711,
+          48.57219596315343
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5721299",
+    "lon": "7.8121056",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "190"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.811487501476937,
+          48.57237975880453
+        ],
+        [
+          7.811614446018965,
+          48.57232843810559
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5723541",
+    "lon": "7.8115510",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "191"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812122294485838,
+          48.57196744065306
+        ],
+        [
+          7.812203704443666,
+          48.571991167885066
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5719793",
+    "lon": "7.8121630",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "192"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 21,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.811318045114053,
+          48.57232406476572
+        ],
+        [
+          7.812087578894539,
+          48.5719913484264
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5721577",
+    "lon": "7.8117028",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "193"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 13,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.81213454031851,
+          48.57202467091494
+        ],
+        [
+          7.811383457206595,
+          48.57232831697345
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5721765",
+    "lon": "7.8117590",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "194"
+  },
+  {
+    "address": "Jahnstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810458942546919,
+          48.57169981666267
+        ],
+        [
+          7.810603543615463,
+          48.57163985717844
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5716698",
+    "lon": "7.8105312",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "195"
+  },
+  {
+    "address": "Jahnstraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810925024568216,
+          48.571498206755194
+        ],
+        [
+          7.811239377966161,
+          48.57137005719803
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5714341",
+    "lon": "7.8110822",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "196"
+  },
+  {
+    "address": "Jahnstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.81132471560026,
+          48.5714234435054
+        ],
+        [
+          7.811675426362098,
+          48.571278047406814
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5713507",
+    "lon": "7.8115001",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "197"
+  },
+  {
+    "address": "Jahnstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810294047167175,
+          48.5717906296244
+        ],
+        [
+          7.809845935969022,
+          48.57198377526677
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5718872",
+    "lon": "7.8100700",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "198"
+  },
+  {
+    "address": "Jahnstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808827656464461,
+          48.57244383725613
+        ],
+        [
+          7.809032820710585,
+          48.57235394993433
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5723989",
+    "lon": "7.8089302",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "200"
+  },
+  {
+    "address": "Jahnstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808381151895019,
+          48.57263205533909
+        ],
+        [
+          7.808528361632216,
+          48.57256953392907
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5726008",
+    "lon": "7.8084548",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "201"
+  },
+  {
+    "address": "Blumenstraße, 77694 Kehl",
+    "capacity": 13,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809767394138783,
+          48.572279958330476
+        ],
+        [
+          7.810201197344411,
+          48.57272135491527
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5725007",
+    "lon": "7.8099843",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "202"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810438656111402,
+          48.57279912762438
+        ],
+        [
+          7.811059652708217,
+          48.5725435796048
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5726714",
+    "lon": "7.8107492",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "203"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.811080829195113,
+          48.57258145008601
+        ],
+        [
+          7.810949097680689,
+          48.572635659383
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5726086",
+    "lon": "7.8110150",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "205"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809551456543094,
+          48.57313340663101
+        ],
+        [
+          7.810067200354227,
+          48.57292738119291
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5730304",
+    "lon": "7.8098093",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "207"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809571700692693,
+          48.57316529903865
+        ],
+        [
+          7.810229153550994,
+          48.57290633210708
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5730358",
+    "lon": "7.8099004",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "208"
+  },
+  {
+    "address": "Kasernenstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809860902829777,
+          48.573563952436814
+        ],
+        [
+          7.809993935812834,
+          48.57371831018843
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5736411",
+    "lon": "7.8099274",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "209"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809378899267973,
+          48.57325013274506
+        ],
+        [
+          7.807811423684982,
+          48.57391093779598
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5735805",
+    "lon": "7.8085952",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "210"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 19,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809336482954531,
+          48.57321696469634
+        ],
+        [
+          7.807757440588063,
+          48.573864423504794
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5735407",
+    "lon": "7.8085470",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "211"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.808037554577863,
+          48.57283359308632
+        ],
+        [
+          7.807096047873598,
+          48.57325867638756
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5730461",
+    "lon": "7.8075668",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "212"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 14,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807865834462009,
+          48.572678806815404
+        ],
+        [
+          7.806948099680334,
+          48.5731138214014
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5728963",
+    "lon": "7.8074070",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "213"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807752112496547,
+          48.57400639794833
+        ],
+        [
+          7.807800312852728,
+          48.57405104653213
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5740287",
+    "lon": "7.8077762",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "214"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807735267122222,
+          48.57403978101791
+        ],
+        [
+          7.808090021743709,
+          48.57439824409596
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5742190",
+    "lon": "7.8079126",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "215"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807872156133775,
+          48.57427578012736
+        ],
+        [
+          7.80766007456658,
+          48.5743625254691
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5743192",
+    "lon": "7.8077661",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "216"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807962772803394,
+          48.57435359580843
+        ],
+        [
+          7.807804675635122,
+          48.57442375738541
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5743887",
+    "lon": "7.8078837",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "217"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807480769241586,
+          48.57405126208116
+        ],
+        [
+          7.807132698741448,
+          48.5741923835564
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5741218",
+    "lon": "7.8073067",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "218"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.80741714477143,
+          48.574019370232364
+        ],
+        [
+          7.807282183774125,
+          48.57407167285382
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5740455",
+    "lon": "7.8073497",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "219"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80710333930529,
+          48.57335333695367
+        ],
+        [
+          7.807218743350194,
+          48.573483595088454
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5734185",
+    "lon": "7.8071610",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "220"
+  },
+  {
+    "address": "Friedensstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806412711593386,
+          48.57386964008664
+        ],
+        [
+          7.8065154386765,
+          48.573966075693455
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5739179",
+    "lon": "7.8064641",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "221"
+  },
+  {
+    "address": "Friedensstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.806644865394675,
+          48.57409216306127
+        ],
+        [
+          7.806744488702301,
+          48.57418568466683
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5741389",
+    "lon": "7.8066947",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "222"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 10,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80617762571748,
+          48.57459721341866
+        ],
+        [
+          7.806411500289252,
+          48.574450275823914
+        ],
+        [
+          7.80672691567093,
+          48.57430384481304
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5744420",
+    "lon": "7.8064476",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "223"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805944141886559,
+          48.57492509091114
+        ],
+        [
+          7.806148511396763,
+          48.57474394807341
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5748345",
+    "lon": "7.8060463",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "224"
+  },
+  {
+    "address": "Honsellstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.80611573515456,
+          48.57465975470256
+        ],
+        [
+          7.805763701187141,
+          48.57447425347183
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5745670",
+    "lon": "7.8059397",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "225"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.805984630185746,
+          48.574986322146124
+        ],
+        [
+          7.806102239054826,
+          48.57503734811865
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5750118",
+    "lon": "7.8060434",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "226"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.806219989721204,
+          48.57518845056162
+        ],
+        [
+          7.806489086621949,
+          48.57531646040107
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5752525",
+    "lon": "7.8063545",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "228"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.806865233019698,
+          48.57530135265768
+        ],
+        [
+          7.806991422868546,
+          48.575146685169514
+        ],
+        [
+          7.807089731626809,
+          48.57505025512874
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5751728",
+    "lon": "7.8069742",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "229"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807027280423431,
+          48.575274061238865
+        ],
+        [
+          7.807188345721687,
+          48.575105114032546
+        ],
+        [
+          7.807283007179208,
+          48.575031908724114
+        ],
+        [
+          7.807365974368397,
+          48.57498700453195
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5751192",
+    "lon": "7.8071877",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "230"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.80744408629316,
+          48.57494037226428
+        ],
+        [
+          7.807507389696478,
+          48.57490911096629
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5749247",
+    "lon": "7.8074757",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "231"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807566496688233,
+          48.57480999850668
+        ],
+        [
+          7.807923766997431,
+          48.574654977795255
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5747325",
+    "lon": "7.8077451",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "232"
+  },
+  {
+    "address": "Hauptstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808061708403788,
+          48.574685632095
+        ],
+        [
+          7.808189859710348,
+          48.574636813334386
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5746612",
+    "lon": "7.8081258",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "233"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812438057961177,
+          48.57375315608136
+        ],
+        [
+          7.81358518520733,
+          48.573278891812095
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5735160",
+    "lon": "7.8130116",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "234"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812828217356241,
+          48.57354323217025
+        ],
+        [
+          7.813462643217217,
+          48.57328460176475
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5734139",
+    "lon": "7.8131454",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "235"
+  },
+  {
+    "address": "Kinzigstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813139501366182,
+          48.57447235331809
+        ],
+        [
+          7.81446196451686,
+          48.573914976571494
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5741937",
+    "lon": "7.8138007",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "236"
+  },
+  {
+    "address": "Kinzigstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813947633347095,
+          48.57408969863227
+        ],
+        [
+          7.813472161781462,
+          48.574291796527085
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5741907",
+    "lon": "7.8137099",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "237"
+  },
+  {
+    "address": "Am Läger, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.813806105978235,
+          48.574962157926485
+        ],
+        [
+          7.814578813771913,
+          48.57466913860985
+        ],
+        [
+          7.814839710091921,
+          48.57457225279481
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5747665",
+    "lon": "7.8143227",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "238"
+  },
+  {
+    "address": "Kinzigstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809249434882377,
+          48.57603815989918
+        ],
+        [
+          7.809470355653287,
+          48.57594109592552
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5759896",
+    "lon": "7.8093599",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "239"
+  },
+  {
+    "address": "Kinzigstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809716382485386,
+          48.575860922627356
+        ],
+        [
+          7.810192654106034,
+          48.575666210859495
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5757636",
+    "lon": "7.8099545",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "240"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810466486165408,
+          48.574532193111075
+        ],
+        [
+          7.809185836071491,
+          48.575052925231596
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5747926",
+    "lon": "7.8098262",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "241"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810422389258095,
+          48.57460014150278
+        ],
+        [
+          7.810251520849339,
+          48.5746720849667
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5746361",
+    "lon": "7.8103370",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "242"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810190335201758,
+          48.574696635412764
+        ],
+        [
+          7.810085052646869,
+          48.574743455692506
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5747200",
+    "lon": "7.8101377",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "243"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.809969414430841,
+          48.5747845661463
+        ],
+        [
+          7.809203095506718,
+          48.57509289348414
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5749387",
+    "lon": "7.8095863",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "244"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808295831823686,
+          48.57558476587974
+        ],
+        [
+          7.808478056636353,
+          48.575399973305466
+        ],
+        [
+          7.808661132966836,
+          48.57532278840221
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5754356",
+    "lon": "7.8084661",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "245"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 5,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808263474146669,
+          48.57552673657704
+        ],
+        [
+          7.808418728193026,
+          48.575384041556354
+        ],
+        [
+          7.808600675201883,
+          48.57530025264181
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5754002",
+    "lon": "7.8084232",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "246"
+  },
+  {
+    "address": "Straßburger Straße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807639390675063,
+          48.57578833602016
+        ],
+        [
+          7.807953512396214,
+          48.57588540030956
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5758369",
+    "lon": "7.8077965",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "247"
+  },
+  {
+    "address": "Straßburger Straße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.807629035013927,
+          48.575786052152274
+        ],
+        [
+          7.807578982651767,
+          48.575770065074245
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5757781",
+    "lon": "7.8076040",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "248"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808417791203847,
+          48.57468293190807
+        ],
+        [
+          7.80864734169238,
+          48.57490561339944
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5747943",
+    "lon": "7.8085326",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "249"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808404930743968,
+          48.574818686410374
+        ],
+        [
+          7.808560265661021,
+          48.57496942433575
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5748941",
+    "lon": "7.8084826",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "250"
+  },
+  {
+    "address": "Gewerbestraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808390408393489,
+          48.57479753901087
+        ],
+        [
+          7.808367971127693,
+          48.57477355793261
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5747855",
+    "lon": "7.8083792",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "251"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 16,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807959052994898,
+          48.56980069689821
+        ],
+        [
+          7.808922989520738,
+          48.57000637913422
+        ],
+        [
+          7.809377213303928,
+          48.57012432923336
+        ],
+        [
+          7.809744337627951,
+          48.570241691344144
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5700033",
+    "lon": "7.8088563",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "252"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809017902239869,
+          48.570094056443914
+        ],
+        [
+          7.809296926181166,
+          48.570161696287265
+        ],
+        [
+          7.809514708070732,
+          48.570232206218115
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5701585",
+    "lon": "7.8092676",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "253"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807954142467512,
+          48.56985203630245
+        ],
+        [
+          7.808790896334058,
+          48.57003139887521
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5699417",
+    "lon": "7.8083725",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "254"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 11,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806467935906435,
+          48.56968058017448
+        ],
+        [
+          7.807173687192597,
+          48.569757040913316
+        ],
+        [
+          7.80770462431815,
+          48.569836903763
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5697525",
+    "lon": "7.8070871",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "255"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.806493373261072,
+          48.569616832959575
+        ],
+        [
+          7.807056743587748,
+          48.56966974868805
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5696433",
+    "lon": "7.8067751",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "256"
+  },
+  {
+    "address": "Großherzog-Friedrich-Straße, 77694 Kehl",
+    "capacity": 6,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.807295395218699,
+          48.56970159220461
+        ],
+        [
+          7.807579223701601,
+          48.56974188397232
+        ],
+        [
+          7.807756984792968,
+          48.56977372744345
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5697357",
+    "lon": "7.8075265",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "257"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.81080446481129,
+          48.574401860988225
+        ],
+        [
+          7.810982534369041,
+          48.574327948313034
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5743649",
+    "lon": "7.8108935",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "258"
+  },
+  {
+    "address": "Kasernenstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810320377341327,
+          48.574143203127456
+        ],
+        [
+          7.810138724097026,
+          48.57394895479324
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5740461",
+    "lon": "7.8102296",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "259"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.806385875099132,
+          48.57337145418396
+        ],
+        [
+          7.806611672144208,
+          48.57327371039963
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5733226",
+    "lon": "7.8064988",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "260"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.806501679332986,
+          48.57338076426936
+        ],
+        [
+          7.806826143863358,
+          48.573243229810195
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5733120",
+    "lon": "7.8066639",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "261"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 9,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.806566668614949,
+          48.57342149821927
+        ],
+        [
+          7.806866710790101,
+          48.57329083564004
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5733562",
+    "lon": "7.8067167",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "262"
+  },
+  {
+    "address": "Hermann-Dietrich-Straße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.80648103829563,
+          48.573495646593685
+        ],
+        [
+          7.806418178354799,
+          48.573471636096066
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5734836",
+    "lon": "7.8064496",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "263"
+  },
+  {
+    "address": "Goldscheuerstraße, 77694 Kehl",
+    "capacity": 15,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815532335485644,
+          48.570345626938796
+        ],
+        [
+          7.815319830861331,
+          48.56928342239565
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5698145",
+    "lon": "7.8154261",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "264"
+  },
+  {
+    "address": "Goldscheuerstraße, 77694 Kehl",
+    "capacity": 17,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.815617365408139,
+          48.57034130942415
+        ],
+        [
+          7.815405899906896,
+          48.56928429907912
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5698128",
+    "lon": "7.8155116",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "265"
+  },
+  {
+    "address": "P Am Läger, 77694 Kehl",
+    "capacity": 240,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;0,50€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.813310791266349,
+          48.57545974006539
+        ],
+        [
+          7.813710017142814,
+          48.57586163573235
+        ],
+        [
+          7.81508496481085,
+          48.57533335507651
+        ],
+        [
+          7.814756450528736,
+          48.574897340684565
+        ],
+        [
+          7.813337799166968,
+          48.575447069091034
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5753846",
+    "lon": "7.8142149",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "266"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810906397665309,
+          48.57265323100345
+        ],
+        [
+          7.81080624422682,
+          48.572694445442565
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5726738",
+    "lon": "7.8108563",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "267"
+  },
+  {
+    "address": "Rheinstraße, 77694 Kehl",
+    "capacity": 12,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810772133833307,
+          48.57270848230431
+        ],
+        [
+          7.810444277909097,
+          48.57284339899758
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5727759",
+    "lon": "7.8106082",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT2H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "268"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 3,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809575077261941,
+          48.56874132177936
+        ],
+        [
+          7.80952645290867,
+          48.56869518293867
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5687183",
+    "lon": "7.8095508",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "275"
+  },
+  {
+    "address": "Nibelungenstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.809579746182052,
+          48.568682824067096
+        ],
+        [
+          7.809621356051235,
+          48.56872203562139
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5687024",
+    "lon": "7.8096006",
+    "name": "Parkplatz",
+    "orientation": "DIAGONAL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "276"
+  },
+  {
+    "address": "Alte Zollstraße, 77694 Kehl",
+    "capacity": 2,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          7.816710103849188,
+          48.57045575779122
+        ],
+        [
+          7.816832867033832,
+          48.57045575779122
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5704558",
+    "lon": "7.8167715",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "311"
+  },
+  {
+    "address": "Marktstraße, 77694 Kehl",
+    "capacity": 7,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.81245040215124,
+          48.57394336906458
+        ],
+        [
+          7.812724887493805,
+          48.57424166958852
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5740925",
+    "lon": "7.8125876",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "339"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.808146950872911,
+          48.57578600453413
+        ],
+        [
+          7.808186315240627,
+          48.575733915307474
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5757600",
+    "lon": "7.8081666",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "350"
+  },
+  {
+    "address": "Oberländerstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.815837748659101,
+          48.57324292102506
+        ],
+        [
+          7.815753287588064,
+          48.57324487049093
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5732439",
+    "lon": "7.8157955",
+    "name": "Parkplatz",
+    "orientation": "PERPENDICULAR",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "380"
+  },
+  {
+    "address": "Schulstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h;1,00€/h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.812449087140586,
+          48.573681456412466
+        ],
+        [
+          7.812493123460267,
+          48.573663504643186
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.5736725",
+    "lon": "7.8124711",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "382"
+  },
+  {
+    "address": "Kasernenstraße, 77694 Kehl",
+    "capacity": 1,
+    "external_identifiers": [],
+    "fee_description": "Mo-Sa_9-18h",
+    "geojson": {
+      "coordinates": [
+        [
+          7.810443199705374,
+          48.57428661255157
+        ],
+        [
+          7.810484484533625,
+          48.574329711177306
+        ]
+      ],
+      "type": "LineString"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5743082",
+    "lon": "7.8104638",
+    "name": "Parkplatz",
+    "orientation": "PARALLEL",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": "PT1H",
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": null
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "389"
+  }
+]

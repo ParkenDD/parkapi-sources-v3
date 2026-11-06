@@ -21,6 +21,9 @@ class HeidelbergDisabledPullConverter(ParkingSpotPullConverter):
         name='Stadt Heidelberg: Behindertenparkplätze',
         source_url='https://ckan.datenplattform.heidelberg.de/de/dataset/708df8e2-d452-483e-9e57-f04027d52a17/resource'
         '/6dc64728-65ba-47ed-bbe2-9e59b5dbaa0c/download/features_new.geojson',
+        attribution_contributor='Stadt Heidelberg',
+        attribution_license='CC BY 4.0',
+        attribution_url='https://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=False,
         public_url='https://ckan.datenplattform.heidelberg.de/dataset/behindertenparkplatze-in-heidelberg',
     )

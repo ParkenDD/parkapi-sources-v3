@@ -28,7 +28,7 @@ from parkapi_sources.models import (
 )
 from parkapi_sources.models.enums import (
     ParkingAudience,
-    ParkingSiteOrientation,
+    ParkingOrientation,
     ParkingSiteType,
 )
 from parkapi_sources.util import round_7d
@@ -45,11 +45,11 @@ class EsslingenOrientation(Enum):
     UNKNOWN = 'unbekannt'
     DIVERSE = 'unterschiedlich'
 
-    def to_parking_side_orientation(self) -> ParkingSiteOrientation | None:
+    def to_parking_side_orientation(self) -> ParkingOrientation | None:
         return {
-            self.PARALLEL: ParkingSiteOrientation.PARALLEL,
-            self.DIAGONAL: ParkingSiteOrientation.DIAGONAL,
-            self.PERPENDICULAR: ParkingSiteOrientation.PERPENDICULAR,
+            self.PARALLEL: ParkingOrientation.PARALLEL,
+            self.DIAGONAL: ParkingOrientation.DIAGONAL,
+            self.PERPENDICULAR: ParkingOrientation.PERPENDICULAR,
         }.get(self)
 
 

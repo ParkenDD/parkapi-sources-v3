@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import UlmSensorsPullConverter
 from parkapi_sources.util import RequestHelper
@@ -42,7 +43,7 @@ def ulm_sensors_pull_converter(
 
 class UlmSensorsPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(ulm_sensors_pull_converter: UlmSensorsPullConverter):
+    def test_get_static_parking_sites(ulm_sensors_pull_converter: UlmSensorsPullConverter, snapshot: SnapshotAssertion):
         static_parking_site_inputs, import_parking_site_exceptions = (
             ulm_sensors_pull_converter.get_static_parking_sites()
         )
@@ -51,12 +52,13 @@ class UlmSensorsPullConverterTest:
             'There should be more valid than invalid parking sites'
         )
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_sites(
         ulm_sensors_pull_converter: UlmSensorsPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'realtime-parking-sites.json')
         with json_path.open() as json_file:
@@ -77,10 +79,10 @@ class UlmSensorsPullConverterTest:
         assert len(realtime_parking_site_inputs) == 7
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_static_parking_spots(ulm_sensors_pull_converter: UlmSensorsPullConverter):
+    def test_get_static_parking_spots(ulm_sensors_pull_converter: UlmSensorsPullConverter, snapshot: SnapshotAssertion):
         static_parking_spot_inputs, import_parking_spot_exceptions = (
             ulm_sensors_pull_converter.get_static_parking_spots()
         )
@@ -89,12 +91,13 @@ class UlmSensorsPullConverterTest:
             'There should be more valid than invalid parking spots'
         )
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_spots(
         ulm_sensors_pull_converter: UlmSensorsPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'ulm-sensors', 'realtime-parking-spots.json')
         with json_path.open() as json_file:
@@ -118,4 +121,4 @@ class UlmSensorsPullConverterTest:
         assert len(realtime_parking_spot_inputs) == 220
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs)
+        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs, snapshot)

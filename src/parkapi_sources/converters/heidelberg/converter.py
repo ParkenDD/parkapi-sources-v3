@@ -25,6 +25,8 @@ class HeidelbergPullConverter(ParkingSitePullConverter):
         source_url='https://api.datenplattform.heidelberg.de/ckan/or/mobility/main/offstreetparking/v2/entities',
         timezone='Europe/Berlin',
         attribution_contributor='Stadt Heidelberg',
+        attribution_license='CC BY 4.0',
+        attribution_url='https://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=True,
     )
 

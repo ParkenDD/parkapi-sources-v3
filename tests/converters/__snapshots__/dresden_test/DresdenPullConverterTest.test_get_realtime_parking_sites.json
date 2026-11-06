@@ -1,0 +1,320 @@
+[
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 87,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "431"
+  },
+  {
+    "realtime_capacity": 120,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 4,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "403"
+  },
+  {
+    "realtime_capacity": 250,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 154,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "422"
+  },
+  {
+    "realtime_capacity": 171,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 75,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "402"
+  },
+  {
+    "realtime_capacity": 255,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "411"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 18,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "408"
+  },
+  {
+    "realtime_capacity": 130,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 31,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "401"
+  },
+  {
+    "realtime_capacity": 250,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 45,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "421"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "456"
+  },
+  {
+    "realtime_capacity": 141,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "464"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 50,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "429"
+  },
+  {
+    "realtime_capacity": 220,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 172,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "407"
+  },
+  {
+    "realtime_capacity": 480,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "409"
+  },
+  {
+    "realtime_capacity": 127,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 3,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "461"
+  },
+  {
+    "realtime_capacity": 1059,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 135,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "438"
+  },
+  {
+    "realtime_capacity": 154,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "419"
+  },
+  {
+    "realtime_capacity": 265,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 35,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "404"
+  },
+  {
+    "realtime_capacity": 285,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "415"
+  },
+  {
+    "realtime_capacity": 88,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 72,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "468"
+  },
+  {
+    "realtime_capacity": 350,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 241,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "410"
+  },
+  {
+    "realtime_capacity": 264,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 14,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "405"
+  },
+  {
+    "realtime_capacity": 251,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 232,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "406"
+  },
+  {
+    "realtime_capacity": 235,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 234,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "453"
+  },
+  {
+    "realtime_capacity": 110,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "412"
+  },
+  {
+    "realtime_capacity": 291,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 156,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "452"
+  },
+  {
+    "realtime_capacity": 69,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 10,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "416"
+  },
+  {
+    "realtime_capacity": 55,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "420"
+  },
+  {
+    "realtime_capacity": 140,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 89,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "418"
+  },
+  {
+    "realtime_capacity": 120,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "417"
+  },
+  {
+    "realtime_capacity": 105,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 12,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "465"
+  },
+  {
+    "realtime_capacity": 1200,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "424"
+  },
+  {
+    "realtime_capacity": 32,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 28,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "437"
+  },
+  {
+    "realtime_capacity": 190,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 123,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "427"
+  },
+  {
+    "realtime_capacity": 36,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "433"
+  },
+  {
+    "realtime_capacity": 50,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 50,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "439"
+  },
+  {
+    "realtime_capacity": 50,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 39,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "436"
+  },
+  {
+    "realtime_capacity": 56,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 34,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "426"
+  },
+  {
+    "realtime_capacity": 19,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 7,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "434"
+  },
+  {
+    "realtime_capacity": 120,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "454"
+  },
+  {
+    "realtime_capacity": 22,
+    "realtime_data_updated_at": "2026-10-24T12:59:35Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "430"
+  }
+]

@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import KienzlerUlmPullConverter
 from parkapi_sources.util import RequestHelper
@@ -48,6 +49,7 @@ class KienzlerULMPullConverterTest:
     def test_get_static_parking_sites(
         kienzler_ulm_pull_converter: KienzlerUlmPullConverter,
         requests_mock_kienzler_ulm: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_site_inputs, import_parking_site_exceptions = (
             kienzler_ulm_pull_converter.get_static_parking_sites()
@@ -56,12 +58,13 @@ class KienzlerULMPullConverterTest:
         assert len(static_parking_site_inputs) == 6
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_realtime_parking_sites(
         kienzler_ulm_pull_converter: KienzlerUlmPullConverter,
         requests_mock_kienzler_ulm: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         realtime_parking_site_inputs, import_parking_site_exceptions = (
             kienzler_ulm_pull_converter.get_realtime_parking_sites()
@@ -70,4 +73,4 @@ class KienzlerULMPullConverterTest:
         assert len(realtime_parking_site_inputs) == 6
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

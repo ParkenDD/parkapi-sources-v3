@@ -22,6 +22,9 @@ class FreiburgDisabledStaticPullConverter(ParkingSpotPullConverter):
         name='Stadt Freiburg',
         source_url='https://geoportal.freiburg.de/wms/gut_parken/gut_parken?SERVICE=WFS&REQUEST=GetFeature'
         '&SRSNAME=EPSG:4326&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=behindertenparkplatz_detail&OUTPUTFORMAT=geojson',
+        attribution_contributor='Stadt Freiburg',
+        attribution_license='Datenlizenz Deutschland – Namensnennung – Version 2.0',
+        attribution_url='https://www.govdata.de/dl-de/by-2-0',
         has_realtime_data=False,
         public_url='https://www.freiburg.de/pb/890399.html',
     )

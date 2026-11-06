@@ -1,0 +1,16 @@
+[
+  {
+    "realtime_capacity": 40,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 32,
+    "restrictions": [],
+    "uid": "unit2817"
+  },
+  {
+    "realtime_capacity": 30,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 24,
+    "restrictions": [],
+    "uid": "unit2825"
+  }
+]

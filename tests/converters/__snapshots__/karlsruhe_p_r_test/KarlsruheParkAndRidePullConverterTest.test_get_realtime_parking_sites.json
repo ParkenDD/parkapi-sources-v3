@@ -1,0 +1,37 @@
+[
+  {
+    "realtime_capacity": 40,
+    "realtime_data_updated_at": "2026-10-25T08:19:13Z",
+    "realtime_free_capacity": 40,
+    "restrictions": [],
+    "uid": "3"
+  },
+  {
+    "realtime_capacity": 341,
+    "realtime_data_updated_at": "2026-10-25T08:21:00Z",
+    "realtime_free_capacity": 182,
+    "restrictions": [],
+    "uid": "163"
+  },
+  {
+    "realtime_capacity": 237,
+    "realtime_data_updated_at": "2026-10-25T08:21:00Z",
+    "realtime_free_capacity": 46,
+    "restrictions": [],
+    "uid": "164"
+  },
+  {
+    "realtime_capacity": 188,
+    "realtime_data_updated_at": "2026-10-25T08:21:00Z",
+    "realtime_free_capacity": 84,
+    "restrictions": [],
+    "uid": "165"
+  },
+  {
+    "realtime_capacity": 279,
+    "realtime_data_updated_at": "2026-10-25T08:21:00Z",
+    "realtime_free_capacity": 56,
+    "restrictions": [],
+    "uid": "166"
+  }
+]

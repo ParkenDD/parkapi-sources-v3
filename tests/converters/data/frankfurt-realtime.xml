@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<d2:payload xmlns:d2="http://datex2.eu/schema/3/d2Payload" xmlns="http://datex2.eu/schema/3/parking" xmlns:com="http://datex2.eu/schema/3/common" xmlns:loc="http://datex2.eu/schema/3/locationReferencing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="de" modelBaseVersion="3" profileVersion="02-00-00 (Rev A.1)" xsi:schemaLocation="http://datex2.eu/schema/3/d2Payload DATEXII_3_D2Payload.xsd http://datex2.eu/schema/3/common DATEXII_3_Common.xsd http://datex2.eu/schema/3/locationReferencing DATEXII_3_LocationReferencing.xsd http://datex2.eu/schema/3/parking DATEXII_3_Parking.xsd" xsi:type="ParkingStatusPublication">
+<com:publicationTime>2026-10-25T09:25:01.538+01:00</com:publicationTime>
+<com:publicationCreator>
+<com:country>DE</com:country>
+<com:nationalIdentifier>DE-NAP-Stadt Frankfurt am Main</com:nationalIdentifier>
+</com:publicationCreator>
+<parkingTableReference id="244382" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244405" targetClass="par:ParkingTable" version="1788764724557"/>
+<parkingTableReference id="244473" targetClass="par:ParkingTable" version="1789396870563"/>
+<parkingTableReference id="244511" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244541" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244609" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244643" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244688" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244711" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244876" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="244912" targetClass="par:ParkingTable" version="1787653526115"/>
+<parkingTableReference id="245154" targetClass="par:ParkingTable" version="1791458682595"/>
+<parkingTableReference id="245806" targetClass="par:ParkingTable" version="1791364912663"/>
+<parkingTableReference id="247079" targetClass="par:ParkingTable" version="1776714143121"/>
+<parkingTableReference id="247108" targetClass="par:ParkingTable" version="1772438119037"/>
+<parkingTableReference id="247167" targetClass="par:ParkingTable" version="1772438119037"/>
+<parkingTableReference id="247291" targetClass="par:ParkingTable" version="1777444916539"/>
+<parkingTableReference id="247335" targetClass="par:ParkingTable" version="1791367880878"/>
+<parkingTableReference id="247438" targetClass="par:ParkingTable" version="1772438119037"/>
+<parkingTableReference id="247565" targetClass="par:ParkingTable" version="1787825690665"/>
+<parkingTableReference id="247621" targetClass="par:ParkingTable" version="1792491022252"/>
+<parkingTableReference id="247693" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="247775" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="247884" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="247950" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="248850" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="248925" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="249004" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="249525" targetClass="par:ParkingTable" version="1787652005586"/>
+<parkingTableReference id="251109" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="251136" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="258336" targetClass="par:ParkingTable" version="1788252780235"/>
+<parkingTableReference id="259349" targetClass="par:ParkingTable" version="1788264060497"/>
+<parkingTableReference id="259933" targetClass="par:ParkingTable" version="1789396870563"/>
+<parkingTableReference id="262054" targetClass="par:ParkingTable" version="1791537213130"/>
+<parkingTableReference id="262163" targetClass="par:ParkingTable" version="1791537213130"/>
+<parkingTableReference id="262249" targetClass="par:ParkingTable" version="1772438119037"/>
+<parkingTableReference id="268511" targetClass="par:ParkingTable" version="1791537213130"/>
+<parkingTableReference id="272090" targetClass="par:ParkingTable" version="1791537213130"/>
+<parkingTableReference id="274974" targetClass="par:ParkingTable" version="1791536253171"/>
+<parkingTableReference id="323770" targetClass="par:ParkingTable" version="1791537213130"/>
+<parkingTableReference id="324091" targetClass="par:ParkingTable" version="1791537213130"/>
+<parkingTableReference id="341785" targetClass="par:ParkingTable" version="1791883093039"/>
+<headerInformation>
+<com:confidentiality>noRestriction</com:confidentiality>
+<com:informationStatus>real</com:informationStatus>
+</headerInformation>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="244382" targetClass="par:ParkingRecord" version="1787653526115"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingNumberOfVacantSpaces>196</parkingNumberOfVacantSpaces>
+<parkingOccupancy>32.41379</parkingOccupancy>
+<parkingOccupancyGraded>percentage40</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended>
+<bucket>percentage0to55</bucket>
+</occupancyExtended>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="258336" targetClass="par:ParkingRecord" version="1788252780235"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingNumberOfVacantSpaces>254</parkingNumberOfVacantSpaces>
+<parkingOccupancy>32.446808</parkingOccupancy>
+<parkingOccupancyGraded>percentage40</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended>
+<bucket>percentage0to55</bucket>
+</occupancyExtended>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="258336" targetClass="par:ParkingRecord" version="1788252780235"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingOccupancyGraded>unknown</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended/>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+<parkingStatusValidity>
+<parkingStatusTimeOffsetToOrigin>900.0</parkingStatusTimeOffsetToOrigin>
+</parkingStatusValidity>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="258336" targetClass="par:ParkingRecord" version="1788252780235"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingOccupancyGraded>unknown</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended/>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+<parkingStatusValidity>
+<parkingStatusTimeOffsetToOrigin>1800.0</parkingStatusTimeOffsetToOrigin>
+</parkingStatusValidity>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="258336" targetClass="par:ParkingRecord" version="1788252780235"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingOccupancyGraded>unknown</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended/>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+<parkingStatusValidity>
+<parkingStatusTimeOffsetToOrigin>3600.0</parkingStatusTimeOffsetToOrigin>
+</parkingStatusValidity>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="259349" targetClass="par:ParkingRecord" version="1788264060497"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingNumberOfVacantSpaces>1</parkingNumberOfVacantSpaces>
+<parkingOccupancy>95.2381</parkingOccupancy>
+<parkingOccupancyGraded>expectCarParkToBeFull</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended>
+<bucket>percentage80to98</bucket>
+</occupancyExtended>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="259349" targetClass="par:ParkingRecord" version="1788264060497"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingOccupancyGraded>unknown</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended/>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+<parkingStatusValidity>
+<parkingStatusTimeOffsetToOrigin>900.0</parkingStatusTimeOffsetToOrigin>
+</parkingStatusValidity>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="259349" targetClass="par:ParkingRecord" version="1788264060497"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingOccupancyGraded>unknown</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended/>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+<parkingStatusValidity>
+<parkingStatusTimeOffsetToOrigin>1800.0</parkingStatusTimeOffsetToOrigin>
+</parkingStatusValidity>
+</parkingRecordStatus>
+<parkingRecordStatus xsi:type="ParkingSiteStatus">
+<parkingRecordReference id="259349" targetClass="par:ParkingRecord" version="1788264060497"/>
+<parkingStatusOriginTime>2026-10-25T09:25:01.538+01:00</parkingStatusOriginTime>
+<parkingOccupancy>
+<parkingOccupancyGraded>unknown</parkingOccupancyGraded>
+<_parkingOccupancyExtension>
+<occupancyExtended/>
+</_parkingOccupancyExtension>
+</parkingOccupancy>
+<parkingStatusValidity>
+<parkingStatusTimeOffsetToOrigin>3600.0</parkingStatusTimeOffsetToOrigin>
+</parkingStatusValidity>
+</parkingRecordStatus>
+</d2:payload>

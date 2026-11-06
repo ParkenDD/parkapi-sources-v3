@@ -1,0 +1,346 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-adcom-center",
+        "name": "Parkhaus ADCOM-Center",
+        "type": "CAR_PARK",
+        "address": "Willy-Brandt-Platz 15, Nürnberg",
+        "capacity": 92,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.08691,
+          49.44802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-adlerstrasse",
+        "name": "Parkhaus Adlerstraße",
+        "type": "CAR_PARK",
+        "address": "Adlerstraße 4-8, Nürnberg",
+        "capacity": 260,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.077065,
+          49.451875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-city-park-center",
+        "name": "Parkhaus City-Park-Center",
+        "type": "CAR_PARK",
+        "address": "Sandstraße 24A, Nürnberg",
+        "capacity": 400,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.072199,
+          49.445693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-city-point",
+        "name": "Parkhaus City-Point",
+        "type": "CAR_PARK",
+        "address": "Frauengasse 6, Nürnberg",
+        "capacity": 200,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.076548,
+          49.449306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-erler-klinik",
+        "name": "Parkhaus Erler-Klinik",
+        "type": "CAR_PARK",
+        "address": "Kontumazgarten 4-18, Nürnberg",
+        "capacity": 200,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.068138,
+          49.453049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-findelgasse",
+        "name": "Parkhaus Findelgasse",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "address": "Findelgasse 4, Nürnberg",
+        "capacity": 146,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.078696,
+          49.451921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-galeria-kaufhof",
+        "name": "Parkhaus Galeria Kaufhof",
+        "type": "CAR_PARK",
+        "address": "Frauengasse 12, Nürnberg",
+        "capacity": 220,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.075827,
+          49.44936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-hans-sachs-platz",
+        "name": "Parkhaus Hans-Sachs-Platz",
+        "type": "CAR_PARK",
+        "address": "Hans-Sachs-Platz 1, Nürnberg",
+        "capacity": 65,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.079661,
+          49.453363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-hauptbahnhof",
+        "name": "Parkhaus Hauptbahnhof",
+        "type": "CAR_PARK",
+        "address": "Bahnhofspl. 5, Nürnberg",
+        "capacity": 486,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.08308,
+          49.446659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-hauptmarkt",
+        "name": "Parkhaus Hauptmarkt",
+        "type": "CAR_PARK",
+        "address": "Schustergasse 3, Nürnberg",
+        "capacity": 525,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.075423,
+          49.454809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-jakobsmarkt",
+        "name": "Parkhaus Jakobsmarkt",
+        "type": "CAR_PARK",
+        "address": "Zirkelschmiedsgasse 9, Nürnberg",
+        "capacity": 452,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.070822,
+          49.448745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-karstadt",
+        "name": "Parkhaus Karstadt",
+        "type": "CAR_PARK",
+        "address": "Vordere Insel Schütt 3, Nürnberg",
+        "capacity": 365,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.081179,
+          49.452936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-katharinenhof",
+        "name": "Parkhaus Katharinenhof",
+        "type": "CAR_PARK",
+        "address": "Katharinengasse, Nürnberg",
+        "capacity": 370,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.081971,
+          49.451208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-maximum",
+        "name": "Parkhaus Maximum",
+        "type": "CAR_PARK",
+        "capacity": 100,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.074649,
+          49.449509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-sebalder-hoefe",
+        "name": "Parkhaus Sebalder Höfe",
+        "type": "CAR_PARK",
+        "address": "Laufertormauer, Nürnberg",
+        "capacity": 250,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.088265,
+          49.456701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-sterntor",
+        "name": "Parkhaus Sterntor",
+        "type": "CAR_PARK",
+        "address": "Grasersgasse 25, Nürnberg",
+        "capacity": 476,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.077293,
+          49.447264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-theater",
+        "name": "Parkhaus Theater",
+        "type": "CAR_PARK",
+        "address": "Karl-Pschigode-Platz, Nürnberg",
+        "capacity": 180,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.076076,
+          49.445175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-woehrl",
+        "name": "Parkhaus Wöhrl",
+        "type": "CAR_PARK",
+        "address": "Karl-Grillenberger-Straße 1B, Nürnberg",
+        "capacity": 441,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.070468,
+          49.452004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "ph-nuernberger-akademie",
+        "name": "PH Nürnberger Akademie",
+        "type": "CAR_PARK",
+        "address": "Gewerbemuseumsplatz, Nürnberg",
+        "capacity": 301,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.084272,
+          49.451163
+        ]
+      }
+    }
+  ]
+}

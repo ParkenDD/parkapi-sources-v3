@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Profile_Intelligent_Truck_Parking_Site/ITP_Deutschland_ParkingTable.xsd" modelBaseVersion="2">
+    <exchange>
+        <supplierIdentification>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-ENMO GmbH &amp; Co.KG</nationalIdentifier>
+        </supplierIdentification>
+    </exchange>
+    <payloadPublication xsi:type="GenericPublication" lang="de">
+        <publicationTime>2026-10-01T00:00:01+00:00</publicationTime>
+        <publicationCreator>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-ENMO GmbH &amp; Co.KG</nationalIdentifier>
+        </publicationCreator>
+        <genericPublicationName>ParkingTablePublication</genericPublicationName>
+        <genericPublicationExtension>
+            <parkingTablePublication>
+                <parkingTable id="236a7a68-e289-48c8-ab3f-ab19e9f5b9a6" version="1">
+                    <parkingTableName>
+                        <values>
+                            <value lang="de">Trucklounge Ecopark</value>
+                        </values>
+                    </parkingTableName>
+                    <parkingTableVersionTime>2026-01-25T00:00:00+01:00</parkingTableVersionTime>
+
+                    <parkingRecord xsi:type="InterUrbanParkingSite" id="2730064b-4d55-4726-a313-ea74e549ddd6" version="1">
+                        <parkingName>
+                            <values>
+                                <value lang="de">Trucklounge Ecopark</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-01-25T00:00:00+01:00</parkingRecordVersionTime>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+
+                        <operator xsi:type="ContactDetails" id="07ef26b0-f47a-482a-a5dd-6fd4cca06d6a" version="1">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="de">ENMO GmbH &amp; Co.KG</value>
+                                </values>
+                            </contactOrganisationName>
+                            <contactPersonName>Kunz</contactPersonName>
+                            <contactPersonFirstName>Mareike</contactPersonFirstName>
+                            <contactDetailsTelephoneNumber>+49 151 214 595 36</contactDetailsTelephoneNumber>
+                            <contactDetailsEMail>info@trucklounge.de</contactDetailsEMail>
+                            <publishingAgreement>true</publishingAgreement>
+                        </operator>
+
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>8.187831148981967</latitude>
+                                    <longitude>52.81531129991081</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics>
+                                <vehicleType>lorry</vehicleType>
+                            </vehicleCharacteristics>
+                        </onlyAssignedParking>
+
+                        <tariffsAndPayment>
+                            <freeOfCharge>0</freeOfCharge>
+                            <urlLinkAddress>https://portal.bosch-secure-truck-parking.com/?action=search&amp;period_from=&amp;period_to=Invalid%20date&amp;mapzoom=12&amp;mapcenter_lat=52.8163597&amp;mapcenter_lng=8.187188200000001&amp;locationsearch=trucklounge%20ecopark&amp;period_from_date=&amp;period_to_date=&amp;period_to_time=&amp;showappparking=1</urlLinkAddress>
+                        </tariffsAndPayment>
+
+                        <parkingThresholds>
+                            <overcrowding>73</overcrowding>
+                        </parkingThresholds>
+
+                        <parkingSiteAddress xsi:type="ContactDetails" id="44cdac32-adce-4d05-9fa5-9c98d25bd5f4" version="1">
+                            <contactDetailsStreet>Europa-Allee</contactDetailsStreet>
+                            <contactDetailsHouseNumber>18</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>49685</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="de">Emstek</value>
+                                </values>
+                            </contactDetailsCity>
+                            <country>de</country>
+                        </parkingSiteAddress>
+
+                        <parkingUsageScenario scenarioIndex="1">
+                            <parkingUsageScenario>
+                                <parkingUsageScenario>truckParking</parkingUsageScenario>
+                                <truckParkingDynamicManagement>other</truckParkingDynamicManagement>
+                            </parkingUsageScenario>
+                        </parkingUsageScenario>
+                        <parkingUsageScenario scenarioIndex="2">
+                            <parkingUsageScenario>
+                                <parkingUsageScenario>restArea</parkingUsageScenario>
+                            </parkingUsageScenario>
+                        </parkingUsageScenario>
+
+
+                        <parkingAccess id="74523b88-2385-4d1a-afab-0147ced18174">
+                            <accessCategory>vehicleEntrance</accessCategory>
+                            <accessEquipment>barrier</accessEquipment>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="de">B 72</value>
+                                    </values>
+                                </roadIdentifier>
+                                <typeOfRoad>trunkRoad</typeOfRoad>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="de">A1</value>
+                                    </values>
+                                </roadDestination>
+                                <roadOrigination>
+                                    <values>
+                                        <value lang="de">Lingen/Meppen</value>
+                                    </values>
+                                </roadOrigination>
+                            </primaryRoad>
+
+                            <primaryRoad xsi:type="RoadNode">
+                                <nameOfRoad>
+                                    <values>
+                                        <value>A1</value>
+                                    </values>
+                                </nameOfRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="de">A 1</value>
+                                    </values>
+                                </roadIdentifier>
+                                <typeOfRoad>motorway</typeOfRoad>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="de">Bremen</value>
+                                    </values>
+                                </roadDestination>
+                                <roadOrigination>
+                                    <values>
+                                        <value lang="de">Münster</value>
+                                    </values>
+                                </roadOrigination>
+                                <junctionName>
+                                    <values>
+                                        <value>Cloppenburg</value>
+                                    </values>
+                                </junctionName>
+                            </primaryRoad>
+
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>52.81531129991081</latitude>
+                                        <longitude>8.187831148981967</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>cctv</parkingSecurity>
+                            <parkingSecurity>fences</parkingSecurity>
+                            <parkingSecurity>lighting</parkingSecurity>
+                            <parkingSecurity>other</parkingSecurity>
+                        </parkingStandardsAndSecurity>
+
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+
+                    </parkingRecord>
+                </parkingTable>
+            </parkingTablePublication>
+        </genericPublicationExtension>
+    </payloadPublication>
+</d2LogicalModel>

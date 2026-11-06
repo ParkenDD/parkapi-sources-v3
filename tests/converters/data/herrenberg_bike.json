@@ -13,7 +13,7 @@
         "OSM_ID": "738705285",
         "Standortbeschreibung": "Firmenparkplatz GWW",
         "Erfassungsdatum": "2025-04-28",
-        "Typ_Anlage": "Reine Vorderradhalterung",
+        "Typ_Anlage": "Reine Vorderradhalterung ",
         "Anzahl_Abstellmoeglichkeiten": 12,
         "Davon_Ueberdacht": 12,
         "Reparatur_moeglich": "nein",
@@ -32,7 +32,7 @@
         "fid": 988,
         "OSM_ID": "95685677",
         "Standortbeschreibung": "VfL",
-        "Erfassungsdatum": "2025-04-25",
+        "Erfassungsdatum": "25.04.2025",
         "Typ_Anlage": "Bügel",
         "Anzahl_Abstellmoeglichkeiten": 10,
         "Reparatur_moeglich": "nein",
@@ -5170,6 +5170,44 @@
         "Beleuchtet": "ja",
         "Zugaenglichkeit": "immer",
         "SonstigeAnmerkungen": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kus_fahrradabst_vorhanden.1220",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[8.920366403519361, 48.57806028716436], [8.920259223138574, 48.57781713760026], [8.919970948739554, 48.577651036933815], [8.919593105021344, 48.57761472005206], [8.919245652042525, 48.57771971704874], [8.919038901851042, 48.5779326928046], [8.919038497313736, 48.57818602985094], [8.919244569634975, 48.578399295469005], [8.91959169346557, 48.57850477850575], [8.919969657636269, 48.5784689881525], [8.920258458536512, 48.57830328784658], [8.920366403519361, 48.57806028716436]]]
+      },
+      "properties": {
+        "fid": 1220,
+        "Standortbeschreibung": "Fahrradabstellanlage Polygon",
+        "Erfassungsdatum": "2026-05-01",
+        "Typ_Anlage": "Bügel",
+        "Anzahl_Abstellmoeglichkeiten": 10,
+        "Davon_Ueberdacht": 0,
+        "Reparatur_moeglich": "nein",
+        "Anzahl_E_Ladepunkte": "0",
+        "Gebuehrenpflichtig": "nein"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kus_fahrradabst_vorhanden.1227",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.858951252724905, 48.59332036316402]
+      },
+      "properties": {
+        "fid": 1227,
+        "OSM_ID": "14211570432",
+        "Standortbeschreibung": "Süddeutsche Gemeinschaft Herrenberg",
+        "Erfassungsdatum": "2026-10-08",
+        "Typ_Anlage": "Reine Vorderradhalterung",
+        "Davon_Ueberdacht": 0,
+        "Reparatur_moeglich": "nein",
+        "Anzahl_E_Ladepunkte": "0",
+        "Gebuehrenpflichtig": "nein"
       }
     }
   ]

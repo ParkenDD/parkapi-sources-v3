@@ -1,0 +1,252 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_hassel_domviertel",
+        "name": "Domviertel",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/hassel/park_hassel_domviertel.shtml",
+        "address": "Arthur-Ruppin-Straße, Magdeburg",
+        "capacity": 75,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.634177,
+          52.126461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_hassel_frieden",
+        "name": "Friedensplatz",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/hassel/park_hassel_frieden.shtml",
+        "address": "Behringstraße, Magdeburg",
+        "capacity": 90,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.629653,
+          52.123135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_hbf_citycarre",
+        "name": "City Carré",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/hbf/park_hbf_citycarre.shtml",
+        "address": "Kantstraße 3, Magdeburg",
+        "capacity": 1200,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.628706,
+          52.13043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_hbf_maritim",
+        "name": "Hotel Maritim",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/hbf/park_hbf_maritim.shtml",
+        "address": "Otto-von-Guericke-Straße 87, Magdeburg",
+        "capacity": 440,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.631327,
+          52.129395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_hbf_ulrichshaus",
+        "name": "Ulrichshaus",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/hbf/park_hbf_ulrichshaus.shtml",
+        "address": "Ulrichplatz 1, Magdeburg",
+        "capacity": 360,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.634959,
+          52.131069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_mitte_alleecenter",
+        "name": "Allee Center",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/mitte/park_mitte_alleecenter.shtml",
+        "address": "Schleinufer 5, Magdeburg",
+        "capacity": 1300,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.641694,
+          52.129007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_mitte_petri_ost",
+        "name": "Petriförder Ost",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.movi.de/parkinfo/mitte/park_mitte_petri_ost.shtml",
+        "address": "Schleinufer, Magdeburg",
+        "capacity": 120,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.647603,
+          52.133571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_mitte_petri_west",
+        "name": "Petriförder West",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.movi.de/parkinfo/mitte/park_mitte_petri_west.shtml",
+        "address": "Schleinufer, Magdeburg",
+        "capacity": 50,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.646294,
+          52.132814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_mitte_ratswaage",
+        "name": "Hotel Ratswaage",
+        "type": "CAR_PARK",
+        "public_url": "https://www.movi.de/parkinfo/mitte/park_mitte_ratswaage.shtml",
+        "address": "Ratswaageplatz 1-4, Magdeburg",
+        "capacity": 139,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.638355,
+          52.133099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_nord_centrum",
+        "name": "Karstadt",
+        "type": "CAR_PARK",
+        "public_url": "https://www.movi.de/parkinfo/nord/park_nord_centrum.shtml",
+        "address": "Julius-Bremer-Straße, Magdeburg",
+        "capacity": 0,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.636233,
+          52.13311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_nord_listemann",
+        "name": "Listemannstrasse",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.movi.de/parkinfo/nord/park_nord_listemann.shtml",
+        "address": "Listemannstraße, Magdeburg",
+        "capacity": 184,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.643561,
+          52.137891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_nord_uniplatz",
+        "name": "Universitätsplatz",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.movi.de/parkinfo/nord/park_nord_uniplatz.shtml",
+        "address": "Am Krökentor, Magdeburg",
+        "capacity": 120,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.637294,
+          52.137514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "park_pur_messeparkplatz",
+        "name": "Elbauenpark",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.movi.de/parkinfo/pur/park_pur_messeparkplatz.shtml",
+        "address": "Tessenowstraße, Magdeburg",
+        "capacity": 1400,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.668728,
+          52.134087
+        ]
+      }
+    }
+  ]
+}

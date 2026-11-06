@@ -1,0 +1,19 @@
+[
+  {
+    "address": "Enkeringer Straße 4, 85125 Kinding",
+    "capacity": 1000,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.99814",
+    "lon": "11.376128",
+    "name": "Parkareal Kinding",
+    "operator_name": "Landes GmbH",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-26T19:40:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "E4"
+  }
+]

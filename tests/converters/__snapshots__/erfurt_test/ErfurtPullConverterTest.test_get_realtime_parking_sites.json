@@ -1,0 +1,26 @@
+[
+  {
+    "realtime_capacity": 220,
+    "realtime_data_updated_at": "2026-10-25T07:43:45Z",
+    "realtime_free_capacity": 130,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH09"
+  },
+  {
+    "realtime_capacity": 537,
+    "realtime_data_updated_at": "2026-10-25T08:19:09Z",
+    "realtime_free_capacity": 317,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH08"
+  },
+  {
+    "realtime_capacity": 427,
+    "realtime_data_updated_at": "2026-10-25T08:18:05Z",
+    "realtime_free_capacity": 395,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PH10"
+  }
+]

@@ -28,19 +28,29 @@ class ParkingFacilityMixin(Datex2StaticMixin, ABC):
                 ('openingTimes', 'period'),
             ],
             ensure_array_keys=[
+                ('parkingFacilityTablePublication', 'parkingFacilityTable'),
                 ('parkingFacilityTable', 'parkingFacility'),
+                ('parkingFacilityTable', 'parkingArea'),
+                ('parkingArea', 'parkingFacility'),
                 ('parkingFacility', 'assignedParkingSpaces'),
             ],
         )
-        return (
+        parking_facility_tables: list[dict] = (
             data
             .get('d2LogicalModel', {})
             .get('payloadPublication', {})
             .get('genericPublicationExtension', {})
             .get('parkingFacilityTablePublication', {})
-            .get('parkingFacilityTable', {})
-            .get('parkingFacility', [])
+            .get('parkingFacilityTable', [])
         )
+        parking_facilities: list[dict] = []
+        for parking_facility_table in parking_facility_tables:
+            parking_facilities += parking_facility_table.get('parkingFacility', [])
+            # Parking facilities can also be grouped in parking areas
+            for parking_area in parking_facility_table.get('parkingArea', []):
+                parking_facilities += parking_area.get('parkingFacility', [])
+
+        return parking_facilities
 
     def get_uid_from_static_input_dict(self, input_dict: dict) -> str:
         return input_dict.get('id')

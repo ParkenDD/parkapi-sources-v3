@@ -7,6 +7,7 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import BietigheimBissingenPullConverter
 from parkapi_sources.util import RequestHelper
@@ -37,7 +38,10 @@ def bietigheim_bissingen_pull_converter(
 
 class BietigheimBissingenPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter):
+    def test_get_static_parking_sites(
+        bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter,
+        snapshot: SnapshotAssertion,
+    ):
         static_parking_site_inputs, import_parking_site_exceptions = (
             bietigheim_bissingen_pull_converter.get_static_parking_sites()
         )
@@ -45,10 +49,13 @@ class BietigheimBissingenPullConverterTest:
         assert len(static_parking_site_inputs) == 13
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_realtime_parking_sites(bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter):
+    def test_get_realtime_parking_sites(
+        bietigheim_bissingen_pull_converter: BietigheimBissingenPullConverter,
+        snapshot: SnapshotAssertion,
+    ):
         # we need to patch _get_data as there is no realistic way to mock the whole IMAP process
         csv_path = Path(Path(__file__).parent, 'data', 'bietigheim-bissingen.csv')
         with csv_path.open('rb') as csv_file:
@@ -64,4 +71,4 @@ class BietigheimBissingenPullConverterTest:
         assert len(realtime_parking_site_inputs) == 14
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

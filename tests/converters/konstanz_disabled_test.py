@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import KonstanzDisabledPullConverter
 from parkapi_sources.util import RequestHelper
@@ -30,6 +31,7 @@ class KonstanzDisabledConverterTest:
     def test_get_static_parking_spots(
         konstanz_disabled_pull_converter: KonstanzDisabledPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         json_path = Path(Path(__file__).parent, 'data', 'konstanz_disabled.geojson')
         with json_path.open() as json_file:
@@ -58,4 +60,4 @@ class KonstanzDisabledConverterTest:
         assert len(static_parking_spot_inputs) == 97
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)

@@ -1,0 +1,18 @@
+[
+  {
+    "realtime_capacity": 125,
+    "realtime_data_updated_at": "2026-10-25T08:25:44Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "32[Stadthalle]"
+  },
+  {
+    "realtime_capacity": 168,
+    "realtime_data_updated_at": "2026-10-25T08:25:45Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "33[Stadthalle/Hotel]"
+  }
+]

@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import HeidelbergDisabledPullConverter
 from parkapi_sources.util import RequestHelper
@@ -45,6 +46,7 @@ class HeidelbergDisabledConverterTest:
     def test_get_static_parking_spots(
         heidelberg_disabled_pull_converter: HeidelbergDisabledPullConverter,
         requests_mock_heidelberg_disabled: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_spot_inputs, import_parking_spot_exceptions = (
             heidelberg_disabled_pull_converter.get_static_parking_spots()
@@ -53,4 +55,4 @@ class HeidelbergDisabledConverterTest:
         assert len(static_parking_spot_inputs) == 192
         assert len(import_parking_spot_exceptions) == 0
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)

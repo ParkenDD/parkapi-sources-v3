@@ -7,6 +7,7 @@ import json
 from unittest.mock import Mock
 
 import pytest
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters.mannheim_buchen import MannheimPushConverter
 from parkapi_sources.models import RealtimeParkingSiteInput, StaticParkingSiteInput
@@ -25,7 +26,7 @@ def mannheim_push_converter(mocked_config_helper: Mock, request_helper: RequestH
 
 class MannheimPushConverterTest:
     @staticmethod
-    def test_get_parking_sites(mannheim_push_converter: MannheimPushConverter):
+    def test_get_parking_sites(mannheim_push_converter: MannheimPushConverter, snapshot: SnapshotAssertion):
         # TODO: set proper test files as soon as we get them
         with get_data_path('mannheim.json').open('br') as json_file:
             json_data = json.load(json_file)
@@ -35,9 +36,9 @@ class MannheimPushConverterTest:
         assert len(parking_site_inputs) == len(json_data) * 2, 'There should be two parking sites per input dataset.'
         assert len(import_parking_site_exceptions) == 0, 'There should be no exceptions'
 
-        validate_static_parking_site_inputs([
-            item for item in parking_site_inputs if isinstance(item, StaticParkingSiteInput)
-        ])
-        validate_realtime_parking_site_inputs([
-            item for item in parking_site_inputs if isinstance(item, RealtimeParkingSiteInput)
-        ])
+        validate_static_parking_site_inputs(
+            [item for item in parking_site_inputs if isinstance(item, StaticParkingSiteInput)], snapshot
+        )
+        validate_realtime_parking_site_inputs(
+            [item for item in parking_site_inputs if isinstance(item, RealtimeParkingSiteInput)], snapshot
+        )

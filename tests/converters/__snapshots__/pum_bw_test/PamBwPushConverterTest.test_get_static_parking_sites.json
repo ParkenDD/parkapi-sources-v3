@@ -1,0 +1,2221 @@
+[
+  {
+    "capacity": 15,
+    "description": "L 231 zwischen Bettingen und Dertingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.77116",
+    "lon": "9.574007",
+    "name": "A3 Wertheim/Lengfurt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.77116,9.574007&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1"
+  },
+  {
+    "capacity": 15,
+    "description": "L 541 östlich von Heddesheim",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.50897",
+    "lon": "8.635927",
+    "name": "A5 Hirschberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.50897,8.635927&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2"
+  },
+  {
+    "capacity": 25,
+    "description": "an L 536 und B 3",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.480985",
+    "lon": "8.655778",
+    "name": "A5 Schriesheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.480985,8.655778&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "3"
+  },
+  {
+    "capacity": 50,
+    "description": "L 531 südwestlich von Dossenheim",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.447339",
+    "lon": "8.651266",
+    "name": "A5 Heidelberg/Dossenheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.447339,8.651266&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "4"
+  },
+  {
+    "capacity": 100,
+    "description": "B 535",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.370889",
+    "lon": "8.623291",
+    "name": "A5 Heidelberg/Schwetzingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.370889,8.623291&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5"
+  },
+  {
+    "capacity": 50,
+    "description": "B 291",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "49.301363",
+    "lon": "8.631879",
+    "name": "A5 Walldorf/Wiesloch",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.301363,8.631879&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6"
+  },
+  {
+    "capacity": 60,
+    "description": "L 555",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.228183",
+    "lon": "8.598432",
+    "name": "A5 Kronau (West)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.228183,8.598432&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7"
+  },
+  {
+    "capacity": 40,
+    "description": "L 555",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.225204",
+    "lon": "8.609118",
+    "name": "A5 Kronau (Ost)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.225204,8.609118&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8"
+  },
+  {
+    "capacity": 156,
+    "description": "B 3",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.95671",
+    "lon": "8.386301",
+    "name": "A5 Karlsruhe-Süd",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.95671,8.386301&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "10"
+  },
+  {
+    "capacity": 100,
+    "description": "B 462 bei Rauental",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.860669",
+    "lon": "8.249313",
+    "name": "A5 Rastatt-Nord",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.860669,8.249313&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "11"
+  },
+  {
+    "capacity": 105,
+    "description": "L 87 zwischen Achern und Rheinau",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.6437472",
+    "lon": "8.0278944",
+    "name": "A5 Achern",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.6437472,8.0278944&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "12"
+  },
+  {
+    "capacity": 35,
+    "description": "B 28 zwischen Appenweier und Kehl",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.5353722",
+    "lon": "7.918675",
+    "name": "A5 Appenweier (West)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.5353722,7.918675&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "13"
+  },
+  {
+    "capacity": 28,
+    "description": "B 28 zwischen Appenweier und Kehl",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.5328472",
+    "lon": "7.9556222",
+    "name": "A5 Appenweier (Ost)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.5328472,7.9556222&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "14"
+  },
+  {
+    "capacity": 53,
+    "description": "B 33a zwischen Offenburg und Goldscheuer",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.4726556",
+    "lon": "7.9013",
+    "name": "A5 Offenburg (West)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.4726556,7.9013&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "15"
+  },
+  {
+    "capacity": 33,
+    "description": "B 33a zwischen Offenburg und Goldscheuer",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.4718139",
+    "lon": "7.9069028",
+    "name": "A5 Offenburg (Ost)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.4718139,7.9069028&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "16"
+  },
+  {
+    "capacity": 70,
+    "description": "L 75 zwischen Lahr und Schwanau",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.3644083",
+    "lon": "7.7883889",
+    "name": "A5 Lahr",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.3644083,7.7883889&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "17"
+  },
+  {
+    "capacity": 68,
+    "description": "L 111 zwischen Herbolzheim und Rheinhausen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.2284861",
+    "lon": "7.7520722",
+    "name": "A5 Herbolzheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.2284861,7.7520722&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "18"
+  },
+  {
+    "capacity": 58,
+    "description": "L 113 zwischen Riegel und Malterdingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.1545361",
+    "lon": "7.754925",
+    "name": "A5 Riegel",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.1545361,7.754925&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "19"
+  },
+  {
+    "capacity": 38,
+    "description": "L 114/K 5140 zwischen Bahlingen und Teningen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.1192444",
+    "lon": "7.7902528",
+    "name": "A5 Teningen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.1192444,7.7902528&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "20"
+  },
+  {
+    "capacity": 61,
+    "description": "L 187 bei Benzhausen (Autobahnmeisterei)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.058741",
+    "lon": "7.810401",
+    "name": "A5 Freiburg-Nord",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.058741,7.810401&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "21"
+  },
+  {
+    "capacity": 112,
+    "description": "B 31/L115 zwischen Betzenhausen und Umkirch",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.0268083",
+    "lon": "7.7775972",
+    "name": "A5 Freiburg-Mitte",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.0268083,7.7775972&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "22"
+  },
+  {
+    "capacity": 61,
+    "description": "B 31 zwischen Freiburg und Tiengen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.9800889",
+    "lon": "7.7404389",
+    "name": "A5 Freiburg-Süd",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.9800889,7.7404389&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "23"
+  },
+  {
+    "capacity": 38,
+    "description": "L 120 zwischen Bad Krozingen und Breisach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.9491056",
+    "lon": "7.671125",
+    "name": "A5 Bad Krozingen Hausen-Ost",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.9491056,7.671125&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "24"
+  },
+  {
+    "capacity": 20,
+    "description": "B 31 zwischen Bad Krozingen und Breisach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.952785",
+    "lon": "7.666818",
+    "name": "A5 Bad Krozingen Hausen-West",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.952785,7.666818&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "25"
+  },
+  {
+    "capacity": 31,
+    "description": "B 378 zwischen Neuenburg und der Grenze",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.8139139",
+    "lon": "7.5497028",
+    "name": "A5 Müllheim/Neuenburg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.8139139,7.5497028&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "26"
+  },
+  {
+    "capacity": 10,
+    "description": "L 137 an einem angrenzenden Wirtschaftsweg",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.677578",
+    "lon": "7.5218778",
+    "name": "A5 Efringen-Kirchen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.677578,7.5218778&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "27"
+  },
+  {
+    "capacity": 50,
+    "description": "L 103 zwischen Ettenheim und Kappel- Grafenhausen",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.2795361",
+    "lon": "7.7775917",
+    "name": "A5 Ettenheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.2795361,7.7775917&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "28"
+  },
+  {
+    "capacity": 22,
+    "description": "K 5349/B 3 bei Ringsheim",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.2500667",
+    "lon": "7.7699611",
+    "name": "A5 Ringsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.2500667,7.7699611&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "29"
+  },
+  {
+    "capacity": 33,
+    "description": "B 291 zwischen Schwetzingen und der A 6",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.365246",
+    "lon": "8.55251",
+    "name": "A6 Schwetzingen/Hockenheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.365246,8.55251&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "30"
+  },
+  {
+    "capacity": 95,
+    "description": "an B 39 über K 4170",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.2736257",
+    "lon": "8.6953119",
+    "name": "A6 Rauenberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.2736257,8.6953119&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "31"
+  },
+  {
+    "capacity": 41,
+    "description": "B 292 zwischen Sinsheim und Dühren",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.247183",
+    "lon": "8.852008",
+    "name": "A6 Sinsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.247183,8.852008&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "32"
+  },
+  {
+    "capacity": 25,
+    "description": "L 592 zwischen Steinsfurt und Reihen (Nord)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.228835",
+    "lon": "8.919643",
+    "name": "A6 Sinsheim-Steinsfurt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.228835,8.919643&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "33"
+  },
+  {
+    "capacity": 25,
+    "description": "L 592 zwischen Steinsfurt und Reihen (Süd)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.225586",
+    "lon": "8.919189",
+    "name": "A6 Sinsheim-Steinsfurt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.225586,8.919189&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "34"
+  },
+  {
+    "capacity": 90,
+    "description": "L 1107 zwischen Bad Rappenau- Fürfeld und Bad Rappenau- Bonfeld",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.210743",
+    "lon": "9.076073",
+    "name": "A6 Bad Rappenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.210743,9.076073&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "35"
+  },
+  {
+    "capacity": 60,
+    "description": "B 27 Fahrtrichtung Heilbronn",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.0858361",
+    "lon": "9.2900556",
+    "name": "A6 Heilbronn-Neckarsulm",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.0858361,9.2900556&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "36"
+  },
+  {
+    "capacity": 45,
+    "description": "L 1089 zwischen Schwabbach und Rappach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.1792056",
+    "lon": "9.4121944",
+    "name": "A6 Bretzfeld",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.1792056,9.4121944&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "37"
+  },
+  {
+    "capacity": 16,
+    "description": "L 1051 zwischen Neuenstein und Kirchensall",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.2189972",
+    "lon": "9.5878306",
+    "name": "A6 Neuenstein",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.2189972,9.5878306&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "38"
+  },
+  {
+    "capacity": 103,
+    "description": "B 19 zwischen Kupferzell und Untermünkheim",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.1958472",
+    "lon": "9.6913139",
+    "name": "A6 Kupferzell",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.1958472,9.6913139&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "39"
+  },
+  {
+    "capacity": 17,
+    "description": "L 1037 zwischen Wolpertshausen und Hörlebach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.17045",
+    "lon": "9.8607111",
+    "name": "A6 Ilshofen/Wolpertshausen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.17045,9.8607111&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "40"
+  },
+  {
+    "capacity": 20,
+    "description": "L 1040 zwischen Kirchberg und Ilshofen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.1759667",
+    "lon": "9.9610583",
+    "name": "A6 Kirchberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.1759667,9.9610583&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "41"
+  },
+  {
+    "capacity": 20,
+    "description": "B 290 zwischen Satteldorf und Wallhausen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.1807361",
+    "lon": "10.0690139",
+    "name": "A6 Crailsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.1807361,10.0690139&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "42"
+  },
+  {
+    "capacity": 10,
+    "description": "L 2218 zwischen Neustädtlein und Bergbronn",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.0934",
+    "lon": "10.2110694",
+    "name": "A7 Dinkelsbühl/Fichtenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.0934,10.2110694&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "43"
+  },
+  {
+    "capacity": 34,
+    "description": "L 1060 zwischen Ellwangen und Röhlingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.9553833",
+    "lon": "10.1822139",
+    "name": "A7 Ellwangen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.9553833,10.1822139&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "44"
+  },
+  {
+    "capacity": 53,
+    "description": "B 29 zwischen Wasseralfingen und Lauchheim",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.8853472",
+    "lon": "10.1645306",
+    "name": "A7 Aalen/Westhausen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.8853472,10.1645306&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "45"
+  },
+  {
+    "capacity": 26,
+    "description": "L 1084 zwischen Ebnat und Elchingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.806273",
+    "lon": "10.209811",
+    "name": "A7 Aalen/Oberkochen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.806273,10.209811&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "46"
+  },
+  {
+    "capacity": 200,
+    "description": "B 466a zwischen Heidenheim und Nattheim",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.6901389",
+    "lon": "10.2150222",
+    "name": "A7 Heidenheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.6901389,10.2150222&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "47"
+  },
+  {
+    "capacity": 45,
+    "description": "B 19/B 492 und L 1079 zwischen Herbrechtingen und Giengen an der Brenz",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.6115889",
+    "lon": "10.2025",
+    "name": "A7 Giengen/Herbrechtingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.6115889,10.2025&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "48"
+  },
+  {
+    "capacity": 16,
+    "description": "L 1168 zwischen Bissingen ob Lontal und der L 1079 Hausen ob Lontal-Herbrechtingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.572987",
+    "lon": "10.155447",
+    "name": "A7 Niederstotzingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.572987,10.155447&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "49"
+  },
+  {
+    "capacity": 75,
+    "description": "L 1170 bzw. 1079 (alte B 19) zwischen Albeck und Langenau",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.493161",
+    "lon": "10.088977",
+    "name": "A7 Langenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.493161,10.088977&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "50"
+  },
+  {
+    "capacity": 10,
+    "description": "L 299 südlich von Dettingen an der Iller",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.0949278",
+    "lon": "10.1143333",
+    "name": "A7 Dettingen an der Iller",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.0949278,10.1143333&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "51"
+  },
+  {
+    "capacity": 30,
+    "description": "B 312, am Anschluss B 31 / L 300 südlich von Oberopfingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.0347778",
+    "lon": "10.1206972",
+    "name": "A7 Berkheim/Oberopfingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.0347778,10.1206972&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "52"
+  },
+  {
+    "capacity": 100,
+    "description": "L 609 / L 623 zwischen Palmbach und Stupferich",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.94477",
+    "lon": "8.493922",
+    "name": "A8 Karlsbad",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.94477,8.493922&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "53"
+  },
+  {
+    "capacity": 92,
+    "description": "B 10 zwischen Pforzheim und Remchingen (bei der Straßenmeisterei)",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.907679",
+    "lon": "8.649249",
+    "name": "A8 Pforzheim-West",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.907679,8.649249&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "54"
+  },
+  {
+    "capacity": 97,
+    "description": "B 294 zwischen Pforzheim und A 8 (südlich der Anschlussstelle)",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.915278",
+    "lon": "8.718002",
+    "name": "A8 Pforzheim-Nord",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.915278,8.718002&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "55"
+  },
+  {
+    "capacity": 10,
+    "description": "B 10 zwischen Pforzheim und Niefern-Öschelbronn",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.912199",
+    "lon": "8.760395",
+    "name": "A8 Pforzheim-Ost",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.912199,8.760395&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "56"
+  },
+  {
+    "capacity": 90,
+    "description": "L 1134 zwischen Heimsheim und A 8",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.828174",
+    "lon": "8.868273",
+    "name": "A8 Heimsheim (Süd)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.828174,8.868273&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "57"
+  },
+  {
+    "capacity": 35,
+    "description": "an der \"Dieb-Kreuzung\" (Kreisverkehr L 1180 / L 1134)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.833818",
+    "lon": "8.870454",
+    "name": "A8 Heimsheim (Nord)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.833818,8.870454&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "58"
+  },
+  {
+    "capacity": 109,
+    "description": "K 1082 zwischen Perouse und Rutesheim, gegenüber Freizeitpark",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.8120357",
+    "lon": "8.9215096",
+    "name": "A8 Rutesheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.8120357,8.9215096&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "59"
+  },
+  {
+    "capacity": 120,
+    "description": "L 1202 zwischen Neuhausen und Ostfildern-Nellingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.6963139",
+    "lon": "9.2840278",
+    "name": "A8 Esslingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.6963139,9.2840278&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "60"
+  },
+  {
+    "capacity": 75,
+    "description": "B 465 zwischen Kirchheim unter Teck und Dettingen unter Teck (vor der Autobahnmeisterei)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.62915",
+    "lon": "9.456",
+    "name": "A8 Kirchheim (Teck)-Ost",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.62915,9.456&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "61"
+  },
+  {
+    "capacity": 130,
+    "description": "L 1214 zwischen Aichelberg und Weilheim an der Teck",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.6343306",
+    "lon": "9.5562361",
+    "name": "A8 Aichelberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.6343306,9.5562361&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "62"
+  },
+  {
+    "capacity": 103,
+    "description": "L 1230 zwischen Merklingen und Nellingen",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5172295",
+    "lon": "9.7595901",
+    "name": "A8 Merklingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.5172295,9.7595901&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "63"
+  },
+  {
+    "capacity": 50,
+    "description": "Ulm/Ost, Seligweiler, L 1079",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.45572",
+    "lon": "10.02802",
+    "name": "A8 Ulm-Ost",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.45572,10.02802&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "64"
+  },
+  {
+    "capacity": 72,
+    "description": "B 290 zwischen Tauberbischofsheim und Lauda-Königshofen (neben der Autobahnmeisterei)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.6032222",
+    "lon": "9.6918083",
+    "name": "A81 Tauberbischofsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.6032222,9.6918083&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "66"
+  },
+  {
+    "capacity": 8,
+    "description": "L 579 zwischen Kupprichhausen und Buch",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.538998",
+    "lon": "9.581578",
+    "name": "A81 Ahorn-West",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.538998,9.581578&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "67"
+  },
+  {
+    "capacity": 7,
+    "description": "L 579 zwischen Kupprichhausen und Buch",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.53846",
+    "lon": "9.59057",
+    "name": "A81 Ahorn-Ost",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.53846,9.59057&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "68"
+  },
+  {
+    "capacity": 41,
+    "description": "L 1095 zwischen Berolzheim und Boxberg",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.4696083",
+    "lon": "9.5543222",
+    "name": "A81 Boxberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.4696083,9.5543222&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "69"
+  },
+  {
+    "capacity": 137,
+    "description": "L 515 zwischen Osterburken und Merchingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.4079861",
+    "lon": "9.4781389",
+    "name": "A81 Osterburken",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.4079861,9.4781389&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "70"
+  },
+  {
+    "capacity": 130,
+    "description": "B 39a zwischen Weinsberg und Ellhofen (neben der Autobahnpolizei)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.1370667",
+    "lon": "9.3030056",
+    "name": "A81 Weinsberg/Ellhofen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.1370667,9.3030056&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "72"
+  },
+  {
+    "capacity": 90,
+    "description": "L 1111 zwischen Untergruppenbach und Happenbach",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "49.175329",
+    "lon": "9.224101",
+    "name": "A81 Heilbronn/Untergruppenbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.175329,9.224101&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "73"
+  },
+  {
+    "capacity": 55,
+    "description": "L 1100 / L 1102 zwischen Ilsfeld und Auenstein",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.0592444",
+    "lon": "9.270425",
+    "name": "A81 Ilsfeld",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.0592444,9.270425&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "74"
+  },
+  {
+    "capacity": 130,
+    "description": "L 1115 zwischen Mundelsheim und Großbottwar",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "49.0053889",
+    "lon": "9.2367667",
+    "name": "A81 Mundelsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=49.0053889,9.2367667&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "75"
+  },
+  {
+    "capacity": 250,
+    "description": "L 1125 zwischen Pleidelsheim und Steinheim an der Murr",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.9586833",
+    "lon": "9.2205",
+    "name": "A81 Pleidelsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.9586833,9.2205&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "76"
+  },
+  {
+    "capacity": 130,
+    "description": "L1140 östlich der A81",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.884835",
+    "lon": "9.151496",
+    "name": "A81 Ludwigsburg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.884835,9.151496&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "77"
+  },
+  {
+    "capacity": 35,
+    "description": "an K1077 in Gärtringen am Kreisverkehr",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.64017",
+    "lon": "8.9172",
+    "name": "A81 Gärtringen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.64017,8.9172&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "78"
+  },
+  {
+    "capacity": 50,
+    "description": "B 28 zwischen Herrenberg und Tübingen (vor der Autobahnmeisterei)",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.5807694",
+    "lon": "8.9022611",
+    "name": "A81 Herrenberg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.5807694,8.9022611&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "79"
+  },
+  {
+    "capacity": 70,
+    "description": "B 32 in der Anschlussstelle",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.4304583",
+    "lon": "8.7453528",
+    "name": "A81 Horb am Neckar",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.4304583,8.7453528&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "80"
+  },
+  {
+    "capacity": 84,
+    "description": "B 463 zwischen Empfingen und Haigerloch",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.3838556",
+    "lon": "8.7251194",
+    "name": "A81 Empfingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.3838556,8.7251194&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "81"
+  },
+  {
+    "capacity": 28,
+    "description": "L 415 zwischen Oberndorf am Neckar und Rosenfeld",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.2990556",
+    "lon": "8.6355444",
+    "name": "A81 Oberndorf am Neckar",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.2990556,8.6355444&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "82"
+  },
+  {
+    "capacity": 116,
+    "description": "B 462 zwischen Rottweil und Dunningen",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.177505",
+    "lon": "8.573653",
+    "name": "A81 Rottweil",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.177505,8.573653&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "83"
+  },
+  {
+    "capacity": 40,
+    "description": "B 27 und L 433 zwischen Schwenningen und Trossingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.08192",
+    "lon": "8.589991",
+    "name": "A81 Villingen-Schwenningen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.08192,8.589991&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "84"
+  },
+  {
+    "capacity": 60,
+    "description": "B 523 zwischen Schwenningen und Tuttlingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.033355",
+    "lon": "8.61078",
+    "name": "A81 Tuningen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.033355,8.61078&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "85"
+  },
+  {
+    "capacity": 105,
+    "description": "B 31 zwischen Hausen und Immendingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.9208694",
+    "lon": "8.6721083",
+    "name": "A81 Geisingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.9208694,8.6721083&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "86"
+  },
+  {
+    "capacity": 50,
+    "description": "B 491 zwischen Engen und  L 194 Aach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.8565611",
+    "lon": "8.7938167",
+    "name": "A81 Engen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.8565611,8.7938167&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "87"
+  },
+  {
+    "capacity": 25,
+    "description": "L 191 zwischen Singen und Engen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.7994889",
+    "lon": "8.82425",
+    "name": "A81 Singen, Hohenkrähen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.7994889,8.82425&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "88"
+  },
+  {
+    "capacity": 10,
+    "description": "B 314 zwischen Hilzingen und Singen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.7610111",
+    "lon": "8.8033333",
+    "name": "A81 Hilzingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.7610111,8.8033333&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "89"
+  },
+  {
+    "capacity": 10,
+    "description": "B 34 zwischen Gottmadingen und Bietingen (nicht als P+M ausgewiesen!)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.7362417",
+    "lon": "8.7512778",
+    "name": "A81 Gottmadingen-Bietingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.7362417,8.7512778&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "90"
+  },
+  {
+    "capacity": 31,
+    "description": "B 32 im Bereich der Einmündung der K 7990 in die B 32 bei Alt-Karbach",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "47.702897",
+    "lon": "9.796758",
+    "name": "A96 Karbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.702897,9.796758&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "91"
+  },
+  {
+    "capacity": 10,
+    "description": "L 321 zwischen Riehlings und Käferhofen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.72295",
+    "lon": "9.8698",
+    "name": "A96 Wangen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.72295,9.8698&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "92"
+  },
+  {
+    "capacity": 42,
+    "description": "am Kreisverkehr Dettishofen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.75055",
+    "lon": "9.90637",
+    "name": "A96 Dettishofen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.75055,9.90637&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "93"
+  },
+  {
+    "capacity": 43,
+    "description": "Anschlussstelle Leutkirch Süd im Bereich der Einmündung der K 8025",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "47.816384",
+    "lon": "9.98965",
+    "name": "A96 Leutkirch-Süd",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.816384,9.98965&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "94"
+  },
+  {
+    "capacity": 25,
+    "description": "L 141 zwischen Rümmingen und Lörrach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.6332028",
+    "lon": "7.6466278",
+    "name": "A98 Kandern",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.6332028,7.6466278&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "95"
+  },
+  {
+    "capacity": 10,
+    "description": "B 316 zwischen Lörrach und Rheinfelden (nicht als P+M Platz ausgewiesen!)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.5949778",
+    "lon": "7.7055806",
+    "name": "A98 Lörrach-Inzlingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.5949778,7.7055806&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "96"
+  },
+  {
+    "capacity": 50,
+    "description": "B 313 zwischen Stockach und Espasingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.837",
+    "lon": "8.98688",
+    "name": "A98 Stockach-West",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.837,8.98688&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "97"
+  },
+  {
+    "capacity": 15,
+    "description": "B 31 zwischen Stockach und Ludwigshafen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.8409667",
+    "lon": "9.0234944",
+    "name": "A98 Stockach-Ost",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.8409667,9.0234944&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "98"
+  },
+  {
+    "capacity": 50,
+    "description": "B 316 zwischen Rheinfelden und Lörrach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.5694639",
+    "lon": "7.7591056",
+    "name": "A861 Rheinfelden-Mitte",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.5694639,7.7591056&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "99"
+  },
+  {
+    "capacity": 60,
+    "description": "AS Ulm/Lehr",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.438167",
+    "lon": "9.977331",
+    "name": "B10 Ulm",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.438167,9.977331&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "100"
+  },
+  {
+    "capacity": 120,
+    "description": "B 464 / K 6764 westlich Walddorfhäslach-Gniebel",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.579639",
+    "lon": "9.1718694",
+    "name": "B27 Bullenbank bei Gniebel",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.579639,9.1718694&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "101"
+  },
+  {
+    "capacity": 35,
+    "description": "L 379 nordwestlich Kirchentellinsfurt",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.5369556",
+    "lon": "9.1387611",
+    "name": "B27 Kirchentellinsfurt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.5369556,9.1387611&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "102"
+  },
+  {
+    "capacity": 111,
+    "description": "B28 zwischen BAB 81 und Industriegebiet Ergenzingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.505542",
+    "lon": "8.828434",
+    "name": "B28 Ergenzingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.505542,8.828434&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "103"
+  },
+  {
+    "capacity": 8,
+    "description": "K 1882 zwischen Plüderhausen und Plüderhausen-Aichenbachhof",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.7929278",
+    "lon": "9.5866",
+    "name": "B29 Plüderhausen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.7929278,9.5866&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "104"
+  },
+  {
+    "capacity": 20,
+    "description": "K 1881 zwischen Schorndorf und Urbach",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.8103889",
+    "lon": "9.5686417",
+    "name": "B29 Urbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.8103889,9.5686417&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "105"
+  },
+  {
+    "capacity": 50,
+    "description": "L 1150 zwischen Schorndorf und Schorndorf-Haubersbronn",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.818878",
+    "lon": "9.54503",
+    "name": "B29 Schorndorf-Haubersbronn",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.818878,9.54503&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "106"
+  },
+  {
+    "capacity": 20,
+    "description": "an L 284 am Kreisverkehr zwischen Baindt und Mochenwangen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "47.851141",
+    "lon": "9.638004",
+    "name": "B30 Baindt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=47.851141,9.638004&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "108"
+  },
+  {
+    "capacity": 50,
+    "description": "L 267 zwischen Biberach und Äpfingen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.1487389",
+    "lon": "9.8340194",
+    "name": "B30 Barabein bei Biberach an der Riß",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.1487389,9.8340194&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "109"
+  },
+  {
+    "capacity": 30,
+    "description": "K 7507 bei Laupheim-Baustetten (beim Kreisverkehr)",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.2108333",
+    "lon": "9.8793056",
+    "name": "B30 Laupheim-Süd",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.2108333,9.8793056&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "110"
+  },
+  {
+    "capacity": 24,
+    "description": "L 259 zwischen Laupheim und Rißtissen",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.2411028",
+    "lon": "9.8739",
+    "name": "B30 Laupheim-Mitte",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.2411028,9.8739&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "111"
+  },
+  {
+    "capacity": 50,
+    "description": "L 261 und L 265 bei Achstetten",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.257889",
+    "lon": "9.90305",
+    "name": "B30 Laupheim-Nord",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.257889,9.90305&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "112"
+  },
+  {
+    "capacity": 21,
+    "description": "L 240 zwischen Donaustetten und Unterweiler",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.32955",
+    "lon": "9.9442694",
+    "name": "B30 Donaustetten",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.32955,9.9442694&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "113"
+  },
+  {
+    "capacity": 21,
+    "description": "L 240 bei Donaustetten im Baugebiet \"Nahversorgungszentrum Beim Brückle\"",
+    "external_identifiers": [],
+    "has_lighting": false,
+    "has_realtime_data": false,
+    "lat": "48.32958",
+    "lon": "9.94421",
+    "name": "B30 Donaustetten",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.32958,9.94421&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "114"
+  },
+  {
+    "capacity": 135,
+    "description": "im Bereich Südbahnhof der Stadt Reutlingen (früher B 312)",
+    "external_identifiers": [],
+    "has_lighting": true,
+    "has_realtime_data": false,
+    "lat": "48.4827306",
+    "lon": "9.2297639",
+    "name": "B464 Reutlingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "public_url": "https://maps.google.com/maps?f=q&hl=en&geocode=&q=48.4827306,9.2297639&ie=UTF8&z=10",
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "115"
+  }
+]

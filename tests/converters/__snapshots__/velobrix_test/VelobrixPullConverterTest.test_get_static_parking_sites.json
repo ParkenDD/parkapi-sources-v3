@@ -1,0 +1,68 @@
+[
+  {
+    "address": "Hauptbahnhof/ZOB Ellwangen (Jagst), Bahnhofstraße 1, 73479 Ellwangen (Jagst)",
+    "capacity": 16,
+    "description": "Unten/mit Lademöglichkeit (Fahrradhöhe bis 1.20m) ; Oben (Fahrradhöhe bis 1.10m) ; Unten (Fahrradhöhe bis 1.20m)",
+    "external_identifiers": [],
+    "fee_description": "1 Tag: 1,00€, 7 Tage: 5,00€, 30 Tage: 10,00€, 365 Tage: 100,00€",
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "48.964564",
+    "lon": "10.129923",
+    "name": "VELOBRIX - Hauptbahnhof/ZOB Ellwangen (Jagst)",
+    "operator_name": "014 - Landkreis Ostalbkreis",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "BIKE",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "LOCKBOX",
+    "uid": "23"
+  },
+  {
+    "address": "Industriekunstpfad Waiblingen, Innerer Weidach 11, 71332 Waiblingen",
+    "capacity": 16,
+    "description": "Unten/mit Lademöglichkeit (Fahrradhöhe bis 1.20m) ; Oben (Fahrradhöhe bis 1.10m)",
+    "external_identifiers": [],
+    "fee_description": "1 Stunde: 0,01€, 2 Stunden: 0,02€, 8 Stunden: 0,08€, 24 Stunden: 0,24€",
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "48.825376",
+    "lon": "9.301201",
+    "name": "VELOBRIX - Industriekunstpfad Waiblingen",
+    "operator_name": "015 - Stadt Waiblingen ",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "BIKE",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "LOCKBOX",
+    "uid": "24"
+  },
+  {
+    "address": "Bahnhof Waiblingen, Bahnhof  1, 71332 Waiblingen",
+    "capacity": 14,
+    "description": "Unten/mit Lademöglichkeit (Fahrradhöhe bis 1.20m) ; Oben (Fahrradhöhe bis 1.10m)",
+    "external_identifiers": [],
+    "fee_description": "1 Stunde: 0,01€, 2 Stunden: 0,02€, 8 Stunden: 0,08€, 24 Stunden: 0,24€",
+    "has_fee": true,
+    "has_realtime_data": true,
+    "lat": "48.826646",
+    "lon": "9.301936",
+    "name": "VELOBRIX - Bahnhof Waiblingen",
+    "operator_name": "015 - Stadt Waiblingen ",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "BIKE",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "LOCKBOX",
+    "uid": "25"
+  }
+]

@@ -33,15 +33,35 @@ class MobilithekParkingSitePullConverter(MobilithekPullConverterMixin, ParkingSi
         pass
 
     def get_static_parking_sites(self) -> tuple[list[StaticParkingSiteInput], list[ImportParkingSiteException]]:
-        static_xml_data = self._get_xml_data(
-            subscription_id=self.config_helper.get(f'PARK_API_MOBILITHEK_{self.config_key}_STATIC_SUBSCRIPTION_ID'),
-        )
+        try:
+            static_xml_data = self._get_xml_data(
+                subscription_id=self.config_helper.get(
+                    f'PARK_API_MOBILITHEK_{self.config_key}_STATIC_SUBSCRIPTION_ID',
+                ),
+            )
+        except etree.XMLSyntaxError as e:
+            return [], [self._get_invalid_xml_exception(e)]
 
         return self._handle_static_xml_data(static_xml_data)
 
     def get_realtime_parking_sites(self) -> tuple[list[RealtimeParkingSiteInput], list[ImportParkingSiteException]]:
-        realtime_xml_data = self._get_xml_data(
-            subscription_id=self.config_helper.get(f'PARK_API_MOBILITHEK_{self.config_key}_REALTIME_SUBSCRIPTION_ID'),
-        )
+        # Sources without realtime data have no realtime subscription
+        if not self.source_info.has_realtime_data:
+            return [], []
+
+        try:
+            realtime_xml_data = self._get_xml_data(
+                subscription_id=self.config_helper.get(
+                    f'PARK_API_MOBILITHEK_{self.config_key}_REALTIME_SUBSCRIPTION_ID',
+                ),
+            )
+        except etree.XMLSyntaxError as e:
+            return [], [self._get_invalid_xml_exception(e)]
 
         return self._handle_realtime_xml_data(realtime_xml_data)
+
+    def _get_invalid_xml_exception(self, error: etree.XMLSyntaxError) -> ImportParkingSiteException:
+        return ImportParkingSiteException(
+            source_uid=self.source_info.uid,
+            message=f'Invalid XML, the publication cannot be parsed: {error}',
+        )

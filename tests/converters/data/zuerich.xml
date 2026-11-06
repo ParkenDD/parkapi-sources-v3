@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>FEED Parkleitsystem Stadt Zürich</title>
+    <link>https://www.pls-zh.ch/plsFeed/rss/</link>
+    <description>https://www.pls-zh.ch/plsFeed/rss/?type=rss_0.92 | rss_0.93 | rss_0.94 | rss_1.0 | rss_2.0 (=default) | atom_0.3 | atom_1.0</description>
+    <copyright>Nutzungsbedingungen entsprechen der Creative-Commons-Null-Lizenz (CC-0)</copyright>
+    <dc:rights>Nutzungsbedingungen entsprechen der Creative-Commons-Null-Lizenz (CC-0)</dc:rights>
+    <item>
+      <title>Parkhaus Accu / Otto-Schütz-Weg</title>
+      <link>https://www.pls-zh.ch/parkhaus/accu.jsp?pid=accu</link>
+      <description>open /  162</description>
+      <pubDate>Sat, 24 Oct 2026 12:37:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/accu.jsp?pid=accu</guid>
+      <dc:date>2026-10-24T12:37:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Albisriederplatz / Badenerstrasse 380</title>
+      <link>https://www.pls-zh.ch/parkhaus/albisriederplatz.jsp?pid=albisriederplatz</link>
+      <description>open /   30</description>
+      <pubDate>Sat, 24 Oct 2026 12:55:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/albisriederplatz.jsp?pid=albisriederplatz</guid>
+      <dc:date>2026-10-24T12:55:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Bleicherweg / Beethovenstrasse 35</title>
+      <link>https://www.pls-zh.ch/parkhaus/bleicherweg.jsp?pid=bleicherweg</link>
+      <description>open /   51</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/bleicherweg.jsp?pid=bleicherweg</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Center Eleven / Sophie-Täuber-Strasse 4</title>
+      <link>https://www.pls-zh.ch/parkhaus/center_11.jsp?pid=center_11</link>
+      <description>open /  196</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/center_11.jsp?pid=center_11</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus City Parking / Gessnerallee 14</title>
+      <link>https://www.pls-zh.ch/parkhaus/cp.jsp?pid=cp</link>
+      <description>open /   12</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/cp.jsp?pid=cp</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Cityport / Affolternstrasse 56</title>
+      <link>https://www.pls-zh.ch/parkhaus/cityport.jsp?pid=cityport</link>
+      <description>open /  138</description>
+      <pubDate>Sat, 24 Oct 2026 12:42:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/cityport.jsp?pid=cityport</guid>
+      <dc:date>2026-10-24T12:42:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Crowne Plaza / Badenerstrasse 420</title>
+      <link>https://www.pls-zh.ch/parkhaus/crowne_plaza.jsp?pid=crowne_plaza</link>
+      <description>open /   57</description>
+      <pubDate>Sat, 24 Oct 2026 12:55:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/crowne_plaza.jsp?pid=crowne_plaza</guid>
+      <dc:date>2026-10-24T12:55:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Dorflinde / Schwamendingenstrasse 31</title>
+      <link>https://www.pls-zh.ch/parkhaus/dorflinde.jsp?pid=dorflinde</link>
+      <description>open /   26</description>
+      <pubDate>Sat, 24 Oct 2026 12:56:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/dorflinde.jsp?pid=dorflinde</guid>
+      <dc:date>2026-10-24T12:56:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Feldegg / Riesbachstrasse 7</title>
+      <link>https://www.pls-zh.ch/parkhaus/feldegg.jsp?pid=feldegg</link>
+      <description>open /   86</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/feldegg.jsp?pid=feldegg</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Globus / Löwenstrasse 50</title>
+      <link>https://www.pls-zh.ch/parkhaus/globus.jsp?pid=globus</link>
+      <description>open /    0</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/globus.jsp?pid=globus</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Hafen Enge / Mythenquai 21</title>
+      <link>https://www.pls-zh.ch/parkhaus/hafen_enge.jsp?pid=hafen_enge</link>
+      <description>???? / ???</description>
+      <pubDate>Fri, 16 Oct 2026 04:50:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/hafen_enge.jsp?pid=hafen_enge</guid>
+      <dc:date>2026-10-16T04:50:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Hardau II / Bullingerstrasse 73</title>
+      <link>https://www.pls-zh.ch/parkhaus/hardau.jsp?pid=hardau</link>
+      <description>open /   41</description>
+      <pubDate>Sat, 24 Oct 2026 12:54:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/hardau.jsp?pid=hardau</guid>
+      <dc:date>2026-10-24T12:54:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Hauptbahnhof / Sihlquai 41</title>
+      <link>https://www.pls-zh.ch/parkhaus/hb.jsp?pid=hb</link>
+      <description>open /    0</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/hb.jsp?pid=hb</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Helvetiaplatz / Molkenstrasse 5/9</title>
+      <link>https://www.pls-zh.ch/parkhaus/helvetia.jsp?pid=helvetia</link>
+      <description>open /   21</description>
+      <pubDate>Sat, 24 Oct 2026 12:32:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/helvetia.jsp?pid=helvetia</guid>
+      <dc:date>2026-10-24T12:32:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Hohe Promenade / Rämistrasse 22a</title>
+      <link>https://www.pls-zh.ch/parkhaus/promenade.jsp?pid=promenade</link>
+      <description>open /   70</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/promenade.jsp?pid=promenade</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Jelmoli / Steinmühleplatz 1</title>
+      <link>https://www.pls-zh.ch/parkhaus/jelmoli.jsp?pid=jelmoli</link>
+      <description>open /   17</description>
+      <pubDate>Sat, 24 Oct 2026 12:57:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/jelmoli.jsp?pid=jelmoli</guid>
+      <dc:date>2026-10-24T12:57:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Jungholz / Jungholzstrasse 19</title>
+      <link>https://www.pls-zh.ch/parkhaus/jungholz.jsp?pid=jungholz</link>
+      <description>open /   96</description>
+      <pubDate>Sat, 24 Oct 2026 12:57:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/jungholz.jsp?pid=jungholz</guid>
+      <dc:date>2026-10-24T12:57:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Max-Bill-Platz / Armin-Bollinger-Weg</title>
+      <link>https://www.pls-zh.ch/parkhaus/max_bill_platz.jsp?pid=max_bill_platz</link>
+      <description>open /   75</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/max_bill_platz.jsp?pid=max_bill_platz</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Messe Zürich AG / Andreasstrasse 65</title>
+      <link>https://www.pls-zh.ch/parkhaus/messe.jsp?pid=messe</link>
+      <description>open /  999</description>
+      <pubDate>Thu, 22 Oct 2026 13:56:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/messe.jsp?pid=messe</guid>
+      <dc:date>2026-10-22T13:56:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Nordhaus / Siewerdtstrasse 8</title>
+      <link>https://www.pls-zh.ch/parkhaus/nordhaus.jsp?pid=nordhaus</link>
+      <description>open /  125</description>
+      <pubDate>Sat, 24 Oct 2026 12:57:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/nordhaus.jsp?pid=nordhaus</guid>
+      <dc:date>2026-10-24T12:57:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Octavo / Brown-Boveri-Strasse 2</title>
+      <link>https://www.pls-zh.ch/parkhaus/octavo.jsp?pid=octavo</link>
+      <description>open /  112</description>
+      <pubDate>Sat, 24 Oct 2026 12:57:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/octavo.jsp?pid=octavo</guid>
+      <dc:date>2026-10-24T12:57:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Opéra / Schillerstrasse 5</title>
+      <link>https://www.pls-zh.ch/parkhaus/opera.jsp?pid=opera</link>
+      <description>open /    4</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/opera.jsp?pid=opera</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus P West / Förrlibuckstrasse 151</title>
+      <link>https://www.pls-zh.ch/parkhaus/p_west.jsp?pid=p_west</link>
+      <description>???? / ???</description>
+      <pubDate>Mon, 17 Aug 2026 08:45:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/p_west.jsp?pid=p_west</guid>
+      <dc:date>2026-08-17T08:45:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Park Hyatt / Beethovenstrasse 21</title>
+      <link>https://www.pls-zh.ch/parkhaus/park_hyatt.jsp?pid=park_hyatt</link>
+      <description>open /   37</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/park_hyatt.jsp?pid=park_hyatt</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Parkside / Sophie-Täuber-Strasse 10</title>
+      <link>https://www.pls-zh.ch/parkhaus/parkside.jsp?pid=parkside</link>
+      <description>open /   32</description>
+      <pubDate>Sat, 24 Oct 2026 12:28:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/parkside.jsp?pid=parkside</guid>
+      <dc:date>2026-10-24T12:28:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Pfingstweid / Pfingstweidstrasse 1</title>
+      <link>https://www.pls-zh.ch/parkhaus/pfingstweid.jsp?pid=pfingstweid</link>
+      <description>open /  165</description>
+      <pubDate>Sat, 24 Oct 2026 12:56:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/pfingstweid.jsp?pid=pfingstweid</guid>
+      <dc:date>2026-10-24T12:56:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Stampfenbach / Niklausstrasse 1</title>
+      <link>https://www.pls-zh.ch/parkhaus/stampfenbach.jsp?pid=stampfenbach</link>
+      <description>open /  231</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/stampfenbach.jsp?pid=stampfenbach</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Talgarten / Nüschelerstrasse 31</title>
+      <link>https://www.pls-zh.ch/parkhaus/talgarten.jsp?pid=talgarten</link>
+      <description>open /    0</description>
+      <pubDate>Sat, 24 Oct 2026 12:50:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/talgarten.jsp?pid=talgarten</guid>
+      <dc:date>2026-10-24T12:50:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus USZ Nord / Frauenklinikstrasse</title>
+      <link>https://www.pls-zh.ch/parkhaus/unispital_nord.jsp?pid=unispital_nord</link>
+      <description>open /   18</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/unispital_nord.jsp?pid=unispital_nord</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Uni Irchel / Winterthurerstrasse 181</title>
+      <link>https://www.pls-zh.ch/parkhaus/uni_irchel.jsp?pid=uni_irchel</link>
+      <description>open /  455</description>
+      <pubDate>Sat, 24 Oct 2026 12:57:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/uni_irchel.jsp?pid=uni_irchel</guid>
+      <dc:date>2026-10-24T12:57:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Urania / Uraniastrasse 3</title>
+      <link>https://www.pls-zh.ch/parkhaus/urania.jsp?pid=urania</link>
+      <description>open /    0</description>
+      <pubDate>Sat, 24 Oct 2026 12:56:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/urania.jsp?pid=urania</guid>
+      <dc:date>2026-10-24T12:56:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Utoquai / Färberstrasse 6</title>
+      <link>https://www.pls-zh.ch/parkhaus/utoquai.jsp?pid=utoquai</link>
+      <description>open /   56</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/utoquai.jsp?pid=utoquai</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Züri 11 Shopping / Nansenstrasse 5/7</title>
+      <link>https://www.pls-zh.ch/parkhaus/zueri11.jsp?pid=zueri11</link>
+      <description>open /   43</description>
+      <pubDate>Mon, 17 Aug 2026 08:45:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/zueri11.jsp?pid=zueri11</guid>
+      <dc:date>2026-08-17T08:45:20Z</dc:date>
+    </item>
+    <item>
+      <title>Parkhaus Zürichhorn / Dufourstrasse 142</title>
+      <link>https://www.pls-zh.ch/parkhaus/zuerichhorn.jsp?pid=zuerichhorn</link>
+      <description>open /   37</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/zuerichhorn.jsp?pid=zuerichhorn</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkplatz Theater 11 / Dörfli-/Thurgauerstrasse</title>
+      <link>https://www.pls-zh.ch/parkhaus/theater_11.jsp?pid=theater_11</link>
+      <description>open /  142</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/theater_11.jsp?pid=theater_11</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Parkplatz USZ Süd / Gloriastrasse</title>
+      <link>https://www.pls-zh.ch/parkhaus/unispital_sued.jsp?pid=unispital_sued</link>
+      <description>open /    3</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:21 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/unispital_sued.jsp?pid=unispital_sued</guid>
+      <dc:date>2026-10-24T12:58:21Z</dc:date>
+    </item>
+    <item>
+      <title>Puls 5 Parkgarage / Giessereistrasse 18</title>
+      <link>https://www.pls-zh.ch/parkhaus/puls5.jsp?pid=puls5</link>
+      <description>open /   37</description>
+      <pubDate>Sat, 24 Oct 2026 12:58:20 GMT</pubDate>
+      <guid>https://www.pls-zh.ch/parkhaus/puls5.jsp?pid=puls5</guid>
+      <dc:date>2026-10-24T12:58:20Z</dc:date>
+    </item>
+  </channel>
+</rss>

@@ -22,6 +22,9 @@ class KonstanzDisabledPullConverter(ParkingSpotPullConverter):
         name='Stadt Konstanz: Behindertenparkplätze',
         source_url='https://services-eu1.arcgis.com/cgMeYTGtzFtnxdsx/arcgis/rest/services/POI_Verkehr/FeatureServer'
         '/5/query?outFields=*&where=1%3D1&f=geojson',
+        attribution_contributor='Stadt Konstanz',
+        attribution_license='CC BY 4.0',
+        attribution_url='https://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=False,
         public_url='https://www.konstanz-info.com/_Resources/Persistent/ab61520fe794af3c1ca6d49d9f083761cd2741a2/Behindertenparkpl%C3%A4tze_in_Konstanz.pdf',
     )

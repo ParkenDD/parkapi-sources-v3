@@ -1,0 +1,612 @@
+[
+  {
+    "address": "Beiertheimer Allee, Südweststadt, Karlsruhe",
+    "capacity": 4,
+    "description": "Konzerthaus",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0026384",
+    "lon": "8.3995665",
+    "name": "Beiertheimer Allee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "1"
+  },
+  {
+    "address": "Lorenzstraße 19, Südweststadt, Karlsruhe",
+    "capacity": 4,
+    "description": "ZKM",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0009982",
+    "lon": "8.3829868",
+    "name": "Lorenzstraße 19",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "2"
+  },
+  {
+    "address": "Hans-Thoma-Straße 2, Innenstadt-West, Karlsruhe",
+    "capacity": 2,
+    "description": "Staatliche Kunsthalle",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0125623",
+    "lon": "8.3989728",
+    "name": "Hans-Thoma-Straße 2",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "3"
+  },
+  {
+    "address": "Willy-Brandt-Allee, Innenstadt-West, Karlsruhe",
+    "capacity": 3,
+    "description": "Willy-Brandt-Allee stadteinw.",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0172164",
+    "lon": "8.3977098",
+    "name": "Willy-Brandt-Allee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "4"
+  },
+  {
+    "address": "Beiertheimer Allee, Südweststadt, Karlsruhe",
+    "capacity": 3,
+    "description": "Beiertheimer Allee",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0027349",
+    "lon": "8.3990157",
+    "name": "Beiertheimer Allee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "5"
+  },
+  {
+    "address": "Willy-Brandt-Allee, Innenstadt-West, Karlsruhe",
+    "capacity": 2,
+    "description": "Willy-Brandt-Allee stadtausw.",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0164196",
+    "lon": "8.3980506",
+    "name": "Willy-Brandt-Allee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "6"
+  },
+  {
+    "address": "Hermann-Veith-Straße, Südweststadt, Karlsruhe",
+    "capacity": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9963414",
+    "lon": "8.3790571",
+    "name": "Hermann-Veith-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "7"
+  },
+  {
+    "address": "Zum Bergle, Stupferich, Karlsruhe",
+    "capacity": 4,
+    "description": "Bergleshalle",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9482225",
+    "lon": "8.5094250",
+    "name": "Zum Bergle",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "10"
+  },
+  {
+    "address": "Parking place de la foire, Wissembourg",
+    "capacity": 7,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0378155",
+    "lon": "7.9485465",
+    "name": "Parking place de la foire",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 7,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "11"
+  },
+  {
+    "address": "An der Lamotte, Germersheim",
+    "capacity": 9,
+    "description": "Busbahnhof",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2139235",
+    "lon": "8.3742728",
+    "name": "An der Lamotte",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 9,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "12"
+  },
+  {
+    "address": "Zeughausstraße, Germersheim",
+    "capacity": 2,
+    "description": "am Straßenmuseum",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2211976",
+    "lon": "8.3755358",
+    "name": "Zeughausstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "13"
+  },
+  {
+    "address": "Alter Meßplatz, Landau",
+    "capacity": 3,
+    "description": "Parken an den Adventssamstagen kostenfrei",
+    "external_identifiers": [],
+    "fee_description": "Kurzzeit 3,0 Cent je Minute; Tagestarif 3,00 Euro; Monatstarif 25 Euro; 4-Monatstarif 100 Euro; Jahrestarif 250 Euro",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.2018753",
+    "lon": "8.1093996",
+    "name": "Alter Meßplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "14"
+  },
+  {
+    "address": "Alter Meßplatz, Landau",
+    "capacity": 3,
+    "description": "Parken an den Adventssamstagen kostenfrei",
+    "external_identifiers": [],
+    "fee_description": "Kurzzeit 3,0 Cent je Minute; Tagestarif 3,00 Euro; Monatstarif 25 Euro; 4-Monatstarif 100 Euro; Jahrestarif 250 Euro",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.2016388",
+    "lon": "8.1092463",
+    "name": "Alter Meßplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "15"
+  },
+  {
+    "address": "Schönbornstraße, Bruchsal",
+    "capacity": 2,
+    "description": "Schloß",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1288491",
+    "lon": "8.5996686",
+    "name": "Schönbornstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "16"
+  },
+  {
+    "address": "Rastatter Straße, Ettlingen",
+    "capacity": 2,
+    "description": "Innere Rastatter Straße",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9384434",
+    "lon": "8.3980514",
+    "name": "Rastatter Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "17"
+  },
+  {
+    "address": "Eisenbahnstraße, Baden-Baden",
+    "capacity": 10,
+    "external_identifiers": [],
+    "fee_description": "4 Std. = 15 €, max 30 €",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.7698015",
+    "lon": "8.2276299",
+    "name": "Eisenbahnstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 10,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "18"
+  },
+  {
+    "address": "Postweg, Kernstadt, Bretten",
+    "capacity": 2,
+    "description": "Stadtparkhalle",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0375922",
+    "lon": "8.7110182",
+    "name": "Postweg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "20"
+  },
+  {
+    "address": "Engelsberg, Kernstadt, Bretten",
+    "capacity": 1,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0375763",
+    "lon": "8.7074279",
+    "name": "Engelsberg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "21"
+  },
+  {
+    "address": "Wilhelmstraße, Kernstadt, Bretten",
+    "capacity": 2,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0371077",
+    "lon": "8.6995185",
+    "name": "Wilhelmstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-02-06T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "22"
+  },
+  {
+    "address": "Parking bus Parc des sports, Haguenau, Haguenau",
+    "capacity": 4,
+    "description": "15 Chemin du Moulin Neuf",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.8164163",
+    "lon": "7.7800692",
+    "name": "Parking bus Parc des sports",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2024-10-23T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "24"
+  },
+  {
+    "address": "Lyzeumstraße, Rastatt",
+    "capacity": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.8596117",
+    "lon": "8.2040203",
+    "name": "Lyzeumstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2025-07-02T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "25"
+  },
+  {
+    "address": "Hauptbahnstraße, Durlach, Karlsruhe",
+    "capacity": 2,
+    "description": "Bahnhof Durlach",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0012063",
+    "lon": "8.4620388",
+    "name": "Hauptbahnstraße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2025-08-04T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "26"
+  },
+  {
+    "address": "Plittersdorf Fähre, Plittersdorf, Rastatt",
+    "capacity": 4,
+    "description": "Parkplatz Rheinpromenade",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8878775",
+    "lon": "8.1377459",
+    "name": "Plittersdorf Fähre",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "BUS"
+      }
+    ],
+    "static_data_updated_at": "2026-01-19T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "28"
+  }
+]

@@ -11,7 +11,8 @@ from parkapi_sources.exceptions import ImportParkingSpotException
 from parkapi_sources.models import SourceInfo, StaticParkingSpotInput
 
 from .base_converter import BfrkBasePullConverter
-from .car_models import BfrkCarInput
+from .base_models import lat_validator, lon_validator
+from .car_models import BfrkArt, BfrkCarInput
 
 
 class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
@@ -23,8 +24,23 @@ class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
         name='Barrierefreie Reisekette Baden-Württemberg: PKW-Parkplätze',
         public_url='https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-haltestellen',
         source_url='https://bfrk-kat-api.efa-bw.de/bfrk_api/parkplaetze',
+        attribution_contributor='Nahverkehrsgesellschaft Baden-Württemberg mbH (NVBW)',
+        attribution_license='Datenlizenz Deutschland – Namensnennung – Version 2.0',
+        attribution_url='https://www.govdata.de/dl-de/by-2-0',
         has_realtime_data=False,
     )
+
+    def check_ignore_input_dict(self, input_dict: dict) -> bool:
+        if not self.config_helper.get('PARK_API_BFRK_BW_CAR_IGNORE_INVALID_COORDINATES', False):
+            return False
+
+        try:
+            lat_validator.validate(input_dict.get('lat'))
+            lon_validator.validate(input_dict.get('lon'))
+        except ValidationError:
+            return True
+
+        return False
 
     def check_ignore_item(self, input_data: BfrkCarInput) -> bool:
         if input_data.oeffentlichvorhanden is False:
@@ -33,10 +49,19 @@ class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
         if input_data.stellplaetzegesamt == 0:
             return True
 
+        if self.check_ignore_private(input_data):
+            return True
+
         if self.config_helper.get('PARK_API_BFRK_BW_CAR_FILTER_UNCONFIRMED', True) is False:
             return False
 
         return input_data.koordinatenqualitaet != 'validierte-Position'
+
+    def check_ignore_private(self, input_data: BfrkCarInput) -> bool:
+        if self.config_helper.get('PARK_API_BFRK_BW_CAR_FILTER_PRIVATE', True) is False:
+            return False
+
+        return input_data.art == BfrkArt.PRIVATE
 
     def get_static_parking_spots(self) -> tuple[list[StaticParkingSpotInput], list[ImportParkingSpotException]]:
         static_parking_spot_inputs: list[StaticParkingSpotInput] = []
@@ -48,6 +73,10 @@ class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
         input_dicts = response.json()
 
         for input_dict in input_dicts:
+            # Ignore datasets before validation, e.g. if coordinates are invalid
+            if self.check_ignore_input_dict(input_dict):
+                continue
+
             try:
                 input_data: BfrkCarInput = self.bfrk_validator.validate(input_dict)
             except ValidationError as e:
@@ -61,6 +90,9 @@ class BfrkBwCarPullConverter(BfrkBasePullConverter, ParkingSpotPullConverter):
                 continue
 
             if input_data.oeffentlichvorhanden is False:
+                continue
+
+            if self.check_ignore_private(input_data):
                 continue
 
             new_static_parking_spot_inputs = input_data.to_static_parking_spot_inputs()

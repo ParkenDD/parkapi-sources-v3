@@ -8,7 +8,7 @@ from decimal import Decimal
 from enum import Enum
 from typing import Optional
 
-from validataclass.dataclasses import DefaultUnset, validataclass
+from validataclass.dataclasses import Default, DefaultUnset, validataclass
 from validataclass.helpers import OptionalUnset, UnsetValue
 from validataclass.validators import (
     DataclassValidator,
@@ -26,12 +26,13 @@ from validataclass.validators import (
 from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
     GeojsonBaseFeaturePropertiesInput,
+    ParkingSiteRestrictionInput,
     RealtimeParkingSiteInput,
     StaticParkingSiteInput,
 )
-from parkapi_sources.models.enums import OpeningStatus, ParkingSiteType, PurposeType
+from parkapi_sources.models.enums import OpeningStatus, ParkAndRideType, ParkingAudience, ParkingSiteType, PurposeType
 from parkapi_sources.util import round_7d
-from parkapi_sources.validators import MappedBooleanValidator
+from parkapi_sources.validators import MappedBooleanValidator, ReplacingStringValidator
 
 
 class KarlsruheOpeningStatus(Enum):
@@ -174,3 +175,177 @@ class KarlsruheBikeFeatureInput(GeojsonBaseFeatureInput):
             purpose=PurposeType.BIKE,
             has_realtime_data=False,
         )
+
+
+class KarlsruheTextValidator(ReplacingStringValidator):
+    """
+    Free text fields of the further layers contain non-breaking spaces and line breaks.
+    """
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, mapping={'\xa0': ' ', '\r': '', '\n': ' '}, **kwargs)
+
+
+@validataclass
+class KarlsruheParkAndRidePropertiesInput(GeojsonBaseFeaturePropertiesInput):
+    id: int = IntegerValidator()
+    gemeinde: str = StringValidator()
+    stadtteil: OptionalUnset[str] = NoneToUnsetValue(StringValidator()), DefaultUnset
+    haltestelle: str = KarlsruheTextValidator()
+    stellplaetze: int = IntegerValidator(min_value=0)
+    bemerkung: OptionalUnset[str] = NoneToUnsetValue(KarlsruheTextValidator()), DefaultUnset
+    freie_parkplaetze: Optional[int] = Noneable(IntegerValidator()), Default(None)
+    echtzeit_belegung: bool = MappedBooleanValidator(mapping={'t': True, 'f': False})
+    stand_freieparkplaetze: Optional[datetime] = Noneable(DateTimeValidator()), Default(None)
+    stand_stammdaten: Optional[datetime] = Noneable(DateTimeValidator()), Default(None)
+
+
+@validataclass
+class KarlsruheParkAndRideFeatureInput(GeojsonBaseFeatureInput):
+    properties: KarlsruheParkAndRidePropertiesInput = DataclassValidator(KarlsruheParkAndRidePropertiesInput)
+
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        address_fragments = [self.properties.stadtteil, self.properties.gemeinde]
+        # The district is often the same as the municipality
+        address = ', '.join(dict.fromkeys(fragment for fragment in address_fragments if fragment is not UnsetValue))
+        return StaticParkingSiteInput(
+            uid=str(self.properties.id),
+            name=f'{self.properties.gemeinde}: {self.properties.haltestelle}',
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
+            capacity=self.properties.stellplaetze,
+            address=address,
+            description=self.properties.bemerkung,
+            park_and_ride_type=[ParkAndRideType.YES],
+            static_data_updated_at=self.properties.stand_stammdaten or datetime.now(timezone.utc),
+            type=ParkingSiteType.OTHER,
+            purpose=PurposeType.CAR,
+            has_realtime_data=self.properties.echtzeit_belegung,
+        )
+
+    def to_realtime_parking_site_input(self) -> Optional[RealtimeParkingSiteInput]:
+        if not self.properties.echtzeit_belegung or self.properties.stand_freieparkplaetze is None:
+            return None
+
+        return RealtimeParkingSiteInput(
+            uid=str(self.properties.id),
+            realtime_capacity=self.properties.stellplaetze,
+            realtime_free_capacity=self.properties.freie_parkplaetze,
+            realtime_data_updated_at=self.properties.stand_freieparkplaetze,
+        )
+
+
+@validataclass
+class KarlsruheParkAndCarpoolPropertiesInput(GeojsonBaseFeaturePropertiesInput):
+    id: int = IntegerValidator()
+    standort: str = KarlsruheTextValidator()
+    strasse: OptionalUnset[str] = NoneToUnsetValue(KarlsruheTextValidator()), DefaultUnset
+    stellplaetze: int = IntegerValidator(min_value=0)
+    bemerkung: OptionalUnset[str] = NoneToUnsetValue(KarlsruheTextValidator()), DefaultUnset
+    stand: datetime = DateTimeValidator()
+
+
+@validataclass
+class KarlsruheParkAndCarpoolFeatureInput(GeojsonBaseFeatureInput):
+    properties: KarlsruheParkAndCarpoolPropertiesInput = DataclassValidator(KarlsruheParkAndCarpoolPropertiesInput)
+
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        return StaticParkingSiteInput(
+            uid=str(self.properties.id),
+            name=self.properties.standort,
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
+            capacity=self.properties.stellplaetze,
+            address=self.properties.strasse,
+            description=self.properties.bemerkung,
+            park_and_ride_type=[ParkAndRideType.CARPOOL],
+            static_data_updated_at=self.properties.stand,
+            type=ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            purpose=PurposeType.CAR,
+            has_realtime_data=False,
+        )
+
+
+@validataclass
+class KarlsruheSpecialParkingPropertiesInput(GeojsonBaseFeaturePropertiesInput):
+    id: int = IntegerValidator()
+    gemeinde: str = StringValidator()
+    stadtteil: OptionalUnset[str] = NoneToUnsetValue(StringValidator()), DefaultUnset
+    standort: str = KarlsruheTextValidator()
+    gebuehren: OptionalUnset[str] = NoneToUnsetValue(KarlsruheTextValidator()), DefaultUnset
+    stellplaetze: int = IntegerValidator(min_value=0)
+    bemerkung: OptionalUnset[str] = NoneToUnsetValue(KarlsruheTextValidator()), DefaultUnset
+    stand: datetime = DateTimeValidator()
+
+
+@validataclass
+class KarlsruheSpecialParkingFeatureInput(GeojsonBaseFeatureInput):
+    """
+    Base for the layers with parking sites for specific vehicles, which share the same properties. Subclasses define
+    the purpose and the audience of the parking sites.
+    """
+
+    properties: KarlsruheSpecialParkingPropertiesInput = DataclassValidator(KarlsruheSpecialParkingPropertiesInput)
+
+    def _get_purpose(self) -> PurposeType:
+        return PurposeType.CAR
+
+    def _get_audience(self) -> ParkingAudience | None:
+        return None
+
+    def to_static_parking_site_input(self) -> StaticParkingSiteInput:
+        address_fragments = [self.properties.standort, self.properties.stadtteil, self.properties.gemeinde]
+        address = ', '.join(fragment for fragment in address_fragments if fragment is not UnsetValue)
+
+        static_parking_site_input = StaticParkingSiteInput(
+            uid=str(self.properties.id),
+            name=self.properties.standort,
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
+            capacity=self.properties.stellplaetze,
+            address=address,
+            description=self.properties.bemerkung,
+            static_data_updated_at=self.properties.stand,
+            type=ParkingSiteType.OTHER,
+            purpose=self._get_purpose(),
+            has_realtime_data=False,
+        )
+
+        if self.properties.gebuehren is not UnsetValue:
+            if self.properties.gebuehren.lower() in ('frei', 'gebührenfrei'):
+                static_parking_site_input.has_fee = False
+            else:
+                static_parking_site_input.has_fee = True
+                static_parking_site_input.fee_description = self.properties.gebuehren
+
+        audience = self._get_audience()
+        if audience is not None:
+            static_parking_site_input.restrictions = [
+                ParkingSiteRestrictionInput(type=audience, capacity=self.properties.stellplaetze),
+            ]
+
+        return static_parking_site_input
+
+
+@validataclass
+class KarlsruheTruckFeatureInput(KarlsruheSpecialParkingFeatureInput):
+    def _get_audience(self) -> ParkingAudience | None:
+        return ParkingAudience.TRUCK
+
+
+@validataclass
+class KarlsruheBusFeatureInput(KarlsruheSpecialParkingFeatureInput):
+    def _get_audience(self) -> ParkingAudience | None:
+        return ParkingAudience.BUS
+
+
+@validataclass
+class KarlsruheCaravanFeatureInput(KarlsruheSpecialParkingFeatureInput):
+    def _get_audience(self) -> ParkingAudience | None:
+        return ParkingAudience.CARAVAN
+
+
+@validataclass
+class KarlsruheMotorcycleFeatureInput(KarlsruheSpecialParkingFeatureInput):
+    def _get_purpose(self) -> PurposeType:
+        return PurposeType.MOTORCYCLE

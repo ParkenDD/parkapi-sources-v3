@@ -1,0 +1,247 @@
+[
+  {
+    "realtime_data_updated_at": "2026-10-24T12:37:21Z",
+    "realtime_free_capacity": 162,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "accu"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:55:20Z",
+    "realtime_free_capacity": 30,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "albisriederplatz"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 51,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "bleicherweg"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 196,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "center_11"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 12,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "cp"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:42:20Z",
+    "realtime_free_capacity": 138,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "cityport"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:55:21Z",
+    "realtime_free_capacity": 57,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "crowne_plaza"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:56:21Z",
+    "realtime_free_capacity": 26,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "dorflinde"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 86,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "feldegg"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "globus"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:54:21Z",
+    "realtime_free_capacity": 41,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "hardau"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "hb"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:32:20Z",
+    "realtime_free_capacity": 21,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "helvetia"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 70,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "promenade"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:20Z",
+    "realtime_free_capacity": 17,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "jelmoli"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:20Z",
+    "realtime_free_capacity": 96,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "jungholz"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 75,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "max_bill_platz"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-22T13:56:20Z",
+    "realtime_free_capacity": 999,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "messe"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:21Z",
+    "realtime_free_capacity": 125,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "nordhaus"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:21Z",
+    "realtime_free_capacity": 112,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "octavo"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 4,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "opera"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 37,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "park_hyatt"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:28:21Z",
+    "realtime_free_capacity": 32,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "parkside"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:56:20Z",
+    "realtime_free_capacity": 165,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "pfingstweid"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 231,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "stampfenbach"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:50:21Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "talgarten"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 18,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "unispital_nord"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:57:21Z",
+    "realtime_free_capacity": 455,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "uni_irchel"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:56:21Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "urania"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 56,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "utoquai"
+  },
+  {
+    "realtime_data_updated_at": "2026-08-17T08:45:20Z",
+    "realtime_free_capacity": 43,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "zueri11"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 37,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "zuerichhorn"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 142,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "theater_11"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:21Z",
+    "realtime_free_capacity": 3,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "unispital_sued"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-24T12:58:20Z",
+    "realtime_free_capacity": 37,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "puls5"
+  }
+]

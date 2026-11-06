@@ -6,7 +6,7 @@
                 </supplierIdentification>
             </exchange>
             <payloadPublication lang="de" xsi:type="GenericPublication">
-                <publicationTime>2025-05-08T22:00:00+02:00</publicationTime>
+                <publicationTime>2026-10-27T19:36:05+01:00</publicationTime>
                 <publicationCreator>
                     <country>de</country>
                     <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
@@ -15,29 +15,35 @@
                 <genericPublicationExtension>
                     <parkingStatusPublication>
 
-  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
-    <parkingRecordReference id="1091" targetClass="ParkingFacility" version="1"/>
+  <parkingRecordStatus xsi:type="GroupOfParkingSitesStatus">
+    <parkingRecordReference id="1091" targetClass="ParkingRecord" version="1"/>
+    <parkingStatusOriginTime>2026-10-27T19:36:05+01:00</parkingStatusOriginTime>
     <parkingOccupancy>
       <parkingNumberOfSpacesOverride>84</parkingNumberOfSpacesOverride>
-      <parkingNumberOfVacantSpaces>70</parkingNumberOfVacantSpaces>
-      <parkingNumberOfOccupiedSpaces>14</parkingNumberOfOccupiedSpaces>
-      <parkingOccupancy>16.666668</parkingOccupancy>
+      <parkingNumberOfVacantSpaces>72</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>12</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>14.3</parkingOccupancy>
     </parkingOccupancy>
-    <StationName>Neustadt-Hohenacker</StationName>
-    <StationNumber>1602</StationNumber>
+    <parkingRecordStatusExtension>
+      <StationName>Neustadt-Hohenacker</StationName>
+      <StationNumber>1602</StationNumber>
+    </parkingRecordStatusExtension>
   </parkingRecordStatus>
 
 
-  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
-    <parkingRecordReference id="1089" targetClass="ParkingFacility" version="1"/>
+  <parkingRecordStatus xsi:type="GroupOfParkingSitesStatus">
+    <parkingRecordReference id="1089" targetClass="ParkingRecord" version="1"/>
+    <parkingStatusOriginTime>2026-10-27T19:36:05+01:00</parkingStatusOriginTime>
     <parkingOccupancy>
-      <parkingNumberOfSpacesOverride>164</parkingNumberOfSpacesOverride>
-      <parkingNumberOfVacantSpaces>158</parkingNumberOfVacantSpaces>
-      <parkingNumberOfOccupiedSpaces>6</parkingNumberOfOccupiedSpaces>
-      <parkingOccupancy>3.6585364</parkingOccupancy>
+      <parkingNumberOfSpacesOverride>166</parkingNumberOfSpacesOverride>
+      <parkingNumberOfVacantSpaces>149</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>17</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>10.2</parkingOccupancy>
     </parkingOccupancy>
-    <StationName>Neustadt-Hohenacker</StationName>
-    <StationNumber>1602</StationNumber>
+    <parkingRecordStatusExtension>
+      <StationName>Neustadt-Hohenacker</StationName>
+      <StationNumber>1602</StationNumber>
+    </parkingRecordStatusExtension>
   </parkingRecordStatus>
 </parkingStatusPublication>
                 </genericPublicationExtension>

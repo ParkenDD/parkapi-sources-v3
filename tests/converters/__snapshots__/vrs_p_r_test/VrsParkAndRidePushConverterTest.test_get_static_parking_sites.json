@@ -1,0 +1,5829 @@
+[
+  {
+    "capacity": 314,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81489696909492",
+    "lon": "9.250154396197763",
+    "name": "Sommerrain",
+    "opening_hours": "24/7",
+    "operator_name": "Landeshauptstadt Stuttgart Tiefbauamt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1003"
+  },
+  {
+    "capacity": 224,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 5,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.942852389449754",
+    "lon": "9.424819785089097",
+    "name": "Backnang Parkhaus",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Backnang",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1007"
+  },
+  {
+    "capacity": 135,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.941606520073144",
+    "lon": "9.42390748141711",
+    "name": "Backnang Waldorfschule",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1009"
+  },
+  {
+    "capacity": 67,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94223364371024",
+    "lon": "9.426070322433393",
+    "name": "Backnang Büttenenfeld-Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Backnang",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1010"
+  },
+  {
+    "capacity": 59,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.942344656043545",
+    "lon": "9.429414794699305",
+    "name": "Backnang Jahnstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1011"
+  },
+  {
+    "capacity": 188,
+    "capacity_carsharing": 4,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.8306333548709",
+    "lon": "9.165362657458436",
+    "name": "Zuffenhausen Parkplatz",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1017"
+  },
+  {
+    "capacity": 168,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82145225122143",
+    "lon": "9.092913352229834",
+    "name": "Weilimdorf Weissacher Str. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Parkeon",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1022"
+  },
+  {
+    "capacity": 104,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.820738757092236",
+    "lon": "9.092391672155793",
+    "name": "Weilimdorf Weissacher Str. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Parkeon",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1023"
+  },
+  {
+    "capacity": 80,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82270135045615",
+    "lon": "9.09335343229334",
+    "name": "Weilimdorf Parkhaus",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1024"
+  },
+  {
+    "capacity": 67,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.8264678079325",
+    "lon": "9.120356388920971",
+    "name": "Korntal Ladestr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1028"
+  },
+  {
+    "capacity": 48,
+    "capacity_carsharing": 4,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.686657649752036",
+    "lon": "9.001169815602802",
+    "name": "Böblingen Konrad-Zuse-Str.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Sindelfingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1030"
+  },
+  {
+    "capacity": 40,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.688120589610264",
+    "lon": "9.00582615627726",
+    "name": "Böblingen Talstr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1032"
+  },
+  {
+    "capacity": 258,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.52429909526749",
+    "lon": "8.828016922469264",
+    "name": "Bondorf Parkhaus",
+    "opening_hours": "24/7",
+    "operator_name": "Gemeinde Bondorf",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1035"
+  },
+  {
+    "capacity": 17,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.52229246865904",
+    "lon": "8.828380859004781",
+    "name": "Bondorf Bahnhofstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Gemeinde Bondorf",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1039"
+  },
+  {
+    "capacity": 194,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 4,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.66141423667072",
+    "lon": "8.94195312147798",
+    "name": "Ehningen Bahnhofstr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1043"
+  },
+  {
+    "capacity": 53,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.66212444243649",
+    "lon": "8.941839251871226",
+    "name": "Ehningen Bühlallee",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1046"
+  },
+  {
+    "capacity": 128,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82123016291819",
+    "lon": "9.270118334911636",
+    "name": "Fellbach Tiefgarage",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Fellbach",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "1050"
+  },
+  {
+    "capacity": 266,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.639907691506046",
+    "lon": "8.908778409595847",
+    "name": "Gärtringen Stuttgarter Straße",
+    "opening_hours": "24/7",
+    "operator_name": "Gemeinde Gärtringen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1051"
+  },
+  {
+    "capacity": 17,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81493760550193",
+    "lon": "9.025921374554892",
+    "name": "Höfingen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1066"
+  },
+  {
+    "capacity": 77,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.640161475630386",
+    "lon": "8.907728731355695",
+    "name": "Gärtringen Bahnhofstr. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1070"
+  },
+  {
+    "capacity": 102,
+    "capacity_carsharing": 1,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.64132235398187",
+    "lon": "8.90890126893894",
+    "name": "Gärtringen Bahnhofstr. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1071"
+  },
+  {
+    "capacity": 397,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.59401438538373",
+    "lon": "8.861545556930036",
+    "name": "Herrenberg Parkhaus",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Herrenberg",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1072"
+  },
+  {
+    "capacity": 129,
+    "capacity_carsharing": 4,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.593106537248865",
+    "lon": "8.861262318842005",
+    "name": "Herrenberg Bahnhofstr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1075"
+  },
+  {
+    "capacity": 135,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.6196214102766",
+    "lon": "8.888512758408975",
+    "name": "Nufringen Schulstraße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1076"
+  },
+  {
+    "capacity": 44,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.6206984046522",
+    "lon": "8.890379129608508",
+    "name": "Nufringen Bahnhofstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1077"
+  },
+  {
+    "capacity": 113,
+    "capacity_carsharing": 3,
+    "capacity_charging": 2,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82651424145782",
+    "lon": "9.30226728507962",
+    "name": "Waiblingen Bahnhofsvorplatz",
+    "opening_hours": "24/7",
+    "operator_name": "Parkierungs-Gesellschaft Waiblingen GmbH",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1079"
+  },
+  {
+    "capacity": 83,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82628924622015",
+    "lon": "9.303710118542764",
+    "name": "Waiblingen Devizesstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Parkierungs-Gesellschaft Waiblingen GmbH",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1080"
+  },
+  {
+    "capacity": 551,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82557037864222",
+    "lon": "9.301720037493514",
+    "name": "Waiblingen Parkhaus",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1083"
+  },
+  {
+    "capacity": 172,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.85907686826434",
+    "lon": "9.323217134388502",
+    "name": "Neustadt-Hohenacker Erbach West",
+    "opening_hours": "24/7",
+    "operator_name": "Parkierungsgesellschaft Waiblingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1089"
+  },
+  {
+    "capacity": 79,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.859809511264615",
+    "lon": "9.324797721076962",
+    "name": "Neustadt-Hohenacker Erbach Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Parkierungsgesellschaft Waiblingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1091"
+  },
+  {
+    "capacity": 168,
+    "capacity_carsharing": 4,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.878372897680855",
+    "lon": "9.391629725473212",
+    "name": "Winnenden Parkhaus",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1093"
+  },
+  {
+    "capacity": 108,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.86886622737701",
+    "lon": "9.356200982262083",
+    "name": "Schwaikheim Bahnhofstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1096"
+  },
+  {
+    "capacity": 80,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.86829469945708",
+    "lon": "9.353772892453978",
+    "name": "Schwaikheim Bahnhofstr. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1098"
+  },
+  {
+    "capacity": 82,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.90261616399866",
+    "lon": "9.415061283347978",
+    "name": "Nellmersbach Hans-Paul-Kaysser-Str.",
+    "opening_hours": "24/7",
+    "operator_name": "WSA Electronic/Ticket Line",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1099"
+  },
+  {
+    "capacity": 125,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.902874833560546",
+    "lon": "9.414659317777115",
+    "name": "Nellmersbach Bahnhofstraße Nord",
+    "opening_hours": "24/7",
+    "operator_name": "WSA Electronic/Ticket Line",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1102"
+  },
+  {
+    "capacity": 34,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.90380175648166",
+    "lon": "9.415398044632356",
+    "name": "Nellmersbach Bahnhofstraße Süd",
+    "opening_hours": "24/7",
+    "operator_name": "WSA Electronic/Ticket Line",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1103"
+  },
+  {
+    "capacity": 56,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.92558996727834",
+    "lon": "9.422247594628047",
+    "name": "Maubach Kitzbühler Str.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Backnang - Die Murr Metropole",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1104"
+  },
+  {
+    "capacity": 217,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.926263308696235",
+    "lon": "9.418594380819671",
+    "name": "Maubach Kärntner Str.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Backnang - Die Murr Metropole",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1107"
+  },
+  {
+    "capacity": 104,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.81511595761109",
+    "lon": "9.319588830063198",
+    "name": "Rommelshausen",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1109"
+  },
+  {
+    "capacity": 20,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.811620665816285",
+    "lon": "9.35123631256519",
+    "name": "Stetten-Beinstein Beibachweg Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1113"
+  },
+  {
+    "capacity": 14,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81157478552468",
+    "lon": "9.350499146516182",
+    "name": "Stetten-Beinstein Beibachweg West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1114"
+  },
+  {
+    "capacity": 178,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 5,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.812318999694654",
+    "lon": "9.352764111845655",
+    "name": "Stetten-Beinstein Mercedesstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1117"
+  },
+  {
+    "capacity": 88,
+    "capacity_carsharing": 2,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.812711769017675",
+    "lon": "9.37167299884595",
+    "name": "Endersbach",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1120"
+  },
+  {
+    "capacity": 184,
+    "capacity_carsharing": 2,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81006298913489",
+    "lon": "9.388429111501589",
+    "name": "Beutelsbach",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1126"
+  },
+  {
+    "capacity": 33,
+    "capacity_carsharing": 2,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81042299842992",
+    "lon": "9.421051576712323",
+    "name": "Grunbach Alfred-Klingele-Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1127"
+  },
+  {
+    "capacity": 10,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81057421758261",
+    "lon": "9.419749341345783",
+    "name": "Grunbach Bahnhofstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1128"
+  },
+  {
+    "capacity": 45,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81088825547025",
+    "lon": "9.418958829404374",
+    "name": "Grunbach Günther-Irmscher-Str. Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1130"
+  },
+  {
+    "capacity": 13,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81113091565607",
+    "lon": "9.419505673680899",
+    "name": "Grunbach Günther-Irmscher-Str. Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1133"
+  },
+  {
+    "capacity": 68,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.806384156075325",
+    "lon": "9.440456120885807",
+    "name": "Geradstetten",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1136"
+  },
+  {
+    "capacity": 77,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.7987511755896",
+    "lon": "9.48321792061406",
+    "name": "Winterbach",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1139"
+  },
+  {
+    "capacity": 70,
+    "capacity_carsharing": 1,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.80004914123236",
+    "lon": "9.501417178283448",
+    "name": "Weiler",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1144"
+  },
+  {
+    "capacity": 70,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.806116122778874",
+    "lon": "9.52405110905866",
+    "name": "Schorndorf",
+    "opening_hours": "24/7",
+    "operator_name": "Parkeon",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1148"
+  },
+  {
+    "capacity": 46,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.7232030942916",
+    "lon": "8.969853397286254",
+    "name": "Maichingen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1152"
+  },
+  {
+    "capacity": 55,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.72736208028353",
+    "lon": "8.980432447965955",
+    "name": "Maichingen Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1156"
+  },
+  {
+    "capacity": 10,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.762582769209736",
+    "lon": "8.931670243062392",
+    "name": "Renningen Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1160"
+  },
+  {
+    "capacity": 55,
+    "capacity_carsharing": 2,
+    "capacity_charging": 1,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.771650631680735",
+    "lon": "8.902840009017096",
+    "name": "Malmsheim Calwer Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1162"
+  },
+  {
+    "capacity": 160,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.771529806630596",
+    "lon": "8.908023044457284",
+    "name": "Malmsheim Renninger Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1165"
+  },
+  {
+    "capacity": 117,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.753558829625135",
+    "lon": "8.8707507667296",
+    "name": "Weil der Stadt Bahnhofstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Weil der Stadt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1167"
+  },
+  {
+    "capacity": 61,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.755041215274005",
+    "lon": "8.871768095740615",
+    "name": "Weil der Stadt Eisenbahnstr. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Weil der Stadt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1169"
+  },
+  {
+    "capacity": 107,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.75582566067308",
+    "lon": "8.872857868446738",
+    "name": "Weil der Stadt Eisenbahnstr. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Weil der Stadt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1170"
+  },
+  {
+    "capacity": 49,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.77551797925068",
+    "lon": "8.933297962792093",
+    "name": "Renningen Industriestr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1174"
+  },
+  {
+    "capacity": 33,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.77498760654252",
+    "lon": "8.92900869366391",
+    "name": "Renningen Industriestr. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1177"
+  },
+  {
+    "capacity": 89,
+    "capacity_carsharing": 3,
+    "capacity_charging": 3,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.774452782227016",
+    "lon": "8.931666452759403",
+    "name": "Renningen Alte Bahnhofstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1178"
+  },
+  {
+    "capacity": 21,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.789958160107005",
+    "lon": "8.958702772217892",
+    "name": "Rutesheim Schleife",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1180"
+  },
+  {
+    "capacity": 45,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.79019074411342",
+    "lon": "8.958000289841431",
+    "name": "Rutesheim Bahnhofstraße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1181"
+  },
+  {
+    "capacity": 124,
+    "capacity_carsharing": 4,
+    "capacity_charging": 2,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.729870062432006",
+    "lon": "9.328553390441774",
+    "name": "Oberesslingen",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1183"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.724753793003934",
+    "lon": "9.35956035465939",
+    "name": "Zell",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1189"
+  },
+  {
+    "capacity": 98,
+    "capacity_carsharing": 4,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.64506143626747",
+    "lon": "9.442229084299852",
+    "name": "Kirchheim (T) Eugen-Gerstenmaier-Platz",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1193"
+  },
+  {
+    "capacity": 17,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.64517475545342",
+    "lon": "9.443446541974806",
+    "name": "Kirchheim (T) Schöllkopfstr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1195"
+  },
+  {
+    "capacity": 31,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.65765097159473",
+    "lon": "9.417055559024385",
+    "name": "Ötlingen Uracher Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1198"
+  },
+  {
+    "capacity": 28,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.65846247388271",
+    "lon": "9.415618797700366",
+    "name": "Ötlingen Reutlinger Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1199"
+  },
+  {
+    "capacity": 96,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.67412245937705",
+    "lon": "9.372755371250689",
+    "name": "Wendlingen Heinrich-Otto-Str.",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1204"
+  },
+  {
+    "capacity": 25,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.69443827067718",
+    "lon": "9.413515426642094",
+    "name": "Wernau Gottlieb-Wolfer-Str. Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1208"
+  },
+  {
+    "capacity": 43,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.694802940624506",
+    "lon": "9.414150690770507",
+    "name": "Wernau Gottlieb-Wolfer-Str. Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1209"
+  },
+  {
+    "capacity": 53,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.72029898892467",
+    "lon": "9.38340650463594",
+    "name": "Altbach",
+    "opening_hours": "24/7",
+    "operator_name": "WSA Electronic/TicketLine",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1213"
+  },
+  {
+    "capacity": 270,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.7139828687676",
+    "lon": "9.411188498010977",
+    "name": "Plochingen",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1214"
+  },
+  {
+    "capacity": 514,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 13,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.73783599270525",
+    "lon": "9.114286756102354",
+    "name": "Österfeld (Unterer Grund)",
+    "opening_hours": "24/7",
+    "operator_name": "Parkraumgesellschaft Baden-Württemberg mbH",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 13,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1218"
+  },
+  {
+    "capacity": 53,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.961815131336564",
+    "lon": "9.065320634428662",
+    "name": "Sachsenheim Bahnhofstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1222"
+  },
+  {
+    "capacity": 43,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.96092756378063",
+    "lon": "9.062190298698773",
+    "name": "Sachsenheim Bahnhofstr. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1225"
+  },
+  {
+    "capacity": 71,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.96175221858683",
+    "lon": "9.063040938171264",
+    "name": "Sachsenheim Wiesenstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1227"
+  },
+  {
+    "capacity": 364,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.94593596800065",
+    "lon": "8.959882097828812",
+    "name": "Vaihingen (E) Neue Bahnhofstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1229"
+  },
+  {
+    "capacity": 457,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.94527324678893",
+    "lon": "8.959343260960232",
+    "name": "Vaihingen (E) Parkhaus",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1230"
+  },
+  {
+    "capacity": 55,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.946688506472974",
+    "lon": "8.957717183193488",
+    "name": "Vaihingen (E) Neue Bahnhofstr. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1232"
+  },
+  {
+    "capacity": 138,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.950133188112865",
+    "lon": "8.953510788127367",
+    "name": "Vaihingen (E) K 1698",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1233"
+  },
+  {
+    "capacity": 145,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.76214059101541",
+    "lon": "9.266244005466639",
+    "name": "Obertürkheim Hafenbahnstraße",
+    "opening_hours": "24/7",
+    "operator_name": "Landeshauptstadt Stuttgart Tiefbauamt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1237"
+  },
+  {
+    "capacity": 350,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.676639776025674",
+    "lon": "9.219224562547232",
+    "name": "Filderstadt Bernhausen",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1242"
+  },
+  {
+    "capacity": 281,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.691866678211944",
+    "lon": "9.170891002948931",
+    "name": "Echterdingen",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1248"
+  },
+  {
+    "capacity": 25,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.69531729678965",
+    "lon": "9.143561236576359",
+    "name": "Leinfelden Max-Lang-Str. Süd",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1254"
+  },
+  {
+    "capacity": 79,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.69616033513965",
+    "lon": "9.142654516374444",
+    "name": "Leinfelden Bahnhofstr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1256"
+  },
+  {
+    "capacity": 50,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.70530613280256",
+    "lon": "9.127568583698173",
+    "name": "Oberaichen Wilhelm-Haas-Str. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Leinfelden-Echterdingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1260"
+  },
+  {
+    "capacity": 51,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.70463428417296",
+    "lon": "9.128332630270515",
+    "name": "Oberaichen Wilhelm-Haas-Str. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Leinfelden-Echterdingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1261"
+  },
+  {
+    "capacity": 24,
+    "capacity_carsharing": 0,
+    "capacity_charging": 1,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.71869944170689",
+    "lon": "9.107337346562927",
+    "name": "Rohr",
+    "opening_hours": "24/7",
+    "operator_name": "Landeshauptstadt Stuttgart Tiefbauamt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1265"
+  },
+  {
+    "capacity": 70,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.72576820224251",
+    "lon": "9.111275275699144",
+    "name": "Vaihingen (S-)",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1268"
+  },
+  {
+    "capacity": 228,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 13,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.696395582647895",
+    "lon": "9.018888312400033",
+    "name": "Goldberg Leibnizstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Böblingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 13,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1271"
+  },
+  {
+    "capacity": 138,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.695898430700296",
+    "lon": "9.017882394179539",
+    "name": "Goldberg Parkhaus",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Böblingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1275"
+  },
+  {
+    "capacity": 167,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.67957260259375",
+    "lon": "8.981688853953182",
+    "name": "Hulb",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Böblingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1279"
+  },
+  {
+    "capacity": 50,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.90815743863729",
+    "lon": "9.179552711121197",
+    "name": "Favoritepark Reuteallee",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1291"
+  },
+  {
+    "capacity": 66,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.9306382136031",
+    "lon": "9.199818215478976",
+    "name": "Freiberg (N) Bahnhofstr. Mitte (P + R - Platz)",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Freiberg am Neckar",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1296"
+  },
+  {
+    "capacity": 39,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.92977245951934",
+    "lon": "9.198092585815937",
+    "name": "Freiberg (N) Harteneckstr. Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Freiberg am Neckar",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1299"
+  },
+  {
+    "capacity": 80,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.92952631332045",
+    "lon": "9.196684145251218",
+    "name": "Freiberg (N) Harteneckstr. West",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Freiberg am Neckar",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1300"
+  },
+  {
+    "capacity": 98,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.943680228376614",
+    "lon": "9.245178182710161",
+    "name": "Benningen",
+    "opening_hours": "24/7",
+    "operator_name": "Benningen am Neckar",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1302"
+  },
+  {
+    "capacity": 56,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94341314047988",
+    "lon": "9.265680434516613",
+    "name": "Marbach Bahnhofstr. (Bahnhofsvorplatz)",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1307"
+  },
+  {
+    "capacity": 67,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94344184176143",
+    "lon": "9.262724924169706",
+    "name": "Marbach Kirchenweinbergstr. West",
+    "opening_hours": "24/7",
+    "operator_name": "Contipark Parkgaragengesellschaft Berlin",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1309"
+  },
+  {
+    "capacity": 115,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.944057435960424",
+    "lon": "9.265223975419206",
+    "name": "Marbach Kirchenweinbergstr. Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Contipark Parkgaragengesellschaft Berlin",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1310"
+  },
+  {
+    "capacity": 48,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.9484396450577",
+    "lon": "9.29810924070977",
+    "name": "Erdmannhausen",
+    "opening_hours": "24/7",
+    "operator_name": "Gemeinde Erdmannshausen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1311"
+  },
+  {
+    "capacity": 44,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.67137685447667",
+    "lon": "9.372186897069117",
+    "name": "Wendlingen Schlossgartenstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Wendlingen a. Neckar",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1316"
+  },
+  {
+    "capacity": 8,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.62774167553977",
+    "lon": "9.343154439039276",
+    "name": "Nürtingen Plochinger Str. Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1320"
+  },
+  {
+    "capacity": 26,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.628123391907344",
+    "lon": "9.34343368844553",
+    "name": "Nürtingen Plochinger Str. Mitte",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Nürtingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1321"
+  },
+  {
+    "capacity": 128,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.62867625309481",
+    "lon": "9.343960628864282",
+    "name": "Nürtingen Plochinger Str. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Nürtingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1322"
+  },
+  {
+    "capacity": 180,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.62913381159694",
+    "lon": "9.342629470440757",
+    "name": "Nürtingen Oberboihinger Str.",
+    "opening_hours": "24/7",
+    "operator_name": "Parkraum-Management Erlangen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1323"
+  },
+  {
+    "capacity": 5,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.57239128981198",
+    "lon": "9.273220840334455",
+    "name": "Bempflingen Bahnhofstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1327"
+  },
+  {
+    "capacity": 48,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.57173403013937",
+    "lon": "9.274299690767965",
+    "name": "Bempflingen Kleinbettlinger Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1328"
+  },
+  {
+    "capacity": 40,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.572547693443454",
+    "lon": "9.274055667899868",
+    "name": "Bempflingen Großbettlinger Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1329"
+  },
+  {
+    "capacity": 25,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.958049368868785",
+    "lon": "9.017862731302348",
+    "name": "Sersheim",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1332"
+  },
+  {
+    "capacity": 21,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94903607123109",
+    "lon": "9.138311067584402",
+    "name": "Bietigheim Parkplatz Stuttgarter Str. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Bietigheim-Bissingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1336"
+  },
+  {
+    "capacity": 190,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 8,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94913228387972",
+    "lon": "9.1374627305785",
+    "name": "Bietigheim Parkhaus Stuttgarter Str. Nord",
+    "opening_hours": "",
+    "operator_name": "Stadt Bietigheim-Bissingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 8,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1337"
+  },
+  {
+    "capacity": 37,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.948058782908426",
+    "lon": "9.1386604059475",
+    "name": "Bietigheim Parkplatz Stuttgarter Str. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Contipark Parkgaragengesellschaft Berlin",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1338"
+  },
+  {
+    "capacity": 247,
+    "capacity_carsharing": 10,
+    "capacity_charging": 0,
+    "capacity_disabled": 4,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.947681713397756",
+    "lon": "9.138240415650607",
+    "name": "Bietigheim Parkhaus Stuttgarter Str. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 10,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1339"
+  },
+  {
+    "capacity": 7,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.92181910563608",
+    "lon": "9.124814966336551",
+    "name": "Tamm Kreisverkehr",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1343"
+  },
+  {
+    "capacity": 13,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 6,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.90822823347619",
+    "lon": "9.146852221181126",
+    "name": "Asperg Lehenstraße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 6,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1345"
+  },
+  {
+    "capacity": 62,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.905797635711885",
+    "lon": "9.14750306849243",
+    "name": "Asperg Alleenstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1348"
+  },
+  {
+    "capacity": 74,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.9752685991358",
+    "lon": "9.643175828178896",
+    "name": "Fornsbach",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Murrhardt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1356"
+  },
+  {
+    "capacity": 14,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.98157016921463",
+    "lon": "9.462545293155596",
+    "name": "Oppenweiler Bahnhofsplatz Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1359"
+  },
+  {
+    "capacity": 37,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.982170230373555",
+    "lon": "9.463024385266648",
+    "name": "Oppenweiler Bahnhofsplatz Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1360"
+  },
+  {
+    "capacity": 36,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.99962251257471",
+    "lon": "9.499594867557725",
+    "name": "Sulzbach Talstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Sulzbach an der Murr",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1362"
+  },
+  {
+    "capacity": 39,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.99978116318857",
+    "lon": "9.501554545201714",
+    "name": "Sulzbach Fabrikstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1364"
+  },
+  {
+    "capacity": 60,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.98309530355409",
+    "lon": "9.575726914169616",
+    "name": "Murrhardt Bahnhofstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Murrhardt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1368"
+  },
+  {
+    "capacity": 84,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9827823064298",
+    "lon": "9.578727681785944",
+    "name": "Murrhardt Fichtestr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1370"
+  },
+  {
+    "capacity": 47,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.61883523758009",
+    "lon": "9.841388596241684",
+    "name": "Geislingen Bahnhofstr. Süd",
+    "opening_hours": "24/7",
+    "operator_name": "Contipark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1372"
+  },
+  {
+    "capacity": 110,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.684137588945354",
+    "lon": "9.757409949548315",
+    "name": "Süßen",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Süßen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1377"
+  },
+  {
+    "capacity": 99,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.696618671283986",
+    "lon": "9.703641188509872",
+    "name": "Eislingen Mühlbachstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1382"
+  },
+  {
+    "capacity": 64,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.79753043542326",
+    "lon": "9.69736568865452",
+    "name": "Lorch Poststr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1389"
+  },
+  {
+    "capacity": 226,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.797954968535876",
+    "lon": "9.697295728316899",
+    "name": "Lorch Wilhelmstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1392"
+  },
+  {
+    "capacity": 26,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.79624546563636",
+    "lon": "9.595928013815572",
+    "name": "Plüderhausen Ahornstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1397"
+  },
+  {
+    "capacity": 34,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.79635140744335",
+    "lon": "9.596589381388268",
+    "name": "Plüderhausen Postweg",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1401"
+  },
+  {
+    "capacity": 40,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.80520601060222",
+    "lon": "9.573677380330512",
+    "name": "Urbach Konrad-Hornschuch-Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1407"
+  },
+  {
+    "capacity": 52,
+    "capacity_carsharing": 1,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.6998736697347",
+    "lon": "9.654050372981716",
+    "name": "Göppingen Davidstr.",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1416"
+  },
+  {
+    "capacity": 18,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.71025359872613",
+    "lon": "9.616958015652079",
+    "name": "Faurndau",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1422"
+  },
+  {
+    "capacity": 9,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.70831995334788",
+    "lon": "9.585934922543116",
+    "name": "Uhingen Bahnhofstr. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1426"
+  },
+  {
+    "capacity": 15,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.709038554431984",
+    "lon": "9.584625946144318",
+    "name": "Uhingen Alte Holzhäuser Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1429"
+  },
+  {
+    "capacity": 59,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.715710201726246",
+    "lon": "9.52686605176743",
+    "name": "Ebersbach Wilhelmstr. West",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Ebersbach",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1430"
+  },
+  {
+    "capacity": 31,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.715900020164305",
+    "lon": "9.527422387908256",
+    "name": "Ebersbach Wilhelmstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1431"
+  },
+  {
+    "capacity": 39,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.70729395757626",
+    "lon": "9.464032949790843",
+    "name": "Reichenbach",
+    "opening_hours": "24/7",
+    "operator_name": "Reichenbach an der Fils",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1435"
+  },
+  {
+    "capacity": 143,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.99869225612971",
+    "lon": "9.13616392734539",
+    "name": "Besigheim",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Besigheim",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1438"
+  },
+  {
+    "capacity": 10,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.01040656916037",
+    "lon": "9.151961205965323",
+    "name": "Walheim Villastr. Mitte",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1441"
+  },
+  {
+    "capacity": 19,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.00994480611743",
+    "lon": "9.151588692496551",
+    "name": "Walheim Villastr. Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1442"
+  },
+  {
+    "capacity": 137,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.039384582758395",
+    "lon": "9.150683555021988",
+    "name": "Kirchheim (N) Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1445"
+  },
+  {
+    "capacity": 27,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.87996501039479",
+    "lon": "9.39127302197612",
+    "name": "Winnenden Tiefgarage",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "1449"
+  },
+  {
+    "capacity": 53,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.93913784409036",
+    "lon": "9.330004122796007",
+    "name": "Kirchberg",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1452"
+  },
+  {
+    "capacity": 78,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.5594046152535",
+    "lon": "8.84941998235854",
+    "name": "Gäufelden Bahnhofstr. Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1454"
+  },
+  {
+    "capacity": 30,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.56004890999341",
+    "lon": "8.850012688501304",
+    "name": "Gäufelden Bahnhofstr. Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1455"
+  },
+  {
+    "capacity": 25,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.881013563115246",
+    "lon": "9.394500670820214",
+    "name": "Winnenden Alfred-Kärcher-Str.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "1458"
+  },
+  {
+    "capacity": 9,
+    "capacity_carsharing": 0,
+    "capacity_charging": 2,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.64020427155805",
+    "lon": "9.802601149149087",
+    "name": "Kuchen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1460"
+  },
+  {
+    "capacity": 39,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.942536489801135",
+    "lon": "9.428121230690016",
+    "name": "Backnang Büttenenfeld-West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2003"
+  },
+  {
+    "capacity": 17,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.83133911252292",
+    "lon": "9.165154012635341",
+    "name": "Zuffenhausen Am Bahnhof",
+    "opening_hours": "24/7",
+    "operator_name": "DB BahnPark",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2005"
+  },
+  {
+    "capacity": 6,
+    "capacity_carsharing": 2,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.8267986173524",
+    "lon": "9.121312851406682",
+    "name": "Korntal Bahnhofplatz",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2008"
+  },
+  {
+    "capacity": 45,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.81970368074411",
+    "lon": "9.2679067497057",
+    "name": "Fellbach Schaflandstr.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Fellbach",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2013"
+  },
+  {
+    "capacity": 25,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.820840618472054",
+    "lon": "9.268019318809683",
+    "name": "Fellbach Philipp-Reis-Str.",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Fellbach",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2015"
+  },
+  {
+    "capacity": 32,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82350981307217",
+    "lon": "9.068175544149334",
+    "name": "Ditzingen Dornierstraße Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Ditzingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2022"
+  },
+  {
+    "capacity": 55,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.822989646126686",
+    "lon": "9.067267391385398",
+    "name": "Ditzingen Siemensstr. Mitte",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Ditzingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2024"
+  },
+  {
+    "capacity": 16,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.594077797866525",
+    "lon": "8.860453634575736",
+    "name": "Herrenberg Kalkofenstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2029"
+  },
+  {
+    "capacity": 47,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82641843331902",
+    "lon": "9.299374818241455",
+    "name": "Waiblingen Ameisenbühl",
+    "opening_hours": "24/7",
+    "operator_name": "Parkierungsgesellschaft Waiblingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2033"
+  },
+  {
+    "capacity": 49,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.880055614506524",
+    "lon": "9.392286563955855",
+    "name": "Winnenden Irene-Kärcher-Straße",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2039"
+  },
+  {
+    "capacity": 20,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.75512885693079",
+    "lon": "8.873171445171335",
+    "name": "Weil der Stadt Buswendeschleife",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2065"
+  },
+  {
+    "capacity": 13,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.75536385851836",
+    "lon": "8.871810946093497",
+    "name": "Weil der Stadt Eisenbahnstr. Seitenstreifen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2067"
+  },
+  {
+    "capacity": 22,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.77531629617486",
+    "lon": "8.931752993655428",
+    "name": "Renningen Industriestr. Mitte",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2069"
+  },
+  {
+    "capacity": 37,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.69611767957366",
+    "lon": "9.019453120358385",
+    "name": "Goldberg Vaihinger Str. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2092"
+  },
+  {
+    "capacity": 10,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.6953180459195",
+    "lon": "9.018027888852423",
+    "name": "Goldberg Vaihinger Str. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2093"
+  },
+  {
+    "capacity": 20,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.92979679648584",
+    "lon": "9.195816711389972",
+    "name": "Freiberg (N) Bahnhofstr. Süd-Ost",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Freiberg am Neckar",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2100"
+  },
+  {
+    "capacity": 46,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.93073163169273",
+    "lon": "9.199461498914674",
+    "name": "Freiberg (N) Bahnhofstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2103"
+  },
+  {
+    "capacity": 6,
+    "capacity_carsharing": 2,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94350003968138",
+    "lon": "9.266375505127606",
+    "name": "Marbach Bahnhofsvorplatz",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2106"
+  },
+  {
+    "capacity": 27,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.906733815958184",
+    "lon": "9.148926281043343",
+    "name": "Asperg Eisenbahnstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2112"
+  },
+  {
+    "capacity": 13,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.98190145204827",
+    "lon": "9.57893315887363",
+    "name": "Murrhardt Busabstellplatz",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2117"
+  },
+  {
+    "capacity": 7,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.79597523914674",
+    "lon": "9.59490392125392",
+    "name": "Plüderhausen Ahornstr. West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2127"
+  },
+  {
+    "capacity": 42,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.708340913671314",
+    "lon": "9.586891691592662",
+    "name": "Uhingen Bahnhofstr. Ost",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2131"
+  },
+  {
+    "capacity": 28,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.71638017614938",
+    "lon": "9.52813559443131",
+    "name": "Ebersbach Bahnhofsallee",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2134"
+  },
+  {
+    "capacity": 6,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.01063535298436",
+    "lon": "9.152146195803885",
+    "name": "Walheim Brückenstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2140"
+  },
+  {
+    "capacity": 15,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0118859596561",
+    "lon": "9.152332057788092",
+    "name": "Walheim Villastr. Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2142"
+  },
+  {
+    "capacity": 16,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.04038954853732",
+    "lon": "9.149728434424878",
+    "name": "Kirchheim (N) West",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2143"
+  },
+  {
+    "capacity": 60,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.92770782461793",
+    "lon": "9.367356468315192",
+    "name": "Burgstall Gänsbergweg",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2144"
+  },
+  {
+    "capacity": 51,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.75396581991639",
+    "lon": "8.870127575765167",
+    "name": "Weil der Stadt Raimund-Wolf-Weg",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Weil der Stadt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "4020"
+  },
+  {
+    "capacity": 17,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.982396471896045",
+    "lon": "9.460312568964351",
+    "name": "Oppenweiler Bahnhofstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "4022"
+  },
+  {
+    "capacity": 165,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.79878265083238",
+    "lon": "9.003149249111711",
+    "name": "Leonberg Parkhaus",
+    "opening_hours": "24/7",
+    "operator_name": "Stadtwerke Leonberg",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "4031"
+  },
+  {
+    "capacity": 24,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.696432475795625",
+    "lon": "9.70381481053364",
+    "name": "Eislingen Filsstr.",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "5071"
+  },
+  {
+    "capacity": 125,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.7365609724176",
+    "lon": "8.96484236383766",
+    "name": "Magstadt",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5100"
+  },
+  {
+    "capacity": 30,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.70326326375312",
+    "lon": "9.00140765865169",
+    "name": "Sindelfingen",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Sindelfingen - Bauamt",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5110"
+  },
+  {
+    "capacity": 35,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.620596313607784",
+    "lon": "9.841426897323675",
+    "name": "Geislingen Bahnhofstr. Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Geislingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5174"
+  },
+  {
+    "capacity": 48,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.6290904442701",
+    "lon": "9.34404318320469",
+    "name": "Nürtingen Tiefenbach",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Nürtingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5222"
+  },
+  {
+    "capacity": 11,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.942509116031154",
+    "lon": "9.429407963205621",
+    "name": "Backnang Stadthalle",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "5273"
+  },
+  {
+    "capacity": 47,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.69637275526996",
+    "lon": "9.143242436618415",
+    "name": "Leinfelden Max-Lang-Str. Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5286"
+  },
+  {
+    "capacity": 38,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.75586763549363",
+    "lon": "8.872665960085293",
+    "name": "Weil der Stadt Eisenbahnstr. Seitenstreifen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "5316"
+  },
+  {
+    "capacity": 26,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.87779592081301",
+    "lon": "9.389594534442628",
+    "name": "Winnenden Zipfelbach",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5325"
+  },
+  {
+    "capacity": 92,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.61689561974241",
+    "lon": "9.45471587489476",
+    "name": "Dettingen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6001"
+  },
+  {
+    "capacity": 10,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.861774350894585",
+    "lon": "9.535867020918024",
+    "name": "Michelau",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6002"
+  },
+  {
+    "capacity": 28,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.844238517109595",
+    "lon": "9.539142920063188",
+    "name": "Miedelsbach-Steinenberg Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6003"
+  },
+  {
+    "capacity": 10,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.85535910649549",
+    "lon": "9.095473788567435",
+    "name": "Münchingen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6004"
+  },
+  {
+    "capacity": 20,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.554548294413834",
+    "lon": "9.470341542381396",
+    "name": "Oberlenningen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6005"
+  },
+  {
+    "capacity": 12,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.84998261975995",
+    "lon": "9.09556838670704",
+    "name": "Rührberg",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6006"
+  },
+  {
+    "capacity": 25,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.80796915990177",
+    "lon": "9.535904541908105",
+    "name": "Schorndorf Hammerschlag",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6007"
+  },
+  {
+    "capacity": 13,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.595034855553415",
+    "lon": "9.359431903305504",
+    "name": "Frickenhausen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6008"
+  },
+  {
+    "capacity": 61,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.864118424832945",
+    "lon": "9.180917992372148",
+    "name": "Kornwestheim Parkhaus",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "6010"
+  },
+  {
+    "capacity": 107,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.81183452234839",
+    "lon": "9.266794242144057",
+    "name": "Fellbach Esslinger Str.",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6011"
+  },
+  {
+    "capacity": 11,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.88217820578553",
+    "lon": "9.53045438231103",
+    "name": "Rudersberg Postplatz Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6012"
+  },
+  {
+    "capacity": 23,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 1,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.870352243390094",
+    "lon": "9.071958660327134",
+    "name": "Schwieberdingen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6014"
+  },
+  {
+    "capacity": 40,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.57741129735446",
+    "lon": "8.881504532758072",
+    "name": "Gültstein",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6016"
+  },
+  {
+    "capacity": 480,
+    "capacity_carsharing": 1,
+    "capacity_charging": 2,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.74617022353077",
+    "lon": "9.163312588984727",
+    "name": "Degerloch Albstraße",
+    "opening_hours": "24/7",
+    "operator_name": "Stuttgarter Heimschutz Parkraum-Management",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 1,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "UNDERGROUND",
+    "uid": "7001"
+  },
+  {
+    "capacity": 271,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.856567799995375",
+    "lon": "9.249667687064811",
+    "name": "Hornbach (Aldingen)",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7002"
+  },
+  {
+    "capacity": 51,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.7659843165581",
+    "lon": "9.20074491239264",
+    "name": "Geroksruhe",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7003"
+  },
+  {
+    "capacity": 32,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.73844052758823",
+    "lon": "9.233941319997879",
+    "name": "Heumaden",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "7004"
+  },
+  {
+    "capacity": 116,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.75292159990742",
+    "lon": "9.192777784604736",
+    "name": "Ruhbank",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7005"
+  },
+  {
+    "capacity": 55,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.62039746421899",
+    "lon": "9.043726594718166",
+    "name": "Weil im Schönbuch Troppel",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8101"
+  },
+  {
+    "capacity": 53,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.63873487400214",
+    "lon": "9.007123464201573",
+    "name": "Holzgerlingen",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8201"
+  },
+  {
+    "capacity": 12,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.843761141770834",
+    "lon": "9.539368500531694",
+    "name": "Miedelsbach-Steinenberg Süd",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8853"
+  },
+  {
+    "capacity": 9,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 0,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.88258251752589",
+    "lon": "9.530515225588088",
+    "name": "Rudersberg Postplatz Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8951"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.88720304447583",
+    "lon": "9.533283588574792",
+    "name": "Rudersberg Nord",
+    "opening_hours": "",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9006"
+  },
+  {
+    "capacity": 198,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 3,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.71604635818841",
+    "lon": "9.288946975236376",
+    "name": "Nellingen Parkhaus an der Akademie",
+    "opening_hours": "24/7",
+    "operator_name": "Parkeon/Stadt Ostfildern",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "9103"
+  },
+  {
+    "capacity": 238,
+    "capacity_carsharing": 2,
+    "capacity_charging": 2,
+    "capacity_disabled": 8,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.94791315716317",
+    "lon": "9.13526638419216",
+    "name": "Bietigheim Bahnhofstr. (Parkhaus am Sky)",
+    "opening_hours": "",
+    "operator_name": "Stadt Bietigheim-Bissingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 8,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CHARGING"
+      },
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARSHARING"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "11603"
+  },
+  {
+    "capacity": 50,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.52524123182359",
+    "lon": "8.828040988995612",
+    "name": "Bondorf P+R-Parkplatz Nord",
+    "opening_hours": "24/7",
+    "operator_name": "Gemeinde Bondorf",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "99997"
+  },
+  {
+    "capacity": 108,
+    "capacity_carsharing": 0,
+    "capacity_charging": 0,
+    "capacity_disabled": 2,
+    "external_identifiers": [],
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.82379630492086",
+    "lon": "9.064013949422943",
+    "name": "Ditzingen Stuttgarter Str. (Parkdeck Bahnhof-Center)",
+    "opening_hours": "24/7",
+    "operator_name": "Stadt Ditzingen",
+    "park_and_ride_type": [
+      "TRAIN"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "99998"
+  }
+]

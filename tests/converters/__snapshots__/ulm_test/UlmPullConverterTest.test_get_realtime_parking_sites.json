@@ -1,0 +1,69 @@
+[
+  {
+    "realtime_capacity": 548,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 448,
+    "restrictions": [],
+    "uid": "am-bahnhof-8"
+  },
+  {
+    "realtime_capacity": 558,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 414,
+    "restrictions": [],
+    "uid": "am-rathaus-1"
+  },
+  {
+    "realtime_capacity": 596,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 514,
+    "restrictions": [],
+    "uid": "deutschhaus-3"
+  },
+  {
+    "realtime_capacity": 511,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 352,
+    "restrictions": [],
+    "uid": "salzstadel-2"
+  },
+  {
+    "realtime_capacity": 371,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 280,
+    "restrictions": [],
+    "uid": "fischerviertel-4"
+  },
+  {
+    "realtime_capacity": 780,
+    "realtime_data_updated_at": "<now>",
+    "restrictions": [],
+    "uid": "frauenstrae-9"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 281,
+    "restrictions": [],
+    "uid": "ccu-nord-5"
+  },
+  {
+    "realtime_capacity": 235,
+    "realtime_data_updated_at": "<now>",
+    "restrictions": [],
+    "uid": "ccu-sud-6"
+  },
+  {
+    "realtime_capacity": 70,
+    "realtime_data_updated_at": "<now>",
+    "restrictions": [],
+    "uid": "kornhaus-10"
+  },
+  {
+    "realtime_capacity": 78,
+    "realtime_data_updated_at": "<now>",
+    "realtime_free_capacity": 68,
+    "restrictions": [],
+    "uid": "theater-7"
+  }
+]

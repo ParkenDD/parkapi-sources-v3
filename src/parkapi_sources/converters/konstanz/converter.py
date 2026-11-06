@@ -19,6 +19,9 @@ class KonstanzPullConverter(ParkingSitePullConverter):
         name='Stadt Konstanz',
         source_url='https://services.gis.konstanz.digital/geoportal/rest/services/Fachdaten/Parkplaetze_Parkleitsystem'
         '/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json',
+        attribution_contributor='Stadt Konstanz',
+        attribution_license='CC BY 4.0',
+        attribution_url='https://creativecommons.org/licenses/by/4.0/',
         has_realtime_data=True,
         public_url='https://www.konstanz.de/leben+in+konstanz/mobilitaet/parkleitsystem',
     )

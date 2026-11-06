@@ -1,0 +1,86 @@
+[
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 4,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "1754"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 42,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "70"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 22,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "55"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 89,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "60"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 5,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "PA-608"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 23,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "20"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 22,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "27"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 63,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "1"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "11852"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "DE2139"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "8"
+  },
+  {
+    "realtime_data_updated_at": "2026-10-26T19:43:09Z",
+    "realtime_free_capacity": 62,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "DE-2119"
+  }
+]

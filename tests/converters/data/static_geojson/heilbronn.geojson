@@ -1,0 +1,251 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "am-bollwerksturm",
+        "name": "Am Bollwerksturm",
+        "type": "CAR_PARK",
+        "public_url": "https://www.stadtwerke-heilbronn.de/swh/parkhaeuser/cityparkhaus-am-bollwerksturm-preise-oeffnungszeiten-anfahrt.php",
+        "address": "Mannheimer Str. 25, Heilbronn",
+        "capacity": 390,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.216159,
+          49.146106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "bildungscampus-mitte",
+        "name": "Bildungscampus Mitte",
+        "type": "CAR_PARK",
+        "public_url": "https://bildungscampus.hn/anfahrt/parkhaus-mitte",
+        "address": "Weipertstraße 51, Heilbronn",
+        "capacity": 520,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.214619,
+          49.14886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "bildungscampus-ost",
+        "name": "Bildungscampus Ost",
+        "type": "CAR_PARK",
+        "public_url": "https://bildungscampus.hn/anfahrt/parkflaeche-ost",
+        "address": "Dammstraße 1, Heilbronn",
+        "capacity": 332,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.21793,
+          49.14827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "e-quartiersgarage-neckarbogen",
+        "name": "E-Quartiersgarage Neckarbogen",
+        "type": "CAR_PARK",
+        "public_url": "https://www.stadtwerke-heilbronn.de/swh/parken-und-laden/parken/",
+        "address": "Paula-Fuchs-Allee 15, 74076 Heilbronn",
+        "capacity": 640,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2093111,
+          49.1458738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "harmonie",
+        "name": "Harmonie",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.bb-parkhaus.de/parken/heilbronn/parkhaus/heilbronn-harmonie/",
+        "address": "Allee 28, Heilbronn",
+        "capacity": 435,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.225386,
+          49.142295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "kaethchenhof",
+        "name": "Käthchenhof",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.kaethchenhof.de/",
+        "address": "Gerberstraße, Heilbronn",
+        "capacity": 67,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.21755,
+          49.143207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "kiliansplatz",
+        "name": "Kiliansplatz",
+        "type": "CAR_PARK",
+        "public_url": "https://www.apcoa.de/parken/heilbronn/klosterhof-kiliansplatz/",
+        "address": "Kiliansstr. 11, Heilbronn",
+        "capacity": 230,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.220854,
+          49.14117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "p-r-karlsruher-strasse",
+        "name": "P+R Karlsruher Straße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "address": "Karlsruher Straße, Heilbronn",
+        "capacity": 100,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.202878,
+          49.137712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkhaus-experimenta",
+        "name": "Parkhaus Experimenta",
+        "type": "CAR_PARK",
+        "public_url": "https://bildungscampus.hn/anfahrt/parkhaus-experimenta",
+        "address": "Bahnhofstraße 6, Heilbronn",
+        "capacity": 500,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.213191,
+          49.143647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "parkplatz-hauptbahnhof",
+        "name": "Parkplatz Hauptbahnhof",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.mein-contipark.de/parkplatz-finden/parken-in-heilbronn/parkplatz-hauptbahnhof-p1-heilbronn--ci3cp1124315",
+        "address": "Bahnhofstraße 6, Heilbronn",
+        "capacity": 456,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.21127,
+          49.14379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "stadtgalerie",
+        "name": "Stadtgalerie",
+        "type": "CAR_PARK",
+        "public_url": "https://www.stadtgalerie-heilbronn.de/center/anfahrt-parken/parken/",
+        "address": "Allerheiligenstraße, Heilbronn",
+        "capacity": 660,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.216804,
+          49.140119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "theaterforum-k3",
+        "name": "Theaterforum K3",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.bb-parkhaus.de/parken/heilbronn/parkhaus/heilbronn-k3-theater/",
+        "address": "Berliner Platz 12, Heilbronn",
+        "capacity": 460,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.220796,
+          49.145997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "wollhaus",
+        "name": "Wollhaus",
+        "type": "CAR_PARK",
+        "public_url": "https://www.bb-parkhaus.de/parken/heilbronn/parkhaus/heilbronn-wollhaus",
+        "address": "Am Wollhaus, Heilbronn",
+        "capacity": 450,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.220889,
+          49.139792
+        ]
+      }
+    }
+  ]
+}

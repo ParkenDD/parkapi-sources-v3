@@ -1,0 +1,373 @@
+[
+  {
+    "address": "Erbprinzenstraße 9, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9921132",
+    "lon": "7.8466803",
+    "name": "P01 - Erbprinzenstrasse (R)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P01"
+  },
+  {
+    "address": "Erbprinzenstraße 11, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9921230",
+    "lon": "7.8465748",
+    "name": "P02 - Erbprinzenstrasse (L)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P02"
+  },
+  {
+    "address": "Rotteckring 3, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9961481",
+    "lon": "7.8461681",
+    "name": "P03 - Rotteckring 3 (L)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P03"
+  },
+  {
+    "address": "Rotteckring 3, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9961805",
+    "lon": "7.8461739",
+    "name": "P04 - Rotteckring 3 (R)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P04"
+  },
+  {
+    "address": "Rempartstraße 11, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9930195",
+    "lon": "7.8476986",
+    "name": "P05 - Rempartstraße 11 (CopyMan)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P05"
+  },
+  {
+    "address": "Humboldtstraße 2, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9934597",
+    "lon": "7.8483670",
+    "name": "P06 - Humboldtstraße 2",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P06"
+  },
+  {
+    "address": "Moltkestraße 5, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9954291",
+    "lon": "7.8434964",
+    "name": "P07 - Moltkestrasse (R)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P07"
+  },
+  {
+    "address": "Moltkestraße 16b, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9946442",
+    "lon": "7.8434007",
+    "name": "P08 - Moltkestrasse (L)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P08"
+  },
+  {
+    "address": "Rotteckring 3, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9978080",
+    "lon": "7.8482930",
+    "name": "P09 - Fahnenbergplatz 3 (R)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P09"
+  },
+  {
+    "address": "Rotteckring 3, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9977760",
+    "lon": "7.8482760",
+    "name": "P10 - Fahnenbergplatz 3 (L)",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P10"
+  },
+  {
+    "address": "Rempartstraße 11, 79098 Freiburg im Breisgau",
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9971265",
+    "lon": "7.8538246",
+    "name": "P11 - Auf der Zinnen",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P11"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9968305",
+    "lon": "7.8544000",
+    "name": "P12 - Karlsplatz",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P12"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9968155",
+    "lon": "7.8544600",
+    "name": "P13 - Karlsplatz",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P13"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9928248",
+    "lon": "7.8537999",
+    "name": "P14 - Schwabentor",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P14"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9928511",
+    "lon": "7.8537997",
+    "name": "P15 - Schwabentor",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P15"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9934089",
+    "lon": "7.8501001",
+    "name": "P16 - Gerberau 12",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P16"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9911932",
+    "lon": "7.8462002",
+    "name": "P17 - Gartenstrasse 28",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P17"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9969284",
+    "lon": "7.8479999",
+    "name": "P18 - Gauchstraße 17",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P18"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9912363",
+    "lon": "7.8463001",
+    "name": "P19 - Gartenstraße 28",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P19"
+  },
+  {
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "47.9969509",
+    "lon": "7.8487999",
+    "name": "P20 - Gauchstrasse 17",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "uid": "P20"
+  }
+]

@@ -8,6 +8,8 @@ from .datex2_static_mixin import Datex2StaticMixin
 from .inter_urban_parking_site_mixin import InterUrbanParkingSiteMixin
 from .inter_urban_parking_site_validator import InterUrbanParkingSite
 from .parking_facility_mixin import ParkingFacilityMixin
+from .parking_facility_status_mixin import ParkingFacilityStatusMixin
+from .parking_facility_status_validator import ParkingFacilityStatus
 from .parking_facility_validator import ParkingFacility
 from .parking_record_status_mixin import ParkingRecordStatusMixin
 from .urban_parking_site_mixin import UrbanParkingSiteMixin

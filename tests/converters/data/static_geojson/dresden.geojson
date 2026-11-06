@@ -1,0 +1,1036 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "401",
+        "name": "Taschenbergpalais",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=401",
+        "address": "Kleine Brüdergasse 3, 01067 Dresden",
+        "capacity": 98,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7353414,
+          51.0517691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "402",
+        "name": "Haus am Zwinger",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=402",
+        "address": "Kleine Brüdergasse 3, 01067 Dresden",
+        "capacity": 171,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7357789,
+          51.0514143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "403",
+        "name": "An der Frauenkirche",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=403",
+        "address": "An der Frauenkirche 12a, 01067 Dresden",
+        "capacity": 120,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7441935,
+          51.0514151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "404",
+        "name": "GALERIA Karstadt Kaufhof",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=404",
+        "address": "Prager Straße 12, 01069 Dresden",
+        "capacity": 265,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7380445,
+          51.0467643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "405",
+        "name": "Wöhrl / Florentinum",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=405",
+        "address": "Prager Straße 8 - 10, 01069 Dresden",
+        "capacity": 264,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.737963,
+          51.0445161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "406",
+        "name": "City Center",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=406",
+        "address": "Friedrich-List-Platz 2, 01069 Dresden",
+        "capacity": 150,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7308521,
+          51.0385961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "407",
+        "name": "World Trade Center",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=407",
+        "address": "Ammonstraße 70, 01067 Dresden",
+        "capacity": 220,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7217156,
+          51.0493736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "408",
+        "name": "Semperoper",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=408",
+        "address": "Devrientstraße, 01067 Dresden",
+        "capacity": 400,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7339577,
+          51.0554398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "409",
+        "name": "Altmarkt - Galerie",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=409",
+        "address": "Webergasse 1, 01067 Dresden",
+        "capacity": 480,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.737878,
+          51.0467643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "410",
+        "name": "Wiener Platz / Hauptbahnhof",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=410",
+        "address": "Wiener Platz, 01069 Dresden",
+        "capacity": 350,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.732423,
+          51.041808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "411",
+        "name": "Schießgasse",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=411",
+        "address": "Schießgasse, 01067 Dresden",
+        "capacity": 212,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7445053,
+          51.0504296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "412",
+        "name": "Pirnaischer Platz",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=412",
+        "address": "Pirnaischer Platz / Ringstraße, 01067 Dresden",
+        "capacity": 135,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7435681,
+          51.0481722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "413",
+        "name": "Lindengasse",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=413",
+        "address": "Lindengasse, 01069 Dresden",
+        "capacity": 27,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7417522,
+          51.0415006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "415",
+        "name": "Reitbahnstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=415",
+        "address": "Reitbahnstraße, 01069 Dresden",
+        "capacity": 285,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7334257,
+          51.0435681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "416",
+        "name": "Terrassenufer",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=416",
+        "address": "Terrassenufer, 01067 Dresden",
+        "capacity": 65,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7481397,
+          51.0531654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "417",
+        "name": "Wiesentorstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=417",
+        "address": "Wiesentorstraße, 01097 Dresden",
+        "capacity": 120,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7429093,
+          51.056705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "418",
+        "name": "Theresienstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=418",
+        "address": "Theresienstraße 15, 01097 Dresden",
+        "capacity": 140,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7420211,
+          51.0631677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "419",
+        "name": "Ferdinandplatz",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=419",
+        "address": "Ferdinandplatz 1, 01069 Dresden",
+        "capacity": 105,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7396371,
+          51.0458826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "420",
+        "name": "Sarrasanistraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=420",
+        "address": "Sarrasanistraße, 01097 Dresden",
+        "capacity": 55,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.745024,
+          51.0576266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "421",
+        "name": "Kongresszentrum",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=421",
+        "address": "Ostra-Ufer 2, 01067 Dresden",
+        "capacity": 250,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7311877,
+          51.0419707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "422",
+        "name": "Frauenkirche / Neumarkt",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=422",
+        "address": "Landhausstraße 2, 01067 Dresden",
+        "capacity": 250,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7308651,
+          51.059002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "424",
+        "name": "Flutrinne",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=424",
+        "address": "Messering 6, 01067 Dresden",
+        "capacity": 1200,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7195056,
+          51.0674629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "426",
+        "name": "Prohlis",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=426",
+        "address": "Langer Weg, 01239 Dresden",
+        "capacity": 56,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7994474,
+          50.999408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "427",
+        "name": "Kaditz",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=427",
+        "address": "Washingtonstraße, 01139 Dresden",
+        "capacity": 190,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6910092,
+          51.0813056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "429",
+        "name": "Parkhaus Mitte",
+        "type": "CAR_PARK",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=429",
+        "address": "Magdeburger Str. 1, 01067 Dresden",
+        "capacity": 280,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7261102,
+          51.0581412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "430",
+        "name": "Terrassenufer Bus",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=430",
+        "address": "Terrassenufer, 01067 Dresden",
+        "capacity": 22,
+        "has_realtime_data": true,
+        "restrictions": [
+          {
+            "type": "BUS"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.75051,
+          51.05229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "431",
+        "name": "Altmarkt",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=431",
+        "address": "Altmarkt 1, 01067 Dresden",
+        "capacity": 400,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7417891,
+          51.0506701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "433",
+        "name": "Klotzsche",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=433",
+        "address": "Zur Neuen Brücke, 01109 Dresden",
+        "capacity": 36,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.789429,
+          51.115716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "434",
+        "name": "Reick",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=434",
+        "address": "Lohrmannstraße, 01237 Dresden",
+        "capacity": 19,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.79023,
+          51.020982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "436",
+        "name": "Pennrich",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=436",
+        "address": "Oskar-Maune-Straße, 01156 Dresden",
+        "capacity": 50,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.62639,
+          51.0405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "437",
+        "name": "Cossebaude",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=437",
+        "address": "Bahnhofstraße Cossebaude, 01462 Dresden",
+        "capacity": 38,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.63258,
+          51.08521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "438",
+        "name": "Centrum - Galerie",
+        "type": "CAR_PARK",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=438",
+        "address": "Trompeterstraße 5, 01069 Dresden",
+        "capacity": 1059,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7339469,
+          51.0453716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "439",
+        "name": "Langebrück",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=439",
+        "address": "Güterbahnhofstraße Langebrück, 01465 Dresden",
+        "capacity": 50,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.84038,
+          51.12714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "441",
+        "name": "Gompitz",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=441",
+        "address": "Gompitzer Höhe, 01156 Dresden",
+        "capacity": 46,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.627012,
+          51.040645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "442",
+        "name": "Ostra-Allee",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=442",
+        "address": "Ostra-Allee, 01067 Dresden",
+        "capacity": 90,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.73093,
+          51.05383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "443",
+        "name": "Blüherstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=443",
+        "address": "Blüherstraße, 01069 Dresden",
+        "capacity": 130,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.74859,
+          51.04413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "444",
+        "name": "Lingnerallee",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=444",
+        "address": "Lingnerallee, 01069 Dresden",
+        "capacity": 350,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.75035,
+          51.04379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "445",
+        "name": "Pirnaische Straße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=445",
+        "address": "Pirnaische Straße, 01069 Dresden",
+        "capacity": 500,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.74746,
+          51.04641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "446",
+        "name": "Zinzendorfstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=446",
+        "address": "Zinzendorfstraße, 01069 Dresden",
+        "capacity": 250,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.74466,
+          51.04458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "447",
+        "name": "Bahnhof Neustadt",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=447",
+        "address": "Schlesischer Platz, 01097 Dresden",
+        "capacity": 40,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.74196,
+          51.06541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "448",
+        "name": "Palaisplatz",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=448",
+        "address": "Palaisplatz, 01097 Dresden",
+        "capacity": 100,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.73924,
+          51.06026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "449",
+        "name": "Wigardstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=449",
+        "address": "Wigardstraße, 01097 Dresden",
+        "capacity": 180,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.75072,
+          51.05768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "452",
+        "name": "SP1 Straßburger Platz",
+        "type": "CAR_PARK",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=452",
+        "address": "Straßburger Platz 1, 01307 Dresden",
+        "capacity": 291,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7536965,
+          51.0461396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "453",
+        "name": "Strehlener Straße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=453",
+        "address": "Strehlener Straße 27, 01069 Dresden",
+        "capacity": 235,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.744492,
+          51.0345974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "455",
+        "name": "Freiberger Platz",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=455",
+        "address": "Freiberger Platz, 01067 Dresden",
+        "capacity": 110,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.725973,
+          51.049571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "456",
+        "name": "Kraftwerk Mitte",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=456",
+        "address": "Löbtauer Straße 21, 01069 Dresden",
+        "capacity": 315,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7190763,
+          51.0530993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "459",
+        "name": "Weixdorf Bad",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=459",
+        "address": "Platz des Friedens, 01108 Dresden",
+        "capacity": 24,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8012814,
+          51.1401712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "460",
+        "name": "Weißig",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=460",
+        "address": "Bautzner Landstraße, 01328 Dresden",
+        "capacity": 33,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8852734,
+          51.0612682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "461",
+        "name": "Budapester Straße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=461",
+        "address": "Budapester Straße, 01069 Dresden",
+        "capacity": 127,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7302697,
+          51.0459106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "462",
+        "name": "Bühlau",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=462",
+        "address": "Bautzner Landstraße, Dresden",
+        "capacity": 9,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8454591,
+          51.0614832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "464",
+        "name": "Ostra-Ufer",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=464",
+        "address": "Ostra-Ufer, 01067 Dresden",
+        "capacity": 141,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7285211,
+          51.0608587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "465",
+        "name": "Fidelio-F.-Finke-Straße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=465",
+        "address": "Fidelio-F.-Finke-Straße, 01326 Dresden",
+        "capacity": 105,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.814142,
+          51.052804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "466",
+        "name": "Grenzstraße",
+        "type": "OFF_STREET_PARKING_GROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=466",
+        "address": "Grenzstraße 3, 01109 Dresden",
+        "capacity": 38,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.776568,
+          51.127956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uid": "468",
+        "name": "Stadtforum Dresden",
+        "type": "UNDERGROUND",
+        "public_url": "https://www.dresden.de/apps_ext/ParkplatzApp/detail?id=468",
+        "address": "Waisenhausstraße 14, 01069 Dresden",
+        "capacity": 88,
+        "has_realtime_data": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7398665,
+          51.0465581
+        ]
+      }
+    }
+  ]
+}

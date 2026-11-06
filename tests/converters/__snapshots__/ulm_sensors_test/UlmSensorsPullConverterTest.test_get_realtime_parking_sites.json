@@ -1,0 +1,51 @@
+[
+  {
+    "realtime_capacity": 549,
+    "realtime_data_updated_at": "2025-04-11T07:33:00Z",
+    "realtime_free_capacity": 129,
+    "restrictions": [],
+    "uid": "6c5a1b0b-d83c-4c25-a4af-4db29d7280a8"
+  },
+  {
+    "realtime_capacity": 551,
+    "realtime_data_updated_at": "2025-04-11T07:33:00Z",
+    "realtime_free_capacity": 368,
+    "restrictions": [],
+    "uid": "6173ba87-78ec-436c-85f0-b02c75c6b33b"
+  },
+  {
+    "realtime_capacity": 78,
+    "realtime_data_updated_at": "2025-04-11T07:33:00Z",
+    "realtime_free_capacity": 59,
+    "restrictions": [],
+    "uid": "fd6b8240-b9d2-4f85-b877-3eae4e9b1c87"
+  },
+  {
+    "realtime_capacity": 596,
+    "realtime_data_updated_at": "2025-04-11T07:33:00Z",
+    "realtime_free_capacity": 240,
+    "restrictions": [],
+    "uid": "fd12a50d-0722-4a0a-ac47-cd88eff6862a"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2025-04-11T07:33:00Z",
+    "realtime_free_capacity": 196,
+    "restrictions": [],
+    "uid": "057786ef-ef3e-4837-a0b9-f8d609e9ed34"
+  },
+  {
+    "realtime_capacity": 511,
+    "realtime_data_updated_at": "2025-04-11T07:33:00Z",
+    "realtime_free_capacity": 152,
+    "restrictions": [],
+    "uid": "c699c145-eb2e-4cf5-9a50-1a8a56fbf64d"
+  },
+  {
+    "realtime_capacity": 371,
+    "realtime_data_updated_at": "2025-03-03T06:55:04Z",
+    "realtime_free_capacity": 0,
+    "restrictions": [],
+    "uid": "132becee-d7c9-441e-a76e-3adb216a76ba"
+  }
+]

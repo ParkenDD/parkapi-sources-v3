@@ -1,0 +1,309 @@
+[
+  {
+    "realtime_capacity": 59,
+    "realtime_data_updated_at": "2024-11-27T18:39:00Z",
+    "realtime_free_capacity": 16,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "1"
+  },
+  {
+    "realtime_capacity": 320,
+    "realtime_data_updated_at": "2024-11-27T18:39:00Z",
+    "realtime_free_capacity": 245,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "2"
+  },
+  {
+    "realtime_capacity": 250,
+    "realtime_data_updated_at": "2024-11-27T18:39:00Z",
+    "realtime_free_capacity": 226,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "3"
+  },
+  {
+    "realtime_capacity": 275,
+    "realtime_data_updated_at": "2024-11-27T18:33:37Z",
+    "realtime_free_capacity": 215,
+    "restrictions": [],
+    "uid": "9"
+  },
+  {
+    "realtime_capacity": 303,
+    "realtime_data_updated_at": "2024-11-27T18:33:37Z",
+    "realtime_free_capacity": 203,
+    "restrictions": [],
+    "uid": "10"
+  },
+  {
+    "realtime_capacity": 292,
+    "realtime_data_updated_at": "2024-11-27T18:33:37Z",
+    "realtime_free_capacity": 147,
+    "restrictions": [],
+    "uid": "11"
+  },
+  {
+    "realtime_capacity": 113,
+    "realtime_data_updated_at": "2024-11-27T18:33:37Z",
+    "realtime_free_capacity": 102,
+    "restrictions": [],
+    "uid": "12"
+  },
+  {
+    "realtime_capacity": 186,
+    "realtime_data_updated_at": "2024-11-27T18:33:37Z",
+    "realtime_free_capacity": 116,
+    "restrictions": [],
+    "uid": "13"
+  },
+  {
+    "realtime_capacity": 247,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 126,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "14"
+  },
+  {
+    "realtime_capacity": 290,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 45,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "16"
+  },
+  {
+    "realtime_capacity": 180,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 91,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "17"
+  },
+  {
+    "realtime_capacity": 491,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 131,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "18"
+  },
+  {
+    "realtime_capacity": 240,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 81,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "20"
+  },
+  {
+    "realtime_capacity": 412,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 280,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "22"
+  },
+  {
+    "realtime_capacity": 130,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 66,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "23"
+  },
+  {
+    "realtime_capacity": 236,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 151,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "24"
+  },
+  {
+    "realtime_capacity": 107,
+    "realtime_data_updated_at": "2024-11-27T18:40:00Z",
+    "realtime_free_capacity": 87,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "25"
+  },
+  {
+    "realtime_capacity": 204,
+    "realtime_data_updated_at": "2024-11-27T18:41:00Z",
+    "realtime_free_capacity": 142,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "40"
+  },
+  {
+    "realtime_capacity": 326,
+    "realtime_data_updated_at": "2024-11-27T18:41:00Z",
+    "realtime_free_capacity": 214,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "41"
+  },
+  {
+    "realtime_capacity": 495,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 255,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "54"
+  },
+  {
+    "realtime_capacity": 495,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 437,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "55"
+  },
+  {
+    "realtime_capacity": 349,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 181,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "56"
+  },
+  {
+    "realtime_capacity": 418,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 281,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "57"
+  },
+  {
+    "realtime_capacity": 392,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 392,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "59"
+  },
+  {
+    "realtime_capacity": 400,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 80,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "60"
+  },
+  {
+    "realtime_capacity": 912,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 256,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "61"
+  },
+  {
+    "realtime_capacity": 52,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 0,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "62"
+  },
+  {
+    "realtime_capacity": 629,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 314,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "63"
+  },
+  {
+    "realtime_capacity": 100,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 68,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "64"
+  },
+  {
+    "realtime_capacity": 423,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 182,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "65"
+  },
+  {
+    "realtime_capacity": 260,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 119,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "66"
+  },
+  {
+    "realtime_capacity": 175,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 52,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "67"
+  },
+  {
+    "realtime_capacity": 327,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 132,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "68"
+  },
+  {
+    "realtime_capacity": 417,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 306,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "69"
+  },
+  {
+    "realtime_capacity": 843,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 511,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "70"
+  },
+  {
+    "realtime_capacity": 493,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 107,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "71"
+  },
+  {
+    "realtime_capacity": 130,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 64,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "72"
+  },
+  {
+    "realtime_capacity": 273,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 161,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "73"
+  },
+  {
+    "realtime_capacity": 250,
+    "realtime_data_updated_at": "2024-11-27T18:35:00Z",
+    "realtime_free_capacity": 109,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "74"
+  }
+]

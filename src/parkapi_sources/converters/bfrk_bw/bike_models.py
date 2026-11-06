@@ -18,6 +18,8 @@ from .base_models import BfrkBaseInput
 
 class BfrkBikeType(Enum):
     WALL_LOOPS = 'Vorderradhalter'
+    WALL_LOOPS_WITHOUT_BRACKET = 'VorderradhalterOhneBuegelzusatz'
+    SAFE_WALL_LOOPS = 'VorderradhalterMitBuegelzusatz'
     STANDS = 'Anlehnbuegel'
     LOCKERS = 'Fahrradboxen'
     TWO_TIER = 'doppelstoeckig'
@@ -29,6 +31,8 @@ class BfrkBikeType(Enum):
     def to_parking_site_type(self) -> ParkingSiteType:
         if self == BfrkBikeType.AUTOMATIC_BUILDING:
             return ParkingSiteType.BUILDING
+        if self == BfrkBikeType.WALL_LOOPS_WITHOUT_BRACKET:
+            return ParkingSiteType.WALL_LOOPS
         return ParkingSiteType[self.name]
 
     def to_park_and_ride_type(self) -> list[ParkAndRideType]:
@@ -38,6 +42,8 @@ class BfrkBikeType(Enum):
             BfrkBikeType.TWO_TIER,
             BfrkBikeType.BUILDING,
             BfrkBikeType.AUTOMATIC_BUILDING,
+            BfrkBikeType.STANDS,
+            BfrkBikeType.SAFE_WALL_LOOPS,
         ]:
             return [ParkAndRideType.YES]
         else:
@@ -47,8 +53,10 @@ class BfrkBikeType(Enum):
         match self:
             case BfrkBikeType.STANDS:
                 return 'Anlehnbügel'
-            case BfrkBikeType.WALL_LOOPS:
+            case BfrkBikeType.WALL_LOOPS | BfrkBikeType.WALL_LOOPS_WITHOUT_BRACKET:
                 return 'Vorderradhalter'
+            case BfrkBikeType.SAFE_WALL_LOOPS:
+                return 'Vorderradhalter mit Rahmenbügel'
             case BfrkBikeType.LOCKERS:
                 return 'Fahrradboxen'
             case BfrkBikeType.SHED:

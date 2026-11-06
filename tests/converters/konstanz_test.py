@@ -9,6 +9,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 from validataclass.exceptions import ValidationError
 
 from parkapi_sources.converters import KonstanzPullConverter
@@ -43,15 +44,23 @@ def konstanz_pull_converter(mocked_config_helper: Mock, request_helper: RequestH
 
 class KonstanzPullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(konstanz_pull_converter: KonstanzPullConverter, requests_mock_konstanz: Mocker):
+    def test_get_static_parking_sites(
+        konstanz_pull_converter: KonstanzPullConverter,
+        requests_mock_konstanz: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         static_parking_site_inputs, import_parking_site_exceptions = konstanz_pull_converter.get_static_parking_sites()
         assert len(static_parking_site_inputs) == 11
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_realtime_parking_sites(konstanz_pull_converter: KonstanzPullConverter, requests_mock_konstanz: Mocker):
+    def test_get_realtime_parking_sites(
+        konstanz_pull_converter: KonstanzPullConverter,
+        requests_mock_konstanz: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         realtime_parking_site_inputs, import_parking_site_exceptions = (
             konstanz_pull_converter.get_realtime_parking_sites()
         )
@@ -59,7 +68,7 @@ class KonstanzPullConverterTest:
         assert len(realtime_parking_site_inputs) == 11
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)
 
 
 class KonstanzOpeningTimeValidatorTest:

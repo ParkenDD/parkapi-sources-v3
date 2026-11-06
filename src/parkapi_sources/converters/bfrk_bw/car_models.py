@@ -28,7 +28,7 @@ from parkapi_sources.models import (
 from parkapi_sources.models.enums import (
     ParkAndRideType,
     ParkingAudience,
-    ParkingSiteOrientation,
+    ParkingOrientation,
     ParkingSiteType,
     ParkingSpotType,
     ParkingType,
@@ -50,6 +50,7 @@ class BfrkArt(Enum):
     OFF_STREET_PARKING_GROUND_4 = 'Behindertenplätze'
     UNKNOWN = 'unbekannt'
     CUSTOMER = 'kundenparkplatz'
+    PRIVATE = 'privatparkplatz'
 
     def to_parking_site_type(self) -> ParkingSiteType:
         return {
@@ -60,6 +61,7 @@ class BfrkArt(Enum):
             self.OFF_STREET_PARKING_GROUND_4: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.UNKNOWN: ParkingSiteType.OFF_STREET_PARKING_GROUND,
             self.CUSTOMER: ParkingSiteType.OFF_STREET_PARKING_GROUND,
+            self.PRIVATE: ParkingSiteType.OFF_STREET_PARKING_GROUND,
         }.get(self)
 
     def to_parking_spot_type(self) -> ParkingSpotType:
@@ -121,11 +123,11 @@ class Orientierung(Enum):
     PERPENDICULAR = 'quer'
     DIAGONAL = 'diagonal'
 
-    def to_parking_site_orientation_type(self) -> ParkingSiteOrientation:
+    def to_parking_site_orientation_type(self) -> ParkingOrientation:
         return {
-            self.PARALLEL: ParkingSiteOrientation.PARALLEL,
-            self.PERPENDICULAR: ParkingSiteOrientation.PERPENDICULAR,
-            self.DIAGONAL: ParkingSiteOrientation.DIAGONAL,
+            self.PARALLEL: ParkingOrientation.PARALLEL,
+            self.PERPENDICULAR: ParkingOrientation.PERPENDICULAR,
+            self.DIAGONAL: ParkingOrientation.DIAGONAL,
         }.get(self)
 
 

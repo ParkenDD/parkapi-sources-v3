@@ -1,0 +1,50 @@
+[
+  {
+    "capacity": 116,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "53.512905",
+    "lon": "9.915986",
+    "name": "Altenwerder 1",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2026-10-26T19:44:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "PH1"
+  },
+  {
+    "capacity": 47,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "53.51708",
+    "lon": "9.890991",
+    "name": "Aluminiumstraße 2",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "TRUCK"
+      }
+    ],
+    "static_data_updated_at": "2026-10-26T19:44:00Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "PH2"
+  }
+]

@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import VrnParkAndRidePullConverter
 from parkapi_sources.util import RequestHelper
@@ -27,7 +28,11 @@ def vrn_p_r_pull_converter(
 
 class VrnParkAndRidePullConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(vrn_p_r_pull_converter: VrnParkAndRidePullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(
+        vrn_p_r_pull_converter: VrnParkAndRidePullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         # We need to get GeoJSON data
         requests_mock.real_http = True
 
@@ -45,10 +50,14 @@ class VrnParkAndRidePullConverterTest:
         assert len(static_parking_site_inputs) == 16
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
-    def test_get_realtime_parking_sites(vrn_p_r_pull_converter: VrnParkAndRidePullConverter, requests_mock: Mocker):
+    def test_get_realtime_parking_sites(
+        vrn_p_r_pull_converter: VrnParkAndRidePullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         json_path = Path(Path(__file__).parent, 'data', 'vrn_p_r.json')
         with json_path.open() as json_file:
             json_data = json_file.read()
@@ -65,4 +74,4 @@ class VrnParkAndRidePullConverterTest:
         assert len(realtime_parking_site_inputs) == 14
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(realtime_parking_site_inputs)
+        validate_realtime_parking_site_inputs(realtime_parking_site_inputs, snapshot)

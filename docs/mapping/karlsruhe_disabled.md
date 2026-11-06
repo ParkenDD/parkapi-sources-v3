@@ -23,6 +23,9 @@ Karlsruhe provides a GeoJSON with Point geometry for disabled parking spots.
 
 ## Realtime data
 
+Realtime items with empty `last_readings` are ignored silently. If the config key
+`PARK_API_KARLSRUHE_DISABLED_IGNORE_MISSING_READINGS` is set to `false`, they are reported as validation errors instead.
+
 | Field         | Type                      | Cardinality | Mapping | Comment                                |
 |---------------|---------------------------|-------------|---------|----------------------------------------|
 | id            | string                    | 1           |         | Will be used to match `sensorenliste`  |

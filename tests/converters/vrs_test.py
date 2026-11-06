@@ -9,6 +9,7 @@ from unittest.mock import Mock
 import pytest
 from _pytest.fixtures import FixtureRequest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import (
     VrsBondorfPullConverter,
@@ -74,7 +75,7 @@ class VrsVaihingenConverterTest:
     @pytest.mark.parametrize(
         'converter_name, filename, result_count',
         [
-            ('vrs_bondorf_pull_converter', 'vrs_bondorf-static.xml', 1),
+            ('vrs_bondorf_pull_converter', 'vrs_bondorf-static.xml', 3),
             ('vrs_kirchheim_pull_converter', 'vrs_kirchheim-static.xml', 2),
             ('vrs_neustadt_pull_converter', 'vrs_neustadt-static.xml', 2),
             ('vrs_vaihingen_pull_converter', 'vrs_vaihingen-static.xml', 1),
@@ -87,6 +88,7 @@ class VrsVaihingenConverterTest:
         converter_name: str,
         filename: str,
         result_count: int,
+        snapshot: SnapshotAssertion,
     ):
         xml_path = Path(Path(__file__).parent, 'data', filename)
         with xml_path.open() as xml_file:
@@ -103,12 +105,12 @@ class VrsVaihingenConverterTest:
         assert len(static_parking_site_inputs) == result_count
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @pytest.mark.parametrize(
         'converter_name, filename, result_count',
         [
-            ('vrs_bondorf_pull_converter', 'vrs_bondorf-realtime.xml', 1),
+            ('vrs_bondorf_pull_converter', 'vrs_bondorf-realtime.xml', 2),
             ('vrs_kirchheim_pull_converter', 'vrs_kirchheim-realtime.xml', 2),
             ('vrs_neustadt_pull_converter', 'vrs_neustadt-realtime.xml', 2),
             ('vrs_vaihingen_pull_converter', 'vrs_vaihingen-realtime.xml', 1),
@@ -121,6 +123,7 @@ class VrsVaihingenConverterTest:
         converter_name: str,
         filename: str,
         result_count: int,
+        snapshot: SnapshotAssertion,
     ):
         xml_path = Path(Path(__file__).parent, 'data', filename)
         with xml_path.open() as xml_file:
@@ -138,4 +141,4 @@ class VrsVaihingenConverterTest:
         assert len(static_parking_site_inputs) == result_count
         assert len(import_parking_site_exceptions) == 0
 
-        validate_realtime_parking_site_inputs(static_parking_site_inputs)
+        validate_realtime_parking_site_inputs(static_parking_site_inputs, snapshot)

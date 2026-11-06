@@ -1,0 +1,320 @@
+[
+  {
+    "address": "Maxau am Rhein, Karlsruhe",
+    "capacity": 15,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0374663",
+    "lon": "8.3057748",
+    "name": "Maxau am Rhein",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 15,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "1"
+  },
+  {
+    "address": "Ettlinger Allee, Karlsruhe",
+    "capacity": 2,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9877532",
+    "lon": "8.4041457",
+    "name": "Ettlinger Allee",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "2"
+  },
+  {
+    "address": "Rudolf-von-Habsburgstraße 1, Germersheim",
+    "capacity": 8,
+    "external_identifiers": [],
+    "fee_description": "je 24 Stunden: 5 €",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.2194875",
+    "lon": "8.3771129",
+    "name": "Rudolf-von-Habsburgstraße 1",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 8,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "4"
+  },
+  {
+    "address": "Schöllbronner Straße, Ettlingen",
+    "capacity": 8,
+    "description": "Parkplatz am Ettlinger Albgau-Freibad",
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.9361167",
+    "lon": "8.4166772",
+    "name": "Schöllbronner Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 8,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "5"
+  },
+  {
+    "address": "Sportzentrum 7, 76646 Bruchsal, Bruchsal",
+    "capacity": 52,
+    "description": "https://wohnmobilpark-bruchsal.de/",
+    "external_identifiers": [],
+    "fee_description": "25 €/Tag",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "49.1358709",
+    "lon": "8.5868885",
+    "name": "Sportzentrum 7, 76646 Bruchsal",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 52,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "7"
+  },
+  {
+    "address": "Hubertusstraße 3, Baden-Baden",
+    "capacity": 28,
+    "description": "Die Stellplätze dürfen nur zwischen 6 und 22 Uhr angefahren werden.",
+    "external_identifiers": [],
+    "fee_description": "je angefangene 24 Stunden: 12€, inkl. Kurtaxe für eine Person",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.7823728",
+    "lon": "8.2035301",
+    "name": "Hubertusstraße 3",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 28,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "8"
+  },
+  {
+    "address": "Hermann-Beuttenmüller-Straße, Kernstadt, Bretten",
+    "capacity": 2,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0345313",
+    "lon": "8.7015033",
+    "name": "Hermann-Beuttenmüller-Straße",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "9"
+  },
+  {
+    "address": "Am Seedamm, Kernstadt, Bretten",
+    "capacity": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0349314",
+    "lon": "8.7054657",
+    "name": "Am Seedamm",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "10"
+  },
+  {
+    "address": "Willi-Hesselbacher-Weg, Kernstadt, Bretten",
+    "capacity": 4,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0307018",
+    "lon": "8.7179284",
+    "name": "Willi-Hesselbacher-Weg",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 4,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "11"
+  },
+  {
+    "address": "Im Ruiter Tal, Ruit, Bretten",
+    "capacity": 3,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "49.0121201",
+    "lon": "8.7216958",
+    "name": "Im Ruiter Tal",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-02-20T23:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "12"
+  },
+  {
+    "address": "Rue de Moulin neuf (parc des sports), Haguenau",
+    "capacity": 5,
+    "external_identifiers": [],
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.8154873",
+    "lon": "7.7794866",
+    "name": "Rue de Moulin neuf (parc des sports)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 5,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-10-10T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "13"
+  },
+  {
+    "address": "Rue Binsenbruch (Camping les Pins), Haguenau",
+    "capacity": 73,
+    "description": "https://www.camping-haguenau.alsace/tarifs/",
+    "external_identifiers": [],
+    "fee_description": "je angefangene 24 Stunden: 20€, inkl. Kurtaxe für ein Wohnomobil",
+    "has_fee": true,
+    "has_realtime_data": false,
+    "lat": "48.8026260",
+    "lon": "7.7649878",
+    "name": "Rue Binsenbruch (Camping les Pins)",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 73,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "CARAVAN"
+      }
+    ],
+    "static_data_updated_at": "2024-10-10T22:00:00Z",
+    "tags": [],
+    "type": "OTHER",
+    "uid": "14"
+  }
+]

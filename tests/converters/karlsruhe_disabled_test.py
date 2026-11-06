@@ -8,6 +8,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import KarlsruheDisabledPullConverter
 from parkapi_sources.util import RequestHelper
@@ -55,6 +56,7 @@ class KarlsruheDisabledConverterTest:
     def test_get_static_parking_spots(
         karlsruhe_disabled_pull_converter: KarlsruheDisabledPullConverter,
         requests_mock_karlsruhe_disabled: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         static_parking_spot_inputs, import_parking_spot_exceptions = (
             karlsruhe_disabled_pull_converter.get_static_parking_spots()
@@ -63,7 +65,7 @@ class KarlsruheDisabledConverterTest:
         assert len(static_parking_spot_inputs) == 1165
         assert len(import_parking_spot_exceptions) == 4
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)
 
         realtime_enabled_spot = next(iter(item for item in static_parking_spot_inputs if item.uid == '22_1'))
         assert realtime_enabled_spot.has_realtime_data is True
@@ -75,6 +77,7 @@ class KarlsruheDisabledConverterTest:
         mocked_config_helper: Mock,
         request_helper: RequestHelper,
         requests_mock_karlsruhe_disabled: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         karlsruhe_disabled_pull_converter = KarlsruheDisabledPullConverter(
             config_helper=mocked_config_helper,
@@ -88,7 +91,7 @@ class KarlsruheDisabledConverterTest:
         assert len(static_parking_spot_inputs) == 1165
         assert len(import_parking_spot_exceptions) == 4
 
-        validate_static_parking_spot_inputs(static_parking_spot_inputs)
+        validate_static_parking_spot_inputs(static_parking_spot_inputs, snapshot)
 
         realtime_enabled_spot = next(iter(item for item in static_parking_spot_inputs if item.uid == '22_1'))
         assert realtime_enabled_spot.has_realtime_data is False
@@ -99,12 +102,38 @@ class KarlsruheDisabledConverterTest:
     def test_get_realtime_parking_spots(
         karlsruhe_disabled_pull_converter: KarlsruheDisabledPullConverter,
         requests_mock_karlsruhe_disabled: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         realtime_parking_spot_inputs, import_parking_spot_exceptions = (
             karlsruhe_disabled_pull_converter.get_realtime_parking_spots()
         )
 
         assert len(realtime_parking_spot_inputs) == 54
-        assert len(import_parking_spot_exceptions) == 8
+        assert len(import_parking_spot_exceptions) == 5
 
-        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs)
+        validate_realtime_parking_spot_inputs(realtime_parking_spot_inputs, snapshot)
+
+    @staticmethod
+    def test_get_realtime_parking_spots_without_ignoring_missing_readings(
+        mocked_config_helper: Mock,
+        request_helper: RequestHelper,
+        requests_mock_karlsruhe_disabled: Mocker,
+    ):
+        config = {
+            'PARK_API_KARLSRUHE_DISABLED_AUTH': 'AUTH',
+            'PARK_API_KARLSRUHE_DISABLED_IGNORE_MISSING_READINGS': False,
+        }
+        mocked_config_helper.get.side_effect = lambda key, default=None: config.get(key, default)
+        karlsruhe_disabled_pull_converter = KarlsruheDisabledPullConverter(
+            config_helper=mocked_config_helper,
+            request_helper=request_helper,
+        )
+
+        realtime_parking_spot_inputs, import_parking_spot_exceptions = (
+            karlsruhe_disabled_pull_converter.get_realtime_parking_spots()
+        )
+
+        assert len(realtime_parking_spot_inputs) == 54
+        assert len(import_parking_spot_exceptions) == 8
+        for import_parking_spot_exception in import_parking_spot_exceptions:
+            assert 'interfaces' not in import_parking_spot_exception.message

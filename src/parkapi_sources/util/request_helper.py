@@ -11,6 +11,7 @@ from typing import TYPE_CHECKING, Any, NotRequired, TypedDict, Unpack
 from requests import Response, Session
 
 from parkapi_sources.exceptions import MissingConfigException
+from parkapi_sources.version import __version__
 
 from .config_helper import ConfigHelper
 
@@ -61,10 +62,14 @@ class RequestHelper:
     # bounds the TLS handshake, so an unresponsive host cannot block a request indefinitely.
     DEFAULT_TIMEOUT = (5, 30)
 
+    DEFAULT_USER_AGENT = f'ParkApiSources/{__version__}'
+
     def _request(self, *, source_info: 'SourceInfo', method: str, **kwargs: Unpack[RequestKwargs]) -> Response:
         kwargs.setdefault('timeout', self.DEFAULT_TIMEOUT)
 
         with Session() as session:
+            # Set as session header, so a User-Agent passed via headers by the caller still takes precedence
+            session.headers['User-Agent'] = self.config_helper.get('USER_AGENT') or self.DEFAULT_USER_AGENT
             response = session.request(method=method, **kwargs)
 
             self._handle_request_response(source_info, response)

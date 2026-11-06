@@ -1,0 +1,74 @@
+[
+  {
+    "capacity": 259,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.52429909",
+    "lon": "8.82801692",
+    "name": "P+R Bondorf Parkhaus",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 3,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-10-09T09:13:42Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1035"
+  },
+  {
+    "capacity": 50,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.52524124",
+    "lon": "8.82804099",
+    "name": "P+R Bondorf Parkplatz Nord",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "capacity": 2,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "2025-10-09T09:13:42Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "99997"
+  },
+  {
+    "capacity": 17,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.52229247",
+    "lon": "8.82838086",
+    "name": "P+R Bondorf Bahnhofstrasse",
+    "opening_hours": "24/7",
+    "park_and_ride_type": [
+      "YES"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2025-10-09T09:13:42Z",
+    "tags": [],
+    "type": "CAR_PARK",
+    "uid": "1039"
+  }
+]

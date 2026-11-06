@@ -1,113 +1,283 @@
 <d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/110000000003059002/MDM-Profile_ParkingFacilityTable.xsd">
-                        <exchange>
-                                <supplierIdentification>
-                                        <country>de</country>
-                                        <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
-                                </supplierIdentification>
-                        </exchange>
-
-                        <payloadPublication lang="de" xsi:type="GenericPublication">
-                                <publicationTime>2024-02-16T07:00:00.8822571+01:00</publicationTime>
-                                <publicationCreator>
-                                        <country>de</country>
-                                        <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
-                                </publicationCreator>
-                                <genericPublicationName>ParkingTableParkingRecordPublication</genericPublicationName>
-                                <genericPublicationExtension>
-
-
-
-
-                                        <parkingFacilityTablePublication>
-                                                <headerInformation>
-                                                        <confidentiality>noRestriction</confidentiality>
-                                                        <informationStatus>real</informationStatus>
-                                                </headerInformation>
-                                                <parkingFacilityTable>
-                                                        <parkingFacilityTableVersionTime>2024-02-16T07:00:00.8822571+01:00</parkingFacilityTableVersionTime>
-
-
-                            <parkingFacility id="1035" version="1.0">
-                                                                <parkingFacilityLayout>singleLevel</parkingFacilityLayout>
-                                                                <parkingFacilityName>
-                                                                        <values>
-                                                                                <value>P+R Bondorf</value>
-                                                                        </values>
-                                                                </parkingFacilityName>
-                                                                <parkingFacilityRecordVersionTime>2024-02-16T07:00:00.8822571+01:00</parkingFacilityRecordVersionTime>
-                                                                <totalParkingCapacityLongTerm>0</totalParkingCapacityLongTerm>
-                                                                <totalParkingCapacityShortTerm>314</totalParkingCapacityShortTerm>
-                                                                <totalParkingCapacity>314</totalParkingCapacity>
-                                                                <facilityLocation xsi:type="Area">
-                                                                        <locationForDisplay>
-                                                                                <latitude>48.52436858335742</latitude>
-                                                                                <longitude>8.82821456169721</longitude>
-                                                                        </locationForDisplay>
-                                                                </facilityLocation>
-                                                                <owner>
-                                                                        <contactName/>
-                                                                </owner>
-                                                                <assignedParkingSpaces index="8">
-                                                                        <assignedParkingSpaces>
-                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
-                                                                                <descriptionOfAssignedParkingSpaces>
-                                                                                        <personTypeForWhichSpacesAssigned>women</personTypeForWhichSpacesAssigned>
-                                                                                </descriptionOfAssignedParkingSpaces>
-                                                                        </assignedParkingSpaces>
-                                                                </assignedParkingSpaces>
-                                                                <assignedParkingSpaces index="1">
-                                                                        <assignedParkingSpaces>
-                                                                                <numberOfAssignedParkingSpaces>314</numberOfAssignedParkingSpaces>
-                                                                                <descriptionOfAssignedParkingSpaces>
-                                                                                        <parkingDuration>shortTerm</parkingDuration>
-                                                                                </descriptionOfAssignedParkingSpaces>
-                                                                        </assignedParkingSpaces>
-                                                                </assignedParkingSpaces>
-                                                                <assignedParkingSpaces index="2">
-                                                                        <assignedParkingSpaces>
-                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
-                                                                                <descriptionOfAssignedParkingSpaces>
-                                                                                        <parkingDuration>longTerm</parkingDuration>
-                                                                                </descriptionOfAssignedParkingSpaces>
-                                                                        </assignedParkingSpaces>
-                                                                </assignedParkingSpaces>
-                                                                <assignedParkingSpaces index="16">
-                                                                        <assignedParkingSpaces>
-                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
-                                                                                <descriptionOfAssignedParkingSpaces>
-                                                                                        <personTypeForWhichSpacesAssigned>families</personTypeForWhichSpacesAssigned>
-                                                                                </descriptionOfAssignedParkingSpaces>
-                                                                        </assignedParkingSpaces>
-                                                                </assignedParkingSpaces>
-                                                                <assignedParkingSpaces index="4">
-                                                                        <assignedParkingSpaces>
-                                                                                <numberOfAssignedParkingSpaces>4</numberOfAssignedParkingSpaces>
-                                                                                <descriptionOfAssignedParkingSpaces>
-                                                                                        <personTypeForWhichSpacesAssigned>disabled</personTypeForWhichSpacesAssigned>
-                                                                                </descriptionOfAssignedParkingSpaces>
-                                                                        </assignedParkingSpaces>
-                                                                </assignedParkingSpaces>
-                                                                <assignedParkingSpaces index="32">
-                                                                        <assignedParkingSpaces>
-                                                                                <numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
-                                                                                <descriptionOfAssignedParkingSpaces>
-                                                                                        <characteristicsOfVehiclesForWhichSpacesAssigned>
-                                                                                                <fuelType>battery</fuelType>
-                                                                                        </characteristicsOfVehiclesForWhichSpacesAssigned>
-                                                                                </descriptionOfAssignedParkingSpaces>
-                                                                        </assignedParkingSpaces>
-                                                                </assignedParkingSpaces>
-                                                        </parkingFacility>
+            <payloadPublication lang="de" xsi:type="GenericPublication">
+                <publicationTime>2025-10-09T11:13:42.5047306+02:00</publicationTime>
+                <publicationCreator>
+                    <country>de</country>
+                    <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
+                </publicationCreator>
+                <genericPublicationName>ParkingTableParkingRecordPublication</genericPublicationName>
+                <genericPublicationExtension>
+                    <parkingFacilityTablePublication>
+                        <headerInformation>
+                            <confidentiality>noRestriction</confidentiality>
+                            <informationStatus>real</informationStatus>
+                        </headerInformation>
+                        <parkingFacilityTable>
+                            <parkingFacilityTableVersionTime>2025-10-09T11:13:42.5047306+02:00</parkingFacilityTableVersionTime>
+									<parkingFacility id="1035" version="1.0">
+	<parkingFacilityLayout>singleLevel</parkingFacilityLayout>
+	<parkingFacilityName>
+		<values>
+			<value>P+R Bondorf Parkhaus</value>
+		</values>
+	</parkingFacilityName>
+	<stationName>Bondorf</stationName>
+	<stationNumber>4510</stationNumber>
+	<parkingFacilityRecordVersionTime>2025-10-09T11:13:42.5047306+02:00</parkingFacilityRecordVersionTime>
+	<totalParkingCapacityLongTerm>0</totalParkingCapacityLongTerm>
+	<totalParkingCapacityShortTerm>259</totalParkingCapacityShortTerm>
+	<totalParkingCapacity>259</totalParkingCapacity>
+	<facilityLocation xsi:type="Area">
+		<locationForDisplay>
+			<latitude>48.52429909</latitude>
+			<longitude>8.82801692</longitude>
+		</locationForDisplay>
+	</facilityLocation>
+	<owner>
+		<contactName/>
+	</owner>
 
 
-                                                </parkingFacilityTable>
-                                        </parkingFacilityTablePublication>
+	<assignedParkingSpaces index="8">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>women</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
 
 
+	<assignedParkingSpaces index="1">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>259</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<parkingDuration>shortTerm</parkingDuration>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
 
 
+	<assignedParkingSpaces index="2">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<parkingDuration>longTerm</parkingDuration>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
 
 
-                                </genericPublicationExtension>
-                        </payloadPublication>
-                </d2LogicalModel>
+	<assignedParkingSpaces index="16">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>families</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="4">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>3</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>disabled</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="32">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<characteristicsOfVehiclesForWhichSpacesAssigned>
+					<fuelType>battery</fuelType>
+				</characteristicsOfVehiclesForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+</parkingFacility>
+<parkingFacility id="99997" version="1.0">
+	<parkingFacilityLayout>singleLevel</parkingFacilityLayout>
+	<parkingFacilityName>
+		<values>
+			<value>P+R Bondorf Parkplatz Nord</value>
+		</values>
+	</parkingFacilityName>
+	<stationName>Bondorf</stationName>
+	<stationNumber>4510</stationNumber>
+	<parkingFacilityRecordVersionTime>2025-10-09T11:13:42.5047306+02:00</parkingFacilityRecordVersionTime>
+	<totalParkingCapacityLongTerm>0</totalParkingCapacityLongTerm>
+	<totalParkingCapacityShortTerm>48</totalParkingCapacityShortTerm>
+	<totalParkingCapacity>50</totalParkingCapacity>
+	<facilityLocation xsi:type="Area">
+		<locationForDisplay>
+			<latitude>48.52524124</latitude>
+			<longitude>8.82804099</longitude>
+		</locationForDisplay>
+	</facilityLocation>
+	<owner>
+		<contactName/>
+	</owner>
+
+
+	<assignedParkingSpaces index="8">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>women</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="1">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>48</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<parkingDuration>shortTerm</parkingDuration>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="2">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<parkingDuration>longTerm</parkingDuration>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="16">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>families</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="4">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>2</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>disabled</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="32">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<characteristicsOfVehiclesForWhichSpacesAssigned>
+					<fuelType>battery</fuelType>
+				</characteristicsOfVehiclesForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+</parkingFacility>
+<parkingFacility id="1039" version="1.0">
+	<parkingFacilityLayout>singleLevel</parkingFacilityLayout>
+	<parkingFacilityName>
+		<values>
+			<value>P+R Bondorf Bahnhofstrasse</value>
+		</values>
+	</parkingFacilityName>
+	<stationName>Bondorf</stationName>
+	<stationNumber>4510</stationNumber>
+	<parkingFacilityRecordVersionTime>2025-10-09T11:13:42.5047306+02:00</parkingFacilityRecordVersionTime>
+	<totalParkingCapacityLongTerm>0</totalParkingCapacityLongTerm>
+	<totalParkingCapacityShortTerm>17</totalParkingCapacityShortTerm>
+	<totalParkingCapacity>17</totalParkingCapacity>
+	<facilityLocation xsi:type="Area">
+		<locationForDisplay>
+			<latitude>48.52229247</latitude>
+			<longitude>8.82838086</longitude>
+		</locationForDisplay>
+	</facilityLocation>
+	<owner>
+		<contactName/>
+	</owner>
+
+
+	<assignedParkingSpaces index="8">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>women</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="1">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>17</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<parkingDuration>shortTerm</parkingDuration>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="2">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<parkingDuration>longTerm</parkingDuration>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="16">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>families</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="4">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<personTypeForWhichSpacesAssigned>disabled</personTypeForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+	<assignedParkingSpaces index="32">
+		<assignedParkingSpaces>
+			<numberOfAssignedParkingSpaces>0</numberOfAssignedParkingSpaces>
+			<descriptionOfAssignedParkingSpaces>
+				<characteristicsOfVehiclesForWhichSpacesAssigned>
+					<fuelType>battery</fuelType>
+				</characteristicsOfVehiclesForWhichSpacesAssigned>
+			</descriptionOfAssignedParkingSpaces>
+		</assignedParkingSpaces>
+	</assignedParkingSpaces>
+
+
+</parkingFacility>
+
+                        </parkingFacilityTable>
+                    </parkingFacilityTablePublication>
+                </genericPublicationExtension>
+            </payloadPublication>
+        </d2LogicalModel>

@@ -1,0 +1,2000 @@
+[
+  {
+    "address": "Rheinbrückenstraße",
+    "capacity": 14,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2262485",
+    "lon": "8.3716968",
+    "name": "Germersheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1"
+  },
+  {
+    "address": "A 65",
+    "capacity": 80,
+    "description": "über B 427 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0861419",
+    "lon": "8.2131164",
+    "name": "AS Kandel-Mitte (21)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "2"
+  },
+  {
+    "address": "B 9",
+    "capacity": 20,
+    "description": "über L 549 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1235197",
+    "lon": "8.3049455",
+    "name": "AS Neupotz",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "3"
+  },
+  {
+    "address": "B 9",
+    "capacity": 30,
+    "description": "Sponeckkaserne",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2059296",
+    "lon": "8.3519858",
+    "name": "AS Germersheim-Süd",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "4"
+  },
+  {
+    "address": "B 9",
+    "capacity": 20,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1845777",
+    "lon": "8.3103337",
+    "name": "AS Hördt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "5"
+  },
+  {
+    "address": "A 65",
+    "capacity": 30,
+    "description": "über L 493 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.1386521",
+    "lon": "8.1608885",
+    "name": "AS Rohrbach (19)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6"
+  },
+  {
+    "address": "A 5",
+    "capacity": 156,
+    "description": "über B 3 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9568296",
+    "lon": "8.3869665",
+    "name": "AS Karlsruhe-Süd (48)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7"
+  },
+  {
+    "address": "A 8",
+    "capacity": 70,
+    "description": "über L 609 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9446110",
+    "lon": "8.4943075",
+    "name": "AS Karlsbad (42)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8"
+  },
+  {
+    "address": "A 5",
+    "capacity": 100,
+    "description": "über B 462 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8606889",
+    "lon": "8.2498393",
+    "name": "AS Rastatt-Nord (49)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9"
+  },
+  {
+    "address": "A 5",
+    "capacity": 60,
+    "description": "über L 555 erreichbar, westl. der BAB",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2279544",
+    "lon": "8.5981545",
+    "name": "AS Kronau West (41)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "10"
+  },
+  {
+    "address": "A 5",
+    "capacity": 40,
+    "description": "über L 555 erreichbar, östl. der BAB",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.2251302",
+    "lon": "8.6084001",
+    "name": "AS Kronau Ost (41)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "11"
+  },
+  {
+    "address": "A 8",
+    "capacity": 97,
+    "description": "über B 294 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9152993",
+    "lon": "8.7180456",
+    "name": "AS Pforzheim-Nord (44)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "12"
+  },
+  {
+    "address": "A 8",
+    "capacity": 92,
+    "description": "über B 10 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9076386",
+    "lon": "8.6498831",
+    "name": "AS Pforzheim-West (43)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "13"
+  },
+  {
+    "address": "A 8",
+    "capacity": 10,
+    "description": "über B 10 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9125525",
+    "lon": "8.7601954",
+    "name": "AS Pforzheim-Ost (45)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "14"
+  },
+  {
+    "address": "A 5",
+    "capacity": 105,
+    "description": "über L 87 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6437485",
+    "lon": "8.0278709",
+    "name": "AS Achern (53)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "15"
+  },
+  {
+    "address": "A 5",
+    "capacity": 47,
+    "description": "über B 28 erreichbar, östl. der BAB",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5331410",
+    "lon": "7.9550425",
+    "name": "AS Appenweier (54)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "16"
+  },
+  {
+    "address": "A 5",
+    "capacity": 48,
+    "description": "über B 28 erreichbar, westl. der BAB",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5352966",
+    "lon": "7.9186167",
+    "name": "AS Appenweier (54)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "17"
+  },
+  {
+    "address": "A 5",
+    "capacity": 50,
+    "description": "über B 291 erreichbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.3015940",
+    "lon": "8.6319363",
+    "name": "AS Walldorf/Wiesloch (39)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "18"
+  },
+  {
+    "address": "59 Route de Strasbourg",
+    "capacity": 20,
+    "description": "Parc Bellevue",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8065395",
+    "lon": "7.7747030",
+    "name": "Haguenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-10-10T22:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "19"
+  },
+  {
+    "address": "Rue du Taubenhof",
+    "capacity": 22,
+    "description": "Parking Cora",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8025801",
+    "lon": "7.8371181",
+    "name": "Haguenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "20"
+  },
+  {
+    "address": "Rue de la Gare",
+    "capacity": 20,
+    "description": "Parking Sonoco",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8255693",
+    "lon": "7.7407493",
+    "name": "Schweighouse-sur-Moder",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "21"
+  },
+  {
+    "address": "D 919 - Rue Principale, Neubourg",
+    "capacity": 6,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8396216",
+    "lon": "7.6788770",
+    "name": "Dauendorf-Neubourg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "22"
+  },
+  {
+    "address": "Grand'Rue",
+    "capacity": 10,
+    "description": "Parking Match",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8445002",
+    "lon": "7.6192399",
+    "name": "Niedermodern",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "23"
+  },
+  {
+    "address": "Route de Saverne, Pfaffenhoffen",
+    "capacity": 10,
+    "description": "Parking Simply Market",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8430244",
+    "lon": "7.5924163",
+    "name": "Val de Moder",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "24"
+  },
+  {
+    "address": "Rue du Rettig",
+    "capacity": 8,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7539489",
+    "lon": "7.8968124",
+    "name": "Rohrwiller",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "25"
+  },
+  {
+    "address": "D 421",
+    "capacity": 8,
+    "description": "Rond-point PFDA",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7472836",
+    "lon": "7.6788374",
+    "name": "Bernolsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "26"
+  },
+  {
+    "address": "Route de Brumath",
+    "capacity": 16,
+    "description": "Parking Super U",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7472785",
+    "lon": "7.6870542",
+    "name": "Bernolsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "27"
+  },
+  {
+    "address": "D 263 - Avenue de Strasbourg",
+    "capacity": 10,
+    "description": "Parking Bricoman",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7082364",
+    "lon": "7.7087184",
+    "name": "Brumath",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "28"
+  },
+  {
+    "address": "D 503",
+    "capacity": 1,
+    "description": "Salle Socio-Culturelle et Sportive",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0257607",
+    "lon": "7.8198889",
+    "name": "Wingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "29"
+  },
+  {
+    "address": "Rue de l'École",
+    "capacity": 6,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0287093",
+    "lon": "7.7141035",
+    "name": "Niedersteinbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "30"
+  },
+  {
+    "address": "Rue Principale",
+    "capacity": 10,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0359405",
+    "lon": "7.6892446",
+    "name": "Obersteinbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "31"
+  },
+  {
+    "address": "Rue Principale",
+    "capacity": 1,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8948854",
+    "lon": "7.7153733",
+    "name": "Forstheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "32"
+  },
+  {
+    "address": "Rue des Turcos",
+    "capacity": 5,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9417549",
+    "lon": "7.7423240",
+    "name": "Woerth",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "33"
+  },
+  {
+    "address": "Rue du Seltzbach",
+    "capacity": 5,
+    "description": "Stade municipal",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9429215",
+    "lon": "7.8078355",
+    "name": "Preuschdorf",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "34"
+  },
+  {
+    "address": "D 9",
+    "capacity": 8,
+    "description": "Centre culturel",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8627864",
+    "lon": "7.3190473",
+    "name": "La Petite-Pierre",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "35"
+  },
+  {
+    "address": "Parc d'Activité Uffried",
+    "capacity": 10,
+    "description": "Leclerc Express",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8229983",
+    "lon": "8.0304123",
+    "name": "Roeschwoog - Leclerc Express",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "36"
+  },
+  {
+    "address": "D 392",
+    "capacity": 5,
+    "description": "Eglise",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4979511",
+    "lon": "7.2498558",
+    "name": "Hersbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "37"
+  },
+  {
+    "address": "D 919",
+    "capacity": 6,
+    "description": "Brasserie",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9516071",
+    "lon": "7.1788099",
+    "name": "Lorentzen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "38"
+  },
+  {
+    "address": "Place des Fêtes",
+    "capacity": 10,
+    "description": "Niederhaslach",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5403336",
+    "lon": "7.3451135",
+    "name": "Niederhaslach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "39"
+  },
+  {
+    "address": "D 29 - Rue du Ried",
+    "capacity": 25,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7438083",
+    "lon": "7.9202414",
+    "name": "Herrlisheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "40"
+  },
+  {
+    "address": "Rue du Klintz",
+    "capacity": 2,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5505284",
+    "lon": "7.3236326",
+    "name": "Oberhaslach-Engelmatt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "41"
+  },
+  {
+    "address": "D 21",
+    "capacity": 5,
+    "description": "Maison de la nature",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.2684091",
+    "lon": "7.5234021",
+    "name": "Muttersholz",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "42"
+  },
+  {
+    "address": "D 424",
+    "capacity": 15,
+    "description": "Zone Artisanale Et Commerciale Sud",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.2496987",
+    "lon": "7.4351346",
+    "name": "Sélestat",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "43"
+  },
+  {
+    "address": "D 24",
+    "capacity": 5,
+    "description": "Cimetière",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8413273",
+    "lon": "7.5391484",
+    "name": "Obermodern",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "44"
+  },
+  {
+    "address": "A 4",
+    "capacity": 63,
+    "description": "SANEF",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9144760",
+    "lon": "7.1241400",
+    "name": "Sarre-Union (43)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "45"
+  },
+  {
+    "address": "A 4",
+    "capacity": 25,
+    "description": "SANEF",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7688340",
+    "lon": "7.5982260",
+    "name": "Hochfelden (46)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "46"
+  },
+  {
+    "address": "A 35",
+    "capacity": 25,
+    "description": "CD67",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8951670",
+    "lon": "8.0851761",
+    "name": "Seltz (57)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "47"
+  },
+  {
+    "address": "Rue de l'Expansion",
+    "capacity": 8,
+    "description": "SNCF",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4228610",
+    "lon": "7.6393440",
+    "name": "Erstein - Gare SNCF",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "48"
+  },
+  {
+    "address": "D 4",
+    "capacity": 50,
+    "description": "CD67",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8479000",
+    "lon": "8.0640990",
+    "name": "Beinheim - RD4 - A35",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "49"
+  },
+  {
+    "address": "A 65 - D 62",
+    "capacity": 73,
+    "description": "CD67",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3947470",
+    "lon": "7.4710251",
+    "name": "Barr (13)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "50"
+  },
+  {
+    "address": "D 2422 - Ave. de la Gare",
+    "capacity": 10,
+    "description": "SNCF",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5372790",
+    "lon": "7.4992770",
+    "name": "Molsheim - Gare SNCF",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "51"
+  },
+  {
+    "address": "D 424",
+    "capacity": 5,
+    "description": "CD67",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.2033110",
+    "lon": "7.5200130",
+    "name": "Heidolsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "52"
+  },
+  {
+    "address": "Place de la Gare",
+    "capacity": 10,
+    "description": "Gare SNCF",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8128971",
+    "lon": "7.7828950",
+    "name": "Haguenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "53"
+  },
+  {
+    "address": "Rue du Moulin Neuf",
+    "capacity": 10,
+    "description": "Parking SILO Gare SNCF",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8136000",
+    "lon": "7.7811410",
+    "name": "Haguenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "54"
+  },
+  {
+    "address": "Rue du Sandholz",
+    "capacity": 10,
+    "description": "ERNST",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9309440",
+    "lon": "7.6450220",
+    "name": "Niederbronn-les-Bains",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "55"
+  },
+  {
+    "address": "D 1004 - Rue du Saverne",
+    "capacity": 10,
+    "description": "LM",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7017460",
+    "lon": "7.3748030",
+    "name": "Marmoutier - Centre E.leclerc",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "56"
+  },
+  {
+    "address": "N 59 - Route de Selestat",
+    "capacity": 20,
+    "description": "CH - Ancienne gare",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.2758820",
+    "lon": "7.4022960",
+    "name": "Châtenois",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "57"
+  },
+  {
+    "address": "A 35",
+    "capacity": 20,
+    "description": "CH",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.2658036",
+    "lon": "7.4175903",
+    "name": "Châtenois (17)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "58"
+  },
+  {
+    "address": "Rue du Lieut de Bettignies",
+    "capacity": 10,
+    "description": "Espace culturel",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6757576",
+    "lon": "7.8462881",
+    "name": "Kilstett",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "59"
+  },
+  {
+    "address": "D 468 - Rue des Marronniers",
+    "capacity": 10,
+    "description": "Super U",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6997793",
+    "lon": "7.8925192",
+    "name": "Gambsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "60"
+  },
+  {
+    "address": "D 424",
+    "capacity": 10,
+    "description": "CD67 - Aire de repos",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3210813",
+    "lon": "7.3466340",
+    "name": "Thanvillé",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "61"
+  },
+  {
+    "address": "Rue du Château",
+    "capacity": 10,
+    "description": "Diebolsheim",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.2888085",
+    "lon": "7.6641168",
+    "name": "Diebolsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "62"
+  },
+  {
+    "address": "D 35",
+    "capacity": 10,
+    "description": "CD67 - ZAC du Rosenmeer",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5030077",
+    "lon": "7.4968075",
+    "name": "Rosheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "63"
+  },
+  {
+    "address": "D 34 - Rue de la Gare",
+    "capacity": 20,
+    "description": "Cimetière",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9023393",
+    "lon": "8.0469766",
+    "name": "Niederroedern",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "64"
+  },
+  {
+    "address": "Place Nd du Chêne",
+    "capacity": 10,
+    "description": "Parking communal",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9719578",
+    "lon": "8.0971388",
+    "name": "Niederlauterbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "65"
+  },
+  {
+    "address": "Rue du Maréchal Leclerc",
+    "capacity": 4,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9152015",
+    "lon": "7.7643194",
+    "name": "Gunstett",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "66"
+  },
+  {
+    "address": "Rue d'Elsasshausen",
+    "capacity": 2,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9420629",
+    "lon": "7.7243584",
+    "name": "Froeschwiller",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "67"
+  },
+  {
+    "address": "D 677",
+    "capacity": 1,
+    "description": "Salle polyvalente",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9510872",
+    "lon": "7.7732949",
+    "name": "Goersdorf",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "68"
+  },
+  {
+    "address": "D 51",
+    "capacity": 3,
+    "description": "Cimetière",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9619451",
+    "lon": "7.8501554",
+    "name": "Lobsann",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "69"
+  },
+  {
+    "address": "A 35",
+    "capacity": 49,
+    "description": "D 463",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8231731",
+    "lon": "8.0026321",
+    "name": "Rountzenheim (55)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "70"
+  },
+  {
+    "address": "Rue des Bosquets",
+    "capacity": 8,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3015488",
+    "lon": "7.4951600",
+    "name": "Ebersheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "71"
+  },
+  {
+    "address": "D 40 - Rue de Weyer",
+    "capacity": 10,
+    "description": "Eglise catholique",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8651445",
+    "lon": "7.1875879",
+    "name": "Drulingen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "72"
+  },
+  {
+    "address": "Rue de la Creuse Fontaine",
+    "capacity": 10,
+    "description": "Zone d'activités",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4944226",
+    "lon": "7.2511411",
+    "name": "Russ",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "73"
+  },
+  {
+    "address": "Rue du Général de Gaulle",
+    "capacity": 8,
+    "description": "Mittelfeld",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5265073",
+    "lon": "7.3338065",
+    "name": "Urmatt",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "74"
+  },
+  {
+    "address": "Rue du Rhin",
+    "capacity": 10,
+    "description": "Place de la Fontaine",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3826183",
+    "lon": "7.6981853",
+    "name": "Gerstheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "75"
+  },
+  {
+    "address": "A 35",
+    "capacity": 38,
+    "description": "CC Basse-Zorn",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6783455",
+    "lon": "7.7771758",
+    "name": "Hoerdt (49)",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "76"
+  },
+  {
+    "address": "D 242",
+    "capacity": 24,
+    "description": "ZA Dreieck",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9037308",
+    "lon": "7.6448769",
+    "name": "Gundershoffen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "77"
+  },
+  {
+    "address": "D 138",
+    "capacity": 10,
+    "description": "Centre E. Leclerc",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8189559",
+    "lon": "7.9642057",
+    "name": "Soufflenheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "78"
+  },
+  {
+    "address": "Rue de la Garonne",
+    "capacity": 10,
+    "description": "Centre de secours",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.1634584",
+    "lon": "7.5530269",
+    "name": "Marckolsheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "79"
+  },
+  {
+    "address": "Rue de l'Ungersberg",
+    "capacity": 10,
+    "description": "Super U",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3389755",
+    "lon": "7.3168099",
+    "name": "Villé",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "80"
+  },
+  {
+    "address": "Rue de la Gare",
+    "capacity": 10,
+    "description": "Place de la Gare",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3428209",
+    "lon": "7.3066508",
+    "name": "Villé",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "81"
+  },
+  {
+    "address": "D 5 - Rue du Rhin",
+    "capacity": 10,
+    "description": "Maison des jeunes des associations et du tourisme",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3141940",
+    "lon": "7.7115841",
+    "name": "Rhinau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "82"
+  },
+  {
+    "address": "D 5",
+    "capacity": 10,
+    "description": "Intermarché",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.3746943",
+    "lon": "7.5897180",
+    "name": "Benfeld",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "83"
+  },
+  {
+    "address": "Rue du Tramway",
+    "capacity": 5,
+    "description": "ZA d'Eschau - Super U",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4809203",
+    "lon": "7.7290951",
+    "name": "Eschau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "84"
+  },
+  {
+    "address": "D 1422",
+    "capacity": 10,
+    "description": "Point Info",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4335766",
+    "lon": "7.4927074",
+    "name": "Goxwiller",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "85"
+  },
+  {
+    "address": "D 422",
+    "capacity": 20,
+    "description": " Stade",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.4576783",
+    "lon": "7.4917261",
+    "name": "Obernai",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "86"
+  },
+  {
+    "address": "Parc du Rosenmeer",
+    "capacity": 10,
+    "description": "ZAC Rosenmeer - Jardins Issler",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.5052599",
+    "lon": "7.4961347",
+    "name": "Rosheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "87"
+  },
+  {
+    "address": "Rue du Cimetière",
+    "capacity": 5,
+    "description": "Hagelweg",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6281340",
+    "lon": "7.6273315",
+    "name": "Stutzheim-Offenheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "88"
+  },
+  {
+    "address": "D 41 - Rue Principale",
+    "capacity": 10,
+    "description": "Gymnase",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.6686108",
+    "lon": "7.5179471",
+    "name": "Willgottheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "89"
+  },
+  {
+    "address": "D 28",
+    "capacity": 10,
+    "description": "Cimetière",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8972769",
+    "lon": "7.9797450",
+    "name": "Hatten",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "90"
+  },
+  {
+    "address": "D 34",
+    "capacity": 10,
+    "description": "Salle polyvalente",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9378265",
+    "lon": "8.0266694",
+    "name": "Trimbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "91"
+  },
+  {
+    "address": "Allée des Cygnes",
+    "capacity": 40,
+    "description": "Cygnes",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9771920",
+    "lon": "8.1819414",
+    "name": "Lauterbourg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "92"
+  },
+  {
+    "address": "Rue des Chênes",
+    "capacity": 10,
+    "description": "ZA Roesselbach - Leclerc Express",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9289781",
+    "lon": "7.8965853",
+    "name": "Soultz-sous-Forêts",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "93"
+  },
+  {
+    "address": "Rue d'Eschbach",
+    "capacity": 2,
+    "description": "Stade municipal",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8797532",
+    "lon": "7.7227023",
+    "name": "Laubach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "94"
+  },
+  {
+    "address": "D 27",
+    "capacity": 10,
+    "description": "Maison des Associations",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9097292",
+    "lon": "7.7498150",
+    "name": "Durrenbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "95"
+  },
+  {
+    "address": "D 772",
+    "capacity": 2,
+    "description": "Mairie",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.8985022",
+    "lon": "7.7913649",
+    "name": "Biblisheim",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "96"
+  },
+  {
+    "address": "Rue Principale",
+    "capacity": 4,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9330278",
+    "lon": "7.7788705",
+    "name": "Dieffenbach-les-Woerth",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "97"
+  },
+  {
+    "address": "Rue des Prés",
+    "capacity": 3,
+    "description": "Château d'eau",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9630105",
+    "lon": "7.7442690",
+    "name": "Langensoultzbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "98"
+  },
+  {
+    "address": "D 255",
+    "capacity": 2,
+    "description": "Place Chambèret",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9678594",
+    "lon": "7.7342005",
+    "name": "Langensoultzbach",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "99"
+  },
+  {
+    "address": "D 28",
+    "capacity": 10,
+    "description": "Maison des Associations",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9397945",
+    "lon": "7.8242527",
+    "name": "Merkwiller-Pechelbronn",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "100"
+  },
+  {
+    "address": "Rue du Stade",
+    "capacity": 10,
+    "description": "Salle polyvalente",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9312973",
+    "lon": "7.8555816",
+    "name": "Kutzenhausen",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "101"
+  },
+  {
+    "address": "D 114 - Route de Pechelbronn",
+    "capacity": 1,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.9563356",
+    "lon": "7.8182553",
+    "name": "Lampertsloch",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "102"
+  },
+  {
+    "address": "D 264 - Route de la Pépinière",
+    "capacity": 1,
+    "description": "Parking Pépinière Match",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0269399",
+    "lon": "7.9466708",
+    "name": "Wissembourg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "103"
+  },
+  {
+    "address": "Parking allée des peupliers",
+    "capacity": 1,
+    "description": "Parking allée des peupliers , Lidl",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0297234",
+    "lon": "7.9549980",
+    "name": "Wissembourg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "104"
+  },
+  {
+    "address": "Parking rue Alfred Nobel",
+    "capacity": 1,
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "49.0225015",
+    "lon": "7.9641633",
+    "name": "Wissembourg",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-02-28T23:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "105"
+  },
+  {
+    "address": "Boulevard Louise-Amélie Leblois",
+    "capacity": 122,
+    "description": "Parking Louise-Amélie Leblois",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "48.7986724",
+    "lon": "7.7660424",
+    "name": "Haguenau",
+    "park_and_ride_type": [
+      "CARPOOL"
+    ],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2024-10-10T22:00:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "106"
+  }
+]

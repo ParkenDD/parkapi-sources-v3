@@ -21,12 +21,15 @@ from parkapi_sources.models import ExternalIdentifierInput, StaticParkingSiteInp
 from parkapi_sources.models.enums import ExternalIdentifierType
 from parkapi_sources.validators import EmptystringNoneable
 
+# min / max are bounding box of Baden-Württemberg
+lat_validator = NumericValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
+lon_validator = NumericValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
+
 
 @validataclass
 class BfrkBaseInput(ABC):
-    # min / max are bounding box of Baden-Württemberg
-    lat: Decimal = NumericValidator(min_value=Decimal('47.5'), max_value=Decimal('49.8'))
-    lon: Decimal = NumericValidator(min_value=Decimal('7.5'), max_value=Decimal('10.5'))
+    lat: Decimal = lat_validator
+    lon: Decimal = lon_validator
     objekt_Foto: str | None = EmptystringNoneable(UrlValidator()), Default(None)
     hst_dhid: str = StringValidator(max_length=256)
     objekt_dhid: str | None = EmptystringNoneable(StringValidator()), Default(None)

@@ -1,0 +1,26 @@
+[
+  {
+    "realtime_capacity": 500,
+    "realtime_data_updated_at": "2026-10-25T08:26:22Z",
+    "realtime_free_capacity": 410,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "25[PH 25 - Talstraße]"
+  },
+  {
+    "realtime_capacity": 641,
+    "realtime_data_updated_at": "2026-10-25T08:27:08Z",
+    "realtime_free_capacity": 641,
+    "realtime_opening_status": "OPEN",
+    "restrictions": [],
+    "uid": "52[PH 52 - Düsseldorf Arcaden]"
+  },
+  {
+    "realtime_capacity": 360,
+    "realtime_data_updated_at": "2026-10-25T08:26:35Z",
+    "realtime_free_capacity": 360,
+    "realtime_opening_status": "CLOSED",
+    "restrictions": [],
+    "uid": "29[PH 29 - Friedrichstr.]"
+  }
+]

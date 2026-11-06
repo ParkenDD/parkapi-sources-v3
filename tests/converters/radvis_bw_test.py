@@ -9,6 +9,7 @@ from unittest.mock import Mock
 
 import pytest
 from requests_mock import Mocker
+from syrupy.assertion import SnapshotAssertion
 
 from parkapi_sources.converters import RadvisBwPullConverter
 from parkapi_sources.models.enums import (
@@ -63,7 +64,11 @@ def _mock_source(requests_mock: Mocker):
 
 class RadvisBwConverterTest:
     @staticmethod
-    def test_get_static_parking_sites(radvis_bw_pull_converter: RadvisBwPullConverter, requests_mock: Mocker):
+    def test_get_static_parking_sites(
+        radvis_bw_pull_converter: RadvisBwPullConverter,
+        requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
+    ):
         _mock_source(requests_mock)
 
         static_parking_site_inputs, import_parking_site_exceptions = radvis_bw_pull_converter.get_static_parking_sites()
@@ -72,7 +77,7 @@ class RadvisBwConverterTest:
         assert len(static_parking_site_inputs) == 974
         assert len(import_parking_site_exceptions) == 0
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
 
     @staticmethod
     def test_get_static_parking_sites_mapping(
@@ -103,6 +108,7 @@ class RadvisBwConverterTest:
     def test_get_static_parking_sites_without_ignored_sources(
         radvis_bw_unfiltered_pull_converter: RadvisBwPullConverter,
         requests_mock: Mocker,
+        snapshot: SnapshotAssertion,
     ):
         _mock_source(requests_mock)
 
@@ -131,4 +137,4 @@ class RadvisBwConverterTest:
         assert len([item for item in static_parking_site_inputs if item.has_fee is True]) == 17
         assert len([item for item in static_parking_site_inputs if item.has_fee is False]) == 54
 
-        validate_static_parking_site_inputs(static_parking_site_inputs)
+        validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
