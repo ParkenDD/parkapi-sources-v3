@@ -1,4 +1,4 @@
-# Open-Data-Plattform öV Schweiz (opendata_swiss)
+# Open-Data-Plattform öV Schweiz
 
 The Swiss open transport data platform publishes the dataset **Bike and Car Parking** as a 
 static GeoJSON. Each feature describes exactly one parking site (car or bike parking facility).
