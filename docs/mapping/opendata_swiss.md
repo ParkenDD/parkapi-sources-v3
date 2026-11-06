@@ -177,5 +177,5 @@ are present and both times are `00:00:00`, the result is `24/7`.
 
 | Field                                  | Mapping: realtime_free_capacity                                                                     | Comment                        |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------|
-| properties.currentEstimatedOccupancy   | properties.capacities.total - (properties.currentEstimatedOccupancy * properties.capacities.total)  | Use only  properties.capacities.categoryType: "STANDARD"  |
+| properties.currentEstimatedOccupancy   | capacities.total - (currentEstimatedOccupancy * capacities.total)  | Use only  properties.capacities.categoryType: "STANDARD"  |
 
