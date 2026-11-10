@@ -4,33 +4,38 @@ Contipark provides a JSON REST API (`/v1/carparks`) with static parking site dat
 requires a certificate (`PARK_API_CONTIPARK_CERT_PATH`). The response contains a `data` list, where
 each entry is one parking site. The API models only static data.
 
+As car parks in the API have only the coordinates and addresses of the gates and not from the car park itself, the first gate is used for address and coordinates of the hole car_aprk, as there needs to be at least one gate.
+
 Static values:
 
 * `has_realtime_data` is always `False` (the API does not offer realtime data yet)
+* `purpose` is always `CAR`
 
 ## Properties
 
-| Field                         | Type                                | Cardinality | Mapping                | Comment |
-|-------------------------------|-------------------------------------|-------------|------------------------|---------|
-| id["value"]                   | string                              | 1           | uid                    |         |
-| type["value"]                 | [ParkingSiteType](#ParkingSiteType) | 1           | type                   |         |
-| namePublicDE["value"]         | string                              | 1           | name                   |         |
-| namePublicEN["value"]         | string                              | 1           |                        |         |
-| gates                         | list                                |             |                        |         |
-| dimensions["height"]["value"] | Number                              | 1           | max_height             |         |
-| dimensions["width"]["value"]  | NUmber                              | 1           | max_width              |         |
-| operations                    |                                     |             |                        |         |
-| station                       |                                     |             |                        |         |
-| bahnPark                      |                                     |             |                        |         |
-| openingHours                  |                                     |             |                        |         |
-| parkingSpots                  |                                     |             |                        |         |
-| chargingStations              |                                     |             |                        |         |
-| tags                          |                                     |             |                        |         |
-| consumerManagement            |                                     |             |                        |         |
-| static_data_updated_at        | str(date-time)                      | 1           | static_data_updated_at |         |
-
-
-
+| Field                                           | Type                                | Cardinality | Mapping                | Comment |
+|-------------------------------------------------|-------------------------------------|-------------|------------------------|---------|
+| publicID["value"]                               | string                              | 1           | original_uid           |         |
+| consumerManagement["mcpUrl"]["value"]           | string (url)                        | ?           | public_url             |         |
+| gates[0]["street"]["value"]                     | str                                 | 1           | address                |         |
+| gates[0]["houseNumber"]["value"]                | str                                 | 1           | address                |         |
+| gates[0]["zipCode"]["value"]                    | str                                 | 1           | address                |         |
+| consumerManagement["mcpDescriptionDE"]["value"] | str                                 | description |                        |         |
+| type["value"]                                   | [ParkingSiteType](#parkingsitetype) | 1           | type                   |         |
+| type["value"]                                   | [is_covered](#is_covered)           | 1           | is_covered             |         |
+| namePublicDE["value"]                           | string                              | 1           | name                   |         |
+| namePublicEN["value"]                           | string                              |             |                        |         |
+| dimensions["height"]["value"]                   | Number                              | 1           | max_height             |         |
+| dimensions["width"]["value"]                    | Number                              | 1           | max_width              |         |
+| bahnPark["isBahnPark"]                          | [ParkAndRideType](#parkandridetype) | 1           | park_and_ride_type     |         |
+| tags["locations"]["value"]                      | string                              | ?           | related_location       |         |
+|                                                 |                                     |             | opening_hours          |         |
+|                                                 |                                     |             | capacity               |         |
+|                                                 |                                     |             | tags                   |         |
+|                                                 |                                     |             | lat                    |         |
+|                                                 |                                     |             | lon                    |         |
+|                                                 |                                     |             | restrictions           |         |
+| static_data_updated_at                          | str(date-time)                      | 1           | static_data_updated_at |         |
 
 ### ParkingSiteType
 
@@ -41,3 +46,15 @@ Static values:
 | PP  | OFF_STREET_PARKING_GROUND |
 | TG  | UNDERGROUND               |
 
+### is_covered
+| Key | Mapping: is_covered       |
+|-----|---------------------------|
+| PD  | false                     |
+| PH  | true                      |
+| PP  | false                     |
+| TG  | true                      |
+
+### parkandridetype
+| Key | Mapping: park_and_ride_type |
+|-----|-----------------------------|
+| true| TRAIN                       |
