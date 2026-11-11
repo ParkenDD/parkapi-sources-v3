@@ -4,12 +4,13 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 from datetime import datetime, timezone
+from enum import Enum
 from typing import Any
 
 from shapely import GeometryType, Point
 from validataclass.dataclasses import validataclass
 from validataclass.exceptions import ValidationError
-from validataclass.validators import DataclassValidator, IntegerValidator, StringValidator
+from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
 
 from parkapi_sources.models import (
     GeojsonBaseFeatureInput,
@@ -18,7 +19,7 @@ from parkapi_sources.models import (
     PurposeType,
     StaticParkingSpotInput,
 )
-from parkapi_sources.util import generate_point, round_7d
+from parkapi_sources.models.enums import ParkingOrientation, ParkingSpotType
 from parkapi_sources.validators import GeoJSONGeometryValidator
 
 
@@ -39,11 +40,39 @@ class KonstanzCountValidator(IntegerValidator):
             raise InvalidKonstanzCountError() from e
 
 
+class KonstanzDisabledParkingSpotTypeInput(Enum):
+    OFF_STREET_PARKING_GROUND = 'OFF_STREET_PARKING_GROUND'
+    ON_STREET = 'ON_STREET'
+
+    def to_parking_site_type_input(self) -> ParkingSpotType:
+        return {
+            self.OFF_STREET_PARKING_GROUND: ParkingSpotType.OFF_STREET_PARKING_GROUND,
+            self.ON_STREET: ParkingSpotType.CAR_PARK,
+        }.get(self, ParkingSpotType.OTHER)
+
+
+class Orientierung(Enum):
+    PARALLEL = 'längs'
+    PERPENDICULAR = 'quer'
+    DIAGONAL = 'schräg'
+
+    def to_parking_site_orientation_type(self) -> ParkingOrientation:
+        return {
+            self.PARALLEL: ParkingOrientation.PARALLEL,
+            self.PERPENDICULAR: ParkingOrientation.PERPENDICULAR,
+            self.DIAGONAL: ParkingOrientation.DIAGONAL,
+        }.get(self)
+
+
 @validataclass
 class KonstanzDisabledPropertiesInput:
     OBJECTID: int = IntegerValidator()
     Name: str = StringValidator()
-    Informatio: int = KonstanzCountValidator()
+    adress: str = StringValidator()
+    Stadtteil: str = StringValidator()
+    type: KonstanzDisabledParkingSpotTypeInput = EnumValidator(KonstanzDisabledParkingSpotTypeInput)
+    Anordnung: Orientierung = EnumValidator(Orientierung)
+    description: str | None = Noneable(StringValidator())
     GlobalID: str = StringValidator()
 
 
@@ -52,27 +81,16 @@ class KonstanzDisabledFeatureInput(GeojsonBaseFeatureInput):
     properties: KonstanzDisabledPropertiesInput = DataclassValidator(KonstanzDisabledPropertiesInput)
     geometry: Point = GeoJSONGeometryValidator(allowed_geometry_types=[GeometryType.POINT])
 
-    def to_static_parking_spot_inputs(self) -> list[StaticParkingSpotInput]:
-        static_parking_spot_inputs = []
-        for i in range(self.properties.Informatio):
-            lat, lon = generate_point(
-                lat=round_7d(self.geometry.y),
-                lon=round_7d(self.geometry.x),
-                number=i,
-                max_number=self.properties.Informatio,
-            )
-
-            static_parking_spot_inputs.append(
-                StaticParkingSpotInput(
-                    uid=f'{self.properties.GlobalID}_{i}',
-                    name=f'{self.properties.Name} {i + 1} / {self.properties.Informatio}',
-                    purpose=PurposeType.CAR,
-                    static_data_updated_at=datetime.now(tz=timezone.utc),
-                    lat=lat,
-                    lon=lon,
-                    has_realtime_data=False,
-                    restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
-                ),
-            )
-
-        return static_parking_spot_inputs
+    def to_static_parking_spot_input(self) -> StaticParkingSpotInput:
+        return StaticParkingSpotInput(
+            uid=f'{self.properties.GlobalID}',
+            name=f'{self.properties.Name}-{self.properties.Stadtteil}',
+            purpose=PurposeType.CAR,
+            address=self.properties.adress,
+            description=self.properties.description,
+            static_data_updated_at=datetime.now(tz=timezone.utc),
+            lat=self.geometry.y,
+            lon=self.geometry.x,
+            has_realtime_data=False,
+            restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
+        )
