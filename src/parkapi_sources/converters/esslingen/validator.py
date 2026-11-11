@@ -71,13 +71,13 @@ class EsslingenParkingSiteInput:
     def __pre_validate__(input_data: Any, **kwargs: Any):
         key_mapping: dict[str, str] = {
             'Anzahl der Stellplätze': 'capacity',
-            'Beschränkung sonstig': 'other_restrictions',
-            'Frei für Parkausweis-Nr': 'free_for_parking_parking_number',
+            'Beschränkung sonstiges': 'other_restrictions',
+            'Frei für Parkausweis mit Nr.': 'free_for_parking_parking_number',
             'Parkerlaubnis zeitlich': 'restriction_time',
-            'Parkplatz-Typ': 'parking_type',
+            'Parkplatz Typ': 'parking_type',
             'Parkscheibe erforderlich': 'parking_disc_required',
             'Parkschein erforderlich': 'parking_ticket_required',
-            'Überprüfungsdatum': 'static_data_updated_at',
+            'ueberpruefungsdatum': 'static_data_updated_at',
         }
 
         return {key_mapping.get(key, key): value for key, value in input_data.items()}
@@ -106,8 +106,8 @@ class EsslingenParkingSiteFeatureInput:
 
         center = shapely.centroid(self.geometry)
         description = []
-        if self.properties.Bemerkungen:
-            description.append(self.properties.Bemerkungen)
+        if self.properties.Bemerkung:
+            description.append(self.properties.Bemerkung)
         if self.properties.other_restrictions:
             description.append(self.properties.other_restrictions)
         if self.properties.allow_time:
