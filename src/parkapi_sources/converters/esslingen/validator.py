@@ -57,7 +57,7 @@ class EsslingenOrientation(Enum):
 class EsslingenParkingSiteInput:
     capacity: int = IntegerValidator()
     Ausrichtung: EsslingenOrientation | None = Noneable(EnumValidator(EsslingenOrientation)), Default(None)
-    Bemerkungen: str | None = Noneable(StringValidator()), Default(None)
+    Bemerkung: str | None = Noneable(StringValidator()), Default(None)
     other_restrictions: str | None = Noneable(StringValidator()), Default(None)
     fid: int = IntegerValidator()
     free_for_parking_parking_number: str | None = Noneable(StringValidator()), Default(None)
