@@ -1,4 +1,4 @@
-### Esslingen
+# Esslingen
 
 Esslingen provides its parking spots as GeoJSON with polygons. Coordinates are in UTM32 and have to be transformed to
 WSG84.
@@ -10,31 +10,30 @@ WSG84.
 | Field                        | Type                          | Cardinality | Mapping                             | Comment                                          |
 |------------------------------|-------------------------------|-------------|-------------------------------------|--------------------------------------------------|
 | Anzahl der Stellplätze       | integer                       | 1           | capacity                            |                                                  |
-| Ausrichtung                  | [Ausrichtung](#Ausrichtung)   | ?           | orientation                         |                                                  |
+| Ausrichtung                  | [Ausrichtung](#ausrichtung)   | ?           | orientation                         |                                                  |
 | Bemerkung                    | string                        | ?           | description                         |                                                  |
 | Beschränkung sonstiges       | string                        | ?           | description                         |                                                  |
 | fid                          | integer                       | 1           | uid                                 |                                                  |
 | Fläche                       | float                         | 1           |                                     |                                                  |
 | Frei für Parkausweis mit Nr. | string                        | ?           | description                         |                                                  |
 | Parkerlaubnis zeitlich       | string                        | ?           | description                         |                                                  |
-| Parkplatz Typ                | [ParkplatzTyp](#ParkplatzTyp) | 1           | name, purpose, type or restrictions | See ParkplatzTyp below                           |
+| Parkplatz Typ                | [ParkplatzTyp](#parkplatztyp) | 1           | name, purpose, type or restrictions | See ParkplatzTyp below                           |
 | Parkscheibe erforderlich     | string                        | ?           | description                         |                                                  |
 | Parkschein erforderlich      | string                        | ?           | fee_description, has_fee            | has_fee is set to true if this field is not null |
 | ueberpruefungsdatum          | date                          | 1           | static_data_updated_at              |                                                  |
 
 ### Ausrichtung
 
-| Key                                                     | Mapping       |
-|---------------------------------------------------------|---------------|
-| längs                                                   | PARALLEL      |
-| quer                                                    | PERPENDICULAR |
-| schräg                                                  | DIAGONAL      |
-| undefiniert                                             |               |
-| unbekannt                                               |               |
-| unterschiedlich                                         |               |
-| Parken auf Gehwegen - ganz quer in Fahrtrichtung rechts |               |
-| Quer                                                    |               |
-
+| Key                                                     | Mapping       | Comment                                               |
+|---------------------------------------------------------|---------------|-------------------------------------------------------|
+| längs                                                   | PARALLEL      |                                                       |
+| quer                                                    | PERPENDICULAR |                                                       |
+| schräg                                                  | DIAGONAL      |                                                       |
+| undefiniert                                             |               |                                                       |
+| unbekannt                                               |               |                                                       |
+| unterschiedlich                                         |               |                                                       |
+| Parken auf Gehwegen - ganz quer in Fahrtrichtung rechts |               | only one datapoint, should be corrected at the source |
+| Quer                                                    | PERPENDICULAR | only one datapoint, should be corrected at source     |
 
 ### ParkplatzTyp
 
@@ -73,4 +72,3 @@ WSG84.
 | Parkplatz ungeklärt                                                                 | ignored                                              |
 | Kein Parkplatz                                                                      | ignored                                              |
 | null                                                                                | ignored                                              |
-

@@ -79,8 +79,10 @@ class EsslingenParkingSiteInput:
             'Parkschein erforderlich': 'parking_ticket_required',
             'ueberpruefungsdatum': 'static_data_updated_at',
         }
-
-        return {key_mapping.get(key, key): value for key, value in input_data.items()}
+        normalized = {key_mapping.get(key, key): value for key, value in input_data.items()}
+        if isinstance(normalized.get('Ausrichtung'), str):
+            normalized['Ausrichtung'] = normalized['Ausrichtung'].lower()
+        return normalized
 
 
 @validataclass
