@@ -20,11 +20,11 @@ Static values:
 | gates[0]["street"]["value"]                     | str                                       | 1           | address                |                                                               |
 | gates[0]["houseNumber"]["value"]                | str                                       | 1           | address                |                                                               |
 | gates[0]["zipCode"]["value"]                    | str                                       | 1           | address                |                                                               |
-| consumerManagement["mcpDescriptionDE"]["value"] | str                                       | description |                        |                                                               |
+| consumerManagement["mcpDescriptionDE"]["value"] | str                                       | 1           | description            |                                                               |
 | type["value"]                                   | [ParkingSiteType](#parkingsitetype)       | 1           | type                   |                                                               |
 | type["value"]                                   | [is_covered](#is_covered)                 | 1           | is_covered             |                                                               |
 | namePublicDE["value"]                           | string                                    | 1           | name                   |                                                               |
-| namePublicEN["value"]                           | string                                    |             |                        |                                                               |
+| namePublicEN["value"]                           | string                                    |             |                        | ignored                                                       |
 | dimensions["height"]["value"]                   | Number                                    | 1           | max_height             |                                                               |
 | dimensions["width"]["value"]                    | Number                                    | 1           | max_width              |                                                               |
 | bahnPark["isBahnPark"]                          | [ParkAndRideType](#parkandridetype)       | 1           | park_and_ride_type     |                                                               |
@@ -34,7 +34,7 @@ Static values:
 | tags                                            | object                                    | 1           | tags                   |                                                               |
 | gates[0]["lat"]["value"]                        | Number                                    | 1           | lat                    |                                                               |
 | gates[0]["lon"]["value"]                        |                                           | 1           | lon                    |                                                               |
-| parkingspots                                    | [ParkingRestriction](#parkingrestriction) | 1           | restrictions           |                                                               |
+| parkingSpots                                    | [ParkingRestriction](#parkingrestriction) | 1           | restrictions           |                                                               |
 | static_data_updated_at                          | str(date-time)                            | 1           | static_data_updated_at |                                                               |
 
 ### ParkingSiteType
