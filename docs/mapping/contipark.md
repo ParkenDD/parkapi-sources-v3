@@ -6,6 +6,10 @@ each entry is one parking site. The API models only static data.
 
 As car parks in the API have only the coordinates and addresses of the gates and not from the car park itself, the first gate is used for address and coordinates of the hole car_aprk, as there needs to be at least one gate.
 
+A feature with parkingSpots for motorcycles or bikes greater than zero describes two to three installations at the same location: the bike
+stands and motorcycle parkingSpots. As both have their own type and capacity, they are mapped to two separate
+`ParkingSite`s, see [Bikes](#bikes) and [Motorcycle](#motorcycle).
+
 Static values:
 
 * `has_realtime_data` is always `False` (the API does not offer realtime data yet)
@@ -79,3 +83,31 @@ Static values:
 | motherChild  | FAMILY                       |
 | truck        | TRUCK                        |
 | senior       |                              |
+
+## Bikes
+
+If `parkingSpots["bicycle"]["value"]` is greater than zero, the feature additionally describes bike-parking at the
+same location. They are mapped to a second `ParkingSite` which shares all attributes of the surrounding installation,
+with the following exceptions:
+
+| Field        | Mapping                                                                                     |
+|--------------|---------------------------------------------------------------------------------------------|
+| uid          | `{OBJECTID}-lockers`, to keep it unique against the `ParkingSite` for cars                  |
+| name         | `{Name} (Fahrräder)`, to distinguish both sites at the same coordinates                     |
+| purpose      | Always `BIKE`                                                                               |
+| capacity     | `Anzahl_Schliessfaecher`                                                                    |
+| restrictions | Always empty                                                                                |
+
+## Motorcycles
+
+If `parkingSpots["motorcycle"]["value"]` is greater than zero, the feature additionally describes bike-parking at the
+same location. They are mapped to a second `ParkingSite` which shares all attributes of the surrounding installation,
+with the following exceptions:
+
+| Field        | Mapping                                                                                     |
+|--------------|---------------------------------------------------------------------------------------------|
+| uid          | `{OBJECTID}-lockers`, to keep it unique against the `ParkingSite` of the bike stands        |
+| name         | `{Strasse} (Schließfächer)`, to distinguish both sites at the same coordinates              |
+| type         | Always `LOCKERS`, `Stellplatzart` only describes the bike stands                            |
+| capacity     | `Anzahl_Schliessfaecher`                                                                    |
+| restrictions | Always empty, `Anzahl_Lademoeglichkeiten` is mapped to the `ParkingSite` of the bike stands |
