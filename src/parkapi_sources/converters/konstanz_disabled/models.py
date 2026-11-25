@@ -5,11 +5,9 @@ Use of this source code is governed by an MIT-style license that can be found in
 
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Any
 
 from shapely import GeometryType, Point
 from validataclass.dataclasses import validataclass
-from validataclass.exceptions import ValidationError
 from validataclass.validators import DataclassValidator, EnumValidator, IntegerValidator, Noneable, StringValidator
 
 from parkapi_sources.models import (
@@ -20,35 +18,19 @@ from parkapi_sources.models import (
     StaticParkingSpotInput,
 )
 from parkapi_sources.models.enums import ParkingOrientation, ParkingSpotType
+from parkapi_sources.util.helper import round_7d
 from parkapi_sources.validators import GeoJSONGeometryValidator
-
-
-class InvalidKonstanzCountError(ValidationError):
-    code = 'invalid_konstanz_count'
-
-
-class KonstanzCountValidator(IntegerValidator):
-    def validate(self, input_data: Any, **kwargs: Any) -> int:
-        self._ensure_type(input_data, [str])
-
-        input_data = input_data.split(' ')
-        if len(input_data) != 2:
-            raise InvalidKonstanzCountError()
-        try:
-            return int(input_data[0])
-        except ValueError as e:
-            raise InvalidKonstanzCountError() from e
 
 
 class KonstanzDisabledParkingSpotTypeInput(Enum):
     OFF_STREET_PARKING_GROUND = 'OFF_STREET_PARKING_GROUND'
     ON_STREET = 'ON_STREET'
 
-    def to_parking_site_type_input(self) -> ParkingSpotType:
+    def to_parking_spot_type_input(self) -> ParkingSpotType | None:
         return {
             self.OFF_STREET_PARKING_GROUND: ParkingSpotType.OFF_STREET_PARKING_GROUND,
-            self.ON_STREET: ParkingSpotType.CAR_PARK,
-        }.get(self, ParkingSpotType.OTHER)
+            self.ON_STREET: ParkingSpotType.ON_STREET,
+        }.get(self)
 
 
 class Orientierung(Enum):
@@ -56,7 +38,7 @@ class Orientierung(Enum):
     PERPENDICULAR = 'quer'
     DIAGONAL = 'schräg'
 
-    def to_parking_site_orientation_type(self) -> ParkingOrientation:
+    def to_parking_site_orientation_type(self) -> ParkingOrientation | None:
         return {
             self.PARALLEL: ParkingOrientation.PARALLEL,
             self.PERPENDICULAR: ParkingOrientation.PERPENDICULAR,
@@ -84,13 +66,15 @@ class KonstanzDisabledFeatureInput(GeojsonBaseFeatureInput):
     def to_static_parking_spot_input(self) -> StaticParkingSpotInput:
         return StaticParkingSpotInput(
             uid=f'{self.properties.GlobalID}',
-            name=f'{self.properties.Name}-{self.properties.Stadtteil}',
+            name=f'{self.properties.Name} {self.properties.Stadtteil}',
             purpose=PurposeType.CAR,
             address=self.properties.adress,
             description=self.properties.description,
             static_data_updated_at=datetime.now(tz=timezone.utc),
-            lat=self.geometry.y,
-            lon=self.geometry.x,
+            lat=round_7d(self.geometry.y),
+            lon=round_7d(self.geometry.x),
             has_realtime_data=False,
             restrictions=[ParkingSpotRestrictionInput(type=ParkingAudience.DISABLED)],
+            type=self.properties.type.to_parking_spot_type_input(),
+            orientation=self.properties.Anordnung.to_parking_site_orientation_type(),
         )
