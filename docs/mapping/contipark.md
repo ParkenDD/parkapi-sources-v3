@@ -8,12 +8,12 @@ As car parks in the API have only the coordinates and addresses of the gates and
 
 A feature with parkingSpots for motorcycles or bikes greater than zero describes two to three installations at the same location: the bike
 stands and motorcycle parkingSpots. As both have their own type and capacity, they are mapped to two separate
-`ParkingSite`s, see [Bikes](#bikes) and [Motorcycle](#motorcycle).
+`ParkingSite`s, see [Bikes](#bikes) and [Motorcycle](#motorcycles).
 
 Static values:
 
 * `has_realtime_data` is always `False` (the API does not offer realtime data yet)
-* `purpose` is always `CAR`
+* `purpose` is set to `CAR`, if bike or motorcycle parkingspots are available, a separate ParkingSite is created for each of them
 
 ## Properties
 
@@ -92,11 +92,10 @@ with the following exceptions:
 
 | Field        | Mapping                                                                                     |
 |--------------|---------------------------------------------------------------------------------------------|
-| uid          | `{OBJECTID}-lockers`, to keep it unique against the `ParkingSite` for cars                  |
+| uid          | `{OBJECTID}-bikes`, to keep it unique against the `ParkingSite` for cars                    |
 | name         | `{Name} (Fahrräder)`, to distinguish both sites at the same coordinates                     |
 | purpose      | Always `BIKE`                                                                               |
-| capacity     | `Anzahl_Schliessfaecher`                                                                    |
-| restrictions | Always empty                                                                                |
+| capacity     | parkingSpots["bicycle"]["value"]`                                                           |
 
 ## Motorcycles
 
@@ -106,8 +105,7 @@ with the following exceptions:
 
 | Field        | Mapping                                                                                     |
 |--------------|---------------------------------------------------------------------------------------------|
-| uid          | `{OBJECTID}-lockers`, to keep it unique against the `ParkingSite` of the bike stands        |
-| name         | `{Strasse} (Schließfächer)`, to distinguish both sites at the same coordinates              |
-| type         | Always `LOCKERS`, `Stellplatzart` only describes the bike stands                            |
-| capacity     | `Anzahl_Schliessfaecher`                                                                    |
-| restrictions | Always empty, `Anzahl_Lademoeglichkeiten` is mapped to the `ParkingSite` of the bike stands |
+| uid          | `{OBJECTID}-motorcycle`, to keep it unique against the `ParkingSite` of the cars            |
+| name         | `{Strasse} (Motorrad)`, to distinguish both sites at the same coordinates                   |
+| type         | Always `MOTOCYCLE`                                                                          |
+| capacity     | `parkingSpots["motorcycle"]["value"]`                                                       |
