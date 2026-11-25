@@ -6,7 +6,7 @@
                 </supplierIdentification>
             </exchange>
             <payloadPublication lang="de" xsi:type="GenericPublication">
-                <publicationTime>2025-05-09T21:50:02+02:00</publicationTime>
+                <publicationTime>2026-10-27T19:36:05+01:00</publicationTime>
                 <publicationCreator>
                     <country>de</country>
                     <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
@@ -15,29 +15,35 @@
                 <genericPublicationExtension>
                     <parkingStatusPublication>
 
-  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
-    <parkingRecordReference id="1445" targetClass="ParkingFacility" version="1"/>
+  <parkingRecordStatus xsi:type="GroupOfParkingSitesStatus">
+    <parkingRecordReference id="1445" targetClass="ParkingRecord" version="1"/>
+    <parkingStatusOriginTime>2026-10-27T19:36:05+01:00</parkingStatusOriginTime>
+    <parkingOccupancy>
+      <parkingNumberOfSpacesOverride>147</parkingNumberOfSpacesOverride>
+      <parkingNumberOfVacantSpaces>128</parkingNumberOfVacantSpaces>
+      <parkingNumberOfOccupiedSpaces>19</parkingNumberOfOccupiedSpaces>
+      <parkingOccupancy>12.9</parkingOccupancy>
+    </parkingOccupancy>
+    <parkingRecordStatusExtension>
+      <StationName>Kirchheim am Neckar</StationName>
+      <StationNumber>5723</StationNumber>
+    </parkingRecordStatusExtension>
+  </parkingRecordStatus>
+
+
+  <parkingRecordStatus xsi:type="GroupOfParkingSitesStatus">
+    <parkingRecordReference id="2143" targetClass="ParkingRecord" version="1"/>
+    <parkingStatusOriginTime>2026-10-27T19:36:05+01:00</parkingStatusOriginTime>
     <parkingOccupancy>
       <parkingNumberOfSpacesOverride>16</parkingNumberOfSpacesOverride>
       <parkingNumberOfVacantSpaces>12</parkingNumberOfVacantSpaces>
       <parkingNumberOfOccupiedSpaces>4</parkingNumberOfOccupiedSpaces>
-      <parkingOccupancy>25</parkingOccupancy>
+      <parkingOccupancy>25.0</parkingOccupancy>
     </parkingOccupancy>
-    <StationName>Kirchheim am Neckar</StationName>
-    <StationNumber>5723</StationNumber>
-  </parkingRecordStatus>
-
-
-  <parkingRecordStatus xsi:type="ParkingFacilityStatus">
-    <parkingRecordReference id="2143" targetClass="ParkingFacility" version="1"/>
-    <parkingOccupancy>
-      <parkingNumberOfSpacesOverride>16</parkingNumberOfSpacesOverride>
-      <parkingNumberOfVacantSpaces>7</parkingNumberOfVacantSpaces>
-      <parkingNumberOfOccupiedSpaces>9</parkingNumberOfOccupiedSpaces>
-      <parkingOccupancy>56.25</parkingOccupancy>
-    </parkingOccupancy>
-    <StationName>Kirchheim am Neckar</StationName>
-    <StationNumber>5723</StationNumber>
+    <parkingRecordStatusExtension>
+      <StationName>Kirchheim am Neckar</StationName>
+      <StationNumber>5723</StationNumber>
+    </parkingRecordStatusExtension>
   </parkingRecordStatus>
 </parkingStatusPublication>
                 </genericPublicationExtension>

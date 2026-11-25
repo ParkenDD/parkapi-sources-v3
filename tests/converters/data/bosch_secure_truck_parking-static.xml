@@ -1,0 +1,881 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Profile_Intelligent_Truck_Parking_Site/ITP_Deutschland_ParkingTable.xsd">
+    <exchange>
+        <supplierIdentification>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-Bosch</nationalIdentifier>
+        </supplierIdentification>
+    </exchange>
+    <payloadPublication lang="DE" xsi:type="GenericPublication">
+        <publicationTime>2026-10-26T20:43:10+01:00</publicationTime>
+        <publicationCreator>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-Bosch</nationalIdentifier>
+        </publicationCreator>
+        <genericPublicationName>ParkingFacilityTablePublication</genericPublicationName>
+        <genericPublicationExtension>
+            <parkingTablePublication>
+                <parkingTable id="1" version="2">
+                    <parkingTableVersionTime>2026-10-26T20:43:10.660+01:00</parkingTableVersionTime>
+                    <parkingRecord id="1754" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">PA-1754</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>35</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="aa8de0ca-c1a4-3c10-8867-7f440597530f" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Hartmann Koblenz</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>6.585342</latitude>
+                                    <longitude>51.33876</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="5c85046f-c528-35c5-95b7-3b5629f70517" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Zur Bergpflege</contactDetailsStreet>
+                            <contactDetailsHouseNumber>49</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>56070</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Koblenz</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="aa8de0ca-c1a4-3c10-8867-7f440597530f">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Zur Bergpflege</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Koblenz</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>6.585342</latitude>
+                                        <longitude>51.33876</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="70" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Autohof Dissen</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>83</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="e05a4203-ae32-3cdd-b251-c2db578abf85" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">L-Port</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>8.19718</latitude>
+                                    <longitude>52.10306</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="155d8f30-7fe7-3742-b371-cf5f561b92a7" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Versmolder Str.</contactDetailsStreet>
+                            <contactDetailsHouseNumber>10</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>49201</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Dissen am Teutoburger Wald</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="e05a4203-ae32-3cdd-b251-c2db578abf85">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Versmolder Str.</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Dissen am Teutoburger Wald</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>8.19718</latitude>
+                                        <longitude>52.10306</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="55" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Sicherheitsparkplatz Herbrechtingen</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>34</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="494f9f62-98fa-3082-8456-2df36b733742" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Bosch Service Solutions GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>10.204984</latitude>
+                                    <longitude>48.618687</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="d166e924-8f08-3247-9888-96280f636df8" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Am Bühlfeld</contactDetailsStreet>
+                            <contactDetailsHouseNumber>27</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>89542</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Herbrechtingen</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="494f9f62-98fa-3082-8456-2df36b733742">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Am Bühlfeld</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Herbrechtingen</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>10.204984</latitude>
+                                        <longitude>48.618687</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="60" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">BREAK Autohof Hamburg-Nordheide</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>150</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="45f915fd-1d4f-3d49-a0ae-330ddade0532" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Bosch Service Solutions GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>10.062025</latitude>
+                                    <longitude>53.162254</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="d166e924-8f08-3247-9888-96280f636df8" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Thaneberg</contactDetailsStreet>
+                            <contactDetailsHouseNumber>1</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>21272</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Egestorf</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="45f915fd-1d4f-3d49-a0ae-330ddade0532">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Thaneberg</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Egestorf</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>10.062025</latitude>
+                                        <longitude>53.162254</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="PA-608" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Gausepohl Premium Parking</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>50</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="ef82974c-996e-3da0-8826-146751ddf768" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Bosch Service Solutions GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>8.08022</latitude>
+                                    <longitude>52.49033</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="d166e924-8f08-3247-9888-96280f636df8" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Hörster Heide</contactDetailsStreet>
+                            <contactDetailsHouseNumber>1</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>49434</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Neuenkirchen-Vörden</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="ef82974c-996e-3da0-8826-146751ddf768">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Hörster Heide</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Neuenkirchen-Vörden</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>8.08022</latitude>
+                                        <longitude>52.49033</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="20" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Greenstation Himmelkron</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>59</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="82e464d0-318f-3b53-9691-9a0adc448485" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">WEDLICH.Green Station GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>11.621</latitude>
+                                    <longitude>50.052</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="17d97b7d-48d3-39f7-802e-7ff08509d8ee" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Frankenring</contactDetailsStreet>
+                            <contactDetailsHouseNumber>1</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>95502</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Himmelkron</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="82e464d0-318f-3b53-9691-9a0adc448485">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Frankenring</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Himmelkron</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>11.621</latitude>
+                                        <longitude>50.052</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="27" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">ROSI's Autohof Niederaula</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>50</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="91c0fc3e-8666-345c-ae0f-e99b32477011" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Rastpark GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>9.586</latitude>
+                                    <longitude>50.779</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="b9258f4a-c1eb-30da-8633-77d5c193a641" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Jossastraße</contactDetailsStreet>
+                            <contactDetailsHouseNumber>67</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>36272</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Niederaula</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="91c0fc3e-8666-345c-ae0f-e99b32477011">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Jossastraße</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Niederaula</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>9.586</latitude>
+                                        <longitude>50.779</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="1" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">FTA Truck Parking</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>92</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="497eb233-35cd-3308-9a6c-77ae339066a9" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Fahrzeugtechnik Aretsried GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>13.978174</latitude>
+                                    <longitude>51.154057</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="920ade25-dee4-381a-b98e-8237b06cb67a" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>An den Breiten</contactDetailsStreet>
+                            <contactDetailsHouseNumber>2</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>01454</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Leppersdorf</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="497eb233-35cd-3308-9a6c-77ae339066a9">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">An den Breiten</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Leppersdorf</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>13.978174</latitude>
+                                        <longitude>51.154057</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="11852" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">A3 + A7 Safe Truck Park</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>52</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="cd0c136c-3b7f-31da-b2df-1d88e8a0c9be" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Michel Logistik</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>10.067034</latitude>
+                                    <longitude>49.780228</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="935028aa-5abd-3bac-a752-e792359e8fc4" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Mainfrankenpark</contactDetailsStreet>
+                            <contactDetailsHouseNumber>30-32</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>97337</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Dettelbach</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="cd0c136c-3b7f-31da-b2df-1d88e8a0c9be">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Mainfrankenpark</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Dettelbach</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>10.067034</latitude>
+                                        <longitude>49.780228</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="DE2139" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">XXLKW Secure Parking Elbebrücke</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.659+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>340</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="dad4bb89-b902-3045-bf68-edfb945fa7f9" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Hauptstein ImmoBau GmbH</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>12.341522</latitude>
+                                    <longitude>51.852493</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="9338c0ea-cc57-3e7b-ba12-16ad6fb04a1f" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>An d. A9</contactDetailsStreet>
+                            <contactDetailsHouseNumber>1</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>06785</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Oranienbaum-Wörlitz</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="dad4bb89-b902-3045-bf68-edfb945fa7f9">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">An d. A9</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Oranienbaum-Wörlitz</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>12.341522</latitude>
+                                        <longitude>51.852493</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="8" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Truck Parking Bitburg</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.660+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>60</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="ea83591e-06c0-3996-9d7c-c7a89cca9a23" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Truck Parking Bitburg egbr</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>6.535643</latitude>
+                                    <longitude>50.03493</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="c1fd4a3f-0c23-3e42-a533-ab52b9ba37ec" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Auf Risch</contactDetailsStreet>
+                            <contactDetailsHouseNumber>20</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>54636</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Fließem</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="ea83591e-06c0-3996-9d7c-c7a89cca9a23">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Auf Risch</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Fließem</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>6.535643</latitude>
+                                        <longitude>50.03493</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="DE-2119" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Autohof Hannover Airport</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.660+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>111</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="c201a927-876a-344d-ae14-11e1a0060f1a" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE">Mundt GmbH Hannover</value>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>9.7199135</latitude>
+                                    <longitude>52.456955</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="0274e001-588a-309e-84c0-dd55f19f7c50" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Münchnerstr.</contactDetailsStreet>
+                            <contactDetailsHouseNumber>14</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>30855</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Langenhagen</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="c201a927-876a-344d-ae14-11e1a0060f1a">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Münchnerstr.</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Langenhagen</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>9.7199135</latitude>
+                                        <longitude>52.456955</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                    <parkingRecord id="DE2106" version="2026-10-26T19:43:10.660024184Z" xsi:type="InterUrbanParkingSite">
+                        <parkingName>
+                            <values>
+                                <value lang="DE">Secure Parking Osterweddingen</value>
+                            </values>
+                        </parkingName>
+                        <parkingRecordVersionTime>2026-10-26T20:43:10.660+01:00</parkingRecordVersionTime>
+                        <parkingNumberOfSpaces>50</parkingNumberOfSpaces>
+                        <parkingOccupanyDetectionType>balancing</parkingOccupanyDetectionType>
+                        <operator id="a105cedd-d2f2-323c-adf8-59e7df4e9905" version="2" xsi:type="ContactDetails">
+                            <contactOrganisationName>
+                                <values>
+                                    <value lang="DE"/>
+                                </values>
+                            </contactOrganisationName>
+                        </operator>
+                        <parkingLocation xsi:type="Point">
+                            <pointByCoordinates>
+                                <pointCoordinates>
+                                    <latitude>11.578871</latitude>
+                                    <longitude>52.05203</longitude>
+                                </pointCoordinates>
+                            </pointByCoordinates>
+                        </parkingLocation>
+                        <onlyAssignedParking>
+                            <vehicleCharacteristics/>
+                        </onlyAssignedParking>
+                        <parkingSiteAddress id="d41d8cd9-8f00-3204-a980-0998ecf8427e" version="1" xsi:type="ContactDetails">
+                            <contactDetailsStreet>Lange Göhren</contactDetailsStreet>
+                            <contactDetailsHouseNumber>17</contactDetailsHouseNumber>
+                            <contactDetailsPostcode>39171</contactDetailsPostcode>
+                            <contactDetailsCity>
+                                <values>
+                                    <value lang="DE">Sülzetal OT Osterweddingen</value>
+                                </values>
+                            </contactDetailsCity>
+                        </parkingSiteAddress>
+                        <parkingAccess id="a105cedd-d2f2-323c-adf8-59e7df4e9905">
+                            <accessCategory>unspecified</accessCategory>
+                            <primaryRoad>
+                                <roadIdentifier>
+                                    <values>
+                                        <value lang="DE">Lange Göhren</value>
+                                    </values>
+                                </roadIdentifier>
+                                <roadDestination>
+                                    <values>
+                                        <value lang="DE">Sülzetal OT Osterweddingen</value>
+                                    </values>
+                                </roadDestination>
+                            </primaryRoad>
+                            <location xsi:type="Point">
+                                <pointByCoordinates>
+                                    <pointCoordinates>
+                                        <latitude>11.578871</latitude>
+                                        <longitude>52.05203</longitude>
+                                    </pointCoordinates>
+                                </pointByCoordinates>
+                            </location>
+                        </parkingAccess>
+                        <parkingStandardsAndSecurity>
+                            <parkingSecurity>areaSeperatedFromSurroundings</parkingSecurity>
+                            <parkingSupervision>remote</parkingSupervision>
+                        </parkingStandardsAndSecurity>
+                        <interUrbanParkingSiteLocation>nearbyMotorway</interUrbanParkingSiteLocation>
+                    </parkingRecord>
+                </parkingTable>
+            </parkingTablePublication>
+        </genericPublicationExtension>
+    </payloadPublication>
+</d2LogicalModel>

@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.44.0
+
+Released 2026-10-26
+
+### Features
+
+* New DATEX II converters via Mobilithek: `bosch_kinding`, `bosch_rastpark_24`, `bosch_secure_truck_parking`,
+  `bosch_thiersheim`, `christophorus`, `hamburg_port_authority`, `lbv_sh`, `nrw_disabled`, `offenburg` and
+  `trucklounge_ecopark`
+* Mobilithek pull converters without realtime data just require a static subscription id
+* Mobilithek pull converters report publications which are no valid XML as import error instead of raising an exception
+* Add config flag `PARK_API_OFFENBURG_IGNORE_MISSING_CAPACITIES` to ignore parking sites without
+  `parkingNumberOfSpaces` at `offenburg`, defaulting to `true`
+* DATEX II inter urban parking sites accept the `interUrbanParkingSiteLocation` values `nearbyMotorway`, `layBy` and
+  `onStreet`
+* DATEX II inter urban parking sites accept `1` and `0` as `freeOfCharge`, as `xs:boolean` allows them
+* DATEX II inter urban parking sites accept empty localised values, e.g. an empty operator name
+* The `IGNORE_MISSING_CAPACITIES` config flags of all Karlsruhe converters ignore parking sites with a capacity of `0`
+  as well
+
+### Fixes
+
+* `convert_to_serializable_value` and `DefaultJSONEncoder` convert timezone-aware datetimes to UTC, instead of
+  appending `Z` to the local time
+* README marks `erfurt`, `halle`, `magdeburg_ifak` and `wiesbaden` as invalid DATEX II instead of broken, as their data
+  is imported
+* Test data of `vrs_bondorf`, `vrs_kirchheim`, `vrs_neustadt` and `vrs_vaihingen` updated to the current publications
+
+### Maintenance
+
+* Mapping documents for the converters added in 0.42.0 and 0.44.0
+
+
 ## 0.43.0
 
 Released 2026-10-25

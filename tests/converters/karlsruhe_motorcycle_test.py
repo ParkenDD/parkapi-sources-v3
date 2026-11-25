@@ -46,7 +46,7 @@ class KarlsruheMotorcyclePullConverterTest:
             karlsruhe_motorcycle_pull_converter.get_static_parking_sites()
         )
 
-        assert len(static_parking_site_inputs) == 52
+        assert len(static_parking_site_inputs) == 50
         assert len(import_parking_site_exceptions) == 0
 
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)

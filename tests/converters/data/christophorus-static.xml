@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:messageContainer xmlns:con="http://datex2.eu/schema/3/messageContainer" xmlns:prk="http://datex2.eu/schema/3/parking" xmlns:loc="http://datex2.eu/schema/3/locationReferencing" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:com="http://datex2.eu/schema/3/common" xmlns:ex="http://datex2.eu/schema/3/exchangeInformation" xmlns:fac="http://datex2.eu/schema/3/facilities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datex2.eu/schema/3/messageContainer http://datex2.eu/schema/3/messageContainer.xsd http://datex2.eu/schema/3/parking http://datex2.eu/schema/3/parking.xsd http://datex2.eu/schema/3/locationReferencing http://datex2.eu/schema/3/locationReferencing.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://datex2.eu/schema/3/common http://datex2.eu/schema/3/common.xsd http://datex2.eu/schema/3/exchangeInformation http://datex2.eu/schema/3/exchangeInformation.xsd http://datex2.eu/schema/3/facilities http://datex2.eu/schema/3/facilities.xsd" modelBaseVersion="3">
+  <con:payload lang="de" xsi:type="prk:ParkingTablePublication" modelBaseVersion="3">
+    <com:publicationTime>2026-10-26T00:00:01.449Z</com:publicationTime>
+    <com:publicationCreator>
+      <com:country>de</com:country>
+      <com:nationalIdentifier>DE-NAP-ChristophorusParking</com:nationalIdentifier>
+    </com:publicationCreator>
+    <prk:parkingTable id="parkingTable-christophorus-parking" version="1">
+      <prk:name>
+        <com:values>
+          <com:value>Christophorus Parking Static Data Table</com:value>
+        </com:values>
+      </prk:name>
+      <prk:versionTime>2026-10-26T00:00:01.449Z</prk:versionTime>
+      <prk:hierarchyElementGeneral xsi:type="prk:ParkingArea" id="christophorus-parking" version="1">
+        <fac:name>
+          <com:values>
+            <com:value lang="de">Christophorus Parking</com:value>
+          </com:values>
+        </fac:name>
+        <fac:lastUpdated>2026-10-26T00:00:01.449Z</fac:lastUpdated>
+        <fac:description>
+          <com:values>
+            <com:value lang="de">LKW-Parkplatz mit Serviceeinrichtungen</com:value>
+          </com:values>
+        </fac:description>
+        <fac:informationWebsite>
+          <com:urlLinkAddress>https://www.christophorus-parking.de</com:urlLinkAddress>
+        </fac:informationWebsite>
+        <fac:operatingHours xsi:type="fac:OpenAllHours"/>
+        <loc:location xsi:type="loc:Location">
+          <loc:pointByCoordinates>
+            <loc:pointCoordinates>
+              <gml:Point gml:id="coord-christophorus-parking">
+                <gml:pos>51.007707292406224 9.47747923066144</gml:pos>
+              </gml:Point>
+            </loc:pointCoordinates>
+          </loc:pointByCoordinates>
+        </loc:location>
+        <prk:totalCapacity>68</prk:totalCapacity>
+        <fac:applicableForVehicles xsi:type="com:VehicleCharacteristics">
+          <com:vehicleType>lorry</com:vehicleType>
+        </fac:applicableForVehicles>
+        <fac:services>
+          <fac:facilityObject id="christophorus-parking-service-0" version="1">
+            <fac:type>toilet</fac:type>
+          </fac:facilityObject>
+          <fac:facilityObject id="christophorus-parking-service-1" version="1">
+            <fac:type>shower</fac:type>
+          </fac:facilityObject>
+        </fac:services>
+      </prk:hierarchyElementGeneral>
+    </prk:parkingTable>
+    <fac:rateTable id="rateTable-christophorus-parking" version="1">
+      <fac:name>
+        <com:values>
+          <com:value>Standard LKW-Tarif</com:value>
+        </com:values>
+      </fac:name>
+      <fac:versionTime>2026-10-26T00:00:01.449Z</fac:versionTime>
+      <fac:rateMatrix id="rateMatrix-christophorus-parking" version="1">
+        <fac:rateMatrixVersionTime>2026-10-26T00:00:01.449Z</fac:rateMatrixVersionTime>
+        <fac:rate>
+          <fac:rateAmount>2.5</fac:rateAmount>
+          <fac:rateCurrency>EUR</fac:rateCurrency>
+          <fac:timeRate>perHour</fac:timeRate>
+        </fac:rate>
+      </fac:rateMatrix>
+    </fac:rateTable>
+  </con:payload>
+  <con:exchangeInformation modelBaseVersion="3">
+    <ex:exchangeContext>
+      <ex:codedExchangeProtocol>snapshotPull</ex:codedExchangeProtocol>
+      <ex:exchangeSpecificationVersion>3.0</ex:exchangeSpecificationVersion>
+      <ex:supplierOrCisRequester/>
+    </ex:exchangeContext>
+    <ex:dynamicInformation>
+      <ex:exchangeStatus>online</ex:exchangeStatus>
+      <ex:messageGenerationTimestamp>2026-10-26T00:00:01.449Z</ex:messageGenerationTimestamp>
+    </ex:dynamicInformation>
+  </con:exchangeInformation>
+</con:messageContainer>

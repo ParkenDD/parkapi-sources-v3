@@ -1,15 +1,15 @@
 [
   {
-    "realtime_capacity": 16,
-    "realtime_data_updated_at": "<now>",
-    "realtime_free_capacity": 12,
+    "realtime_capacity": 147,
+    "realtime_data_updated_at": "2026-10-27T18:36:05Z",
+    "realtime_free_capacity": 128,
     "restrictions": [],
     "uid": "1445"
   },
   {
     "realtime_capacity": 16,
-    "realtime_data_updated_at": "<now>",
-    "realtime_free_capacity": 7,
+    "realtime_data_updated_at": "2026-10-27T18:36:05Z",
+    "realtime_free_capacity": 12,
     "restrictions": [],
     "uid": "2143"
   }

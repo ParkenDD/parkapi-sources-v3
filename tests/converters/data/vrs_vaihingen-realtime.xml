@@ -6,7 +6,7 @@
                                 </supplierIdentification>
                         </exchange>
                         <payloadPublication lang="de" xsi:type="GenericPublication">
-                                <publicationTime>2024-05-10T16:10:45.9668479+02:00</publicationTime>
+                                <publicationTime>2024-07-10T23:26:59.6033883+02:00</publicationTime>
                                 <publicationCreator>
                                         <country>de</country>
                                         <nationalIdentifier>DE-BW-Verband Region Stuttgart</nationalIdentifier>
@@ -17,12 +17,12 @@
 
 <parkingRecordStatus xsi:type="GroupOfParkingSitesStatus">
 	<parkingRecordReference id="1230[P+R Vaihingen an der Enz]" targetClass="ParkingRecord" version="1.0"/>
-	<parkingStatusOriginTime>2024-05-10T16:10:45.9668479+02:00</parkingStatusOriginTime>
+	<parkingStatusOriginTime>2024-07-10T23:26:59.6033883+02:00</parkingStatusOriginTime>
 	<parkingOccupancy>
 		<parkingNumberOfSpacesOverride>454</parkingNumberOfSpacesOverride>
-		<parkingNumberOfVacantSpaces>356</parkingNumberOfVacantSpaces>
-		<parkingNumberOfOccupiedSpaces>98</parkingNumberOfOccupiedSpaces>
-		<parkingOccupancy>21.5859030837004</parkingOccupancy>
+		<parkingNumberOfVacantSpaces>429</parkingNumberOfVacantSpaces>
+		<parkingNumberOfOccupiedSpaces>25</parkingNumberOfOccupiedSpaces>
+		<parkingOccupancy>5.50660792951541</parkingOccupancy>
 	</parkingOccupancy>
 </parkingRecordStatus>
 

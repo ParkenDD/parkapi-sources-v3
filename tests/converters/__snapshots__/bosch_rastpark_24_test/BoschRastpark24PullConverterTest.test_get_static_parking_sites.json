@@ -1,0 +1,19 @@
+[
+  {
+    "address": "Donaustraße 4, 94491 Hengersberg",
+    "capacity": 1500,
+    "external_identifiers": [],
+    "has_realtime_data": true,
+    "lat": "48.76732",
+    "lon": "13.045023",
+    "name": "Rastpark 24",
+    "operator_name": "K Gastronomie GmbH",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-10-26T19:40:00Z",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "DN2"
+  }
+]

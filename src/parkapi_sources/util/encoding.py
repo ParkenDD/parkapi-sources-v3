@@ -4,7 +4,7 @@ Use of this source code is governed by an MIT-style license that can be found in
 """
 
 import json
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from decimal import Decimal
 from enum import Enum
 from typing import Any
@@ -16,6 +16,9 @@ from shapely.geometry.base import BaseGeometry
 
 def convert_to_serializable_value(obj: Any) -> Any:
     if isinstance(obj, datetime):
+        # Naive datetimes are treated as UTC, timezone-aware ones have to be converted to UTC because of the Z suffix
+        if obj.tzinfo is not None:
+            obj = obj.astimezone(timezone.utc)
         return obj.strftime('%Y-%m-%dT%H:%M:%SZ')
     if isinstance(obj, date):
         return obj.isoformat()

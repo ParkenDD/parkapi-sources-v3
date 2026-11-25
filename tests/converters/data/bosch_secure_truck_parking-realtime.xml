@@ -1,0 +1,153 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" modelBaseVersion="2" xsi:schemaLocation="http://datex2.eu/schema/2/2_0 https://mobilithek.info/mdp-api/files/aux/schemas/DATEX_2/Profile_Intelligent_Truck_Parking_Site/ITP_Deutschland_ParkingTable.xsd">
+    <exchange>
+        <supplierIdentification>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-Bosch</nationalIdentifier>
+        </supplierIdentification>
+    </exchange>
+    <payloadPublication lang="DE" xsi:type="GenericPublication">
+        <publicationTime>2026-10-26T20:43:09+01:00</publicationTime>
+        <publicationCreator>
+            <country>de</country>
+            <nationalIdentifier>DE-MDM-Bosch</nationalIdentifier>
+        </publicationCreator>
+        <genericPublicationName>ParkingFacilityTableStatusPublication</genericPublicationName>
+        <genericPublicationExtension>
+            <parkingStatusPublication>
+                <parkingTableReference id="1" targetClass="ParkingTable" version="2"/>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="1754" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.974+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>4</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>29</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>87.878784</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="70" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.974+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>42</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>33</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>44.0</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="55" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.975+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>22</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>12</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>35.294117</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="60" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.975+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>89</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>60</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>40.268456</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="PA-608" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.975+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>5</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>45</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>90.0</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="20" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.975+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>23</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>46</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>66.666664</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="27" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.975+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>22</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>32</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>59.25926</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="1" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.975+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>63</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>29</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>31.52174</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="11852" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.976+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>0</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>54</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>135.0</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>full</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="DE2139" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.976+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>0</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>1667</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>490.29413</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>full</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="8" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.976+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>0</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>152</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>253.33333</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>full</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+                <parkingRecordStatus xsi:type="ParkingSiteStatus">
+                    <parkingRecordReference id="DE-2119" targetClass="ParkingRecord" version="1793047389"/>
+                    <parkingStatusOriginTime>2026-10-26T20:43:09.976+01:00</parkingStatusOriginTime>
+                    <parkingOccupancy>
+                        <parkingNumberOfVacantSpaces>62</parkingNumberOfVacantSpaces>
+                        <parkingNumberOfOccupiedSpaces>55</parkingNumberOfOccupiedSpaces>
+                        <parkingOccupancy>47.00855</parkingOccupancy>
+                    </parkingOccupancy>
+                    <parkingSiteStatus>spacesAvailable</parkingSiteStatus>
+                    <parkingSiteOpeningStatus>open</parkingSiteOpeningStatus>
+                </parkingRecordStatus>
+            </parkingStatusPublication>
+        </genericPublicationExtension>
+    </payloadPublication>
+</d2LogicalModel>
