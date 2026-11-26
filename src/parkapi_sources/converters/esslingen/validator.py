@@ -44,6 +44,7 @@ class EsslingenOrientation(Enum):
     UNDEFINED = 'undefiniert'
     UNKNOWN = 'unbekannt'
     DIVERSE = 'unterschiedlich'
+    MISC = 'Parken auf Gehwegen - ganz quer in Fahrtrichtung rechts'
 
     def to_parking_side_orientation(self) -> ParkingOrientation | None:
         return {
@@ -57,7 +58,7 @@ class EsslingenOrientation(Enum):
 class EsslingenParkingSiteInput:
     capacity: int = IntegerValidator()
     Ausrichtung: EsslingenOrientation | None = Noneable(EnumValidator(EsslingenOrientation)), Default(None)
-    Bemerkungen: str | None = Noneable(StringValidator()), Default(None)
+    Bemerkung: str | None = Noneable(StringValidator()), Default(None)
     other_restrictions: str | None = Noneable(StringValidator()), Default(None)
     fid: int = IntegerValidator()
     free_for_parking_parking_number: str | None = Noneable(StringValidator()), Default(None)
@@ -71,16 +72,18 @@ class EsslingenParkingSiteInput:
     def __pre_validate__(input_data: Any, **kwargs: Any):
         key_mapping: dict[str, str] = {
             'Anzahl der Stellplätze': 'capacity',
-            'Beschränkung sonstig': 'other_restrictions',
-            'Frei für Parkausweis-Nr': 'free_for_parking_parking_number',
-            'Parkerlaubnis zeitlich': 'restriction_time',
-            'Parkplatz-Typ': 'parking_type',
+            'Beschränkung sonstiges': 'other_restrictions',
+            'Frei für Parkausweis mit Nr.': 'free_for_parking_parking_number',
+            'Parkerlaubnis zeitlich': 'allow_time',
+            'Parkplatz Typ': 'parking_type',
             'Parkscheibe erforderlich': 'parking_disc_required',
             'Parkschein erforderlich': 'parking_ticket_required',
-            'Überprüfungsdatum': 'static_data_updated_at',
+            'ueberpruefungsdatum': 'static_data_updated_at',
         }
-
-        return {key_mapping.get(key, key): value for key, value in input_data.items()}
+        normalized = {key_mapping.get(key, key): value for key, value in input_data.items()}
+        if isinstance(normalized.get('Ausrichtung'), str):
+            normalized['Ausrichtung'] = normalized['Ausrichtung'].lower()
+        return normalized
 
 
 @validataclass
@@ -106,8 +109,8 @@ class EsslingenParkingSiteFeatureInput:
 
         center = shapely.centroid(self.geometry)
         description = []
-        if self.properties.Bemerkungen:
-            description.append(self.properties.Bemerkungen)
+        if self.properties.Bemerkung:
+            description.append(self.properties.Bemerkung)
         if self.properties.other_restrictions:
             description.append(self.properties.other_restrictions)
         if self.properties.allow_time:
@@ -137,6 +140,18 @@ class EsslingenParkingSiteFeatureInput:
 
         match self.properties.parking_type:
             case 'Bewohner-Parkplatz':
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
+                )
+            case 'Bewohner-Parkplatz sowie mit Parkschein auch für die Öffentlichkeit':
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
+                )
+            case 'Bewohner-Parkplatz sowie mit sonstigen Beschränkungen auch für die Öffentlichkeit':
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
+                )
+            case 'Bewohner-Parkplatz mit Beschränkungen':
                 static_parking_site_input.restrictions.append(
                     ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
                 )
