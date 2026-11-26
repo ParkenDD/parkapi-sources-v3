@@ -1,10 +1,12 @@
 [
   {
+    "address": "Blarerstraße 18, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6831356",
-    "lon": "9.1762633",
-    "name": "Am Pfeiferhölzle 1 / 1",
+    "lat": "47.6610102",
+    "lon": "9.1678297",
+    "name": "Blarerstraße Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -15,14 +17,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "aedd20e9-2b37-4f02-a160-24be3ee8147f_0"
+    "type": "ON_STREET",
+    "uid": "05cb5121-b54e-4669-b2bd-c15e859292cc"
   },
   {
+    "address": "Brauneggerstraße 32, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6689690",
-    "lon": "9.1775755",
-    "name": "Benediktinerplatz / Landratsamt 1 / 2",
+    "lat": "47.6646599",
+    "lon": "9.1705997",
+    "name": "Brauneggerstraße_1 Paradies",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -33,14 +38,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f21e00f2-9540-4967-ae42-0fb32051f494_0"
+    "type": "ON_STREET",
+    "uid": "3678ac87-57a0-4439-893c-d711ac579c17"
   },
   {
+    "address": "Brauneggerstraße 32, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6689870",
-    "lon": "9.1775755",
-    "name": "Benediktinerplatz / Landratsamt 2 / 2",
+    "lat": "47.6646360",
+    "lon": "9.1705881",
+    "name": "Brauneggerstraße_2 Paradies",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -51,14 +59,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f21e00f2-9540-4967-ae42-0fb32051f494_1"
+    "type": "ON_STREET",
+    "uid": "92b354b8-dced-4e11-8106-365654b8e304"
   },
   {
+    "address": "Brauneggerstraße 32, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6686992",
-    "lon": "9.1789389",
-    "name": "Benediktinerplatz / Polizei 1 / 1",
+    "lat": "47.6646133",
+    "lon": "9.1705756",
+    "name": "Brauneggerstraße_3 Paradies",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -69,14 +80,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "e681121a-6eaa-46f1-a85a-e1fb8cd67a69_0"
+    "type": "ON_STREET",
+    "uid": "38b549a2-efe5-4afb-b46d-537f9491a0dc"
   },
   {
+    "address": "Bodanplatz 7, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6754640",
-    "lon": "9.1775023",
-    "name": "Bismarcksteig 1 / 1",
+    "lat": "47.6576011",
+    "lon": "9.1750116",
+    "name": "Bodanplatz_1 Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -87,14 +101,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "a9a56b67-3d8e-4097-9627-405e44fcc212_0"
+    "type": "ON_STREET",
+    "uid": "a38644fa-eded-41b2-926a-15e73c9b05ca"
   },
   {
+    "address": "Bodanplatz 7, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6576061",
-    "lon": "9.1750444",
-    "name": "Bodanplatz 1 / 2",
+    "lat": "47.6576104",
+    "lon": "9.1750665",
+    "name": "Bodanplatz_2 Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -105,14 +122,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "58fea526-6cd1-4ec2-a8fe-eb432b5d05c2_0"
+    "type": "ON_STREET",
+    "uid": "27ae9e34-46e2-47da-a7a4-ff3eb141ff36"
   },
   {
+    "address": "Döbeleplatz, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6576241",
-    "lon": "9.1750444",
-    "name": "Bodanplatz 2 / 2",
+    "lat": "47.6582911",
+    "lon": "9.1692853",
+    "name": "Döbeleplatz_1 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -123,14 +143,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "58fea526-6cd1-4ec2-a8fe-eb432b5d05c2_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "4c1db784-4f32-4c3b-9aa9-833096756c94"
   },
   {
+    "address": "Döbeleplatz, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6787121",
-    "lon": "9.2047659",
-    "name": "Brachsengang 1 / 1",
+    "lat": "47.6582541",
+    "lon": "9.1692885",
+    "name": "Döbeleplatz_2 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -141,50 +164,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "74c88c2c-2043-4741-9778-b88052a804bf_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6d67bd7a-daa7-4453-b166-8a4c849273aa"
   },
   {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6582762",
-    "lon": "9.1692389",
-    "name": "Döbeleplatz 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "6c862845-d079-4669-9121-58dfc970320c_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6582942",
-    "lon": "9.1692389",
-    "name": "Döbeleplatz 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "6c862845-d079-4669-9121-58dfc970320c_1"
-  },
-  {
+    "address": "Gottlieber Straße 44, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
     "lat": "47.6628110",
-    "lon": "9.1636125",
-    "name": "Gottlieber Straße 1 / 2",
+    "lon": "9.1635886",
+    "name": "Gottlieberstraße_1 Paradies",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -195,14 +185,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "b574bdff-3c56-49d4-9f75-a88698237276_0"
+    "type": "ON_STREET",
+    "uid": "ead62e4a-bbeb-4120-8761-cf1e854b04f7"
   },
   {
+    "address": "Gottlieber Straße 44, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6628290",
-    "lon": "9.1636125",
-    "name": "Gottlieber Straße 2 / 2",
+    "lat": "47.6621753",
+    "lon": "9.1671647",
+    "name": "Gottlieberstraße_2 Paradies",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -213,14 +206,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "b574bdff-3c56-49d4-9f75-a88698237276_1"
+    "type": "ON_STREET",
+    "uid": "8092179f-34ba-45fd-915b-fd87545f7ea5"
   },
   {
+    "address": "Gartenstraße ?, 78462 Konstanz",
+    "description": "noch nicht umgesetzt",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6560541",
-    "lon": "9.1779080",
-    "name": "Hafenstraße / Klein Venedig 1 / 3",
+    "lat": "47.6660119",
+    "lon": "9.1661337",
+    "name": "Gartenstraße Paradies",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -231,14 +228,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "67ac5cce-2973-4ecb-9107-13af581f19cf_0"
+    "type": "ON_STREET",
+    "uid": "3fb12b83-f447-4d85-9d42-592fcdbf4a50"
   },
   {
+    "address": "Parkplatz Hafenstraße, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6560721",
-    "lon": "9.1779080",
-    "name": "Hafenstraße / Klein Venedig 2 / 3",
+    "lat": "47.6560404",
+    "lon": "9.1779346",
+    "name": "Hafenstraße/Klein Venedig_1 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -249,14 +249,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "67ac5cce-2973-4ecb-9107-13af581f19cf_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1121fd0b-7672-4f7b-8fd2-ef3f0ebbc3b7"
   },
   {
+    "address": "Parkplatz Hafenstraße, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6560541",
-    "lon": "9.1778813",
-    "name": "Hafenstraße / Klein Venedig 3 / 3",
+    "lat": "47.6560586",
+    "lon": "9.1778998",
+    "name": "Hafenstraße/Klein Venedig_2 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -267,14 +270,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "67ac5cce-2973-4ecb-9107-13af581f19cf_2"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "af0bc2b9-36e3-4e46-aeb3-01ae24cfcbd3"
   },
   {
+    "address": "Parkplatz Hafenstraße, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6675042",
-    "lon": "9.1916661",
-    "name": "Hebelstraße 1 / 1",
+    "lat": "47.6560457",
+    "lon": "9.1776743",
+    "name": "Hafenstraße/Klein Venedig_3 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -285,14 +291,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "7dc23fff-d964-4803-a36d-b43ebaf63a34_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9e455a9e-2269-4849-9da8-6b7edeae6de4"
   },
   {
+    "address": "Hofhalde 15, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6649274",
-    "lon": "9.1742650",
-    "name": "Inselgasse / AOK 1 / 2",
+    "lat": "47.6625802",
+    "lon": "9.1753724",
+    "name": "Hofhalde_1 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -303,14 +312,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "85f33afc-2848-45a3-8230-48b1e5addceb_0"
+    "type": "ON_STREET",
+    "uid": "362a32cb-aecb-4e2e-aa17-5047ab922d23"
   },
   {
+    "address": "Hofhalde 15, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6649454",
-    "lon": "9.1742650",
-    "name": "Inselgasse / AOK 2 / 2",
+    "lat": "47.6625924",
+    "lon": "9.1753407",
+    "name": "Hofhalde_2 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -321,14 +333,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "85f33afc-2848-45a3-8230-48b1e5addceb_1"
+    "type": "ON_STREET",
+    "uid": "97815731-11b2-43f9-b1c4-bc8cca8fc08a"
   },
   {
+    "address": "Inselgasse 30, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6674157",
-    "lon": "9.1992146",
-    "name": "Johann-Sebastian-Bach-Straße 1 / 1",
+    "lat": "47.6649445",
+    "lon": "9.1742424",
+    "name": "Inselgasse/AOK_1 Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -339,14 +354,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "477aaed0-424f-49f7-ba29-d157ee815239_0"
+    "type": "ON_STREET",
+    "uid": "fc3b127a-b992-4204-ae18-c58f047b5add"
   },
   {
+    "address": "Inselgasse 30, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6611527",
-    "lon": "9.1713538",
-    "name": "Lutherplatz 1 / 1",
+    "lat": "47.6649292",
+    "lon": "9.1743227",
+    "name": "Inselgasse/AOK_2 Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -357,14 +375,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "ea1e071f-41a4-498a-bcf9-349f98c5af54_0"
+    "type": "ON_STREET",
+    "uid": "994655c8-6483-4537-83ef-b0f9f962460c"
   },
   {
+    "address": "Lutherplatz 3, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6727737",
-    "lon": "9.1716706",
-    "name": "Markgrafenstraße 1 / 1",
+    "lat": "47.6611384",
+    "lon": "9.1713589",
+    "name": "Lutherplatz Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -375,14 +396,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "38cc6d21-277d-43d6-af99-a2282465ced6_0"
+    "type": "ON_STREET",
+    "uid": "f0eddb11-7939-470d-a2bf-384895c92b06"
   },
   {
+    "address": "Münsterplatz 13, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6709665",
-    "lon": "9.1815038",
-    "name": "Moltkestraße 1 / 1",
+    "lat": "47.6637185",
+    "lon": "9.1767487",
+    "name": "Münsterplatz Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -393,14 +417,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "485c57a4-768d-44b2-9fe7-99f26b0e9ed1_0"
+    "type": "ON_STREET",
+    "uid": "cae0bc8d-3364-4fe9-9e83-466476b7027a"
   },
   {
+    "address": "Münzgasse 4/4a, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6609932",
-    "lon": "9.1759792",
-    "name": "Münzgasse 1 / 2",
+    "lat": "47.6609864",
+    "lon": "9.1759622",
+    "name": "Münzgasse_1 Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -411,14 +438,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "134a4c00-f19c-4a33-8ee0-e97a7078f477_0"
+    "type": "ON_STREET",
+    "uid": "89ba8a33-153d-4a76-bbd5-9435379cfbaf"
   },
   {
+    "address": "Münzgasse 4/4a, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6610112",
-    "lon": "9.1759792",
-    "name": "Münzgasse 2 / 2",
+    "lat": "47.6609931",
+    "lon": "9.1760430",
+    "name": "Münzgasse_2 Altstadt",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -429,14 +459,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "134a4c00-f19c-4a33-8ee0-e97a7078f477_1"
+    "type": "ON_STREET",
+    "uid": "006e9052-6b1e-4200-98b4-f98889601d60"
   },
   {
+    "address": "Obere Laube 44, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6602020",
-    "lon": "9.1712794",
-    "name": "Obere Laube 1 / 2",
+    "lat": "47.6599539",
+    "lon": "9.1710615",
+    "name": "Obere Laube_1 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -447,14 +480,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f3761742-02dc-47cf-b0a6-3bd6fa71466c_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7edfe3f4-6408-477d-aed0-44cadbc4a9b3"
   },
   {
+    "address": "Obere Laube 44, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6602200",
-    "lon": "9.1712794",
-    "name": "Obere Laube 2 / 2",
+    "lat": "47.6599832",
+    "lon": "9.1710911",
+    "name": "Obere Laube_2 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -465,14 +501,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f3761742-02dc-47cf-b0a6-3bd6fa71466c_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "35669fcc-7226-4e87-ac73-95135e8a7f7c"
   },
   {
+    "address": "Obere Laube 44, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6665488",
-    "lon": "9.2135337",
-    "name": "Eichhornstraße / Hörnle 1 / 4",
+    "lat": "47.6600167",
+    "lon": "9.1711189",
+    "name": "Obere Laube_3 Altstadt",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -483,14 +522,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "35754216-dbe0-4c25-8e02-d8da4f554ed2"
   },
   {
+    "address": "Rheingasse 18, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6665668",
-    "lon": "9.2135337",
-    "name": "Eichhornstraße / Hörnle 2 / 4",
+    "lat": "47.6653750",
+    "lon": "9.1766957",
+    "name": "Rheingasse Altstadt",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -501,14 +543,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_1"
+    "type": "ON_STREET",
+    "uid": "d54dc613-8a92-4d45-8ca8-2236b7d43982"
   },
   {
+    "address": "Rheingutstraße 39, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6665488",
-    "lon": "9.2135070",
-    "name": "Eichhornstraße / Hörnle 3 / 4",
+    "lat": "47.6674032",
+    "lon": "9.1651612",
+    "name": "Rheingutstraße_1 Paradies",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -519,14 +564,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_2"
+    "type": "ON_STREET",
+    "uid": "768d4ff2-8ee9-4992-a47b-64bec90a483b"
   },
   {
+    "address": "Rheingutstraße 39, 78462 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6665308",
-    "lon": "9.2135337",
-    "name": "Eichhornstraße / Hörnle 4 / 4",
+    "lat": "47.6673950",
+    "lon": "9.1652317",
+    "name": "Rheingutstraße_2 Paradies",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -537,14 +585,1011 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "3c11f23a-13f4-44d0-870b-54647f531fcb_3"
+    "type": "ON_STREET",
+    "uid": "79f68680-d774-4e00-ab2b-f4d006c72c47"
   },
   {
+    "address": "Sankt-Stephans-Platz 5, 78462 Konstanz",
+    "description": "Di. & Fr. 6-14 Uhr nicht nutzbar ",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.7187383",
+    "lat": "47.6615816",
+    "lon": "9.1734708",
+    "name": "Sankt-Stephans-Platz, Südseite_1 Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "8f63d896-80ba-4474-8e56-d7e3d8d7d068"
+  },
+  {
+    "address": "Sankt-Stephans-Platz 5, 78462 Konstanz",
+    "description": "Di. & Fr. 6-14 Uhr nicht nutzbar ",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6615699",
+    "lon": "9.1735171",
+    "name": "Sankt-Stephans-Platz, Südseite_2 Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "14779832-5837-483d-aeef-f26bc1a6b99b"
+  },
+  {
+    "address": "Sankt-Stephans-Platz 23, 78462 Konstanz",
+    "description": "Di. & Fr. 6-14 Uhr nicht nutzbar ",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6624009",
+    "lon": "9.1742133",
+    "name": "Sankt-Stephans-Platz, Kirche, Nordseite Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1d360031-f204-4b11-b776-784898c36e33"
+  },
+  {
+    "address": "Sankt-Stephans-Platz 41, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6627259",
+    "lon": "9.1743889",
+    "name": "Sankt-Stephans-Platz, Kirche, Südseite_1 Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "a48c3c03-62e0-43b8-a3b5-6a2b9ac79ad6"
+  },
+  {
+    "address": "Sankt-Stephans-Platz 41, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6627147",
+    "lon": "9.1744317",
+    "name": "Sankt-Stephans-Platz, Kirche, Südseite_2 Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "21935f47-f7a0-4791-8bf9-99d49010a3c4"
+  },
+  {
+    "address": "Scheffelstraße 17, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6572812",
+    "lon": "9.1717545",
+    "name": "Scheffelstraße Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "e72a53c4-0f25-4c1a-9de7-8fd24b935df9"
+  },
+  {
+    "address": "Tägermoosstraße 24, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6603308",
+    "lon": "9.1674007",
+    "name": "Tägermoosstraße Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "8507437f-133a-4312-84ea-17c1214d523f"
+  },
+  {
+    "address": "Talgartenstraße 6, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6605368",
+    "lon": "9.1701252",
+    "name": "Talgartenstraße Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "e8028189-f21a-4e6d-b1df-7514ad782bed"
+  },
+  {
+    "address": "Theatergasse 4, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6639939",
+    "lon": "9.1771425",
+    "name": "Theatergasse_1 Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "5db0e1d9-16a3-4b80-8aef-20c6330e3e64"
+  },
+  {
+    "address": "Theatergasse 4, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640037",
+    "lon": "9.1770673",
+    "name": "Theatergasse_2 Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "6cbe3755-2f37-4475-a68d-f9626a7f7e33"
+  },
+  {
+    "address": "Untere Laube 39, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6624384",
+    "lon": "9.1728568",
+    "name": "Untere Laube/Stephansschule Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "924d489b-ae59-423d-9fdb-e259cdb04e48"
+  },
+  {
+    "address": "Wallgutstraße 7, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6638382",
+    "lon": "9.1719953",
+    "name": "Wallgutstraße Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "99a3c2d0-e700-48d4-a7ae-72a3062ecb22"
+  },
+  {
+    "address": "Wallgutstraße 11, 78462 Konstanz",
+    "description": "momentan wegen Baustelle nicht nutzbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640463",
+    "lon": "9.1707567",
+    "name": "Wallgutstraße/Marienhaus_1 Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "a3ca162f-8fb5-49ef-aa82-91b0f57bf8a6"
+  },
+  {
+    "address": "Wallgutstraße 11, 78462 Konstanz",
+    "description": "momentan wegen Baustelle nicht nutzbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6640522",
+    "lon": "9.1707167",
+    "name": "Wallgutstraße/Marienhaus_2 Altstadt",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "fff9f106-dac0-44aa-b614-78dc70245085"
+  },
+  {
+    "address": "Webersteig 3, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6673206",
+    "lon": "9.1738243",
+    "name": "Webersteig Altstadt",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "3009c485-5132-4fbb-b209-fa5ecff2d174"
+  },
+  {
+    "address": "Zollernstraße 1, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6616518",
+    "lon": "9.1769486",
+    "name": "Zollernstraße_1 Altstadt",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "c37c85db-abdd-4e1b-85c6-470afa4157e3"
+  },
+  {
+    "address": "Zollernstraße 1, 78462 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6616402",
+    "lon": "9.1770160",
+    "name": "Zollernstraße_2 Altstadt",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "87d99bf6-a319-4bb4-a9e4-7efa50c7b929"
+  },
+  {
+    "address": "Zollernstraße 1, 78462 Konstanz",
+    "description": "momentan wegen Baustelle nicht nutzbar",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6616289",
+    "lon": "9.1770795",
+    "name": "Zollernstraße_3 Altstadt",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "febbb902-38bd-4921-afa2-c31719445706"
+  },
+  {
+    "address": "Alpenstraße 5, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6689328",
+    "lon": "9.1902001",
+    "name": "Alpenstraße Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "55e2394a-c2f9-4944-9226-1d2b860c28e6"
+  },
+  {
+    "address": "Alpsteinweg 10, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6646385",
+    "lon": "9.2055367",
+    "name": "Alpsteinweg Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "04166af4-65bb-4114-8c35-41490a98ab94"
+  },
+  {
+    "address": "Am Pfeiferhölzle 7, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6831180",
+    "lon": "9.1762773",
+    "name": "Am Pfeiferhölzle Königsbau",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "cf3a85a8-e447-4d89-a701-f6cc2cf8dc63"
+  },
+  {
+    "address": "Brachsengang 17, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6787081",
+    "lon": "9.2047752",
+    "name": "Brachsengang Staad",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "ff5f6d0c-aa42-4d7a-9adf-5df6c7de9aef"
+  },
+  {
+    "address": "Brugierstraße 2, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6718152",
+    "lon": "9.1843367",
+    "name": "Brugierstraße Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "2dd2adbe-6764-4c99-b671-418cb5e18ff3"
+  },
+  {
+    "address": "Hebelstraße 1b, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6674943",
+    "lon": "9.1916853",
+    "name": "Hebelstraße Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "bf484751-6353-43e3-ae0f-7a6ac4705dea"
+  },
+  {
+    "address": "Zur Therme 2, 78464 Konstanz",
+    "description": "Durchfahrt durch Poller beschränkt",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6641628",
+    "lon": "9.2083707",
+    "name": "Hermann-Hesse-Weg/Therme Petershausen-Ost",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "3695e728-ebe6-46ca-af26-b411386edeb8"
+  },
+  {
+    "address": "Johann-Sebastian-Bach-Straße 1, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6674004",
+    "lon": "9.1992329",
+    "name": "Johann-Sebastian-Bach-Straße Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "70f19e7c-ef35-4ce6-9620-b0f1f135f619"
+  },
+  {
+    "address": "Konrad-Witz-Straße 4, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6725534",
+    "lon": "9.1845297",
+    "name": "Konrad-Witz-Straße Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "74e52892-dc1b-406d-ba87-e57e78f68432"
+  },
+  {
+    "address": "Luisenstraße 9a, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6717845",
+    "lon": "9.1852999",
+    "name": "Luisenstraße/Herzzentrum Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "ad6f4752-73b8-4c4b-9a52-5b0bcb67d742"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669710",
+    "lon": "9.2135614",
+    "name": "Parkplatz Freibad Hörnle_1 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "11602986-5492-4cff-86d0-9ac118223295"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669691",
+    "lon": "9.2136088",
+    "name": "Parkplatz Freibad Hörnle_2 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "aedda074-0a0c-4a03-8815-5fc6e10adf5b"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669680",
+    "lon": "9.2136539",
+    "name": "Parkplatz Freibad Hörnle_3 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "652995e2-eb05-469f-bb4b-40c82e9b4f21"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669672",
+    "lon": "9.2137002",
+    "name": "Parkplatz Freibad Hörnle_4 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7dd1e048-ab79-4bfb-a4f1-bb069eb02c00"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669650",
+    "lon": "9.2137453",
+    "name": "Parkplatz Freibad Hörnle_5 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "7e2ecfbc-770d-4db2-b3ad-3821148cf493"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669642",
+    "lon": "9.2137921",
+    "name": "Parkplatz Freibad Hörnle_6 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9773c919-3c76-4d51-9c49-07d569781e02"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669623",
+    "lon": "9.2138389",
+    "name": "Parkplatz Freibad Hörnle_7 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "b74322de-ba70-40c3-bee4-71c5596e96cb"
+  },
+  {
+    "address": "Eichhornstraße 100, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6669616",
+    "lon": "9.2138858",
+    "name": "Parkplatz Freibad Hörnle_8 Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "946ce30f-e937-401b-9ae0-95c8d129c96d"
+  },
+  {
+    "address": "Ralf-Dahrendorf-Straße 22, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6807641",
+    "lon": "9.1869347",
+    "name": "Ralf-Dahrendorf-Straße Königsbau",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "c6078486-005e-48e5-bcc4-2d0f74cd1ca3"
+  },
+  {
+    "address": "Parkplatz Flst. Nr. 4669, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6801902",
+    "lon": "9.1859385",
+    "name": "Sonnenbühlstraße Königsbau",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "074e679c-62b5-4810-9216-545be88ff042"
+  },
+  {
+    "address": "Staader Straße 2, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6807690",
+    "lon": "9.2022544",
+    "name": "Staader Straße Staad",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "dd12ea7f-3d33-4001-b9f5-9f8449fd3613"
+  },
+  {
+    "address": "Theodor-Heuss-Straße 25, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6700775",
+    "lon": "9.1820133",
+    "name": "Theodor-Heuss-Straße_1 Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "12d52d4f-233c-4ed5-a8d7-fc2a47af793a"
+  },
+  {
+    "address": "Theodor-Heuss-Straße 1, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6688306",
+    "lon": "9.1809362",
+    "name": "Theodor-Heuss-Straße_2 Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "c629ad6f-726f-4552-a2eb-6531dea018c0"
+  },
+  {
+    "address": "Überlingerstraße 15, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6775831",
+    "lon": "9.2085072",
+    "name": "Überlingerstraße Staad",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "dcf7b256-eeac-466c-9959-3763c800dc02"
+  },
+  {
+    "address": "William-Graf-Platz 4, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6813678",
+    "lon": "9.2113656",
+    "name": "William-Graf-Platz Staad",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "0498e4d4-63af-4ec5-acd7-312347cc2dc4"
+  },
+  {
+    "address": "Zähringerplatz 4, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6714657",
+    "lon": "9.1832266",
+    "name": "Zähringerplatz Petershausen-Ost",
+    "orientation": "DIAGONAL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "d3dd93f1-815e-4bc3-b822-0477e192b367"
+  },
+  {
+    "address": "Zur Allmannshöhe 14, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6875112",
+    "lon": "9.2021125",
+    "name": "Zur Allmannshöhe Allmannsdorf",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "eecaf806-bc2e-4768-acd5-ece201e52839"
+  },
+  {
+    "address": "Zumsteinstraße 2, 78464 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.6672783",
+    "lon": "9.1804566",
+    "name": "Zumsteinstraße Petershausen-Ost",
+    "orientation": "PARALLEL",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "b07d4892-fb0a-4dfc-9cbe-91344416d964"
+  },
+  {
+    "address": "Parkplatz Friedhof Dingelsdorf, 78465 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7376579",
+    "lon": "9.1593269",
+    "name": "Friedhof Dingelsdorf Dingelsdorf",
+    "orientation": "PERPENDICULAR",
+    "purpose": "CAR",
+    "restrictions": [
+      {
+        "hours": null,
+        "max_stay": null,
+        "type": "DISABLED"
+      }
+    ],
+    "static_data_updated_at": "<now>",
+    "tags": [],
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "73e7f460-15a3-4af2-a5bc-6d710a4c3c5a"
+  },
+  {
+    "address": "Milanweg 6, 78465 Konstanz",
+    "external_identifiers": [],
+    "has_realtime_data": false,
+    "lat": "47.7187095",
     "lon": "9.1779081",
-    "name": "Milanweg / Strandbad Litzelstetten 1 / 1",
+    "name": "Milanweg/Strandbad Litzelstetten_1 Litzelstetten",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -555,14 +1600,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "7aa1c50f-1f59-4159-8259-7b45fcab2168_0"
+    "type": "ON_STREET",
+    "uid": "e8afc1bd-452a-48e6-8ece-e99758fdec30"
   },
   {
+    "address": "Milanweg 6, 78465 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6641246",
-    "lon": "9.2083945",
-    "name": "Hermann-Hesse-Weg / Therme 1 / 1",
+    "lat": "47.7187499",
+    "lon": "9.1778846",
+    "name": "Milanweg/Strandbad Litzelstetten_2 Litzelstetten",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -573,14 +1621,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "444d26c9-e68a-48b8-8812-2c85376807fd_0"
+    "type": "ON_STREET",
+    "uid": "5792d30a-8423-402b-9f8a-a7fd24a655a0"
   },
   {
+    "address": "Uferstraße 41, 78465 Konstanz",
+    "description": "unbefestigt",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6798184",
-    "lon": "9.1736036",
-    "name": "Riesenbergweg / Friedhof 1 / 2",
+    "lat": "47.7459527",
+    "lon": "9.1382331",
+    "name": "Uferstraße/Strandbad Wallhausen_1 Wallhausen",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -591,14 +1643,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "04eb5458-8e00-4204-9288-be2eb0fd4481_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "712f19c1-7ae9-457d-9043-849e6a221b01"
   },
   {
+    "address": "Uferstraße 41, 78465 Konstanz",
+    "description": "unbefestigt",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6798364",
-    "lon": "9.1736036",
-    "name": "Riesenbergweg / Friedhof 2 / 2",
+    "lat": "47.7459403",
+    "lon": "9.1382671",
+    "name": "Uferstraße/Strandbad Wallhausen_2 Wallhausen",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -609,14 +1665,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "04eb5458-8e00-4204-9288-be2eb0fd4481_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "6f5cb18b-0935-461b-b198-61f0b010a521"
   },
   {
+    "address": "Uferstraße 41, 78465 Konstanz",
+    "description": "unbefestigt",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6898699",
-    "lon": "9.1600828",
-    "name": "Schwaketenbad 1 / 2",
+    "lat": "47.7459295",
+    "lon": "9.1382988",
+    "name": "Uferstraße/Strandbad Wallhausen_3 Wallhausen",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -627,14 +1687,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "1909d84e-a769-473b-bcfa-287e1b6be1b1_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "ead68654-c9e9-45bf-a9ad-65b5ca93b06c"
   },
   {
+    "address": "Uferstraße 41, 78465 Konstanz",
+    "description": "unbefestigt",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6898879",
-    "lon": "9.1600828",
-    "name": "Schwaketenbad 2 / 2",
+    "lat": "47.7459167",
+    "lon": "9.1383367",
+    "name": "Uferstraße/Strandbad Wallhausen_4 Wallhausen",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -645,14 +1709,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "1909d84e-a769-473b-bcfa-287e1b6be1b1_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "9c694169-0aeb-4055-adb5-05261c761a1c"
   },
   {
+    "address": "Volapükweg 5, 78465 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.7459263",
-    "lon": "9.1380601",
-    "name": "Uferstraße / Strandbad Wallhausen 1 / 1",
+    "lat": "47.7103740",
+    "lon": "9.1710507",
+    "name": "Volapükweg Litzelstetten",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -663,14 +1730,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "37d747de-b546-4ce7-b74c-278622507df7_0"
+    "type": "ON_STREET",
+    "uid": "72a5555a-a725-4f91-8161-39dc97b5e028"
   },
   {
+    "address": "Im Loh, 78465 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.7080035",
-    "lon": "9.1705386",
-    "name": "Waldfriedhof 1 / 1",
+    "lat": "47.7081507",
+    "lon": "9.1706618",
+    "name": "Waldfriedhof Litzelstetten Litzelstetten",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -681,14 +1751,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "7a1acce6-e376-4938-9cff-c8fc9f68429e_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "debea07f-eb02-4532-91f3-59c2121ec2fc"
   },
   {
+    "address": "Alemannenstraße 5, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6653775",
-    "lon": "9.1766787",
-    "name": "Rheingasse 1 / 1",
+    "lat": "47.6716879",
+    "lon": "9.1725717",
+    "name": "Alemannenstraße Petershausen-West",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -699,14 +1772,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "75f64e0f-3cab-4400-acd0-5f62e3000ef1_0"
+    "type": "ON_STREET",
+    "uid": "ea803411-ace7-4462-ae46-48bbee89c918"
   },
   {
+    "address": "Am Seerhein 8, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6673998",
-    "lon": "9.1652077",
-    "name": "Rheingutstraße 1 / 2",
+    "lat": "47.6717834",
+    "lon": "9.1584913",
+    "name": "Am Seerhein Petershausen-West",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -717,14 +1793,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f55e32db-da2d-47f6-90cd-e48f5a18dee5_0"
+    "type": "ON_STREET",
+    "uid": "043b93f1-44ed-4d99-ad41-0131d6c3a78c"
   },
   {
+    "address": "Benediktinerplatz 2, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6674178",
-    "lon": "9.1652077",
-    "name": "Rheingutstraße 2 / 2",
+    "lat": "47.6688307",
+    "lon": "9.1785843",
+    "name": "Benediktinerplatz Petershausen-West",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -735,14 +1814,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f55e32db-da2d-47f6-90cd-e48f5a18dee5_1"
+    "type": "ON_STREET",
+    "uid": "b1978636-6d21-48ff-96ec-676f97a74f3d"
   },
   {
+    "address": "Bismarksteig 6/8, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6820057",
-    "lon": "9.1478343",
-    "name": "Riedstraße / Haltepunkt Wollmatingen 1 / 1",
+    "lat": "47.6754585",
+    "lon": "9.1775081",
+    "name": "Bismarksteig Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -753,14 +1835,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "dd42f893-57a4-4f9a-bc0c-5d9282233509_0"
+    "type": "ON_STREET",
+    "uid": "ae470d18-8520-45e6-bb6a-c2ca11315199"
   },
   {
+    "address": "Bruder-Klaus-Straße 6, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6572928",
-    "lon": "9.1717497",
-    "name": "Scheffelstraße 1 / 1",
+    "lat": "47.6728525",
+    "lon": "9.1746412",
+    "name": "Bruder-Klaus-Straße Petershausen-West",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -771,14 +1856,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "5ed3be32-8f10-45dc-a1a3-0e3a97f6bdc2_0"
+    "type": "ON_STREET",
+    "uid": "c5c7e5ea-f26a-4e90-9087-d2aca60d5a68"
   },
   {
+    "address": "Goethestraße 31, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6883562",
-    "lon": "9.1573301",
-    "name": "Schwaketenstraße / Halle Wollmatingen 1 / 2",
+    "lat": "47.6774497",
+    "lon": "9.1777370",
+    "name": "Goethestraße Petershausen-West",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -789,14 +1877,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "7f4e3d2c-70e1-4682-b1f3-e24b2a60ce71_0"
+    "type": "ON_STREET",
+    "uid": "2b9c159a-7407-4c84-aa0f-373ad0e076fc"
   },
   {
+    "address": "Gustav-Schwab-Straße 7, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6883742",
-    "lon": "9.1573301",
-    "name": "Schwaketenstraße / Halle Wollmatingen 2 / 2",
+    "lat": "47.6747162",
+    "lon": "9.1728973",
+    "name": "Gustav-Schwab-Straße Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -807,14 +1898,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "7f4e3d2c-70e1-4682-b1f3-e24b2a60ce71_1"
+    "type": "ON_STREET",
+    "uid": "95b9074b-1cac-4b49-96af-273e83ebbf62"
   },
   {
+    "address": "Helene und Maria-Schieß-Straße 19, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6802017",
-    "lon": "9.1859313",
-    "name": "Sonnenbühlstraße 1 / 1",
+    "lat": "47.6896429",
+    "lon": "9.1316211",
+    "name": "Helene und Maria-Schieß-Straße Wollmatingen",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -825,14 +1919,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "1ccafd09-7565-48ad-a312-66d052ce3956_0"
+    "type": "ON_STREET",
+    "uid": "56abd6c6-5f83-46b7-8219-89ce4918d249"
   },
   {
+    "address": "Max-Josef-Metzger-Weg 11, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6689807",
-    "lon": "9.1759400",
-    "name": "Spanierstraße / Rheinstrandbad 1 / 2",
+    "lat": "47.6796796",
+    "lon": "9.1602648",
+    "name": "Max-Josef-Metzger-Weg_1 Fürstenberg",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -843,14 +1940,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "e78a49e8-00d9-4cf6-a5e5-11faf6fe96c2_0"
+    "type": "ON_STREET",
+    "uid": "c98a02e6-0ebc-4030-a2d2-db55afe8bef9"
   },
   {
+    "address": "Max-Josef-Metzger-Weg 11, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6689987",
-    "lon": "9.1759400",
-    "name": "Spanierstraße / Rheinstrandbad 2 / 2",
+    "lat": "47.6797060",
+    "lon": "9.1602859",
+    "name": "Max-Josef-Metzger-Weg_2 Fürestenberg",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -861,14 +1961,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "e78a49e8-00d9-4cf6-a5e5-11faf6fe96c2_1"
+    "type": "ON_STREET",
+    "uid": "7352100f-b912-4fb4-935e-cec48b9d9f43"
   },
   {
+    "address": "Moltkestraße 2/4, 78467 Konstanz",
+    "description": "provisorischer Platz durch Baustelle",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6709800",
-    "lon": "9.1834796",
-    "name": "St.-Gebhard-Platz 1 / 1",
+    "lat": "47.6714932",
+    "lon": "9.1801569",
+    "name": "Moltkestraße_1 Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -879,14 +1983,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "04ae7d36-d155-4338-a52f-017f16da36fc_0"
+    "type": "ON_STREET",
+    "uid": "d6a15955-e16c-4c91-93e6-b9b0ecd7b17b"
   },
   {
+    "address": "Moltkestraße 2/4, 78467 Konstanz",
+    "description": "provisorischer Platz durch Baustelle",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6615775",
-    "lon": "9.1735158",
-    "name": "St.-Stephans-Platz, Südseite 1 / 1",
+    "lat": "47.6714813",
+    "lon": "9.1801986",
+    "name": "Moltkestraße_2 Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -897,14 +2005,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "37e0bef3-78da-4526-a12f-038c07697f51_0"
+    "type": "ON_STREET",
+    "uid": "1e8d019b-00b6-4539-900d-e77df068cd6e"
   },
   {
+    "address": "Riesenbergweg 12, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6627189",
-    "lon": "9.1744038",
-    "name": "St.-Stephansplatz, Kirche Nordseite 1 / 2",
+    "lat": "47.6800487",
+    "lon": "9.1733761",
+    "name": "Riesenbergweg_1 Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -915,14 +2026,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "9e7f2d4b-b008-42a8-9d0f-72c25858ccf5_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "ca451afa-622e-452b-be9f-754b6d21d5da"
   },
   {
+    "address": "Riesenbergweg 12, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6627369",
-    "lon": "9.1744038",
-    "name": "St.-Stephansplatz, Kirche Nordseite 2 / 2",
+    "lat": "47.6800297",
+    "lon": "9.1734201",
+    "name": "Riesenbergweg_2 Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -933,14 +2047,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "9e7f2d4b-b008-42a8-9d0f-72c25858ccf5_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "d774e5f7-4134-4923-b4fd-e46be4c3b34d"
   },
   {
+    "address": "Riesenbergweg 1a, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6624159",
-    "lon": "9.1741509",
-    "name": "St.-Stephans-Platz, Kirche Südseite 1 / 2",
+    "lat": "47.6786566",
+    "lon": "9.1726186",
+    "name": "Riesenbergweg_3 Petershausen-West",
+    "orientation": "PARALLEL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -951,14 +2068,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "0386790b-b8e3-4dc5-81a1-8498f1df64ec_0"
+    "type": "ON_STREET",
+    "uid": "2f2f0c20-a612-4fc0-be85-9975af5d5f13"
   },
   {
+    "address": "Sankt-Gebhard-Platz 28, 78467 Konstanz",
+    "description": "Mi. & Sa. 6-14 Uhr nicht nutzbar ",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6624339",
-    "lon": "9.1741509",
-    "name": "St.-Stephans-Platz, Kirche Südseite 2 / 2",
+    "lat": "47.6709816",
+    "lon": "9.1834777",
+    "name": "Sankt-Gebhard-Platz Petershausen-West",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -969,14 +2090,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "0386790b-b8e3-4dc5-81a1-8498f1df64ec_1"
+    "type": "ON_STREET",
+    "uid": "e6bb8487-465b-4eb9-a85a-ba6907e36575"
   },
   {
+    "address": "Sankt-Gebhard-Straße 16, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6715049",
-    "lon": "9.1760976",
-    "name": "St.-Gebhard-Straße 1 / 1",
+    "lat": "47.6714839",
+    "lon": "9.1761282",
+    "name": "Sankt-Gebhard-Straße Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -987,14 +2111,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "3ad6741d-4126-4744-bdf1-7e72ef5ccb9b_0"
+    "type": "ON_STREET",
+    "uid": "ff3190b6-b0a1-4b02-be4b-c04725a62ce5"
   },
   {
+    "address": "Schwaketenstraße 35, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6818102",
-    "lon": "9.2101977",
-    "name": "Schiffstraße, Fähreparkplatz 1 / 3",
+    "lat": "47.6890045",
+    "lon": "9.1592113",
+    "name": "Schwaketenbad_1 Fürestenberg",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -1005,14 +2132,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f9b854a0-7517-4be9-a798-d8a77b39ec2f_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "31658782-d41c-48f4-8a6c-b22eef30f7a5"
   },
   {
+    "address": "Schwaketenstraße 35, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6818282",
-    "lon": "9.2101977",
-    "name": "Schiffstraße, Fähreparkplatz 2 / 3",
+    "lat": "47.6889987",
+    "lon": "9.1592561",
+    "name": "Schwaketenbad_2 Fürestenberg",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -1023,14 +2153,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f9b854a0-7517-4be9-a798-d8a77b39ec2f_1"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "b9a8d021-34e8-4ee4-90fb-ccca3fafe4ed"
   },
   {
+    "address": "Schwaketenstraße 31, 78467 Konstanz",
+    "description": "unbefestigt/Breite variiert wegen Bewuchs",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6818102",
-    "lon": "9.2101710",
-    "name": "Schiffstraße, Fähreparkplatz 3 / 3",
+    "lat": "47.6884007",
+    "lon": "9.1571632",
+    "name": "Schwaketenstraße/Halle Wollmatingen_1 Fürestenberg",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -1041,14 +2175,18 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "f9b854a0-7517-4be9-a798-d8a77b39ec2f_2"
+    "type": "ON_STREET",
+    "uid": "651e534d-078e-4f57-9cb3-86da70fb759c"
   },
   {
+    "address": "Schwaketenstraße 31, 78467 Konstanz",
+    "description": "unbefestigt/Breite variiert wegen Bewuchs",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6807879",
-    "lon": "9.2022480",
-    "name": "Staader Straße 1 / 1",
+    "lat": "47.6883207",
+    "lon": "9.1575143",
+    "name": "Schwaketenstraße/Halle Wollmatingen_2 Fürestenberg",
+    "orientation": "DIAGONAL",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -1059,14 +2197,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "9714ecbd-77ba-4ccb-9353-8cde516f806c_0"
+    "type": "ON_STREET",
+    "uid": "61634da7-7591-4df3-be64-efcde1684542"
   },
   {
+    "address": "Spanierstraße 7, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6603458",
-    "lon": "9.1674053",
-    "name": "Tägermoosstraße 1 / 1",
+    "lat": "47.6689565",
+    "lon": "9.1759438",
+    "name": "Spanierstraße/Rheinstrandbad_1 Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -1077,14 +2218,17 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "6f1254a2-43d8-4ed5-aa9e-fc703f05c249_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "90814e9f-287e-4125-8195-00fdc1a32f8d"
   },
   {
+    "address": "Spanierstraße 7, 78467 Konstanz",
     "external_identifiers": [],
     "has_realtime_data": false,
-    "lat": "47.6605461",
-    "lon": "9.1701156",
-    "name": "Talgartenstraße 1 / 1",
+    "lat": "47.6689705",
+    "lon": "9.1759132",
+    "name": "Spanierstraße/Rheinstrandbad_2 Petershausen-West",
+    "orientation": "PERPENDICULAR",
     "purpose": "CAR",
     "restrictions": [
       {
@@ -1095,654 +2239,7 @@
     ],
     "static_data_updated_at": "<now>",
     "tags": [],
-    "uid": "21e53d27-a9a8-4ac2-b1ee-e7df6424f228_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6640071",
-    "lon": "9.1770510",
-    "name": "Theatergasse / Stadttheater 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "1ac13d01-8862-41fe-9434-3259b086ad17_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6640251",
-    "lon": "9.1770510",
-    "name": "Theatergasse / Stadttheater 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "1ac13d01-8862-41fe-9434-3259b086ad17_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6688551",
-    "lon": "9.1809075",
-    "name": "Theodor-Heuss-Straße 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "07220ac8-b881-4c67-b120-74fc34ccee93_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6895974",
-    "lon": "9.1861103",
-    "name": "Universitätsstraße / Uni-Hauptzufahrt 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "6b7141b8-c9bc-42a4-88c1-41aff74027c1_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6896154",
-    "lon": "9.1861103",
-    "name": "Universitätsstraße / Uni-Hauptzufahrt 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "6b7141b8-c9bc-42a4-88c1-41aff74027c1_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6624275",
-    "lon": "9.1728714",
-    "name": "Untere Laube / Comeniusschule 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "3436ace7-2ded-4b3e-a5b7-c61e592a3afe_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6638507",
-    "lon": "9.1719884",
-    "name": "Wallgutstraße 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "bf7cf31b-588f-4965-b825-48c6f7db62d4_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6640578",
-    "lon": "9.1707297",
-    "name": "Wallgutstraße / Marienhaus 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "669b6b1e-4219-4c6a-8357-1df8ec5e15c1_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6640758",
-    "lon": "9.1707297",
-    "name": "Wallgutstraße / Marienhaus 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "669b6b1e-4219-4c6a-8357-1df8ec5e15c1_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6673304",
-    "lon": "9.1738226",
-    "name": "Webersteig 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "82965b0f-4adf-46e0-9e00-65c8d21b9c63_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6714855",
-    "lon": "9.1832088",
-    "name": "Zähringerplatz 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "52365a13-b629-4fec-b50f-85a133f870a7_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6616601",
-    "lon": "9.1769854",
-    "name": "Zollernstraße 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "d625169e-da71-48c1-b56d-9fb0396f3370_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6875144",
-    "lon": "9.2021143",
-    "name": "Zur Allmannshöhe 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "866cbb58-3bde-4326-9964-734f0744fc71_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6686673",
-    "lon": "9.1891930",
-    "name": "Neuhauser Straße 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "3161d8b5-fec0-4fba-a5d3-f148c05be55a_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6726328",
-    "lon": "9.1872886",
-    "name": "Luisenstraße / Klinikum Haupteingang 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "6a907156-76ca-45ef-b74e-840361ac1052_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6726508",
-    "lon": "9.1872886",
-    "name": "Luisenstraße / Klinikum Haupteingang 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "6a907156-76ca-45ef-b74e-840361ac1052_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6729070",
-    "lon": "9.1869549",
-    "name": "Luisenstraße / Klinikum 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "89c4ea6c-0860-4a24-99d1-debf01e83918_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6729250",
-    "lon": "9.1869549",
-    "name": "Luisenstraße / Klinikum 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "89c4ea6c-0860-4a24-99d1-debf01e83918_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6732797",
-    "lon": "9.1896393",
-    "name": "Luisenstraße / Klinikum 7b 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "fc82ceff-8f2e-4834-b38f-0131808f1b79_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6732977",
-    "lon": "9.1896393",
-    "name": "Luisenstraße / Klinikum 7b 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "fc82ceff-8f2e-4834-b38f-0131808f1b79_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.7059362",
-    "lon": "9.1968786",
-    "name": "Insel Mainau 1 / 4",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.7059542",
-    "lon": "9.1968786",
-    "name": "Insel Mainau 2 / 4",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.7059362",
-    "lon": "9.1968519",
-    "name": "Insel Mainau 3 / 4",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_2"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.7059182",
-    "lon": "9.1968786",
-    "name": "Insel Mainau 4 / 4",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "92f5a44b-42f4-4e3d-89a4-ab2565737665_3"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6811126",
-    "lon": "9.1459783",
-    "name": "Byk-Gulden-Str. / Finanzamt 1 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "a7ca62d0-05b9-4d2f-bb23-b509ac8f6a59_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6811306",
-    "lon": "9.1459783",
-    "name": "Byk-Gulden-Str. / Finanzamt 2 / 2",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "a7ca62d0-05b9-4d2f-bb23-b509ac8f6a59_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6670229",
-    "lon": "9.2106944",
-    "name": "Eichhornstraße 1 / 3",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "347e6477-054b-404a-b565-73e28deaf86c_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6670409",
-    "lon": "9.2106944",
-    "name": "Eichhornstraße 2 / 3",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "347e6477-054b-404a-b565-73e28deaf86c_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6670229",
-    "lon": "9.2106677",
-    "name": "Eichhornstraße 3 / 3",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "347e6477-054b-404a-b565-73e28deaf86c_2"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6720606",
-    "lon": "9.1648391",
-    "name": "P&R am Seerhein 1 / 5",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6720786",
-    "lon": "9.1648391",
-    "name": "P&R am Seerhein 2 / 5",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_1"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6720606",
-    "lon": "9.1648124",
-    "name": "P&R am Seerhein 3 / 5",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_2"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6720426",
-    "lon": "9.1648391",
-    "name": "P&R am Seerhein 4 / 5",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_3"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6720606",
-    "lon": "9.1648658",
-    "name": "P&R am Seerhein 5 / 5",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "436e97ee-2f0a-4301-af15-d05cc1920af3_4"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6728657",
-    "lon": "9.1746342",
-    "name": "Bruder-Klaus-Straße Höhe Bahnhof Petershausen 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "46d5285f-eff0-46da-b980-317c22dbc671_0"
-  },
-  {
-    "external_identifiers": [],
-    "has_realtime_data": false,
-    "lat": "47.6718523",
-    "lon": "9.1843111",
-    "name": "Brugierstraße 1 / 1",
-    "purpose": "CAR",
-    "restrictions": [
-      {
-        "hours": null,
-        "max_stay": null,
-        "type": "DISABLED"
-      }
-    ],
-    "static_data_updated_at": "<now>",
-    "tags": [],
-    "uid": "b71b5bfd-80e4-4f76-9850-4543e3ffe722_0"
+    "type": "OFF_STREET_PARKING_GROUND",
+    "uid": "1f705428-f5bf-450b-b37f-6c575fc9280a"
   }
 ]
