@@ -15,7 +15,7 @@ Static values:
 * `has_realtime_data` is always `False` (the API does not offer realtime data yet)
 * `purpose` is set to `CAR`, if bike or motorcycle parkingspots are available, a separate ParkingSite is created for each of them
 
-## Properties
+## ParkingSites
 
 | Field                                           | Type                                      | Cardinality | Mapping                | Comment                                                       |
 |-------------------------------------------------|-------------------------------------------|-------------|------------------------|---------------------------------------------------------------|
@@ -109,3 +109,80 @@ with the following exceptions:
 | name         | `{Strasse} (Motorrad)`, to distinguish both sites at the same coordinates                   |
 | type         | Always `MOTOCYCLE`                                                                          |
 | capacity     | `parkingSpots["motorcycle"]["value"]`                                                       |
+
+## Tariffs
+
+Fields are described as properties of the returned tariff objects in the data list.
+
+* `currency` is always set to `EUR`
+* `tax_rate` is always set to `0.19`
+* `updated_at` is set to the import date time
+
+| Field          | Type                           | Cardinality | Mapping | Comment |
+|----------------|--------------------------------|-------------|---------|---------|
+| publicID.value | str                            | 1           | uid     |         |
+| zones          | [TariffOptions](#tariffoption) | +           | options |         |
+
+## TariffOption
+
+| Field    | Type                                 | Cardinality | Mapping    | Comment |
+|----------|--------------------------------------|-------------|------------|---------|
+| products | [TariffComponents](#tariffcomponent) | +           | components |         |
+
+## TariffComponent
+
+| Field | Type | Cardinality | Mapping | Comment |
+|-------|------|-------------|---------|---------|
+
+The supplied `tariffs.json` is a paginated response. Each `data` entry identifies a
+parking site and contains a `tariffs` snapshot. The diagram shows the observed JSON
+structure, including both product layouts present in the supplied response (250
+records returned; 548 reported in total).
+
+```mermaid
+flowchart TD
+    Record --> Id["id<br/>{required, public, value}"]
+    Record --> PublicId["publicID<br/>{required, public, value}"]
+    Record --> Snapshot["tariffs: TariffSnapshot"]
+
+    Snapshot --> SnapshotFields["fetchedAt<br/>publicId?"]
+    Snapshot --> Zones["zones[]"]
+    Snapshot --> FlatProducts["products[]<br/>(flat layout, optional)"]
+    Snapshot --> SpecialNotes["special_notes[]<br/>(optional)"]
+
+    Zones --> Zone["TariffZone<br/>zone_nr, zone_name"]
+    Zone --> ZoneProducts["products[]"]
+    ZoneProducts --> ZoneProduct["ZoneProduct<br/>product_uuid, version,<br/>category, active_from,<br/>display_order, created_at, edited_at"]
+    ZoneProduct --> ZonePreview["ProductPreview"]
+    ZonePreview --> PreviewFields["product_name, parking_type"]
+    ZonePreview --> LegalNotes["legal_notes[]"]
+    ZonePreview --> TimeframeGroups["timeframe_groups[]"]
+    TimeframeGroups --> TimeframeGroup["TimeframeGroup<br/>legal_note_marker"]
+    TimeframeGroup --> Timeframes["timeframes[]"]
+    Timeframes --> Timeframe["Timeframe<br/>display_value, days[],<br/>time_from, time_to, months[]"]
+    TimeframeGroup --> PricingGroups["pricing_groups[]"]
+
+    FlatProducts --> FlatProduct["FlatProduct<br/>tariff_id, category"]
+    FlatProduct --> FlatPreview["ProductPreview"]
+    FlatPreview --> FlatFields["product_name"]
+    FlatPreview --> FlatPricingGroups["pricing_groups[]<br/>(directly under preview)"]
+
+    PricingGroups --> PricingGroup["PricingGroup"]
+    FlatPricingGroups --> PricingGroup
+    PricingGroup --> Prices["prices[]"]
+    PricingGroup --> PriceCaps["price_caps[]"]
+    PricingGroup --> ModifierGroups["modifier_groups[]"]
+    Prices --> Price["Price"]
+    PriceCaps --> PriceCap["PriceCap"]
+    Price --> PriceFields["label, gross_value,<br/>currency, vat_rate?,<br/>conditions[], validation?"]
+    PriceCap --> PriceFields
+```
+
+In the supplied page, every record has `id`, `publicID`, and `tariffs`; `tariffs.zones`
+is present but can be empty. Some snapshots also use a top-level `products` array
+rather than placing products under zones; those previews have `pricing_groups`
+directly and an empty `timeframe_groups`.
+Zone products use `timeframe_groups`, which contain both `timeframes` and
+`pricing_groups`. Optional fields and array sizes in the diagram describe the supplied
+response, not guaranteed API-wide constraints. Amounts such as `gross_value` are
+integers and `currency` is a string (observed as `EUR`).
