@@ -44,6 +44,7 @@ class EsslingenOrientation(Enum):
     UNDEFINED = 'undefiniert'
     UNKNOWN = 'unbekannt'
     DIVERSE = 'unterschiedlich'
+    MISC = 'Parken auf Gehwegen - ganz quer in Fahrtrichtung rechts'
 
     def to_parking_side_orientation(self) -> ParkingOrientation | None:
         return {
@@ -73,7 +74,7 @@ class EsslingenParkingSiteInput:
             'Anzahl der Stellplätze': 'capacity',
             'Beschränkung sonstiges': 'other_restrictions',
             'Frei für Parkausweis mit Nr.': 'free_for_parking_parking_number',
-            'Parkerlaubnis zeitlich': 'restriction_time',
+            'Parkerlaubnis zeitlich': 'allow_time',
             'Parkplatz Typ': 'parking_type',
             'Parkscheibe erforderlich': 'parking_disc_required',
             'Parkschein erforderlich': 'parking_ticket_required',
@@ -139,6 +140,18 @@ class EsslingenParkingSiteFeatureInput:
 
         match self.properties.parking_type:
             case 'Bewohner-Parkplatz':
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
+                )
+            case 'Bewohner-Parkplatz sowie mit Parkschein auch für die Öffentlichkeit':
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
+                )
+            case 'Bewohner-Parkplatz sowie mit sonstigen Beschränkungen auch für die Öffentlichkeit':
+                static_parking_site_input.restrictions.append(
+                    ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
+                )
+            case 'Bewohner-Parkplatz mit Beschränkungen':
                 static_parking_site_input.restrictions.append(
                     ParkingSiteRestrictionInput(type=ParkingAudience.RESIDENT),
                 )

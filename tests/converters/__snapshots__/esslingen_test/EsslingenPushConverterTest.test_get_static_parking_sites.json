@@ -1225,7 +1225,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -1261,7 +1261,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -1270,7 +1279,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -1306,7 +1315,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -1315,7 +1333,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -1355,7 +1373,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -1364,7 +1391,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -1400,7 +1427,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -1409,7 +1445,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -1445,7 +1481,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -3301,6 +3346,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -4324,7 +4370,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -4360,7 +4406,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -4465,6 +4520,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Behinderte Mo-Fr 8-18:30 Uhr und Sa 8-13 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -5719,7 +5775,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr C Mo-Fr 18-8 Uhr sowie Sa und So",
+    "fee_description": "Parkerlaubnis: Mo-Fr 8-18 Uhr 1 Std (für alle), Frei für Parkausweis-Nr C Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -5936,7 +5992,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr C",
+    "fee_description": "Parkerlaubnis: Mo-Fr 8-18 Uhr 2 Std (für die Öffentlichkeit), Frei für Parkausweis-Nr C",
     "geojson": {
       "coordinates": [
         [
@@ -5976,7 +6032,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -6812,7 +6877,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -6881,7 +6955,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -6942,7 +7025,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -6995,7 +7087,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -7064,7 +7165,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -7133,7 +7243,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -7186,7 +7305,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -7255,7 +7383,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -7379,7 +7516,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A Mo-Sa 19-8 Uhr und So",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A Mo-Sa 19-8 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -7478,7 +7615,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A Mo-Sa 19-8 Uhr und So",
+    "fee_description": "Parkerlaubnis: Behinderte Mo-Sa 8-19 Uhr, Frei für Parkausweis-Nr A Mo-Sa 19-8 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -7609,7 +7746,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A Mo-Sa 19-8 Uhr und So",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A Mo-Sa 19-8 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -8391,7 +8528,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -8436,7 +8582,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -11099,7 +11254,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Fr 7-18 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -11135,7 +11290,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-23T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -11144,7 +11308,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Fr 7-18 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -11180,7 +11344,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-23T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -11189,7 +11362,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Fr 7-18 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -11225,7 +11398,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-23T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -11594,7 +11776,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-02T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -11943,7 +12134,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone Mo-Fr 7:30-18 Uhr",
+    "fee_description": "Ladezone Mo-Fr 7:30-18 Uhr, Parkerlaubnis: Mo-Fr 18-7:30 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -12428,6 +12619,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-6 Uhr und Sa 13-6 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -12472,6 +12664,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-6 Uhr und Sa 13-6 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -14232,7 +14425,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -14268,7 +14461,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -14277,7 +14479,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -14321,7 +14523,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -14330,7 +14541,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -14366,7 +14577,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -14375,7 +14595,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -14419,7 +14639,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -14428,7 +14657,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -14472,7 +14701,16 @@
     "orientation": "DIAGONAL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -14992,7 +15230,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2024-11-12T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15363,7 +15610,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -15399,7 +15646,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15478,7 +15734,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -15514,7 +15770,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15523,7 +15788,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -15559,7 +15824,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15604,7 +15878,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15649,7 +15932,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15658,7 +15950,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -15694,7 +15986,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -15703,7 +16004,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -15739,7 +16040,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -16123,7 +16433,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-09-14T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -16400,7 +16719,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-09-14T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -17233,7 +17561,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -17269,7 +17597,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-09-14T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -17278,7 +17615,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -17314,7 +17651,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-09-14T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -18703,6 +19049,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr und von Fr 17 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -19108,7 +19455,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-05-31T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -19117,7 +19473,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A Mo-Fr 17-7 Uhr sowie Sa und So",
+    "fee_description": "Parkerlaubnis: Behinderte Mo-Fr 7-17 Uhr, Frei für Parkausweis-Nr A Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -19223,7 +19579,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-05-31T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -19284,7 +19649,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-05-31T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -19341,7 +19715,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-05-31T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -19677,7 +20060,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-9-h Bewohner frei",
+    "fee_description": "Parkerlaubnis: 8-23 Uhr (für die Öffentlichkeit) 18-9h (Bewohner), Frei für Parkausweis-Nr T 18-9-h Bewohner frei",
     "geojson": {
       "coordinates": [
         [
@@ -19725,7 +20108,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -21018,7 +21410,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-8 Uhr",
+    "fee_description": "Parkerlaubnis: 18-8 Uhr (nur Bewohner), Frei für Parkausweis-Nr T 18-8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -21054,7 +21446,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -21063,7 +21464,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-8 Uhr",
+    "fee_description": "Parkerlaubnis: 18-8 Uhr (nur Bewohner), Frei für Parkausweis-Nr T 18-8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -21099,7 +21500,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -21367,7 +21777,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -21376,6 +21795,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mi 9-13 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22465,6 +22885,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 8-18 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22571,7 +22992,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S werktags 18-7 Uhr sowie So",
+    "fee_description": "Parkerlaubnis: werktags 18-7 Uhr sowie So (nur Bewohner), Frei für Parkausweis-Nr F und S werktags 18-7 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -22615,7 +23036,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -22624,7 +23054,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S werktags 18-7 Uhr sowie So",
+    "fee_description": "Parkerlaubnis: werktags 18-7 Uhr sowie So (nur Bewohner), Frei für Parkausweis-Nr F und S werktags 18-7 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -22668,7 +23098,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -22677,7 +23116,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P, 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P, 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22713,7 +23152,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -22776,7 +23224,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P, 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P, 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22812,7 +23260,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -22821,7 +23278,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P, 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P, 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22861,7 +23318,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -22870,7 +23336,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P, 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P, 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22914,7 +23380,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -22923,7 +23398,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P, 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P, 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -22967,7 +23442,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23033,7 +23517,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -23069,7 +23553,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23078,7 +23571,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -23114,7 +23607,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23123,7 +23625,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -23159,7 +23661,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23168,7 +23679,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -23204,7 +23715,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23213,7 +23733,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -23249,7 +23769,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23258,7 +23787,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -23294,7 +23823,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -23873,7 +24411,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Ladezone Mo-Fr 7-18 Uhr",
+    "fee_description": "Ladezone Mo-Fr 7-18 Uhr, Parkerlaubnis: Mo-Fr 18-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -24024,7 +24562,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P , 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: 18-9 Uhr (nur Bewohner) frei, Frei für Parkausweis-Nr P , 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -24068,7 +24606,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -24077,7 +24624,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P, 18-9 Uhr",
+    "fee_description": "Parkerlaubnis: 18-9 Uhr (nur Bewohner) frei, Frei für Parkausweis-Nr P, 18-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -24113,7 +24660,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2024-11-12T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -24683,7 +25239,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -24719,7 +25275,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -24728,7 +25293,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -24764,7 +25329,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -24773,7 +25347,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr F und S 18-7 Uhr",
+    "fee_description": "Parkerlaubnis: 18-7 Uhr (nur Bewohner), Frei für Parkausweis-Nr F und S 18-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -24809,7 +25383,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -25909,7 +26492,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T Bewohner frei",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-18 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr T Bewohner frei",
     "geojson": {
       "coordinates": [
         [
@@ -25977,7 +26560,16 @@
     "orientation": "DIAGONAL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -25986,7 +26578,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T Bewohner frei",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-18 h (öffentlich), Bewohner frei, Frei für Parkausweis-Nr T Bewohner frei",
     "geojson": {
       "coordinates": [
         [
@@ -26050,7 +26642,16 @@
     "orientation": "DIAGONAL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -28715,7 +29316,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2023-01-31T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -29426,7 +30036,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Mo - So ",
+    "fee_description": "Mo - So , Parkerlaubnis: maximal 8 Std",
     "geojson": {
       "coordinates": [
         [
@@ -29537,7 +30147,7 @@
   {
     "capacity": 15,
     "external_identifiers": [],
-    "fee_description": "Mo - So",
+    "fee_description": "Mo - So, Parkerlaubnis: Maximal 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -29582,7 +30192,7 @@
   {
     "capacity": 20,
     "external_identifiers": [],
-    "fee_description": "Mo - So",
+    "fee_description": "Mo - So, Parkerlaubnis: maximal 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -29635,7 +30245,7 @@
   {
     "capacity": 23,
     "external_identifiers": [],
-    "fee_description": "Mo - So",
+    "fee_description": "Mo - So, Parkerlaubnis: maximal 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -29688,7 +30298,7 @@
   {
     "capacity": 23,
     "external_identifiers": [],
-    "fee_description": "Mo - So",
+    "fee_description": "Mo - So, Parkerlaubnis: maximal 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -29741,7 +30351,7 @@
   {
     "capacity": 13,
     "external_identifiers": [],
-    "fee_description": "Mo - So",
+    "fee_description": "Mo - So, Parkerlaubnis: maximal 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -32882,6 +33492,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -33048,6 +33659,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -33934,6 +34546,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-7:30 Uhr sowie Sa und So (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -34044,6 +34657,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18:00-7:30 Uhr sowie Sa und So (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -34353,6 +34967,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-7 Uhr (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -35263,7 +35878,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "So 8-13 Uhr und Mi 17-21 Uhr nur für Besucher der Kirche Jesu Christi der Heiligen der Letzten Tage",
+    "fee_description": "So 8-13 Uhr und Mi 17-21 Uhr nur für Besucher der Kirche Jesu Christi der Heiligen der Letzten Tage, Parkerlaubnis: immer außer So 8-13 Uhr und Mi 17-21 Uhr (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -37277,6 +37892,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Behinderte Mo-Fr 8-18 Uhr; Mo-Fr 18-8 Uhr sowie Sa und So (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -37374,7 +37990,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "vorbehalten für Kindertagesstätte",
+    "fee_description": "vorbehalten für Kindertagesstätte, Parkerlaubnis: nur kurzzeitig",
     "geojson": {
       "coordinates": [
         [
@@ -37423,6 +38039,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nur kurzzeitig",
     "geojson": {
       "coordinates": [
         [
@@ -37939,6 +38556,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 15-9 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -38927,7 +39545,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 7-18 Uhr",
+    "fee_description": "Ladezone werktags 7-18 Uhr, Parkerlaubnis: Mo-Sa 18-7 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -41035,7 +41653,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Fr 14:00-15:30 Uhr Bücherbus-Haltestelle",
+    "fee_description": "Fr 14:00-15:30 Uhr Bücherbus-Haltestelle, Parkerlaubnis: immer außer Fr 14:00-15:30 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -44682,7 +45300,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-09-08T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -44727,7 +45354,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-09-08T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -44772,7 +45408,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-09-08T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -44817,7 +45462,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-09-08T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -44862,7 +45516,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-09-08T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -44907,7 +45570,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2022-09-08T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -45016,6 +45688,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 16-8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -45060,6 +45733,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 16-8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -45332,6 +46006,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -45726,7 +46401,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Fr 7-18 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -45774,7 +46449,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-23T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -49761,7 +50445,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo 7-15 Uhr und Fr 10-16 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -53802,7 +54486,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Ladezone Mo-Fr 7-17 Uhr",
+    "fee_description": "Ladezone Mo-Fr 7-17 Uhr, Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -57813,6 +58497,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 19-6 h sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -57901,6 +58586,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 19-6 h sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -62779,6 +63465,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -62823,6 +63510,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -69224,7 +69912,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr N",
+    "fee_description": "Parkerlaubnis: 20-6 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr N",
     "geojson": {
       "coordinates": [
         [
@@ -69260,7 +69948,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69269,7 +69966,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr N",
+    "fee_description": "Parkerlaubnis: 20-6 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr N",
     "geojson": {
       "coordinates": [
         [
@@ -69305,7 +70002,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69314,7 +70020,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr N",
+    "fee_description": "Parkerlaubnis: 20-6 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr N",
     "geojson": {
       "coordinates": [
         [
@@ -69350,7 +70056,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69359,7 +70074,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr N",
+    "fee_description": "Parkerlaubnis: 20-6 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr N",
     "geojson": {
       "coordinates": [
         [
@@ -69395,7 +70110,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69404,7 +70128,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr N",
+    "fee_description": "Parkerlaubnis: 20-6 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr N",
     "geojson": {
       "coordinates": [
         [
@@ -69480,7 +70204,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69489,7 +70222,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr N",
+    "fee_description": "Parkerlaubnis: 20-6 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr N",
     "geojson": {
       "coordinates": [
         [
@@ -69525,7 +70258,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-11-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69622,7 +70364,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69667,7 +70418,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69712,7 +70472,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69757,7 +70526,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69802,7 +70580,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69847,7 +70634,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -69892,7 +70688,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-10-19T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -70302,7 +71107,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Do 7-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -84110,6 +84915,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -84162,6 +84968,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -88247,6 +89054,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 19-5 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -92771,6 +93579,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -92815,6 +93624,7 @@
   {
     "capacity": 12,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -96605,7 +97415,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96682,7 +97492,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96727,7 +97537,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96772,7 +97582,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96817,7 +97627,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96862,7 +97672,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96907,7 +97717,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96952,7 +97762,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -96997,7 +97807,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -97042,7 +97852,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -97087,7 +97897,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -97132,7 +97942,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Mo und Fr jeweils 8-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -99227,6 +100037,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Di 7-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -100163,6 +100974,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Sa 18:00 bis 08:30 und 12:30 bis 14:30 Uhr sowie Sa 12:30 Uhr bis Mo 08:30 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -100751,6 +101563,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Di 7-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -100807,6 +101620,7 @@
   {
     "capacity": 7,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Di 7-9 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -102809,7 +103623,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -102858,7 +103672,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -103289,6 +104103,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mi 16:15 bis 18:00 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -104681,7 +105496,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr 13-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -105166,6 +105981,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -106310,6 +107126,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 17-7 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -110682,7 +111499,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Bücherbus-Haltestelle",
+    "fee_description": "Bücherbus-Haltestelle, Parkerlaubnis: immer außer Do 14:45 bis 15:45 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -113422,6 +114239,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts von 18 bis 6 Uhr sowie von Sa 13 Uhr bis Mo 6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -113470,6 +114288,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts von 18 bis 6 Uhr sowie von Sa 13 Uhr bis Mo 6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -114262,7 +115081,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2023-08-30T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -117120,7 +117948,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Ladezone",
+    "fee_description": "Ladezone, Parkerlaubnis: nachts 16:30-07:00 Uhr sowie Fr 16:30 bis Mo 07:00 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -117165,7 +117993,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Ladezone",
+    "fee_description": "Ladezone, Parkerlaubnis: nachts 16:30-07:00 Uhr sowie Fr 16:30 bis Mo 07:00 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -118661,6 +119489,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer an Markttagen Do 5-12 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -121130,7 +121959,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: immer außer Do 7-13 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -125861,6 +126690,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-6 Uhr sowie Fr 18 Uhr bis Mo 6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -125905,6 +126735,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-6 Uhr sowie Fr 18 Uhr bis Mo 6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -126053,6 +126884,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nur nachts; werktags ab 22:30 Uhr, sonntags ab 19:30 Uhr, jeweils bis 8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -126145,6 +126977,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nur nachts; werktags ab 22:30 Uhr, sonntags ab 19:30 Uhr, jeweils bis 8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -126213,6 +127046,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nur nachts; werktags ab 22:30 Uhr, sonntags ab 19:30 Uhr, jeweils bis 8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -126473,6 +127307,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nur nachts; werktags ab 22:30 Uhr, sonntags ab 19:30 Uhr, jeweils bis 8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -126517,6 +127352,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nur nachts; werktags ab 22:30 Uhr, sonntags ab 19:30 Uhr, jeweils bis 8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -129347,6 +130183,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -133654,7 +134491,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Bücherbus Fr 12:45 bis 14:15 Uhr",
+    "fee_description": "Bücherbus Fr 12:45 bis 14:15 Uhr, Parkerlaubnis: immer außer Fr 12:45 bis 14:15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141029,6 +141866,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141073,6 +141911,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141117,6 +141956,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141169,6 +142009,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141221,6 +142062,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141265,6 +142107,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -141317,6 +142160,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 19-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -149659,7 +150503,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Bücherbus Do 13:45 bis 14:45 Uhr",
+    "fee_description": "Bücherbus Do 13:45 bis 14:45 Uhr, Parkerlaubnis: immer außer Do 13:45 bis 14:45 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -159090,7 +159934,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Mi 14:45 bis 16:15 Uhr  Bücherbus",
+    "fee_description": "Mi 14:45 bis 16:15 Uhr  Bücherbus, Parkerlaubnis: immer außer Mi 14:45 bis 16:15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -168339,6 +169183,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts 18-5 h sowie Sa 13 h bis Mo 5 h",
     "geojson": {
       "coordinates": [
         [
@@ -168387,6 +169232,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts 18-5 h sowie Sa 13 h bis Mo 5 h",
     "geojson": {
       "coordinates": [
         [
@@ -168435,6 +169281,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts 18-5 h sowie Sa 13 h bis Mo 5 h",
     "geojson": {
       "coordinates": [
         [
@@ -168479,6 +169326,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts 18-5 h sowie Sa 13 h bis Mo 5 h",
     "geojson": {
       "coordinates": [
         [
@@ -172021,7 +172869,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr K (Mo-Fr 09:30-15:00 h und 18:00-06:00 h sowie Sa und So)",
+    "fee_description": "Parkerlaubnis: Mo-Fr 06:30-09:30 h und 15:00-18:00 h (für die Öffentlichkeit), Frei für Parkausweis-Nr K (Mo-Fr 09:30-15:00 h und 18:00-06:00 h sowie Sa und So)",
     "geojson": {
       "coordinates": [
         [
@@ -172057,7 +172905,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2024-02-05T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -172896,6 +173753,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Di 05:30-08:00 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -174136,6 +174994,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -175120,7 +175979,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 6-20 Uhr",
+    "fee_description": "Ladezone werktags 6-20 Uhr, Parkerlaubnis: Mo-Sa 20-6 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -175165,7 +176024,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 6-20 Uhr",
+    "fee_description": "Ladezone werktags 6-20 Uhr, Parkerlaubnis: Mo-Sa 20-6 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -177554,7 +178413,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 8-18 Uhr",
+    "fee_description": "Ladezone werktags 8-18 Uhr, Parkerlaubnis: Mo-Sa 18-8 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -179879,6 +180738,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17:30 bis 7:00 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -184225,6 +185085,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 19-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -186801,6 +187662,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo 11-14 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187097,6 +187959,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo 12-15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187141,6 +188004,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo 12-15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187185,6 +188049,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo 12-15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187229,6 +188094,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo 12-15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187273,6 +188139,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo 12-15 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187493,7 +188360,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -187818,6 +188685,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 18:00 bis 6:30 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -187862,6 +188730,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 18:00 bis 6:30 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -188508,7 +189377,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Müllabfuhr Mo 10-16 Uhr",
+    "fee_description": "Müllabfuhr Mo 10-16 Uhr, Parkerlaubnis: immer außer Mo 10-16 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -191147,6 +192016,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Sa 18:30 bis 6:30 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -192356,7 +193226,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Ladezone 6-11 Uhr",
+    "fee_description": "Ladezone 6-11 Uhr, Parkerlaubnis: 11-6 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -192689,6 +193559,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: tagsüber kurzzeitig (nur für Kita-Besuicher), nachts unbeschränkt",
     "geojson": {
       "coordinates": [
         [
@@ -193645,6 +194516,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 20-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -193705,6 +194577,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 20-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -193765,6 +194638,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 20-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -193993,7 +194867,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -199326,7 +200200,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr W",
+    "fee_description": "Parkerlaubnis: Mo-Fr 8-20 Uhr und Sa 8-18 Uhr (für diie Öffentlichkeit), Frei für Parkausweis-Nr W",
     "geojson": {
       "coordinates": [
         [
@@ -199362,7 +200236,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2023-05-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -199371,7 +200254,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr W",
+    "fee_description": "Parkerlaubnis: Mo-Fr 8-20 Uhr und Sa 8-18 Uhr (für diie Öffentlichkeit), Frei für Parkausweis-Nr W",
     "geojson": {
       "coordinates": [
         [
@@ -199431,7 +200314,16 @@
     "orientation": "DIAGONAL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2023-05-09T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -200069,7 +200961,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Bücherbus jeden dritten Montag im Monat 09:45 bis 11:00 Uhr, nur Anlieger",
+    "fee_description": "Bücherbus jeden dritten Montag im Monat 09:45 bis 11:00 Uhr, nur Anlieger, Parkerlaubnis: immer außer jeden dritten Montag im Monat 09:45 bis 11:00 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -201142,6 +202034,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201186,6 +202079,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201262,6 +202156,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201306,6 +202201,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201350,6 +202246,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201394,6 +202291,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201438,6 +202336,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201490,6 +202389,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201534,6 +202434,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201578,6 +202479,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201622,6 +202524,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201666,6 +202569,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201710,6 +202614,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -201754,6 +202659,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -203291,6 +204197,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr und Sa 12 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -203335,6 +204242,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr und Sa 12 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -203387,6 +204295,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr und Sa 12 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -203431,6 +204340,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr und Sa 12 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -203475,6 +204385,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr und Sa 12 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -211640,7 +212551,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -211717,7 +212628,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -211770,7 +212681,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -218819,7 +219730,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Bücherbus Di 13:30 bis 14:30 Uhr",
+    "fee_description": "Bücherbus Di 13:30 bis 14:30 Uhr, Parkerlaubnis: immer außer Di 13:30 bis 14:30 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -223537,7 +224448,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -224588,7 +225499,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone 7-17 Uhr",
+    "fee_description": "Ladezone 7-17 Uhr, Parkerlaubnis: 17-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -226505,6 +227416,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: immer außer Mo und Fr jeweils 7-18 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -228468,7 +229380,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228513,7 +229425,7 @@
   {
     "capacity": 10,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228558,7 +229470,7 @@
   {
     "capacity": 10,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228603,7 +229515,7 @@
   {
     "capacity": 10,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228648,7 +229560,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228693,7 +229605,7 @@
   {
     "capacity": 10,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228738,7 +229650,7 @@
   {
     "capacity": 9,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228783,7 +229695,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -228828,7 +229740,7 @@
   {
     "capacity": 7,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten",
+    "fee_description": "Mo - So, 8 - 19 h, nur Besucher von Schule und Sportstätten, Parkerlaubnis: 4 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -234918,6 +235830,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 19-8 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -237947,6 +238860,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 18-7 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -254931,7 +255845,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Bücherbus Di 17:00 bis 18:00 Uhr",
+    "fee_description": "Bücherbus Di 17:00 bis 18:00 Uhr, Parkerlaubnis: immer außer Di 17:00 bis 18:00 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -261610,6 +262524,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: nachts 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -263950,6 +264865,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr nachts 16:00 bis 07:30 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -263994,6 +264910,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr nachts 16:00 bis 07:30 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -264214,7 +265131,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 6-20 Uhr",
+    "fee_description": "Ladezone werktags 6-20 Uhr, Parkerlaubnis: werktags nachts 20-6 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -265383,6 +266300,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Dezember bis August",
     "geojson": {
       "coordinates": [
         [
@@ -268730,6 +269648,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Dezember bis August",
     "geojson": {
       "coordinates": [
         [
@@ -270127,6 +271046,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: So und Feiertage",
     "geojson": {
       "coordinates": [
         [
@@ -270583,7 +271503,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 8-18 Uhr",
+    "fee_description": "Ladezone werktags 8-18 Uhr, Parkerlaubnis: werktags nachts 18-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -270628,7 +271548,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 8-18 Uhr",
+    "fee_description": "Ladezone werktags 8-18 Uhr, Parkerlaubnis: werktags nachts 18-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -270673,7 +271593,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 8-18 Uhr",
+    "fee_description": "Ladezone werktags 8-18 Uhr, Parkerlaubnis: werktags nachts 18-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -270734,7 +271654,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone werktags 8-18 Uhr",
+    "fee_description": "Ladezone werktags 8-18 Uhr, Parkerlaubnis: werktags nachts 18-8 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -288420,7 +289340,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr nachts 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -288597,7 +289517,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr nachts 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -288658,7 +289578,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: Mo-Fr nachts 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -295096,6 +296016,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags nachts 20-7 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -302740,6 +303661,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Sa ab 17 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -302784,6 +303706,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Sa ab 17 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -302844,6 +303767,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Sa ab 17 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -302888,6 +303812,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Sa ab 17 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -302940,6 +303865,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -302984,6 +303910,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -303628,6 +304555,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 18-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -303760,6 +304688,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 19-6 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -303864,6 +304793,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Do 18-7 Uhr und Fr 14 Uhr bis Mo 7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -304096,7 +305026,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Mo-Fr, 7-8h, 11-17h, Elternhaltestelle",
+    "fee_description": "Mo-Fr, 7-8h, 11-17h, Elternhaltestelle, Parkerlaubnis: 30 min",
     "geojson": {
       "coordinates": [
         [
@@ -305582,7 +306512,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305627,7 +306557,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305672,7 +306602,7 @@
   {
     "capacity": 7,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305717,7 +306647,7 @@
   {
     "capacity": 7,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305762,7 +306692,7 @@
   {
     "capacity": 10,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305807,7 +306737,7 @@
   {
     "capacity": 7,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305852,7 +306782,7 @@
   {
     "capacity": 11,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305901,7 +306831,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -305946,7 +306876,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Sdt.",
     "geojson": {
       "coordinates": [
         [
@@ -305991,7 +306921,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -306036,7 +306966,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -306085,7 +307015,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -306130,7 +307060,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -306175,7 +307105,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Mo - So, 8 - 19 h",
+    "fee_description": "Mo - So, 8 - 19 h, Parkerlaubnis: 6 Std.",
     "geojson": {
       "coordinates": [
         [
@@ -306264,6 +307194,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 8 - 18 h",
     "geojson": {
       "coordinates": [
         [
@@ -306316,6 +307247,7 @@
   {
     "capacity": 7,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 8 - 18 h",
     "geojson": {
       "coordinates": [
         [
@@ -308069,6 +309001,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 18-10 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -308129,6 +309062,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: 18-10 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -311245,7 +312179,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone Mo-Fr 7-18 Uhr, Frei für Parkausweis-Nr F und S (18-7 Uhr)",
+    "fee_description": "Ladezone Mo-Fr 7-18 Uhr, Parkerlaubnis: 18-7 Uhr (Bewohner), Frei für Parkausweis-Nr F und S (18-7 Uhr)",
     "geojson": {
       "coordinates": [
         [
@@ -311281,7 +312215,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2024-12-04T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -311334,6 +312277,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -311378,6 +312322,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -311422,6 +312367,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -316826,6 +317772,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16:30 bis 07:30 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -316894,6 +317841,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16:30 bis 07:30 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -316938,6 +317886,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 16:30 bis 07:30 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -317710,7 +318659,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -326611,6 +327560,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags 17-7 Uhr und So",
     "geojson": {
       "coordinates": [
         [
@@ -328731,7 +329681,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "So 8-13 Uhr und Mi 17-21 Uhr nur für Besucher der Kirche Jesu Christi der Heiligen der Letzten Tage",
+    "fee_description": "So 8-13 Uhr und Mi 17-21 Uhr nur für Besucher der Kirche Jesu Christi der Heiligen der Letzten Tage, Parkerlaubnis: immer außer So 8-13 Uhr und Mi 17-21 Uhr (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -328776,7 +329726,7 @@
   {
     "capacity": 9,
     "external_identifiers": [],
-    "fee_description": "So 8-13 Uhr und Mi 17-21 Uhr nur für Besucher der Kirche Jesu Christi der Heiligen der Letzten Tage",
+    "fee_description": "So 8-13 Uhr und Mi 17-21 Uhr nur für Besucher der Kirche Jesu Christi der Heiligen der Letzten Tage, Parkerlaubnis: immer außer So 8-13 Uhr und Mi 17-21 Uhr (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -342925,6 +343875,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Pkw immer, Lkw Mo-Fr nachts 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -342977,6 +343928,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Pkw immer, Lkw Mo-Fr nachts 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -345230,6 +346182,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Ladebereichzone, werktags 8 - 20 h",
     "geojson": {
       "coordinates": [
         [
@@ -348202,7 +349155,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "nur Anlieger",
+    "fee_description": "nur Anlieger, Parkerlaubnis: nachts 17-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -353159,7 +354112,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Ladezone Mo-Fr 7-18 Uhr",
+    "fee_description": "Ladezone Mo-Fr 7-18 Uhr, Parkerlaubnis: Mo-Fr 18-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -354624,6 +355577,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Sa nachts 19-6 Uhr sowie So",
     "geojson": {
       "coordinates": [
         [
@@ -358152,7 +359106,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Parkplatz der Schule Zell",
+    "fee_description": "Parkplatz der Schule Zell, Parkerlaubnis: nur nachts 16-7 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -367368,7 +368322,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Besitzer angrenzender Grundstücke",
+    "fee_description": "nur Besitzer angrenzender Grundstücke, Parkerlaubnis: Mo-Sa",
     "geojson": {
       "coordinates": [
         [
@@ -367421,7 +368375,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "nur Besitzer angrenzender Grundstücke",
+    "fee_description": "nur Besitzer angrenzender Grundstücke, Parkerlaubnis: Mo-Sa",
     "geojson": {
       "coordinates": [
         [
@@ -368005,7 +368959,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V.",
+    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V., Parkerlaubnis: November bis März (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -368050,7 +369004,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V.",
+    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V., Parkerlaubnis: November bis März (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -368095,7 +369049,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V.",
+    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V., Parkerlaubnis: November bis März (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -368140,7 +369094,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V.",
+    "fee_description": "April bis Oktober Privatparkplatz Tennisclub Esslingen e.V., Parkerlaubnis: November bis März (für die Öffentlichkeit)",
     "geojson": {
       "coordinates": [
         [
@@ -369825,6 +370779,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -369909,6 +370864,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -369961,7 +370917,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Ladezone Mo-Fr 7-17 Uhr",
+    "fee_description": "Ladezone Mo-Fr 7-17 Uhr, Parkerlaubnis: Mo-Fr 17-7 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -374027,7 +374983,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -380855,7 +381811,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Winterdienst November bis März",
+    "fee_description": "Winterdienst November bis März, Parkerlaubnis: April bis Oktober",
     "geojson": {
       "coordinates": [
         [
@@ -382648,7 +383604,7 @@
   {
     "capacity": 10,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr A",
+    "fee_description": "Parkerlaubnis: Mo-Fr 7-18 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr A",
     "geojson": {
       "coordinates": [
         [
@@ -382696,7 +383652,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2021-09-29T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385041,7 +386006,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-9 h Bewohner frei",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), 18-9 h (Bewohner), Frei für Parkausweis-Nr T 18-9 h Bewohner frei",
     "geojson": {
       "coordinates": [
         [
@@ -385101,7 +386066,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385110,7 +386084,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-9 h frei",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23h (öffentlich), 18-9 h (Bewohner), Frei für Parkausweis-Nr T 18-9 h frei",
     "geojson": {
       "coordinates": [
         [
@@ -385162,7 +386136,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385171,7 +386154,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-9h Bewohner frei",
+    "fee_description": "Parkerlaubnis: 8-23 Uhr (für die Öffentlichkeit), 18-9 h (Bewohner), Frei für Parkausweis-Nr T 18-9h Bewohner frei",
     "geojson": {
       "coordinates": [
         [
@@ -385207,7 +386190,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385318,7 +386310,7 @@
   {
     "capacity": 9,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr T 18-8 Uhr",
+    "fee_description": "Parkerlaubnis: 18-8 Uhr (nur Bewohner), Frei für Parkausweis-Nr T 18-8 Uhr",
     "geojson": {
       "coordinates": [
         [
@@ -385378,7 +386370,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385387,7 +386388,7 @@
   {
     "capacity": 9,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385435,7 +386436,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385444,7 +386454,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385488,7 +386498,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385497,7 +386516,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385541,7 +386560,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385550,7 +386578,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385590,7 +386618,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385599,7 +386636,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385639,7 +386676,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385648,7 +386694,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385684,7 +386730,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385693,7 +386748,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385733,7 +386788,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385742,7 +386806,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385778,7 +386842,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385787,7 +386860,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385823,7 +386896,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385832,7 +386914,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385868,7 +386950,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385877,7 +386968,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385913,7 +387004,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385922,7 +387022,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -385962,7 +387062,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -385971,7 +387080,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386011,7 +387120,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386020,7 +387138,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386056,7 +387174,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386065,7 +387192,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386101,7 +387228,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386110,7 +387246,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386146,7 +387282,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386155,7 +387300,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386191,7 +387336,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386200,7 +387354,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386236,7 +387390,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386245,7 +387408,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386281,7 +387444,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386290,7 +387462,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386326,7 +387498,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386335,7 +387516,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386371,7 +387552,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386380,7 +387570,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386416,7 +387606,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386425,7 +387624,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386465,7 +387664,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386474,7 +387682,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386510,7 +387718,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386519,7 +387736,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386555,7 +387772,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386564,7 +387790,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386600,7 +387826,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386609,7 +387844,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386645,7 +387880,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386654,7 +387898,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386690,7 +387934,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386699,7 +387952,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386735,7 +387988,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386744,7 +388006,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386780,7 +388042,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386789,7 +388060,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 9-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386825,7 +388096,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386834,7 +388114,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386870,7 +388150,16 @@
     "orientation": "DIAGONAL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386879,7 +388168,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386915,7 +388204,16 @@
     "orientation": "DIAGONAL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -386924,7 +388222,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -386964,7 +388262,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387081,7 +388388,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387117,7 +388424,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387420,7 +388736,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "unter der Brücke, Frei für Parkausweis-Nr P",
+    "fee_description": "unter der Brücke, Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387456,7 +388772,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387465,7 +388790,7 @@
   {
     "capacity": 5,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387501,7 +388826,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387510,7 +388844,7 @@
   {
     "capacity": 8,
     "external_identifiers": [],
-    "fee_description": "unter der Brücke, Frei für Parkausweis-Nr P",
+    "fee_description": "unter der Brücke, Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387546,7 +388880,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387555,7 +388898,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "unter der Brücke, Frei für Parkausweis-Nr P",
+    "fee_description": "unter der Brücke, Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387599,7 +388942,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387608,7 +388960,7 @@
   {
     "capacity": 1,
     "external_identifiers": [],
-    "fee_description": "unter der Brücke, Frei für Parkausweis-Nr P",
+    "fee_description": "unter der Brücke, Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387644,7 +388996,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387653,7 +389014,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
-    "fee_description": "unter der Brücke, Frei für Parkausweis-Nr P",
+    "fee_description": "unter der Brücke, Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387689,7 +389050,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387698,7 +389068,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "unter der Brücke, Frei für Parkausweis-Nr P",
+    "fee_description": "unter der Brücke, Parkerlaubnis: Mo-Sa 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387734,7 +389104,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387833,7 +389212,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387842,7 +389230,7 @@
   {
     "capacity": 6,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-23 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387878,7 +389266,16 @@
     "orientation": "PERPENDICULAR",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -387887,7 +389284,7 @@
   {
     "capacity": 2,
     "external_identifiers": [],
-    "fee_description": "Frei für Parkausweis-Nr P",
+    "fee_description": "Parkerlaubnis: werktags 8-19 Uhr (für die Öffentlichkeit), Frei für Parkausweis-Nr P",
     "geojson": {
       "coordinates": [
         [
@@ -387931,7 +389328,16 @@
     "orientation": "PARALLEL",
     "park_and_ride_type": [],
     "purpose": "CAR",
-    "restrictions": [],
+    "restrictions": [
+      {
+        "capacity": null,
+        "hours": null,
+        "max_stay": null,
+        "realtime_capacity": null,
+        "realtime_free_capacity": null,
+        "type": "RESIDENT"
+      }
+    ],
     "static_data_updated_at": "2026-07-20T12:00:00Z",
     "tags": [],
     "type": "ON_STREET",
@@ -388104,6 +389510,49 @@
     "tags": [],
     "type": "ON_STREET",
     "uid": "7770"
+  },
+  {
+    "capacity": 4,
+    "external_identifiers": [],
+    "geojson": {
+      "coordinates": [
+        [
+          [
+            9.318093786035073,
+            48.74568619669883
+          ],
+          [
+            9.31822495885549,
+            48.74566156149849
+          ],
+          [
+            9.31820428783117,
+            48.74561791547415
+          ],
+          [
+            9.318074161793495,
+            48.745644124623
+          ],
+          [
+            9.318093786035073,
+            48.74568619669883
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "has_fee": false,
+    "has_realtime_data": false,
+    "lat": "48.7456524",
+    "lon": "9.3181497",
+    "name": "Straßen-Parkplatz",
+    "park_and_ride_type": [],
+    "purpose": "CAR",
+    "restrictions": [],
+    "static_data_updated_at": "2026-08-06T12:00:00Z",
+    "tags": [],
+    "type": "ON_STREET",
+    "uid": "7771"
   },
   {
     "capacity": 3,
@@ -388907,6 +390356,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags außer Samstags 7 - 16 h",
     "geojson": {
       "coordinates": [
         [
@@ -388967,6 +390417,7 @@
   {
     "capacity": 3,
     "external_identifiers": [],
+    "fee_description": "Parkerlaubnis: werktags außer Samstags 7 - 16 h",
     "geojson": {
       "coordinates": [
         [
@@ -389731,7 +391182,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Elternhaltestelle, ab hier zu Fuß",
+    "fee_description": "Elternhaltestelle, ab hier zu Fuß, Parkerlaubnis: Mo-Fr 18-8 Uhr sowie Sa und So",
     "geojson": {
       "coordinates": [
         [
@@ -389800,7 +391251,7 @@
   {
     "capacity": 4,
     "external_identifiers": [],
-    "fee_description": "Mo-Fr, 7-9h, 13.30-16.30h",
+    "fee_description": "Mo-Fr, 7-9h, 13.30-16.30h, Parkerlaubnis: 30 min",
     "geojson": {
       "coordinates": [
         [

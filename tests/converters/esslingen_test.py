@@ -29,7 +29,7 @@ class EsslingenPushConverterTest:
             esslingen_data,
         )
 
-        assert len(static_parking_site_inputs) == 7272
-        assert len(import_parking_site_exceptions) == 28
+        assert len(static_parking_site_inputs) == 7273
+        assert len(import_parking_site_exceptions) == 27
 
         validate_static_parking_site_inputs(static_parking_site_inputs, snapshot)
