@@ -13,13 +13,13 @@ stands and motorcycle parkingSpots. As both have their own type and capacity, th
 Static values:
 
 * `has_realtime_data` is always `False` (the API does not offer realtime data yet)
-* `purpose` is set to `CAR`, if bike or motorcycle parkingspots are available, a separate ParkingSite is created for each of them
+* `purpose` is set to `CAR` for the base ParkingSite. If bike or motorcycle parkingspots are available, a separate ParkingSite is created for each of them.
 
 ## ParkingSites
 
 | Field                                     | Type                                      | Cardinality | Mapping                | Comment                                                       |
 |-------------------------------------------|-------------------------------------------|-------------|------------------------|---------------------------------------------------------------|
-| publicID["value"]                         | string                                    | 1           | original_uid           |                                                               |
+| publicID.value                            | string                                    | 1           | original_uid           |                                                               |
 | consumerManagement.mcpUrl.value           | string (url)                              | ?           | public_url             |                                                               |
 | gates.0.street.value                      | str                                       | 1           | address                |                                                               |
 | gates.0.houseNumber.value                 | str                                       | 1           | address                |                                                               |
@@ -90,12 +90,12 @@ If `parkingSpots["bicycle"]["value"]` is greater than zero, the feature addition
 same location. They are mapped to a second `ParkingSite` which shares all attributes of the surrounding installation,
 with the following exceptions:
 
-| Field    | Mapping                                                                  |
-|----------|--------------------------------------------------------------------------|
-| uid      | `{OBJECTID}-bikes`, to keep it unique against the `ParkingSite` for cars |
-| name     | `{Name} (Fahrräder)`, to distinguish both sites at the same coordinates  |
-| purpose  | Always `BIKE`                                                            |
-| capacity | parkingSpots.bicycle.value`                                              |
+| Field        | Mapping                                                                        |
+|--------------|--------------------------------------------------------------------------------|
+| original_uid | `{publicID.value}-bikes`, to keep it unique against the `ParkingSite` for cars |
+| name         | `{Name} (Fahrräder)`, to distinguish both sites at the same coordinates        |
+| purpose      | Always `BIKE`                                                                  |
+| capacity     | parkingSpots.bicycle.value`                                                    |
 
 ## Motorcycles
 
@@ -103,12 +103,12 @@ If `parkingSpots["motorcycle"]["value"]` is greater than zero, the feature addit
 same location. They are mapped to a second `ParkingSite` which shares all attributes of the surrounding installation,
 with the following exceptions:
 
-| Field    | Mapping                                                                          |
-|----------|----------------------------------------------------------------------------------|
-| uid      | `{OBJECTID}-motorcycle`, to keep it unique against the `ParkingSite` of the cars |
-| name     | `{Strasse} (Motorrad)`, to distinguish both sites at the same coordinates        |
-| type     | Always `MOTOCYCLE`                                                               |
-| capacity | `parkingSpots["motorcycle"]["value"]`                                            |
+| Field        | Mapping                                                                                |
+|--------------|----------------------------------------------------------------------------------------|
+| original_uid | `{publicID.value}-motorcycle`, to keep it unique against the `ParkingSite` of the cars |
+| name         | `{Strasse} (Motorrad)`, to distinguish both sites at the same coordinates              |
+| purpose      | Always `MOTORCYCLE`                                                                    |
+| capacity     | `parkingSpots["motorcycle"]["value"]`                                                  |
 
 ## Tariffs
 
@@ -118,27 +118,27 @@ Fields are described as properties of the returned tariff objects in the data li
 * `tax_rate` is always set to `0.19`
 * `updated_at` is set to the import date time
 
-| Field            | Type                           | Cardinality | Mapping | Comment                                                 |
-|------------------|--------------------------------|-------------|---------|---------------------------------------------------------|
-| publicID.value   | str                            | 1           | uid     |                                                         |
-| zones.*.products | [TariffOptions](#tariffoption) | +           | options | if zones is empty, omit the Tariff for this ParkingSite |
+| Field            | Type                           | Cardinality | Mapping      | Comment                                                 |
+|------------------|--------------------------------|-------------|--------------|---------------------------------------------------------|
+| publicID.value   | str                            | 1           | original_uid |                                                         |
+| zones.*.products | [TariffOptions](#tariffoption) | +           | options      | if zones is empty, omit the Tariff for this ParkingSite |
 
 ## TariffOption
 
-| Field                                               | Type                                 | Cardinality | Mapping           | Comment |
-|-----------------------------------------------------|--------------------------------------|-------------|-------------------|---------|
-| pricingGroups                                       | [TariffComponents](#tariffcomponent) | +           | components        |         |
-| previewData.timeframe_groups.timeframes.*.time_from | str(time)                            | +           | valid_start_time  |         |
-| previewData.timeframe_groups.timeframes.*.time_to   | str(time)                            | +           | valid_end_time    |         |
-| previewData.timeframe_groups.timeframes.*.days.*    | [Weekday Short](#weekday-short)      | +           | valid_day_of_week |         |
-| previewData.product_name                            | str                                  | 1           | description       |         |
+| Field                                                | Type                                 | Cardinality | Mapping           | Comment |
+|------------------------------------------------------|--------------------------------------|-------------|-------------------|---------|
+| pricing_groups                                       | [TariffComponents](#tariffcomponent) | +           | components        |         |
+| preview_data.timeframe_groups.timeframes.*.time_from | str(time)                            | +           | valid_start_time  |         |
+| preview_data.timeframe_groups.timeframes.*.time_to   | str(time)                            | +           | valid_end_time    |         |
+| preview_data.timeframe_groups.timeframes.*.days.*    | [Weekday Short](#weekday-short)      | +           | valid_day_of_week |         |
+| preview_data.product_name                            | str                                  | 1           | description       |         |
 
 ### Weekday Short
 
 | Key | Mapping   |
 |-----|-----------|
 | Mo  | MONDAY    |
-| Tu  | THRUSDAY  |
+| Tu  | TUESDAY   |
 | We  | WEDNESDAY |
 | Th  | THURSDAY  |
 | Fr  | FRIDAY    |
