@@ -147,6 +147,16 @@ Fields are described as properties of the returned tariff objects in the data li
 
 ## TariffComponent
 
-| Field | Type | Cardinality | Mapping | Comment |
-|-------|------|-------------|---------|---------|
-|       |      |             |         |         |
+* `TariffComponentType` is set to `TIME` for `prices` and `FLAT` for `price_caps`
+
+| Field       | Type                    | Cardinality | Mapping   | Comment                                                           |
+|-------------|-------------------------|-------------|-----------|-------------------------------------------------------------------|
+| gross_value | int                     | 1           | price     | Is given in cent currently and threfore needs to be divide by 100 |
+| label       | [Step size](#step-size) | 1           | step_size |                                                                   |
+
+### Step size
+
+| Key                         | Mapping |
+|-----------------------------|---------|
+| `je angefangene Stunde`     | PT1H    |
+| `Höchstsatz pro 24 Stunden` | PT24H   |
