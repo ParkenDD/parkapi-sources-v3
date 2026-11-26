@@ -60,6 +60,7 @@ dev = [
     "pytest-cov~=7.1.0",
     "requests-mock~=1.12.1",
     "syrupy~=6.1.1",
+    "mypy>=2.4.1",
 ]
 
 [build-system]
@@ -159,3 +160,11 @@ docstring-quotes = "double"
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.mypy]
+files = ["src/"]
+mypy_path = "src/"
+explicit_package_bases = true
+
+# This is the important part:
+plugins = ["validataclass.mypy.plugin"]
